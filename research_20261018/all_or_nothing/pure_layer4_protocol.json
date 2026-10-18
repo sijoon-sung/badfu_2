@@ -1,0 +1,25 @@
+{
+  "created_date_kst": "2026-10-19",
+  "source_sha256": "60E23E3BBE9C5E5385F8489875D6EE6A59F00BDD75D177854F4062CF00D44BD0",
+  "dependency_sha256": "2A8F1573B997CE54832AFE2921E915A75E3ECF584BEF35DE5366D63860A6833F",
+  "cases": 16,
+  "scope": "layer4 gradients plus FC baseline at the same original model",
+  "loss": "Mean cross-entropy of each entire private R/F subset, evaluated at the original checkpoint",
+  "additional_clean_reference_images": 0,
+  "KL": 0,
+  "clipping": false,
+  "momentum": false,
+  "weight_decay": 0,
+  "optimizer_steps": 0,
+  "virtual_step_learning_rate": 0.01,
+  "microbatch_size": 128,
+  "BN": "Fixed/eval, as previous FC probe",
+  "classifier_logits": "Double precision to match previous FC analytic calculation",
+  "primary_metrics": [
+    "Conv retained/forget norm ratio",
+    "Conv signed cosine",
+    "Direct difference norm and channel-energy Gini"
+  ],
+  "threshold_or_classifier_fit": false,
+  "causal_limitation": "Removing anchors, clipping and 100-step accumulation together does not isolate the causal effect of KL alone."
+}

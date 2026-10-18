@@ -1,0 +1,1855 @@
+{
+  "utc": "2026-10-19T02:28:38.258325+09:00",
+  "protocol": "Full-batch mean CE gradients at original checkpoint; d=-.01*g, no optimizer step",
+  "private_records_used": true,
+  "additional_clean_reference_images": 0,
+  "anchor_kl": 0,
+  "clipping": false,
+  "momentum": false,
+  "weight_decay": 0,
+  "bn_running_statistics": "fixed/eval",
+  "model_update_steps": 0,
+  "gradient_evaluation_points_per_branch": 1,
+  "rows": [
+    {
+      "case": "attack71",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.04800394145358,
+        "forget": 0.026660563070054818
+      },
+      "fc": {
+        "retained_norm": 0.007343250140045041,
+        "forget_norm": 0.0019396863818349022,
+        "ratio": 3.785792491412185,
+        "cosine": 0.9107197816623229,
+        "difference_norm": 0.005633990161038334
+      },
+      "conv": {
+        "retained_norm": 0.015981613792661734,
+        "forget_norm": 0.005625461558778463,
+        "ratio": 2.8409426721124107,
+        "cosine": 0.6849753794648958,
+        "difference_norm": 0.012802101667387723,
+        "difference_energy_concentration": {
+          "gini": 0.6799157108302465,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5378442616815339,
+          "effective_channel_fraction": 0.18212102002126412,
+          "excess_kurtosis": 78.97126973735001
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.008945747299862276,
+          "forget_norm": 0.0032899095309707783,
+          "ratio": 2.7191468992226624,
+          "cosine": 0.6873753812490258,
+          "difference_norm": 0.00709859304134737,
+          "difference_energy_concentration": {
+            "gini": 0.6476042306953003,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5027802426792773,
+            "effective_channel_fraction": 0.22204814099813186,
+            "excess_kurtosis": 50.431198389917185
+          },
+          "negative_cosine_channel_fraction": 0.1953125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.007251302298923184,
+          "forget_norm": 0.0028939556093183134,
+          "ratio": 2.505671571317318,
+          "cosine": 0.5493966571490416,
+          "difference_norm": 0.006156155023666643,
+          "difference_energy_concentration": {
+            "gini": 0.6326962417720643,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4877034513518858,
+            "effective_channel_fraction": 0.256854491497738,
+            "excess_kurtosis": 34.22201645311549
+          },
+          "negative_cosine_channel_fraction": 0.177734375
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.0053303025232738985,
+          "forget_norm": 0.001766950932536295,
+          "ratio": 3.016666974233824,
+          "cosine": 0.6494281372537387,
+          "difference_norm": 0.004393303394247144,
+          "difference_energy_concentration": {
+            "gini": 0.6710318159868438,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5076131714522351,
+            "effective_channel_fraction": 0.25591617285200596,
+            "excess_kurtosis": 21.888552105429465
+          },
+          "negative_cosine_channel_fraction": 0.208984375
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.008073274167413056,
+          "forget_norm": 0.0026246871817490877,
+          "ratio": 3.0758995675945795,
+          "cosine": 0.787304895322725,
+          "difference_norm": 0.006221016136883206,
+          "difference_energy_concentration": {
+            "gini": 0.723688159551563,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.6015737305939844,
+            "effective_channel_fraction": 0.15043925917410414,
+            "excess_kurtosis": 54.585963823620844
+          },
+          "negative_cosine_channel_fraction": 0.16796875
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.005405027184260491,
+          "forget_norm": 0.0015608445017323345,
+          "ratio": 3.46288639147693,
+          "cosine": 0.8325328373336006,
+          "difference_norm": 0.004195638541484483,
+          "difference_energy_concentration": {
+            "gini": 0.6026870804947018,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4449582005611303,
+            "effective_channel_fraction": 0.2924617735041706,
+            "excess_kurtosis": 31.368639695117686
+          },
+          "negative_cosine_channel_fraction": 0.103515625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+      "splits_sha256": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8"
+    },
+    {
+      "case": "normal71",
+      "retained_records": 1200,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.04423878069619578,
+        "forget": 0.03498433808128472
+      },
+      "fc": {
+        "retained_norm": 0.006014877655220818,
+        "forget_norm": 0.0026995147467896432,
+        "ratio": 2.228132912544345,
+        "cosine": 0.9353356917573226,
+        "difference_norm": 0.0036182278000363535
+      },
+      "conv": {
+        "retained_norm": 0.01307923777549615,
+        "forget_norm": 0.007499513905278629,
+        "ratio": 1.7440114040311547,
+        "cosine": 0.8091045391849592,
+        "difference_norm": 0.008281449026056998,
+        "difference_energy_concentration": {
+          "gini": 0.6480512169313808,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5160769039912163,
+          "effective_channel_fraction": 0.1934621181345603,
+          "excess_kurtosis": 95.2313276228418
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.007622774482805506,
+          "forget_norm": 0.004443778714238676,
+          "ratio": 1.715381204374725,
+          "cosine": 0.8062936205210739,
+          "difference_norm": 0.004819668459437779,
+          "difference_energy_concentration": {
+            "gini": 0.593376345614733,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4655952840867024,
+            "effective_channel_fraction": 0.25167417043357854,
+            "excess_kurtosis": 54.93030876817878
+          },
+          "negative_cosine_channel_fraction": 0.109375
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.006064124098370072,
+          "forget_norm": 0.003907487301431105,
+          "ratio": 1.5519241984866095,
+          "cosine": 0.7641266233672607,
+          "difference_norm": 0.003978611788284226,
+          "difference_energy_concentration": {
+            "gini": 0.5420933622724469,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.42495283148046936,
+            "effective_channel_fraction": 0.3604616274473522,
+            "excess_kurtosis": 18.210907621571334
+          },
+          "negative_cosine_channel_fraction": 0.072265625
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.004252375870636134,
+          "forget_norm": 0.0024307692831250158,
+          "ratio": 1.749395098974283,
+          "cosine": 0.8434439561034636,
+          "difference_norm": 0.002560224137559251,
+          "difference_energy_concentration": {
+            "gini": 0.6669739024834587,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5332099118194336,
+            "effective_channel_fraction": 0.15895385824665673,
+            "excess_kurtosis": 168.08274964732715
+          },
+          "negative_cosine_channel_fraction": 0.13671875
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.006380342362817942,
+          "forget_norm": 0.0033056211595731276,
+          "ratio": 1.930149298669745,
+          "cosine": 0.8347143126922073,
+          "difference_norm": 0.004052898912412604,
+          "difference_energy_concentration": {
+            "gini": 0.6846790514011329,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5651382141499453,
+            "effective_channel_fraction": 0.16677778400381033,
+            "excess_kurtosis": 63.363205895720114
+          },
+          "negative_cosine_channel_fraction": 0.083984375
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.004170695347287363,
+          "forget_norm": 0.002095545748748937,
+          "ratio": 1.990266902918876,
+          "cosine": 0.8720315197696733,
+          "difference_norm": 0.002557949358691821,
+          "difference_energy_concentration": {
+            "gini": 0.5759639342777021,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4370537000323728,
+            "effective_channel_fraction": 0.3165583324721692,
+            "excess_kurtosis": 25.72381940530122
+          },
+          "negative_cosine_channel_fraction": 0.041015625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "41a7be72bf10d30b002063c366a9bf1f86176954ed85e33e9ca8e2b6a70e7677",
+      "splits_sha256": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8"
+    },
+    {
+      "case": "delete_poison71",
+      "retained_records": 1920,
+      "forget_records": 180,
+      "mean_ce_losses": {
+        "retained": 0.03266701842013941,
+        "forget": 0.1262299184515112
+      },
+      "fc": {
+        "retained_norm": 0.0038146683692344887,
+        "forget_norm": 0.024798872026586958,
+        "ratio": 0.1538242693113126,
+        "cosine": 0.8695351649365829,
+        "difference_norm": 0.021564336584794206
+      },
+      "conv": {
+        "retained_norm": 0.008801804294471848,
+        "forget_norm": 0.05667486187465887,
+        "ratio": 0.1553034979412524,
+        "cosine": 0.6833326375956489,
+        "difference_norm": 0.051066260843512665,
+        "difference_energy_concentration": {
+          "gini": 0.678668015435171,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5262807495634779,
+          "effective_channel_fraction": 0.19853694308253786,
+          "excess_kurtosis": 63.70544310204636
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.005018571825529411,
+          "forget_norm": 0.03130978408403084,
+          "ratio": 0.16028765359928082,
+          "cosine": 0.6781028825862296,
+          "difference_norm": 0.028149378107339515,
+          "difference_energy_concentration": {
+            "gini": 0.6535004984310739,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5115985312988154,
+            "effective_channel_fraction": 0.257366247567032,
+            "excess_kurtosis": 20.513572097171664
+          },
+          "negative_cosine_channel_fraction": 0.212890625
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.0040493043931563045,
+          "forget_norm": 0.02750216945555467,
+          "ratio": 0.14723581714890707,
+          "cosine": 0.5515561348044037,
+          "difference_norm": 0.0254934986386709,
+          "difference_energy_concentration": {
+            "gini": 0.6514974493471379,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4959431838585271,
+            "effective_channel_fraction": 0.2177483269277914,
+            "excess_kurtosis": 63.74296139355958
+          },
+          "negative_cosine_channel_fraction": 0.193359375
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.0028608863061575134,
+          "forget_norm": 0.019435879856882065,
+          "ratio": 0.14719613041570123,
+          "cosine": 0.6629070549037946,
+          "difference_norm": 0.017669684130771145,
+          "difference_energy_concentration": {
+            "gini": 0.6662004280098408,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.48968141713034624,
+            "effective_channel_fraction": 0.28274134493650593,
+            "excess_kurtosis": 14.356836417741292
+          },
+          "negative_cosine_channel_fraction": 0.220703125
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.00445047265932801,
+          "forget_norm": 0.027139636877786855,
+          "ratio": 0.1639842374962141,
+          "cosine": 0.7663837286926357,
+          "difference_norm": 0.023900470442441337,
+          "difference_energy_concentration": {
+            "gini": 0.7004393186507913,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5521948284061702,
+            "effective_channel_fraction": 0.17527202012858314,
+            "excess_kurtosis": 60.37345260446645
+          },
+          "negative_cosine_channel_fraction": 0.189453125
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.0028102406042125297,
+          "forget_norm": 0.01900144070042334,
+          "ratio": 0.1478961857955286,
+          "cosine": 0.8141164454378726,
+          "difference_norm": 0.016793058423545636,
+          "difference_energy_concentration": {
+            "gini": 0.6044649511380396,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4376031166947573,
+            "effective_channel_fraction": 0.30055356867827426,
+            "excess_kurtosis": 28.791866207356986
+          },
+          "negative_cosine_channel_fraction": 0.134765625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+      "splits_sha256": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8"
+    },
+    {
+      "case": "delete_both71",
+      "retained_records": 1200,
+      "forget_records": 900,
+      "mean_ce_losses": {
+        "retained": 0.03627108572435833,
+        "forget": 0.04657429369177833
+      },
+      "fc": {
+        "retained_norm": 0.005013827063343303,
+        "forget_norm": 0.006301113056187259,
+        "ratio": 0.7957049839662963,
+        "cosine": 0.9094959294186133,
+        "difference_norm": 0.0027158128673451273
+      },
+      "conv": {
+        "retained_norm": 0.011330255008358717,
+        "forget_norm": 0.013989244480325019,
+        "ratio": 0.8099261560761197,
+        "cosine": 0.8232735493616045,
+        "difference_norm": 0.007943117355760766,
+        "difference_energy_concentration": {
+          "gini": 0.6157229399277069,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.4701789030716614,
+          "effective_channel_fraction": 0.27350015895277074,
+          "excess_kurtosis": 39.86600410195331
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.006428223170927306,
+          "forget_norm": 0.00784460940274265,
+          "ratio": 0.8194446454758928,
+          "cosine": 0.8160782960787867,
+          "difference_norm": 0.004533801128711306,
+          "difference_energy_concentration": {
+            "gini": 0.5501931154834525,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.41706002321849567,
+            "effective_channel_fraction": 0.3693450725031645,
+            "excess_kurtosis": 19.72343902514998
+          },
+          "negative_cosine_channel_fraction": 0.12890625
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.0051552534185658775,
+          "forget_norm": 0.006471396719123394,
+          "ratio": 0.796621447010314,
+          "cosine": 0.7661085916790448,
+          "difference_norm": 0.004163923454076664,
+          "difference_energy_concentration": {
+            "gini": 0.5418972080343369,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.41064604425119317,
+            "effective_channel_fraction": 0.32943038753691134,
+            "excess_kurtosis": 43.17278506916311
+          },
+          "negative_cosine_channel_fraction": 0.091796875
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.003699417471030012,
+          "forget_norm": 0.00460360391649625,
+          "ratio": 0.8035916073869351,
+          "cosine": 0.8430420751881413,
+          "difference_norm": 0.0024826890579492337,
+          "difference_energy_concentration": {
+            "gini": 0.6227524760322805,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4618671891531163,
+            "effective_channel_fraction": 0.32072858702480267,
+            "excess_kurtosis": 11.854227915739493
+          },
+          "negative_cosine_channel_fraction": 0.12109375
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.005772946173198684,
+          "forget_norm": 0.006950111893556939,
+          "ratio": 0.8306263642388924,
+          "cosine": 0.8508032031241878,
+          "difference_norm": 0.003654866955238523,
+          "difference_energy_concentration": {
+            "gini": 0.6388961971068443,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4977593443006448,
+            "effective_channel_fraction": 0.2697245732322622,
+            "excess_kurtosis": 18.128072673504846
+          },
+          "negative_cosine_channel_fraction": 0.10546875
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.0036692493055043977,
+          "forget_norm": 0.004773349410998878,
+          "ratio": 0.7686948910653003,
+          "cosine": 0.8727157524182724,
+          "difference_norm": 0.00238279346614851,
+          "difference_energy_concentration": {
+            "gini": 0.5214635328836046,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.3767599093883389,
+            "effective_channel_fraction": 0.433031549466026,
+            "excess_kurtosis": 9.480031935964398
+          },
+          "negative_cosine_channel_fraction": 0.08203125
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+      "splits_sha256": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8"
+    },
+    {
+      "case": "attack72",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.06297990742541665,
+        "forget": 0.043484261131029364
+      },
+      "fc": {
+        "retained_norm": 0.009620660134839198,
+        "forget_norm": 0.004107383195181835,
+        "ratio": 2.3422845343781686,
+        "cosine": 0.7756132778391316,
+        "difference_norm": 0.0069375670342562736
+      },
+      "conv": {
+        "retained_norm": 0.021890160686452824,
+        "forget_norm": 0.01116407088581072,
+        "ratio": 1.960768693637974,
+        "cosine": 0.6360455791639564,
+        "difference_norm": 0.01711542495290789,
+        "difference_energy_concentration": {
+          "gini": 0.652651064797763,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5027695309257378,
+          "effective_channel_fraction": 0.19525894185748988,
+          "excess_kurtosis": 204.48071031265528
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.011636736803999325,
+          "forget_norm": 0.00615185219677823,
+          "ratio": 1.8915826375174571,
+          "cosine": 0.5560156440052079,
+          "difference_norm": 0.009677365648254629,
+          "difference_energy_concentration": {
+            "gini": 0.611225141833232,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4485258947596746,
+            "effective_channel_fraction": 0.3292823682906356,
+            "excess_kurtosis": 13.915059257434642
+          },
+          "negative_cosine_channel_fraction": 0.23828125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.010819032855903582,
+          "forget_norm": 0.006017353762948869,
+          "ratio": 1.797971879685797,
+          "cosine": 0.6564160820867931,
+          "difference_norm": 0.008233595015117263,
+          "difference_energy_concentration": {
+            "gini": 0.5739533435080111,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.42563015841945373,
+            "effective_channel_fraction": 0.3386386351586203,
+            "excess_kurtosis": 21.196065783476808
+          },
+          "negative_cosine_channel_fraction": 0.1640625
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.007401240619871932,
+          "forget_norm": 0.0037013083372721403,
+          "ratio": 1.9996282247932464,
+          "cosine": 0.696302290627984,
+          "difference_norm": 0.005507145829544609,
+          "difference_energy_concentration": {
+            "gini": 0.627146628604758,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4552298531860246,
+            "effective_channel_fraction": 0.31884560589289085,
+            "excess_kurtosis": 12.707941501423184
+          },
+          "negative_cosine_channel_fraction": 0.193359375
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.010734806823836292,
+          "forget_norm": 0.005028439098415474,
+          "ratio": 2.1348188998090816,
+          "cosine": 0.6603607473892628,
+          "difference_norm": 0.008320434244341294,
+          "difference_energy_concentration": {
+            "gini": 0.7119279193575689,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5722466318293462,
+            "effective_channel_fraction": 0.11419077690304891,
+            "excess_kurtosis": 138.57306870215314
+          },
+          "negative_cosine_channel_fraction": 0.201171875
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.0075299122994711325,
+          "forget_norm": 0.003405548973351111,
+          "ratio": 2.2110715066480413,
+          "cosine": 0.7089782366007921,
+          "difference_norm": 0.005651194329818152,
+          "difference_energy_concentration": {
+            "gini": 0.5831045461522615,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4138588326901329,
+            "effective_channel_fraction": 0.35998869631310143,
+            "excess_kurtosis": 14.606322655927638
+          },
+          "negative_cosine_channel_fraction": 0.177734375
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+      "splits_sha256": "c56a639d2768c6def18ca64e3eb1dbe5ccc3d112248b674c1845225c7c07941c"
+    },
+    {
+      "case": "normal72",
+      "retained_records": 1200,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.0439479016075994,
+        "forget": 0.04480344042080589
+      },
+      "fc": {
+        "retained_norm": 0.006031814348708966,
+        "forget_norm": 0.004629248159115906,
+        "ratio": 1.3029792617254985,
+        "cosine": 0.935153482471473,
+        "difference_norm": 0.0023640177912118017
+      },
+      "conv": {
+        "retained_norm": 0.014625974626585842,
+        "forget_norm": 0.012719868411865816,
+        "ratio": 1.1498526677321521,
+        "cosine": 0.809694082027348,
+        "difference_norm": 0.00862800363673515,
+        "difference_energy_concentration": {
+          "gini": 0.6341704577884768,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5088424527512709,
+          "effective_channel_fraction": 0.1949301969965882,
+          "excess_kurtosis": 115.79356041749843
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.00765199754587346,
+          "forget_norm": 0.00738444007238594,
+          "ratio": 1.036232601370556,
+          "cosine": 0.7414386412888503,
+          "difference_norm": 0.005412206304979739,
+          "difference_energy_concentration": {
+            "gini": 0.5669871973677971,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4426571556004762,
+            "effective_channel_fraction": 0.26320869904023636,
+            "excess_kurtosis": 56.35129558863033
+          },
+          "negative_cosine_channel_fraction": 0.080078125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.008009036970740178,
+          "forget_norm": 0.006731096815477948,
+          "ratio": 1.1898561542486874,
+          "cosine": 0.810399932884302,
+          "difference_norm": 0.00469847420219973,
+          "difference_energy_concentration": {
+            "gini": 0.5194563886537165,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.41602657262193043,
+            "effective_channel_fraction": 0.2994362272020329,
+            "excess_kurtosis": 70.99520139323096
+          },
+          "negative_cosine_channel_fraction": 0.041015625
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.005329617786525804,
+          "forget_norm": 0.004071072347537355,
+          "ratio": 1.309143471682531,
+          "cosine": 0.9099677854072165,
+          "difference_norm": 0.00234325442187219,
+          "difference_energy_concentration": {
+            "gini": 0.5665927391631491,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.42374427498241285,
+            "effective_channel_fraction": 0.3039865545932131,
+            "excess_kurtosis": 36.40116781798649
+          },
+          "negative_cosine_channel_fraction": 0.068359375
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.006567221028842544,
+          "forget_norm": 0.005542261792106465,
+          "ratio": 1.1849351898526104,
+          "cosine": 0.8335347119443419,
+          "difference_norm": 0.0036288154506024443,
+          "difference_energy_concentration": {
+            "gini": 0.6140296839829789,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.512007226575759,
+            "effective_channel_fraction": 0.26177979887391917,
+            "excess_kurtosis": 17.31564609558774
+          },
+          "negative_cosine_channel_fraction": 0.064453125
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.004437136052080494,
+          "forget_norm": 0.0038297698445283464,
+          "ratio": 1.15859078540187,
+          "cosine": 0.880929697655553,
+          "difference_norm": 0.0021013488475172884,
+          "difference_energy_concentration": {
+            "gini": 0.45358463857686493,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.3313543233570717,
+            "effective_channel_fraction": 0.528849508266274,
+            "excess_kurtosis": 6.540473793880077
+          },
+          "negative_cosine_channel_fraction": 0.021484375
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "ac347493b832bd9f1a3b46810d332fa3d847f85cf670acf289f2d018a9039f9f",
+      "splits_sha256": "c56a639d2768c6def18ca64e3eb1dbe5ccc3d112248b674c1845225c7c07941c"
+    },
+    {
+      "case": "delete_poison72",
+      "retained_records": 1920,
+      "forget_records": 180,
+      "mean_ce_losses": {
+        "retained": 0.04713960444569303,
+        "forget": 0.15397027945430578
+      },
+      "fc": {
+        "retained_norm": 0.005618454696752011,
+        "forget_norm": 0.032423200907612026,
+        "ratio": 0.17328501010006578,
+        "cosine": 0.7583870871260492,
+        "difference_norm": 0.028399345759669774
+      },
+      "conv": {
+        "retained_norm": 0.013665606230004911,
+        "forget_norm": 0.07513832547797192,
+        "ratio": 0.18187264812031537,
+        "cosine": 0.5843256416235051,
+        "difference_norm": 0.06806271392399366,
+        "difference_energy_concentration": {
+          "gini": 0.6630039952542772,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5021919268412056,
+          "effective_channel_fraction": 0.20398052170157396,
+          "excess_kurtosis": 140.88389102926857
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.007176525816598835,
+          "forget_norm": 0.04059845337348579,
+          "ratio": 0.1767684534821642,
+          "cosine": 0.5628002592713489,
+          "difference_norm": 0.03703763821686446,
+          "difference_energy_concentration": {
+            "gini": 0.6130192430607795,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4427903159041969,
+            "effective_channel_fraction": 0.3271864111328936,
+            "excess_kurtosis": 16.470606207707718
+          },
+          "negative_cosine_channel_fraction": 0.291015625
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.007220128461575266,
+          "forget_norm": 0.035893913300935415,
+          "ratio": 0.20115188893006838,
+          "cosine": 0.5174680988820457,
+          "difference_norm": 0.032745848342376205,
+          "difference_energy_concentration": {
+            "gini": 0.6188724430761874,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4654408471958384,
+            "effective_channel_fraction": 0.3086910629347709,
+            "excess_kurtosis": 15.076736067696643
+          },
+          "negative_cosine_channel_fraction": 0.236328125
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.0048027370383290306,
+          "forget_norm": 0.023913869575884015,
+          "ratio": 0.2008347926749738,
+          "cosine": 0.5766213950659188,
+          "difference_norm": 0.0215055148489485,
+          "difference_energy_concentration": {
+            "gini": 0.6461502342840917,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.46693586079209054,
+            "effective_channel_fraction": 0.3177140271941688,
+            "excess_kurtosis": 8.216953989717846
+          },
+          "negative_cosine_channel_fraction": 0.263671875
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.006401222908188076,
+          "forget_norm": 0.037686685936238806,
+          "ratio": 0.16985369631646968,
+          "cosine": 0.6376723378061355,
+          "difference_norm": 0.033964638716028006,
+          "difference_energy_concentration": {
+            "gini": 0.7091839000259008,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5635609617719898,
+            "effective_channel_fraction": 0.13424887850512565,
+            "excess_kurtosis": 97.3616539789869
+          },
+          "negative_cosine_channel_fraction": 0.24609375
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.00436738801298224,
+          "forget_norm": 0.02677687570106683,
+          "ratio": 0.16310297219657469,
+          "cosine": 0.6999153264139679,
+          "difference_norm": 0.02392429615110244,
+          "difference_energy_concentration": {
+            "gini": 0.6064853627340969,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4246242583181812,
+            "effective_channel_fraction": 0.3345384509122066,
+            "excess_kurtosis": 17.830523937055546
+          },
+          "negative_cosine_channel_fraction": 0.203125
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+      "splits_sha256": "c56a639d2768c6def18ca64e3eb1dbe5ccc3d112248b674c1845225c7c07941c"
+    },
+    {
+      "case": "delete_both72",
+      "retained_records": 1200,
+      "forget_records": 900,
+      "mean_ce_losses": {
+        "retained": 0.04933245781748771,
+        "forget": 0.0655828704011891
+      },
+      "fc": {
+        "retained_norm": 0.0067784871165603834,
+        "forget_norm": 0.00876756823577738,
+        "ratio": 0.773131948822451,
+        "cosine": 0.9153367685598562,
+        "difference_norm": 0.00374428351390252
+      },
+      "conv": {
+        "retained_norm": 0.016520636964713193,
+        "forget_norm": 0.02005283697442834,
+        "ratio": 0.8238553470404483,
+        "cosine": 0.7929699576520902,
+        "difference_norm": 0.012233094333369188,
+        "difference_energy_concentration": {
+          "gini": 0.6154312213424973,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.4736905850325449,
+          "effective_channel_fraction": 0.2683852838389799,
+          "excess_kurtosis": 40.399707508085626
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.008769336518397614,
+          "forget_norm": 0.010694965929633305,
+          "ratio": 0.8199499256093735,
+          "cosine": 0.7565261706176888,
+          "difference_norm": 0.007026932224559273,
+          "difference_energy_concentration": {
+            "gini": 0.5505172589554372,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.41205711852109844,
+            "effective_channel_fraction": 0.3915415693831664,
+            "excess_kurtosis": 10.169097052109858
+          },
+          "negative_cosine_channel_fraction": 0.126953125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.008624317816256484,
+          "forget_norm": 0.009885352170959058,
+          "ratio": 0.8724340485908827,
+          "cosine": 0.7622227207174779,
+          "difference_norm": 0.006491019578210151,
+          "difference_energy_concentration": {
+            "gini": 0.5127544354261162,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.387000019422292,
+            "effective_channel_fraction": 0.40776771789523847,
+            "excess_kurtosis": 15.240644407601113
+          },
+          "negative_cosine_channel_fraction": 0.068359375
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.005759860083658406,
+          "forget_norm": 0.006420184574495602,
+          "ratio": 0.8971486749056472,
+          "cosine": 0.8536028893621115,
+          "difference_norm": 0.0033560948691537845,
+          "difference_energy_concentration": {
+            "gini": 0.5561934167763742,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4081666757010576,
+            "effective_channel_fraction": 0.364904537269372,
+            "excess_kurtosis": 26.247094248458545
+          },
+          "negative_cosine_channel_fraction": 0.09765625
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.0078041172037051415,
+          "forget_norm": 0.00992211808158914,
+          "ratio": 0.7865374247244619,
+          "cosine": 0.8130111219508831,
+          "difference_norm": 0.005783103542443085,
+          "difference_energy_concentration": {
+            "gini": 0.6402418598215665,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5091993369935082,
+            "effective_channel_fraction": 0.21198757403514845,
+            "excess_kurtosis": 47.54238072323132
+          },
+          "negative_cosine_channel_fraction": 0.078125
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.005250818168500892,
+          "forget_norm": 0.007095533084096557,
+          "ratio": 0.7400174315682801,
+          "cosine": 0.8654379369811536,
+          "difference_norm": 0.0036646726951360302,
+          "difference_energy_concentration": {
+            "gini": 0.5459759500632513,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.396875212157386,
+            "effective_channel_fraction": 0.37274628545942257,
+            "excess_kurtosis": 30.985835054584612
+          },
+          "negative_cosine_channel_fraction": 0.033203125
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+      "splits_sha256": "c56a639d2768c6def18ca64e3eb1dbe5ccc3d112248b674c1845225c7c07941c"
+    },
+    {
+      "case": "attack73",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.05904430601293337,
+        "forget": 0.03431164169643661
+      },
+      "fc": {
+        "retained_norm": 0.00930671456927096,
+        "forget_norm": 0.002865251246739876,
+        "ratio": 3.2481321070395737,
+        "cosine": 0.7388075686831562,
+        "difference_norm": 0.00744462248434367
+      },
+      "conv": {
+        "retained_norm": 0.020367461370530682,
+        "forget_norm": 0.009055658112949791,
+        "ratio": 2.249142040974886,
+        "cosine": 0.5659192863773327,
+        "difference_norm": 0.016972956498080585,
+        "difference_energy_concentration": {
+          "gini": 0.6793779340674757,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5325387980968278,
+          "effective_channel_fraction": 0.19892591096819787,
+          "excess_kurtosis": 58.79825052607972
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.010878310815893848,
+          "forget_norm": 0.005441674397395607,
+          "ratio": 1.9990741858976755,
+          "cosine": 0.5487645022419085,
+          "difference_norm": 0.009109329945885133,
+          "difference_energy_concentration": {
+            "gini": 0.6317621795568178,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4800560760229733,
+            "effective_channel_fraction": 0.2721228502713281,
+            "excess_kurtosis": 28.91651176175302
+          },
+          "negative_cosine_channel_fraction": 0.283203125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.009704640611967918,
+          "forget_norm": 0.004925664432524499,
+          "ratio": 1.9702196008090838,
+          "cosine": 0.5453627054474751,
+          "difference_norm": 0.008142700914891766,
+          "difference_energy_concentration": {
+            "gini": 0.654598579588884,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5154649610287785,
+            "effective_channel_fraction": 0.18320513876720954,
+            "excess_kurtosis": 76.49144732847022
+          },
+          "negative_cosine_channel_fraction": 0.232421875
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.006634631067124885,
+          "forget_norm": 0.0029379810095006113,
+          "ratio": 2.258228029953338,
+          "cosine": 0.5542965458522676,
+          "difference_norm": 0.005571436041764336,
+          "difference_energy_concentration": {
+            "gini": 0.6968343183265129,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5462618488358593,
+            "effective_channel_fraction": 0.1927055977388792,
+            "excess_kurtosis": 44.55004814779055
+          },
+          "negative_cosine_channel_fraction": 0.275390625
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.010343061063062119,
+          "forget_norm": 0.003759559772068522,
+          "ratio": 2.7511362207632444,
+          "cosine": 0.6200950868854328,
+          "difference_norm": 0.008537444878660141,
+          "difference_energy_concentration": {
+            "gini": 0.7123271753225264,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5692447555135718,
+            "effective_channel_fraction": 0.20694456459450578,
+            "excess_kurtosis": 22.25597657361528
+          },
+          "negative_cosine_channel_fraction": 0.244140625
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.007163696358327807,
+          "forget_norm": 0.002316232159690278,
+          "ratio": 3.092823112898028,
+          "cosine": 0.6573507999074782,
+          "difference_norm": 0.005904990889894479,
+          "difference_energy_concentration": {
+            "gini": 0.592605993703996,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.43320588942173044,
+            "effective_channel_fraction": 0.3506269909695945,
+            "excess_kurtosis": 12.667990858793114
+          },
+          "negative_cosine_channel_fraction": 0.220703125
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+      "splits_sha256": "1a52a307004a9fb6ae255e4825c813b494d31e4c6ffcfa0ccf1057d594616bc0"
+    },
+    {
+      "case": "normal73",
+      "retained_records": 1200,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.04573755404535489,
+        "forget": 0.047253719925991894
+      },
+      "fc": {
+        "retained_norm": 0.006187885373794607,
+        "forget_norm": 0.00498397128201793,
+        "ratio": 1.241557188766391,
+        "cosine": 0.9223826524876411,
+        "difference_norm": 0.0024973755938745472
+      },
+      "conv": {
+        "retained_norm": 0.014791038299347614,
+        "forget_norm": 0.014353401709053753,
+        "ratio": 1.0304900955999727,
+        "cosine": 0.799985990652607,
+        "difference_norm": 0.009225950355595716,
+        "difference_energy_concentration": {
+          "gini": 0.6704727066962111,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5573943029765801,
+          "effective_channel_fraction": 0.1033826134299304,
+          "excess_kurtosis": 822.3721029685591
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.008406176200485994,
+          "forget_norm": 0.009028422432825579,
+          "ratio": 0.9310791849883742,
+          "cosine": 0.7626693515170617,
+          "difference_norm": 0.0060341840226937225,
+          "difference_energy_concentration": {
+            "gini": 0.6428071400642141,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5408762865680424,
+            "effective_channel_fraction": 0.1181512314469174,
+            "excess_kurtosis": 251.55349846704465
+          },
+          "negative_cosine_channel_fraction": 0.087890625
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.007659545083872858,
+          "forget_norm": 0.0071377549191052455,
+          "ratio": 1.073102841254883,
+          "cosine": 0.7904594440590362,
+          "difference_norm": 0.004815002483683158,
+          "difference_energy_concentration": {
+            "gini": 0.5543300154918687,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4480076588783089,
+            "effective_channel_fraction": 0.317557364780263,
+            "excess_kurtosis": 23.18589732859973
+          },
+          "negative_cosine_channel_fraction": 0.033203125
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.004893128822144222,
+          "forget_norm": 0.004351040464174426,
+          "ratio": 1.1245882134246372,
+          "cosine": 0.8907321047471326,
+          "difference_norm": 0.0022240797654351015,
+          "difference_energy_concentration": {
+            "gini": 0.5701223566812301,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.42319338594965134,
+            "effective_channel_fraction": 0.3714187094375537,
+            "excess_kurtosis": 10.049120883013966
+          },
+          "negative_cosine_channel_fraction": 0.06640625
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.006773305775166751,
+          "forget_norm": 0.006180936943681934,
+          "ratio": 1.095838031819808,
+          "cosine": 0.8175928572972234,
+          "difference_norm": 0.003952719067105769,
+          "difference_energy_concentration": {
+            "gini": 0.6287130144751698,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5069979983050562,
+            "effective_channel_fraction": 0.24643928221392977,
+            "excess_kurtosis": 26.951102879341985
+          },
+          "negative_cosine_channel_fraction": 0.05078125
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.0044296731226202415,
+          "forget_norm": 0.004052733532821096,
+          "ratio": 1.0930087277504177,
+          "cosine": 0.8660356606936818,
+          "difference_norm": 0.002225312427465377,
+          "difference_energy_concentration": {
+            "gini": 0.4543299062838455,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.3271745069554243,
+            "effective_channel_fraction": 0.5340281068629561,
+            "excess_kurtosis": 5.421183996487267
+          },
+          "negative_cosine_channel_fraction": 0.0390625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "dadfa66756d3d2078a3beca87984d55b5ed2669b913db9480f1279ff5531fafa",
+      "splits_sha256": "1a52a307004a9fb6ae255e4825c813b494d31e4c6ffcfa0ccf1057d594616bc0"
+    },
+    {
+      "case": "delete_poison73",
+      "retained_records": 1920,
+      "forget_records": 180,
+      "mean_ce_losses": {
+        "retained": 0.041069953493346814,
+        "forget": 0.1518624665579755
+      },
+      "fc": {
+        "retained_norm": 0.004916034691408993,
+        "forget_norm": 0.031157393067147633,
+        "ratio": 0.15778068084240532,
+        "cosine": 0.8296172423489393,
+        "difference_norm": 0.02721771894532227
+      },
+      "conv": {
+        "retained_norm": 0.012148623114930883,
+        "forget_norm": 0.06856944028390942,
+        "ratio": 0.17717255769669296,
+        "cosine": 0.5967412815751654,
+        "difference_norm": 0.062089912409104116,
+        "difference_energy_concentration": {
+          "gini": 0.6856425571141376,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5417408199972723,
+          "effective_channel_fraction": 0.18627565867885934,
+          "excess_kurtosis": 100.80373863510195
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.006855474179955283,
+          "forget_norm": 0.035395611592055,
+          "ratio": 0.19368147269121017,
+          "cosine": 0.5452153988866072,
+          "difference_norm": 0.032175297621912506,
+          "difference_energy_concentration": {
+            "gini": 0.6547035248296702,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5111033194810309,
+            "effective_channel_fraction": 0.1985204630372512,
+            "excess_kurtosis": 90.64991976525914
+          },
+          "negative_cosine_channel_fraction": 0.255859375
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.006188813976741988,
+          "forget_norm": 0.03225132596163693,
+          "ratio": 0.19189331887016386,
+          "cosine": 0.49910775255139417,
+          "difference_norm": 0.02965144462730179,
+          "difference_energy_concentration": {
+            "gini": 0.6537072791276746,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5136509299726184,
+            "effective_channel_fraction": 0.24411152073222403,
+            "excess_kurtosis": 25.09194411111903
+          },
+          "negative_cosine_channel_fraction": 0.248046875
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.00397930468677185,
+          "forget_norm": 0.022049991357941924,
+          "ratio": 0.1804674034640196,
+          "cosine": 0.5878150429264442,
+          "difference_norm": 0.019972053694028755,
+          "difference_energy_concentration": {
+            "gini": 0.6838320914106268,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5318468452877664,
+            "effective_channel_fraction": 0.2308686834754071,
+            "excess_kurtosis": 36.349409245261455
+          },
+          "negative_cosine_channel_fraction": 0.26953125
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.0057033185415872965,
+          "forget_norm": 0.03575391873490326,
+          "ratio": 0.15951590044924702,
+          "cosine": 0.6928867386309385,
+          "difference_norm": 0.032066948404965406,
+          "difference_energy_concentration": {
+            "gini": 0.7250788101693078,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5845106950497133,
+            "effective_channel_fraction": 0.17934722648655999,
+            "excess_kurtosis": 57.69867203371665
+          },
+          "negative_cosine_channel_fraction": 0.19140625
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.0037319419530459676,
+          "forget_norm": 0.025381606938920654,
+          "ratio": 0.14703332070450334,
+          "cosine": 0.7634189991409763,
+          "difference_norm": 0.022661137850113727,
+          "difference_energy_concentration": {
+            "gini": 0.6067848911877343,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.44803878390801166,
+            "effective_channel_fraction": 0.32673265145179803,
+            "excess_kurtosis": 17.01231509060556
+          },
+          "negative_cosine_channel_fraction": 0.14453125
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+      "splits_sha256": "1a52a307004a9fb6ae255e4825c813b494d31e4c6ffcfa0ccf1057d594616bc0"
+    },
+    {
+      "case": "delete_both73",
+      "retained_records": 1200,
+      "forget_records": 900,
+      "mean_ce_losses": {
+        "retained": 0.045124971002680855,
+        "forget": 0.05781989788996863
+      },
+      "fc": {
+        "retained_norm": 0.006399785398516758,
+        "forget_norm": 0.007777823447148422,
+        "ratio": 0.8228247197952413,
+        "cosine": 0.9337071191754241,
+        "difference_norm": 0.0029152411380264174
+      },
+      "conv": {
+        "retained_norm": 0.015270667842689496,
+        "forget_norm": 0.01708427170281728,
+        "ratio": 0.8938436538779284,
+        "cosine": 0.8299498790142082,
+        "difference_norm": 0.009592565454849674,
+        "difference_energy_concentration": {
+          "gini": 0.6243995377641804,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.4880637842131666,
+          "effective_channel_fraction": 0.23509270255435474,
+          "excess_kurtosis": 90.00826852578618
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.008461664846107648,
+          "forget_norm": 0.009003296557446779,
+          "ratio": 0.9398407341263085,
+          "cosine": 0.8294520590355826,
+          "difference_norm": 0.005126307722223711,
+          "difference_energy_concentration": {
+            "gini": 0.5355497045013387,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.42712854149812174,
+            "effective_channel_fraction": 0.31415112393592054,
+            "excess_kurtosis": 51.27874030211709
+          },
+          "negative_cosine_channel_fraction": 0.080078125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.007647332991804263,
+          "forget_norm": 0.008139323868373181,
+          "ratio": 0.9395538395418029,
+          "cosine": 0.7873243259882072,
+          "difference_norm": 0.005168914329888653,
+          "difference_energy_concentration": {
+            "gini": 0.5419779402267406,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4226477925404551,
+            "effective_channel_fraction": 0.36282955997752164,
+            "excess_kurtosis": 16.503006578636178
+          },
+          "negative_cosine_channel_fraction": 0.060546875
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.004982641536675581,
+          "forget_norm": 0.0053910312248309725,
+          "ratio": 0.9242464621101882,
+          "cosine": 0.8699771547190127,
+          "difference_norm": 0.0026743259422801237,
+          "difference_energy_concentration": {
+            "gini": 0.6083169994327082,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.47007122062438295,
+            "effective_channel_fraction": 0.3075485456474981,
+            "excess_kurtosis": 19.17796158687824
+          },
+          "negative_cosine_channel_fraction": 0.09375
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.007389865733989448,
+          "forget_norm": 0.008798049880724834,
+          "ratio": 0.8399436050231428,
+          "cosine": 0.837600595723995,
+          "difference_norm": 0.0048062703036053245,
+          "difference_energy_concentration": {
+            "gini": 0.6619121356757025,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5331122814915287,
+            "effective_channel_fraction": 0.2008934124001893,
+            "excess_kurtosis": 81.29315209014585
+          },
+          "negative_cosine_channel_fraction": 0.037109375
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.004865695249084452,
+          "forget_norm": 0.006172155078192387,
+          "ratio": 0.7883300382837185,
+          "cosine": 0.8824328045272977,
+          "difference_norm": 0.002961140374255699,
+          "difference_energy_concentration": {
+            "gini": 0.5586606302365804,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.41775495632377047,
+            "effective_channel_fraction": 0.3575309836539479,
+            "excess_kurtosis": 20.103238833799743
+          },
+          "negative_cosine_channel_fraction": 0.015625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+      "splits_sha256": "1a52a307004a9fb6ae255e4825c813b494d31e4c6ffcfa0ccf1057d594616bc0"
+    },
+    {
+      "case": "attack74",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.06602959012312079,
+        "forget": 0.02904414877015079
+      },
+      "fc": {
+        "retained_norm": 0.010740967793399336,
+        "forget_norm": 0.0022807640648447518,
+        "ratio": 4.709372599717129,
+        "cosine": 0.9145472542867277,
+        "difference_norm": 0.008704126824647284
+      },
+      "conv": {
+        "retained_norm": 0.025109545219553994,
+        "forget_norm": 0.007013781829453794,
+        "ratio": 3.5800294092565785,
+        "cosine": 0.7651204117075202,
+        "difference_norm": 0.020253081010315362,
+        "difference_energy_concentration": {
+          "gini": 0.6723757099855228,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5114084976700068,
+          "effective_channel_fraction": 0.22793797494623194,
+          "excess_kurtosis": 55.614497135228
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.013766002717960588,
+          "forget_norm": 0.003967912443897659,
+          "ratio": 3.4693312699305228,
+          "cosine": 0.7360934933754545,
+          "difference_norm": 0.011172865806712765,
+          "difference_energy_concentration": {
+            "gini": 0.6272503157898053,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.46288350959360386,
+            "effective_channel_fraction": 0.30088683696077506,
+            "excess_kurtosis": 19.84794739995352
+          },
+          "negative_cosine_channel_fraction": 0.15234375
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.01199349299385192,
+          "forget_norm": 0.00384482276680769,
+          "ratio": 3.1193877380751083,
+          "cosine": 0.7273352533400435,
+          "difference_norm": 0.009568047150603349,
+          "difference_energy_concentration": {
+            "gini": 0.6201976301923482,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4458418276958422,
+            "effective_channel_fraction": 0.3317710225509595,
+            "excess_kurtosis": 12.394122113829651
+          },
+          "negative_cosine_channel_fraction": 0.107421875
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.00843272990667869,
+          "forget_norm": 0.0023574084823158215,
+          "ratio": 3.5771186749929407,
+          "cosine": 0.795802531993687,
+          "difference_norm": 0.006710303436691505,
+          "difference_energy_concentration": {
+            "gini": 0.640551092661418,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.44866042481389,
+            "effective_channel_fraction": 0.31151449671121256,
+            "excess_kurtosis": 15.310628600943438
+          },
+          "negative_cosine_channel_fraction": 0.138671875
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.012333666304876941,
+          "forget_norm": 0.0030725294051179154,
+          "ratio": 4.01417356147438,
+          "cosine": 0.8177662401872209,
+          "difference_norm": 0.009978995674024476,
+          "difference_energy_concentration": {
+            "gini": 0.7279505040410894,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5851549713450899,
+            "effective_channel_fraction": 0.1757075866209799,
+            "excess_kurtosis": 46.98998128658512
+          },
+          "negative_cosine_channel_fraction": 0.126953125
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.008597226175302317,
+          "forget_norm": 0.0019152891642691303,
+          "ratio": 4.488735349047411,
+          "cosine": 0.8618372225487585,
+          "difference_norm": 0.007014150477766999,
+          "difference_energy_concentration": {
+            "gini": 0.6254528567798172,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.45997319470028214,
+            "effective_channel_fraction": 0.3170655853190916,
+            "excess_kurtosis": 12.81057169957624
+          },
+          "negative_cosine_channel_fraction": 0.087890625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+      "splits_sha256": "7d495914ac142a2a068b4761c930d9a25920cc378bcf7af0395a94e54ec81022"
+    },
+    {
+      "case": "safe74",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.04203376088189572,
+        "forget": 0.07503806116756004
+      },
+      "fc": {
+        "retained_norm": 0.005807984097386542,
+        "forget_norm": 0.012059195779949091,
+        "ratio": 0.4816228381533964,
+        "cosine": 0.9146408337275672,
+        "difference_norm": 0.007143857094083139
+      },
+      "conv": {
+        "retained_norm": 0.014620328109335754,
+        "forget_norm": 0.027972868949224485,
+        "ratio": 0.5226610161393934,
+        "cosine": 0.8384643627080277,
+        "difference_norm": 0.017618672506659747,
+        "difference_energy_concentration": {
+          "gini": 0.6664156343387222,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5184522572554991,
+          "effective_channel_fraction": 0.22145695843480323,
+          "excess_kurtosis": 56.19849426980953
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.008067791502190216,
+          "forget_norm": 0.015457272859247802,
+          "ratio": 0.5219414560158588,
+          "cosine": 0.8119113465127843,
+          "difference_norm": 0.01007551599259264,
+          "difference_energy_concentration": {
+            "gini": 0.6172304522849696,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.47558442156674907,
+            "effective_channel_fraction": 0.2979184607068257,
+            "excess_kurtosis": 20.314426956154445
+          },
+          "negative_cosine_channel_fraction": 0.12109375
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.007204833470920399,
+          "forget_norm": 0.013413152758456835,
+          "ratio": 0.5371469035404697,
+          "cosine": 0.8131181758498218,
+          "difference_norm": 0.008640808550459194,
+          "difference_energy_concentration": {
+            "gini": 0.6013262834947088,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.44678765261997916,
+            "effective_channel_fraction": 0.3057179838712891,
+            "excess_kurtosis": 31.845272233336715
+          },
+          "negative_cosine_channel_fraction": 0.080078125
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.00502000258367036,
+          "forget_norm": 0.0090388419856685,
+          "ratio": 0.555381164050639,
+          "cosine": 0.8806713334698767,
+          "difference_norm": 0.005194241912177206,
+          "difference_energy_concentration": {
+            "gini": 0.6425772945770214,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.47680960829235103,
+            "effective_channel_fraction": 0.3062698431044787,
+            "excess_kurtosis": 10.17428354758075
+          },
+          "negative_cosine_channel_fraction": 0.09765625
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.0070361321315378905,
+          "forget_norm": 0.01371559887875933,
+          "ratio": 0.5130021804905945,
+          "cosine": 0.8573267882902231,
+          "difference_norm": 0.008494266645267038,
+          "difference_energy_concentration": {
+            "gini": 0.7102234958529317,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5603968249294142,
+            "effective_channel_fraction": 0.1848562131415819,
+            "excess_kurtosis": 56.227348594705155
+          },
+          "negative_cosine_channel_fraction": 0.076171875
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.004695479490489614,
+          "forget_norm": 0.009686233996690488,
+          "ratio": 0.484758007301282,
+          "cosine": 0.887892026218044,
+          "difference_norm": 0.005924973509741791,
+          "difference_energy_concentration": {
+            "gini": 0.6012256987915718,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.43468950191230615,
+            "effective_channel_fraction": 0.3369539917404383,
+            "excess_kurtosis": 15.639621997175098
+          },
+          "negative_cosine_channel_fraction": 0.052734375
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+      "splits_sha256": "7d495914ac142a2a068b4761c930d9a25920cc378bcf7af0395a94e54ec81022"
+    },
+    {
+      "case": "prior74",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.04782632346410242,
+        "forget": 0.03574332953016072
+      },
+      "fc": {
+        "retained_norm": 0.007113802572914886,
+        "forget_norm": 0.003756137476159737,
+        "ratio": 1.8939143250390333,
+        "cosine": 0.9638146829554819,
+        "difference_norm": 0.003634238389606568
+      },
+      "conv": {
+        "retained_norm": 0.017640634822594054,
+        "forget_norm": 0.010374818034702693,
+        "ratio": 1.700331973398276,
+        "cosine": 0.8812483213001231,
+        "difference_norm": 0.009811196279381816,
+        "difference_energy_concentration": {
+          "gini": 0.653566667283481,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5129723053346179,
+          "effective_channel_fraction": 0.22680838469757483,
+          "excess_kurtosis": 66.47956879311837
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.009630711823561273,
+          "forget_norm": 0.005786435750369649,
+          "ratio": 1.6643599339966828,
+          "cosine": 0.8546526841574715,
+          "difference_norm": 0.005565801129940048,
+          "difference_energy_concentration": {
+            "gini": 0.5698489631856538,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4330389436829601,
+            "effective_channel_fraction": 0.3732594057598649,
+            "excess_kurtosis": 9.115777645184485
+          },
+          "negative_cosine_channel_fraction": 0.052734375
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.008896552666872498,
+          "forget_norm": 0.005534505909347078,
+          "ratio": 1.6074700818093532,
+          "cosine": 0.8624464302522732,
+          "difference_norm": 0.00498488617185576,
+          "difference_energy_concentration": {
+            "gini": 0.5826434114844545,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4567105150163667,
+            "effective_channel_fraction": 0.32966794947831907,
+            "excess_kurtosis": 15.972417242007356
+          },
+          "negative_cosine_channel_fraction": 0.033203125
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.006159778827301955,
+          "forget_norm": 0.0035066099087360963,
+          "ratio": 1.7566193524851335,
+          "cosine": 0.9319163311342964,
+          "difference_norm": 0.0031591948081376776,
+          "difference_energy_concentration": {
+            "gini": 0.6602747558606059,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5073605502475488,
+            "effective_channel_fraction": 0.2667994014420834,
+            "excess_kurtosis": 16.5667518873957
+          },
+          "negative_cosine_channel_fraction": 0.048828125
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.008410985851464828,
+          "forget_norm": 0.004691531637504193,
+          "ratio": 1.7928016906519924,
+          "cosine": 0.8985543418688743,
+          "difference_norm": 0.004673383507581213,
+          "difference_energy_concentration": {
+            "gini": 0.7041861955053155,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5894647822363847,
+            "effective_channel_fraction": 0.15168761069686115,
+            "excess_kurtosis": 62.89287017397848
+          },
+          "negative_cosine_channel_fraction": 0.029296875
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.005532194787458218,
+          "forget_norm": 0.003035864414246724,
+          "ratio": 1.8222799284107352,
+          "cosine": 0.9291559856426758,
+          "difference_norm": 0.0029345041869897784,
+          "difference_energy_concentration": {
+            "gini": 0.5939425339072533,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4388107106749573,
+            "effective_channel_fraction": 0.35540741309702095,
+            "excess_kurtosis": 8.313692413140561
+          },
+          "negative_cosine_channel_fraction": 0.021484375
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "0bc32601f1587ef95928ef349f0e6186700c4c7d8e24367ece6313bcd5ee1a3d",
+      "splits_sha256": "624a20489f9996dc23c9d71945834e79c67e4ac550cbde64f02549ce23e93d4d"
+    },
+    {
+      "case": "noise74",
+      "retained_records": 1380,
+      "forget_records": 720,
+      "mean_ce_losses": {
+        "retained": 0.08397925387727483,
+        "forget": 0.05450779810407051
+      },
+      "fc": {
+        "retained_norm": 0.01356488134772888,
+        "forget_norm": 0.007711276042667796,
+        "ratio": 1.759096843722374,
+        "cosine": 0.9442020517586384,
+        "difference_norm": 0.0067777510873301425
+      },
+      "conv": {
+        "retained_norm": 0.032417299623556,
+        "forget_norm": 0.021040723842928145,
+        "ratio": 1.5406931750806454,
+        "cosine": 0.8240713164340572,
+        "difference_norm": 0.01922036844239461,
+        "difference_energy_concentration": {
+          "gini": 0.6586918077432149,
+          "top_ten_percent_channel_count": 256,
+          "top_ten_percent_energy_share": 0.5139299872630644,
+          "effective_channel_fraction": 0.21856786250440388,
+          "excess_kurtosis": 52.079880177421146
+        }
+      },
+      "layers": [
+        {
+          "layer": "layer4.0.conv1.weight",
+          "retained_norm": 0.018374824623838003,
+          "forget_norm": 0.011947316166225895,
+          "ratio": 1.5379876424281933,
+          "cosine": 0.7892152696125517,
+          "difference_norm": 0.011569785691270224,
+          "difference_energy_concentration": {
+            "gini": 0.6098204965962346,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.48085110604614834,
+            "effective_channel_fraction": 0.27926842238137184,
+            "excess_kurtosis": 25.84304267545907
+          },
+          "negative_cosine_channel_fraction": 0.095703125
+        },
+        {
+          "layer": "layer4.0.conv2.weight",
+          "retained_norm": 0.014848029623246212,
+          "forget_norm": 0.010487729166320925,
+          "ratio": 1.4157525797793717,
+          "cosine": 0.778142588415358,
+          "difference_norm": 0.009386609082081188,
+          "difference_energy_concentration": {
+            "gini": 0.5559083689407831,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4155323500508189,
+            "effective_channel_fraction": 0.37160844948554017,
+            "excess_kurtosis": 14.045147432984312
+          },
+          "negative_cosine_channel_fraction": 0.052734375
+        },
+        {
+          "layer": "layer4.0.downsample.0.weight",
+          "retained_norm": 0.010734310787470959,
+          "forget_norm": 0.00635391507538363,
+          "ratio": 1.6894010480338146,
+          "cosine": 0.8892978482804081,
+          "difference_norm": 0.005855657501843808,
+          "difference_energy_concentration": {
+            "gini": 0.6333664969776513,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.46963666270102566,
+            "effective_channel_fraction": 0.2894533178353817,
+            "excess_kurtosis": 29.228924665334723
+          },
+          "negative_cosine_channel_fraction": 0.076171875
+        },
+        {
+          "layer": "layer4.1.conv1.weight",
+          "retained_norm": 0.01602519111559679,
+          "forget_norm": 0.010249048425383246,
+          "ratio": 1.5635784367949803,
+          "cosine": 0.8589352211789102,
+          "difference_norm": 0.008927576264776292,
+          "difference_energy_concentration": {
+            "gini": 0.6910142829364883,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.5501226751030961,
+            "effective_channel_fraction": 0.19731874058654428,
+            "excess_kurtosis": 38.60065909714799
+          },
+          "negative_cosine_channel_fraction": 0.041015625
+        },
+        {
+          "layer": "layer4.1.conv2.weight",
+          "retained_norm": 0.010988674754509107,
+          "forget_norm": 0.006675777316647513,
+          "ratio": 1.6460517230115568,
+          "cosine": 0.8986969654555386,
+          "difference_norm": 0.00578479466510051,
+          "difference_energy_concentration": {
+            "gini": 0.6181629527265162,
+            "top_ten_percent_channel_count": 52,
+            "top_ten_percent_energy_share": 0.4627019342377497,
+            "effective_channel_fraction": 0.3135561398662317,
+            "excess_kurtosis": 13.610957469295066
+          },
+          "negative_cosine_channel_fraction": 0.025390625
+        }
+      ],
+      "original_model_unchanged": true,
+      "checkpoint_sha256": "422524da1590c76a5d17e44a99c69918f2df98a9c31e2aa5ec27de2e2c95b356",
+      "splits_sha256": "7d495914ac142a2a068b4761c930d9a25920cc378bcf7af0395a94e54ec81022"
+    }
+  ]
+}

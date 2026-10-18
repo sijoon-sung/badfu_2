@@ -1,0 +1,87 @@
+{
+  "review_date_kst": "2026-10-19",
+  "groups": {
+    "attack": {
+      "pure_ratio": {
+        "min": 1.960768693637974,
+        "max": 3.5800294092565785
+      },
+      "pure_cosine": {
+        "min": 0.5659192863773327,
+        "max": 0.7651204117075202
+      },
+      "pure_difference_norm": {
+        "min": 0.012802101667387723,
+        "max": 0.020253081010315362
+      },
+      "pure_gini": {
+        "min": 0.652651064797763,
+        "max": 0.6799157108302465
+      },
+      "old_ratio": {
+        "min": 1.0867371213505796,
+        "max": 1.3387374715795555
+      },
+      "old_cosine": {
+        "min": 0.29564317632071485,
+        "max": 0.3490210738477498
+      },
+      "old_difference_norm": {
+        "min": 0.09172715285445278,
+        "max": 0.11537648738143107
+      },
+      "old_direct_difference_gini": {
+        "min": 0.5050191296049911,
+        "max": 0.5226165093582738
+      },
+      "negative_conv_layer_count": 0
+    },
+    "control": {
+      "pure_ratio": {
+        "min": 0.1553034979412524,
+        "max": 1.7440114040311547
+      },
+      "pure_cosine": {
+        "min": 0.5843256416235051,
+        "max": 0.8812483213001231
+      },
+      "pure_difference_norm": {
+        "min": 0.007943117355760766,
+        "max": 0.06806271392399366
+      },
+      "pure_gini": {
+        "min": 0.6154312213424973,
+        "max": 0.6856425571141376
+      },
+      "old_ratio": {
+        "min": 0.5439576034397721,
+        "max": 1.1122536012476807
+      },
+      "old_cosine": {
+        "min": 0.21029539682822926,
+        "max": 0.3674851446925402
+      },
+      "old_difference_norm": {
+        "min": 0.0913170137356574,
+        "max": 0.14619824957346794
+      },
+      "old_direct_difference_gini": {
+        "min": 0.5070330694063414,
+        "max": 0.5646259030045133
+      },
+      "negative_conv_layer_count": 0
+    }
+  },
+  "pure_conv_ratio_observed_gap": 0.21675728960681928,
+  "old_conv_ratio_observed_gap": -0.02551647989710104,
+  "fc_reproduction_max_relative_matrix_error": 0.00010343192953992511,
+  "fc_reproduction_relative_numerical_tolerance": 0.001,
+  "checkpoint_hashes_and_request_counts_match": true,
+  "previous_gini_already_used_direct_branch_difference": true,
+  "no_kl_clipping_or_clean_reference": true,
+  "cosine_remains_positive_without_kl": true,
+  "result": "One-point CE Conv norm ratios separate the four attacks from twelve controls on these existing cases. Signed cosines remain positive, and direct difference norms and Ginis overlap.",
+  "independent_validation": false,
+  "threshold_fitted": false,
+  "causal_note": "Multiple protocol changes were made together, so this does not isolate the effect of KL in the old 100-step trajectories."
+}
