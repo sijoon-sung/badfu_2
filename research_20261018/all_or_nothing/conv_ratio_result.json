@@ -1,0 +1,1161 @@
+{
+  "utc": "2026-10-18T14:18:28.987378+00:00",
+  "calculation": "Global Frobenius norm over the five layer4 convolution weight tensors, retained/forget",
+  "images_loaded": 0,
+  "new_training_steps": 0,
+  "rows": [
+    {
+      "case": "attack71",
+      "seed": 71,
+      "conv_only": {
+        "retained_norm": 0.08701171735252392,
+        "forget_norm": 0.06997572590260435,
+        "ratio": 1.2434557302575338,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08872961796125867,
+        "forget_norm": 0.07113897420171705,
+        "ratio": 1.247271540768394,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.04726703339774991,
+          "forget_norm": 0.04031636752902038,
+          "ratio": 1.172403078321139,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.04877114162372596,
+          "forget_norm": 0.040849113560342376,
+          "ratio": 1.1939339038944174,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.020278158609661454,
+          "forget_norm": 0.015875509747566213,
+          "ratio": 1.277323306911149,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04315552608308533,
+          "forget_norm": 0.032064548410944235,
+          "ratio": 1.3458953336874544,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.02616560924235334,
+          "forget_norm": 0.01795482029018283,
+          "ratio": 1.4573027643534773,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_71\\both.pt": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_71_attack\\retained.pt": "8ed13932e67b7de7fc9c51167d7f66b8b3364c7f8f390a32a7311811ca477074",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_71_attack\\forget.pt": "23760c8bbd1d32dd760f466ddcd43622084d19b43a47e168b69ccb5882c79c91",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "normal71",
+      "seed": 71,
+      "conv_only": {
+        "retained_norm": 0.08705324763520068,
+        "forget_norm": 0.08299323963537722,
+        "ratio": 1.048919743555749,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08862254682413316,
+        "forget_norm": 0.0842479198197326,
+        "ratio": 1.0519256382087658,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.049542941045634455,
+          "forget_norm": 0.04861413272206098,
+          "ratio": 1.0191057264948797,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.049333312428330764,
+          "forget_norm": 0.04875816937981602,
+          "ratio": 1.0117958294134157,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02085215873195364,
+          "forget_norm": 0.01810999862370096,
+          "ratio": 1.1514169142268156,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04098643283050483,
+          "forget_norm": 0.03683472655252523,
+          "ratio": 1.1127117442302548,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.023985182952835558,
+          "forget_norm": 0.02150385345086786,
+          "ratio": 1.115389993130164,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_71\\cover_only.pt": "41a7be72bf10d30b002063c366a9bf1f86176954ed85e33e9ca8e2b6a70e7677",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_71_normal_cover\\retained.pt": "4ec5ac4534e0452dcb165b1b725c3dad082cdd085a4ce0dca77444f40a55f7b6",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_71_normal_cover\\forget.pt": "4eb492f12de849ebdaccb0ca90ff219b5b8d904ba68bb0e59e8cd43d82bed3dc",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "delete_poison71",
+      "seed": 71,
+      "conv_only": {
+        "retained_norm": 0.07051246541368376,
+        "forget_norm": 0.12962860518501979,
+        "ratio": 0.543957603439772,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.07192828913760148,
+        "forget_norm": 0.1320889518596302,
+        "ratio": 0.5445443250548241,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.0398280023886318,
+          "forget_norm": 0.06801122654270496,
+          "ratio": 0.5856092356108794,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.03985482617029796,
+          "forget_norm": 0.0707840346738664,
+          "ratio": 0.5630482403825511,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.016450453668199704,
+          "forget_norm": 0.028358709026933538,
+          "ratio": 0.5800847158654496,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.03407281746780891,
+          "forget_norm": 0.06704303150713443,
+          "ratio": 0.5082231024142013,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.019124761940955318,
+          "forget_norm": 0.04322828160265656,
+          "ratio": 0.4424131895120259,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_71\\both.pt": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_71_delete_poison\\retained.pt": "0305690b780ae6be0f336ababd383a278280d2c61e65f04d65da779efcc3b128",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_71_delete_poison\\forget.pt": "32e10bf86814db56b7a8a874f7bd44114af74b3f938fffe975e2a8d1049c86a1",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "delete_both71",
+      "seed": 71,
+      "conv_only": {
+        "retained_norm": 0.07605241115264741,
+        "forget_norm": 0.085705605288069,
+        "ratio": 0.8873679953256756,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.0775168119842623,
+        "forget_norm": 0.08731882571488735,
+        "ratio": 0.8877445539335298,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.04268921307192327,
+          "forget_norm": 0.046804475907836596,
+          "ratio": 0.9120754424423692,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.04283761974484044,
+          "forget_norm": 0.04793262848965094,
+          "ratio": 0.8937047913842121,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.018070044880041408,
+          "forget_norm": 0.018998079973059124,
+          "ratio": 0.9511511113578979,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.03693573133875745,
+          "forget_norm": 0.04253374294564834,
+          "ratio": 0.8683865745357917,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.020874958503722594,
+          "forget_norm": 0.026214663973259104,
+          "ratio": 0.7963084525903744,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_71\\both.pt": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_71_delete_both\\retained.pt": "47ee7665e9ba9beacba957dec1dcf89cfc38b8fa05897b6c460ab233ac582387",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_71_delete_both\\forget.pt": "bb1af8038d47c4ece14a72536de148b8886739166854af6d167692407855dec6",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "attack72",
+      "seed": 72,
+      "conv_only": {
+        "retained_norm": 0.10151387343492334,
+        "forget_norm": 0.09341161854190044,
+        "ratio": 1.0867371213505799,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.10306005688251461,
+        "forget_norm": 0.09472569584370658,
+        "ratio": 1.087984162740376,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.056908450057635084,
+          "forget_norm": 0.05411801488890301,
+          "ratio": 1.0515620385274749,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05861161579629124,
+          "forget_norm": 0.055773709006424935,
+          "ratio": 1.0508825186709276,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02356170531603326,
+          "forget_norm": 0.019915872827340243,
+          "ratio": 1.1830616473754576,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04741890051203788,
+          "forget_norm": 0.041493849925969016,
+          "ratio": 1.14279346449269,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.028765729999029953,
+          "forget_norm": 0.023830290695142555,
+          "ratio": 1.2071078094273273,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_72\\both.pt": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_72_attack\\retained.pt": "33660be8f8357fb609150b2a491e562ef90a3619c64e69350a0d47066b486c82",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_72_attack\\forget.pt": "448f195dc7c6b98482d582e86db78e986aeef1969836f127732aa13bfa79b1b8",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "normal72",
+      "seed": 72,
+      "conv_only": {
+        "retained_norm": 0.08619462758214183,
+        "forget_norm": 0.09507154687768767,
+        "ratio": 0.9066290642460435,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08756748991244401,
+        "forget_norm": 0.09646409434495139,
+        "ratio": 0.9077728921530791,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.04965162529055028,
+          "forget_norm": 0.05566020499104513,
+          "ratio": 0.8920489117591008,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05027040319650253,
+          "forget_norm": 0.05677916469356236,
+          "ratio": 0.8853670790652227,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.020475418559842765,
+          "forget_norm": 0.020322977478544457,
+          "ratio": 1.0075009226113272,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.038779335696830376,
+          "forget_norm": 0.04127645803847963,
+          "ratio": 0.9395025043253146,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.022672380779348345,
+          "forget_norm": 0.02449280835218215,
+          "ratio": 0.9256750166555884,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_72\\cover_only.pt": "ac347493b832bd9f1a3b46810d332fa3d847f85cf670acf289f2d018a9039f9f",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_72_normal_cover\\retained.pt": "c66b35e0ff0f9f93b49c2f9beb7d44780d10431e759b0458f15a087a70dcc4dd",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_72_normal_cover\\forget.pt": "72e02533b1164e6b370c0794f1b8e74a37b9ba217baa98b5f7452e92cc164611",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "delete_poison72",
+      "seed": 72,
+      "conv_only": {
+        "retained_norm": 0.08545174632723336,
+        "forget_norm": 0.13794865716105237,
+        "ratio": 0.6194460177127358,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08682197846385592,
+        "forget_norm": 0.13981592270508297,
+        "ratio": 0.6209734684295691,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.049597528859329755,
+          "forget_norm": 0.0726669485445806,
+          "ratio": 0.68253215323748,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.0495438324167747,
+          "forget_norm": 0.07901108464089959,
+          "ratio": 0.6270491367375641,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.019838456640721435,
+          "forget_norm": 0.029980679453938595,
+          "ratio": 0.6617080400462784,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.038746209775427046,
+          "forget_norm": 0.06810164052118371,
+          "ratio": 0.5689467901052199,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.02219598200200102,
+          "forget_norm": 0.04438378671800199,
+          "ratio": 0.5000921201930336,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_72\\both.pt": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_72_delete_poison\\retained.pt": "fb33dbeebdc57a349a1b6762f473bb838195929a9021a1b741af964793554db2",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_72_delete_poison\\forget.pt": "35670535735f064b7df2871b6155cd56b0f198557f6007c5fded0c3eaa2ff9df",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "delete_both72",
+      "seed": 72,
+      "conv_only": {
+        "retained_norm": 0.0873176091235333,
+        "forget_norm": 0.11085412264027693,
+        "ratio": 0.7876803049254206,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.0886417776409669,
+        "forget_norm": 0.11250799236780819,
+        "ratio": 0.7878709394367426,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.050152920913027595,
+          "forget_norm": 0.06122196066017182,
+          "ratio": 0.8191982153497865,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05068373783225546,
+          "forget_norm": 0.06528528030682033,
+          "ratio": 0.7763425016184015,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02058914521682187,
+          "forget_norm": 0.02428129198194065,
+          "ratio": 0.847942738472696,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.03994754807009937,
+          "forget_norm": 0.05165658894641115,
+          "ratio": 0.7733291896517053,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.02281421944140677,
+          "forget_norm": 0.03194301007480488,
+          "ratio": 0.7142163305205084,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_72\\both.pt": "233fb9090b37fd79f6cbc2db0c458b3d67451f96333f1b3f16eb633b3c7aeb8c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_72_delete_both\\retained.pt": "5d1b5cb2c2d8a2a08d9f0412e2e852c87fb195447a176fbc40ac850a3b02b619",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_72_delete_both\\forget.pt": "582cf7c42b2d677f135ec7e8dd25275627e3b6912e6965dff4b27c6d423dffc5",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "attack73",
+      "seed": 73,
+      "conv_only": {
+        "retained_norm": 0.09962500693190876,
+        "forget_norm": 0.08296256444388268,
+        "ratio": 1.2008429054684882,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.10125150332935746,
+        "forget_norm": 0.084114720627452,
+        "ratio": 1.203731077914472,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.05411851765857864,
+          "forget_norm": 0.04761074839206148,
+          "ratio": 1.1366869769180576,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05610601400706138,
+          "forget_norm": 0.05031980751340416,
+          "ratio": 1.114988645219199,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.0234659419105879,
+          "forget_norm": 0.01828866622638963,
+          "ratio": 1.2830865641108218,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04861145327054108,
+          "forget_norm": 0.03645615844018884,
+          "ratio": 1.3334222625319838,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.03057318148370115,
+          "forget_norm": 0.020503509648611865,
+          "ratio": 1.4911194233408243,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_73\\both.pt": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_73_attack\\retained.pt": "43390c3d82b6aa72062981dc9f07a2d56ff9175792a4d834805b30ca9b5c2f50",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_73_attack\\forget.pt": "dfd09666471389e6b9ee7cf793a35ee219b18b3bcc69ecc5269b004ee11156f8",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "normal73",
+      "seed": 73,
+      "conv_only": {
+        "retained_norm": 0.09252792138896251,
+        "forget_norm": 0.10067076368885276,
+        "ratio": 0.9191141300461605,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.09396880398371363,
+        "forget_norm": 0.10206749860320152,
+        "ratio": 0.9206535407419707,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.052834868801930786,
+          "forget_norm": 0.058768367747695276,
+          "ratio": 0.8990358389527131,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05337300278075799,
+          "forget_norm": 0.0594897436049844,
+          "ratio": 0.8971799094505777,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02168715754778533,
+          "forget_norm": 0.02252951530417495,
+          "ratio": 0.9626109241580745,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.042549522919048316,
+          "forget_norm": 0.044335989191494916,
+          "ratio": 0.9597061821553019,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.025306535643365106,
+          "forget_norm": 0.025857165783439922,
+          "ratio": 0.9787049305911375,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_73\\cover_only.pt": "dadfa66756d3d2078a3beca87984d55b5ed2669b913db9480f1279ff5531fafa",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_73_normal_cover\\retained.pt": "dd72a7129472ed0f9086c30723ae317bec1fb0d010606b1c6a374d2f50fb48d2",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\seed_73_normal_cover\\forget.pt": "deca4ef175d9ee7afed87d68f8d9db3a15495010caea6ebe35e59eb0a86e867d",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_v3\\manifest.json": "d4cac84cff6339efb35153afc0a48736858f990a2d0eac63b0a648031d3b8a48"
+      }
+    },
+    {
+      "case": "delete_poison73",
+      "seed": 73,
+      "conv_only": {
+        "retained_norm": 0.08480084334402294,
+        "forget_norm": 0.1393195887477743,
+        "ratio": 0.6086785362074769,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08613205248058461,
+        "forget_norm": 0.14136190307394955,
+        "ratio": 0.6093017326989933,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.048361568411042624,
+          "forget_norm": 0.06833457844233663,
+          "ratio": 0.7077173740356354,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.049279949570693767,
+          "forget_norm": 0.07785801621239916,
+          "ratio": 0.6329463807073697,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02026977557282253,
+          "forget_norm": 0.03178684166939466,
+          "ratio": 0.637678187208479,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.03893043647489116,
+          "forget_norm": 0.0737056766933286,
+          "ratio": 0.528187762753624,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.022302143777971503,
+          "forget_norm": 0.04728141737818619,
+          "ratio": 0.47168940811535076,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_73\\both.pt": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_73_delete_poison\\retained.pt": "f5282fdadf1f8ffb60cb5423e6766b66fe55080e91e9271ffbf00c9154a8c94d",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_73_delete_poison\\forget.pt": "6b64f9eab2c7ea7310a6e3d20e0a70041b337e0ca99d488a3fdd0f90f3a6bd11",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "delete_both73",
+      "seed": 73,
+      "conv_only": {
+        "retained_norm": 0.08748294194837564,
+        "forget_norm": 0.1030348245815888,
+        "ratio": 0.8490618808119743,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08887457933031305,
+        "forget_norm": 0.10458744278279991,
+        "ratio": 0.8497633842609742,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.050077805640510654,
+          "forget_norm": 0.05339510889156913,
+          "ratio": 0.9378725257814342,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.050219078749282615,
+          "forget_norm": 0.05981541750633883,
+          "ratio": 0.8395674701085342,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.02102462388230202,
+          "forget_norm": 0.02373142398889468,
+          "ratio": 0.8859402576154162,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04059961289200196,
+          "forget_norm": 0.051161147204270944,
+          "ratio": 0.7935633798417384,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.023090241821487608,
+          "forget_norm": 0.03172711433081899,
+          "ratio": 0.727776298238957,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_v1\\seed_73\\both.pt": "e92bb410bd5710420b6b1931043dabdcad598999eba6d700b177a8339a370ec4",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_73_delete_both\\retained.pt": "47d6c58085b3c86e6bcbb74461adbf7d039dc056099166a3c4294a08e8ef6c57",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\seed_73_delete_both\\forget.pt": "6f7da91a003027039206b85d9fac7fe09e1cd20034fc6db570bc4d6ca0584672",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_requests\\manifest.json": "6858fad05e40c36811f40703b5aedab0763aa98202b3cddfa7dc767bd2f78bc4"
+      }
+    },
+    {
+      "case": "attack74",
+      "seed": 74,
+      "conv_only": {
+        "retained_norm": 0.10120561253204523,
+        "forget_norm": 0.07559780366245691,
+        "ratio": 1.3387374715795555,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.10292042902996522,
+        "forget_norm": 0.07665166456177455,
+        "ratio": 1.3427031182998033,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.056072769934226746,
+          "forget_norm": 0.04396012060855154,
+          "ratio": 1.2755372177782183,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05783305096386408,
+          "forget_norm": 0.04492740132163023,
+          "ratio": 1.2872556449424652,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.023975697512839185,
+          "forget_norm": 0.01744607767202748,
+          "ratio": 1.3742743763706327,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.048019326471192884,
+          "forget_norm": 0.033367612466357055,
+          "ratio": 1.4390998612684214,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.029547739509591574,
+          "forget_norm": 0.018609168098299357,
+          "ratio": 1.5878055028312557,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_confirm74\\seed_74\\both.pt": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74\\seed_74_attack\\retained.pt": "93098b57237f9108cf4a622d75de4d758157958d0bf5547b34365ee82127506c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74\\seed_74_attack\\forget.pt": "dc9fab994d16b902f76fac6d9aadfc8f62069dce8d3515258051b8a7964a64b9",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74\\manifest.json": "e8be76054572b1126611306b27ebc3bfab0cfc7124accafa7a0e5484ecce567a"
+      }
+    },
+    {
+      "case": "safe74",
+      "seed": 74,
+      "conv_only": {
+        "retained_norm": 0.08033400957996532,
+        "forget_norm": 0.11127327580635057,
+        "ratio": 0.7219524094875305,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08159975855297771,
+        "forget_norm": 0.11294559606283291,
+        "ratio": 0.7224695906477208,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.0453426149128145,
+          "forget_norm": 0.060984577850674654,
+          "ratio": 0.7435095316038641,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.04650723021895387,
+          "forget_norm": 0.06478352978158283,
+          "ratio": 0.717886635318462,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.019932172519767716,
+          "forget_norm": 0.025084790558184872,
+          "ratio": 0.7945919450088486,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.03738968890212719,
+          "forget_norm": 0.05268208971946841,
+          "ratio": 0.7097229646968619,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.020961812132250384,
+          "forget_norm": 0.03257404100709362,
+          "ratio": 0.6435127937514891,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_confirm74\\seed_74\\both.pt": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74_safe\\seed_74_equal_size_safe\\retained.pt": "2beead98e17114026dab8d9740570da3130b56a9f76ed0c3fe386094b0e898fb",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74_safe\\seed_74_equal_size_safe\\forget.pt": "181f1146cb6cf6dba373bced1e57dc3cf4eb10d3783a4f978fec0f92722ca0cc",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74_safe\\manifest.json": "6ece4b2b82a79268fbbce0e964f1daa73ee394eb4499c6f79e0d5597242431b5"
+      }
+    },
+    {
+      "case": "prior74",
+      "seed": 74,
+      "conv_only": {
+        "retained_norm": 0.08799516453606877,
+        "forget_norm": 0.08622912125344405,
+        "ratio": 1.0204808219885946,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.08936497898098619,
+        "forget_norm": 0.0873747236945106,
+        "ratio": 1.0227783871847669,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.05003425005177015,
+          "forget_norm": 0.048641598394165875,
+          "ratio": 1.0286308777585589,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.05081759282585026,
+          "forget_norm": 0.051553005920539755,
+          "ratio": 0.9857348163980387,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.022006040635060065,
+          "forget_norm": 0.019823971694897934,
+          "ratio": 1.1100722384870902,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.04060903824781384,
+          "forget_norm": 0.038931122560338136,
+          "ratio": 1.043099596855322,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.02288963195485076,
+          "forget_norm": 0.022430374067109227,
+          "ratio": 1.0204748207215575,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_benign_prior74\\seed_74\\both.pt": "0bc32601f1587ef95928ef349f0e6186700c4c7d8e24367ece6313bcd5ee1a3d",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_benign_prior74\\seed_74_benign_prior\\retained.pt": "6bb3de979f40cab14c2187d7efe3175fa927e62c44360224aa7e9b7ffa6a3400",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_benign_prior74\\seed_74_benign_prior\\forget.pt": "7004262da1b0601337c7211809d8f60a12cee953af6ead9757fb98882f80b7d7",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_benign_prior74\\manifest.json": "b2e0e0805c9e767e2cd63d8a1fdec46fcb8b72c1f0e9633bd83befb946544f39"
+      }
+    },
+    {
+      "case": "noise74",
+      "seed": 74,
+      "conv_only": {
+        "retained_norm": 0.10885696736098731,
+        "forget_norm": 0.0978706360122152,
+        "ratio": 1.1122536012476807,
+        "tensors": 5,
+        "parameters": 8388608
+      },
+      "layer4_all_parameters": {
+        "retained_norm": 0.11074697927188332,
+        "forget_norm": 0.0991158564085502,
+        "ratio": 1.1173487601760739,
+        "tensors": 15,
+        "parameters": 8393728
+      },
+      "per_conv": {
+        "layer4.0.conv1.weight": {
+          "retained_norm": 0.060919357958341885,
+          "forget_norm": 0.0544608505650691,
+          "ratio": 1.1185899104817734,
+          "tensors": 1,
+          "parameters": 1179648
+        },
+        "layer4.0.conv2.weight": {
+          "retained_norm": 0.06138646778840394,
+          "forget_norm": 0.05782804447310008,
+          "ratio": 1.0615345607434319,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.0.downsample.0.weight": {
+          "retained_norm": 0.025504391621887078,
+          "forget_norm": 0.021606307598329638,
+          "ratio": 1.1804141686781686,
+          "tensors": 1,
+          "parameters": 131072
+        },
+        "layer4.1.conv1.weight": {
+          "retained_norm": 0.05236618141441751,
+          "forget_norm": 0.04631468162710531,
+          "ratio": 1.130660507094377,
+          "tensors": 1,
+          "parameters": 2359296
+        },
+        "layer4.1.conv2.weight": {
+          "retained_norm": 0.031267903567515326,
+          "forget_norm": 0.025626395753755967,
+          "ratio": 1.220144411565661,
+          "tensors": 1,
+          "parameters": 2359296
+        }
+      },
+      "outside_layer4_unchanged": true,
+      "bn_running_statistics_unchanged": true,
+      "original_branch_training": {
+        "steps": 100,
+        "lr": 0.01,
+        "scope": "layer4",
+        "anchor_size": 500,
+        "anchor_ce": 0.0,
+        "anchor_kl": 2.0,
+        "clip_grad": 1.0
+      },
+      "source_hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_label_noise74\\seed_74\\both.pt": "422524da1590c76a5d17e44a99c69918f2df98a9c31e2aa5ec27de2e2c95b356",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_label_noise74\\seed_74_label_noise\\retained.pt": "8c590aed25736c396d58deb56b858710d95b4b0a44a827d092b6b97cea3bf977",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_label_noise74\\seed_74_label_noise\\forget.pt": "3a3fd3053f6950e87de79102774157f926eb4c857f7f4a0fb70640a2c1ceb9d6",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_label_noise74\\manifest.json": "e64a5a94380634c2a50cf50f6edfa2209110cfc9965ff0ce6b2df339739e3fe0"
+      }
+    }
+  ],
+  "caveat": "Original shadow training used 100 steps and 500 clean-reference anchors; this audit only reads weights."
+}

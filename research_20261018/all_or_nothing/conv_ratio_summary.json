@@ -1,0 +1,12 @@
+{
+  "source_sha256": "9B2793E6D4031218A395E5CCDA054C9433DD4289E2D7F7FAF3763BD879F8923B",
+  "attack_cases": 4,
+  "control_cases": 12,
+  "attack_min": 1.0867371213505799,
+  "attack_max": 1.3387374715795555,
+  "control_min": 0.543957603439772,
+  "control_max": 1.1122536012476807,
+  "images_loaded": 0,
+  "training_steps": 0,
+  "conclusion": "Ranges overlap: noise74 ratio1.11225 exceeds attack72 ratio1.08674. Larger body-weight separation was not observed."
+}
