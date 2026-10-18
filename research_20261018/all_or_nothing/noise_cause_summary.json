@@ -1,0 +1,103 @@
+{
+  "scope": "Mechanism diagnosis on attack74 and noise74, not independent detection validation",
+  "rows": [
+    {
+      "case": "attack74",
+      "raw_blind_score": 0.003063693642616272,
+      "matched_blind_score": 0.012657839804887772,
+      "matched_true_pattern_gate": {
+        "retained_gain": -0.015278160572052002,
+        "contrast": -0.009674668312072754,
+        "score": 0
+      },
+      "future_known_patch_effect": {
+        "raw_gaussian": {
+          "baseline_mean_p0": 0.2101965844631195,
+          "patched_mean_p0": 0.20612803101539612,
+          "increase": -0.004068553447723389
+        },
+        "matched_gaussian": {
+          "baseline_mean_p0": 0.800217866897583,
+          "patched_mean_p0": 0.9444377422332764,
+          "increase": 0.14421987533569336
+        },
+        "zeros": {
+          "baseline_mean_p0": 0.11797097325325012,
+          "patched_mean_p0": 0.8068384528160095,
+          "increase": 0.6888674795627594
+        }
+      }
+    },
+    {
+      "case": "noise74",
+      "raw_blind_score": 0,
+      "matched_blind_score": 0.0010781362652778625,
+      "matched_true_pattern_gate": {
+        "retained_gain": 0.021059393882751465,
+        "contrast": -0.019237041473388672,
+        "score": 0
+      },
+      "future_known_patch_effect": {
+        "raw_gaussian": {
+          "baseline_mean_p0": 0.36426663398742676,
+          "patched_mean_p0": 0.35434985160827637,
+          "increase": -0.00991678237915039
+        },
+        "matched_gaussian": {
+          "baseline_mean_p0": 0.5897207260131836,
+          "patched_mean_p0": 0.6039997935295105,
+          "increase": 0.014279067516326904
+        },
+        "zeros": {
+          "baseline_mean_p0": 0.2304958552122116,
+          "patched_mean_p0": 0.11441797018051147,
+          "increase": -0.11607788503170013
+        }
+      }
+    }
+  ],
+  "input_statistics": {
+    "raw_gaussian": {
+      "min": -4.756031036376953,
+      "max": 4.71711540222168,
+      "mean": -0.0016993541503325105,
+      "std": 1.0003418922424316,
+      "fraction_outside_0_1": 0.6589940190315247,
+      "normalized_mean": -2.3646178245544434,
+      "normalized_std": 4.980166912078857
+    },
+    "matched_gaussian": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.47338631749153137,
+      "std": 0.19940778613090515,
+      "fraction_outside_0_1": 0.0,
+      "normalized_mean": 0.0001136077698902227,
+      "normalized_std": 0.987743079662323
+    },
+    "zeros": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0,
+      "fraction_outside_0_1": 0.0,
+      "normalized_mean": -2.3562381267547607,
+      "normalized_std": 0.09546729177236557
+    }
+  },
+  "previous_raw_score_reproduced": true,
+  "checkpoint_hashes_match_previous": true,
+  "confirmed": [
+    "Raw noise has 65.9% of pixel values outside [0,1] and normalized std4.98.",
+    "Changing only input scaling changes candidate selection and strengthens attack74 blind score.",
+    "Even using the true pattern, the original paired probability-increase rule yields zero on all synthetic backgrounds for attack74.",
+    "On matched noise, all attack74 pre/retained/forget inputs already predict target0 before the patch.",
+    "Dropping true-label target exclusion alone does not remove the archived real-image signal."
+  ],
+  "not_established": [
+    "Matched noise separates the entire prior sixteen-case set.",
+    "Softmax saturation alone explains the weak paired signal.",
+    "Lack of spatial structure alone explains the remaining failure.",
+    "A modified logit or BN-based detector solves the issue."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "created_kst": "2026-10-18T23:41:48.3514755+09:00",
+  "source_sha256": "33DFC4990A969A29045AA9C7439CE459D6FEE05AD83A660BF893E8F7C3AFB13A",
+  "cases": [
+    "attack74",
+    "noise74"
+  ],
+  "backgrounds": [
+    "Same raw Gaussian as previous experiment",
+    "Same Gaussian with channel mean/std set from existing preprocessing and clamped to [0,1]",
+    "All-zero raw input"
+  ],
+  "fixed_seeds": [
+    112358,
+    102938
+  ],
+  "models": [
+    "pre",
+    "retained",
+    "forget",
+    "future endpoint for known-trigger diagnosis only"
+  ],
+  "known_trigger": "Diagnostic positive control only, never used for blind selection",
+  "activation_diagnostics": [
+    "bn1",
+    "layer4.1.bn2",
+    "FC input norm"
+  ],
+  "real_images_loaded": 0,
+  "archived_real_logits_used": true,
+  "new_training_steps": 0,
+  "input_optimization_steps": 0,
+  "scope": "Mechanism check on two existing cases, not a new detection validation"
+}
