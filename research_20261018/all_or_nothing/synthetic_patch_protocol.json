@@ -1,0 +1,21 @@
+{
+  "created_kst": "2026-10-18T23:33:57.3559315+09:00",
+  "source_sha256": "E0C041604150A0AFFC5CED595165BE71A1C7BE5D0901115A272FBCC2E6A4E8F9",
+  "cases": 16,
+  "inputs": [
+    "raw torch.randn 64 dev and 64 validation",
+    "one all-zero raw image equivalent to 64 duplicates"
+  ],
+  "gaussian_seeds": [
+    112358,
+    102938
+  ],
+  "pattern_bank": "Original 32 fixed patterns, four corners, all ten labels",
+  "primary_score": "Original retained-gain-selected same-candidate paired check; all synthetic inputs averaged because true labels do not exist",
+  "original_threshold_used_for_decision": false,
+  "images_loaded": 0,
+  "new_training_steps": 0,
+  "input_optimization_steps": 0,
+  "unknown_trigger_not_loaded": true,
+  "caveat": "Existing shadows were trained using clean anchors. This tests replacement of server probe images only."
+}

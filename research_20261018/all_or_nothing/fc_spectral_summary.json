@@ -1,0 +1,16 @@
+{
+  "attack_cases": 4,
+  "control_cases": 12,
+  "frobenius_attack_min": 2.342251424204515,
+  "frobenius_control_max": 2.2279953598361852,
+  "spectral_attack_min": 2.4217539234227403,
+  "spectral_attack_max": 4.895856136362593,
+  "spectral_control_min": 0.15011195125743323,
+  "spectral_control_max": 2.256184906265825,
+  "previous_norm_reproduction_max_error": 2.220446049250313E-15,
+  "checkpoint_hashes_identical": true,
+  "no_threshold_fitted": true,
+  "inference": "Exploratory separation on the same 16 previously examined requests; no independent detection-rate claim",
+  "frobenius_gap": 0.11425606436832991,
+  "spectral_gap": 0.16556901715691552
+}

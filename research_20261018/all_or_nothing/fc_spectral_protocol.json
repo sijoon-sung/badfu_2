@@ -1,0 +1,13 @@
+{
+  "created_kst": "2026-10-18T23:31:50.8581762+09:00",
+  "branch": "codex/all-or-nothing",
+  "cases": 16,
+  "primary_score": "sigma_max(dR) / sigma_max(dF), exact same 10x513 FC weight+bias matrices as the previous Frobenius score",
+  "additional_clean_references": 0,
+  "private_records_used_to_reproduce_gradients": true,
+  "fixed_learning_rate": 0.01,
+  "no_threshold_fitted": true,
+  "no_parameter_or_input_optimization": true,
+  "source_sha256": "FC75CEA1073A4B5AC231E409960FE997752F2CF38E8BA4C8531E468DFBBEA155",
+  "dependency_sha256": "C7F684D362EFA5D560F5F8A205792FDFB4798ECCF553F7285D96858D6A418A25"
+}
