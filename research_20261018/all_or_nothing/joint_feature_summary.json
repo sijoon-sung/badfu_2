@@ -1,0 +1,52 @@
+{
+  "review_date_kst": "2026-10-19",
+  "cases": 16,
+  "attack_cases": 4,
+  "control_cases": 12,
+  "source_hashes": {
+    "fc_spectral_result.json": "9061facdd2bcad757cbe817f2a87fe9c3c3510906faf83e9a54a0e007fd7aadf",
+    "conv_ratio_result.json": "26bf5ae9dada5fcc6da1c1d742141573eb1d7aa1a0e408879e1e63567b899f06"
+  },
+  "matched_original_checkpoint_hashes": true,
+  "features": {
+    "fc_frobenius_ratio": {
+      "attack_min": 2.342251424204515,
+      "attack_max": 4.709548813204767,
+      "control_min": 0.15382783233836644,
+      "control_max": 2.2279953598361852,
+      "ranges_overlap": false,
+      "observed_range_gap": 0.11425606436832991
+    },
+    "fc_spectral_ratio": {
+      "attack_min": 2.4217539234227403,
+      "attack_max": 4.895856136362593,
+      "control_min": 0.15011195125743323,
+      "control_max": 2.256184906265825,
+      "ranges_overlap": false,
+      "observed_range_gap": 0.16556901715691552
+    },
+    "conv_frobenius_ratio": {
+      "attack_min": 1.0867371213505799,
+      "attack_max": 1.3387374715795555,
+      "control_min": 0.543957603439772,
+      "control_max": 1.1122536012476807,
+      "ranges_overlap": true,
+      "observed_range_gap": -0.02551647989710082
+    }
+  },
+  "observation": "Both FC features already separate the four attacks from twelve controls on these examined cases; adding Conv has no demonstrated additional error reduction.",
+  "two_dimensional_separability": "Yes for the observed points, since a vertical separator already exists in either FC plot. No two-dimensional classifier was fitted.",
+  "classifier_fitted": false,
+  "threshold_selected": false,
+  "new_training_steps": 0,
+  "additional_value_established": false,
+  "independent_validation": false,
+  "protocol_caveat": "FC is a separate one-step classifier probe without extra clean references. Conv is a 100-step layer4 probe with 500 clean-reference anchors and gradient clipping.",
+  "raw_private_records": "Needed client-side to generate diagnostic updates; not read by this plot script.",
+  "bounds_on_claims": [
+    "Adding features does not guarantee separation on new requests.",
+    "The different intervention budgets prevent attributing coordinates solely to layer location.",
+    "Existing Conv branches have frozen FC; the nonzero FC coordinates come from a separate intervention.",
+    "This vector does not establish malicious intent or justify request rejection."
+  ]
+}
