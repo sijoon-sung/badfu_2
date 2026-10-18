@@ -1,0 +1,199 @@
+{
+  "review_date_kst": "2026-10-19",
+  "cases": 16,
+  "fc": {
+    "norm_ratio": {
+      "attack_min": 2.3422845343781686,
+      "attack_max": 4.709372599717129,
+      "control_min": 0.1538242693113126,
+      "control_max": 2.228132912544345,
+      "observed_gap": 0.11415162183382366,
+      "ranges_overlap": false
+    },
+    "residual_frobenius_over_forget": {
+      "attack_min": 1.4784696714510348,
+      "attack_max": 2.188969646358554,
+      "control_min": 0.07596935073887434,
+      "control_max": 0.7882274676392406,
+      "observed_gap": 0.6902422038117942,
+      "ranges_overlap": false
+    },
+    "residual_spectral_over_forget": {
+      "attack_min": 1.183624709277851,
+      "attack_max": 2.0592544406931457,
+      "control_min": 0.06330026690875568,
+      "control_max": 0.5572236943428572,
+      "observed_gap": 0.6264010149349937,
+      "ranges_overlap": false
+    },
+    "residual_spectral_concentration": {
+      "attack_min": 0.7569742312253459,
+      "attack_max": 0.9407414324446228,
+      "control_min": 0.6940404429541238,
+      "control_max": 0.916082092516644,
+      "observed_gap": -0.15910786129129806,
+      "ranges_overlap": true
+    }
+  },
+  "conv_layers": {
+    "layer4.0.conv1.weight": {
+      "residual_spectral_over_forget": {
+        "attack_min": 1.4281656147975919,
+        "attack_max": 2.0635905853761973,
+        "control_min": 0.1021263563370727,
+        "control_max": 0.8178262333028067,
+        "observed_gap": 0.6103393814947852,
+        "ranges_overlap": false
+      },
+      "residual_frobenius_over_forget": {
+        "attack_min": 1.5722301940420182,
+        "attack_max": 2.348320526140235,
+        "control_min": 0.11780613476221889,
+        "control_max": 1.0146745864080091,
+        "observed_gap": 0.5575556076340091,
+        "ranges_overlap": false
+      },
+      "residual_spectral_concentration": {
+        "attack_min": 0.8787516705685711,
+        "attack_max": 0.9217422831755426,
+        "control_min": 0.7722477511834157,
+        "control_max": 0.8952984844513604,
+        "observed_gap": -0.016546813882789335,
+        "ranges_overlap": true
+      }
+    },
+    "layer4.0.conv2.weight": {
+      "residual_spectral_over_forget": {
+        "attack_min": 1.1523174942493812,
+        "attack_max": 1.8567820390629581,
+        "control_min": 0.10002267285132355,
+        "control_max": 0.7436665266776372,
+        "observed_gap": 0.408650967571744,
+        "ranges_overlap": false
+      },
+      "residual_frobenius_over_forget": {
+        "attack_min": 1.3563882786015153,
+        "attack_max": 2.1407806686476345,
+        "control_min": 0.12281495713556842,
+        "control_max": 1.0010939669954835,
+        "observed_gap": 0.35529431160603187,
+        "ranges_overlap": false
+      },
+      "residual_spectral_concentration": {
+        "attack_min": 0.8463327838621411,
+        "attack_max": 0.8981062622245064,
+        "control_min": 0.653338953361797,
+        "control_max": 0.8535258081283199,
+        "observed_gap": -0.007193024266178849,
+        "ranges_overlap": true
+      }
+    },
+    "layer4.0.downsample.0.weight": {
+      "residual_spectral_over_forget": {
+        "attack_min": 1.3624852190476366,
+        "attack_max": 2.190859977068458,
+        "control_min": 0.10211220879393561,
+        "control_max": 0.8457177421682015,
+        "observed_gap": 0.5167674768794351,
+        "ranges_overlap": false
+      },
+      "residual_frobenius_over_forget": {
+        "attack_min": 1.4352304525640438,
+        "attack_max": 2.293942862506441,
+        "control_min": 0.11020599317158795,
+        "control_max": 0.9398050927001941,
+        "observed_gap": 0.4954253598638497,
+        "ranges_overlap": false
+      },
+      "residual_spectral_concentration": {
+        "attack_min": 0.9390162046110365,
+        "attack_max": 0.9632360605757665,
+        "control_min": 0.8258607586262539,
+        "control_max": 0.94657625186259,
+        "observed_gap": -0.007560047251553459,
+        "ranges_overlap": true
+      }
+    },
+    "layer4.1.conv1.weight": {
+      "residual_spectral_over_forget": {
+        "attack_min": 1.445619785011609,
+        "attack_max": 1.9893900630910457,
+        "control_min": 0.08492174146467334,
+        "control_max": 0.7719024033481702,
+        "observed_gap": 0.6737173816634389,
+        "ranges_overlap": false
+      },
+      "residual_frobenius_over_forget": {
+        "attack_min": 1.6031390984213472,
+        "attack_max": 2.310359594673596,
+        "control_min": 0.10534069431154695,
+        "control_max": 1.0629008438358316,
+        "observed_gap": 0.5402382545855156,
+        "ranges_overlap": false
+      },
+      "residual_spectral_concentration": {
+        "attack_min": 0.8155080077350424,
+        "attack_max": 0.9217224001539072,
+        "control_min": 0.6368098382381799,
+        "control_max": 0.8595849519022676,
+        "observed_gap": -0.044076944167225185,
+        "ranges_overlap": true
+      }
+    },
+    "layer4.1.conv2.weight": {
+      "residual_spectral_over_forget": {
+        "attack_min": 1.446725727833782,
+        "attack_max": 2.198827770053832,
+        "control_min": 0.06857084008751971,
+        "control_max": 0.7044162847646844,
+        "observed_gap": 0.7423094430690975,
+        "ranges_overlap": false
+      },
+      "residual_frobenius_over_forget": {
+        "attack_min": 1.559314753616959,
+        "attack_max": 2.3307042306029744,
+        "control_min": 0.08588356000582265,
+        "control_max": 0.9741355786031274,
+        "observed_gap": 0.5851791750138315,
+        "ranges_overlap": false
+      },
+      "residual_spectral_concentration": {
+        "attack_min": 0.8107109100472077,
+        "attack_max": 0.9434177624009269,
+        "control_min": 0.6856476078195503,
+        "control_max": 0.8845942176223547,
+        "observed_gap": -0.07388330757514694,
+        "ranges_overlap": true
+      }
+    }
+  },
+  "independent_validation": false,
+  "all_five_conv_spectral_ranges_separate": true,
+  "fc_scores_reproduced_max_absolute_error": 8.881784197001252e-16,
+  "algebraic_counterexample": {
+    "type": "Algebraic benign CE-gradient counterexample, not an empirical CIFAR control",
+    "both_labels": 0,
+    "both_predictions": 0,
+    "target0_probability": 0.8807970779778824,
+    "retained_augmented_features": [
+      0.0,
+      10.0,
+      1.0
+    ],
+    "forget_augmented_features": [
+      1.0,
+      0.0,
+      1.0
+    ],
+    "residual_rank": 1,
+    "proposed_score": 7.088723439378913
+  },
+  "score_identity": "S = (||A||F/||B||F) * sqrt(1-cos(A,B)^2) * (sigma_max(R)/||R||F)",
+  "limitations": [
+    "Projection removes span(B), not every benign or Non-IID effect.",
+    "Weight residual spectra are not equal to input-patch Jacobian effects.",
+    "FC residual Frobenius norms already separate the reused cases; added SVD detection value is unestablished.",
+    "Different score scales make raw gap size insufficient evidence of improved detection.",
+    "No threshold or winning Conv layer was fitted."
+  ]
+}

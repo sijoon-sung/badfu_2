@@ -1,0 +1,20 @@
+{
+  "created_date_kst": "2026-10-19",
+  "source_sha256": "4BF335535C26DD38E3D12C77C8B0F2A463E2FE95BC416E1973F8B077F4B4665E",
+  "cases": 16,
+  "score": "sigma_max(A-<A,B>/||B||F^2*B)/||B||F",
+  "matrix_definition": "One 10x513 FC weight+bias matrix; each of five Conv matrices is Cout by flattened Cin*Kh*Kw",
+  "projection": "Frobenius inner product onto span of the single forget update matrix",
+  "baselines": [
+    "Original retained/forget norm ratio",
+    "Orthogonal residual Frobenius norm divided by forget norm",
+    "Residual spectral concentration alone"
+  ],
+  "no_layer_selected_after_result": true,
+  "classifier_or_threshold_fit": false,
+  "conv_reason_for_recomputation": "Previous archive retained Conv channel summaries, not full matrices",
+  "private_records_used_for_conv_gradients": true,
+  "additional_clean_references": 0,
+  "optimizer_steps": 0,
+  "interpretation": "Parameter-update anisotropy candidate, not an identity for input-patch sensitivity or guaranteed Non-IID removal"
+}

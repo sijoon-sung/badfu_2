@@ -1,0 +1,168 @@
+{
+  "matrix": "FC weight+bias, 10x513",
+  "score": "sigma_max(A-<A,B>/||B||F^2*B)/||B||F",
+  "new_training_steps": 0,
+  "private_images_loaded": 0,
+  "rows": [
+    {
+      "case": "attack71",
+      "alpha": 3.447796111197767,
+      "norm_ratio": 3.7857924914121854,
+      "cosine": 0.9107197816623229,
+      "residual_frobenius_over_forget": 1.5636261585310085,
+      "residual_spectral_over_forget": 1.183624709277851,
+      "residual_spectral_concentration": 0.7569742312253459,
+      "orthogonality_relative_error": 1.7997590074523736e-16
+    },
+    {
+      "case": "normal71",
+      "alpha": 2.084052239081923,
+      "norm_ratio": 2.228132912544345,
+      "cosine": 0.9353356917573227,
+      "residual_frobenius_over_forget": 0.7882274676392406,
+      "residual_spectral_over_forget": 0.5572236943428572,
+      "residual_spectral_concentration": 0.7069326015899383,
+      "orthogonality_relative_error": 4.792484215669179e-16
+    },
+    {
+      "case": "delete_poison71",
+      "alpha": 0.13375561138686148,
+      "norm_ratio": 0.1538242693113126,
+      "cosine": 0.8695351649365824,
+      "residual_frobenius_over_forget": 0.07596935073887434,
+      "residual_spectral_over_forget": 0.06330026690875568,
+      "residual_spectral_concentration": 0.8332342753110333,
+      "orthogonality_relative_error": 4.079252157946147e-16
+    },
+    {
+      "case": "delete_both71",
+      "alpha": 0.7236904439354496,
+      "norm_ratio": 0.7957049839662964,
+      "cosine": 0.9094959294186135,
+      "residual_frobenius_over_forget": 0.33078476818819214,
+      "residual_spectral_over_forget": 0.2826852163132436,
+      "residual_spectral_concentration": 0.8545895805952485,
+      "orthogonality_relative_error": 3.7084130545161946e-16
+    },
+    {
+      "case": "attack72",
+      "alpha": 1.8167069853409556,
+      "norm_ratio": 2.3422845343781686,
+      "cosine": 0.7756132778391316,
+      "residual_frobenius_over_forget": 1.4784696714510348,
+      "residual_spectral_over_forget": 1.3804704599683035,
+      "residual_spectral_concentration": 0.9337157782976024,
+      "orthogonality_relative_error": 1.528163960950635e-16
+    },
+    {
+      "case": "normal72",
+      "alpha": 1.218485594190709,
+      "norm_ratio": 1.3029792617254985,
+      "cosine": 0.935153482471473,
+      "residual_frobenius_over_forget": 0.46157102729313565,
+      "residual_spectral_over_forget": 0.32034896023731785,
+      "residual_spectral_concentration": 0.6940404429541238,
+      "orthogonality_relative_error": 2.5689881010783947e-16
+    },
+    {
+      "case": "delete_poison72",
+      "alpha": 0.13141711405239687,
+      "norm_ratio": 0.17328501010006578,
+      "cosine": 0.758387087126049,
+      "residual_frobenius_over_forget": 0.11294793871301599,
+      "residual_spectral_over_forget": 0.10346958404166133,
+      "residual_spectral_concentration": 0.916082092516644,
+      "orthogonality_relative_error": 1.1413798518589318e-16
+    },
+    {
+      "case": "delete_both72",
+      "alpha": 0.7076760997055266,
+      "norm_ratio": 0.7731319488224511,
+      "cosine": 0.9153367685598562,
+      "residual_frobenius_over_forget": 0.3113318939581598,
+      "residual_spectral_over_forget": 0.23241329511536107,
+      "residual_spectral_concentration": 0.7465129645425769,
+      "orthogonality_relative_error": 4.51261793883957e-16
+    },
+    {
+      "case": "attack73",
+      "alpha": 2.399744584763605,
+      "norm_ratio": 3.2481321070395732,
+      "cosine": 0.7388075686831564,
+      "residual_frobenius_over_forget": 2.188969646358554,
+      "residual_spectral_over_forget": 2.0592544406931457,
+      "residual_spectral_concentration": 0.9407414324446228,
+      "orthogonality_relative_error": 2.3567045923989043e-17
+    },
+    {
+      "case": "normal73",
+      "alpha": 1.1451908129894424,
+      "norm_ratio": 1.241557188766391,
+      "cosine": 0.9223826524876408,
+      "residual_frobenius_over_forget": 0.4795855031400382,
+      "residual_spectral_over_forget": 0.365095623793181,
+      "residual_spectral_concentration": 0.7612732691099998,
+      "orthogonality_relative_error": 2.310822328186563e-16
+    },
+    {
+      "case": "delete_poison73",
+      "alpha": 0.1308975733364144,
+      "norm_ratio": 0.15778068084240532,
+      "cosine": 0.8296172423489393,
+      "residual_frobenius_over_forget": 0.088094089141843,
+      "residual_spectral_over_forget": 0.07430944380930538,
+      "residual_spectral_concentration": 0.8435236067843037,
+      "orthogonality_relative_error": 2.971341456867818e-17
+    },
+    {
+      "case": "delete_both73",
+      "alpha": 0.7682772987063403,
+      "norm_ratio": 0.8228247197952413,
+      "cosine": 0.9337071191754241,
+      "residual_frobenius_over_forget": 0.2946022942860526,
+      "residual_spectral_over_forget": 0.2241093783138208,
+      "residual_spectral_concentration": 0.7607183740945864,
+      "orthogonality_relative_error": 4.3072099068492197e-16
+    },
+    {
+      "case": "attack74",
+      "alpha": 4.306943780484449,
+      "norm_ratio": 4.709372599717129,
+      "cosine": 0.9145472542867276,
+      "residual_frobenius_over_forget": 1.9048426587812455,
+      "residual_spectral_over_forget": 1.4875371544461449,
+      "residual_spectral_concentration": 0.7809238981438495,
+      "orthogonality_relative_error": 5.128988460618856e-16
+    },
+    {
+      "case": "safe74",
+      "alpha": 0.4405119142308598,
+      "norm_ratio": 0.48162283815339646,
+      "cosine": 0.9146408337275673,
+      "residual_frobenius_over_forget": 0.19470442124306367,
+      "residual_spectral_over_forget": 0.15469631679917153,
+      "residual_spectral_concentration": 0.7945187675325198,
+      "orthogonality_relative_error": 1.1965966691238098e-16
+    },
+    {
+      "case": "prior74",
+      "alpha": 1.8253824347323415,
+      "norm_ratio": 1.8939143250390333,
+      "cosine": 0.9638146829554819,
+      "residual_frobenius_over_forget": 0.5048667522809225,
+      "residual_spectral_over_forget": 0.3718732551041166,
+      "residual_spectral_concentration": 0.7365770342848711,
+      "orthogonality_relative_error": 1.3378058664990635e-16
+    },
+    {
+      "case": "noise74",
+      "alpha": 1.6609428490848102,
+      "norm_ratio": 1.7590968437223742,
+      "cosine": 0.9442020517586381,
+      "residual_frobenius_over_forget": 0.5793880889939415,
+      "residual_spectral_over_forget": 0.5098069776946956,
+      "residual_spectral_concentration": 0.8799058651342531,
+      "orthogonality_relative_error": 5.408799984022046e-16
+    }
+  ]
+}
