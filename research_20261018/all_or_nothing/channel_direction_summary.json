@@ -1,0 +1,206 @@
+{
+  "review_date_kst": "2026-10-19",
+  "groups": {
+    "attack": {
+      "cases": 4,
+      "conv_cosine": {
+        "min": 0.29564317632071485,
+        "max": 0.3490210738477498
+      },
+      "channel_difference_energy_gini": {
+        "min": 0.5050191296049911,
+        "max": 0.5226165093582738
+      },
+      "top10_channel_energy_share": {
+        "min": 0.34101956133164274,
+        "max": 0.36967469326127056
+      },
+      "layer_cosine": {
+        "min": 0.2521965923170259,
+        "max": 0.4375752979292776
+      },
+      "negative_layer_cosine_count": 0
+    },
+    "control": {
+      "cases": 12,
+      "conv_cosine": {
+        "min": 0.21029539682822926,
+        "max": 0.3674851446925402
+      },
+      "channel_difference_energy_gini": {
+        "min": 0.5070330694063414,
+        "max": 0.5646259030045133
+      },
+      "top10_channel_energy_share": {
+        "min": 0.34658340799998666,
+        "max": 0.42375237005142996
+      },
+      "layer_cosine": {
+        "min": 0.16740910967073167,
+        "max": 0.4833052285096664
+      },
+      "negative_layer_cosine_count": 0
+    }
+  },
+  "layer_ranges": {
+    "layer4.0.conv1.weight": {
+      "attack": {
+        "cosine": {
+          "min": 0.2521965923170259,
+          "max": 0.3079354393885323
+        },
+        "gini": {
+          "min": 0.2757608666095146,
+          "max": 0.3418571945991207
+        },
+        "subspace_affinity": {
+          "min": 0.23719462857226933,
+          "max": 0.3948709438060519
+        }
+      },
+      "control": {
+        "cosine": {
+          "min": 0.16740910967073167,
+          "max": 0.33486773707008866
+        },
+        "gini": {
+          "min": 0.3083185798104975,
+          "max": 0.3873793873315199
+        },
+        "subspace_affinity": {
+          "min": 0.17761173442013412,
+          "max": 0.3985508946040203
+        }
+      }
+    },
+    "layer4.0.conv2.weight": {
+      "attack": {
+        "cosine": {
+          "min": 0.28652327944169775,
+          "max": 0.34570414734427923
+        },
+        "gini": {
+          "min": 0.31532094094509744,
+          "max": 0.3707693977713402
+        },
+        "subspace_affinity": {
+          "min": 0.3785685405385404,
+          "max": 0.5824472142125269
+        }
+      },
+      "control": {
+        "cosine": {
+          "min": 0.2206746891590702,
+          "max": 0.3370894971853081
+        },
+        "gini": {
+          "min": 0.31445492989847157,
+          "max": 0.42826032299348715
+        },
+        "subspace_affinity": {
+          "min": 0.5040794032345421,
+          "max": 0.6172379012721395
+        }
+      }
+    },
+    "layer4.0.downsample.0.weight": {
+      "attack": {
+        "cosine": {
+          "min": 0.34484497226375666,
+          "max": 0.42346851067170865
+        },
+        "gini": {
+          "min": 0.36664679908037767,
+          "max": 0.38559659946269864
+        },
+        "subspace_affinity": {
+          "min": 0.4322789258367645,
+          "max": 0.48990689933664994
+        }
+      },
+      "control": {
+        "cosine": {
+          "min": 0.2485977043349129,
+          "max": 0.42143254598575863
+        },
+        "gini": {
+          "min": 0.35848772334137635,
+          "max": 0.4817335427026226
+        },
+        "subspace_affinity": {
+          "min": 0.406709661967739,
+          "max": 0.5468353418017292
+        }
+      }
+    },
+    "layer4.1.conv1.weight": {
+      "attack": {
+        "cosine": {
+          "min": 0.3370363388577119,
+          "max": 0.39940494287290085
+        },
+        "gini": {
+          "min": 0.45370228649442335,
+          "max": 0.49497565554619305
+        },
+        "subspace_affinity": {
+          "min": 0.5425469897437782,
+          "max": 0.7069104680282534
+        }
+      },
+      "control": {
+        "cosine": {
+          "min": 0.21946093888550844,
+          "max": 0.41481715915712264
+        },
+        "gini": {
+          "min": 0.45289800379677314,
+          "max": 0.6057731872336602
+        },
+        "subspace_affinity": {
+          "min": 0.5576230434473032,
+          "max": 0.7630727625502971
+        }
+      }
+    },
+    "layer4.1.conv2.weight": {
+      "attack": {
+        "cosine": {
+          "min": 0.3619924563023136,
+          "max": 0.4375752979292776
+        },
+        "gini": {
+          "min": 0.3467742684415378,
+          "max": 0.4178557017388467
+        },
+        "subspace_affinity": {
+          "min": 0.6419485867150826,
+          "max": 0.7576068529352866
+        }
+      },
+      "control": {
+        "cosine": {
+          "min": 0.2709651359171058,
+          "max": 0.4833052285096664
+        },
+        "gini": {
+          "min": 0.33223557470143117,
+          "max": 0.5219387503223776
+        },
+        "subspace_affinity": {
+          "min": 0.6260596094981329,
+          "max": 0.8383937749302058
+        }
+      }
+    }
+  },
+  "old_norm_ratios_and_checkpoint_hashes_match": true,
+  "channel_energy_identity_checked": true,
+  "channel_arrays_preserved": 480,
+  "current_same_run_history_available": false,
+  "same_run_round_like_weight_files": 0,
+  "conclusion": "Channel concentration, signed cosines and subspace profiles are computable. Sparse-only attacks and strong negative layer alignment are not supported in these shadows. Added detection value of the entire vector is untested.",
+  "classifier_fitted": false,
+  "threshold_tuned": false,
+  "caveat": "layer4 shadows only, 100 steps with 500 clean anchors; other blocks frozen; same sixteen reused cases"
+}

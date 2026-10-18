@@ -1,0 +1,20 @@
+{
+  "created_date_kst": "2026-10-19",
+  "source_sha256": "2A8F1573B997CE54832AFE2921E915A75E3ECF584BEF35DE5366D63860A6833F",
+  "cases": 16,
+  "active_scope": "Five layer4 convolution matrices; other blocks verified frozen",
+  "primary_checks": [
+    "Signed cosine per Conv and whole Conv scope",
+    "Channel concentration of squared norm of dR-dF",
+    "Three principal angles of top3 left singular spaces"
+  ],
+  "fixed_k": 3,
+  "fixed_top_channel_fraction": 0.1,
+  "matrix_definition": "Cout by flattened Cin*Kh*Kw",
+  "exact_float64_gram_eigendecomposition": true,
+  "fit_threshold_or_classifier": false,
+  "images_loaded": 0,
+  "new_training_steps": 0,
+  "historical_check": "List weight checkpoints and progress fields only for the exact runs underlying these sixteen cases",
+  "caveat": "Exploratory on reused cases. These shadows used 100 steps and 500 clean anchors."
+}
