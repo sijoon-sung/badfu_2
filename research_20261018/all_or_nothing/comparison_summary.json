@@ -1,0 +1,110 @@
+{
+  "branch": "codex/all-or-nothing",
+  "source_sha256": "C7F684D362EFA5D560F5F8A205792FDFB4798ECCF553F7285D96858D6A418A25",
+  "tested_requests": 16,
+  "attack_requests": 4,
+  "control_requests": 12,
+  "attack_ratio_min": 2.3422514242045147,
+  "attack_ratio_max": 4.709548813204769,
+  "control_ratio_min": 0.1538278323383665,
+  "control_ratio_max": 2.2279953598361866,
+  "rows": [
+    {
+      "case": "attack74",
+      "R_to_F_ratio": 4.709548813204769,
+      "max_class": 0,
+      "max_row_share": 0.41782688297582843
+    },
+    {
+      "case": "safe74",
+      "R_to_F_ratio": 0.48162800783901316,
+      "max_class": 0,
+      "max_row_share": 0.44016574650499996
+    },
+    {
+      "case": "prior74",
+      "R_to_F_ratio": 1.8939044542374113,
+      "max_class": 0,
+      "max_row_share": 0.3907791069578458
+    },
+    {
+      "case": "noise74",
+      "R_to_F_ratio": 1.75905474563696,
+      "max_class": 0,
+      "max_row_share": 0.44793758884495466
+    },
+    {
+      "case": "attack71",
+      "R_to_F_ratio": 3.7857590330571336,
+      "max_class": 0,
+      "max_row_share": 0.4074211124101102
+    },
+    {
+      "case": "normal71",
+      "R_to_F_ratio": 2.2279953598361866,
+      "max_class": 0,
+      "max_row_share": 0.3471473493534906
+    },
+    {
+      "case": "delete_poison71",
+      "R_to_F_ratio": 0.1538278323383665,
+      "max_class": 0,
+      "max_row_share": 0.4808876549428412
+    },
+    {
+      "case": "delete_both71",
+      "R_to_F_ratio": 0.7957046071976417,
+      "max_class": 0,
+      "max_row_share": 0.4188229572785128
+    },
+    {
+      "case": "attack72",
+      "R_to_F_ratio": 2.3422514242045147,
+      "max_class": 0,
+      "max_row_share": 0.3321740540764993
+    },
+    {
+      "case": "normal72",
+      "R_to_F_ratio": 1.3029899060677703,
+      "max_class": 0,
+      "max_row_share": 0.26283896291936554
+    },
+    {
+      "case": "delete_poison72",
+      "R_to_F_ratio": 0.17327417596127054,
+      "max_class": 0,
+      "max_row_share": 0.4624508586134933
+    },
+    {
+      "case": "delete_both72",
+      "R_to_F_ratio": 0.7731348098644728,
+      "max_class": 0,
+      "max_row_share": 0.35970829860190395
+    },
+    {
+      "case": "attack73",
+      "R_to_F_ratio": 3.248242368985533,
+      "max_class": 0,
+      "max_row_share": 0.3644210901492009
+    },
+    {
+      "case": "normal73",
+      "R_to_F_ratio": 1.2415593124179172,
+      "max_class": 0,
+      "max_row_share": 0.31776169368822077
+    },
+    {
+      "case": "delete_poison73",
+      "R_to_F_ratio": 0.15778925863046125,
+      "max_class": 0,
+      "max_row_share": 0.4723521266842432
+    },
+    {
+      "case": "delete_both73",
+      "R_to_F_ratio": 0.8228284443162278,
+      "max_class": 0,
+      "max_row_share": 0.39143824423751056
+    }
+  ],
+  "conclusion": "Summed-update concentration and order-difference magnitude are not attack-specific in these controls. The R/F update norm ratio is a small exploratory candidate; no threshold or population error rate is claimed."
+}

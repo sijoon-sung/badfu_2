@@ -1,0 +1,9 @@
+{
+  "created_kst": "2026-10-18T22:32:19.5526091+09:00",
+  "source_sha256": "C7F684D362EFA5D560F5F8A205792FDFB4798ECCF553F7285D96858D6A418A25",
+  "candidate": "Retained full-batch one-step FC update norm divided by forget update norm, using weight and bias",
+  "motivation": "The four previously inspected seed74 cases showed ratios 4.7095,0.4816,1.8939,1.7591; this is exploratory selection",
+  "evaluation_cases": "Existing seeds71,72,73: attack, ordinary cover deletion, poison deletion, both-role deletion; 12 requests",
+  "training_budget": "One analytical full-batch FC SGD step; fixed backbone, no public clean reference, no whole-network learning",
+  "decision": "Report all ratios with no fitted threshold, no new seed or prospective confirmation claim"
+}

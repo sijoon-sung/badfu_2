@@ -1,0 +1,22 @@
+{
+  "created_kst": "2026-10-18T22:28:31.7487494+09:00",
+  "branch": "codex/all-or-nothing",
+  "question": "Do classwise head updates distinguish the existing dangerous request from equal-size safe and matched benign/noise controls?",
+  "cases": [
+    "attack74",
+    "safe74",
+    "prior74",
+    "noise74"
+  ],
+  "source_sha256": "633E63547C31B2AE3390A0B51B9752392F6CEC5BD46015C214D86654F8A50A69",
+  "probe": "One full-batch mean cross-entropy SGD step, lr=0.01, classifier weight and bias only, fixed backbone and BN",
+  "additional_clean_reference_images": 0,
+  "private_data": "Existing request-client records R and F; no public, development, validation, or test images loaded",
+  "scoring": "Centered class-row norms of dR+dF; maximum-row share; dR/dF cosine. No threshold tuned or attack label supplied to the score.",
+  "mathematical_note": "dR+dF=-lr*(gR+gF); this is a sum of first-order updates, not a central second derivative.",
+  "limitations": [
+    "Existing known seed74 cases; exploratory comparison, not new independent confirmation",
+    "Original private image records are reconstructed from their saved source specification; the attack trigger is not a detector probe input",
+    "No decision to reject requests or enlarge deletion scope is implemented"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "created_kst": "2026-10-18T22:30:25.0567299+09:00",
+  "branch": "codex/all-or-nothing",
+  "source_sha256": "CC56ADC406DD45B22D65B10ADC00FFDF517DE60B87EE6B91D6C262D0F23C1174",
+  "followup_to": "protocol.json; the summed-update concentration failed in four existing cases",
+  "comparison": "Two full-batch SGD operations on the same frozen features: R then F versus F then R; lr=0.01 for both",
+  "data": "Same four existing private request datasets; no public clean reference or test images",
+  "note": "Exploratory second comparison, fixed before observing this order-difference result. No claim of normal cancellation or attack-specificity."
+}

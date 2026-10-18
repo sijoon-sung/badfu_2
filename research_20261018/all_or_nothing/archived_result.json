@@ -1,0 +1,189 @@
+{
+  "utc": "2026-10-18T13:26:30.260726+00:00",
+  "mode": "archived",
+  "score_uses_images": false,
+  "new_training_clean_reference_images": null,
+  "private_training_records_used": false,
+  "rows": [
+    {
+      "case": "attack74",
+      "head": {
+        "row_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.0,
+        "forget_norm": 0.0,
+        "cosine": null,
+        "branch_sum_norm": 0.0,
+        "normalized_sum": null
+      },
+      "bn_max_absolute_change": 0.0,
+      "full_parameter": {
+        "row_norms": [
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.10292042902992436,
+        "forget_norm": 0.07665166456170486,
+        "cosine": 0.3520662664883786,
+        "branch_sum_norm": 0.14840151474280186,
+        "normalized_sum": 0.8264174670719527
+      },
+      "training_scope": "layer4",
+      "anchor_size": 500,
+      "anchor_kl": 2.0,
+      "hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_confirm74\\seed_74\\both.pt": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74\\seed_74_attack\\retained.pt": "93098b57237f9108cf4a622d75de4d758157958d0bf5547b34365ee82127506c",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74\\seed_74_attack\\forget.pt": "dc9fab994d16b902f76fac6d9aadfc8f62069dce8d3515258051b8a7964a64b9"
+      }
+    },
+    {
+      "case": "safe74",
+      "head": {
+        "row_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.0,
+        "forget_norm": 0.0,
+        "cosine": null,
+        "branch_sum_norm": 0.0,
+        "normalized_sum": null
+      },
+      "bn_max_absolute_change": 0.0,
+      "full_parameter": {
+        "row_norms": [
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.08159975855265197,
+        "forget_norm": 0.11294559606214276,
+        "cosine": 0.3553365941750077,
+        "branch_sum_norm": 0.16113667889524422,
+        "normalized_sum": 0.8282730739795837
+      },
+      "training_scope": "layer4",
+      "anchor_size": 500,
+      "anchor_kl": 2.0,
+      "hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_confirm74\\seed_74\\both.pt": "ccd6363a8d10e59785a421f3196d9b34276e3e99baa3e5ccc12ab8903787111a",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74_safe\\seed_74_equal_size_safe\\retained.pt": "2beead98e17114026dab8d9740570da3130b56a9f76ed0c3fe386094b0e898fb",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_confirm74_safe\\seed_74_equal_size_safe\\forget.pt": "181f1146cb6cf6dba373bced1e57dc3cf4eb10d3783a4f978fec0f92722ca0cc"
+      }
+    },
+    {
+      "case": "prior74",
+      "head": {
+        "row_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.0,
+        "forget_norm": 0.0,
+        "cosine": null,
+        "branch_sum_norm": 0.0,
+        "normalized_sum": null
+      },
+      "bn_max_absolute_change": 0.0,
+      "full_parameter": {
+        "row_norms": [
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.08936497898028008,
+        "forget_norm": 0.08737472369511694,
+        "cosine": 0.3510637166290687,
+        "branch_sum_norm": 0.14526810235415671,
+        "normalized_sum": 0.8219324812430994
+      },
+      "training_scope": "layer4",
+      "anchor_size": 500,
+      "anchor_kl": 2.0,
+      "hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_benign_prior74\\seed_74\\both.pt": "0bc32601f1587ef95928ef349f0e6186700c4c7d8e24367ece6313bcd5ee1a3d",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_benign_prior74\\seed_74_benign_prior\\retained.pt": "6bb3de979f40cab14c2187d7efe3175fa927e62c44360224aa7e9b7ffa6a3400",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_benign_prior74\\seed_74_benign_prior\\forget.pt": "7004262da1b0601337c7211809d8f60a12cee953af6ead9757fb98882f80b7d7"
+      }
+    },
+    {
+      "case": "noise74",
+      "head": {
+        "row_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.0,
+        "forget_norm": 0.0,
+        "cosine": null,
+        "branch_sum_norm": 0.0,
+        "normalized_sum": null
+      },
+      "bn_max_absolute_change": 0.0,
+      "full_parameter": {
+        "row_norms": [
+          0.0
+        ],
+        "top_class": null,
+        "max_row_share": null,
+        "retained_norm": 0.11074697927113723,
+        "forget_norm": 0.09911585641281849,
+        "cosine": 0.2497793826481349,
+        "branch_sum_norm": 0.16604937193782984,
+        "normalized_sum": 0.7912280961832278
+      },
+      "training_scope": "layer4",
+      "anchor_size": 500,
+      "anchor_kl": 2.0,
+      "hashes": {
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_label_noise74\\seed_74\\both.pt": "422524da1590c76a5d17e44a99c69918f2df98a9c31e2aa5ec27de2e2c95b356",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_label_noise74\\seed_74_label_noise\\retained.pt": "8c590aed25736c396d58deb56b858710d95b4b0a44a827d092b6b97cea3bf977",
+        "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\local_witness_label_noise74\\seed_74_label_noise\\forget.pt": "3a3fd3053f6950e87de79102774157f926eb4c857f7f4a0fb70640a2c1ceb9d6"
+      }
+    }
+  ]
+}
