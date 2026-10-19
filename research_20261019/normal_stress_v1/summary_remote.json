@@ -1,27 +1,27 @@
 {
-  "updated_utc": "2026-10-19T13:53:55.540514+09:00",
+  "updated_utc": "2026-10-19T13:56:43.578716+09:00",
   "protocol_sha256": "a5f7a7ca8f71b3bb0e2607f2130be815a095f16b99fcdcb31de75c0856652e36",
   "planned_normal_requests": 360,
-  "scored_normal_requests": 2,
+  "scored_normal_requests": 8,
   "failed_requests": 0,
   "planned_combined_requests": 570,
   "original_scored_requests": 35,
-  "original_evaluated_requests": 28,
-  "combined_scored_requests": 37,
+  "original_evaluated_requests": 35,
+  "combined_scored_requests": 43,
   "original_benchmark": {
-    "updated_utc": "2026-10-19T13:53:26.923661+09:00",
+    "updated_utc": "2026-10-19T13:56:27.708864+09:00",
     "protocol_sha256": "888ea5181ac890fff90f8a1e096dfa4b1f198e081db4706854b075dcc995404a",
     "scored_requests": 35,
-    "evaluated_requests": 28,
+    "evaluated_requests": 35,
     "planned_requests": 210,
     "failed_requests": 0,
     "prospective_scores": 7,
     "overall": {
       "fc_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -30,15 +30,15 @@
           5.088862859614229
         ],
         "control_score_range": [
-          0.09563446348767139,
+          0.05517737367739175,
           5.939994442911069
         ]
       },
       "fc_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -47,14 +47,14 @@
           2.3464349202785764
         ],
         "control_score_range": [
-          0.06397855351718655,
+          0.050320490549833674,
           4.696432765174701
         ]
       },
       "conv_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 1,
         "undefined": 0,
         "realized_latent": 3,
@@ -69,10 +69,10 @@
         ]
       },
       "conv_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -86,9 +86,9 @@
         ]
       },
       "layer4.0.conv1.weight_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 2,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 1,
         "undefined": 0,
         "realized_latent": 3,
@@ -103,10 +103,10 @@
         ]
       },
       "layer4.0.conv1.weight_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 2,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 2,
@@ -120,9 +120,9 @@
         ]
       },
       "layer4.0.conv2.weight_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 1,
         "undefined": 0,
         "realized_latent": 3,
@@ -137,10 +137,10 @@
         ]
       },
       "layer4.0.conv2.weight_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -154,9 +154,9 @@
         ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 1,
         "undefined": 0,
         "realized_latent": 3,
@@ -171,10 +171,10 @@
         ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -188,9 +188,9 @@
         ]
       },
       "layer4.1.conv1.weight_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
@@ -200,14 +200,14 @@
           4.275363818246175
         ],
         "control_score_range": [
-          0.1419935160327531,
+          0.11849112542391575,
           3.457808844456979
         ]
       },
       "layer4.1.conv1.weight_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 1,
         "undefined": 0,
         "realized_latent": 3,
@@ -222,10 +222,10 @@
         ]
       },
       "layer4.1.conv2.weight_norm": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -234,15 +234,15 @@
           4.897704760843501
         ],
         "control_score_range": [
-          0.11475366573226381,
+          0.08003240266519233,
           4.494912218262734
         ]
       },
       "layer4.1.conv2.weight_residual": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 3,
-        "controls": 24,
-        "controls_flagged": 1,
+        "controls": 30,
+        "controls_flagged": 2,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
@@ -256,15 +256,15 @@
         ]
       },
       "patch": {
-        "attacks": 4,
+        "attacks": 5,
         "attack_flagged": 4,
-        "controls": 24,
+        "controls": 30,
         "controls_flagged": 0,
         "undefined": 0,
         "realized_latent": 3,
         "realized_latent_flagged": 3,
         "attack_score_range": [
-          0.02109893411397934,
+          0.005453761667013168,
           0.029027245938777924
         ],
         "control_score_range": [
@@ -276,257 +276,257 @@
     "by_non_iid": {
       "0.2": {
         "fc_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.705988665508002,
-            0.705988665508002
+            1.4182446829699489
           ],
           "control_score_range": [
-            0.09563446348767139,
+            0.05517737367739175,
             5.939994442911069
           ]
         },
         "fc_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5569747025094418,
-            0.5569747025094418
+            1.1301043209147974
           ],
           "control_score_range": [
-            0.0716124625445591,
+            0.050320490549833674,
             4.696432765174701
           ]
         },
         "conv_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5660215474322924,
-            0.5660215474322924
+            0.6949430165965033
           ],
           "control_score_range": [
-            0.2115992169641832,
+            0.18159144130634522,
             2.653291946606525
           ]
         },
         "conv_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5583549175941096,
-            0.5583549175941096
+            0.6790555107484201
           ],
           "control_score_range": [
-            0.20332311846756848,
+            0.1748426582020281,
             2.3310271963735474
           ]
         },
         "layer4.0.conv1.weight_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5082118574634901,
-            0.5082118574634901
+            0.6042380117456324
           ],
           "control_score_range": [
-            0.2224649326180104,
+            0.19172423451034798,
             2.6020245747677135
           ]
         },
         "layer4.0.conv1.weight_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5064304601811879,
-            0.5064304601811879
+            0.5974311990459562
           ],
           "control_score_range": [
-            0.2059275967131326,
+            0.17765755842992365,
             2.353520245721309
           ]
         },
         "layer4.0.conv2.weight_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5607104322398461,
-            0.5607104322398461
+            0.599991558029658
           ],
           "control_score_range": [
-            0.26856852896960465,
+            0.24357580327569237,
             2.0924177657931393
           ]
         },
         "layer4.0.conv2.weight_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.510649785151665,
-            0.510649785151665
+            0.5441045173712349
           ],
           "control_score_range": [
-            0.2660316064110484,
+            0.23217832427178986,
             1.8299249787519785
           ]
         },
         "layer4.0.downsample.0.weight_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5629976743308792,
-            0.5629976743308792
+            0.6352962023155092
           ],
           "control_score_range": [
-            0.26113858445869026,
+            0.21542988428581117,
             2.4142743802757987
           ]
         },
         "layer4.0.downsample.0.weight_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5192923591723869,
-            0.5192923591723869
+            0.5983260561675338
           ],
           "control_score_range": [
-            0.2545452799144471,
+            0.20373042250045428,
             2.0843355592366803
           ]
         },
         "layer4.1.conv1.weight_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.6706648419222783,
-            0.6706648419222783
+            1.0442430033835348
           ],
           "control_score_range": [
-            0.1480842868510127,
+            0.11849112542391575,
             3.457808844456979
           ]
         },
         "layer4.1.conv1.weight_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 1,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.666575312270182,
-            0.666575312270182
+            1.043789816298244
           ],
           "control_score_range": [
-            0.1404414693167236,
+            0.11811375101450702,
             2.885750770040084
           ]
         },
         "layer4.1.conv2.weight_norm": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.6579055393107164,
-            0.6579055393107164
+            1.19508154382963
           ],
           "control_score_range": [
-            0.11475366573226381,
+            0.08003240266519233,
             4.494912218262734
           ]
         },
         "layer4.1.conv2.weight_residual": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 0,
-          "controls": 6,
-          "controls_flagged": 1,
+          "controls": 12,
+          "controls_flagged": 2,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
             0.5872362682117447,
-            0.5872362682117447
+            1.1283363177739343
           ],
           "control_score_range": [
-            0.09581674485781094,
+            0.07740304099368549,
             3.633968082962538
           ]
         },
         "patch": {
-          "attacks": 1,
+          "attacks": 2,
           "attack_flagged": 1,
-          "controls": 6,
+          "controls": 12,
           "controls_flagged": 0,
           "undefined": 0,
           "realized_latent": 0,
           "realized_latent_flagged": 0,
           "attack_score_range": [
-            0.02109893411397934,
+            0.005453761667013168,
             0.02109893411397934
           ],
           "control_score_range": [
-            6.145238876342773E-05,
+            0.0,
             0.003419928252696991
           ]
         }
@@ -1049,129 +1049,129 @@
   },
   "overall": {
     "fc_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.3437953292727126,
-        1.0499207305470375
+        0.20816447493190032,
+        20.64706471969817
       ]
     },
     "fc_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.19192364662033484,
-        0.36124752128835236
+        0.06695957937126083,
+        9.157519624837144
       ]
     },
     "conv_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.3059163644167626,
-        0.9696608790945075
+        0.23324179228013017,
+        14.466472957665655
       ]
     },
     "conv_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.19303720503506366,
-        0.6280147508095312
+        0.11152928372498161,
+        8.80565800715388
       ]
     },
     "layer4.0.conv1.weight_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.28735775192651625,
-        0.935800432019528
+        0.2216546645668237,
+        13.992850298067243
       ]
     },
     "layer4.0.conv1.weight_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.18538335700991435,
-        0.6543142319319502
+        0.11820259154169076,
+        8.847749437995564
       ]
     },
     "layer4.0.conv2.weight_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.32218072178472995,
-        0.9525810853916467
+        0.24208508250050417,
+        12.924967739576406
       ]
     },
     "layer4.0.conv2.weight_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.20918836362030746,
-        0.6523242051507775
+        0.1253815708890897,
+        7.932093794773105
       ]
     },
     "layer4.0.downsample.0.weight_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.31293383104247074,
-        1.0433772015001705
+        0.22858124797224597,
+        14.573778018324376
       ]
     },
     "layer4.0.downsample.0.weight_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.17944363955427503,
-        0.5613373106687517
+        0.09950903443370399,
+        7.970821535707339
       ]
     },
     "layer4.1.conv1.weight_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.30775263446699586,
-        0.9840052100995265
+        0.23131729686932193,
+        15.717964482997438
       ]
     },
     "layer4.1.conv1.weight_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.1939522967109876,
-        0.6061941694991083
+        0.10440329837981714,
+        9.245488613567035
       ]
     },
     "layer4.1.conv2.weight_norm": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.3184320262163117,
-        1.0184683618910764
+        0.21268207695242167,
+        18.886458454723925
       ]
     },
     "layer4.1.conv2.weight_residual": {
-      "normal_requests": 2,
-      "flagged": 0,
+      "normal_requests": 8,
+      "flagged": 2,
       "undefined": 0,
       "score_range": [
-        0.18794430398695464,
-        0.5257722467871951
+        0.08194303350954699,
+        10.37219372549923
       ]
     }
   },
@@ -1264,129 +1264,129 @@
     },
     "0.7": {
       "fc_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.3437953292727126,
-          1.0499207305470375
+          0.20816447493190032,
+          20.64706471969817
         ]
       },
       "fc_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.19192364662033484,
-          0.36124752128835236
+          0.06695957937126083,
+          9.157519624837144
         ]
       },
       "conv_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.3059163644167626,
-          0.9696608790945075
+          0.23324179228013017,
+          14.466472957665655
         ]
       },
       "conv_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.19303720503506366,
-          0.6280147508095312
+          0.11152928372498161,
+          8.80565800715388
         ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.28735775192651625,
-          0.935800432019528
+          0.2216546645668237,
+          13.992850298067243
         ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.18538335700991435,
-          0.6543142319319502
+          0.11820259154169076,
+          8.847749437995564
         ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.32218072178472995,
-          0.9525810853916467
+          0.24208508250050417,
+          12.924967739576406
         ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.20918836362030746,
-          0.6523242051507775
+          0.1253815708890897,
+          7.932093794773105
         ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.31293383104247074,
-          1.0433772015001705
+          0.22858124797224597,
+          14.573778018324376
         ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.17944363955427503,
-          0.5613373106687517
+          0.09950903443370399,
+          7.970821535707339
         ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.30775263446699586,
-          0.9840052100995265
+          0.23131729686932193,
+          15.717964482997438
         ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.1939522967109876,
-          0.6061941694991083
+          0.10440329837981714,
+          9.245488613567035
         ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.3184320262163117,
-          1.0184683618910764
+          0.21268207695242167,
+          18.886458454723925
         ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 8,
+        "flagged": 2,
         "undefined": 0,
         "score_range": [
-          0.18794430398695464,
-          0.5257722467871951
+          0.08194303350954699,
+          10.37219372549923
         ]
       }
     },
@@ -1480,646 +1480,772 @@
   "by_mode": {
     "stratified_random": {
       "fc_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          1.0499207305470375,
+          0.9355695881380502,
           1.0499207305470375
         ]
       },
       "fc_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.36124752128835236,
+          0.19370829569638506,
           0.36124752128835236
         ]
       },
       "conv_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.9696608790945075,
+          0.9580962158014809,
           0.9696608790945075
         ]
       },
       "conv_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.6280147508095312,
+          0.3982167199295771,
           0.6280147508095312
         ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.935800432019528,
-          0.935800432019528
+          0.9741777187889388
         ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.6543142319319502,
+          0.4476587982484962,
           0.6543142319319502
         ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.9525810853916467,
+          0.9517923195353111,
           0.9525810853916467
         ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.6523242051507775,
+          0.4347676463363496,
           0.6523242051507775
         ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          1.0433772015001705,
+          0.9890616219171686,
           1.0433772015001705
         ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.5613373106687517,
+          0.3164813122609174,
           0.5613373106687517
         ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.9840052100995265,
+          0.9378658333589593,
           0.9840052100995265
         ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.6061941694991083,
+          0.3576606369368746,
           0.6061941694991083
         ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          1.0184683618910764,
+          0.9388645689298915,
           1.0184683618910764
         ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.5257722467871951,
+          0.2975580069779223,
           0.5257722467871951
         ]
       }
     },
     "class_focused": {
       "fc_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.3437953292727126,
+          0.24568574685413652,
           0.3437953292727126
         ]
       },
       "fc_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.19192364662033484,
-          0.19192364662033484
+          0.2333873493519591
         ]
       },
       "conv_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.3059163644167626,
+          0.23324179228013017,
           0.3059163644167626
         ]
       },
       "conv_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.19303720503506366,
-          0.19303720503506366
+          0.22990138649904726
         ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.28735775192651625,
+          0.2216546645668237,
           0.28735775192651625
         ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.18538335700991435,
-          0.18538335700991435
+          0.22042339979694134
         ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.32218072178472995,
+          0.25031522209541845,
           0.32218072178472995
         ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.20918836362030746,
-          0.20918836362030746
+          0.2435441558423916
         ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.31293383104247074,
+          0.22858124797224597,
           0.31293383104247074
         ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.17944363955427503,
-          0.17944363955427503
+          0.2229388322953488
         ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.30775263446699586,
+          0.23530148754983216,
           0.30775263446699586
         ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.1939522967109876,
-          0.1939522967109876
+          0.23287047831167912
         ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
-          0.3184320262163117,
+          0.23247949885044095,
           0.3184320262163117
         ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 1,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
         "score_range": [
           0.18794430398695464,
-          0.18794430398695464
+          0.22658914638442984
         ]
       }
     },
     "matched_easy": {
       "fc_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          7.886487497573608,
+          20.64706471969817
+        ]
       },
       "fc_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          2.65193880080216,
+          9.157519624837144
+        ]
       },
       "conv_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          6.384672817135459,
+          14.466472957665655
+        ]
       },
       "conv_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          2.978213867767164,
+          8.80565800715388
+        ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          6.268601541428978,
+          13.992850298067243
+        ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          3.0345893805739457,
+          8.847749437995564
+        ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          5.968332039842912,
+          12.924967739576406
+        ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          2.9181723450186126,
+          7.932093794773105
+        ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          6.2766160243803455,
+          14.573778018324376
+        ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          2.5766924703198,
+          7.970821535707339
+        ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          6.661966208505569,
+          15.717964482997438
+        ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          2.9846317042396975,
+          9.245488613567035
+        ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          7.519630902443363,
+          18.886458454723925
+        ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 2,
+        "flagged": 2,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          3.0304108373775733,
+          10.37219372549923
+        ]
       }
     },
     "matched_hard": {
       "fc_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.20816447493190032,
+          0.22115199025842217
+        ]
       },
       "fc_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.06695957937126083,
+          0.08604615612287621
+        ]
       },
       "conv_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.23535341956011682,
+          0.23893901280953797
+        ]
       },
       "conv_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.11152928372498161,
+          0.13814864073349897
+        ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.2343077518621283,
+          0.2428273839918607
+        ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.11820259154169076,
+          0.14190946197018223
+        ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.24208508250050417,
+          0.25059964015529745
+        ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.1253815708890897,
+          0.15537273858477363
+        ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.24484668862689543,
+          0.24690192187504628
+        ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.09950903443370399,
+          0.13149704630827236
+        ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.23131729686932193,
+          0.23304296814582842
+        ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.10440329837981714,
+          0.13221079513341757
+        ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.21268207695242167,
+          0.21835864785979345
+        ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 0,
+        "normal_requests": 2,
         "flagged": 0,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.08194303350954699,
+          0.10246150396115061
+        ]
       }
     }
   },
   "by_forget_count": {
     "120": {
       "fc_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.3437953292727126,
-          1.0499207305470375
+          0.22115199025842217,
+          20.64706471969817
         ]
       },
       "fc_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.19192364662033484,
-          0.36124752128835236
+          0.08604615612287621,
+          9.157519624837144
         ]
       },
       "conv_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.3059163644167626,
-          0.9696608790945075
+          0.23535341956011682,
+          14.466472957665655
         ]
       },
       "conv_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.19303720503506366,
-          0.6280147508095312
+          0.13814864073349897,
+          8.80565800715388
         ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.28735775192651625,
-          0.935800432019528
+          0.2343077518621283,
+          13.992850298067243
         ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.18538335700991435,
-          0.6543142319319502
+          0.14190946197018223,
+          8.847749437995564
         ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.32218072178472995,
-          0.9525810853916467
+          0.24208508250050417,
+          12.924967739576406
         ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.20918836362030746,
-          0.6523242051507775
+          0.15537273858477363,
+          7.932093794773105
         ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.31293383104247074,
-          1.0433772015001705
+          0.24690192187504628,
+          14.573778018324376
         ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.17944363955427503,
-          0.5613373106687517
+          0.13149704630827236,
+          7.970821535707339
         ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.30775263446699586,
-          0.9840052100995265
+          0.23304296814582842,
+          15.717964482997438
         ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.1939522967109876,
-          0.6061941694991083
+          0.13221079513341757,
+          9.245488613567035
         ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.3184320262163117,
-          1.0184683618910764
+          0.21835864785979345,
+          18.886458454723925
         ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 2,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
         "score_range": [
-          0.18794430398695464,
-          0.5257722467871951
+          0.10246150396115061,
+          10.37219372549923
         ]
       }
     },
     "360": {
       "fc_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.20816447493190032,
+          7.886487497573608
+        ]
       },
       "fc_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.06695957937126083,
+          2.65193880080216
+        ]
       },
       "conv_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.23324179228013017,
+          6.384672817135459
+        ]
       },
       "conv_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.11152928372498161,
+          2.978213867767164
+        ]
       },
       "layer4.0.conv1.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.2216546645668237,
+          6.268601541428978
+        ]
       },
       "layer4.0.conv1.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.11820259154169076,
+          3.0345893805739457
+        ]
       },
       "layer4.0.conv2.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.25031522209541845,
+          5.968332039842912
+        ]
       },
       "layer4.0.conv2.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.1253815708890897,
+          2.9181723450186126
+        ]
       },
       "layer4.0.downsample.0.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.22858124797224597,
+          6.2766160243803455
+        ]
       },
       "layer4.0.downsample.0.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.09950903443370399,
+          2.5766924703198
+        ]
       },
       "layer4.1.conv1.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.23131729686932193,
+          6.661966208505569
+        ]
       },
       "layer4.1.conv1.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.10440329837981714,
+          2.9846317042396975
+        ]
       },
       "layer4.1.conv2.weight_norm": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.21268207695242167,
+          7.519630902443363
+        ]
       },
       "layer4.1.conv2.weight_residual": {
-        "normal_requests": 0,
-        "flagged": 0,
+        "normal_requests": 4,
+        "flagged": 1,
         "undefined": 0,
-        "score_range": null
+        "score_range": [
+          0.08194303350954699,
+          3.0304108373775733
+        ]
       }
     },
     "720": {
