@@ -1,0 +1,1039 @@
+{
+  "updated_utc": "2026-10-19T13:42:54.419398+09:00",
+  "protocol_sha256": "888ea5181ac890fff90f8a1e096dfa4b1f198e081db4706854b075dcc995404a",
+  "scored_requests": 35,
+  "evaluated_requests": 28,
+  "planned_requests": 210,
+  "failed_requests": 0,
+  "prospective_scores": 7,
+  "overall": {
+    "fc_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.705988665508002,
+        5.088862859614229
+      ],
+      "control_score_range": [
+        0.09563446348767139,
+        5.939994442911069
+      ]
+    },
+    "fc_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5569747025094418,
+        2.3464349202785764
+      ],
+      "control_score_range": [
+        0.06397855351718655,
+        4.696432765174701
+      ]
+    },
+    "conv_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5660215474322924,
+        3.7068942906329636
+      ],
+      "control_score_range": [
+        0.14534512447191392,
+        2.653291946606525
+      ]
+    },
+    "conv_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5583549175941096,
+        2.530779691051577
+      ],
+      "control_score_range": [
+        0.10864608079927943,
+        2.3310271963735474
+      ]
+    },
+    "layer4.0.conv1.weight_norm": {
+      "attacks": 4,
+      "attack_flagged": 2,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 2,
+      "attack_score_range": [
+        0.5082118574634901,
+        3.710272958352244
+      ],
+      "control_score_range": [
+        0.1522118275652655,
+        2.6020245747677135
+      ]
+    },
+    "layer4.0.conv1.weight_residual": {
+      "attacks": 4,
+      "attack_flagged": 2,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 2,
+      "attack_score_range": [
+        0.5064304601811879,
+        2.591554854878859
+      ],
+      "control_score_range": [
+        0.1120331514105532,
+        2.353520245721309
+      ]
+    },
+    "layer4.0.conv2.weight_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5607104322398461,
+        3.1185209932726985
+      ],
+      "control_score_range": [
+        0.1468970942755267,
+        2.0924177657931393
+      ]
+    },
+    "layer4.0.conv2.weight_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.510649785151665,
+        2.2495690108268662
+      ],
+      "control_score_range": [
+        0.12168170844478275,
+        1.8299249787519785
+      ]
+    },
+    "layer4.0.downsample.0.weight_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5629976743308792,
+        3.503996959263187
+      ],
+      "control_score_range": [
+        0.14310182654455725,
+        2.4142743802757987
+      ]
+    },
+    "layer4.0.downsample.0.weight_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5192923591723869,
+        2.3254581639206227
+      ],
+      "control_score_range": [
+        0.10437604548603563,
+        2.0843355592366803
+      ]
+    },
+    "layer4.1.conv1.weight_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 2,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.6706648419222783,
+        4.275363818246175
+      ],
+      "control_score_range": [
+        0.1419935160327531,
+        3.457808844456979
+      ]
+    },
+    "layer4.1.conv1.weight_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.666575312270182,
+        2.621310346531253
+      ],
+      "control_score_range": [
+        0.09584738205191429,
+        2.885750770040084
+      ]
+    },
+    "layer4.1.conv2.weight_norm": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.6579055393107164,
+        4.897704760843501
+      ],
+      "control_score_range": [
+        0.11475366573226381,
+        4.494912218262734
+      ]
+    },
+    "layer4.1.conv2.weight_residual": {
+      "attacks": 4,
+      "attack_flagged": 3,
+      "controls": 24,
+      "controls_flagged": 1,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.5872362682117447,
+        2.7724346042449373
+      ],
+      "control_score_range": [
+        0.07053794238056636,
+        3.633968082962538
+      ]
+    },
+    "patch": {
+      "attacks": 4,
+      "attack_flagged": 4,
+      "controls": 24,
+      "controls_flagged": 0,
+      "undefined": 0,
+      "realized_latent": 3,
+      "realized_latent_flagged": 3,
+      "attack_score_range": [
+        0.02109893411397934,
+        0.029027245938777924
+      ],
+      "control_score_range": [
+        0.0,
+        0.004638928920030594
+      ]
+    }
+  },
+  "by_non_iid": {
+    "0.2": {
+      "fc_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.705988665508002,
+          0.705988665508002
+        ],
+        "control_score_range": [
+          0.09563446348767139,
+          5.939994442911069
+        ]
+      },
+      "fc_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5569747025094418,
+          0.5569747025094418
+        ],
+        "control_score_range": [
+          0.0716124625445591,
+          4.696432765174701
+        ]
+      },
+      "conv_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5660215474322924,
+          0.5660215474322924
+        ],
+        "control_score_range": [
+          0.2115992169641832,
+          2.653291946606525
+        ]
+      },
+      "conv_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5583549175941096,
+          0.5583549175941096
+        ],
+        "control_score_range": [
+          0.20332311846756848,
+          2.3310271963735474
+        ]
+      },
+      "layer4.0.conv1.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5082118574634901,
+          0.5082118574634901
+        ],
+        "control_score_range": [
+          0.2224649326180104,
+          2.6020245747677135
+        ]
+      },
+      "layer4.0.conv1.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5064304601811879,
+          0.5064304601811879
+        ],
+        "control_score_range": [
+          0.2059275967131326,
+          2.353520245721309
+        ]
+      },
+      "layer4.0.conv2.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5607104322398461,
+          0.5607104322398461
+        ],
+        "control_score_range": [
+          0.26856852896960465,
+          2.0924177657931393
+        ]
+      },
+      "layer4.0.conv2.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.510649785151665,
+          0.510649785151665
+        ],
+        "control_score_range": [
+          0.2660316064110484,
+          1.8299249787519785
+        ]
+      },
+      "layer4.0.downsample.0.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5629976743308792,
+          0.5629976743308792
+        ],
+        "control_score_range": [
+          0.26113858445869026,
+          2.4142743802757987
+        ]
+      },
+      "layer4.0.downsample.0.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5192923591723869,
+          0.5192923591723869
+        ],
+        "control_score_range": [
+          0.2545452799144471,
+          2.0843355592366803
+        ]
+      },
+      "layer4.1.conv1.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.6706648419222783,
+          0.6706648419222783
+        ],
+        "control_score_range": [
+          0.1480842868510127,
+          3.457808844456979
+        ]
+      },
+      "layer4.1.conv1.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.666575312270182,
+          0.666575312270182
+        ],
+        "control_score_range": [
+          0.1404414693167236,
+          2.885750770040084
+        ]
+      },
+      "layer4.1.conv2.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.6579055393107164,
+          0.6579055393107164
+        ],
+        "control_score_range": [
+          0.11475366573226381,
+          4.494912218262734
+        ]
+      },
+      "layer4.1.conv2.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.5872362682117447,
+          0.5872362682117447
+        ],
+        "control_score_range": [
+          0.09581674485781094,
+          3.633968082962538
+        ]
+      },
+      "patch": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 0,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          0.02109893411397934,
+          0.02109893411397934
+        ],
+        "control_score_range": [
+          6.145238876342773e-05,
+          0.003419928252696991
+        ]
+      }
+    },
+    "0.7": {
+      "fc_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          3.3330326664058787,
+          5.088862859614229
+        ],
+        "control_score_range": [
+          0.13697307926678826,
+          2.1799189826942214
+        ]
+      },
+      "fc_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.8598400952380545,
+          2.3464349202785764
+        ],
+        "control_score_range": [
+          0.06397855351718655,
+          0.7807009068232397
+        ]
+      },
+      "conv_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.5686821861996685,
+          3.7068942906329636
+        ],
+        "control_score_range": [
+          0.14534512447191392,
+          1.8112191401740563
+        ]
+      },
+      "conv_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.9788106849962321,
+          2.530779691051577
+        ],
+        "control_score_range": [
+          0.10864608079927943,
+          0.9964777702892157
+        ]
+      },
+      "layer4.0.conv1.weight_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.3098504885631024,
+          3.710272958352244
+        ],
+        "control_score_range": [
+          0.15247202188528902,
+          1.738511373487792
+        ]
+      },
+      "layer4.0.conv1.weight_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.8695523486590069,
+          2.591554854878859
+        ],
+        "control_score_range": [
+          0.1120331514105532,
+          0.9936253802806033
+        ]
+      },
+      "layer4.0.conv2.weight_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.3022716631324576,
+          3.1185209932726985
+        ],
+        "control_score_range": [
+          0.1468970942755267,
+          1.6614141435209053
+        ]
+      },
+      "layer4.0.conv2.weight_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.902593103498141,
+          2.2495690108268662
+        ],
+        "control_score_range": [
+          0.12277089200185336,
+          0.9484645607882354
+        ]
+      },
+      "layer4.0.downsample.0.weight_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.8116874395014677,
+          3.503996959263187
+        ],
+        "control_score_range": [
+          0.14310182654455725,
+          1.8386814072593587
+        ]
+      },
+      "layer4.0.downsample.0.weight_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.116955232360757,
+          2.3254581639206227
+        ],
+        "control_score_range": [
+          0.10437604548603563,
+          0.8403498845524979
+        ]
+      },
+      "layer4.1.conv1.weight_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 1,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          2.8816573696987606,
+          4.275363818246175
+        ],
+        "control_score_range": [
+          0.14455199813462294,
+          2.036161935207711
+        ]
+      },
+      "layer4.1.conv1.weight_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.9933867814574893,
+          2.621310346531253
+        ],
+        "control_score_range": [
+          0.09584738205191429,
+          1.0999960824967598
+        ]
+      },
+      "layer4.1.conv2.weight_norm": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          3.1339445366789307,
+          4.897704760843501
+        ],
+        "control_score_range": [
+          0.13086541715491676,
+          2.051699638503093
+        ]
+      },
+      "layer4.1.conv2.weight_residual": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          1.9829532300690462,
+          2.7724346042449373
+        ],
+        "control_score_range": [
+          0.07053794238056636,
+          0.9741673856649553
+        ]
+      },
+      "patch": {
+        "attacks": 2,
+        "attack_flagged": 2,
+        "controls": 12,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 2,
+        "realized_latent_flagged": 2,
+        "attack_score_range": [
+          0.021203763782978058,
+          0.029027245938777924
+        ],
+        "control_score_range": [
+          0.0,
+          0.00420842319726944
+        ]
+      }
+    },
+    "0.9": {
+      "fc_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          2.357129702894179,
+          2.357129702894179
+        ],
+        "control_score_range": [
+          0.16266838442370718,
+          0.9397362754111949
+        ]
+      },
+      "fc_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.1474252768045272,
+          1.1474252768045272
+        ],
+        "control_score_range": [
+          0.08483709258728889,
+          0.47577785253455634
+        ]
+      },
+      "conv_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.9949794407688255,
+          1.9949794407688255
+        ],
+        "control_score_range": [
+          0.1476277328903966,
+          0.634114920688366
+        ]
+      },
+      "conv_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.342688613544118,
+          1.342688613544118
+        ],
+        "control_score_range": [
+          0.1103306772722141,
+          0.4541271071185942
+        ]
+      },
+      "layer4.0.conv1.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          1.7059332815675605,
+          1.7059332815675605
+        ],
+        "control_score_range": [
+          0.1522118275652655,
+          0.6166190443477978
+        ]
+      },
+      "layer4.0.conv1.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 0,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 0,
+        "attack_score_range": [
+          1.210302731299471,
+          1.210302731299471
+        ],
+        "control_score_range": [
+          0.12153711685803122,
+          0.42301804977630014
+        ]
+      },
+      "layer4.0.conv2.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.921770298174774,
+          1.921770298174774
+        ],
+        "control_score_range": [
+          0.14937886593041458,
+          0.6529713423276837
+        ]
+      },
+      "layer4.0.conv2.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.346677582377747,
+          1.346677582377747
+        ],
+        "control_score_range": [
+          0.12168170844478275,
+          0.4609588344205988
+        ]
+      },
+      "layer4.0.downsample.0.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          2.1713303030378284,
+          2.1713303030378284
+        ],
+        "control_score_range": [
+          0.15239841816713992,
+          0.7511248439849239
+        ]
+      },
+      "layer4.0.downsample.0.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.3827375698854527,
+          1.3827375698854527
+        ],
+        "control_score_range": [
+          0.11392203034495425,
+          0.5196094792160956
+        ]
+      },
+      "layer4.1.conv1.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          2.2672342898631115,
+          2.2672342898631115
+        ],
+        "control_score_range": [
+          0.1419935160327531,
+          0.7351228213184025
+        ]
+      },
+      "layer4.1.conv1.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.4487456223130295,
+          1.4487456223130295
+        ],
+        "control_score_range": [
+          0.09652441985401583,
+          0.5271172441099109
+        ]
+      },
+      "layer4.1.conv2.weight_norm": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          2.259383175923124,
+          2.259383175923124
+        ],
+        "control_score_range": [
+          0.14328450196891612,
+          0.7561845230192408
+        ]
+      },
+      "layer4.1.conv2.weight_residual": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          1.2734380011412167,
+          1.2734380011412167
+        ],
+        "control_score_range": [
+          0.08569971299748676,
+          0.4719041621553327
+        ]
+      },
+      "patch": {
+        "attacks": 1,
+        "attack_flagged": 1,
+        "controls": 6,
+        "controls_flagged": 0,
+        "undefined": 0,
+        "realized_latent": 1,
+        "realized_latent_flagged": 1,
+        "attack_score_range": [
+          0.023383773863315582,
+          0.023383773863315582
+        ],
+        "control_score_range": [
+          0.0,
+          0.004638928920030594
+        ]
+      }
+    }
+  }
+}

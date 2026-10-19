@@ -1,0 +1,13 @@
+{
+  "pid": 5420,
+  "state": "failed",
+  "started_utc": "2026-10-19T04:50:33.135307+00:00",
+  "protocol_sha256": "bf78262469c822fa3480cae609f7044a1f92ab16103ba3bd7491cf2bccc95fbf",
+  "planned_normal_requests": 360,
+  "planned_combined_requests": 570,
+  "device": "cpu",
+  "threads": 2,
+  "cell": "seed_1001_skew_70",
+  "updated_utc": "2026-10-19T04:50:50.001891+00:00",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\normal_stress.py\", line 281, in main\n    try:experiment.run()\n        ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\normal_stress.py\", line 256, in run\n    data=self.prepare(spec,source_cell,dest)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\normal_stress.py\", line 164, in prepare\n    save(cache,selection);del m\n    ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\normal_stress.py\", line 47, in save\n    temporary=path.with_name(path.name+'.tmp');torch.save(value,temporary);os.replace(temporary,path)\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\serialization.py\", line 849, in save\n    with _open_zipfile_writer(f) as opened_zipfile:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\serialization.py\", line 716, in _open_zipfile_writer\n    return container(name_or_buffer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\serialization.py\", line 687, in __init__\n    super().__init__(torch._C.PyTorchFileWriter(self.name))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Parent directory C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\cells\\seed_1001_skew_70 does not exist.\n"
+}

@@ -1,0 +1,448 @@
+{
+  "name": "Additional correct-label Non-IID deletion stress test",
+  "version": "normal_stress_v1",
+  "created_date_kst": "2026-10-19",
+  "source_experiment": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261019/patch_scale_v1",
+  "gradient_experiment": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261019/gradient_scale_v1",
+  "source_protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+  "gradient_protocol_sha256": "888ea5181ac890fff90f8a1e096dfa4b1f198e081db4706854b075dcc995404a",
+  "gradient_scorer_sha256": "41514de27ce666a6a339d90c875fa84ecbf47aa96f0f8b3cb7614037d7f11ef8",
+  "model_helper_sha256": "b5989be0ef2d4dc4646af0df029f766802486d450273d261e8803f9a968f27bb",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "cell_order": [
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.9
+    }
+  ],
+  "planned_normal_requests": 360,
+  "original_requests": 210,
+  "planned_combined_requests": 570,
+  "source_model": "base_future: FedAvg trained exclusively on correctly labeled unmodified B records from all five clients.",
+  "client_selection": "(seed-1001) modulo 5; each of five clients used for two of the ten seeds; same client across three skew levels.",
+  "source_client_records": 1200,
+  "forget_counts": [
+    120,
+    360,
+    720
+  ],
+  "forget_fractions": [
+    0.1,
+    0.3,
+    0.6
+  ],
+  "modes": [
+    "stratified_random",
+    "class_focused",
+    "matched_easy",
+    "matched_hard"
+  ],
+  "requests": [
+    {
+      "name": "stratified_random_n120",
+      "mode": "stratified_random",
+      "forget_count": 120
+    },
+    {
+      "name": "class_focused_n120",
+      "mode": "class_focused",
+      "forget_count": 120
+    },
+    {
+      "name": "matched_easy_n120",
+      "mode": "matched_easy",
+      "forget_count": 120
+    },
+    {
+      "name": "matched_hard_n120",
+      "mode": "matched_hard",
+      "forget_count": 120
+    },
+    {
+      "name": "stratified_random_n360",
+      "mode": "stratified_random",
+      "forget_count": 360
+    },
+    {
+      "name": "class_focused_n360",
+      "mode": "class_focused",
+      "forget_count": 360
+    },
+    {
+      "name": "matched_easy_n360",
+      "mode": "matched_easy",
+      "forget_count": 360
+    },
+    {
+      "name": "matched_hard_n360",
+      "mode": "matched_hard",
+      "forget_count": 360
+    },
+    {
+      "name": "stratified_random_n720",
+      "mode": "stratified_random",
+      "forget_count": 720
+    },
+    {
+      "name": "class_focused_n720",
+      "mode": "class_focused",
+      "forget_count": 720
+    },
+    {
+      "name": "matched_easy_n720",
+      "mode": "matched_easy",
+      "forget_count": 720
+    },
+    {
+      "name": "matched_hard_n720",
+      "mode": "matched_hard",
+      "forget_count": 720
+    }
+  ],
+  "strata": "Random, easy and hard deletions have identical class counts, using largest-remainder proportional quotas. Easy/hard ranking uses current clean-model CE within each class.",
+  "class_focused": "Take classes by descending client label frequency, ties by class index; uniform random order within each class.",
+  "input_policy": "Only source base/client image IDs and true CIFAR labels. Never reads poison, suppression, trigger, anchor, dev, validation or test image tensors.",
+  "virtual_learning_rate": 0.01,
+  "thresholds": {
+    "fc_norm": {
+      "block": "fc",
+      "quantity": "norm_ratio",
+      "threshold": 2.285208723461257,
+      "calibration_attack_range": [
+        2.3422845343781686,
+        4.709372599717129
+      ],
+      "calibration_control_range": [
+        0.1538242693113126,
+        2.228132912544345
+      ],
+      "direction": ">"
+    },
+    "fc_residual": {
+      "block": "fc",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.1333485695451377,
+      "calibration_attack_range": [
+        1.4784696714510348,
+        2.188969646358554
+      ],
+      "calibration_control_range": [
+        0.07596935073887434,
+        0.7882274676392406
+      ],
+      "direction": ">"
+    },
+    "conv_norm": {
+      "block": "conv_all",
+      "quantity": "norm_ratio",
+      "threshold": 1.8523900488345644,
+      "calibration_attack_range": [
+        1.960768693637974,
+        3.5800294092565785
+      ],
+      "calibration_control_range": [
+        0.1553034979412524,
+        1.7440114040311547
+      ],
+      "direction": ">"
+    },
+    "conv_residual": {
+      "block": "conv_all",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.268962044184319,
+      "calibration_attack_range": [
+        1.5130300829832928,
+        2.3051351936000435
+      ],
+      "calibration_control_range": [
+        0.11338820021389844,
+        1.0248940053853455
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv1.weight_norm": {
+      "block": "layer4.0.conv1.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.803481920946091,
+      "calibration_attack_range": [
+        1.8915826375174571,
+        3.4693312699305228
+      ],
+      "calibration_control_range": [
+        0.16028765359928082,
+        1.715381204374725
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv1.weight_residual": {
+      "block": "layer4.0.conv1.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.2934523902250148,
+      "calibration_attack_range": [
+        1.5722301940420227,
+        2.3483205261402285
+      ],
+      "calibration_control_range": [
+        0.11780613476221895,
+        1.0146745864080067
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv2.weight_norm": {
+      "block": "layer4.0.conv2.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.7027209807475752,
+      "calibration_attack_range": [
+        1.797971879685797,
+        3.1193877380751083
+      ],
+      "calibration_control_range": [
+        0.14723581714890707,
+        1.6074700818093532
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv2.weight_residual": {
+      "block": "layer4.0.conv2.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.1787411227984985,
+      "calibration_attack_range": [
+        1.3563882786015071,
+        2.1407806686476265
+      ],
+      "calibration_control_range": [
+        0.12281495713556669,
+        1.00109396699549
+      ],
+      "direction": ">"
+    },
+    "layer4.0.downsample.0.weight_norm": {
+      "block": "layer4.0.downsample.0.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.87812378863919,
+      "calibration_attack_range": [
+        1.9996282247932464,
+        3.5771186749929407
+      ],
+      "calibration_control_range": [
+        0.14719613041570123,
+        1.7566193524851335
+      ],
+      "direction": ">"
+    },
+    "layer4.0.downsample.0.weight_residual": {
+      "block": "layer4.0.downsample.0.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.187517772632119,
+      "calibration_attack_range": [
+        1.4352304525640447,
+        2.2939428625064386
+      ],
+      "calibration_control_range": [
+        0.11020599317158786,
+        0.9398050927001934
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv1.weight_norm": {
+      "block": "layer4.1.conv1.weight",
+      "quantity": "norm_ratio",
+      "threshold": 2.0324840992394133,
+      "calibration_attack_range": [
+        2.1348188998090816,
+        4.01417356147438
+      ],
+      "calibration_control_range": [
+        0.15951590044924702,
+        1.930149298669745
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv1.weight_residual": {
+      "block": "layer4.1.conv1.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.333019971128591,
+      "calibration_attack_range": [
+        1.603139098421348,
+        2.3103595946736006
+      ],
+      "calibration_control_range": [
+        0.10534069431154783,
+        1.062900843835834
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv2.weight_norm": {
+      "block": "layer4.1.conv2.weight",
+      "quantity": "norm_ratio",
+      "threshold": 2.1006692047834585,
+      "calibration_attack_range": [
+        2.2110715066480413,
+        4.488735349047411
+      ],
+      "calibration_control_range": [
+        0.14703332070450334,
+        1.990266902918876
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv2.weight_residual": {
+      "block": "layer4.1.conv2.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.2667251661100436,
+      "calibration_attack_range": [
+        1.5593147536169616,
+        2.33070423060297
+      ],
+      "calibration_control_range": [
+        0.08588356000582305,
+        0.9741355786031258
+      ],
+      "direction": ">"
+    }
+  },
+  "primary_metrics": [
+    "fc_norm",
+    "fc_residual",
+    "conv_norm",
+    "conv_residual"
+  ],
+  "threshold_rule": "Exact unchanged thresholds of gradient_scale_v1; no tuning or layer selection on expanded outcomes.",
+  "objective": "Full-subset mean CE at the same original checkpoint; both branches descend their own CE.",
+  "optimizer_steps": 0,
+  "additional_clean_reference_images": 0,
+  "detector_patch_probes": 0,
+  "device": "CPU",
+  "threads": 2,
+  "microbatch_size": 64,
+  "minimum_available_memory_bytes": 1288490188,
+  "runtime": "Low priority follower. Wait before each request while original gradient worker is computing; wait for source clean models and sufficient memory.",
+  "analytic_fc_relative_tolerance": 0.001,
+  "validation": "Every new R/F FC update compared to an independent analytic mean-CE gradient using cached clean-model features. Record identities/histograms, complementary partitions and CE means.",
+  "actual_post_deletion_training": false,
+  "interpretation": "Additional cases test alarm behavior on correctly labeled normal deletion requests. They do not add actual post-deletion ASR outcomes or new attack seeds.",
+  "statistical_scope": "Deliberately selected stress cases; ten shared seed clusters; do not report a natural-request population FPR or 570 independent training seeds.",
+  "prior_observations": "Designed after observing the initial gradient benchmark: one missed constructed attack and one label-noise false alarm among 28 completed requests. Preserve that result; do not retune.",
+  "source_hashes": {
+    "prepare_protocol.py": "feae26d4bd4a959238dc9f3b5119fcdcc494a52b6f9b12cdd2b7679a2e98578d",
+    "sources/detached_worker.py": "1d4097eb0bb9e46dc026168a22d88f8d5385b5dbe41fd6b16d72ec850d0d3ba1",
+    "sources/normal_stress.py": "83e74f3e75e82cf9112983591fc8c4d6b36cf03cddd7162172925390bd6fead4"
+  },
+  "startup_repair_before_first_score": "Create cache parent directory before saving. Initial source/protocol/error preserved. Scoring, thresholds and selection definitions unchanged."
+}
