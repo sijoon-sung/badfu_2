@@ -1,0 +1,247 @@
+{
+  "name": "Existing paired patch detector: fresh large Non-IID validation",
+  "created_date_kst": "2026-10-19",
+  "version": "patch_scale_v1",
+  "status": "fixed before new primary results",
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010
+  ],
+  "non_iid_dominant_fractions": [
+    0.7,
+    0.2,
+    0.9
+  ],
+  "cell_order": [
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.9
+    }
+  ],
+  "cells": 30,
+  "requests_per_cell": 7,
+  "planned_requests": 210,
+  "models_per_cell": 9,
+  "planned_federated_endpoints": 270,
+  "requests": [
+    "attack_delete_cover",
+    "equal_size_safe",
+    "delete_poison",
+    "delete_both",
+    "benign_class_prior",
+    "label_noise",
+    "normal_cover"
+  ],
+  "training": {
+    "rounds": 40,
+    "clients": 5,
+    "all_clients_participate": true,
+    "base_images_per_class": 600,
+    "local_epochs": 1,
+    "local_batch_size": 64,
+    "SGD_lr": 0.01,
+    "augmentation": false,
+    "data_budget": "Same adapted CIFAR-10 budget as the existing experiment; not full CIFAR-10 or author-code reproduction"
+  },
+  "shadow": {
+    "scope": "layer4",
+    "steps": 100,
+    "batch_size": 32,
+    "lr": 0.01,
+    "gradient_clip_norm": 1.0,
+    "anchor_images": 500,
+    "anchor_ce": 0.0,
+    "anchor_kl": 2.0,
+    "BN_running_statistics": "frozen/eval",
+    "same_random_stream_for_R_F": true
+  },
+  "scanner": {
+    "fixed_patterns": 32,
+    "corners": 4,
+    "pattern_size": [
+      4,
+      4
+    ],
+    "candidate_classes": 10,
+    "development_images": 200,
+    "validation_images": 200,
+    "target_class_exclusion": "Exclude true target-class records separately for each candidate",
+    "rule": "Select largest retained-minus-pre patch probability gain on development. On the same candidate in validation, score=max(0,min(retained-pre, retained-forget)).",
+    "threshold": 0.006,
+    "threshold_direction": ">",
+    "secondary_input_optimization": false
+  },
+  "matching": {
+    "same_seed_data_and_initialization_across_non_iid_levels": true,
+    "same_anchor_ids_across_worlds": true,
+    "all_anchor_ids_exclude_base_poison_cover_benign_extra_dev_val": true,
+    "attacker_client": 0
+  },
+  "attack": {
+    "target": 0,
+    "trigger_size": [
+      4,
+      4
+    ],
+    "trigger_location": "bottom-right",
+    "trigger_seed": 20261018,
+    "poison_records": 180,
+    "suppression_records": 720,
+    "trigger_family_changes": false
+  },
+  "evaluation": {
+    "official_test_images": 2000,
+    "primary_counts": "Flagged constructed attack requests and flagged constructed controls, with all attempts retained.",
+    "realized_latent_activation": "pre actual ASR <= .10 and post actual ASR >= .50 and increase >= .30",
+    "continuous_metrics": [
+      "pre_ASR",
+      "post_ASR",
+      "ASR_increase",
+      "clean_accuracy_pre",
+      "clean_accuracy_post"
+    ],
+    "future_before_prediction": "The corresponding future checkpoint must be absent when each request decision is locked.",
+    "seed_clusters": 10,
+    "do_not_treat_requests_as_independent_seeds": true,
+    "failure_handling": "Keep numerical/runtime failures in status and count failed conditions; never label them safe."
+  },
+  "initial_weights": "C:/Users/DISLAB/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+  "initial_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "source_hashes": {
+    "sources/scale_patch_experiment.py": "96b9f3f6c47d1a4520663fd74aad34f6a48bf199c561728fb26d37413708d410",
+    "sources/reference/train_factorial.py": "b5989be0ef2d4dc4646af0df029f766802486d450273d261e8803f9a968f27bb",
+    "sources/reference/probe_information.py": "a041d476f23b77ba61594023eb0cf163db60c204ae15807a483a1b93ae00a83f"
+  },
+  "self_check": "Replay the four previous seed74 final detector scores exactly, then verify one federated round and a complete 100-step shadow before launching the main experiment.",
+  "estimated_gpu_hours_from_previous_runs": [
+    35,
+    55
+  ],
+  "runtime": "One serial RTX3080 worker, resumable phase checkpoints every five rounds. No concurrent use of the GPU by this task.",
+  "reporting": "No hyperparameter tuning or best-layer selection using these new outcomes. Fixed-label and functional-risk counts are separate."
+}

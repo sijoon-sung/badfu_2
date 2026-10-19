@@ -1,0 +1,117 @@
+{
+  "launch": {
+    "pid": 43820,
+    "started_utc": "2026-10-19T02:05:34.708759+00:00",
+    "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+    "root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\patch_scale_v1",
+    "python": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "planned_requests": 210,
+    "launch_method": "WMI Win32_Process.Create, hidden, independent of SSH",
+    "entrypoint_sha256": "99d2b11874987a86839c7c7396e757470c43591f6cae2580a94ee9ce85824fc6"
+  },
+  "self_check": {
+    "passed": true,
+    "replay": [
+      {
+        "case": "seed_74_attack",
+        "score": 0.014216192066669464,
+        "reproduced": true
+      },
+      {
+        "case": "seed_74_equal_size_safe",
+        "score": 0.0,
+        "reproduced": true
+      },
+      {
+        "case": "seed_74_benign_prior",
+        "score": 0.00061788409948349,
+        "reproduced": true
+      },
+      {
+        "case": "seed_74_label_noise",
+        "score": 0.003588162362575531,
+        "reproduced": true
+      }
+    ],
+    "one_federated_round": {
+      "clean_accuracy": 0.23100000619888306,
+      "actual_trigger_asr": 0.1688888967037201,
+      "triggered_accuracy": 0.20888888835906982,
+      "eligible_test_records": 1800,
+      "seed": 1001,
+      "phase": "badfu_pre",
+      "counts": [
+        2100,
+        1200,
+        1200,
+        1200,
+        1200
+      ],
+      "initial_state_sha256": "316c1a49b8eac22bf0e75175243173e5784bccee0d08fde332e40ef427b9cc66",
+      "checkpoint_sha256": "107f07a468cef99ce448a516d84f6c7982785e9444377365cb3692297d11d30a",
+      "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+      "rounds": 1,
+      "finished_utc": "2026-10-19T01:58:50.206935+00:00"
+    },
+    "one_hundred_step_shadow_finite": true,
+    "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+    "utc": "2026-10-19T01:58:53.185593+00:00"
+  },
+  "status": {
+    "pid": 43820,
+    "state": "running",
+    "started_utc": "2026-10-19T02:05:37.284729+00:00",
+    "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+    "planned_cells": 30,
+    "planned_requests": 210,
+    "cell": "seed_1001_skew_70",
+    "seed": 1001,
+    "dominant_fraction": 0.7,
+    "phase": "prior_pre",
+    "round": 7,
+    "updated_utc": "2026-10-19T02:07:14.285532+00:00",
+    "rounds": 40,
+    "request": "delete_both"
+  },
+  "worker.stdout.log": "e\": \"badfu_pre\", \"round\": 8, \"seconds\": 48.1725115776062}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 9, \"seconds\": 54.13026213645935}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 10, \"seconds\": 60.19499158859253}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 11, \"seconds\": 66.15951919555664}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 12, \"seconds\": 72.12948036193848}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 13, \"seconds\": 78.10070085525513}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 14, \"seconds\": 84.0656898021698}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 15, \"seconds\": 90.12548828125}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 16, \"seconds\": 96.10358738899231}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 17, \"seconds\": 102.09040975570679}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 18, \"seconds\": 108.08249187469482}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 19, \"seconds\": 114.07504463195801}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 20, \"seconds\": 120.14384961128235}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 21, \"seconds\": 126.12140941619873}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 22, \"seconds\": 132.10660648345947}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 23, \"seconds\": 138.1737837791443}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 24, \"seconds\": 144.16333723068237}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 25, \"seconds\": 150.23535227775574}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 26, \"seconds\": 156.21713209152222}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 27, \"seconds\": 162.20157504081726}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 28, \"seconds\": 168.21488690376282}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 29, \"seconds\": 174.20120930671692}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 30, \"seconds\": 180.2743091583252}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 31, \"seconds\": 186.24880719184875}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 32, \"seconds\": 192.2282531261444}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 33, \"seconds\": 198.22459721565247}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 34, \"seconds\": 204.2106912136078}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 35, \"seconds\": 210.29627561569214}\nDetached worker entry point started\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 36, \"seconds\": 6.3300940990448}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 37, \"seconds\": 12.283018350601196}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 38, \"seconds\": 18.233627557754517}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 39, \"seconds\": 24.185433387756348}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"badfu_pre\", \"round\": 40, \"seconds\": 30.215051651000977}\n{\"event\": \"prediction_locked\", \"cell\": \"seed_1001_skew_70\", \"request\": \"attack_delete_cover\", \"score\": 0.029027245938777924, \"flag\": true}\n{\"event\": \"prediction_locked\", \"cell\": \"seed_1001_skew_70\", \"request\": \"equal_size_safe\", \"score\": 0.0, \"flag\": false}\n{\"event\": \"prediction_locked\", \"cell\": \"seed_1001_skew_70\", \"request\": \"delete_poison\", \"score\": 0.0, \"flag\": false}\n{\"event\": \"prediction_locked\", \"cell\": \"seed_1001_skew_70\", \"request\": \"delete_both\", \"score\": 0.0, \"flag\": false}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 1, \"seconds\": 5.963586091995239}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 2, \"seconds\": 11.924522399902344}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 3, \"seconds\": 17.90303134918213}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 4, \"seconds\": 23.880433082580566}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 5, \"seconds\": 29.91789674758911}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 6, \"seconds\": 35.884021282196045}\n{\"event\": \"round\", \"cell\": \"seed_1001_skew_70\", \"phase\": \"prior_pre\", \"round\": 7, \"seconds\": 41.864020109176636}\n",
+  "worker.stderr.log": "",
+  "report_ko": "\ub300\ud615 \ud328\uce58 \uc2e4\ud5d8\uc744 \uc2dc\uc791\ud588\uc2b5\ub2c8\ub2e4.\n\uc0c8 \uc2dc\ub4dc10\uac1c x Non-IID3\uc218\uc900 x \uc694\uccad7\uc885 = 210\uac74.\n\uc784\uacc4\uac120.006 \uace0\uc815. \ud604\uc7ac \uacb0\uacfc \uc9d1\uacc4 \ub300\uae30 \uc911\uc785\ub2c8\ub2e4.\n\uc9c4\ud589 \uc0c1\ud0dc: status.json\n",
+  "artifact_counts": {
+    "locked_predictions": 4,
+    "completed_cells": 0,
+    "completed_federated_models": 1,
+    "error_records": 0
+  },
+  "current_cell_predictions": [
+    {
+      "request": "attack_delete_cover",
+      "score": 0.029027245938777924,
+      "flag": true,
+      "locked_utc": "2026-10-19T02:06:15.273534+00:00",
+      "future_checkpoint_existed_at_prediction": false
+    },
+    {
+      "request": "delete_both",
+      "score": 0.0,
+      "flag": false,
+      "locked_utc": "2026-10-19T02:06:32.108149+00:00",
+      "future_checkpoint_existed_at_prediction": false
+    },
+    {
+      "request": "delete_poison",
+      "score": 0.0,
+      "flag": false,
+      "locked_utc": "2026-10-19T02:06:26.533343+00:00",
+      "future_checkpoint_existed_at_prediction": false
+    },
+    {
+      "request": "equal_size_safe",
+      "score": 0.0,
+      "flag": false,
+      "locked_utc": "2026-10-19T02:06:20.854501+00:00",
+      "future_checkpoint_existed_at_prediction": false
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 3080, 1048 MiB, 95 %",
+  "process": "\"python.exe\",\"43820\",\"Services\",\"0\",\"1,572,532 K\""
+}

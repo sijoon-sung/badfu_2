@@ -1,0 +1,24 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "numpy": "2.5.3",
+  "cuda": "12.1",
+  "cudnn": 90100,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "process_tree": [
+    {
+      "ProcessId": 43820,
+      "ParentProcessId": 55464,
+      "Name": "python.exe",
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\patch_scale_v1\\sources\\detached_worker.py\""
+    },
+    {
+      "ProcessId": 55464,
+      "ParentProcessId": 1868,
+      "Name": "WmiPrvSE.exe",
+      "CommandLine": "C:\\Windows\\system32\\wbem\\wmiprvse.exe"
+    }
+  ]
+}

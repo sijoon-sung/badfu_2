@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "replay": [
+    {
+      "case": "seed_74_attack",
+      "score": 0.014216192066669464,
+      "reproduced": true
+    },
+    {
+      "case": "seed_74_equal_size_safe",
+      "score": 0.0,
+      "reproduced": true
+    },
+    {
+      "case": "seed_74_benign_prior",
+      "score": 0.00061788409948349,
+      "reproduced": true
+    },
+    {
+      "case": "seed_74_label_noise",
+      "score": 0.003588162362575531,
+      "reproduced": true
+    }
+  ],
+  "one_federated_round": {
+    "clean_accuracy": 0.23100000619888306,
+    "actual_trigger_asr": 0.1688888967037201,
+    "triggered_accuracy": 0.20888888835906982,
+    "eligible_test_records": 1800,
+    "seed": 1001,
+    "phase": "badfu_pre",
+    "counts": [
+      2100,
+      1200,
+      1200,
+      1200,
+      1200
+    ],
+    "initial_state_sha256": "316c1a49b8eac22bf0e75175243173e5784bccee0d08fde332e40ef427b9cc66",
+    "checkpoint_sha256": "107f07a468cef99ce448a516d84f6c7982785e9444377365cb3692297d11d30a",
+    "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+    "rounds": 1,
+    "finished_utc": "2026-10-19T10:58:50.206935+09:00"
+  },
+  "one_hundred_step_shadow_finite": true,
+  "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+  "utc": "2026-10-19T10:58:53.185593+09:00"
+}
