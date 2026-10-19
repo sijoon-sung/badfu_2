@@ -1,0 +1,22 @@
+{
+  "identity": "s=q*sqrt(1-cos(A,B)^2); residual orthogonal to B; 0<=s<=q",
+  "random_identity_max_absolute_error": 4.440892098500626e-16,
+  "benign_counterexample": {
+    "both_labels": 0,
+    "both_predictions": 0,
+    "probability": 0.8807970779778823,
+    "retained_augmented_feature": [
+      0,
+      10,
+      1
+    ],
+    "forget_augmented_feature": [
+      1,
+      0,
+      1
+    ],
+    "norm_ratio": 7.106335201775948,
+    "orthogonal_ratio": 7.088723439378913
+  },
+  "conclusion": "Valid update statistics; neither score alone is a mathematical certificate of backdoor presence or complete Non-IID removal."
+}

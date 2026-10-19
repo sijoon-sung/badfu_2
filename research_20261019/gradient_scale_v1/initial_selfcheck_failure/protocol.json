@@ -1,0 +1,400 @@
+{
+  "name": "Fixed no-probe-patch one-point gradient comparison",
+  "version": "gradient_scale_v1",
+  "created_date_kst": "2026-10-19",
+  "source_experiment": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261019/patch_scale_v1",
+  "source_protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+  "model_helper_sha256": "b5989be0ef2d4dc4646af0df029f766802486d450273d261e8803f9a968f27bb",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "cell_order": [
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1001,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1002,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1003,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1004,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1005,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1006,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1007,
+      "dominant_fraction": 0.9
+    },
+    {
+      "seed": 1008,
+      "dominant_fraction": 0.7
+    },
+    {
+      "seed": 1009,
+      "dominant_fraction": 0.2
+    },
+    {
+      "seed": 1010,
+      "dominant_fraction": 0.9
+    }
+  ],
+  "planned_requests": 210,
+  "requests": {
+    "attack_delete_cover": {
+      "pre_phase": "badfu_pre",
+      "future_phase": "danger_future"
+    },
+    "equal_size_safe": {
+      "pre_phase": "badfu_pre",
+      "future_phase": "safe_future"
+    },
+    "delete_poison": {
+      "pre_phase": "badfu_pre",
+      "future_phase": "cover_only"
+    },
+    "delete_both": {
+      "pre_phase": "badfu_pre",
+      "future_phase": "base_future"
+    },
+    "benign_class_prior": {
+      "pre_phase": "prior_pre",
+      "future_phase": "prior_future"
+    },
+    "label_noise": {
+      "pre_phase": "noise_pre",
+      "future_phase": "noise_future"
+    },
+    "normal_cover": {
+      "pre_phase": "cover_only",
+      "future_phase": "base_future"
+    }
+  },
+  "primary_metrics": [
+    "fc_norm",
+    "fc_residual",
+    "conv_norm",
+    "conv_residual"
+  ],
+  "thresholds": {
+    "fc_norm": {
+      "block": "fc",
+      "quantity": "norm_ratio",
+      "threshold": 2.285208723461257,
+      "calibration_attack_range": [
+        2.3422845343781686,
+        4.709372599717129
+      ],
+      "calibration_control_range": [
+        0.1538242693113126,
+        2.228132912544345
+      ],
+      "direction": ">"
+    },
+    "fc_residual": {
+      "block": "fc",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.1333485695451377,
+      "calibration_attack_range": [
+        1.4784696714510348,
+        2.188969646358554
+      ],
+      "calibration_control_range": [
+        0.07596935073887434,
+        0.7882274676392406
+      ],
+      "direction": ">"
+    },
+    "conv_norm": {
+      "block": "conv_all",
+      "quantity": "norm_ratio",
+      "threshold": 1.8523900488345644,
+      "calibration_attack_range": [
+        1.960768693637974,
+        3.5800294092565785
+      ],
+      "calibration_control_range": [
+        0.1553034979412524,
+        1.7440114040311547
+      ],
+      "direction": ">"
+    },
+    "conv_residual": {
+      "block": "conv_all",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.268962044184319,
+      "calibration_attack_range": [
+        1.5130300829832928,
+        2.3051351936000435
+      ],
+      "calibration_control_range": [
+        0.11338820021389844,
+        1.0248940053853455
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv1.weight_norm": {
+      "block": "layer4.0.conv1.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.803481920946091,
+      "calibration_attack_range": [
+        1.8915826375174571,
+        3.4693312699305228
+      ],
+      "calibration_control_range": [
+        0.16028765359928082,
+        1.715381204374725
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv1.weight_residual": {
+      "block": "layer4.0.conv1.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.2934523902250148,
+      "calibration_attack_range": [
+        1.5722301940420227,
+        2.3483205261402285
+      ],
+      "calibration_control_range": [
+        0.11780613476221895,
+        1.0146745864080067
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv2.weight_norm": {
+      "block": "layer4.0.conv2.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.7027209807475752,
+      "calibration_attack_range": [
+        1.797971879685797,
+        3.1193877380751083
+      ],
+      "calibration_control_range": [
+        0.14723581714890707,
+        1.6074700818093532
+      ],
+      "direction": ">"
+    },
+    "layer4.0.conv2.weight_residual": {
+      "block": "layer4.0.conv2.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.1787411227984985,
+      "calibration_attack_range": [
+        1.3563882786015071,
+        2.1407806686476265
+      ],
+      "calibration_control_range": [
+        0.12281495713556669,
+        1.00109396699549
+      ],
+      "direction": ">"
+    },
+    "layer4.0.downsample.0.weight_norm": {
+      "block": "layer4.0.downsample.0.weight",
+      "quantity": "norm_ratio",
+      "threshold": 1.87812378863919,
+      "calibration_attack_range": [
+        1.9996282247932464,
+        3.5771186749929407
+      ],
+      "calibration_control_range": [
+        0.14719613041570123,
+        1.7566193524851335
+      ],
+      "direction": ">"
+    },
+    "layer4.0.downsample.0.weight_residual": {
+      "block": "layer4.0.downsample.0.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.187517772632119,
+      "calibration_attack_range": [
+        1.4352304525640447,
+        2.2939428625064386
+      ],
+      "calibration_control_range": [
+        0.11020599317158786,
+        0.9398050927001934
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv1.weight_norm": {
+      "block": "layer4.1.conv1.weight",
+      "quantity": "norm_ratio",
+      "threshold": 2.0324840992394133,
+      "calibration_attack_range": [
+        2.1348188998090816,
+        4.01417356147438
+      ],
+      "calibration_control_range": [
+        0.15951590044924702,
+        1.930149298669745
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv1.weight_residual": {
+      "block": "layer4.1.conv1.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.333019971128591,
+      "calibration_attack_range": [
+        1.603139098421348,
+        2.3103595946736006
+      ],
+      "calibration_control_range": [
+        0.10534069431154783,
+        1.062900843835834
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv2.weight_norm": {
+      "block": "layer4.1.conv2.weight",
+      "quantity": "norm_ratio",
+      "threshold": 2.1006692047834585,
+      "calibration_attack_range": [
+        2.2110715066480413,
+        4.488735349047411
+      ],
+      "calibration_control_range": [
+        0.14703332070450334,
+        1.990266902918876
+      ],
+      "direction": ">"
+    },
+    "layer4.1.conv2.weight_residual": {
+      "block": "layer4.1.conv2.weight",
+      "quantity": "orthogonal_ratio",
+      "threshold": 1.2667251661100436,
+      "calibration_attack_range": [
+        1.5593147536169616,
+        2.33070423060297
+      ],
+      "calibration_control_range": [
+        0.08588356000582305,
+        0.9741355786031258
+      ],
+      "direction": ">"
+    }
+  },
+  "threshold_rule": "Midpoint of old 16-case control maximum and attack minimum; fixed before any new gradient scores. Not fitted to new outcomes.",
+  "virtual_learning_rate": 0.01,
+  "objective": "Full-subset mean CE at the same original checkpoint; both branches descend their own CE.",
+  "optimizer_steps": 0,
+  "device": "CPU",
+  "threads": 2,
+  "microbatch_size": 64,
+  "BN": "eval/frozen",
+  "additional_clean_reference_images": 0,
+  "KL": 0,
+  "clipping": false,
+  "momentum": false,
+  "weight_decay": 0,
+  "detector_patch_probes": 0,
+  "detector_input_optimization": false,
+  "original_training_records": "Reconstructed from the saved experiment splits; original poisoned/suppression patterns remain part of private records. Pattern and target are not arguments of the scoring function.",
+  "fc_matrix": "10x513 weight and bias",
+  "conv_blocks": "Same five layer4 Conv tensors as old experiment, excluding BN affine parameters.",
+  "conv_all": "Joint Frobenius product over all five tensors; one projection coefficient for conv_residual.",
+  "undefined_denominator": "Exactly zero B yields undefined, never safe zero. Store absolute norms for small-denominator inspection.",
+  "comparison": "Pair with the same checkpoint hash, R/F record counts and label histograms before joining actual ASR and original patch decisions.",
+  "retrospective_source_note": "Some source future models and their ASRs existed and were inspected before this experiment. Record future existence for every new gradient score; do not claim all decisions are prospective.",
+  "statistics": "Ten seed clusters, not 210 independent training seeds. All failed/missing/undefined cases retained separately.",
+  "self_check_source": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261018/fl_information/fedavg_confirm74/seed_74",
+  "self_check": "CPU recomputation of old attack74; checkpoint/split hashes and FC arrays plus FC/Conv scalar metrics checked against old GPU reference; relative tolerance .001.",
+  "runtime": "Read-only follower of the source experiment. CPU only; saves gradients and decisions in this separate folder; waits for future source models.",
+  "source_hashes": {
+    "calibration/orthogonal_fc_result.json": "ef07579facb6eaf8a8ed0770728b4d13c83b3e71137822b941b39d5c8201abc0",
+    "calibration/pure_layer4_result.json": "ad462788927b4b246b3d35892d8960e4eb8b3c0c6d5b4be827d660b3213d3ef9",
+    "calibration/selfcheck_fc.npz": "827772307416b2e0041991da4004a647f5caccea06b71b172c2805b9062d551b",
+    "prepare_protocol.py": "b158f87b47dd212fbc1a1d3c94cbc20651cd85e7ceafe99f999ce4aeeb9bbd7c",
+    "sources/detached_worker.py": "ff17a473364f26ced9cfa5c7baaaf8a5dfff86d41021b3086fa24c8a75cf8dcc",
+    "sources/gradient_experiment.py": "c521ead47150f8289cf43f59f07bbc94117909ca3e178d43e94f91191d3c6d92"
+  }
+}
