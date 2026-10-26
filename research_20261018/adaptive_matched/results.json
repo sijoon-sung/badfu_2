@@ -1,0 +1,113 @@
+{
+  "results": {
+    "matched_4": {
+      "clean_accuracy": 0.8489999771118164,
+      "universal_patch_asr": 0.27000001072883606,
+      "corner": "br",
+      "restart": 1,
+      "validation_target_rate": 0.2291666716337204,
+      "candidates": [
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0347222238779068,
+          "corner": "tl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tr",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tr",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.02083333395421505,
+          "corner": "bl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.013888888992369175,
+          "corner": "bl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.1180555522441864,
+          "corner": "br",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.2291666716337204,
+          "corner": "br",
+          "restart": 1
+        }
+      ]
+    },
+    "matched_34": {
+      "clean_accuracy": 0.8519999980926514,
+      "universal_patch_asr": 0.4166666567325592,
+      "corner": "br",
+      "restart": 1,
+      "validation_target_rate": 0.4166666567325592,
+      "candidates": [
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.0416666679084301,
+          "corner": "tr",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tr",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.013888888992369175,
+          "corner": "bl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02083333395421505,
+          "corner": "bl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.2361111044883728,
+          "corner": "br",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.4166666567325592,
+          "corner": "br",
+          "restart": 1
+        }
+      ]
+    }
+  },
+  "seconds": 25.261547327041626,
+  "code_sha256": "893cda102e594150932c94b2ee72557330a0d34ec7ee58fb114d1967f38ed68d",
+  "scope": "Adaptive universal input patch optimized on development, selected on validation. Not adaptive FL poisoning.",
+  "test_n": 1000,
+  "asr_n": 900,
+  "target": 0,
+  "budget": {
+    "corners": 4,
+    "restarts": 2,
+    "steps": 60
+  }
+}

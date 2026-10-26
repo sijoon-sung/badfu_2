@@ -1,16 +1,19 @@
 """Build research navigation from the registry; never opens tensors or changes evidence."""
-import argparse, hashlib, json, re, stat
+import argparse, hashlib, json, re, stat, subprocess
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 RESEARCH = ROOT / 'research'
 REGISTRY = RESEARCH / 'experiment_registry.json'
+TRACKED = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0'))
 
 def load(p): return json.loads(p.read_text(encoding='utf-8-sig'))
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def ref(rel, label=None):
     assert (ROOT/rel).exists(), rel
+    if rel not in TRACKED and not any(p.startswith(rel.rstrip('/') + '/') for p in TRACKED):
+        return f'`{label or rel}` (로컬 보관)'
     href=rel.removeprefix('research/') if rel.startswith('research/') else '../'+rel
     return f'[{label or rel}]({href})'
 def card(e): return f"[{e['id']} · {e['title']}](EXPERIMENT_CARDS.md#{e['id'].lower()})"
@@ -58,7 +61,7 @@ def main():
 
 2026-10-23 정리. 이 문서는 현재 해석의 입구다. 원 보고서·수치·실패 기록·체크포인트 경로는 보존했다. 옛 문서의 ‘현재 후보’, ‘다음 실험’, ‘진행 중’은 작성 당시 기록이며 자동 재개 지시가 아니다.
 
-교수 미팅에서 실험 과정을 읽으려면 [실험 과정 전체 정리](../reports/experiment_process_20261026/README.md)를 사용한다. 시작 이유·모델과 자료·실행 순서·결과·판단을 카드별로 풀어 썼다. 기존 판정과 원문은 아래에 그대로 유지한다.
+실험 과정을 읽으려면 [분야별 실험 목록](../experiments/README.md)에서 시작한다. 각 실험 폴더에 시작 이유·모델과 자료·실행 순서·결과·판단과 원 근거를 연결했다. 아래는 해석과 새 실험 검토를 위한 인덱스다.
 
 ## 매번 읽는 순서
 
@@ -136,7 +139,7 @@ flowchart TD
         cards+='\n**원문·증거:**\n\n'+'\n'.join('- '+ref(s) for s in e['sources'])+'\n\n'
         if e['folders']:cards+='**묶은 폴더:** '+' · '.join(ref(f,f.split('/')[-1]) for f in e['folders'])+'\n\n'
     folder_text='# 전체 연구 폴더 색인\n\n[연구 인덱스](INDEX.md) · [실험 카드](EXPERIMENT_CARDS.md)\n\n'
-    folder_text+='원본을 이동하지 않은 탐색용 목록이다. 직접 하위 폴더 단위의 재고이며, 행 하나가 독립 실험 또는 완료 실행 하나라는 뜻은 아니다. 연결 카드가 있어도 폴더 안의 모든 세부 파일을 이번에 재검토한 것은 아니다. 링크된 원문과 정정이 현재 해석의 근거다.\n\n'
+    folder_text+='원본을 이동하지 않은 탐색용 목록이다. 직접 하위 폴더 단위의 재고이며, 행 하나가 독립 실험 또는 완료 실행 하나라는 뜻은 아니다. 연결 카드가 있어도 폴더 안의 모든 세부 파일을 이번에 재검토한 것은 아니다. 링크된 원문과 정정이 현재 해석의 근거다. Git에 포함되지 않은 경로는 로컬 보관으로 표시한다.\n\n'
     for base in list(dict.fromkeys(v['path'].rsplit('/',1)[0] for v in inventory)):
         folder_text+=f'## {base}\n\n| 원본 폴더 | 관련 카드·검토 범위 | 바로 아래 대표 문서 |\n|---|---|---|\n'
         for v in inventory:

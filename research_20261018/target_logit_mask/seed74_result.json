@@ -1,0 +1,107 @@
+{
+  "utc": "2026-10-18T12:48:09.385421+00:00",
+  "calculation": "Original archived logits; target logit set to negative infinity",
+  "new_model_inference": false,
+  "target": 0,
+  "total_images": 2000,
+  "eligible_images": 1800,
+  "original_attack_success_count": 1731,
+  "original_attack_success_rate": 0.9616666666666667,
+  "original_correct_count": 44,
+  "original_correct_rate": 0.024444444444444446,
+  "masked_correct_count": 792,
+  "masked_correct_rate": 0.44,
+  "recovered_among_originally_attacked_count": 748,
+  "recovery_rate_among_originally_attacked": 0.43212016175621026,
+  "remaining_wrong_count": 1008,
+  "per_class": [
+    {
+      "label": 1,
+      "total": 200,
+      "before_correct": 13,
+      "after_correct": 18,
+      "originally_attacked": 171,
+      "recovered": 5
+    },
+    {
+      "label": 2,
+      "total": 200,
+      "before_correct": 2,
+      "after_correct": 148,
+      "originally_attacked": 198,
+      "recovered": 146
+    },
+    {
+      "label": 3,
+      "total": 200,
+      "before_correct": 4,
+      "after_correct": 102,
+      "originally_attacked": 196,
+      "recovered": 98
+    },
+    {
+      "label": 4,
+      "total": 200,
+      "before_correct": 1,
+      "after_correct": 101,
+      "originally_attacked": 199,
+      "recovered": 100
+    },
+    {
+      "label": 5,
+      "total": 200,
+      "before_correct": 2,
+      "after_correct": 61,
+      "originally_attacked": 196,
+      "recovered": 59
+    },
+    {
+      "label": 6,
+      "total": 200,
+      "before_correct": 4,
+      "after_correct": 45,
+      "originally_attacked": 196,
+      "recovered": 41
+    },
+    {
+      "label": 7,
+      "total": 200,
+      "before_correct": 0,
+      "after_correct": 48,
+      "originally_attacked": 194,
+      "recovered": 48
+    },
+    {
+      "label": 8,
+      "total": 200,
+      "before_correct": 0,
+      "after_correct": 130,
+      "originally_attacked": 200,
+      "recovered": 130
+    },
+    {
+      "label": 9,
+      "total": 200,
+      "before_correct": 18,
+      "after_correct": 139,
+      "originally_attacked": 181,
+      "recovered": 121
+    }
+  ],
+  "provenance": {
+    "run_dir": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261018\\fl_information\\fedavg_confirm74\\seed_74",
+    "checkpoint_sha256": "b76814342378dcd572f52b245ebb303ab25f2541cd6fc6fda1026e1ca2ee27dc",
+    "prediction_archive_sha256": "7b7d4783de7310d9f91150bd40ee869b60fc54030eb66f38e6c92451cc71599e",
+    "metadata_sha256": "058777c12d50557b81a810679953b55e65887c9e240032552205eead74091112",
+    "splits_sha256": "7d495914ac142a2a068b4761c930d9a25920cc378bcf7af0395a94e54ec81022",
+    "evaluation_trigger_sha256": "4307c6d1bc04e56c5a078364f58893dd19d9bfb05aa6d9e172d9bb0c6814c9fb"
+  },
+  "checks": {
+    "checkpoint_hash_matches": true,
+    "test_ids_match": true,
+    "original_asr_matches": true,
+    "original_accuracy_matches": true,
+    "original_triggered_accuracy_matches": true
+  },
+  "limitation": "Diagnostic masking on non-target triggered images; not a usable all-class defense."
+}

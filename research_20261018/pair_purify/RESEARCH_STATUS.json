@@ -1,0 +1,85 @@
+{
+  "status": "completed_exploration_not_a_validated_purification_method",
+  "scope": "Existing small-data CIFAR10/ResNet18, five Non-IID clients, full-network40round FedAvg; adapted attack, same-client P/C. Separate-client FUBA not evaluated here.",
+  "purification": [
+    {
+      "seed": 71,
+      "role": "development",
+      "post_accuracy": 0.6165000200271606,
+      "post_asr": 0.769444465637207,
+      "paired_gain_accuracy": 0.6159999966621399,
+      "paired_gain_asr": 0.4566666781902313,
+      "paired_gain_rank": 1,
+      "paired_cov_accuracy": 0.6244999766349792,
+      "paired_cov_asr": 0.5394444465637207,
+      "post_only_accuracy": 0.6265000104904175,
+      "post_only_asr": 0.6644444465637207
+    },
+    {
+      "seed": 72,
+      "role": "repair_confirmation",
+      "post_accuracy": 0.612500011920929,
+      "post_asr": 0.9977777600288391,
+      "paired_gain_accuracy": 0.6010000109672546,
+      "paired_gain_asr": 0.980555534362793,
+      "paired_gain_rank": 2,
+      "paired_cov_accuracy": 0.6144999861717224,
+      "paired_cov_asr": 0.9811111092567444,
+      "post_only_accuracy": 0.621999979019165,
+      "post_only_asr": 0.9961110949516296
+    },
+    {
+      "seed": 73,
+      "role": "repair_confirmation",
+      "post_accuracy": 0.6340000033378601,
+      "post_asr": 0.9950000047683716,
+      "paired_gain_accuracy": 0.6340000033378601,
+      "paired_gain_asr": 0.9950000047683716,
+      "paired_gain_rank": 0,
+      "paired_cov_accuracy": 0.6320000290870667,
+      "paired_cov_asr": 0.9888888597488403,
+      "post_only_accuracy": 0.6324999928474426,
+      "post_only_asr": 0.9933333396911621
+    },
+    {
+      "seed": 74,
+      "role": "repair_confirmation",
+      "post_accuracy": 0.6420000195503235,
+      "post_asr": 0.9616666436195374,
+      "paired_gain_accuracy": 0.6420000195503235,
+      "paired_gain_asr": 0.9616666436195374,
+      "paired_gain_rank": 0,
+      "paired_cov_accuracy": 0.6460000276565552,
+      "paired_cov_asr": 0.9311110973358154,
+      "post_only_accuracy": 0.6380000114440918,
+      "post_only_asr": 0.9522222280502319
+    }
+  ],
+  "evaluation_hashes_verified": true,
+  "confirmation_sources_verified": true,
+  "novelty_gate_passed": false,
+  "established": [
+    "The tested pre/post weight geometry edits do not provide reliable purification across the four seeds.",
+    "Poison records already fit their assigned attacker labels in98.89%-100% of cases before deletion, while new-image trigger ASR is6.06%-8.06%. This shows a training-fit/generalization distinction; it is not a proof of a unique memorization mechanism.",
+    "Loss-benefit and input-margin-gradient audits do not identify enough poison records to support source purification."
+  ],
+  "not_established": [
+    "A novel mechanism separating normal Non-IID deletion changes from attack release.",
+    "Complete or certified purification/forgetting.",
+    "Superiority to formal TSBD/RNP/ANP/OTBR or recent null-space defenses.",
+    "Separate-client FUBA applicability."
+  ],
+  "method_selection_gates": [
+    "Hold post model, retained information, repair operation and budget fixed; isolate the value of the real pre model against post-only and unrelated-reference controls.",
+    "Preserve legitimate post-deletion functions, including minority-client/class behavior; do not count restoring pre as successful repair.",
+    "Show an improved safety-utility-data/compute frontier on independent runs; novelty does not follow from before/after comparison, projection, or an extra constraint.",
+    "Distinguish any new/private validation information from what is available to baselines.",
+    "A learned before-model reference does not automatically preserve certified forgetting."
+  ],
+  "operational_notes": [
+    "Initial v2 folded/explicit operations differed by0.0036 logits under reduced precision. The final explicit version disables TF32 and passes the independent wrapper check; the failed run remains separate.",
+    "The v4 batch stopped with a nonzero status and empty log on a prior-control fit. Two controls were rerun unchanged in controls_retry_v4 and completed.",
+    "All fitting/checkpoint selection preceded test ASR evaluation within each run. Seed71 was repeatedly used for development; it is not an independent test.",
+    "Inference rounding can change a few predictions relative to earlier TF32-enabled reports; all current comparisons use the same explicit arithmetic policy."
+  ]
+}

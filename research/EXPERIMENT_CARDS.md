@@ -14,7 +14,7 @@
 
 **판정: 검증 범위 한정**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/R01.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R01-badfu-reproduction/README.md)
 
 - **조건:** Paper32 전체 이력과 확정 시드20261023 끝점; SHA256 및 payload_key 확인. 원본 경로 보존.
 - **정상 대조·비교:** 정상850삭제와 큰 정상 참여자 삭제를 별도 조건으로 보관.
@@ -39,7 +39,7 @@
 
 **판정: v6 실제100R·KD10·전체 CPU 검증 완료·독립평가 자원 대기**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/R02.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R02-fuba-reproduction/README.md)
 
 - **조건:** stcebra/FUBA 수정 후보와 과거 보존 모델; ity207/FedUBA와 다른 연구.
 - **정상 대조·비교:** 같은 생성기를 정상 모델에도 적용한 교차 진단; 정상 삭제 대조의 완료 여부 별도 확인.
@@ -211,7 +211,7 @@
 
 **판정: 기존 점수 보류**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D01.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D01-training-history/README.md)
 
 - **조건:** 보존 글로벌·참여자 이력; 요청 시점까지의 관측만 사용해야 함.
 - **정상 대조·비교:** 정상 실행 간 비교와 동일 정상 보정 자료의 단순 기준선.
@@ -236,7 +236,7 @@
 
 **판정: 구별 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D02.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D02-influence/README.md)
 
 - **조건:** 완전 이력7쌍·부분 이력2사례·실제 전후8쌍; 미지 후보와 실제 업데이트의 내적. 역 Hessian 전체 재현 아님.
 - **정상 대조·비교:** 정상 주요 클래스 삭제·무작위 삭제·감염 모델의 정상 요청.
@@ -260,7 +260,7 @@
 
 **판정: 공통 구별 미확보**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D03.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D03-input-response/README.md)
 
 - **조건:** 보존 전후8쌍·720후보; 자유 마스크·공통 가산·입력 의존 변형 및 내부 모듈 검사.
 - **정상 대조·비교:** 정상 주요 클래스3558개 삭제·임의 삭제·감염 모델 정상 요청; 같은 학습 실행을 공유함.
@@ -284,7 +284,7 @@
 
 **판정: 구별·역할 판정 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D04.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D04-client-removal/README.md)
 
 - **조건:** 48개 제출 제외 모델과 기존 끝점; 실제 FU 전체와 다름. 선택80장·확인80장.
 - **정상 대조·비교:** 정상 보정 실행과 보정 외 정상 실행.
@@ -308,7 +308,7 @@
 
 **판정: 공통 특징 채택 안 함**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D05.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D05-feature-bias/README.md)
 
 - **조건:** 모델22개·전후13쌍; layer2/3 절단, 클래스별 가상 표현 최적화. 원 논문 전체 재현 아님.
 - **정상 대조·비교:** 정상 주요 클래스·무작위·전체 참여자 삭제와 이전 정상 조건.
@@ -332,7 +332,7 @@
 
 **판정: 큰 정상 탈퇴 혼동**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D06.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D06-forgetting/README.md)
 
 - **조건:** 공개500장·진단 복사본 상승 학습5epoch·개별 제출 융합 검사 포함.
 - **정상 대조·비교:** 큰 정상 참여자22.8%/19.3% 삭제·클래스 집중 삭제.
@@ -355,7 +355,7 @@
 
 **판정: 파일럿 구별 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D07.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D07-diagnostic-task/README.md)
 
 - **조건:** 난수200장 진단 과제 삽입 후 통제 로컬 학습; 실제 FU 전체 실험 아님.
 - **정상 대조·비교:** 정상 균형·정상 편중2048/8192장·독성·위장 혼합.
@@ -380,7 +380,7 @@
 
 **판정: 핵심 반례 — 구별 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D08.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D08-matched-clients/README.md)
 
 - **조건:** 전후 동일 잔류 집합·자료·가중치·양음 교란; 새 참여자 응답을 실제 계산. 공개 참조 응답 보정 포함.
 - **정상 대조·비교:** 동일5시점 FU 규칙의 BadFU 공격과 정상22.790%/19.336%전체 탈퇴; 보존850삭제 대조 별도.
@@ -405,7 +405,7 @@
 
 **판정: 제한적 관찰·안정성 미확보**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D09.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D09-inversion-cost/README.md)
 
 - **조건:** 고정 모델·공통 가산/마스크 최적화; 유한 탐색의 성공 비용 상한이며 인증된 최소 거리가 아님.
 - **정상 대조·비교:** 정상850삭제·클래스 집중·22.8%/19.3%전체 탈퇴. 전체 FU 절차가 같지 않은 표는 따로 해석.
@@ -419,7 +419,7 @@
 - [research/boundary_validation_20261022/REPORT_KO.txt](boundary_validation_20261022/REPORT_KO.txt)
 - [research/boundary_validation_20261022/FINAL_RESULTS.json](boundary_validation_20261022/FINAL_RESULTS.json)
 
-**묶은 폴더:** [boundary_validation_20261022](boundary_validation_20261022) · [boundary_mask_validation_20261022](boundary_mask_validation_20261022)
+**묶은 폴더:** [boundary_validation_20261022](boundary_validation_20261022) · `boundary_mask_validation_20261022` (로컬 보관)
 
 <a id="d10"></a>
 
@@ -429,7 +429,7 @@
 
 **판정: 제한된 BadFU 지지**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D10.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D10-cost-correction/README.md)
 
 - **조건:** 같은 모델에서320장 탐색/320장 보정;1200회 및 초기화 묶음 반복. 실제 FL 시드 반복 아님.
 - **정상 대조·비교:** 동일5시점 FU의 큰 정상 삭제와 별도850-vs850 보존쌍; 정확도 유지 여부 별도.
@@ -454,7 +454,7 @@
 
 **판정: 주력 채택 안 함·입력 한계**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D11.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D11-minimum-cost/README.md)
 
 - **조건:** 전후 모델·정상 라벨 이미지·입력 기울기;95%이미지의 Linf 성공 비용. 실제G 미제공.
 - **정상 대조·비교:** 정상 같은 참여자 삭제; 큰 전체 탈퇴 대조와 잠복 재현은 미완료.
@@ -479,7 +479,7 @@
 
 **판정: 독립 입력 재현 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D12.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D12-data-free-probes/README.md)
 
 - **조건:** 합성 pseudo-label 입력;마스크/공통 가산 탐색;보존 제출 이력;11쌍 후13쌍 확장.
 - **정상 대조·비교:** 정상 클래스 집중·무작위·큰 전체 탈퇴; 서로 다른 FU 종류 분리.
@@ -503,7 +503,7 @@
 
 **판정: 범용 탐지 미확보**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D13.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D13-transform-families/README.md)
 
 - **조건:** 보존13쌍·합성/정상40장 탐색·실제320장 확인;최소5source의80%전환 규칙.
 - **정상 대조·비교:** 대조9요청에는 감염 모델의 정상 요청도 포함. 독립 학습13회가 아님.
@@ -527,7 +527,7 @@
 
 **판정: 일반화·구별 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D14.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D14-conditional-transform/README.md)
 
 - **조건:** 입력 의존 Tθ의480스텝 학습;합성/정상40장·확인400장;모델쌍13개.
 - **정상 대조·비교:** 악성4요청·대조9요청, 클래스 집중 삭제 포함.
@@ -551,7 +551,7 @@
 
 **판정: 두 시드 일관 구별 실패**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D15.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D15-joint-search/README.md)
 
 - **조건:** 승인된 실제 BadFU2학습 시드·전후5쌍;3변형군·2탐색 초기값;정상 참여자1/2/3 각512장.
 - **정상 대조·비교:** 감염 모델 정상850삭제·정상850삭제·19.336%정상 전체 탈퇴;모든 후보를 선택 후 확인.
@@ -576,7 +576,7 @@
 
 **판정: 사용자 지시로 주력 제외**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D16.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D16-retired-magnitude/README.md)
 
 - **조건:** paired-probe의20Conv+FC 관측과 후속 H3 분석;같은 모델과 선택 탐침을 공유.
 - **정상 대조·비교:** 소수 승인 전후쌍·큰 정상 탈퇴 한 건;독립 운영 오탐 보정 없음.
@@ -600,7 +600,7 @@
 
 **판정: 노출 가설 기각·직접 탐색 한정 관찰**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D17.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D17-direct-search/README.md)
 
 - **조건:** 승인 BadFU2학습 시드·5쌍·신규 분할·3변형군;최종 확인은 원본 모델.15개 결과 독립 native재계산 일치.
 - **정상 대조·비교:** 감염 정상850·깨끗한850·19.336%전체 탈퇴. 큰 정상 탈퇴 한 건, 동일 데이터 분할.
@@ -626,7 +626,7 @@
 
 **판정: 평가자 진단·조건부 증거**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/T01.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/03-mechanism/T01-causal-controls/README.md)
 
 - **조건:** 기존 조정 실험의 실제 트리거·독성/위장 구성·역할을 사용하는 원인 분석;서버 입력 아님.
 - **정상 대조·비교:** B+P+C→B+P 대 B+C→B, 라벨 복원 대조. 환경 차이와 사후 부분집합 제한 보존.
@@ -650,7 +650,7 @@
 
 **판정: 제한된 정화 관찰**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/P01.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P01-response-transfer/README.md)
 
 - **조건:** 조정 BadFU형4FL시드;동일 검증KL상한, 실제 사용KL 완전 일치 아님.
 - **정상 대조·비교:** 삭제 후 자기증류, KL상한0.010/0.020.
@@ -674,7 +674,7 @@
 
 **판정: 제한된 정화 관찰**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/P02.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P02-classifier-repair/README.md)
 
 - **조건:** 저자 코드 계열 한 실제FU후 모델;삭제 전 ASR이 이미 높았음. 패치 시드 반복은 FL 반복 아님.
 - **정상 대조·비교:** 패치 수·반례 보강·후보 선택 규칙·유지 재학습 모델 비교.
@@ -698,7 +698,7 @@
 
 **판정: 목표 판정 제외 — 입력 선택 오류**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/P03.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P03-purification-pilot/README.md)
 
 - **조건:** 잘못 선택한 seed42 full6 고사전ASR 진단 조건;승인된 잠복 전후쌍이 아님. 원 A1/A2/C가 별도 가설인 사실은 원문을 따른다.
 - **정상 대조·비교:** 삭제량·출발 모델도 짝맞춤되지 않음.
@@ -722,7 +722,7 @@
 
 **판정: 미검증·자동 실행 대상 아님**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/N01.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/05-parked/N01-trusted-reference/README.md)
 
 - **조건:** 2026-10-23 대화상의 제안. 실제 획득 가능한 참조·분포 대표성·공격 특이성 검증 없음.
 - **정상 대조·비교:** 동일 정상 탈퇴를 반영한 유효 기준 모델과 큰 정상 대조가 필요하지만 아직 만들어 검증하지 않음.
@@ -745,7 +745,7 @@
 
 **판정: 한 시드 분리 관측·투영 추가 가치 미입증**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D18.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D18-feature-projection/README.md)
 
 - **조건:** 사용자 직접 실행 요청에 따른 유한 진단. 명시적 badfu.confirmed.s20261023.v1/retrain_activation/local 봉인 검증; 유지 자료 전체 재학습 전후3쌍/실제 FL1시드. 균형50장·pre 특징·중심화PCA95%·k40·leave-one-out Z>=6을 계산 전에 고정.346개 참조/기저 조합을 모두 보존.
 - **정상 대조·비교:** 같은 정상850장 삭제와 정상9668/50000(19.336%) 참여자 전체 삭제. 점수 고정 후 별도 실제 트리거9000장 평가. 사후 해석 절제로 투영 전 FC 행 norm의 동일 Z를 비교.
@@ -778,7 +778,7 @@
 
 **판정: 진단 쌍 분리 미관측·유효 잠복 FUBA는 미검증**
 
-[실험 시작 이유와 실제 실행 과정 읽기](../reports/experiment_process_20261026/experiments/D19.md)
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/02-detection/D19-fuba-projection/README.md)
 
 - **조건:** 명시적 fuba.legacy.s20261020.retained_pairs.diagnostic/diagnostic/local로 기존4개 export를 등록·선택. 같은 D18 수식/사진seed/임계값, native pixel01/linear512,346설정×2쌍=692행. 잠복 재현 실패한 과거 유지자료 재학습 전후로 최신v5와 다르다.
 - **정상 대조·비교:** 과거 정상 같은 참여자 삭제 m09→m10. 온전한 큰 정상 탈퇴와 승인 잠복 FUBA 쌍은 없음. 투영전 FC행 norm의 같은Z를 사전 보조비교로 기록.

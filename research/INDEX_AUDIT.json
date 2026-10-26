@@ -2,7 +2,7 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "35898123038bb58c74a4099504d31e1fd70e2c986b13bd379ba0526029c14caf",
+  "registry_sha256": "2a2a7cba7d6c33b646dc481d5e5a5e415134dafc9c918494f8910d1c79333fbc",
   "cards": 26,
   "unique_source_documents": 216,
   "top_level_folders": 97,
@@ -293,6 +293,7 @@
       "related_cards": [],
       "top_level_documents": [
         "research/90_archive/README.md",
+        "research/90_archive/research_readme_before_github_20261026.md",
         "research/90_archive/root_readme_before_reorganization.md"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"

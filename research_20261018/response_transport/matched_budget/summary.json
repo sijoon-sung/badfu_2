@@ -1,0 +1,440 @@
+[
+  {
+    "run": "fedavg_v1",
+    "seed": 71,
+    "case": "attack",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 0.610546875,
+        "validation_kl": 0.004998218733817339,
+        "guard_allowed": true,
+        "accuracy": 0.6194999814033508,
+        "asr": 0.30888888239860535,
+        "post_kl": 0.016319159418344498,
+        "post_agreement": 0.9309999942779541
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 0.905859375,
+        "validation_kl": 0.009994029067456722,
+        "guard_allowed": true,
+        "accuracy": 0.6225000023841858,
+        "asr": 0.1850000023841858,
+        "post_kl": 0.03264359012246132,
+        "post_agreement": 0.906000018119812
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.01190818939357996,
+        "guard_allowed": true,
+        "accuracy": 0.6240000128746033,
+        "asr": 0.15611110627651215,
+        "post_kl": 0.0386490598320961,
+        "post_agreement": 0.9004999995231628
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 1.0,
+        "validation_kl": 0.0047506364062428474,
+        "guard_allowed": true,
+        "accuracy": 0.6209999918937683,
+        "asr": 0.19499999284744263,
+        "post_kl": 0.01614489033818245,
+        "post_agreement": 0.9319999814033508
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.0047506364062428474,
+        "guard_allowed": true,
+        "accuracy": 0.6209999918937683,
+        "asr": 0.19499999284744263,
+        "post_kl": 0.01614489033818245,
+        "post_agreement": 0.9319999814033508
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.0047506364062428474,
+        "guard_allowed": true,
+        "accuracy": 0.6209999918937683,
+        "asr": 0.19499999284744263,
+        "post_kl": 0.01614489033818245,
+        "post_agreement": 0.9319999814033508
+      }
+    ]
+  },
+  {
+    "run": "fedavg_v1",
+    "seed": 72,
+    "case": "attack",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 0.44453125,
+        "validation_kl": 0.004996610339730978,
+        "guard_allowed": true,
+        "accuracy": 0.6100000143051147,
+        "asr": 0.7716666460037231,
+        "post_kl": 0.013057725504040718,
+        "post_agreement": 0.9470000267028809
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 0.6453125000000002,
+        "validation_kl": 0.009999162517488003,
+        "guard_allowed": true,
+        "accuracy": 0.6104999780654907,
+        "asr": 0.39444443583488464,
+        "post_kl": 0.025537272915244102,
+        "post_agreement": 0.9244999885559082
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 0.936328125,
+        "validation_kl": 0.019996967166662216,
+        "guard_allowed": true,
+        "accuracy": 0.612500011920929,
+        "asr": 0.12166666984558105,
+        "post_kl": 0.048176735639572144,
+        "post_agreement": 0.8985000252723694
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 0.7214843750000001,
+        "validation_kl": 0.004996639676392078,
+        "guard_allowed": true,
+        "accuracy": 0.6129999756813049,
+        "asr": 0.4672222137451172,
+        "post_kl": 0.013537389226257801,
+        "post_agreement": 0.9474999904632568
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.00923814158886671,
+        "guard_allowed": true,
+        "accuracy": 0.6115000247955322,
+        "asr": 0.13388888537883759,
+        "post_kl": 0.024149827659130096,
+        "post_agreement": 0.9259999990463257
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.00923814158886671,
+        "guard_allowed": true,
+        "accuracy": 0.6115000247955322,
+        "asr": 0.13388888537883759,
+        "post_kl": 0.024149827659130096,
+        "post_agreement": 0.9259999990463257
+      }
+    ]
+  },
+  {
+    "run": "fedavg_v1",
+    "seed": 73,
+    "case": "attack",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 0.45585937500000007,
+        "validation_kl": 0.004992815665900707,
+        "guard_allowed": true,
+        "accuracy": 0.6345000267028809,
+        "asr": 0.8005555272102356,
+        "post_kl": 0.012952903285622597,
+        "post_agreement": 0.9455000162124634
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 0.659765625,
+        "validation_kl": 0.009991337545216084,
+        "guard_allowed": true,
+        "accuracy": 0.6340000033378601,
+        "asr": 0.42888888716697693,
+        "post_kl": 0.024649610742926598,
+        "post_agreement": 0.925000011920929
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 0.7949218750000001,
+        "validation_kl": 0.014146288856863976,
+        "guard_allowed": true,
+        "accuracy": 0.637499988079071,
+        "asr": 0.21222221851348877,
+        "post_kl": 0.03379298374056816,
+        "post_agreement": 0.9100000262260437
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 0.6660156250000001,
+        "validation_kl": 0.0049998704344034195,
+        "guard_allowed": true,
+        "accuracy": 0.6345000267028809,
+        "asr": 0.6399999856948853,
+        "post_kl": 0.012310049496591091,
+        "post_agreement": 0.9440000057220459
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 0.9703125,
+        "validation_kl": 0.00999472476541996,
+        "guard_allowed": true,
+        "accuracy": 0.6389999985694885,
+        "asr": 0.21166667342185974,
+        "post_kl": 0.023464495316147804,
+        "post_agreement": 0.9244999885559082
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.010565795935690403,
+        "guard_allowed": true,
+        "accuracy": 0.6389999985694885,
+        "asr": 0.18666666746139526,
+        "post_kl": 0.0246884748339653,
+        "post_agreement": 0.9244999885559082
+      }
+    ]
+  },
+  {
+    "run": "fedavg_confirm74",
+    "seed": 74,
+    "case": "attack",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 0.599609375,
+        "validation_kl": 0.004998805932700634,
+        "guard_allowed": true,
+        "accuracy": 0.6495000123977661,
+        "asr": 0.375,
+        "post_kl": 0.018109196797013283,
+        "post_agreement": 0.9340000152587891
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 0.873046875,
+        "validation_kl": 0.009993666782975197,
+        "guard_allowed": true,
+        "accuracy": 0.6499999761581421,
+        "asr": 0.15944445133209229,
+        "post_kl": 0.03501193970441818,
+        "post_agreement": 0.9054999947547913
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.012960458174347878,
+        "guard_allowed": true,
+        "accuracy": 0.6470000147819519,
+        "asr": 0.1111111119389534,
+        "post_kl": 0.04410865157842636,
+        "post_agreement": 0.8974999785423279
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 0.8363281250000001,
+        "validation_kl": 0.0049969227984547615,
+        "guard_allowed": true,
+        "accuracy": 0.6460000276565552,
+        "asr": 0.2433333396911621,
+        "post_kl": 0.01849869266152382,
+        "post_agreement": 0.9369999766349792
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.00689740851521492,
+        "guard_allowed": true,
+        "accuracy": 0.6434999704360962,
+        "asr": 0.15388889610767365,
+        "post_kl": 0.024946561083197594,
+        "post_agreement": 0.9265000224113464
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.00689740851521492,
+        "guard_allowed": true,
+        "accuracy": 0.6434999704360962,
+        "asr": 0.15388889610767365,
+        "post_kl": 0.024946561083197594,
+        "post_agreement": 0.9265000224113464
+      }
+    ]
+  },
+  {
+    "run": "fedavg_v1",
+    "seed": 71,
+    "case": "normal",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 0.9402343750000001,
+        "validation_kl": 0.004998377524316311,
+        "guard_allowed": true,
+        "accuracy": 0.6259999871253967,
+        "asr": 0.04444444552063942,
+        "post_kl": 0.017286304384469986,
+        "post_agreement": 0.9390000104904175
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.00559008214622736,
+        "guard_allowed": true,
+        "accuracy": 0.6269999742507935,
+        "asr": 0.04500000178813934,
+        "post_kl": 0.019393131136894226,
+        "post_agreement": 0.9350000023841858
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.00559008214622736,
+        "guard_allowed": true,
+        "accuracy": 0.6269999742507935,
+        "asr": 0.04500000178813934,
+        "post_kl": 0.019393131136894226,
+        "post_agreement": 0.9350000023841858
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 1.0,
+        "validation_kl": 0.0007695335661992431,
+        "guard_allowed": true,
+        "accuracy": 0.6315000057220459,
+        "asr": 0.0416666679084301,
+        "post_kl": 0.0024045228492468596,
+        "post_agreement": 0.9764999747276306
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.0007695335661992431,
+        "guard_allowed": true,
+        "accuracy": 0.6315000057220459,
+        "asr": 0.0416666679084301,
+        "post_kl": 0.0024045228492468596,
+        "post_agreement": 0.9764999747276306
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.0007695335661992431,
+        "guard_allowed": true,
+        "accuracy": 0.6315000057220459,
+        "asr": 0.0416666679084301,
+        "post_kl": 0.0024045228492468596,
+        "post_agreement": 0.9764999747276306
+      }
+    ]
+  },
+  {
+    "run": "fedavg_confirm74",
+    "seed": 74,
+    "case": "safe",
+    "rows": [
+      {
+        "method": "post_self_kd",
+        "budget": 0.005,
+        "alpha": 1.0,
+        "validation_kl": 0.004985886160284281,
+        "guard_allowed": true,
+        "accuracy": 0.6504999995231628,
+        "asr": 0.025555554777383804,
+        "post_kl": 0.018916141241788864,
+        "post_agreement": 0.9365000128746033
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.004985886160284281,
+        "guard_allowed": true,
+        "accuracy": 0.6504999995231628,
+        "asr": 0.025555554777383804,
+        "post_kl": 0.018916141241788864,
+        "post_agreement": 0.9365000128746033
+      },
+      {
+        "method": "post_self_kd",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.004985886160284281,
+        "guard_allowed": true,
+        "accuracy": 0.6504999995231628,
+        "asr": 0.025555554777383804,
+        "post_kl": 0.018916141241788864,
+        "post_agreement": 0.9365000128746033
+      },
+      {
+        "method": "transport",
+        "budget": 0.005,
+        "alpha": 1.0,
+        "validation_kl": 0.0007834748248569667,
+        "guard_allowed": true,
+        "accuracy": 0.6535000205039978,
+        "asr": 0.027222221717238426,
+        "post_kl": 0.003192031290382147,
+        "post_agreement": 0.9729999899864197
+      },
+      {
+        "method": "transport",
+        "budget": 0.01,
+        "alpha": 1.0,
+        "validation_kl": 0.0007834748248569667,
+        "guard_allowed": true,
+        "accuracy": 0.6535000205039978,
+        "asr": 0.027222221717238426,
+        "post_kl": 0.003192031290382147,
+        "post_agreement": 0.9729999899864197
+      },
+      {
+        "method": "transport",
+        "budget": 0.02,
+        "alpha": 1.0,
+        "validation_kl": 0.0007834748248569667,
+        "guard_allowed": true,
+        "accuracy": 0.6535000205039978,
+        "asr": 0.027222221717238426,
+        "post_kl": 0.003192031290382147,
+        "post_agreement": 0.9729999899864197
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+{
+  "results": {
+    "post": {
+      "clean_accuracy": 0.8519999980926514,
+      "universal_patch_asr": 0.9944444298744202,
+      "corner": "br",
+      "restart": 1,
+      "validation_target_rate": 0.9930555820465088,
+      "candidates": [
+        {
+          "validation_target_rate": 0.0555555559694767,
+          "corner": "tl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0625,
+          "corner": "tl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.1666666716337204,
+          "corner": "tr",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.2152777761220932,
+          "corner": "tr",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.1944444477558136,
+          "corner": "bl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.2291666716337204,
+          "corner": "bl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.9791666865348816,
+          "corner": "br",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.9930555820465088,
+          "corner": "br",
+          "restart": 1
+        }
+      ]
+    },
+    "paired_repair": {
+      "clean_accuracy": 0.8500000238418579,
+      "universal_patch_asr": 0.3933333456516266,
+      "corner": "br",
+      "restart": 1,
+      "validation_target_rate": 0.3402777910232544,
+      "candidates": [
+        {
+          "validation_target_rate": 0.0416666679084301,
+          "corner": "tl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0347222238779068,
+          "corner": "tl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.0347222238779068,
+          "corner": "tr",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0347222238779068,
+          "corner": "tr",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.02083333395421505,
+          "corner": "bl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.013888888992369175,
+          "corner": "bl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.2152777761220932,
+          "corner": "br",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.3402777910232544,
+          "corner": "br",
+          "restart": 1
+        }
+      ]
+    },
+    "counterexample_repair": {
+      "clean_accuracy": 0.8339999914169312,
+      "universal_patch_asr": 0.1433333307504654,
+      "corner": "br",
+      "restart": 0,
+      "validation_target_rate": 0.0902777761220932,
+      "candidates": [
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.02083333395421505,
+          "corner": "tr",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.02777777798473835,
+          "corner": "tr",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.02083333395421505,
+          "corner": "bl",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0347222238779068,
+          "corner": "bl",
+          "restart": 1
+        },
+        {
+          "validation_target_rate": 0.0902777761220932,
+          "corner": "br",
+          "restart": 0
+        },
+        {
+          "validation_target_rate": 0.0902777761220932,
+          "corner": "br",
+          "restart": 1
+        }
+      ]
+    }
+  },
+  "seconds": 37.35006499290466,
+  "code_sha256": "2a0a102765329552639fb3b38d1a80fbe65a94cbf2619666a8b27aa547802bd1",
+  "scope": "Adaptive universal input patch optimized on development, selected on validation. Not adaptive FL poisoning.",
+  "test_n": 1000,
+  "asr_n": 900,
+  "target": 0,
+  "budget": {
+    "corners": 4,
+    "restarts": 2,
+    "steps": 60
+  }
+}

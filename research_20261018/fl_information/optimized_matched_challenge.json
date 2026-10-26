@@ -1,0 +1,87 @@
+{
+  "source_sha256": "b5e8efc04106590df40ed9a663378d7d0a3724d197fe1770e3eaf9a55260279a",
+  "results": [
+    {
+      "search": "optimized_difference_matched71",
+      "seed": 71,
+      "scenario": "matched_normal",
+      "method": "pre_ce",
+      "selected_index": 32,
+      "location": [
+        28,
+        28
+      ],
+      "target": 2,
+      "development_score": 0.28888888888888886,
+      "validation_score": 0.3277777777777778,
+      "validation_shadow_rate": 0.3277777777777778,
+      "validation_shadow_clean_rate": 0.07222222222222222,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 40.465126276016235,
+      "validation_future_rate": 0.28888888888888886,
+      "validation_pre_rate": 0.3277777777777778,
+      "test_future_rate": 0.2816666666666667,
+      "test_pre_rate": 0.29444444444444445,
+      "challenge": {
+        "development": {
+          "pre": 0.22877977788448334,
+          "retained": 0.21795201301574707,
+          "forget": 0.20949715375900269,
+          "retained_gain": -0.010827764868736267,
+          "relative_to_forget": 0.008454859256744385,
+          "checked_score": 0
+        },
+        "validation": {
+          "pre": 0.23645523190498352,
+          "retained": 0.22777222096920013,
+          "forget": 0.21850243210792542,
+          "retained_gain": -0.008683010935783386,
+          "relative_to_forget": 0.00926978886127472,
+          "checked_score": 0
+        }
+      }
+    },
+    {
+      "search": "optimized_difference_matched71",
+      "seed": 71,
+      "scenario": "matched_normal",
+      "method": "retained_gain",
+      "selected_index": 33,
+      "location": [
+        28,
+        28
+      ],
+      "target": 3,
+      "development_score": 0.013747312128543854,
+      "validation_score": 0.01225356012582779,
+      "validation_shadow_rate": 0.18888888888888888,
+      "validation_shadow_clean_rate": 0.07777777777777778,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 46.38651156425476,
+      "validation_future_rate": 0.14444444444444443,
+      "validation_pre_rate": 0.15,
+      "test_future_rate": 0.105,
+      "test_pre_rate": 0.12111111111111111,
+      "challenge": {
+        "development": {
+          "pre": 0.08237244188785553,
+          "retained": 0.09611979871988297,
+          "forget": 0.07512049376964569,
+          "retained_gain": 0.013747356832027435,
+          "relative_to_forget": 0.020999304950237274,
+          "checked_score": 0.013747356832027435
+        },
+        "validation": {
+          "pre": 0.0791785791516304,
+          "retained": 0.09143213927745819,
+          "forget": 0.07527315616607666,
+          "retained_gain": 0.01225356012582779,
+          "relative_to_forget": 0.01615898311138153,
+          "checked_score": 0.01225356012582779
+        }
+      }
+    }
+  ]
+}

@@ -1,25 +1,46 @@
-**실험 과정을 읽는 자료:** [전체 정리와 개별 실험](reports/experiment_process_20261026/README.md) · [교수 미팅용 Word 문서](reports/experiment_process_20261026/BadFU_실험과정_전체정리_20261026.docx)
+# BadFU 실험 기록
 
-> **항상 먼저 읽기:** [연구 실험 인덱스](research/INDEX.md) → [관련 실험 카드](research/EXPERIMENT_CARDS.md) → 연결된 원 보고서. **단순 반응량은 큰 정상 non-IID 탈퇴와 공격을 구별하지 못했다.** 새 제안은 이 반례와 기존 실패를 먼저 검토한다. [전체 폴더 색인](research/EXPERIMENT_FOLDERS.md)
->
-> **확정 모델 바로 열기:** [BadFU 기준 체크포인트 v1](CONFIRMED_CHECKPOINTS/BadFU_s20261023_v1/README.md). 삭제 전 ASR **14.29% → 위장 제거 후 100%**, 정상 정확도 **90.38% → 90.46%**. 저자 코드 직접 비교를 통과한 모델·정상 대조·공통 초기값을 읽기 전용 독립 사본으로 보관했다. 공격 재현의 관측이며 탐지 성공을 의미하지 않는다.
->
-> **연구 모델 선택:** [검증된 궤적과 폴더 목록](research/00_trajectories/README.md). 최종 모델 기본 ID는 `badfu.confirmed.s20261023.v1`, 전체 이력 기본 ID는 `badfu.paper32.s20261020`이다. 파일 이름이나 날짜로 모델을 고르지 않는다.
+위장 자료를 삭제한 뒤 강해지는 공격을 재현하고, 이를 큰 정상 참여자의 자료 삭제와 구별할 수 있는지 실험했다. 각 기록에는 **시작 이유 → 실험 조건 → 실행 순서 → 결과 → 판단**을 적었다.
 
-# BadFU 연구
+**[전체 실험 목록](experiments/README.md)** · [용어와 모델 구분](experiments/GUIDE.md) · [과거 세부 실험](experiments/archive/README.md)
 
-[FUBA 체크포인트 생성·로컬 전달 상태](CHECKPOINTS_FOR_REVIEW/README.md)
+## 처음 읽는 순서
 
-[처음부터 읽는 연구 정리](research/README.md)에서 논문·코드·기본 검증·방어 가설·수학적 근거를 순서대로 읽는다.
+1. **[R01 · BadFU 재현](experiments/01-reproduction/R01-badfu-reproduction/README.md)** — 어떤 모델과 삭제 절차를 사용했는지 확인한다.
+2. **[D08 · 같은 참여자 응답 비교](experiments/02-detection/D08-matched-clients/README.md)** — 큰 정상 삭제가 공격과 비슷한 점수를 만드는 문제를 본다.
+3. **[D17 · 직접 탐색과 복사본 탐색 비교](experiments/02-detection/D17-direct-search/README.md)** — 후속 실험의 실제 과정과 제한된 결과를 본다.
 
-모든 새 실험은 [가설 한 줄 정리 원칙](research/EXPERIMENT_RULES.md)을 따른다. 최신 판정은 연구 실험 인덱스를 우선하고, [2026-10-20 미팅 자료](research/05_meetings/20261020/CLAIM_BOARD.md)는 당시 주장과 검증의 기록으로 읽는다.
+그다음 아래 분야에서 필요한 실험을 고르면 된다. 각 실험 폴더의 `README.md`에서 과정을 읽고, `SOURCES.md`에서 원 보고서·결과·정정 기록을 확인할 수 있다.
 
-- [원논문 재현](research/01_reproduction/README.md)
-- [정화와 방어 가설](research/02_purification/README.md)
-- [탐지의 문제 정의](research/03_detection/README.md)
-- [수학적 명제와 증명](research/04_theory/README.md)
-- [앞에서 제외한 시도](research/90_archive/README.md)
+## 분야별 실험
 
-실행을 이어갈 때는 [재현 및 재개 절차](REPRODUCE.md)를 사용한다. 모델·데이터·환경·기존 실행 코드는 원래 경로를 유지한다.
+| 분야 | 확인한 내용 | 기록 |
+|---|---|---|
+| [공격 재현](experiments/01-reproduction/README.md) | BadFU·FUBA의 학습과 실제 삭제 전후 모델 | R01–R02 |
+| [공격 탐지](experiments/02-detection/README.md) | 이력, 입력 변형, 참여자 응답, 변형 비용과 모델 변화 비교 | D01–D19 |
+| [원인 확인](experiments/03-mechanism/README.md) | 독성·위장 자료의 역할을 나눈 대조 | T01 |
+| [정화](experiments/04-purification/README.md) | 반응 전이와 분류층 교정, 후속 파일럿 | P01–P03 |
+| [보류한 제안](experiments/05-parked/README.md) | 신뢰 기준 모델 제안의 근거와 미확인 조건 | N01 |
+| [과거 세부 실험](experiments/archive/README.md) | 기존 PR 보고서 68개와 추가 파일럿 | 과거 번호 유지 |
 
-[이전 전체 실행 안내](research/90_archive/root_readme_before_reorganization.md) · [옛 실험 원본 색인](pr_reports/INDEX.md)
+## 현재까지 확인한 범위
+
+BadFU의 위장 자료 제거 후 공격 활성화는 관측했다. 탐지에서는 큰 정상 삭제와 점수가 겹치는 반례가 남았고, 일부 조건에서 얻은 분리 결과도 있다. **트리거 종류와 정상 분포가 달라져도 통하는 탐지 방법은 아직 확인하지 못했다.** 각 결과의 비교 조건과 한계는 해당 실험에 함께 적었다.
+
+## 브랜치
+
+| 브랜치 | 용도 |
+|---|---|
+| [codex/experiment-records](https://github.com/sijoon-sung/badfu_2/tree/codex/experiment-records) · 기본 | 이 실험 목록과 과정·결과·근거 기록 |
+| [codex/original-reproduction](https://github.com/sijoon-sung/badfu_2/tree/codex/original-reproduction) | 최초 재현 코드와 당시 실행 안내 |
+
+## 자료 위치
+
+| 위치 | 내용 |
+|---|---|
+| [experiments](experiments/README.md) | GitHub에서 읽는 실험 과정과 분야별 목록 |
+| [research](research/README.md) | 원 보고서, 수치, 설정, 정정과 검증 기록 |
+| [pr_reports](pr_reports/README.md) | 과거 세부 실험의 원문 |
+| [reports](reports/README.md) | 날짜별 통합 문서와 내보내기 사본 |
+
+모델 선택과 보관 범위는 [용어와 모델 안내](experiments/GUIDE.md)를 따른다. 새 실험을 기록할 때는 [기록 형식](experiments/TEMPLATE.md)을 사용한다.

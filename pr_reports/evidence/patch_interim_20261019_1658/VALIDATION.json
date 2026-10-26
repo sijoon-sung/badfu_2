@@ -1,0 +1,19 @@
+{
+  "requests_recomputed": 70,
+  "candidate_selection_recomputed": 70,
+  "response_shape_per_model_per_split": [
+    32,
+    10
+  ],
+  "max_absolute_score_component_error": 0.0,
+  "frozen_threshold": 0.006,
+  "future_absence_record_checked": 70,
+  "remote_prediction_file_hashes_checked": 70,
+  "protocol_sha256": "bfc1f78230b943c0c8c03ac11b3881abdb085788a2d5c5910a379fc7b0c58200",
+  "source_hashes": {
+    "sources/scale_patch_experiment.py": "96b9f3f6c47d1a4520663fd74aad34f6a48bf199c561728fb26d37413708d410",
+    "sources/reference/train_factorial.py": "b5989be0ef2d4dc4646af0df029f766802486d450273d261e8803f9a968f27bb",
+    "sources/reference/probe_information.py": "a041d476f23b77ba61594023eb0cf163db60c204ae15807a483a1b93ae00a83f"
+  },
+  "note": "Remote saved logits were reduced without inference; local float32 reconstruction checks development selection and validation score. Future-absence checks use the locked experiment records."
+}

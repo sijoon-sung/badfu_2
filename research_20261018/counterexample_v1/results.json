@@ -1,0 +1,36 @@
+{
+  "chosen": {
+    "key": "iteration2_a0.1_l0.1",
+    "iteration": 2,
+    "alpha": 0.1,
+    "lambda_": 0.1,
+    "validation_accuracy": 0.854,
+    "validation_consistency": 0.5748533486387052,
+    "feasible": true
+  },
+  "results": {
+    "initial_static": {
+      "accuracy": 0.87,
+      "asr": 0.11577777777777777,
+      "triggered_original_accuracy": 0.6013333333333334
+    },
+    "iteration1_a0.1_l0.1": {
+      "accuracy": 0.8532,
+      "asr": 0.058666666666666666,
+      "triggered_original_accuracy": 0.6113333333333333
+    },
+    "iteration2_a0.1_l0.1": {
+      "accuracy": 0.8514,
+      "asr": 0.06822222222222223,
+      "triggered_original_accuracy": 0.6108888888888889
+    },
+    "iteration3_previous": {
+      "accuracy": 0.8514,
+      "asr": 0.06822222222222223,
+      "triggered_original_accuracy": 0.6108888888888889
+    }
+  },
+  "seconds": 69.1037118434906,
+  "code_sha256": "fd7b4c3d3c1aa951a69630a1b6a041cf3d54838371f2d6a01fe20354bb71cb6e",
+  "original_record_sha256": "f24015722dd994819578b8f388831199f0bf5a9b7a9d00171f72452efef4c9d6"
+}

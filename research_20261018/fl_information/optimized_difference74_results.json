@@ -1,0 +1,38 @@
+[
+  {
+    "seed": 74,
+    "scenario": "attack",
+    "method": "pre_ce",
+    "selected_index": 19,
+    "location": [
+      0,
+      28
+    ],
+    "target": 9,
+    "development_score": 0.45555555555555555,
+    "validation_score": 0.4222222222222222,
+    "validation_shadow_rate": 0.4222222222222222,
+    "validation_shadow_clean_rate": 0.03333333333333333,
+    "steps": 160,
+    "models_per_step": 1,
+    "seconds": 43.12024283409119
+  },
+  {
+    "seed": 74,
+    "scenario": "attack",
+    "method": "retained_gain",
+    "selected_index": 30,
+    "location": [
+      28,
+      28
+    ],
+    "target": 0,
+    "development_score": 0.08360462635755539,
+    "validation_score": 0.08991194516420364,
+    "validation_shadow_rate": 0.2388888888888889,
+    "validation_shadow_clean_rate": 0.08888888888888889,
+    "steps": 80,
+    "models_per_step": 2,
+    "seconds": 34.26092767715454
+  }
+]

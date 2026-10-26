@@ -1,0 +1,1042 @@
+[
+  {
+    "case": "attack71",
+    "kind": "attack",
+    "witness_target": 0,
+    "witness_location": [
+      28,
+      28
+    ],
+    "ranking_seconds": 148.00789594650269,
+    "primary_localization": [
+      {
+        "method": "interaction",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 0,
+        "special_role_recall": 0.0,
+        "precision": 0.0,
+        "other_selected": 138
+      },
+      {
+        "method": "retained_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 135,
+        "special_role_recall": 0.75,
+        "precision": 0.9782608695652174,
+        "other_selected": 3
+      },
+      {
+        "method": "post_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "post_hard",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 5,
+        "special_role_recall": 0.027777777777777776,
+        "precision": 0.036231884057971016,
+        "other_selected": 133
+      },
+      {
+        "method": "loss_benefit",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 120,
+        "special_role_recall": 0.6666666666666666,
+        "precision": 0.8695652173913043,
+        "other_selected": 18
+      },
+      {
+        "method": "pixel_repeat",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "target_class",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 44,
+        "special_role_recall": 0.24444444444444444,
+        "precision": 0.3188405797101449,
+        "other_selected": 94
+      },
+      {
+        "method": "random",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 25,
+        "special_role_recall": 0.1388888888888889,
+        "precision": 0.18115942028985507,
+        "other_selected": 113
+      }
+    ],
+    "repair": {
+      "rows": [
+        {
+          "model": "pre",
+          "accuracy": 0.6384999752044678,
+          "asr": 0.07888888567686081,
+          "triggered_accuracy": 0.6061111092567444,
+          "class_accuracy": [
+            0.7099999785423279,
+            0.7950000166893005,
+            0.49000000953674316,
+            0.3700000047683716,
+            0.5649999976158142,
+            0.5799999833106995,
+            0.7450000047683716,
+            0.6549999713897705,
+            0.7649999856948853,
+            0.7099999785423279
+          ]
+        },
+        {
+          "model": "post",
+          "accuracy": 0.6165000200271606,
+          "asr": 0.769444465637207,
+          "triggered_accuracy": 0.16055555641651154,
+          "class_accuracy": [
+            0.6100000143051147,
+            0.7749999761581421,
+            0.4699999988079071,
+            0.3799999952316284,
+            0.574999988079071,
+            0.5299999713897705,
+            0.7549999952316284,
+            0.6299999952316284,
+            0.7250000238418579,
+            0.7149999737739563
+          ]
+        },
+        {
+          "model": "repair_interaction",
+          "accuracy": 0.6194999814033508,
+          "asr": 0.7127777934074402,
+          "triggered_accuracy": 0.20000000298023224,
+          "class_accuracy": [
+            0.6150000095367432,
+            0.7250000238418579,
+            0.44999998807907104,
+            0.4099999964237213,
+            0.5350000262260437,
+            0.5550000071525574,
+            0.7699999809265137,
+            0.6200000047683716,
+            0.7799999713897705,
+            0.7350000143051147
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.01065794937312603,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6194999814033508,
+          "deployed_asr": 0.7127777934074402
+        },
+        {
+          "model": "repair_interaction_with_f",
+          "accuracy": 0.6359999775886536,
+          "asr": 0.060555554926395416,
+          "triggered_accuracy": 0.6083333492279053,
+          "class_accuracy": [
+            0.7099999785423279,
+            0.7549999952316284,
+            0.47999998927116394,
+            0.39500001072883606,
+            0.5600000023841858,
+            0.574999988079071,
+            0.7450000047683716,
+            0.6449999809265137,
+            0.7649999856948853,
+            0.7300000190734863
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.012500000186264515,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.004928195849061012,
+            "accuracy": 0.9906250238418579
+          },
+          "deploy_repair": false,
+          "deployed_accuracy": 0.6165000200271606,
+          "deployed_asr": 0.769444465637207
+        },
+        {
+          "model": "repair_none",
+          "accuracy": 0.6165000200271606,
+          "asr": 0.769444465637207,
+          "triggered_accuracy": 0.16055555641651154,
+          "class_accuracy": [
+            0.6100000143051147,
+            0.7749999761581421,
+            0.4699999988079071,
+            0.3799999952316284,
+            0.574999988079071,
+            0.5299999713897705,
+            0.7549999952316284,
+            0.6299999952316284,
+            0.7250000238418579,
+            0.7149999737739563
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.0,
+            "max_class_ce_increase": 0.0,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6165000200271606,
+          "deployed_asr": 0.769444465637207
+        },
+        {
+          "model": "repair_none_with_f",
+          "accuracy": 0.6384999752044678,
+          "asr": 0.07888888567686081,
+          "triggered_accuracy": 0.6061111092567444,
+          "class_accuracy": [
+            0.7099999785423279,
+            0.7950000166893005,
+            0.49000000953674316,
+            0.3700000047683716,
+            0.5649999976158142,
+            0.5799999833106995,
+            0.7450000047683716,
+            0.6549999713897705,
+            0.7649999856948853,
+            0.7099999785423279
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.012500000186264515,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.024068184196949005,
+            "accuracy": 0.987500011920929
+          },
+          "deploy_repair": false,
+          "deployed_accuracy": 0.6165000200271606,
+          "deployed_asr": 0.769444465637207
+        },
+        {
+          "model": "repair_pixel_repeat",
+          "accuracy": 0.6345000267028809,
+          "asr": 0.07000000029802322,
+          "triggered_accuracy": 0.5988888740539551,
+          "class_accuracy": [
+            0.6349999904632568,
+            0.7950000166893005,
+            0.5,
+            0.4099999964237213,
+            0.5400000214576721,
+            0.550000011920929,
+            0.7699999809265137,
+            0.6449999809265137,
+            0.7699999809265137,
+            0.7300000190734863
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.0093732550740242,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6345000267028809,
+          "deployed_asr": 0.07000000029802322
+        },
+        {
+          "model": "repair_post_only",
+          "accuracy": 0.6380000114440918,
+          "asr": 0.06333333253860474,
+          "triggered_accuracy": 0.6077777743339539,
+          "class_accuracy": [
+            0.6200000047683716,
+            0.7900000214576721,
+            0.5249999761581421,
+            0.42500001192092896,
+            0.5600000023841858,
+            0.550000011920929,
+            0.75,
+            0.6349999904632568,
+            0.7799999713897705,
+            0.7450000047683716
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.007004415616393089,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6380000114440918,
+          "deployed_asr": 0.06333333253860474
+        },
+        {
+          "model": "repair_random",
+          "accuracy": 0.6209999918937683,
+          "asr": 0.5688889026641846,
+          "triggered_accuracy": 0.29499998688697815,
+          "class_accuracy": [
+            0.6399999856948853,
+            0.7549999952316284,
+            0.4699999988079071,
+            0.4000000059604645,
+            0.5550000071525574,
+            0.5149999856948853,
+            0.75,
+            0.6299999952316284,
+            0.7850000262260437,
+            0.7099999785423279
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0062500000931322575,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.011170178651809692,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6209999918937683,
+          "deployed_asr": 0.5688889026641846
+        }
+      ],
+      "full_factorial_risks": {
+        "repair_none": {
+          "probe": 2.6661407947540283,
+          "validation": 2.64587140083313
+        },
+        "repair_none_with_f": {
+          "probe": -0.21315647661685944,
+          "validation": -0.23125608265399933
+        },
+        "repair_interaction": {
+          "probe": 2.6466917991638184,
+          "validation": 2.6462323665618896
+        },
+        "repair_interaction_with_f": {
+          "probe": -0.14715231955051422,
+          "validation": -0.13375717401504517
+        }
+      },
+      "full_factorial_interaction": {
+        "probe": 0.08545315265655518,
+        "validation": 0.0971379429101944
+      },
+      "test_predictions_sha256": "5cf1877b31370e72408ab6bf462b30f6d8e85e30e008364d8da715a30da03ed9",
+      "n_test": 2000,
+      "n_asr": 1800,
+      "note": "True trigger/test opened only after all case fit/guard locks. F-present endpoints are mechanism diagnostics only. Paired factorial uses new same-runtime zero-omission references."
+    },
+    "independent_test_interaction": {
+      "case": "attack71",
+      "source_sha256": "5ca1dfda27cbb8e07ad8f84cb5cdecf1f33dc939515bc85d7931054eeff5275b",
+      "model_hashes": {
+        "repair_none": "455d45505d89d844b15d091bf358eb968fc6ccd271233aefafb2b7c12fb29763",
+        "repair_none_with_f": "2a2aee78158f13fe2ef2d1dd9e67fc70dc27a494097a28498f5c13653d3a47e2",
+        "repair_interaction": "64e9b24dd2110f5db271bb779bfa14eeba9110e8f5f2429151556df7925a0bfe",
+        "repair_interaction_with_f": "3bdc3ef910a77bf71feef100f3af8b1b550d10542c833c3bb6ef1e6eb186c30b"
+      },
+      "n": 2000,
+      "n_eligible": 1800,
+      "continuous_risk": {
+        "repair_none": {
+          "discovered": 2.9631247520446777,
+          "oracle": 2.1546642780303955
+        },
+        "repair_none_with_f": {
+          "discovered": -0.267015278339386,
+          "oracle": 0.1388455182313919
+        },
+        "repair_interaction": {
+          "discovered": 2.982837438583374,
+          "oracle": 1.9340829849243164
+        },
+        "repair_interaction_with_f": {
+          "discovered": -0.17791619896888733,
+          "oracle": 0.04311134293675423
+        }
+      },
+      "mixed_interaction": {
+        "discovered": 0.06938639283180237,
+        "oracle": 0.12484711781144142,
+        "thresholded_asr": 0.03833334147930145
+      },
+      "note": "Independent official test images; fixed source sets and endpoints; oracle trigger is analysis-only. No checkpoint or source selection is changed."
+    },
+    "original_replay_check": [
+      {
+        "model": "repair_none",
+        "bitwise_equal_to_original": true,
+        "max_state_absolute_difference": 0.0
+      },
+      {
+        "model": "repair_none_with_f",
+        "bitwise_equal_to_original": true,
+        "max_state_absolute_difference": 0.0
+      }
+    ]
+  },
+  {
+    "case": "attack72",
+    "kind": "attack",
+    "witness_target": 0,
+    "witness_location": [
+      28,
+      28
+    ],
+    "ranking_seconds": 148.95469307899475,
+    "primary_localization": [
+      {
+        "method": "interaction",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 77,
+        "special_role_recall": 0.42777777777777776,
+        "precision": 0.5579710144927537,
+        "other_selected": 61
+      },
+      {
+        "method": "retained_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "post_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "post_hard",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 0,
+        "special_role_recall": 0.0,
+        "precision": 0.0,
+        "other_selected": 138
+      },
+      {
+        "method": "loss_benefit",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 106,
+        "special_role_recall": 0.5888888888888889,
+        "precision": 0.7681159420289855,
+        "other_selected": 32
+      },
+      {
+        "method": "pixel_repeat",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "target_class",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 48,
+        "special_role_recall": 0.26666666666666666,
+        "precision": 0.34782608695652173,
+        "other_selected": 90
+      },
+      {
+        "method": "random",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 24,
+        "special_role_recall": 0.13333333333333333,
+        "precision": 0.17391304347826086,
+        "other_selected": 114
+      }
+    ]
+  },
+  {
+    "case": "attack73",
+    "kind": "attack",
+    "witness_target": 0,
+    "witness_location": [
+      28,
+      28
+    ],
+    "ranking_seconds": 149.45837020874023,
+    "primary_localization": [
+      {
+        "method": "interaction",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "retained_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "post_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "post_hard",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 0,
+        "special_role_recall": 0.0,
+        "precision": 0.0,
+        "other_selected": 138
+      },
+      {
+        "method": "loss_benefit",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 101,
+        "special_role_recall": 0.5611111111111111,
+        "precision": 0.7318840579710145,
+        "other_selected": 37
+      },
+      {
+        "method": "pixel_repeat",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "target_class",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 49,
+        "special_role_recall": 0.2722222222222222,
+        "precision": 0.35507246376811596,
+        "other_selected": 89
+      },
+      {
+        "method": "random",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 17,
+        "special_role_recall": 0.09444444444444444,
+        "precision": 0.12318840579710146,
+        "other_selected": 121
+      }
+    ]
+  },
+  {
+    "case": "normal71",
+    "kind": "normal_label",
+    "witness_target": 2,
+    "witness_location": [
+      28,
+      28
+    ],
+    "ranking_seconds": 149.920640707016,
+    "primary_localization": [
+      {
+        "method": "interaction",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 27,
+        "special_role_recall": 0.15,
+        "precision": 0.1956521739130435,
+        "other_selected": 111
+      },
+      {
+        "method": "retained_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 42,
+        "special_role_recall": 0.23333333333333334,
+        "precision": 0.30434782608695654,
+        "other_selected": 96
+      },
+      {
+        "method": "post_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 46,
+        "special_role_recall": 0.25555555555555554,
+        "precision": 0.3333333333333333,
+        "other_selected": 92
+      },
+      {
+        "method": "post_hard",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 10,
+        "special_role_recall": 0.05555555555555555,
+        "precision": 0.07246376811594203,
+        "other_selected": 128
+      },
+      {
+        "method": "loss_benefit",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 5,
+        "special_role_recall": 0.027777777777777776,
+        "precision": 0.036231884057971016,
+        "other_selected": 133
+      },
+      {
+        "method": "pixel_repeat",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 138,
+        "special_role_recall": 0.7666666666666667,
+        "precision": 1.0,
+        "other_selected": 0
+      },
+      {
+        "method": "target_class",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 35,
+        "special_role_recall": 0.19444444444444445,
+        "precision": 0.2536231884057971,
+        "other_selected": 103
+      },
+      {
+        "method": "random",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 25,
+        "special_role_recall": 0.1388888888888889,
+        "precision": 0.18115942028985507,
+        "other_selected": 113
+      }
+    ],
+    "repair": {
+      "rows": [
+        {
+          "model": "pre",
+          "accuracy": 0.656499981880188,
+          "asr": 0.015555555932223797,
+          "triggered_accuracy": 0.6411111354827881,
+          "class_accuracy": [
+            0.699999988079071,
+            0.8149999976158142,
+            0.48500001430511475,
+            0.41999998688697815,
+            0.574999988079071,
+            0.574999988079071,
+            0.7699999809265137,
+            0.7049999833106995,
+            0.7850000262260437,
+            0.7350000143051147
+          ]
+        },
+        {
+          "model": "post",
+          "accuracy": 0.6244999766349792,
+          "asr": 0.04055555537343025,
+          "triggered_accuracy": 0.6088888645172119,
+          "class_accuracy": [
+            0.6600000262260437,
+            0.7749999761581421,
+            0.44999998807907104,
+            0.39500001072883606,
+            0.5400000214576721,
+            0.574999988079071,
+            0.75,
+            0.6299999952316284,
+            0.7699999809265137,
+            0.699999988079071
+          ]
+        },
+        {
+          "model": "repair_interaction",
+          "accuracy": 0.6240000128746033,
+          "asr": 0.036666665226221085,
+          "triggered_accuracy": 0.6150000095367432,
+          "class_accuracy": [
+            0.6050000190734863,
+            0.7549999952316284,
+            0.49000000953674316,
+            0.41999998688697815,
+            0.5350000262260437,
+            0.5149999856948853,
+            0.75,
+            0.6399999856948853,
+            0.7950000166893005,
+            0.7350000143051147
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.012500000186264515,
+            "max_class_accuracy_drop": 0.03125,
+            "max_class_ce_increase": 0.023156866431236267,
+            "accuracy": 0.9906250238418579
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6240000128746033,
+          "deployed_asr": 0.036666665226221085
+        },
+        {
+          "model": "repair_interaction_with_f",
+          "accuracy": 0.6514999866485596,
+          "asr": 0.014444444328546524,
+          "triggered_accuracy": 0.6566666960716248,
+          "class_accuracy": [
+            0.6700000166893005,
+            0.8149999976158142,
+            0.5049999952316284,
+            0.42500001192092896,
+            0.550000011920929,
+            0.5649999976158142,
+            0.7649999856948853,
+            0.699999988079071,
+            0.7749999761581421,
+            0.7450000047683716
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0062500000931322575,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": -0.0039957184344530106,
+            "accuracy": 0.9937499761581421
+          },
+          "deploy_repair": false,
+          "deployed_accuracy": 0.6244999766349792,
+          "deployed_asr": 0.04055555537343025
+        },
+        {
+          "model": "repair_none",
+          "accuracy": 0.6244999766349792,
+          "asr": 0.04055555537343025,
+          "triggered_accuracy": 0.6088888645172119,
+          "class_accuracy": [
+            0.6600000262260437,
+            0.7749999761581421,
+            0.44999998807907104,
+            0.39500001072883606,
+            0.5400000214576721,
+            0.574999988079071,
+            0.75,
+            0.6299999952316284,
+            0.7699999809265137,
+            0.699999988079071
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.0,
+            "max_class_ce_increase": 0.0,
+            "accuracy": 0.9937499761581421
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6244999766349792,
+          "deployed_asr": 0.04055555537343025
+        },
+        {
+          "model": "repair_none_with_f",
+          "accuracy": 0.656499981880188,
+          "asr": 0.015555555932223797,
+          "triggered_accuracy": 0.6411111354827881,
+          "class_accuracy": [
+            0.699999988079071,
+            0.8149999976158142,
+            0.48500001430511475,
+            0.41999998688697815,
+            0.574999988079071,
+            0.574999988079071,
+            0.7699999809265137,
+            0.7049999833106995,
+            0.7850000262260437,
+            0.7350000143051147
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.012500000186264515,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": -0.0012595070293173194,
+            "accuracy": 0.9921875
+          },
+          "deploy_repair": false,
+          "deployed_accuracy": 0.6244999766349792,
+          "deployed_asr": 0.04055555537343025
+        },
+        {
+          "model": "repair_pixel_repeat",
+          "accuracy": 0.6274999976158142,
+          "asr": 0.041111111640930176,
+          "triggered_accuracy": 0.6138888597488403,
+          "class_accuracy": [
+            0.6349999904632568,
+            0.7549999952316284,
+            0.4950000047683716,
+            0.4099999964237213,
+            0.550000011920929,
+            0.5600000023841858,
+            0.7350000143051147,
+            0.6349999904632568,
+            0.7699999809265137,
+            0.7300000190734863
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0062500000931322575,
+            "max_class_accuracy_drop": 0.015625,
+            "max_class_ce_increase": 0.025630071759223938,
+            "accuracy": 0.9906250238418579
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6274999976158142,
+          "deployed_asr": 0.041111111640930176
+        },
+        {
+          "model": "repair_post_only",
+          "accuracy": 0.6159999966621399,
+          "asr": 0.043888889253139496,
+          "triggered_accuracy": 0.6038888692855835,
+          "class_accuracy": [
+            0.6449999809265137,
+            0.7599999904632568,
+            0.4399999976158142,
+            0.3799999952316284,
+            0.5350000262260437,
+            0.5400000214576721,
+            0.7649999856948853,
+            0.6299999952316284,
+            0.7649999856948853,
+            0.699999988079071
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.0,
+            "max_class_ce_increase": 0.026931509375572205,
+            "accuracy": 0.996874988079071
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6159999966621399,
+          "deployed_asr": 0.043888889253139496
+        },
+        {
+          "model": "repair_random",
+          "accuracy": 0.6200000047683716,
+          "asr": 0.03777777776122093,
+          "triggered_accuracy": 0.6094444394111633,
+          "class_accuracy": [
+            0.6349999904632568,
+            0.7549999952316284,
+            0.4699999988079071,
+            0.39500001072883606,
+            0.550000011920929,
+            0.5649999976158142,
+            0.75,
+            0.6100000143051147,
+            0.7649999856948853,
+            0.7049999833106995
+          ],
+          "guard": {
+            "allowed": true,
+            "max_client_accuracy_drop": 0.0,
+            "max_class_accuracy_drop": 0.0,
+            "max_class_ce_increase": 0.008422501385211945,
+            "accuracy": 0.995312511920929
+          },
+          "deploy_repair": true,
+          "deployed_accuracy": 0.6200000047683716,
+          "deployed_asr": 0.03777777776122093
+        }
+      ],
+      "full_factorial_risks": {
+        "repair_none": {
+          "probe": 0.9563197493553162,
+          "validation": 0.9150305390357971
+        },
+        "repair_none_with_f": {
+          "probe": 1.1011097431182861,
+          "validation": 1.0525296926498413
+        },
+        "repair_interaction": {
+          "probe": 0.9489350914955139,
+          "validation": 0.9055936932563782
+        },
+        "repair_interaction_with_f": {
+          "probe": 1.0062512159347534,
+          "validation": 0.9354940056800842
+        }
+      },
+      "full_factorial_interaction": {
+        "probe": -0.08747386932373047,
+        "validation": -0.10759884119033813
+      },
+      "test_predictions_sha256": "9f6222cc47d54b3dcd0d8d8db4ccd237eaefad3a04936bfc6d3dacd79f88132c",
+      "n_test": 2000,
+      "n_asr": 1800,
+      "note": "True trigger/test opened only after all case fit/guard locks. F-present endpoints are mechanism diagnostics only. Paired factorial uses new same-runtime zero-omission references."
+    },
+    "independent_test_interaction": {
+      "case": "normal71",
+      "source_sha256": "5ca1dfda27cbb8e07ad8f84cb5cdecf1f33dc939515bc85d7931054eeff5275b",
+      "model_hashes": {
+        "repair_none": "ce2531c93dfc6599a8cf6a85e56e05373e1d4fbf50b9e5c6cdf21b0684cccff6",
+        "repair_none_with_f": "72d5a767d341d81f1c89944518e872333ab88ef877be8a373bb37258e3360405",
+        "repair_interaction": "4ff6b6531820c348736cfecd68016a54dd58493496a21ae3e7f2d4d015988b0c",
+        "repair_interaction_with_f": "fd7340f08d0851a939de086fbf1fb7efd4510f5772e44bdb431c148ebc322a4d"
+      },
+      "n": 2000,
+      "n_eligible": 1800,
+      "continuous_risk": {
+        "repair_none": {
+          "discovered": 1.0085642337799072,
+          "oracle": -0.06781268119812012
+        },
+        "repair_none_with_f": {
+          "discovered": 1.1477010250091553,
+          "oracle": -0.5222516655921936
+        },
+        "repair_interaction": {
+          "discovered": 0.9983782172203064,
+          "oracle": -0.07957759499549866
+        },
+        "repair_interaction_with_f": {
+          "discovered": 1.0377055406570435,
+          "oracle": -0.4790883958339691
+        }
+      },
+      "mixed_interaction": {
+        "discovered": -0.09980946779251099,
+        "oracle": 0.05492818355560303,
+        "thresholded_asr": 0.0027777785435318947
+      },
+      "note": "Independent official test images; fixed source sets and endpoints; oracle trigger is analysis-only. No checkpoint or source selection is changed."
+    },
+    "original_replay_check": [
+      {
+        "model": "repair_none",
+        "bitwise_equal_to_original": true,
+        "max_state_absolute_difference": 0.0
+      },
+      {
+        "model": "repair_none_with_f",
+        "bitwise_equal_to_original": true,
+        "max_state_absolute_difference": 0.0
+      }
+    ]
+  },
+  {
+    "case": "noise74",
+    "kind": "label_noise",
+    "witness_target": 9,
+    "witness_location": [
+      28,
+      28
+    ],
+    "ranking_seconds": 149.7190580368042,
+    "primary_localization": [
+      {
+        "method": "interaction",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 0,
+        "special_role_recall": 0.0,
+        "precision": 0.0,
+        "other_selected": 138
+      },
+      {
+        "method": "retained_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 22,
+        "special_role_recall": 0.12222222222222222,
+        "precision": 0.15942028985507245,
+        "other_selected": 116
+      },
+      {
+        "method": "post_only",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 9,
+        "special_role_recall": 0.05,
+        "precision": 0.06521739130434782,
+        "other_selected": 129
+      },
+      {
+        "method": "post_hard",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 65,
+        "special_role_recall": 0.3611111111111111,
+        "precision": 0.47101449275362317,
+        "other_selected": 73
+      },
+      {
+        "method": "loss_benefit",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 11,
+        "special_role_recall": 0.06111111111111111,
+        "precision": 0.07971014492753623,
+        "other_selected": 127
+      },
+      {
+        "method": "pixel_repeat",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 17,
+        "special_role_recall": 0.09444444444444444,
+        "precision": 0.12318840579710146,
+        "other_selected": 121
+      },
+      {
+        "method": "target_class",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 12,
+        "special_role_recall": 0.06666666666666667,
+        "precision": 0.08695652173913043,
+        "other_selected": 126
+      },
+      {
+        "method": "random",
+        "fraction": 0.1,
+        "selected": 138,
+        "special_role_selected": 17,
+        "special_role_recall": 0.09444444444444444,
+        "precision": 0.12318840579710146,
+        "other_selected": 121
+      }
+    ]
+  }
+]

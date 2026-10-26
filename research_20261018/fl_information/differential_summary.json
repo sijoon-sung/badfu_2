@@ -1,0 +1,428 @@
+{
+  "development": {
+    "strict_witness": {
+      "detected": 0,
+      "positives": 3,
+      "flagged_controls": 0,
+      "controls": 12
+    },
+    "retained_gain": {
+      "detected": 3,
+      "positives": 3,
+      "flagged_controls": 1,
+      "controls": 12
+    },
+    "branch_contrast": {
+      "detected": 3,
+      "positives": 3,
+      "flagged_controls": 2,
+      "controls": 12
+    },
+    "retained_gain_checked": {
+      "detected": 3,
+      "positives": 3,
+      "flagged_controls": 0,
+      "controls": 12
+    }
+  },
+  "optimized": [
+    {
+      "seed": 71,
+      "scenario": "attack",
+      "method": "pre_ce",
+      "selected_index": 35,
+      "location": [
+        28,
+        28
+      ],
+      "target": 5,
+      "development_score": 0.39444444444444443,
+      "validation_score": 0.4111111111111111,
+      "validation_shadow_rate": 0.4111111111111111,
+      "validation_shadow_clean_rate": 0.03333333333333333,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 33.51843976974487,
+      "validation_future_rate": 0.20555555555555555,
+      "validation_pre_rate": 0.4111111111111111,
+      "test_future_rate": 0.21666666666666667,
+      "test_pre_rate": 0.4116666666666667
+    },
+    {
+      "seed": 71,
+      "scenario": "attack",
+      "method": "retained_gain",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.02267812192440033,
+      "validation_score": 0.017001815140247345,
+      "validation_shadow_rate": 0.10555555555555556,
+      "validation_shadow_clean_rate": 0.06111111111111111,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 36.8958797454834,
+      "validation_future_rate": 0.7111111111111111,
+      "validation_pre_rate": 0.07222222222222222,
+      "test_future_rate": 0.6838888888888889,
+      "test_pre_rate": 0.08444444444444445
+    },
+    {
+      "seed": 71,
+      "scenario": "attack",
+      "method": "calibrated_gain",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.01505986601114273,
+      "validation_score": 0.009839162230491638,
+      "validation_shadow_rate": 0.09444444444444444,
+      "validation_shadow_clean_rate": 0.06111111111111111,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 42.5097336769104,
+      "validation_future_rate": 0.4222222222222222,
+      "validation_pre_rate": 0.07777777777777778,
+      "test_future_rate": 0.445,
+      "test_pre_rate": 0.09111111111111111
+    },
+    {
+      "seed": 72,
+      "scenario": "attack",
+      "method": "pre_ce",
+      "selected_index": 32,
+      "location": [
+        28,
+        28
+      ],
+      "target": 2,
+      "development_score": 0.4888888888888889,
+      "validation_score": 0.43333333333333335,
+      "validation_shadow_rate": 0.43333333333333335,
+      "validation_shadow_clean_rate": 0.05555555555555555,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 38.486512422561646,
+      "validation_future_rate": 0.0,
+      "validation_pre_rate": 0.43333333333333335,
+      "test_future_rate": 0.0005555555555555556,
+      "test_pre_rate": 0.4811111111111111
+    },
+    {
+      "seed": 72,
+      "scenario": "attack",
+      "method": "retained_gain",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.18141111731529236,
+      "validation_score": 0.1549404263496399,
+      "validation_shadow_rate": 0.40555555555555556,
+      "validation_shadow_clean_rate": 0.10555555555555556,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 37.51606011390686,
+      "validation_future_rate": 0.9833333333333333,
+      "validation_pre_rate": 0.18333333333333332,
+      "test_future_rate": 0.9861111111111112,
+      "test_pre_rate": 0.17777777777777778
+    },
+    {
+      "seed": 73,
+      "scenario": "attack",
+      "method": "pre_ce",
+      "selected_index": 35,
+      "location": [
+        28,
+        28
+      ],
+      "target": 5,
+      "development_score": 0.42777777777777776,
+      "validation_score": 0.3277777777777778,
+      "validation_shadow_rate": 0.3277777777777778,
+      "validation_shadow_clean_rate": 0.03333333333333333,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 27.551329135894775,
+      "validation_future_rate": 0.016666666666666666,
+      "validation_pre_rate": 0.3277777777777778,
+      "test_future_rate": 0.041666666666666664,
+      "test_pre_rate": 0.39055555555555554
+    },
+    {
+      "seed": 73,
+      "scenario": "attack",
+      "method": "retained_gain",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.22366294264793396,
+      "validation_score": 0.21709972620010376,
+      "validation_shadow_rate": 0.5611111111111111,
+      "validation_shadow_clean_rate": 0.09444444444444444,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 29.983003854751587,
+      "validation_future_rate": 0.9944444444444445,
+      "validation_pre_rate": 0.25555555555555554,
+      "test_future_rate": 0.9966666666666667,
+      "test_pre_rate": 0.26722222222222225
+    },
+    {
+      "seed": 71,
+      "scenario": "attack",
+      "method": "pre_delta",
+      "selected_index": 32,
+      "location": [
+        28,
+        28
+      ],
+      "target": 2,
+      "development_score": 0.38921043276786804,
+      "validation_score": 0.3871029019355774,
+      "validation_shadow_rate": 0.49444444444444446,
+      "validation_shadow_clean_rate": 0.05,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.56447124481201,
+      "validation_future_rate": 0.40555555555555556,
+      "validation_pre_rate": 0.49444444444444446,
+      "test_future_rate": 0.3927777777777778,
+      "test_pre_rate": 0.4716666666666667
+    },
+    {
+      "seed": 71,
+      "scenario": "attack",
+      "method": "retained_ce",
+      "selected_index": 35,
+      "location": [
+        28,
+        28
+      ],
+      "target": 5,
+      "development_score": 0.49444444444444446,
+      "validation_score": 0.48333333333333334,
+      "validation_shadow_rate": 0.48333333333333334,
+      "validation_shadow_clean_rate": 0.03333333333333333,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.839526414871216,
+      "validation_future_rate": 0.28888888888888886,
+      "validation_pre_rate": 0.4777777777777778,
+      "test_future_rate": 0.29333333333333333,
+      "test_pre_rate": 0.465
+    },
+    {
+      "seed": 72,
+      "scenario": "attack",
+      "method": "pre_delta",
+      "selected_index": 32,
+      "location": [
+        28,
+        28
+      ],
+      "target": 2,
+      "development_score": 0.38878217339515686,
+      "validation_score": 0.3756345510482788,
+      "validation_shadow_rate": 0.5055555555555555,
+      "validation_shadow_clean_rate": 0.05555555555555555,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.24359679222107,
+      "validation_future_rate": 0.0,
+      "validation_pre_rate": 0.5055555555555555,
+      "test_future_rate": 0.0,
+      "test_pre_rate": 0.5083333333333333
+    },
+    {
+      "seed": 72,
+      "scenario": "attack",
+      "method": "retained_ce",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.5166666666666667,
+      "validation_score": 0.5111111111111111,
+      "validation_shadow_rate": 0.5111111111111111,
+      "validation_shadow_clean_rate": 0.10555555555555556,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.20242118835449,
+      "validation_future_rate": 0.9722222222222222,
+      "validation_pre_rate": 0.23333333333333334,
+      "test_future_rate": 0.9727777777777777,
+      "test_pre_rate": 0.24722222222222223
+    },
+    {
+      "seed": 73,
+      "scenario": "attack",
+      "method": "pre_delta",
+      "selected_index": 20,
+      "location": [
+        28,
+        0
+      ],
+      "target": 0,
+      "development_score": 0.36536771059036255,
+      "validation_score": 0.39230427145957947,
+      "validation_shadow_rate": 0.48333333333333334,
+      "validation_shadow_clean_rate": 0.06111111111111111,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.17607498168945,
+      "validation_future_rate": 0.8666666666666667,
+      "validation_pre_rate": 0.48333333333333334,
+      "test_future_rate": 0.8644444444444445,
+      "test_pre_rate": 0.49333333333333335
+    },
+    {
+      "seed": 73,
+      "scenario": "attack",
+      "method": "retained_ce",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.6777777777777778,
+      "validation_score": 0.6722222222222223,
+      "validation_shadow_rate": 0.6722222222222223,
+      "validation_shadow_clean_rate": 0.09444444444444444,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 41.200512409210205,
+      "validation_future_rate": 0.9888888888888889,
+      "validation_pre_rate": 0.36666666666666664,
+      "test_future_rate": 0.9944444444444445,
+      "test_pre_rate": 0.3794444444444444
+    },
+    {
+      "kind": "optimized",
+      "seed": 74,
+      "scenario": "attack",
+      "method": "pre_ce",
+      "selected_index": 19,
+      "location": [
+        0,
+        28
+      ],
+      "target": 9,
+      "development_score": 0.45555555555555555,
+      "validation_score": 0.4222222222222222,
+      "validation_shadow_rate": 0.4222222222222222,
+      "validation_shadow_clean_rate": 0.03333333333333333,
+      "steps": 160,
+      "models_per_step": 1,
+      "seconds": 43.12024283409119,
+      "validation_pre_rate": 0.4222222222222222,
+      "validation_future_rate": 0.6666666666666666,
+      "test_pre_rate": 0.435,
+      "test_future_rate": 0.6861111111111111
+    },
+    {
+      "kind": "optimized",
+      "seed": 74,
+      "scenario": "attack",
+      "method": "retained_gain",
+      "selected_index": 30,
+      "location": [
+        28,
+        28
+      ],
+      "target": 0,
+      "development_score": 0.08360462635755539,
+      "validation_score": 0.08991194516420364,
+      "validation_shadow_rate": 0.2388888888888889,
+      "validation_shadow_clean_rate": 0.08888888888888889,
+      "steps": 80,
+      "models_per_step": 2,
+      "seconds": 34.26092767715454,
+      "validation_pre_rate": 0.10555555555555556,
+      "validation_future_rate": 0.9777777777777777,
+      "test_pre_rate": 0.11277777777777778,
+      "test_future_rate": 0.9838888888888889
+    }
+  ],
+  "confirmation_complete": true,
+  "challenge_comparison": [
+    {
+      "scenario": "attack",
+      "score": 0.014216192066669464,
+      "actual_trigger_asr": 0.9616666436195374,
+      "flags": {
+        "forget_gini_mean": true,
+        "forget_entropy_mean": true,
+        "forget_loss": true,
+        "retained_minus_forget_loss": true,
+        "retained_max_label_fraction": true
+      },
+      "ours": true
+    },
+    {
+      "scenario": "equal_size_safe",
+      "score": 0.0,
+      "actual_trigger_asr": 0.023333333432674408,
+      "flags": {
+        "forget_gini_mean": false,
+        "forget_entropy_mean": false,
+        "forget_loss": false,
+        "retained_minus_forget_loss": false,
+        "retained_max_label_fraction": false
+      },
+      "ours": false
+    },
+    {
+      "scenario": "benign_prior",
+      "score": 0.00061788409948349,
+      "actual_trigger_asr": 0.04888888821005821,
+      "flags": {
+        "forget_gini_mean": true,
+        "forget_entropy_mean": true,
+        "forget_loss": true,
+        "retained_minus_forget_loss": false,
+        "retained_max_label_fraction": true
+      },
+      "ours": false
+    },
+    {
+      "scenario": "label_noise",
+      "score": 0.003588162362575531,
+      "actual_trigger_asr": 0.06111111119389534,
+      "flags": {
+        "forget_gini_mean": true,
+        "forget_entropy_mean": true,
+        "forget_loss": false,
+        "retained_minus_forget_loss": true,
+        "retained_max_label_fraction": true
+      },
+      "ours": false
+    }
+  ],
+  "source_hashes": {
+    "branch_score_comparison_v4.json": "a4c237841acfb4a9a629b0a70a581f3a18295e1438173e8f106820fd497bf108",
+    "fedavg_v1_results.json": "c280c63d8efa5f6b24be114eedcd9d1ea38779d6006038f0136337a5866b7bff",
+    "optimized_difference71_results.json": "2dae9f0da56461e8b18b50ee8be4d197e62f288783f92778c33f5fae029870ea",
+    "optimized_difference72_73_results.json": "c3e77aa72125e27ac0e9bfe1e34fa1ef7aa3a3ddf6778472b4a9eda9b191e518",
+    "optimized_ablation71_73_results.json": "b1ff224b13231311d3f8c3e33e0eedd54f1c2e76e38cec9253d98a2366749053",
+    "confirm74_evaluation.json": "15d2d692dede0d7e2896fbea47f01e18625c21d8e301f16de349e1fa81f35120",
+    "request_baselines_results.json": "b100fbd34dec583e9c0d5e99b7408c00e59d37e57c36d0b410ae8406aad3a281",
+    "REQUEST_BASELINE_RULES_v2.json": "f7fb9ad8edbc7d8a2b7cdff36fbc58b804dd99a371deb224d36e3424f1253b29",
+    "additional_controls_evaluation.json": "29beba8ead2e532034aabcb43df0a0f0635e2361ba76f1864dc50219c2c8e703"
+  }
+}

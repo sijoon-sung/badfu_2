@@ -1,0 +1,711 @@
+{
+  "scope": "16 previously inspected requests; exploratory FC check only",
+  "matrix": "10x513 FC weight and bias; same one-point CE updates in both branches",
+  "mask": "largest ceil(fraction*N) entries of A_i^2+B_i^2; no sign/attack labels in selection",
+  "cancelled_l1_fraction": "sum(|A_i|+|B_i|-|A_i+B_i|) / sum(|A_i|+|B_i|) within mask",
+  "fractions": [
+    0.05,
+    0.1,
+    1.0
+  ],
+  "source_sha256": "4b6f4b520975ac5407065e8b4d35a9f9bdf59a547eb85146110c93ee6ebe66cf",
+  "input_sha256": {
+    "research_20261018\\all_or_nothing\\pure_layer4_arrays.npz": "13f19ee4c2c2dbfb60e06d6d020bf3789c377b221ebe357952f8e88d0e593ad9",
+    "research_20261018\\all_or_nothing\\pure_layer4_result.json": "ad462788927b4b246b3d35892d8960e4eb8b3c0c6d5b4be827d660b3213d3ef9"
+  },
+  "new_training_steps": 0,
+  "new_images_loaded": 0,
+  "threshold_fit": false,
+  "limitations": [
+    "Not an exact reproduction of a cited defense.",
+    "Old Conv archive has channel summaries, not full coordinate arrays.",
+    "Client/round update histories are absent for these 16 requests.",
+    "All masks are reported; no best fraction is selected."
+  ],
+  "summary": {
+    "0.05": {
+      "opposite_coordinate_fraction": {
+        "attack_range": [
+          0.0,
+          0.0
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "opposite_joint_energy_fraction": {
+        "attack_range": [
+          0.0,
+          0.0
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "cancelled_l1_fraction": {
+        "attack_range": [
+          0.0,
+          0.0
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "masked_cosine": {
+        "attack_range": [
+          0.9612891645428049,
+          0.9814317599435063
+        ],
+        "control_range": [
+          0.9532475368602239,
+          0.9857208815606808
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack72",
+          0.9612891645428049
+        ],
+        "control_max": [
+          "normal71",
+          0.9857208815606808
+        ]
+      }
+    },
+    "0.1": {
+      "opposite_coordinate_fraction": {
+        "attack_range": [
+          0.0,
+          0.001949317738791423
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "opposite_joint_energy_fraction": {
+        "attack_range": [
+          0.0,
+          0.0006034139997323078
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "cancelled_l1_fraction": {
+        "attack_range": [
+          0.0,
+          1.2134817796241405e-05
+        ],
+        "control_range": [
+          0.0,
+          0.0
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack71",
+          0.0
+        ],
+        "control_max": [
+          "normal71",
+          0.0
+        ]
+      },
+      "masked_cosine": {
+        "attack_range": [
+          0.8667388716370444,
+          0.9758778627786021
+        ],
+        "control_range": [
+          0.9406956274284961,
+          0.9785004742571666
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack72",
+          0.8667388716370444
+        ],
+        "control_max": [
+          "normal71",
+          0.9785004742571666
+        ]
+      }
+    },
+    "1.0": {
+      "opposite_coordinate_fraction": {
+        "attack_range": [
+          0.12729044834307993,
+          0.3364522417153996
+        ],
+        "control_range": [
+          0.011111111111111112,
+          0.2309941520467836
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack73",
+          0.12729044834307993
+        ],
+        "control_max": [
+          "normal72",
+          0.2309941520467836
+        ]
+      },
+      "opposite_joint_energy_fraction": {
+        "attack_range": [
+          0.010245887991321895,
+          0.019529053518390294
+        ],
+        "control_range": [
+          0.00013352535787782772,
+          0.012694657249785609
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack74",
+          0.010245887991321895
+        ],
+        "control_max": [
+          "delete_poison72",
+          0.012694657249785609
+        ]
+      },
+      "cancelled_l1_fraction": {
+        "attack_range": [
+          0.018063417370532856,
+          0.06357402387452646
+        ],
+        "control_range": [
+          0.0005426030110867206,
+          0.02835653903799959
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack74",
+          0.018063417370532856
+        ],
+        "control_max": [
+          "normal72",
+          0.02835653903799959
+        ]
+      },
+      "masked_cosine": {
+        "attack_range": [
+          0.7388075686831563,
+          0.9145472542867273
+        ],
+        "control_range": [
+          0.758387087126049,
+          0.9638146829554819
+        ],
+        "ranges_overlap": true,
+        "attack_min": [
+          "attack73",
+          0.7388075686831563
+        ],
+        "control_max": [
+          "prior74",
+          0.9638146829554819
+        ]
+      }
+    }
+  },
+  "rows": [
+    {
+      "case": "attack71",
+      "attack": true,
+      "norm_ratio": 3.7857924914121854,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9741811043517972
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9641194751434549
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.19005847953216373,
+          "opposite_joint_energy_fraction": 0.015022323699568583,
+          "cancelled_l1_fraction": 0.03139645503923302,
+          "masked_cosine": 0.910719781662323
+        }
+      }
+    },
+    {
+      "case": "normal71",
+      "attack": false,
+      "norm_ratio": 2.228132912544345,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9857208815606808
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9785004742571666
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.18187134502923977,
+          "opposite_joint_energy_fraction": 0.008922443052584994,
+          "cancelled_l1_fraction": 0.027902733425861775,
+          "masked_cosine": 0.9353356917573226
+        }
+      }
+    },
+    {
+      "case": "delete_poison71",
+      "attack": false,
+      "norm_ratio": 0.15382426931131257,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9660358458779191
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9646755171127884
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.12339181286549708,
+          "opposite_joint_energy_fraction": 0.004596129325214307,
+          "cancelled_l1_fraction": 0.015000542838280973,
+          "masked_cosine": 0.8695351649365827
+        }
+      }
+    },
+    {
+      "case": "delete_both71",
+      "attack": false,
+      "norm_ratio": 0.7957049839662964,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9796886778668834
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9678411859044485
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.023976608187134502,
+          "opposite_joint_energy_fraction": 0.0007560840481963719,
+          "cancelled_l1_fraction": 0.0012298065251122633,
+          "masked_cosine": 0.9094959294186128
+        }
+      }
+    },
+    {
+      "case": "attack72",
+      "attack": true,
+      "norm_ratio": 2.3422845343781686,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9612891645428049
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.8667388716370444
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.3364522417153996,
+          "opposite_joint_energy_fraction": 0.019529053518390294,
+          "cancelled_l1_fraction": 0.06357402387452646,
+          "masked_cosine": 0.7756132778391315
+        }
+      }
+    },
+    {
+      "case": "normal72",
+      "attack": false,
+      "norm_ratio": 1.3029792617254985,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.973744349435742
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9688257536996907
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.2309941520467836,
+          "opposite_joint_energy_fraction": 0.008464549585411173,
+          "cancelled_l1_fraction": 0.02835653903799959,
+          "masked_cosine": 0.935153482471473
+        }
+      }
+    },
+    {
+      "case": "delete_poison72",
+      "attack": false,
+      "norm_ratio": 0.17328501010006583,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9594153849732424
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9567598277573086
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.18499025341130604,
+          "opposite_joint_energy_fraction": 0.012694657249785609,
+          "cancelled_l1_fraction": 0.00988173965307623,
+          "masked_cosine": 0.758387087126049
+        }
+      }
+    },
+    {
+      "case": "delete_both72",
+      "attack": false,
+      "norm_ratio": 0.7731319488224511,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9561342927914
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9406956274284961
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.049707602339181284,
+          "opposite_joint_energy_fraction": 0.0005691389914046635,
+          "cancelled_l1_fraction": 0.0034634159917394177,
+          "masked_cosine": 0.9153367685598567
+        }
+      }
+    },
+    {
+      "case": "attack73",
+      "attack": true,
+      "norm_ratio": 3.2481321070395737,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9667945437147807
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.001949317738791423,
+          "opposite_joint_energy_fraction": 0.0006034139997323078,
+          "cancelled_l1_fraction": 1.2134817796241405e-05,
+          "masked_cosine": 0.8835902766608483
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.12729044834307993,
+          "opposite_joint_energy_fraction": 0.012941584817383752,
+          "cancelled_l1_fraction": 0.027492297980297238,
+          "masked_cosine": 0.7388075686831563
+        }
+      }
+    },
+    {
+      "case": "normal73",
+      "attack": false,
+      "norm_ratio": 1.2415571887663908,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9570560317449704
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.951939699168979
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.145224171539961,
+          "opposite_joint_energy_fraction": 0.010350647340332093,
+          "cancelled_l1_fraction": 0.02097304040990572,
+          "masked_cosine": 0.9223826524876407
+        }
+      }
+    },
+    {
+      "case": "delete_poison73",
+      "attack": false,
+      "norm_ratio": 0.15778068084240535,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9532475368602239
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9500970668499544
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.15516569200779728,
+          "opposite_joint_energy_fraction": 0.005839458462864534,
+          "cancelled_l1_fraction": 0.010078892034833302,
+          "masked_cosine": 0.8296172423489392
+        }
+      }
+    },
+    {
+      "case": "delete_both73",
+      "attack": false,
+      "norm_ratio": 0.8228247197952413,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9550006523470577
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9518737585907235
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.05224171539961014,
+          "opposite_joint_energy_fraction": 0.0009439533475650239,
+          "cancelled_l1_fraction": 0.00475514893757432,
+          "masked_cosine": 0.9337071191754244
+        }
+      }
+    },
+    {
+      "case": "attack74",
+      "attack": true,
+      "norm_ratio": 4.709372599717129,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9814317599435063
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9758778627786021
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.1428849902534113,
+          "opposite_joint_energy_fraction": 0.010245887991321895,
+          "cancelled_l1_fraction": 0.018063417370532856,
+          "masked_cosine": 0.9145472542867273
+        }
+      }
+    },
+    {
+      "case": "safe74",
+      "attack": false,
+      "norm_ratio": 0.4816228381533963,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9737653700790821
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9702910201925091
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.011111111111111112,
+          "opposite_joint_energy_fraction": 0.00013352535787782772,
+          "cancelled_l1_fraction": 0.0005426030110867206,
+          "masked_cosine": 0.9146408337275668
+        }
+      }
+    },
+    {
+      "case": "prior74",
+      "attack": false,
+      "norm_ratio": 1.8939143250390327,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9800562879180472
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9776944743920494
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.10136452241715399,
+          "opposite_joint_energy_fraction": 0.0025737508071375253,
+          "cancelled_l1_fraction": 0.01067579667192737,
+          "masked_cosine": 0.9638146829554819
+        }
+      }
+    },
+    {
+      "case": "noise74",
+      "attack": false,
+      "norm_ratio": 1.7590968437223742,
+      "masks": {
+        "0.05": {
+          "selected_coordinates": 257,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9583998872987558
+        },
+        "0.1": {
+          "selected_coordinates": 513,
+          "opposite_coordinate_fraction": 0.0,
+          "opposite_joint_energy_fraction": 0.0,
+          "cancelled_l1_fraction": 0.0,
+          "masked_cosine": 0.9561714077151827
+        },
+        "1.0": {
+          "selected_coordinates": 5130,
+          "opposite_coordinate_fraction": 0.05419103313840156,
+          "opposite_joint_energy_fraction": 0.0021340427900307848,
+          "cancelled_l1_fraction": 0.004599128740169715,
+          "masked_cosine": 0.9442020517586386
+        }
+      }
+    }
+  ]
+}

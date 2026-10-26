@@ -1,0 +1,329 @@
+{
+  "code_sha256": "5eeef34c0bbbc58b8da4f75b43e6fffd8cdba65de7f30713f9c07fe1d046c6ff",
+  "seconds": 12.17830753326416,
+  "torch": "2.5.1+cu121",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "note": "Unaligned frozen readout swaps; diagonal reproduces source metrics. Off-diagonal ASR alone is not a causal mechanism test.",
+  "rows": [
+    {
+      "seed": 71,
+      "body": "both",
+      "head": "both",
+      "clean_accuracy": 0.6384999752044678,
+      "clean_wrong_target0": 0.06277777999639511,
+      "true_trigger_asr": 0.07888888567686081,
+      "true_trigger_accuracy": 0.6061111092567444,
+      "fixed_blind_target0_rate": 0.07833333313465118
+    },
+    {
+      "seed": 71,
+      "body": "both",
+      "head": "poison_only",
+      "clean_accuracy": 0.6309999823570251,
+      "clean_wrong_target0": 0.054999999701976776,
+      "true_trigger_asr": 0.07888888567686081,
+      "true_trigger_accuracy": 0.605555534362793,
+      "fixed_blind_target0_rate": 0.07944444566965103
+    },
+    {
+      "seed": 71,
+      "body": "both",
+      "head": "cover_only",
+      "clean_accuracy": 0.6424999833106995,
+      "clean_wrong_target0": 0.029444444924592972,
+      "true_trigger_asr": 0.03333333507180214,
+      "true_trigger_accuracy": 0.6305555701255798,
+      "fixed_blind_target0_rate": 0.032777778804302216
+    },
+    {
+      "seed": 71,
+      "body": "both",
+      "head": "base",
+      "clean_accuracy": 0.6355000138282776,
+      "clean_wrong_target0": 0.03500000014901161,
+      "true_trigger_asr": 0.04333333298563957,
+      "true_trigger_accuracy": 0.6227777600288391,
+      "fixed_blind_target0_rate": 0.04333333298563957
+    },
+    {
+      "seed": 71,
+      "body": "poison_only",
+      "head": "both",
+      "clean_accuracy": 0.6169999837875366,
+      "clean_wrong_target0": 0.05444444343447685,
+      "true_trigger_asr": 0.6894444227218628,
+      "true_trigger_accuracy": 0.20888888835906982,
+      "fixed_blind_target0_rate": 0.32777777314186096
+    },
+    {
+      "seed": 71,
+      "body": "poison_only",
+      "head": "poison_only",
+      "clean_accuracy": 0.6165000200271606,
+      "clean_wrong_target0": 0.049444444477558136,
+      "true_trigger_asr": 0.769444465637207,
+      "true_trigger_accuracy": 0.16055555641651154,
+      "fixed_blind_target0_rate": 0.3872222304344177
+    },
+    {
+      "seed": 71,
+      "body": "poison_only",
+      "head": "cover_only",
+      "clean_accuracy": 0.6190000176429749,
+      "clean_wrong_target0": 0.028333334252238274,
+      "true_trigger_asr": 0.4716666638851166,
+      "true_trigger_accuracy": 0.3377777636051178,
+      "fixed_blind_target0_rate": 0.18000000715255737
+    },
+    {
+      "seed": 71,
+      "body": "poison_only",
+      "head": "base",
+      "clean_accuracy": 0.6200000047683716,
+      "clean_wrong_target0": 0.03500000014901161,
+      "true_trigger_asr": 0.5744444727897644,
+      "true_trigger_accuracy": 0.2800000011920929,
+      "fixed_blind_target0_rate": 0.23777778446674347
+    },
+    {
+      "seed": 71,
+      "body": "cover_only",
+      "head": "both",
+      "clean_accuracy": 0.6395000219345093,
+      "clean_wrong_target0": 0.061666667461395264,
+      "true_trigger_asr": 0.03611111268401146,
+      "true_trigger_accuracy": 0.628333330154419,
+      "fixed_blind_target0_rate": 0.038333334028720856
+    },
+    {
+      "seed": 71,
+      "body": "cover_only",
+      "head": "poison_only",
+      "clean_accuracy": 0.6424999833106995,
+      "clean_wrong_target0": 0.05666666850447655,
+      "true_trigger_asr": 0.039444442838430405,
+      "true_trigger_accuracy": 0.6333333253860474,
+      "fixed_blind_target0_rate": 0.04333333298563957
+    },
+    {
+      "seed": 71,
+      "body": "cover_only",
+      "head": "cover_only",
+      "clean_accuracy": 0.6485000252723694,
+      "clean_wrong_target0": 0.03166666626930237,
+      "true_trigger_asr": 0.017222221940755844,
+      "true_trigger_accuracy": 0.6383333206176758,
+      "fixed_blind_target0_rate": 0.017777778208255768
+    },
+    {
+      "seed": 71,
+      "body": "cover_only",
+      "head": "base",
+      "clean_accuracy": 0.6464999914169312,
+      "clean_wrong_target0": 0.036666665226221085,
+      "true_trigger_asr": 0.023333333432674408,
+      "true_trigger_accuracy": 0.6405555605888367,
+      "fixed_blind_target0_rate": 0.024444444105029106
+    },
+    {
+      "seed": 71,
+      "body": "base",
+      "head": "both",
+      "clean_accuracy": 0.6215000152587891,
+      "clean_wrong_target0": 0.06666667014360428,
+      "true_trigger_asr": 0.07333333045244217,
+      "true_trigger_accuracy": 0.597777783870697,
+      "fixed_blind_target0_rate": 0.07444444298744202
+    },
+    {
+      "seed": 71,
+      "body": "base",
+      "head": "poison_only",
+      "clean_accuracy": 0.6240000128746033,
+      "clean_wrong_target0": 0.058888889849185944,
+      "true_trigger_asr": 0.07500000298023224,
+      "true_trigger_accuracy": 0.6027777791023254,
+      "fixed_blind_target0_rate": 0.07555555552244186
+    },
+    {
+      "seed": 71,
+      "body": "base",
+      "head": "cover_only",
+      "clean_accuracy": 0.6265000104904175,
+      "clean_wrong_target0": 0.03166666626930237,
+      "true_trigger_asr": 0.033888887614011765,
+      "true_trigger_accuracy": 0.6238889098167419,
+      "fixed_blind_target0_rate": 0.03222222253680229
+    },
+    {
+      "seed": 71,
+      "body": "base",
+      "head": "base",
+      "clean_accuracy": 0.6290000081062317,
+      "clean_wrong_target0": 0.03777777776122093,
+      "true_trigger_asr": 0.04611111059784889,
+      "true_trigger_accuracy": 0.6194444298744202,
+      "fixed_blind_target0_rate": 0.04555555433034897
+    },
+    {
+      "seed": 72,
+      "body": "both",
+      "head": "both",
+      "clean_accuracy": 0.6215000152587891,
+      "clean_wrong_target0": 0.04777777940034866,
+      "true_trigger_asr": 0.06499999761581421,
+      "true_trigger_accuracy": 0.5849999785423279,
+      "fixed_blind_target0_rate": 0.06499999761581421
+    },
+    {
+      "seed": 72,
+      "body": "both",
+      "head": "poison_only",
+      "clean_accuracy": 0.628000020980835,
+      "clean_wrong_target0": 0.03444444388151169,
+      "true_trigger_asr": 0.06499999761581421,
+      "true_trigger_accuracy": 0.5899999737739563,
+      "fixed_blind_target0_rate": 0.060555554926395416
+    },
+    {
+      "seed": 72,
+      "body": "both",
+      "head": "cover_only",
+      "clean_accuracy": 0.6309999823570251,
+      "clean_wrong_target0": 0.023333333432674408,
+      "true_trigger_asr": 0.02222222276031971,
+      "true_trigger_accuracy": 0.6077777743339539,
+      "fixed_blind_target0_rate": 0.029999999329447746
+    },
+    {
+      "seed": 72,
+      "body": "both",
+      "head": "base",
+      "clean_accuracy": 0.6209999918937683,
+      "clean_wrong_target0": 0.02666666731238365,
+      "true_trigger_asr": 0.033888887614011765,
+      "true_trigger_accuracy": 0.5994444489479065,
+      "fixed_blind_target0_rate": 0.03444444388151169
+    },
+    {
+      "seed": 72,
+      "body": "poison_only",
+      "head": "both",
+      "clean_accuracy": 0.6144999861717224,
+      "clean_wrong_target0": 0.05666666850447655,
+      "true_trigger_asr": 0.9938889145851135,
+      "true_trigger_accuracy": 0.004444444552063942,
+      "fixed_blind_target0_rate": 0.3722222149372101
+    },
+    {
+      "seed": 72,
+      "body": "poison_only",
+      "head": "poison_only",
+      "clean_accuracy": 0.6119999885559082,
+      "clean_wrong_target0": 0.042222220450639725,
+      "true_trigger_asr": 0.9977777600288391,
+      "true_trigger_accuracy": 0.0016666667070239782,
+      "fixed_blind_target0_rate": 0.42722222208976746
+    },
+    {
+      "seed": 72,
+      "body": "poison_only",
+      "head": "cover_only",
+      "clean_accuracy": 0.6165000200271606,
+      "clean_wrong_target0": 0.024444444105029106,
+      "true_trigger_asr": 0.9383333325386047,
+      "true_trigger_accuracy": 0.028888888657093048,
+      "fixed_blind_target0_rate": 0.11944444477558136
+    },
+    {
+      "seed": 72,
+      "body": "poison_only",
+      "head": "base",
+      "clean_accuracy": 0.609499990940094,
+      "clean_wrong_target0": 0.028888888657093048,
+      "true_trigger_asr": 0.9888888597488403,
+      "true_trigger_accuracy": 0.008333333767950535,
+      "fixed_blind_target0_rate": 0.2405555546283722
+    },
+    {
+      "seed": 72,
+      "body": "cover_only",
+      "head": "both",
+      "clean_accuracy": 0.640999972820282,
+      "clean_wrong_target0": 0.06388889253139496,
+      "true_trigger_asr": 0.024444444105029106,
+      "true_trigger_accuracy": 0.6299999952316284,
+      "fixed_blind_target0_rate": 0.04833333194255829
+    },
+    {
+      "seed": 72,
+      "body": "cover_only",
+      "head": "poison_only",
+      "clean_accuracy": 0.6439999938011169,
+      "clean_wrong_target0": 0.04777777940034866,
+      "true_trigger_asr": 0.027222221717238426,
+      "true_trigger_accuracy": 0.6355555653572083,
+      "fixed_blind_target0_rate": 0.041111111640930176
+    },
+    {
+      "seed": 72,
+      "body": "cover_only",
+      "head": "cover_only",
+      "clean_accuracy": 0.6489999890327454,
+      "clean_wrong_target0": 0.03444444388151169,
+      "true_trigger_asr": 0.009444444440305233,
+      "true_trigger_accuracy": 0.6416666507720947,
+      "fixed_blind_target0_rate": 0.02222222276031971
+    },
+    {
+      "seed": 72,
+      "body": "cover_only",
+      "head": "base",
+      "clean_accuracy": 0.6420000195503235,
+      "clean_wrong_target0": 0.03999999910593033,
+      "true_trigger_asr": 0.012777777388691902,
+      "true_trigger_accuracy": 0.6449999809265137,
+      "fixed_blind_target0_rate": 0.025555554777383804
+    },
+    {
+      "seed": 72,
+      "body": "base",
+      "head": "both",
+      "clean_accuracy": 0.6255000233650208,
+      "clean_wrong_target0": 0.05944444611668587,
+      "true_trigger_asr": 0.0533333346247673,
+      "true_trigger_accuracy": 0.5938888788223267,
+      "fixed_blind_target0_rate": 0.05999999865889549
+    },
+    {
+      "seed": 72,
+      "body": "base",
+      "head": "poison_only",
+      "clean_accuracy": 0.6234999895095825,
+      "clean_wrong_target0": 0.04833333194255829,
+      "true_trigger_asr": 0.049444444477558136,
+      "true_trigger_accuracy": 0.5927777886390686,
+      "fixed_blind_target0_rate": 0.054999999701976776
+    },
+    {
+      "seed": 72,
+      "body": "base",
+      "head": "cover_only",
+      "clean_accuracy": 0.6230000257492065,
+      "clean_wrong_target0": 0.029444444924592972,
+      "true_trigger_asr": 0.023333333432674408,
+      "true_trigger_accuracy": 0.6116666793823242,
+      "fixed_blind_target0_rate": 0.026111111044883728
+    },
+    {
+      "seed": 72,
+      "body": "base",
+      "head": "base",
+      "clean_accuracy": 0.6215000152587891,
+      "clean_wrong_target0": 0.033888887614011765,
+      "true_trigger_asr": 0.03055555559694767,
+      "true_trigger_accuracy": 0.605555534362793,
+      "fixed_blind_target0_rate": 0.033888887614011765
+    }
+  ]
+}

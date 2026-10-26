@@ -1,0 +1,18 @@
+# D18 근거 파일
+
+[실험 과정과 결과로 돌아가기](README.md)
+
+실험 설정, 원 보고서, 결과와 정정 기록을 함께 연결했다. 파일을 보존한 사실과 실험 성능이 검증된 범위는 본문의 판단에서 구분한다.
+
+| 파일 | 원래 보관 경로 |
+|---|---|
+| [PROTOCOL.txt](../../../research/manifold_projection_check_20261025/PROTOCOL.txt) | `research/manifold_projection_check_20261025` |
+| [FREEZE.json](../../../research/manifold_projection_check_20261025/FREEZE.json) | `research/manifold_projection_check_20261025` |
+| [REPORT_KO.txt](../../../research/manifold_projection_check_20261025/REPORT_KO.txt) | `research/manifold_projection_check_20261025` |
+| [SUMMARY.json](../../../research/manifold_projection_check_20261025/SUMMARY.json) | `research/manifold_projection_check_20261025` |
+| [SCORES.json](../../../research/manifold_projection_check_20261025/SCORES.json) | `research/manifold_projection_check_20261025` |
+| [VERIFICATION.json](../../../research/manifold_projection_check_20261025/VERIFICATION.json) | `research/manifold_projection_check_20261025` |
+| [POSTHOC_ABLATION.json](../../../research/manifold_projection_check_20261025/POSTHOC_ABLATION.json) | `research/manifold_projection_check_20261025` |
+| [BEHAVIOR_EVALUATOR_ONLY_CURRENT.json](../../../research/manifold_projection_check_20261025/BEHAVIOR_EVALUATOR_ONLY_CURRENT.json) | `research/manifold_projection_check_20261025` |
+| [EVALUATION_INCIDENT.txt](../../../research/manifold_projection_check_20261025/EVALUATION_INCIDENT.txt) | `research/manifold_projection_check_20261025` |
+| [EVALUATION_DIAGNOSIS_ADDENDUM.txt](../../../research/manifold_projection_check_20261025/EVALUATION_DIAGNOSIS_ADDENDUM.txt) | `research/manifold_projection_check_20261025` |

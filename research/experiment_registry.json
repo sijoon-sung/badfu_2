@@ -27,7 +27,8 @@
         "research/00_trajectories/catalog.json",
         "research/badfu_algorithm_audit_20261023/README.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/R01.md"
+      "process_report": "experiments/01-reproduction/R01-badfu-reproduction/README.md",
+      "github_group": "01-reproduction"
     },
     {
       "id": "R02",
@@ -216,7 +217,8 @@
         "research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt",
         "research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/R02.md"
+      "process_report": "experiments/01-reproduction/R02-fuba-reproduction/README.md",
+      "github_group": "01-reproduction"
     },
     {
       "id": "D01",
@@ -239,7 +241,8 @@
         "research_audit_20261019/detection/history.md",
         "research_audit_20261019/detection/normal_set.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D01.md"
+      "process_report": "experiments/02-detection/D01-training-history/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D02",
@@ -260,7 +263,8 @@
         "research/INFLUENCE_RUN_20261022/FINAL_REPORT.md",
         "research/INFLUENCE_RUN_20261022/FINAL_SUMMARY.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D02.md"
+      "process_report": "experiments/02-detection/D02-influence/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D03",
@@ -284,7 +288,8 @@
         "research/UNKNOWN_TRIGGER_RUN_20261021/RESULTS.md",
         "research/DETECTION_REVIEW_20261021/RESULTS.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D03.md"
+      "process_report": "experiments/02-detection/D03-input-response/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D04",
@@ -305,7 +310,8 @@
         "research/two_stage_detection_20261021/RESULTS_KO.md",
         "research/two_stage_detection_20261021/PATCH_COMPARISON_AUDIT.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D04.md"
+      "process_report": "experiments/02-detection/D04-client-removal/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D05",
@@ -326,7 +332,8 @@
         "research/server_features_20261022/REPORT_KO.md",
         "research/server_features_20261022/PRIMARY_SUMMARY.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D05.md"
+      "process_report": "experiments/02-detection/D05-feature-bias/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D06",
@@ -346,7 +353,8 @@
       "sources": [
         "research/server_features_20261022/REPORT_KO.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D06.md"
+      "process_report": "experiments/02-detection/D06-forgetting/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D07",
@@ -369,7 +377,8 @@
         "research/server_features_20261022/indicator_pilot/PROTOCOL.json",
         "research/server_features_20261022/indicator_debiased/PROTOCOL.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D07.md"
+      "process_report": "experiments/02-detection/D07-diagnostic-task/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D08",
@@ -392,7 +401,8 @@
         "research/active_fu_pairs_20261022/FINAL_ASSESSMENT.json",
         "research/active_unlearning_audit_20261022/REPORT_KO.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D08.md"
+      "process_report": "experiments/02-detection/D08-matched-clients/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D09",
@@ -414,7 +424,8 @@
         "research/boundary_validation_20261022/REPORT_KO.txt",
         "research/boundary_validation_20261022/FINAL_RESULTS.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D09.md"
+      "process_report": "experiments/02-detection/D09-inversion-cost/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D10",
@@ -438,7 +449,8 @@
         "research/existing_checkpoint_cost_20261023/REPORT_KO.txt",
         "research/rapid_checkpoint_validation_20261023/REPORT_KO.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D10.md"
+      "process_report": "experiments/02-detection/D10-cost-correction/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D11",
@@ -460,7 +472,8 @@
         "research/fuba_observation_20261023/fine_pilot/REPORT_KO.txt",
         "research/fuba_observation_20261023/cost_counterexample.py"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D11.md"
+      "process_report": "experiments/02-detection/D11-minimum-cost/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D12",
@@ -481,7 +494,8 @@
         "research/request_conditioned_federaser_20261022/FINAL_REPORT_KO.md",
         "research/request_conditioned_federaser_20261022/SUMMARY.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D12.md"
+      "process_report": "experiments/02-detection/D12-data-free-probes/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D13",
@@ -502,7 +516,8 @@
         "research/cross_attack_search_20261022/SHORT_REPORT_KO.md",
         "research/cross_attack_search_20261022/OBSERVER_COMPLETE.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D13.md"
+      "process_report": "experiments/02-detection/D13-transform-families/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D14",
@@ -523,7 +538,8 @@
         "research/rule_transform_20261022/SHORT_RESULTS_KO.md",
         "research/rule_transform_20261022/RESULTS_KO.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D14.md"
+      "process_report": "experiments/02-detection/D14-conditional-transform/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D15",
@@ -546,7 +562,8 @@
         "research/paired_probe_validation_20261023/FINAL_EVIDENCE.json",
         "research/differential_audit_proposal_20261023/PROPOSAL_KO.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D15.md"
+      "process_report": "experiments/02-detection/D15-joint-search/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D16",
@@ -567,7 +584,8 @@
         "research/paired_probe_validation_20261023/DIRECTION_STATUS_20261023.txt",
         "research/paired_probe_validation_20261023/REPORT_KO.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D16.md"
+      "process_report": "experiments/02-detection/D16-retired-magnitude/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D17",
@@ -591,7 +609,8 @@
         "research/exposure_validation_20261023/INDEPENDENT_REPLAY.json",
         "research/detection_decision_20261023/FOLLOWUP_COMPLETED_20261023.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/D17.md"
+      "process_report": "experiments/02-detection/D17-direct-search/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "T01",
@@ -614,7 +633,8 @@
         "research/mechanism_first_20261022/REPORT_KO.md",
         "research/fuba_observation_20261023/README_KO.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/T01.md"
+      "process_report": "experiments/03-mechanism/T01-causal-controls/README.md",
+      "github_group": "03-mechanism"
     },
     {
       "id": "P01",
@@ -636,7 +656,8 @@
         "research/02_purification/derived/response_transfer/README.md",
         "research_20261018/response_transport/RESULT_REPORT.txt"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/P01.md"
+      "process_report": "experiments/04-purification/P01-response-transfer/README.md",
+      "github_group": "04-purification"
     },
     {
       "id": "P02",
@@ -657,7 +678,8 @@
         "research/02_purification/derived/classifier_repair/README.md",
         "research_audit_20261019/purification/head.md"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/P02.md"
+      "process_report": "experiments/04-purification/P02-classifier-repair/README.md",
+      "github_group": "04-purification"
     },
     {
       "id": "P03",
@@ -678,7 +700,8 @@
         "research/ac_feasibility_20261023/README.md",
         "research/ac_feasibility_20261023/SOURCE_AUDIT.json"
       ],
-      "process_report": "reports/experiment_process_20261026/experiments/P03.md"
+      "process_report": "experiments/04-purification/P03-purification-pilot/README.md",
+      "github_group": "04-purification"
     },
     {
       "id": "N01",
@@ -698,7 +721,8 @@
         "research/paired_probe_validation_20261023/REPORT_KO.txt"
       ],
       "provenance": "본 대화 2026-10-23의 직전 제안과 최신 사용자 정정. 연결된 파일들은 해당 제안의 실행 결과가 아니라 기존 반례다.",
-      "process_report": "reports/experiment_process_20261026/experiments/N01.md"
+      "process_report": "experiments/05-parked/N01-trusted-reference/README.md",
+      "github_group": "05-parked"
     },
     {
       "id": "D18",
@@ -728,7 +752,8 @@
         "research/manifold_projection_check_20261025/EVALUATION_DIAGNOSIS_ADDENDUM.txt"
       ],
       "provenance": "2026-10-25 사용자 제시 수치 검증 직접 실행. 원문에 사진ID/k/중심화/Z 분모 코드가 없어 실행 전 가정을 명시한 재구성. 주 소스 동결/원본 보존; 사후 해석 절제와 평가 진단을 별도 표시.",
-      "process_report": "reports/experiment_process_20261026/experiments/D18.md"
+      "process_report": "experiments/02-detection/D18-feature-projection/README.md",
+      "github_group": "02-detection"
     },
     {
       "id": "D19",
@@ -758,15 +783,17 @@
         "research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json"
       ],
       "provenance": "2026-10-25 사용자 FUBA 적용 요청에 따른 유한 저장모델 진단. R02의 잠복 재현 실패 정정과 D18의 투영 추가가치 미입증을 유지.",
-      "process_report": "reports/experiment_process_20261026/experiments/D19.md"
+      "process_report": "experiments/02-detection/D19-fuba-projection/README.md",
+      "github_group": "02-detection"
     }
   ],
   "process_reporting": {
     "as_of": "2026-10-26",
-    "index": "reports/experiment_process_20261026/README.md",
+    "index": "experiments/README.md",
     "combined_report": "reports/experiment_process_20261026/FULL_REPORT.md",
     "legacy_records": "reports/experiment_process_20261026/LEGACY_EXPERIMENTS.md",
     "source_manifest": "reports/experiment_process_20261026/source_manifest.json",
-    "purpose": "기존 결과의 실행 과정 설명. 새로운 모델 검증 또는 실험 판정 변경이 아님."
+    "purpose": "GitHub에서 읽는 실험 과정의 정식 입구. 날짜별 통합 문서는 당시의 내보내기 사본이다.",
+    "snapshot_index": "reports/experiment_process_20261026/README.md"
   }
 }

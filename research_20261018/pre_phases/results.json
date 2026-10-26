@@ -1,0 +1,62 @@
+{
+  "results": {
+    "full6": {
+      "accuracy": 0.8712,
+      "asr": 0.8151111111111111,
+      "source_sha256": "ee7346926465bc4ef40becef2f828ded8bac07a5cba7597c3718246624379419",
+      "metadata": {
+        "attack": "badfu",
+        "phase": "full6",
+        "smoke": false,
+        "aggregation": "badfu_sample_weighted",
+        "counts": [
+          10545,
+          9647,
+          9641,
+          9649,
+          9668,
+          10545
+        ],
+        "client_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "asr_definition": "author: predicted target 0 / all bd_test records",
+        "upstream_commit": "0a2117feab58faf5b7e2a1e5e1759112087d6049"
+      }
+    },
+    "cover5": {
+      "accuracy": 0.8426,
+      "asr": 0.14066666666666666,
+      "source_sha256": "5bdf475568d3560e728fb9e7dc4b54808b83fdb2e76ee96f6083bb2ded31be83",
+      "metadata": {
+        "attack": "badfu",
+        "phase": "cover5",
+        "smoke": false,
+        "aggregation": "badfu_sample_weighted",
+        "counts": [
+          11395,
+          9647,
+          9641,
+          9649,
+          9668
+        ],
+        "client_ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "asr_definition": "author: predicted target 0 / all bd_test records",
+        "upstream_commit": "0a2117feab58faf5b7e2a1e5e1759112087d6049"
+      }
+    }
+  },
+  "seconds": 18.747180223464966,
+  "code_sha256": "1ca869724787df7cdc4dc0777118dd076933e6b347865325a9319b0aa6dde26c"
+}
