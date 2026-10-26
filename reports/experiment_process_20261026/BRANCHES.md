@@ -2,10 +2,10 @@
 
 | 브랜치 | 용도 |
 |---|---|
-| codex/original-reproduction | 최초 BadFU 재현 코드와 당시 실행 안내 보존 |
-| codex/experiment-records | 이후 실험 기록과 교수 미팅용 과정 정리 |
+| original-reproduction | 최초 BadFU 재현 코드와 당시 실행 안내 보존 |
+| experiment-records | 이후 실험 기록과 교수 미팅용 과정 정리 |
 
-두 브랜치를 유지한다. 이전 실험 브랜치 codex/all-or-nothing은 codex/experiment-records로 이름을 정리했다. 실험 모델과 데이터의 원래 디렉터리는 옮기지 않았다.
+두 브랜치를 유지하며 이름에서 codex/ 접두사를 제거했다. 이전 codex/all-or-nothing의 실험 기록은 experiment-records에 있다. 실험 모델과 데이터의 원래 디렉터리는 옮기지 않았다.
 
 제외 요청된 기여자 이름은 과거 커밋의 작성자와 커미터 표시에서 정리했다. 대상 15개 커밋의 모든 파일 트리가 변경 전후 같음을 확인했으며 원래 커밋과 참조는 로컬 Git 내부에 복구용으로 보존했다. 새 문서의 작성자 표시는 기존 저장소 사용자 명의다.
 
