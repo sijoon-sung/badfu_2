@@ -1,0 +1,81 @@
+{
+  "state": "completed_CPU_numerical_diagnosis",
+  "related_cards": [
+    "R02"
+  ],
+  "round": 9,
+  "client": 2,
+  "time_unix": 1792982456.94474,
+  "original_probe_sha256": "68ea40de46b34b023df55cf863da2f27e02503218571bfacf8d43776822df08f",
+  "rows": [
+    {
+      "backend": "mkldnn_float32",
+      "gamma": 2.3,
+      "target_successes": 18,
+      "non_target_N": 220,
+      "ASR_pct": 8.181818181818182,
+      "minimum_absolute_target_margin_non_target": 0.07823598384857178,
+      "non_target_margins_within_1e-3": 0
+    },
+    {
+      "backend": "mkldnn_float32",
+      "gamma": 2.4,
+      "target_successes": 24,
+      "non_target_N": 220,
+      "ASR_pct": 10.909090909090908,
+      "minimum_absolute_target_margin_non_target": 0.0006946921348571777,
+      "non_target_margins_within_1e-3": 1
+    },
+    {
+      "backend": "native_float32",
+      "gamma": 2.3,
+      "target_successes": 18,
+      "non_target_N": 220,
+      "ASR_pct": 8.181818181818182,
+      "minimum_absolute_target_margin_non_target": 0.07823675870895386,
+      "non_target_margins_within_1e-3": 0
+    },
+    {
+      "backend": "native_float32",
+      "gamma": 2.4,
+      "target_successes": 24,
+      "non_target_N": 220,
+      "ASR_pct": 10.909090909090908,
+      "minimum_absolute_target_margin_non_target": 0.0006984472274780273,
+      "non_target_margins_within_1e-3": 1
+    },
+    {
+      "backend": "native_float64",
+      "gamma": 2.3,
+      "target_successes": 18,
+      "non_target_N": 220,
+      "ASR_pct": 8.181818181818182,
+      "minimum_absolute_target_margin_non_target": 0.07823833177851724,
+      "non_target_margins_within_1e-3": 0
+    },
+    {
+      "backend": "native_float64",
+      "gamma": 2.4,
+      "target_successes": 24,
+      "non_target_N": 220,
+      "ASR_pct": 10.909090909090908,
+      "minimum_absolute_target_margin_non_target": 0.0006965260767317627,
+      "non_target_margins_within_1e-3": 1
+    }
+  ],
+  "changed_predictions_at_gamma2_4": {
+    "native_float32": [],
+    "native_float64": []
+  },
+  "saved_CPU_outputs": {
+    "path": "SCORE_DIFFERENCE_CPU_OUTPUTS.pt",
+    "sha256": "ae3fecaec0daafc4f53e868e8f127606d7e2eefdee18957b37b22b3757abb118",
+    "bytes": 108586
+  },
+  "selected2_3_passes_and2_4_fails_in_all_tested_CPU_modes": true,
+  "original_GPU_per_image_logits_available": false,
+  "CPU_diagnostic_alone_proves_original_GPU_cause": false,
+  "training_changed": false,
+  "GPU_used": false,
+  "diagnostic_source_sha256": "5004a9dd1c1f123c73fbd69369d9c7226b463b211b5a5cdead5f13d65e348c89"
+}

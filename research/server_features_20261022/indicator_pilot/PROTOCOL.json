@@ -1,0 +1,70 @@
+{
+  "hypothesis": "서버가 심은 OOD 진단 과제의 유지율은 정상 자료량 증가보다 독성 목표 학습에 선택적으로 반응한다.",
+  "frozen_before_execution": true,
+  "seeds": [
+    2026102221,
+    2026102222
+  ],
+  "server": {
+    "OOD_size": 200,
+    "OOD_distribution": "U(0,1) independent noise, balanced arbitrary 10-class labels",
+    "injection_minibatches": 200,
+    "batch_size": 64,
+    "learning_rate": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "distance_regularization": 0.1,
+    "BN_policy": "save main buffers, train indicator buffers, restore main for client initialization and indicator buffers only for indicator scoring",
+    "score": "maximum per-assigned-label accuracy on the same secret indicator bank",
+    "original_threshold": 0.95,
+    "valid_instrument_minimum_class_accuracy": 0.9
+  },
+  "private_simulation": {
+    "small_N": 2048,
+    "large_N": 8192,
+    "epochs": 1,
+    "learning_rate": 0.01,
+    "momentum": 0.9,
+    "batch_size": 64,
+    "poison_fraction": 0.25,
+    "cover_fraction_in_mixed": 0.25,
+    "roles": [
+      "normal_balanced",
+      "normal_skew",
+      "normal_skew_large",
+      "poison",
+      "mixed",
+      "suppressor"
+    ],
+    "skew_partition": "restored BadFU normal client 0 partition, used identically in both architecture families"
+  },
+  "models": {
+    "badfu": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\stage1_20261020\\assets\\badfu_clean5.pt",
+      "sha256": "208d593ec1807e0ae5cde575bf4c5bb53eb5b0dd3a1a7ded071769865a6fc17c"
+    },
+    "fuba": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\stage1_20261020\\assets\\fuba_clean_s42.pt",
+      "sha256": "f6d57482be0207465dfc4b8663d0bca1cafff890953dd20753c54e9f4b7e4513"
+    }
+  },
+  "architecture_source": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\resnet.py",
+  "architecture_sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+  "private_factory_provenance": {
+    "cifar_train_raw.pt": "9a0a8a58a74280c91fe4c729c410d5e1ec81a6fc6b8dc5fa992b0be28b237633",
+    "badfu_full6_split.json": "1d83a25a93e946862f255a04ef623a223843da22127ec72fc7ab6842a08c9def",
+    "badfu_trained_cover_images.zip": "f6b63e59f1605ce174d4e8282923e56528bd283959a1e81fb8eae58e8eb7999c",
+    "fuba_generator.pt": "e68175d63b587dec4a3898fb0d3e2f2985fad8174ba214061ce21ed2e7269867"
+  },
+  "attack_generator_source": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\review_BadFU_defend\\FUBA\\model\\model.py",
+  "attack_generator_source_sha256": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+  "source": "https://arxiv.org/html/2405.20862v1#S3.SS3",
+  "limitations": [
+    "Mechanism pilot with one instrumented local round, not original end-to-end defense or real unlearning.",
+    "Native stored BadFU cover images and FUBA frozen s42 generator; FUBA generator/defender optimization not reproduced.",
+    "Attack mixtures are controlled 25% poison / up to 25% cover; not native private sample frequencies.",
+    "Two challenge seeds share the same pretrained model; not independent FL training seeds.",
+    "Normal heavy-data local training tests contribution-size sensitivity; it is not a full-client deletion experiment.",
+    "Invalidly learned indicator tasks cannot support detection claims."
+  ]
+}

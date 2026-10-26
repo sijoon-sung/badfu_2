@@ -1,0 +1,7 @@
+가설:R02본학습과별개인감독의동시상태파일읽기에잠금재시도를넣고같은MPI프로세스에감독만붙이면,학습재시작없이실제100R진행과최종검증을복구할수있다.
+근거:원본run_once.py는32R role_progress/round0032_client18.json읽기PermissionError로종료했다. STATE=failed이지만MPI3252와3개rank는그대로살아33R GPU학습을계속하고있었다. 모델/학습실패와감독실패를구분한다.
+새관측:동일MPI PID/생성시각/명령/Windows프로세스handle에연결된복구감독,계속증가하는원본manifest/역할,상태파일읽기오류재시도기록과최종800역할검증이다. 학습조건·모델·RNG·프로필은변경하지않는다.
+보존:원본STATE/main_supervisor.log/run_once.py/READY/LAUNCH를supervision_incident_original에해시일치로보존한다. 원본run_once와고정runtime를수정하지않는다. 새감독상태는SUPERVISOR_RECOVERY_STATE.json에만쓴다.
+실행:반복없는별도Windows작업Codex-FUBA-supervisor-recovery-20261024-v5는감독만한번시작하며MPI/학습은절대시작하지않는다. 기존MPI3252명령·생성상태를검사하고handle로동일프로세스를추적한다.매번관측읽기잠금은bounded retry/관측누락기록으로처리하며실제학습을종료시키지않는다. 종료code0/실제100R후원래고정전체검증기를호출한다.
+중단/반증:동일MPI가없거나소스/프로필해시가바뀌면붙이지않고진단한다. 실제MPI의비정상종료는별도실패로보존하며원인없이재학습하지않는다.순간읽기잠금때문에살아있는학습을중단/중복실행하지않는다. CPU잠금복구/지속오류관측계약은실행전에검사한다.
+범위:R02운영복구이며D08큰정상non-IID탈퇴를구별한탐지실험이아니다.100R/CA80/ASR10은그대로다.사용자의최신100R완료승인범위의명백한운영오류수정이다.

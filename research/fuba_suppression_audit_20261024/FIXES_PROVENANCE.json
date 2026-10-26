@@ -1,0 +1,32 @@
+{
+  "state": "audited_code_corrected_reproduction_unvalidated",
+  "related_cards": [
+    "R02"
+  ],
+  "case_id": "fuba.v2.s20261023.pre.round100",
+  "full_training_started": false,
+  "partial_round_training_started": false,
+  "synth_regressions_passed": 15,
+  "stored_model_inference": true,
+  "old_snapshots_modified": false,
+  "paper_main_original": "G:/내 드라이브/PC_Backup/.lmstudio/apps/bionic/projects/d49037d8-47f4-5808-9028-c707de117f8f/workspace/Unloading_Papers/Federated_Unlearning/FUBA_Backdoor_Federated_Learning_via_Federated_Unlearning.pdf",
+  "paper_supplement_original": "C:/Users/DISLAB/Downloads/FUBA_Backdoor_Federated_Learning_via_Federated_Unlearning.pdf",
+  "runtime_source_sha256": "6af10efad48a56b620ca6078f688fd549529b3ddae95e14af4db8e6eae5169d4",
+  "files": {
+    "FUBA_main_saved.pdf": "61d7ae7a51137288df4ac711d7e29c6b8d0e4861cf042326e7ee23ca743d1365",
+    "FUBA_publisher_saved.pdf": "b2b5d855c6016c16999e643a737a2a4a9361e632aa40cd3f65b21a872f713ff2",
+    "paper_core.py": "18fa9b7e413430cb55ee0001aac72a1232d0ca91abe8a782dd29556a700b633e",
+    "build_candidate.py": "c6d868f7f2f4963b54374609221802e70a88fb3a5f1c819b22400b48e5e8b63e",
+    "test_contracts.py": "06927a7fdc1dc9bec33453953fd7f98b9ec8d61a1e4d0ea178ed897725c4d078",
+    "REGRESSION_RESULTS.json": "2134237b0356257b3b76af4115f32ce1ae95bb95b792532414cc4bd5e39fefe1",
+    "candidate/paper_core.py": "18fa9b7e413430cb55ee0001aac72a1232d0ca91abe8a782dd29556a700b633e",
+    "candidate/train_method_iba.py": "5ceeb6a7cb5246288f79ef6d2522641dde068e35b9a490e797468870f86f5884",
+    "candidate/PROFILE.json": "4c6a626ec1fbda361191e082f6364f85ecc03aa0bb90b4162be5d0eeb4a122f4",
+    "REPORT_KO.txt": "0c0c6b2f0859f0235793fd4af5a78bad52d4bd5af65c1feec0dde9d1837cf81b",
+    "INSPECTION.json": "f45acc7408fed8817db0f92abcab38be2d037552afea41def72f16a5e7b702e2",
+    "GAMMA_RECORDS.json": "1f5786ccdb8bc752232ac488507ac239d0517aabd979fb2a84e98a03cfb00bca",
+    "RECORDED_ROLE_EVALUATION.json": "28bbb731ca4c3b46eaef6dc7ad0460e30a50515d0593633616c2f74a96f3fd85",
+    "GAMMA_ZERO_IDENTITY.json": "61e4011df2baeb503635467b0d45681ee139d4cdd6c7cf8f88984bae04130180",
+    "PROTOCOL.md": "a28ac2aee553f537c2683f000bc401424ac042c44654dc7f24befc17a911f03a"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "author_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\FUBA",
+  "containing_repo_head_not_author_commit": "b5649ab86ed214bf513938cd1def5bc7ce590318",
+  "containing_repo_remote": "https://github.com/sijoon-sung/BadFU_defend.git",
+  "author_dirty": "M README.md",
+  "files": {
+    "train_method_iba.py": {
+      "file_sha256": "91e0e47c6ceee3c9291954d09db5b01253640b8c508c68bb0946e77118df440d",
+      "git_blob_sha256": "91e0e47c6ceee3c9291954d09db5b01253640b8c508c68bb0946e77118df440d",
+      "file_matches_git_blob": true
+    },
+    "utils/comm_utils.py": {
+      "file_sha256": "39a55541f5317917eaefdd3869b0b07398377b8ebf9a03d614f70a03edeb1e00",
+      "git_blob_sha256": "39a55541f5317917eaefdd3869b0b07398377b8ebf9a03d614f70a03edeb1e00",
+      "file_matches_git_blob": true
+    },
+    "main.py": {
+      "file_sha256": "bd01aa3b75088a08d93e9521a115452bd3bbb9c7ae22292221f1f370ecf58116",
+      "git_blob_sha256": "bd01aa3b75088a08d93e9521a115452bd3bbb9c7ae22292221f1f370ecf58116",
+      "file_matches_git_blob": true
+    },
+    "model/resnet.py": {
+      "file_sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+      "git_blob_sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+      "file_matches_git_blob": true
+    },
+    "model/model.py": {
+      "file_sha256": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+      "git_blob_sha256": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+      "file_matches_git_blob": true
+    },
+    "README.md": {
+      "file_sha256": "e439a0e76df9af1d7d24644cc288bef7e4b52c8e201a9d65c7a0efae377d463f",
+      "git_blob_sha256": "e439a0e76df9af1d7d24644cc288bef7e4b52c8e201a9d65c7a0efae377d463f",
+      "file_matches_git_blob": true
+    }
+  },
+  "gpu": "0 %, 0 MiB, 10053 MiB",
+  "processes": [
+    {
+      "ProcessId": 2120,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\hermes\\tools\\python-3.14.7+20260901-win32-x64\\python.exe -m hermes_cli.main gateway run"
+    },
+    {
+      "ProcessId": 29736,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\detached_worker.py\""
+    },
+    {
+      "ProcessId": 29032,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe  C:\\Users\\DISLAB\\Desktop\\relay_dislab.py"
+    },
+    {
+      "ProcessId": 56036,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u D:/FUBA_PAPER_REBUILD_20261024/inspect_sources.py"
+    }
+  ],
+  "fuba_environment": {
+    "FUBA_WORKSPACE": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace",
+    "OMP_NUM_THREADS": "1",
+    "FUBA_SOURCE_REPO": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace",
+    "FUBA_DATA_ROOT": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+    "FUBA_RUNNER": "C:/Users/DISLAB/Documents/FU_gpu20261020/runner"
+  },
+  "fuba_architecture_source": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/model/resnet.py",
+  "fuba_architecture_sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179"
+}

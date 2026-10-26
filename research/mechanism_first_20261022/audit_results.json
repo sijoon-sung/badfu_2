@@ -1,0 +1,394 @@
+{
+  "protocol_sha256": "9a3ac80d7c0e59181b85c417058fcfda5b351429a0694204fdb34af66e935421",
+  "script_sha256": "180a3837913ef28944a4f7f6c735963fa39823da6aedd47b315a95e1c1d8d437",
+  "hypothesis": "같은 위장 자료의 삭제는 독성 학습 기여가 남을 때에만 의미 보존 입력의 목표 오분류를 크게 증가시키며, 이 차이는 원본 입력을 모든 비교 모델이 맞히는 사례에서도 남는다.",
+  "verdict": "supported_in_saved_runs",
+  "initialization_partition_seeds_in_records": 3,
+  "trained_states_in_records": 18,
+  "raw_array_verified_seeds": [
+    71
+  ],
+  "raw_array_verified_states": 6,
+  "detector_performance_claim": false,
+  "results": [
+    {
+      "seed": 71,
+      "initial_identity_from_saved_records": "07f25b32a2ba7ba6a22fe23734d5ca35de821aeba315f4cfb1a9345498df6280",
+      "groups": {
+        "all": {
+          "states": {
+            "base": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 62.9,
+              "triggered_target_pct": 4.611111111111111,
+              "triggered_original_label_accuracy_pct": 61.94444444444444,
+              "clean_wrong_target_pct": 3.7777777777777777,
+              "target_probability_response_pp": 0.5322903285497277
+            },
+            "cover_only": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 64.85,
+              "triggered_target_pct": 1.7222222222222223,
+              "triggered_original_label_accuracy_pct": 63.83333333333333,
+              "clean_wrong_target_pct": 3.166666666666667,
+              "target_probability_response_pp": -1.7635270823207785
+            },
+            "both": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 63.849999999999994,
+              "triggered_target_pct": 7.888888888888888,
+              "triggered_original_label_accuracy_pct": 60.611111111111114,
+              "clean_wrong_target_pct": 6.277777777777778,
+              "target_probability_response_pp": 1.3229453331039536
+            },
+            "poison_only": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 61.650000000000006,
+              "triggered_target_pct": 76.94444444444444,
+              "triggered_original_label_accuracy_pct": 16.055555555555557,
+              "clean_wrong_target_pct": 4.944444444444445,
+              "target_probability_response_pp": 62.08470376589096
+            },
+            "corrected_both": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 65.64999999999999,
+              "triggered_target_pct": 1.5555555555555556,
+              "triggered_original_label_accuracy_pct": 64.11111111111111,
+              "clean_wrong_target_pct": 3.722222222222222,
+              "target_probability_response_pp": -2.4629766967486666
+            },
+            "corrected_poison_only": {
+              "clean_n": 2000,
+              "non_target_n": 1800,
+              "clean_accuracy_pct": 62.45,
+              "triggered_target_pct": 4.055555555555555,
+              "triggered_original_label_accuracy_pct": 60.88888888888889,
+              "clean_wrong_target_pct": 3.888888888888889,
+              "target_probability_response_pp": -0.1193775186227227
+            }
+          },
+          "effects": {
+            "triggered_target_pct": {
+              "C_removal_with_P": 69.05555555555556,
+              "C_removal_without_P": 2.8888888888888884,
+              "factorial_difference": 66.16666666666667,
+              "C_removal_corrected_labels_cross_runtime": 2.5
+            },
+            "target_probability_response_pp": {
+              "C_removal_with_P": 60.761758432787005,
+              "C_removal_without_P": 2.295817410870506,
+              "factorial_difference": 58.4659410219165,
+              "C_removal_corrected_labels_cross_runtime": 2.343599178125944
+            }
+          }
+        },
+        "common_clean_correct": {
+          "states": {
+            "base": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 0.3409090909090909,
+              "triggered_original_label_accuracy_pct": 97.27272727272728,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": 0.4582983432303405
+            },
+            "cover_only": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 0.0,
+              "triggered_original_label_accuracy_pct": 97.38636363636364,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": -0.6858435537101001
+            },
+            "both": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 2.0454545454545454,
+              "triggered_original_label_accuracy_pct": 95.56818181818181,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": 1.2052954488813699
+            },
+            "poison_only": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 70.45454545454545,
+              "triggered_original_label_accuracy_pct": 26.931818181818183,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": 60.208857164520204
+            },
+            "corrected_both": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 0.0,
+              "triggered_original_label_accuracy_pct": 96.13636363636363,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": -0.9909796332719215
+            },
+            "corrected_poison_only": {
+              "clean_n": 980,
+              "non_target_n": 880,
+              "clean_accuracy_pct": 100.0,
+              "triggered_target_pct": 0.3409090909090909,
+              "triggered_original_label_accuracy_pct": 97.61363636363637,
+              "clean_wrong_target_pct": 0.0,
+              "target_probability_response_pp": 0.08700228855866443
+            }
+          },
+          "effects": {
+            "triggered_target_pct": {
+              "C_removal_with_P": 68.4090909090909,
+              "C_removal_without_P": 0.3409090909090909,
+              "factorial_difference": 68.06818181818181,
+              "C_removal_corrected_labels_cross_runtime": 0.3409090909090909
+            },
+            "target_probability_response_pp": {
+              "C_removal_with_P": 59.00356171563883,
+              "C_removal_without_P": 1.1441418969404407,
+              "factorial_difference": 57.85941981869839,
+              "C_removal_corrected_labels_cross_runtime": 1.077981921830586
+            }
+          }
+        }
+      },
+      "source_class_effects_pp": {
+        "1": {
+          "C_removal_with_P": 53.5,
+          "C_removal_without_P": 1.5,
+          "factorial_difference": 52.0,
+          "C_removal_corrected_labels_cross_runtime": 1.0
+        },
+        "2": {
+          "C_removal_with_P": 82.0,
+          "C_removal_without_P": 5.5,
+          "factorial_difference": 76.5,
+          "C_removal_corrected_labels_cross_runtime": 4.0
+        },
+        "3": {
+          "C_removal_with_P": 73.5,
+          "C_removal_without_P": 4.0,
+          "factorial_difference": 69.5,
+          "C_removal_corrected_labels_cross_runtime": 1.5
+        },
+        "4": {
+          "C_removal_with_P": 84.0,
+          "C_removal_without_P": 4.0,
+          "factorial_difference": 80.0,
+          "C_removal_corrected_labels_cross_runtime": 3.0
+        },
+        "5": {
+          "C_removal_with_P": 61.0,
+          "C_removal_without_P": 2.0000000000000004,
+          "factorial_difference": 59.0,
+          "C_removal_corrected_labels_cross_runtime": 1.0
+        },
+        "6": {
+          "C_removal_with_P": 66.0,
+          "C_removal_without_P": 0.5,
+          "factorial_difference": 65.5,
+          "C_removal_corrected_labels_cross_runtime": 0.5
+        },
+        "7": {
+          "C_removal_with_P": 72.5,
+          "C_removal_without_P": 0.0,
+          "factorial_difference": 72.5,
+          "C_removal_corrected_labels_cross_runtime": 1.5
+        },
+        "8": {
+          "C_removal_with_P": 79.5,
+          "C_removal_without_P": 7.5,
+          "factorial_difference": 72.0,
+          "C_removal_corrected_labels_cross_runtime": 9.0
+        },
+        "9": {
+          "C_removal_with_P": 49.50000000000001,
+          "C_removal_without_P": 1.0,
+          "factorial_difference": 48.50000000000001,
+          "C_removal_corrected_labels_cross_runtime": 1.0
+        }
+      }
+    }
+  ],
+  "aggregate_records": [
+    {
+      "seed": 71,
+      "evidence": "saved completion records; raw-array verification only seed 71",
+      "states": {
+        "base": {
+          "clean_accuracy_pct": 62.90000081062317,
+          "triggered_target_pct": 4.611111059784889,
+          "triggered_original_label_accuracy_pct": 61.94444298744202
+        },
+        "cover_only": {
+          "clean_accuracy_pct": 64.85000252723694,
+          "triggered_target_pct": 1.7222221940755844,
+          "triggered_original_label_accuracy_pct": 63.83333206176758
+        },
+        "both": {
+          "clean_accuracy_pct": 63.84999752044678,
+          "triggered_target_pct": 7.888888567686081,
+          "triggered_original_label_accuracy_pct": 60.61111092567444
+        },
+        "poison_only": {
+          "clean_accuracy_pct": 61.650002002716064,
+          "triggered_target_pct": 76.9444465637207,
+          "triggered_original_label_accuracy_pct": 16.055555641651154
+        },
+        "corrected_both": {
+          "clean_accuracy_pct": 65.6499981880188,
+          "triggered_target_pct": 1.5555555932223797,
+          "triggered_original_label_accuracy_pct": 64.11111354827881
+        },
+        "corrected_poison_only": {
+          "clean_accuracy_pct": 62.449997663497925,
+          "triggered_target_pct": 4.055555537343025,
+          "triggered_original_label_accuracy_pct": 60.88888645172119
+        }
+      },
+      "effects_pp": {
+        "C_removal_with_P": 69.05555799603462,
+        "C_removal_without_P": 2.888888865709305,
+        "factorial_difference": 66.16666913032532,
+        "C_removal_corrected_labels_cross_runtime": 2.4999999441206455
+      }
+    },
+    {
+      "seed": 72,
+      "evidence": "saved completion records; raw-array verification only seed 71",
+      "states": {
+        "base": {
+          "clean_accuracy_pct": 62.150001525878906,
+          "triggered_target_pct": 3.055555559694767,
+          "triggered_original_label_accuracy_pct": 60.5555534362793
+        },
+        "cover_only": {
+          "clean_accuracy_pct": 64.89999890327454,
+          "triggered_target_pct": 0.9444444440305233,
+          "triggered_original_label_accuracy_pct": 64.16666507720947
+        },
+        "both": {
+          "clean_accuracy_pct": 62.150001525878906,
+          "triggered_target_pct": 6.499999761581421,
+          "triggered_original_label_accuracy_pct": 58.49999785423279
+        },
+        "poison_only": {
+          "clean_accuracy_pct": 61.19999885559082,
+          "triggered_target_pct": 99.77777600288391,
+          "triggered_original_label_accuracy_pct": 0.16666667070239782
+        },
+        "corrected_both": {
+          "clean_accuracy_pct": 62.94999718666077,
+          "triggered_target_pct": 0.7222222164273262,
+          "triggered_original_label_accuracy_pct": 62.888890504837036
+        },
+        "corrected_poison_only": {
+          "clean_accuracy_pct": 63.099998235702515,
+          "triggered_target_pct": 1.3888888992369175,
+          "triggered_original_label_accuracy_pct": 58.99999737739563
+        }
+      },
+      "effects_pp": {
+        "C_removal_with_P": 93.27777624130249,
+        "C_removal_without_P": 2.1111111156642437,
+        "factorial_difference": 91.16666512563825,
+        "C_removal_corrected_labels_cross_runtime": 0.6666666828095913
+      }
+    },
+    {
+      "seed": 73,
+      "evidence": "saved completion records; raw-array verification only seed 71",
+      "states": {
+        "base": {
+          "clean_accuracy_pct": 64.0500009059906,
+          "triggered_target_pct": 3.6666665226221085,
+          "triggered_original_label_accuracy_pct": 63.44444155693054
+        },
+        "cover_only": {
+          "clean_accuracy_pct": 66.04999899864197,
+          "triggered_target_pct": 0.7777777966111898,
+          "triggered_original_label_accuracy_pct": 64.05555605888367
+        },
+        "both": {
+          "clean_accuracy_pct": 63.749998807907104,
+          "triggered_target_pct": 8.055555820465088,
+          "triggered_original_label_accuracy_pct": 59.50000286102295
+        },
+        "poison_only": {
+          "clean_accuracy_pct": 63.450002670288086,
+          "triggered_target_pct": 99.50000047683716,
+          "triggered_original_label_accuracy_pct": 0.33333334140479565
+        },
+        "corrected_both": {
+          "clean_accuracy_pct": 65.89999794960022,
+          "triggered_target_pct": 0.8333333767950535,
+          "triggered_original_label_accuracy_pct": 65.16666412353516
+        },
+        "corrected_poison_only": {
+          "clean_accuracy_pct": 64.30000066757202,
+          "triggered_target_pct": 1.1666666716337204,
+          "triggered_original_label_accuracy_pct": 65.05555510520935
+        }
+      },
+      "effects_pp": {
+        "C_removal_with_P": 91.44444465637207,
+        "C_removal_without_P": 2.8888887260109186,
+        "factorial_difference": 88.55555593036115,
+        "C_removal_corrected_labels_cross_runtime": 0.3333332948386669
+      }
+    }
+  ],
+  "source_sha256": {
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\splits.json": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\splits.json": "82fea35430bf915b29e872cbd10aadbc3fd398a94ff0aed2f99cb2f4ea93e3f8",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\evaluation_trigger.pt": "4307c6d1bc04e56c5a078364f58893dd19d9bfb05aa6d9e172d9bb0c6814c9fb",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\evaluation_trigger.pt": "4307c6d1bc04e56c5a078364f58893dd19d9bfb05aa6d9e172d9bb0c6814c9fb",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\base_predictions.npz": "680e126179c2f6b46490b94d33547863937aaa0c93a894a557746bcd09e604a8",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\base_complete.json": "fa7272d82a0b06a3766b2b18f4eecf2cb95e3d5c77f5ed8c778d75493a105c03",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\base.pt": "a3adebac35debe0ee474c59c0c785607dd141fbd8d8d0f8e0b131d1525775c82",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\cover_only_predictions.npz": "094d681f5fe449037be29f61aa5ebdeca341713d0c29db63566ca74cb8cefbb9",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\cover_only_complete.json": "7c264c05bfb64b77ce1c51e49d78091479dbc9ca300a32eba8aeda103c4a84b3",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\cover_only.pt": "41a7be72bf10d30b002063c366a9bf1f86176954ed85e33e9ca8e2b6a70e7677",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\both_predictions.npz": "310cd16c5da23699c1865424947bcbdcd05d1984ed394cc4360fd8cbc0b266d4",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\both_complete.json": "5a12239b200b78e3b66cedfb4d7f2f2b478ef1588bd201f8bff4b23f229e5e8c",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\both.pt": "7ae9ae20be36776e4ee79f7cdcf9d9cc9a6e28c2fb93620cec72844d6929df7c",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\poison_only_predictions.npz": "c44236603adb9e1052bbe05e2e598036139791b16cf28e8b68a645c8657a16e1",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\poison_only_complete.json": "027073eb5634dd0ccdbe01b315ca1cf732cdf3553dadbb110e2ee82adde54a4c",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_71\\poison_only.pt": "480915b55ef0e17a86c6288619d2e30dd7d621eb8d03e1badcd41f68b62ebf91",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\both_predictions.npz": "bea39e18ce8b9075bd5c64e3966a6dd3255ee98a460012b43942188e6dfc7b8b",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\both_complete.json": "8a0ebe04f2a49293d2cc96f0d9a0894bcd2d4542f4e9bb4d3204086cbf5b0e42",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\both.pt": "9c4960568dfd862ac085f63eb12ae0d7a38abdeb1993d75c99c3c4dbd4959786",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\poison_only_predictions.npz": "6e5bb8be1b9dcac7b45dadf5a314137cc1524007561845c7dd42a25572336828",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\poison_only_complete.json": "c0d17da5b7505d86aa2ae10dcc5455e8bf35935fe671d0a126e69363663100ab",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_71\\poison_only.pt": "67640801f2e230f630b03f6188bd2f051ef1ea92fcb5eea74c5ebe56031277b9",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_72\\base_complete.json": "4ed211a79e499f01b4d9f9ed2412a3920ef99ed53900505ce17087dc6f3ba444",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_72\\cover_only_complete.json": "06cdcb9452534441f0359bd68d43bd61a8ddca0fce728f4b0ad79b6219e6a684",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_72\\both_complete.json": "a83b0badf809b87c72c4f8f61fd982511ab8521229cdb4414c3d03257c04e5a7",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_72\\poison_only_complete.json": "73c122bbd475b6dc521d178368ab7a854de0be202fc1f833cb238fd4562ec629",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_72\\both_complete.json": "287084397c87f2db3edcf2f7915fceb3f209d9cb5b3ac1f6b61956a7aca1b89f",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_72\\poison_only_complete.json": "09285d2e5da7adf534767e286a3eafbe42912b3c1b972108aa975f49e86daebd",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_73\\base_complete.json": "d2a60471253ea04eade18bad656462ccbb36f476889c4992a9ce9d9d27856a7c",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_73\\cover_only_complete.json": "295c3c9dbb481d17fb469c629d50ab4c7859acf0be5fe31218bfc5014253fd0a",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_73\\both_complete.json": "244f13e65cce40587c553b20548cfd736f02d56a5eaaf80e11010a4b5ec77f4c",
+    "research_20261018\\fl_information\\fedavg_v1\\seed_73\\poison_only_complete.json": "87a4f120e6f463e85b907a47afa839630b7437b36a6cefc513866eb27947329c",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_73\\both_complete.json": "03ab6d1cce1c2eab932b0897aac5e486ba42ec8733fe4628ba4092ad7eead325",
+    "research_20261018\\fl_information\\normal_label_v2\\seed_73\\poison_only_complete.json": "fcff96552cc885cb8ddef2ac8c4157519a2ac127bca714b632067564f79134cf"
+  },
+  "validation": {
+    "cached_metrics_match": true,
+    "within_seed_input_labels_match": true,
+    "saved_initialization_ids_match": true,
+    "checkpoint_hashes_match": true,
+    "corrected_label_partitions_and_triggers_match": true,
+    "source_files_unchanged": true,
+    "source_file_count": 34
+  }
+}

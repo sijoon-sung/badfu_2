@@ -1,0 +1,278 @@
+{
+  "state": "completed_bounded_diagnostic_replay",
+  "profile": {
+    "id": "fuba.cap24.client3.s20501026.diagnostic_cached_G1",
+    "related_cards": [
+      "R02"
+    ],
+    "human_authorization": "2026-10-24 explicit answer: 한 참여자만 진단 재현 (권장)",
+    "scope": "one client only, no FL aggregation or continuation",
+    "source_profile": "fuba.paper_flow.s20261023.continue16_100.v4",
+    "original_classifier_epochs_per_phase": 50,
+    "classifier_phases": 4,
+    "generator_epochs": 5,
+    "gamma_step": 0.1,
+    "gamma_cap": 10.0,
+    "seed": 20501026,
+    "source_checkpoint_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+    "original_failure_sha256": "ac42195dacc1aeb3632b14548060b2203d78891aaf2c14d479f72da156f9d54f",
+    "core_sha256": "0610ffe22896672abf182bd5d5e104189956c0599a9cccff7ee982b90210316b",
+    "helpers_sha256": "f4534bf33c93b8a04c957310418c8b85a4796dbe5752eebd0b0bd6d8537501c8",
+    "protocol_sha256": "bc108a0d491b27b7f3a71444e1614d5cec0e5322232737e949f95bfa2d9007fe",
+    "GPU_idle_before_start": {
+      "state": "passed",
+      "actual_gpu_memory_MiB": "0",
+      "competing_training_processes": 0
+    },
+    "recurrence": false,
+    "no_other_client_training": true
+  },
+  "generator_exact": {
+    "state": "passed",
+    "all_generator_tensors_exact": true,
+    "generator_sha256": "3497b8ccb35b3cee35d36eccd07eed4a0a3438bb33cea6314ae56de5797d4a43",
+    "original_G_reused": true,
+    "generator_retraining_performed": false,
+    "CPU_loader_rng_restoration": "source_driven_five_loader_passes_and_CPU_contract_test",
+    "original_post_G_rng_snapshot_available": false,
+    "classifier_phases_not_started_yet": true
+  },
+  "decision": {
+    "gamma": 2.0,
+    "status": "bounded_by_first_failure",
+    "scores": [
+      {
+        "gamma": 0.0,
+        "ASR_pct": 5.701754385964913
+      },
+      {
+        "gamma": 0.1,
+        "ASR_pct": 5.701754385964913
+      },
+      {
+        "gamma": 0.2,
+        "ASR_pct": 5.701754385964913
+      },
+      {
+        "gamma": 0.3,
+        "ASR_pct": 5.2631578947368425
+      },
+      {
+        "gamma": 0.4,
+        "ASR_pct": 5.2631578947368425
+      },
+      {
+        "gamma": 0.5,
+        "ASR_pct": 6.578947368421052
+      },
+      {
+        "gamma": 0.6,
+        "ASR_pct": 6.140350877192983
+      },
+      {
+        "gamma": 0.7,
+        "ASR_pct": 6.578947368421052
+      },
+      {
+        "gamma": 0.8,
+        "ASR_pct": 6.578947368421052
+      },
+      {
+        "gamma": 0.9,
+        "ASR_pct": 7.017543859649122
+      },
+      {
+        "gamma": 1.0,
+        "ASR_pct": 7.017543859649122
+      },
+      {
+        "gamma": 1.1,
+        "ASR_pct": 7.017543859649122
+      },
+      {
+        "gamma": 1.2,
+        "ASR_pct": 7.017543859649122
+      },
+      {
+        "gamma": 1.3,
+        "ASR_pct": 7.017543859649122
+      },
+      {
+        "gamma": 1.4,
+        "ASR_pct": 7.456140350877193
+      },
+      {
+        "gamma": 1.5,
+        "ASR_pct": 7.456140350877193
+      },
+      {
+        "gamma": 1.6,
+        "ASR_pct": 8.333333333333334
+      },
+      {
+        "gamma": 1.7,
+        "ASR_pct": 8.771929824561404
+      },
+      {
+        "gamma": 1.8,
+        "ASR_pct": 8.771929824561404
+      },
+      {
+        "gamma": 1.9,
+        "ASR_pct": 9.649122807017545
+      },
+      {
+        "gamma": 2.0,
+        "ASR_pct": 9.649122807017545
+      },
+      {
+        "gamma": 2.1,
+        "ASR_pct": 10.087719298245615
+      }
+    ]
+  },
+  "saved_model_evaluations": {
+    "incoming": {
+      "N": 250,
+      "non_target_N": 228,
+      "CA_pct": 76.0,
+      "ASR_pct": 10.087719298245615,
+      "triggered_prediction_counts": [
+        18,
+        17,
+        33,
+        18,
+        30,
+        14,
+        29,
+        18,
+        45,
+        28
+      ]
+    },
+    "embedded": {
+      "N": 250,
+      "non_target_N": 228,
+      "CA_pct": 71.2,
+      "ASR_pct": 3.508771929824561,
+      "triggered_prediction_counts": [
+        26,
+        15,
+        29,
+        27,
+        27,
+        19,
+        37,
+        18,
+        28,
+        24
+      ]
+    },
+    "representative": {
+      "N": 250,
+      "non_target_N": 228,
+      "CA_pct": 73.6,
+      "ASR_pct": 5.2631578947368425,
+      "triggered_prediction_counts": [
+        23,
+        12,
+        38,
+        21,
+        28,
+        10,
+        29,
+        20,
+        33,
+        36
+      ]
+    },
+    "upload_after_selection": {
+      "N": 250,
+      "non_target_N": 228,
+      "CA_pct": 29.2,
+      "ASR_pct": 40.35087719298246,
+      "triggered_prediction_counts": [
+        57,
+        4,
+        5,
+        2,
+        0,
+        53,
+        2,
+        0,
+        111,
+        16
+      ]
+    }
+  },
+  "diagnostic_context_sha256": "5ff36102f8708f880d6ca2123ccb2b1eae5a82a38673c522b0e3a455fadb496f",
+  "cap_reproduced": false,
+  "original_gamma_numeric_trace_unavailable": true,
+  "original_classifier_tensor_identity_verified": false,
+  "not_a_completed_FL_round": true,
+  "no_cap_expansion": true,
+  "no_other_participant_training": true,
+  "phase_events": [
+    {
+      "phase": "classifier_start",
+      "epochs": 50,
+      "batches_per_epoch": 36,
+      "classifier_phase": 1,
+      "updated_unix": 1792821331.3900807
+    },
+    {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 1,
+      "updated_unix": 1792821391.338435
+    },
+    {
+      "phase": "classifier_start",
+      "epochs": 50,
+      "batches_per_epoch": 36,
+      "classifier_phase": 2,
+      "updated_unix": 1792821391.797709
+    },
+    {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 2,
+      "updated_unix": 1792821428.1809509
+    },
+    {
+      "phase": "classifier_start",
+      "epochs": 50,
+      "batches_per_epoch": 36,
+      "classifier_phase": 3,
+      "updated_unix": 1792821428.655826
+    },
+    {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 3,
+      "updated_unix": 1792821490.2304296
+    },
+    {
+      "phase": "classifier_start",
+      "epochs": 50,
+      "batches_per_epoch": 36,
+      "classifier_phase": 4,
+      "updated_unix": 1792821490.6781569
+    },
+    {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 4,
+      "updated_unix": 1792821527.1968036
+    }
+  ],
+  "elapsed_seconds": 218.7334270477295
+}

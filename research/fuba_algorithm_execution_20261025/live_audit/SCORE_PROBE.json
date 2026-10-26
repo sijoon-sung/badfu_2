@@ -1,0 +1,99 @@
+{
+  "state": "CPU_GPU_count_mismatch_requires_diagnosis",
+  "related_cards": [
+    "R02"
+  ],
+  "profile_id": "fuba.algorithms.s20261023.fresh100.kd10.v6",
+  "cases": [
+    {
+      "round": 9,
+      "client": 2,
+      "decision_status": "bounded_by_first_failure",
+      "selected_gamma": 2.3,
+      "role_sha256": "d29a4047bd97a650508d00e093e2fb0a345c943e124c4803b7160df69c7e1174",
+      "artifact_hashes": {
+        "run\\phases\\round0009_client02\\post_generator.pt": "6d91c6566f861c541e51c261cf2e94dd37e1e4e87e38c4973c197640c9cbfb35",
+        "run\\phases\\round0009_client02\\phase03.pt": "6824d130b7523f42c985b26963dde1afd0e00304b20c999b8f9847696f62f6db",
+        "run\\phases\\round0009_client02\\phase04.pt": "6b62d4f030b0af951e45f7e6512b35c7d83871bb0beb18f7f7a505e862f28781"
+      },
+      "scores": [
+        {
+          "gamma": 0.0,
+          "N": 250,
+          "non_target_N": 220,
+          "CPU_target_successes": 7,
+          "recorded_GPU_target_successes": 7,
+          "CPU_ASR_pct": 3.1818181818181817,
+          "recorded_GPU_ASR_pct": 3.1818181818181817,
+          "exact_count_match": true
+        },
+        {
+          "gamma": 2.3,
+          "N": 250,
+          "non_target_N": 220,
+          "CPU_target_successes": 18,
+          "recorded_GPU_target_successes": 18,
+          "CPU_ASR_pct": 8.181818181818182,
+          "recorded_GPU_ASR_pct": 8.181818181818182,
+          "exact_count_match": true
+        },
+        {
+          "gamma": 2.4,
+          "N": 250,
+          "non_target_N": 220,
+          "CPU_target_successes": 24,
+          "recorded_GPU_target_successes": 23,
+          "CPU_ASR_pct": 10.909090909090908,
+          "recorded_GPU_ASR_pct": 10.454545454545455,
+          "exact_count_match": false
+        }
+      ]
+    },
+    {
+      "round": 52,
+      "client": 3,
+      "decision_status": "right_censored_at_declared_cap",
+      "selected_gamma": 10.0,
+      "role_sha256": "5dbddfe8aac972b6b985f5eba284d7baea2220db4ddef7de05f75881c99bbe1c",
+      "artifact_hashes": {
+        "run\\phases\\round0052_client03\\post_generator.pt": "7fd135701e3c768c8de5707b866a0acad7959b1003a87377922a91390431c392",
+        "run\\phases\\round0052_client03\\phase03.pt": "df0a14f5703f276d8697e11375a35ee31ff71a75ce2968a75ac8e49ad9c91519",
+        "run\\phases\\round0052_client03\\phase04.pt": "f0b0f54dc0c73af7b1539f333be678e83b893f2d8cb676533fcd435fe0bff73c"
+      },
+      "scores": [
+        {
+          "gamma": 0.0,
+          "N": 250,
+          "non_target_N": 228,
+          "CPU_target_successes": 22,
+          "recorded_GPU_target_successes": 22,
+          "CPU_ASR_pct": 9.649122807017545,
+          "recorded_GPU_ASR_pct": 9.649122807017545,
+          "exact_count_match": true
+        },
+        {
+          "gamma": 10.0,
+          "N": 250,
+          "non_target_N": 228,
+          "CPU_target_successes": 18,
+          "recorded_GPU_target_successes": 18,
+          "CPU_ASR_pct": 7.894736842105263,
+          "recorded_GPU_ASR_pct": 7.894736842105263,
+          "exact_count_match": true
+        }
+      ]
+    }
+  ],
+  "time_unix": 1792953779.3673222,
+  "CPU_only": true,
+  "actual_local_validation_size": 250,
+  "same_saved_local_G": true,
+  "epsilon": 0.05,
+  "pixels": "[0,1]",
+  "layout": "contiguous_NCHW",
+  "both_eval": true,
+  "training_changed": false,
+  "full_test10000_9000_evaluation": false,
+  "evaluator_sha256": "b7f2714979c67b1dd5a6ebcaabe84573a4cde29902d19db84a55991ebb145dfd",
+  "protocol_sha256": "74958a8800c3ecc55f19bde895bc55af2e62eee4530928b9a6714a5d6958764f"
+}

@@ -1,0 +1,277 @@
+{
+  "P01_attack_s20261023": {
+    "pair_id": "P01_attack_s20261023",
+    "category": "attack",
+    "desc": "BadFU Paper32 seed 20261023 (cover client removed, retrained)",
+    "true_target_auditor_only": 0,
+    "eval_samples_n": 436,
+    "class_rates": {
+      "0": 68.55670103092784,
+      "1": 42.17171717171717,
+      "2": 31.043256997455472,
+      "3": 33.25,
+      "4": 29.55665024630542,
+      "5": 29.620253164556964,
+      "6": 27.39018087855297,
+      "7": 32.06106870229007,
+      "8": 33.15926892950392,
+      "9": 30.548302872062667
+    },
+    "blind_metrics": {
+      "blind_max_class": 0,
+      "blind_max_rate": 68.55670103092784,
+      "mean_other_classes": 32.08896655138274,
+      "blind_asymmetry_ratio": 2.1364571190272152
+    }
+  },
+  "P02_attack_s20261020_paper32": {
+    "pair_id": "P02_attack_s20261020_paper32",
+    "category": "attack",
+    "desc": "BadFU Paper32 seed 20261020 (m00 -> m01, cover client removed, retrained)",
+    "true_target_auditor_only": 0,
+    "eval_samples_n": 426,
+    "class_rates": {
+      "0": 60.84656084656085,
+      "1": 39.119170984455955,
+      "2": 27.506426735218508,
+      "3": 34.78260869565217,
+      "4": 28.061224489795915,
+      "5": 28.940568475452196,
+      "6": 25.72944297082228,
+      "7": 26.89295039164491,
+      "8": 26.666666666666668,
+      "9": 30.851063829787233
+    },
+    "blind_metrics": {
+      "blind_max_class": 0,
+      "blind_max_rate": 60.84656084656085,
+      "mean_other_classes": 29.838902582166206,
+      "blind_asymmetry_ratio": 2.039168856127
+    }
+  },
+  "P03_attack_s20261020_v3": {
+    "pair_id": "P03_attack_s20261020_v3",
+    "category": "attack",
+    "desc": "BadFU v3 PGD64 seed 20261020 (m11 -> m12, cover client removed, retrained)",
+    "true_target_auditor_only": 0,
+    "eval_samples_n": 412,
+    "class_rates": {
+      "0": 50.67750677506775,
+      "1": 31.989247311827956,
+      "2": 33.9572192513369,
+      "3": 47.45308310991957,
+      "4": 25.71428571428571,
+      "5": 36.53333333333333,
+      "6": 31.318681318681318,
+      "7": 28.30188679245283,
+      "8": 25.20775623268698,
+      "9": 37.362637362637365
+    },
+    "blind_metrics": {
+      "blind_max_class": 0,
+      "blind_max_rate": 50.67750677506775,
+      "mean_other_classes": 33.093125603017995,
+      "blind_asymmetry_ratio": 1.5313605424579813
+    }
+  },
+  "P04_attack_s42_full6": {
+    "pair_id": "P04_attack_s42_full6",
+    "category": "attack",
+    "desc": "BadFU seed 42 full6 (6 clients, remove cover client 5)",
+    "true_target_auditor_only": 0,
+    "eval_samples_n": 418,
+    "class_rates": {
+      "0": 16.216216216216218,
+      "1": 14.960629921259844,
+      "2": 13.684210526315791,
+      "3": 14.84375,
+      "4": 16.927083333333336,
+      "5": 12.598425196850393,
+      "6": 12.903225806451612,
+      "7": 7.6923076923076925,
+      "8": 12.534059945504087,
+      "9": 15.300546448087433
+    },
+    "blind_metrics": {
+      "blind_max_class": 4,
+      "blind_max_rate": 16.927083333333336,
+      "mean_other_classes": 13.414819083665897,
+      "blind_asymmetry_ratio": 1.2618197254664454
+    }
+  },
+  "P05_clean_s20261023_same850": {
+    "pair_id": "P05_clean_s20261023_same850",
+    "category": "benign_control",
+    "desc": "Clean seed 20261023: 850 random samples removed",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 434,
+    "class_rates": {
+      "0": 35.77023498694517,
+      "1": 27.157360406091367,
+      "2": 21.079691516709513,
+      "3": 30.730478589420656,
+      "4": 19.704433497536947,
+      "5": 25.699745547073793,
+      "6": 24.093264248704664,
+      "7": 24.93638676844784,
+      "8": 30.89005235602094,
+      "9": 29.50391644908616
+    },
+    "blind_metrics": {
+      "blind_max_class": 0,
+      "blind_max_rate": 35.77023498694517,
+      "mean_other_classes": 25.977258819899095,
+      "blind_asymmetry_ratio": 1.3769826614478837
+    }
+  },
+  "P06_clean_s20261023_big19": {
+    "pair_id": "P06_clean_s20261023_big19",
+    "category": "benign_control",
+    "desc": "Clean seed 20261023: large client removed (19.336% total data)",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 433,
+    "class_rates": {
+      "0": 27.979274611398964,
+      "1": 27.2264631043257,
+      "2": 24.55242966751918,
+      "3": 28.10126582278481,
+      "4": 20.544554455445542,
+      "5": 24.681933842239186,
+      "6": 20.365535248041773,
+      "7": 20.51282051282051,
+      "8": 39.473684210526315,
+      "9": 45.0261780104712
+    },
+    "blind_metrics": {
+      "blind_max_class": 9,
+      "blind_max_rate": 45.0261780104712,
+      "mean_other_classes": 25.93755127501133,
+      "blind_asymmetry_ratio": 1.7359455999938656
+    }
+  },
+  "P07_clean_s20261020_class100": {
+    "pair_id": "P07_clean_s20261020_class100",
+    "category": "benign_control",
+    "desc": "Clean seed 20261020: m03 -> m04, dominant class 1 complete deletion (3,558 samples)",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 435,
+    "class_rates": {
+      "0": 47.54521963824289,
+      "1": 46.835443037974684,
+      "2": 23.3502538071066,
+      "3": 35.26448362720403,
+      "4": 21.890547263681594,
+      "5": 25.252525252525253,
+      "6": 21.761658031088082,
+      "7": 23.52941176470588,
+      "8": 21.875,
+      "9": 31.59268929503917
+    },
+    "blind_metrics": {
+      "blind_max_class": 0,
+      "blind_max_rate": 47.54521963824289,
+      "mean_other_classes": 27.928001342147255,
+      "blind_asymmetry_ratio": 1.7024211312425896
+    }
+  },
+  "P08_clean_s20261021_independent_nonIID": {
+    "pair_id": "P08_clean_s20261021_independent_nonIID",
+    "category": "benign_control",
+    "desc": "Clean seed 20261021: m05 -> m06, independent non-IID deletion",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 430,
+    "class_rates": {
+      "0": 12.760416666666666,
+      "1": 14.285714285714285,
+      "2": 22.62210796915167,
+      "3": 30.22670025188917,
+      "4": 21.052631578947366,
+      "5": 21.875,
+      "6": 13.157894736842104,
+      "7": 12.661498708010335,
+      "8": 14.210526315789473,
+      "9": 11.11111111111111
+    },
+    "blind_metrics": {
+      "blind_max_class": 3,
+      "blind_max_rate": 30.22670025188917,
+      "mean_other_classes": 15.970766819137001,
+      "blind_asymmetry_ratio": 1.8926267344702554
+    }
+  },
+  "P09_clean_s20261020_v3": {
+    "pair_id": "P09_clean_s20261020_v3",
+    "category": "benign_control",
+    "desc": "Clean seed 20261020 v3: m13 -> m14, clean retraining control",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 412,
+    "class_rates": {
+      "0": 32.065217391304344,
+      "1": 31.266846361185983,
+      "2": 33.42245989304813,
+      "3": 43.91534391534391,
+      "4": 26.109660574412537,
+      "5": 26.541554959785525,
+      "6": 27.472527472527474,
+      "7": 27.100271002710024,
+      "8": 26.997245179063363,
+      "9": 31.232876712328768
+    },
+    "blind_metrics": {
+      "blind_max_class": 3,
+      "blind_max_rate": 43.91534391534391,
+      "mean_other_classes": 29.134295505151798,
+      "blind_asymmetry_ratio": 1.507341885359074
+    }
+  },
+  "P10_clean_s42_remove1": {
+    "pair_id": "P10_clean_s42_remove1",
+    "category": "benign_control",
+    "desc": "Clean seed 42: remove benign client 1 from 6-client model",
+    "true_target_auditor_only": null,
+    "eval_samples_n": 387,
+    "class_rates": {
+      "0": 98.84393063583815,
+      "1": 99.14040114613181,
+      "2": 99.43502824858757,
+      "3": 99.72451790633609,
+      "4": 99.16201117318437,
+      "5": 99.14772727272727,
+      "6": 98.53372434017595,
+      "7": 98.84726224783861,
+      "8": 99.40476190476191,
+      "9": 99.70326409495549
+    },
+    "blind_metrics": {
+      "blind_max_class": 3,
+      "blind_max_rate": 99.72451790633609,
+      "mean_other_classes": 99.13534567380013,
+      "blind_asymmetry_ratio": 1.0059431096803213
+    }
+  },
+  "P11_diagnostic_s20261020_m00_m02": {
+    "pair_id": "P11_diagnostic_s20261020_m00_m02",
+    "category": "diagnostic_control",
+    "desc": "Compromised seed 20261020: m00 -> m02, benign 850 deletion on infected model",
+    "true_target_auditor_only": 0,
+    "eval_samples_n": 426,
+    "class_rates": {
+      "0": 18.997361477572557,
+      "1": 15.844155844155845,
+      "2": 38.56041131105398,
+      "3": 45.78005115089514,
+      "4": 23.46938775510204,
+      "5": 25.647668393782386,
+      "6": 20.58047493403694,
+      "7": 23.82198952879581,
+      "8": 18.933333333333334,
+      "9": 14.893617021276595
+    },
+    "blind_metrics": {
+      "blind_max_class": 3,
+      "blind_max_rate": 45.78005115089514,
+      "mean_other_classes": 22.305377733234387,
+      "blind_asymmetry_ratio": 2.0524221422479725
+    }
+  }
+}

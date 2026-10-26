@@ -1,0 +1,28 @@
+R02 / 실행 중 직접 감사 및 즉시 개입 기록
+2026-10-26 KST. 사용자 지시: 문제가 있으면 완주 뒤로 미루지 말고 지금 개입한다.
+
+이 보고서는 진행 중 기록이며 최종 전달 완료 보고서가 아니다. 실제 최신 범위는 live_audit/LATEST.json, TENSOR_PREFIX.json, OBSERVER_STATE.json, SCORE_PROBE.json과 후속 진단을 함께 확인한다.
+
+처음63R 스냅샷에서 완료된504개 역할의 실제 참여자/시드/역할·전체50epoch/배치 로그·악성G5epoch·gamma 연속 선택·23개 동결 소스 해시 대조가 통과했다. 공격자83회 중 gamma0 기준 미달47회, 첫 실패 경계29회, cap10 우측 중도절단7회였다. 모델 성능 재현 성공으로 읽지 않는다.
+순차 CPU 텐서 감사는28R까지 각 라운드 해시/전역 연결/실제8개 제출/정확 집계0/G 연결, 악성4단계의 optimizer 상태·1800step·RNG·실제 제출식을 통과했다. 이후 감사 출력 채널에서 OSError22가 발생했고 OBSERVATION_ERROR_1792953931211524800.json에 보존됐다. 학습이 실패한 것이 아니라 SSH 출력에 연결한 감사 프로세스의 오류다. 무로그 Start-Process 보조프로세스도 SSH 종료 후 남지 않음을 실제 PID로 확인했다. 학습은 원래 PID로 계속했고 조건·소스·기존 모델은 바꾸지 않았다.
+조치: 별도 일회성 CPU 전용 작업 Codex-FUBA-CPU-audit-20261026가 observers_once.py를 실행해28R 검증 캐시 다음부터100R까지 이어 검사한다. stdout/stderr는 영속 로그로 연결하고 SSH 수명과 분리했다. 학습/GPU 작업이나 새로운 실험이 아니며 트리거·재시도는 없다. 실제 PID/작업/OBSERVER_STATE와 로그로 완료를 확인하며 등록 자체를 통과라고 부르지 않는다.
+
+사전 지정 CPU 독립 점수 재계산:9R/client2에서 gamma0은7/220, 선택gamma2.3은18/220으로 원래 GPU 기록과 같았다. 최초 탈락gamma2.4는CPU24/220 대 GPU23/220으로1장 달랐다. 둘 다10% 이상이므로 확인한 gamma2.3 통과/2.4 탈락 분기는 같다.52R/client3의 gamma0=22/228, cap10=18/228은 동일했다. 이 불일치를 숨기거나 점수 독립 재계산 전체 통과라고 하지 않는다. SCORE_PROBE.json 원본은 보존한다.
+CPU MKLDNN/native/float64 순전파의 저장 로짓/입력 인덱스/경계 마진을 비교하는 diagnose_cpu_score_difference.py로 즉시 진단한다. 원래 GPU의 이미지별 로짓은 저장되어 있지 않아 CPU 진단만으로GPU 차이의 원인을 확정할 수 없다. 학습 중 GPU 진단을 겹치거나 기록 점수를 덮어쓰지 않는다. 진단 결과는 SCORE_DIFFERENCE_DIAGNOSIS.json을 따른다.
+
+CPU 수치 진단 완료: MKLDNN float32, native float32, native float64 모두 gamma2.3=18/220,2.4=24/220으로 같았다.2.4에서 비타깃1장의 target margin 절댓값이 약0.000695였지만CPU backend/float64 변경으로 원래GPU23건이 재현되지는 않았다. 따라서 "CPU backend 하나의 오류를 고쳤다"거나GPU 원인을 확정하지 않는다. 세 모드 모두 선택2.3통과/2.4탈락이 같았고 원래 점수/250개 입력 인덱스/세 모드 로짓·예측을 그대로 보존했다. 같은GPU 재검사가 실제 유휴까지 보류돼 원인 확인은 열린 상태다. SCORE_DIFFERENCE_CPU_OUTPUTS.pt SHA256 ae3fecaec0daafc4f53e868e8f127606d7e2eefdee18957b37b22b3757abb118.
+
+현재 실제100R은 커밋됐고 before 평가 CA77.80% / ASR12.811111111111112%(7780/10000,1153/9000)였다. CA80/preASR10 게이트 미달을 그대로 보존한다. 실제 단계는 client4 역사기여 차감 후 KD10 연결 중이다. 중간/최종 사전 성능 미달을 코드 오류로 바꾸어 부르거나100R/KD를 재튜닝·재시작하지 않는다.
+
+후속 실제 상태: 같은 원래 trainer가 실제100R+KD10/400batch를 완료했다. after CA78.03%/ASR14.544444444444444%(7803/10000,1309/9000). 두 최종 성능 게이트 모두 미달이다. 원래 controller는 학습 재시작 없이 CPU 전체 verify.py 단계로 넘어갔다. post_audit.py의 별도 CPU 검사가 실제client4의41개 역사기여/0.125 가중합, float64 삭제delta, named_parameters만 차감한 결과, KD10 optimizer·RNG·strict CPU forward와400개 고유배치/25000예시, 최종KD10=after 모델의 일치를 확인했다. POST_AUDIT.json을 따른다. 이는 전체100R 원래 verifier나 별도 전체GPU 재평가를 대신하지 않는다.
+GPU 점수 재검사는 실제 학습이 끝난 후 CPU verifier가 진행되는 동안 시도했으나, GPU 유휴 guard가812MiB 점유를 확인해 CUDA 초기화 전에 막았다. 실제 GPU 프로세스 목록에는 별도 ComfyUI(PID7264), Blender(PID24632), ChatGPT 및DWM이 있었고 프로세스별 WDDM메모리는N/A여서812MiB를 특정 앱 하나의 점유로 단정하지 않는다. 이전 LMStudio 경합과 같은 프로세스라고 부르지 않는다. 다른 작업을 종료하거나 유휴 기준을 몰래 완화하지 않았다. 별도 전체독립평가도 같은 guard를 따르므로 메모리가 실제 비는지 계속 확인하고, 실제 blocked/실패가 되면 원본 기록 후 평가 단계만 복구한다. 학습 재실행은 없다.
+
+감시를 PID 확인에서 새 커밋 구간 CPU 계약 검사로 확대했고, 확인된 손상/수식/학습량 불일치는 원본·완전prefix·진행단계를 보존하고 해당 PID의 정체를 확인한 뒤 즉시 개입하도록 변경했다. 관측기 오류와 학습 오류는 분리한다. post_audit.py는 기존 최종 검증기에 더해 실제 client4 가중 역사합·차감 결과·10개 KD 상태와400batch 로그를 CPU로 독립 대조한다. 아직 실행 전인 검사를 통과라고 말하지 않는다.
+최종100R+KD10/동결 전체 검증/동일G 전체10000·9000 독립 평가/실제 전후.pt와 로그 로컬 전달/카탈로그·색인 검사가 남아 있다. 자동 확인은 유지한다. 공개코드·수식 SGD/Adam 및 BN/IBA 해석의 한계와 기존v5/KD10/모든 실패는 보존한다. D08 큰 정상nonIID 탈퇴 반례를 해결했다는 탐지 주장이 아니다.
+
+보강 CPU 감사 완료(원격 완료 시각1792984840): LIVE_PREFIX100_VERIFIED.json과외부해시로연결한 live_audit/TENSOR_PREFIX.json/LATEST.json/OBSERVER_STATE.json을 로컬에 보존했다. 실제100R/800역할/186악성G그룹,1235개 모델산출 파일의 해시·전체연결·유한값·실제 제출식·집계오차0·optimizer/RNG와 실제 전체epoch 로그 및23개 동결소스 검사다. 공격자146회 중gamma0기준미달91회,첫실패경계36회,cap10중도절단19회였고 양수gamma제출55회였다. 모든gamma점수를독립추론했다는 뜻은 아니다. CPU/GPU1장점수차이는 여전히 미해결이다. 보강 관측 프로세스는 정상 종료했고 학습 재시작은0이다. 원래 동결 verify.py는 별도 진행 중이며 이후 전체독립평가·내보내기·전후모델 로컬전달은 아직 완료되지 않았다.
+
+검증 대기 중 실제 모델의 로컬 보존: PENDING_FINAL_MODELS/run/before_classifier.pt,after_unlearning.pt,fixed_generator.pt 및전체events.jsonl·삭제감사·KD목록·전후평가·실행결과/프로필/프로토콜/READY/POST_AUDIT 총13파일을 원격과동일해시·크기로복사했다. STAGED_ENDPOINTS_VERIFIED.json은두분류기의clean/동일G변형CPU엄격로드·유한출력검사와3개모델payload를확인한다. STAGING_MANIFEST SHA256 acc341c705174eef8aec2314c3078c59703723e8691726bbbe9b3a2c5b50c80c. 로컬수집기의저자모델소스경로가실제EXECUTED_CODE_DISLAB/model대신root/model을가리킨오류는원본소스/사고기록을보존하고정정했다. 이미복사된모델은덮어쓰지않고모든해시를다시확인한후CPU검사했다. 이는수집기경로오류이며학습조건·원격모델변경이아니다.
+이사본은진단용중간보존이다. 원래전체100R검증/독립평가/최종검토패킷·모든KD모델/카탈로그guard는아직미완료다. 최종CHECKPOINTS_FOR_REVIEW/FUBA_v6_s20261023_pre100_post_KD10디렉터리는생성하지않았으므로원래collect_result.py의새폴더계약을유지한다. 사전억제·활성화성능실패를숨기거나중간사본전달로자동확인을끝내지않는다.
+
+2026-10-26 최신: 원래 전체 verify.py도 FINAL_VERIFIED.json=passed로 완료됐다(100R/800역할/186G/744단계/정확집계0/KD10·400고유배치/2304파일). 이후 원래 independent_evaluate.py는 GPU812MiB 유휴guard로 CUDA 추론 전에 실패했고 원래 controller도 실제 종료했다. EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt 및 incidents/independent_gpu_idle_1792986211065/PRESERVATION.json을 따른다. 원래 실패·상태·로그·검사소스11파일을 양쪽 동일해시로 보존했다. 중복 평가 없음/원래 PID 종료를 확인했고 사용자에게 GPU를 직접 비울지 대기할지 요청했다. 다른 앱 종료/유휴기준 우회/학습·전체검증 재시작 없이 실제GPU유휴후 독립평가·export 단계만 복구한다. 상태의 옛 running 문구를 실제 생존으로 읽지 않는다. 이후 복구상태가 생기면 원래 controller실패와 함께 확인한다. 독립평가/최종패킷·카탈로그는 아직 미완료이며 자동확인을 유지한다.

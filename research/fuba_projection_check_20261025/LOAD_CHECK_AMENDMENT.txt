@@ -1,0 +1,6 @@
+가설: native strict load 직후와 추론 직후의 상태를 비교하면, 원본 분류기 추론이 모델을 바꾸지 않았음을 검사할 수 있다.
+관련 R02/D18. 최초 run_fuba_check.py/FREEZE/RUN_STARTED와 m07 특징/로짓 및 exit1은 원위치에 보존한다.
+최초 실패: run_fuba_check.py line104의 assert all(torch.equal(v.detach().cpu(),state[n]) for n,v in model.state_dict().items()).
+LOAD_FORMAT_DIAGNOSIS.json에서4모델 모두 global export의 float num_batches_tracked가 native strict load 때 int로 변환되는 필드만 불일치함을 확인했다. 모든 비카운터 텐서 값은 같았다. 이는 첫 추론 전의 형식 변환을 원시 export와 비교한 검사 기준 오류이며, 학습을 수행했다는 증거가 아니다.
+수정은 저장 형식 검증만이다. native strict load 직후 모델 상태를 별도 CPU 복사해 추론 후와 정확 비교한다. 파라미터/입력/수식/샘플/k/Z/threshold/정밀도는 바꾸지 않는다. BN 카운터 원본을 수정하지 않는다.
+수정 실행은 verified_v2 새 하위폴더에 저장하며 최초 부분결과를 덮어쓰지 않는다. 두 전후쌍의 점수 계산 전에 수정 소스를 별도 FREEZE로 고정한다. 유한692행을 완료/검산 후 종료한다. 학습 재시작이나 새로운 학습 분기가 아니다.

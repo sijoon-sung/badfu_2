@@ -1,0 +1,55 @@
+{
+  "state": "passed_inference_linkage",
+  "case_id": "fuba.v3.s20261023.pre.round0015.stopped",
+  "inference_only": true,
+  "run_completed": false,
+  "round15": {
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7610,
+    "target_successes": 732,
+    "clean_acc_pct": 76.1,
+    "ASR_pct": 8.133333333333333
+  },
+  "round15_recorded_metric_exact_match": true,
+  "failure_round16_gamma0_private_validation": {
+    "N": 250,
+    "non_target_N": 224,
+    "clean_correct": 205,
+    "target_successes": 29,
+    "clean_acc_pct": 82.0,
+    "ASR_pct": 12.946428571428571
+  },
+  "failure_incoming_same_G_private_validation": {
+    "N": 250,
+    "non_target_N": 224,
+    "clean_correct": 204,
+    "target_successes": 17,
+    "clean_acc_pct": 81.6,
+    "ASR_pct": 7.589285714285714
+  },
+  "failure_recorded_score_exact_match": true,
+  "failure_checkpoint_sha256": "d8a69775534d1c8a6026b0f6f4c7157ff99d87f5696a3aca9334da7f60900dea",
+  "last_checkpoint_sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+  "epsilon": 0.05,
+  "target_excluded": true,
+  "pixels": "[0,1]",
+  "modes": "classifier_eval_generator_eval",
+  "layout": "contiguous_NCHW",
+  "evaluator_sha256": "e76a7561a6c5cc1a35f26b3b63f6a83d1c50f4e6bd6db3237a4a0cf9f6f29712",
+  "training_evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+  "data_sha256": {
+    "test_batch": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+    "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+    "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+    "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+    "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+    "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+  },
+  "GPU_idle_before_inference": "0, 0",
+  "torch": "2.5.1+cu121",
+  "round15_CA80_gate": false,
+  "round15_ASR10_gate": true,
+  "scientific_verdict": "100R_not_completed_gamma0_infeasible_stop_not_reproduction_success",
+  "confirmed_pre_post_pair": false
+}

@@ -1,0 +1,22 @@
+R02 / 최종100R 실패의 원문·실제소스 대조
+원문:FUBA_main_saved.pdf,16pages,SHA256 61d7ae7a51137288df4ac711d7e29c6b8d0e4861cf042326e7ee23ca743d1365. supplementary와혼동하지않는다.
+
+1. Algorithm1 p2895 lines9–12 / paper_core.py select_gamma:
+초기gamma0의예상ASR이threshold이상이면while본문에들어가지않고gamma0이남는다. 실제32–100R공격자111역할은전부이분기였다. 조건미달을기록하고received모델항등제출을검사했다. 전체FL중단은원문에없으며추가하지않았다. 모든G5/분류기4x50epoch는gamma선택전에수행됐다. zero제출을학습생략이나억제통과로재분류하지않는다.
+
+2. Eq.(3) p2897 / expected_aggregate:
+원문은m/n및정상대표모델로추정집계를구성하고작은로컬validation으로ASR을평가한다. 본프로필은5/20과단일대표정상모델을유지했다. 실제8명참여집계/그들의상이한G들과동일한계산은아니다. 로컬통과가전체9000장/실제집계통과를보장하지않았던17R기존근거와31R효용실패를보존한다. 최종100R은gamma0로컬21.4286%부터이미실패했다. 이추정모델과실제모델간차이는확인된구조적차이이며일부요인의인과기여나수정해결책을실험으로확정한것은아니다.
+
+3. 정상효용:
+Algorithm1 gamma선택은ASR<tau만제약하며CA제약이없다.31R cap10의101로컬점수는모두10%미만이었으나실제집계CA10.19/ASR0이었다. cap모델과actualnative제출/집계는같았다. ASR0은이효용붕괴를성공으로만들지않는다. 최종CA78.58도CA80에미달한다. scale/BN/대표모델/학습률각각을바꾼인과분리나재튜닝은수행하지않았다.
+
+4. 유한상한과최댓값:
+원문본문은조건을충족하는maximum gamma를말하나표시된while은첫실패값까지증가시킨다. 본실행의last-tested-pass및cap10은사전명시된유한정책이다.31R에서통과10을실제제출했고right_censored/maximum_established=false로보존했다. 상한을늘리지않았으며무제한최대값을찾았다거나저자공인선택이라고하지않는다. 원본v4cap중단실패를소급수정하지않았다.
+
+5. Algorithm2 p2897–2898 / defender:
+기준은unscaled M_i,E, clean Dj CE+lambda제곱L2, incoming+stage2-reference를유지했다. gamma스케일업로드를기준으로치환하지않았다. final100에는client4가미선택됐지만100R실패를그한원인으로단정하지않는다. 전체40회defender학습은보존된역할기록을따른다.
+
+6. 고정구현선택:
+실험Adam.001과도출SGD, IBA clean-all/poison-subset결합/epsilon일정, clean BN재보정은PROFILE.json에선언된해석한계다. 계수/시드/자료/epoch/epsilon/최종기준은불변이었다. v2의반대재가중·트리거defender입력오류는앞감사에서수정한역사적실패이며이번에새로발견한최종실패원인으로중복주장하지않는다.
+
+결론범위:실제100R/저장계약검증과성능실패를각각확인했다. 관찰가능한주된후반경로는로컬gamma0조건미달→zero제출이다. 이분기에서는양수gamma를검색하지않았으므로양수gamma전체범위의불가능성을확인한것은아니다. 저장오류를찾았다는주장도,고정프로필실패의유일인과원인을밝혔다는주장도아니다. 원본모델과근거를전달하고추가학습/상한확대/새조건/정상·FU분기는자동생성하지않는다. D08 non-IID반례및FUBA잠복전후쌍은해결되지않았다.

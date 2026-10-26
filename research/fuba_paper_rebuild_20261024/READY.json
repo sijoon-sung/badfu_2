@@ -1,0 +1,26 @@
+{
+  "state": "ready",
+  "profile_id": "fuba.paper_iba.s20261023.rebuild_v3",
+  "controller_helper_sha256": {
+    "run_once.py": "4b2bf6dd143be070949ab4eda812b5bbe69a69738ca61ac7e2fafe35a9bbc5a1",
+    "verify_run.py": "aa9ad18260e81bb34272d449861af5f4c04853b9279fb431bbf6b3ffe83a264c",
+    "background.py": "044368a3d75b27757cf3a1c842013e32f8a6160c8f781e25d1b728e111d321d0",
+    "paper_core.py": "4730c8903bde8939344b750af38b03c35aac286a7ce9731b7f0bd154c81f6acf",
+    "mpi_roles.py": "abe7021e49ee4e8e00db15d81fda3d12e677dbe7fe7bdc664a9567861a9d89ef",
+    "profile_helpers.py": "f4534bf33c93b8a04c957310418c8b85a4796dbe5752eebd0b0bd6d8537501c8",
+    "durable.py": "00d06ac8734019f36277a1dc59170ee4b1b1074b345a7c84417641c5f95e499a",
+    "rebuild_adapter.py": "c0f52fa3a6ac09d188827ed4f0e4ee2324c1cb97b627fd518be425439ea13099",
+    "resource_guard.py": "065b15a6ea11ab903092a3dc043f4dab56588696c4a7d0e6d2ac63b3e071b0aa"
+  },
+  "smoke_verified": true,
+  "CPU_tests": 9,
+  "free_bytes": 1506297184256,
+  "gpu_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "same_seed_no_ASR_tuning": true,
+  "recurrence": false,
+  "created_unix": 1792779174.8051646
+}

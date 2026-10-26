@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "related_cards": [
+    "R02"
+  ],
+  "checked_unix": 1792767611.242517,
+  "round": 83,
+  "checkpoint_sha256": "c7e2861c3626ec904acb4ffa63c43974b15d850101069f12d7d1ad9f9365d9ca",
+  "original82_prefix_entries_unchanged": true,
+  "round82_to83_model_chain": "exact",
+  "exact_aggregation_max_error": 0.0,
+  "finite_states_and_valid_BN": true,
+  "client_ids": [
+    1,
+    6,
+    7,
+    9,
+    12,
+    16,
+    18,
+    19
+  ],
+  "synchronized_attack_clients": [
+    1
+  ],
+  "three_equal_eval_mode_generators_per_client": true,
+  "storage_resume_plan_sha256": "1c5af53aabe57ad75db1b26ce0d594f7c2c637b452169c410a610fb9e09ba34c",
+  "interpretation": "Storage continuation checked;100R evaluation and attack reproduction remain pending."
+}

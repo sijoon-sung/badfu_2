@@ -1,0 +1,266 @@
+{
+  "created_unix": 1792817237.6687918,
+  "files": [
+    {
+      "path": "READY.json",
+      "sha256": "02f5189e69859aba32371d710ced058f96e236d8c52ab65885f5e4cc52a40685",
+      "bytes": 1376
+    },
+    {
+      "path": "PROFILE.json",
+      "sha256": "396cb81317e2677fc7d4101f1b8c2f8f3e803343cd2c09e14d737e6d4f93f967",
+      "bytes": 4053
+    },
+    {
+      "path": "STATE.json",
+      "sha256": "56aa9f63380d7bbf57cdfe24017389e33fb80e19a0ce3c09a2d30460c6784f58",
+      "bytes": 2682
+    },
+    {
+      "path": "ASR_ALERT19_PROTOCOL.txt",
+      "sha256": "3c35c3c26adb0352f3936ed3b102b7c5fdf4d4b92f84e40cf4e8458bea1f5f52",
+      "bytes": 2370
+    },
+    {
+      "path": "diagnose_asr_alert19.py",
+      "sha256": "9df2a942faa0b608eacb7001da9ce7f641b0d833129a84d951b5d15b865552e0",
+      "bytes": 11300
+    },
+    {
+      "path": "attack_100R/PROFILE.json",
+      "sha256": "f395cdb213cec4788564b479ee284a4ed1e8921d459fee0cd16038c82e411d42",
+      "bytes": 4072
+    },
+    {
+      "path": "attack_100R/ENVIRONMENT.json",
+      "sha256": "5f63bb0cd94f431081f5a65f6b8044770e28f99b00f4f7151239f339884ad6b7",
+      "bytes": 2260
+    },
+    {
+      "path": "attack_100R/console.log",
+      "sha256": "6c36840dee451de2d5a57cb0fb427569ebaffc8c5bcb7517002154b23f1a340e",
+      "bytes": 1965
+    },
+    {
+      "path": "attack_100R/fl/manifest.json",
+      "sha256": "4e99ab2b3f4f713fcac540dd46e549e38be49e3c474b8aa6897176c149fcd644",
+      "bytes": 7325
+    },
+    {
+      "path": "attack_100R/ASR_ALERT_round0019.json",
+      "sha256": "28d0c5786732a9480c1556e1336357f75dc6bdc36c5a7b4730605d87a8e8af85",
+      "bytes": 797
+    },
+    {
+      "path": "run_once.py",
+      "sha256": "4c6d13e5762ac13d745690375020969e2036192f04722b6a7d762b1043310163",
+      "bytes": 3033
+    },
+    {
+      "path": "background.py",
+      "sha256": "9cd36d21862087241cc22f5e00e94e5f79d01ca74a64931249215b7381fb9065",
+      "bytes": 323
+    },
+    {
+      "path": "flow_support.py",
+      "sha256": "a4bf77e61f716cdaea934796bbbfd269b535eb288988f6fed3a6a73b7b14d0fd",
+      "bytes": 4351
+    },
+    {
+      "path": "paper_core.py",
+      "sha256": "1d290599941befe86c3202bca3e0f240acdaf446dec900b6e97dd98f128f1c82",
+      "bytes": 11179
+    },
+    {
+      "path": "mpi_roles.py",
+      "sha256": "976c9dbeb42de83f4d83c53fefc5f053a0052996e90281dc5b4a23afcf1c19f0",
+      "bytes": 6845
+    },
+    {
+      "path": "profile_helpers.py",
+      "sha256": "f4534bf33c93b8a04c957310418c8b85a4796dbe5752eebd0b0bd6d8537501c8",
+      "bytes": 3669
+    },
+    {
+      "path": "rebuild_adapter.py",
+      "sha256": "b16ed559b5ff8d861f77a8e2d0f5142f9b195a1d85df807581200d6fad9e885b",
+      "bytes": 3977
+    },
+    {
+      "path": "durable.py",
+      "sha256": "00d06ac8734019f36277a1dc59170ee4b1b1074b345a7c84417641c5f95e499a",
+      "bytes": 1281
+    },
+    {
+      "path": "resource_guard.py",
+      "sha256": "065b15a6ea11ab903092a3dc043f4dab56588696c4a7d0e6d2ac63b3e071b0aa",
+      "bytes": 1229
+    },
+    {
+      "path": "verify_run.py",
+      "sha256": "aa9ad18260e81bb34272d449861af5f4c04853b9279fb431bbf6b3ffe83a264c",
+      "bytes": 3239
+    },
+    {
+      "path": "attack_100R/runtime/train_main.py",
+      "sha256": "c1786f1370fe31862a34948d3194c3421aef77b6c299545c1bcac5fe0e6267b2",
+      "bytes": 17806
+    },
+    {
+      "path": "attack_100R/runtime/runtime_fixes.py",
+      "sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+      "bytes": 3922
+    },
+    {
+      "path": "attack_100R/runtime/model/resnet.py",
+      "sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+      "bytes": 3783
+    },
+    {
+      "path": "attack_100R/runtime/model/model.py",
+      "sha256": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+      "bytes": 4659
+    },
+    {
+      "path": "attack_100R/metrics_round_0017.json",
+      "sha256": "faafed1f29e248c34359eb9e73dd3cb726549b5952c222406510bf2db1c3dad3",
+      "bytes": 415
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client02.json",
+      "sha256": "cade0c2ef49359eaf89895bb0dd5be7e6ff3816c7b535de1ee696e7ab5f7215b",
+      "bytes": 3668
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client05.json",
+      "sha256": "d779166efe54bcd21410a8c59d8cd87929ae16d7de06b1860d42abfd592bf1b7",
+      "bytes": 819
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client07.json",
+      "sha256": "10974c1ae8e3141758d5c604bf0ee2d86ade0277a941c64c4ce44a91e482bf59",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client08.json",
+      "sha256": "98200eede25215556cb820cd2aa8b2666ddb310f430cea37f24046b56845888e",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client12.json",
+      "sha256": "9db18948c8c20f0b69e6f7197b8b72cbd635b0a06f6ca9e858846442b4a90611",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client13.json",
+      "sha256": "d8d069e0c79dea27f04869f4ad12b58756f9c3dafb196e2d4ce73bedc8458c80",
+      "bytes": 825
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client15.json",
+      "sha256": "5b1939c050313793f20e9754838a6bc9179b179c654d69fe41d7b878c220e696",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0017_client16.json",
+      "sha256": "a7af80972e4e3efc120fc4a03e197a67ea837c6d7b98b7ea9f91411d7eba03c3",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/metrics_round_0018.json",
+      "sha256": "bcce27f291a33bae54cb222d81a7145075a8f92c30f40d77a6c05a8026ecbde9",
+      "bytes": 415
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client05.json",
+      "sha256": "58c9cc5601705ce593e60614fc87fda4d6acc4e8023d0e408d58bde6b41d5ae1",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client07.json",
+      "sha256": "a07825df16be5b89cd612030f4998c2c8eaf4e083a7aba0408fa10d4fcf0df0e",
+      "bytes": 822
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client08.json",
+      "sha256": "53f3bfdb56ff4b0044006721709dc9d60f782087709653f61198f0cd01ed0e09",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client09.json",
+      "sha256": "c7ebd0f9a834fcccf19bd930805d127db07e9798cc82a9dbe8c4bfb1c2f25adb",
+      "bytes": 821
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client11.json",
+      "sha256": "05881fc5769fde18472bcb292faa12b2e082a1a3717ebf8264de1f990d854d5c",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client13.json",
+      "sha256": "8322215b802889267cb69a18a59974ea7f1766f2e7f6244e0ad529e08510347c",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client18.json",
+      "sha256": "dec152c92137836c1ce63a1a98337f1c02a01e7ca74c9bb6cec0349049a93d59",
+      "bytes": 821
+    },
+    {
+      "path": "attack_100R/role_progress/round0018_client19.json",
+      "sha256": "8f8e58c75c9da26723e12aebf524d9a98d50d6d97c68860ec4a3c7b640533627",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/metrics_round_0019.json",
+      "sha256": "f100e16e26088bc35a98930b41f9e7ab71b73ccf24fab370d30f0d2e83b6b97e",
+      "bytes": 415
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client00.json",
+      "sha256": "0be2adef5f506f08acf5b3ba39b5cc8e1d26353207473b246e5dc0689dd5533f",
+      "bytes": 2803
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client02.json",
+      "sha256": "64981ee5cfba3954e37e63e639256b106e71705b7ec5cc9a762ba3102349c5b6",
+      "bytes": 2792
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client03.json",
+      "sha256": "522773462db11b5e92d24467c9bf95b9434c34636b5e6c1eb2d2d7f54d5dbb3a",
+      "bytes": 3106
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client07.json",
+      "sha256": "6d457e7d8c482ccf44fb1183d94bed3d618ec3de8deea32eb4c345de67628b89",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client11.json",
+      "sha256": "d470ac6c1a487e78c5789c3290008b0a80a82cc151d1c6c60de54d39422800e9",
+      "bytes": 824
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client12.json",
+      "sha256": "6e1ee36b8e32937039dc4c7edd15b5f67f6cec2ad25e76ba950cb96a684dbecc",
+      "bytes": 821
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client15.json",
+      "sha256": "5265d2e08f4092bd64c439d2f5a00f2281873fdea600b28cf5ce4728b20e0afb",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/role_progress/round0019_client17.json",
+      "sha256": "dbe03f4b0cc8bea16a9108e9b16e538d247bb11f65bf78c0fc17fbee1e7d207b",
+      "bytes": 823
+    },
+    {
+      "path": "attack_100R/fl/round_0019.pt",
+      "sha256": "e0701e83e59949002c9e2de50af2aeedcb4405fc12ba03a2407ea73658e61f5a",
+      "bytes": 572532514
+    }
+  ],
+  "manifest_committed_rounds_at_snapshot": 19
+}

@@ -1,117 +1,25 @@
-# BadFU / XAI incremental-value experiment
+**실험 과정을 읽는 자료:** [전체 정리와 개별 실험](reports/experiment_process_20261026/README.md) · [교수 미팅용 Word 문서](reports/experiment_process_20261026/BadFU_실험과정_전체정리_20261026.docx)
 
-**Current priority: original reproduction.** The earlier `experiment.py` prototype materially
-changed the upstream unlearning computation and is not valid evidence for BadFU reproduction.
-Its run was stopped and checkpoints preserved. See `results/audit/changes.json`.
+> **항상 먼저 읽기:** [연구 실험 인덱스](research/INDEX.md) → [관련 실험 카드](research/EXPERIMENT_CARDS.md) → 연결된 원 보고서. **단순 반응량은 큰 정상 non-IID 탈퇴와 공격을 구별하지 못했다.** 새 제안은 이 반례와 기존 실패를 먼저 검토한다. [전체 폴더 색인](research/EXPERIMENT_FOLDERS.md)
+>
+> **확정 모델 바로 열기:** [BadFU 기준 체크포인트 v1](CONFIRMED_CHECKPOINTS/BadFU_s20261023_v1/README.md). 삭제 전 ASR **14.29% → 위장 제거 후 100%**, 정상 정확도 **90.38% → 90.46%**. 저자 코드 직접 비교를 통과한 모델·정상 대조·공통 초기값을 읽기 전용 독립 사본으로 보관했다. 공격 재현의 관측이며 탐지 성공을 의미하지 않는다.
+>
+> **연구 모델 선택:** [검증된 궤적과 폴더 목록](research/00_trajectories/README.md). 최종 모델 기본 ID는 `badfu.confirmed.s20261023.v1`, 전체 이력 기본 ID는 `badfu.paper32.s20261020`이다. 파일 이름이나 날짜로 모델을 고르지 않는다.
 
-Use `run_reference.ps1` with the dedicated `envs/badfu-original` Conda environment
-(Python 3.11, PyTorch 2.4.1+cu118, torchvision 0.19.1, numpy 1.26.4).
-Exact installed package versions are in `original-environment-lock.txt`.
-To pause after the current round is saved, run `./pause_reference.ps1`.
-To continue later, run `./resume_reference.ps1`; completed rounds are skipped and
-the model plus Python/NumPy/CPU/CUDA RNG states are restored from checkpoints.
-Keep `results/reference` (including `history`), `upstream/data_prepare/record/badnet_original`,
-and the downloaded data intact. GitHub code alone cannot restore trained checkpoints.
-The one-time `pause_running_legacy.ps1` safely pauses a runner launched before pause support existed.
-`reference_runner.py` executes the unchanged function/class definitions from `upstream/badfu.py`.
-An AST assertion enforces this, including `local_train`, `fed_avg`, `evaluate_model`,
-and `unlearning_step_once`. Original defaults: 5 clients, dominant ratio 0.7,
-40 rounds, 5 local epochs, seed 42. All six original training/unlearning phases run.
-History is stored on disk and reloaded with bitwise state and RNG preservation;
-Windows workers are set to zero. Each round checkpoints state and RNG for resumption.
+# BadFU 연구
 
-**Preparation exception:** the final `rm`/`mv` commands in the public shell script
-invalidate its saved poison/cover file paths (0/850 cover references would survive in the
-generated artifact). They are not executed. Fresh upstream-generated images, labels,
-indices and poison/cover ratios are retained; only their path strings become absolute.
-Consequently this is original training/unlearning reproduction with a documented data
-preparation exception, not a claim that the published shell script runs unchanged end to end.
-`--smoke` changes rounds/epochs solely for runtime QA and cannot count as attack reproduction.
+[FUBA 체크포인트 생성·로컬 전달 상태](CHECKPOINTS_FOR_REVIEW/README.md)
 
-Question: do clean-input explanation changes predict post-unlearning ASR changes beyond
-accuracy, target probability, margin, confidence, and client class composition on held-out FL seeds?
+[처음부터 읽는 연구 정리](research/README.md)에서 논문·코드·기본 검증·방어 가설·수학적 근거를 순서대로 읽는다.
 
-## Environment
+모든 새 실험은 [가설 한 줄 정리 원칙](research/EXPERIMENT_RULES.md)을 따른다. 최신 판정은 연구 실험 인덱스를 우선하고, [2026-10-20 미팅 자료](research/05_meetings/20261020/CLAIM_BOARD.md)는 당시 주장과 검증의 기록으로 읽는다.
 
-Existing Conda environment: `C:\Users\sijoo\.conda\envs\pytorch`.
-Use its Python directly; this still uses the Conda environment and avoids PATH ambiguity.
-GPU detected: RTX 4060 Laptop, 8 GiB. Upstream pinned to
-`0a2117feab58faf5b7e2a1e5e1759112087d6049` from https://github.com/BingguangLu/BadFU.
-Download upstream into `upstream/`. Runtime versions and artifact hash are saved in every run's manifest.
+- [원논문 재현](research/01_reproduction/README.md)
+- [정화와 방어 가설](research/02_purification/README.md)
+- [탐지의 문제 정의](research/03_detection/README.md)
+- [수학적 명제와 증명](research/04_theory/README.md)
+- [앞에서 제외한 시도](research/90_archive/README.md)
 
-## Data preparation
+실행을 이어갈 때는 [재현 및 재개 절차](REPRODUCE.md)를 사용한다. 모델·데이터·환경·기존 실행 코드는 원래 경로를 유지한다.
 
-Run `download_data.py` to download an unchanged MIT mirror archive with torchvision's MD5 verification.
-Run `legacy_prepare.py base` with the official `badnet.py` arguments from `prepare_data.sh`,
-using `--epochs 0 --device cuda:0 --num_workers 0`.
-Use `--save_folder_name badnet_seed0`. Then run `legacy_prepare.py cover --dataset_folder ../record/badnet_seed0 --device cuda:0
---ft_epochs 1 --ap_epochs 1 --num_workers 0`.
-The wrapper permits legacy pickle only for locally produced upstream data.
-It does not execute the upstream shell script's deletion/move operations.
-
-## Run
-
-`./run_pilot.ps1`: 20 evaluated client distributions, alpha 0.5, 3 seeds,
-10 FL rounds, 1 local epoch, stratified approximately 10k training images,
-100 explanation images, 16 GradientSHAP samples.
-
-`./run_full.ps1`: 20 distributions, IID and three non-IID levels, 5 seeds,
-all CIFAR-10 data, 40 rounds, 5 local epochs, 500 explanation images,
-50 GradientSHAP samples. This is much more expensive than the pilot.
-
-The virtual cover client adds one participant, giving **21 actual training participants**.
-This adapts the official auxiliary-client branch; it is not literal sample-level deletion
-from a single malicious client. Clean data on client 0 are duplicated in the cover client,
-as in that upstream branch. Pretrained ImageNet ResNet-18 body follows upstream initialization;
-the CIFAR convolution and classifier are fresh. Set `--no-pretrained` for training from scratch.
-
-## Conditions and limitations
-
-1. Clean FL, remove the auxiliary clean client.
-2. Clean FL, continue with all clients for matched local update epochs.
-3. Poisoned FL, remove the auxiliary influence-crafted cover client.
-4. Poisoned FL, continue with all clients for matched local update epochs.
-5. Poisoned FL, remove a benign client (client 1).
-
-The fifth condition does **not** match deletion size exactly; report its sample count.
-Calibrated deletion restarts from the common initialization and uses every second historical
-round's retained-client update norms with data-size-weighted aggregation. Parameter updates
-have zero-norm protection; BN buffers use freshly aggregated buffers. These correct/adapt
-the legacy implementation's averaging, indexing and zero division, so this is **not an exact
-BadFU paper reproduction** and deletion validity is not certified. Hold controls continue
-from the pre-unlearning checkpoint for an equal number of local epochs; the optimization
-paths differ by design. Local epoch equality is not exact FLOP equality after removing a client.
-
-The influence-crafted artifact is fixed (seed 0); FL initialization, partitions, and selected
-poison/cover subsets vary by seed. Results generalize over these seeds conditional on this
-one attack artifact. Independently recrafting artifacts is a required follow-up for broader claims.
-
-Test images are separate from training. Client test distributions are disjoint and use
-train-derived class allocation probabilities. ASR excludes original target-class examples.
-XAI uses a separate fixed stratified test-image subset, identical across pre/post states.
-Client XAI values are class-stratified estimates weighted by that client's test class proportions,
-not measured explanations for every individual client test image. Client values are dependent.
-The final test pool is not used to choose the detector's regularization or features.
-
-## Analysis
-
-Baseline: pre/delta clean accuracy, target probability, target-vs-other logit margin,
-maximum confidence, alpha and nine class proportions. XAI additions: clean-input JSD for
-fixed target/true class and absolute attribution mass changes. Neither triggered outputs,
-trigger masks, post-ASR, nor condition IDs enter the predictors.
-
-Fixed Ridge regularization 10; preprocessing fits only training folds.
-Also compare fixed HistGradientBoosting models to check whether an apparent gain is
-specific to a linear baseline. Both model families are declared before running outcomes.
-Leave-one-seed-out validation holds out every condition/alpha/client for that seed together.
-MAE/RMSE/R2, per-seed paired improvement and seed-block bootstrap are saved.
-Three seeds and the bootstrap interval are exploratory, not strong inferential evidence.
-Predeclared pilot activation gate: attack pre-ASR <= 30%, delta ASR >= 20 percentage points.
-If the gate fails, improved regression alone does not demonstrate dormant-backdoor detection.
-
-Outputs: `manifest.json`, per-run configs, splits, checkpoints, attribution caches,
-image-level XAI tables, client metrics, global metrics, held-out predictions,
-`analysis.json`, `REPORT.md`. Resume with exactly the same command; use a fresh output
-directory for changed configuration. `analysis.py results/pilot` recomputes the analysis.
-`python -m unittest test_experiment.py` verifies grouping/no label leakage,
-partition conservation, aggregation and attribution repeatability.
+[이전 전체 실행 안내](research/90_archive/root_readme_before_reorganization.md) · [옛 실험 원본 색인](pr_reports/INDEX.md)

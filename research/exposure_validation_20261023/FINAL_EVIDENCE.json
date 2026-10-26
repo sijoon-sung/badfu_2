@@ -1,0 +1,138 @@
+{
+  "hypothesis": "정상 기능을 약화한 진단용 복사본에서 탐색하면, 수정하지 않은 실제 모델에서 재현되는 활성화 오류를 더 발견하고 큰 정상 탈퇴와 구별한다.",
+  "judgement": "기각: 고정한 노출 탐색은 공격 두 시드를 큰 정상 탈퇴를 포함한 대조군과 일관되게 구별하지 못했다.",
+  "baseline_observation": "직접400과 직접800은 이번 두 공격 시드 모두 세 정상 대조보다 높은 새 표적 오류를 보였다. 이 표본 내 분리는 관찰됐지만 새로운 독립 학습·분할·정상 요청에서의 재현은 미검증이다.",
+  "summary": {
+    "direct_400": {
+      "pairs": {
+        "q00": {
+          "public_pct": 56.222222222222214,
+          "trusted_pct": 73.21609795534432
+        },
+        "q01": {
+          "public_pct": 14.777777777777779,
+          "trusted_pct": 15.626176433414827
+        },
+        "q10": {
+          "public_pct": 56.00000000000001,
+          "trusted_pct": 69.45183815210243
+        },
+        "q11": {
+          "public_pct": 5.222222222222222,
+          "trusted_pct": 6.927675463383093
+        },
+        "q12": {
+          "public_pct": 7.333333333333333,
+          "trusted_pct": 7.674035018746155
+        }
+      },
+      "descriptive_min_attack_minus_max_benign_pp": {
+        "public_pct": 41.22222222222223,
+        "trusted_pct": 53.8256617186876
+      },
+      "search_seconds": 140.3873188495636,
+      "input_backward_images": 240000,
+      "additional_exposure_seconds": 0
+    },
+    "direct_800": {
+      "pairs": {
+        "q00": {
+          "public_pct": 57.666666666666664,
+          "trusted_pct": 75.24036330132087
+        },
+        "q01": {
+          "public_pct": 13.0,
+          "trusted_pct": 16.43513836972386
+        },
+        "q10": {
+          "public_pct": 67.22222222222223,
+          "trusted_pct": 83.83862282823523
+        },
+        "q11": {
+          "public_pct": 6.444444444444445,
+          "trusted_pct": 5.453739331816549
+        },
+        "q12": {
+          "public_pct": 8.0,
+          "trusted_pct": 8.284402334290359
+        }
+      },
+      "descriptive_min_attack_minus_max_benign_pp": {
+        "public_pct": 44.666666666666664,
+        "trusted_pct": 58.80522493159701
+      },
+      "search_seconds": 280.5650951862335,
+      "input_backward_images": 480000,
+      "additional_exposure_seconds": 0
+    },
+    "exposed_400": {
+      "pairs": {
+        "q00": {
+          "public_pct": 2.6666666666666665,
+          "trusted_pct": 3.975742097875433
+        },
+        "q01": {
+          "public_pct": 10.333333333333334,
+          "trusted_pct": 13.257314075360412
+        },
+        "q10": {
+          "public_pct": 69.22222222222221,
+          "trusted_pct": 84.57428750686297
+        },
+        "q11": {
+          "public_pct": 2.6666666666666665,
+          "trusted_pct": 2.297009088091704
+        },
+        "q12": {
+          "public_pct": 2.0,
+          "trusted_pct": 2.61638148766802
+        }
+      },
+      "descriptive_min_attack_minus_max_benign_pp": {
+        "public_pct": -7.666666666666668,
+        "trusted_pct": -9.28157197748498
+      },
+      "search_seconds": 138.6297161579132,
+      "input_backward_images": 240000,
+      "additional_exposure_seconds": 1.534616231918335
+    }
+  },
+  "labels": {
+    "q00": "Paper32 공격 위장850삭제",
+    "q01": "Paper32 감염모델 정상850삭제",
+    "q10": "추가시드 공격 위장850삭제",
+    "q11": "추가시드 정상모델 정상850삭제",
+    "q12": "추가시드 정상 큰참여자4 전체삭제(19.336%)"
+  },
+  "independent_FL_seeds": 2,
+  "large_normal_deletion_cases": 1,
+  "no_operational_threshold": true,
+  "no_independent_FPR_estimate": true,
+  "native_replay_passed": true,
+  "results_sha256": "420d48971ed7af1817cfbe52748c80d5491f1fb36772b90f69744f6fcf807da4",
+  "protocol_sha256": "9a184045643afda3e0e871dda99a86b0319a07df2c1ec3b16a3c421899a80661",
+  "report_source_sha256": "eea9f7179c9b9e87c0f413cd1d4a444e8c9c5e2c878416d04b2e85b45b4fbb43",
+  "interpretation": "Descriptive case comparison only; unknown-trigger functional witness rate, not true ASR.",
+  "original_model_clean_accuracy": {
+    "q00": [
+      88.7,
+      88.6
+    ],
+    "q01": [
+      88.7,
+      88.5
+    ],
+    "q10": [
+      90.9,
+      91.5
+    ],
+    "q11": [
+      91.4,
+      91.0
+    ],
+    "q12": [
+      91.4,
+      89.2
+    ]
+  }
+}

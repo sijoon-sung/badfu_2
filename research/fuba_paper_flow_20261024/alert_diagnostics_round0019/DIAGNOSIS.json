@@ -1,0 +1,781 @@
+{
+  "state": "passed_bounded_integrity_and_inference_diagnosis",
+  "profile_id": "fuba.paper_flow.s20261023.continue16_100.v4",
+  "related_cards": [
+    "R02"
+  ],
+  "rounds": [
+    {
+      "round": 17,
+      "checkpoint_sha256": "4c6b2e9356bf10298726bbf6b9882d81c7961994743f6ffb58ad0645fa2cd3ae",
+      "chain_exact": true,
+      "exact_aggregation_max_error": 0,
+      "defender_selected": false,
+      "roles": [
+        {
+          "client": 2,
+          "role": "attacker",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 4,
+          "decision": {
+            "gamma": 1.1,
+            "status": "bounded_by_first_failure",
+            "scores": [
+              {
+                "gamma": 0.0,
+                "ASR_pct": 7.2727272727272725
+              },
+              {
+                "gamma": 0.1,
+                "ASR_pct": 8.181818181818182
+              },
+              {
+                "gamma": 0.2,
+                "ASR_pct": 7.7272727272727275
+              },
+              {
+                "gamma": 0.3,
+                "ASR_pct": 7.7272727272727275
+              },
+              {
+                "gamma": 0.4,
+                "ASR_pct": 7.2727272727272725
+              },
+              {
+                "gamma": 0.5,
+                "ASR_pct": 8.181818181818182
+              },
+              {
+                "gamma": 0.6,
+                "ASR_pct": 8.181818181818182
+              },
+              {
+                "gamma": 0.7,
+                "ASR_pct": 8.181818181818182
+              },
+              {
+                "gamma": 0.8,
+                "ASR_pct": 9.090909090909092
+              },
+              {
+                "gamma": 0.9,
+                "ASR_pct": 9.090909090909092
+              },
+              {
+                "gamma": 1.0,
+                "ASR_pct": 9.545454545454545
+              },
+              {
+                "gamma": 1.1,
+                "ASR_pct": 9.545454545454545
+              },
+              {
+                "gamma": 1.2,
+                "ASR_pct": 10.454545454545455
+              }
+            ]
+          },
+          "same_generator_exact": true
+        },
+        {
+          "client": 5,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 7,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 8,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 12,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 13,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 15,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 16,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        }
+      ],
+      "generator_check": "exact_mean_of_stored_current_individual_generators",
+      "current_G_digest": "f687863474288fb54d021febcedc07f9fcc68c6ac14306beee8c5b7691e0f0dc",
+      "previous_G_digest": "9f7073b5e655b11cf71e70ea371e5f80a33418180431b26c4ef01573bf35054a",
+      "fixed320_CPU": {
+        "incoming_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 254,
+          "target_successes": 27,
+          "CA_pct": 79.375,
+          "ASR_pct": 9.375
+        },
+        "aggregate_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 254,
+          "target_successes": 34,
+          "CA_pct": 79.375,
+          "ASR_pct": 11.805555555555555
+        },
+        "aggregate_previousG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 254,
+          "target_successes": 33,
+          "CA_pct": 79.375,
+          "ASR_pct": 11.458333333333334
+        }
+      },
+      "recorded_full10000_9000_metric": {
+        "round": 17,
+        "clean_acc_pct": 76.54,
+        "asr_pct": 12.044444444444444,
+        "generator_source": "aggregate",
+        "generator_mode": "eval",
+        "target_excluded": true,
+        "test_N": 10000,
+        "non_target_N": 9000,
+        "evaluator_version": "fuba-rebuild-v3",
+        "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+        "epsilon": 0.05,
+        "pixels": "[0,1]",
+        "smoke": false
+      }
+    },
+    {
+      "round": 18,
+      "checkpoint_sha256": "b574bdf51613cf53d739c4914acfcd92921a97847d737d395c7de1749be0e8c7",
+      "chain_exact": true,
+      "exact_aggregation_max_error": 0,
+      "defender_selected": false,
+      "roles": [
+        {
+          "client": 5,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 7,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 8,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 9,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 11,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 13,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 18,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 19,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        }
+      ],
+      "generator_check": "exact_previous_aggregate_carried_when_no_adversary_selected",
+      "current_G_digest": "f687863474288fb54d021febcedc07f9fcc68c6ac14306beee8c5b7691e0f0dc",
+      "previous_G_digest": "f687863474288fb54d021febcedc07f9fcc68c6ac14306beee8c5b7691e0f0dc",
+      "fixed320_CPU": {
+        "incoming_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 254,
+          "target_successes": 34,
+          "CA_pct": 79.375,
+          "ASR_pct": 11.805555555555555
+        },
+        "aggregate_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 252,
+          "target_successes": 29,
+          "CA_pct": 78.75,
+          "ASR_pct": 10.069444444444445
+        },
+        "aggregate_previousG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 252,
+          "target_successes": 29,
+          "CA_pct": 78.75,
+          "ASR_pct": 10.069444444444445
+        }
+      },
+      "recorded_full10000_9000_metric": {
+        "round": 18,
+        "clean_acc_pct": 76.83,
+        "asr_pct": 11.544444444444444,
+        "generator_source": "aggregate",
+        "generator_mode": "eval",
+        "target_excluded": true,
+        "test_N": 10000,
+        "non_target_N": 9000,
+        "evaluator_version": "fuba-rebuild-v3",
+        "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+        "epsilon": 0.05,
+        "pixels": "[0,1]",
+        "smoke": false
+      }
+    },
+    {
+      "round": 19,
+      "checkpoint_sha256": "e0701e83e59949002c9e2de50af2aeedcb4405fc12ba03a2407ea73658e61f5a",
+      "chain_exact": true,
+      "exact_aggregation_max_error": 0,
+      "defender_selected": false,
+      "roles": [
+        {
+          "client": 0,
+          "role": "attacker",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 4,
+          "decision": {
+            "gamma": 0.0,
+            "status": "gamma0_constraint_unmet_zero_upload",
+            "scores": [
+              {
+                "gamma": 0.0,
+                "ASR_pct": 14.090909090909092
+              }
+            ],
+            "estimated_suppression_constraint_met": false
+          },
+          "same_generator_exact": true,
+          "zero_submission_BN_counter_casts": []
+        },
+        {
+          "client": 2,
+          "role": "attacker",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 4,
+          "decision": {
+            "gamma": 0.0,
+            "status": "gamma0_constraint_unmet_zero_upload",
+            "scores": [
+              {
+                "gamma": 0.0,
+                "ASR_pct": 10.0
+              }
+            ],
+            "estimated_suppression_constraint_met": false
+          },
+          "same_generator_exact": true,
+          "zero_submission_BN_counter_casts": []
+        },
+        {
+          "client": 3,
+          "role": "attacker",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 4,
+          "decision": {
+            "gamma": 0.4,
+            "status": "bounded_by_first_failure",
+            "scores": [
+              {
+                "gamma": 0.0,
+                "ASR_pct": 9.210526315789474
+              },
+              {
+                "gamma": 0.1,
+                "ASR_pct": 9.210526315789474
+              },
+              {
+                "gamma": 0.2,
+                "ASR_pct": 9.210526315789474
+              },
+              {
+                "gamma": 0.3,
+                "ASR_pct": 9.210526315789474
+              },
+              {
+                "gamma": 0.4,
+                "ASR_pct": 9.210526315789474
+              },
+              {
+                "gamma": 0.5,
+                "ASR_pct": 10.087719298245615
+              }
+            ]
+          },
+          "same_generator_exact": true
+        },
+        {
+          "client": 7,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 11,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 12,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 15,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        },
+        {
+          "client": 17,
+          "role": "benign",
+          "actual_epochs_per_phase": 50,
+          "classifier_phases": 1,
+          "decision": null
+        }
+      ],
+      "generator_check": "exact_mean_of_stored_current_individual_generators",
+      "current_G_digest": "fc85c4fe2c2c4a9bbd3efea90ece47e2a0600c1c49b0eddc441296f21be8b462",
+      "previous_G_digest": "f687863474288fb54d021febcedc07f9fcc68c6ac14306beee8c5b7691e0f0dc",
+      "fixed320_CPU": {
+        "incoming_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 252,
+          "target_successes": 29,
+          "CA_pct": 78.75,
+          "ASR_pct": 10.069444444444445
+        },
+        "aggregate_currentG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 250,
+          "target_successes": 31,
+          "CA_pct": 78.125,
+          "ASR_pct": 10.76388888888889
+        },
+        "aggregate_previousG": {
+          "N": 320,
+          "non_target_N": 288,
+          "clean_correct": 250,
+          "target_successes": 30,
+          "CA_pct": 78.125,
+          "ASR_pct": 10.416666666666666
+        }
+      },
+      "recorded_full10000_9000_metric": {
+        "round": 19,
+        "clean_acc_pct": 76.92,
+        "asr_pct": 12.833333333333334,
+        "generator_source": "aggregate",
+        "generator_mode": "eval",
+        "target_excluded": true,
+        "test_N": 10000,
+        "non_target_N": 9000,
+        "evaluator_version": "fuba-rebuild-v3",
+        "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+        "epsilon": 0.05,
+        "pixels": "[0,1]",
+        "smoke": false
+      }
+    }
+  ],
+  "frozen_controller_hashes_match_READY": true,
+  "test_indices": [
+    3,
+    10,
+    21,
+    27,
+    44,
+    52,
+    74,
+    90,
+    97,
+    98,
+    111,
+    116,
+    125,
+    153,
+    154,
+    169,
+    179,
+    180,
+    189,
+    192,
+    206,
+    215,
+    235,
+    237,
+    244,
+    255,
+    257,
+    258,
+    264,
+    269,
+    276,
+    281,
+    6,
+    9,
+    37,
+    66,
+    81,
+    82,
+    104,
+    105,
+    114,
+    122,
+    131,
+    134,
+    161,
+    193,
+    201,
+    204,
+    231,
+    240,
+    241,
+    246,
+    261,
+    283,
+    286,
+    290,
+    305,
+    308,
+    325,
+    330,
+    351,
+    363,
+    366,
+    369,
+    25,
+    35,
+    65,
+    67,
+    70,
+    75,
+    84,
+    86,
+    113,
+    118,
+    123,
+    129,
+    135,
+    138,
+    147,
+    149,
+    156,
+    160,
+    182,
+    183,
+    195,
+    219,
+    248,
+    249,
+    266,
+    270,
+    291,
+    303,
+    307,
+    322,
+    340,
+    342,
+    0,
+    8,
+    46,
+    53,
+    61,
+    63,
+    68,
+    77,
+    78,
+    91,
+    103,
+    106,
+    115,
+    121,
+    127,
+    143,
+    176,
+    184,
+    187,
+    205,
+    224,
+    245,
+    251,
+    256,
+    271,
+    273,
+    277,
+    279,
+    294,
+    302,
+    320,
+    323,
+    22,
+    26,
+    32,
+    36,
+    40,
+    58,
+    94,
+    100,
+    110,
+    117,
+    130,
+    159,
+    165,
+    167,
+    188,
+    211,
+    223,
+    227,
+    236,
+    254,
+    267,
+    278,
+    295,
+    314,
+    324,
+    328,
+    346,
+    365,
+    370,
+    373,
+    405,
+    420,
+    12,
+    16,
+    24,
+    31,
+    33,
+    39,
+    42,
+    85,
+    101,
+    128,
+    141,
+    148,
+    155,
+    158,
+    168,
+    178,
+    181,
+    190,
+    200,
+    207,
+    212,
+    230,
+    232,
+    238,
+    239,
+    250,
+    262,
+    275,
+    318,
+    319,
+    321,
+    327,
+    4,
+    5,
+    7,
+    19,
+    29,
+    30,
+    41,
+    43,
+    49,
+    59,
+    62,
+    64,
+    71,
+    93,
+    95,
+    96,
+    102,
+    107,
+    112,
+    140,
+    142,
+    146,
+    152,
+    162,
+    163,
+    186,
+    221,
+    226,
+    229,
+    272,
+    282,
+    292,
+    13,
+    17,
+    20,
+    48,
+    56,
+    57,
+    60,
+    69,
+    83,
+    87,
+    99,
+    109,
+    119,
+    137,
+    145,
+    177,
+    194,
+    198,
+    203,
+    208,
+    210,
+    216,
+    220,
+    228,
+    263,
+    268,
+    288,
+    316,
+    317,
+    326,
+    339,
+    355,
+    1,
+    2,
+    15,
+    18,
+    51,
+    54,
+    55,
+    72,
+    73,
+    79,
+    80,
+    88,
+    92,
+    108,
+    120,
+    124,
+    126,
+    132,
+    144,
+    150,
+    164,
+    166,
+    173,
+    185,
+    191,
+    196,
+    197,
+    199,
+    202,
+    214,
+    218,
+    233,
+    11,
+    14,
+    23,
+    28,
+    34,
+    38,
+    45,
+    47,
+    50,
+    76,
+    89,
+    133,
+    136,
+    139,
+    151,
+    157,
+    170,
+    171,
+    172,
+    174,
+    175,
+    209,
+    213,
+    217,
+    222,
+    225,
+    243,
+    247,
+    252,
+    253,
+    259,
+    280
+  ],
+  "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "diagnostic_evaluator_sha256": "9df2a942faa0b608eacb7001da9ce7f641b0d833129a84d951b5d15b865552e0",
+  "training_evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+  "CPU_only": true,
+  "inference_only": true,
+  "epsilon": 0.05,
+  "pixel_range": "[0,1]",
+  "layout": "contiguous_NCHW",
+  "modes": "eval",
+  "scope": "fixed320/288 evaluator diagnosis, not independent full evaluation, causal proof, detector, final100R result or latent pair"
+}

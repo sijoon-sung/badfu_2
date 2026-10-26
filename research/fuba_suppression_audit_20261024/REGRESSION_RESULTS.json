@@ -1,0 +1,39 @@
+{
+  "state": "passed",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "witnesses": {
+    "equation1": {
+      "old": [
+        [
+          0.10000000149011612,
+          1.0
+        ]
+      ],
+      "corrected": [
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    "equation3": {
+      "paper_m": 5,
+      "paper_n": 20,
+      "paper_mix_result": 4.0,
+      "old_virtual_ratio": "3/11",
+      "corrected_virtual_ratio": "5/20"
+    },
+    "defender_phase_starts": [
+      10.0,
+      15.0,
+      10.0,
+      18.0
+    ],
+    "weight_rollback_with_stale_adam_max_difference": 0.0014002174139022827
+  },
+  "real_data_training": false,
+  "MPI_training": false,
+  "full_suppression_validated": false
+}

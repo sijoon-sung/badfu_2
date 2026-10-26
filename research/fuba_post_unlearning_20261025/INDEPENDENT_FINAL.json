@@ -1,0 +1,34 @@
+{
+  "state": "passed_full_independent_evaluation",
+  "after": {
+    "stage": "independent_after",
+    "clean_acc_pct": 78.95,
+    "ASR_pct": 28.42222222222222,
+    "clean_correct": 7895,
+    "target_successes": 2558,
+    "N": 10000,
+    "non_target_N": 9000,
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "layout": "contiguous_NCHW",
+    "classifier_mode": "eval",
+    "generator_mode": "eval",
+    "generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+    "inference_only": true
+  },
+  "exact_training_metric_match": true,
+  "after_classifier_sha256": "7ee878d113bab13df4d08f569f5508ec3f6c843715bd8e7f33a9fe5175144814",
+  "before_classifier_sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+  "fixed_generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+  "GPU_idle_before_evaluation": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "evaluator_sha256": "fb7f01587795deef4aedd0500d1e9c5493f956b80782b8e7ca8946b67dcf9fe3",
+  "training_evaluator_sha256": "c9df0c65d21851972833d10b553421b4c31d9a9dca8087044e2cf59387a3bd79",
+  "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "torch": "2.5.1+cu121",
+  "pre_suppression_gate": "failed",
+  "latent_attack_reproduction_success": false
+}

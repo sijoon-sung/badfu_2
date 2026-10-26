@@ -1,0 +1,10 @@
+{
+  "automation_id": "fuba-v4",
+  "state": "ACTIVE",
+  "interval_minutes": 5,
+  "notification_policy": "quiet_on_routine_progress; notify_on_material_failure, algorithm discrepancy, completion, verified local delivery, or required decision",
+  "task": "Codex-FUBA-paper-flow-20261024-v4",
+  "remote_output": "D:/FUBA_PAPER_FLOW_20261024/attack_100R",
+  "finish_condition": "requested final checkpoint verified and delivered; incomplete delivery alone does not finish the active work",
+  "original_fuba_v3_monitor": "deleted_after_v3_stopped15_delivery; this is the newly authorized continuation"
+}

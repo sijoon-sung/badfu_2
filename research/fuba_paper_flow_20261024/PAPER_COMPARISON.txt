@@ -1,0 +1,21 @@
+직접 대조 — R02 / FUBA main saved SHA256 61d7ae7a51137288df4ac711d7e29c6b8d0e4861cf042326e7ee23ca743d1365
+
+Algorithm1 p2895 lines1-3 및 p2896 Eq.(1): backdoor anchor→그 앵커의 정상 학습→1-minmax 차이. v3 공유 embedded_model이 이 순서를 따른다. 반대 방향을 썼던 이전 공개/v2 불일치는 앞 감사에 보존했다. 이번에 재발견한 원인으로 중복 주장하지 않는다.
+Algorithm1 lines4-7: incoming에서 weighted embedding. v3 일치. 도출은SGD이고 실험은Adam이므로 완전 동일의 근거는 아님; 이번에는 선언된Adam을 유지한다.
+Algorithm1 line8/p2897 footnote1: 대표 정상은 backdoor anchor가 아니라 incoming에서 학습. v3 일치.
+Algorithm1 lines9-12: γ0에서 while 조건이 거짓이면 γ0 반환. v3의 whole-MPI abort는 논문에 없는 추가 종료 규칙. 이번 후보에서 이 분기를 바로잡는다. Eq.(3) 기준이 실패했다는 상태는 그대로 기록한다.
+Algorithm1 line12: γ0 출력은 incoming. v3의 무조건 BN 재보정은 nominal zero model도 변경. 이번 후보는 γ0에서 BN 재보정도 생략하고 전체 로딩 상태 항등성을 확인한다.
+Algorithm1/본문 p2897: 본문은 최대 '통과값'을 요구하나 의사코드는 첫 실패값까지 증가시킨다. 기존 last-tested-pass 선택을 계속 사용하고 이 명세 차이는 숨기지 않는다. γ0가 이미 실패한 때에는 두 해석 모두 γ가0으로 남는다.
+Algorithm2/p2897-2898: defender 기준은 unscaled M_i,E, clean Dj CE+λ제곱L2, incoming+stage2−reference. v3에서 이미 반영됐으며 유지한다. upload용γ를 defender 기준에 임의로 넣지 않는다.
+중간 전체ASR3회 초과 시 전체FL 종료: 논문에 없음. 새 후보에서는 경보·독립 원인 확인으로 바꾸되 최종100R/CA80/ASR10 판정은 유지한다.
+서버·평가·G: 같은 집계G, eval, epsilon.05, pixel[0,1],10000/9000 평가. v3에서 확인한 경로 그대로 유지한다.
+범위: 즉시 종료의 원인은 확인했으나 수정 후100R 억제/활성화 성공은 미검증이다. 이 변경은 IID의 연속 실행이며 non-IID 탐지 주장이나 논문10시드 평균 재현이 아니다.
+
+추가 중단 대조(23R 이후24R): Algorithm1에는gamma상한10과whole-MPI 종료가없다.
+이는선언한유한실행정책이며이번실제중단의직접분기다. 모든후보가통과한right-censored
+상태에서MPI가종료됐다고해서원문제약이불가능하다는증거로읽지않는다. 상한을자동확대하지않았다.
+cap분기의RuntimeError는decision/중간모델저장전에발생해원본수치추적을누락했다.
+별도capture-only사본은같은계산/상한/중단을유지하고종료전에그상태를보존하며CPU계약이통과했다.
+사용자승인단일진단은원본G동일성을유지했지만gamma2.0선택/2.1실패로cap10을재현하지못했다.
+원본분류기/RNGsnapshot이없어정확한원인재현성은미확정이다. 진단모델을원본24R제출로치환하지않는다.
+TERMINAL23_REPORT_KO.txt, CAP24_DIAGNOSIS_REPORT_KO.txt와그정정이최신범위다.

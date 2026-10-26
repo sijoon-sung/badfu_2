@@ -1,0 +1,6 @@
+R02 운영 상태 정정:본학습과감독실패를구분한다.
+원본감독run_once.py는32R역할상태JSON읽기PermissionError로종료했다. 그때원본MPI3252와세rank는종료되지않았고33R GPU학습을그대로계속했다. 원본STATE의failed를실제학습종료로표시하지않는다.
+동시갱신상태파일읽기에bounded retry를추가했고재시도실패는관측누락으로보존한다. 별도일회성감독작업은기존MPI의명령/생성시각/Windowshandle에만연결하며학습을시작하지않는다. 새상태는SUPERVISOR_RECOVERY_STATE.json,새로그는supervisor_recovery.log다. status.py는복구상태를우선하며원본STATE를별도보존참조한다.
+원본STATE/main_supervisor.log/run_once.py/READY/LAUNCH는supervision_incident_original에해시일치로보존했다. 고정runtime/원본controller는수정하지않았다. CPU잠금재시도/지속오류관측계약이통과했고같은MPI3252·같은세worker·새감독의실제연결과학습진행은SUPERVISOR_RECOVERY_VERIFIED.json을따른다.
+본학습재시작0/중복MPI0/시드·데이터·옵티마이저·epoch·gamma상한·BN정책변경0이다.32R기록CA56.76/ASR26.6444는31R보다효용이일부회복됐으나최종CA80/ASR10미달이며성공으로표시하지않는다. 새GPU평가를추가로돌린것은아니다.
+원래100R목표는유지한다. 실제MPI가끝나면복구감독이동일고정verify_run.py로전체100R을검사하고FINAL_VERIFIED.json을기록한다. 이후독립전체평가/봉인/로컬전달까지이어간다. 원본감독실패와복구증거도최종사본에보존한다. 같은감독복구를반복알리거나같은작업을중복시작하지않는다.

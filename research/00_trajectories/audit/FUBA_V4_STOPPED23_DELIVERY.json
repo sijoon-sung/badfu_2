@@ -1,0 +1,57 @@
+{
+  "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+  "related_cards": [
+    "R02"
+  ],
+  "delivery": {
+    "state": "copied_and_verified",
+    "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+    "local_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+    "remote_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+    "manifest_sha256": "9c15816ea8e279fbc2fd3a85329998eeb6fe7f8967fc89df54a6f1b9fd49ebde",
+    "seal_sha256": "071edb7ce0571e93805911dc365bd8960188b16c287fb604ac71d21c3d11084b",
+    "zip_sha256": "042e3a2eef4c32e5a611599ec5e53d966542f5b2599f686ccdd467f201fa1386",
+    "files_verified": 635,
+    "CPU_validation": {
+      "state": "passed",
+      "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+      "files_verified": 633,
+      "strict_CPU_loads": [
+        "classifier",
+        "aggregate_generator",
+        "initial",
+        "native23R",
+        "failure24R_incoming_G"
+      ],
+      "additional_strict_CPU_payloads": [
+        "reused16R.incoming",
+        "reused16R.incoming",
+        "reused16R.embedded",
+        "reused16R.representative",
+        "reused16R.expected_gamma0",
+        "classifier_phase01.pt",
+        "classifier_phase02.pt",
+        "classifier_phase03.pt",
+        "classifier_phase04.pt",
+        "diagnostic24R.incoming",
+        "diagnostic24R.embedded",
+        "diagnostic24R.representative",
+        "diagnostic24R.upload_after_selection"
+      ],
+      "native_extraction_exact": true,
+      "finite_clean_and_triggered_forward": true,
+      "torch": "2.4.1+cu118",
+      "confirmed_pre_post_pair": false
+    },
+    "run_completed": false,
+    "scientific_verdict": "stopped_gamma_cap10_round24",
+    "confirmed_pre_post_pair": false
+  },
+  "prefix_verification_sha256": "277f5ecf5dd39fcb87b5bc20e4cd7bf2c43ce16e87710410e7bce8820cec1f7c",
+  "independent_evaluation_sha256": "80671ca6eb2ec7e6b3b4289c342049f289ab468fad9019a5c6f355039af606c8",
+  "report_sha256": "b88af95ac5b501bd756524cb514cf1500f24e232005af663b99858d530c3e99c",
+  "bounded_diagnosis_sha256": "49eb492b6ff93abbd5a437bd6f75e0de1f2f9fc8eb14c8eea3dc07b9059da975",
+  "source_checkpoint_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+  "default_full_history_case_unchanged": "badfu.paper32.s20261020",
+  "default_checkpoint_case_unchanged": "badfu.confirmed.s20261023.v1"
+}

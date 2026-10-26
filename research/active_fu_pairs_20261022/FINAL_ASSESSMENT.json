@@ -1,0 +1,36 @@
+{
+  "scientific_verdict": "No validated shared detection feature established; FUBA largest-client healthy-model comparison remains unavailable.",
+  "computation_verification": "passed",
+  "invalid_FUBA_sparse_FU_cases": [
+    "a04",
+    "a05",
+    "a06"
+  ],
+  "invalid_reason": "Post-FU clean accuracy below 12 percent; no recovery after BN-only recalibration.",
+  "valid_primary_cases": [
+    "a01",
+    "a02",
+    "a03",
+    "s01",
+    "s02",
+    "s03",
+    "s04"
+  ],
+  "author_FU_extension_separate": true,
+  "BadFU_attack_D": 0.7584787327616977,
+  "BadFU_normal_D_range": [
+    0.7552482089610377,
+    0.7618791601459244
+  ],
+  "BadFU_attack_lies_between_two_normal_controls": true,
+  "FUBA_native_attack_D": 0.7777367185287655,
+  "FUBA_native_normal_D": 0.8275340603263125,
+  "FUBA_valid_normal_deleted_fraction": 0.06268,
+  "FUBA_largest_deleted_fraction": 0.0861,
+  "BN_repair_audit_stopped_after_failed_utility_screen": true,
+  "BN_partial_audit_scores_used": false,
+  "valid_sensitivity_settings_with_all_orders": 0,
+  "not_a_proof_of_universal_impossibility": true,
+  "private_arrays_imported": false,
+  "blind_scores_sha256_unchanged": true
+}

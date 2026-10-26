@@ -1,0 +1,77 @@
+{
+  "state": "preserved_evaluation_idle_failure_before_CUDA",
+  "observed_unix": 1792986460.8280072,
+  "original_failure": {
+    "error": "RuntimeError('independent_evaluate.py exit 1')",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\FUBA_ALGORITHM_EXECUTION_20261025\\background.py\", line 17, in main\n    if result!=0:raise RuntimeError(script+' exit '+str(result))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: independent_evaluate.py exit 1\n",
+    "time_unix": 1792986211.065871
+  },
+  "full_CPU_verifier_passed": true,
+  "original_controller_and_child_exited": true,
+  "no_duplicate_independent_evaluator": true,
+  "actual_processes": [
+    {
+      "ProcessId": 7536,
+      "ParentProcessId": 52216,
+      "CreationDate": "/Date(1792986460424)/",
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u D:/FUBA_ALGORITHM_EXECUTION_20261025/preserve_independent_idle_failure.py"
+    },
+    {
+      "ProcessId": 52992,
+      "ParentProcessId": 7536,
+      "CreationDate": "/Date(1792986460461)/",
+      "CommandLine": "powershell -NoProfile -Command \"Get-CimInstance Win32_Process | Where-Object {$_.CommandLine -like '*FUBA_ALGORITHM_EXECUTION_20261025*'} | Select-Object ProcessId,ParentProcessId,CreationDate,CommandLine | ConvertTo-Json -Depth 4\""
+    }
+  ],
+  "GPU": "Mon Oct 26 12:47:40 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 591.86                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3080      WDDM  |   00000000:01:00.0 Off |                  N/A |\n|  0%   33C    P8             18W /  370W |     812MiB /  10240MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            1676    C+G   C:\\Windows\\System32\\dwm.exe           N/A      |\n|    0   N/A  N/A            7264      C   ...ble\\python_embeded\\python.exe      N/A      |\n|    0   N/A  N/A           24632    C+G   ...5.2.3-windows-x64\\blender.exe      N/A      |\n|    0   N/A  N/A           43892    C+G   ...2p2nqsd0c76g0\\app\\ChatGPT.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "files": {
+    "CONTROLLER_FAILURE.json": {
+      "sha256": "5ebe7bd13aaa801125c5e30a204a23e3dffec9f04f723cd2b6b02b524af8b69e",
+      "bytes": 419
+    },
+    "CONTROLLER_LIVE.json": {
+      "sha256": "60f5df67b88a6ec65fdc399d80b27564df29f92c4a926225a551842e5b1cd41c",
+      "bytes": 106
+    },
+    "CONTROLLER_ONCE.json": {
+      "sha256": "64a42aeaff294b4651d19e19ce81bead88bf4270e292a29546dafb2d83b796a0",
+      "bytes": 50
+    },
+    "STATE.json": {
+      "sha256": "1af3f260a2a38bf21604ee489fb2a4d4c238a9016f9d0c1fc0f14d282d6cdfe3",
+      "bytes": 4780
+    },
+    "console.log": {
+      "sha256": "3c3ae09b78166f6b898ac7821335f47bdade4c9dcdd34576f7408bb4a629aaff",
+      "bytes": 28049
+    },
+    "FINAL_VERIFIED.json": {
+      "sha256": "76a14d461ceac2f3d3a2e0c2af7af6407f81bad2663b6ee04bf55e14044e39ec",
+      "bytes": 1450
+    },
+    "FULL_FILE_HASHES.json": {
+      "sha256": "b4aaab6985a545a1d90baecfda1a2935114481a7645029b560bce1f140bbc2d8",
+      "bytes": 264621
+    },
+    "READY.json": {
+      "sha256": "3b5635a6f7fa5b1275ebadfddf3973d5d17cc92c8803ec68f396588da7311eef",
+      "bytes": 2527
+    },
+    "independent_evaluate.py": {
+      "sha256": "c9d7ac18850ab7329c03947caac8f2b9de5c16b2c4f9b9cc62b4fc49b48b2dec",
+      "bytes": 2174
+    },
+    "resource_guard.py": {
+      "sha256": "f9792758127f937ff37f9e760607c3149a81f1ba10bbdc58110b00e58646c720",
+      "bytes": 1248
+    },
+    "background.py": {
+      "sha256": "1ebadd2d2d3c74f7f0e112911ae5c24784abe98277172dccb7cea51fe98a3f48",
+      "bytes": 1437
+    }
+  },
+  "training_restarted": false,
+  "unrelated_apps_terminated": false,
+  "resource_guard_changed": false,
+  "next_step": "Await actual idle GPU, then recover evaluation/export only; preserve original controller evidence."
+}

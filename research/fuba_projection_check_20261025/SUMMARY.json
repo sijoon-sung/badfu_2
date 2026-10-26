@@ -1,0 +1,51 @@
+{
+  "case_id": "fuba.legacy.s20261020.retained_pairs.diagnostic",
+  "diagnostic_only": true,
+  "approved_latent_pair": false,
+  "primary": [
+    {
+      "pair": "p0",
+      "class": 1,
+      "k": 12,
+      "projected_z": 3.4176711236294524,
+      "raw_row_norm_z": 3.233575762996154,
+      "alarm_z6": false,
+      "perp_norm": 1.2598470842092255,
+      "perp_energy_fraction": 0.700838613174473
+    },
+    {
+      "pair": "p1",
+      "class": 1,
+      "k": 15,
+      "projected_z": 3.599357816915696,
+      "raw_row_norm_z": 3.56239674660839,
+      "alarm_z6": false,
+      "perp_norm": 1.2000072867040046,
+      "perp_energy_fraction": 0.7807642936065116
+    }
+  ],
+  "sensitivity": {
+    "p0": {
+      "settings": 346,
+      "alarms": 0,
+      "z_min": 1.8986609959126677,
+      "z_max": 4.331250622215082,
+      "balanced50_z_min": 3.0225328207388515,
+      "balanced50_z_max": 3.7416645746767596,
+      "balanced50_alarms": 0
+    },
+    "p1": {
+      "settings": 346,
+      "alarms": 0,
+      "z_min": 2.7851612276317756,
+      "z_max": 3.80842721140579,
+      "balanced50_z_min": 3.588966050099728,
+      "balanced50_z_max": 3.761650797755854,
+      "balanced50_alarms": 0
+    }
+  },
+  "new_training": false,
+  "independent_math_check": "passed",
+  "original_load_assertion_failure_preserved": true,
+  "FUBA_latent_detection_success_or_failure_established": false
+}

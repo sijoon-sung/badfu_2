@@ -1,0 +1,32 @@
+{
+  "state": "passed",
+  "fixed_saved_state_inference_only": true,
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "cached_role_proof": {
+    "source_failure_sha256": "d8a69775534d1c8a6026b0f6f4c7157ff99d87f5696a3aca9334da7f60900dea",
+    "source_role_sha256": "3fce3fe61efd8fd21b54bb3991fc2fa679143aca9ceaf4f37e950c06e278ebf3",
+    "original_phase_epochs": 50,
+    "original_generator_epochs": 5,
+    "phase_retraining_performed": false,
+    "gamma0_score_independently_reproduced": 12.946428571428571,
+    "estimated_constraint_met": false,
+    "classifier_zero_upload_exact": true,
+    "same_generator_sha256": "1f01b35c9fcd296ccb5976e76bec836cc3341006e89a63722934104b2ca60e7b"
+  },
+  "decision": {
+    "gamma": 0.0,
+    "status": "gamma0_constraint_unmet_zero_upload",
+    "scores": [
+      {
+        "gamma": 0.0,
+        "ASR_pct": 12.946428571428571
+      }
+    ],
+    "estimated_suppression_constraint_met": false
+  },
+  "classifier_and_G_restored": true
+}

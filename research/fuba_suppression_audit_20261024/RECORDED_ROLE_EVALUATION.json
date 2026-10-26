@@ -1,0 +1,410 @@
+{
+  "state": "complete_no_training",
+  "case_id": "fuba.v2.s20261023.pre.round100",
+  "related_cards": [
+    "R02"
+  ],
+  "samples": 320,
+  "target_excluded_samples": 288,
+  "sample_indices_sha256": "27c8287fbee7fa673f1b60297291e693f7890f59a59c415f354838f4fa76f78b",
+  "evaluator": "fixed-v2-same320-subset; eps.04; eval classifier/G; no fitting; diagnostic fixture only",
+  "source_checkpoints": {
+    "7": "ee6c2f7541fc375bc3dada709977f75f9826d98f828e0972c1330f73f647983b",
+    "33": "25ef96f4d57c4b65f5a766a9589f0175f510bc5b1b6f96737d92c39a6d289c05",
+    "63": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+    "99": "d7dcc95759ae3993c590efa78dd83a7b51b6f8961aac1aecba832428184ed266",
+    "100": "4a8ee78cdd68c4365ca4b7e50296b58c5e45e689c5ef5287a6f230c8c75a1268"
+  },
+  "records": [
+    {
+      "round": 7,
+      "checkpoint_sha256": "ee6c2f7541fc375bc3dada709977f75f9826d98f828e0972c1330f73f647983b",
+      "client_ids": [
+        0,
+        4,
+        5,
+        7,
+        9,
+        10,
+        16,
+        19
+      ],
+      "gamma_rows": [
+        {
+          "kind": "gamma",
+          "round": 7,
+          "client": 0,
+          "scores": [
+            5.474649406688242,
+            6.782632146709816,
+            8.02319309600863,
+            9.142394822006473,
+            10.35598705501618,
+            11.556094929881338,
+            12.918015102481123,
+            14.509169363538296,
+            16.140776699029125,
+            17.7319309600863
+          ],
+          "submitted_gamma": 0.4,
+          "feasible": true,
+          "FU_reinjection": false
+        }
+      ],
+      "before_current_generator": {
+        "CA_pct": 28.125,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "before_previous_generator": {
+        "CA_pct": 28.125,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "after_current_generator": {
+        "CA_pct": 29.062500000000004,
+        "ASR_pct": 17.708333333333336,
+        "clean_target_rate_pct": 6.597222222222222
+      },
+      "defender_present": true,
+      "gamma_zero_submission_identity": [],
+      "defender_submitted_own_generator": {
+        "CA_pct": 15.625,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "defender_submitted_aggregate_generator": {
+        "CA_pct": 15.625,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_defender_with_incoming_buffers": {
+        "CA_pct": 28.4375,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_aggregate_defender_replaced_by_incoming": {
+        "CA_pct": 28.749999999999996,
+        "ASR_pct": 19.444444444444446,
+        "clean_target_rate_pct": 9.375
+      }
+    },
+    {
+      "round": 33,
+      "checkpoint_sha256": "25ef96f4d57c4b65f5a766a9589f0175f510bc5b1b6f96737d92c39a6d289c05",
+      "client_ids": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        12,
+        14,
+        16
+      ],
+      "gamma_rows": [
+        {
+          "kind": "gamma",
+          "round": 33,
+          "client": 2,
+          "scores": [
+            92.90722761596548,
+            93.74325782092772,
+            94.36353829557713,
+            94.80852211434735,
+            95.29395900755124,
+            95.75242718446601,
+            96.15695792880258,
+            96.45361380798273,
+            96.8042071197411,
+            97.14131607335491
+          ],
+          "submitted_gamma": 0.0,
+          "feasible": false,
+          "FU_reinjection": false
+        }
+      ],
+      "before_current_generator": {
+        "CA_pct": 50.31250000000001,
+        "ASR_pct": 68.75,
+        "clean_target_rate_pct": 0.0
+      },
+      "before_previous_generator": {
+        "CA_pct": 50.31250000000001,
+        "ASR_pct": 44.09722222222222,
+        "clean_target_rate_pct": 0.0
+      },
+      "after_current_generator": {
+        "CA_pct": 51.5625,
+        "ASR_pct": 65.97222222222221,
+        "clean_target_rate_pct": 0.0
+      },
+      "defender_present": true,
+      "gamma_zero_submission_identity": [
+        {
+          "client": 2,
+          "all_tensors_equal_incoming": false
+        }
+      ],
+      "defender_submitted_own_generator": {
+        "CA_pct": 28.125,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "defender_submitted_aggregate_generator": {
+        "CA_pct": 28.125,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_defender_with_incoming_buffers": {
+        "CA_pct": 43.4375,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_aggregate_defender_replaced_by_incoming": {
+        "CA_pct": 55.93749999999999,
+        "ASR_pct": 82.63888888888889,
+        "clean_target_rate_pct": 1.3888888888888888
+      }
+    },
+    {
+      "round": 63,
+      "checkpoint_sha256": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+      "client_ids": [
+        0,
+        4,
+        7,
+        11,
+        13,
+        14,
+        16,
+        18
+      ],
+      "gamma_rows": [
+        {
+          "kind": "gamma",
+          "round": 63,
+          "client": 0,
+          "scores": [
+            99.08306364617044,
+            99.1504854368932,
+            99.17745415318231,
+            99.25836030204962,
+            99.3797195253506,
+            99.42017259978425,
+            99.44714131607336,
+            99.48759439050701,
+            99.50107874865157,
+            99.51456310679612
+          ],
+          "submitted_gamma": 0.0,
+          "feasible": false,
+          "FU_reinjection": false
+        }
+      ],
+      "before_current_generator": {
+        "CA_pct": 63.74999999999999,
+        "ASR_pct": 93.75,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "before_previous_generator": {
+        "CA_pct": 63.74999999999999,
+        "ASR_pct": 92.70833333333334,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "after_current_generator": {
+        "CA_pct": 64.6875,
+        "ASR_pct": 90.625,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "defender_present": true,
+      "gamma_zero_submission_identity": [
+        {
+          "client": 0,
+          "all_tensors_equal_incoming": false
+        }
+      ],
+      "defender_submitted_own_generator": {
+        "CA_pct": 35.0,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "defender_submitted_aggregate_generator": {
+        "CA_pct": 35.0,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_defender_with_incoming_buffers": {
+        "CA_pct": 58.4375,
+        "ASR_pct": 7.291666666666667,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_aggregate_defender_replaced_by_incoming": {
+        "CA_pct": 66.875,
+        "ASR_pct": 95.13888888888889,
+        "clean_target_rate_pct": 0.3472222222222222
+      }
+    },
+    {
+      "round": 99,
+      "checkpoint_sha256": "d7dcc95759ae3993c590efa78dd83a7b51b6f8961aac1aecba832428184ed266",
+      "client_ids": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        13,
+        16
+      ],
+      "gamma_rows": [
+        {
+          "kind": "gamma",
+          "round": 99,
+          "client": 3,
+          "scores": [
+            62.06850053937433,
+            62.83710895361381,
+            63.63268608414239,
+            64.13160733549083,
+            64.71143473570658,
+            65.19687162891046,
+            65.53398058252426,
+            65.9519956850054,
+            66.27562028047466,
+            66.53182308522115
+          ],
+          "submitted_gamma": 0.0,
+          "feasible": false,
+          "FU_reinjection": false
+        },
+        {
+          "kind": "gamma",
+          "round": 99,
+          "client": 2,
+          "scores": [
+            98.09870550161813,
+            98.19309600863,
+            98.17961165048544,
+            98.2200647249191,
+            98.26051779935275,
+            98.35490830636462,
+            98.36839266450917,
+            98.36839266450917,
+            98.38187702265373,
+            98.34142394822007
+          ],
+          "submitted_gamma": 0.0,
+          "feasible": false,
+          "FU_reinjection": false
+        }
+      ],
+      "before_current_generator": {
+        "CA_pct": 69.375,
+        "ASR_pct": 95.83333333333334,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "before_previous_generator": {
+        "CA_pct": 69.375,
+        "ASR_pct": 94.79166666666666,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "after_current_generator": {
+        "CA_pct": 69.375,
+        "ASR_pct": 97.56944444444444,
+        "clean_target_rate_pct": 0.6944444444444444
+      },
+      "defender_present": true,
+      "gamma_zero_submission_identity": [
+        {
+          "client": 2,
+          "all_tensors_equal_incoming": false
+        },
+        {
+          "client": 3,
+          "all_tensors_equal_incoming": false
+        }
+      ],
+      "defender_submitted_own_generator": {
+        "CA_pct": 39.0625,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "defender_submitted_aggregate_generator": {
+        "CA_pct": 39.0625,
+        "ASR_pct": 0.0,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_defender_with_incoming_buffers": {
+        "CA_pct": 62.5,
+        "ASR_pct": 28.125,
+        "clean_target_rate_pct": 0.0
+      },
+      "diagnostic_only_aggregate_defender_replaced_by_incoming": {
+        "CA_pct": 73.125,
+        "ASR_pct": 99.30555555555556,
+        "clean_target_rate_pct": 1.7361111111111112
+      }
+    },
+    {
+      "round": 100,
+      "checkpoint_sha256": "4a8ee78cdd68c4365ca4b7e50296b58c5e45e689c5ef5287a6f230c8c75a1268",
+      "client_ids": [
+        1,
+        5,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "gamma_rows": [
+        {
+          "kind": "gamma",
+          "round": 100,
+          "client": 1,
+          "scores": [
+            99.87864077669903,
+            99.87864077669903,
+            99.89212513484358,
+            99.89212513484358,
+            99.89212513484358,
+            99.89212513484358,
+            99.89212513484358,
+            99.89212513484358,
+            99.89212513484358,
+            99.87864077669903
+          ],
+          "submitted_gamma": 0.0,
+          "feasible": false,
+          "FU_reinjection": false
+        }
+      ],
+      "before_current_generator": {
+        "CA_pct": 69.375,
+        "ASR_pct": 96.875,
+        "clean_target_rate_pct": 0.6944444444444444
+      },
+      "before_previous_generator": {
+        "CA_pct": 69.375,
+        "ASR_pct": 97.56944444444444,
+        "clean_target_rate_pct": 0.6944444444444444
+      },
+      "after_current_generator": {
+        "CA_pct": 68.75,
+        "ASR_pct": 97.56944444444444,
+        "clean_target_rate_pct": 0.3472222222222222
+      },
+      "defender_present": false,
+      "gamma_zero_submission_identity": [
+        {
+          "client": 1,
+          "all_tensors_equal_incoming": false
+        }
+      ]
+    }
+  ],
+  "altered_model_rows_are_diagnostics_not_FU_or_attack_findings": true
+}

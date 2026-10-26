@@ -1,0 +1,49 @@
+{
+  "models": 22,
+  "model_hashes_unchanged": true,
+  "all_scores_finite": true,
+  "freeeagle_cuts": 44,
+  "endpoint_forgetting_runs": 176,
+  "client_contexts": 8,
+  "client_diagnostics": 52,
+  "protocol_sha256": "e6005ba8a241a4021e3a92495a6afb545cac41183a5841a78f04b548a4054a1d",
+  "source_sha256": "509867ff87a00a89aedd2f2c7f1b0b91ea7b89202fc76c1ddc6d6aed5f90224a",
+  "tail_reconstruction": {
+    "m00_after_layer2": {
+      "max_output_error": 0.0,
+      "shape": [
+        2,
+        128,
+        16,
+        16
+      ]
+    },
+    "m00_after_layer3": {
+      "max_output_error": 0.0,
+      "shape": [
+        2,
+        256,
+        8,
+        8
+      ]
+    },
+    "m07_after_layer2": {
+      "max_output_error": 7.62939453125e-06,
+      "shape": [
+        2,
+        128,
+        16,
+        16
+      ]
+    },
+    "m07_after_layer3": {
+      "max_output_error": 7.62939453125e-06,
+      "shape": [
+        2,
+        256,
+        8,
+        8
+      ]
+    }
+  }
+}

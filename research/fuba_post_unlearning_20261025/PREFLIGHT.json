@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "source_case_id": "fuba.v5.s20261023.pre.round100",
+  "source_hashes": {
+    "PROFILE.json": "ec1e166d1a13f1366dbaf520f6b2d25ce58c34b51020d59fcd3b44f599c38bfe",
+    "PROTOCOL.txt": "33045ff3d7b60a22c691af65cccfcf2700962d43911efea40a662fbcf80f7aac",
+    "common.py": "8165d6aa86a542c54a83af2d872649cee05cc29a0ff6ed5c90de909d8c5f825c",
+    "runner.py": "c9df0c65d21851972833d10b553421b4c31d9a9dca8087044e2cf59387a3bd79",
+    "background.py": "4f98435f8b95a82ee216a562197574e8c847682843e8eb9e07c172494a5a25a1",
+    "launch.py": "5c1c714d8b2a1c24aeea61ede50f1fbd4cf95d52e22b8317396bab95f6fa98f2",
+    "test_contracts.py": "8eb20159f69fa2134ca211c6f967f8af317a14778cec85b2ba22436ff4b37905"
+  },
+  "source_distillation_sha256": "8fa5ec3ae40198660c2054f4459fd2439917dd7c1b9533147098722f9e6d2e9f",
+  "before_classifier_sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+  "fixed_G_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+  "prior_pre_suppression_failure_preserved": true,
+  "user_explicit_FU_authorization": "2026-10-25 KST; execute post-deletion and preserve pt/logs"
+}

@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "synthetic_CPU_only": true,
+  "not_suppression_evidence": true,
+  "cases": [
+    {
+      "case": "gamma0_failure",
+      "same_numeric_selection": true,
+      "incremental_trace_count": 1,
+      "cap_capture": false
+    },
+    {
+      "case": "first_failure",
+      "same_numeric_selection": true,
+      "incremental_trace_count": 2,
+      "cap_capture": false
+    },
+    {
+      "case": "cap_censored",
+      "same_numeric_selection": true,
+      "incremental_trace_count": 3,
+      "cap_capture": true
+    }
+  ],
+  "phase_capture_preserves_model_and_all_CPU_RNG": true,
+  "strict_saved_state_loading_forward": "passed",
+  "runtime_cap_whole_FL_abort_removed": true,
+  "training_or_G_epochs_not_shortened": true
+}

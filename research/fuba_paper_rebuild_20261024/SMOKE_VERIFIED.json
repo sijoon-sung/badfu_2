@@ -1,0 +1,32 @@
+{
+  "state": "passed",
+  "native_verification": {
+    "path": "D:\\FUBA_PAPER_REBUILD_20261024\\smoke_gpu_prepare2\\fl",
+    "rounds": 1,
+    "status": "verified",
+    "aggregation_checked": true
+  },
+  "exact_aggregation_max_error": 0.0,
+  "roles_checked": 20,
+  "same_generator_groups_checked": 5,
+  "strict_CPU_forward": "passed",
+  "last_checkpoint_sha256": "4c2a2fedbb83bf8273227aca5b9a961561a7b3f39d61194b5df016e1446290ed",
+  "metrics": {
+    "round": 1,
+    "clean_acc_pct": 10.9375,
+    "asr_pct": 100.0,
+    "generator_source": "aggregate",
+    "generator_mode": "eval",
+    "target_excluded": true,
+    "test_N": 64,
+    "non_target_N": null,
+    "evaluator_version": "fuba-rebuild-v3",
+    "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "smoke": true
+  },
+  "pre_gate": "fixture_not_scientific",
+  "smoke": true,
+  "latent_pair_verified": false
+}

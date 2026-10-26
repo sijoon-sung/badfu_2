@@ -1,0 +1,55 @@
+{
+  "id": "fuba.cap24.diagnostic_capture_only.proposal1",
+  "related_cards": [
+    "R02"
+  ],
+  "launch_enabled": false,
+  "inherits_profile": "fuba.paper_flow.s20261023.continue16_100.v4",
+  "scope": "capture-only source fragment; not a prepared MPI launch",
+  "hypothesis": "Preserving completed phases and per-gamma scores before the existing cap abort makes the cap cause independently inspectable without changing the algorithm or bound.",
+  "new_observable": "full0..10 gamma scores plus incoming/embedded/representative/upload/expected and sameG captured before abort",
+  "non_iid_scope": "IID implementation diagnosis, does not resolve D08 benign-deletion confounding",
+  "unchanged": [
+    "seed",
+    "data",
+    "optimizer",
+    "epochs",
+    "loss",
+    "epsilon",
+    "gamma_step",
+    "gamma_cap10",
+    "cap_stop",
+    "final_gates"
+  ],
+  "real_data_replay_authorized": false,
+  "stopping_rule": "no real-data work from this fragment; a separately authorized bounded diagnostic replay is needed because original24R intermediate states were not saved",
+  "CPU_tests": {
+    "state": "passed",
+    "CPU_synthetic_only": true,
+    "not_suppression_evidence": true,
+    "checks": [
+      {
+        "name": "zero_baseline_fails",
+        "same_gamma_and_scores_and_status": true,
+        "incoming_unchanged": true,
+        "capture_expected": false
+      },
+      {
+        "name": "first_positive_fails",
+        "same_gamma_and_scores_and_status": true,
+        "incoming_unchanged": true,
+        "capture_expected": false
+      },
+      {
+        "name": "cap_all_pass",
+        "same_gamma_and_scores_and_status": true,
+        "incoming_unchanged": true,
+        "capture_expected": true
+      }
+    ],
+    "strict_saved_context_load_and_forward": true,
+    "original_core_sha256": "1d290599941befe86c3202bca3e0f240acdaf446dec900b6e97dd98f128f1c82",
+    "candidate_core_sha256": "0610ffe22896672abf182bd5d5e104189956c0599a9cccff7ee982b90210316b",
+    "candidate_MPI_sha256": "823b2e67361c6ab3e74afdd438a5d685aa1e1097bb17924c63ec4bcc9a97dfc8"
+  }
+}

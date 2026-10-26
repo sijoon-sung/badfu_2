@@ -1,0 +1,58 @@
+{
+  "state": "passed",
+  "created_unix": 1792779582.5149693,
+  "main_first_round_sha256": "f3c3e88f0922bdf4b8fb38b499ad2a6a83debd18dac537bc8f5fd500a31b4d1e",
+  "initial_chain_exact": true,
+  "exact_aggregation_max_error": 0.0,
+  "actual_roles": [
+    {
+      "client": 0,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 1,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 3,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 6,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 7,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 8,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 12,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    },
+    {
+      "client": 13,
+      "examples": 2500,
+      "epochs": 50,
+      "batches": 2000
+    }
+  ],
+  "interpretation": "First of five benign warmup rounds; no suppression or latent attack claim"
+}

@@ -1,0 +1,14 @@
+R02 / 전체 CPU 검증 완료와 독립평가의 자원 차단
+2026-10-26 KST
+
+원래 verify.py가 실제100R/800역할/186악성G그룹/744악성분류기단계, 정확집계오차0, KD10/400고유배치/25000예시와2304파일을 모두 검사해 FINAL_VERIFIED.json state=passed를 남겼다. strict CPU 출력과 동결소스 동일해시도 통과했다. FULL_FILE_HASHES.json SHA256 b4aaab6985a545a1d90baecfda1a2935114481a7645029b560bce1f140bbc2d8. 보강 LIVE_PREFIX100_VERIFIED 및 POST_AUDIT와 별개의 원래 전체 검증이 실제 완료됐다.
+
+이후 원래 controller가 independent_evaluate.py를 실행했으나 resource_guard.check_idle가 실제 GPU812MiB 점유를 확인해 CUDA 초기화/모델 독립추론 전에 종료했다. CONTROLLER_FAILURE.json의 시각1792986211.065871이며 원인은 RuntimeError: GPU is occupied: 812 MiB다. 학습·모델·수식의 새 실패가 확인된 것이 아니라 독립평가의 자원 사전조건 실패다. 전체 독립평가를 통과했다거나 최종 전달이 완료됐다고 말하지 않는다.
+
+직접 개입: 원래 감독36056, 학습18464, 전체검증50308, 평가28096가 실제 종료했고 다른 independent_evaluate.py가 없음을 PID/명령행으로 확인했다. incidents/independent_gpu_idle_1792986211065에 실패/원래controller상태/console전체/READY/FINAL_VERIFIED/FULL_FILE_HASHES 및 동결 평가기·자원검사기·감독소스11파일과 영수증을 양쪽 보존하고 동일 크기/해시를 확인했다. PRESERVATION.json SHA256 a1bd528a861c269c0e31279918e72f4388f8a33fa2a7b566025dbe429230e9d7. 원래 CONTROLLER_LIVE의 running 문구는 종료한 프로세스의 마지막 기록이다.
+
+실제GPU는0%/812MiB, RTX3080 10240MiB였다. nvidia-smi에 DWM1676, ComfyUI의Python7264, Blender24632, ChatGPT43892가 있었고 WDDM 프로세스별 메모리는N/A다. 전체812MiB를 한 앱에 귀속하지 않는다. 다른 앱을 종료하거나64MiB 유휴 기준을 바꾸지 않았다.
+
+사용자에게 DISLAB의 GPU를 직접 비울지, 다른 작업 때문에 대기할지 필요한 자원 결정을 요청했다. GPU가 실제로 비고 중복 평가가 없으면 평가·내보내기만 별도 복구한다. 원래 학습/검증/일회성 메인작업을 다시 시작하지 않는다. 복구도 원래 실패와 분리해 로그·PID·결과를 남긴다. 같은GPU9R 점수재검사는 이 평가와 겹치지 않게 이후 수행하며 원래 점수를 덮어쓰지 않는다.
+
+원래 성능은 전CA77.80/ASR12.811111111111112, 후CA78.03/ASR14.544444444444444로 두 성능게이트 모두 미달이다. 이는 아직 독립 전체 재평가의 결과가 아니다. CPU/GPU9R gamma2.4의24대23/220 차이도 미해결로 보존한다. 선언된 수정 실행이며 저자공인 유일구현/논문재현성공/트리거독립 탐지의 근거가 아니다. 이전 모든 실패와 봉인모델을 보존하며 최종 독립평가/전후모델·로그 검토패킷/카탈로그·색인까지 자동확인을 유지한다.

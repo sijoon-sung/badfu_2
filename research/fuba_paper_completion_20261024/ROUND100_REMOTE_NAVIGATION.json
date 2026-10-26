@@ -1,0 +1,28 @@
+{
+  "state": "remote_catalogue_synced_and_guard_verified",
+  "case_id": "fuba.v5.s20261023.pre.round100",
+  "prior_catalogue_preserved": "D:/TRAJECTORY_CATALOG_20261023/catalog.before_v5_final100.json",
+  "selection": {
+    "case_id": "fuba.v5.s20261023.pre.round100",
+    "purpose": "diagnostic",
+    "post_type": "pre_FU_completed_training",
+    "server_inputs": {
+      "model": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\classifier.pt",
+        "sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+        "payload_key": null,
+        "committed_rounds": 100
+      }
+    },
+    "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\MANIFEST.json",
+      "manifest_sha256": "06c8388cdefb6033a3056b9d8047c725dbdd3295c025875e393bf85ba43a73db",
+      "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\SEAL.json",
+      "seal_sha256": "d01eef70f935413b1e683e87c9dfdf5b747a9f3956def85c7062d6078d010a2f",
+      "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\load_checkpoint.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  }
+}

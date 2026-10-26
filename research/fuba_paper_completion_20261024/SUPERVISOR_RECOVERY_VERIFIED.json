@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "related_cards": [
+    "R02"
+  ],
+  "MPI_pid_unchanged": 3252,
+  "MPI_creation_time_unchanged": true,
+  "original_three_worker_pids_unchanged": [
+    1832,
+    49328,
+    57684
+  ],
+  "supervisor_pid": 48180,
+  "training_restarted": false,
+  "new_training_processes_spawned": 0,
+  "runtime_and_original_controller_hashes": "passed",
+  "original_supervisor_error_preserved": true,
+  "committed_rounds_at_check": 32,
+  "active_role_at_check": 33,
+  "active_state_file": "SUPERVISOR_RECOVERY_STATE.json",
+  "final100R_verification_still_required": true
+}

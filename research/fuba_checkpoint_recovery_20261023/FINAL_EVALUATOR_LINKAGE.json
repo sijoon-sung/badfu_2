@@ -1,0 +1,194 @@
+{
+  "state": "passed",
+  "case_id": "fuba.v2.s20261023.pre.round100",
+  "manifest_sha256": "c5a7f605200c99d1e6b9ae45d8c548528010d87d07d1dfff8bc089ba706933ea",
+  "serialized_tensor_sha256": "94c5b98217532c92411cfe9c7106391cb6da79707a16af8fea17b7f5e9e73e3f",
+  "loaded_module_tensor_sha256": "e1ff9ace74c277f25fb623bff846d2a21822b291897c821db1fa8181aea9df5b",
+  "evaluator_module_tensor_sha256": "e1ff9ace74c277f25fb623bff846d2a21822b291897c821db1fa8181aea9df5b",
+  "all_loaded_tensors_equal_after_declared_dtype_cast": true,
+  "dtype_conversions": [
+    {
+      "name": "dconv_down1.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down1.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down2.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down2.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down3.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down3.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down4.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_down4.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up3.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up3.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up2.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up2.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up1.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "dconv_up1.4.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    },
+    {
+      "name": "conv_last.1.num_batches_tracked",
+      "serialized_dtype": "torch.float32",
+      "module_dtype": "torch.int64",
+      "values_equal_after_cast": true,
+      "serialized_values": [
+        30030.0
+      ],
+      "loaded_values": [
+        30030
+      ]
+    }
+  ],
+  "clean_N": 10000,
+  "ASR_N": 9000,
+  "evaluator_generator_unchanged": true
+}

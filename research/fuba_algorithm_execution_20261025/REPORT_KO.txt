@@ -1,0 +1,28 @@
+R02 / FUBA 실제 소스 재검증 및 새 수식 실행본 착수
+2026-10-25 KST. 사용자의 "dislab에서 실행을 하고 정상적인 코드를 가져오라"는 직접 지시에 따른 작업이다.
+
+기존 v5 100R와 KD10 전후 모델은 실제 완료됐지만 사전 억제 및 잠복 활성화 성능을 재현하지 못했다. 이를 정상적인 논문 성능 재현 코드로 전달한 것처럼 취급해서는 안 된다. 원본·모델·실패·31R 효용 붕괴·감독 복구는 모두 보존된다. FUBA 논문 자체가 틀렸다는 결론은 이 실패에서 나오지 않는다.
+
+DISLAB에서 최신 공개 소스를 직접 다시 받아 commit bc233610aca36e1647d0c815597cc7148292139d 및 핵심10파일이 기존 고정본과 같음을 확인했다. public gamma helper를 실제 실행하니 최대 통과 gamma 대신 최대 ASR의 인덱스를 골랐고 호출자가 검사값보다 한 step 작은 gamma를 제출했다. 재가중 방향은 Eq1과 반대였고 defender는0*L2/triggered stage2/최종 변위식 누락이었다. 이 중 앞서v5에서 이미 고친 결함을 새v5실패의 원인이라고 하지 않는다. SOURCE_AUDIT.json은별도fuba_execution_audit_20261025에 있다. 공개재현문의 https://github.com/stcebra/FUBA/issues/1 도같은CIFAR10/IBA 재현문제를보고하지만저자해결증거는확인하지못했다.
+
+본문m=5와각주의defendercount제외설명이충돌하므로4/20정정이입증됐다고하지않는다. 본실행은본문5/20을유지한다. SGD수식과실험Adam문단도충돌한다. 실제Adam에[1,.01]gradient를넣으면첫step은거의같아져표시된비균등weightedSGD와다름을수치확인했다. 원인기여/성능개선이입증된것은아니다.
+고정100R/client1예상gamma0모델의읽기전용GPU검사에서BN추가보정전후로모든파라미터는같았다. 로컬ASR은둘다48/224=21.428571428571427%로미달했고선택분기는같았다. 전체ASR은25.41111111111111→25.622222222222224%,CA79.06→79.04였다. BN하나로실패를해결했다고하지않는다.
+
+새profile fuba.algorithms.s20261023.fresh100.kd10.v6:
+Algorithms1 line7의재가중단계와Algorithm2 line6의방어단계는표시된plainSGD업데이트를직접실행한다. 나머지anchor/benign/representative는실험설정Adam.001을유지한다. BN은학습단계버퍼를쓰고추가clean보정pass는없다. 이두해석과기존IBA/cap의한계는PROTOCOL/PROFILE에사전고정했다. 저자공인유일해석이라고하지않는다.
+수식별독립CPU검사9개가로컬및DISLAB에서통과했다. 전체파이프라인성능검사통과는아니다.
+시드20261023/분할20261020/정확한최초초기값c01de46d33adea96efccc99e1147a0f4079f2d38ee731603bad673a6018f4330을사용해fresh100R을계산한다. 원본학습모델이나진단gamma2를이어쓰지않는다. 실제50epoch전체배치/G5epoch/epsilon/loss/lambda2/gamma step.1/cap10을고정한다. 100R이끝나면같은작업에서실제client4이력기여제거와무라벨KD10을이어가고전후.pt/고정G/로그/optimizer/RNG를저장한다. 사전성능실패를이유로삭제단계를생략하지않는다.
+
+DISLAB D:/FUBA_ALGORITHM_EXECUTION_20261025, Windows일회성작업Codex-FUBA-algorithms100-KD10-20261025-v6를실제로시작했다. 최초실제감독PID36056/학습PID18464/GPU사용과full50epoch진행을확인했다. 현재라운드/모델의존재는LIVE_STATUS와실제manifest를확인한다. 아직100R·KD10완료나최종성능재현성공이아니다.
+원격에서실행소스를고정해EXECUTION_CODE.zip으로가져왔고로컬EXECUTED_CODE_DISLAB에26파일을풀어전부동일해시/구문검사/최초모델CPU엄격로드·유한출력을확인했다. LOCAL_EXECUTED_CODE_VERIFIED.json을따른다. zipSHA020dcf5174429e661d54ca278168122b14471c05c1b192a2f5fdb32faaba036f.
+
+5분자동확인 fuba-v6-100r-kd10은단순진행시알림하지않고,실제중단/새직접불일치/최종검증·전후모델로컬전달/필요한사람결정만알린다. 최종100R+KD10/CPU전체검증/독립10000·9000전후평가/외부봉인·로컬CPU검사/카탈로그·색인까지완료후종료한다. 학습이실제진행중이면자동확인을끝내지않는다.
+판정:새실행진행중·성능미확정. 한CIFAR10/IBA/KD10시드이며논문전체6FU/3자료/10seed재현이나D08큰정상nonIID탐지해결주장이아니다.
+
+실제첫1R:8명각50epoch/2000batch,400epoch로그,초기연결과정확집계0 CPU검사통과. FIRST_ROUND_VERIFIED.json. 이후라운드계속,최종100R/KD10은미완료.
+
+v6첫6R방어자계약검사:실제6R의유일한악성역할client4에서4단계각50epoch/1800batch,optimizer Adam·Adam·SGD·SGD,실제G5epoch와동일G보존,unscaled기준최종제출식및집계오차0을CPU검사했다.6R에는Adv-attacker가선택되지않아gamma계약을검사했다고하지않는다.7R학습은계속하며최종재현은미완료다.
+
+v6첫7R공격자계약검사:client0의4단계각50epoch/1800batch,Adam·Adam·SGD·Adam,동일G/실제제출/집계0이CPU검사통과했다.최초gamma0로컬ASR10.909090909090908미달로정확한zero제출을확인했으며양수gamma선택통과나점수독립재계산이라고하지않는다.실제7R전체CA70.69/ASR4.222222222222222는중간기록이며최종성공이아니다.8R이후원조건학습을계속한다.
+
+2026-10-26 최신: 원래 전체 verify.py도 FINAL_VERIFIED.json=passed로 완료됐다(100R/800역할/186G/744단계/정확집계0/KD10·400고유배치/2304파일). 이후 원래 independent_evaluate.py는 GPU812MiB 유휴guard로 CUDA 추론 전에 실패했고 원래 controller도 실제 종료했다. EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt 및 incidents/independent_gpu_idle_1792986211065/PRESERVATION.json을 따른다. 원래 실패·상태·로그·검사소스11파일을 양쪽 동일해시로 보존했다. 중복 평가 없음/원래 PID 종료를 확인했고 사용자에게 GPU를 직접 비울지 대기할지 요청했다. 다른 앱 종료/유휴기준 우회/학습·전체검증 재시작 없이 실제GPU유휴후 독립평가·export 단계만 복구한다. 상태의 옛 running 문구를 실제 생존으로 읽지 않는다. 이후 복구상태가 생기면 원래 controller실패와 함께 확인한다. 독립평가/최종패킷·카탈로그는 아직 미완료이며 자동확인을 유지한다.

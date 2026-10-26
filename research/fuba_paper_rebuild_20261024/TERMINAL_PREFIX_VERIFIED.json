@@ -1,0 +1,334 @@
+{
+  "case_id": "fuba.v3.s20261023.pre.round0015.stopped",
+  "state": "verified_stopped_prefix",
+  "intended_rounds": 100,
+  "committed_rounds": 15,
+  "run_completed": false,
+  "scientific_verdict": "stopped_gamma0_infeasible_round16_client1",
+  "restart_performed": false,
+  "native_manifest_unchanged_status": "running",
+  "manifest_sha256": "e130d1517b11bdfdb00d43a9a23d27661433b2360065a4eb0f42f3a036eaa14d",
+  "last_checkpoint_sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+  "source_profile_hashes": "passed",
+  "all_file_hashes_and_chain": "passed",
+  "exact_aggregation_max_error": 0,
+  "roles_verified": 120,
+  "same_generator_groups_verified": 13,
+  "strict_CPU_forward": "passed",
+  "failure_role": {
+    "round": 16,
+    "client": 1,
+    "rank": 1,
+    "seed": 20421024,
+    "role": "attacker",
+    "started_unix": 1792786808.1555216,
+    "phase_events": [
+      {
+        "phase": "generator",
+        "epoch": 5,
+        "epochs": 5,
+        "examples": 2250,
+        "classifier_phase": 0,
+        "updated_unix": 1792786816.3023448
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 1,
+        "updated_unix": 1792786816.3773792
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 1,
+        "updated_unix": 1792786879.5244217
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 2,
+        "updated_unix": 1792786879.5706177
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 2,
+        "updated_unix": 1792786916.9293826
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 3,
+        "updated_unix": 1792786916.9961576
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 3,
+        "updated_unix": 1792786982.0057106
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 4,
+        "updated_unix": 1792786982.0478725
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 4,
+        "updated_unix": 1792787019.4394782
+      }
+    ],
+    "state": "failed",
+    "train_samples": 2250,
+    "validation_samples": 250,
+    "validation_disjoint": true,
+    "training_epsilon": 0.29701346406292445,
+    "evaluation_epsilon": 0.05,
+    "latest": {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 4,
+      "updated_unix": 1792787019.4394782
+    },
+    "generator_before_classifier_sha256": "1f01b35c9fcd296ccb5976e76bec836cc3341006e89a63722934104b2ca60e7b",
+    "error": "SuppressionInfeasible('No feasible suppression baseline; preserve prefix and stop')",
+    "scores": [
+      {
+        "gamma": 0.0,
+        "ASR_pct": 12.946428571428571
+      }
+    ],
+    "failure_model_evidence": {
+      "path": "round0016_client01.pt",
+      "sha256": "d8a69775534d1c8a6026b0f6f4c7157ff99d87f5696a3aca9334da7f60900dea",
+      "bytes": 255059996
+    }
+  },
+  "failure_payload_keys": [
+    "generator",
+    "incoming",
+    "states",
+    "scores",
+    "profile_id"
+  ],
+  "failure_state_keys": [
+    "incoming",
+    "embedded",
+    "representative",
+    "expected_gamma0"
+  ],
+  "failure_incoming_BN_counter_load_casts": [
+    {
+      "name": "bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer1.0.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer1.0.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer1.1.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer1.1.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer2.0.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer2.0.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer2.0.shortcut.1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer2.1.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer2.1.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer3.0.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer3.0.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer3.0.shortcut.1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer3.1.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer3.1.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer4.0.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer4.0.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer4.0.shortcut.1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer4.1.bn1.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    },
+    {
+      "name": "layer4.1.bn2.num_batches_tracked",
+      "stored": 10309.375,
+      "loaded": 10309
+    }
+  ],
+  "round_metrics": [
+    {
+      "round": 1,
+      "checkpoint_sha256": "f3c3e88f0922bdf4b8fb38b499ad2a6a83debd18dac537bc8f5fd500a31b4d1e",
+      "clean_acc_pct": 10.79,
+      "ASR_pct": null
+    },
+    {
+      "round": 2,
+      "checkpoint_sha256": "f165df6bdbc9d92c8bb442d7a346c4dd9b4dcfa72a8c8f81542b8d665a06bfe3",
+      "clean_acc_pct": 28.46,
+      "ASR_pct": null
+    },
+    {
+      "round": 3,
+      "checkpoint_sha256": "1b89a4f6aac8f3122d005debaf204cc455fec56d702aced5f0258ba20c52a848",
+      "clean_acc_pct": 54.15,
+      "ASR_pct": null
+    },
+    {
+      "round": 4,
+      "checkpoint_sha256": "9e58157a6739374add3c501cec7db3b931c5b55ca9a766f8e99bda4a8ff8a66c",
+      "clean_acc_pct": 62.0,
+      "ASR_pct": null
+    },
+    {
+      "round": 5,
+      "checkpoint_sha256": "146dc4d024ecd03406233b2c070743e2ea1c243b9670f7c144bcff5289339fba",
+      "clean_acc_pct": 67.53,
+      "ASR_pct": null
+    },
+    {
+      "round": 6,
+      "checkpoint_sha256": "de305037e5a1473eb18c0ab0c12e988ec257e90ef2b31b595e20ade7400b10fc",
+      "clean_acc_pct": 69.62,
+      "ASR_pct": 5.088888888888889
+    },
+    {
+      "round": 7,
+      "checkpoint_sha256": "d28fc8992ce68f6d5a33177337c3c25e4da8a50fd12d8f656946e95405c27dd9",
+      "clean_acc_pct": 71.63,
+      "ASR_pct": 7.644444444444445
+    },
+    {
+      "round": 8,
+      "checkpoint_sha256": "27e9eb496d934d862d1efa4b319e22b190d15edd0b1e22efc5b4b146b561fe80",
+      "clean_acc_pct": 72.6,
+      "ASR_pct": 6.9222222222222225
+    },
+    {
+      "round": 9,
+      "checkpoint_sha256": "11939c2ad5fe6cd695221755cbb5ba9104765a380ae596a092b7f4a637d82550",
+      "clean_acc_pct": 70.7,
+      "ASR_pct": 12.555555555555555
+    },
+    {
+      "round": 10,
+      "checkpoint_sha256": "c572cd406c6911cc4e404afc78be858e9cef15e6da0ce85fedd102dc1e34d1a3",
+      "clean_acc_pct": 72.94,
+      "ASR_pct": 8.866666666666667
+    },
+    {
+      "round": 11,
+      "checkpoint_sha256": "b165888d1eb069453f45ada5890fa15ac73afaec194825f77a87eca2942c3de9",
+      "clean_acc_pct": 74.75,
+      "ASR_pct": 8.61111111111111
+    },
+    {
+      "round": 12,
+      "checkpoint_sha256": "d17548e4eaf0c6009a91ec07d9c1c4ae894284a46075028d67c7acc095dc8f80",
+      "clean_acc_pct": 71.77,
+      "ASR_pct": 12.588888888888889
+    },
+    {
+      "round": 13,
+      "checkpoint_sha256": "40408484a7983d98fd082189b1b54be42a33dafc6dd479a2923791f75e57bf0e",
+      "clean_acc_pct": 75.97,
+      "ASR_pct": 10.944444444444445
+    },
+    {
+      "round": 14,
+      "checkpoint_sha256": "5690302d86d7b2011a1bc82a33fe89939437bd151c064d24f994102fcc74d597",
+      "clean_acc_pct": 75.43,
+      "ASR_pct": 8.677777777777777
+    },
+    {
+      "round": 15,
+      "checkpoint_sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+      "clean_acc_pct": 76.1,
+      "ASR_pct": 8.133333333333333
+    }
+  ],
+  "confirmed_pre_post_pair": false,
+  "allowed_purposes": [
+    "diagnostic"
+  ]
+}

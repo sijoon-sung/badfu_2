@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "checks": [
+    "Algorithm1_weighted_SGD_exact_nonuniform_step",
+    "Algorithm2_clean_CE_plus_squared_L2_literal_SGD_two_steps",
+    "Eq1_inverse_minmax_and_constant_case",
+    "Eq3_actual_expected_mixture_no_extra_training",
+    "gamma_returns_tested_last_pass_no_index_shift",
+    "unchanged_cap_censored_submission",
+    "gamma0_failure_does_not_abort_FL",
+    "defender_unscaled_reference_and_incoming_plus_recovered_minus_reference",
+    "declared_BN_learned_phase_and_zero_identity"
+  ],
+  "count": 9,
+  "synthetic_CPU_only": true,
+  "full_reproduction_success": false
+}

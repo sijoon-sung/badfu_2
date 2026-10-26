@@ -1,0 +1,14 @@
+{
+  "state": "passed",
+  "rounds_committed": 82,
+  "checkpoint_sha256": "835f0b5b402241b337a593ff69db1a6b3e67883d83c730cdc9880ab1c19c3691",
+  "previous81_round_entries_identical": true,
+  "file_hashes_verified": 82,
+  "new_aggregate_error": 0.0,
+  "retry_check": {
+    "state": "passed",
+    "real_Windows_deny_delete_handle_used": true,
+    "elapsed_seconds": 0.29700000025331974
+  },
+  "missing_round82_metric_reason": "Crash occurred after model save but before evaluation dispatch; no fabricated metric."
+}

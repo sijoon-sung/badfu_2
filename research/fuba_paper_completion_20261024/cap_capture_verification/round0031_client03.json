@@ -1,0 +1,26 @@
+{
+  "state": "passed",
+  "round": 31,
+  "client": 3,
+  "gamma": 10,
+  "maximum_established": false,
+  "score_count": 101,
+  "recorded_score_range_pct": [
+    4.824561403508772,
+    8.771929824561404
+  ],
+  "score_trace_and_cap_context_linkage": "passed",
+  "cap_context_sha256": "6ea911d9aa3f5240d0f3c96e8a83d68c913832fb6a9170143870e82592e87ab0",
+  "same_G_and_RNG_preserved": true,
+  "unscaled_to_gamma10_parameter_formula": "exact",
+  "expected_5_of20_mixture_parameters": "exact",
+  "strict_CPU_models_and_finite_forward": 6,
+  "post_BN_submission_parameters_match": true,
+  "whole_FL_cap_abort_removed": true,
+  "ASR_independently_recomputed": false,
+  "native_round_submission_linkage": "checked by full100R verifier after commit",
+  "confirmed_pre_post_pair": false,
+  "related_cards": [
+    "R02"
+  ]
+}

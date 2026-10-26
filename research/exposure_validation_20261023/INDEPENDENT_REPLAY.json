@@ -1,0 +1,84 @@
+{
+  "state": "passed",
+  "checks": [
+    {
+      "pair": "q00",
+      "method": "direct_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q00",
+      "method": "direct_800",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q00",
+      "method": "exposed_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q01",
+      "method": "direct_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q01",
+      "method": "direct_800",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q01",
+      "method": "exposed_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q10",
+      "method": "direct_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q10",
+      "method": "direct_800",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q10",
+      "method": "exposed_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q11",
+      "method": "direct_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q11",
+      "method": "direct_800",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q11",
+      "method": "exposed_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q12",
+      "method": "direct_400",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q12",
+      "method": "direct_800",
+      "public_and_three_client_counts_equal": true
+    },
+    {
+      "pair": "q12",
+      "method": "exposed_400",
+      "public_and_three_client_counts_equal": true
+    }
+  ],
+  "seconds": 19.218710899353027,
+  "source_sha256": "f6e1972cf445f0bee6b25f2d518b554c33915049fbce3e3ce79925dfbc9e8803",
+  "results_sha256": "420d48971ed7af1817cfbe52748c80d5491f1fb36772b90f69744f6fcf807da4",
+  "native_source_sha256": "37f7d9c0ad947e091c225cdaee29baa98dec5d549126b546d00753391f87de57"
+}

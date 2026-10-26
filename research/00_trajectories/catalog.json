@@ -1,0 +1,1466 @@
+{
+  "schema": "trajectory-catalog-v1",
+  "audit_date_kst": "2026-10-23",
+  "audit_sha256": "12cce1ed035a90638bc2d0f1cbae5c130e290ee3526c50058c063f50c6933be7",
+  "default_case": "badfu.confirmed.s20261023.v1",
+  "selection_rule": "Explicit case ID + purpose only. Never select a checkpoint by directory timestamp, basename or highest ASR.",
+  "cases": [
+    {
+      "id": "badfu.confirmed.s20261023.v1",
+      "folder": "00_confirmed/BadFU_s20261023_v1",
+      "title": "확정 BadFU 기준 체크포인트 v1 — 삭제 전후·정상 대조·초기값",
+      "family": "badfu",
+      "source_root": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+      "integrity": "passed_checkpoint_snapshot",
+      "reproduction": "partial_suppression_then_activation",
+      "post_type": "retained_data_retraining",
+      "seed": 20261023,
+      "clients": 5,
+      "rounds": 40,
+      "allowed_purposes": [
+        "retrain_activation",
+        "purification_pilot"
+      ],
+      "source_case_id": "badfu.multiseed.s20261023",
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+          "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+          "payload_key": null,
+          "committed_rounds": 40
+        },
+        "post": {
+          "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+          "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+          "payload_key": null,
+          "committed_rounds": 40
+        },
+        "clean_pre": {
+          "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+          "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+          "payload_key": null,
+          "committed_rounds": 40
+        },
+        "clean_post": {
+          "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+          "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+          "payload_key": null,
+          "committed_rounds": 40
+        },
+        "clean_big_post": {
+          "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+          "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+          "payload_key": null,
+          "committed_rounds": 40
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+        "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+        "seal_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+        "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+        "loader_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+            "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+            "payload_key": null,
+            "committed_rounds": 40
+          },
+          "post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+            "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+            "payload_key": null,
+            "committed_rounds": 40
+          },
+          "clean_pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+            "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+            "payload_key": null,
+            "committed_rounds": 40
+          },
+          "clean_post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+            "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+            "payload_key": null,
+            "committed_rounds": 40
+          },
+          "clean_big_post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+            "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+            "payload_key": null,
+            "committed_rounds": 40
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+          "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+          "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+        }
+      },
+      "initial_checkpoint": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\00_shared_initial.pt",
+        "sha256": "de640db9f789f9934f7272bef126c4eb9686599b56eaca8bc5e3fc025591775a",
+        "payload_key": null
+      },
+      "evaluator_only": {
+        "pre": {
+          "key": "pre",
+          "checkpoint_sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+          "CA": 90.38,
+          "ASR": 14.28888888888889,
+          "clean_n": 10000,
+          "ASR_n": 9000,
+          "recorded_difference_pp": {
+            "CA_pp": -1.4210854715202004e-14,
+            "ASR_pp": 0.0
+          },
+          "corrected_evaluator_difference_pp": {
+            "CA_pp": 1.4210854715202004e-14,
+            "ASR_pp": 0.0
+          },
+          "evaluator": "Unmodified evaluate_model from immutable author commit",
+          "memory_format": "contiguous_NCHW",
+          "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+        },
+        "post": {
+          "key": "post",
+          "checkpoint_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+          "CA": 90.46,
+          "ASR": 100.0,
+          "clean_n": 10000,
+          "ASR_n": 9000,
+          "recorded_difference_pp": {
+            "CA_pp": 0.0,
+            "ASR_pp": 0.0
+          },
+          "corrected_evaluator_difference_pp": {
+            "CA_pp": 0.0,
+            "ASR_pp": 0.0
+          },
+          "evaluator": "Unmodified evaluate_model from immutable author commit",
+          "memory_format": "contiguous_NCHW",
+          "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+        },
+        "clean_pre": {
+          "key": "clean_pre",
+          "checkpoint_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+          "CA": 90.8,
+          "ASR": 1.3888888888888888,
+          "clean_n": 10000,
+          "ASR_n": 9000,
+          "recorded_difference_pp": {
+            "CA_pp": 0.0,
+            "ASR_pp": -0.022222222222222143
+          },
+          "corrected_evaluator_difference_pp": {
+            "CA_pp": 0.0,
+            "ASR_pp": 0.0
+          },
+          "evaluator": "Unmodified evaluate_model from immutable author commit",
+          "memory_format": "contiguous_NCHW",
+          "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+        },
+        "clean_post": {
+          "CA": 90.33,
+          "ASR": 1.3888888888888888,
+          "clean_n": 10000,
+          "ASR_n": 9000,
+          "checkpoint_sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+          "evaluator": "Original trainer record, channels-last; not author-NCHW re-evaluated"
+        },
+        "clean_big_post": {
+          "CA": 89.75999999999999,
+          "ASR": 1.6555555555555557,
+          "clean_n": 10000,
+          "ASR_n": 9000,
+          "checkpoint_sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+          "evaluator": "Original trainer record, channels-last; not author-NCHW re-evaluated"
+        }
+      },
+      "algorithm_audit": {
+        "evidence": "audit/BADFU_ALGORITHM_ALIGNMENT.json",
+        "profile": "Paper-aligned BadFU / BadNet / Dominant0.7 / FedAvg / retained-data retraining",
+        "core_implementation": "passed_direct_comparison",
+        "untouched_author_script_reproduction": false,
+        "paper_three_run_mean_reproduction": "not_established",
+        "scope": "All pre/post training samples; original partition/initializers; two first-round replays; author endpoint evaluator."
+      },
+      "limits": [
+        "독립 사본 6개를 양쪽 호스트에서 해시·엄격 로딩·유한 출력 검사하고 읽기 전용 보존.",
+        "최종 모델 전용: 전체 이력 또는 개별 참여자 이력 용도로 승인하지 않음.",
+        "삭제 전 ASR14.29%의 부분 억제와 삭제 후100% 활성화 확인. ASR≤10% 기준은 미충족.",
+        "동일 초기값부터 유지 자료 재학습이며 근사 FedEraser 결과가 아님.",
+        "논문3회 평균 수치 및 원본 스크립트 전체의 동일 재현은 미확정.",
+        "같은 기존 학습의 보관본으로 독립 반복 실험에 추가 계산하지 않음."
+      ],
+      "supplemental_evidence": "audit/CONFIRMED_BADFU_S20261023_V1.json"
+    },
+    {
+      "id": "badfu.paper32.s20261020",
+      "folder": "01_verified/BadFU_Paper32_s20261020",
+      "title": "BadFU 5인 Paper32 — 전체 궤적·부분 억제 후 활성화",
+      "family": "badfu",
+      "source_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020",
+      "integrity": "passed_full_history",
+      "reproduction": "partial_suppression_then_activation",
+      "post_type": "retained_data_retraining",
+      "seed": 20261020,
+      "clients": 5,
+      "rounds": 40,
+      "allowed_purposes": [
+        "retrain_activation",
+        "global_history",
+        "client_history",
+        "purification_pilot"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\round_0040.pt",
+          "sha256": "4416c40d967db37603d943356a0d647ad0b580f4b7d4949434a6e2ff114a789f",
+          "payload_key": "gm_after",
+          "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\manifest.json",
+          "history_schema": "full-trajectory-v1",
+          "committed_rounds": 40
+        },
+        "post": {
+          "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\round_0040.pt",
+          "sha256": "fe6fc2fbac7383bafac93a9564f50e9ef2c9c006057ffc6a6f0e273a9714b9bb",
+          "payload_key": "gm_after",
+          "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\manifest.json",
+          "history_schema": "full-trajectory-v1",
+          "committed_rounds": 40
+        },
+        "infected_benign_post": {
+          "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\round_0040.pt",
+          "sha256": "84b0a9cd73c65835d31ac38453a97813b685a86d22d7b4abd206f1b08539296f",
+          "payload_key": "gm_after",
+          "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\manifest.json",
+          "history_schema": "full-trajectory-v1",
+          "committed_rounds": 40
+        },
+        "clean_model": {
+          "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\round_0040.pt",
+          "sha256": "7ffbad660ed295f06acaca9c49491308aecede65e18447f18a1fac2f19b26c69",
+          "payload_key": "gm_after",
+          "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\manifest.json",
+          "history_schema": "full-trajectory-v1",
+          "committed_rounds": 40
+        }
+      },
+      "evaluator_only": {
+        "metrics": [
+          {
+            "phase": "attack_pre",
+            "fresh": {
+              "clean_accuracy_pct": 88.23,
+              "ASR_pct": 16.144444444444446,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "recorded": {
+              "clean_accuracy_pct": 88.23,
+              "ASR_pct": 16.144444444444446,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "difference_pp": {
+              "clean_accuracy_pct": 0.0,
+              "ASR_pct": 0.0
+            },
+            "checkpoint_sha256": "4416c40d967db37603d943356a0d647ad0b580f4b7d4949434a6e2ff114a789f"
+          },
+          {
+            "phase": "poison_only",
+            "fresh": {
+              "clean_accuracy_pct": 88.14999999999999,
+              "ASR_pct": 99.9888888888889,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "recorded": {
+              "clean_accuracy_pct": 88.14999999999999,
+              "ASR_pct": 99.9888888888889,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "difference_pp": {
+              "clean_accuracy_pct": 0.0,
+              "ASR_pct": 0.0
+            },
+            "checkpoint_sha256": "fe6fc2fbac7383bafac93a9564f50e9ef2c9c006057ffc6a6f0e273a9714b9bb"
+          },
+          {
+            "phase": "benign",
+            "fresh": {
+              "clean_accuracy_pct": 88.78,
+              "ASR_pct": 1.5333333333333332,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "recorded": {
+              "clean_accuracy_pct": 88.78,
+              "ASR_pct": 1.5333333333333332,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "difference_pp": {
+              "clean_accuracy_pct": 0.0,
+              "ASR_pct": 0.0
+            },
+            "checkpoint_sha256": "7ffbad660ed295f06acaca9c49491308aecede65e18447f18a1fac2f19b26c69"
+          },
+          {
+            "phase": "benign_deletion",
+            "fresh": {
+              "clean_accuracy_pct": 87.72,
+              "ASR_pct": 16.333333333333332,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "recorded": {
+              "clean_accuracy_pct": 87.72,
+              "ASR_pct": 16.333333333333332,
+              "clean_n": 10000,
+              "ASR_n": 9000
+            },
+            "difference_pp": {
+              "clean_accuracy_pct": 0.0,
+              "ASR_pct": 0.0
+            },
+            "checkpoint_sha256": "84b0a9cd73c65835d31ac38453a97813b685a86d22d7b4abd206f1b08539296f"
+          }
+        ],
+        "clean_n": 10000,
+        "ASR_n": 9000
+      },
+      "limits": [
+        "1 FL 시드; 논문 3회 평균의 완전 재현으로 선언하지 않음",
+        "삭제 전 ASR 약16%: 부분 억제이며 ASR≤10%의 강한 잠복 기준은 충족하지 않음",
+        "삭제 후는 동일 초기화부터 유지 자료 전체 재학습; 근사 FedEraser 결과가 아님",
+        "정상850장 삭제 대조는 같은 감염 pre 모델을 사용하며 독성·위장을 유지"
+      ],
+      "data": {
+        "partition": "Dominant 0.7, same original CIFAR10 indices",
+        "poison_n": 850,
+        "cover_n": 850,
+        "cover": "plain trigger + original labels",
+        "batch_size": 32,
+        "benign_deletion_indices": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion_indices.json"
+      }
+    },
+    {
+      "id": "badfu.multiseed.s20261023",
+      "folder": "02_verified_global/BadFU_s20261023",
+      "title": "BadFU 추가 시드 — 완료된 다섯 조건의 전역 모델 이력",
+      "family": "badfu",
+      "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023",
+      "integrity": "passed_global_history",
+      "reproduction": "partial_suppression_then_activation",
+      "post_type": "retained_data_retraining",
+      "seed": 20261023,
+      "clients": 5,
+      "rounds": 40,
+      "allowed_purposes": [
+        "retrain_activation",
+        "global_history",
+        "purification_pilot"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\attack_pre\\final.pt",
+          "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+          "payload_key": null,
+          "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\attack_pre\\TRAJECTORY.json",
+          "history_schema": "global-state-plus-update-hashes",
+          "committed_rounds": 40
+        },
+        "post": {
+          "path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\attack_FU\\final.pt",
+          "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+          "payload_key": null,
+          "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\attack_FU\\TRAJECTORY.json",
+          "history_schema": "global-state-plus-update-hashes",
+          "committed_rounds": 40
+        },
+        "clean_pre": {
+          "path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_pre\\final.pt",
+          "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+          "payload_key": null,
+          "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_pre\\TRAJECTORY.json",
+          "history_schema": "global-state-plus-update-hashes",
+          "committed_rounds": 40
+        },
+        "clean_post": {
+          "path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_same850_FU\\final.pt",
+          "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+          "payload_key": null,
+          "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_same850_FU\\TRAJECTORY.json",
+          "history_schema": "global-state-plus-update-hashes",
+          "committed_rounds": 40
+        },
+        "clean_big_post": {
+          "path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU\\final.pt",
+          "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+          "payload_key": null,
+          "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU\\TRAJECTORY.json",
+          "history_schema": "global-state-plus-update-hashes",
+          "committed_rounds": 40
+        }
+      },
+      "evaluator_only": {
+        "attack_FU": {
+          "training_seed": 20261023,
+          "phase": "attack_FU",
+          "checkpoint_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+          "final_round": 40,
+          "CA": 90.46,
+          "N": 10000,
+          "per_class_CA": {
+            "0": 92.10000000000001,
+            "1": 96.39999999999999,
+            "2": 86.4,
+            "3": 79.2,
+            "4": 89.9,
+            "5": 82.19999999999999,
+            "6": 95.1,
+            "7": 92.60000000000001,
+            "8": 96.1,
+            "9": 94.6
+          },
+          "ASR_evaluator_only": 100.0,
+          "ASR_n": 9000,
+          "audit": {
+            "counts": {
+              "0": 10545,
+              "1": 9647,
+              "2": 9641,
+              "3": 9649,
+              "4": 9668
+            },
+            "retained_n": 49150,
+            "removed_n": 850,
+            "removed_fraction": 0.017,
+            "retained_indices_sha256": "258646dbaee9c06e4b54d6ae543d481f609563a60bb5f19165013c1e40868c74",
+            "removed_indices_sha256": "22e7d35386376bc89b45f97ea91f806931822ec340e64814b70dc7126d755813"
+          }
+        },
+        "attack_pre": {
+          "training_seed": 20261023,
+          "phase": "attack_pre",
+          "checkpoint_sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+          "final_round": 40,
+          "CA": 90.38000000000001,
+          "N": 10000,
+          "per_class_CA": {
+            "0": 93.8,
+            "1": 95.7,
+            "2": 86.7,
+            "3": 81.0,
+            "4": 90.10000000000001,
+            "5": 82.69999999999999,
+            "6": 94.6,
+            "7": 92.80000000000001,
+            "8": 94.0,
+            "9": 92.4
+          },
+          "ASR_evaluator_only": 14.28888888888889,
+          "ASR_n": 9000,
+          "audit": {
+            "counts": {
+              "0": 11395,
+              "1": 9647,
+              "2": 9641,
+              "3": 9649,
+              "4": 9668
+            },
+            "retained_n": 50000,
+            "removed_n": 0,
+            "removed_fraction": 0.0,
+            "retained_indices_sha256": "70e8bf06c9ba9fa8b494d23bb48aac4e5a92aab19fe29e87f2c4bcd0fc2e4ba5",
+            "removed_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "normal_pre": {
+          "training_seed": 20261023,
+          "phase": "normal_pre",
+          "checkpoint_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+          "final_round": 40,
+          "CA": 90.8,
+          "N": 10000,
+          "per_class_CA": {
+            "0": 94.19999999999999,
+            "1": 96.2,
+            "2": 87.5,
+            "3": 80.0,
+            "4": 91.4,
+            "5": 82.6,
+            "6": 94.89999999999999,
+            "7": 92.0,
+            "8": 95.39999999999999,
+            "9": 93.8
+          },
+          "ASR_evaluator_only": 1.411111111111111,
+          "ASR_n": 9000,
+          "audit": {
+            "counts": {
+              "0": 11395,
+              "1": 9647,
+              "2": 9641,
+              "3": 9649,
+              "4": 9668
+            },
+            "retained_n": 50000,
+            "removed_n": 0,
+            "removed_fraction": 0.0,
+            "retained_indices_sha256": "70e8bf06c9ba9fa8b494d23bb48aac4e5a92aab19fe29e87f2c4bcd0fc2e4ba5",
+            "removed_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "normal_same850_FU": {
+          "training_seed": 20261023,
+          "phase": "normal_same850_FU",
+          "checkpoint_sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+          "final_round": 40,
+          "CA": 90.33,
+          "N": 10000,
+          "per_class_CA": {
+            "0": 93.2,
+            "1": 95.7,
+            "2": 86.0,
+            "3": 78.3,
+            "4": 90.8,
+            "5": 82.1,
+            "6": 95.3,
+            "7": 92.30000000000001,
+            "8": 95.8,
+            "9": 93.8
+          },
+          "ASR_evaluator_only": 1.3888888888888888,
+          "ASR_n": 9000,
+          "audit": {
+            "counts": {
+              "0": 10545,
+              "1": 9647,
+              "2": 9641,
+              "3": 9649,
+              "4": 9668
+            },
+            "retained_n": 49150,
+            "removed_n": 850,
+            "removed_fraction": 0.017,
+            "retained_indices_sha256": "258646dbaee9c06e4b54d6ae543d481f609563a60bb5f19165013c1e40868c74",
+            "removed_indices_sha256": "22e7d35386376bc89b45f97ea91f806931822ec340e64814b70dc7126d755813"
+          }
+        },
+        "normal_big4_FU": {
+          "training_seed": 20261023,
+          "phase": "normal_big4_FU",
+          "checkpoint_sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+          "final_round": 40,
+          "CA": 89.75999999999999,
+          "N": 10000,
+          "per_class_CA": {
+            "0": 91.9,
+            "1": 96.3,
+            "2": 85.5,
+            "3": 80.10000000000001,
+            "4": 91.10000000000001,
+            "5": 81.10000000000001,
+            "6": 94.19999999999999,
+            "7": 92.9,
+            "8": 92.9,
+            "9": 91.60000000000001
+          },
+          "ASR_evaluator_only": 1.6555555555555557,
+          "ASR_n": 9000,
+          "audit": {
+            "counts": {
+              "0": 11395,
+              "1": 9647,
+              "2": 9641,
+              "3": 9649
+            },
+            "retained_n": 40332,
+            "removed_n": 9668,
+            "removed_fraction": 0.19336,
+            "retained_indices_sha256": "f3128a77b4a8e4a5514ec9e5c1e4b876ffe872ef3a4adbb4044a82cc71e1160c",
+            "removed_indices_sha256": "39afab9e6cd748e3f8fdfb4eb5926e1fb45626856a62f33c3800d6bd2c2e3667"
+          }
+        },
+        "author_aligned_NCHW_v2": [
+          {
+            "key": "pre",
+            "checkpoint_sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+            "CA": 90.38,
+            "ASR": 14.28888888888889,
+            "clean_n": 10000,
+            "ASR_n": 9000,
+            "recorded_difference_pp": {
+              "CA_pp": -1.4210854715202004e-14,
+              "ASR_pp": 0.0
+            },
+            "corrected_evaluator_difference_pp": {
+              "CA_pp": 1.4210854715202004e-14,
+              "ASR_pp": 0.0
+            },
+            "evaluator": "Unmodified evaluate_model from immutable author commit",
+            "memory_format": "contiguous_NCHW",
+            "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+          },
+          {
+            "key": "post",
+            "checkpoint_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+            "CA": 90.46,
+            "ASR": 100.0,
+            "clean_n": 10000,
+            "ASR_n": 9000,
+            "recorded_difference_pp": {
+              "CA_pp": 0.0,
+              "ASR_pp": 0.0
+            },
+            "corrected_evaluator_difference_pp": {
+              "CA_pp": 0.0,
+              "ASR_pp": 0.0
+            },
+            "evaluator": "Unmodified evaluate_model from immutable author commit",
+            "memory_format": "contiguous_NCHW",
+            "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+          },
+          {
+            "key": "clean_pre",
+            "checkpoint_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+            "CA": 90.8,
+            "ASR": 1.3888888888888888,
+            "clean_n": 10000,
+            "ASR_n": 9000,
+            "recorded_difference_pp": {
+              "CA_pp": 0.0,
+              "ASR_pp": -0.022222222222222143
+            },
+            "corrected_evaluator_difference_pp": {
+              "CA_pp": 0.0,
+              "ASR_pp": 0.0
+            },
+            "evaluator": "Unmodified evaluate_model from immutable author commit",
+            "memory_format": "contiguous_NCHW",
+            "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+          }
+        ]
+      },
+      "limits": [
+        "개별 참여자 제출 텐서는 미저장: client_history 용도로 승인하지 않음",
+        "집계 오류0은 학습 당시 기록. 이번 감사는 파일·전역 텐서 연결을 재검증했고 개별 제출의 재집계는 불가능",
+        "큰 정상 참여자 삭제는31R부터 재개하여40R 완료. 다음 조건과 전체3시드 실행은 진행 중.",
+        "20261024·20261025는 아직 완료된 독립 반복이 아님",
+        "정상850 삭제 대조의 pre는 clean 모델. 같은 감염 pre의 큰 정상 삭제 대조는 미완료",
+        "원 평가의 channels-last 형식과 저자 NCHW 형식을 구분. 정상 pre ASR은 기존1.4111%, 저자 형식1.3889%; 원 기록 보존."
+      ],
+      "supplemental_evidence": "audit/BADFU_RESUMED_COMPLETED.json",
+      "algorithm_audit": {
+        "evidence": "audit/BADFU_ALGORITHM_ALIGNMENT.json",
+        "profile": "Paper-aligned BadFU / BadNet / Dominant0.7 / FedAvg / retained-data retraining",
+        "core_implementation": "passed_direct_comparison",
+        "untouched_author_script_reproduction": false,
+        "paper_three_run_mean_reproduction": "not_established",
+        "scope": "All pre/post training samples; original partition/initializers; two first-round replays; author endpoint evaluator."
+      }
+    },
+    {
+      "id": "badfu.multiseed.s20261023.normal_big4.partial",
+      "folder": "03_incomplete/BadFU_normal_big4_round31",
+      "title": "BadFU31R 중단 당시 기록 — 현재40R 재개 완료",
+      "family": "badfu",
+      "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU",
+      "integrity": "committed_prefix_only",
+      "reproduction": "not_evaluated_final",
+      "post_type": "incomplete_retraining",
+      "allowed_purposes": [],
+      "server_inputs": {},
+      "limits": [
+        "이 항목은 중단 당시31R 감사의 역사적 식별자. 기존 오류·31R 저장점은 보존.",
+        "현재40R 완료본은 badfu.multiseed.s20261023의 clean_big_post로 선택. 같은 학습 실행의 연장으로 독립 반복이 아님."
+      ],
+      "continued_in_case": "badfu.multiseed.s20261023"
+    },
+    {
+      "id": "fuba.multiseed.s20261023.attack",
+      "folder": "04_reproduction_failed/FUBA_s20261023_attack",
+      "title": "FUBA 수정 후보 — 100R 저장, 사전 억제 재현 실패",
+      "family": "fuba",
+      "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\fuba\\seed_20261023\\attack",
+      "integrity": "passed",
+      "reproduction": "failed_pre_suppression",
+      "post_type": "no_completed_post_FU",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {},
+      "evaluator_only": {
+        "seed": 20261023,
+        "pre_ASR_source_pct": 98.69201725997843,
+        "source_non_target_n": 7416,
+        "ASR_lower95_pct": 98.40705689045858,
+        "threshold_pct": 10,
+        "decisive_pre_reproduction_failure": true,
+        "verified_rounds": 100,
+        "recorded_unix": 1792720391.6736193
+      },
+      "limits": [
+        "공격100R 완료와 잠복 재현 성공을 구분",
+        "재현 게이트에서 후속 삭제 중지; 완성된 공격 전후쌍 없음",
+        "수정 구현 후보이며 저자 원본 또는 논문 하이퍼파라미터의 완전 재현으로 표시하지 않음"
+      ]
+    },
+    {
+      "id": "fuba.multiseed.s20261023.normal",
+      "folder": "03_incomplete/FUBA_s20261023_normal",
+      "title": "FUBA 정상 대조 — 2/100 중지",
+      "family": "fuba",
+      "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\fuba\\seed_20261023\\normal",
+      "integrity": "committed_prefix_only",
+      "reproduction": "incomplete",
+      "post_type": "no_completed_post_FU",
+      "allowed_purposes": [],
+      "server_inputs": {},
+      "evaluator_only": {},
+      "limits": [
+        "공격100R 완료와 잠복 재현 성공을 구분",
+        "재현 게이트에서 후속 삭제 중지; 완성된 공격 전후쌍 없음",
+        "수정 구현 후보이며 저자 원본 또는 논문 하이퍼파라미터의 완전 재현으로 표시하지 않음"
+      ]
+    },
+    {
+      "id": "fuba.corrected.s20261020.attack",
+      "folder": "04_unapproved/FUBA_corrected_attack",
+      "title": "FUBA 이전 수정 후보 — 정상 대조 시작 실패",
+      "family": "fuba",
+      "source_root": "D:\\FUBA_CORRECTED_20261022\\study_s20261020_v1\\attack",
+      "integrity": "passed",
+      "reproduction": "unapproved_candidate",
+      "post_type": "no_completed_post_FU",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {},
+      "limits": [
+        "공격100R과 정상0R은 완성된 FL/FU 비교가 아님",
+        "수정 후보를 공식 원본 재현으로 사용하지 않음"
+      ]
+    },
+    {
+      "id": "fuba.corrected.s20261020.normal",
+      "folder": "03_incomplete/FUBA_corrected_normal",
+      "title": "FUBA 이전 수정 후보 — 정상 대조 시작 실패",
+      "family": "fuba",
+      "source_root": "D:\\FUBA_CORRECTED_20261022\\study_s20261020_v1\\normal",
+      "integrity": "committed_prefix_only",
+      "reproduction": "incomplete",
+      "post_type": "no_completed_post_FU",
+      "allowed_purposes": [],
+      "server_inputs": {},
+      "limits": [
+        "공격100R과 정상0R은 완성된 FL/FU 비교가 아님",
+        "수정 후보를 공식 원본 재현으로 사용하지 않음"
+      ]
+    },
+    {
+      "id": "legacy.badfu.s42",
+      "folder": "90_legacy/legacy_badfu",
+      "title": "과거 BadFU seed42 — 6인 고ASR 포함",
+      "family": "diagnostic",
+      "source_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\artifacts\\badfu_author_s42",
+      "integrity": "inventory_only",
+      "reproduction": "not_approved_for_target_latent_test",
+      "post_type": "legacy_diagnostic",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {},
+      "limits": [
+        "목표한 잠복 활성화 검증의 기본 입력에서 제외",
+        "과거 원본·모델·실험 결과는 보존"
+      ]
+    },
+    {
+      "id": "legacy.fuba.s42",
+      "folder": "90_legacy/legacy_fuba",
+      "title": "과거 FUBA seed42 — 원본 구현 진단",
+      "family": "diagnostic",
+      "source_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\artifacts\\fuba_cifar10_s42",
+      "integrity": "inventory_only",
+      "reproduction": "not_approved_for_target_latent_test",
+      "post_type": "legacy_diagnostic",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {},
+      "limits": [
+        "목표한 잠복 활성화 검증의 기본 입력에서 제외",
+        "과거 원본·모델·실험 결과는 보존"
+      ]
+    },
+    {
+      "id": "diagnostic.ac.wrong_source",
+      "folder": "90_legacy/ac_wrong_source",
+      "title": "잘못된 모델로 수행한 A/C — 실행 경로 점검 전용",
+      "family": "diagnostic",
+      "source_root": "D:\\AC_FEASIBILITY_20261023",
+      "integrity": "pipeline_complete_wrong_source",
+      "reproduction": "not_approved_for_target_latent_test",
+      "post_type": "legacy_diagnostic",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {},
+      "limits": [
+        "목표한 잠복 활성화 검증의 기본 입력에서 제외",
+        "과거 원본·모델·실험 결과는 보존"
+      ]
+    },
+    {
+      "id": "fuba.v2.s20261023.round0063.partial",
+      "folder": "03_incomplete/FUBA_v2_round0063",
+      "title": "FUBA v2 중간 체크포인트 — 63/100R 로컬 전달",
+      "family": "fuba",
+      "source_root": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063",
+      "integrity": "passed_partial_checkpoint_snapshot",
+      "reproduction": "incomplete",
+      "post_type": "pre_FU_partial_training",
+      "seed": 20261023,
+      "clients": 20,
+      "rounds": 63,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "model": {
+          "path": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063\\checkpoint.pt",
+          "sha256": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+          "payload_key": "gm_after",
+          "committed_rounds": 63
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063\\MANIFEST.json",
+        "manifest_sha256": "3a30bc75778eed9f007e47fd632a55485ee60bdd390fd8a7f388119a01d9cb36",
+        "seal_path": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063\\SEAL.json",
+        "seal_sha256": "4f356fecc86eae992c58d3e509c39e2fc87c1064b378cf31f1a800e77f1ca4dc",
+        "loader_path": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063",
+        "server_inputs": {
+          "model": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063\\checkpoint.pt",
+            "sha256": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+            "payload_key": "gm_after",
+            "committed_rounds": 63
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063\\MANIFEST.json",
+          "manifest_sha256": "3a30bc75778eed9f007e47fd632a55485ee60bdd390fd8a7f388119a01d9cb36",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063\\SEAL.json",
+          "seal_sha256": "4f356fecc86eae992c58d3e509c39e2fc87c1064b378cf31f1a800e77f1ca4dc",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063\\load_checkpoint.py"
+        }
+      },
+      "limits": [
+        "사용자 요청으로 당시 저장된 고정 라운드를 복사한 중간 모델. 전달 당시 전체100R은 진행 중.",
+        "해당 라운드 집계·인접 연결·분류기와 생성기 로딩을 확인했으며 전체 이력 감사는 아님.",
+        "완성된 잠복 공격 전후쌍·정화 입력·근사FU·탐지 성능 판정에 사용하지 않음.",
+        "원본 checkpoint.pt의 분류기는 gm_after만 추출. extras의 생성기는 평가자 전용."
+      ]
+    },
+    {
+      "id": "fuba.v2.s20261023.pre.round100",
+      "folder": "04_reproduction_failed/FUBA_v2_s20261023_pre100",
+      "title": "FUBA v2 최종100R 검토용 모델 — 로컬 전달",
+      "family": "fuba",
+      "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100",
+      "integrity": "passed_review_checkpoint_snapshot",
+      "reproduction": "failed_pre_suppression",
+      "post_type": "pre_FU_only",
+      "seed": 20261023,
+      "clients": 20,
+      "rounds": 100,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "model": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\classifier.pt",
+          "sha256": "d3eefacfc509313b5e469c734d25eb1d4cb94f2b1f3da0d474b1d62cc652d5d2",
+          "payload_key": null,
+          "committed_rounds": 100
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\MANIFEST.json",
+        "manifest_sha256": "c5a7f605200c99d1e6b9ae45d8c548528010d87d07d1dfff8bc089ba706933ea",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\SEAL.json",
+        "seal_sha256": "bc059b95ca331c008db8506c64ee1389fd06eeddb3a59a353c0387943969887c",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100",
+        "server_inputs": {
+          "model": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\classifier.pt",
+            "sha256": "d3eefacfc509313b5e469c734d25eb1d4cb94f2b1f3da0d474b1d62cc652d5d2",
+            "payload_key": null,
+            "committed_rounds": 100
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\MANIFEST.json",
+          "manifest_sha256": "c5a7f605200c99d1e6b9ae45d8c548528010d87d07d1dfff8bc089ba706933ea",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\SEAL.json",
+          "seal_sha256": "bc059b95ca331c008db8506c64ee1389fd06eeddb3a59a353c0387943969887c",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100\\load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "clean_accuracy_pct": 71.87,
+        "ASR_pct": 99.08888888888889,
+        "pre_gate": "failed",
+        "source_checkpoint_sha256": "4a8ee78cdd68c4365ca4b7e50296b58c5e45e689c5ef5287a6f230c8c75a1268"
+      },
+      "limits": [
+        "전체100R 저장·모델 연결·집계·작업자 생성기 검증을 통과한 실행의 삭제 전 단일 모델.",
+        "사전 억제 실패. 잠복 활성화 전후쌍이나 탐지 양성의 대체 입력으로 사용하지 않음.",
+        "82R 저장 교체 오류를 복구하고83R부터 같은 조건으로 이어감. 원본·오류와63R 사본 보존.",
+        "생성기·타깃·ASR 등 평가자 정보는 서버 방법 입력에서 제외. 전체 이력 기본 사례도 바꾸지 않음."
+      ]
+    },
+    {
+      "id": "fuba.v3.s20261023.pre.round0015.stopped",
+      "folder": "04_reproduction_failed/FUBA_v3_s20261023_stopped15",
+      "title": "FUBA v3 15R 중단 체크포인트 — 로컬 전달",
+      "family": "fuba",
+      "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified",
+      "integrity": "passed_stopped_prefix_and_snapshot",
+      "reproduction": "stopped_gamma0_infeasible_round16",
+      "post_type": "pre_FU_partial_training",
+      "seed": 20261023,
+      "clients": 20,
+      "rounds": 15,
+      "intended_rounds": 100,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "model": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\classifier.pt",
+          "sha256": "d142e79833885f42a3ce78290dbb3ebdcbb96f7b5c15f144b5757a7f2aade0c5",
+          "payload_key": null,
+          "committed_rounds": 15
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\MANIFEST.json",
+        "manifest_sha256": "b96b62087909a4c2b6a3b53ac638919e12eef6adc24cdfeb618cf2f4bbe982c4",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\SEAL.json",
+        "seal_sha256": "d9227afbf5f92f51feb5aa99279e882604e393d93b8a5da68b94472b26bcdfd3",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified",
+        "server_inputs": {
+          "model": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\classifier.pt",
+            "sha256": "d142e79833885f42a3ce78290dbb3ebdcbb96f7b5c15f144b5757a7f2aade0c5",
+            "payload_key": null,
+            "committed_rounds": 15
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\MANIFEST.json",
+          "manifest_sha256": "b96b62087909a4c2b6a3b53ac638919e12eef6adc24cdfeb618cf2f4bbe982c4",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\SEAL.json",
+          "seal_sha256": "d9227afbf5f92f51feb5aa99279e882604e393d93b8a5da68b94472b26bcdfd3",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "round15_full_test": {
+          "N": 10000,
+          "non_target_N": 9000,
+          "clean_correct": 7610,
+          "target_successes": 732,
+          "clean_acc_pct": 76.1,
+          "ASR_pct": 8.133333333333333
+        },
+        "round16_gamma0_local_validation": {
+          "N": 250,
+          "non_target_N": 224,
+          "clean_correct": 205,
+          "target_successes": 29,
+          "clean_acc_pct": 82.0,
+          "ASR_pct": 12.946428571428571
+        },
+        "source_checkpoint_sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+        "run_completed": false
+      },
+      "limits": [
+        "100R 유한 실행이16R γ0 로컬 억제 실패로 중단됨. 자동 재시작·조건 변경 없음.",
+        "전체15R 저장·연결·정확한 집계 및120개 역할·13개 생성기 그룹을 검증했지만, 보관 사본은 마지막15R과16R 실패 묶음만 포함.",
+        "독립 전체10000/9000 평가 CA76.10%/ASR8.1333%; 마지막 CA80% 및100R 완료 게이트 미통과.",
+        "진단 전용. 승인된 잠복 전후쌍·탐지 양성·정화 입력·개별/전체 이력 기본 입력으로 사용하지 않음.",
+        "생성기·실제 타깃·ASR·역할은 평가자 전용. BadFU 기본 사례와 이전 사본은 유지."
+      ]
+    },
+    {
+      "id": "fuba.v4.s20261023.pre.round0023.stopped",
+      "folder": "04_reproduction_failed/FUBA_v4_s20261023_stopped23",
+      "title": "FUBA v4 23R 중단 체크포인트 — 단일 진단 포함 로컬 전달",
+      "family": "fuba",
+      "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+      "integrity": "passed_stopped_prefix_and_snapshot",
+      "reproduction": "stopped_gamma_cap10_round24",
+      "post_type": "pre_FU_partial_training",
+      "seed": 20261023,
+      "clients": 20,
+      "rounds": 23,
+      "intended_rounds": 100,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "model": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\classifier.pt",
+          "sha256": "0d6701bc10c5ce5b81c14cdea646988e37701e66c438b95c2086cdb39512855d",
+          "payload_key": null,
+          "committed_rounds": 23
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\MANIFEST.json",
+        "manifest_sha256": "9c15816ea8e279fbc2fd3a85329998eeb6fe7f8967fc89df54a6f1b9fd49ebde",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\SEAL.json",
+        "seal_sha256": "071edb7ce0571e93805911dc365bd8960188b16c287fb604ac71d21c3d11084b",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+        "server_inputs": {
+          "model": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\classifier.pt",
+            "sha256": "0d6701bc10c5ce5b81c14cdea646988e37701e66c438b95c2086cdb39512855d",
+            "payload_key": null,
+            "committed_rounds": 23
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\MANIFEST.json",
+          "manifest_sha256": "9c15816ea8e279fbc2fd3a85329998eeb6fe7f8967fc89df54a6f1b9fd49ebde",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\SEAL.json",
+          "seal_sha256": "071edb7ce0571e93805911dc365bd8960188b16c287fb604ac71d21c3d11084b",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified\\load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "round23_full_test": {
+          "N": 10000,
+          "non_target_N": 9000,
+          "clean_correct": 7712,
+          "target_successes": 1255,
+          "clean_acc_pct": 77.12,
+          "ASR_pct": 13.944444444444445
+        },
+        "source_checkpoint_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+        "run_completed": false,
+        "bounded_diagnostic_replay": {
+          "profile_id": "fuba.cap24.client3.s20501026.diagnostic_cached_G1",
+          "cap_reproduced": false,
+          "gamma": 2.0,
+          "same_original_G": true,
+          "original_classifier_tensor_identity_verified": false
+        }
+      },
+      "limits": [
+        "24R client3 gamma 상한10에서 중단.100R 미완료.원본/중단 조건/과거 보관본 보존.",
+        "전체23R 파일·연결·정확집계0·184역할/28G그룹을검증했으나검토사본은마지막23R과실패/단일진단만포함.",
+        "독립10000/9000평가CA77.12%/ASR13.9444%.100R/CA80/ASR10전체게이트미통과.",
+        "승인된단일참여자진단은원본G를재사용했고gamma2.0선택으로원본cap10을수치적으로재현하지못함. 원본gamma점수/분류기상태누락보존.",
+        "진단전용.잠복전후쌍·정화/이력/탐지양성기본입력아님.평가자G/ASR/타깃/역할정보는서버입력제외."
+      ]
+    },
+    {
+      "id": "fuba.v5.s20261023.pre.round100",
+      "folder": "04_reproduction_failed/FUBA_v5_s20261023_pre100",
+      "title": "FUBA v5 완료100R — 최종 효용·사전 억제 실패 진단 모델",
+      "family": "fuba",
+      "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100",
+      "integrity": "passed_full100R_and_review_snapshot",
+      "reproduction": "pre_gate_failed",
+      "post_type": "pre_FU_completed_training",
+      "seed": 20261023,
+      "clients": 20,
+      "rounds": 100,
+      "intended_rounds": 100,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "model": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\classifier.pt",
+          "sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+          "payload_key": null,
+          "committed_rounds": 100
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\MANIFEST.json",
+        "manifest_sha256": "06c8388cdefb6033a3056b9d8047c725dbdd3295c025875e393bf85ba43a73db",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\SEAL.json",
+        "seal_sha256": "d01eef70f935413b1e683e87c9dfdf5b747a9f3956def85c7062d6078d010a2f",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100",
+        "server_inputs": {
+          "model": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\classifier.pt",
+            "sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+            "payload_key": null,
+            "committed_rounds": 100
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\MANIFEST.json",
+          "manifest_sha256": "06c8388cdefb6033a3056b9d8047c725dbdd3295c025875e393bf85ba43a73db",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\SEAL.json",
+          "seal_sha256": "d01eef70f935413b1e683e87c9dfdf5b747a9f3956def85c7062d6078d010a2f",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre_round100\\load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "independent_full10000_non_target9000": {
+          "state": "passed_inference_linkage",
+          "case_id": "fuba.v5.s20261023.pre.round100",
+          "run_completed": true,
+          "round": 100,
+          "N": 10000,
+          "non_target_N": 9000,
+          "clean_correct": 7858,
+          "target_successes": 2582,
+          "clean_acc_pct": 78.58,
+          "ASR_pct": 28.68888888888889,
+          "last_checkpoint_sha256": "38711f6810994641b4a32f3275092412bfa916b9fdaf94c90363a7966a921105",
+          "recorded_metric_exact_match": true,
+          "pre_gate": "failed",
+          "epsilon": 0.05,
+          "pixels": "[0,1]",
+          "layout": "contiguous_NCHW",
+          "classifier_mode": "eval",
+          "generator_mode": "eval",
+          "evaluator_sha256": "29cf03c1bed4c2090a390db870bd48b5f08b287bb620953a9dbae163f6a689cc",
+          "training_evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+          "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+          "GPU_idle_before_inference": {
+            "state": "passed",
+            "actual_gpu_memory_MiB": "0",
+            "competing_training_processes": 0
+          },
+          "inference_only": true,
+          "confirmed_pre_post_pair": false
+        },
+        "source_checkpoint_sha256": "38711f6810994641b4a32f3275092412bfa916b9fdaf94c90363a7966a921105",
+        "run_completed": true,
+        "confirmed_pre_post_pair": false
+      },
+      "limits": [
+        "100R 완료와 성능성공 별도. CA78.58%/pre-ASR28.6889%로CA80/ASR10게이트실패.",
+        "전체100R/800역할/동일G/단계RNG/집계오차0 검증. 사본의 물리전달범위는README 및 manifest에 명시.",
+        "31R cap10 효용붕괴와 후반111회gamma0미달을보존. 유한cap/Adam/IBA/BN은선언된해석한계.",
+        "진단용단일삭제전모델.잠복전후쌍/정화/이력/탐지양성의승인기본입력이아님.자동정상/FU/재튜닝없음."
+      ]
+    },
+    {
+      "id": "fuba.legacy.s20261020.retained_pairs.diagnostic",
+      "folder": "04_reproduction_failed/FUBA_legacy_s20261020_diagnostic",
+      "title": "과거 FUBA s20261020 전후 — 재현 실패 보존 진단",
+      "family": "fuba",
+      "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers",
+      "integrity": "existing_export_hashes_checked_not_full_history",
+      "reproduction": "failed_latent_activation_high_pre_ASR",
+      "post_type": "historical_retained_data_retraining_diagnostic",
+      "seed": 20261020,
+      "clients": 20,
+      "rounds": 100,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "server_inputs": {
+        "m07": {
+          "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m07.pt",
+          "sha256": "4643d84eab916a3f4bacbd745e68a2ae83f7c610db1e56ee83686f0cd06d64c3",
+          "payload_key": null,
+          "committed_rounds": 100
+        },
+        "m08": {
+          "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m08.pt",
+          "sha256": "ac2444194493c054eb3660b052af5a3d44df8844bc8d438e054aaba38c65b384",
+          "payload_key": null,
+          "committed_rounds": 100
+        },
+        "m09": {
+          "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m09.pt",
+          "sha256": "0c29b8fd26fe6abcf91a1cee446c9ed90888271d5aafaa37a324da594f592a68",
+          "payload_key": null,
+          "committed_rounds": 100
+        },
+        "m10": {
+          "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m10.pt",
+          "sha256": "d529cfefae569cab3d46006d102c5e015a4bd28d18809de78308422bc10b3f3b",
+          "payload_key": null,
+          "committed_rounds": 100
+        }
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers",
+        "server_inputs": {
+          "m07": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m07.pt",
+            "sha256": "4643d84eab916a3f4bacbd745e68a2ae83f7c610db1e56ee83686f0cd06d64c3",
+            "payload_key": null,
+            "committed_rounds": 100
+          },
+          "m08": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m08.pt",
+            "sha256": "ac2444194493c054eb3660b052af5a3d44df8844bc8d438e054aaba38c65b384",
+            "payload_key": null,
+            "committed_rounds": 100
+          },
+          "m09": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m09.pt",
+            "sha256": "0c29b8fd26fe6abcf91a1cee446c9ed90888271d5aafaa37a324da594f592a68",
+            "payload_key": null,
+            "committed_rounds": 100
+          },
+          "m10": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m10.pt",
+            "sha256": "d529cfefae569cab3d46006d102c5e015a4bd28d18809de78308422bc10b3f3b",
+            "payload_key": null,
+            "committed_rounds": 100
+          }
+        }
+      },
+      "related_cards": [
+        "R02",
+        "D08",
+        "D18"
+      ],
+      "limits": [
+        "기존4개 저장분류기의 해시/출처만 별도 명시. 새 학습/새 공격 재현이 아니다.",
+        "삭제 전 이미 높은ASR/정상모델 G전이. 잠복 전후쌍 또는 탐지양성 승인 아님.",
+        "억제 참여자 삭제와 정상 같은 참여자 삭제의 진단 대조. 큰 정상 탈퇴 대조 없음.",
+        "latest v5 단일모델 또는 다른 라운드를 전후에 섞지 않는다.",
+        "표본 기하학 통계를 기술할 diagnostic만 허용. 기본 BadFU/전체 이력/기존 모든실패 보존."
+      ],
+      "supplemental_evidence": "audit/FUBA_LEGACY_S20261020_DIAGNOSTIC_20261025.json"
+    },
+    {
+      "id": "fuba.v5.s20261023.post.kd10",
+      "folder": "04_reproduction_failed/FUBA_v5_s20261023_KD10_pair",
+      "title": "FUBA v5 실제100R 전 모델과 KD10 삭제 후 모델·로그",
+      "family": "fuba",
+      "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10",
+      "source_case_id": "fuba.v5.s20261023.pre.round100",
+      "integrity": "passed_KD10_pair_and_both_host_delivery",
+      "reproduction": "pre_gate_failed_no_KD_activation",
+      "post_type": "historical_update_subtraction_and_KD",
+      "seed": 20261023,
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\before_classifier.pt",
+          "sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\after_unlearning.pt",
+          "sha256": "7ee878d113bab13df4d08f569f5508ec3f6c843715bd8e7f33a9fe5175144814",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\MANIFEST.json",
+        "manifest_sha256": "d1edb7b3a2cd5a4d6f495de97c2bf07aa4b264f7f2c4e05ad3ae040044bafea7",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\SEAL.json",
+        "seal_sha256": "c36d01272ad37e58d949263bbc4f13bf192b0b181275a7a6f6ee301d613d1bfc",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\before_classifier.pt",
+            "sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+            "payload_key": null
+          },
+          "post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\after_unlearning.pt",
+            "sha256": "7ee878d113bab13df4d08f569f5508ec3f6c843715bd8e7f33a9fe5175144814",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\MANIFEST.json",
+          "manifest_sha256": "d1edb7b3a2cd5a4d6f495de97c2bf07aa4b264f7f2c4e05ad3ae040044bafea7",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\SEAL.json",
+          "seal_sha256": "c36d01272ad37e58d949263bbc4f13bf192b0b181275a7a6f6ee301d613d1bfc",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v5_s20261023_pre100_post_KD10\\load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "before": {
+          "stage": "before",
+          "clean_acc_pct": 78.58,
+          "ASR_pct": 28.68888888888889,
+          "clean_correct": 7858,
+          "target_successes": 2582,
+          "N": 10000,
+          "non_target_N": 9000,
+          "epsilon": 0.05,
+          "pixels": "[0,1]",
+          "layout": "contiguous_NCHW",
+          "classifier_mode": "eval",
+          "generator_mode": "eval",
+          "generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+          "inference_only": true
+        },
+        "after": {
+          "stage": "kd_round_0010",
+          "clean_acc_pct": 78.95,
+          "ASR_pct": 28.42222222222222,
+          "clean_correct": 7895,
+          "target_successes": 2558,
+          "N": 10000,
+          "non_target_N": 9000,
+          "epsilon": 0.05,
+          "pixels": "[0,1]",
+          "layout": "contiguous_NCHW",
+          "classifier_mode": "eval",
+          "generator_mode": "eval",
+          "generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+          "inference_only": true
+        },
+        "independent_final": {
+          "state": "passed_full_independent_evaluation",
+          "after": {
+            "stage": "independent_after",
+            "clean_acc_pct": 78.95,
+            "ASR_pct": 28.42222222222222,
+            "clean_correct": 7895,
+            "target_successes": 2558,
+            "N": 10000,
+            "non_target_N": 9000,
+            "epsilon": 0.05,
+            "pixels": "[0,1]",
+            "layout": "contiguous_NCHW",
+            "classifier_mode": "eval",
+            "generator_mode": "eval",
+            "generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+            "inference_only": true
+          },
+          "exact_training_metric_match": true,
+          "after_classifier_sha256": "7ee878d113bab13df4d08f569f5508ec3f6c843715bd8e7f33a9fe5175144814",
+          "before_classifier_sha256": "71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271",
+          "fixed_generator_sha256": "49a8938f0569b277562f1019da6c773e70394eb613873aaa83051d93df01b134",
+          "GPU_idle_before_evaluation": {
+            "state": "passed",
+            "actual_gpu_memory_MiB": "0",
+            "competing_training_processes": 0
+          },
+          "evaluator_sha256": "fb7f01587795deef4aedd0500d1e9c5493f956b80782b8e7ca8946b67dcf9fe3",
+          "training_evaluator_sha256": "c9df0c65d21851972833d10b553421b4c31d9a9dca8087044e2cf59387a3bd79",
+          "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+          "torch": "2.5.1+cu121",
+          "pre_suppression_gate": "failed",
+          "latent_attack_reproduction_success": false
+        },
+        "actual_pre_post_pair": true,
+        "latent_attack_reproduction_success": false,
+        "method": "KD-based FU10",
+        "forgotten_client": 4
+      },
+      "limits": [
+        "실제삭제후모델과전후쌍은존재한다.사전ASR28.6889%미달로잠복재현성공은아니다.",
+        "실제client ID/weights 역사기여제거+무라벨2500장10KD.참여자제외만한모델과구분한다.",
+        "공개코드와본문차이/정정/BN정책은PROTOCOL에명시.untouched author execution/FedEraser/전체6FU표재현으로표시하지않는다."
+      ]
+    }
+  ],
+  "supplemental_audits": [
+    {
+      "path": "audit/BADFU_RESUMED_COMPLETED.json",
+      "sha256": "650d4982b1dbfb6b7ed3970309eb4b6344fd8fc4050dd45ce267f94f8e4935a6"
+    },
+    {
+      "path": "audit/BADFU_ALGORITHM_ALIGNMENT.json",
+      "sha256": "c1f2f6e67b00285cd0cfdd52f15d88d777862a28d759259dc84063d6aeb1df0f"
+    },
+    {
+      "path": "audit/CONFIRMED_BADFU_S20261023_V1.json",
+      "sha256": "86109663ef96360335ea89a103b0c4856ca8f507ef0e51fe0e05eac6501a99ba"
+    },
+    {
+      "path": "audit/FUBA_PARTIAL_ROUND0063_DELIVERY.json",
+      "sha256": "b6e4b8b5f251198252f835ae4457bf388523fbd9f9b738fed101f7d820fa161b"
+    },
+    {
+      "path": "audit/FUBA_V2_ROUND100_DELIVERY.json",
+      "sha256": "68086cbb6bb3ff90dc7ff9b4b1d2610038e30b652d0d2d1cfd9e1b6f65de013f"
+    },
+    {
+      "path": "audit/FUBA_V3_STOPPED15_DELIVERY.json",
+      "sha256": "92ab3db8c18fc36c98cfa5737f7fb35a5f0670f74834d6bfc5f9ade0d222320a"
+    },
+    {
+      "path": "audit/FUBA_V4_STOPPED23_DELIVERY.json",
+      "sha256": "5d7b915e487b0c64d948b3636c2839c39224761ddeffd1e6b65c5ccd18a98a7e"
+    },
+    {
+      "path": "audit/FUBA_V5_ROUND100_DELIVERY.json",
+      "sha256": "198902f9ad893704802d687fc6f132ceaa47865765a841d2ba53dba456e1a7b3"
+    },
+    {
+      "path": "audit/FUBA_LEGACY_S20261020_DIAGNOSTIC_20261025.json",
+      "sha256": "32ba3999282a3890fdb872d2315d399187c0ceca9d193913fe20e4bc7b05c6b2"
+    },
+    {
+      "path": "audit/FUBA_V5_KD10_PAIR_DELIVERY.json",
+      "sha256": "df7ef9d6506bf7c440692712a3f8510154bf7c2126ebe0ee3e19c58cac9801c2"
+    }
+  ],
+  "default_full_history_case": "badfu.paper32.s20261020",
+  "default_checkpoint_case": "badfu.confirmed.s20261023.v1"
+}

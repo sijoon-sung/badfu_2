@@ -1,0 +1,44 @@
+{
+  "state": "copied_and_verified",
+  "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+  "local_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+  "remote_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v4_s20261023_pre_round0023_stopped_verified",
+  "manifest_sha256": "9c15816ea8e279fbc2fd3a85329998eeb6fe7f8967fc89df54a6f1b9fd49ebde",
+  "seal_sha256": "071edb7ce0571e93805911dc365bd8960188b16c287fb604ac71d21c3d11084b",
+  "zip_sha256": "042e3a2eef4c32e5a611599ec5e53d966542f5b2599f686ccdd467f201fa1386",
+  "files_verified": 635,
+  "CPU_validation": {
+    "state": "passed",
+    "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+    "files_verified": 633,
+    "strict_CPU_loads": [
+      "classifier",
+      "aggregate_generator",
+      "initial",
+      "native23R",
+      "failure24R_incoming_G"
+    ],
+    "additional_strict_CPU_payloads": [
+      "reused16R.incoming",
+      "reused16R.incoming",
+      "reused16R.embedded",
+      "reused16R.representative",
+      "reused16R.expected_gamma0",
+      "classifier_phase01.pt",
+      "classifier_phase02.pt",
+      "classifier_phase03.pt",
+      "classifier_phase04.pt",
+      "diagnostic24R.incoming",
+      "diagnostic24R.embedded",
+      "diagnostic24R.representative",
+      "diagnostic24R.upload_after_selection"
+    ],
+    "native_extraction_exact": true,
+    "finite_clean_and_triggered_forward": true,
+    "torch": "2.4.1+cu118",
+    "confirmed_pre_post_pair": false
+  },
+  "run_completed": false,
+  "scientific_verdict": "stopped_gamma_cap10_round24",
+  "confirmed_pre_post_pair": false
+}

@@ -1,0 +1,230 @@
+{
+  "executed_pairs": [
+    {
+      "id": "camouflage_client5_removal",
+      "pre": "badfu_full6.pt",
+      "post": "badfu_fu_remove5.pt",
+      "honest_remaining": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "honest_client1_removal_in_infected_model",
+      "pre": "badfu_cover5.pt",
+      "post": "badfu_fu_remove1.pt",
+      "honest_remaining": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "host": "DESKTOP-QUB35TD",
+  "current_multiseed_completed": [
+    {
+      "training_seed": 20261023,
+      "phase": "attack_pre",
+      "checkpoint_sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+      "final_round": 40,
+      "CA": 90.38000000000001,
+      "N": 10000,
+      "per_class_CA": {
+        "0": 93.8,
+        "1": 95.7,
+        "2": 86.7,
+        "3": 81.0,
+        "4": 90.10000000000001,
+        "5": 82.69999999999999,
+        "6": 94.6,
+        "7": 92.80000000000001,
+        "8": 94.0,
+        "9": 92.4
+      },
+      "ASR_evaluator_only": 14.28888888888889,
+      "ASR_n": 9000,
+      "audit": {
+        "counts": {
+          "0": 11395,
+          "1": 9647,
+          "2": 9641,
+          "3": 9649,
+          "4": 9668
+        },
+        "retained_n": 50000,
+        "removed_n": 0,
+        "removed_fraction": 0.0,
+        "retained_indices_sha256": "70e8bf06c9ba9fa8b494d23bb48aac4e5a92aab19fe29e87f2c4bcd0fc2e4ba5",
+        "removed_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "training_seed": 20261023,
+      "phase": "attack_FU",
+      "checkpoint_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+      "final_round": 40,
+      "CA": 90.46,
+      "N": 10000,
+      "per_class_CA": {
+        "0": 92.10000000000001,
+        "1": 96.39999999999999,
+        "2": 86.4,
+        "3": 79.2,
+        "4": 89.9,
+        "5": 82.19999999999999,
+        "6": 95.1,
+        "7": 92.60000000000001,
+        "8": 96.1,
+        "9": 94.6
+      },
+      "ASR_evaluator_only": 100.0,
+      "ASR_n": 9000,
+      "audit": {
+        "counts": {
+          "0": 10545,
+          "1": 9647,
+          "2": 9641,
+          "3": 9649,
+          "4": 9668
+        },
+        "retained_n": 49150,
+        "removed_n": 850,
+        "removed_fraction": 0.017,
+        "retained_indices_sha256": "258646dbaee9c06e4b54d6ae543d481f609563a60bb5f19165013c1e40868c74",
+        "removed_indices_sha256": "22e7d35386376bc89b45f97ea91f806931822ec340e64814b70dc7126d755813"
+      }
+    },
+    {
+      "training_seed": 20261023,
+      "phase": "normal_pre",
+      "checkpoint_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+      "final_round": 40,
+      "CA": 90.8,
+      "N": 10000,
+      "per_class_CA": {
+        "0": 94.19999999999999,
+        "1": 96.2,
+        "2": 87.5,
+        "3": 80.0,
+        "4": 91.4,
+        "5": 82.6,
+        "6": 94.89999999999999,
+        "7": 92.0,
+        "8": 95.39999999999999,
+        "9": 93.8
+      },
+      "ASR_evaluator_only": 1.411111111111111,
+      "ASR_n": 9000,
+      "audit": {
+        "counts": {
+          "0": 11395,
+          "1": 9647,
+          "2": 9641,
+          "3": 9649,
+          "4": 9668
+        },
+        "retained_n": 50000,
+        "removed_n": 0,
+        "removed_fraction": 0.0,
+        "retained_indices_sha256": "70e8bf06c9ba9fa8b494d23bb48aac4e5a92aab19fe29e87f2c4bcd0fc2e4ba5",
+        "removed_indices_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "training_seed": 20261023,
+      "phase": "normal_same850_FU",
+      "checkpoint_sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+      "final_round": 40,
+      "CA": 90.33,
+      "N": 10000,
+      "per_class_CA": {
+        "0": 93.2,
+        "1": 95.7,
+        "2": 86.0,
+        "3": 78.3,
+        "4": 90.8,
+        "5": 82.1,
+        "6": 95.3,
+        "7": 92.30000000000001,
+        "8": 95.8,
+        "9": 93.8
+      },
+      "ASR_evaluator_only": 1.3888888888888888,
+      "ASR_n": 9000,
+      "audit": {
+        "counts": {
+          "0": 10545,
+          "1": 9647,
+          "2": 9641,
+          "3": 9649,
+          "4": 9668
+        },
+        "retained_n": 49150,
+        "removed_n": 850,
+        "removed_fraction": 0.017,
+        "retained_indices_sha256": "258646dbaee9c06e4b54d6ae543d481f609563a60bb5f19165013c1e40868c74",
+        "removed_indices_sha256": "22e7d35386376bc89b45f97ea91f806931822ec340e64814b70dc7126d755813"
+      }
+    }
+  ],
+  "executed_assets": "D:/BFU_1021/research/stage1_20261020/assets",
+  "paper32_final_full_test": {
+    "attack_pre": {
+      "clean_accuracy_pct": 88.23,
+      "ASR_pct": 16.144444444444446,
+      "clean_n": 10000,
+      "ASR_n": 9000
+    },
+    "poison_only": {
+      "clean_accuracy_pct": 88.14999999999999,
+      "ASR_pct": 99.9888888888889,
+      "clean_n": 10000,
+      "ASR_n": 9000
+    },
+    "benign": {
+      "clean_accuracy_pct": 88.78,
+      "ASR_pct": 1.5333333333333332,
+      "clean_n": 10000,
+      "ASR_n": 9000
+    },
+    "benign_deletion": {
+      "clean_accuracy_pct": 87.72,
+      "ASR_pct": 16.333333333333332,
+      "clean_n": 10000,
+      "ASR_n": 9000
+    }
+  },
+  "paper32_checkpoints": [
+    {
+      "matches_expected": true,
+      "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\round_0040.pt",
+      "sha256": "4416c40d967db37603d943356a0d647ad0b580f4b7d4949434a6e2ff114a789f",
+      "id": "p_pre",
+      "exists": true
+    },
+    {
+      "matches_expected": true,
+      "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\round_0040.pt",
+      "sha256": "fe6fc2fbac7383bafac93a9564f50e9ef2c9c006057ffc6a6f0e273a9714b9bb",
+      "id": "p_post",
+      "exists": true
+    },
+    {
+      "matches_expected": true,
+      "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\round_0040.pt",
+      "sha256": "84b0a9cd73c65835d31ac38453a97813b685a86d22d7b4abd206f1b08539296f",
+      "id": "p_benign_deletion",
+      "exists": true
+    },
+    {
+      "matches_expected": true,
+      "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\round_0040.pt",
+      "sha256": "7ffbad660ed295f06acaca9c49491308aecede65e18447f18a1fac2f19b26c69",
+      "id": "p_clean",
+      "exists": true
+    }
+  ],
+  "assessment": "The executed archived seed42 split6 pilot is a pipeline diagnostic, not a valid test of latent-attack detection. The available paper32 mixed5 pre/post/control checkpoints must be used for the target hypothesis."
+}

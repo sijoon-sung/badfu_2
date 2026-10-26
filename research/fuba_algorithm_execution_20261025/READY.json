@@ -1,0 +1,38 @@
+{
+  "state": "passed",
+  "time_unix": 1792905363.4828825,
+  "source_case": "fuba.v5.s20261023.pre.round100",
+  "source_hashes": {
+    "PROFILE.json": "c732c04d188e77f845aeef48b9472ae9dec596580103d542036596cab9c42c9f",
+    "PROTOCOL.txt": "431e3a1aef2461522413f86cb1c575a0086e4b12e57f271c94fb9557de3545ed",
+    "paper_core.py": "658b39b9d3d9f7322a25cbbed0ee2d8826aa7a1d7fee7e9f18f5bd8d0522cf7b",
+    "profile_helpers.py": "5283b1612ce5cce35ead6ca985e48762edb532cf9df01a31eedc34cf563c6470",
+    "common.py": "8165d6aa86a542c54a83af2d872649cee05cc29a0ff6ed5c90de909d8c5f825c",
+    "runner.py": "5e97c289d88a830d4c10de0c7f9dd86c62aa3082e191a6dbc91518b2e6b5673c",
+    "test_contracts.py": "69c2a4e9171a627060d059d23e5cd2857fec01520538ac27f3ea616a644f0a7b",
+    "prepare.py": "4b04d0d9704099d4448bc974d11ddefb5847b4879005d5538e5062bb5c5e1570",
+    "launch.py": "aa6403d0633836aaef99262760cde234dbc508fd85ecfa12e5b736e17da4e7c9",
+    "background.py": "1ebadd2d2d3c74f7f0e112911ae5c24784abe98277172dccb7cea51fe98a3f48",
+    "verify.py": "d328609a7903dd4b5485de6ceed980fb0ad5f2bbffbe23576f3d11c0ea818a64",
+    "independent_evaluate.py": "c9d7ac18850ab7329c03947caac8f2b9de5c16b2c4f9b9cc62b4fc49b48b2dec",
+    "status.py": "06f6329c93058a0fef1d428f42e67dbf868e50089440487da08833902a4347aa",
+    "export_code.py": "348556dd9e8d4827bf19de318468dc23baba241b9edf74998087a79daeaf4fed",
+    "export_result.py": "36141c629f4eb77ec0962ba3487ecd915f2bc74501602489d53299f98ec632bf",
+    "resource_guard.py": "f9792758127f937ff37f9e760607c3149a81f1ba10bbdc58110b00e58646c720",
+    "model/resnet.py": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+    "model/model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "model/__init__.py": "03bfe168f84d602e7e7d1e4bdfe683a66094f8f913d248e0baf45788c6368492",
+    "initial.pt": "c01de46d33adea96efccc99e1147a0f4079f2d38ee731603bad673a6018f4330",
+    "SPLIT.json": "a7b2e58c7f68304c94cc99dbdb43de1f23e0e0c01366a2dab2d3231868929079",
+    "DATA.json": "372d54bce245ae37ba0cca1f67a44571bf0d089b850b056c263ae58d805f0727",
+    "README_KO.txt": "f74c8897c50e95b13fd6120d5b7e78403203ba7e8cee9f839671b695e12510f6"
+  },
+  "initial_sha256": "c01de46d33adea96efccc99e1147a0f4079f2d38ee731603bad673a6018f4330",
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "original_public_commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "old_tasks_restarted": false
+}

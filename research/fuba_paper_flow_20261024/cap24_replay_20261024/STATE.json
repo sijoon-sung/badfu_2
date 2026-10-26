@@ -1,0 +1,27 @@
+{
+  "state": "failed",
+  "pid": 58076,
+  "started_unix": 1792820955.0653543,
+  "profile_id": "fuba.cap24.client3.s20501026.diagnostic_replay1",
+  "phase_events": [
+    {
+      "phase": "generator",
+      "epoch": 5,
+      "epochs": 5,
+      "examples": 2250,
+      "classifier_phase": 0,
+      "updated_unix": 1792820965.9981453
+    }
+  ],
+  "latest": {
+    "phase": "generator",
+    "epoch": 5,
+    "epochs": 5,
+    "examples": 2250,
+    "classifier_phase": 0,
+    "updated_unix": 1792820965.9981453
+  },
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FUBA_PAPER_FLOW_20261024\\replay_cap24_once.py\", line 70, in main\n    assert digest(reproduced)=='3497b8ccb35b3cee35d36eccd07eed4a0a3438bb33cea6314ae56de5797d4a43'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "updated_unix": 1792820966.0595574
+}

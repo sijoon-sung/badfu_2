@@ -1,0 +1,19 @@
+Saved-model audit: ordinary inputs versus triggered evaluation inputs
+All values are percentages. Post-hoc descriptive analysis; no new selection or fitting.
+Known target 0 is used only to inspect the proposed mechanism.
+
+attack71
+method / special-role selected / clean ACC / clean wrong-target rate / clean target probability / trigger target rate / classes with lower clean wrong-target rate
+none / -- / 61.6500 / 4.9444 / 5.8987 / 76.9444 / 0
+interaction / 0 / 61.9500 / 5.3333 / 6.4007 / 71.2778 / 1
+post_only / 138 / 63.8000 / 4.1111 / 5.4606 / 6.3333 / 6
+pixel_repeat / 138 / 63.4500 / 4.2778 / 5.5772 / 7.0000 / 5
+random / 25 / 62.1000 / 4.7222 / 5.9960 / 56.8889 / 3
+
+normal71
+method / special-role selected / clean ACC / clean wrong-target rate / clean target probability / trigger target rate / classes with lower clean wrong-target rate
+none / -- / 62.4500 / 3.8889 / 4.5555 / 4.0556 / 0
+interaction / 27 / 62.4000 / 4.0000 / 4.6728 / 3.6667 / 3
+post_only / 46 / 61.6000 / 4.1667 / 4.9635 / 4.3889 / 3
+pixel_repeat / 138 / 62.7500 / 3.5556 / 4.5039 / 4.1111 / 4
+random / 25 / 62.0000 / 3.5556 / 4.5297 / 3.7778 / 5

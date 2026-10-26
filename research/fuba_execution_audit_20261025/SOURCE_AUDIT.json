@@ -1,0 +1,109 @@
+{
+  "state": "passed_direct_source_execution",
+  "time_unix": 1792904768.0965877,
+  "related_cards": [
+    "R02"
+  ],
+  "current_author_commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "previous_pinned_commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "files": {
+    "README.md": {
+      "sha256": "e439a0e76df9af1d7d24644cc288bef7e4b52c8e201a9d65c7a0efae377d463f",
+      "matches_previous_pinned": true
+    },
+    "config.py": {
+      "sha256": "4c10c51c1ecfcb8a0d2c17be75d823c74ecfcb459993a24030d018e1c1f017aa",
+      "matches_previous_pinned": true
+    },
+    "main.py": {
+      "sha256": "bd01aa3b75088a08d93e9521a115452bd3bbb9c7ae22292221f1f370ecf58116",
+      "matches_previous_pinned": true
+    },
+    "train_main.py": {
+      "sha256": "e444c9c7d0b61ecaca7a8a131d9de50d57f92d84e3b8ce3dd95ce8c4762c06d3",
+      "matches_previous_pinned": true
+    },
+    "train_method_iba.py": {
+      "sha256": "91e0e47c6ceee3c9291954d09db5b01253640b8c508c68bb0946e77118df440d",
+      "matches_previous_pinned": true
+    },
+    "utils/comm_utils.py": {
+      "sha256": "39a55541f5317917eaefdd3869b0b07398377b8ebf9a03d614f70a03edeb1e00",
+      "matches_previous_pinned": true
+    },
+    "unlearn.py": {
+      "sha256": "6b21a25d51392f44f69d7dab1075be0523c24f12b4c3f340e3cd80c69d4367e0",
+      "matches_previous_pinned": true
+    },
+    "unlearn_method/retrain.py": {
+      "sha256": "6db1642bb6369184a287cfe85457909067766aa768056dc04ecf05a4c9e24872",
+      "matches_previous_pinned": true
+    },
+    "unlearn_method/distillation.py": {
+      "sha256": "8fa5ec3ae40198660c2054f4459fd2439917dd7c1b9533147098722f9e6d2e9f",
+      "matches_previous_pinned": true
+    },
+    "unlearn_method/federaser.py": {
+      "sha256": "a91d64aa03006914e85a9dcabfd1b881a13146b225673457d5b394bb4a18b9b1",
+      "matches_previous_pinned": true
+    }
+  },
+  "contracts": {
+    "public_gamma_helper": {
+      "scores": [
+        1.0,
+        8.0,
+        2.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0
+      ],
+      "returned_index": 1,
+      "gamma_submitted_by_caller": 0.1,
+      "actual_gamma_of_selected_test": 0.2,
+      "largest_tested_passing_gamma": 0.3,
+      "selects_maximum_ASR_not_largest_gamma": true,
+      "submitted_gamma_off_by_one": true
+    },
+    "public_gradient_weights": {
+      "actual": [
+        0.10000000149011612,
+        0.550000011920929,
+        1.0
+      ],
+      "paper_eq1_required": [
+        1.0,
+        0.5,
+        0.0
+      ],
+      "opposite_direction": true
+    },
+    "public_defender": {
+      "zero_consistency_multiplier_present": true,
+      "triggered_stage2_input_present": true,
+      "sends_stage2_directly": true,
+      "paper_final_defense_displacement_missing": true
+    },
+    "optimizer_contract": {
+      "weighted_Adam_first_step": [
+        0.99900000001,
+        0.999000000999999
+      ],
+      "literal_weighted_SGD_required": [
+        0.999,
+        0.99999
+      ],
+      "not_equal": true,
+      "interpretation": "Main experimental Adam conflicts with explicit SGD equation. Numerical difference is demonstrated, cause of full failure is not established."
+    },
+    "paper_m_conflict": "Main IV-A4 m=5; footnote2 says defender count ignored. Not declared a proved4/20 correction."
+  },
+  "issue1_comments_count": 0,
+  "old_v5_already_fixed_some_public_errors": true,
+  "new_full_training_performed": false,
+  "reproduction_success": false
+}

@@ -1,0 +1,1116 @@
+[
+  {
+    "path": "research/00_trajectories",
+    "related_cards": [
+      "R01"
+    ],
+    "top_level_documents": [
+      "research/00_trajectories/AUDIT_REPORT_KO.md",
+      "research/00_trajectories/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/01_reproduction",
+    "related_cards": [],
+    "top_level_documents": [
+      "research/01_reproduction/README.md",
+      "research/01_reproduction/TRAJECTORY_DECISION.md",
+      "research/01_reproduction/TRAJECTORY_SOURCE_AUDIT.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/02_purification",
+    "related_cards": [
+      "P01",
+      "P02"
+    ],
+    "top_level_documents": [
+      "research/02_purification/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/03_detection",
+    "related_cards": [
+      "D01"
+    ],
+    "top_level_documents": [
+      "research/03_detection/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/04_theory",
+    "related_cards": [
+      "T01"
+    ],
+    "top_level_documents": [
+      "research/04_theory/linear_example_results.json",
+      "research/04_theory/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/05_meetings",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/90_archive",
+    "related_cards": [],
+    "top_level_documents": [
+      "research/90_archive/README.md",
+      "research/90_archive/root_readme_before_reorganization.md"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/ac_feasibility_20261023",
+    "related_cards": [
+      "P03"
+    ],
+    "top_level_documents": [
+      "research/ac_feasibility_20261023/HYPOTHESIS_AUDIT.json",
+      "research/ac_feasibility_20261023/README.md",
+      "research/ac_feasibility_20261023/REPORT_KO.md",
+      "research/ac_feasibility_20261023/SOURCE_AUDIT.json",
+      "research/ac_feasibility_20261023/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/active_fu_pairs_20261022",
+    "related_cards": [
+      "D08"
+    ],
+    "top_level_documents": [
+      "research/active_fu_pairs_20261022/COMPLETE.json",
+      "research/active_fu_pairs_20261022/PROTOCOL.json",
+      "research/active_fu_pairs_20261022/REPORT_KO.md",
+      "research/active_fu_pairs_20261022/REPORT_KO_INITIAL.md",
+      "research/active_fu_pairs_20261022/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/active_unlearning_audit_20261022",
+    "related_cards": [
+      "D08"
+    ],
+    "top_level_documents": [
+      "research/active_unlearning_audit_20261022/COMPLETE.json",
+      "research/active_unlearning_audit_20261022/PROTOCOL.json",
+      "research/active_unlearning_audit_20261022/REPORT_KO.md",
+      "research/active_unlearning_audit_20261022/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/asr_root_cause_20261022",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/asr_root_cause_20261022/AUDIT.json",
+      "research/asr_root_cause_20261022/CLIP_AUDIT.json",
+      "research/asr_root_cause_20261022/PROTOCOL.json",
+      "research/asr_root_cause_20261022/REPORT_KO.md",
+      "research/asr_root_cause_20261022/SOURCE_AUDIT.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/badfu_algorithm_audit_20261023",
+    "related_cards": [
+      "R01"
+    ],
+    "top_level_documents": [
+      "research/badfu_algorithm_audit_20261023/EVIDENCE_MANIFEST.json",
+      "research/badfu_algorithm_audit_20261023/FINISH_STATUS.json",
+      "research/badfu_algorithm_audit_20261023/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/boundary_mask_validation_20261022",
+    "related_cards": [
+      "D09"
+    ],
+    "top_level_documents": [
+      "research/boundary_mask_validation_20261022/COMPLETE.json",
+      "research/boundary_mask_validation_20261022/PROTOCOL.json",
+      "research/boundary_mask_validation_20261022/RESULTS.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/boundary_validation_20261022",
+    "related_cards": [
+      "D09"
+    ],
+    "top_level_documents": [
+      "research/boundary_validation_20261022/COMPLETE.json",
+      "research/boundary_validation_20261022/FINAL_RESULTS.json",
+      "research/boundary_validation_20261022/PROTOCOL.json",
+      "research/boundary_validation_20261022/REPORT_KO.txt",
+      "research/boundary_validation_20261022/RESULTS.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/confirmed_checkpoint_20261023",
+    "related_cards": [
+      "R01"
+    ],
+    "top_level_documents": [
+      "research/confirmed_checkpoint_20261023/BUNDLE_README.md",
+      "research/confirmed_checkpoint_20261023/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/continuation_20261023",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/continuation_20261023/BADFU_RESUMED_COMPLETED.json",
+      "research/continuation_20261023/LIVE_STATUS.json",
+      "research/continuation_20261023/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/cost_conditions_20261022",
+    "related_cards": [
+      "D10"
+    ],
+    "top_level_documents": [
+      "research/cost_conditions_20261022/ADDITIONAL_PROTOCOL.json",
+      "research/cost_conditions_20261022/REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/cross_attack_search_20261022",
+    "related_cards": [
+      "D13"
+    ],
+    "top_level_documents": [
+      "research/cross_attack_search_20261022/EXTENSION_PROTOCOL.json",
+      "research/cross_attack_search_20261022/OBSERVER_COMPLETE.json",
+      "research/cross_attack_search_20261022/SHORT_REPORT_KO.md",
+      "research/cross_attack_search_20261022/status.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/detection_decision_20261023",
+    "related_cards": [
+      "D17"
+    ],
+    "top_level_documents": [
+      "research/detection_decision_20261023/DECISION_KO.txt",
+      "research/detection_decision_20261023/FOLLOWUP_COMPLETED_20261023.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/DETECTION_REVIEW_20261021",
+    "related_cards": [
+      "D03"
+    ],
+    "top_level_documents": [
+      "research/DETECTION_REVIEW_20261021/fuba_queue_status.json",
+      "research/DETECTION_REVIEW_20261021/fuba_retry_status.json",
+      "research/DETECTION_REVIEW_20261021/normal_training_status.json",
+      "research/DETECTION_REVIEW_20261021/protocol.json",
+      "research/DETECTION_REVIEW_20261021/RESULTS.md",
+      "research/DETECTION_REVIEW_20261021/status.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/differential_audit_proposal_20261023",
+    "related_cards": [
+      "D15"
+    ],
+    "top_level_documents": [],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/dmcu_pilot_20261023",
+    "related_cards": [],
+    "top_level_documents": [
+      "research/dmcu_pilot_20261023/PILOT_RESULTS.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/existing_checkpoint_cost_20261023",
+    "related_cards": [
+      "D10"
+    ],
+    "top_level_documents": [
+      "research/existing_checkpoint_cost_20261023/EXISTING_BADFU_RESULT.json",
+      "research/existing_checkpoint_cost_20261023/REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/exposure_validation_20261023",
+    "related_cards": [
+      "D17"
+    ],
+    "top_level_documents": [
+      "research/exposure_validation_20261023/COMPLETE.json",
+      "research/exposure_validation_20261023/FINAL_EVIDENCE.json",
+      "research/exposure_validation_20261023/POST_RESULT_DIAGNOSTIC_CHECK.json",
+      "research/exposure_validation_20261023/PROTOCOL.json",
+      "research/exposure_validation_20261023/RESULTS.json",
+      "research/exposure_validation_20261023/RESULTS_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fed_mfs_experiment_20261023",
+    "related_cards": [],
+    "top_level_documents": [
+      "research/fed_mfs_experiment_20261023/BROAD_SWEEP_RESULTS.json",
+      "research/fed_mfs_experiment_20261023/CONVERGENCE_400_RESULTS.json",
+      "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/FU_gpu20261020",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/FU_gpu20261020/badfu_independent_replay_result.json",
+      "research/FU_gpu20261020/STATUS_AND_BADFU_CROSSCHECK.md",
+      "research/FU_gpu20261020/worker_status.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_algorithm_execution_20261025",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt",
+      "research/fuba_algorithm_execution_20261025/LIVE_AUDIT_PROTOCOL.txt",
+      "research/fuba_algorithm_execution_20261025/LIVE_AUDIT_REPORT_KO.txt",
+      "research/fuba_algorithm_execution_20261025/LIVE_STATUS.json",
+      "research/fuba_algorithm_execution_20261025/MONITOR_PROTOCOL.txt",
+      "research/fuba_algorithm_execution_20261025/POST_AUDIT.json",
+      "research/fuba_algorithm_execution_20261025/PROTOCOL.txt",
+      "research/fuba_algorithm_execution_20261025/README_KO.txt",
+      "research/fuba_algorithm_execution_20261025/REGISTRY_BEFORE_LIVE_AUDIT.json",
+      "research/fuba_algorithm_execution_20261025/REPORT_KO.txt",
+      "research/fuba_algorithm_execution_20261025/RESULT.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_checkpoint_recovery_20261023",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_checkpoint_recovery_20261023/continuation_README_before_recovery.md",
+      "research/fuba_checkpoint_recovery_20261023/DELIVERY_COMPLETE.json",
+      "research/fuba_checkpoint_recovery_20261023/LIVE_STATUS.json",
+      "research/fuba_checkpoint_recovery_20261023/LOCAL_COPY_COMPLETE.json",
+      "research/fuba_checkpoint_recovery_20261023/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_corrected_20261022",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_corrected_20261022/README_KO.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_execution_audit_20261025",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_execution_audit_20261025/PROTOCOL.txt",
+      "research/fuba_execution_audit_20261025/SOURCE_AUDIT.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_observation_20261023",
+    "related_cards": [
+      "D11"
+    ],
+    "top_level_documents": [
+      "research/fuba_observation_20261023/COST_COUNTEREXAMPLE.json",
+      "research/fuba_observation_20261023/README_KO.txt",
+      "research/fuba_observation_20261023/REMOTE_BADFU_BATCH_AUDIT.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_paper_completion_20261024",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_paper_completion_20261024/DELIVERY_REPORT_KO.txt",
+      "research/fuba_paper_completion_20261024/FINAL_REPORT_KO.txt",
+      "research/fuba_paper_completion_20261024/LIVE_STATUS.json",
+      "research/fuba_paper_completion_20261024/PROTOCOL.txt",
+      "research/fuba_paper_completion_20261024/REPORT_BEFORE_FINAL_DELIVERY.txt",
+      "research/fuba_paper_completion_20261024/REPORT_KO.txt",
+      "research/fuba_paper_completion_20261024/ROUND100_LOCAL_COPY_COMPLETE.json",
+      "research/fuba_paper_completion_20261024/SUPERVISION_RECOVERY_PROTOCOL.txt",
+      "research/fuba_paper_completion_20261024/SUPERVISION_RECOVERY_REPORT_KO.txt",
+      "research/fuba_paper_completion_20261024/UTILITY31_REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_paper_flow_20261024",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_paper_flow_20261024/ASR_ALERT19_PROTOCOL.txt",
+      "research/fuba_paper_flow_20261024/ASR_ALERT19_REPORT_KO.txt",
+      "research/fuba_paper_flow_20261024/CAP24_CACHED_G_REPLAY_PROTOCOL.txt",
+      "research/fuba_paper_flow_20261024/CAP24_DIAGNOSIS_REPORT_KO.txt",
+      "research/fuba_paper_flow_20261024/CAP24_DIAGNOSIS_REPORT_KO_v1.txt",
+      "research/fuba_paper_flow_20261024/CAP24_REPLAY_PROTOCOL.txt",
+      "research/fuba_paper_flow_20261024/CAP24_REPORT_ERRATUM.txt",
+      "research/fuba_paper_flow_20261024/PROTOCOL.txt",
+      "research/fuba_paper_flow_20261024/REPORT_KO.txt",
+      "research/fuba_paper_flow_20261024/TERMINAL23_LOCAL_COPY_COMPLETE.json",
+      "research/fuba_paper_flow_20261024/TERMINAL23_REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_paper_rebuild_20261024",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_paper_rebuild_20261024/LIVE_STATUS.json",
+      "research/fuba_paper_rebuild_20261024/PROTOCOL.txt",
+      "research/fuba_paper_rebuild_20261024/REPORT_KO.txt",
+      "research/fuba_paper_rebuild_20261024/TERMINAL_LOCAL_COPY_COMPLETE.json",
+      "research/fuba_paper_rebuild_20261024/TERMINAL_REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_post_unlearning_20261025",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_post_unlearning_20261025/LOCAL_COPY_COMPLETE.json",
+      "research/fuba_post_unlearning_20261025/PROTOCOL.txt",
+      "research/fuba_post_unlearning_20261025/REPORT_KO.txt",
+      "research/fuba_post_unlearning_20261025/RESULT.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_projection_check_20261025",
+    "related_cards": [
+      "D19"
+    ],
+    "top_level_documents": [
+      "research/fuba_projection_check_20261025/PROTOCOL.txt",
+      "research/fuba_projection_check_20261025/REPORT_KO.txt",
+      "research/fuba_projection_check_20261025/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/fuba_suppression_audit_20261024",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/fuba_suppression_audit_20261024/PROTOCOL.md",
+      "research/fuba_suppression_audit_20261024/REGRESSION_RESULTS.json",
+      "research/fuba_suppression_audit_20261024/REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/INFLUENCE_RUN_20261022",
+    "related_cards": [
+      "D02"
+    ],
+    "top_level_documents": [
+      "research/INFLUENCE_RUN_20261022/AUDIT_RESULTS.json",
+      "research/INFLUENCE_RUN_20261022/AUDITOR_LABELS.json",
+      "research/INFLUENCE_RUN_20261022/endpoint_status.json",
+      "research/INFLUENCE_RUN_20261022/FINAL_REPORT.md",
+      "research/INFLUENCE_RUN_20261022/FINAL_SUMMARY.json",
+      "research/INFLUENCE_RUN_20261022/forensics_status.json",
+      "research/INFLUENCE_RUN_20261022/history_summary.json",
+      "research/INFLUENCE_RUN_20261022/PROTOCOL.json",
+      "research/INFLUENCE_RUN_20261022/report_updater_pid.txt",
+      "research/INFLUENCE_RUN_20261022/RESULTS.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/latent_differential_audit_20261023",
+    "related_cards": [],
+    "top_level_documents": [
+      "research/latent_differential_audit_20261023/AUDIT_RESULTS.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/limited_information_literature_20261022",
+    "related_cards": [
+      "T01"
+    ],
+    "top_level_documents": [
+      "research/limited_information_literature_20261022/REPORT_KO.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/manifold_projection_check_20261025",
+    "related_cards": [
+      "D18"
+    ],
+    "top_level_documents": [
+      "research/manifold_projection_check_20261025/POSTHOC_DIAGNOSTIC_PROTOCOL.txt",
+      "research/manifold_projection_check_20261025/PROTOCOL.txt",
+      "research/manifold_projection_check_20261025/REPORT_KO.txt",
+      "research/manifold_projection_check_20261025/SERVER_COMPLETED.json",
+      "research/manifold_projection_check_20261025/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/mechanism_first_20261022",
+    "related_cards": [
+      "T01"
+    ],
+    "top_level_documents": [
+      "research/mechanism_first_20261022/audit_results.json",
+      "research/mechanism_first_20261022/PROTOCOL.json",
+      "research/mechanism_first_20261022/REPORT_KO.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/MOVE_TO_DISLAB_20261021",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/MOVE_TO_DISLAB_20261021/power_hold_status.json",
+      "research/MOVE_TO_DISLAB_20261021/README.md",
+      "research/MOVE_TO_DISLAB_20261021/transfer_status.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/multiseed_actual_fu_20261022",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/multiseed_actual_fu_20261022/INCIDENT_STATUS_20261023_0230.json",
+      "research/multiseed_actual_fu_20261022/PROTOCOL_KO.txt",
+      "research/multiseed_actual_fu_20261022/README.md",
+      "research/multiseed_actual_fu_20261022/REMOTE_PROTOCOL.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/paired_probe_validation_20261023",
+    "related_cards": [
+      "D15",
+      "D16"
+    ],
+    "top_level_documents": [
+      "research/paired_probe_validation_20261023/COMPLETE.json",
+      "research/paired_probe_validation_20261023/DIRECTION_STATUS_20261023.txt",
+      "research/paired_probe_validation_20261023/FAMILY_SUMMARY.json",
+      "research/paired_probe_validation_20261023/FINAL_EVIDENCE.json",
+      "research/paired_probe_validation_20261023/LAYER_DIAGNOSTIC_PROTOCOL.json",
+      "research/paired_probe_validation_20261023/PROTOCOL.json",
+      "research/paired_probe_validation_20261023/README_KO.txt",
+      "research/paired_probe_validation_20261023/REPORT_KO.txt",
+      "research/paired_probe_validation_20261023/RESULT_SCALARS.json",
+      "research/paired_probe_validation_20261023/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/rapid_checkpoint_validation_20261023",
+    "related_cards": [
+      "D10"
+    ],
+    "top_level_documents": [
+      "research/rapid_checkpoint_validation_20261023/FINAL_RESULT.json",
+      "research/rapid_checkpoint_validation_20261023/PROTOCOL.json",
+      "research/rapid_checkpoint_validation_20261023/REMOTE_EARLY_GATE_PROTOCOL.json",
+      "research/rapid_checkpoint_validation_20261023/REMOTE_FUBA_RUNTIME_AUDIT.json",
+      "research/rapid_checkpoint_validation_20261023/REPORT_KO.txt"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/request_conditioned_federaser_20261022",
+    "related_cards": [
+      "D12"
+    ],
+    "top_level_documents": [
+      "research/request_conditioned_federaser_20261022/EVALUATION_COMPLETE.json",
+      "research/request_conditioned_federaser_20261022/FINAL_REPORT_KO.md",
+      "research/request_conditioned_federaser_20261022/PIPELINE_COMPLETE.json",
+      "research/request_conditioned_federaser_20261022/PROTOCOL.json",
+      "research/request_conditioned_federaser_20261022/REQUEST_ID_AUDIT.json",
+      "research/request_conditioned_federaser_20261022/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/rule_transform_20261022",
+    "related_cards": [
+      "D14"
+    ],
+    "top_level_documents": [
+      "research/rule_transform_20261022/COMPLETE.json",
+      "research/rule_transform_20261022/PROTOCOL.json",
+      "research/rule_transform_20261022/RESULTS_KO.md",
+      "research/rule_transform_20261022/RULE_VISUAL_AUDIT.json",
+      "research/rule_transform_20261022/SHORT_RESULTS_KO.md",
+      "research/rule_transform_20261022/status.json",
+      "research/rule_transform_20261022/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/server_features_20261022",
+    "related_cards": [
+      "D05",
+      "D06",
+      "D07"
+    ],
+    "top_level_documents": [
+      "research/server_features_20261022/clients_status.json",
+      "research/server_features_20261022/COMPLETE.json",
+      "research/server_features_20261022/forgetting_status.json",
+      "research/server_features_20261022/freeeagle_status.json",
+      "research/server_features_20261022/PILOT_SUMMARY.json",
+      "research/server_features_20261022/PRIMARY_SUMMARY.json",
+      "research/server_features_20261022/PROTOCOL.json",
+      "research/server_features_20261022/REPORT_KO.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/server_observability_20261022",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research/stage1_20261020",
+    "related_cards": [
+      "D03"
+    ],
+    "top_level_documents": [
+      "research/stage1_20261020/badfu_full_evaluation_audit.json",
+      "research/stage1_20261020/configuration_audit.json",
+      "research/stage1_20261020/cover_image_provenance_audit.json",
+      "research/stage1_20261020/fuba_scaling_code_audit.json",
+      "research/stage1_20261020/PROTOCOL.json",
+      "research/stage1_20261020/README.md",
+      "research/stage1_20261020/summary.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/STAGE1_BADFU_TEST_20261021",
+    "related_cards": [
+      "D03"
+    ],
+    "top_level_documents": [
+      "research/STAGE1_BADFU_TEST_20261021/protocol.json",
+      "research/STAGE1_BADFU_TEST_20261021/README.md",
+      "research/STAGE1_BADFU_TEST_20261021/status.json",
+      "research/STAGE1_BADFU_TEST_20261021/supplement_protocol.json",
+      "research/STAGE1_BADFU_TEST_20261021/supplement_results.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/stage1_fresh_20261020",
+    "related_cards": [
+      "R02"
+    ],
+    "top_level_documents": [
+      "research/stage1_fresh_20261020/concurrent_status.json",
+      "research/stage1_fresh_20261020/dislab_execution_status.json",
+      "research/stage1_fresh_20261020/execution_audit.json",
+      "research/stage1_fresh_20261020/history_transfer_status.json",
+      "research/stage1_fresh_20261020/README.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/two_stage_detection_20261021",
+    "related_cards": [
+      "D04"
+    ],
+    "top_level_documents": [
+      "research/two_stage_detection_20261021/PATCH_COMPARISON_AUDIT.md",
+      "research/two_stage_detection_20261021/PROTOCOL.json",
+      "research/two_stage_detection_20261021/REPORT_KO.md",
+      "research/two_stage_detection_20261021/RESULTS_KO.md"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research/UNKNOWN_TRIGGER_RUN_20261021",
+    "related_cards": [
+      "D03"
+    ],
+    "top_level_documents": [
+      "research/UNKNOWN_TRIGGER_RUN_20261021/INFLUENCE_AUDIT_20261022.md",
+      "research/UNKNOWN_TRIGGER_RUN_20261021/PROTOCOL.json",
+      "research/UNKNOWN_TRIGGER_RUN_20261021/RESULTS.md",
+      "research/UNKNOWN_TRIGGER_RUN_20261021/SUMMARY.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research_20261018/adaptive_matched",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/adaptive_matched/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/adaptive_v1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/adaptive_v1/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/adaptive_v2",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/adaptive_v2/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/all_or_nothing",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/all_or_nothing/archived_result.json",
+      "research_20261018/all_or_nothing/channel_direction_protocol.json",
+      "research_20261018/all_or_nothing/CHANNEL_DIRECTION_REPORT_KO.txt",
+      "research_20261018/all_or_nothing/channel_direction_result.json",
+      "research_20261018/all_or_nothing/channel_direction_summary.json",
+      "research_20261018/all_or_nothing/comparison_summary.json",
+      "research_20261018/all_or_nothing/conv_ratio_result.json",
+      "research_20261018/all_or_nothing/conv_ratio_summary.json",
+      "research_20261018/all_or_nothing/CONV_RESULT_KO.txt",
+      "research_20261018/all_or_nothing/fc_spectral_protocol.json",
+      "research_20261018/all_or_nothing/fc_spectral_result.json",
+      "research_20261018/all_or_nothing/fc_spectral_summary.json",
+      "research_20261018/all_or_nothing/joint_feature_summary.json",
+      "research_20261018/all_or_nothing/noise_cause_protocol.json",
+      "research_20261018/all_or_nothing/NOISE_CAUSE_REPORT_KO.txt",
+      "research_20261018/all_or_nothing/noise_cause_result.json",
+      "research_20261018/all_or_nothing/noise_cause_summary.json",
+      "research_20261018/all_or_nothing/one_step_order_result.json",
+      "research_20261018/all_or_nothing/one_step_result.json",
+      "research_20261018/all_or_nothing/orthogonal_conv_result.json",
+      "research_20261018/all_or_nothing/orthogonal_fc_result.json",
+      "research_20261018/all_or_nothing/orthogonal_residual_protocol.json",
+      "research_20261018/all_or_nothing/orthogonal_residual_summary.json",
+      "research_20261018/all_or_nothing/protocol.json",
+      "research_20261018/all_or_nothing/protocol_order.json",
+      "research_20261018/all_or_nothing/protocol_ratio_followup.json",
+      "research_20261018/all_or_nothing/pure_layer4_protocol.json",
+      "research_20261018/all_or_nothing/PURE_LAYER4_REPORT_KO.txt",
+      "research_20261018/all_or_nothing/pure_layer4_result.json",
+      "research_20261018/all_or_nothing/pure_layer4_summary.json",
+      "research_20261018/all_or_nothing/ratio_followup_result.json",
+      "research_20261018/all_or_nothing/RESULT_REPORT_KO.txt",
+      "research_20261018/all_or_nothing/SPECTRAL_SYNTHETIC_RESULT_KO.txt",
+      "research_20261018/all_or_nothing/synthetic_patch_protocol.json",
+      "research_20261018/all_or_nothing/synthetic_patch_result.json",
+      "research_20261018/all_or_nothing/synthetic_patch_summary.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/clean_transition_audit",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/clean_transition_audit/AUDIT.json",
+      "research_20261018/clean_transition_audit/RESULTS.txt"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/conditional_audit",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/conditional_source",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/conditional_source/ANALYTIC_COUNTEREXAMPLE.json",
+      "research_20261018/conditional_source/DECISION_RULE.json",
+      "research_20261018/conditional_source/protocol.json",
+      "research_20261018/conditional_source/RESULT_REPORT_KO.txt",
+      "research_20261018/conditional_source/VALIDATION_AUDIT.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/counterexample_bd5",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/counterexample_bd5/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/counterexample_v1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/counterexample_v1/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/deletion_paths",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/deletion_paths/audit.json",
+      "research_20261018/deletion_paths/PROTOCOL.md",
+      "research_20261018/deletion_paths/REPORT.md",
+      "research_20261018/deletion_paths/summary.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/fl_information",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/fl_information/analytic_counterexamples.json",
+      "research_20261018/fl_information/block_interventions_results.json",
+      "research_20261018/fl_information/DIFFERENTIAL_RESULTS.md",
+      "research_20261018/fl_information/differential_summary.json",
+      "research_20261018/fl_information/fedavg_v1_results.json",
+      "research_20261018/fl_information/final_evidence_audit.json",
+      "research_20261018/fl_information/graft_audit_results.json",
+      "research_20261018/fl_information/local_witness_benign_prior74_results.json",
+      "research_20261018/fl_information/local_witness_confirm74_results.json",
+      "research_20261018/fl_information/local_witness_confirm74_safe_results.json",
+      "research_20261018/fl_information/local_witness_controls71_results.json",
+      "research_20261018/fl_information/local_witness_label_noise74_results.json",
+      "research_20261018/fl_information/local_witness_matched_results.json",
+      "research_20261018/fl_information/local_witness_protocol.md",
+      "research_20261018/fl_information/local_witness_requests_results.json",
+      "research_20261018/fl_information/local_witness_v1_results.json",
+      "research_20261018/fl_information/local_witness_v2_results.json",
+      "research_20261018/fl_information/local_witness_v3_results.json",
+      "research_20261018/fl_information/NOVELTY_DECISION.md",
+      "research_20261018/fl_information/optimized_ablation71_73_results.json",
+      "research_20261018/fl_information/optimized_difference71_results.json",
+      "research_20261018/fl_information/optimized_difference72_73_results.json",
+      "research_20261018/fl_information/optimized_difference74_results.json",
+      "research_20261018/fl_information/PARTIAL_STATUS.json",
+      "research_20261018/fl_information/PARTIAL_STATUS_0218.json",
+      "research_20261018/fl_information/PROPOSAL_VALIDITY_AUDIT.md",
+      "research_20261018/fl_information/PROTOCOL.md",
+      "research_20261018/fl_information/remote_training_audit.json",
+      "research_20261018/fl_information/request_baselines_results.json",
+      "research_20261018/fl_information/RESULT_TABLE.md",
+      "research_20261018/fl_information/source_version_audit.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/fresh_bd5",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/fresh_bd5/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/fresh_clean5",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/fresh_clean5/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/fresh_fu",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/fresh_fu/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/fresh_fu_remove1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/fresh_fu_remove1/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/matched_34",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/matched_34/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/matched_4",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/matched_4/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/pair_purify",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/pair_purify/protocol_v1.json",
+      "research_20261018/pair_purify/protocol_v2.json",
+      "research_20261018/pair_purify/protocol_v4.json",
+      "research_20261018/pair_purify/RESEARCH_STATUS.json",
+      "research_20261018/pair_purify/RESULT_REPORT.txt",
+      "research_20261018/pair_purify/RESULTS_BUNDLE.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/pilot_v2",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/pilot_v2/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/pre_phases",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/pre_phases/results.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/response_transport",
+    "related_cards": [
+      "P01"
+    ],
+    "top_level_documents": [
+      "research_20261018/response_transport/ALL_COMPLETE.json",
+      "research_20261018/response_transport/protocol.json",
+      "research_20261018/response_transport/protocol_iterative.json",
+      "research_20261018/response_transport/protocol_small_step.json",
+      "research_20261018/response_transport/RESULT_REPORT.txt",
+      "research_20261018/response_transport/RESULT_STATUS.json"
+    ],
+    "review": "대표 기록 재검토·카드 연결"
+  },
+  {
+    "path": "research_20261018/target_logit_mask",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/target_logit_mask/seed74_result.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261018/weight_surgery_audit",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261018/weight_surgery_audit/protocol.json",
+      "research_20261018/weight_surgery_audit/RESULT_REPORT.txt"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261019/gradient_scale_v1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261019/gradient_scale_v1/FIRST_RESULTS_KO.txt",
+      "research_20261019/gradient_scale_v1/protocol.json",
+      "research_20261019/gradient_scale_v1/remote_status.json",
+      "research_20261019/gradient_scale_v1/REPORT_REMOTE_KO.txt",
+      "research_20261019/gradient_scale_v1/results_remote.json",
+      "research_20261019/gradient_scale_v1/summary_remote.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261019/normal_stress_v1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261019/normal_stress_v1/EARLY_RESULT_KO.txt",
+      "research_20261019/normal_stress_v1/protocol.json",
+      "research_20261019/normal_stress_v1/remote_status.json",
+      "research_20261019/normal_stress_v1/REPORT_REMOTE_KO.txt",
+      "research_20261019/normal_stress_v1/results_remote.json",
+      "research_20261019/normal_stress_v1/summary_remote.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_20261019/patch_scale_v1",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_20261019/patch_scale_v1/completed_results_remote.json",
+      "research_20261019/patch_scale_v1/INTERIM_REPORT_KO.txt",
+      "research_20261019/patch_scale_v1/protocol.json",
+      "research_20261019/patch_scale_v1/REMOTE_REPORT_KO.txt",
+      "research_20261019/patch_scale_v1/remote_status.json",
+      "research_20261019/patch_scale_v1/remote_summary.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_audit_20261019/detection",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_audit_20261019/evidence",
+    "related_cards": [],
+    "top_level_documents": [
+      "research_audit_20261019/evidence/verified_summary.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_audit_20261019/figures",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "research_audit_20261019/purification",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "review_BadFU_defend/experiments/artifacts",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "review_BadFU_defend/experiments/detection",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "review_BadFU_defend/experiments/purification",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "review_BadFU_defend/experiments/shared",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/detection",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/evidence",
+    "related_cards": [],
+    "top_level_documents": [
+      "pr_reports/evidence/gradient_results.json",
+      "pr_reports/evidence/gradient_summary.json",
+      "pr_reports/evidence/normal_results.json",
+      "pr_reports/evidence/normal_summary.json",
+      "pr_reports/evidence/patch_summary.json"
+    ],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/figures",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/literature",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/mechanism",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/pending",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/purification",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  },
+  {
+    "path": "pr_reports/source_snapshots",
+    "related_cards": [],
+    "top_level_documents": [],
+    "review": "폴더 색인만·내용 판정 미재검토"
+  }
+]

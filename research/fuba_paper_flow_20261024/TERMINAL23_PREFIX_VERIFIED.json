@@ -1,0 +1,297 @@
+{
+  "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+  "state": "verified_stopped_prefix",
+  "committed_rounds": 23,
+  "intended_rounds": 100,
+  "run_completed": false,
+  "scientific_verdict": "stopped_gamma_cap10_round24_client3; final_gate_unmet",
+  "source_profile_hashes": "passed",
+  "all_file_hashes_and_chain": "passed",
+  "exact_aggregation_max_error": 0,
+  "roles_verified": 184,
+  "same_generator_groups_verified": 28,
+  "aggregate_generator_checks": "passed",
+  "reused_completed_roles_not_new_training": [
+    {
+      "round": 16,
+      "client": 1,
+      "origin": "reused_completed_v3_round16_client1"
+    }
+  ],
+  "strict_CPU_forward": "passed",
+  "round_metrics": [
+    {
+      "round": 1,
+      "sha256": "f3c3e88f0922bdf4b8fb38b499ad2a6a83debd18dac537bc8f5fd500a31b4d1e",
+      "CA_pct": 10.79,
+      "ASR_pct": null
+    },
+    {
+      "round": 2,
+      "sha256": "f165df6bdbc9d92c8bb442d7a346c4dd9b4dcfa72a8c8f81542b8d665a06bfe3",
+      "CA_pct": 28.46,
+      "ASR_pct": null
+    },
+    {
+      "round": 3,
+      "sha256": "1b89a4f6aac8f3122d005debaf204cc455fec56d702aced5f0258ba20c52a848",
+      "CA_pct": 54.15,
+      "ASR_pct": null
+    },
+    {
+      "round": 4,
+      "sha256": "9e58157a6739374add3c501cec7db3b931c5b55ca9a766f8e99bda4a8ff8a66c",
+      "CA_pct": 62.0,
+      "ASR_pct": null
+    },
+    {
+      "round": 5,
+      "sha256": "146dc4d024ecd03406233b2c070743e2ea1c243b9670f7c144bcff5289339fba",
+      "CA_pct": 67.53,
+      "ASR_pct": null
+    },
+    {
+      "round": 6,
+      "sha256": "de305037e5a1473eb18c0ab0c12e988ec257e90ef2b31b595e20ade7400b10fc",
+      "CA_pct": 69.62,
+      "ASR_pct": 5.088888888888889
+    },
+    {
+      "round": 7,
+      "sha256": "d28fc8992ce68f6d5a33177337c3c25e4da8a50fd12d8f656946e95405c27dd9",
+      "CA_pct": 71.63,
+      "ASR_pct": 7.644444444444445
+    },
+    {
+      "round": 8,
+      "sha256": "27e9eb496d934d862d1efa4b319e22b190d15edd0b1e22efc5b4b146b561fe80",
+      "CA_pct": 72.6,
+      "ASR_pct": 6.9222222222222225
+    },
+    {
+      "round": 9,
+      "sha256": "11939c2ad5fe6cd695221755cbb5ba9104765a380ae596a092b7f4a637d82550",
+      "CA_pct": 70.7,
+      "ASR_pct": 12.555555555555555
+    },
+    {
+      "round": 10,
+      "sha256": "c572cd406c6911cc4e404afc78be858e9cef15e6da0ce85fedd102dc1e34d1a3",
+      "CA_pct": 72.94,
+      "ASR_pct": 8.866666666666667
+    },
+    {
+      "round": 11,
+      "sha256": "b165888d1eb069453f45ada5890fa15ac73afaec194825f77a87eca2942c3de9",
+      "CA_pct": 74.75,
+      "ASR_pct": 8.61111111111111
+    },
+    {
+      "round": 12,
+      "sha256": "d17548e4eaf0c6009a91ec07d9c1c4ae894284a46075028d67c7acc095dc8f80",
+      "CA_pct": 71.77,
+      "ASR_pct": 12.588888888888889
+    },
+    {
+      "round": 13,
+      "sha256": "40408484a7983d98fd082189b1b54be42a33dafc6dd479a2923791f75e57bf0e",
+      "CA_pct": 75.97,
+      "ASR_pct": 10.944444444444445
+    },
+    {
+      "round": 14,
+      "sha256": "5690302d86d7b2011a1bc82a33fe89939437bd151c064d24f994102fcc74d597",
+      "CA_pct": 75.43,
+      "ASR_pct": 8.677777777777777
+    },
+    {
+      "round": 15,
+      "sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+      "CA_pct": 76.1,
+      "ASR_pct": 8.133333333333333
+    },
+    {
+      "round": 16,
+      "sha256": "3174ee2c638a82641fa3a04e5be1462ff1a49479cd82935c8c316aa15efb4a66",
+      "CA_pct": 76.86,
+      "ASR_pct": 9.377777777777778
+    },
+    {
+      "round": 17,
+      "sha256": "4c6b2e9356bf10298726bbf6b9882d81c7961994743f6ffb58ad0645fa2cd3ae",
+      "CA_pct": 76.54,
+      "ASR_pct": 12.044444444444444
+    },
+    {
+      "round": 18,
+      "sha256": "b574bdf51613cf53d739c4914acfcd92921a97847d737d395c7de1749be0e8c7",
+      "CA_pct": 76.83,
+      "ASR_pct": 11.544444444444444
+    },
+    {
+      "round": 19,
+      "sha256": "e0701e83e59949002c9e2de50af2aeedcb4405fc12ba03a2407ea73658e61f5a",
+      "CA_pct": 76.92,
+      "ASR_pct": 12.833333333333334
+    },
+    {
+      "round": 20,
+      "sha256": "0ba444aeef7e6801e1b18d3084a5e12a8bd75958d2b0bce79ba4e1aa36a336b3",
+      "CA_pct": 77.05,
+      "ASR_pct": 10.933333333333334
+    },
+    {
+      "round": 21,
+      "sha256": "5b2c5158187e87f098240b0d6514e4fed1a46b4786f2dd68dd78bce0b71a5118",
+      "CA_pct": 76.8,
+      "ASR_pct": 11.233333333333333
+    },
+    {
+      "round": 22,
+      "sha256": "12e4e0341cb0199f29a9066a4c7658c290c6342330e8191363801b7f6c358dfe",
+      "CA_pct": 76.63,
+      "ASR_pct": 12.144444444444444
+    },
+    {
+      "round": 23,
+      "sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+      "CA_pct": 77.12,
+      "ASR_pct": 13.944444444444445
+    }
+  ],
+  "manifest_sha256": "e3a375808a22d4bfcf7579cef852c9cfdd661bda4a4ab94259002d422efae6bc",
+  "last_checkpoint_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+  "failure_role": {
+    "round": 24,
+    "client": 3,
+    "rank": 1,
+    "seed": 20501026,
+    "role": "attacker",
+    "started_unix": 1792819856.2071605,
+    "phase_events": [
+      {
+        "phase": "generator",
+        "epoch": 5,
+        "epochs": 5,
+        "examples": 2250,
+        "classifier_phase": 0,
+        "updated_unix": 1792819864.398453
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 1,
+        "updated_unix": 1792819864.4721105
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 1,
+        "updated_unix": 1792819927.7985334
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 2,
+        "updated_unix": 1792819927.856882
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 2,
+        "updated_unix": 1792819965.727337
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 3,
+        "updated_unix": 1792819965.8509836
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 3,
+        "updated_unix": 1792820031.506067
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 4,
+        "updated_unix": 1792820031.5531588
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 4,
+        "updated_unix": 1792820069.4624152
+      }
+    ],
+    "state": "failed",
+    "train_samples": 2250,
+    "validation_samples": 250,
+    "validation_disjoint": true,
+    "training_epsilon": 0.29464565611543514,
+    "evaluation_epsilon": 0.05,
+    "latest": {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 4,
+      "updated_unix": 1792820069.4624152
+    },
+    "generator_before_classifier_sha256": "3497b8ccb35b3cee35d36eccd07eed4a0a3438bb33cea6314ae56de5797d4a43",
+    "error": "RuntimeError('Gamma10 search cap reached; no unsupported maximum claim')",
+    "scores": null,
+    "failure_model_evidence": {
+      "path": "round0024_client03.pt",
+      "sha256": "ac42195dacc1aeb3632b14548060b2203d78891aaf2c14d479f72da156f9d54f",
+      "bytes": 75978284
+    }
+  },
+  "failure_incoming_BN_counter_casts": [
+    "bn1.num_batches_tracked",
+    "layer1.0.bn1.num_batches_tracked",
+    "layer1.0.bn2.num_batches_tracked",
+    "layer1.1.bn1.num_batches_tracked",
+    "layer1.1.bn2.num_batches_tracked",
+    "layer2.0.bn1.num_batches_tracked",
+    "layer2.0.bn2.num_batches_tracked",
+    "layer2.0.shortcut.1.num_batches_tracked",
+    "layer2.1.bn1.num_batches_tracked",
+    "layer2.1.bn2.num_batches_tracked",
+    "layer3.0.bn1.num_batches_tracked",
+    "layer3.0.bn2.num_batches_tracked",
+    "layer3.0.shortcut.1.num_batches_tracked",
+    "layer3.1.bn1.num_batches_tracked",
+    "layer3.1.bn2.num_batches_tracked",
+    "layer4.0.bn1.num_batches_tracked",
+    "layer4.0.bn2.num_batches_tracked",
+    "layer4.0.shortcut.1.num_batches_tracked",
+    "layer4.1.bn1.num_batches_tracked",
+    "layer4.1.bn2.num_batches_tracked"
+  ],
+  "failure_diagnostic_missing": [
+    "per_gamma_scores",
+    "embedded_model",
+    "representative_model",
+    "submitted_at_cap"
+  ],
+  "cap_exceeded_or_retraining_performed": false,
+  "confirmed_pre_post_pair": false,
+  "allowed_purposes": [
+    "diagnostic"
+  ]
+}

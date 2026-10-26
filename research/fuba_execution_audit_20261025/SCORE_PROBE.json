@@ -1,0 +1,160 @@
+{
+  "state": "completed_read_only_diagnostic",
+  "source_case_id": "fuba.v5.s20261023.pre.round100",
+  "related_cards": [
+    "R02"
+  ],
+  "round": 100,
+  "client": 1,
+  "role_record_sha256": "5c17eb811075afe2c03674d248359532596e43662fa47cbad883c7a577050eb8",
+  "phase_evidence": [
+    {
+      "path": "classifier_phase01.pt",
+      "sha256": "ec784f720cf34c74c9a8b4498a95e2b163b3eb2dd6a4f217f5d49bb85d504176",
+      "bytes": 44783546
+    },
+    {
+      "path": "classifier_phase02.pt",
+      "sha256": "2e4e100d0ea07729a807aa55373f8a7fed57324eec3b7aba68f57b2aba56de9a",
+      "bytes": 44783546
+    },
+    {
+      "path": "classifier_phase03.pt",
+      "sha256": "8430a62e1c8e47db3b04899be30d0b928446eb888bcf2ee0d91ea7f668d2c722",
+      "bytes": 44783546
+    },
+    {
+      "path": "classifier_phase04.pt",
+      "sha256": "bd104a0b060b4b8205378f1254b5bdcb60cc91f1e119ebed4cc17aba0d6344f6",
+      "bytes": 44783546
+    }
+  ],
+  "same_generator_digest": "0c9e6a3f85044ad3bd577950fce1515f5fca72a962ecae0593fa0cadda4c5777",
+  "formula": "0.25*incoming + 0.75*representative, gamma0; original profile ratio unchanged",
+  "without_extra_BN": {
+    "local": {
+      "N": 250,
+      "non_target_N": 224,
+      "correct": 211,
+      "target_successes": 48,
+      "CA_pct": 84.4,
+      "ASR_pct": 21.428571428571427
+    },
+    "full": {
+      "N": 10000,
+      "non_target_N": 9000,
+      "correct": 7906,
+      "target_successes": 2287,
+      "CA_pct": 79.06,
+      "ASR_pct": 25.41111111111111
+    }
+  },
+  "with_v5_BN": {
+    "local": {
+      "N": 250,
+      "non_target_N": 224,
+      "correct": 212,
+      "target_successes": 48,
+      "CA_pct": 84.8,
+      "ASR_pct": 21.428571428571427
+    },
+    "full": {
+      "N": 10000,
+      "non_target_N": 9000,
+      "correct": 7904,
+      "target_successes": 2306,
+      "CA_pct": 79.04,
+      "ASR_pct": 25.622222222222224
+    }
+  },
+  "original_recorded_gamma0": {
+    "gamma": 0.0,
+    "ASR_pct": 21.428571428571427
+  },
+  "all_parameters_identical": true,
+  "changed_buffers": [
+    "bn1.running_mean",
+    "bn1.running_var",
+    "bn1.num_batches_tracked",
+    "layer1.0.bn1.running_mean",
+    "layer1.0.bn1.running_var",
+    "layer1.0.bn1.num_batches_tracked",
+    "layer1.0.bn2.running_mean",
+    "layer1.0.bn2.running_var",
+    "layer1.0.bn2.num_batches_tracked",
+    "layer1.1.bn1.running_mean",
+    "layer1.1.bn1.running_var",
+    "layer1.1.bn1.num_batches_tracked",
+    "layer1.1.bn2.running_mean",
+    "layer1.1.bn2.running_var",
+    "layer1.1.bn2.num_batches_tracked",
+    "layer2.0.bn1.running_mean",
+    "layer2.0.bn1.running_var",
+    "layer2.0.bn1.num_batches_tracked",
+    "layer2.0.bn2.running_mean",
+    "layer2.0.bn2.running_var",
+    "layer2.0.bn2.num_batches_tracked",
+    "layer2.0.shortcut.1.running_mean",
+    "layer2.0.shortcut.1.running_var",
+    "layer2.0.shortcut.1.num_batches_tracked",
+    "layer2.1.bn1.running_mean",
+    "layer2.1.bn1.running_var",
+    "layer2.1.bn1.num_batches_tracked",
+    "layer2.1.bn2.running_mean",
+    "layer2.1.bn2.running_var",
+    "layer2.1.bn2.num_batches_tracked",
+    "layer3.0.bn1.running_mean",
+    "layer3.0.bn1.running_var",
+    "layer3.0.bn1.num_batches_tracked",
+    "layer3.0.bn2.running_mean",
+    "layer3.0.bn2.running_var",
+    "layer3.0.bn2.num_batches_tracked",
+    "layer3.0.shortcut.1.running_mean",
+    "layer3.0.shortcut.1.running_var",
+    "layer3.0.shortcut.1.num_batches_tracked",
+    "layer3.1.bn1.running_mean",
+    "layer3.1.bn1.running_var",
+    "layer3.1.bn1.num_batches_tracked",
+    "layer3.1.bn2.running_mean",
+    "layer3.1.bn2.running_var",
+    "layer3.1.bn2.num_batches_tracked",
+    "layer4.0.bn1.running_mean",
+    "layer4.0.bn1.running_var",
+    "layer4.0.bn1.num_batches_tracked",
+    "layer4.0.bn2.running_mean",
+    "layer4.0.bn2.running_var",
+    "layer4.0.bn2.num_batches_tracked",
+    "layer4.0.shortcut.1.running_mean",
+    "layer4.0.shortcut.1.running_var",
+    "layer4.0.shortcut.1.num_batches_tracked",
+    "layer4.1.bn1.running_mean",
+    "layer4.1.bn1.running_var",
+    "layer4.1.bn1.num_batches_tracked",
+    "layer4.1.bn2.running_mean",
+    "layer4.1.bn2.running_var",
+    "layer4.1.bn2.num_batches_tracked"
+  ],
+  "no_classifier_or_G_training": true,
+  "epsilon": 0.05,
+  "pixels": "[0,1]",
+  "layout": "contiguous_NCHW",
+  "both_models_eval": true,
+  "files": [
+    {
+      "path": "expected_without_extra_BN.pt",
+      "sha256": "b9aaec332097106c3a51a7948c3a3bd5d5900fdf4d073af1398f69b9c111580b",
+      "bytes": 44770046
+    },
+    {
+      "path": "expected_with_v5_BN.pt",
+      "sha256": "725157c6b06954e922b1b6dac77fd5af53f36aa1b940b6da858d3f9b82206c06",
+      "bytes": 44770046
+    }
+  ],
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "reproduction_success": false
+}

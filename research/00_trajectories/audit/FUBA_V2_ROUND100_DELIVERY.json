@@ -1,0 +1,40 @@
+{
+  "state": "copied_and_verified",
+  "local_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100",
+  "manifest_sha256": "c5a7f605200c99d1e6b9ae45d8c548528010d87d07d1dfff8bc089ba706933ea",
+  "seal_sha256": "bc059b95ca331c008db8506c64ee1389fd06eeddb3a59a353c0387943969887c",
+  "pre_gate": "failed",
+  "confirmed_pre_post_pair": false,
+  "CPU_tensor_loads": 3,
+  "CPU_validation": {
+    "state": "passed",
+    "case_id": "fuba.v2.s20261023.pre.round100",
+    "files_verified": 23,
+    "CPU_tensor_loads": 3,
+    "strict_classifier_and_generator_load": true,
+    "finite_CPU_forward_shapes": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        3,
+        32,
+        32
+      ]
+    ],
+    "torch": "2.4.1+cu118",
+    "confirmed_pre_post_pair": false
+  },
+  "case_id": "fuba.v2.s20261023.pre.round100",
+  "remote_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_pre_round100",
+  "source_zip_sha256": "7688001cd224dd1ed6037e2ba7342e31a1dc950e784dbe42a5675001cff04b32",
+  "classifier_sha256": "d3eefacfc509313b5e469c734d25eb1d4cb94f2b1f3da0d474b1d62cc652d5d2",
+  "source_checkpoint_sha256": "4a8ee78cdd68c4365ca4b7e50296b58c5e45e689c5ef5287a6f230c8c75a1268",
+  "training_integrity": "passed",
+  "exact_aggregation_max_error": 0.0,
+  "published_round_client_groups": 186,
+  "clean_accuracy_pct": 71.87,
+  "ASR_pct": 99.08888888888889
+}

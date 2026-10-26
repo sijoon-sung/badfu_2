@@ -1,0 +1,25 @@
+{
+  "state": "complete",
+  "main_benchmark_unchanged": true,
+  "no_new_classifier_training": true,
+  "independent_FL_seeds": 2,
+  "normal_big_deletion_pairs": 1,
+  "primary_detector_supported_across_cases": false,
+  "layer_observation_status": "post-result exploratory, not calibrated detector",
+  "fuba_included": false,
+  "files_sha256": {
+    "SUMMARY.json": "e628ec0b0ddf6d563e0e2e9731b91d63e3a7d0dcb89f68f134ffc05cea79a07a",
+    "RESULT_SCALARS.json": "c74866c89e9af31bc326a626f3befb00791e63ec0d61ed4524661b6164b1e8af",
+    "CHOICES_FROZEN.json": "f380f2a3c3584f043593a09e5b46341436fa494d3a0feca647a4bfe24074de66",
+    "INDEPENDENT_REPLAY.json": "c46074db2aa87582067bc4e3aad74ca0aed212448bb0b08726fe8b05890030c1",
+    "LAYER_DIAGNOSTIC.json": "fc790e8689db575b872565212f97e6a4f7fad373ea340b65a4a0bb9cee353450",
+    "CAUSE_DIAGNOSTIC_EVALUATION_ONLY.json": "eee97a02e8666ed9379fb6871e97583b18092bd387a0cac848e6918259e851b8",
+    "ORACLE_COMMON_SAMPLE_COMPARISON.json": "f560015f7eb8e2e2c308c90ef6eb349e98d1f574cba3260f9edab4583683bd55",
+    "FINAL_VERDICT_KO.txt": "5793b168c466e6be376c0cc5c25a647b266578d57e1047a64fdfe05540ae3285",
+    "LAYER_MATCHED_FAMILY_FINAL_KO.png": "da93aa6e3bfa3be3832fa79355aa417660b7840972517933ed59c55e1e7d29ec",
+    "SEARCH_MISS_DIAGNOSTIC_KO.png": "faf71bca40b548bd49a8192b4ba49e2d1c800f21bc15e18a63c39beea88f1089",
+    "TRUSTED_REFERENCE_PROVENANCE.json": "8ba82182da47ebfc13e6120a104a261b1d84f4ee47566e58aaf5410fe3afbbf0",
+    "AMENDMENTS.json": "46c3377c36c3c2db68e315829c576a2b2b5752e6eb7c2f824f543656437e7871"
+  },
+  "finalizer_sha256": "e18b3fa58d7bec63d83f4638fed8bf1b0bac7f3ca88c2497d3727d894024efca"
+}

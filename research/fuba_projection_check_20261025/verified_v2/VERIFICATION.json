@@ -1,0 +1,49 @@
+{
+  "state": "passed",
+  "independent_primary_checks": [
+    {
+      "pair_id": "p0",
+      "independent_numpy_Gram_eigen_errors": {
+        "perp_norm": 2.220446049250313e-16,
+        "parallel_norm": 9.992007221626409e-16,
+        "z": 8.881784197001252e-16
+      }
+    },
+    {
+      "pair_id": "p1",
+      "independent_numpy_Gram_eigen_errors": {
+        "perp_norm": 2.220446049250313e-16,
+        "parallel_norm": 1.3322676295501878e-15,
+        "z": 1.7277845820728999e-15
+      }
+    }
+  ],
+  "all_rows_checked": 692,
+  "strict_model_checks": {
+    "m07": {
+      "strict_load": true,
+      "finite_state_features_logits": true,
+      "max_head_reconstruction_error": 5.785656526313687e-05
+    },
+    "m08": {
+      "strict_load": true,
+      "finite_state_features_logits": true,
+      "max_head_reconstruction_error": 2.9408823394305728e-05
+    },
+    "m09": {
+      "strict_load": true,
+      "finite_state_features_logits": true,
+      "max_head_reconstruction_error": 4.4206057509654784e-05
+    },
+    "m10": {
+      "strict_load": true,
+      "finite_state_features_logits": true,
+      "max_head_reconstruction_error": 3.748643618450842e-05
+    }
+  },
+  "model_state_unchanged_after_inference": true,
+  "source_and_input_hashes_before_after": "passed",
+  "historical_reproduction_failure_not_changed": true,
+  "new_training": false,
+  "score_sha256": "1d10cf523237f1ad2d4aa11ee2f04ccad06152eb00798e436134e6d6ec86bd38"
+}

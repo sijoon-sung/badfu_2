@@ -1,0 +1,17 @@
+R02 / FUBA v5 삭제 후 KD-based FU 실행·전후 모델 전달
+2026-10-25 KST. 사용자 직접 요청에 따라 삭제 전100R에서 작업을 끊었던 범위를 바로잡았다.
+실제 참여자4의 역사기여를 실제선택ID/weights로 제거하고,남은 참여자5의2500장 무라벨 자료로10KD/400batch/25000개 학습예시를 수행했다. 교사100R은고정됐고 정답라벨·생성기·ASR은KD학습에사용하지않았다.
+before_classifier.pt와after_unlearning.pt가 실제 전후 모델이다. 같은고정G/epsilon.05,pixel[0,1],eval,contiguous NCHW,10000/9000장으로평가했다.
+삭제전 CA78.58% / ASR28.68888888888889%.
+삭제후 CA78.95% / ASR28.42222222222222%.
+이번KD경로에서ASR상승은관측되지않았고논문의잠복활성화는재현되지않았다. 실패수치를그대로보존한다.
+별도프로세스의저장모델전체재평가가일치했다. 사전억제실패는남아있으며잠복억제→활성화성공이라고하지않는다.
+같은실험의실제KD삭제후모델을이제보유한다. KD가완벽한데이터삭제를증명한다는주장이나전체6FU/3자료/10시드재현주장은하지않는다. 본문/공개코드의실제ID/가중치,10회증류,무라벨clean입력,교사동결,고정G및BN정책정정은PROTOCOL.txt를따른다.
+로컬: C:\Users\sijoo\Documents\ChatGPT\badFU\CHECKPOINTS_FOR_REVIEW\FUBA_v5_s20261023_pre100_post_KD10
+DISLAB: D:\CHECKPOINTS_FOR_REVIEW\FUBA_v5_s20261023_pre100_post_KD10
+69개파일의외부manifest/seal/모든해시와포함된모델의CPU엄격로드·유한출력을확인했다.10개model/optimizer/RNG단계와events.jsonl/console.log/삭제감사/소스/프로필을포함한다.
+manifest SHA256 d1edb7b3a2cd5a4d6f495de97c2bf07aa4b264f7f2c4e05ad3ae040044bafea7
+before SHA256 71ca7fb112f5625985dcbda91250bcdf4a2c4205f29e7e2a98c5a020465e5271
+after SHA256 7ee878d113bab13df4d08f569f5508ec3f6c843715bd8e7f33a9fe5175144814
+원본v5 100R·31R효용실패·감독복구·모든이전BadFU/FUBA사본은보존했다. 신규사전검사의import가추가한pyc1개는사고폴더에보존·이동했고모든원본봉인파일이불변임을검사했다. 학습시작전의운영수정이며본KD학습은일회였다.
+관련R02;D08큰정상non-IID탈퇴구별을해결한새탐지시험은아니다.

@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "CPU_synthetic_only": true,
+  "not_suppression_evidence": true,
+  "checks": [
+    {
+      "name": "zero_baseline_fails",
+      "same_gamma_and_scores_and_status": true,
+      "incoming_unchanged": true,
+      "capture_expected": false
+    },
+    {
+      "name": "first_positive_fails",
+      "same_gamma_and_scores_and_status": true,
+      "incoming_unchanged": true,
+      "capture_expected": false
+    },
+    {
+      "name": "cap_all_pass",
+      "same_gamma_and_scores_and_status": true,
+      "incoming_unchanged": true,
+      "capture_expected": true
+    }
+  ],
+  "strict_saved_context_load_and_forward": true,
+  "original_core_sha256": "1d290599941befe86c3202bca3e0f240acdaf446dec900b6e97dd98f128f1c82",
+  "candidate_core_sha256": "0610ffe22896672abf182bd5d5e104189956c0599a9cccff7ee982b90210316b",
+  "candidate_MPI_sha256": "823b2e67361c6ab3e74afdd438a5d685aa1e1097bb17924c63ec4bcc9a97dfc8"
+}

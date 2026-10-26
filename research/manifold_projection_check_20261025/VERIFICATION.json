@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "primary_independent_checks": [
+    {
+      "pair_id": "p0",
+      "independent_method": "NumPy sample-Gram eigenvectors, not torch SVD",
+      "perp_norm_max_abs": 5.551115123125783e-17,
+      "parallel_norm_max_abs": 1.5265566588595902e-16,
+      "z_loo_max_abs": 3.552713678800501e-15,
+      "basis_orthogonality": 2.220446049250313e-15
+    },
+    {
+      "pair_id": "p1",
+      "independent_method": "NumPy sample-Gram eigenvectors, not torch SVD",
+      "perp_norm_max_abs": 2.7755575615628914e-17,
+      "parallel_norm_max_abs": 1.1102230246251565e-16,
+      "z_loo_max_abs": 1.7763568394002505e-15,
+      "basis_orthogonality": 2.886579864025407e-15
+    },
+    {
+      "pair_id": "p2",
+      "independent_method": "NumPy sample-Gram eigenvectors, not torch SVD",
+      "perp_norm_max_abs": 2.7755575615628914e-17,
+      "parallel_norm_max_abs": 3.885780586188048e-16,
+      "z_loo_max_abs": 1.1934897514720433e-15,
+      "basis_orthogonality": 2.886579864025407e-15
+    }
+  ],
+  "all_rows_checked": 1038,
+  "source_freeze": "passed",
+  "cached_artifact_hashes": "passed",
+  "scores_sha256": "6782b62b1ff1e52d96e36dbb45382b3f4d469bd8fa926cfacb45c082528070fc",
+  "no_checkpoint_training_or_modification": true
+}

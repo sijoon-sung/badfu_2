@@ -1,0 +1,84 @@
+{
+  "Attack (q10)": {
+    "additive": {
+      "selected_target": 1,
+      "cal_rate": 0.07291666666666666,
+      "public_test_rate": 0.05444444444444444,
+      "client_rates": {
+        "client_1": 0.04048582995951417,
+        "client_2": 0.058704453441295545,
+        "client_3": 0.07302231237322515
+      },
+      "arithmetic_mean": 0.057404198591344956,
+      "harmonic_consensus": 0.05422956988858377,
+      "search_seconds": 4.492284059524536
+    },
+    "conditional": {
+      "selected_target": 1,
+      "cal_rate": 0.006944444444444444,
+      "public_test_rate": 0.0011111111111111111,
+      "client_rates": {
+        "client_1": 0.0,
+        "client_2": 0.0,
+        "client_3": 0.0
+      },
+      "arithmetic_mean": 0.0,
+      "harmonic_consensus": 0.0001,
+      "search_seconds": 4.342150688171387
+    },
+    "mask": {
+      "selected_target": 2,
+      "cal_rate": 0.0625,
+      "public_test_rate": 0.052222222222222225,
+      "client_rates": {
+        "client_1": 0.07951070336391437,
+        "client_2": 0.09839357429718874,
+        "client_3": 0.06237424547283703
+      },
+      "arithmetic_mean": 0.08009284104464671,
+      "harmonic_consensus": 0.07747800314653146,
+      "search_seconds": 5.1479082107543945
+    }
+  },
+  "Clean Big Deletion (q12)": {
+    "additive": {
+      "selected_target": 7,
+      "cal_rate": 0.059027777777777776,
+      "public_test_rate": 0.06444444444444444,
+      "client_rates": {
+        "client_1": 0.10569105691056911,
+        "client_2": 0.10141987829614604,
+        "client_3": 0.041791044776119404
+      },
+      "arithmetic_mean": 0.08296732666094485,
+      "harmonic_consensus": 0.06948572905772395,
+      "search_seconds": 3.533921003341675
+    },
+    "conditional": {
+      "selected_target": 0,
+      "cal_rate": 0.003472222222222222,
+      "public_test_rate": 0.0022222222222222222,
+      "client_rates": {
+        "client_1": 0.0,
+        "client_2": 0.0,
+        "client_3": 0.0
+      },
+      "arithmetic_mean": 0.0,
+      "harmonic_consensus": 0.0001,
+      "search_seconds": 4.473068714141846
+    },
+    "mask": {
+      "selected_target": 8,
+      "cal_rate": 0.024305555555555552,
+      "public_test_rate": 0.022222222222222223,
+      "client_rates": {
+        "client_1": 0.03012048192771084,
+        "client_2": 0.016260162601626018,
+        "client_3": 0.022448979591836737
+      },
+      "arithmetic_mean": 0.022943208040391197,
+      "harmonic_consensus": 0.021650937008071632,
+      "search_seconds": 5.348316192626953
+    }
+  }
+}

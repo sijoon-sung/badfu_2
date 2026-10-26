@@ -1,0 +1,42 @@
+{
+  "state": "passed",
+  "source_case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+  "prefix_rounds": 23,
+  "prefix_file_hashes_exact": true,
+  "checkpoint23_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+  "original_v4_unmodified": true,
+  "uncommitted24_recomputed": true,
+  "diagnostic_models_reused": false,
+  "physical_MPI_ranks": 3,
+  "training_workers": 1,
+  "gamma_cap10_unchanged": true,
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "strict_CPU_restore_and_forward": true,
+  "round23_actual_role_and_aggregation_contract": {
+    "round": 23,
+    "roles": 8,
+    "G_groups": 4,
+    "captures_verified": 0,
+    "censored_submissions": [],
+    "exact_aggregation_max_error": 0,
+    "metric": {
+      "round": 23,
+      "clean_acc_pct": 77.12,
+      "asr_pct": 13.944444444444445,
+      "generator_source": "aggregate",
+      "generator_mode": "eval",
+      "target_excluded": true,
+      "test_N": 10000,
+      "non_target_N": 9000,
+      "evaluator_version": "fuba-rebuild-v3",
+      "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+      "epsilon": 0.05,
+      "pixels": "[0,1]",
+      "smoke": false
+    }
+  }
+}

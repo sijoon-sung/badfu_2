@@ -1,0 +1,9 @@
+{
+  "automation_id": "fuba-v5-100",
+  "status": "ACTIVE",
+  "interval_minutes": 5,
+  "scope": "Actual100R completion, full verification, independent evaluation and local sealed delivery",
+  "notification_policy": "quiet on normal progress; meaningful failures/completion only",
+  "original_v4_automation_deleted": true,
+  "do_not_end_on_partial_delivery": true
+}

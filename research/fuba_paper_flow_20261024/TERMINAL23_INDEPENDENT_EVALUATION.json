@@ -1,0 +1,27 @@
+{
+  "case_id": "fuba.v4.s20261023.pre.round0023.stopped",
+  "state": "passed_inference_linkage",
+  "run_completed": false,
+  "round23": {
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7712,
+    "target_successes": 1255,
+    "clean_acc_pct": 77.12,
+    "ASR_pct": 13.944444444444445
+  },
+  "last_checkpoint_sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+  "epsilon": 0.05,
+  "pixels": "[0,1]",
+  "layout": "contiguous_NCHW",
+  "classifier_mode": "eval",
+  "generator_mode": "eval",
+  "inference_only": true,
+  "GPU_idle_before_inference": "0, 0",
+  "evaluator_sha256": "3ea1e0475e6029cf46fbb1656498111535306570e54b049f047674d26f7173a7",
+  "training_evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+  "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "confirmed_pre_post_pair": false,
+  "recorded_metric_exact_match": true,
+  "pre_gate": "failed"
+}

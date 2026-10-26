@@ -1,0 +1,99 @@
+{
+  "state": "passed",
+  "round": 16,
+  "source15_checkpoint_sha256": "1b95a0794f3bd9212b5608afa8e832915c4330331b918edac3a876671b923c83",
+  "new16_checkpoint_sha256": "3174ee2c638a82641fa3a04e5be1462ff1a49479cd82935c8c316aa15efb4a66",
+  "chain_exact": true,
+  "exact_aggregation_max_error": 0,
+  "zero_float_parameters_and_running_stats_exact": true,
+  "normal_integer_BN_counter_load_casts": [
+    "bn1.num_batches_tracked",
+    "layer1.0.bn1.num_batches_tracked",
+    "layer1.0.bn2.num_batches_tracked",
+    "layer1.1.bn1.num_batches_tracked",
+    "layer1.1.bn2.num_batches_tracked",
+    "layer2.0.bn1.num_batches_tracked",
+    "layer2.0.bn2.num_batches_tracked",
+    "layer2.0.shortcut.1.num_batches_tracked",
+    "layer2.1.bn1.num_batches_tracked",
+    "layer2.1.bn2.num_batches_tracked",
+    "layer3.0.bn1.num_batches_tracked",
+    "layer3.0.bn2.num_batches_tracked",
+    "layer3.0.shortcut.1.num_batches_tracked",
+    "layer3.1.bn1.num_batches_tracked",
+    "layer3.1.bn2.num_batches_tracked",
+    "layer4.0.bn1.num_batches_tracked",
+    "layer4.0.bn2.num_batches_tracked",
+    "layer4.0.shortcut.1.num_batches_tracked",
+    "layer4.1.bn1.num_batches_tracked",
+    "layer4.1.bn2.num_batches_tracked"
+  ],
+  "same_cached_generator_exact": true,
+  "roles": [
+    {
+      "client": 1,
+      "phase_origin": "reused_completed_v3_round16_client1",
+      "epochs_per_phase": 50,
+      "classifier_phases": 4
+    },
+    {
+      "client": 4,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 4
+    },
+    {
+      "client": 7,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    },
+    {
+      "client": 10,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    },
+    {
+      "client": 12,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    },
+    {
+      "client": 14,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    },
+    {
+      "client": 18,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    },
+    {
+      "client": 19,
+      "phase_origin": "new_actual_GPU_training",
+      "epochs_per_phase": 50,
+      "classifier_phases": 1
+    }
+  ],
+  "strict_CPU_forward": "passed",
+  "recorded_full_test_metric": {
+    "round": 16,
+    "clean_acc_pct": 76.86,
+    "asr_pct": 9.377777777777778,
+    "generator_source": "aggregate",
+    "generator_mode": "eval",
+    "target_excluded": true,
+    "test_N": 10000,
+    "non_target_N": 9000,
+    "evaluator_version": "fuba-rebuild-v3",
+    "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "smoke": false
+  },
+  "scope": "first continued round only, not100R reproduction or a latent pre/post pair"
+}

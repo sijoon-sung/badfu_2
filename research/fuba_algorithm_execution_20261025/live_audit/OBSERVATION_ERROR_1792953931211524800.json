@@ -1,0 +1,6 @@
+{
+  "state": "observation_error_requires_diagnosis",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FUBA_ALGORITHM_EXECUTION_20261025\\live_audit.py\", line 264, in <module>\n    main()\n  File \"D:\\FUBA_ALGORITHM_EXECUTION_20261025\\live_audit.py\", line 244, in main\n    print(json.dumps({'tensor_round_verified': e['round']}), flush=True)\nOSError: [Errno 22] Invalid argument\n",
+  "time_unix": 1792953931.2125335,
+  "training_changed": false
+}

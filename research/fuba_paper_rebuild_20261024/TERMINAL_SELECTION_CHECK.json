@@ -1,0 +1,26 @@
+{
+  "diagnostic_selection": {
+    "case_id": "fuba.v3.s20261023.pre.round0015.stopped",
+    "purpose": "diagnostic",
+    "post_type": "pre_FU_partial_training",
+    "server_inputs": {
+      "model": {
+        "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\classifier.pt",
+        "sha256": "d142e79833885f42a3ce78290dbb3ebdcbb96f7b5c15f144b5757a7f2aade0c5",
+        "payload_key": null,
+        "committed_rounds": 15
+      }
+    },
+    "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\MANIFEST.json",
+      "manifest_sha256": "b96b62087909a4c2b6a3b53ac638919e12eef6adc24cdfeb618cf2f4bbe982c4",
+      "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\SEAL.json",
+      "seal_sha256": "d9227afbf5f92f51feb5aa99279e882604e393d93b8a5da68b94472b26bcdfd3",
+      "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v3_s20261023_pre_round0015_stopped_verified\\load_checkpoint.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  "purification_pilot_rejected": true
+}

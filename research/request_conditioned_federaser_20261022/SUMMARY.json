@@ -1,0 +1,1649 @@
+{
+  "run_v1": {
+    "comparisons": 11,
+    "rows": [
+      {
+        "pair": "c01",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.9999852180480957,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -2.8789654606953263e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 8.9090161736749e-07,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.03940068323963712,
+            "supporter": 1,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": true
+          }
+        },
+        "clean_accuracy_pre_pct": 90.0,
+        "clean_accuracy_post_pct": 88.75
+      },
+      {
+        "pair": "c02",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": false,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.9999838471412659,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 1.0375854799349327e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004115226212888956
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -3.48935373040149e-07,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          }
+        },
+        "clean_accuracy_pre_pct": 90.0,
+        "clean_accuracy_post_pct": 87.5,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c03",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.9999813437461853,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 2.1321354779502144e-06,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -3.250451356962003e-07,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.05180201959578144,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 89.0625
+      },
+      {
+        "pair": "c04",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.9999843239784241,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 2,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -5.11617372467299e-06,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.007936508394777775
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -4.621531388693256e-06,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": 0.031639738822607934,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 90.3125,
+        "clean_accuracy_post_pct": 88.75
+      },
+      {
+        "pair": "c05",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "suppressor_ids": [
+            4
+          ],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.9998413324356079,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 1,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0833333358168602,
+        "methods": {
+          "baseline": {
+            "target": 9,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0833333358168602,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.08236590027809143,
+            "alarm": false,
+            "natural_q25": 0.1666666716337204,
+            "natural_switch": 0.2732558250427246
+          },
+          "paired": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0833333358168602,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.07133643329143524,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0359281450510025
+          },
+          "history": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0833333358168602,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "requester_not_present_in_saved_checkpoints",
+            "requester_mean": 0.0,
+            "supporter": 14,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0359281450510025,
+            "requester_fit_n": 0,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 68.75,
+        "clean_accuracy_post_pct": 74.375
+      },
+      {
+        "pair": "c06",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.9998307228088379,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 1,
+        "paired_pool_max_confirmation_classes": 1,
+        "paired_pool_max_confirmation_switch": 0.1111111119389534,
+        "methods": {
+          "baseline": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0555555559694767,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.0544775128364563,
+            "alarm": false,
+            "natural_q25": 0.0714285746216774,
+            "natural_switch": 0.11702127754688263
+          },
+          "paired": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.02244390733540058,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.16483516991138458
+          },
+          "history": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "requester_not_present_in_saved_checkpoints",
+            "requester_mean": 0.0,
+            "supporter": 1,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.16483516991138458,
+            "requester_fit_n": 0,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 73.4375,
+        "clean_accuracy_post_pct": 73.125
+      },
+      {
+        "pair": "c07",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.9999793171882629,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 0,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -2.804087125696242e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 1.3286938838064088e-06,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          }
+        },
+        "clean_accuracy_pre_pct": 84.375,
+        "clean_accuracy_post_pct": 86.5625,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c08",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.999980092048645,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -1.4308810932561755e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.012658228166401386
+          },
+          "paired": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -2.5064832698262762e-06,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          }
+        },
+        "clean_accuracy_pre_pct": 84.6875,
+        "clean_accuracy_post_pct": 85.3125,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c09",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.9999807476997375,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.0002542959700804204,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.03252032399177551
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -1.1677889233396854e-07,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.05129040891562908,
+            "supporter": 1,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 89.375
+      },
+      {
+        "pair": "f01",
+        "post_method": "author_federaser",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            5
+          ]
+        },
+        "anchor_confidence_median": 0.9999822974205017,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 2.585854599601589e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.012605042196810246
+          },
+          "paired": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 8.072139507930842e-07,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.016460904851555824
+          },
+          "history": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "single_checkpoint_screening_only",
+            "requester_mean": null,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.016460904851555824,
+            "requester_fit_n": 1,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 87.5,
+        "clean_accuracy_post_pct": 85.9375
+      },
+      {
+        "pair": "f02",
+        "post_method": "author_federaser",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": false,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ]
+        },
+        "anchor_confidence_median": 0.9999856948852539,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 4.026649912702851e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.013574660755693913
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 4.026649912702851e-05,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.013574660755693913
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "single_checkpoint_screening_only",
+            "requester_mean": null,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.013574660755693913,
+            "requester_fit_n": 1,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 84.6875,
+        "clean_accuracy_post_pct": 83.75
+      }
+    ],
+    "cohort_counts": {
+      "retained_data_retraining": {
+        "baseline": {
+          "positive_comparisons": 4,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 5,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 3,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 6,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        },
+        "paired": {
+          "positive_comparisons": 4,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 5,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 3,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 6,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        },
+        "history": {
+          "positive_comparisons": 1,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 3,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 3,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 5,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        }
+      },
+      "author_federaser": {
+        "baseline": {
+          "positive_comparisons": 2,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 1,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "paired": {
+          "positive_comparisons": 2,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 1,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "history": {
+          "positive_comparisons": 0,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 0,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 0,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 2,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        }
+      }
+    }
+  },
+  "run_v2": {
+    "comparisons": 13,
+    "rows": [
+      {
+        "pair": "c01",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.8206914663314819,
+        "candidate_fit_qualifies": 3,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 8,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.03260248154401779,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.016511930152773857,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004048583097755909
+          },
+          "history": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": true,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.1043396333301485,
+            "supporter": 1,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.012048192322254181,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": true
+          }
+        },
+        "clean_accuracy_pre_pct": 90.0,
+        "clean_accuracy_post_pct": 88.75
+      },
+      {
+        "pair": "c02",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": false,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.8200117349624634,
+        "candidate_fit_qualifies": 3,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 5,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0555555559694767,
+        "methods": {
+          "baseline": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.02777777798473835,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.01973220892250538,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.035999998450279236
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.0016274367226287723,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004032257944345474
+          }
+        },
+        "clean_accuracy_pre_pct": 90.0,
+        "clean_accuracy_post_pct": 87.5,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c03",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8196755051612854,
+        "candidate_fit_qualifies": 3,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 6,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.020796410739421844,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.011811023578047752
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.010671043768525124,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.007147159125499909,
+            "supporter": 3,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.01600000075995922,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 89.0625
+      },
+      {
+        "pair": "c04",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8195061385631561,
+        "candidate_fit_qualifies": 2,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 9,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.02280222252011299,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.02280222252011299,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.005195490072947391,
+            "supporter": 0,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.003921568859368563,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 90.3125,
+        "clean_accuracy_post_pct": 88.75
+      },
+      {
+        "pair": "c05",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "suppressor_ids": [
+            4
+          ],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8200830221176147,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 2,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0833333358168602,
+        "methods": {
+          "baseline": {
+            "target": 9,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0833333358168602,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.138372540473938,
+            "alarm": false,
+            "natural_q25": 0.1428571492433548,
+            "natural_switch": 0.19767442345619202
+          },
+          "paired": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.026495711877942085,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.07065217196941376
+          },
+          "history": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "requester_not_present_in_saved_checkpoints",
+            "requester_mean": 0.0,
+            "supporter": 11,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.07065217196941376,
+            "requester_fit_n": 0,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 68.75,
+        "clean_accuracy_post_pct": 74.375
+      },
+      {
+        "pair": "c06",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8200498819351196,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 3,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.1111111119389534,
+        "methods": {
+          "baseline": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0833333358168602,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.1570679396390915,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.02777777798473835
+          },
+          "paired": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0555555559694767,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.12140757590532303,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0055555556900799274
+          },
+          "history": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0555555559694767,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "requester_not_present_in_saved_checkpoints",
+            "requester_mean": 0.0,
+            "supporter": 3,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0055555556900799274,
+            "requester_fit_n": 0,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 73.4375,
+        "clean_accuracy_post_pct": 73.125
+      },
+      {
+        "pair": "c07",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ],
+          "mixed_role_same_client": true
+        },
+        "anchor_confidence_median": 0.8200677037239075,
+        "candidate_fit_qualifies": 1,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 5,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.0046410877257585526,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.008474576286971569
+          },
+          "paired": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.0046410877257585526,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.008474576286971569
+          }
+        },
+        "clean_accuracy_pre_pct": 84.375,
+        "clean_accuracy_post_pct": 86.5625,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c08",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8199242651462555,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 2,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.008082177489995956,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004219409078359604
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.003729766933247447,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004310344811528921
+          }
+        },
+        "clean_accuracy_pre_pct": 84.6875,
+        "clean_accuracy_post_pct": 85.3125,
+        "history_unavailable": "request_identity_not_preserved_in_local_source"
+      },
+      {
+        "pair": "c09",
+        "post_method": "retained_data_retraining",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": [],
+          "mixed_role_same_client": false
+        },
+        "anchor_confidence_median": 0.8202574849128723,
+        "candidate_fit_qualifies": 1,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 5,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 3,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.018167369067668915,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "paired": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.00015514313417952508,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.020325202494859695
+          },
+          "history": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": 0.017132203520832744,
+            "supporter": 3,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.020325202494859695,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 89.375
+      },
+      {
+        "pair": "f01",
+        "post_method": "author_federaser",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": true,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            5
+          ]
+        },
+        "anchor_confidence_median": 0.8211235105991364,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 2,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.006075423676520586,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.008298755623400211
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.005447050556540489,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "single_checkpoint_screening_only",
+            "requester_mean": null,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 1,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 87.5,
+        "clean_accuracy_post_pct": 85.9375
+      },
+      {
+        "pair": "f02",
+        "post_method": "author_federaser",
+        "labels": {
+          "model_backdoor_training_present": true,
+          "malicious_request": false,
+          "poisoner_ids": [
+            0
+          ],
+          "suppressor_ids": [
+            0
+          ]
+        },
+        "anchor_confidence_median": 0.8191368579864502,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 4,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.02300024777650833,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.03125
+          },
+          "paired": {
+            "target": 5,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.01378004252910614,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 4,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "single_checkpoint_screening_only",
+            "requester_mean": null,
+            "supporter": 2,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0223214291036129,
+            "requester_fit_n": 1,
+            "requester_confirmation_n": 0,
+            "history_confirmation_eligible": false,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 84.6875,
+        "clean_accuracy_post_pct": 83.75
+      },
+      {
+        "pair": "n01",
+        "post_method": "adapted_federaser_5_checkpoints",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": []
+        },
+        "anchor_confidence_median": 0.8197957873344421,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.00726311095058918,
+            "alarm": false,
+            "natural_q25": 0.03333333507180214,
+            "natural_switch": 0.0401785708963871
+          },
+          "paired": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": -0.004153377376496792,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004587155766785145
+          },
+          "history": {
+            "target": 1,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": -0.0007005404397179157,
+            "supporter": 3,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.004587155766785145,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 80.625
+      },
+      {
+        "pair": "n02",
+        "post_method": "adapted_federaser_5_checkpoints",
+        "labels": {
+          "model_backdoor_training_present": false,
+          "malicious_request": false,
+          "poisoner_ids": [],
+          "suppressor_ids": []
+        },
+        "anchor_confidence_median": 0.8198939561843872,
+        "candidate_fit_qualifies": 0,
+        "candidate_confirmation_qualifies": 0,
+        "paired_pool_max_fit_classes": 0,
+        "paired_pool_max_confirmation_classes": 0,
+        "paired_pool_max_confirmation_switch": 0.0,
+        "methods": {
+          "baseline": {
+            "target": 6,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.01049769390374422,
+            "alarm": false,
+            "natural_q25": 0.03999999910593033,
+            "natural_switch": 0.14222222566604614
+          },
+          "paired": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "qualifying_classes": 0,
+            "raw_probability_difference": 0.002525569871068001,
+            "alarm": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0
+          },
+          "history": {
+            "target": 7,
+            "family": "global",
+            "switch_q25": 0.0,
+            "mean_switch": 0.0,
+            "alarm": false,
+            "behavior_alarm": false,
+            "history_confirmed": false,
+            "history_state": "held_out_checked",
+            "requester_mean": 0.013901486210771287,
+            "supporter": 3,
+            "supporter_is_poisoner": false,
+            "natural_q25": 0.0,
+            "natural_switch": 0.0,
+            "requester_fit_n": 3,
+            "requester_confirmation_n": 2,
+            "history_confirmation_eligible": true,
+            "mixed_same_client_roles": false
+          }
+        },
+        "clean_accuracy_pre_pct": 88.75,
+        "clean_accuracy_post_pct": 81.25
+      }
+    ],
+    "cohort_counts": {
+      "retained_data_retraining": {
+        "baseline": {
+          "positive_comparisons": 4,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 5,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 3,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 6,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        },
+        "paired": {
+          "positive_comparisons": 4,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 5,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 3,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 6,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        },
+        "history": {
+          "positive_comparisons": 1,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 3,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 3,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 5,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": 0.5
+        }
+      },
+      "author_federaser": {
+        "baseline": {
+          "positive_comparisons": 2,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 1,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "paired": {
+          "positive_comparisons": 2,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 1,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 1,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "history": {
+          "positive_comparisons": 0,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 0,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 0,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 0,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 2,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        }
+      },
+      "adapted_federaser_5_checkpoints": {
+        "baseline": {
+          "positive_comparisons": 0,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 2,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 0,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 2,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "paired": {
+          "positive_comparisons": 0,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 2,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 0,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 2,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        },
+        "history": {
+          "positive_comparisons": 0,
+          "alarms_on_positive": 0,
+          "clean_comparisons": 2,
+          "alarms_on_clean": 0,
+          "malicious_request_comparisons": 0,
+          "alarms_on_malicious_request": 0,
+          "benign_request_comparisons": 2,
+          "alarms_on_benign_request": 0,
+          "unavailable_comparisons": 0,
+          "label_caution": "Backdoor training and request intent are separate labels; neither guarantees a latent trigger activation between endpoints. Counts are descriptive and cohorts must not be pooled. For history, unavailable confirmations are excluded, never negative evidence.",
+          "descriptive_AUC_switch_q25": null
+        }
+      }
+    }
+  }
+}

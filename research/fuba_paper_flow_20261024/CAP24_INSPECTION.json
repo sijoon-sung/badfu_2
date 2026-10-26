@@ -1,0 +1,343 @@
+{
+  "state": "preserved_gamma_cap_stop",
+  "intended_rounds": 100,
+  "committed_rounds": 23,
+  "last_checkpoint": {
+    "path": "round_0023.pt",
+    "sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+    "bytes": 603740985,
+    "round": 23,
+    "client_ids": [
+      0,
+      1,
+      2,
+      3,
+      11,
+      13,
+      18,
+      19
+    ]
+  },
+  "failure_role": {
+    "round": 24,
+    "client": 3,
+    "rank": 1,
+    "seed": 20501026,
+    "role": "attacker",
+    "started_unix": 1792819856.2071605,
+    "phase_events": [
+      {
+        "phase": "generator",
+        "epoch": 5,
+        "epochs": 5,
+        "examples": 2250,
+        "classifier_phase": 0,
+        "updated_unix": 1792819864.398453
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 1,
+        "updated_unix": 1792819864.4721105
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 1,
+        "updated_unix": 1792819927.7985334
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 2,
+        "updated_unix": 1792819927.856882
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 2,
+        "updated_unix": 1792819965.727337
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 3,
+        "updated_unix": 1792819965.8509836
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 3,
+        "updated_unix": 1792820031.506067
+      },
+      {
+        "phase": "classifier_start",
+        "epochs": 50,
+        "batches_per_epoch": 36,
+        "classifier_phase": 4,
+        "updated_unix": 1792820031.5531588
+      },
+      {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 4,
+        "updated_unix": 1792820069.4624152
+      }
+    ],
+    "state": "failed",
+    "train_samples": 2250,
+    "validation_samples": 250,
+    "validation_disjoint": true,
+    "training_epsilon": 0.29464565611543514,
+    "evaluation_epsilon": 0.05,
+    "latest": {
+      "phase": "classifier_epoch",
+      "epoch": 50,
+      "epochs": 50,
+      "batches": 1800,
+      "classifier_phase": 4,
+      "updated_unix": 1792820069.4624152
+    },
+    "generator_before_classifier_sha256": "3497b8ccb35b3cee35d36eccd07eed4a0a3438bb33cea6314ae56de5797d4a43",
+    "error": "RuntimeError('Gamma10 search cap reached; no unsupported maximum claim')",
+    "scores": null,
+    "failure_model_evidence": {
+      "path": "round0024_client03.pt",
+      "sha256": "ac42195dacc1aeb3632b14548060b2203d78891aaf2c14d479f72da156f9d54f",
+      "bytes": 75978284
+    }
+  },
+  "failure_payload_keys": [
+    "generator",
+    "incoming",
+    "states",
+    "scores",
+    "profile_id"
+  ],
+  "saved_phase_state_keys": [],
+  "saved_gamma_scores": null,
+  "actual_processes": {
+    "ProcessId": 33580,
+    "ParentProcessId": 33376,
+    "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u D:/FUBA_PAPER_FLOW_20261024/inspect_cap24.py"
+  },
+  "GPU": "0 %, 0 MiB",
+  "controller_STATE": {
+    "state": "failed",
+    "pid": 17288,
+    "output": "D:\\FUBA_PAPER_FLOW_20261024\\attack_100R",
+    "started_unix": 1792814587.1736171,
+    "total_rounds": 100,
+    "restored_prefix_rounds": 15,
+    "committed_rounds": 23,
+    "profile_id": "fuba.paper_flow.s20261023.continue16_100.v4",
+    "recurrence": false,
+    "GPU_idle_before_start": {
+      "state": "passed",
+      "actual_gpu_memory_MiB": "0",
+      "competing_training_processes": 0
+    },
+    "MPI_pid": 41848,
+    "last_checkpoint": {
+      "path": "round_0023.pt",
+      "sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+      "bytes": 603740985,
+      "round": 23,
+      "client_ids": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ]
+    },
+    "current_role": {
+      "round": 24,
+      "client": 3,
+      "rank": 1,
+      "seed": 20501026,
+      "role": "attacker",
+      "started_unix": 1792819856.2071605,
+      "phase_events": [
+        {
+          "phase": "generator",
+          "epoch": 5,
+          "epochs": 5,
+          "examples": 2250,
+          "classifier_phase": 0,
+          "updated_unix": 1792819864.398453
+        },
+        {
+          "phase": "classifier_start",
+          "epochs": 50,
+          "batches_per_epoch": 36,
+          "classifier_phase": 1,
+          "updated_unix": 1792819864.4721105
+        },
+        {
+          "phase": "classifier_epoch",
+          "epoch": 50,
+          "epochs": 50,
+          "batches": 1800,
+          "classifier_phase": 1,
+          "updated_unix": 1792819927.7985334
+        },
+        {
+          "phase": "classifier_start",
+          "epochs": 50,
+          "batches_per_epoch": 36,
+          "classifier_phase": 2,
+          "updated_unix": 1792819927.856882
+        },
+        {
+          "phase": "classifier_epoch",
+          "epoch": 50,
+          "epochs": 50,
+          "batches": 1800,
+          "classifier_phase": 2,
+          "updated_unix": 1792819965.727337
+        },
+        {
+          "phase": "classifier_start",
+          "epochs": 50,
+          "batches_per_epoch": 36,
+          "classifier_phase": 3,
+          "updated_unix": 1792819965.8509836
+        },
+        {
+          "phase": "classifier_epoch",
+          "epoch": 50,
+          "epochs": 50,
+          "batches": 1800,
+          "classifier_phase": 3,
+          "updated_unix": 1792820031.506067
+        },
+        {
+          "phase": "classifier_start",
+          "epochs": 50,
+          "batches_per_epoch": 36,
+          "classifier_phase": 4,
+          "updated_unix": 1792820031.5531588
+        },
+        {
+          "phase": "classifier_epoch",
+          "epoch": 50,
+          "epochs": 50,
+          "batches": 1800,
+          "classifier_phase": 4,
+          "updated_unix": 1792820069.4624152
+        }
+      ],
+      "state": "running",
+      "train_samples": 2250,
+      "validation_samples": 250,
+      "validation_disjoint": true,
+      "training_epsilon": 0.29464565611543514,
+      "evaluation_epsilon": 0.05,
+      "latest": {
+        "phase": "classifier_epoch",
+        "epoch": 50,
+        "epochs": 50,
+        "batches": 1800,
+        "classifier_phase": 4,
+        "updated_unix": 1792820069.4624152
+      },
+      "generator_before_classifier_sha256": "3497b8ccb35b3cee35d36eccd07eed4a0a3438bb33cea6314ae56de5797d4a43"
+    },
+    "updated_unix": 1792820149.8130941,
+    "exit_code": 32,
+    "error": "RuntimeError('MPI continuation failed; inspect preserved evidence: 32')",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\FUBA_PAPER_FLOW_20261024\\run_once.py\", line 33, in run\n    if child.returncode:raise RuntimeError('MPI continuation failed; inspect preserved evidence: '+str(child.returncode))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: MPI continuation failed; inspect preserved evidence: 32\n"
+  },
+  "scheduled_task": "{\n    \"TaskName\":  \"Codex-FUBA-paper-flow-20261024-v4\",\n    \"State\":  3\n}\n{\n    \"LastTaskResult\":  1,\n    \"LastRunTime\":  \"\\/Date(1792814585000)\\/\"\n}",
+  "preserved_files": [
+    {
+      "path": "STATE.json",
+      "sha256": "f071cbf6f759fead1ae47e780869312c38d80fcd04847e2641b5fbd9900aa2ac",
+      "bytes": 3827
+    },
+    {
+      "path": "main_supervisor.log",
+      "sha256": "da44ee2723c47737d0259678ab127b2b7078a975d176305c338c3006e1c890c9",
+      "bytes": 851
+    },
+    {
+      "path": "READY.json",
+      "sha256": "02f5189e69859aba32371d710ced058f96e236d8c52ab65885f5e4cc52a40685",
+      "bytes": 1376
+    },
+    {
+      "path": "PROFILE.json",
+      "sha256": "396cb81317e2677fc7d4101f1b8c2f8f3e803343cd2c09e14d737e6d4f93f967",
+      "bytes": 4053
+    },
+    {
+      "path": "attack_100R/console.log",
+      "sha256": "fcfd7106bb6a45f5be304add69876f8fd61dd480459100e5c34d337b5fa54b16",
+      "bytes": 3985
+    },
+    {
+      "path": "attack_100R/fl/manifest.json",
+      "sha256": "e3a375808a22d4bfcf7579cef852c9cfdd661bda4a4ab94259002d422efae6bc",
+      "bytes": 8568
+    },
+    {
+      "path": "attack_100R/fl/round_0023.pt",
+      "sha256": "6774bd22d511c74c0e52ff846cf69ebbf923549d6cc7dc626c758834ef20d840",
+      "bytes": 603740985
+    },
+    {
+      "path": "attack_100R/role_progress/round0024_client03.json",
+      "sha256": "970a6722ac662f26f7081b19e540f6950d5a9a3ccd3eabd2243ea21d1aad95ce",
+      "bytes": 2556
+    },
+    {
+      "path": "attack_100R/failure_diagnostics/round0024_client03.pt",
+      "sha256": "ac42195dacc1aeb3632b14548060b2203d78891aaf2c14d479f72da156f9d54f",
+      "bytes": 75978284
+    },
+    {
+      "path": "attack_100R/metrics_round_0023.json",
+      "sha256": "637cfc52d1a18b6f8f84ace7d838c63ddc1425bf03661ad5387e1a0c77fc8a0e",
+      "bytes": 415
+    },
+    {
+      "path": "attack_100R/protocol.json",
+      "sha256": "2a73965f1ca29b1eb74a9bc80a05531b54fc746754371f927bc7b1df6ff2ab04",
+      "bytes": 25009
+    },
+    {
+      "path": "attack_100R/ENVIRONMENT.json",
+      "sha256": "5f63bb0cd94f431081f5a65f6b8044770e28f99b00f4f7151239f339884ad6b7",
+      "bytes": 2260
+    },
+    {
+      "path": "paper_core.py",
+      "sha256": "1d290599941befe86c3202bca3e0f240acdaf446dec900b6e97dd98f128f1c82",
+      "bytes": 11179
+    },
+    {
+      "path": "mpi_roles.py",
+      "sha256": "976c9dbeb42de83f4d83c53fefc5f053a0052996e90281dc5b4a23afcf1c19f0",
+      "bytes": 6845
+    }
+  ],
+  "created_unix": 1792820239.7343905,
+  "cap_branch_from_source": "select_gamma returns right_censored_at_declared_cap after all0..10 candidates pass; mpi_roles raises before record.update(decision=decision)",
+  "diagnostic_loss": "RuntimeError has no scores/diagnostic_states; completed classifier states and per-gamma scores were not saved by this failure branch",
+  "restart_or_cap_expansion_performed": false
+}

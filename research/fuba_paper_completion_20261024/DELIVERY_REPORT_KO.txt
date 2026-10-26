@@ -1,0 +1,23 @@
+R02 / FUBA v5 실제100R 검증·양쪽 전달 완료
+2026-10-25 KST. 고정 사례 fuba.v5.s20261023.pre.round100.
+
+실제100R 저장과 원본MPI 종료코드0을 확인했다. 전체100R 파일해시·연결,800역할,186동일G그룹,948단계/RNG파일,정확집계오차0,고정소스 및 상한제출 계약을 CPU로 검증했다.
+최종 독립10000/비목표9000 평가 CA78.58% (7858/10000),pre-ASR28.68888888888889% (2582/9000). 원래 기록과 정확히 일치한다. 같은 최종분류기·집계G,epsilon.05,pixel[0,1],eval,contiguous NCHW를 사용했고 평가 전 GPU 무점유를 확인했다.
+실제100R 완료 목표는 달성했다. CA>=80%/pre-ASR<=10% 성능 게이트는 실패했다. 삭제전 단일 진단모델이며 잠복 전후쌍/논문 전체 재현 성공이 아니다.
+
+실제 로컬 사본: C:\Users\sijoo\Documents\ChatGPT\badFU\CHECKPOINTS_FOR_REVIEW\FUBA_v5_s20261023_pre_round100
+실제 DISLAB 사본: D:\CHECKPOINTS_FOR_REVIEW\FUBA_v5_s20261023_pre_round100
+전달 파일: 1545개. 모든 파일 SHA256/크기와 외부manifest/seal,포함된 모든 모델의 CPU엄격로드·유한출력 및 native100R에서 추출한 classifier/G의 텐서 동일성을 확인했다. 두 호스트 카탈로그 선택 guard도 통과했다.
+manifest SHA256: 06c8388cdefb6033a3056b9d8047c725dbdd3295c025875e393bf85ba43a73db
+seal SHA256: d01eef70f935413b1e683e87c9dfdf5b747a9f3956def85c7062d6078d010a2f
+최종 native100R SHA256: 38711f6810994641b4a32f3275092412bfa916b9fdaf94c90363a7966a921105
+FINAL_VERIFIED SHA256: 3198835fe7683e677e14b826fce7ef0528b24c2f7dfccac096768e5a2cefbca5
+독립평가 SHA256: 5b0b80b22cf77f23005920c4f656383dc7b8ccff5683f31b64a2bea2d46f7169
+
+물리전달 범위:최종100R모델·native24/31/99·모든역할/지표/gamma trace·전체단계RNG해시목록·24/100R단계원본·31R capcontext·소스/프로필/평가·실패 및 감독복구 근거. 다른100R native/단계RNG 원본은 D:/FUBA_PAPER_COMPLETION_20261024/attack_100R에 보존했다. 이 사본을 전체 native 이력의 물리복사라고 표시하지 않는다.
+
+31R cap10 직후 CA10.19/ASR0 효용실패와32R 감독읽기실패/무재학습복구를 포함했다.32–100R 공격자111역할은 모두 gamma0조건미달→zero제출이었다. 양수gamma 전범위의 불가능성 또는 개별 요인의 유일 인과기여는 확정하지 않았다. 자세한 원문/코드 대조와 범위는 FINAL_PAPER_COMPARISON.txt를 따른다.
+zero제출은 분류기 변화량0인 수신모델 항등제출이다. 각 역할의 생성기5epoch와 분류기4x50epoch는 실제로 수행됐으며, 생성기 학습과 실제 집계G 검사는 이 분류기 선택과 구분했다.
+기존 BadFU 기본 입력/모든 과거 실패·사본을 유지했다. 추가 학습·재튜닝·정상/FU분기를 시작하지 않았다. 카탈로그 허용 용도는 diagnostic뿐이며 정화/잠복 활성화 입력 사용은 거부한다.
+
+증거:FINAL_VERIFIED.json / FINAL_INDEPENDENT_EVALUATION.json / ROUND100_LOCAL_COPY_COMPLETE.json / ROUND100_SELECTION_CHECK.json / ROUND100_REMOTE_NAVIGATION.json / research/00_trajectories/audit/FUBA_V5_ROUND100_DELIVERY.json.

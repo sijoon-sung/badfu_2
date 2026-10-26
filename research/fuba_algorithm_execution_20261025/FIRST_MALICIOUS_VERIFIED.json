@@ -1,0 +1,27 @@
+{
+  "state": "passed_actual_first_malicious_round",
+  "round": 6,
+  "native_sha256": "96184bfdd43742968e547e3136eb2e277c528a0bc3504ecae1c6bdac08d6f21c",
+  "roles": [
+    {
+      "client": 4,
+      "role": "defender",
+      "four_full50_epoch_phases": true,
+      "optimizers": [
+        "Adam",
+        "Adam",
+        "SGD",
+        "SGD"
+      ],
+      "same_trained_G": true,
+      "submission_equation_exact": true,
+      "decision": {
+        "reference": "unscaled_M_i_E",
+        "optimizer": "literal_SGD_Algorithm2_line6"
+      }
+    }
+  ],
+  "aggregation_max_error": 0,
+  "CPU_only": true,
+  "full100R_performance_reproduced": false
+}

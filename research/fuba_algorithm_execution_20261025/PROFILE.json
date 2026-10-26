@@ -1,0 +1,29 @@
+{
+  "id":"fuba.algorithms.s20261023.fresh100.kd10.v6",
+  "related_cards":["R02"],
+  "seed":20261023,"partition_seed":20261020,"rounds":100,"warmup_rounds":5,
+  "clients":20,"selected_per_round":8,"attackers":[0,1,2,3],"defender":4,
+  "classifier_epochs":50,"batch_size":64,"classifier_lr":0.001,
+  "anchor_benign_representative_optimizer":"Adam",
+  "reweighted_embedding_optimizer":"SGD_no_momentum_Algorithm1_line7",
+  "defender_stage2_optimizer":"SGD_no_momentum_Algorithm2_line6",
+  "generator_epochs":5,"generator_lr":0.0001,"epsilon_initial":0.3,"epsilon_floor":0.05,"epsilon_decay":0.001,
+  "evaluation_epsilon":0.05,"pixels":"[0,1]","poison_fraction":0.3,"clean_weight":0.3,"poison_weight":0.7,
+  "consistency_lambda":2.0,"expected_adversarial_ratio":0.25,"gamma_step":0.1,"gamma_cap":10.0,
+  "BN_policy":"trained phase statistics; incoming exact state at gamma0; no additional recalibration pass",
+  "gamma_policy":"last passing point before first failure; all-pass cap10 right-censored; gamma0 failure logged and returned; never whole-FL metric abort",
+  "post_method":"historical_actual_client4_update_subtraction_then_KD10",
+  "KD_epochs":10,"KD_lr":0.01,"KD_momentum":0.9,"KD_temperature":30,"KD_T_squared":false,
+  "KD_server_unlabelled_client":5,
+  "before_gate":{"CA_min_pct":80,"ASR_max_pct":10},
+  "after_gate":{"CA_min_pct":80,"ASR_min_pct":60},
+  "author_source_unmodified":false,
+  "unresolved_interpretations":[
+    "Algorithms1/2 specify SGD updates while experimental paragraph says Adam. This declared execution uses literal SGD only for the explicitly displayed reweighted and defense equations, and experimental Adam for the other phases. It is not author-certified resolution of the contradiction.",
+    "Main IV-A4 sets m5; footnote2 count wording is ambiguous. Preserve5/20, do not relabel it a proved bug.",
+    "BN buffers are unspecified. Use learned phase statistics without the previous extra calibration pass; do not claim unique author policy or guaranteed performance.",
+    "IBA clean-all/poison-subset dual loss and epsilon decay are the previously declared pinned IBA integration. Preserve coefficients and seed; no performance-driven tuning.",
+    "Finite gamma cap10/last passing submission is unchanged bounded policy; not an unbounded maximum.",
+    "One CIFAR10 IBA seed and KD10 method are not the paper's ten-seed means, all trigger families or six FU methods."
+  ]
+}

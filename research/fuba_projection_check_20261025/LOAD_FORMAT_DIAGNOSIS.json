@@ -1,0 +1,455 @@
+{
+  "state": "diagnosed",
+  "original_failure": "run_fuba_check.py raw-export-vs-native-loaded-state equality assertion after first inference",
+  "cause": "Existing global export has floating num_batches_tracked; native strict load converts these to integer before inference. The old assertion compared native state to raw exported counters, not a post-load baseline.",
+  "models": [
+    {
+      "model": "m07",
+      "strict_load": true,
+      "non_counter_tensor_values_unchanged": true,
+      "counter_cast_differences": [
+        {
+          "key": "bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer1.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer1.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer1.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer1.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer2.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer2.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer2.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer2.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer2.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer3.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer3.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer3.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer3.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer3.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer4.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer4.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer4.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer4.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        },
+        {
+          "key": "layer4.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2856.5,
+          "native": 2856
+        }
+      ]
+    },
+    {
+      "model": "m08",
+      "strict_load": true,
+      "non_counter_tensor_values_unchanged": true,
+      "counter_cast_differences": [
+        {
+          "key": "bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer1.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer1.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer1.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer1.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer2.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer2.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer2.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer2.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer2.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer3.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer3.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer3.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer3.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer3.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer4.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer4.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer4.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer4.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        },
+        {
+          "key": "layer4.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 1238.25,
+          "native": 1238
+        }
+      ]
+    },
+    {
+      "model": "m09",
+      "strict_load": true,
+      "non_counter_tensor_values_unchanged": true,
+      "counter_cast_differences": []
+    },
+    {
+      "model": "m10",
+      "strict_load": true,
+      "non_counter_tensor_values_unchanged": true,
+      "counter_cast_differences": [
+        {
+          "key": "bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer1.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer1.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer1.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer1.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer2.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer2.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer2.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer2.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer2.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer3.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer3.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer3.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer3.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer3.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer4.0.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer4.0.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer4.0.shortcut.1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer4.1.bn1.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        },
+        {
+          "key": "layer4.1.bn2.num_batches_tracked",
+          "stored_dtype": "torch.float32",
+          "native_dtype": "torch.int64",
+          "stored": 2030.75,
+          "native": 2030
+        }
+      ]
+    }
+  ],
+  "source_files_changed": false
+}

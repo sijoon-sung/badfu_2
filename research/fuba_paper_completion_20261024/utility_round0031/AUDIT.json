@@ -1,0 +1,126 @@
+{
+  "state": "passed_integrity_utility_gate_failed",
+  "related_cards": [
+    "R02"
+  ],
+  "profile_id": "fuba.paper_completion.s20261023.continue24_100.v5",
+  "round": 31,
+  "previous_metric": {
+    "round": 30,
+    "clean_acc_pct": 77.36,
+    "asr_pct": 14.277777777777779,
+    "generator_source": "aggregate",
+    "generator_mode": "eval",
+    "target_excluded": true,
+    "test_N": 10000,
+    "non_target_N": 9000,
+    "evaluator_version": "fuba-rebuild-v3",
+    "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "smoke": false
+  },
+  "metric": {
+    "round": 31,
+    "clean_acc_pct": 10.19,
+    "asr_pct": 0.0,
+    "generator_source": "aggregate",
+    "generator_mode": "eval",
+    "target_excluded": true,
+    "test_N": 10000,
+    "non_target_N": 9000,
+    "evaluator_version": "fuba-rebuild-v3",
+    "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "smoke": false
+  },
+  "native31_checks": {
+    "round": 31,
+    "roles": 8,
+    "G_groups": 1,
+    "captures_verified": 6,
+    "censored_submissions": [
+      {
+        "round": 31,
+        "client": 3,
+        "gamma": 10
+      }
+    ],
+    "exact_aggregation_max_error": 0,
+    "metric": {
+      "round": 31,
+      "clean_acc_pct": 10.19,
+      "asr_pct": 0.0,
+      "generator_source": "aggregate",
+      "generator_mode": "eval",
+      "target_excluded": true,
+      "test_N": 10000,
+      "non_target_N": 9000,
+      "evaluator_version": "fuba-rebuild-v3",
+      "evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+      "epsilon": 0.05,
+      "pixels": "[0,1]",
+      "smoke": false
+    }
+  },
+  "cap10_actual_submission_matches_saved_post_BN_model": true,
+  "actual_attacker_fraction": 0.125,
+  "expected_attacker_fraction_in_search": 0.25,
+  "CPU_strict_loading_and_finite_forward": true,
+  "runtime_source_hashes": "passed",
+  "whole_test_metrics_independently_recomputed": false,
+  "selection_condition": "ASR(expected_5of20_mixture)<10pct; no clean-accuracy constraint in this selector",
+  "observed_failure": "ASR0 with CA10.19 is utility failure, not successful latent suppression",
+  "causal_scope": "collapse follows the gamma10 submission; no controlled separation of scale, BN or representative mismatch was performed",
+  "paper_scope": "main Algorithm1 lines9-12 and Eq3 use the ASR condition; finitecap/BN/Adam choices remain explicitly unvalidated",
+  "action": "preserve evidence; continue declared100R unchanged; no new training/evaluation seed, cap expansion or hyperparameter retuning",
+  "full100R_complete": false,
+  "confirmed_pre_post_pair": false,
+  "files": {
+    "checkpoint_round0031.pt": {
+      "sha256": "76c5ed54367ff7dee140a89996d984bcc05567d8adba74bf234ce66ec81ee1b3",
+      "bytes": 510115572
+    },
+    "cap_context_round0031_client03.pt": {
+      "sha256": "6ea911d9aa3f5240d0f3c96e8a83d68c913832fb6a9170143870e82592e87ab0",
+      "bytes": 255077016
+    },
+    "role_round0031_client03.json": {
+      "sha256": "3c4a8205a0272bde6ef1536181e10f40156113d22a0524d10e8ed60fe299d3e2",
+      "bytes": 12162
+    },
+    "metrics_round0030.json": {
+      "sha256": "80f9dee9e0a921531295724360ab82d8618e85222702bfc8cf9b620c6e82fdce",
+      "bytes": 415
+    },
+    "metrics_round0031.json": {
+      "sha256": "2537f6a4224ff20cd6ee28e5141a67d3864ecd0786dfd1ee8070d88f69ad07d6",
+      "bytes": 400
+    },
+    "CAP_ALERT_round0031_client03.json": {
+      "sha256": "8aad89a4cca03945858f46758d81706dd509689fce0ccbdbbd4633990a08826a",
+      "bytes": 7472
+    },
+    "gamma_trace.json": {
+      "sha256": "e7bb645f8150c1a735b3d8fe940d48816824e943323cc18fad34efc922fe666d",
+      "bytes": 7404
+    },
+    "PROFILE.json": {
+      "sha256": "cd1ec9baed821f66d98ddcc018d8fc999c8b6dcdb14075d00a041fc01bd41ff8",
+      "bytes": 4633
+    },
+    "paper_core.py": {
+      "sha256": "38cd135192e9c25bd670fe6e9e605d5e586cb1c31ecb52587607905e612c6d52",
+      "bytes": 11733
+    },
+    "train_method_iba.py": {
+      "sha256": "4b3495cf73429bee4d4f8a84db2a7b378d3a337c0dd88fe474bc7bf98b07a434",
+      "bytes": 9558
+    },
+    "runtime_fixes.py": {
+      "sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+      "bytes": 3922
+    }
+  }
+}

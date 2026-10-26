@@ -1,0 +1,8 @@
+R02 / 같은 사용자 승인 안의 단일 참여자 분류기 진단 준비 정정.
+
+원본G의5epoch 재계산 사전검사에서 비트 동일성이 실패했고 분류기50epoch는 전혀 시작하지 않았다. 해당 시도·소스·실패는 cap24_replay_20261024 및 replay_cap24_generator_preflight_failed.py로 보존한다. 그 G 출력 텐서는 당시 검사 전에 저장하지 못했으며 원본G와 동일하다고 부르지 않는다.
+조건을 바꾸어G를 다시 학습하지 않는다. 원본 실패 파일에 실제 완성된24R G가 있으므로 그 저장G를 그대로 재사용한다. 분류기에 주는G의 모든 텐서/해시는 원본과 정확히 일치해야 한다. 이전 완료G 단계를 새 학습5epoch로 세지 않는다.
+원래 G학습 함수의CPU 난수 소비는 shuffle DataLoader5회 순회에서 발생한다. 고정 소스의G/분류기에는Dropout/난수연산이 없고 입력은ToTensor다. 동일 역할seed와loader5회 순회로 그 CPU 자료순서 상태만 복원한다. 실제 train_generator와loader순회만의CPU RNG 상태가 같다는 합성 회귀도 먼저 검사한다. 원본의 G학습 후 RNG 상태 자체는 저장되지 않았으므로 원본 RNG snapshot과 직접 대조한 증거라고 말하지 않는다.
+U-Net에 bilinear Upsample이 있고 PyTorch의CUDA 보간 기울기는 비결정적일 수 있다. 이는G 재계산 불일치의 가능한 경로이며 단독 원인을 확정하지 않았다. 참조: https://docs.pytorch.org/docs/2.14/generated/torch.nn.functional.interpolate.html . 이 사실로 원래 학습 알고리즘·시드·deterministic 설정을 바꾸지 않는다.
+이후 사용자 승인된 같은client3의4단계50epoch를 처음으로 한 번 재현하고 매 단계 모델을 즉시 별도 저장한다. gamma.1/cap10, loss/optimizer/자료/epsilon과중단 규칙은 유지한다. cap이 재현되면101점수와최종예상모델을 저장·독립추론한다. cap이 재현되지 않으면 실제 분기와 단계 모델을 기록하고 끝낸다. 다른seed/G/조건으로 같은 분기를 강제로 맞추지 않는다.
+새 폴더 cap24_replay_cached_G_20261024, 프로필 fuba.cap24.client3.s20501026.diagnostic_cached_G1. 원본 v4 및 사전검사 폴더를 수정하지 않는다. 전체FL·다른참여자·정상대조·FU는 실행하지 않는다. 이 결과를 원본 분류기 텐서 동일성 또는100R 완료로 부르지 않는다. R02의IID진단이며 D08의non-IID구별을 해결하지 않는다.

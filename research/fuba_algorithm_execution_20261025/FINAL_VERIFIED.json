@@ -1,0 +1,93 @@
+{
+  "state": "passed",
+  "rounds": 100,
+  "roles": 800,
+  "malicious_G_groups": 186,
+  "classifier_phases": 744,
+  "aggregation_error": 0,
+  "KD_epochs": 10,
+  "KD_unique_batches": 400,
+  "KD_examples": 25000,
+  "censored": [
+    {
+      "round": 45,
+      "client": 3
+    },
+    {
+      "round": 46,
+      "client": 3
+    },
+    {
+      "round": 48,
+      "client": 3
+    },
+    {
+      "round": 49,
+      "client": 2
+    },
+    {
+      "round": 50,
+      "client": 3
+    },
+    {
+      "round": 51,
+      "client": 3
+    },
+    {
+      "round": 52,
+      "client": 3
+    },
+    {
+      "round": 70,
+      "client": 2
+    },
+    {
+      "round": 71,
+      "client": 2
+    },
+    {
+      "round": 76,
+      "client": 3
+    },
+    {
+      "round": 80,
+      "client": 3
+    },
+    {
+      "round": 88,
+      "client": 2
+    },
+    {
+      "round": 89,
+      "client": 2
+    },
+    {
+      "round": 92,
+      "client": 1
+    },
+    {
+      "round": 93,
+      "client": 2
+    },
+    {
+      "round": 93,
+      "client": 3
+    },
+    {
+      "round": 95,
+      "client": 1
+    },
+    {
+      "round": 95,
+      "client": 3
+    },
+    {
+      "round": 99,
+      "client": 3
+    }
+  ],
+  "files": 2304,
+  "strict_CPU_forward": true,
+  "source_hashes_unchanged": true,
+  "hash_manifest_sha256": "b4aaab6985a545a1d90baecfda1a2935114481a7645029b560bce1f140bbc2d8"
+}

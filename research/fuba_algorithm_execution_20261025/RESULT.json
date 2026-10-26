@@ -1,0 +1,48 @@
+{
+  "state": "completed_training_and_KD",
+  "profile_id": "fuba.algorithms.s20261023.fresh100.kd10.v6",
+  "rounds": 100,
+  "roles": 800,
+  "KD_epochs": 10,
+  "KD_batches": 400,
+  "before": {
+    "stage": "before",
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7780,
+    "target_successes": 1153,
+    "CA_pct": 77.8,
+    "ASR_pct": 12.811111111111112,
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "after": {
+    "stage": "after",
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7803,
+    "target_successes": 1309,
+    "CA_pct": 78.03,
+    "ASR_pct": 14.544444444444444,
+    "epsilon": 0.05,
+    "pixels": "[0,1]",
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "before_gate": false,
+  "after_gate": false,
+  "same_G_sha256": "6b77efcdbb36676af8fd3161315a768345fa7052cadef9171732bca50c3377f6",
+  "before_sha256": "782b90217556515f10c5059b779962cd8d5652e41c0408671ff21f17874e7654",
+  "after_sha256": "30a108a59f50f5ff49db2dabe36d03a321d4f2eace1a3d962c146d169e90e5de",
+  "unmodified_author_code": false,
+  "limitations": [
+    "Algorithms1/2 specify SGD updates while experimental paragraph says Adam. This declared execution uses literal SGD only for the explicitly displayed reweighted and defense equations, and experimental Adam for the other phases. It is not author-certified resolution of the contradiction.",
+    "Main IV-A4 sets m5; footnote2 count wording is ambiguous. Preserve5/20, do not relabel it a proved bug.",
+    "BN buffers are unspecified. Use learned phase statistics without the previous extra calibration pass; do not claim unique author policy or guaranteed performance.",
+    "IBA clean-all/poison-subset dual loss and epsilon decay are the previously declared pinned IBA integration. Preserve coefficients and seed; no performance-driven tuning.",
+    "Finite gamma cap10/last passing submission is unchanged bounded policy; not an unbounded maximum.",
+    "One CIFAR10 IBA seed and KD10 method are not the paper's ten-seed means, all trigger families or six FU methods."
+  ]
+}

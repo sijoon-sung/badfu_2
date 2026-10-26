@@ -1,0 +1,16 @@
+﻿{
+    "GPU_apps":  [
+                     "pid, process_name, used_gpu_memory [MiB]",
+                     "43892, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1016.8622.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]",
+                     "7264, C:\\Users\\DISLAB\\Documents\\ChatGPT\\디퓨전\\ComfyUI_windows_portable\\python_embeded\\python.exe, [N/A]",
+                     "24632, C:\\Users\\DISLAB\\Documents\\ChatGPT\\디퓨전\\BlenderLocalAI\\blender-5.2.3-windows-x64\\blender.exe, [N/A]",
+                     "1676, C:\\Windows\\System32\\dwm.exe, [N/A]"
+                 ],
+    "idle_threshold_changed":  false,
+    "state":  "GPU_idle_guard_blocked_before_CUDA",
+    "training_changed":  false,
+    "time_unix_ms":  1792982419857,
+    "GPU":  "812 MiB, 0 %",
+    "recheck_only":  true,
+    "unrelated_processes_stopped":  0
+}

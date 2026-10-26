@@ -1,0 +1,24 @@
+{
+  "state": "ready",
+  "profile_id": "fuba.paper_flow.s20261023.continue16_100.v4",
+  "recurrence": false,
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "controller_helper_sha256": {
+    "run_once.py": "4c6d13e5762ac13d745690375020969e2036192f04722b6a7d762b1043310163",
+    "background.py": "9cd36d21862087241cc22f5e00e94e5f79d01ca74a64931249215b7381fb9065",
+    "flow_support.py": "a4bf77e61f716cdaea934796bbbfd269b535eb288988f6fed3a6a73b7b14d0fd",
+    "paper_core.py": "1d290599941befe86c3202bca3e0f240acdaf446dec900b6e97dd98f128f1c82",
+    "mpi_roles.py": "976c9dbeb42de83f4d83c53fefc5f053a0052996e90281dc5b4a23afcf1c19f0",
+    "profile_helpers.py": "f4534bf33c93b8a04c957310418c8b85a4796dbe5752eebd0b0bd6d8537501c8",
+    "rebuild_adapter.py": "b16ed559b5ff8d861f77a8e2d0f5142f9b195a1d85df807581200d6fad9e885b",
+    "durable.py": "00d06ac8734019f36277a1dc59170ee4b1b1074b345a7c84417641c5f95e499a",
+    "resource_guard.py": "065b15a6ea11ab903092a3dc043f4dab56588696c4a7d0e6d2ac63b3e071b0aa",
+    "verify_run.py": "aa9ad18260e81bb34272d449861af5f4c04853b9279fb431bbf6b3ffe83a264c"
+  },
+  "profile_sha256": "f395cdb213cec4788564b479ee284a4ed1e8921d459fee0cd16038c82e411d42",
+  "cached_phase_preflight_sha256": "c164b4d8927b12ec18a436350de47d75426ca23985b17cc1b446692b67acf438"
+}

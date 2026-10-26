@@ -1,0 +1,1469 @@
+{
+  "state": "prepared",
+  "related_cards": [
+    "R02"
+  ],
+  "hypothesis": "Retrying atomic JSON replacement preserves checkpoint commits under transient Windows file handles.",
+  "scope": "Storage recovery, not an attack detector or a remedy for non-IID confounding",
+  "stop_rule": "Stop on any prefix/state/seed/aggregation mismatch; never restart from scratch or change scientific settings.",
+  "output": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\controller\\fuba_v2_seed20261023_attack",
+  "runtime": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\storage_resume_v1\\runtime",
+  "resume_after_round": 82,
+  "total_rounds": 100,
+  "command": [
+    "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\Library\\bin\\mpiexec.exe",
+    "-n",
+    "5",
+    "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "-m",
+    "mpi4py",
+    "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\storage_resume_v1\\runtime\\main.py",
+    "--dataset",
+    "cifar10",
+    "--attackMethod",
+    "iba",
+    "--name",
+    "fuba_v2_seed20261023_attack",
+    "--no_detail_test",
+    "--no_global_test",
+    "--n_gpu",
+    "1",
+    "--nb_clients",
+    "20",
+    "--communication_rounds",
+    "100",
+    "--warm_up",
+    "5",
+    "--participant_rate",
+    ".4",
+    "--non_iid",
+    "--non_iid_type",
+    "Dirichlet",
+    "--alpha",
+    ".5"
+  ],
+  "restore_state_path": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\storage_resume_v1\\restore_round0082.pt",
+  "restore_state_sha256": "de100cb4e9c2752305f1e44cf6556f23b2f22f7c9355f7b94d78899fabbbba52",
+  "committed81_manifest_sha256": "b4010b78680c7bd44f0172f3c2defcbe2e36f9deaea457d88e2dd150ab09ecab",
+  "recovered82_checkpoint_sha256": "835f0b5b402241b337a593ff69db1a6b3e67883d83c730cdc9880ab1c19c3691",
+  "all82_file_hashes_checked": true,
+  "round81_to82_chain_and_exact_aggregate_passed": true,
+  "aggregation_max_abs_error": 0.0,
+  "old_initial_sha256": "595e33288fad7540b2a3988d9770a51a74a0f95fea03e9c0f33cf003ffc3df34",
+  "original_runtime_unchanged": true,
+  "training_hyperparameters_and_client_selection_seed_rules_unchanged": true,
+  "prefix_rounds": [
+    {
+      "path": "round_0001.pt",
+      "sha256": "b5ccbad50b7764dfc26689fa511817c98c21a427952cd1817e19c014330f2b26",
+      "bytes": 447708790,
+      "round": 1,
+      "client_ids": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "path": "round_0002.pt",
+      "sha256": "b733cf992d416fc9fe881075eeb8c2153cd329d35564d4f1477e7e4d11cb725c",
+      "bytes": 447709302,
+      "round": 2,
+      "client_ids": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        15,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0003.pt",
+      "sha256": "3c59a9050f6787500deaaf61221af71e50bb7e181be09d4755aa5500d585d285",
+      "bytes": 447709302,
+      "round": 3,
+      "client_ids": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "path": "round_0004.pt",
+      "sha256": "d1687e9794ccc92fb85083d499407ec5943ddef7dab1cde739152b01ef1dcbb3",
+      "bytes": 447709302,
+      "round": 4,
+      "client_ids": [
+        2,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "path": "round_0005.pt",
+      "sha256": "bbba7898940b49311fa255061b997fbccbf153fd933166d591564042a28980ac",
+      "bytes": 447709302,
+      "round": 5,
+      "client_ids": [
+        1,
+        6,
+        9,
+        11,
+        14,
+        15,
+        16,
+        18
+      ]
+    },
+    {
+      "path": "round_0006.pt",
+      "sha256": "7826eb4f7c20479760d6c43e1f3d1f9429079401b71e84fb56e6156e5f95c55d",
+      "bytes": 510124624,
+      "round": 6,
+      "client_ids": [
+        4,
+        6,
+        7,
+        10,
+        12,
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "path": "round_0007.pt",
+      "sha256": "ee6c2f7541fc375bc3dada709977f75f9826d98f828e0972c1330f73f647983b",
+      "bytes": 541333597,
+      "round": 7,
+      "client_ids": [
+        0,
+        4,
+        5,
+        7,
+        9,
+        10,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0008.pt",
+      "sha256": "c2bec12b4f2cf54dea682e97b87062f5366d8aa90688a5c38effc4334de3f87d",
+      "bytes": 478918339,
+      "round": 8,
+      "client_ids": [
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0009.pt",
+      "sha256": "96f14158822f5121d5e784f441b504e5044e42f9bb59ecdcd439604baf7df725",
+      "bytes": 541333597,
+      "round": 9,
+      "client_ids": [
+        2,
+        4,
+        5,
+        6,
+        10,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0010.pt",
+      "sha256": "15d11766837499a5d3ef559195845493de924548e1c755c4af5619c897e4028d",
+      "bytes": 541333597,
+      "round": 10,
+      "client_ids": [
+        1,
+        4,
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ]
+    },
+    {
+      "path": "round_0011.pt",
+      "sha256": "3aecc274fe05650b8a9c906559205554da7a16573ae7e47168420f11343b7a8d",
+      "bytes": 510124624,
+      "round": 11,
+      "client_ids": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        13,
+        14,
+        18
+      ]
+    },
+    {
+      "path": "round_0012.pt",
+      "sha256": "a4c72d7b48bab7d4b3705e900980a5ad2998e3bde967a65953e41489f384ed04",
+      "bytes": 510124560,
+      "round": 12,
+      "client_ids": [
+        2,
+        6,
+        8,
+        11,
+        13,
+        15,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0013.pt",
+      "sha256": "15c47b052831d02fa1c90697bd6c3fa51e55f99ad01ad8db5dda33ad8e26c775",
+      "bytes": 541333597,
+      "round": 13,
+      "client_ids": [
+        1,
+        3,
+        5,
+        6,
+        10,
+        13,
+        14,
+        16
+      ]
+    },
+    {
+      "path": "round_0014.pt",
+      "sha256": "6e803538e3039434b92cda4ff8f8eeb56a958cba11aa4069bdc76d1637365395",
+      "bytes": 510124560,
+      "round": 14,
+      "client_ids": [
+        3,
+        7,
+        8,
+        10,
+        11,
+        13,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0015.pt",
+      "sha256": "34eaa35415ef68d15791e9c36e4f497923360a888ee991f227f35fbaf0273bfb",
+      "bytes": 510124560,
+      "round": 15,
+      "client_ids": [
+        1,
+        8,
+        9,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0016.pt",
+      "sha256": "a870e3fce96dd17dae5f29d05936d09e68d0538de727a608a79403a48b1410c6",
+      "bytes": 541333597,
+      "round": 16,
+      "client_ids": [
+        1,
+        4,
+        7,
+        10,
+        12,
+        14,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0017.pt",
+      "sha256": "4de9cf5092da2755184aec327508414159a5ce4cea2ae6c56a5bf7920f31fc9e",
+      "bytes": 510124560,
+      "round": 17,
+      "client_ids": [
+        2,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "path": "round_0018.pt",
+      "sha256": "1bac57d91cf59bad5e32e8aaff57f2e3c78191b12e954fc3d0b1e63974b06abe",
+      "bytes": 478918339,
+      "round": 18,
+      "client_ids": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0019.pt",
+      "sha256": "0a67e19592a8d22719331b216b9668f970fe2753c51437c5ab678e9a95c64ee5",
+      "bytes": 572542634,
+      "round": 19,
+      "client_ids": [
+        0,
+        2,
+        3,
+        7,
+        11,
+        12,
+        15,
+        17
+      ]
+    },
+    {
+      "path": "round_0020.pt",
+      "sha256": "d90dd2b023064a8d9ab7fa4914d13641ea7dc1596d5f7ef298fef5af815fe9cb",
+      "bytes": 572542634,
+      "round": 20,
+      "client_ids": [
+        0,
+        1,
+        2,
+        6,
+        9,
+        12,
+        15,
+        18
+      ]
+    },
+    {
+      "path": "round_0021.pt",
+      "sha256": "4eccd2ad5f328d218da9e821cd1eceaa2e7e8adad609c0ce2620043a1ffa7c7c",
+      "bytes": 541333597,
+      "round": 21,
+      "client_ids": [
+        0,
+        4,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0022.pt",
+      "sha256": "e188327baf777a7ddd24bf76239f9e8cac6db6a1bb396b98d52b2090826e2688",
+      "bytes": 478918339,
+      "round": 22,
+      "client_ids": [
+        5,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0023.pt",
+      "sha256": "a7ecfed1f83531dc7c56c1f38c4c151162712639d924cff0cb8aeb1d65d09f1a",
+      "bytes": 603751607,
+      "round": 23,
+      "client_ids": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0024.pt",
+      "sha256": "a6f596152d0a51143eed9efc3113b4787b740f0ee2f0e022934eb2a48e01cb3e",
+      "bytes": 510124560,
+      "round": 24,
+      "client_ids": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        12,
+        14,
+        17
+      ]
+    },
+    {
+      "path": "round_0025.pt",
+      "sha256": "eb7eb79674928d416ec75934bd61fbc41680cd0b90f07815b22d4db40206eea5",
+      "bytes": 541333597,
+      "round": 25,
+      "client_ids": [
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        19
+      ]
+    },
+    {
+      "path": "round_0026.pt",
+      "sha256": "62ffed063dc939b795e79539ff98db10d99b8133dd980c49645690030cd45933",
+      "bytes": 510124560,
+      "round": 26,
+      "client_ids": [
+        0,
+        6,
+        7,
+        8,
+        11,
+        12,
+        14,
+        18
+      ]
+    },
+    {
+      "path": "round_0027.pt",
+      "sha256": "440878f1999b67a9cdb89331b9c640484220b0687d5eb5c20ea7b8a983daca38",
+      "bytes": 541333597,
+      "round": 27,
+      "client_ids": [
+        0,
+        3,
+        6,
+        12,
+        13,
+        14,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0028.pt",
+      "sha256": "940ec1145263586f2eabea4c1082a106c0b57c1d7312a42081a556d7dee1af3f",
+      "bytes": 572542634,
+      "round": 28,
+      "client_ids": [
+        0,
+        1,
+        3,
+        8,
+        10,
+        11,
+        15,
+        17
+      ]
+    },
+    {
+      "path": "round_0029.pt",
+      "sha256": "a5801498fbc872cfe0ed83e6f031171df6f431add3a1b0707693399b5fa48291",
+      "bytes": 572542634,
+      "round": 29,
+      "client_ids": [
+        0,
+        1,
+        2,
+        7,
+        9,
+        13,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0030.pt",
+      "sha256": "39c7b410885e1dd6c005b81384247049a52bc604f57d24f285f1c3ca84dac5ac",
+      "bytes": 510124560,
+      "round": 30,
+      "client_ids": [
+        3,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0031.pt",
+      "sha256": "aefd74f2c26063dc4b25a3ff61162db043413a290304530a8299fc9b28aa211d",
+      "bytes": 510124560,
+      "round": 31,
+      "client_ids": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0032.pt",
+      "sha256": "1572d373d581c7c2ea261cd2d3d8285b930ba47c54bf3f0b9ed03dcd692201a4",
+      "bytes": 541333597,
+      "round": 32,
+      "client_ids": [
+        1,
+        3,
+        12,
+        13,
+        14,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0033.pt",
+      "sha256": "25ef96f4d57c4b65f5a766a9589f0175f510bc5b1b6f96737d92c39a6d289c05",
+      "bytes": 541333597,
+      "round": 33,
+      "client_ids": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "path": "round_0034.pt",
+      "sha256": "7d9be9e159d4dc946a591fad8008f6e8865c50060a9faa9e4b211a4a6bd35e3a",
+      "bytes": 510124560,
+      "round": 34,
+      "client_ids": [
+        0,
+        6,
+        7,
+        8,
+        10,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0035.pt",
+      "sha256": "9df6fd88e18e2a80b59eb7f333a85ca347ef703071b8e4cb17417daba2455e3d",
+      "bytes": 541333597,
+      "round": 35,
+      "client_ids": [
+        1,
+        2,
+        6,
+        8,
+        10,
+        12,
+        13,
+        16
+      ]
+    },
+    {
+      "path": "round_0036.pt",
+      "sha256": "834ab3455816a6a2ffb1e837ed3409a3d74832406191b49a24869a24a8eb4897",
+      "bytes": 510124560,
+      "round": 36,
+      "client_ids": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17
+      ]
+    },
+    {
+      "path": "round_0037.pt",
+      "sha256": "822a1981b3747d6248dff83cf0f1eafa52bf5748ecc1a2d623e296394600fa11",
+      "bytes": 541333597,
+      "round": 37,
+      "client_ids": [
+        1,
+        3,
+        8,
+        12,
+        13,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0038.pt",
+      "sha256": "906acf0471443ad7675d8cadcc567799c9754b83aa25d1158220e8529a3db3e1",
+      "bytes": 541333597,
+      "round": 38,
+      "client_ids": [
+        0,
+        2,
+        5,
+        6,
+        9,
+        10,
+        11,
+        17
+      ]
+    },
+    {
+      "path": "round_0039.pt",
+      "sha256": "9bd7ff9fe2de9a52b79c4c6d10182ae364e634494d6ac2540657522e5d2ef212",
+      "bytes": 541333597,
+      "round": 39,
+      "client_ids": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        12,
+        15,
+        17
+      ]
+    },
+    {
+      "path": "round_0040.pt",
+      "sha256": "4e2166bbd55dc677c8ed9ec0e7dbcbbc158daa8a25290633ae79db02d6590512",
+      "bytes": 510124560,
+      "round": 40,
+      "client_ids": [
+        1,
+        5,
+        9,
+        11,
+        12,
+        14,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0041.pt",
+      "sha256": "56f44ed23e57818c1225eaf8ce0c07e295c94735d98f3a1274262f6d006afaf3",
+      "bytes": 510124560,
+      "round": 41,
+      "client_ids": [
+        0,
+        5,
+        7,
+        8,
+        10,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "path": "round_0042.pt",
+      "sha256": "94b7b8c3bfe6bad952f08d8fb0278ebcf44777d90d772dff9434086dfa819211",
+      "bytes": 541333597,
+      "round": 42,
+      "client_ids": [
+        0,
+        1,
+        8,
+        12,
+        14,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0043.pt",
+      "sha256": "058aae4bdb62647e16ec94ac50ba9ee5ee8f7c9ddd402ee96fc3a8e84a5d910b",
+      "bytes": 603751671,
+      "round": 43,
+      "client_ids": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10,
+        12,
+        15
+      ]
+    },
+    {
+      "path": "round_0044.pt",
+      "sha256": "da50993c26c5a44b13d4167f5dbb43556b45bf6f8f3a9631f32ee913c36e2cb2",
+      "bytes": 572542634,
+      "round": 44,
+      "client_ids": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        14,
+        15,
+        18
+      ]
+    },
+    {
+      "path": "round_0045.pt",
+      "sha256": "7df116c992827da9bb6d545515374b7ac580ba7c2eff90cd7272db6ec539570c",
+      "bytes": 541333597,
+      "round": 45,
+      "client_ids": [
+        1,
+        3,
+        8,
+        9,
+        10,
+        14,
+        15,
+        18
+      ]
+    },
+    {
+      "path": "round_0046.pt",
+      "sha256": "18e1ed751a0e561c7d83164b9248707d7ac31555eefe2f7f369944ffa962490d",
+      "bytes": 541333597,
+      "round": 46,
+      "client_ids": [
+        0,
+        3,
+        5,
+        11,
+        13,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0047.pt",
+      "sha256": "95d7962eb5342ad530fbb4769f09d73656f9a2f1a21bbef768b45bdd7871b953",
+      "bytes": 510124624,
+      "round": 47,
+      "client_ids": [
+        4,
+        6,
+        10,
+        12,
+        13,
+        14,
+        17,
+        19
+      ]
+    },
+    {
+      "path": "round_0048.pt",
+      "sha256": "26b2e7918ad14985aac776f56e82c9fe25d15d33423903ad19c6f52afb4c8b73",
+      "bytes": 572542634,
+      "round": 48,
+      "client_ids": [
+        1,
+        3,
+        4,
+        10,
+        11,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0049.pt",
+      "sha256": "734b1f3e7ec5ac80d0edda6bbd4ea0d9989adb72c07da7e534a156652025a0b9",
+      "bytes": 572542634,
+      "round": 49,
+      "client_ids": [
+        0,
+        1,
+        2,
+        12,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0050.pt",
+      "sha256": "bff09828b91b17b4112255eeea06f5ee8902566ae49f6d37d35d2cfce3ec5313",
+      "bytes": 541333597,
+      "round": 50,
+      "client_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0051.pt",
+      "sha256": "1feb5c36ec366ce14e6f0c898570445abcc465946a8ba01fb2418389436b5ac5",
+      "bytes": 541333597,
+      "round": 51,
+      "client_ids": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "path": "round_0052.pt",
+      "sha256": "3dcc6959872a48cc821a21c4be42245555f81bff0095c3fc8da990801e50efe3",
+      "bytes": 510124560,
+      "round": 52,
+      "client_ids": [
+        3,
+        5,
+        6,
+        7,
+        14,
+        15,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0053.pt",
+      "sha256": "4629786837f72ff09ca1f4275525dfe61333a46b41914aa7fabb218ef4c42ded",
+      "bytes": 510124560,
+      "round": 53,
+      "client_ids": [
+        3,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        18
+      ]
+    },
+    {
+      "path": "round_0054.pt",
+      "sha256": "25b5256a18428f7fec52cbb738ef25dbf3b659a1d36d06ca80c74c8155554a83",
+      "bytes": 541333597,
+      "round": 54,
+      "client_ids": [
+        1,
+        4,
+        7,
+        8,
+        11,
+        12,
+        14,
+        19
+      ]
+    },
+    {
+      "path": "round_0055.pt",
+      "sha256": "0509bd927126152372eb9c7c8f62452a228608dc94b76817b22f60f3f95f9925",
+      "bytes": 572542634,
+      "round": 55,
+      "client_ids": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "path": "round_0056.pt",
+      "sha256": "eb7897a0a3a8d3175d0496c412e3e8b5651ae5b03333997452c598a9239c991a",
+      "bytes": 572542634,
+      "round": 56,
+      "client_ids": [
+        0,
+        3,
+        4,
+        5,
+        9,
+        10,
+        13,
+        19
+      ]
+    },
+    {
+      "path": "round_0057.pt",
+      "sha256": "77b157884926b2f0897b627164dc2e52e57de7338e68f85f49579756b4339e23",
+      "bytes": 510124624,
+      "round": 57,
+      "client_ids": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        18
+      ]
+    },
+    {
+      "path": "round_0058.pt",
+      "sha256": "fc934a0f40b4bb35b460286b18d90f8a04feb08df9d5698dc56b669fa24e29fc",
+      "bytes": 541333597,
+      "round": 58,
+      "client_ids": [
+        0,
+        4,
+        5,
+        8,
+        10,
+        12,
+        15,
+        18
+      ]
+    },
+    {
+      "path": "round_0059.pt",
+      "sha256": "fd2e60b2e9abf14ef7823bad8c61f17e9f060104319a94bfbb09ea6d6bf9a035",
+      "bytes": 572542634,
+      "round": 59,
+      "client_ids": [
+        0,
+        3,
+        4,
+        5,
+        9,
+        12,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0060.pt",
+      "sha256": "9631a3b533f4955cb452afaa925a7fe896bb1934b9ef0bc1a95764f8265be2a2",
+      "bytes": 541333597,
+      "round": 60,
+      "client_ids": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        10,
+        13,
+        15
+      ]
+    },
+    {
+      "path": "round_0061.pt",
+      "sha256": "729f357dda1b8a43d5e34a1a382dfc2a6f2806581adc577254e5a1c01743e422",
+      "bytes": 541333597,
+      "round": 61,
+      "client_ids": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        12,
+        15,
+        19
+      ]
+    },
+    {
+      "path": "round_0062.pt",
+      "sha256": "9b962f365f2987763367720698a9d867fd3ae2d87c6f58e83c2f442bf7d1fa7c",
+      "bytes": 510124560,
+      "round": 62,
+      "client_ids": [
+        1,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "path": "round_0063.pt",
+      "sha256": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+      "bytes": 541333597,
+      "round": 63,
+      "client_ids": [
+        0,
+        4,
+        7,
+        11,
+        13,
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "path": "round_0064.pt",
+      "sha256": "032547598f9657628d6dc6effa0d9227fec8063b5d3c0710b085060ded898ede",
+      "bytes": 572542634,
+      "round": 64,
+      "client_ids": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "path": "round_0065.pt",
+      "sha256": "46eb48ce1a265931510e706e3c7630ad7b6247082438c1c53f22be4ceb1928fc",
+      "bytes": 572542634,
+      "round": 65,
+      "client_ids": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        10,
+        13,
+        18
+      ]
+    },
+    {
+      "path": "round_0066.pt",
+      "sha256": "44e7fcbca82bd5302a1772e422063d04a909489cafe0671437201a3fd204c506",
+      "bytes": 541333597,
+      "round": 66,
+      "client_ids": [
+        2,
+        4,
+        5,
+        9,
+        10,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "path": "round_0067.pt",
+      "sha256": "9a96ee11f90c49518e8b3f9a4b8f529877b3afbbb59b6622583760d9e99bcf41",
+      "bytes": 510124624,
+      "round": 67,
+      "client_ids": [
+        4,
+        6,
+        7,
+        8,
+        13,
+        14,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0068.pt",
+      "sha256": "9d411d3465e9afae6689d66441ff980d15c0b8b9a8cdc6fb39e357f34a89be1e",
+      "bytes": 510124560,
+      "round": 68,
+      "client_ids": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "path": "round_0069.pt",
+      "sha256": "b2929a9b2b692c3ec03897a28b6dd5b2ce7e0739c786b0ce0cfc308cd76aced9",
+      "bytes": 541333597,
+      "round": 69,
+      "client_ids": [
+        2,
+        3,
+        6,
+        8,
+        10,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "path": "round_0070.pt",
+      "sha256": "c59c0887c6c62e04f06eac895a6ba0032a3b55b55e0226dfdbb577bf00044f57",
+      "bytes": 572542634,
+      "round": 70,
+      "client_ids": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "path": "round_0071.pt",
+      "sha256": "a3aa36b8cc3e67186005124ce5483f5d07e945bb37c2150f8f41aa82c7635d35",
+      "bytes": 603751671,
+      "round": 71,
+      "client_ids": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        9,
+        12,
+        17
+      ]
+    },
+    {
+      "path": "round_0072.pt",
+      "sha256": "51db13872fa294bb81830100bcd10b34697e9d2451934bfb823b75e12bd09859",
+      "bytes": 541333597,
+      "round": 72,
+      "client_ids": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        11,
+        14,
+        19
+      ]
+    },
+    {
+      "path": "round_0073.pt",
+      "sha256": "d59d94d7fc66b31ebdf0b99b8dc6235b981d953fc4a52b0fa3b3c3f7ec6896ad",
+      "bytes": 572542634,
+      "round": 73,
+      "client_ids": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        16,
+        19
+      ]
+    },
+    {
+      "path": "round_0074.pt",
+      "sha256": "c8662db1aae410c842f5da2ad3a7c09db0f748e255f8162774feb385fb6a33f4",
+      "bytes": 510124624,
+      "round": 74,
+      "client_ids": [
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        18
+      ]
+    },
+    {
+      "path": "round_0075.pt",
+      "sha256": "9eb4e3cbe623f1f56406895b203da5160c418ebe98e1cfafad4834aa265adcdd",
+      "bytes": 603751671,
+      "round": 75,
+      "client_ids": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        9,
+        16,
+        17
+      ]
+    },
+    {
+      "path": "round_0076.pt",
+      "sha256": "5a1030ec6e3487ab13f1bb036cf72af0cf096e4d20fb7d1e475f8d882d62899a",
+      "bytes": 572542634,
+      "round": 76,
+      "client_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        11,
+        17
+      ]
+    },
+    {
+      "path": "round_0077.pt",
+      "sha256": "f1dc76fab5106bc3300ec8df6ec5bf844922f2bd6ca3bc2e90f80f6a247c18c8",
+      "bytes": 510124560,
+      "round": 77,
+      "client_ids": [
+        2,
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "path": "round_0078.pt",
+      "sha256": "fddf6add960a543417a5e642e7f5bed4173fd6697c6faef529264ad4ca357bfb",
+      "bytes": 541333597,
+      "round": 78,
+      "client_ids": [
+        1,
+        3,
+        5,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0079.pt",
+      "sha256": "f1d322839babcf40a46b9ae02d68d0c264c64cb79a134af60d67ea9260c194ff",
+      "bytes": 510124560,
+      "round": 79,
+      "client_ids": [
+        0,
+        6,
+        9,
+        10,
+        11,
+        13,
+        17,
+        18
+      ]
+    },
+    {
+      "path": "round_0080.pt",
+      "sha256": "fb2895c851d92b007564f85cbb1b19ea367c53c39f57ba9711c1fc2c07075a8e",
+      "bytes": 572542634,
+      "round": 80,
+      "client_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        13,
+        15,
+        19
+      ]
+    },
+    {
+      "path": "round_0081.pt",
+      "sha256": "efc337c398b9dbc42f9bcb2f402f07931f9fa569afcd398bbd9ce2ce81b43b8d",
+      "bytes": 541333597,
+      "round": 81,
+      "client_ids": [
+        0,
+        2,
+        5,
+        6,
+        7,
+        11,
+        14,
+        18
+      ]
+    },
+    {
+      "path": "round_0082.pt",
+      "sha256": "835f0b5b402241b337a593ff69db1a6b3e67883d83c730cdc9880ab1c19c3691",
+      "bytes": 510124560,
+      "round": 82,
+      "client_ids": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14
+      ]
+    }
+  ],
+  "created_unix": 1792767323.9774394,
+  "observed_warmup_generator_None": true,
+  "resume_runtime_sha256": {
+    "config.py": "4c10c51c1ecfcb8a0d2c17be75d823c74ecfcb459993a24030d018e1c1f017aa",
+    "corrected_adapter.py": "0a2499ef849e7a3d45e1a4f150801aa5cc1b219ecc80e27800d7e611870aa912",
+    "corrections.py": "b0be990598e354a86b533faed0c6c1543569b5e660e6368c80227826cf02ec17",
+    "dataset.py": "a6134cac800a5d6010a2407fbd1170a18ff3eec8e9dfa58434affc6049c6f959",
+    "main.py": "bd01aa3b75088a08d93e9521a115452bd3bbb9c7ae22292221f1f370ecf58116",
+    "potential_defence.py": "06b1ad38bfa8f2c21f1a7dc44d4b627ea17104f082578af64c8edb2cc67a6e10",
+    "resume_support.py": "f008e0a63e5f09727d6ef0f513524545ead8b1e1cc3e3fcac59f2569bd19e730",
+    "runtime_fixes.py": "3545546c401a38c763137b5dc3d2f6ab1243c346a26be0d5ec2764ca3e2eb817",
+    "sql.py": "df6bf7f78a278543ba650a42bf804fa0b46aaaf7e700f3e57e7d2a3f2b361a6f",
+    "train_main.py": "4248264beb755bba33926a9d7d35da6b91eeb4506102f2f737ab1a9b94f73b76",
+    "train_method_dba.py": "a4541d0969c413e1d7e3731fcaf8b46be83a18cc97af42ba49f38e56c8b50d85",
+    "train_method_iba.py": "6af10efad48a56b620ca6078f688fd549529b3ddae95e14af4db8e6eae5169d4",
+    "unlearn.py": "6b21a25d51392f44f69d7dab1075be0523c24f12b4c3f340e3cd80c69d4367e0",
+    "defence/aggregtion.py": "fcba90c0fc1287b553b76ca1ba5f971858260b1f135444fca4d0ece286ed0c53",
+    "defence/defence_total.py": "eed58cc9680a29d4d82c19f6eb759fae7b0d4c47b7abb9983eb497a96f097bbe",
+    "defence/simple_defence_method.py": "28bf0f693eebe1291dc19e5a28c2772f29d61e9536433d100310ed7ebeb33765",
+    "defence/__init__.py": "f712cc81fa89229d37a8bec05488f0b11597c124e4ff214745132cea3f90ac08",
+    "model/model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "model/resnet.py": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+    "model/__init__.py": "03bfe168f84d602e7e7d1e4bdfe683a66094f8f913d248e0baf45788c6368492",
+    "unlearn_method/distillation.py": "8fa5ec3ae40198660c2054f4459fd2439917dd7c1b9533147098722f9e6d2e9f",
+    "unlearn_method/federaser.py": "a91d64aa03006914e85a9dcabfd1b881a13146b225673457d5b394bb4a18b9b1",
+    "unlearn_method/pgd.py": "187d75610f0bf1272e595250ac2c58125fc2de3bc9ad01290cf5cce46293d367",
+    "unlearn_method/retrain.py": "6db1642bb6369184a287cfe85457909067766aa768056dc04ecf05a4c9e24872",
+    "unlearn_method/robustFu.py": "0237c00cb3ce594860059e653dd3b7d9d8a870849aad56d79cad3d0cacd995d6",
+    "unlearn_method/sga.py": "50965f4740193f5a8dcd55ce3657dfeb97ab14d50d5c41d4f3988e15d6b394ea",
+    "unlearn_method/utils.py": "519c1baf621db8875b2d847193f02d95cef964169d0b85b1b21737bea799de80",
+    "utils/comm_utils.py": "19ca20113de07d06be96d23973c58173f86adb2b23a4413ce5959303d65d3540",
+    "utils/dba_attack_utils.py": "08a03dba869a8e2fe3d805832ae3ab3ca2823fb74caf0d8579769356f63428f9",
+    "utils/mpi_utils.py": "18f0ae873232a697890a9e0da19e1485a1fed336b57b48fef6a72f1d857f67ac",
+    "defence/Backdoor_indicator_defense/main.py": "3d65469e9fe409982b181d63b5c2417268efd709d991fbebddbb7152aab62a9e",
+    "defence/FLAME/main_fed.py": "1645d0ce8e3c9c71ac87bc52fdfe4c91b8aa56f3ed267f9dd91487b86bc9c1be",
+    "defence/FLDetector/byzantine.py": "009660076c3d1bf7d62eaa0dc1291f3d3a03ab3d4cc06dfab6b4d0d8d79214fb",
+    "defence/FLDetector/nd_aggregation.py": "a82b97fcac4e804ab26353df0bd9649e11f21a2939f3e29c5064cfea4e92cdb5",
+    "defence/FLDetector/periodic_byz.py": "17ace5035adc464bdee5efad13f8ecb6db5f40fcfc87622a7fa7480ce6aadf6e",
+    "defence/FLDetector/train_cifar.py": "1d98bb3a6f92d26748a0170fec0957a4b525af542cfebf3f16bcd96bf63c9825",
+    "defence/FLDetector/train_femnist.py": "a79ecd7a49248321a7fe8bc9284db2be1f1815d178813be466927d50e973163c",
+    "defence/FLDetector/train_mnist.py": "ccc806052fad5c5b1c9cffbfc2907980151103ba5c883b6cbe5f637148003ab6",
+    "defence/AlignIns/src/agent.py": "c913e8c9c9ec9cb4d224745680ca4d88519fa350f4b807953e8e9745ac05c2ea",
+    "defence/AlignIns/src/agent_sparse.py": "35d3bac4b9f4f9dd1085722c95e6e33a52ec5a0e7bcb7c4ec2df13de7bba8d5d",
+    "defence/AlignIns/src/aggregation.py": "f2c2e0d5e4f81ade1aa32ea3c38823703315687a8580429be11f0591dcfbb11b",
+    "defence/AlignIns/src/federated.py": "e59157fae5227c9160c791ac3d3e9aca92e50bb774eda56a1d64a074f2509252",
+    "defence/AlignIns/src/models.py": "5c0e83af560a47f68245bac02298a41d8f2fa2e242750d4148240ce5f1b8736e",
+    "defence/AlignIns/src/resnet.py": "b678a15a1d54df226286993904fa77bc2fd6056ceba217f9de2e73707b293d01",
+    "defence/AlignIns/src/utils.py": "e515bf212ca074925e30bca797af2cd9f7147792474c3057ca3244b462998e01",
+    "defence/AlignIns/src/vgg.py": "d7f845bad41972965e4b62fcaaf04eb3df7800c8be51ec0360c1c53eab5dd61a",
+    "defence/Backdoor_indicator_defense/dataloader/AbstractDataloader.py": "c28cb0f4987bc4a0838e713aea14f8d0083ebc79c7688b78d41c4658497e38bf",
+    "defence/Backdoor_indicator_defense/dataloader/GeneralFLDataloader.py": "c049fe05459eed8f4fd908d9c38128fe63d377c6bdbc0f7b8c2c9f07c9c57a46",
+    "defence/Backdoor_indicator_defense/dataloader/WMFLDataloader.py": "5eebedc53e1d41dff87b09674227f58faa1d8ca9d6b9fc86e752aa0b0f2ca694",
+    "defence/Backdoor_indicator_defense/models/generator.py": "05e27a3a02deeb10be46babd19a291f63958cae62d2ea23d2695eb94bc197a03",
+    "defence/Backdoor_indicator_defense/models/resnet.py": "691ca6038429212553e6ae492bcdc4025465ec3df34d4a3f00cc0b814ad26078",
+    "defence/Backdoor_indicator_defense/models/simple.py": "8fe4f8ec394735cdc83b51ac795851d0b6be6546bd000426e785181524b2603b",
+    "defence/Backdoor_indicator_defense/models/vgg.py": "bee7fc70cbe1fdfbf4c984dedff828d1258f8f17402a497a3d91cd83b50e3b0c",
+    "defence/Backdoor_indicator_defense/utils/losses.py": "457db39cf90bbd366a26846ce7cd2fb42f30ea9b0bb90c83f5bc8e2ebfaf25af",
+    "defence/Backdoor_indicator_defense/utils/utils.py": "3fe0e150b49d7c2a4bf1f499be278335e5fb590084e9cac7dc244a4905648a34",
+    "defence/Backdoor_indicator_defense/participants/clients/AbstractClient.py": "869b98fc683d5f841f6a626311825c8885d3be3e94fe87c6351ddf82a8eba0a3",
+    "defence/Backdoor_indicator_defense/participants/clients/ChameleonMaliciousClient.py": "d92da58224ae966fd6e4b676212cf777e7390a57b0b35e89f18c45337ce4adce",
+    "defence/Backdoor_indicator_defense/participants/clients/FedProxBenignClient.py": "cdea4de70841f0c1df063047777fe4a14b0299456b0bcf6fb1fd668e16383e96",
+    "defence/Backdoor_indicator_defense/participants/clients/MaliciousClient.py": "6b0bbfc783ecd28fc4e16142f1b99cbd7098c7da2288fbbf8b3197eb7fa54d1f",
+    "defence/Backdoor_indicator_defense/participants/servers/AbstractServer.py": "764e4ce21960b278c439dcab082121d09330819a9f12d0cc936b572b69b230b3",
+    "defence/Backdoor_indicator_defense/participants/servers/DeepsightServer.py": "ec9ecfc0ff8f395dac60c213088461bb0f4ed4f0032f1a39673284f7aa61055b",
+    "defence/Backdoor_indicator_defense/participants/servers/FlameServer.py": "b5ac7386197dccf63f97e8822aa67b5c4e1667c268d7bb3152e2b67e541b14a4",
+    "defence/Backdoor_indicator_defense/participants/servers/FoolsgoldServer.py": "da1a034386e6315aeca65b7a2586720a06c126c6d7040052320ab3630542846d",
+    "defence/Backdoor_indicator_defense/participants/servers/IndicatorServer.py": "24b7a239e89fdc0c1a6b201dcf1644e534204296afefc5d79246a49067246dd9",
+    "defence/Backdoor_indicator_defense/participants/servers/MultikrumServer.py": "509f5d2543db9f511e8887d70440b4e99b024361e7c7827ecbaeb4ce142e1ef5",
+    "defence/Backdoor_indicator_defense/participants/servers/NodefenseServer.py": "f140b3bca8ce818e8bdd7befa09005e7feefc2d4d2e8e2bc5e10c67e4cb1a8b6",
+    "defence/Backdoor_indicator_defense/participants/servers/RflbatServer.py": "1a0c74bc7db54735d3841bd05a0fc6da733bc1ca2a1ad844bd517c06b3bfd238",
+    "defence/FLAME/models/Attacker.py": "fd534ff317d2be9b239480b1394181ce3f80d0c8a0f3bd0716c542431c36c4b3",
+    "defence/FLAME/models/Fed.py": "7e9652dcc2a023f4f1240f4e32c910bbfded718bd55250d9c438459b41111701",
+    "defence/FLAME/models/MaliciousUpdate.py": "47e2720b5ef19be5f72e9868228f8ede7adcc810fed75f4b2237f306c61dd4f7",
+    "defence/FLAME/models/Nets.py": "fb16482e2588d40f8729e2521f99abea02ba60b0adb6d031e54081e402391eaf",
+    "defence/FLAME/models/test.py": "711ae91946b2490963a1a8de0fec4f46b8a897fc8822b96fda6a76fc5450b5ef",
+    "defence/FLAME/models/Update.py": "bab3c89feaf3523d06d9f6015bd46c6411aa0bec443acfbca5355a5b09244a44",
+    "defence/FLAME/models/__init__.py": "0a17a4f660593a026332647a72f028db60cb822c228c454fd358b53347c994ec",
+    "defence/FLAME/utils/defense.py": "1332135a91d1ee0a16f1bd3fa3657d59ccad1d030f4345b98bd4285f7153b889",
+    "defence/FLAME/utils/info.py": "a41e2549fb6c2587e9869ec28a189d6af0334e37ccb623bd759fa838b2398597",
+    "defence/FLAME/utils/options.py": "e0f8ada0f5c7e387507123be6052aaf014474af6fa437d670743b5a0896704a0",
+    "defence/FLAME/utils/sampling.py": "adbe5d5f9b17a5434cb4a85aa66d9c773a074f531570757731585268987541af",
+    "defence/FLAME/utils/__init__.py": "0a17a4f660593a026332647a72f028db60cb822c228c454fd358b53347c994ec",
+    "defence/MASA/src/agent.py": "2f06be5ffd345721c5080ae7ac69f4829b4238c5623d65bf7b9b9239a0259fe3",
+    "defence/MASA/src/agent_sparse.py": "a9a67d1eac08ff1455112acfa71745b8df9c17faa0bf141b0a85402861ed8e5f",
+    "defence/MASA/src/aggregation.py": "4f79a46267a24c0e0d5e649ec9257f515789f3b9d65af89bf45cbbe6d554e86c",
+    "defence/MASA/src/federated.py": "13db0ccb4b78463662b72221d09812445ebfc576688bee5813fdf19d366a04b1",
+    "defence/MASA/src/models.py": "d81fd23dcddd6e9ec3c446cb85b120ae5447354e25f627b0e735b2a9d0b2fec2",
+    "defence/MASA/src/resnet.py": "b538aeb1d24a49b76a763b8f1d8adf8a46e68d0108b6017f32a3081d5a6b33e2",
+    "defence/MASA/src/utils.py": "3b77cfd5daea63951eeb07b8d9e1e61acce6aa35f388ddd2196cbe48689d4d55",
+    "defence/MASA/src/vgg.py": "bedca7cd93e7c0175862eb220cf577d1a4a7cac86fe7e11cf23b34d77303bb62",
+    "unlearn_method/FedEraser/data_preprocess.py": "a568eb87aec2ec8fca998a7c0027cf32f77f75f923f6676594474b25d4df7148",
+    "unlearn_method/FedEraser/fed_kd.py": "6c57439fb6fe4f6fe23fecb9afe663d27c00105cac15cfcba4a170dba25fc7dc",
+    "unlearn_method/FedEraser/Fed_Unlearn_base.py": "54a103690bf6a8df4f95de2214de3801266e7c8832956b2847116062dfe49e18",
+    "unlearn_method/FedEraser/Fed_Unlearn_main.py": "015f033f4468c4300fe6f9783b0f5e2971c2fb658317c5e436412b9141c1fb96",
+    "unlearn_method/FedEraser/FL_base.py": "cb9a6892a13767c8d9e0012aa9baa501aebc9b132116f44ff3fa6423fb28fd00",
+    "unlearn_method/FedEraser/membership_inference.py": "e838b1f7010bfb097b43e62cd478e2184c501363c27222a15cafc9227ce81c92",
+    "unlearn_method/FedEraser/model_initiation.py": "abd11014d0af9d7be5e52e03d150590981f44a61965d2c17eb370b13100d14a3",
+    "unlearn_method/FedEraser/utils_federaser.py": "dc70c2dd6c069a2a79afc8871bfd2ff0541ea712c9cd45e1d21f676037fb807e"
+  }
+}

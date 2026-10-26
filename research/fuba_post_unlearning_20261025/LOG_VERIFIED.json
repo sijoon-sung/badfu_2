@@ -1,0 +1,13 @@
+{
+  "state": "passed_actual_log_and_parent_ID_crosscheck",
+  "unique_KD_batches": 400,
+  "committed_KD_epochs": 10,
+  "examples_per_epoch": 2500,
+  "removed_actual_client4_contributions": 41,
+  "warmup_round2_also_removed": true,
+  "correct_local_positions_and_native_hashes": true,
+  "server_deleted_overlap": 0,
+  "KD_labels_used": false,
+  "events_sha256": "38cf3650ea3e71ea0df552c32c07359ca867f903bb888862921f912a67c981a8",
+  "deletion_audit_sha256": "6303ab72aacd896aa44ffd6810d2f96bcf6e4d208e69843df464ff816e72d746"
+}

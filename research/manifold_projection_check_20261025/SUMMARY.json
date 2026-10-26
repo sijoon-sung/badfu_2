@@ -1,0 +1,97 @@
+{
+  "schema": "bounded_fc_projection_diagnostic_summary_v1",
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "independent_FL_seeds": 1,
+  "model_pairs": 3,
+  "reference_configurations": 346,
+  "score_rows": 1038,
+  "primary": [
+    {
+      "pair_id": "p0",
+      "label": "공격 위장850 삭제",
+      "selected_class": 0,
+      "k": 40,
+      "total_norm": 0.4346522349809171,
+      "parallel_norm": 0.17212234542617963,
+      "perp_norm": 0.39911961061678913,
+      "perp_norm_fraction": 0.9182504505799033,
+      "perp_energy_fraction": 0.8431838899901954,
+      "projected_z": 9.531884316642083,
+      "projected_alarm": true,
+      "raw_norm_z": 10.871270503514197,
+      "raw_norm_alarm": true
+    },
+    {
+      "pair_id": "p1",
+      "label": "정상850 삭제",
+      "selected_class": 0,
+      "k": 40,
+      "total_norm": 0.2595921955717917,
+      "parallel_norm": 0.10427810088631534,
+      "perp_norm": 0.2377271244038568,
+      "perp_norm_fraction": 0.9157714617738267,
+      "perp_energy_fraction": 0.8386373701993713,
+      "projected_z": 5.404488268755084,
+      "projected_alarm": false,
+      "raw_norm_z": 4.67366722571124,
+      "raw_norm_alarm": false
+    },
+    {
+      "pair_id": "p2",
+      "label": "큰 정상 참여자19.336% 삭제",
+      "selected_class": 9,
+      "k": 40,
+      "total_norm": 0.344065307406775,
+      "parallel_norm": 0.20331416605150376,
+      "perp_norm": 0.27756852423086503,
+      "perp_norm_fraction": 0.8067320890993134,
+      "perp_energy_fraction": 0.6508166635825424,
+      "projected_z": 3.156397434231917,
+      "projected_alarm": false,
+      "raw_norm_z": 3.4248342171341077,
+      "raw_norm_alarm": false
+    }
+  ],
+  "sensitivity": {
+    "p0": {
+      "all_configurations": 346,
+      "all_alarms": 346,
+      "all_z_min": 9.067047201710722,
+      "all_z_max": 13.402546618964713,
+      "balanced50_draws": 10,
+      "balanced50_alarms": 10,
+      "balanced50_z_min": 9.531884316642083,
+      "balanced50_z_max": 12.1573535498122
+    },
+    "p1": {
+      "all_configurations": 346,
+      "all_alarms": 0,
+      "all_z_min": 3.1577067074264464,
+      "all_z_max": 5.520560457258224,
+      "balanced50_draws": 10,
+      "balanced50_alarms": 0,
+      "balanced50_z_min": 4.217104445802493,
+      "balanced50_z_max": 5.404488268755084
+    },
+    "p2": {
+      "all_configurations": 346,
+      "all_alarms": 0,
+      "all_z_min": 2.117173287215885,
+      "all_z_max": 3.742132527846357,
+      "balanced50_draws": 10,
+      "balanced50_alarms": 0,
+      "balanced50_z_min": 2.9197061805093503,
+      "balanced50_z_max": 3.6905570885699306
+    }
+  },
+  "threshold": 6,
+  "bounded_separation_observed": true,
+  "raw_row_norm_same_decisions_in_posthoc_ablation": true,
+  "projection_added_discrimination_established": false,
+  "natural_manifold_vs_artificial_causal_interpretation_established": false,
+  "trigger_family_independent_detection_established": false,
+  "independent_projection_verification": "passed",
+  "untouched_model_behavior_validation": "passed_current_profile_literal_author_and_cache_agreement",
+  "historical_clean_pre_CA_exact_match": false,
+  "no_training_no_checkpoint_modification": true
+}

@@ -1,0 +1,45 @@
+{
+  "state": "passed_actual_first_attacker_round",
+  "round": 7,
+  "native_sha256": "a3d95009410a6105de6a87ac50fb9ec8161fdfe7ab2b647a6d5a49799a79f5c6",
+  "roles": [
+    {
+      "client": 0,
+      "optimizers": [
+        "Adam",
+        "Adam",
+        "SGD",
+        "Adam"
+      ],
+      "full_classifier_epochs": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "full_batches": [
+        1800,
+        1800,
+        1800,
+        1800
+      ],
+      "same_G": true,
+      "submission_exact": true,
+      "decision": {
+        "gamma": 0.0,
+        "status": "gamma0_constraint_unmet_zero_upload",
+        "scores": [
+          {
+            "gamma": 0.0,
+            "ASR_pct": 10.909090909090908
+          }
+        ],
+        "estimated_suppression_constraint_met": false
+      }
+    }
+  ],
+  "aggregation_max_error": 0,
+  "CPU_only": true,
+  "scores_independently_recomputed": false,
+  "full100R_performance_reproduced": false
+}

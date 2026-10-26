@@ -1,0 +1,30 @@
+{
+  "state": "passed_inference_linkage",
+  "case_id": "fuba.v5.s20261023.pre.round100",
+  "run_completed": true,
+  "round": 100,
+  "N": 10000,
+  "non_target_N": 9000,
+  "clean_correct": 7858,
+  "target_successes": 2582,
+  "clean_acc_pct": 78.58,
+  "ASR_pct": 28.68888888888889,
+  "last_checkpoint_sha256": "38711f6810994641b4a32f3275092412bfa916b9fdaf94c90363a7966a921105",
+  "recorded_metric_exact_match": true,
+  "pre_gate": "failed",
+  "epsilon": 0.05,
+  "pixels": "[0,1]",
+  "layout": "contiguous_NCHW",
+  "classifier_mode": "eval",
+  "generator_mode": "eval",
+  "evaluator_sha256": "29cf03c1bed4c2090a390db870bd48b5f08b287bb620953a9dbae163f6a689cc",
+  "training_evaluator_sha256": "aa566470d78ea55ccaedc1cdad2ac046fe0fa34f6612a2a5f684fcc11167360b",
+  "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "GPU_idle_before_inference": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "inference_only": true,
+  "confirmed_pre_post_pair": false
+}

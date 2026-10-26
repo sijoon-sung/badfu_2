@@ -1,0 +1,550 @@
+{
+  "state": "checked",
+  "records": [
+    {
+      "round": 33,
+      "client": 2,
+      "different_fields": [
+        "bn1.num_batches_tracked",
+        "layer1.0.bn1.num_batches_tracked",
+        "layer1.0.bn2.num_batches_tracked",
+        "layer1.1.bn1.num_batches_tracked",
+        "layer1.1.bn2.num_batches_tracked",
+        "layer2.0.bn1.num_batches_tracked",
+        "layer2.0.bn2.num_batches_tracked",
+        "layer2.0.shortcut.1.num_batches_tracked",
+        "layer2.1.bn1.num_batches_tracked",
+        "layer2.1.bn2.num_batches_tracked",
+        "layer3.0.bn1.num_batches_tracked",
+        "layer3.0.bn2.num_batches_tracked",
+        "layer3.0.shortcut.1.num_batches_tracked",
+        "layer3.1.bn1.num_batches_tracked",
+        "layer3.1.bn2.num_batches_tracked",
+        "layer4.0.bn1.num_batches_tracked",
+        "layer4.0.bn2.num_batches_tracked",
+        "layer4.0.shortcut.1.num_batches_tracked",
+        "layer4.1.bn1.num_batches_tracked",
+        "layer4.1.bn2.num_batches_tracked"
+      ],
+      "only_BN_integer_count_cast": true,
+      "counts": {
+        "bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer1.0.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer1.0.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer1.1.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer1.1.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer2.0.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer2.0.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer2.0.shortcut.1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer2.1.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer2.1.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer3.0.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer3.0.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer3.0.shortcut.1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer3.1.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer3.1.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer4.0.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer4.0.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer4.0.shortcut.1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer4.1.bn1.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        },
+        "layer4.1.bn2.num_batches_tracked": {
+          "incoming": 1172.125,
+          "submission": 1172.0
+        }
+      }
+    },
+    {
+      "round": 63,
+      "client": 0,
+      "different_fields": [
+        "bn1.num_batches_tracked",
+        "layer1.0.bn1.num_batches_tracked",
+        "layer1.0.bn2.num_batches_tracked",
+        "layer1.1.bn1.num_batches_tracked",
+        "layer1.1.bn2.num_batches_tracked",
+        "layer2.0.bn1.num_batches_tracked",
+        "layer2.0.bn2.num_batches_tracked",
+        "layer2.0.shortcut.1.num_batches_tracked",
+        "layer2.1.bn1.num_batches_tracked",
+        "layer2.1.bn2.num_batches_tracked",
+        "layer3.0.bn1.num_batches_tracked",
+        "layer3.0.bn2.num_batches_tracked",
+        "layer3.0.shortcut.1.num_batches_tracked",
+        "layer3.1.bn1.num_batches_tracked",
+        "layer3.1.bn2.num_batches_tracked",
+        "layer4.0.bn1.num_batches_tracked",
+        "layer4.0.bn2.num_batches_tracked",
+        "layer4.0.shortcut.1.num_batches_tracked",
+        "layer4.1.bn1.num_batches_tracked",
+        "layer4.1.bn2.num_batches_tracked"
+      ],
+      "only_BN_integer_count_cast": true,
+      "counts": {
+        "bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer1.0.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer1.0.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer1.1.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer1.1.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer2.0.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer2.0.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer2.0.shortcut.1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer2.1.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer2.1.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer3.0.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer3.0.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer3.0.shortcut.1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer3.1.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer3.1.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer4.0.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer4.0.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer4.0.shortcut.1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer4.1.bn1.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        },
+        "layer4.1.bn2.num_batches_tracked": {
+          "incoming": 2406.25,
+          "submission": 2406.0
+        }
+      }
+    },
+    {
+      "round": 99,
+      "client": 3,
+      "different_fields": [
+        "bn1.num_batches_tracked",
+        "layer1.0.bn1.num_batches_tracked",
+        "layer1.0.bn2.num_batches_tracked",
+        "layer1.1.bn1.num_batches_tracked",
+        "layer1.1.bn2.num_batches_tracked",
+        "layer2.0.bn1.num_batches_tracked",
+        "layer2.0.bn2.num_batches_tracked",
+        "layer2.0.shortcut.1.num_batches_tracked",
+        "layer2.1.bn1.num_batches_tracked",
+        "layer2.1.bn2.num_batches_tracked",
+        "layer3.0.bn1.num_batches_tracked",
+        "layer3.0.bn2.num_batches_tracked",
+        "layer3.0.shortcut.1.num_batches_tracked",
+        "layer3.1.bn1.num_batches_tracked",
+        "layer3.1.bn2.num_batches_tracked",
+        "layer4.0.bn1.num_batches_tracked",
+        "layer4.0.bn2.num_batches_tracked",
+        "layer4.0.shortcut.1.num_batches_tracked",
+        "layer4.1.bn1.num_batches_tracked",
+        "layer4.1.bn2.num_batches_tracked"
+      ],
+      "only_BN_integer_count_cast": true,
+      "counts": {
+        "bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        }
+      }
+    },
+    {
+      "round": 99,
+      "client": 2,
+      "different_fields": [
+        "bn1.num_batches_tracked",
+        "layer1.0.bn1.num_batches_tracked",
+        "layer1.0.bn2.num_batches_tracked",
+        "layer1.1.bn1.num_batches_tracked",
+        "layer1.1.bn2.num_batches_tracked",
+        "layer2.0.bn1.num_batches_tracked",
+        "layer2.0.bn2.num_batches_tracked",
+        "layer2.0.shortcut.1.num_batches_tracked",
+        "layer2.1.bn1.num_batches_tracked",
+        "layer2.1.bn2.num_batches_tracked",
+        "layer3.0.bn1.num_batches_tracked",
+        "layer3.0.bn2.num_batches_tracked",
+        "layer3.0.shortcut.1.num_batches_tracked",
+        "layer3.1.bn1.num_batches_tracked",
+        "layer3.1.bn2.num_batches_tracked",
+        "layer4.0.bn1.num_batches_tracked",
+        "layer4.0.bn2.num_batches_tracked",
+        "layer4.0.shortcut.1.num_batches_tracked",
+        "layer4.1.bn1.num_batches_tracked",
+        "layer4.1.bn2.num_batches_tracked"
+      ],
+      "only_BN_integer_count_cast": true,
+      "counts": {
+        "bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer1.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer2.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer3.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.1.bn1.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        },
+        "layer4.1.bn2.num_batches_tracked": {
+          "incoming": 3897.125,
+          "submission": 3897.0
+        }
+      }
+    },
+    {
+      "round": 100,
+      "client": 1,
+      "different_fields": [
+        "bn1.num_batches_tracked",
+        "layer1.0.bn1.num_batches_tracked",
+        "layer1.0.bn2.num_batches_tracked",
+        "layer1.1.bn1.num_batches_tracked",
+        "layer1.1.bn2.num_batches_tracked",
+        "layer2.0.bn1.num_batches_tracked",
+        "layer2.0.bn2.num_batches_tracked",
+        "layer2.0.shortcut.1.num_batches_tracked",
+        "layer2.1.bn1.num_batches_tracked",
+        "layer2.1.bn2.num_batches_tracked",
+        "layer3.0.bn1.num_batches_tracked",
+        "layer3.0.bn2.num_batches_tracked",
+        "layer3.0.shortcut.1.num_batches_tracked",
+        "layer3.1.bn1.num_batches_tracked",
+        "layer3.1.bn2.num_batches_tracked",
+        "layer4.0.bn1.num_batches_tracked",
+        "layer4.0.bn2.num_batches_tracked",
+        "layer4.0.shortcut.1.num_batches_tracked",
+        "layer4.1.bn1.num_batches_tracked",
+        "layer4.1.bn2.num_batches_tracked"
+      ],
+      "only_BN_integer_count_cast": true,
+      "counts": {
+        "bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer1.0.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer1.0.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer1.1.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer1.1.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer2.0.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer2.0.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer2.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer2.1.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer2.1.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer3.0.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer3.0.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer3.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer3.1.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer3.1.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer4.0.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer4.0.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer4.0.shortcut.1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer4.1.bn1.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        },
+        "layer4.1.bn2.num_batches_tracked": {
+          "incoming": 3962.5,
+          "submission": 3962.0
+        }
+      }
+    }
+  ]
+}

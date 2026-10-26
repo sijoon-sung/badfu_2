@@ -1,0 +1,26 @@
+{
+  "state": "ready",
+  "profile_id": "fuba.paper_completion.s20261023.continue24_100.v5",
+  "recurrence": false,
+  "GPU_idle": {
+    "state": "passed",
+    "actual_gpu_memory_MiB": "0",
+    "competing_training_processes": 0
+  },
+  "controller_helper_sha256": {
+    "run_once.py": "6a380df86211bf520e2ceb662669e82c81578f00777950b40ae1e5ffb0256d96",
+    "background.py": "b78115bc4f6cc01dbae21972b8bc2b81f3aa304f330013ca4ab0a1e79c57eff4",
+    "completion_support.py": "3bdaeb16489b1c27a0b0aed60ce157c6c7ebc1313678c1661be4d3f6d51c3f9c",
+    "completion_capture.py": "c3caf05324e790287214ba3f18a3a5047eb787dce1dbc805ba7cfc16e0764fde",
+    "paper_core.py": "38cd135192e9c25bd670fe6e9e605d5e586cb1c31ecb52587607905e612c6d52",
+    "mpi_roles.py": "4b3495cf73429bee4d4f8a84db2a7b378d3a337c0dd88fe474bc7bf98b07a434",
+    "profile_helpers.py": "5283b1612ce5cce35ead6ca985e48762edb532cf9df01a31eedc34cf563c6470",
+    "rebuild_adapter.py": "95a4d73aecd1f2cff42792de1ecdd3352584f1b5aea03e5e758633c220b74d1e",
+    "durable.py": "e38ec548c34ead7922f74b7e3357178545cd233e30394d4331b61f8ef678babc",
+    "resource_guard.py": "f9792758127f937ff37f9e760607c3149a81f1ba10bbdc58110b00e58646c720",
+    "verify_run.py": "1789a252417df33a77e667af3848edf8b76e17c6ad131084069f4ded2c706020",
+    "verification_contracts.py": "b2f85607d762f36cc6968856332a5de0d973c76de3229661018b0f7312d6c1b4"
+  },
+  "profile_sha256": "cd1ec9baed821f66d98ddcc018d8fc999c8b6dcdb14075d00a041fc01bd41ff8",
+  "cached_phase_preflight_sha256": "88be223a0eb7d12de4a7fba87686d7f0991f8166c80e6606298bf120312736c0"
+}

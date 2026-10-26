@@ -1,0 +1,39 @@
+{
+  "state": "passed_full100R_supplemental_CPU_audit",
+  "related_cards": [
+    "R02"
+  ],
+  "profile_id": "fuba.algorithms.s20261023.fresh100.kd10.v6",
+  "rounds": 100,
+  "roles": 800,
+  "malicious_roles": 186,
+  "checked_model_artifact_files": 1235,
+  "gamma_status_counts": {
+    "gamma0_constraint_unmet_zero_upload": 91,
+    "bounded_by_first_failure": 36,
+    "right_censored_at_declared_cap": 19
+  },
+  "positive_gamma_roles": 55,
+  "exact_submissions_and_aggregation": true,
+  "source_files_hash_verified": 23,
+  "evidence_sha256": {
+    "TENSOR_PREFIX.json": "3b031c8d48864cb9e194321d18a1c2df1e9491a378a3eaa65f3c7d0951e9cf45",
+    "LATEST.json": "0a2b2f749abbe1f307547a18c4ee1673ced6319a071b3fcdbfe6c7919f2a9439",
+    "OBSERVER_STATE.json": "ac7b07400980096c0e079e3cee5e8c580cc193ae81f7244021ef5ebc20829e24"
+  },
+  "auditor_sha256": "60f1d84272d64d075824b851949840aa3c7b0ff8368cb7f2eb7adcdec52f2e0e",
+  "ready_sha256": "3b5635a6f7fa5b1275ebadfddf3973d5d17cc92c8803ec68f396588da7311eef",
+  "observer": {
+    "state": "completed_CPU_observations",
+    "pid": 13852,
+    "time_unix": 1792984840.082575,
+    "training_changed": false
+  },
+  "training_processes_started_or_changed": 0,
+  "not_a_replacement_for_frozen_final_verifier": true,
+  "local_gamma_scores_all_independently_recomputed": false,
+  "CPU_GPU_one_image_difference_unresolved": true,
+  "independent_full_evaluation_complete": false,
+  "local_final_model_delivery_complete": false,
+  "time_unix": 1792985248.4213357
+}
