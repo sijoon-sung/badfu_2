@@ -1,12 +1,12 @@
 {
   "schema": "research-index-audit-v1",
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "efc0caaea3248153033365d8192e6ae0555cceecb76188d88f762629903c3108",
+  "registry_sha256": "12c6929172c8767250df27b8dedbfce4e32021eda81aed6be1c7f92babd5bbcd",
   "cards": 28,
-  "unique_source_documents": 247,
-  "top_level_folders": 100,
-  "folders_linked_to_cards": 52,
+  "unique_source_documents": 261,
+  "top_level_folders": 102,
+  "folders_linked_to_cards": 54,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -170,6 +170,20 @@
     "research/fuba_optimizer_isolation_20261031/RESULT.json": "536ed7f8254fbf87275714110f7fcd185a931b44d315d6bf540bc573f9c40c3e",
     "research/fuba_optimizer_isolation_20261031/VERIFIED.json": "a9dd688a409a2f5bff5a65c9cf58679db2fc388df76098125d0e6ceddaeabddb",
     "research/fuba_optimizer_isolation_20261031/LAUNCH_CORRECTION.txt": "1906a9982524190ded9a761f9bd4021fdbc3cf689bd60582ca85aca8881e6396",
+    "research/fuba_radius_alignment_20261031/PROTOCOL.txt": "6efb076dde937361a49987dc69f1f1c3161f37e68eaf498ce429e727b663cb3e",
+    "research/fuba_radius_alignment_20261031/PROFILE.json": "eece6afa8e40ed191c3e1fad301cf411aaf254572da6aa55a2f8df1312f21ea2",
+    "research/fuba_radius_alignment_20261031/RESULT.json": "a2ceeffca1caf38e7a541ec96b6244de3a05003659b5df59bc5aada05a623e15",
+    "research/fuba_radius_alignment_20261031/VERIFIED.json": "2956150cc00d09a98d6db6c4c75292536d9993c62a2b488bed81cb5ac775e28f",
+    "research/fuba_radius_alignment_20261031/DELIVERY.json": "0e49b972458bbc74645c2b5d52f2ca16f1268b164f357da63636b1472bea5fcc",
+    "research/fuba_radius_alignment_20261031/REPORT_KO.txt": "be71dbf4413be56c52df26fd9959d606055c2659448b889002daeb30ea3264c7",
+    "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt": "9875a627f0a1bf488b5b98c44ef31b5fff8536bb6a50679c610576ac19b359ef",
+    "research/fuba_reference_mnist_dba_20261031/PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt": "30c9a379d82b936c45012b2a5c3b33ae91e75b061d852c7b54a41a084420e931",
+    "research/fuba_reference_mnist_dba_20261031/CPU_CONTRACTS.json": "3393fc3fdc9021908d53c5bc1cb00a5d377f2c1fb2f64e53d021de29d2ff2302",
+    "research/fuba_reference_mnist_dba_20261031/FIRST_ROLE_VERIFIED.json": "4b6e17bace360a827097f34e799f192897351b02524dcbbe0a3e65d53e45e613",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json": "840dc7cd10cd4480cfaea560e7322df90c0bf292747fbd10b52f659ca9664cbe",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json": "525dfb8c04d6e2c3e45d81edb1d81d954c04a6524acf08fdec203f5bc2a97ece",
+    "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt": "6b5fffda697dbf601144367cc35abca8c30656048a11006dae3848356a631c53",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -742,6 +756,33 @@
         "research/fuba_projection_check_20261025/PROTOCOL.txt",
         "research/fuba_projection_check_20261025/REPORT_KO.txt",
         "research/fuba_projection_check_20261025/SUMMARY.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_radius_alignment_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_radius_alignment_20261031/PROTOCOL.txt",
+        "research/fuba_radius_alignment_20261031/REPORT_KO.txt",
+        "research/fuba_radius_alignment_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_reference_mnist_dba_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_reference_mnist_dba_20261031/AUDIT_FREEZE.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json",
+        "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

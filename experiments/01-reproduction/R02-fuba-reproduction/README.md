@@ -93,3 +93,14 @@ v5와 v6는 실제 100라운드와 실제 KD10 후 모델을 만들었다. 둘 �
 - [v6 독립 평가 자원 차단](../../../research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt)
 
 [등록된 근거 파일 전체](SOURCES.md) · [실험 조건과 판정 원문](../../../research/EXPERIMENT_CARDS.md#r02)
+
+
+## 2026-10-31 실제 진단과 논문 알고리즘 기준선
+
+v7의 최종100R와 실제KD10은 완료·검증·전달됐지만 전CA77.76/ASR10.5555556, 후CA77.76/ASR16.7444444로 성능 기준에 미달했다. 위의 실행 중 문구는 당시 기록이다. 이후 같은 입력·앵커·이전G·RNG·50epoch순서를 고정한 SGD/Adam 비교도 ASR .6777778/1.7444444로 개선 가설을 지지하지 못했다.
+
+학습반경만 .05로 맞춘 후속50epoch/1800batch는 CA56.06/ASR84.7222222였고 정상입력 타깃 쏠림도37.5888889%였다. 효용과 정상오류 기준을 실패했으므로 높은ASR을 구현 성공으로 세지 않는다. 실제 모델·optimizer/RNG·50epoch로그를 검증·로컬전달하고 실패를 보존했다.
+
+사용자 지시에 따라 기존 stcebra/FUBA를 우선하고 논문 Algorithm1/2를 최종 기준으로 삼는다. 별도 MNIST/DBA는 같은 논문의 BN·생성기 없는 Net/고정 패치에서 핵심 알고리즘을 먼저 확인하는 조건이다. DISLAB에서 full100R/E50/B64 후 실제client4기여차감/KD10을 시작했고 CPU8계약과 첫 정상역할50epoch/2350batch 저장 검사를 통과했다. 아직 최종100R/KD10 성능·전달은 미완료다. CIFAR/IBA 실패를 지우거나 대체하지 않으며 D08/D15 탐지 반례는 미해결이다.
+
+[optimizer 진단](../../../research/fuba_optimizer_isolation_20261031/REPORT_KO.txt) · [반경 진단](../../../research/fuba_radius_alignment_20261031/REPORT_KO.txt) · [MNIST/DBA 실행](../../../research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt) · [지속 확인 계약](../../../research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt)

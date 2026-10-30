@@ -1,10 +1,18 @@
-# R03 원문과 검증 기록
+# R03 근거 파일
 
-- [공식 논문](https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf) · [저자 배포 코드](https://www.chenwang.net.cn/code/FedUBA-Code.zip) · [고정 GitHub commit](https://github.com/ity207/FedUBA/tree/005959ab8a955f4dcf094930ce6953af8fee827b)
-- [사전 프로토콜](../../../research/feduba_reproduction_audit_20261031/PROTOCOL.txt) · [동결 해시](../../../research/feduba_reproduction_audit_20261031/FREEZE.json)
-- [논문·코드 대응표](../../../research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt)
-- [원본 함수의 DISLAB 실행 결과](../../../research/feduba_reproduction_audit_20261031/RESULTS.json) · [저장 결과·전달 해시 확인](../../../research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json)
-- [판정](../../../research/feduba_reproduction_audit_20261031/REPORT_KO.txt) · [탐지 검증 진입 조건](../../../research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt)
-- [제한된 이름 탐색 요약](../../../research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json) · [최종 문서 검사](../../../research/feduba_reproduction_audit_20261031/FINAL_CHECKS.json)
+[실험 과정과 결과로 돌아가기](README.md)
 
-PDF/ZIP/전체 upstream·개인 자료·모델은 이 PR에 포함하지 않았다. 표본 ID는 합성 계약 사례에만 사용했다. 기존 실패와 현재 중단 기준은 [연구 카드 R03](../../../research/EXPERIMENT_CARDS.md#r03)을 따른다.
+실험 설정, 원 보고서, 결과와 정정 기록을 함께 연결했다. 파일을 보존한 사실과 실험 성능이 검증된 범위는 본문의 판단에서 구분한다.
+
+| 파일 | 원래 보관 경로 |
+|---|---|
+| [PROTOCOL.txt](../../../research/feduba_reproduction_audit_20261031/PROTOCOL.txt) | `research/feduba_reproduction_audit_20261031` |
+| [FREEZE.json](../../../research/feduba_reproduction_audit_20261031/FREEZE.json) | `research/feduba_reproduction_audit_20261031` |
+| [CODE_PAPER_MATRIX.txt](../../../research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt) | `research/feduba_reproduction_audit_20261031` |
+| [DETECTION_GATES.txt](../../../research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt) | `research/feduba_reproduction_audit_20261031` |
+| [REPORT_KO.txt](../../../research/feduba_reproduction_audit_20261031/REPORT_KO.txt) | `research/feduba_reproduction_audit_20261031` |
+| [RESULTS.json](../../../research/feduba_reproduction_audit_20261031/RESULTS.json) | `research/feduba_reproduction_audit_20261031` |
+| [ASSET_SUMMARY.json](../../../research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json) | `research/feduba_reproduction_audit_20261031` |
+| [DISLAB_VERIFICATION.json](../../../research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json) | `research/feduba_reproduction_audit_20261031` |
+| [DISLAB_AMENDMENT.txt](../../../research/feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt) | `research/feduba_reproduction_audit_20261031` |
+| [PUBLICATION_MANIFEST.json](../../../research/feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json) | `research/feduba_reproduction_audit_20261031` |

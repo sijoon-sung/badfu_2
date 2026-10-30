@@ -4,15 +4,15 @@
 
 분야를 고른 뒤 실험 제목을 누르면 시작 이유, 조건, 실제 순서, 결과와 판단을 바로 읽을 수 있다. 각 실험의 `SOURCES.md`에는 원 보고서와 결과 파일을 모았다.
 
-아래 항목은 연구 기록을 주제별로 묶은 것이다. 같은 모델을 여러 방법으로 검사한 경우가 있어 그 수만큼의 독립 학습을 뜻하지 않는다.
+28개 항목은 연구 기록을 주제별로 묶은 것이다. 같은 모델을 여러 방법으로 검사한 경우가 있어 독립 학습 28회를 뜻하지 않는다.
 
 ## [공격 재현](01-reproduction/README.md)
 
 | ID | 실험 | 현재 판단 |
 |---|---|---|
 | R01 | [BadFU 학습과 삭제 전후 모델 확인](01-reproduction/R01-badfu-reproduction/README.md) | 검증 범위 한정 |
-| R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](01-reproduction/R02-fuba-reproduction/README.md) | v7 성능미달·별도 optimizer 진단 미지지 / 논문 알고리즘 기준 유지 |
-| R03 | [FedUBA 공식 배포본과 논문 재현 진입 조건](01-reproduction/R03-feduba-reproduction/README.md) | 공식 배포 누락·ID 계약 실패 / 공격 성능 재현 미검증 |
+| R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](01-reproduction/R02-fuba-reproduction/README.md) | v7·optimizer·학습반경 진단 성능미달 / 논문 MNIST·DBA 100R·KD10 실제 실행 중 |
+| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](01-reproduction/R03-feduba-reproduction/README.md) | 공식 배포 누락·원본 ID 계약 실패 / 공격 성능 재현·탐지 사용 미검증 |
 
 ## [공격 탐지](02-detection/README.md)
 
@@ -57,6 +57,7 @@
 | ID | 실험 | 현재 판단 |
 |---|---|---|
 | N01 | [신뢰 기준 모델을 더하는 제안의 보류](05-parked/N01-trusted-reference/README.md) | 미검증·자동 실행 대상 아님 |
+| N02 | [넓은 탐지 주장과 공개 코드 정체 감사](05-parked/N02-broad-claim-audit/README.md) | 필요기하반례 확인·공통 탐지 보류 |
 
 ## 과거 세부 기록
 
