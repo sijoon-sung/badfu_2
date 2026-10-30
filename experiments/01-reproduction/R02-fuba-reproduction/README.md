@@ -1,5 +1,7 @@
 # R02 FUBA 재현의 수정 과정과 실제 삭제 후 결과
 
+최신 2026-10-31 후속: 우선 대상은 기존 FUBA이며 논문 Algorithm1/2가 기준이다. [알고리즘 대응표](../../../research/fuba_optimizer_isolation_20261031/PAPER_ALGORITHM_CONTRACT.txt)와 [실제100epoch optimizer 비교](../../../research/fuba_optimizer_isolation_20261031/REPORT_KO.txt)를 추가했다. 해당 비교는 가설 미지지이며 Adam 채택·전체 학습 재실행·탐지 성공의 근거가 아니다. 아래 과거 기록은 보존한다.
+
 [저장소 첫 화면](../../../README.md) · [전체 실험](../../README.md) · [분야 목록](../README.md)
 
 ## 실험을 시작한 이유

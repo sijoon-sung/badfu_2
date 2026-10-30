@@ -156,3 +156,9 @@
 | [FINAL_VERIFIED.json](../../../research/fuba_algorithm_execution_20261025/FINAL_VERIFIED.json) | `research/fuba_algorithm_execution_20261025` |
 | [EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt](../../../research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt) | `research/fuba_algorithm_execution_20261025` |
 | [PRESERVATION.json](../../../research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json) | `research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065` |
+
+## 2026-10-31 논문 알고리즘 기준과 별도 optimizer 비교
+
+- [알고리즘 대응 및 미확정 선택](../../../research/fuba_optimizer_isolation_20261031/PAPER_ALGORITHM_CONTRACT.txt)
+- [사전 프로토콜](../../../research/fuba_optimizer_isolation_20261031/PROTOCOL.txt) · [결과 보고](../../../research/fuba_optimizer_isolation_20261031/REPORT_KO.txt)
+- [실제 결과](../../../research/fuba_optimizer_isolation_20261031/RESULT.json) · [CPU 검증](../../../research/fuba_optimizer_isolation_20261031/VERIFIED.json) · [수신 모델 해시](../../../research/fuba_optimizer_isolation_20261031/LOCAL_DELIVERY.json)

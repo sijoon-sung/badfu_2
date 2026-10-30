@@ -67,3 +67,7 @@
 - Test the widest claim's necessary conditions and large benign non-IID counterexamples first, then narrow the supported scope. A narrow positive does not validate its parent claim.
 
 - Prefer DISLAB for computation and validation, including small CPU audits when practical. Run large training, bulk model inference/evaluation, and GPU experiments on DISLAB; use the local machine mainly for editing, transfer, light formatting checks, and reviewing results. Inspect actual processes/state/manifests and fixed-profile/resource guards before any remote GPU job; never duplicate completed finite jobs.
+
+- User clarification (2026-10-31): prioritize the already trained stcebra/FUBA, whose training-time suppression and post-unlearning activation resemble BadFU. ity207/FedUBA is a different paper; preserve its R03 audit but do not continue its separate implementation/training as the active target. Diagnose FUBA implementation choices with a declared bounded comparison before another whole training run.
+
+- User clarification (2026-10-31): paper Algorithms 1/2 and their accompanying definitions are the conformance target. Prior upstream-based execution attempts and adaptations already exist; do not claim the failure is simply that the original code was never tried. Keep untouched-source execution, declared paper interpretation, and successful performance reproduction distinct. The bounded optimizer comparison is diagnostic and did not justify adopting Adam or launching another full run.
