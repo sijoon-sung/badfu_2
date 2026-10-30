@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "12c6929172c8767250df27b8dedbfce4e32021eda81aed6be1c7f92babd5bbcd",
+  "registry_sha256": "6df4ed28e72696a571576660e1d8012bb45b7bce5fbec5b851a13c1f260048cd",
   "cards": 28,
-  "unique_source_documents": 261,
+  "unique_source_documents": 263,
   "top_level_folders": 102,
   "folders_linked_to_cards": 54,
   "source_sha256": {
@@ -184,6 +184,8 @@
     "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json": "840dc7cd10cd4480cfaea560e7322df90c0bf292747fbd10b52f659ca9664cbe",
     "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json": "525dfb8c04d6e2c3e45d81edb1d81d954c04a6524acf08fdec203f5bc2a97ece",
     "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt": "6b5fffda697dbf601144367cc35abca8c30656048a11006dae3848356a631c53",
+    "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt": "3ea4f8a222207ef8adb3f89943b8c6af4d771287eeb3a4ed3a7cdc854c1df6e7",
+    "research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json": "8055232420225984f0600f96ebc9a888525e61900f12ccc6a62e78fe2bd73cc0",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -780,6 +782,7 @@
         "research/fuba_reference_mnist_dba_20261031/AUDIT_FREEZE.json",
         "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json",
         "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json",
+        "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt",
         "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt",
         "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt",
         "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt"

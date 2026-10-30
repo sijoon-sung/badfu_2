@@ -180,3 +180,5 @@
 | [CPU_AUDIT_through0006.json](../../../research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json) | `research/fuba_reference_mnist_dba_20261031` |
 | [CPU_AUDIT_through0007.json](../../../research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json) | `research/fuba_reference_mnist_dba_20261031` |
 | [MONITOR_PROTOCOL.txt](../../../research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt) | `research/fuba_reference_mnist_dba_20261031` |
+| [DELIVERY_PROTOCOL.txt](../../../research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt) | `research/fuba_reference_mnist_dba_20261031` |
+| [DELIVERY_SOURCE_FREEZE.json](../../../research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json) | `research/fuba_reference_mnist_dba_20261031` |
