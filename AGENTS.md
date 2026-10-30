@@ -50,3 +50,10 @@
 - Before another BadFU launch/resume, read `research/badfu_algorithm_audit_20261023/README.md` and run the DISLAB `D:/BADFU_ALGORITHM_AUDIT_20261023/validate_profile.py` guard for the existing fixed profile. Different code/data/configuration requires a separately declared profile, not reuse of this approval. This is an implementation check, not a user-approval requirement.
 - Keep paper-aligned plain-camouflage/batch32/five-client retraining separate from the untouched public script's PGD/batch64 and six-client FU branch. Table I pre-ASR21.55% is compatible with the paper's default setting; ASR<=10% is a separate stronger stealth requirement, not the definition of BadFU implementation correctness.
 - Cite evaluator versions. Existing channels-last metrics remain historical records; use the separately verified contiguous-NCHW author-aligned evaluation for direct numerical comparisons. An evaluation layout correction does not require model retraining.
+
+# PR review workflow — user preference 2026-10-31
+
+- Make research/code/document changes reviewable through a dedicated `codex/` branch and pull request in this repository. Follow the user's PR-based workflow; do not push directly to the default branch or merge automatically.
+- Put the concrete problem, hypothesis, related experiment-card IDs, broad-to-narrow claim scope, known counterexamples, comparisons, stopping rule, and actual checks in the PR. Add results to the same PR and preserve failures.
+- Verify attack identity from the upstream repository/commit and the executed source/profile. Do not rename or equate FUBA and FedUBA by guesswork.
+- Test the widest claim's necessary conditions and large benign non-IID counterexamples first, then narrow the supported scope. A narrow positive does not validate its parent claim.

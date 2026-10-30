@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "2a2a7cba7d6c33b646dc481d5e5a5e415134dafc9c918494f8910d1c79333fbc",
-  "cards": 26,
-  "unique_source_documents": 216,
-  "top_level_folders": 97,
-  "folders_linked_to_cards": 49,
+  "registry_sha256": "4bd0d80a10361d5f9169682f5622176def2322f0608131c7688cf170f85e28b6",
+  "cards": 27,
+  "unique_source_documents": 222,
+  "top_level_folders": 98,
+  "folders_linked_to_cards": 50,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -223,7 +223,13 @@
     "research/fuba_projection_check_20261025/verified_v2/FREEZE.json": "614b19f3e54780ceab4fe615b0149fff2ac1f7bc1ad9b4c3d60ed8631cbdbd4d",
     "research/fuba_projection_check_20261025/verified_v2/SCORES.json": "1d10cf523237f1ad2d4aa11ee2f04ccad06152eb00798e436134e6d6ec86bd38",
     "research/fuba_projection_check_20261025/verified_v2/VERIFICATION.json": "501de6340bbaae76af7c63765d42b2346a9d49626e228388a3bdb73085cfb544",
-    "research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json": "90ff173b4553d7e23e053fbe15d15aab0d64cab3d941363a97225853bd0e3731"
+    "research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json": "90ff173b4553d7e23e053fbe15d15aab0d64cab3d941363a97225853bd0e3731",
+    "research/detection_claim_audit_20261031/PROTOCOL.txt": "944b7a4e77cd4a06c5965e775bf236bb3e86929882c451ebe9712fe340003a52",
+    "research/detection_claim_audit_20261031/PLAN.json": "e1f3ee0d08fcb992b6847990c25231dd68205ceaf2d92d66f579089132fe67f5",
+    "research/detection_claim_audit_20261031/CODE_REVIEW.txt": "5cd6f0ffdad0cbb2c6d64cbbbb57e063dae69eef96091119f8895b7a0cc332d4",
+    "research/detection_claim_audit_20261031/CLAIMS_AND_GATES.txt": "8ff762df41f80abdfcc4f472532abf569b2a714827d95091c1810d49ba96efa0",
+    "research/detection_claim_audit_20261031/SOURCE_MANIFEST.json": "e3792df64d79c464bd9e4a5a427e0cbd210588e90cfa05017f14ca7249922d03",
+    "research/detection_claim_audit_20261031/EVIDENCE.json": "b9e0ed39cded1ef90dcd20d1f3ff5b96b3378154b2251548726c15adc7721b7b"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -435,6 +441,17 @@
         "research/cross_attack_search_20261022/OBSERVER_COMPLETE.json",
         "research/cross_attack_search_20261022/SHORT_REPORT_KO.md",
         "research/cross_attack_search_20261022/status.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/detection_claim_audit_20261031",
+      "related_cards": [
+        "N02"
+      ],
+      "top_level_documents": [
+        "research/detection_claim_audit_20261031/EVIDENCE.json",
+        "research/detection_claim_audit_20261031/PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

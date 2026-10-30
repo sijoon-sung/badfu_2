@@ -803,3 +803,31 @@
 
 **묶은 폴더:** [fuba_projection_check_20261025](fuba_projection_check_20261025)
 
+<a id="n02"></a>
+
+## N02 · 공개 코드 정체와 넓은 탐지 주장부터의 반증 감사
+
+**가설 한 줄: 클린 정확도 보존과 삭제 후 조건부 오분류만으로 공격의 필연적 PCA직교성과 정상큰삭제의 정확직교소거를 도출할 수 있다.**
+
+**판정: 공통 탐지 보류·필요조건 검토**
+
+[실험 시작 이유와 실제 실행 과정 읽기](detection_claim_audit_20261031/CLAIMS_AND_GATES.txt)
+
+- **조건:** 서로다른 upstream source/commit과 선언된 실제 실행을 구분. 두 유한 유리수 함수/자료 반례를 계산 전 동결. 실모델 학습이나 새 탐지점수 튜닝 없음.
+- **정상 대조·비교:** 클린4점에서25%정당삭제와, 동일클린span 내부의 정확도보존 전후함수. D08/D15의 실제큰정상삭제 실패와 D18 투영전 비교를 보존.
+- **결과:** 코드 정체/기존 증거/논문 주장 범위를 PR로 먼저 고정한다. CPU exact-math 검산 결과는 별도 기록하며 아직 공통 탐지법의 검출률을 주장하지 않는다.
+- **non-IID에 대해 남길 교훈:** 정상희귀기여의 삭제가 작은분산방향의 결정론적 기울기를 바꿀 수 있는지를 먼저 반증한다. 반례는 D08해결이나 모든탐지불가능성의 증거가 아니다.
+- **반복하지 않을 주장:** FUBA/FedUBA/서로다른라운드를 섞거나 단순norm을 새탐지법으로 제안하지 않는다. 좁은한시드 분리를 범용성/낮은운영오탐으로 승격하지 않는다.
+- **재검토 조건:** 유효한 코드별실제잠복쌍·동등FU큰정상대조·획득가능한새행동관측·D08/D15구별근거·독립정상보정/중단규칙을 먼저 확보해야 실모델 공통탐지를 재검토한다.
+
+**원문·증거:**
+
+- [research/detection_claim_audit_20261031/PROTOCOL.txt](detection_claim_audit_20261031/PROTOCOL.txt)
+- [research/detection_claim_audit_20261031/PLAN.json](detection_claim_audit_20261031/PLAN.json)
+- [research/detection_claim_audit_20261031/CODE_REVIEW.txt](detection_claim_audit_20261031/CODE_REVIEW.txt)
+- [research/detection_claim_audit_20261031/CLAIMS_AND_GATES.txt](detection_claim_audit_20261031/CLAIMS_AND_GATES.txt)
+- [research/detection_claim_audit_20261031/SOURCE_MANIFEST.json](detection_claim_audit_20261031/SOURCE_MANIFEST.json)
+- [research/detection_claim_audit_20261031/EVIDENCE.json](detection_claim_audit_20261031/EVIDENCE.json)
+
+**묶은 폴더:** [detection_claim_audit_20261031](detection_claim_audit_20261031)
+
