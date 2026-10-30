@@ -1,0 +1,22 @@
+{
+  "id": "fuba.v7.role100.client1.radius005.20261031",
+  "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+  "purpose": "diagnostic",
+  "input_packet": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_v7_s20261023_pre100_post_KD10",
+  "manifest_sha256": "83f8ecae537c212879f9a27ccaede48cf82ba0c5d0fae4de59e0eac07178fcdc",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "support_root": "D:/FUBA_OPTIMIZER_ISOLATION_20261031",
+  "support_hashes": {
+    "runner.py": "34f6e0928aa6e65f65918e82481a0ce5a34d92328e2b1a5048b5508b739befad",
+    "optimizer_policy.py": "ceb0bbd2dc30d154e9f551f67a9544621d583931cd15e648dd317402afbbabc5",
+    "RESULT.json": "536ed7f8254fbf87275714110f7fcd185a931b44d315d6bf540bc573f9c40c3e",
+    "VERIFIED.json": "a9dd688a409a2f5bff5a65c9cf58679db2fc388df76098125d0e6ceddaeabddb",
+    "INPUT_CHECKS.json": "453386ed4031dcc52ab00940f4f7e99d08069f73f4bceb20c0a478664d0206b8"
+  },
+  "training_radius": 0.05,
+  "evaluation_radius": 0.05,
+  "epochs": 50,
+  "learning_rate": 0.001,
+  "optimizer": "SGD",
+  "automatic_full_FL": false
+}

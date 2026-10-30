@@ -1,0 +1,19 @@
+가설: 같은 학습된 previousG99/입력모델/앵커/재가중SGD/배치/RNG에서, embedding 학습 반경을 고정 평가 반경.05와 맞추면 기존.2730719854 학습보다 .05 백도어 학습이 강화된다.
+관련 R02/D08/D15/N02. 사용자2026-10-31의 “될 때까지 구현” 지시에 따라 새 구현을 계속하며 기존 실패와 완료된 유한 작업은 그대로 보존한다.
+
+근거와 새 관측
+원문 Algorithm1/2, FUBA 본문2899/2903 및 보충2쪽, IBA 식3/4와 고정 공개script를 읽었다. 현재100R 끝의 학습 반경.2731과 평가.05의 차이는 실제 PROFILE/RUNTIME에 있다. IBA 공개CIFAR script는1500R이고 v7은 같은 decay.001을100R에 사용했다. 이 차이만으로 원인이나 저자 고유 일정을 확정하지 않는다.
+새 관측은 기존 frozen optimizer 비교의 A 조건(.2731)과 같은 입력/SGD의 새 C 조건(.05)의 실제50epoch 끝점이다. 이미 완료한 A나 기존FUBA trainer/evaluator/export를 다시 실행하지 않는다. C의 배치순서50개 해시가 A와 정확히 같아야 한다. 모든 평가 반경은.05로 고정하고 높은 반경 ASR을 성공 수치로 대체하지 않는다.
+
+입력/구현
+case fuba.v7.s20261023.pre100.post.kd10 diagnostic; 전달guard와 입력 SHA256/payload_key를 확인한다. 고정100R의 최소선택공격자 client1, post_generator의 incoming/classifier_generator, phase1/2 model과 phase2 RNG를 사용한다. 원래 A가 사용한 CPU-anchor Eq1 가중치 계산과 같은 데이터2250/valid250/batch64/50epoch/SGD.001을 유지한다. previousG99는 eval/frozen이다. 파라미터 모델/optimizer/RNG/50epoch 로그를 새 경로에 저장한다.
+기존 optimizer 비교의 runner.py에서 순수 지원함수(해시/원자저장/RNG/평가/자원guard)만 import한다. main/원래 작업은 호출하지 않으며 새 trainer는 이 폴더다. 지원코드·control RESULT·VERIFIED 해시를 사전에 고정한다.
+
+판정/종료
+full10000/9000 C의 ASR이 A보다20%p 이상 높고, CA가 A와incoming 각각보다5%p 넘게 낮지 않으며 clean-target bias가 각각5%p 넘게 높지 않아야 “이 조건에서 학습반경 가설 지지”다. 미달이면 실패를 보존하고 동일 진단을 반복하지 않는다. 다른 근거의 구현 수정을 계속할 수 있으나 이 실패를 지우거나 값을 재튜닝하지 않는다. 해시/순서/비유한/저장/실행 오류는 즉시 보존·수정한다. 한 로컬 phase의 성공은100R 잠복·FU 활성화 성공이 아니다.
+
+전체 구현에 추가하는 일정
+별도 policy는 IBA 식4의 exponential 형태와 epsilon0=.3/epsilon_hat=.05를 보존하고, 명시한100R 구간의 마지막에.05에 도달하도록 decay를 경계조건에서 계산한다. decay=1-(.05/.3)^(1/94), 최초악성 zero-based5/마지막99다. 이것은 FUBA가 유일하게 지정한 상수라는 주장이 아닌 별도 해석이다. C가 실패하면 해당 전체학습을 자동 실행하지 않는다. 기존v7의.001 schedule은 불변이다.
+
+범위/자원
+D08 공격0.75848이 큰 정상0.75525/0.76188 사이인 반례 및 D15 반례는 미해결이다. 이 작업은 공격 구현 진단이며 탐지 점수나 threshold를 만들지 않는다. 새 D:/FUBA_RADIUS_ALIGNMENT_20261031, GPU util<=5/free>=7000/used<=2048MiB/경쟁학습PID부재에서만 시작하며 다른 앱을 닫지 않는다. one-time 작업·새 모델을 PR에 연결하고 로컬에는 실제 .pt/log를 전달한다.
