@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "b999760b1c9daac45ecc3bccb392d06bb12eb13e5170eb3d85fc0790f2ef7966",
-  "cards": 27,
-  "unique_source_documents": 227,
-  "top_level_folders": 98,
-  "folders_linked_to_cards": 50,
+  "registry_sha256": "505efd5042d0160037fdb22fe2669aa0f8a66f70995aa5a500497877cb0b23e9",
+  "cards": 28,
+  "unique_source_documents": 237,
+  "top_level_folders": 99,
+  "folders_linked_to_cards": 51,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -160,6 +160,16 @@
     "research/fuba_algorithm_execution_20261025/FINAL_VERIFIED.json": "76a14d461ceac2f3d3a2e0c2af7af6407f81bad2663b6ee04bf55e14044e39ec",
     "research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt": "bf13468bc73df617ffd3cb546837e4b2fe9c62e45c8997803205c07f1dc88617",
     "research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json": "a1bd528a861c269c0e31279918e72f4388f8a33fa2a7b566025dbe429230e9d7",
+    "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+    "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
+    "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+    "research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt": "ef9fbd7c17d3590685111e9f0fb3dbb718d78f47a33156c409f8eaef4940b9c2",
+    "research/feduba_reproduction_audit_20261031/REPORT_KO.txt": "77f11be94a195ba18325a4fd04b6a64fe8c38d06451d29098e29222e8af26bae",
+    "research/feduba_reproduction_audit_20261031/RESULTS.json": "35c2e2c0c9ff72ee83330b9ba53b9a787c0de1e80318fb56c343fce00dc78d4f",
+    "research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json": "541da8b19aca0587faae84fb42060f765bd086010cd8e388b40bf23644d57452",
+    "research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json": "58ad6b95fa7986b988176087415999c3150cea1638e3b9cfaf789de52fd1483a",
+    "research/feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt": "1d28d6cd20cfb13f84ad0f647613c933da9b413a95c00287dd3144414f32aadc",
+    "research/feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json": "594bf07331595bf745c7160f812aedd1eefaf189bf5dda306e1d948f74e71283",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -540,6 +550,21 @@
         "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"
+    },
+    {
+      "path": "research/feduba_reproduction_audit_20261031",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json",
+        "research/feduba_reproduction_audit_20261031/audit_stderr.txt",
+        "research/feduba_reproduction_audit_20261031/audit_stdout.txt",
+        "research/feduba_reproduction_audit_20261031/PROTOCOL.txt",
+        "research/feduba_reproduction_audit_20261031/REPORT_KO.txt",
+        "research/feduba_reproduction_audit_20261031/RESULTS.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
     },
     {
       "path": "research/FU_gpu20261020",

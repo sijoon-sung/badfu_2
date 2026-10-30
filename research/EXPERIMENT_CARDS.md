@@ -203,6 +203,38 @@
 
 **묶은 폴더:** [asr_root_cause_20261022](asr_root_cause_20261022) · [fuba_corrected_20261022](fuba_corrected_20261022) · [continuation_20261023](continuation_20261023) · [multiseed_actual_fu_20261022](multiseed_actual_fu_20261022) · [FU_gpu20261020](FU_gpu20261020) · [MOVE_TO_DISLAB_20261021](MOVE_TO_DISLAB_20261021) · [stage1_fresh_20261020](stage1_fresh_20261020) · [fuba_checkpoint_recovery_20261023](fuba_checkpoint_recovery_20261023) · [FUBA_v2_s20261023_round0063](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_round0063) · [FUBA_v2_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_pre_round100) · [fuba_suppression_audit_20261024](fuba_suppression_audit_20261024) · [fuba_paper_rebuild_20261024](fuba_paper_rebuild_20261024) · [FUBA_v3_s20261023_pre_round0015_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v3_s20261023_pre_round0015_stopped_verified) · [fuba_paper_flow_20261024](fuba_paper_flow_20261024) · [FUBA_v4_s20261023_pre_round0023_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v4_s20261023_pre_round0023_stopped_verified) · [fuba_paper_completion_20261024](fuba_paper_completion_20261024) · [FUBA_v5_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre_round100) · [fuba_post_unlearning_20261025](fuba_post_unlearning_20261025) · [FUBA_v5_s20261023_pre100_post_KD10](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre100_post_KD10) · [fuba_execution_audit_20261025](fuba_execution_audit_20261025) · [fuba_algorithm_execution_20261025](fuba_algorithm_execution_20261025)
 
+<a id="r03"></a>
+
+## R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사
+
+**가설 한 줄: 공식 FedUBA 배포본이 논문의 실행 절차와 표본 정체를 보존하여 탐지 검증에 쓸 실제 공격 전후쌍을 제공한다.**
+
+**판정: 공식 배포 누락·원본 ID 계약 실패 / 공격 성능 재현·탐지 사용 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R03-feduba-reproduction/README.md)
+
+- **조건:** ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b와 저자 PDF/ZIP; DISLAB CPU 원본 import 및 AST 함수 실행. stcebra/FUBA 모델과 구별.
+- **정상 대조·비교:** 같은 합성32샘플의 shuffled batch1 대 sequential batch1; 고정 Arguments의 FL/FU 소유권 대 보조자료 helper 소유권; 저자 ZIP 대 Git blob.
+- **결과:** 저자 ZIP9파일 모두 고정 Git blob과 동일. 두 원본 import는 utils/models 부재로 종료1. 민감도 순회 위치를 데이터 ID로 재사용하는 경로의 합성 순위 일치0/32 대 순차 대조32/32; 실제 FL/FU 공격자5/7 대 보조자료2/3 불일치 확인. 실제 공격 FL/FU·CA/ASR·탐지율은 생성하지 않았다. 논문-코드 조건과 평가 정의 차이를 기록하고 G0/G1에서 전체 학습 진입을 중단했다. 이것은 실제 공격 성공률이나 논문 공격 불가능성의 증명이 아니다.
+- **non-IID에 대해 남길 교훈:** 적격 공격 양성 확보 전 탐지를 검증할 수 없고, 재현 통과 자체도 D08 공격0.75848/정상0.75525·0.76188 및 D15 반례를 해결하지 않는다.
+- **반복하지 않을 주장:** 누락 utils/models를 추측해 넣고 untouched 논문 재현이라고 부르거나 stcebra/FUBA 실패 모델을 FedUBA로 대체하지 않는다. 완료된 감사 runner와 이전 FUBA 유한 작업을 자동 반복하지 않는다.
+- **재검토 조건:** 권위 있는 누락 정의·데이터/ID/BEA 의미 및 설정 차이를 해소한 별도 고정 profile, 실제 동일 FU 정상 대조, 독립 정상 보정과 새로운 행동 가설을 먼저 확보한다.
+
+**원문·증거:**
+
+- [research/feduba_reproduction_audit_20261031/PROTOCOL.txt](feduba_reproduction_audit_20261031/PROTOCOL.txt)
+- [research/feduba_reproduction_audit_20261031/FREEZE.json](feduba_reproduction_audit_20261031/FREEZE.json)
+- [research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt](feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt)
+- [research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt](feduba_reproduction_audit_20261031/DETECTION_GATES.txt)
+- [research/feduba_reproduction_audit_20261031/REPORT_KO.txt](feduba_reproduction_audit_20261031/REPORT_KO.txt)
+- [research/feduba_reproduction_audit_20261031/RESULTS.json](feduba_reproduction_audit_20261031/RESULTS.json)
+- [research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json](feduba_reproduction_audit_20261031/ASSET_SUMMARY.json)
+- [research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json](feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json)
+- `research/feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt` (로컬 보관)
+- `research/feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json` (로컬 보관)
+
+**묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031)
+
 <a id="d01"></a>
 
 ## D01 · HRAC·GLR·정상 설명 집합

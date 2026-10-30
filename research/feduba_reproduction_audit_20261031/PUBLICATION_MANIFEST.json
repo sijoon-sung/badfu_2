@@ -1,0 +1,66 @@
+{
+  "schema": "feduba-publication-raw-and-LF-sha256-v1",
+  "normalization": "UTF-8 text; CRLF to LF only; raw originals retained on DISLAB and main workspace",
+  "files": {
+    "PROTOCOL.txt": {
+      "dislab_raw_sha256": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+      "published_LF_sha256": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+      "only_line_endings_changed": false
+    },
+    "FREEZE.json": {
+      "dislab_raw_sha256": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
+      "published_LF_sha256": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
+      "only_line_endings_changed": false
+    },
+    "audit_feduba.py": {
+      "dislab_raw_sha256": "3c923f885b2dacfacff723887e1260750830ed677f2ad83138eeb4a1e8d129ff",
+      "published_LF_sha256": "3c923f885b2dacfacff723887e1260750830ed677f2ad83138eeb4a1e8d129ff",
+      "only_line_endings_changed": false
+    },
+    "inventory_assets.py": {
+      "dislab_raw_sha256": "ae2a8658af73c0e64b2639564729ecafa406c1e2a554f21facde76ab0da335d3",
+      "published_LF_sha256": "ae2a8658af73c0e64b2639564729ecafa406c1e2a554f21facde76ab0da335d3",
+      "only_line_endings_changed": false
+    },
+    "verify_delivery.py": {
+      "dislab_raw_sha256": "3985a29a856d3224732dbccf883d071ea84ca75b7f8d230f5454a802b6e9d137",
+      "published_LF_sha256": "3985a29a856d3224732dbccf883d071ea84ca75b7f8d230f5454a802b6e9d137",
+      "only_line_endings_changed": false
+    },
+    "RESULTS.json": {
+      "dislab_raw_sha256": "7e2bcbad2e8a88e2b5fe5e4e42e1738063ef0dd3565b6df2c0330535e33674ca",
+      "published_LF_sha256": "35c2e2c0c9ff72ee83330b9ba53b9a787c0de1e80318fb56c343fce00dc78d4f",
+      "only_line_endings_changed": true
+    },
+    "STARTED.json": {
+      "dislab_raw_sha256": "c198e8d6674bf4190ddfb99dcbb0d557647ede660d2ebd5cded5b3139ba2860b",
+      "published_LF_sha256": "5e3b7a2131d70319ef90346680d2cfb32ba82ee3a0f9758e446f1e9da1cf20ce",
+      "only_line_endings_changed": true
+    },
+    "ASSET_SUMMARY.json": {
+      "dislab_raw_sha256": "0d90d43a32ff59b3d3922722a9c702f42f0f58183a50c388fb9fb4b92dfcc73a",
+      "published_LF_sha256": "541da8b19aca0587faae84fb42060f765bd086010cd8e388b40bf23644d57452",
+      "only_line_endings_changed": true
+    },
+    "CODE_PAPER_MATRIX.txt": {
+      "dislab_raw_sha256": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+      "published_LF_sha256": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+      "only_line_endings_changed": false
+    },
+    "DETECTION_GATES.txt": {
+      "dislab_raw_sha256": "ef9fbd7c17d3590685111e9f0fb3dbb718d78f47a33156c409f8eaef4940b9c2",
+      "published_LF_sha256": "ef9fbd7c17d3590685111e9f0fb3dbb718d78f47a33156c409f8eaef4940b9c2",
+      "only_line_endings_changed": false
+    },
+    "REPORT_KO.txt": {
+      "dislab_raw_sha256": "77f11be94a195ba18325a4fd04b6a64fe8c38d06451d29098e29222e8af26bae",
+      "published_LF_sha256": "77f11be94a195ba18325a4fd04b6a64fe8c38d06451d29098e29222e8af26bae",
+      "only_line_endings_changed": false
+    },
+    "DISLAB_VERIFICATION.json": {
+      "dislab_raw_sha256": "ed1d5f76be0923796003b485610d9e5972e6624d9885807d2616da952ab19792",
+      "published_LF_sha256": "58ad6b95fa7986b988176087415999c3150cea1638e3b9cfaf789de52fd1483a",
+      "only_line_endings_changed": true
+    }
+  }
+}
