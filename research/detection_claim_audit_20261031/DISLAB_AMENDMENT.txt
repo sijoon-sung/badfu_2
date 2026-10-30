@@ -1,0 +1,6 @@
+운영 추가기록 — 2026-10-31 KST
+사용자는 '연산이 큰 작업은 dislab', 이어서 '최대한 dislab쪽으로' 진행하도록 지시했다.
+이미 완료된 로컬의 두 정확검산/AST검토 결과는 보존한다. 같은 PLAN/동결코드/9개 원본소스를 DISLAB의 별도 D:/DETECTION_CLAIM_AUDIT_20261031에 전송해 CPU독립검산을 한다. 이는 계산위치와독립검증을 추가한 것이며 가설/두사례/숫자/판정/학습조건을 바꾸지 않는다.
+원래 scientific freeze와 첫PR commit은 변경하지 않는다. DISLAB버전은 source를 import하지 않는 AST 검사와 fractions.Fraction 연산뿐이다. GPU/classifier/G/trainer/observer/evaluator/export를 실행하지 않는다. 기존FUBA 유한작업과 경로는 건드리지 않는다.
+새 별도경로에 REMOTE_STARTED를 배타적으로 만들고, 완료된 경우 중복실행하지 않는다. 공개source9파일·고정검증텍스트·작은JSON만 전송한다. 학습자료/모델/개인인덱스 전송은 없다. 결과JSON의 의미상동일성과 원시바이트해시를 구분해 기록한다.
+이후 계산은 작은CPU검증까지 가능하면DISLAB을기본으로한다. 로컬은편집/전송/결과검토와가벼운형식검사에쓴다. 실제GPU작업이필요해지면현재프로세스/상태/manifest와자원가드/고정프로필을확인하고실제판별근거/중단규칙이있는새프로토콜에따른다.

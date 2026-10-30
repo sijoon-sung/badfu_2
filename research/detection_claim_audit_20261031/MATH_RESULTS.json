@@ -1,0 +1,87 @@
+{
+  "hypothesis_id": "N02-20261031",
+  "arithmetic": "fractions.Fraction",
+  "benign_deletion": {
+    "status": "counterexample_to_exact_cancellation",
+    "clean_points": [
+      [
+        "-1",
+        "-1/10",
+        0
+      ],
+      [
+        "-1",
+        "1/10",
+        0
+      ],
+      [
+        "1",
+        "-1/10",
+        1
+      ],
+      [
+        "1",
+        "1/10",
+        1
+      ]
+    ],
+    "removed": [
+      "-1",
+      "1/10",
+      0
+    ],
+    "deleted_fraction": "1/4",
+    "clean_accuracy": "1",
+    "covariance": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1/100"
+      ]
+    ],
+    "top_axis_energy": "100/101",
+    "full_gradient": [
+      "-1/4",
+      "0"
+    ],
+    "retained_gradient": [
+      "-1/4",
+      "-1/120"
+    ],
+    "one_step_retained_minus_full_for_lr1": [
+      "0",
+      "1/120"
+    ],
+    "limit": "Disproves exact-zero premise, not every possible tail-variance bound or detector."
+  },
+  "in_span_transition": {
+    "status": "counterexample_to_necessary_off_span_geometry",
+    "clean_accuracy_pre": "1",
+    "clean_accuracy_post": "1",
+    "conditional_target_rate_pre": "0",
+    "conditional_target_rate_post": "1",
+    "clean_span_axis": [
+      1,
+      0
+    ],
+    "triggered_point": [
+      "-1",
+      "0"
+    ],
+    "perpendicular_trigger_component": "0",
+    "weight_delta": [
+      [
+        0,
+        0
+      ]
+    ],
+    "bias_delta": "3/2",
+    "limit": "Constructed functions only; no claim of a trained BadFU/FUBA/FedUBA mechanism or universal impossibility."
+  },
+  "common_detector": "unvalidated",
+  "real_model_training": false,
+  "scope": "Two exact counterexamples to asserted geometric necessities, not attack-detection performance."
+}

@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "4bd0d80a10361d5f9169682f5622176def2322f0608131c7688cf170f85e28b6",
+  "registry_sha256": "b999760b1c9daac45ecc3bccb392d06bb12eb13e5170eb3d85fc0790f2ef7966",
   "cards": 27,
-  "unique_source_documents": 222,
+  "unique_source_documents": 227,
   "top_level_folders": 98,
   "folders_linked_to_cards": 50,
   "source_sha256": {
@@ -229,7 +229,12 @@
     "research/detection_claim_audit_20261031/CODE_REVIEW.txt": "5cd6f0ffdad0cbb2c6d64cbbbb57e063dae69eef96091119f8895b7a0cc332d4",
     "research/detection_claim_audit_20261031/CLAIMS_AND_GATES.txt": "8ff762df41f80abdfcc4f472532abf569b2a714827d95091c1810d49ba96efa0",
     "research/detection_claim_audit_20261031/SOURCE_MANIFEST.json": "e3792df64d79c464bd9e4a5a427e0cbd210588e90cfa05017f14ca7249922d03",
-    "research/detection_claim_audit_20261031/EVIDENCE.json": "b9e0ed39cded1ef90dcd20d1f3ff5b96b3378154b2251548726c15adc7721b7b"
+    "research/detection_claim_audit_20261031/EVIDENCE.json": "b9e0ed39cded1ef90dcd20d1f3ff5b96b3378154b2251548726c15adc7721b7b",
+    "research/detection_claim_audit_20261031/REPORT_KO.txt": "8838cdb9cca541e905e0c1eab3c79d696005e4932a21ddc6e08f79295e8f527c",
+    "research/detection_claim_audit_20261031/MATH_RESULTS.json": "c532fa83ae457b1e2ffad00c3b061ad5d1f95e416b8b8b7961729e8568276ad8",
+    "research/detection_claim_audit_20261031/SOURCE_AUDIT.json": "bbadb000b792628e29e8a3e7b3828e57cd37e498b2a838e9ef12eeecce35b261",
+    "research/detection_claim_audit_20261031/DISLAB_AMENDMENT.txt": "cca04ff8901806b7eacf97c0584cc413f88ab027341a5dec14876facc0c5f15c",
+    "research/detection_claim_audit_20261031/DISLAB_VERIFICATION.json": "1b712ce210158a1041bbbf888c568b5f6b210e78febf40600fe098c58362c368"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -451,7 +456,10 @@
       ],
       "top_level_documents": [
         "research/detection_claim_audit_20261031/EVIDENCE.json",
-        "research/detection_claim_audit_20261031/PROTOCOL.txt"
+        "research/detection_claim_audit_20261031/MATH_RESULTS.json",
+        "research/detection_claim_audit_20261031/PROTOCOL.txt",
+        "research/detection_claim_audit_20261031/REPORT_KO.txt",
+        "research/detection_claim_audit_20261031/SOURCE_AUDIT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
