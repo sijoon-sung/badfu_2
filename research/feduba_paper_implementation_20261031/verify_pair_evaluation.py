@@ -126,21 +126,21 @@ def main():
         torch.cuda.empty_cache()
     assert calls == result['actual_forward_calls'] == 474 and result['actual_sample_forwards'] == 60000
     # Independently compare ratios by integer cross multiplication, including equality at thresholds.
-    from fractions import Fraction
     limits = read(ROOT / 'FU_PROFILE.json')['minimum_operational_latent_pair_gate']
-    ca = {k: Fraction(v['clean_correct'], 100) for k, v in independent_rows.items()}
-    asr = {k: Fraction(v['triggered_target_hits'], 90) for k, v in independent_rows.items()}
-    checks = {'pre_ASR': asr['pre'] <= limits['pre_ASR_max_pct'],
-              'attack_ASR': asr['attack'] >= limits['attack_ASR_min_pct'],
-              'attack_minus_pre': asr['attack'] - asr['pre'] >= limits['attack_minus_pre_ASR_min_pp'],
-              'attack_minus_benign': asr['attack'] - asr['benign'] >= limits['attack_minus_benign_FU_ASR_min_pp'],
-              'all_three_CA': min(ca.values()) >= limits['all_three_CA_min_pct'],
-              'both_post_CA_drop': max(ca['pre'] - ca['benign'], ca['pre'] - ca['attack']) <= limits['post_CA_drop_max_pp']}
+    assert all(type(v) is int for v in limits.values())
+    ca = {k: v['clean_correct'] for k, v in independent_rows.items()}
+    asr = {k: v['triggered_target_hits'] for k, v in independent_rows.items()}
+    checks = {'pre_ASR': asr['pre'] * 100 <= limits['pre_ASR_max_pct'] * 9000,
+              'attack_ASR': asr['attack'] * 100 >= limits['attack_ASR_min_pct'] * 9000,
+              'attack_minus_pre': (asr['attack'] - asr['pre']) * 100 >= limits['attack_minus_pre_ASR_min_pp'] * 9000,
+              'attack_minus_benign': (asr['attack'] - asr['benign']) * 100 >= limits['attack_minus_benign_FU_ASR_min_pp'] * 9000,
+              'all_three_CA': min(ca.values()) * 100 >= limits['all_three_CA_min_pct'] * 10000,
+              'both_post_CA_drop': max(ca['pre'] - ca['benign'], ca['pre'] - ca['attack']) * 100 <= limits['post_CA_drop_max_pp'] * 10000}
     gate = result['minimum_operational_gate']
     assert checks == gate['checks'] and all(checks.values()) == gate['passed']
-    assert gate['attack_minus_pre_ASR_pp'] == float(asr['attack'] - asr['pre'])
-    assert gate['attack_minus_benign_ASR_pp'] == float(asr['attack'] - asr['benign'])
-    assert gate['post_CA_drop_pp'] == {k: float(ca['pre'] - ca[k]) for k in ['benign', 'attack']}
+    assert gate['attack_minus_pre_ASR_pp'] == (asr['attack'] - asr['pre']) * 100 / 9000
+    assert gate['attack_minus_benign_ASR_pp'] == (asr['attack'] - asr['benign']) * 100 / 9000
+    assert gate['post_CA_drop_pp'] == {k: (ca['pre'] - ca[k]) * 100 / 10000 for k in ['benign', 'attack']}
     load(result['delta']); assert sha(test_path) == result['test_file_sha256']
     for path, digest in result['source_receipt_hashes'].items(): assert sha(ROOT / path) == digest
     verified = {'state': 'passed', 'primary_result_sha256': sha(ROOT / 'PAIR_EVAL_RESULT.json'),
