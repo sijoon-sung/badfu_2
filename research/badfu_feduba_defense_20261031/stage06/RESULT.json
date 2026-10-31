@@ -1,0 +1,99 @@
+{
+  "state": "completed_cache_only",
+  "cases": {
+    "benign_big19336": {
+      "clean": {
+        "n": 9500,
+        "correct": 8565,
+        "CA_pct": 90.15789473684211,
+        "class_CA_pct": [
+          89.97912317327767,
+          94.55497382198953,
+          86.33017875920083,
+          79.57446808510639,
+          91.9406150583245,
+          82.73684210526315,
+          94.09282700421942,
+          93.18885448916409,
+          94.69777306468717,
+          94.3796394485684
+        ],
+        "beneficial_n": 212,
+        "beneficial_kept_n": 188,
+        "beneficial_kept_fraction": 0.8867924528301887,
+        "disagree_post_n": 217
+      },
+      "attack_target_n": 110,
+      "attack_n": 9000,
+      "ASR_pct": 1.2222222222222223,
+      "overall_drop_pp": -0.3578947368421126,
+      "worst_class_drop_pp": 1.7801047120418758,
+      "CA_necessary_gate": true,
+      "strict_prior_correction_gate": false
+    },
+    "benign_same850": {
+      "clean": {
+        "n": 9500,
+        "correct": 8597,
+        "CA_pct": 90.49473684210525,
+        "class_CA_pct": [
+          94.1544885177453,
+          96.33507853403141,
+          86.54048370136698,
+          78.08510638297872,
+          90.66808059384942,
+          82.84210526315789,
+          95.35864978902954,
+          92.46646026831785,
+          95.1219512195122,
+          93.21314952279958
+        ],
+        "beneficial_n": 196,
+        "beneficial_kept_n": 176,
+        "beneficial_kept_fraction": 0.8979591836734694,
+        "disagree_post_n": 142
+      },
+      "attack_target_n": 147,
+      "attack_n": 9000,
+      "ASR_pct": 1.633333333333333,
+      "overall_drop_pp": -0.17894736842103498,
+      "worst_class_drop_pp": 0.6362672322375289,
+      "CA_necessary_gate": true,
+      "strict_prior_correction_gate": false
+    },
+    "attack_cover850": {
+      "clean": {
+        "n": 9500,
+        "correct": 8571,
+        "CA_pct": 90.22105263157894,
+        "class_CA_pct": [
+          93.94572025052193,
+          95.81151832460732,
+          85.8044164037855,
+          80.31914893617021,
+          89.7136797454931,
+          81.78947368421052,
+          93.88185654008439,
+          93.08565531475749,
+          94.16755037115588,
+          93.53128313891834
+        ],
+        "beneficial_n": 261,
+        "beneficial_kept_n": 220,
+        "beneficial_kept_fraction": 0.842911877394636,
+        "disagree_post_n": 193
+      },
+      "attack_target_n": 9000,
+      "attack_n": 9000,
+      "ASR_pct": 100.0,
+      "overall_drop_pp": 0.29473684210526585,
+      "worst_class_drop_pp": 1.9088016967126293,
+      "CA_necessary_gate": true,
+      "strict_prior_correction_gate": true
+    }
+  },
+  "evaluator": "post_coordinate_head_transport_v1",
+  "candidate_declaration_sha256": "ea8c9b5847d923e128685cbd2fa239b1a028e42e3accafbe9b31bbaecca8ca59",
+  "deletion_checked": false,
+  "necessary_CA_ASR_gates": false
+}

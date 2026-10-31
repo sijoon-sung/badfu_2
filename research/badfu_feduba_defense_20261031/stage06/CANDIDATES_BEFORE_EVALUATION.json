@@ -1,0 +1,23 @@
+{
+  "benign_big19336": {
+    "head_sha256": "cec7b3ef3469f9ddc47bd6605e3e0d5e204f6216070c44e072709ffe57521338",
+    "model_sha256": "e3ffe286f70f90fbfbe0af00cac30a46f1c30aeff915049156701c0c02c1aadb",
+    "backbone": "post",
+    "true_labels_used": false,
+    "ASR_used": false
+  },
+  "benign_same850": {
+    "head_sha256": "54a61c9f575737c745591c58f905a146cc43ca53a3e30fe4ed8a8831606c8adf",
+    "model_sha256": "97abf59674abc45c470d5d13819f54af2dae08de1cc7800d4ba55d32db344ae8",
+    "backbone": "post",
+    "true_labels_used": false,
+    "ASR_used": false
+  },
+  "attack_cover850": {
+    "head_sha256": "d75761984f1706fc6edd32b2c0ed67c2a73353306a8b9c61651f5a42d14d7b7d",
+    "model_sha256": "50728cf30ba4dd83f6af40e5419209fa41075fb047f16ef32a88bce85b466030",
+    "backbone": "post",
+    "true_labels_used": false,
+    "ASR_used": false
+  }
+}
