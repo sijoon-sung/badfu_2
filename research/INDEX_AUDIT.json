@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "10ff149ee84abaeb604a22833786ca8f93a7f9aff6e7e9e033b4d972ba358a95",
+  "registry_sha256": "7f90eeb417f4f567977d0d5eddf39808591a03c14f76d2dccc15e45d0c7f5f74",
   "cards": 29,
-  "unique_source_documents": 482,
+  "unique_source_documents": 487,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -489,7 +489,12 @@
     "research/badfu_feduba_defense_20261031/STORED_TRIGGER_LABEL_FREEZE.json": "d5465e9b2fd30b19e7b23f93258fa179857587bc953ef0605fc82113b9fc75d2",
     "research/badfu_feduba_defense_20261031/STORED_TRIGGER_LABEL_RESULT.json": "c453b37b6de130fe2772438b667bb3d7bd7186ce25f9444219af85ff207b0af6",
     "research/badfu_feduba_defense_20261031/SOURCEPAIR_PILOT_PROTOCOL.txt": "47312e33e00eeb390b42a2dbf4de796293fc3035cb304986a452bad18601ae1d",
-    "research/badfu_feduba_defense_20261031/SOURCEPAIR_PILOT_FREEZE.json": "e765528326ea12612042058b7fcf4c5033850eaf32dc4479ff5416f04f83ebd4"
+    "research/badfu_feduba_defense_20261031/SOURCEPAIR_PILOT_FREEZE.json": "e765528326ea12612042058b7fcf4c5033850eaf32dc4479ff5416f04f83ebd4",
+    "research/badfu_feduba_defense_20261031/SOURCEPAIR_PILOT_LAUNCH.json": "d84cf028fc78bad9e8138749417dd93a456aff37fe5e909fb981c68a9e24ea05",
+    "research/badfu_feduba_defense_20261031/sourcepair_pilot/STARTED.json": "119479cb3d1a8b425beecf42f079ef3c10aa2d273f1f0745ef27daaf1af1d5b2",
+    "research/badfu_feduba_defense_20261031/sourcepair_pilot/OBJECTIVE_CONTRACT.json": "9830d158c29cfda07d80b120989f750c687015511b0bc6a4a9214cc503666561",
+    "research/badfu_feduba_defense_20261031/sourcepair_pilot/benign_big19336/SOURCE_INPUTS.json": "e69848595d09810aabf77a801e0106db909a3e530dee68c51377d7c4b0d0aa19",
+    "research/badfu_feduba_defense_20261031/sourcepair_pilot/benign_big19336/INITIALS.json": "ad44c8828cf2ce57c66d3e4fff75125553763501c686c32a9af99a7b960f6f6e"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
