@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "5dd6a2edf1902dec35bbd95741332dae5e4c4b934fbcd3c710e8c973fbd4ab53",
+  "registry_sha256": "b86d8abb038bb8e9e291269935e137d79d8a572aba8a311dececa367e63b61c3",
   "cards": 29,
-  "unique_source_documents": 525,
+  "unique_source_documents": 527,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -532,7 +532,9 @@
     "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH.json": "2bd5348e728b63bc7851f6022bb6222805f95b94567fa90497b6724257cf33ae",
     "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH_INCIDENT.json": "8ce97bc0e41d855dc2d12694df9b1fae99e139acd6dd20f0b5b053af2d2f5a5a",
     "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_RECOVERY_LAUNCH.json": "0d271728e1ff9fc951ff64827603f738d524680622fbfddca162facb5f433926",
-    "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json": "28e9fc8391dce0d792e18db37dd1f2b82953178993592fb83e4d136d563e7f4f"
+    "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json": "28e9fc8391dce0d792e18db37dd1f2b82953178993592fb83e4d136d563e7f4f",
+    "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_PROTOCOL.txt": "0de3e1c669aa657fc2387dd4de27f4a6dd5f7457b1116d75a5f651f665740b17",
+    "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_FREEZE.json": "3e26fecaf53df75ce78d1a12f29bf2133a0afed1ed3f9729bf80aea1fb526e0f"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -693,6 +695,7 @@
         "research/badfu_feduba_defense_20261031/LAUNCH_RECOVERY_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_REPORT_KO.txt",
+        "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/POST_ANCHOR_NORMAL_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/POST_ANCHOR_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/POST_ANCHOR_VERIFICATION_PROTOCOL.txt",

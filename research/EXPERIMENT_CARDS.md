@@ -1175,6 +1175,8 @@
 - [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH_INCIDENT.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH_INCIDENT.json)
 - [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_RECOVERY_LAUNCH.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_RECOVERY_LAUNCH.json)
 - [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json)
+- [research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_PROTOCOL.txt](badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_PROTOCOL.txt)
+- [research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_FREEZE.json](badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_FREEZE.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 

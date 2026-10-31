@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-31T15:11:52.649939+00:00",
+  "files": {
+    "diagnose_post_anchor.py": "2d7fdfe7fef5912bfc962ed2f33a46b403746c0751b7ca51e7ca099e421fef4e",
+    "run_post_anchor_diagnosis.py": "8dbf216584d362bdff78b8ed0e5264cbdff13a4e40943c258cfbc15bdca304ac",
+    "POST_ANCHOR_DIAGNOSIS_PROTOCOL.txt": "0de3e1c669aa657fc2387dd4de27f4a6dd5f7457b1116d75a5f651f665740b17",
+    "POST_ANCHOR_FREEZE.json": "fa960eaeda57cf8879eac9af51f6638b4a0b2f94e6602cbd770d8c61170a78ad",
+    "POST_ANCHOR_VERIFICATION_FREEZE.json": "3df9c5bbc1768279d68ed318c72c0b9dedfb7972aab8b9ffb1a90d834d34cc9c",
+    "verify_post_anchor.py": "c8734539e55f233f09ea79ec33cd7e0a31bd62b01aa2f7117874ae9c91bca23f",
+    "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
+    "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
+    "sourcepair_pilot.py": "2824595d6a5e55486e2c16efd4b30c12312827db023f417899da56f069d35ff4"
+  },
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "fresh_model_inference": false,
+  "parent_completed_and_independently_verified_required": true,
+  "training_launch_enabled": false
+}
