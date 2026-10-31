@@ -1,0 +1,4 @@
+가설: SSH 종료와 독립인 일회 ScheduledTask direct-Python 실행은 동일하게 동결된 stage03의 실제 진행을 유지한다.
+2026-10-31 KST / 운영복구이며 H3 과학가설/입력/코드/조건은 바꾸지 않는다.
+원래 Start-Process PID40728은 두번의 실제CIM조회에서 없고, stdout/stderr는0바이트이며 stage03/STARTED/RESOURCE/PROGRESS/RESULT/FAILURE가 모두없었다. 따라서 실험본체 진입이나 완료된forward가 관측되지않았다. 원인 자체를SSH job 수명으로확정하지 않는다. 원LAUNCH/0바이트로그/sourcefreeze는보존한다.
+복구전 위조건을다시검사하고원래stage03.py/입력/sourcefreeze해시가동일한지확인한다. 새고유task Codex-BadFU-FedUBA-defense-factorial-20261031의action은Python312 -u background_stage03.py, S4U/무trigger/자동재시도없음/동시실행IgnoreNew다. wrapper는새로그로표준출력만연결하고동일stage03.py를runpy실행한다. 다른학습/작업/앱은변경하지않는다. 원STARTED가생겼거나실제ownPID가살아있으면복구를실행하지않는다. 등록/시작뒤actualPID/명령행과RESOURCE/STARTED/배치진행을확인한다.
