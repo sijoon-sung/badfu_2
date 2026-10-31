@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "2b34632422034f2f9a3b8421a209cf2ac2e2617c8ac5923b3a279449c074139d",
+  "registry_sha256": "e6e7648b58cdc5727b69b39eb5e8254a349321bad01abcb0f598c2e43a69f4d5",
   "cards": 29,
-  "unique_source_documents": 398,
+  "unique_source_documents": 401,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -405,7 +405,10 @@
     "research/badfu_feduba_defense_20261031/stage09/INDEPENDENT_VERIFICATION.json": "6826cbb97adb5a33fb500702e90b52a88de0121ac9709e24a6b5861f72658e4d",
     "research/badfu_feduba_defense_20261031/STAGE09_WRAPPER_EXIT.json": "0c572f2d628a4f238e0946a098e6ef88fd3ba5e345c142daf014868dd31b1094",
     "research/badfu_feduba_defense_20261031/STAGE10_PROTOCOL.txt": "9d2164eca6c00200aa5706de0055d6343b6f59737676e2aaef58879755235ea3",
-    "research/badfu_feduba_defense_20261031/STAGE10_FREEZE.json": "4c8ac180b156770ccc613944176178448ca26f54d0ab2afc1da2471da42e3da8"
+    "research/badfu_feduba_defense_20261031/STAGE10_FREEZE.json": "4c8ac180b156770ccc613944176178448ca26f54d0ab2afc1da2471da42e3da8",
+    "research/badfu_feduba_defense_20261031/stage10/STARTED.json": "19ea1520cd4d617cdf1ea72358126542a6d52be0914186af5d4d9a3d850f0f07",
+    "research/badfu_feduba_defense_20261031/stage10/attack_cover850/SOURCE_INPUTS.json": "af90f74744c33929f6e2e5a08b09490b7a8bece06c39048f3f9c9a790aaae4eb",
+    "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json": "99bc87ecae56538bebfeff7e88a45b1a6f78bb2fb844ac490877c25789b5fa57"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -574,6 +577,7 @@
         "research/badfu_feduba_defense_20261031/STAGE08_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/STAGE09_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE09_REPORT_KO.txt",
+        "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json",
         "research/badfu_feduba_defense_20261031/STAGE10_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_REPORT.txt"

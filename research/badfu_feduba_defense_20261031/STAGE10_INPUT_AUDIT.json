@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "checked_utc": "2026-10-31T11:23:41.174626+00:00",
+  "checks_against_previously_preserved_local_receipts": [
+    {
+      "name": "stage05/CANDIDATES_BEFORE_EVALUATION.json",
+      "sha256": "f73a37a35943cb6bd1553c619cf508b8731c315efd93db57534bc70a635add7c"
+    },
+    {
+      "name": "stage05/FIT_COMPLETED.json",
+      "sha256": "a9f874187373aa640141b7ef81b1b87892c71bafefdbb3fe8f04b0e06a5c3250"
+    },
+    {
+      "name": "stage07_cpu_v2/RESULT.json",
+      "sha256": "f9502cc0b0ef43e336b9b49990b4041d98429c4a4e268309bcc61eac5b9e5c39"
+    }
+  ],
+  "actual_teacher_matches_original_H5_declaration": true,
+  "observed_phase": "query26/32 before student training/evaluation",
+  "live_PID": 56484,
+  "no_running_source_or_model_modified": true
+}
