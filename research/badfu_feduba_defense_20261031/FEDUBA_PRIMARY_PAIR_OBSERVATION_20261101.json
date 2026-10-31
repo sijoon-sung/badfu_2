@@ -1,0 +1,55 @@
+{
+    "minimum_operational_gate":  {
+                                     "passed":  false,
+                                     "checks":  {
+                                                    "pre_ASR":  true,
+                                                    "attack_ASR":  false,
+                                                    "attack_minus_pre":  false,
+                                                    "attack_minus_benign":  false,
+                                                    "all_three_CA":  true,
+                                                    "both_post_CA_drop":  true
+                                                },
+                                     "attack_minus_pre_ASR_pp":  -0.6333333333333333,
+                                     "attack_minus_benign_ASR_pp":  0.011111111111111112,
+                                     "post_CA_drop_pp":  {
+                                                             "benign":  1.36,
+                                                             "attack":  1.18
+                                                         },
+                                     "is_server_detection_threshold":  false,
+                                     "is_exact_paper_mean_reproduction":  false
+                                 },
+    "delivery_complete":  false,
+    "observed_utc":  "2026-10-31T15:33:33.2128449Z",
+    "profile":  "feduba.paper.cifar10.paired_evaluation.s42.20261031",
+    "independent_full_evaluation_complete":  false,
+    "state":  "completed_primary_pair_evaluation",
+    "case_id":  "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "models":  {
+                   "pre":  {
+                               "N":  10000,
+                               "clean_correct":  8794,
+                               "non_target_N":  9000,
+                               "triggered_target_hits":  627,
+                               "CA_pct":  87.94,
+                               "ASR_pct":  6.966666666666667
+                           },
+                   "benign":  {
+                                  "N":  10000,
+                                  "clean_correct":  8658,
+                                  "non_target_N":  9000,
+                                  "triggered_target_hits":  569,
+                                  "CA_pct":  86.58,
+                                  "ASR_pct":  6.322222222222222
+                              },
+                   "attack":  {
+                                  "N":  10000,
+                                  "clean_correct":  8676,
+                                  "non_target_N":  9000,
+                                  "triggered_target_hits":  570,
+                                  "CA_pct":  86.76,
+                                  "ASR_pct":  6.333333333333333
+                              }
+               },
+    "source_report_sha256":  "4a19ee24fb1c970c3e5ad721df953fc9447532149b7777c1abdb346b1a9a5819",
+    "no_models_selected_or_loaded_by_defense":  true
+}

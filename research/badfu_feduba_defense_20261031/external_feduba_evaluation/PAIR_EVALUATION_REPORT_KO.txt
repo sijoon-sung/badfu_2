@@ -1,0 +1,13 @@
+실제 paired FU·독립 전수평가 완료 / 잠복 활성화 성능실패
+관련 R03/R02/N02/D08/D15. 원문 Algorithm1/식5~8의 명시해석에 따른 CPUtrigger·SSS·실제FedEraser/같은ID 정상삭제 대조다. untouched-source/저자인증/성능재현을 구분하며 기존 원GPU STG gradient실패는 보존했다.
+두 FU 각각 실제20R/200새trained role/200calibrated/20global/1000epoch/20000batch를 끝냈고 각독립CPU감사는420payload hash·원ID순회/optimizer/RNG·유효제출출처/보정/집계에 통과했다. 모든localSGD gradient/rawaugmentation 독립재생은 아니다. 원parent31888, 공격trainer19552/감사37328, primary48424/독립46064는 실제모두종료했다. 재실행하지 않는다.
+동일CPUδ SHA1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe·배수1.5/target2·clip[-1,1]·10000/비target9000/B128 NCHW FP32/TF32off/고정deterministic의 사전평가다. primary 및 독립 각각60000sample-forwards/474calls, 독립은 모든원uint8입력과세모델을 같은GPU 새프로세스로 전수재추론했다. 모든argmax/정수수 정확일치, 전체logit maxabs0으로 원atol1e-6+rtol1e-5가 통과했다.
+모델 | clean 정답/10000 (CA%) | triggered target hits/9000 (ASR%)
+pre | 8794/10000 (87.94) | 627/9000 (6.966666666666667)
+benign FU | 8658/10000 (86.58) | 569/9000 (6.322222222222222)
+attack FU | 8676/10000 (86.76) | 570/9000 (6.333333333333333)
+공격ASR-pre=-0.6333333333333333pp, 공격ASR-정상FU=0.011111111111111112pp(정상보다 target hit 1장 많음)다. 원pre 억제·세CA80·양쪽후CA하락5pp이하는 통과했으나 공격ASR80·전후증가50pp·정상초과50pp의 세성능gate는 실패했다. 전후잠복활성화 성능재현 실패이며 저장/계산검증 통과와 별개다. 이명시profile의실패이지 FedUBA공격의일반불가능성이나코드유일원인의증명이아니다. D08/D15의큰정상 nonIID 반례와 공통탐지미검증은 그대로다.
+원cleanFL독립8795/10000 CA87.95 기록은 원평가버전의 역사로 보존한다. 이번사전고정 paired evaluator는같은pre SHA에서8794/10000 CA87.94를 얻었고 독립전체재추론도8794로 정확일치했다. 평가수치정책/버전과 두기록을 구분하며 원87.95를소급대체하거나이번분모/설정을바꾸지않는다.
+PAIR_EVAL_RESULT의independent=false·delivery=false는 primary작성시점의기록이고그파일은수정하지않는다. 독립완료근거는PAIR_EVAL_VERIFIED와새PAIR_EVALUATION_COMPLETION이다. 완료parent의delivery_pending과원CPU/GPU상태를현재생존으로오인하지않는다.
+다음필수단계는 사전PAIR_DELIVERY_PROTOCOL대로 별도CPU export/receive/register코드·freeze를PR선게시하고 실제pre/두after/δ·대표실기여/optimizer/RNG·전체로그/감사/privateSSS/전수평가자료의양쪽readonly전달·외부seal/hash·localstrictCPU·각catalogue/index guard다. 전체원400trained/400calibrated/40global·baseline/STG rawtensor는DISLAB원위치에보존하고local대표packet을fullhistory라하지않는다. 현재이최종전달과새pair등록은미완료이며기존case/default/audit/원receipt는불변이다.
+성능실패를숨기거나좋은δ/seed/epoch/budget/분모/허용치를찾아수정하지않는다. 완료finite작업을반복하지않고전달뒤원문·실행소스·실패단계의증거에근거한새명시원인진단/교정계약으로구현을계속한다. 아직그새진단계약을계산하거나탐지방법을승인하지않았다. 원GPU실패/새CPU분기와모든기존FUBA/BadFU실패·default는그대로다. 전체FedUBA·탐지목표와heartbeat는완료되지않았다.
