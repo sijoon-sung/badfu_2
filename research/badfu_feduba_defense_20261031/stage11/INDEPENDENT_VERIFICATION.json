@@ -1,0 +1,119 @@
+{
+  "state": "passed",
+  "cases": {
+    "benign_big19336": {
+      "state": "completed",
+      "arms": {
+        "matched_kl": {
+          "steps": 100,
+          "alpha": 0.0640625,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            0,
+            0,
+            0,
+            16,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_teacher_bank_agreement": 0.8666666666666667,
+          "independent_class_AUC_checks": 20
+        },
+        "all_class_disjoint": {
+          "steps": 100,
+          "alpha": 0.07187500000000001,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            24,
+            15,
+            21,
+            22,
+            17,
+            23,
+            22,
+            15,
+            18,
+            21
+          ],
+          "raw_teacher_bank_agreement": 0.9625,
+          "independent_class_AUC_checks": 20
+        }
+      },
+      "case_receipt_sha256": "bfae73115b69b5e22081d308b16d234ddce7d38e5bbe6c2fd8a6f90137001574",
+      "reused_prefix_sha256": "8fcd9ae37384040b58e8ed75534e647d11fb7b6b791adc7979ad76649b6f5d87"
+    },
+    "attack_cover850": {
+      "state": "failed_necessary_ASR",
+      "arms": {
+        "matched_kl": {
+          "steps": 100,
+          "alpha": 0.0765625,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            1,
+            0,
+            12,
+            1,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          "raw_teacher_bank_agreement": 0.8708333333333333,
+          "independent_ASR_counts": {
+            "raw": {
+              "full_n": 8871,
+              "heldout_n": 8424
+            },
+            "selected": {
+              "full_n": 9000,
+              "heldout_n": 8542
+            }
+          }
+        },
+        "all_class_disjoint": {
+          "steps": 100,
+          "alpha": 0.07812500000000001,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            24,
+            19,
+            24,
+            22,
+            18,
+            17,
+            24,
+            16,
+            16,
+            19
+          ],
+          "raw_teacher_bank_agreement": 0.9583333333333334,
+          "independent_ASR_counts": {
+            "raw": {
+              "full_n": 4817,
+              "heldout_n": 4580
+            },
+            "selected": {
+              "full_n": 9000,
+              "heldout_n": 8542
+            }
+          }
+        }
+      },
+      "case_receipt_sha256": "c362235c3a9a9dcd7fc04a29e41626bb1eb9600e46667273782ab5d2ba2ab6ca"
+    }
+  },
+  "fresh_model_inference": false,
+  "verifier_sha256": "5f34ce5be5e12bbdf9ee397c030cf4d7bc018225e4178641196e431b3f1090e5",
+  "verification_freeze_sha256": "2b5806eede9847a6bf26989163031589680867932662237106d4bc7dabd197c7",
+  "scope": "finished_pipeline",
+  "pipeline_completed": true,
+  "full_objective_achieved": false,
+  "root_result_snapshot_sha256": "73a76330ce32b0b189b7181de525d352f870bd9a3a0d81d8337a25105c20ea12"
+}

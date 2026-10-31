@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-31T13:49:41.130714+00:00",
+  "files": {
+    "sourcepair_pilot.py": "2824595d6a5e55486e2c16efd4b30c12312827db023f417899da56f069d35ff4",
+    "background_sourcepair_pilot.py": "76c2062db1cae25297cc99282d1087b60562f4687a9d1d12c7008be7f16d7130",
+    "SOURCEPAIR_PILOT_PROTOCOL.txt": "47312e33e00eeb390b42a2dbf4de796293fc3035cb304986a452bad18601ae1d",
+    "stage11_method.py": "6f3febd1df4528c0c22ff8bf7ec78f4afc985dddf8cc4f1b32effdc83c49df2a",
+    "stage08.py": "f9192ef1a3a4ea5048bfa4e95eb2ca5086d307ca78a11799587ec7d883d51881",
+    "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
+    "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
+    "STAGE05_FREEZE.json": "4d78bc448658bbb5ef110df3b730e720c870bd3412bf2818d1fe8fb91980342b",
+    "STAGE03_INPUTS.json": "c95d6f0c865d1b5259ac1ce03c700a3f45c6d63a9f12efb215bc38e96d21d9ce",
+    "PROXY_SPLIT.json": "f93073799b5e1fb920459dd6473d36bc8fa7c4d3a8dcee356794a96ba6fcc341",
+    "stage05/CANDIDATES_BEFORE_EVALUATION.json": "f73a37a35943cb6bd1553c619cf508b8731c315efd93db57534bc70a635add7c",
+    "stage05/FIT_COMPLETED.json": "a9f874187373aa640141b7ef81b1b87892c71bafefdbb3fe8f04b0e06a5c3250",
+    "stage11/RESULT.json": "73a76330ce32b0b189b7181de525d352f870bd9a3a0d81d8337a25105c20ea12",
+    "stage11/COMPLETED.json": "9aa2f22b671412e1d644582e70cbc1b1b3cc0907ff643bb39385e95115593d49",
+    "stage11/INDEPENDENT_VERIFICATION.json": "74eb56f7fa47048a6f2d7e2e86b676156bb8ff9799432ecf97d3cc72682d6aeb",
+    "STORED_TRIGGER_LABEL_RESULT.json": "c453b37b6de130fe2772438b667bb3d7bd7186ce25f9444219af85ff207b0af6",
+    "head_route_diagnosis_v2/RESULT.json": "63bf896ec97eb4acfbc8662305e1dabb7a46bfc8f6712ac93adbd2ab0c60570f",
+    "head_route_diagnosis_v2/COMPLETED.json": "1ac02a776eba7c8b0f6e0fe55f0b6e61be6c5ef70d11e2612e31a773ef671643"
+  },
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "new_classifier_training": false,
+  "actual_trigger_evaluation": false
+}

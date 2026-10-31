@@ -1,0 +1,6 @@
+{
+  "state": "failed",
+  "pid": 53488,
+  "time": 1793453497.978289,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\run_head_route.py\", line 8, in <module>\n    try:runpy.run_path(str(r/'diagnose_head_route.py'),run_name='__main__')\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\diagnose_head_route.py\", line 86, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\diagnose_head_route.py\", line 41, in main\n    assert cpu['NumberOfLogicalProcessors']>=8 and cpu['LoadPercentage']<=60 and shutil.disk_usage(OUT).free>=4*1024**3\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: '<=' not supported between instances of 'NoneType' and 'int'\n"
+}

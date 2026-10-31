@@ -1,0 +1,88 @@
+{
+  "state": "completed",
+  "cases": {
+    "benign_big19336": {
+      "routes": {
+        "nativebody_nativehead": {
+          "mean_KL": 0.0,
+          "agreement": 1.0,
+          "class_agreement": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "eligible": true
+        },
+        "nativebody_studenthead": {
+          "mean_KL": 0.00025785981084078355,
+          "agreement": 0.998,
+          "class_agreement": [
+            0.9811320754716981,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "eligible": true
+        },
+        "studentbody_nativehead": {
+          "mean_KL": 0.12242061911029004,
+          "agreement": 0.942,
+          "class_agreement": [
+            0.9056603773584906,
+            0.9777777777777777,
+            0.9090909090909091,
+            0.8833333333333333,
+            0.9818181818181818,
+            0.9375,
+            0.9811320754716981,
+            0.9393939393939394,
+            0.9454545454545454,
+            0.9629629629629629
+          ],
+          "eligible": false
+        },
+        "studentbody_studenthead": {
+          "mean_KL": 0.1225562155019932,
+          "agreement": 0.942,
+          "class_agreement": [
+            0.9056603773584906,
+            0.9777777777777777,
+            0.9090909090909091,
+            0.8833333333333333,
+            0.9818181818181818,
+            0.9375,
+            0.9811320754716981,
+            0.9393939393939394,
+            0.9454545454545454,
+            0.9629629629629629
+          ],
+          "eligible": false
+        }
+      },
+      "saved_public_logit_differences": {
+        "native_maxabs": 0.0,
+        "raw_maxabs": 0.0
+      },
+      "feature_payload_sha256": "cda9f85b4fe9e6aa40006736937b2d61820f988e996f087442132ebca67b7e27",
+      "counterfactual_model_sha256": "39c5a763c44d13047cb8733ec40ec9c15a46e49f63ff449aadf7243c0cfd3993",
+      "source_case_receipt_sha256": "bfae73115b69b5e22081d308b16d234ddce7d38e5bbe6c2fd8a6f90137001574"
+    }
+  },
+  "new_training": false,
+  "actual_attack_inference": false,
+  "diagnostic_only": true,
+  "stopping_reason": "studentbody_nativehead_fails_public_utility_in_benign_big19336"
+}

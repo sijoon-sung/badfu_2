@@ -1,5 +1,5 @@
 """Parked one-factor candidate library. No runner or automatic launch."""
-import hashlib,json
+import hashlib,json,time
 from pathlib import Path
 import torch
 import stage05_common as s
@@ -50,7 +50,7 @@ def train_and_select(native,teacher_state,public,cls,root,deadline,bank_path,ban
     buckets=[torch.where(requested==k)[0] for k in range(10)];arm='backbone_only'
     with (root/(arm+'_steps.jsonl')).open('x',encoding='utf8') as log:
         for step in range(100):
-            deadline();ix=torch.randint(len(x),(32,),generator=gf)
+            deadline();tick=time.monotonic();ix=torch.randint(len(x),(32,),generator=gf)
             draws=torch.randint(24,(10,),generator=gq);qi=torch.stack([buckets[k][draws[k]] for k in range(10)])
             optimizer.zero_grad(set_to_none=True);z=student(norm(x[ix]))
             clean=loss(tc[ix],z)+loss(pc[ix],z)
@@ -61,7 +61,7 @@ def train_and_select(native,teacher_state,public,cls,root,deadline,bank_path,ban
             optimizer.step();assert all(torch.isfinite(v).all() for v in student.state_dict().values())
             state=student.state_dict()
             for k in ['model.fc.weight','model.fc.bias']:assert torch.equal(state[k],native[k])
-            row={'step':step+1,'clean_loss':float(clean.detach()),'query_loss':float(query.detach()),'query_n':10,
+            row={'step':step+1,'clean_loss':float(clean.detach()),'query_loss':float(query.detach()),'query_n':10,'seconds':time.monotonic()-tick,
                  'head_grad_none':True,'public_draw_sha256':hashlib.sha256(ix.numpy().tobytes()).hexdigest(),
                  'query_draw_sha256':hashlib.sha256(qi.numpy().tobytes()).hexdigest()}
             log.write(json.dumps(row)+'\n');log.flush();write(root,'TRAIN_PROGRESS.json',{'arm':arm,**row})

@@ -1,0 +1,20 @@
+H11 완료: 큰정상 통과/실제억제실패/오답쏠림 확인. R01/R03/P01/P04/D08/D15/D18/N02, 2026-10-31.
+원래 고정 actor PID21236이 두 실제case를 마치고 종료했다. full independent v2 audit도 통과했다. 부모모델/기존실패/정상통과는보존하며 새 학습조건으로 결과를 대체하지 않는다. case badfu.confirmed.s20261023.v1/purification_pilot, 기존1FL시드/유지자료재학습이며FedEraser가아니다.
+
+큰정상9668: 두 방법 CA90.0000/89.8421%(Post89.8), worstclass감소.630915/1.051525pp, 유익교정197/212·198/212, 정정된true-labeladv.002873835/.002695229로선언한효용/유한삭제감사통과. 상세 STAGE11_NORMAL_REPORT_KO와독립prefix증거를따른다. 정상통과를지우거나공격실패로대신하지않는다.
+
+실제공격9000 및미사용8542:
+method                rawASR(all/heldout)             selectedASR(all/heldout)   alpha
+matched_KL            98.566667/98.618590%             100/100%                  .0765625
+allclassjoint         53.522222/53.617420%             100/100%                  .078125
+따라서두arm모두ASR<=10필요조건실패. 사전stop에따라정상850후속과공격조건추가clean/member추론은미실행이다. 그지표를통과/실패로채우지않는다. 실제새FL시드나FedUBA결과는없다.
+전체감사는기존큰정상prefix의봉인파일해시를확인해이미검산한산술을재사용했고, 새공격case의100step/RNG/optimizer/BN/모델보간/34공개선택점/4full+4heldout정수ASR을검산했다. source/hash/원본seal도통과. 새추론/학습은없다.
+
+중요한해석정정: rawASR53.5222%를유효한부분정화로승격할수없다.
+저장된logit에원래test ID의정답을붙인별도진단에서joint raw의heldout정답은806/8542=9.435729%뿐이다. target0예측4580, class5예측3936, 나머지는거의없다. 원래class5만784/950정답으로올랐고다른8개비타깃클래스는대부분실패했다. KL raw도정답103/8542=1.205807%다. 두selected모델은원정답0/8542다. ASR감소는대부분다른오답으로의쏠림이었으므로원분류복원이라고부르지않는다. 이groundtruth는평가전용이며학습/선택에는전달되지않았다.
+
+수정방향도실측에서고른다.
+정상public500의별도head-route분해에서nativebody/studenthead KL.000257860/일치99.8%, studentbody/nativehead KL.122420619/94.2%, studentbody/studenthead KL.122556216/94.2%였다. 분류기출구만되돌려도body의공개기능손상은해결되지않았다. 실제공격경로검사는정상public필요조건실패로미실행이다. guard의null CPU값실패와별도v2실측회복을보존했다.
+준비했던head고정학습은PARKED로남긴다. 같은850bank가H11에없다는부족도startupguard로막았으며완성실행코드라고부르지않는다. 다음유한작업은같은자연이미지시작점에서teacher-not-k와teacher-source-s를비교해새query가원래모델분류를유지하는지확인하는sourcepair pilot이다. 실제분류기학습이나공격성공주장을하지않고, 소스일치/균형부터큰정상에서검사한다. 이후실제학생을만들면ASR뿐아니라원정답견고성과클래스별분포를반드시함께검사해야한다.
+
+전체BadFU/FedUBA방어·역할식별·독립조건·트리거계열독립성·형식망각보장은미완료다. D08/D15반례와모든이전실패를유지하며목표를축소하지않는다.

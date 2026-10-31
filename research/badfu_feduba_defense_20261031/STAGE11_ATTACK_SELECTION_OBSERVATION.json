@@ -1,0 +1,19 @@
+{
+  "state": "public_attack_selection_fixed",
+  "observed_utc": "2026-10-31T13:16:16.902313+00:00",
+  "pid": 21236,
+  "models": {
+    "matched_kl": {
+      "path": "matched_kl_selected.pt",
+      "sha256": "7a3a7c2aa59436039c74d990f00bae7193f64710f9fe9be2fe63cb5a56fc00eb",
+      "alpha": 0.0765625
+    },
+    "all_class_disjoint": {
+      "path": "all_class_disjoint_selected.pt",
+      "sha256": "57066e684b414433db3785ebddc9aacfb1b96c71de5d396fa0c41c9e15aa3e52",
+      "alpha": 0.07812500000000001
+    }
+  },
+  "selection_sha256": "f57c859e421c19a8927f5cd595d3a5dcfd2bb6a0bdfa49c26376ab7f0b01e372",
+  "actual_ASR_known_at_observation": false
+}

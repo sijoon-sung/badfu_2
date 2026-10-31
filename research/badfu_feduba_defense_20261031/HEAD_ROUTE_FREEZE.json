@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-31T13:33:50.197910+00:00",
+  "files": {
+    "diagnose_head_route.py": "43ce50b7e97c2e90f9a81a2edab57d6e514437376b717ac7425b703999af44be",
+    "run_head_route.py": "165f17b6ed70edce2c546e308c91592c56a47f75bfeab732d4d03e9c1addb6b7",
+    "HEAD_ROUTE_PROTOCOL.txt": "59a6fe7faf21ad9ea98ae7255b0abb8555dde831f6936f94875d16fb78878810",
+    "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
+    "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
+    "stage09.py": "f0723d5974b8d2158af7bd5c0859d68c8f8ccf4cb7c1fd1635d396518c6e09f7",
+    "STAGE05_FREEZE.json": "4d78bc448658bbb5ef110df3b730e720c870bd3412bf2818d1fe8fb91980342b",
+    "STAGE03_INPUTS.json": "c95d6f0c865d1b5259ac1ce03c700a3f45c6d63a9f12efb215bc38e96d21d9ce",
+    "PROXY_SPLIT.json": "f93073799b5e1fb920459dd6473d36bc8fa7c4d3a8dcee356794a96ba6fcc341",
+    "stage11/RESULT.json": "73a76330ce32b0b189b7181de525d352f870bd9a3a0d81d8337a25105c20ea12",
+    "stage11/COMPLETED.json": "9aa2f22b671412e1d644582e70cbc1b1b3cc0907ff643bb39385e95115593d49",
+    "stage11/INDEPENDENT_VERIFICATION.json": "74eb56f7fa47048a6f2d7e2e86b676156bb8ff9799432ecf97d3cc72682d6aeb",
+    "stage11/benign_big19336/COMPLETED.json": "bfae73115b69b5e22081d308b16d234ddce7d38e5bbe6c2fd8a6f90137001574",
+    "stage11/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json": "3a356bb177bfa43461f01cbc93dabefc5f02c9f1ed986bb71ed740011f82c5af",
+    "stage11/attack_cover850/COMPLETED.json": "c362235c3a9a9dcd7fc04a29e41626bb1eb9600e46667273782ab5d2ba2ab6ca",
+    "stage11/attack_cover850/SELECTION_BEFORE_PRIVATE_EVALUATION.json": "f57c859e421c19a8927f5cd595d3a5dcfd2bb6a0bdfa49c26376ab7f0b01e372"
+  },
+  "related_cards": [
+    "R01",
+    "P01",
+    "P02",
+    "P04",
+    "D08",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "actual_trigger_or_label_inputs": false,
+  "purpose": "public_function_route_diagnosis_only"
+}

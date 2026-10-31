@@ -1,0 +1,46 @@
+{
+  "state": "failed_necessary_ASR",
+  "cases": {},
+  "selection_sha256": "f57c859e421c19a8927f5cd595d3a5dcfd2bb6a0bdfa49c26376ab7f0b01e372",
+  "formal_deletion_certificate": false,
+  "all_ASR": {
+    "matched_kl": {
+      "raw": {
+        "target_n": 8871,
+        "n": 9000,
+        "ASR_pct": 98.56666666666666,
+        "heldout_target_n": 8424,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 98.6185904940295
+      },
+      "selected": {
+        "target_n": 9000,
+        "n": 9000,
+        "ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 100.0
+      }
+    },
+    "all_class_disjoint": {
+      "raw": {
+        "target_n": 4817,
+        "n": 9000,
+        "ASR_pct": 53.522222222222226,
+        "heldout_target_n": 4580,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 53.6174198080075
+      },
+      "selected": {
+        "target_n": 9000,
+        "n": 9000,
+        "ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 100.0
+      }
+    }
+  },
+  "extension_permitted": false,
+  "clean_member_audits": "skipped_by_preregistered_ASR_stop"
+}
