@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "4397ac16ecc363eb581bc9be25133bcea8d8aba24722fbd2c533985bfc516d26",
+  "registry_sha256": "1776513877caf1e79b14ea2ab3dc8f27442d32cda9e4e2616cb3ff853176be09",
   "cards": 29,
-  "unique_source_documents": 378,
+  "unique_source_documents": 380,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -385,7 +385,9 @@
     "research/badfu_feduba_defense_20261031/VERIFIER_NUMERICAL_CORRECTION.txt": "1cd9c6e50a2bd9fd521c41bb952a88a28051e4ed73baccacdbddbf8fdc742a12",
     "research/badfu_feduba_defense_20261031/STAGE08_PROTOCOL.txt": "048d85090dd1f2cc1881c03591f7a20e976a4fda3505fce03716b8eeae7bf075",
     "research/badfu_feduba_defense_20261031/STAGE08_FREEZE.json": "ccefbd56dde935381edb59d49010542e79b7880cdff5c3fece7d7304df21a9db",
-    "research/badfu_feduba_defense_20261031/STAGE08_LAUNCH.json": "a4af245627b81c74caa147c002ce9f0f234127dd7366f1e6ef5a24a4b4a058d9"
+    "research/badfu_feduba_defense_20261031/STAGE08_LAUNCH.json": "a4af245627b81c74caa147c002ce9f0f234127dd7366f1e6ef5a24a4b4a058d9",
+    "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_PROTOCOL.txt": "f973720ab269c1d150330d40b1948f584f93d846dd7ff3bd042b631cbf2dfdf8",
+    "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_FREEZE.json": "233dd10d3bb419e7e50944f19ffe3e2c5c00f457e03aaf2b54a74b53a1207636"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -550,7 +552,8 @@
         "research/badfu_feduba_defense_20261031/STAGE06_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/STAGE07_CPU_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE07_REPORT_KO.txt",
-        "research/badfu_feduba_defense_20261031/STAGE08_PROTOCOL.txt"
+        "research/badfu_feduba_defense_20261031/STAGE08_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
