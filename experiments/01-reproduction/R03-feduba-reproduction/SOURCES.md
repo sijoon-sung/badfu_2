@@ -42,3 +42,7 @@
 | [ASSET_CPU_RECOVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [ASSET_CPU2_FREEZE.json](../../../research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [MANIFEST.json](../../../research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json) | `research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1` |
+| [CPU_VISIBILITY_DIAGNOSIS.json](../../../research/feduba_paper_implementation_20261031/CPU_VISIBILITY_DIAGNOSIS.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [STG_PROFILE.json](../../../research/feduba_paper_implementation_20261031/STG_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_SGD_CPU_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json) | `research/feduba_paper_implementation_20261031` |

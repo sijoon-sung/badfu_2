@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "beb6d077ddd8cc03e01bfe43ad3fb3c5f8e322500c1264bd2efe8c2d7ef42bda",
+  "registry_sha256": "a5409696f481c91d387a777b273fce3fd614da7cadb16fe0b02feca7f17722a0",
   "cards": 28,
-  "unique_source_documents": 357,
+  "unique_source_documents": 361,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -290,6 +290,10 @@
     "research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt": "1f576c023953766236b8ea81ef91125e1204159765f4778d4cbebf37a8833995",
     "research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json": "09d80d7f43c24aed28444a7889e1c2422f0cc8cfa8b404f0be5c39ed76597c9a",
     "research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json": "ca4755aeb3d9d447312133964cc052e1241d87f631a5bab750dc17335b6ce6de",
+    "research/feduba_paper_implementation_20261031/CPU_VISIBILITY_DIAGNOSIS.json": "0e3d5622ac7759f130ca952f27e575d25c6bd5b8e173fd2f0614b9c0c3a8ef83",
+    "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt": "b47baa2aa0fe32cea920657a0df8a88d66968f3acdcba67e9c4cc197e010658e",
+    "research/feduba_paper_implementation_20261031/STG_PROFILE.json": "aa4669c58235e63f6bbcf323cb5badfa3bb9b27403fb4661cebb2d1f5e63c07e",
+    "research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json": "b7b36f3e37db4f5ed6264ed2af992d101fce6af8efe62f1343caf216f98b5417",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -685,7 +689,8 @@
         "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json",
         "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/REPORT_KO.txt",
-        "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt"
+        "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

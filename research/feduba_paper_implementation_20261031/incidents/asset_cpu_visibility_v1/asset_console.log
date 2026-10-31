@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\FEDUBA_PAPER_IMPLEMENTATION_20261031\prepare_external_assets.py", line 135, in <module>
+    main()
+  File "D:\FEDUBA_PAPER_IMPLEMENTATION_20261031\prepare_external_assets.py", line 54, in main
+    assert not torch.cuda.is_available(), 'This job must not initialize/use CUDA'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: This job must not initialize/use CUDA
