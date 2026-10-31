@@ -166,3 +166,13 @@
 | [FREEZE.json](../../../research/feduba_stage_diagnosis_20261101/FREEZE.json) | `research/feduba_stage_diagnosis_20261101` |
 | [SOURCE_CHECKS.json](../../../research/feduba_stage_diagnosis_20261101/SOURCE_CHECKS.json) | `research/feduba_stage_diagnosis_20261101` |
 | [REPORT_KO.txt](../../../research/feduba_stage_diagnosis_20261101/REPORT_KO.txt) | `research/feduba_stage_diagnosis_20261101` |
+| [LAUNCH_INVOCATION_FAILURE.json](../../../research/feduba_stage_diagnosis_20261101/LAUNCH_INVOCATION_FAILURE.json) | `research/feduba_stage_diagnosis_20261101` |
+| [LAUNCH_INVOCATION_RECOVERY.txt](../../../research/feduba_stage_diagnosis_20261101/LAUNCH_INVOCATION_RECOVERY.txt) | `research/feduba_stage_diagnosis_20261101` |
+| [PUBLICATION.json](../../../research/feduba_stage_diagnosis_20261101/PUBLICATION.json) | `research/feduba_stage_diagnosis_20261101` |
+| [RESULT.json](../../../research/feduba_stage_diagnosis_20261101/RESULT.json) | `research/feduba_stage_diagnosis_20261101` |
+| [VERIFIED.json](../../../research/feduba_stage_diagnosis_20261101/VERIFIED.json) | `research/feduba_stage_diagnosis_20261101` |
+| [TERMINAL_PROCESS.json](../../../research/feduba_stage_diagnosis_20261101/TERMINAL_PROCESS.json) | `research/feduba_stage_diagnosis_20261101` |
+| [SAVED_STAGE_REVIEW.json](../../../research/feduba_stage_diagnosis_20261101/SAVED_STAGE_REVIEW.json) | `research/feduba_stage_diagnosis_20261101` |
+| [COMPLETION.json](../../../research/feduba_stage_diagnosis_20261101/COMPLETION.json) | `research/feduba_stage_diagnosis_20261101` |
+| [NEXT_CURRICULUM_RATIONALE.txt](../../../research/feduba_stage_diagnosis_20261101/NEXT_CURRICULUM_RATIONALE.txt) | `research/feduba_stage_diagnosis_20261101` |
+| [CHECKS.json](../../../research/feduba_stage_diagnosis_20261101/CHECKS.json) | `research/feduba_stage_diagnosis_20261101` |

@@ -3,3 +3,18 @@ FedUBA 원인진단 준비 — R03/R02/N02/D08/D15, 2026-11-01 KST
 새 PROTOCOL/PROFILE은 마지막저장2batch의 eval/trainBN × zero/기존최종δ 정확8forward/800sample-forward·학습0회 비교를 고정했다. target200 counts와CE만 측정하며 victim재평가/새augmentation/새δ/seed/lr/epoch/budget/허용치 탐색은없다. trainBNcopy는 disposable 진단용이며 model저장·후속채택은없다. 고정40hit/CE1.0/양batch증가 rule과 미달중단, 독립저장logit 산술검산을 계산전에 선언했다.
 DISLAB SOURCE_CHECKS는 3Python AST/6동결파일·원논문/원source/모델/δ/2step hash/typed메타데이터와 원parent/모든연구child 종료·두20Rmanifest·원GPU실패보존을 확인했다. torchimport/modelLoad/모델forward는0이다. 이 source/profile/freeze를 PR선게시한 뒤 새정확CPU8task를한번시작한다. 현재이보고서 작성시 실제8forward/독립검산은미실행이다.
 BN mode 차이는 benign/nonIID에도 생길 수 있다. D08 공격.75848이큰정상.75525/.76188사이, D15 공격7/정상8은 해결하지 않으며 서버탐지/unknowntrigger/최종FU인과 성공을 주장하지 않는다. 예전훈련/감사/평가/전달/등록은 반복하지 않는다.
+
+실제 완료/판정 추가 — 위 준비 기록은 당시 상태로 보존
+PR591e6e4에 6파일동결/계약/source-only검사를 선게시했다. 최초 PS 파일호출은 Restricted정책에서 launcher본문 전에 거절됐고 task/ONCE/STATE/Python이 모두 없음을 확인했다. 원호출실패/미실행근거와 같은원바이트 launcher의 새프로세스호출계약을5eacb75에 게시했다. machine/user정책은 바꾸지 않았고 최종 Get-ExecutionPolicy도 원Restricted(3)다.
+정확task Codex-FedUBA-stage-diagnosis-CPU8-20261101을처음등록/시작해 parent36844→runner47160→verifier30116이 실제8forward/800sample-forward와독립저장logit 검산을완료했고전부종료했다. taskexit0/현재일치Python0이다. 원훈련/감사/평가/전달/등록을재실행하지않았다.
+
+고정200장 class200 counts / pooled CE
+- eval_frozen / zero: 0/200 / 9.02781639099121
+- eval_frozen / finalδ: 0/200 / 6.6034729957580565
+- train_BN_copy / zero: 0/200 / 9.027883911132813
+- train_BN_copy / finalδ: 0/200 / 9.154375419616699
+모든8개cell의목표정답이0이며 trainBN finalδ CE는오히려더컸다. 사전40hit개선/CE1.0하락/양batch엄격증가의3조건이전부거짓이므로이번BN-gap rule은기각한다. 이부정결과는BN전환을새훈련정책으로채택할근거가아니며모든다른BN관련가설을보편기각하는것도아니다.
+독립CPU1은8logits의Pythonargmax/안정logsumexp·fsum/동일ID순서/중복없는cell/정수count를검산했고CE최대오차5.768701534236698e-7로원atol5e-6+rtol1e-5를통과했다. 독립모델forward는0으로모델재추론검증은아니다. eval모든state/모든learnedparameter는불변, trainBNcopy의buffer만변하고모델저장0이었다. 원model/δ/2step/논문/sourcehash는전후불변이었다. 원8logits/외부ID는DISLAB private_outputs에만보존하고공개Git에는aggregate/count/hash만올린다.
+
+실패단계는 더 앞에서도 관측된다. 새모델계산 없이 원warmup5 events를읽으니 매epoch200장 train_correct가전부0이고CE는10.421193084716798→10.105594024658203→9.844162788391113→9.676953811645507→9.294160194396973이다. 즉 최종FU전이만의실패가아니라원교사의target200인식필요조건이미충족되지않았다. 원코드는201출력모델을Tiny-only(라벨0..199)100epoch에사용하고이후target200으로10update했다. 이정적경로와저장로그를원문/공개concoct_dataset호출과대조해다음source근거교정후보를작성했다. 누락utils의구현을복구했다고주장하지않고새후보는NEXT_CURRICULUM_RATIONALE의미실행상태다.
+원GPUgradient감사실패/별도CPUtrigger검증/SSS·양20R/독립평가성능실패/양쪽packet·catalogue완료는전부불변이다. 이번surrogate계수는victimASR/서버탐지율이아니다. D08/D15/unknowntrigger범위는해결되지않았고전체목표·자동확인은계속한다.

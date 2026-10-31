@@ -1,2 +1,4 @@
 # Preserve frozen source and received evidence bytes exactly.
 * -text
+# Original terminal receipt retains its BOM and CRLF.
+TERMINAL_PROCESS.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
