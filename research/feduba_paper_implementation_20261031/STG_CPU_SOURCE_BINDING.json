@@ -1,0 +1,53 @@
+{
+  "kind": "CPU_trigger100_after_reused_original_105_model_epochs",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "result": {
+    "path": "STG_CPU_TRIGGER_RESULT.json",
+    "sha256": "e60cc5d1454f9138b85c8afea4b2898e2651508550f844a150b033eaa5ed1c2d"
+  },
+  "audit": {
+    "path": "STG_CPU_TRIGGER_VERIFIED.json",
+    "sha256": "817e92a78fa2f498d2e2dc1a1805d782c1e6932cafaa60a0a86de67eee38aff2"
+  },
+  "controller": {
+    "path": "STG_CPU_TRIGGER_CONTROLLER_STATE.json",
+    "sha256": "b1af65a1cf080e80522128fc5197a1fa8475a9130e4d65b2ceacd284dfd34401"
+  },
+  "profile": {
+    "path": "STG_CPU_TRIGGER_PROFILE.json",
+    "sha256": "a970e48c63d6e68685afd953a6c95debd5547846f7842d6e58f91787e7d7227f"
+  },
+  "source_freeze": {
+    "path": "STG_CPU_TRIGGER_FREEZE.json",
+    "sha256": "4fbbd1c982c4906ace94c76f067f9b67e7490cfc8ed859408e02ace7159aae52"
+  },
+  "original_result": {
+    "path": "STG_RESULT.json",
+    "sha256": "5b0b7b1a7d53aa8338d4cca48e38a012196f4b5c0a8bddc5174ffd6d619367ae"
+  },
+  "original_failure": {
+    "path": "STG_AUDIT_FAILURE.json",
+    "sha256": "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce"
+  },
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "fixed_surrogate": {
+    "path": "stg/fixed_surrogate.pt",
+    "sha256": "4768e90eb6efcb2b8f772a0ac41f535c967083dd3d6d6887ef443595e87c6765",
+    "bytes": 45162251,
+    "payload_key": null
+  },
+  "original_CPU_GPU_gradient_audit_remains_failed": true,
+  "author_unique_execution_certified": false,
+  "detection_success_implied": false
+}

@@ -42,3 +42,5 @@ STG 독립CPU gradient 검증실패보존: 원학습100/5/100·78410batch는완�
 새명시CPU trigger복구계약: 원100surrogate/5warmup frozen모델SHA는그대로재사용하고새stg_cpu_trigger_recovery에원seed3000/δ0·같은외부200·literalSGD.1/투영·100epoch200batch를DISLAB CPU2 FP32에서한번실행한다. 원GPUbranch와모든데이터/실패는불변이며기존CPU gradient/projection 허용치를넓히지않는다. 독립검산은새100epoch/200step/ID/RNG와같은첫/마지막두gradient다. GPU-CPU동등성을주장하지않고새CPU분기성공뒤에도원실패를보존한새binding없이SSS/FU를시작하지않는다.
 
 새CPU복구실행확인: PRdb35406과원격freeze통과뒤정확한새task를1회시작했다. 실제parent40388/trainer51664·CPU trigger5epoch/10batch 이상진행을확인했다. 원STG/진단은재실행하지않고SSS/FU는아직미실행이다. 원GPUδ/실패와별개인새CPU결과·독립검증을기다린다.
+
+새CPU trigger100 독립검증완료: 실제100epoch/200batch/200step, projection대수max7.450580596923828e-9, 사전첫/마지막 gradient·augmentation재생maxabs0을확인했다. 새δ SHA1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe, parent/runner/verifier는종료했고재실행하지않는다. 원GPU audit실패와δ는보존하며원STG_VERIFIED는만들지않았다. CPU_BINDING_LAUNCH_PROTOCOL·고정파일명/SHA의STG_CPU_SOURCE_BINDING을통해미실행SSS/FU/평가/parent/metadata prepare만별도CPU결과/감사에명시연결했다. source-only새revision과oldsource를보존하며SSS선택/학습수치/모든기존허용치와완료fixture/engine/source는불변이다. 아직실SSS/FU/평가와실launchprofile생성은미실행이다.

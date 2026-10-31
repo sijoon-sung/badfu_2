@@ -38,6 +38,8 @@ def main():
     assert not torch.cuda.is_initialized()
     p, result = read(ROOT / 'FU_LAUNCH_PROFILE.json'), read(ROOT / f'FU_{branch}_RESULT.json')
     assert result['state'] == 'completed_FU20' and result['branch'] == branch
+    assert result['trigger_binding_sha256'] == p['trigger_binding_sha256'] == sha(ROOT / 'STG_CPU_SOURCE_BINDING.json')
+    assert read(ROOT / 'SSS_RESULT.json')['trigger_binding_sha256'] == p['trigger_binding_sha256']
     out = ROOT / 'fu' / branch
     assert sha(out / 'MANIFEST.json') == result['history_manifest_sha256']
     assert sha(ROOT / 'clean_fl/MANIFEST.json') == p['history_manifest_sha256']
@@ -154,6 +156,7 @@ def main():
           'independent_all_effective_source_calibration_and_aggregation_exact': True,
           'original_first_round_submissions_reused': reused_records, 'history_hashes': hashes,
           'after': result['after'], 'performance_not_yet_evaluated': True,
+          'trigger_binding_sha256': p['trigger_binding_sha256'],
           'all_local_SGD_gradients_independently_recomputed': False, 'FedUBA_attack_completed': False})
     print(json.dumps({'state': 'passed', 'branch': branch, 'roles': roles, 'actual_epochs': epochs, 'actual_batches': batches}))
 

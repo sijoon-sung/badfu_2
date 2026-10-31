@@ -1,0 +1,28 @@
+{
+  "state": "completed_CPU_trigger100",
+  "profile": "feduba.paper.cifar10.stg_cpu_trigger_recovery.s0.20261031",
+  "reused_original_model_epochs": 105,
+  "new_trigger_epochs": 100,
+  "new_actual_batches": 200,
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "fixed_surrogate": {
+    "path": "stg/fixed_surrogate.pt",
+    "sha256": "4768e90eb6efcb2b8f772a0ac41f535c967083dd3d6d6887ef443595e87c6765",
+    "bytes": 45162251,
+    "payload_key": null
+  },
+  "source_target": {
+    "path": "private_assets/external/target_external.pt",
+    "sha256": "8a40deeb76740157aaeecb259d013740ff83b3f54c155ccf6c3802a7bba2ab4a",
+    "bytes": 618597
+  },
+  "CPU_threads": 2,
+  "CUDA_initialized": false,
+  "original_CPU_GPU_gradient_audit_remains_failed": true,
+  "FedUBA_attack_completed": false
+}

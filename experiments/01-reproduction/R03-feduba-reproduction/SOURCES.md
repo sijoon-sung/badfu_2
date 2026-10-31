@@ -108,3 +108,7 @@
 | [STG_CPU_TRIGGER_PROFILE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_CPU_TRIGGER_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_CPU_TRIGGER_STARTED.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_STARTED.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_RESULT.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_VERIFIED.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_VERIFIED.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_SOURCE_BINDING.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_SOURCE_BINDING.json) | `research/feduba_paper_implementation_20261031` |
+| [CPU_BINDING_LAUNCH_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/CPU_BINDING_LAUNCH_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |

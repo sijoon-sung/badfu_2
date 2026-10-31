@@ -7,6 +7,7 @@ import sys
 import time
 import traceback
 from runtime_common import ROOT, read, write, guard, freeze_check
+from trigger_binding import verified_cpu_trigger
 
 
 def processes():
@@ -23,7 +24,8 @@ def wait_idle(step):
                  'feduba_paper_implementation_20261031' in (r.get('CommandLine') or '').lower() and
                  any(n in (r.get('CommandLine') or '').lower() for n in ['stg_controller.py', 'trigger_runner.py',
                      'verify_stg.py', 'sss_runner.py', 'verify_sss.py', 'fu_runner.py', 'verify_fu.py',
-                     'evaluate_pair.py', 'verify_pair_evaluation.py', 'paired_controller.py'])]
+                     'evaluate_pair.py', 'verify_pair_evaluation.py', 'paired_controller.py',
+                     'cpu_trigger_controller.py', 'cpu_trigger_recovery.py', 'verify_cpu_trigger_recovery.py'])]
         if peers:
             reason = 'Existing finite stage process still exits: ' + str([r['ProcessId'] for r in peers])
         else:
@@ -57,12 +59,12 @@ def main():
     freeze_check('PAIR_RUN_FREEZE.json')
     p = read(ROOT / 'PAIR_LAUNCH_PROFILE.json')
     assert p['launch_enabled'] and p['case_purpose'] == 'diagnostic'
-    assert read(ROOT / 'STG_CONTROLLER_STATE.json')['state'] == 'completed_STG_verified_only'
-    assert read(ROOT / 'STG_VERIFIED.json')['state'] == 'passed'
+    verified_cpu_trigger(p['trigger_binding_sha256'])
     assert read(ROOT / 'CLEAN_DELIVERY_COMPLETE.json')['state'] == 'normal_foundation_delivery_and_three_host_diagnostic_registration_complete'
     for n in ['SSS_LAUNCH_PROFILE.json', 'FU_LAUNCH_PROFILE.json', 'PAIR_EVAL_LAUNCH_PROFILE.json']:
         value = read(ROOT / n)
         assert value['launch_enabled'] and value['required_clean_case_id'] == p['required_clean_case_id']
+        assert value['trigger_binding_sha256'] == p['trigger_binding_sha256']
     assert read(ROOT / 'PAIR_EVAL_CPU_RESULT.json')['state'] == 'passed'
     with (ROOT / 'PAIR_CONTROLLER_ONCE.json').open('x', encoding='utf-8') as stream:
         json.dump({'pid': os.getpid(), 'created_unix': time.time()}, stream)

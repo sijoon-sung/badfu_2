@@ -11,6 +11,7 @@ os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
 import torch
 from torchvision.datasets import CIFAR10
 import model_reference
+from trigger_binding import verified_cpu_trigger
 from runtime_common import ROOT, read, write, sha, guard, freeze_check
 
 
@@ -31,6 +32,8 @@ def main():
     result = read(ROOT / 'PAIR_EVAL_RESULT.json')
     assert p['launch_enabled'] and result['state'] == 'completed_primary_pair_evaluation'
     assert result['case_id'] == args.case_id == p['required_clean_case_id']
+    binding, trigger_result, trigger_audit = verified_cpu_trigger(p['trigger_binding_sha256'])
+    assert result['trigger_binding_sha256'] == p['trigger_binding_sha256'] and result['trigger_source_kind'] == binding['kind']
     query = "Get-CimInstance Win32_Process | Where-Object {$_.Name -eq 'python.exe'} | Select-Object ProcessId,CommandLine | ConvertTo-Json -Compress"
     actual = json.loads(subprocess.check_output(['powershell', '-NoProfile', '-Command', query], text=True))
     actual = [actual] if isinstance(actual, dict) else actual
@@ -44,10 +47,11 @@ def main():
     for branch in ['benign', 'attack']:
         r, audit = read(ROOT / f'FU_{branch}_RESULT.json'), read(ROOT / f'FU_{branch}_VERIFIED.json')
         assert audit['state'] == 'passed' and r['after'] == audit['after']
-        assert r['delta'] == read(ROOT / 'STG_RESULT.json')['delta']
+        assert r['delta'] == trigger_result['delta']
+        assert r['trigger_binding_sha256'] == audit['trigger_binding_sha256'] == p['trigger_binding_sha256']
         expected_models[branch] = r['after']
     assert result['source_models'] == expected_models
-    assert result['delta'] == read(ROOT / 'SSS_RESULT.json')['delta'] == read(ROOT / 'STG_VERIFIED.json')['delta']
+    assert result['delta'] == read(ROOT / 'SSS_RESULT.json')['delta'] == trigger_audit['delta']
     for name, digest in result['source_receipt_hashes'].items(): assert sha(ROOT / name) == digest
     assert sha(ROOT / 'pair_evaluation/CASE_SELECTION.json') == result['case_selection_sha256']
     assert read(ROOT / 'pair_evaluation/CASE_SELECTION.json') == selected
@@ -144,6 +148,7 @@ def main():
     load(result['delta']); assert sha(test_path) == result['test_file_sha256']
     for path, digest in result['source_receipt_hashes'].items(): assert sha(ROOT / path) == digest
     verified = {'state': 'passed', 'primary_result_sha256': sha(ROOT / 'PAIR_EVAL_RESULT.json'),
+                'trigger_binding_sha256': p['trigger_binding_sha256'], 'trigger_source_kind': binding['kind'],
                 'case_id': args.case_id, 'source_models': expected_models, 'delta': result['delta'],
                 'all_10000_raw_inputs_and_all_3_models_independently_reinferred': True,
                 'independent_sample_forwards': 60000, 'independent_forward_calls': calls,

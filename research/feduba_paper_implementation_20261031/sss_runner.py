@@ -15,6 +15,7 @@ from torchvision.datasets import CIFAR10
 import core
 import model_reference
 from sss_logging import observe_and_rank
+from trigger_binding import verified_cpu_trigger
 from runtime_common import ROOT, read, write, sha, save, guard, freeze_check
 
 
@@ -30,9 +31,7 @@ def main():
     numeric_policy = read(ROOT / 'SSS_NUMERIC_POLICY.json')
     assert read(ROOT / 'CLEAN_FL_VERIFIED.json')['utility_gate']
     assert read(ROOT / 'FOUNDATION_STATE.json')['state'] == 'completed_clean_FL_foundation_only'
-    assert read(ROOT / 'STG_CONTROLLER_STATE.json')['state'] == 'completed_STG_verified_only'
-    verified, stg = read(ROOT / 'STG_VERIFIED.json'), read(ROOT / 'STG_RESULT.json')
-    assert verified['state'] == 'passed' and verified['delta'] == stg['delta']
+    binding, stg, verified = verified_cpu_trigger(p['trigger_binding_sha256'])
     assert read(ROOT / p['logger_CPU_result'])['state'] == 'passed'
     selected = json.loads(subprocess.check_output([sys.executable, '-u', str(args.catalog_root / 'select_case.py'),
                           args.case_id, '--purpose', 'diagnostic'], text=True, encoding='utf-8'))
@@ -109,6 +108,7 @@ def main():
               'selected_by_owner': {str(k): v for k, v in selected_ids.items()}, 'request_budget': 125,
               'query_packets': packets, 'case_selection_sha256': sha(out / 'CASE_SELECTION.json'),
               'pre_and_delta_source_hashes_unchanged': True, 'model_state_unchanged': True,
+              'trigger_binding_sha256': p['trigger_binding_sha256'], 'trigger_source_kind': binding['kind'],
               'numeric_policy_sha256': p['numeric_policy_sha256'], 'numeric_settings': numeric_settings,
               'device': torch.cuda.get_device_name(0), 'torch_version': str(torch.__version__),
               'real_FU_executed': False, 'FedUBA_attack_completed': False}

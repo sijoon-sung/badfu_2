@@ -36,6 +36,8 @@ def main():
     assert read(ROOT / 'FU_POLICY_CPU_RESULT.json')['state'] == 'passed'
     selection, audited = read(ROOT / 'SSS_RESULT.json'), read(ROOT / 'SSS_VERIFIED.json')
     assert audited['state'] == 'passed' and audited['SSS_result_sha256'] == sha(ROOT / 'SSS_RESULT.json')
+    assert selection['trigger_binding_sha256'] == audited['trigger_binding_sha256'] == p['trigger_binding_sha256']
+    assert sha(ROOT / 'STG_CPU_SOURCE_BINDING.json') == p['trigger_binding_sha256']
     assert selection['case_id'] == args.case_id and selection['selected_by_owner'] == audited['selected_by_owner']
     selected_case = json.loads(subprocess.check_output([sys.executable, '-u', str(args.catalog_root / 'select_case.py'),
                     args.case_id, '--purpose', 'diagnostic'], text=True, encoding='utf-8'))
@@ -129,6 +131,7 @@ def main():
               'new_trained_roles': 200, 'actual_local_epochs': 1000, 'actual_batches': total_batches,
               'after': final, 'delta': selection['delta'], 'SSS_result_sha256': sha(ROOT / 'SSS_RESULT.json'),
               'history_manifest_sha256': sha(out / 'MANIFEST.json'), 'performance_not_yet_evaluated': True,
+              'trigger_binding_sha256': p['trigger_binding_sha256'],
               'FedUBA_attack_completed': False}
     write(ROOT / f'FU_{args.branch}_RESULT.json', result)
     write(ROOT / f'FU_{args.branch}_STATE.json', {'state': 'completed_FU20', 'pid': os.getpid(), 'rounds': 20, 'updated_unix': time.time()})

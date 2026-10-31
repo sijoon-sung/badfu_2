@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader
 from torchvision import transforms
 from torchvision.datasets import CIFAR10
 import model_reference
+from trigger_binding import verified_cpu_trigger
 from pair_eval_core import evaluation_input, counts, percentages, operational_gate
 from runtime_common import ROOT, read, write, sha, save, guard, freeze_check
 
@@ -42,15 +43,19 @@ def main():
     pre = dict(selected['server_inputs']['pre'])
     pre['bytes'] = Path(pre['path']).stat().st_size
     assert pre['sha256'] == selection['pre_checkpoint']['sha256'] == read(ROOT / 'CLEAN_FL_RESULT.json')['before']['sha256']
-    delta_meta = read(ROOT / 'STG_RESULT.json')['delta']
-    assert delta_meta == selection['delta'] == read(ROOT / 'STG_VERIFIED.json')['delta']
+    binding, trigger_result, trigger_audit = verified_cpu_trigger(p['trigger_binding_sha256'])
+    delta_meta = trigger_result['delta']
+    assert delta_meta == selection['delta'] == trigger_audit['delta']
+    assert selection['trigger_binding_sha256'] == sss_audit['trigger_binding_sha256'] == p['trigger_binding_sha256']
     source_models = {'pre': pre}
-    receipts = ['CLEAN_FL_VERIFIED.json', 'STG_RESULT.json', 'STG_VERIFIED.json', 'SSS_RESULT.json', 'SSS_VERIFIED.json']
+    receipts = ['CLEAN_FL_VERIFIED.json', 'STG_CPU_SOURCE_BINDING.json', 'STG_CPU_TRIGGER_RESULT.json',
+                'STG_CPU_TRIGGER_VERIFIED.json', 'STG_RESULT.json', 'STG_AUDIT_FAILURE.json', 'SSS_RESULT.json', 'SSS_VERIFIED.json']
     for branch in ['benign', 'attack']:
         result, audit = read(ROOT / f'FU_{branch}_RESULT.json'), read(ROOT / f'FU_{branch}_VERIFIED.json')
         assert result['state'] == 'completed_FU20' and audit['state'] == 'passed'
         assert result['SSS_result_sha256'] == sha(ROOT / 'SSS_RESULT.json') and result['delta'] == delta_meta
         assert result['after'] == audit['after']
+        assert result['trigger_binding_sha256'] == audit['trigger_binding_sha256'] == p['trigger_binding_sha256']
         assert sha(ROOT / f'fu/{branch}/MANIFEST.json') == result['history_manifest_sha256']
         source_models[branch] = result['after']
         receipts.extend([f'FU_{branch}_RESULT.json', f'FU_{branch}_VERIFIED.json'])
@@ -122,6 +127,7 @@ def main():
     limits = read(ROOT / 'FU_LAUNCH_PROFILE.json')['minimum_operational_latent_pair_gate']
     assert limits == read(ROOT / 'FU_PROFILE.json')['minimum_operational_latent_pair_gate']
     result = {'state': 'completed_primary_pair_evaluation', 'profile': p['id'], 'case_id': args.case_id,
+              'trigger_binding_sha256': p['trigger_binding_sha256'], 'trigger_source_kind': binding['kind'],
               'source_models': source_models, 'delta': delta_meta, 'test_file_sha256': data_sha,
               'source_receipt_hashes': {n: sha(ROOT / n) for n in receipts},
               'case_selection_sha256': sha(out / 'CASE_SELECTION.json'), 'input_packets': input_packets,

@@ -7,6 +7,7 @@ import traceback
 import torch
 from torchvision.datasets import CIFAR10
 import model_reference
+from trigger_binding import verified_cpu_trigger
 from runtime_common import ROOT, read, write, sha, freeze_check
 
 
@@ -19,6 +20,8 @@ def main():
     assert not torch.cuda.is_initialized()
     result = read(ROOT / 'SSS_RESULT.json')
     assert result['state'] == 'completed_SSS_queries'
+    binding, trigger_result, _ = verified_cpu_trigger(result['trigger_binding_sha256'])
+    assert result['delta'] == trigger_result['delta'] and result['trigger_source_kind'] == binding['kind']
     assert result['numeric_policy_sha256'] == sha(ROOT / 'SSS_NUMERIC_POLICY.json')
     numeric_policy = read(ROOT / 'SSS_NUMERIC_POLICY.json')
     assert result['numeric_settings'] == numeric_policy['GPU_query_settings']
@@ -98,6 +101,7 @@ def main():
                 'fixed_CPU_query_batch_replays': replays, 'all5000_model_queries_independently_recomputed': False,
                 'SSS_result_sha256': sha(ROOT / 'SSS_RESULT.json'), 'FedUBA_attack_completed': False}
     verified['numeric_policy_sha256'] = result['numeric_policy_sha256']
+    verified['trigger_binding_sha256'] = result['trigger_binding_sha256']
     verified['recorded_GPU_query_settings'] = result['numeric_settings']
     write(ROOT / 'SSS_VERIFIED.json', verified)
     print(json.dumps({k: verified[k] for k in ['state', 'CPU_only', 'all_score_rows', 'float64_top125_same_ID_sets']}))
