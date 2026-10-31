@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "cases": {
+    "attack_cover850": {
+      "state": "failed_necessary_ASR",
+      "arms": {
+        "clean_only": {
+          "steps": 100,
+          "alpha": 0.05,
+          "policy_points": 17,
+          "independent_ASR_counts": {
+            "raw": 9000,
+            "selected": 9000
+          }
+        },
+        "query_transfer": {
+          "steps": 100,
+          "alpha": 0.059375,
+          "policy_points": 17,
+          "independent_ASR_counts": {
+            "raw": 8979,
+            "selected": 9000
+          }
+        }
+      }
+    }
+  },
+  "fresh_model_inference": false,
+  "verifier_sha256": "c0130511aae5e70ebdbc9694c58a6744705e61a8e753c07c2ec761fda397cada",
+  "dependencies": {
+    "np_proxy": "f0b3c34d48ac47c36da899051b22698f5b751938040b76080672a2704c4d59b6",
+    "independent_auc": "750c5c9812a448313a516bd887169f67cbfdb044110316ccc148ab85044801ff"
+  }
+}

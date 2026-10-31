@@ -1,0 +1,53 @@
+{
+  "state": "completed",
+  "large_passed_arms": [
+    "clean_only",
+    "query_transfer"
+  ],
+  "cases": {
+    "attack_cover850": {
+      "state": "failed_necessary_ASR",
+      "cases": {},
+      "selection_sha256": "b34fda03d140b00c6b86bc4dfee8630f3518c96115bc5d48f5b9df79f0e839d4",
+      "formal_deletion_certificate": false,
+      "all_ASR": {
+        "clean_only": {
+          "raw": {
+            "target_n": 9000,
+            "n": 9000,
+            "ASR_pct": 100.0
+          },
+          "selected": {
+            "target_n": 9000,
+            "n": 9000,
+            "ASR_pct": 100.0
+          }
+        },
+        "query_transfer": {
+          "raw": {
+            "target_n": 8979,
+            "n": 9000,
+            "ASR_pct": 99.76666666666667
+          },
+          "selected": {
+            "target_n": 9000,
+            "n": 9000,
+            "ASR_pct": 100.0
+          }
+        }
+      },
+      "extension_permitted": false,
+      "clean_member_audits": "skipped_by_preregistered_ASR_stop"
+    }
+  },
+  "new_FL_seeds": 0,
+  "scope": "one_existing_BadFU_seed_three_case_necessary_test",
+  "FedUBA_evaluated": false,
+  "method_necessary_gates": {
+    "clean_only": false,
+    "query_transfer": false
+  },
+  "same850_executed": false,
+  "finished_unix": 1793446757.7122052,
+  "CUDA_initialized": false
+}

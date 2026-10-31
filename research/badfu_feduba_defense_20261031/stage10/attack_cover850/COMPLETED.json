@@ -1,0 +1,29 @@
+{
+  "result_sha256": "c9a4dde598de8f1f007d0e0fffe301441d4cfff3d23b2ae261bad417c196a0a8",
+  "files": {
+    "clean_only_optimizer_rng.pt": "7277e1205aeb114cbfd438e573ba581ec51bfe6d5bf2bb0ccce0f682e2c39250",
+    "clean_only_raw.pt": "82b9060bdca060c4a2edacbcf59d1bafdcce7acd05f8c8d50ddf154e93ff2724",
+    "clean_only_selected.pt": "4f564c9508d1e12741303c4887d48f58e5aa5ab9a37a9b97d6a5b2a1e18a21d1",
+    "clean_only_steps.jsonl": "14a975363d42a30f2a123f854f30dda20964e889111d01a9a06c0720d56e053c",
+    "private_clean_only_proxy.pt": "f91f46bbe42d537691a691ee1620452792878fbc9663e5d7a1772d605e2683e5",
+    "private_clean_only_raw_attack.pt": "8038ced993a933284dcb12ee18204427a623cea9b69db0ed51754667c021d789",
+    "private_clean_only_selected_attack.pt": "fcda43af0abd15e456c1a4f3a0d5e0fa970193b33ef049d03fa7fb9ef180f1bb",
+    "private_querybank.pt": "a72cd994c7e936bf5b43282b024de22adf5640155151e2a7de37ef8740d3239a",
+    "private_query_transfer_proxy.pt": "1d9e91f3fc037dbe59e2037a06461ec2cb25b568c8012aa09d769bdedc407e84",
+    "private_query_transfer_raw_attack.pt": "9b15c2c01e5ca65d5f699c16c40d7cdf839a9151ed5a671b6b839b6fc25a2729",
+    "private_query_transfer_selected_attack.pt": "220db142293ef7c2329725d13d07a22fe022a0f3ce63bd57a8c326c37bb234b6",
+    "PROGRESS.json": "e056020e01924113acf935a7f3dc774a7c142017b6cf41c32ef71be9022a6840",
+    "QUERYBANK_BEFORE_TRAINING.json": "3c4fdae39bd3496688f791c5a9c879a4c09459090d4c2fed4b61ed90e9c3301f",
+    "QUERY_PROGRESS.json": "f40c60fbc4f7f227b98353b713285fa20cbadc19cd53993c9614be6bcbd7d5ad",
+    "query_transfer_optimizer_rng.pt": "99b1579090bf3ec75b7524b7f1d975d9883d86ae241ff30eaf7fba017af9cd28",
+    "query_transfer_raw.pt": "1487a0002eaa5e3ed39e899177099a239b3479389d51135aed0758ccb0903cd0",
+    "query_transfer_selected.pt": "22883b145758c0d96d306699f35aa792defb276a4ede05ce4a6e7f742aba7d46",
+    "query_transfer_steps.jsonl": "523f992b47e80db3c16e76941809d7cb49716542c0ebe353fa9655cd91825482",
+    "RAW_MODELS_BEFORE_SELECTION.json": "fca5280a7e263a7150038887af79aaaa02d347960c13026326d62c6ee9342fcc",
+    "RESULT.json": "c9a4dde598de8f1f007d0e0fffe301441d4cfff3d23b2ae261bad417c196a0a8",
+    "SELECTION_BEFORE_PRIVATE_EVALUATION.json": "b34fda03d140b00c6b86bc4dfee8630f3518c96115bc5d48f5b9df79f0e839d4",
+    "SELECTION_PROGRESS.json": "5f62cb244af8500fc727e68536430268cbe635fdd16d748a9489b45c4a309cb2",
+    "SOURCE_INPUTS.json": "af90f74744c33929f6e2e5a08b09490b7a8bece06c39048f3f9c9a790aaae4eb",
+    "TRAIN_PROGRESS.json": "fb32fb097c781d0266b4fca7a3a9c8e657cd3cff673b9d272b9f495757e06990"
+  }
+}
