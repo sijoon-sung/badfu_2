@@ -1,0 +1,114 @@
+{
+  "id": "badfu.shared_feature.s20261023.cpu2.20261101.v1",
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P02",
+    "P04",
+    "D02",
+    "D06",
+    "D07",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D17",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "arms": [
+    "pointwise_logits",
+    "shared_logits",
+    "pointwise_features",
+    "shared_features"
+  ],
+  "primary_arm": "shared_features",
+  "factorial": [
+    "delta_parameter_sharing",
+    "Post_feature_target"
+  ],
+  "public_n": 500,
+  "groundtruth_for_method": false,
+  "generation": {
+    "anchor_seed": 20262801,
+    "pseudo_sources": 10,
+    "requested_outputs": 10,
+    "anchors_per_requested": 9,
+    "steps": 20,
+    "step_size": 0.1,
+    "delta_bounds": [
+      -1,
+      1
+    ],
+    "actual_clipping_autograd": true,
+    "image_gradient_evaluations_per_type": 1800,
+    "invalid_source_query": "replace_with_original_anchor",
+    "all_class_pool_required": true
+  },
+  "training": {
+    "steps": 100,
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "weight_decay": 0,
+    "clean_batch": 32,
+    "one_query_per_source": 10,
+    "temperature": 2,
+    "head": "fixed_Post",
+    "BN_buffers": "fixed",
+    "feature_weight": 1,
+    "feature_scale": "mean_Post_public_feature_squared_clamp1e-8",
+    "feature_target": "Post_original_only",
+    "sampling_seeds": [
+      20262002,
+      20262003
+    ]
+  },
+  "selection": {
+    "grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "bounded_probes": 6,
+    "KL_max": 0.01,
+    "agreement_min": 0.98,
+    "each_Post_pred_class_min": 0.95
+  },
+  "gates": {
+    "normal_CA_loss_pp_max": 0.5,
+    "normal_each_class_loss_pp_max": 2,
+    "advantage_increase_max": 0.04,
+    "abs_accuracy_gap_increase_max": 0.02,
+    "ASR_full_and_held_max_pct": 10,
+    "trigger_original_CA_loss_pp_max": 2,
+    "trigger_original_each_class_loss_pp_max": 5,
+    "beneficial90_reported_separately": true,
+    "same_arm_all3_required": true
+  },
+  "execution": {
+    "device": "CPU",
+    "threads": 2,
+    "CUDA_allowed": false,
+    "CPU_load_max": 60,
+    "min_logical_CPU": 8,
+    "min_free_GiB": 8,
+    "case_seconds": 5400,
+    "total_seconds": 16200,
+    "task_minutes": 285,
+    "once_only": true
+  },
+  "GPU_other_chat_active_observed": true,
+  "new_FL_or_FU_seed": false,
+  "actual_FedUBA_evaluated": false
+}

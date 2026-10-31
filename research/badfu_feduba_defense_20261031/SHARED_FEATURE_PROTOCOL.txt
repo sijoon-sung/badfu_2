@@ -1,0 +1,23 @@
+가설: 여러 pseudo-source 이미지에 공유하는 clipped additive 변형과 Post 원본특징 일치 학습을 함께 쓰면, 이미지별 logit 교정보다 실제 트리거 원정답 복원이 개선되면서 큰 정상 탈퇴의 기능·삭제 품질을 보존한다.
+R01/R03/P01/P02/P04/D02/D06/D07/D08/D12/D14/D15/D17/D18/N02. 2026-11-01 KST. 새 고정 2x2 비교이며 미검증이다.
+
+큰 가설→필요조건: 같은 방법이 큰 정상19.336% 삭제에서 효용·유한삭제감사를 통과해야 하고, 실제공격의 target 억제와 원정답 복원을 함께 만족해야 하며, 그 arm이 정상850에서도 통과해야 한다. 발견 은행에서 잘 맞히는 것/ASR만 감소/다른 case의 다른 arm을 합치는 것은 성공이 아니다. 독립 BadFU 조건과 유효 FedUBA 전후 활성화 pair는 이후 별도 필요조건이다. 위장자·공격자 역할식별이나 형식적 망각보장도 이번 비교가 증명하지 않는다.
+
+기존 과정/새 관측: H5는 실제ASR3.48%에도 삭제 기억복원으로 탈락했다. H11은 rawASR53.52%가 주로 다른 오답쏠림이었고 head복원은 body 손상을 해소하지 못했다. Post-anchor 은행 sourcefit76/78에도 실제 원정답2.24%, 현재학생 재탐색에도2.62%에 그쳤다. P01의 학생재탐색 양성은 이미 존재하지만 정답있는4협조자/패치/작은모델 가정이었다. D14는 공유 규칙을 이미 학습했고 학습100→확인14%(정상28.2)로 실패했다. 따라서 공유/클래스균등 자체를 새로운 공격특이성이라고 주장하지 않는다. 이번 genuinely new observable은 같은 공개 시작점/동일 image-gradient 예산에서 변형 parameter 공유 여부와 Post-feature 목표 여부의 2x2가 실제 trigger의 원정답·원정답 class별 품질과 삭제감사에 주는 변화다.
+
+D08 공격.75848이 정상.75525/.76188 사이이고 D15 공격7%/큰정상8%다. 이 반례가 해결됐다고 주장하는 탐지점수를 만들지 않는다. 모든 요청에 동일한 정화·공개선택을 적용하고 큰정상 원래Post 대비 CA손실<=.5pp/각class<=2pp와 삭제advantage 증가<=.04/절대accuracy-gap증가<=.02를 먼저 요구한다. benign identity는 허용한다. public 선택이 Pre기억을 되살릴 수도 있으므로 독립 사후 삭제감사가 반드시 필요하다. 이 유한 감사는 망각인증이 아니다.
+
+입력/비공개 정보 경계: badfu.confirmed.s20261023.v1/purification_pilot를 catalogue 명시선택·원manifest/seal/파일sha/payload로검증한다. 원파일 불변. 전후 bare state, 무라벨 공개500(기존torch.randperm 고정; stratification 아님), H5 교사파생state만 방법에 전달한다. true labels/trigger/target/삭제ID/회원/실제ASR은 모델·은행·선택 봉인 뒤 evaluator만 사용한다. 기존 held9500/triggerheld8542 및 class-conditional finite-MIA baseline을 그대로 쓴다. 유지자료 재학습의1FL시드이며 FedEraser라 부르지 않는다.
+
+2x2 arm: pointwise_logits / shared_logits / pointwise_features / shared_features(primary). 생성요인 pointwise/shared는 각각 1회 생성하여 두 loss arm이 정확히 같은 은행을 공유한다. 공통 새 recipe는 nativePost head 완전고정, eval모드/BN버퍼고정, backbone·BNaffine train이다. 이전 all-parameter 재탐색과 다른 공통recipe/새 seed/새 입력연산이므로 이전 대비 개선을 한요인의 인과효과로 확정하지 않는다. parked stage12를 실행하거나 기존 finite학습을 재실행하는 것이 아니다. 이번 연구 안에서만 두요인의 matched비교가 성립한다.
+
+은행: 공개500에서 H5/Post argmax가 같은 pseudo-source s의 pool을 구한다. 고정 seed20261101+1700으로 각 requested output k에 s!=k인9개 원본 anchor를 뽑는다(10x9=90). GT/actualtarget은 안 준다. 모든10k에 대해 같은20PGD/.1 step/T2 objective mean(logP_Post(k|q)+logP_H5(s|q))를 쓴다. q=clip(anchor+delta,0,1), delta starts0, delta bounds[-1,1]. pointwise delta는9x3x32x32, shared는1x3x32x32를 broadcast한다. clipping의 실제 autograd를 사용하고 straight-through는 쓰지 않는다. 각 유형1800 image-gradient, 전체3600이다. shared clipping-additive는 black/white saturation과 가산변형을 포함할 수 있지만 임의 색overwrite·공간/의미트리거나 모든트리거족을 포함한다는 주장은 하지 않는다.
+H5(rawq).argmax==s일 때만 rawq를 보존하고 아니면 원래anchor로 대체한다. raw유효수/공격성/joint수/identity대체수를 따로 보고한다. effective90/90을 발견성공이라고 세지 않는다. 모든source pool이 없으면 해당case를 불충분정보로 중단하고 성공을 주장하지 않는다. 실제 target을 보고 bank를 선택·확대하지 않는다. 원anchors/pools/pseudo labels/CPU RNG/매20step delta,q,목적값/gradient hash/생성모델 불변을 보존한다.
+
+학습: 모든arm nativePost에서100Adam(lr.0001,wd0). 동일 seed20261101+1701, 공개sampler+901/querysampler+902, clean32/query1개persource10. clean KL(T2) 목표는 nativePost(public), query KL(T2) 목표는 nativePost(originalanchor). featurearm만 weight1로 clean/student features 대 Post(sameclean), query/student features 대 Post(originalanchor)의 MSE를 더한다. 두MSE 각각을 mean(Post(public feature)^2),clamp1e-8로 나눈다. 이는 Post의 새삭제결과를 지키는 학습목표이지 feature/norm 공격점수가 아니다. Pre backbone/Pre feature를 복사하지 않는다. head/BN버퍼 exact고정/Adam100 및 실제features gradient를 검사한다.
+
+선택/평가: 기존11점 alpha0..1 및 최대6이분점, public Post KL<=.010/argmax일치>=98%/각Post-predclass>=95% 중 최대alpha를 쓴다. 미통과는identity0. arm을 비공개성능으로바꾸지않는다. raw와selected 모두 실제9000/held8542 ASR<=10% 및 selected원정답은paired native clean대비전체<=2pp/각원class<=5pp손실이어야 한다. raw진단은선택기준이아니다. 큰정상→실제공격→정상850순, 같은arm만연장한다. 큰정상모든arm탈락 또는 actual공격모든eligible arm탈락이면 이후추가평가/학습중단. 기존유익교정90%는별도보고하며현gate로바꿔치기하지않는다.
+
+실행: 다른채팅 FedUBA GPU PID12068과부모53016/서비스GPU가실제로실행중이고free3758MiB/util30%라 GPU guard가불충분하다. 해당작업을중단하거나GPU guard를낮추지않는다. 새profile badfu.shared_feature.s20261023.cpu2.20261101.v1은 DISLAB CPU2/noCUDA deterministic FP32로 처음부터끝까지고정한다. CPU실측load<=60%/논리>=8/빈disk>=8GiB,case<=5400초,total<=16200초/once task285분이다. live PID/receipt/source해시/기존새job미존재를 확인한 뒤 고유 once task로시작한다. timeout은종료가아니다. source/runtime/nonfinite/봉인/자원오류는보존진단하고silent retune/장치전환/finite재실행을하지않는다.
+
+사전계약: DISLAB CPU에서 tiny analytic shared-gradient=sum(pointwise-gradient), clipping경계gradient/명시행 목적함수/featureMSE reference를 독립검산한다. 실제봉인Post의순수합성2이미지로 featurehook gradient와 fixedhead·BN exact불변/실제backbone1disposable Adam변경을 확인한다. 효능이나FL seed로세지않는다. 새계약/소스/profile/부모완료와독립검산을 최종freeze에 묶어야 새학습을허용한다. 저장계측/독립검산protocol은 사후새로정의하되 주방법/선택은바꾸지않는다. 양성만으로 범용증명/역할판정/최종완료를주장하지않고 실패도같은PR에남긴다.

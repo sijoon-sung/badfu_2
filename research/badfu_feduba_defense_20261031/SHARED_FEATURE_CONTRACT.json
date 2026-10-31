@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "pid": 53492,
+  "finished_unix": 1793466547.8812842,
+  "CPU": {
+    "NumberOfLogicalProcessors": 20,
+    "LoadPercentage": 5,
+    "load_source": "PerfOS_total"
+  },
+  "shared_gradient_equals_sum_of_pointwise": true,
+  "true_clipping_gradient": true,
+  "explicit_row_objective_and_gradient_exact": true,
+  "feature_loss_value_and_gradient_exact": true,
+  "actual_CPU_featurehook_gradient": true,
+  "head_and_BN_exact_fixed": true,
+  "one_disposable_synthetic_backbone_update": true,
+  "real_data_or_trigger_used": false,
+  "CUDA_initialized": false,
+  "method_sha256": "0671b0263733958095de5281edf78758b89527062164bee9f03709a656a22316",
+  "checker_sha256": "75307c815b9ad23ebb0ae9eae1031f1fc09e4a0634911d8bd1d8e2b8312a6b9f",
+  "preparation_freeze_sha256": "e641cc6d7d026c33681ef0039d87b77ea36e20ac067e1eada15a698a6a68fc5a"
+}

@@ -1,0 +1,5 @@
+가설: 새 공유변형/특징 학습 구현은 실제 clipping미분과Post특징gradient를사용하고head/BN을고정한다.
+R01/R03/P01/P04/D08/D14/D15/D17/N02. DISLAB CPU2, synthetic contract PID53492 완료·종료, 2026-11-01 KST.
+공유delta gradient=sum(pointwise gradient),clip범위밖gradient0,heterogeneous pseudo-source의명시행 objective/value/gradient,Post-feature MSE의값·gradient가독립대수와일치했다. 봉인post의순수합성2이미지에서실제512 featurehook의역전파를확인했고1회disposable Adam에서backbone은변했고head/BNbuffer는모두exact고정,원seal/hash불변·CUDA미초기화였다. 정상자료/실제trigger/회원/라벨과방어효능은검사하지않았다. 모델이없는수학toy만통과한것도아니다.
+첫wrapper는freeze에있던부모최종보고서가remote에전달되지않아dependency검사에서중단됐다. 과학학습·합성contract계산전의전달오류다.원freeze와stdout/stderr를보존했고누락문서전달/전체freeze파일해시검사후별도v2로그wrapper에서동일method/profile의계약을처음실제계산했다. 이교정으로scientificparameter/device를바꾸지않았다. 이후성공한finite계약은반복하지않는다.
+이필요조건통과는새실제비교를실행할근거일뿐source변형이실제트리거와같거나큰정상nonIID/망각을보장한다는뜻이아니다. 새SHARED_FEATURE_FREEZE를검증한독립once학습만허용하며기존adaptive/bridge계약/타채팅FedUBA finite작업은재실행하지않는다.
