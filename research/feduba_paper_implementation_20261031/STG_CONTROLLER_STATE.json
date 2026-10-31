@@ -1,7 +1,6 @@
 {
-  "state": "running",
+  "state": "failed_preserved",
   "pid": 34020,
-  "step": "trigger_runner.py",
-  "child_pid": 49888,
-  "updated_unix": 1793444759.500573
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\stg_controller.py\", line 66, in <module>\n    run('verify_stg.py', log)\n  File \"D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\stg_controller.py\", line 19, in run\n    raise RuntimeError(name + ' failed; preserve, no automatic repeat')\nRuntimeError: verify_stg.py failed; preserve, no automatic repeat\n",
+  "updated_unix": 1793452453.3466735
 }

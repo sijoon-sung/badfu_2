@@ -96,3 +96,10 @@
 | [SSS_NUMERIC_POLICY.json](../../../research/feduba_paper_implementation_20261031/SSS_NUMERIC_POLICY.json) | `research/feduba_paper_implementation_20261031` |
 | [SSS_NUMERIC_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/SSS_NUMERIC_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [SSS_NUMERIC_SOURCE_CHECKS.json](../../../research/feduba_paper_implementation_20261031/SSS_NUMERIC_SOURCE_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_LAUNCH_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/PAIR_LAUNCH_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_PREPARE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_PREPARE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_RESULT.json](../../../research/feduba_paper_implementation_20261031/STG_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_AUDIT_FAILURE.json](../../../research/feduba_paper_implementation_20261031/STG_AUDIT_FAILURE.json) | `research/feduba_paper_implementation_20261031` |
+| [MANIFEST.json](../../../research/feduba_paper_implementation_20261031/incidents/stg_cpu_gradient_v1/MANIFEST.json) | `research/feduba_paper_implementation_20261031/incidents/stg_cpu_gradient_v1` |
+| [STG_GRAD_DIAG_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_GRAD_DIAG_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [STG_GRAD_DIAG_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_GRAD_DIAG_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
