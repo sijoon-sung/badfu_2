@@ -139,3 +139,6 @@
 | [PAIR_CONTROLLER_STATE.json](../../../research/feduba_paper_implementation_20261031/PAIR_CONTROLLER_STATE.json) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_EVALUATION_COMPLETION.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVALUATION_COMPLETION.json) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_EVALUATION_REPORT_KO.txt](../../../research/feduba_paper_implementation_20261031/PAIR_EVALUATION_REPORT_KO.txt) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_EXECUTION_CONTRACT.txt](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_EXECUTION_CONTRACT.txt) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_SOURCE_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_SOURCE_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
