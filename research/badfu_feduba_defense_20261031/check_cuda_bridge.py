@@ -29,7 +29,8 @@ def main():
         pids=subprocess.check_output(['nvidia-smi','--query-compute-apps=pid','--format=csv,noheader,nounits'],text=True).splitlines()
         assert {int(x.strip()) for x in pids if x.strip()}<=set(inv),'unknown GPU compute process'
         gpu_samples.append({'total_MiB':total,'used_MiB':used,'free_MiB':free,'utilization_pct':util});time.sleep(1)
-    with (OUT/'STARTED.json').open('x',encoding='utf8') as f:json.dump({'pid':os.getpid(),'time':time.time(),'CPU':cpu,'GPU_before':gpu_samples,'existing_services':inv},f,indent=2)
+    safe_inv={13000:'LMStudio llama-server; arguments omitted',31756:'prediction server port8767',37492:'advanced prediction service port8769'}
+    with (OUT/'STARTED.json').open('x',encoding='utf8') as f:json.dump({'pid':os.getpid(),'time':time.time(),'CPU':cpu,'GPU_before':gpu_samples,'existing_services':safe_inv},f,indent=2)
     selected,sealed,states=s.snapshot();base=sealed.model_class(Path(selected['source_root']))
     original=states['pre'];original_digest=core.tensor_digest(original)
     torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False

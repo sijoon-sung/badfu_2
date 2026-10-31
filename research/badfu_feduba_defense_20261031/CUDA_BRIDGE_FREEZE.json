@@ -2,14 +2,16 @@
   "created_utc": "2026-10-31T16:18:19.167126+00:00",
   "files": {
     "cpu_io_cuda_bridge.py": "65d293180fcc4cc83d4e71c2f8e85ae951718ac822f7bdc13879e1367b01b2f3",
-    "check_cuda_bridge.py": "f23a10e95a9fe7fcfa0c77d453931393187942e0b56002017c486c778e275694",
+    "check_cuda_bridge.py": "d6ceb74d3276047ede84573809cfc89008922d2918b501160470404c262ab9ec",
     "CUDA_BRIDGE_PROTOCOL.txt": "3a30631bb26020ce3cca413dc9448c2daaaa7fd90559854436d07e1e0a1c081b",
     "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
     "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
     "stage08.py": "f9192ef1a3a4ea5048bfa4e95eb2ca5086d307ca78a11799587ec7d883d51881",
     "sourcepair_pilot.py": "2824595d6a5e55486e2c16efd4b30c12312827db023f417899da56f069d35ff4",
     "STAGE05_FREEZE.json": "4d78bc448658bbb5ef110df3b730e720c870bd3412bf2818d1fe8fb91980342b",
-    "STAGE03_INPUTS.json": "c95d6f0c865d1b5259ac1ce03c700a3f45c6d63a9f12efb215bc38e96d21d9ce"
+    "STAGE03_INPUTS.json": "c95d6f0c865d1b5259ac1ce03c700a3f45c6d63a9f12efb215bc38e96d21d9ce",
+    "CUDA_BRIDGE_PREPARATION_FREEZE_V1.json": "cca4428a23de1299b05841b37e4243b080c8483cd50870ca8b25047e1fab350f",
+    "CUDA_BRIDGE_LOGGING_CORRECTION.txt": "840c8c8f550aa2e678805fba6be55ef81e36056c798c26fd8b6ae61d989e243d"
   },
   "related_cards": [
     "R01",
@@ -27,5 +29,6 @@
   "current_adaptive_CPU_profile_unchanged": true,
   "GPU_memory_fraction": 0.25,
   "startup_min_free_MiB": 4096,
-  "startup_max_util_pct": 5
+  "startup_max_util_pct": 5,
+  "prelaunch_logging_correction": true
 }
