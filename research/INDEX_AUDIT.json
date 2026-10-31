@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "3f2f459cc30b0e7f0c071a4eb0a7079648a1022692f56b53caac085b5d8554e8",
+  "registry_sha256": "ac1f35016d9cfc6365bd35d73d0491fcf02518a0a90a7c46a1543715750452e1",
   "cards": 28,
-  "unique_source_documents": 373,
+  "unique_source_documents": 375,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -306,6 +306,8 @@
     "research/feduba_paper_implementation_20261031/FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
     "research/feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json": "6449738082df3a2f0b09b22ef50013a265c185c1c1302fb8d95cad54ca682d78",
     "research/feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d",
+    "research/feduba_paper_implementation_20261031/SSS_PROTOCOL.txt": "72eede99862cd366fcb868f67bbc1c6320b89877a059f2517a58828bed4a8ca4",
+    "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_FREEZE.json": "ed0ab5cbe08f397961816f6e50de5b4f4a0656f0e138cdc94b453e62e765753c",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -705,6 +707,7 @@
         "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/REPORT_KO.txt",
         "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/SSS_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/STG_LAUNCH_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json"
