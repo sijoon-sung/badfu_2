@@ -1,0 +1,14 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "contracts": [
+    "weighted_SGD_exact_equation",
+    "weighted_Adam_first_step_equation",
+    "different_optimizer_paths",
+    "explicit_interpretation_required"
+  ],
+  "code_sha256": {
+    "optimizer_policy.py": "ceb0bbd2dc30d154e9f551f67a9544621d583931cd15e648dd317402afbbabc5",
+    "test_contracts.py": "1a73784263fb0c276ff3cb9f2a7c71f263f6f3e61c72dfa7e3e775b36f1b8f84"
+  }
+}

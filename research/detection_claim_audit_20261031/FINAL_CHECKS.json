@@ -1,0 +1,16 @@
+{
+  "state": "completed_bounded_source_and_claim_audit",
+  "PR": "https://github.com/sijoon-sung/badfu_2/pull/1",
+  "plan_published_commit": "2a039d397bab9e61fce27f16f02b0b4f75383454",
+  "frozen_plan_sha256": "e1f3ee0d08fcb992b6847990c25231dd68205ceaf2d92d66f579089132fe67f5",
+  "DISLAB_receipt": "DISLAB_VERIFICATION.json",
+  "DISLAB_checks_passed": 4,
+  "geometric_necessity": "counterexamples_found",
+  "common_detector": "unvalidated_parked",
+  "new_model_training": false,
+  "old_registry_cards_preserved": true,
+  "index_build_and_check": "passed",
+  "private_data_models_indices_published": false,
+  "resource_preference": "DISLAB-first including CPU validation when practical",
+  "raw_vs_normalized_hashes_distinguished": true
+}

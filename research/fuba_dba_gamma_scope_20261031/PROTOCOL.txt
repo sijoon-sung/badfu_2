@@ -1,0 +1,16 @@
+가설: local DBA 패치로만 gamma를 검사한 현재 해석은 global 합집합의 억제 위반을 놓치며, 같은 모델·같은11격자를 global 합집합으로 검사하면 삭제전 누출을 줄일 수 있다.
+관련 R02/D08/D15/N02. stcebra/FUBA 논문은DBA global trigger가활성화평가에쓰임을명시하고공격자들의트리거공유를가정한다. 고정공개commit bc233610aca36e1647d0c815597cc7148292139d의train_method_dba.py는local attack_func로gamma를평가한다. 따라서새규칙은본문의global-ASR 해석을검사하는별도후보이며공개코드의명백한버그정정/저자공인유일구현이라고부르지않는다.
+
+근거/새 관측
+완료된MNIST/DBA는preASR30.6005/post32.3510으로실패했다. 별도단계진단은차감직후68.3692→KD후32.3510 약화를확인했고이를보존한다. 마지막100R/client1 incoming은global ASR37.0042/local validation1.8868,representative는global25.7700/local1.8868이었다. 단지local/globalASR이다르다는것만으로수정성공을주장하지않는다.
+명시case fuba.reference.mnist.dba.s20261023.pre100.post.kd10 diagnostic의고정7/client0과100/client1을선택한다. 봉인/모든hash/payload_key를검사한다. 기존local gamma11점점수는보존·재사용하고, 같은incoming/embedded/representative·m5/n20·gamma0..1/.1·동일validation300에global합집합ASR11점을각한번계산한다. 임계10/strict<는바꾸지않는다.
+최대global통과gamma를선택하고없으면incoming exactzero와미달flag를기록한다. 각선택이다르면해당한라운드의그공격자업로드하나만바꿔,실제나머지7제출·실제.125가중으로counterfactual집계한다. 원래집계/평가결과는그대로재사용한다. 이새모델은단일round진단용이며유효한100R이력/삭제후쌍으로카탈로그에승격하지않는다. 원래.pt/학습/로그는불변이다.
+
+판정/중단
+H1: 기존선택점에서local검사는<10이지만global검사는>=10인역할이있어야scope실패가이두역할에서입증된다.
+H2: 마지막100R의global선택/미달zero 한업로드counterfactual이CA>=97/ASR<=10이고기존실제100R은ASR>10이어야좁은실제집계개선가설을지지한다. 미달zero는surrogate local제약을충족했다는뜻이아니며두판정을분리한다.
+고정두역할/22global-validation후보/최대2새전체평가후종료한다. H1/H2가모두통과해야이gamma해석만바꾼별도fresh100R/KD10후속후보를정당화할수있다. 그래도전체잠복공격성공은미검증이며후속학습은별도고정프로필/소스·코드게시후수행한다. 하나라도실패하면이변경하나로전체학습을자동실행하지않는다. 해시/비유한/데이터/runtime오류는보존·중단한다. 동일유한진단/완료학습은반복하지않는다.
+
+범위/자원
+새D:/FUBA_DBA_GAMMA_SCOPE_20261031에서일회진행한다. DISLAB util<=5/free>=7000/used<=2048MiB/경쟁학습·추론PID부재guard를먼저확인한다. 기존회귀/학습/evaluator/export를다시실행하거나다른앱을종료하지않는다. target/트리거/role은공격구현진단평가에만사용하며server 탐지선택/학습에넣지않는다.
+D08의공격0.75848/큰정상0.75525·0.76188와D15반례는미해결이다. 이패치gamma관측이긍정적이어도IBA/CIFAR/unknown-trigger-family 탐지나큰정상삭제구별은검증하지않는다. 모델변경진단의붕괴를공격탐지로세지않는다.

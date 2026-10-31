@@ -1,0 +1,19 @@
+최종100R/KD10 실제 결과 및 전달 — 2026-10-31
+
+관련 R02/D08/D15/N02. 실제100R/800역할과KD10/470batch가완료됐고, 원래독립평가 및 별도 전체CPU감사가통과했다. 학습을재시작하지않았다.
+
+삭제전 CA99.11%, ASR30.600487480611566%(2762/9026).
+삭제후 CA99.08%, ASR32.35098604032794%(2920/9026).
+두사전성능게이트는미달이다. 같은논문의MNIST/DBA에서도성공한잠복쌍은아니며CIFAR/IBA실패를대체하지않는다.
+
+실제1358phase/67900epoch/3042500batch,정상614·공격146·억제40역할/800전체,11점gamma146trace의최대strict통과선택산술/미달exactzero2를검증했다. actualclient4이력41개(악성40+warmup정상1)의실제가중기여차감과KD10/470로그가일치했다. 모든gamma의독립추론은아니다.
+
+DISLAB의완료모델에서별도CPU로69modelpayload strictload/finiteforward를통과했다. 외부봉인된984파일 검토사본(전후/KD10/optimizer/RNG/선택한단계·round모델/전체epoch·KD·800role로그)을로컬전달하고모든파일sha/byte를확인했다. 전체100R/allphase원시는DISLAB에보존하며로컬전체복사라고부르지않는다.
+case=fuba.reference.mnist.dba.s20261023.pre100.post.kd10; diagnostic만허용한다. 양쪽외부seal·catalogue guard가통과했고기존모든case/default/audit를그대로보존했다.
+검토manifest SHA=0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c
+seal SHA=cf502a8ae7af82cae04a59d4bfe229ad3dc61081e5c5df55511d5401a6c08bcf
+원래exportmanifest SHA=372db7351f7a0cb68182a68d75c3f85a4ba6d96341fb4a75a82078fadd459562
+
+이 PC의Tailscale가NoState여서SSH가일시실패했다. 기존account설정에서클라이언트실행을복구한뒤Running/온라인및원래완료PID부재/작업exit0를확인했다. 네트워크실패를학습실패로해석하거나다시학습하지않았다. export전Windows경로separator/선행seal/sourceguard를수정했고v1freeze·원래export·새reviewwrapper봉인을모두보존했다.
+
+본결과는논문Algorithm1/2의명시해석이며저자공인유일코드/10seed평균/성공재현이아니다. D08/D15의큰정상nonIID탐지구별은미해결이다. 계속구현할사용자목표는완료가아니다. 다음은삭제기여차감직후와KD후를분리하고이미저장된정확한학습단계의행동을한번확인하는별도제한진단이다. 완료된trainer/controller/verify/audit/export는반복하지않는다.

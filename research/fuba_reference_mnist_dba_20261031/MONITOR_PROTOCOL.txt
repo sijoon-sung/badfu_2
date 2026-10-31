@@ -1,0 +1,15 @@
+지속 구현/확인 계약 — R02/D08/D15/N02, 2026-10-31
+
+사용자는 기존 FUBA를 논문 Algorithm1/2에 맞춰 될 때까지 구현하고 연산은 최대한 DISLAB에서 수행하도록 지시했다. 전후 파일 전달만으로 완료하거나 이전 실패를 성공으로 재명명하지 않는다. ordinary progress는 조용히 확인한다. 변경·실패·최종검증·사용자 정보가 실제 필요한 경우에만 알린다.
+
+현재 일회 작업은 Codex-FUBA-reference-MNIST-DBA100-KD10-20261031이며 root=D:/FUBA_REFERENCE_MNIST_DBA_20261031이다. 로컬 ops.py는 원격 controller/trainer 실제 PID, STATE와 작업 상태를 읽기만 한다. STATE의 오래된 round_complete 또는 작업 등록만으로 현재 실행을 단정하지 않는다. CPU계약8/첫정상50epoch2350batch는 통과했지만 악성단계/100R/KD10/성능완료는 별도다.
+
+진행 중에는 기존 trainer/controller/verify를 새로 실행하지 않는다. 소스는 FREEZE와 READY에 고정되어 있다. 새 관측기는 읽기 전용·별도 경로를 사용하고 원래 학습파일을 변경하지 않는다. 확인된 구현/저장/runtimefault는 실패·현재 모델·RNG·소스·로그부터 보존하고 동일 조건 복구를 새 명시계약으로 수행한다. 중간CA/ASR, gamma0미달은 자동종료/튜닝 근거가 아니다. 다른 앱이나 오래된 작업을 종료하지 않는다.
+
+첫 실제 악성 단계 이후 별도 CPU 감사로 입력/각phase50epoch/optimizer/가중방향/최종제출/gamma11선택/집계 텐서를 확인한다. 실패한 대조나 diagnostic source를 성공 입력으로 바꾸지 않는다. 본 run의8명/100R/모든phase/470KD 로그와 client4 실제이력차감을 최종검증한다. controller는 runner 완료 뒤 verify.py를 한 번 실행하여 전체해시/연결/정확집계/독립10000동일trigger 정수 수를 확인한다. 이 verifier의 미확인범위는 후속 별도 CPU 감사로 보강하며 모든gamma 독립추론을 자동 주장하지 않는다.
+
+최종 전달은 새 pre/post/subtraction/delta/KD10 모델·optimizer/RNG, 전체 epoch/KD/role/evaluation 로그, 실행 소스/데이터분할/초기모델/검증/실패 기록을 로컬에도 복사하고 모든전달해시를 봉인한다. 전체중간 raw모델을 로컬에 전부 복사하지 않으면 명시적으로 범위를 적고 원격전체의 manifest/hash를 전달한다. 독립CPU strictload/finiteforward 및 양쪽 catalogue/navigation guard를 완료한다. case ID/payload_key/용도는 결과에 맞춰 등록하며 성능미달이면 diagnostic 전용이다. 기존 BadFU/FUBA/default/case/failure를 변경하지 않는다. 연구registry에 R02 evidence를 덧붙이고 rebuild_index.py 및 --check를 수행한다. dedicated codex branch/같은 PR #1에 실제checks/results를 업데이트하고 자동 merge하지 않는다.
+
+해당 단일run 게이트 preBA>=97/ASR<=10,postBA>=97/ASR>=60은 논문10seed평균 재현이나 CIFAR/IBA 검증이 아니다. 실패하면 원문/수식/실제 첫 실패단계로 다음 수정을 정당화하며 동일실험을 이유없이 반복하지 않는다. 논문알고리즘준수 및 전체잠복성능이 모두충족될때까지 사용자목표는 미완료다. 장기 작업 heartbeat는 단순학습완료/일부모델전달만으로 삭제하지 않는다. 현재실험완료후에도 사용자의 지속 구현 지시와 잔여FUBA/IBA검증을 이어가며, 목표가실제완료되거나사용자가중단할때닫는다.
+
+D08의 공격0.75848/큰정상0.75525·0.76188와 D15반례는 미해결이다. 이 구현확인은 탐지 점수나 trigger-family 독립증명을 만들지 않는다. 공격쌍적격 후 큰정상nonIID 대조가 필요한 탐지연구는 별도 사전등록한다.

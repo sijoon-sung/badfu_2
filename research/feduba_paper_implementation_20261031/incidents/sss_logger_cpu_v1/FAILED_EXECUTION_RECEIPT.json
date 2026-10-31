@@ -1,0 +1,10 @@
+{
+  "state": "failed_observed_tool_trace",
+  "published_commit": "ba4368a",
+  "remote_script": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/test_sss_logging.py",
+  "exit_code": 1,
+  "known_failure": "line38 assert torch.allclose(row[score_FP32],expected,atol=1e-7,rtol=0)",
+  "capture_scope": "Tool-returned traceback excerpt, not an original stdout log file; child PID was not recorded",
+  "completed_result_created": false,
+  "real_victim_or_SSS_FU_executed": false
+}

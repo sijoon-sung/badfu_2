@@ -1,0 +1,24 @@
+{
+  "stage": "reviewable_full_FU_branch_source_only_not_a_live_launch_freeze",
+  "real_FU_launch_enabled": false,
+  "missing_launch_inputs": [
+    "FU_LAUNCH_PROFILE.json",
+    "FU_RUN_FREEZE.json",
+    "registered_clean_case",
+    "completed_STG_and_SSS_audits"
+  ],
+  "files": {
+    "FU_EXECUTION_CONTRACT.txt": "8e7cf34a21a155646d62b5218d6b24578bd28ef597cc9eab2fac34144746ebb6",
+    "FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+    "fu_runner.py": "4a76ed7a8fa1f5945409bd6807794e7d5ddf93017f40784620c4c5849f9ce3e6",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "verify_fu.py": "1a8ceedba0a41ddb701da03fc3d46d769ac52beb7663cd727f2cc62c0e58bb76",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "FU_POLICY_CPU_RESULT.json": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d",
+    "FU_ENGINE_CPU_FREEZE.json": "172903154640bb21dd7ae4cebcd71e233259eb3dcbed234c48a6522c0e2b73cc",
+    "FU_ENGINE_CPU_RESULT.json": "85b0ab87c9a587a650ae64e6ae116a6bb1da59a83e8146deef573a7029641d79"
+  }
+}

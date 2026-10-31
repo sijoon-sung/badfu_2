@@ -1,0 +1,80 @@
+{
+  "source": "D18 existing fixed-rule diagnostic, not a new detector",
+  "source_output_sha256": "3a6fc2341bdf879785a4a9d927fd59150df408b134e1685ea7acc066c673e4d9",
+  "source_report_sha256": "bd612e62ae455b1bdb74a4b1e1a2e451ee818608547b70dc1805f8bfd4831b4f",
+  "scope": {
+    "independent_training_seeds": 1,
+    "split": "shared_fixed_split",
+    "post_method": "retained_data_retraining",
+    "threshold": 6,
+    "reference_samples": 50,
+    "new_normal_requests_in_followup": 1,
+    "operational_TPR_FPR": false
+  },
+  "rows": [
+    {
+      "condition": "attack_cover850",
+      "max_z": 9.531884316642083,
+      "max_z_class": 0,
+      "alarm_z6": true,
+      "raw_row_norm_max_z": 10.8712705035142,
+      "independent_Gram_max_z_error": 3.552713678800501e-15
+    },
+    {
+      "condition": "benign850",
+      "max_z": 5.404488268755084,
+      "max_z_class": 0,
+      "alarm_z6": false,
+      "raw_row_norm_max_z": 4.67366722571124,
+      "independent_Gram_max_z_error": 8.881784197001252e-16
+    },
+    {
+      "condition": "benign_client19.336pct",
+      "max_z": 3.156397434231917,
+      "max_z_class": 9,
+      "alarm_z6": false,
+      "raw_row_norm_max_z": 3.4248342171341077,
+      "independent_Gram_max_z_error": 8.881784197001252e-16
+    },
+    {
+      "condition": "benign_client22.790pct",
+      "max_z": 4.590509048804726,
+      "max_z_class": 0,
+      "alarm_z6": false,
+      "raw_row_norm_max_z": 4.186493603824978,
+      "independent_Gram_max_z_error": 3.552713678800501e-15
+    }
+  ],
+  "new_benign_utility": {
+    "N": 10000,
+    "correct": 8899,
+    "CA_pct": 88.99,
+    "historical_source_CA": 89.0,
+    "historical_difference_pp": -0.010000000000005116,
+    "evaluator_version": "badfu_detection_validity_clean_only_20261030_v1",
+    "evaluator_sha256": "249a0c748f1b3f4296938a39c41f5eb575cd5a91d6e1836afa1084982125386b",
+    "layout": "contiguous_NCHW"
+  },
+  "model_files_and_private_indices_included": false,
+  "fuba_v7_diagnostic_only": {
+    "actual_pre_post_pair": true,
+    "CA_pre_pct": 77.76,
+    "ASR_pre_pct": 10.555555555555555,
+    "CA_post_pct": 77.76,
+    "ASR_post_pct": 16.744444444444444,
+    "valid_latent_positive": false,
+    "source_report_sha256": "982717f91de5cce2703106d533848c2c5535f4ac368e70f777da3ef0933430d9"
+  },
+  "D08_preserved": {
+    "attack_score": 0.75848,
+    "benign_scores": [
+      0.75525,
+      0.76188
+    ]
+  },
+  "D19_preserved": {
+    "diagnostic_attack_score": 3.41767112,
+    "diagnostic_normal_score": 3.59935782,
+    "valid_latent_positive": false
+  }
+}

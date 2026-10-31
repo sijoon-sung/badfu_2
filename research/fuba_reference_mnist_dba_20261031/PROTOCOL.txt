@@ -1,0 +1,24 @@
+가설: 논문의 Algorithm1/2를 명시적으로 구현하면, 논문이 함께 평가한 MNIST/DBA 조건에서 정상 기능을 유지한 삭제 전 억제와 실제 KD10 삭제 후 활성화를 만들 수 있다.
+관련 R02/D08/D15/N02. 사용자2026-10-31의 지속 구현 지시에 따라 진행한다. 기존 CIFAR10/IBA 실패를 성공으로 재명명하거나 대체하지 않는다.
+
+근거/새 관측
+FUBA 본문2895~2899/2903, 보충1~2쪽과 고정 stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d를 읽었다. 기존 IBA는 생성기/반경/BN 통합 선택이 남아 있다. 동일 논문의 MNIST/DBA는 원공개 Net(2conv/3FC)에 BN/생성기가 없고, 고정4패치가 명시되어 핵심 알고리즘의 실제 FL/FU 동작을 먼저 좁혀 확인할 수 있다. 이것은 미검증 IBA 선택을 제거한 논문 내 별도 baseline이며, IBA 재현 성공을 뜻하지 않는다.
+새 관측: fresh100R/실제8클라이언트 집계, 공격/억제 역할의 실제 모든50epoch 단계,11gamma후보/선택/업로드, client4의 실제41개 여부와 무관한 전체 참여 기여의 정확 차감, retained client5의3000 unlabeled/actualKD10, 동일 global DBA trigger의 전후 정수 수.
+
+고정 구현
+MNIST60000/10000,ToTensor[0,1],20 IID클라이언트 각3000,라운드8명,seed20261023/partition20261020,100R/E50/B64/lr.001. 원공개 Net을 해시 검증 후 그대로 읽는다. Adv-attacker0..3/defender4,m5/n20, warmup5. 각 악성 client의10% local validation을 분리하고 나머지2700의 정확30%=810개를 고정 poisoning set으로 사용한다. Algorithm1의 같은 D_backdoor를 anchor와 embedding에서 공유한다. SGD는 재가중 embedding과defender단계,Adam은 anchor/정상/representative(본문/실험 충돌에 대한 기존 명시 해석 유지).
+DBA는 원공개좌표/값1: 1=(y0:2,x0:5),2=(y4:6,x7:12),3=(y4:6,x0:5),4=(y0:2,x7:12). attacker0..3은 해당local패치,defender4는global합집합(원 train_method_dba 매핑). 평가와 KD 후 공격 평가는global합집합. target8, poisoning은 입력 교체와 레이블8. loss는DBA mixed dataset의 표준 CE이며 IBA의alpha/beta 이중손실을 끌어오지 않는다.
+Eq1 역minmax(named_parameters),글로벌재시작,새optimizer,representative글로벌시작,예상혼합m/n, 전체gamma0..1/.1에서ASR<10인최대점. 무통과는 정확incoming zero와 명시미달이다. Algorithm2 reference=unscaled M_i,E,cleanCE+2*sumL2,업로드global+recovered-reference. Net에BN이 없어modelstate와parameter vector가 같다.
+KD는실제client4의라운드기여*실제.125를float64누적후차감,pre교사/frozen,retainedclient5무라벨3000,10epoch/470batch,SGD.01/momentum.9,T30 KLbatchmean/noT²,기존declaredKD와동일. 이는FedEraser가아니다.
+
+효율/불변성
+MNIST tensor를GPU상주시키고각phase의독립seed로shuffle한다. loss/finite를GPU에서모은뒤epoch경계에확인하여매batch GPU동기화를제거한다. 각epoch유한값및제출전전체state를확인하며무효role은집계하지않는다. FP32/전체E50/전체표본을유지하며AMP/epoch축소/배치제한/compile은하지않는다. CPU 수식계약과 실제 full50epoch 첫라운드 저장계약을 통과해야 계속한다.
+
+판정/중단/계속
+사전단일run적격게이트는pre BA>=97/ASR<=10,post BA>=97/ASR>=60이다. 이는논문10seed평균일치가아닌좁은mechanism gate다. 중간성능을보고조건을바꾸지않고100R+요청된KD10모델을남긴다. 미달이면실패그대로보존하고해당입력/코드의첫실패단계부터다음수정을정당화한다. 확인된source/hash/수식/데이터/비유한/저장/runtimefault는미집계상태로보존·수정하며완료된oldjob을재시작하지않는다. 자동재튜닝·실패epoch삭제는없다.
+whole진입전CPU계약,첫실제full50epoch역할/roundreadback,매role/round소스해시및정확집계를확인한다. 완료후별도검증/동일trigger10000평가/로컬전후.pt와전체로그전달까지한다.
+
+탐지/정상반례
+D08 공격0.75848/큰정상0.75525·0.76188와D15반례는미해결이다. 패치FUBA가성공해도IBA·모든trigger·큰nonIID탐지를검증한것이아니다. 탐지실행은없다. matched normal及큰nonIID controls는적격공격쌍확보후별도등록조건으로진행하며기존실패를보존한다.
+
+새경로 D:/FUBA_REFERENCE_MNIST_DBA_20261031. 다른앱미종료, util<=5/free>=7000/used<=2048MiB및경쟁학습PID부재에서만시작. one-time/no-trigger/no-retry task. plan/코드를PR에먼저게시하고실제상태/결과를같은PR에기록한다.

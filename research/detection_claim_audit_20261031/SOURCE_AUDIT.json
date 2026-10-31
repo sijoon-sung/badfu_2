@@ -1,0 +1,196 @@
+{
+  "state": "static_audit_completed",
+  "upstream_files_verified": 9,
+  "repository": "ity207/FedUBA",
+  "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "missing_project_modules": [
+    "models",
+    "utils"
+  ],
+  "parsed_without_import": true,
+  "upstream_code_executed": false,
+  "runtime_reproduction": "not_established",
+  "files": [
+    {
+      "path": "Fed_Unlearn_main.py",
+      "git_blob_sha": "97b806ee736db9dccec13cc0a56684dc40fdd60d",
+      "imports": [
+        {
+          "module": "Fed_model_initiation",
+          "line": 7
+        },
+        {
+          "module": "Fed_data_preprocess",
+          "line": 8
+        },
+        {
+          "module": "Fed_Unlearn_attack",
+          "line": 10
+        },
+        {
+          "module": "trigger_generate_function",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "Fed_Unlearn_attack.py",
+      "git_blob_sha": "4baeb0931f39c139c325bcee9b4298e95f64c50a",
+      "imports": [
+        {
+          "module": "Fed_test",
+          "line": 10
+        },
+        {
+          "module": "Fed_train",
+          "line": 12
+        },
+        {
+          "module": "Fed_data_change",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "trigger_generate_function.py",
+      "git_blob_sha": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+      "imports": [
+        {
+          "module": "torch.utils.data",
+          "line": 4
+        },
+        {
+          "module": "models",
+          "line": 6
+        },
+        {
+          "module": "utils",
+          "line": 14
+        },
+        {
+          "module": "Fed_model_initiation",
+          "line": 16
+        },
+        {
+          "module": "Fed_data_preprocess",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "path": "Fed_data_change.py",
+      "git_blob_sha": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9",
+      "imports": [
+        {
+          "module": "torch.utils.data",
+          "line": 3
+        },
+        {
+          "module": "torchvision",
+          "line": 6
+        },
+        {
+          "module": "utils",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "Fed_model_initiation.py",
+      "git_blob_sha": "97785086ce548af4799c05e015cf9865b85aaf28",
+      "imports": [
+        {
+          "module": "models.mobilenetv2",
+          "line": 6
+        },
+        {
+          "module": "models.mobilenetv2",
+          "line": 9
+        },
+        {
+          "module": "models.resnet",
+          "line": 12
+        },
+        {
+          "module": "models.resnet",
+          "line": 15
+        },
+        {
+          "module": "models.vgg",
+          "line": 18
+        },
+        {
+          "module": "models.vgg",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "path": "Fed_train.py",
+      "git_blob_sha": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+      "imports": [
+        {
+          "module": "Fed_test",
+          "line": 15
+        },
+        {
+          "module": "multiprocessing",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "path": "Fed_test.py",
+      "git_blob_sha": "49f3866a7aae53e989c34cf283681f7378b423fb",
+      "imports": [
+        {
+          "module": "sklearn.metrics",
+          "line": 5
+        },
+        {
+          "module": "torch.utils.data",
+          "line": 7
+        },
+        {
+          "module": "utils",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "path": "Fed_data_preprocess.py",
+      "git_blob_sha": "4eb1850b993b4fae675da99c8cbc45cbd34b2150",
+      "imports": [
+        {
+          "module": "torch.utils.data",
+          "line": 4
+        },
+        {
+          "module": "torchvision",
+          "line": 6
+        },
+        {
+          "module": "torch.utils.data",
+          "line": 421
+        },
+        {
+          "module": "PIL",
+          "line": 422
+        },
+        {
+          "module": "medmnist",
+          "line": 274
+        },
+        {
+          "module": "medmnist",
+          "line": 355
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e",
+      "imports": []
+    }
+  ]
+}

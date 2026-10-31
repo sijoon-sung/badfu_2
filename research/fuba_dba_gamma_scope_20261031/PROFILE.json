@@ -1,0 +1,16 @@
+{
+  "id": "fuba.dba.gamma_scope.20261031",
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "purpose": "diagnostic",
+  "review_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+  "catalog_selector": "D:/TRAJECTORY_CATALOG_20261023/select_case.py",
+  "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+  "related_cards": ["R02", "D08", "D15", "N02"],
+  "fixed_roles": [[7, 0], [100, 1]],
+  "gamma": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+  "mixture": 0.25,
+  "ASR_threshold_strict": 10,
+  "counterfactual_CA_min": 97,
+  "counterfactual_ASR_max": 10,
+  "training_performed": false
+}

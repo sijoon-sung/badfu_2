@@ -1,0 +1,41 @@
+{
+  "state": "local_delivery_complete",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "packet_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+  "archive_sha256": "db347532f2d502888bedf7e84e1be3d6b2200fcdaf5f4befb052a066e820d9cb",
+  "archive_bytes": 180309159,
+  "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "packet_total_files": 48,
+  "payload_file_count": 46,
+  "guard": {
+    "state": "passed",
+    "verified_payload_files": 46,
+    "all_readonly": true
+  },
+  "CPU_only": true,
+  "payload_checks": [
+    {
+      "file": "run/before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null,
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "file": "run/initial.pt",
+      "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+      "payload_key": null,
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "file": "run/last_role.pt",
+      "sha256": "3d1ba1afe49d0ef95ecc6b9908e28b73f1fc81ebe9ddce946d128a2961cbf6fc",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    }
+  ],
+  "local_delivery_complete": true,
+  "catalogue_registered": false,
+  "FedUBA_attack_completed": false,
+  "original_export_receipt_modified": false
+}

@@ -1,0 +1,8 @@
+{
+  "purpose": "numerical integrity triage, not an attack score",
+  "same_loader_RNG": true,
+  "same_CPU_RNG": true,
+  "same_CUDA_RNG": true,
+  "max_elementwise_difference": 8.940696716308594e-08,
+  "same_optimizer": true
+}

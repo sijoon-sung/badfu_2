@@ -1,15 +1,15 @@
 {
   "schema": "research-index-audit-v1",
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "2a2a7cba7d6c33b646dc481d5e5a5e415134dafc9c918494f8910d1c79333fbc",
-  "cards": 26,
-  "unique_source_documents": 216,
-  "top_level_folders": 97,
-  "folders_linked_to_cards": 49,
+  "registry_sha256": "b41a20516e968478ee4b2cee075d65511743ea4e296328a4cf7828132cebea8b",
+  "cards": 28,
+  "unique_source_documents": 411,
+  "top_level_folders": 108,
+  "folders_linked_to_cards": 60,
   "source_sha256": {
-    "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
-    "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
+    "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
+    "research/00_trajectories/catalog.json": "9623447976b82c3716cb3f72d57b95503d2c05147175903f2c627f7e09dc3e58",
     "research/badfu_algorithm_audit_20261023/README.md": "980a6b75c98a67f86a26e1084323c4099546e3ba2ed2a41e03d7415712e22215",
     "research/continuation_20261023/README.md": "547fae74fdd9e8e9c0ad342f8593e8e8dd0332d403862baf811f485bb88fe382",
     "research/asr_root_cause_20261022/REPORT_KO.md": "7dace28efe7dbea61bb250cd52f5d8ff74b73bfcea220dd8455d79fa629c5ed8",
@@ -160,6 +160,190 @@
     "research/fuba_algorithm_execution_20261025/FINAL_VERIFIED.json": "76a14d461ceac2f3d3a2e0c2af7af6407f81bad2663b6ee04bf55e14044e39ec",
     "research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt": "bf13468bc73df617ffd3cb546837e4b2fe9c62e45c8997803205c07f1dc88617",
     "research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json": "a1bd528a861c269c0e31279918e72f4388f8a33fa2a7b566025dbe429230e9d7",
+    "research/fuba_optimizer_isolation_20261031/PROTOCOL.txt": "7f4e995c4560743f8e17f33e493c68e22015a6ad2e82ef049eb97d49a40284cc",
+    "research/fuba_optimizer_isolation_20261031/PROFILE.json": "12fd07d8ed09b173c34a0b342399847c90af8fe125ebcc44fa1e91d70b08eaa6",
+    "research/fuba_optimizer_isolation_20261031/IDENTITY_AND_SCOPE.txt": "cfbcf198240ceea0e0b3f33c41bf85fe24177b9e8ca10f7a07b160d68ad1fc85",
+    "research/fuba_optimizer_isolation_20261031/PAPER_ALGORITHM_CONTRACT.txt": "73d422b49b651783dca3a61f76fa959bbe0810e6522ddb9b0e39e5fbe4ed2065",
+    "research/fuba_optimizer_isolation_20261031/REPORT_KO.txt": "bcd933b8704aa4d0b2137f4352968179bfd8c0dfccc385397e7f1e5d0bd08885",
+    "research/fuba_optimizer_isolation_20261031/CPU_CONTRACTS.json": "cc2a8a02a3280e7573111ee6faec177ea5039e834cd79b8b1706a5d16725263b",
+    "research/fuba_optimizer_isolation_20261031/INPUT_CHECKS.json": "453386ed4031dcc52ab00940f4f7e99d08069f73f4bceb20c0a478664d0206b8",
+    "research/fuba_optimizer_isolation_20261031/RESULT.json": "536ed7f8254fbf87275714110f7fcd185a931b44d315d6bf540bc573f9c40c3e",
+    "research/fuba_optimizer_isolation_20261031/VERIFIED.json": "a9dd688a409a2f5bff5a65c9cf58679db2fc388df76098125d0e6ceddaeabddb",
+    "research/fuba_optimizer_isolation_20261031/LAUNCH_CORRECTION.txt": "1906a9982524190ded9a761f9bd4021fdbc3cf689bd60582ca85aca8881e6396",
+    "research/fuba_radius_alignment_20261031/PROTOCOL.txt": "6efb076dde937361a49987dc69f1f1c3161f37e68eaf498ce429e727b663cb3e",
+    "research/fuba_radius_alignment_20261031/PROFILE.json": "eece6afa8e40ed191c3e1fad301cf411aaf254572da6aa55a2f8df1312f21ea2",
+    "research/fuba_radius_alignment_20261031/RESULT.json": "a2ceeffca1caf38e7a541ec96b6244de3a05003659b5df59bc5aada05a623e15",
+    "research/fuba_radius_alignment_20261031/VERIFIED.json": "2956150cc00d09a98d6db6c4c75292536d9993c62a2b488bed81cb5ac775e28f",
+    "research/fuba_radius_alignment_20261031/DELIVERY.json": "0e49b972458bbc74645c2b5d52f2ca16f1268b164f357da63636b1472bea5fcc",
+    "research/fuba_radius_alignment_20261031/REPORT_KO.txt": "be71dbf4413be56c52df26fd9959d606055c2659448b889002daeb30ea3264c7",
+    "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt": "9875a627f0a1bf488b5b98c44ef31b5fff8536bb6a50679c610576ac19b359ef",
+    "research/fuba_reference_mnist_dba_20261031/PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt": "30c9a379d82b936c45012b2a5c3b33ae91e75b061d852c7b54a41a084420e931",
+    "research/fuba_reference_mnist_dba_20261031/CPU_CONTRACTS.json": "3393fc3fdc9021908d53c5bc1cb00a5d377f2c1fb2f64e53d021de29d2ff2302",
+    "research/fuba_reference_mnist_dba_20261031/FIRST_ROLE_VERIFIED.json": "4b6e17bace360a827097f34e799f192897351b02524dcbbe0a3e65d53e45e613",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json": "840dc7cd10cd4480cfaea560e7322df90c0bf292747fbd10b52f659ca9664cbe",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json": "525dfb8c04d6e2c3e45d81edb1d81d954c04a6524acf08fdec203f5bc2a97ece",
+    "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt": "6b5fffda697dbf601144367cc35abca8c30656048a11006dae3848356a631c53",
+    "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt": "3ea4f8a222207ef8adb3f89943b8c6af4d771287eeb3a4ed3a7cdc854c1df6e7",
+    "research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json": "a664c6e4ffbb1822fdefc8cef10ba3c7fa5e8fed8c7be2f1355b93e53d2ebbff",
+    "research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt": "9f506b645bd04ce97d08e11178d1fa731dc321449aef2bd4c7d372ca7a3cf227",
+    "research/fuba_reference_mnist_dba_20261031/RESULT.json": "f4eb1057cfec4c7939660e9579962c44ac22d7c2aa4ea4c9e341103c61b9b754",
+    "research/fuba_reference_mnist_dba_20261031/VERIFIED.json": "f531895a6e01256edcfb6bc2a5aaf28cfd575b43987b3156756976bfd831a73a",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json": "3bfc400367951665c9d1bc82bf1b37e290ee50a390e1c843349cfb02ba760a24",
+    "research/fuba_reference_mnist_dba_20261031/REMOTE_REVIEW_RECEIPT.json": "3ae97990eb0e89267add991ab3f7d23cfbbbc88a7719b4dac1ffb3cbf829efa3",
+    "research/fuba_reference_mnist_dba_20261031/LOCAL_DELIVERY.json": "7aeba3be01599852442aad023331b2fa3de84c7abe9a5a0237e2ac79a96ac67e",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_ENTRY.json": "feb6c0b96d55da378e5f72a444894ec39272a53d810bd6323719f193fdcf6ca0",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_GUARD_LOCAL.json": "1fdc7fca346b072d1db2cb3aade1db6edd61eff0b43e14c6bd566c07d961b98f",
+    "research/fuba_reference_mnist_dba_20261031/FINAL_COMPLETION.json": "b74a28a8b8cde1aff48e73272f5aff1bfeaf4248fa514fc47e428133e0285680",
+    "research/fuba_stage_localization_20261031/PROTOCOL.txt": "ed831e5c9efce7c81b430f762a3efd29dec401dce7438576036c68ce17deac15",
+    "research/fuba_stage_localization_20261031/PROFILE.json": "aae4c02b53b2030029d28d541fc059a6ce3e377fefd45ddb9b7cfc41aa354b4d",
+    "research/fuba_stage_localization_20261031/FREEZE.json": "4ad78847f346af34d4a8f0acc6f41e150f452d07910091ba88777ba9397c7372",
+    "research/fuba_stage_localization_20261031/RESULT.json": "aeaaec5a7fda93abbc140018467f088bee5f02c66f98655909938262b686fca3",
+    "research/fuba_stage_localization_20261031/REPORT_KO.txt": "a5025884a7f5254bf9a63120d56a6d997c89deb983647e6bac2cf58ef1805b97",
+    "research/fuba_stage_localization_20261031/STARTED.json": "2f6aa5880be66482e4589dea00c065a01a49489d26e323989947ccc2197bad91",
+    "research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt": "e2905cff11b146189f0f9359b438aec8ee4966e863f9e14166ec9b23d79537aa",
+    "research/fuba_dba_gamma_scope_20261031/PROFILE.json": "77bcf3f5f6c673b71565739806b28faf1a1582b66818839f99d2b807f3b25da4",
+    "research/fuba_dba_gamma_scope_20261031/FREEZE.json": "80f64d682da7bb26777be2022c694f7ce720037b3b43be8a0401954a5539db96",
+    "research/fuba_dba_gamma_scope_20261031/RESULT.json": "0cfaf4af746ffb378392fcc127b1867c12a502c3b1a6f9cd4545541cf1e39aa7",
+    "research/fuba_dba_gamma_scope_20261031/REPORT_KO.txt": "58ddcb373fd5cb0abad0e2203334e38fcf31ce50e41ca1802b31c63688fd6bf3",
+    "research/fuba_defender_recovery_20261031/PROTOCOL.txt": "3be3c0798f2984d92c681be6e8739ec3c76015b6d08956c4e0cebea074b68eb8",
+    "research/fuba_defender_recovery_20261031/PROFILE.json": "14cfbff6214d77cadf9b3d04d4638c8fa78afa89e69a3dc28361216ddf3b2188",
+    "research/fuba_defender_recovery_20261031/FREEZE.json": "0a5c2603ea2e41e3bda3e3c52751b6b3b066e60f9471f9f8ce3c0eafc655d9d5",
+    "research/fuba_defender_recovery_20261031/CONTROL.json": "376e72857f08dcaf32661c9619dfbb3396b3d08e80d8ba1ad89f7eb3717be16e",
+    "research/fuba_defender_recovery_20261031/FAILURE.json": "fd958d79a7f327fec047339db9d3144f27820c595acce5c293934836f29666ee",
+    "research/fuba_defender_recovery_20261031/NUMERICAL_TRIAGE.json": "38fc19537910df9a561b51d3fa5657fad9fd341b5593284a0889a3eb2cb7525b",
+    "research/fuba_defender_recovery_20261031/REPORT_KO.txt": "5fefad277523e99a2c511d9685d129bed210c1f4ae0e5b4528fcd555f43058b8",
+    "research/fuba_recovery_current_ab_20261031/PROTOCOL.txt": "6016b40f038c194b55497d7d9f538f1c643356c8b4f715fced3144ee756cae03",
+    "research/fuba_recovery_current_ab_20261031/PROFILE.json": "5d99f87acd401940cebcf692fcd48a502442ca94ed3bd079755f0e2d38faf314",
+    "research/fuba_recovery_current_ab_20261031/FREEZE.json": "558e9b1fbc2e6f2e1f1f76663d9d153840b7490db0308842b1b3a8443d19c3a9",
+    "research/fuba_recovery_current_ab_20261031/RESULT.json": "f0155e93c449b86c9b4f3639c229318cc28ecf93ba764d7e569135d92ae53000",
+    "research/fuba_recovery_current_ab_20261031/CONTROL_PREFLIGHT.json": "2daf83df8d3eda7dbecd2eadbd366fd64cbc2f42cd8f18e26820a3cf5bd40cbc",
+    "research/fuba_recovery_current_ab_20261031/LOCAL_DELIVERY.json": "b8c1190b537111816a72e3fac511d5857c9ec72bae02c107ab20c9d60c2931e9",
+    "research/fuba_recovery_current_ab_20261031/REPORT_KO.txt": "2831f62bbbee434310cb6597a2c362b9504df05598cfc75637c25b6fad7d0e87",
+    "research/fuba_seed_repro_20261031/PROFILE.json": "6785e737bca58f02895fda5e9f05480d9bc2a19a4ad3f39cd33ee44c3524a764",
+    "research/fuba_seed_repro_20261031/PROTOCOL.txt": "7ae5af5f76519e9e2f233afa5e8439a551ae14e00bc175332302609ffb344ca3",
+    "research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt": "187c3cfa76b334d0d0ff5696aa9735e9fe7eb48c61d97e0d9ed70b5ab5633ece",
+    "research/fuba_seed_repro_20261031/STUDY_FREEZE.json": "504aadda3f8b4dfb56118ca64c5b4cfd4ea2973a0e16f2c019c342871e7ed199",
+    "research/fuba_seed_repro_20261031/PREPARED.json": "1d0e4048eddedc60bd6de30d094753dafece41292371feb7ec13a49f0766e729",
+    "research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json": "1b221f02a255955475613044b85595de2881a981b9c0bc5626ea0b0b685b4170",
+    "research/fuba_seed_repro_20261031/STORAGE_CONTRACT.json": "b0600850bb76359fe97361b32bfb33eda0565b07508c241465d567768c263257",
+    "research/fuba_seed_repro_20261031/PREPARATION_RECEIPT.json": "9392c29d439c8cf6efcd2eee204d7bb1ce2cc5cfc5e4e089cbae43d541b8c337",
+    "research/fuba_seed_repro_20261031/REPORT_KO.txt": "26bf8193441747be3a339c9a237ef96db906a6fc4a3ab85a97d6ff9cd6d8969d",
+    "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt": "3aea66183db5d1e6983afde84fe1b13eb57a892505db558164d3f815fa533f99",
+    "research/fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json": "da887ecd0a38f178894e78cc2252001b9cd85fd8b0339b496d8ab2adc97e5318",
+    "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json": "91709a73a8d8b75c8685da8f9c4b34f4aaaed00a7b501aa1ca9d2929722fb81e",
+    "research/fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json": "1c9d1083d1cc48cdc887ca1a346b8a2b3daa30a60ef16883144e7147c289c8fd",
+    "research/fuba_seed_repro_20261031/REMOTE_SNAPSHOT_AFTER_RECOVERY.json": "6e1aa128ddfa789a180e8fd9d4d017e3ce0db130aad583c7e90384d846335406",
+    "research/fuba_seed_repro_20261031/LIVE_EXECUTION_VERIFIED.json": "9f9024da5606e5d29fb6a804edd800bf62370deab0fb2119e153b086740ce349",
+    "research/fuba_seed_repro_20261031/TASK_EXECUTION_VERIFIED.json": "307f2a5e8b4787c4f915581326c880c01ec6127f43f9441869b158a44e720d76",
+    "research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json": "aca115aa400ae53c01f3579231337d85e107c3d32193d743539f9be761410cb7",
+    "research/fuba_seed_repro_20261031/DATASET_AUDIT.json": "05bc91a2227046d7a2504b95579ba188b2b96a95d06a21898ecd77f04d67cd89",
+    "research/fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json": "8f1854516a6d869c65d1b5ba3f0097205f40fff2c386d47233199c990ec0233c",
+    "research/fuba_seed_repro_20261031/DELIVERY_PROTOCOL.txt": "bb1cbc3471cf31a54c8f26c822ed87364d0ee98464446d2049463e188890f405",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/RESULT.json": "4ed519b158766170f16e92b8aa8ec17aeb6db796624a1e4b7bf253ee33edee3d",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/VERIFIED.json": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CPU_AUDIT_through0100.json": "ae80423ed189d314fc1c6b528d25ceae5ff95941b200b88bd1333d8996f05fc5",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/LOCAL_DELIVERY.json": "3b1e67d6b87824ada0d6183b25d550003265eecb77c47182820ade920476ceca",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/REMOTE_DELIVERY.json": "eb0a06095526aac47103748bbf06ef1cd3b545b2031d3c801475cfed0a5cc5c9",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_ENTRY.json": "ee6bf2f93666a3453d5f4b54dfb6a484ba9cafa0b92f582c70962e5948ddbdfe",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_AUDIT.json": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_main.json": "f70a77df18a21edeaa012bd531895e11c84a04289cd052197565e07480dad2a0",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_pr.json": "f70a77df18a21edeaa012bd531895e11c84a04289cd052197565e07480dad2a0",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_dislab.json": "3a14f2ade842f17014cfd4546512a8d23e03a95e01b4aeb13d52fc437f64f567",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/DELIVERY_COMPLETE.json": "f9ba2797359776d6a937bdbaf4685037dacf2701bfe3e814c1d1cf2e54f2b551",
+    "research/fuba_seed_repro_20261031/deliveries/seed_5129832/REPORT_KO.txt": "a9fb6edabd8997c55faaecd951038ac50dceda3b7085c15168e5f4eaacd8698d",
+    "research/00_trajectories/audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+    "research/feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json": "99bb2f5ca0935cfe12e7eba770fbb11fddbd16285d254f9fcac93130063af71f",
+    "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+    "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
+    "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+    "research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt": "ef9fbd7c17d3590685111e9f0fb3dbb718d78f47a33156c409f8eaef4940b9c2",
+    "research/feduba_reproduction_audit_20261031/REPORT_KO.txt": "77f11be94a195ba18325a4fd04b6a64fe8c38d06451d29098e29222e8af26bae",
+    "research/feduba_reproduction_audit_20261031/RESULTS.json": "35c2e2c0c9ff72ee83330b9ba53b9a787c0de1e80318fb56c343fce00dc78d4f",
+    "research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json": "541da8b19aca0587faae84fb42060f765bd086010cd8e388b40bf23644d57452",
+    "research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json": "58ad6b95fa7986b988176087415999c3150cea1638e3b9cfaf789de52fd1483a",
+    "research/feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt": "1d28d6cd20cfb13f84ad0f647613c933da9b413a95c00287dd3144414f32aadc",
+    "research/feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json": "594bf07331595bf745c7160f812aedd1eefaf189bf5dda306e1d948f74e71283",
+    "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt": "eca00bddc401508c47cba306dde3765d87d791102cd430d2411faf81ca659d04",
+    "research/feduba_paper_implementation_20261031/SOURCE_PROVENANCE.json": "640a3d57689f350f357d545c795abe0c870876d8e67c63975ec2a5894420192b",
+    "research/feduba_paper_implementation_20261031/CORE_CONTRACT.txt": "be167ae76cd34c873a4402a539e5f57da1145ad8dcb7bc7e1fb9aa717d1b7fa3",
+    "research/feduba_paper_implementation_20261031/CORE_FREEZE.json": "3a4c811daea6e538612baf5d92491cecdc14aa90a422af30ca68bc35af281a2f",
+    "research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json": "09d63773522c94dae3883422a5b3597c2d7629b3443a013727b91d1898293ed7",
+    "research/feduba_paper_implementation_20261031/REPORT_KO.txt": "595b254368c27d5efc0a6abd30a18f1df62e75e5348ab0f7c5ecea464815d94e",
+    "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt": "066b8ed676fbc083a91ad2cf59ab53ac6d741d24eb86a9db6bbf838a9bce71c7",
+    "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_FREEZE.json": "f9e12d0b5334e4229d4257e67abaabd5262aa9558c71442fc2d4afb3c0e64aee",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt": "572c6f5b16f263aba84d70300f7f948599ce24a29e735a63632fc7aef1880a9c",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json": "91f91b4ade27fc0b210f887fa24a0a923b25df3720850790c155d3d03c0fe96a",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_FREEZE.json": "2cef58625125bc3b3e27d2089ac12045d75a6773b95cfebf7ed2e5162e34f4ec",
+    "research/feduba_paper_implementation_20261031/FOUNDATION_FREEZE.json": "de63996b29bc7097d6a83b042165007b5c3ad3d0df67e91c88d36cdadaecf8f9",
+    "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt": "40ad97902c0ecb043fbf97aefd5b943d495f1516e506db40be38e5ad1652d908",
+    "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_READY.json": "8126d795438f3c87942258c5f06e34284eb83610e8bef418673273d8255df498",
+    "research/feduba_paper_implementation_20261031/FOUNDATION_ONCE.json": "af2a3060b2cbf06f90f8e7e0e9b2989a71a66f8a68baea6cd8b0b41270ab0eb5",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_STARTED.json": "988e8606384ac65dd36ea96dcddd50c83b379fec1ded971fa41eb490dc05b0d1",
+    "research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt": "38cb0128dfd941916b8fd825fd1bc136fe54be10e12fdaa03414ef1b9ea125f4",
+    "research/feduba_paper_implementation_20261031/ASSET_PROFILE.json": "62a2f26b4aa1757a3f39428622cb852d4d2c0b132d45eb708885a516c1286e9f",
+    "research/feduba_paper_implementation_20261031/ASSET_FREEZE.json": "90cd56c1b02e234a4bc4986e3c56f79172621ed6da13569c89cf88ae867d6489",
+    "research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json": "d0e26393370a75277a19819ed318f1ba128e5d063502518170af6274bb9cd96e",
+    "research/feduba_paper_implementation_20261031/ASSET_FAILURE.json": "6ae39bda1ebd94ff33a94bba90f204e05bc815c7589e5181254501d6b26b1b12",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt": "1f576c023953766236b8ea81ef91125e1204159765f4778d4cbebf37a8833995",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json": "09d80d7f43c24aed28444a7889e1c2422f0cc8cfa8b404f0be5c39ed76597c9a",
+    "research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json": "ca4755aeb3d9d447312133964cc052e1241d87f631a5bab750dc17335b6ce6de",
+    "research/feduba_paper_implementation_20261031/CPU_VISIBILITY_DIAGNOSIS.json": "0e3d5622ac7759f130ca952f27e575d25c6bd5b8e173fd2f0614b9c0c3a8ef83",
+    "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt": "b47baa2aa0fe32cea920657a0df8a88d66968f3acdcba67e9c4cc197e010658e",
+    "research/feduba_paper_implementation_20261031/STG_PROFILE.json": "aa4669c58235e63f6bbcf323cb5badfa3bb9b27403fb4661cebb2d1f5e63c07e",
+    "research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json": "b7b36f3e37db4f5ed6264ed2af992d101fce6af8efe62f1343caf216f98b5417",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json": "97b037b15a9f826a93c9495fefeb2c3ccf79357fdec73fba0bba93c74f2797ae",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU2_ONCE.json": "2e8e87a9239ec825ace7836c56315bd85219a67925bd10ecca6c62320cb81fec",
+    "research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json": "035d8d38511559371a768dd8d004c9b4970e49c779268817f4691943bbebd40a",
+    "research/feduba_paper_implementation_20261031/STG_LAUNCH_PROTOCOL.txt": "ace094d0e56a4b7feb83d1d2e8bf186e419ce67fa5dbcbba2d1a1d9476e00701",
+    "research/feduba_paper_implementation_20261031/STG_LAUNCH_PROFILE.json": "313ceb9a34500a2d18f2a6715121b404729ecafcaff380df5bcfa9abe247c40c",
+    "research/feduba_paper_implementation_20261031/STG_FREEZE.json": "cc9e8cfa5cffcce14e0def44f1f2558b847c1c1dbdbca6a4b3e23ddbcf093af3",
+    "research/feduba_paper_implementation_20261031/STG_CONTROLLER_ONCE.json": "f6957841fd4db9e99cf9eeb9cbb11221f42491aa05b10fcf8e9423131f38214d",
+    "research/feduba_paper_implementation_20261031/STG_READY.json": "073c8b722ca3f24d551b70bc5366c70e8b164f50e2c83d61beeeaa1ae6fa6056",
+    "research/feduba_paper_implementation_20261031/FU_PROTOCOL.txt": "9465f7769e65a455496f329e8a351209722e9479f1a6ff10f420196dc53f054d",
+    "research/feduba_paper_implementation_20261031/FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+    "research/feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json": "6449738082df3a2f0b09b22ef50013a265c185c1c1302fb8d95cad54ca682d78",
+    "research/feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d",
+    "research/feduba_paper_implementation_20261031/SSS_PROTOCOL.txt": "72eede99862cd366fcb868f67bbc1c6320b89877a059f2517a58828bed4a8ca4",
+    "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_FREEZE.json": "ed0ab5cbe08f397961816f6e50de5b4f4a0656f0e138cdc94b453e62e765753c",
+    "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt": "c212d297cf3c78cea03ffabe91f5c7b599b4ec00ec6f33dde832e15f245f2f32",
+    "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_FREEZE.json": "d5985892c987f3372f2524afb8472b56ae9ac37c2a2496a2cb411def69330549",
+    "research/feduba_paper_implementation_20261031/incidents/sss_logger_cpu_v1/MANIFEST.json": "139d3edc57ff62e00a34c911faba81cf548e5f2ee76b0a259eb4bf42fd0d8006",
+    "research/feduba_paper_implementation_20261031/SSS_SOURCE_FREEZE.json": "7840e5cd2da7434c468e55a5df3aff80021750733a85b3910f3f9e43af5b92e3",
+    "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_RESULT.json": "e653b408bbeaf0e5e9fbcd052dc7d0d4b6071231ca74c58ed6486cd305fb69a3",
+    "research/feduba_paper_implementation_20261031/SSS_ROUNDOFF_DIAGNOSIS.json": "88b1ce313526e5fb0b76f57d33db5679609090384242645538280394fb9b4ebb",
+    "research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_PROTOCOL.txt": "fc0dbb25b9ef6cb5ca078f36afc68955b27dd81a79990343d12ab5e828a52a68",
+    "research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_FREEZE.json": "172903154640bb21dd7ae4cebcd71e233259eb3dcbed234c48a6522c0e2b73cc",
+    "research/feduba_paper_implementation_20261031/FU_EXECUTION_CONTRACT.txt": "8e7cf34a21a155646d62b5218d6b24578bd28ef597cc9eab2fac34144746ebb6",
+    "research/feduba_paper_implementation_20261031/FU_SOURCE_FREEZE.json": "fbb4bbee47aaf30a30344414e6f0ea4f576fe80d84b9f62e66a2bc3f31fbe434",
+    "research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_RESULT.json": "85b0ab87c9a587a650ae64e6ae116a6bb1da59a83e8146deef573a7029641d79",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_RESULT.json": "92be8444a0cfdda3dc224ce71e28e265125bac3efd941fc2e4f838e1b6764f31",
+    "research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_PROTOCOL.txt": "63b8a943581221f12814a95fd7068cb1a05fc34e294cbbeaae4a231939213b65",
+    "research/feduba_paper_implementation_20261031/CLEAN_EXPORT_FREEZE.json": "52d20aab8fc0c5ba1c796bf94cc6a834bcce6114cb315213ac3338d51056400b",
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_VERIFIED.json": "bd44e8ac785dbee5478ee2f5976b19dd807e90843f8f4de0b2880da3cd14d471",
+    "research/feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json": "5880c7e792af6979a83d0d4600d526fe14d1b0fb7b30edc863fb313aaa986c84",
+    "research/feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json": "90c867992db201c2eacbdba749921a227c816e206202a1a52b2b63f31f4af647",
+    "research/feduba_paper_implementation_20261031/STG_STARTED.json": "b5d19bb83b0ccee6cb22069c77d9581f4244009d9afa242ce4f284e6514e6ae6",
+    "research/feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json": "4e4e31fa99aed5b15975d9cd83a5b5c062575cdf5d2ff1d45e9aa62576b17443",
+    "research/feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json": "e3e62fd638e081c0becb76eb4780916b3923fae3e011656ffddfa21c02e2858a",
+    "research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_COMPLETE.json": "40be20e87c4469165e2216ef4d6a13ac390d4942333b8c04575a9f5a34eb9999",
+    "research/feduba_paper_implementation_20261031/REGISTRATION_LAUNCH_FAILURE_v1.json": "84ebf62026b8da991a9d65c08520e16ce4b047ad61ae1764a6c780cb8fac091b",
+    "research/feduba_paper_implementation_20261031/registrations/clean_main/REGISTERED.json": "b9a59cdb8fecddeba2656716abc277395b6385b3c61bb7da54d2291198d2802f",
+    "research/feduba_paper_implementation_20261031/registrations/clean_pr/REGISTERED.json": "d905500789d6bcaf747457fe1895196883801cd5a25934a51cf2e44098afd784",
+    "research/feduba_paper_implementation_20261031/registrations/clean_dislab/REGISTERED.json": "2d4284cdbb8c450e1ee9429ce34a2e590aa6499f0f6ba85ee7c59c5ef1ccb180",
+    "research/feduba_paper_implementation_20261031/STG_STATE.json": "a58b4e453ff5544ffb93736daada30e2d2d5de7a2878f730fcd8114a7e706577",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_PROTOCOL.txt": "c9e61ce99feef2323cd1073de66cf893922d906ac8be4d9dd5bede5fa6abbca9",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_PROFILE.json": "8ea422a4d76c42333024437e328d475e1f86894f42c7b322e0cc7b69edc631c8",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_FREEZE.json": "cc97ada5cdee3d428a6ed4da1f6f8d7a5694eae22a01faa227b2bb7150cf41fc",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_SOURCE_FREEZE.json": "b913eb6d21b7e32f4cec76adae04c1f6dc958f69358fbf17f360661560931cfb",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_RESULT.json": "98987c3e71a7326c66214dfb63e2f1075b5680b7802fdb45ad6d5b800d0394b5",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_CHECKS.json": "c6f6bc9c1b18bc4c6874dbbdbb9d783098d04b6c2cb3360dbabe7a4700924890",
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_ONCE.json": "7df8911597a8ef73d27d0a86e6e661a9f6942fc73df1ee92a17fe276bd076b3c",
+    "research/feduba_paper_implementation_20261031/SSS_NUMERIC_POLICY.json": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74",
+    "research/feduba_paper_implementation_20261031/SSS_NUMERIC_PROTOCOL.txt": "45f9bc56ba1a54c41b6409509cb85b81ac0580c49afaafedf4716f7f77c829ee",
+    "research/feduba_paper_implementation_20261031/SSS_NUMERIC_SOURCE_CHECKS.json": "ae617b10139f9385d31c3c17991c3d138c8ef4fbe4e50814c6267a8ad1a0c097",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -223,7 +407,18 @@
     "research/fuba_projection_check_20261025/verified_v2/FREEZE.json": "614b19f3e54780ceab4fe615b0149fff2ac1f7bc1ad9b4c3d60ed8631cbdbd4d",
     "research/fuba_projection_check_20261025/verified_v2/SCORES.json": "1d10cf523237f1ad2d4aa11ee2f04ccad06152eb00798e436134e6d6ec86bd38",
     "research/fuba_projection_check_20261025/verified_v2/VERIFICATION.json": "501de6340bbaae76af7c63765d42b2346a9d49626e228388a3bdb73085cfb544",
-    "research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json": "90ff173b4553d7e23e053fbe15d15aab0d64cab3d941363a97225853bd0e3731"
+    "research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json": "90ff173b4553d7e23e053fbe15d15aab0d64cab3d941363a97225853bd0e3731",
+    "research/detection_claim_audit_20261031/PROTOCOL.txt": "944b7a4e77cd4a06c5965e775bf236bb3e86929882c451ebe9712fe340003a52",
+    "research/detection_claim_audit_20261031/PLAN.json": "e1f3ee0d08fcb992b6847990c25231dd68205ceaf2d92d66f579089132fe67f5",
+    "research/detection_claim_audit_20261031/CODE_REVIEW.txt": "5cd6f0ffdad0cbb2c6d64cbbbb57e063dae69eef96091119f8895b7a0cc332d4",
+    "research/detection_claim_audit_20261031/CLAIMS_AND_GATES.txt": "8ff762df41f80abdfcc4f472532abf569b2a714827d95091c1810d49ba96efa0",
+    "research/detection_claim_audit_20261031/SOURCE_MANIFEST.json": "e3792df64d79c464bd9e4a5a427e0cbd210588e90cfa05017f14ca7249922d03",
+    "research/detection_claim_audit_20261031/EVIDENCE.json": "b9e0ed39cded1ef90dcd20d1f3ff5b96b3378154b2251548726c15adc7721b7b",
+    "research/detection_claim_audit_20261031/REPORT_KO.txt": "8838cdb9cca541e905e0c1eab3c79d696005e4932a21ddc6e08f79295e8f527c",
+    "research/detection_claim_audit_20261031/MATH_RESULTS.json": "c532fa83ae457b1e2ffad00c3b061ad5d1f95e416b8b8b7961729e8568276ad8",
+    "research/detection_claim_audit_20261031/SOURCE_AUDIT.json": "bbadb000b792628e29e8a3e7b3828e57cd37e498b2a838e9ef12eeecce35b261",
+    "research/detection_claim_audit_20261031/DISLAB_AMENDMENT.txt": "cca04ff8901806b7eacf97c0584cc413f88ab027341a5dec14876facc0c5f15c",
+    "research/detection_claim_audit_20261031/DISLAB_VERIFICATION.json": "1b712ce210158a1041bbbf888c568b5f6b210e78febf40600fe098c58362c368"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -439,6 +634,20 @@
       "review": "대표 기록 재검토·카드 연결"
     },
     {
+      "path": "research/detection_claim_audit_20261031",
+      "related_cards": [
+        "N02"
+      ],
+      "top_level_documents": [
+        "research/detection_claim_audit_20261031/EVIDENCE.json",
+        "research/detection_claim_audit_20261031/MATH_RESULTS.json",
+        "research/detection_claim_audit_20261031/PROTOCOL.txt",
+        "research/detection_claim_audit_20261031/REPORT_KO.txt",
+        "research/detection_claim_audit_20261031/SOURCE_AUDIT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/detection_decision_20261023",
       "related_cards": [
         "D17"
@@ -517,6 +726,57 @@
       "review": "폴더 색인만·내용 판정 미재검토"
     },
     {
+      "path": "research/feduba_paper_implementation_20261031",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json",
+        "research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_COMPLETE.json",
+        "research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/CLEAN_FL_RESULT.json",
+        "research/feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json",
+        "research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json",
+        "research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_RESULT.json",
+        "research/feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json",
+        "research/feduba_paper_implementation_20261031/FU_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json",
+        "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_RESULT.json",
+        "research/feduba_paper_implementation_20261031/PAIR_EVAL_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/REPORT_KO.txt",
+        "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_RESULT.json",
+        "research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/SSS_NUMERIC_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/SSS_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/STG_LAUNCH_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/feduba_reproduction_audit_20261031",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json",
+        "research/feduba_reproduction_audit_20261031/audit_stderr.txt",
+        "research/feduba_reproduction_audit_20261031/audit_stdout.txt",
+        "research/feduba_reproduction_audit_20261031/PROTOCOL.txt",
+        "research/feduba_reproduction_audit_20261031/REPORT_KO.txt",
+        "research/feduba_reproduction_audit_20261031/RESULTS.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/FU_gpu20261020",
       "related_cards": [
         "R02"
@@ -573,6 +833,29 @@
       "review": "대표 기록 재검토·카드 연결"
     },
     {
+      "path": "research/fuba_dba_gamma_scope_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt",
+        "research/fuba_dba_gamma_scope_20261031/REPORT_KO.txt",
+        "research/fuba_dba_gamma_scope_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_defender_recovery_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_defender_recovery_20261031/PROTOCOL.txt",
+        "research/fuba_defender_recovery_20261031/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/fuba_execution_audit_20261025",
       "related_cards": [
         "R02"
@@ -592,6 +875,18 @@
         "research/fuba_observation_20261023/COST_COUNTEREXAMPLE.json",
         "research/fuba_observation_20261023/README_KO.txt",
         "research/fuba_observation_20261023/REMOTE_BADFU_BATCH_AUDIT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_optimizer_isolation_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_optimizer_isolation_20261031/PROTOCOL.txt",
+        "research/fuba_optimizer_isolation_20261031/REPORT_KO.txt",
+        "research/fuba_optimizer_isolation_20261031/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
@@ -670,6 +965,80 @@
         "research/fuba_projection_check_20261025/PROTOCOL.txt",
         "research/fuba_projection_check_20261025/REPORT_KO.txt",
         "research/fuba_projection_check_20261025/SUMMARY.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_radius_alignment_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_radius_alignment_20261031/PROTOCOL.txt",
+        "research/fuba_radius_alignment_20261031/REPORT_KO.txt",
+        "research/fuba_radius_alignment_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_recovery_current_ab_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_recovery_current_ab_20261031/PROTOCOL.txt",
+        "research/fuba_recovery_current_ab_20261031/REPORT_KO.txt",
+        "research/fuba_recovery_current_ab_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_reference_mnist_dba_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_reference_mnist_dba_20261031/AUDIT_FREEZE.json",
+        "research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json",
+        "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt",
+        "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt",
+        "research/fuba_reference_mnist_dba_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_seed_repro_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_seed_repro_20261031/DATASET_AUDIT.json",
+        "research/fuba_seed_repro_20261031/DELIVERY_PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json",
+        "research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json",
+        "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json",
+        "research/fuba_seed_repro_20261031/PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_stage_localization_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_stage_localization_20261031/PROTOCOL.txt",
+        "research/fuba_stage_localization_20261031/REPORT_KO.txt",
+        "research/fuba_stage_localization_20261031/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

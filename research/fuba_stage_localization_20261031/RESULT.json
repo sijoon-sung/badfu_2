@@ -1,0 +1,629 @@
+{
+  "state": "complete",
+  "profile": "fuba.mnist.dba.stage_localization.20261031",
+  "hypothesis_KD_destroyed_strong_activation": "supported_in_this_run",
+  "after_subtraction": {
+    "N": 10000,
+    "non_target_N": 9026,
+    "clean_correct": 9888,
+    "target_successes": 6171,
+    "clean_target_count": 19,
+    "CA_pct": 98.88,
+    "ASR_pct": 68.3691557722136,
+    "clean_target_bias_pct": 0.21050299135829825,
+    "trigger_role": 4
+  },
+  "reused_verified_endpoints": {
+    "before": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9911,
+      "target_successes": 2762,
+      "clean_non_target_target_count": 11,
+      "CA_pct": 99.11,
+      "ASR_pct": 30.600487480611566,
+      "clean_target_bias_pct": 0.12187015289164635,
+      "trigger_role": 4,
+      "both_eval": true
+    },
+    "after": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9908,
+      "target_successes": 2920,
+      "clean_non_target_target_count": 12,
+      "CA_pct": 99.08,
+      "ASR_pct": 32.35098604032794,
+      "clean_target_bias_pct": 0.13294925769997784,
+      "trigger_role": 4,
+      "both_eval": true
+    }
+  },
+  "roles": [
+    {
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    }
+  ],
+  "points": [
+    {
+      "label": "after_subtraction_before_KD",
+      "path": "run/after_subtraction.pt",
+      "payload_key": "$",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9888,
+        "target_successes": 6171,
+        "clean_target_count": 19,
+        "CA_pct": 98.88,
+        "ASR_pct": 68.3691557722136,
+        "clean_target_bias_pct": 0.21050299135829825,
+        "trigger_role": 4
+      }
+    },
+    {
+      "label": "r7_c0_incoming",
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "incoming",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9867,
+        "target_successes": 10,
+        "clean_target_count": 13,
+        "CA_pct": 98.67,
+        "ASR_pct": 0.11079104808331487,
+        "clean_target_bias_pct": 0.14402836250830933,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 296,
+        "target_successes": 1,
+        "clean_target_count": 1,
+        "CA_pct": 98.66666666666667,
+        "ASR_pct": 0.37037037037037035,
+        "clean_target_bias_pct": 0.37037037037037035,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r7_c0_phase1",
+      "path": "run/phases/round0007_client00/phase01.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9768,
+        "target_successes": 7942,
+        "clean_target_count": 38,
+        "CA_pct": 97.68,
+        "ASR_pct": 87.99025038776867,
+        "clean_target_bias_pct": 0.4210059827165965,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 291,
+        "target_successes": 269,
+        "clean_target_count": 1,
+        "CA_pct": 97.0,
+        "ASR_pct": 99.62962962962963,
+        "clean_target_bias_pct": 0.37037037037037035,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r7_c0_phase2",
+      "path": "run/phases/round0007_client00/phase02.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9799,
+        "target_successes": 4330,
+        "clean_target_count": 20,
+        "CA_pct": 97.99,
+        "ASR_pct": 47.97252382007534,
+        "clean_target_bias_pct": 0.22158209616662974,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 294,
+        "target_successes": 186,
+        "clean_target_count": 0,
+        "CA_pct": 98.0,
+        "ASR_pct": 68.88888888888889,
+        "clean_target_bias_pct": 0.0,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r7_c0_phase3",
+      "path": "run/phases/round0007_client00/phase03.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 8384,
+        "target_successes": 3959,
+        "clean_target_count": 1576,
+        "CA_pct": 83.84,
+        "ASR_pct": 43.86217593618436,
+        "clean_target_bias_pct": 17.460669177930424,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 248,
+        "target_successes": 93,
+        "clean_target_count": 49,
+        "CA_pct": 82.66666666666667,
+        "ASR_pct": 34.44444444444444,
+        "clean_target_bias_pct": 18.14814814814815,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r7_c0_phase4",
+      "path": "run/phases/round0007_client00/phase04.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9813,
+        "target_successes": 21,
+        "clean_target_count": 17,
+        "CA_pct": 98.13,
+        "ASR_pct": 0.23266120097496124,
+        "clean_target_bias_pct": 0.18834478174163527,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 293,
+        "target_successes": 1,
+        "clean_target_count": 1,
+        "CA_pct": 97.66666666666667,
+        "ASR_pct": 0.37037037037037035,
+        "clean_target_bias_pct": 0.37037037037037035,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r7_c0_submitted",
+      "path": "run/phases/round0007_client00/submitted.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 8384,
+        "target_successes": 3959,
+        "clean_target_count": 1576,
+        "CA_pct": 83.84,
+        "ASR_pct": 43.86217593618436,
+        "clean_target_bias_pct": 17.460669177930424,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 270,
+        "clean_correct": 248,
+        "target_successes": 93,
+        "clean_target_count": 49,
+        "CA_pct": 82.66666666666667,
+        "ASR_pct": 34.44444444444444,
+        "clean_target_bias_pct": 18.14814814814815,
+        "trigger_role": 0
+      },
+      "round": 7,
+      "client": 0,
+      "role": "attacker"
+    },
+    {
+      "label": "r6_c4_incoming",
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "incoming",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9853,
+        "target_successes": 13,
+        "clean_target_count": 14,
+        "CA_pct": 98.53,
+        "ASR_pct": 0.14402836250830933,
+        "clean_target_bias_pct": 0.15510746731664082,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 292,
+        "target_successes": 0,
+        "clean_target_count": 0,
+        "CA_pct": 97.33333333333333,
+        "ASR_pct": 0.0,
+        "clean_target_bias_pct": 0.0,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r6_c4_phase1",
+      "path": "run/phases/round0006_client04/phase01.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9782,
+        "target_successes": 8999,
+        "clean_target_count": 52,
+        "CA_pct": 97.82,
+        "ASR_pct": 99.70086417017505,
+        "clean_target_bias_pct": 0.5761134500332373,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 290,
+        "target_successes": 275,
+        "clean_target_count": 2,
+        "CA_pct": 96.66666666666667,
+        "ASR_pct": 100.0,
+        "clean_target_bias_pct": 0.7272727272727273,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r6_c4_phase2",
+      "path": "run/phases/round0006_client04/phase02.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9813,
+        "target_successes": 3968,
+        "clean_target_count": 20,
+        "CA_pct": 98.13,
+        "ASR_pct": 43.96188787945934,
+        "clean_target_bias_pct": 0.22158209616662974,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 292,
+        "target_successes": 126,
+        "clean_target_count": 1,
+        "CA_pct": 97.33333333333333,
+        "ASR_pct": 45.81818181818182,
+        "clean_target_bias_pct": 0.36363636363636365,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r6_c4_phase3",
+      "path": "run/phases/round0006_client04/phase03.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9513,
+        "target_successes": 8666,
+        "clean_target_count": 379,
+        "CA_pct": 95.13,
+        "ASR_pct": 96.01152226900066,
+        "clean_target_bias_pct": 4.198980722357634,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 280,
+        "target_successes": 265,
+        "clean_target_count": 17,
+        "CA_pct": 93.33333333333333,
+        "ASR_pct": 96.36363636363636,
+        "clean_target_bias_pct": 6.181818181818182,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r6_c4_phase4",
+      "path": "run/phases/round0006_client04/phase04.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9767,
+        "target_successes": 6903,
+        "clean_target_count": 77,
+        "CA_pct": 97.67,
+        "ASR_pct": 76.47906049191225,
+        "clean_target_bias_pct": 0.8530910702415245,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 288,
+        "target_successes": 216,
+        "clean_target_count": 4,
+        "CA_pct": 96.0,
+        "ASR_pct": 78.54545454545455,
+        "clean_target_bias_pct": 1.4545454545454546,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r6_c4_submitted",
+      "path": "run/phases/round0006_client04/submitted.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9844,
+        "target_successes": 6,
+        "clean_target_count": 10,
+        "CA_pct": 98.44,
+        "ASR_pct": 0.06647462884998892,
+        "clean_target_bias_pct": 0.11079104808331487,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 275,
+        "clean_correct": 290,
+        "target_successes": 0,
+        "clean_target_count": 0,
+        "CA_pct": 96.66666666666667,
+        "ASR_pct": 0.0,
+        "clean_target_bias_pct": 0.0,
+        "trigger_role": 4
+      },
+      "round": 6,
+      "client": 4,
+      "role": "defender"
+    },
+    {
+      "label": "r100_c1_incoming",
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "incoming",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 3340,
+        "clean_target_count": 12,
+        "CA_pct": 99.07,
+        "ASR_pct": 37.004210059827166,
+        "clean_target_bias_pct": 0.13294925769997784,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 297,
+        "target_successes": 5,
+        "clean_target_count": 0,
+        "CA_pct": 99.0,
+        "ASR_pct": 1.8867924528301887,
+        "clean_target_bias_pct": 0.0,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    },
+    {
+      "label": "r100_c1_phase1",
+      "path": "run/phases/round0100_client01/phase01.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9746,
+        "target_successes": 9026,
+        "clean_target_count": 148,
+        "CA_pct": 97.46,
+        "ASR_pct": 100.0,
+        "clean_target_bias_pct": 1.63970751163306,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 291,
+        "target_successes": 255,
+        "clean_target_count": 5,
+        "CA_pct": 97.0,
+        "ASR_pct": 96.22641509433963,
+        "clean_target_bias_pct": 1.8867924528301887,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    },
+    {
+      "label": "r100_c1_phase2",
+      "path": "run/phases/round0100_client01/phase02.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9865,
+        "target_successes": 7674,
+        "clean_target_count": 20,
+        "CA_pct": 98.65,
+        "ASR_pct": 85.02105029913584,
+        "clean_target_bias_pct": 0.22158209616662974,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 295,
+        "target_successes": 103,
+        "clean_target_count": 1,
+        "CA_pct": 98.33333333333333,
+        "ASR_pct": 38.867924528301884,
+        "clean_target_bias_pct": 0.37735849056603776,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    },
+    {
+      "label": "r100_c1_phase3",
+      "path": "run/phases/round0100_client01/phase03.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9620,
+        "target_successes": 9026,
+        "clean_target_count": 232,
+        "CA_pct": 96.2,
+        "ASR_pct": 100.0,
+        "clean_target_bias_pct": 2.570352315532905,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 284,
+        "target_successes": 251,
+        "clean_target_count": 10,
+        "CA_pct": 94.66666666666667,
+        "ASR_pct": 94.71698113207547,
+        "clean_target_bias_pct": 3.7735849056603774,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    },
+    {
+      "label": "r100_c1_phase4",
+      "path": "run/phases/round0100_client01/phase04.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9899,
+        "target_successes": 2326,
+        "clean_target_count": 14,
+        "CA_pct": 98.99,
+        "ASR_pct": 25.76999778417904,
+        "clean_target_bias_pct": 0.15510746731664082,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 295,
+        "target_successes": 5,
+        "clean_target_count": 2,
+        "CA_pct": 98.33333333333333,
+        "ASR_pct": 1.8867924528301887,
+        "clean_target_bias_pct": 0.7547169811320755,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    },
+    {
+      "label": "r100_c1_submitted",
+      "path": "run/phases/round0100_client01/submitted.pt",
+      "payload_key": "model",
+      "global_test": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9620,
+        "target_successes": 9026,
+        "clean_target_count": 232,
+        "CA_pct": 96.2,
+        "ASR_pct": 100.0,
+        "clean_target_bias_pct": 2.570352315532905,
+        "trigger_role": 4
+      },
+      "local_validation": {
+        "N": 300,
+        "non_target_N": 265,
+        "clean_correct": 284,
+        "target_successes": 251,
+        "clean_target_count": 10,
+        "CA_pct": 94.66666666666667,
+        "ASR_pct": 94.71698113207547,
+        "clean_target_bias_pct": 3.7735849056603774,
+        "trigger_role": 1
+      },
+      "round": 100,
+      "client": 1,
+      "role": "attacker"
+    }
+  ],
+  "unique_full_test_states": 19,
+  "training_performed": false,
+  "checkpoint_edits": false,
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+  "evaluator_sha256": "dee6b08fe8fb08ef1446bc86257b63c25a1ba93a38042c5f86d0849edd42b91d",
+  "resource_guard": {
+    "utilization_pct": 0,
+    "free_MiB": 8223,
+    "used_MiB": 1830
+  },
+  "scope": "New stage inference only. Old endpoint evaluation reused. No reproduction/detection success asserted."
+}

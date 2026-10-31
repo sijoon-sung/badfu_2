@@ -1,0 +1,16 @@
+{
+  "state": "passed_source_hash_review_only",
+  "prepublished_commit": "5e9a6c5",
+  "source_freezes_sha256": {
+    "STG_FREEZE.json": "cc9e8cfa5cffcce14e0def44f1f2558b847c1c1dbdbca6a4b3e23ddbcf093af3",
+    "SSS_LOGGER_CPU2_FREEZE.json": "d5985892c987f3372f2524afb8472b56ae9ac37c2a2496a2cb411def69330549",
+    "PAIR_EVAL_CPU_FREEZE.json": "cc97ada5cdee3d428a6ed4da1f6f8d7a5694eae22a01faa227b2bb7150cf41fc",
+    "FU_ENGINE_CPU_FREEZE.json": "172903154640bb21dd7ae4cebcd71e233259eb3dcbed234c48a6522c0e2b73cc",
+    "SSS_SOURCE_FREEZE.json": "7840e5cd2da7434c468e55a5df3aff80021750733a85b3910f3f9e43af5b92e3"
+  },
+  "active_STG_source_unchanged": true,
+  "completed_CPU_fixture_sources_unchanged": true,
+  "prior_unexecuted_sources_preserved": true,
+  "new_fixture_or_model_queries_executed": false,
+  "real_SSS_launch_inputs_still_absent": true
+}

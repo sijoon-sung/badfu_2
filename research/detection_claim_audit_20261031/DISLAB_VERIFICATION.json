@@ -1,0 +1,21 @@
+{
+  "state": "passed_DISLAB_independent_CPU_checks",
+  "location": "DISLAB",
+  "completed_utc": "2026-10-30T17:51:51.409733+00:00",
+  "python": "3.12.10",
+  "plan_sha256": "e1f3ee0d08fcb992b6847990c25231dd68205ceaf2d92d66f579089132fe67f5",
+  "payload_sha256": "de9f5560eb129727bd9760a79f91fd31cd4ade0cf83de501ad6f5b3cfac60387",
+  "commands_succeeded": 4,
+  "same_local_and_DISLAB_results": true,
+  "comparison": "parsed_JSON_semantics",
+  "remote_original_raw_sha256": {
+    "MATH_RESULTS.json": "9200b90c9e2e90e994044ea9d0f8648a68f7b162a551b1301439f51d0284786d",
+    "SOURCE_AUDIT.json": "51a3f8a3e9a6f122acaf6197b435ca3e5307cf92f11f91819a49a5d2c47a9795",
+    "REMOTE_COMMANDS.json": "091d9e17bc9121c6052fa7fb7b2838be2eefd20de4c8c802548691e060401900"
+  },
+  "raw_hash_scope": "checksums of original remote files; original bytes retained locally/on DISLAB, not hashes of normalized public JSON excerpts",
+  "new_training": false,
+  "GPU_used": false,
+  "upstream_imported": false,
+  "raw_receipt_sha256": "a4dbc713ce8647477ae13f61a3f5785cf24a9afe44221041814972cf3dd2f1b7"
+}

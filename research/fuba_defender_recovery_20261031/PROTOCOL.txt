@@ -1,0 +1,18 @@
+가설: 같은학습된99R/client4 reference와정상자료에서, 본문실험문단의Adam recovery는현재수식SGD recovery보다백도어를더강하게제거하면서정상기능과실제그round집계의억제를유지한다.
+관련 R02/D08/D15/N02. 이전CIFAR embedding SGD/Adam실패를지우거나재실행하지않는다. 이번은BN·생성기가없는MNIST/DBA의서로다른Algorithm2 recovery단계만검사하는새제한비교다. main의모든dataset Adam설명과Algorithm2의명시SGD갱신사이차이는남으며,Adam을문자그대로SGD와동일하다고부르지않는다.
+
+근거/새 관측
+실제100R/KD10은두성능gate미달로봉인전달됐다. 단계진단은차감직후ASR68.3692→KD후32.3510을확인했으나현재KD의교사/T/SGD설정은공개kernel과맞아성능을위해다르게바꾸지않는다. 별도gamma global-scope진단은local9.8113/global58.1132의위반을확인했지만,마지막한업로드수정도globalASR16.0979로목표10에못미쳤다. 따라서그변경하나로새100R을열지않는다.
+새관측은같은입력/50epoch순서에서수식SGD A와실험Adam B의실제recovered/최종upload/동일actual8명집계의정상CA·정상타깃쏠림·globalDBA ASR다. 단순노름/코사인반응을측정하지않는다.
+
+입력/고정조건
+명시case fuba.reference.mnist.dba.s20261023.pre100.post.kd10 diagnostic과외부manifest0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c를선택한다. 원래fullraw파일은봉인된FULL_REMOTE_RAW_MANIFEST를추가검사한다. role은마지막실제억제자99/client4(시간순선택,ASR무관)이다. source_root는D:/FUBA_REFERENCE_MNIST_DBA_20261031; phase3 model/RNG SHA f14b6a189f27dc555e7ee68aa9b849eb1d076af511a1db5f9b509de29ac24729,원phase4 SHA41107f5d8f2de14ea1c8360048af6a3314f3288fb7c926b857b8fbe1ad6fba91,payload_key=model. 이run의전체phase검증은이미끝났다.
+동일기준모델/clean2700/validation제외300/50epochs/B64/lr.001/CE+2sumL2/원래phase_seed21251427/FP32/원래CPU·CUDA·numpy·python RNG를사용한다. A는봉인된core.learn SGD_no_momentum을그대로호출한다. A의modeltensors가원래phase4와정확히같아야B를계속한다. 불일치면A/로그/RNG를보존하고비교를중단한다.
+B는새optimizer Adam(lr.001,betas.9/.999,eps1e-8,weight_decay0,foreachTrue)만다르다. 같은목표함수와정상자료,동일GPUrandperm seed50epochs,global RNG복원을사용한다. 두condition의50epoch/2150batch와마지막loader RNG가일치해야한다. control의원래tensor재현은B최적화의성능을보장하지않는다.
+회복모델마다upload=original incoming+recovered-reference를적용하고실제99R의나머지7업로드/각.125로한번집계한다. 원래round99평가를재사용한다. B모델/optimizer/RNG·epoch로그/derivedupload·counterfactualaggregate는새폴더에보존한다. 진단용단일round이며유효한새100R/삭제쌍이아니다.
+
+판정/중단
+B recovered의ASR이A보다20%p이상낮고CA>=97이면서A보다1%p넘게낮지않으며, B실제round대체집계도CA>=97/ASR<=10이어야해당phase의실험optimizer가설을지지한다. 입력reference·새A·B·upload의정상타깃쏠림도함께기록하고붕괴를성공으로세지않는다.
+최대A50+B50epoch/4300batch 후종료한다. source/봉인/strictload/원A tensor불일치/loader RNG불일치/비유한/runtime문제는증거보존·중단한다. 동일유한비교를자동반복하거나중간ASR로epoch·lr·lambda를조정하지않는다.
+이양성이SGD와Adam의수학동일성이나논문의유일한구현을증명하지않는다. 후속은실험문단Adam 해석후보로명시하고새고정전체프로필/기존실패/수식SGD대조를보존해야한다. 여기서전체학습을직접시작하지않는다. 음성이면이선택으로전체학습을정당화하지않는다.
+새D:/FUBA_DEFENDER_RECOVERY_20261031,DISLAB GPU util<=5/free>=7000/used<=2048MiB/경쟁PID부재guard를먼저확인한다. 다른앱종료/완료job재실행은없다. D08/D15 큰정상nonIID탐지반례는미해결이며이번은공격구현실패진단이다. evaluator-only패턴/role은server탐지선택·학습으로유출하지않는다.

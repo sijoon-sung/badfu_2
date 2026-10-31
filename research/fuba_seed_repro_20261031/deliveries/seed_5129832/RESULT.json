@@ -1,0 +1,47 @@
+{
+  "state": "completed100R_KD10",
+  "profile": "fuba.algorithm_sgd.mnist.dba.s5129832.fl100.kd10.seed_repro20261031",
+  "rounds": 100,
+  "roles": 800,
+  "KD_epochs": 10,
+  "KD_batches": 470,
+  "before": {
+    "N": 10000,
+    "non_target_N": 9026,
+    "clean_correct": 9912,
+    "target_successes": 2076,
+    "clean_non_target_target_count": 10,
+    "CA_pct": 99.12,
+    "ASR_pct": 23.000221582096167,
+    "clean_target_bias_pct": 0.11079104808331487,
+    "trigger_role": 4,
+    "both_eval": true
+  },
+  "after": {
+    "N": 10000,
+    "non_target_N": 9026,
+    "clean_correct": 9915,
+    "target_successes": 2619,
+    "clean_non_target_target_count": 9,
+    "CA_pct": 99.15,
+    "ASR_pct": 29.016175493020164,
+    "clean_target_bias_pct": 0.09971194327498338,
+    "trigger_role": 4,
+    "both_eval": true
+  },
+  "before_checkpoint": {
+    "path": "run\\before.pt",
+    "sha256": "ee5b1baebffa12285c9e1f2e12ac2de22e16c8ae829113caa364fbe81b511b36",
+    "bytes": 181189
+  },
+  "after_checkpoint": {
+    "path": "run\\after.pt",
+    "sha256": "2856486c4b42dc313a65c395a20be55282f4ae0d2101390b188498f6f58cdeda",
+    "bytes": 181189
+  },
+  "before_gate": false,
+  "after_gate": false,
+  "forgotten_contribution_count": 47,
+  "trigger": "DBA_global",
+  "scope": "One declared MNIST/DBA seed, not CIFAR/IBA or trigger-independent detection."
+}

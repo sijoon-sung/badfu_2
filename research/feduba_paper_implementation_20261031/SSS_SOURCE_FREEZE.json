@@ -1,0 +1,29 @@
+{
+  "stage": "reviewable_SSS_source_only_not_a_live_launch_freeze",
+  "real_SSS_launch_enabled": false,
+  "missing_launch_inputs": [
+    "SSS_LAUNCH_PROFILE.json",
+    "SSS_FREEZE.json",
+    "completed_STG_audit"
+  ],
+  "files": {
+    "SSS_PROTOCOL.txt": "72eede99862cd366fcb868f67bbc1c6320b89877a059f2517a58828bed4a8ca4",
+    "SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt": "c212d297cf3c78cea03ffabe91f5c7b599b4ec00ec6f33dde832e15f245f2f32",
+    "SSS_LOGGER_CPU2_FREEZE.json": "d5985892c987f3372f2524afb8472b56ae9ac37c2a2496a2cb411def69330549",
+    "SSS_LOGGER_CPU2_RESULT.json": "e653b408bbeaf0e5e9fbcd052dc7d0d4b6071231ca74c58ed6486cd305fb69a3",
+    "sss_logging.py": "1edd3927efb6c02ae9aca2026fad4f3c15352c13ce84de0344a128443face0d7",
+    "sss_runner.py": "cf77f6c5e7a078dc58f0e516472ada93d59bc903fc9907111c490c56fb604dc2",
+    "verify_sss.py": "64b798c2bc82df14a7bb784565b3a14f14bb98374c758f38e81e3735f2c350da",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+    "SSS_NUMERIC_POLICY.json": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74",
+    "SSS_NUMERIC_PROTOCOL.txt": "45f9bc56ba1a54c41b6409509cb85b81ac0580c49afaafedf4716f7f77c829ee"
+  },
+  "code_review_revision": 2,
+  "previous_code_commit": "d82576e",
+  "previous_source_only_freeze_sha256": "b90bccafcd6fd3003a2e75aa25d19de74ddea4aef23606e79b7d0a7055cc19d7",
+  "review_change": "Explicit prospective SSS query numeric settings and receipts; no real SSS queries executed; original math and completed CPU freezes unchanged.",
+  "required_registered_clean_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031"
+}

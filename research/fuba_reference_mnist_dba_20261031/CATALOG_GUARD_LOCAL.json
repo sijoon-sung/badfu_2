@@ -1,0 +1,27 @@
+{
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "purpose": "diagnostic",
+  "post_type": "actual_historical_client4_update_subtraction_then_KD10",
+  "server_inputs": {
+    "pre": {
+      "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/before.pt",
+      "sha256": "418da107bf5f143416818dface2e57685bfec07404765904c811dc8c1acec64c",
+      "payload_key": null
+    },
+    "post": {
+      "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/after.pt",
+      "sha256": "8a70d76a27ba9ad73c075bacd9bbdb015860a8137eb2983d9086fa29c22b0034",
+      "payload_key": null
+    }
+  },
+  "source_root": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_MANIFEST.json",
+    "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+    "seal_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_SEAL.json",
+    "seal_sha256": "cf502a8ae7af82cae04a59d4bfe229ad3dc61081e5c5df55511d5401a6c08bcf",
+    "loader_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/load_checkpoint.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

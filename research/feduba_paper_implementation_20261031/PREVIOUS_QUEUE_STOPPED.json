@@ -1,0 +1,59 @@
+{
+  "state": "stopped_by_user_target_change",
+  "previous_target": "stcebra/FUBA",
+  "active_target": "ity207/FedUBA_STG_SSS_BEA",
+  "task": "Codex-FUBA-ten-seed-repro-recovery-20261031",
+  "own_parent_pid_stopped": 48688,
+  "previous_state": {
+    "state": "waiting_for_resources",
+    "pid": 48688,
+    "updated_unix": 1793439417.7618406,
+    "completed_rows": [
+      {
+        "seed": 20261023,
+        "before_CA": 99.11,
+        "before_ASR": 30.600487480611566,
+        "after_CA": 99.08,
+        "after_ASR": 32.35098604032794,
+        "qualified_pair": false,
+        "source": "already delivered baseline, not rerun",
+        "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10"
+      },
+      {
+        "seed": 5129832,
+        "before_CA": 99.12,
+        "before_ASR": 23.000221582096167,
+        "after_CA": 99.15,
+        "after_ASR": 29.016175493020164,
+        "qualified_pair": false,
+        "source": "new actual100R_KD10",
+        "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+        "root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1",
+        "packet_root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1\\delivery_packet",
+        "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+        "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+        "archive": "D:\\FUBA_SEED_REPRO_20261031\\archives_recovery\\seed_5129832.zip",
+        "archive_sha256": "275297feba8c5815ea078a965b9e6830006070d7f1c2c7ee360d6f182ac1ef5d",
+        "archive_bytes": 20635331,
+        "full_CPU_audit_sha256": "ae80423ed189d314fc1c6b528d25ceae5ff95941b200b88bd1333d8996f05fc5",
+        "independent_verification_sha256": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615",
+        "local_delivery_complete": false,
+        "catalogue_registration_complete": false
+      }
+    ],
+    "seed": 4059094,
+    "resources": {
+      "utilization_pct": 0,
+      "free_MiB": 5045,
+      "used_MiB": 5009,
+      "competing_PIDs": []
+    }
+  },
+  "completed_rows_preserved": 2,
+  "unstarted_rows_preserved": 8,
+  "other_apps_stopped": false,
+  "models_profiles_sources_modified": false,
+  "old_task_disabled": true,
+  "created_unix": 1793439450.0682397,
+  "source_sha256": "72a4bef17bf5f62254704aecdc2e366e9bcb26b86c6f8ec11c7ed8ff87bdd42f"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "fuba-optimizer-isolation-freeze-v1",
+  "related_cards": [
+    "R02",
+    "R03",
+    "D08",
+    "D15",
+    "N02"
+  ],
+  "files": {
+    "optimizer_policy.py": "ceb0bbd2dc30d154e9f551f67a9544621d583931cd15e648dd317402afbbabc5",
+    "PROFILE.json": "12fd07d8ed09b173c34a0b342399847c90af8fe125ebcc44fa1e91d70b08eaa6",
+    "PROTOCOL.txt": "7f4e995c4560743f8e17f33e493c68e22015a6ad2e82ef049eb97d49a40284cc",
+    "runner.py": "34f6e0928aa6e65f65918e82481a0ce5a34d92328e2b1a5048b5508b739befad",
+    "test_contracts.py": "1a73784263fb0c276ff3cb9f2a7c71f263f6f3e61c72dfa7e3e775b36f1b8f84",
+    "verify_result.py": "9e0fe770b1555744e0f2f1374e9af0652160b003d6755f42eba7b47823ea2b6e"
+  }
+}

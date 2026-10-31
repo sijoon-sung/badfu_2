@@ -1,0 +1,6 @@
+제한gamma-scope 비교 — R02/D08/D15/N02, 2026-10-31
+H1=True, H2=False. 이변경하나로fresh100R을정당화하는등록조건은실패했다.
+고정7/client0와100/client1의같은11점/m5/n20/같은300validation에서global DBA를22번평가했다. 기존local점수와원래round평가는재사용했다. 7R은gamma1선택이같았고global예상ASR2.2222로scope위반이없었다.
+100R의원래선택gamma1은local ASR9.81132075471698이나global은58.113207547169814였다. 모든global후보가미달해새선택은정확zero였다. 이것을local surrogate 제약충족이라고인증하지않는다.
+실제나머지7업로드를고정한단일round진단counterfactual은CA99.07/ASR16.09793928650565였다. 원래99.11/30.6005보다낮아졌지만ASR10게이트를못넘었다. 개선관측과실패를모두보존한다.
+이새.pt는진단용단일round이며실제새100R경로/삭제쌍으로쓰지않는다. 원래모델·이력·KD는불변이고새학습은없었다. 다음은별도의Algorithm2 recovery조건비교이며,이음성을지우거나자동전체훈련의근거로쓰지않는다. D08/D15반례/IBA검증은미해결이다.

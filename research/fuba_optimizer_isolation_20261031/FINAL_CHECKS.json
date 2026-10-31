@@ -1,0 +1,35 @@
+{
+  "schema": "fuba-optimizer-isolation-final-v1",
+  "state": "passed_for_bounded_experiment",
+  "preregistered_commit": "42dbadb3c1c8a761c4cbb6bfac67181da87b515c",
+  "frozen_scientific_files_unchanged": true,
+  "CPU_contracts_passed": 4,
+  "actual_phase_epochs": 100,
+  "actual_training_batches": 3600,
+  "same_50_epoch_orders": true,
+  "remote_CPU_model_verification_passed": true,
+  "local_4_model_files_hash_verified": true,
+  "local_model_bytes": 254989458,
+  "owned_task_completed_exit0_and_removed": true,
+  "owned_training_processes_remaining": 0,
+  "other_GPU_apps_unchanged": true,
+  "new_full_FL_or_FU_launched": false,
+  "paper_performance_reproduced": false,
+  "hypothesis_supported": false,
+  "detection_validated": false,
+  "all_prior_non_R02_cards_preserved": true,
+  "model_catalogue_or_defaults_modified": false,
+  "index_checks": {
+    "main": {
+      "cards": 28,
+      "sources": 320,
+      "folders": 103
+    },
+    "PR_worktree": {
+      "cards": 28,
+      "sources": 247,
+      "folders": 100
+    }
+  },
+  "publication": "Text outputs are LF; .pt, PDF and private sample IDs are excluded. Original scientific files retain FREEZE hashes."
+}

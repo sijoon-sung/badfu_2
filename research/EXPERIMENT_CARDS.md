@@ -37,13 +37,13 @@
 
 **가설 한 줄: 생성기 상태와 평가 경로를 바로잡으면 FUBA의 삭제 전 억제·삭제 후 활성화가 재현된다.**
 
-**판정: v6 실제100R·KD10·전체 CPU 검증 완료·독립평가 자원 대기**
+**판정: FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R02-fuba-reproduction/README.md)
 
 - **조건:** stcebra/FUBA 수정 후보와 과거 보존 모델; ity207/FedUBA와 다른 연구.
 - **정상 대조·비교:** 같은 생성기를 정상 모델에도 적용한 교차 진단; 정상 삭제 대조의 완료 여부 별도 확인.
-- **결과:** 승인된 잠복 활성화 전후쌍은 없다. 기존 정상 모델로의 높은 생성기 전이 기록을 보존한다. v2 시드20261023은100R 저장·연결·집계 오차0·186개 작업자 생성기 그룹 검증 및 로컬 복사를 완료했으나, 전체10000장 정확도71.87%/타깃 제외9000장 ASR99.0889%로 사전 억제10% 기준을 실패했다. 진단 전용 삭제 전 모델이며 후속 대조·삭제는 실행하지 않았다. 저장·회귀검사 통과를 공격 재현 성공으로 세지 않는다. 2026-10-24 원문·실행 감사에서 재가중 방향·억제2단계 입력·단계 순서·가상 집계/γ 실패 처리·학습 조건 불일치를 확인했고 별도 수정 후보의 CPU 회귀15개가 통과했다. 고정 저장 모델 추론에서 로컬 억제와 전체 집계 실패를 구분했다. IBA 결합/프로필 질문과 실자료 재현은 미검증이며 새 학습은 시작하지 않았다. 2026-10-24 사용자 재실행 지시에 따라 공식 소스를 재확보·대조하고 별도 v3 프로필의 DISLAB100R을 시작했다. 추가CPU9개와 실제GPU/MPI20제출·집계오차0·CPU출력 검사를 통과했다. 검사 fixture의 ASR은 억제 증거가 아니며 본 학습 결과는 미완료다. IBA 결합/BN 정책은 명시한 구현 선택으로 고정했고 과거 실패는 보존한다. 2026-10-24 v3는15R 저장 후16R 참여자1의 γ0 로컬 ASR12.9464%(29/224) 실패로 등록 규칙에 따라 중단했다. 15R 전체10000/9000장 독립 재평가는 CA76.10%/ASR8.1333%로 기록과 일치했다. 전체15R 해시·연결·집계 오차0·120개 역할·13개 G그룹을 검증하고, 마지막15R·실패16R·소스·평가 사본을 로컬에 봉인 전달했다.100R 미완료·CA80% 미달이며 잠복 전후쌍/재현 성공이 아니다. 자동 재시작·정상/삭제 분기는 실행하지 않았다. 2026-10-24 사용자 재지시에 따라 별도 v4 제어흐름 프로필로 DISLAB16–100R 연속 실행을 시작했다. 본문Algorithm1 lines9–12의 γ0 반환과 달리v3에 추가했던 whole-MPI 종료를 고쳤고, γ0의 BN 변경도 막았다. 로컬 실패12.9464%는 같은 저장G/모델로 독립 재현하고 미달 상태 그대로 기록했다. 원래 완료된16R client1 학습 단계는 원본 기록과 함께 재사용하고 나머지 실제 학습을 수행한다. 수치·시드·최종100R/CA80/ASR10 기준은 유지하며 중간ASR 경보를 성공으로 표시하지 않는다. 원본 실패/사본은 보존한다. 본 실행 결과는 아직 미완료다. 새16R은15→16 연결·집계 오차0·γ0 실제 제출·같은G·CPU출력 검증을 통과했고 전체시험 평가 기록은CA76.86%/ASR9.3778%다. 최종100R 결과 또는 독립 재평가는 아니다. v4의17–19R 전체시험ASR12.0444/11.5444/12.8333%로 최초 연속 경보가 발생했다. 19R 모델/로그를 별도 보존하고3R의 파일·연결·정확집계0·24역할·4개G그룹 및 고정320/288장 CPU 추론을 검증했다. 17R은 로컬 예상9.5455% 통과 후 실제 전체집계12.0444%였고,3R 모두 억제 참여자가 미선택됐다. 19R 두γ0 제출의 항등성도 통과했다. 예상/실제 집계 간 실패 경로이며 개별 원인의 인과 분리는 미완료다. 원본 v4 학습/최종 기준은 유지하고 새로운 학습·자동 재시작은 하지 않았다. 최종100R은 미완료다. v4는23R 저장 후24R client3의선언gamma상한10에서중단했다. 전체23R/184역할/28G그룹/정확집계0이통과했고 독립10000/9000평가CA77.12%/ASR13.9444%를재현했다. 원본cap분기가중간모델/점수를저장하지못한결함을확인하고별도저장보강CPU검사를통과했다. 사용자승인단일참여자진단은원본G그대로/4단계50epoch였으나gamma2.0통과/2.1실패로원본cap10을재현하지못했다. 마지막23R·원본실패·단계모델·진단을별도봉인하여로컬전달했다.100R은미완료이며원본FL재개/상한확대/다른참여자실행은하지않았다. 2026-10-24 최신100R완료재지시에따라별도v5를사전등록했다.23R동일해시복원후24–100R을계산하며cap10은유지하고최대값미확정의마지막검사통과값을제출해전체FL을계속한다.원본실패/진단은보존하고진단모델을재사용하지않는다.모든학습조건과최종100R/CA80/ASR10은유지하며실행결과는미완료다. v5실제MPI/GPU학습시작과23R복원/집계0/엄격CPU검사를확인했고자동확인fuba-v5-100이최종100R검증·로컬전달까지이어간다.진행중이며최종성공은미확정이다. v5첫24R저장과23→24연결/8역할/집계오차0/같은G/단계RNG6개/소스해시가통과했고25R학습을이어간다.24R기록CA75.48/ASR13.3444는중간미달로보존하며최종100R독립평가성공으로세지않는다. v5의31R효용은gamma10제출후CA10.19/ASR0으로급락했다.원본연결/8역할/집계오차0/실제상한제출동일성이통과했고모델·점수·소스를별도보존했다.ASR0을억제성공으로보지않으며개별인과기여분리는미완료다.원조건을바꾸지않고100R계속실행중이다. 2026-10-25 v5최종100R완료와전체파일/연결/800역할/186G그룹/집계오차0/948단계RNG를검증했다. 독립10000/9000평가CA78.58%/pre-ASR28.6889%가기록과정확히일치해CA80/ASR10게이트는실패했다.32–100R공격자111회는모두로컬gamma0미달/zero제출이었다.완료모델·소스·평가·cap/RNG/31R효용실패·감독복구근거를양쪽봉인전달하고해시/CPU로드/출력을확인했다.단일삭제전진단모델이며잠복전후쌍은없고추가학습/정상/FU를자동시작하지않았다. 2026-10-25 사용자 삭제후 직접 실행 재지시:100R 전달만으로 전체목표를종료한범위를정정하고,원본v5를보존한별도KD-based FU10회로참여자4의실제이력기여제거/무라벨KD/전후pt·로그·고정G평가를사전등록했다.공개코드배열위치/20대신실제ID/weights를연결하고supplementary의10회/clean무라벨KD를따르는정정을명시했다.사전ASR실패를이유로FU실행을생략하지않으며성능성공은미확정이다. 2026-10-25 KD-based FU 실제10회/400batch를완료하고삭제후.pt·전체로그·전후쌍을양쪽보존했다.전CA78.58/ASR28.68888888888889,후CA78.95/ASR28.42222222222222이며동일G전체독립평가가일치했다.실제전후쌍은존재하지만사전억제실패로잠복재현성공은아니다.원문/공개코드정정을기록했고원본v5봉인본은불변이다. 2026-10-25 최신 DISLAB 정상코드 직접 재지시:공개commit/10파일과실제함수를DISLAB에서재검사했다.기존v5가이미고친공개코드결함과새수식SGD/Adam차이를구분하며m4정정은확정하지않았다.저장100R의추가BN보정은로컬gamma0미달을바꾸지않았다.별도v6프로필에서명시된2개업데이트만literalSGD/다른단계Adam및학습BN정책을사전선언하고fresh100R→실제KD10→전후pt/전체로그/독립검증을일회성으로시작했다.로컬·DISLABCPU계약9개와실제학습PID/GPU진행을확인했고실행코드26파일/동일해시/최초CPU출력을로컬전달했다.최종100R/KD10/성능재현은아직미완료이며저자공인유일해석으로부르지않는다.모든원본실패는보존한다. v6첫1R실저장검사:초기모델연결/실제8역할·각50epoch2000배치/400epoch로그/정확집계0의CPU검사가통과했고이후라운드를계속한다.최종100R·KD10성능재현은아직미완료다. v6첫6R방어자계약검사:실제6R의유일한악성역할client4에서4단계각50epoch/1800batch,optimizer Adam·Adam·SGD·SGD,실제G5epoch와동일G보존,unscaled기준최종제출식및집계오차0을CPU검사했다.6R에는Adv-attacker가선택되지않아gamma계약을검사했다고하지않는다.7R학습은계속하며최종재현은미완료다. v6첫7R공격자계약검사:client0의4단계각50epoch/1800batch,Adam·Adam·SGD·Adam,동일G/실제제출/집계0이CPU검사통과했다.최초gamma0로컬ASR10.909090909090908미달로정확한zero제출을확인했으며양수gamma선택통과나점수독립재계산이라고하지않는다.실제7R전체CA70.69/ASR4.222222222222222는중간기록이며최종성공이아니다.8R이후원조건학습을계속한다. 2026-10-26 즉시개입 감사:63R의504역할/전체epoch로그/고정소스23해시를대조했고,실제제출·집계/G·optimizer/RNG 텐서검사를확대했다.28R까지통과후감사stdout OSError22는학습오류와분리보존하고영속로그의별도CPU관측작업으로바로복구했다.9R선택gamma2.3은18/220동일하지만탈락2.4에서CPU24/220대GPU23/220의1장불일치를발견하여원본보존·수치진단중이며전체독립점수통과라고하지않는다.52R cap점수두개는같았다.원래trainer가실제100R+KD10/400batch를완료했고전CA77.8/ASR12.811111111111112,후CA78.03/ASR14.544444444444444로최종성능게이트는미달이다.별도CPU검사로client4의실제41기여가중합·차감·KD10/400고유배치/25000예시·최종상태일치를확인했다.전체100R검증·동일GPU독립평가·로컬전후모델전달은계속한다.다른GPU앱점유로유휴guard가막은것을관측했으며다른앱종료/유휴기준우회/학습재시작은하지않았다. v6보강CPU100R감사완료:100R/800역할/186악성G그룹/1235모델산출파일의해시·연결·optimizer/RNG·제출식·집계0과전체epoch로그/23소스검사를통과했다.관측프로세스는정상종료했다.공격자146회에서zero미달91/첫실패경계36/cap19,양수제출55다.모든gamma독립추론이나원래FINAL_VERIFIED/전체GPU독립평가/로컬전후모델전달완료는아니다.1장CPU/GPU점수차이는보존하며최종검증·전달을계속한다. v6실제전후모델로컬중간보존:PENDING_FINAL_MODELS에실제before/after/fixedG와전체epoch/KD로그등13파일의동일해시·CPU엄격로드/출력을확인했다.수집기소스경로오류는보존·정정했고학습/원격모델은불변이다.최종검토패킷·독립평가·전체KD모델전달·카탈로그guard는미완료이며자동확인을유지한다. v6원래전체CPU검증도100R/800역할/186G/744단계/집계0/KD10·400고유배치/2304파일을통과했다.이후GPU812MiB유휴guard로독립평가가CUDA추론전에실패했고원래감독·평가PID종료/중복평가부재를확인했다.원래실패·로그·소스11파일을양쪽동일해시로보존하고GPU자원결정을요청했다.실제GPU유휴후평가·export만복구하며학습재실행이나기준우회는하지않는다.전체독립평가·최종검토패킷·카탈로그는미완료다.
+- **결과:** 승인된 잠복 활성화 전후쌍은 없다. 기존 정상 모델로의 높은 생성기 전이 기록을 보존한다. v2 시드20261023은100R 저장·연결·집계 오차0·186개 작업자 생성기 그룹 검증 및 로컬 복사를 완료했으나, 전체10000장 정확도71.87%/타깃 제외9000장 ASR99.0889%로 사전 억제10% 기준을 실패했다. 진단 전용 삭제 전 모델이며 후속 대조·삭제는 실행하지 않았다. 저장·회귀검사 통과를 공격 재현 성공으로 세지 않는다. 2026-10-24 원문·실행 감사에서 재가중 방향·억제2단계 입력·단계 순서·가상 집계/γ 실패 처리·학습 조건 불일치를 확인했고 별도 수정 후보의 CPU 회귀15개가 통과했다. 고정 저장 모델 추론에서 로컬 억제와 전체 집계 실패를 구분했다. IBA 결합/프로필 질문과 실자료 재현은 미검증이며 새 학습은 시작하지 않았다. 2026-10-24 사용자 재실행 지시에 따라 공식 소스를 재확보·대조하고 별도 v3 프로필의 DISLAB100R을 시작했다. 추가CPU9개와 실제GPU/MPI20제출·집계오차0·CPU출력 검사를 통과했다. 검사 fixture의 ASR은 억제 증거가 아니며 본 학습 결과는 미완료다. IBA 결합/BN 정책은 명시한 구현 선택으로 고정했고 과거 실패는 보존한다. 2026-10-24 v3는15R 저장 후16R 참여자1의 γ0 로컬 ASR12.9464%(29/224) 실패로 등록 규칙에 따라 중단했다. 15R 전체10000/9000장 독립 재평가는 CA76.10%/ASR8.1333%로 기록과 일치했다. 전체15R 해시·연결·집계 오차0·120개 역할·13개 G그룹을 검증하고, 마지막15R·실패16R·소스·평가 사본을 로컬에 봉인 전달했다.100R 미완료·CA80% 미달이며 잠복 전후쌍/재현 성공이 아니다. 자동 재시작·정상/삭제 분기는 실행하지 않았다. 2026-10-24 사용자 재지시에 따라 별도 v4 제어흐름 프로필로 DISLAB16–100R 연속 실행을 시작했다. 본문Algorithm1 lines9–12의 γ0 반환과 달리v3에 추가했던 whole-MPI 종료를 고쳤고, γ0의 BN 변경도 막았다. 로컬 실패12.9464%는 같은 저장G/모델로 독립 재현하고 미달 상태 그대로 기록했다. 원래 완료된16R client1 학습 단계는 원본 기록과 함께 재사용하고 나머지 실제 학습을 수행한다. 수치·시드·최종100R/CA80/ASR10 기준은 유지하며 중간ASR 경보를 성공으로 표시하지 않는다. 원본 실패/사본은 보존한다. 본 실행 결과는 아직 미완료다. 새16R은15→16 연결·집계 오차0·γ0 실제 제출·같은G·CPU출력 검증을 통과했고 전체시험 평가 기록은CA76.86%/ASR9.3778%다. 최종100R 결과 또는 독립 재평가는 아니다. v4의17–19R 전체시험ASR12.0444/11.5444/12.8333%로 최초 연속 경보가 발생했다. 19R 모델/로그를 별도 보존하고3R의 파일·연결·정확집계0·24역할·4개G그룹 및 고정320/288장 CPU 추론을 검증했다. 17R은 로컬 예상9.5455% 통과 후 실제 전체집계12.0444%였고,3R 모두 억제 참여자가 미선택됐다. 19R 두γ0 제출의 항등성도 통과했다. 예상/실제 집계 간 실패 경로이며 개별 원인의 인과 분리는 미완료다. 원본 v4 학습/최종 기준은 유지하고 새로운 학습·자동 재시작은 하지 않았다. 최종100R은 미완료다. v4는23R 저장 후24R client3의선언gamma상한10에서중단했다. 전체23R/184역할/28G그룹/정확집계0이통과했고 독립10000/9000평가CA77.12%/ASR13.9444%를재현했다. 원본cap분기가중간모델/점수를저장하지못한결함을확인하고별도저장보강CPU검사를통과했다. 사용자승인단일참여자진단은원본G그대로/4단계50epoch였으나gamma2.0통과/2.1실패로원본cap10을재현하지못했다. 마지막23R·원본실패·단계모델·진단을별도봉인하여로컬전달했다.100R은미완료이며원본FL재개/상한확대/다른참여자실행은하지않았다. 2026-10-24 최신100R완료재지시에따라별도v5를사전등록했다.23R동일해시복원후24–100R을계산하며cap10은유지하고최대값미확정의마지막검사통과값을제출해전체FL을계속한다.원본실패/진단은보존하고진단모델을재사용하지않는다.모든학습조건과최종100R/CA80/ASR10은유지하며실행결과는미완료다. v5실제MPI/GPU학습시작과23R복원/집계0/엄격CPU검사를확인했고자동확인fuba-v5-100이최종100R검증·로컬전달까지이어간다.진행중이며최종성공은미확정이다. v5첫24R저장과23→24연결/8역할/집계오차0/같은G/단계RNG6개/소스해시가통과했고25R학습을이어간다.24R기록CA75.48/ASR13.3444는중간미달로보존하며최종100R독립평가성공으로세지않는다. v5의31R효용은gamma10제출후CA10.19/ASR0으로급락했다.원본연결/8역할/집계오차0/실제상한제출동일성이통과했고모델·점수·소스를별도보존했다.ASR0을억제성공으로보지않으며개별인과기여분리는미완료다.원조건을바꾸지않고100R계속실행중이다. 2026-10-25 v5최종100R완료와전체파일/연결/800역할/186G그룹/집계오차0/948단계RNG를검증했다. 독립10000/9000평가CA78.58%/pre-ASR28.6889%가기록과정확히일치해CA80/ASR10게이트는실패했다.32–100R공격자111회는모두로컬gamma0미달/zero제출이었다.완료모델·소스·평가·cap/RNG/31R효용실패·감독복구근거를양쪽봉인전달하고해시/CPU로드/출력을확인했다.단일삭제전진단모델이며잠복전후쌍은없고추가학습/정상/FU를자동시작하지않았다. 2026-10-25 사용자 삭제후 직접 실행 재지시:100R 전달만으로 전체목표를종료한범위를정정하고,원본v5를보존한별도KD-based FU10회로참여자4의실제이력기여제거/무라벨KD/전후pt·로그·고정G평가를사전등록했다.공개코드배열위치/20대신실제ID/weights를연결하고supplementary의10회/clean무라벨KD를따르는정정을명시했다.사전ASR실패를이유로FU실행을생략하지않으며성능성공은미확정이다. 2026-10-25 KD-based FU 실제10회/400batch를완료하고삭제후.pt·전체로그·전후쌍을양쪽보존했다.전CA78.58/ASR28.68888888888889,후CA78.95/ASR28.42222222222222이며동일G전체독립평가가일치했다.실제전후쌍은존재하지만사전억제실패로잠복재현성공은아니다.원문/공개코드정정을기록했고원본v5봉인본은불변이다. 2026-10-25 최신 DISLAB 정상코드 직접 재지시:공개commit/10파일과실제함수를DISLAB에서재검사했다.기존v5가이미고친공개코드결함과새수식SGD/Adam차이를구분하며m4정정은확정하지않았다.저장100R의추가BN보정은로컬gamma0미달을바꾸지않았다.별도v6프로필에서명시된2개업데이트만literalSGD/다른단계Adam및학습BN정책을사전선언하고fresh100R→실제KD10→전후pt/전체로그/독립검증을일회성으로시작했다.로컬·DISLABCPU계약9개와실제학습PID/GPU진행을확인했고실행코드26파일/동일해시/최초CPU출력을로컬전달했다.최종100R/KD10/성능재현은아직미완료이며저자공인유일해석으로부르지않는다.모든원본실패는보존한다. v6첫1R실저장검사:초기모델연결/실제8역할·각50epoch2000배치/400epoch로그/정확집계0의CPU검사가통과했고이후라운드를계속한다.최종100R·KD10성능재현은아직미완료다. v6첫6R방어자계약검사:실제6R의유일한악성역할client4에서4단계각50epoch/1800batch,optimizer Adam·Adam·SGD·SGD,실제G5epoch와동일G보존,unscaled기준최종제출식및집계오차0을CPU검사했다.6R에는Adv-attacker가선택되지않아gamma계약을검사했다고하지않는다.7R학습은계속하며최종재현은미완료다. v6첫7R공격자계약검사:client0의4단계각50epoch/1800batch,Adam·Adam·SGD·Adam,동일G/실제제출/집계0이CPU검사통과했다.최초gamma0로컬ASR10.909090909090908미달로정확한zero제출을확인했으며양수gamma선택통과나점수독립재계산이라고하지않는다.실제7R전체CA70.69/ASR4.222222222222222는중간기록이며최종성공이아니다.8R이후원조건학습을계속한다. 2026-10-26 즉시개입 감사:63R의504역할/전체epoch로그/고정소스23해시를대조했고,실제제출·집계/G·optimizer/RNG 텐서검사를확대했다.28R까지통과후감사stdout OSError22는학습오류와분리보존하고영속로그의별도CPU관측작업으로바로복구했다.9R선택gamma2.3은18/220동일하지만탈락2.4에서CPU24/220대GPU23/220의1장불일치를발견하여원본보존·수치진단중이며전체독립점수통과라고하지않는다.52R cap점수두개는같았다.원래trainer가실제100R+KD10/400batch를완료했고전CA77.8/ASR12.811111111111112,후CA78.03/ASR14.544444444444444로최종성능게이트는미달이다.별도CPU검사로client4의실제41기여가중합·차감·KD10/400고유배치/25000예시·최종상태일치를확인했다.전체100R검증·동일GPU독립평가·로컬전후모델전달은계속한다.다른GPU앱점유로유휴guard가막은것을관측했으며다른앱종료/유휴기준우회/학습재시작은하지않았다. v6보강CPU100R감사완료:100R/800역할/186악성G그룹/1235모델산출파일의해시·연결·optimizer/RNG·제출식·집계0과전체epoch로그/23소스검사를통과했다.관측프로세스는정상종료했다.공격자146회에서zero미달91/첫실패경계36/cap19,양수제출55다.모든gamma독립추론이나원래FINAL_VERIFIED/전체GPU독립평가/로컬전후모델전달완료는아니다.1장CPU/GPU점수차이는보존하며최종검증·전달을계속한다. v6실제전후모델로컬중간보존:PENDING_FINAL_MODELS에실제before/after/fixedG와전체epoch/KD로그등13파일의동일해시·CPU엄격로드/출력을확인했다.수집기소스경로오류는보존·정정했고학습/원격모델은불변이다.최종검토패킷·독립평가·전체KD모델전달·카탈로그guard는미완료이며자동확인을유지한다. v6원래전체CPU검증도100R/800역할/186G/744단계/집계0/KD10·400고유배치/2304파일을통과했다.이후GPU812MiB유휴guard로독립평가가CUDA추론전에실패했고원래감독·평가PID종료/중복평가부재를확인했다.원래실패·로그·소스11파일을양쪽동일해시로보존하고GPU자원결정을요청했다.실제GPU유휴후평가·export만복구하며학습재실행이나기준우회는하지않는다.전체독립평가·최종검토패킷·카탈로그는미완료다. 2026-10-31 사용자는 기존 stcebra/FUBA를 우선하고 논문 Algorithm1/2 일치를 최종 기준으로 재확정했다. 이전 원코드 기반 실행·수정 이력이 없었다는 설명을 정정했다. 별도 고정100R/client1·학습된 previousG99/같은 incoming·앵커·RNG/50개 epoch 데이터순서에서 embedding SGD 대 Adam만 실제50epoch씩 비교했다. 총100epoch/3600batch, 전체10000/9000 평가에서 SGD CA72.97/ASR.6777778, Adam CA72.43/ASR1.7444444로20%p 개선 가설 미지지. 기존 v7 최종전후 지표와 다른 로컬 진단이다. 새A는 원래phase3와 비트 불일치이므로 현재runtime A/B로 한정한다. 새4모델 파일/optimizer/RNG/전체로그 CPU검증과 로컬 해시 전달을 완료했고 새100R/FU·탐지 실행은 하지 않았다. Algorithm1/2 함수 대응과 gamma/BN/IBA 통합의 미확정 선택을 구분했으며 Adam을 정식 알고리즘으로 채택하지 않았다. 모든 기존 실패·카탈로그·기본값을 보존했다. 2026-10-31 학습반경만 .05로 맞춘 같은50epoch/1800batch 진단은CA56.06/ASR84.7222222/정상타깃쏠림37.5888889로효용/쏠림게이트를실패했다. 모델/optimizer/RNG/로그를검증·전달했고전체IBA일정을자동실행하지않았다. 별도논문내MNIST/DBA기준선은원공개BN없는Net/고정패치로Algorithm1/2 fresh100R후실제KD10을사전등록했다. DISLABCPU8계약·데이터/소스/초기모델해시·실제trainer/controller/GPU와첫정상50epoch/2350batch저장계약을통과했고실제학습중이다. CIFAR/IBA재현성공이나탐지성공으로대체하지않으며최종100R/KD10·성능·전달은미완료다. 첫실제악성역할을포함한별도CPU7R감사는56역할/65phase/3250epoch/150350batch,Adam/SGD·RNG,실제제출수식/8명정확집계/연결과11점gamma선택산술을통과했다. 전체gamma독립재추론/최종100R성공은아니다. 2026-10-31 MNIST/DBA 실제100R/800역할/1358phase·67900epoch·3042500batch와KD10/470을완료했다. 독립10000/9026평가가전CA99.11/ASR30.600487480611566,후CA99.08/ASR32.35098604032794에정확일치해두성능게이트는미달이다. 실제client4기여41개·정확차감,146gamma선택산술/미달zero2,전체CPU감사와69payload strictCPU/finiteforward를통과했다. 선택모델과전체로그984파일을양쪽봉인전달하고모든sha/양쪽catalogueguard를확인했다. 새case fuba.reference.mnist.dba.s20261023.pre100.post.kd10은diagnostic만허용하며기존case/default/audit를보존했다. 전체원시phase는DISLAB에보존한다. 성공재현/탐지증거가아니며전체구현목표는미완료다. 별도stage19상태진단에서차감직후CA98.88/ASR68.3691557722136였고KD10후32.35098604여서등록된KD약화가설이지지됐다. 검증전후정수수는재사용했고새학습/모델편집은없다. 삭제전30.6005실패와실제KD10후실패는남고성공한잠복쌍은아니다. local패치validation/global합집합의행동차이를관측했지만감마수정의전체FL성공은미검증이다. 고정두역할의22global gamma검사에서100R local9.8113/global58.1132의scope위반은확인했다. 단일round zero대체집계는CA99.07/ASR16.09794로사전10기준을못넘어이수정하나의전체실행게이트는실패했다. 개선과음성을보존하고별도마지막억제자99/client4 recovery SGD/Adam100epoch비교를사전등록했다. 다른CIFAR embedding optimizer실패를다시실행하거나Adam동일수식으로부르지않는다. 마지막억제자99/client4 recovery의새SGD50epoch/2150batch는원래phase4 tensorbit재현gate를실패해B를실행하지않고중단했다. optimizer/loader·CPU·CUDA RNG는같고최대수치차이8.94e-08이지만원인은미확정이다. 이실패를보존하며입력bit일치/행동1%p gate를통과할때만미실행B50epoch를처음학습하는별도current-runtime비교를등록했다. A를재학습하거나strictbit실패를통과로고치지않는다. 별도current-runtime후속은입력bit/loader RNG/원phase4대A행동일치를통과하고A를재훈련하지않은채B50epoch/2150batch만최초학습했다. recovered ASR은A98.26058/B98.00576,실제99R대체집계는37.00421/36.58320으로두기준을실패해optimizer만으로전체학습을열지않는다. 실제A/B모델·optimizer/RNG·로그를전달했다. 2026-10-31 recovery의strict-bit 대조는8.94e-08 비트차이로실패를보존했다. 입력/loader RNG/전체평가정수수동일gate를별도통과한현재runtime B-only Adam50epoch/2150batch는SGD회복ASR98.26058 대Adam98.00576으로20%p 개선gate에실패했고실제99R대체집계도37.00421/36.58320으로10에못미쳤다. Adam/global-gamma 선택을채택하지않는다. 논문10random-seed 평균의필요조건을확인하는별도고정10행study를사전등록했다. 완료실패seed20261023을포함하고미리추출한새9개를같은Algorithm-SGD 수치코드/새초기화·IID분할/실제100R/KD10으로DISLAB에서순차계산한다. 성공시중단/실패seed제외/목록확장은금지한다. 현재준비단계이며최종성능은미측정이다. 본문Adam 실험프로필의정확재현이나D08/D15 탐지해결이아니다. 새9개CPU준비는통과했으나첫seed5129832 launch가3epoch 뒤실제PID와예약작업이사라져중단됐다. 완료phase/round는0이고종료원인은미확정이다. 원상태/3epoch/소스·입력을보존한별도운영복구는동일initial/SPLIT/숫자코드를새attempt경로에복사했다. 직접Python action을쓰는명시복구계약이며wrapper원인을확정하지않는다. 직접Python 운영복구후실제세PID/첫50epoch/3개round커밋과4R진행을확인했다. 별도첫1R CPU8역할/400epoch/18800batch·정확집계·optimizer/RNG검사가통과했다. 현재MNIST4개공식MD5/압축해제바이트도통과했다. warmup검사이며최종100R/KD10·악성성능·10행평균은미완료다. 새6R의48역할/54phase/2700epoch/125300batch,실제attacker1/defender1 제출식·정확집계·optimizer/RNG·11점gamma선택산술1개도CPU감사통과했다. 전체gamma독립추론이나최종재현성공은아니다. 첫새seed5129832의실제100R/800역할/1394phase/69700epoch·3117500batch와client4실제47기여차감/KD10/470을완료했다. 독립10000/9026평가전CA99.12/ASR23.000221582096167,후CA99.15/ASR29.016175493020164로두게이트미달이며152gamma선택산술/전체CPU감사와양쪽readonly982파일·로컬74payload strictCPU/세catalogueguard가통과했다. case fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031은diagnostic만허용한다. 기존case/default/audit를보존했다. baseline포함10행중2개완료이며다음seed4059094는GPU진입자원조건을기다린다. source/성능조건은변경하지않고기존parent가순차계속한다. 최신사용자가FedUBA(SSS/BEA)로대상을명시정정하여기존대기queue만중지·비활성화했다. 실제대기상태/own PID48688/task action을확인했고다른앱은종료하지않았다. 두완료실패행과나머지8미시작및모든원본·defaults는보존했으며10행을완료한것은아니다.
 - **non-IID에 대해 남길 교훈:** 부적합한 FUBA 전후쌍에서의 점수 겹침은 유효한 잠복 FUBA에 대한 불가능성 증명이 아니다.
 - **반복하지 않을 주장:** 높은 ASR만으로 공격 양성을 정하거나 과거 README의 진행 중 문장을 현재 GPU 상태로 보고하지 않는다.
 - **재검토 조건:** 같은 실행·고정 생성기·전처리·효용을 연결한 재현 게이트와 정상 대조부터 통과해야 한다.
@@ -200,8 +200,215 @@
 - [research/fuba_algorithm_execution_20261025/FINAL_VERIFIED.json](fuba_algorithm_execution_20261025/FINAL_VERIFIED.json)
 - [research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt](fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt)
 - [research/fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json](fuba_algorithm_execution_20261025/incidents/independent_gpu_idle_1792986211065/PRESERVATION.json)
+- [research/fuba_optimizer_isolation_20261031/PROTOCOL.txt](fuba_optimizer_isolation_20261031/PROTOCOL.txt)
+- [research/fuba_optimizer_isolation_20261031/PROFILE.json](fuba_optimizer_isolation_20261031/PROFILE.json)
+- [research/fuba_optimizer_isolation_20261031/IDENTITY_AND_SCOPE.txt](fuba_optimizer_isolation_20261031/IDENTITY_AND_SCOPE.txt)
+- [research/fuba_optimizer_isolation_20261031/PAPER_ALGORITHM_CONTRACT.txt](fuba_optimizer_isolation_20261031/PAPER_ALGORITHM_CONTRACT.txt)
+- [research/fuba_optimizer_isolation_20261031/REPORT_KO.txt](fuba_optimizer_isolation_20261031/REPORT_KO.txt)
+- [research/fuba_optimizer_isolation_20261031/CPU_CONTRACTS.json](fuba_optimizer_isolation_20261031/CPU_CONTRACTS.json)
+- [research/fuba_optimizer_isolation_20261031/INPUT_CHECKS.json](fuba_optimizer_isolation_20261031/INPUT_CHECKS.json)
+- [research/fuba_optimizer_isolation_20261031/RESULT.json](fuba_optimizer_isolation_20261031/RESULT.json)
+- [research/fuba_optimizer_isolation_20261031/VERIFIED.json](fuba_optimizer_isolation_20261031/VERIFIED.json)
+- [research/fuba_optimizer_isolation_20261031/LAUNCH_CORRECTION.txt](fuba_optimizer_isolation_20261031/LAUNCH_CORRECTION.txt)
+- [research/fuba_radius_alignment_20261031/PROTOCOL.txt](fuba_radius_alignment_20261031/PROTOCOL.txt)
+- [research/fuba_radius_alignment_20261031/PROFILE.json](fuba_radius_alignment_20261031/PROFILE.json)
+- [research/fuba_radius_alignment_20261031/RESULT.json](fuba_radius_alignment_20261031/RESULT.json)
+- [research/fuba_radius_alignment_20261031/VERIFIED.json](fuba_radius_alignment_20261031/VERIFIED.json)
+- [research/fuba_radius_alignment_20261031/DELIVERY.json](fuba_radius_alignment_20261031/DELIVERY.json)
+- [research/fuba_radius_alignment_20261031/REPORT_KO.txt](fuba_radius_alignment_20261031/REPORT_KO.txt)
+- [research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt](fuba_reference_mnist_dba_20261031/PROTOCOL.txt)
+- [research/fuba_reference_mnist_dba_20261031/PROFILE.json](fuba_reference_mnist_dba_20261031/PROFILE.json)
+- [research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt](fuba_reference_mnist_dba_20261031/REPORT_KO.txt)
+- [research/fuba_reference_mnist_dba_20261031/CPU_CONTRACTS.json](fuba_reference_mnist_dba_20261031/CPU_CONTRACTS.json)
+- [research/fuba_reference_mnist_dba_20261031/FIRST_ROLE_VERIFIED.json](fuba_reference_mnist_dba_20261031/FIRST_ROLE_VERIFIED.json)
+- [research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json](fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json)
+- [research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json](fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json)
+- [research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt](fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt)
+- [research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt](fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt)
+- [research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json](fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json)
+- [research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt](fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt)
+- [research/fuba_reference_mnist_dba_20261031/RESULT.json](fuba_reference_mnist_dba_20261031/RESULT.json)
+- [research/fuba_reference_mnist_dba_20261031/VERIFIED.json](fuba_reference_mnist_dba_20261031/VERIFIED.json)
+- [research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json](fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json)
+- [research/fuba_reference_mnist_dba_20261031/REMOTE_REVIEW_RECEIPT.json](fuba_reference_mnist_dba_20261031/REMOTE_REVIEW_RECEIPT.json)
+- [research/fuba_reference_mnist_dba_20261031/LOCAL_DELIVERY.json](fuba_reference_mnist_dba_20261031/LOCAL_DELIVERY.json)
+- [research/fuba_reference_mnist_dba_20261031/CATALOG_ENTRY.json](fuba_reference_mnist_dba_20261031/CATALOG_ENTRY.json)
+- [research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json](fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json)
+- [research/fuba_reference_mnist_dba_20261031/CATALOG_GUARD_LOCAL.json](fuba_reference_mnist_dba_20261031/CATALOG_GUARD_LOCAL.json)
+- [research/fuba_reference_mnist_dba_20261031/FINAL_COMPLETION.json](fuba_reference_mnist_dba_20261031/FINAL_COMPLETION.json)
+- [research/fuba_stage_localization_20261031/PROTOCOL.txt](fuba_stage_localization_20261031/PROTOCOL.txt)
+- [research/fuba_stage_localization_20261031/PROFILE.json](fuba_stage_localization_20261031/PROFILE.json)
+- [research/fuba_stage_localization_20261031/FREEZE.json](fuba_stage_localization_20261031/FREEZE.json)
+- [research/fuba_stage_localization_20261031/RESULT.json](fuba_stage_localization_20261031/RESULT.json)
+- [research/fuba_stage_localization_20261031/REPORT_KO.txt](fuba_stage_localization_20261031/REPORT_KO.txt)
+- [research/fuba_stage_localization_20261031/STARTED.json](fuba_stage_localization_20261031/STARTED.json)
+- [research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt](fuba_dba_gamma_scope_20261031/PROTOCOL.txt)
+- [research/fuba_dba_gamma_scope_20261031/PROFILE.json](fuba_dba_gamma_scope_20261031/PROFILE.json)
+- [research/fuba_dba_gamma_scope_20261031/FREEZE.json](fuba_dba_gamma_scope_20261031/FREEZE.json)
+- [research/fuba_dba_gamma_scope_20261031/RESULT.json](fuba_dba_gamma_scope_20261031/RESULT.json)
+- [research/fuba_dba_gamma_scope_20261031/REPORT_KO.txt](fuba_dba_gamma_scope_20261031/REPORT_KO.txt)
+- [research/fuba_defender_recovery_20261031/PROTOCOL.txt](fuba_defender_recovery_20261031/PROTOCOL.txt)
+- [research/fuba_defender_recovery_20261031/PROFILE.json](fuba_defender_recovery_20261031/PROFILE.json)
+- [research/fuba_defender_recovery_20261031/FREEZE.json](fuba_defender_recovery_20261031/FREEZE.json)
+- [research/fuba_defender_recovery_20261031/CONTROL.json](fuba_defender_recovery_20261031/CONTROL.json)
+- [research/fuba_defender_recovery_20261031/FAILURE.json](fuba_defender_recovery_20261031/FAILURE.json)
+- [research/fuba_defender_recovery_20261031/NUMERICAL_TRIAGE.json](fuba_defender_recovery_20261031/NUMERICAL_TRIAGE.json)
+- [research/fuba_defender_recovery_20261031/REPORT_KO.txt](fuba_defender_recovery_20261031/REPORT_KO.txt)
+- [research/fuba_recovery_current_ab_20261031/PROTOCOL.txt](fuba_recovery_current_ab_20261031/PROTOCOL.txt)
+- [research/fuba_recovery_current_ab_20261031/PROFILE.json](fuba_recovery_current_ab_20261031/PROFILE.json)
+- [research/fuba_recovery_current_ab_20261031/FREEZE.json](fuba_recovery_current_ab_20261031/FREEZE.json)
+- [research/fuba_recovery_current_ab_20261031/RESULT.json](fuba_recovery_current_ab_20261031/RESULT.json)
+- [research/fuba_recovery_current_ab_20261031/CONTROL_PREFLIGHT.json](fuba_recovery_current_ab_20261031/CONTROL_PREFLIGHT.json)
+- [research/fuba_recovery_current_ab_20261031/LOCAL_DELIVERY.json](fuba_recovery_current_ab_20261031/LOCAL_DELIVERY.json)
+- [research/fuba_recovery_current_ab_20261031/REPORT_KO.txt](fuba_recovery_current_ab_20261031/REPORT_KO.txt)
+- [research/fuba_seed_repro_20261031/PROFILE.json](fuba_seed_repro_20261031/PROFILE.json)
+- [research/fuba_seed_repro_20261031/PROTOCOL.txt](fuba_seed_repro_20261031/PROTOCOL.txt)
+- [research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt](fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt)
+- [research/fuba_seed_repro_20261031/STUDY_FREEZE.json](fuba_seed_repro_20261031/STUDY_FREEZE.json)
+- [research/fuba_seed_repro_20261031/PREPARED.json](fuba_seed_repro_20261031/PREPARED.json)
+- [research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json](fuba_seed_repro_20261031/PREPARATION_AUDIT.json)
+- [research/fuba_seed_repro_20261031/STORAGE_CONTRACT.json](fuba_seed_repro_20261031/STORAGE_CONTRACT.json)
+- [research/fuba_seed_repro_20261031/PREPARATION_RECEIPT.json](fuba_seed_repro_20261031/PREPARATION_RECEIPT.json)
+- [research/fuba_seed_repro_20261031/REPORT_KO.txt](fuba_seed_repro_20261031/REPORT_KO.txt)
+- [research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt](fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt)
+- [research/fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json](fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json)
+- [research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json](fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json)
+- [research/fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json](fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json)
+- [research/fuba_seed_repro_20261031/REMOTE_SNAPSHOT_AFTER_RECOVERY.json](fuba_seed_repro_20261031/REMOTE_SNAPSHOT_AFTER_RECOVERY.json)
+- [research/fuba_seed_repro_20261031/LIVE_EXECUTION_VERIFIED.json](fuba_seed_repro_20261031/LIVE_EXECUTION_VERIFIED.json)
+- [research/fuba_seed_repro_20261031/TASK_EXECUTION_VERIFIED.json](fuba_seed_repro_20261031/TASK_EXECUTION_VERIFIED.json)
+- [research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json](fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json)
+- [research/fuba_seed_repro_20261031/DATASET_AUDIT.json](fuba_seed_repro_20261031/DATASET_AUDIT.json)
+- [research/fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json](fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json)
+- [research/fuba_seed_repro_20261031/DELIVERY_PROTOCOL.txt](fuba_seed_repro_20261031/DELIVERY_PROTOCOL.txt)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/RESULT.json](fuba_seed_repro_20261031/deliveries/seed_5129832/RESULT.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/VERIFIED.json](fuba_seed_repro_20261031/deliveries/seed_5129832/VERIFIED.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CPU_AUDIT_through0100.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CPU_AUDIT_through0100.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/LOCAL_DELIVERY.json](fuba_seed_repro_20261031/deliveries/seed_5129832/LOCAL_DELIVERY.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/REMOTE_DELIVERY.json](fuba_seed_repro_20261031/deliveries/seed_5129832/REMOTE_DELIVERY.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_ENTRY.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_ENTRY.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_AUDIT.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_AUDIT.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_main.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_main.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_pr.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_pr.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_dislab.json](fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_dislab.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/DELIVERY_COMPLETE.json](fuba_seed_repro_20261031/deliveries/seed_5129832/DELIVERY_COMPLETE.json)
+- [research/fuba_seed_repro_20261031/deliveries/seed_5129832/REPORT_KO.txt](fuba_seed_repro_20261031/deliveries/seed_5129832/REPORT_KO.txt)
+- [research/00_trajectories/audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json](00_trajectories/audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json)
+- [research/feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json](feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json)
 
-**묶은 폴더:** [asr_root_cause_20261022](asr_root_cause_20261022) · [fuba_corrected_20261022](fuba_corrected_20261022) · [continuation_20261023](continuation_20261023) · [multiseed_actual_fu_20261022](multiseed_actual_fu_20261022) · [FU_gpu20261020](FU_gpu20261020) · [MOVE_TO_DISLAB_20261021](MOVE_TO_DISLAB_20261021) · [stage1_fresh_20261020](stage1_fresh_20261020) · [fuba_checkpoint_recovery_20261023](fuba_checkpoint_recovery_20261023) · [FUBA_v2_s20261023_round0063](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_round0063) · [FUBA_v2_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_pre_round100) · [fuba_suppression_audit_20261024](fuba_suppression_audit_20261024) · [fuba_paper_rebuild_20261024](fuba_paper_rebuild_20261024) · [FUBA_v3_s20261023_pre_round0015_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v3_s20261023_pre_round0015_stopped_verified) · [fuba_paper_flow_20261024](fuba_paper_flow_20261024) · [FUBA_v4_s20261023_pre_round0023_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v4_s20261023_pre_round0023_stopped_verified) · [fuba_paper_completion_20261024](fuba_paper_completion_20261024) · [FUBA_v5_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre_round100) · [fuba_post_unlearning_20261025](fuba_post_unlearning_20261025) · [FUBA_v5_s20261023_pre100_post_KD10](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre100_post_KD10) · [fuba_execution_audit_20261025](fuba_execution_audit_20261025) · [fuba_algorithm_execution_20261025](fuba_algorithm_execution_20261025)
+**묶은 폴더:** [asr_root_cause_20261022](asr_root_cause_20261022) · [fuba_corrected_20261022](fuba_corrected_20261022) · [continuation_20261023](continuation_20261023) · [multiseed_actual_fu_20261022](multiseed_actual_fu_20261022) · [FU_gpu20261020](FU_gpu20261020) · [MOVE_TO_DISLAB_20261021](MOVE_TO_DISLAB_20261021) · [stage1_fresh_20261020](stage1_fresh_20261020) · [fuba_checkpoint_recovery_20261023](fuba_checkpoint_recovery_20261023) · [FUBA_v2_s20261023_round0063](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_round0063) · [FUBA_v2_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_pre_round100) · [fuba_suppression_audit_20261024](fuba_suppression_audit_20261024) · [fuba_paper_rebuild_20261024](fuba_paper_rebuild_20261024) · [FUBA_v3_s20261023_pre_round0015_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v3_s20261023_pre_round0015_stopped_verified) · [fuba_paper_flow_20261024](fuba_paper_flow_20261024) · [FUBA_v4_s20261023_pre_round0023_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v4_s20261023_pre_round0023_stopped_verified) · [fuba_paper_completion_20261024](fuba_paper_completion_20261024) · [FUBA_v5_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre_round100) · [fuba_post_unlearning_20261025](fuba_post_unlearning_20261025) · [FUBA_v5_s20261023_pre100_post_KD10](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre100_post_KD10) · [fuba_execution_audit_20261025](fuba_execution_audit_20261025) · [fuba_algorithm_execution_20261025](fuba_algorithm_execution_20261025) · [fuba_optimizer_isolation_20261031](fuba_optimizer_isolation_20261031) · [fuba_radius_alignment_20261031](fuba_radius_alignment_20261031) · [fuba_reference_mnist_dba_20261031](fuba_reference_mnist_dba_20261031) · [fuba_stage_localization_20261031](fuba_stage_localization_20261031) · [fuba_dba_gamma_scope_20261031](fuba_dba_gamma_scope_20261031) · [fuba_defender_recovery_20261031](fuba_defender_recovery_20261031) · [fuba_recovery_current_ab_20261031](fuba_recovery_current_ab_20261031) · [fuba_seed_repro_20261031](fuba_seed_repro_20261031)
+
+<a id="r03"></a>
+
+## R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사
+
+**가설 한 줄: 공식 FedUBA 배포본이 논문의 실행 절차와 표본 정체를 보존하여 탐지 검증에 쓸 실제 공격 전후쌍을 제공한다.**
+
+**판정: 정상FL20·독립CA87.95·양쪽48파일 전달/세catalogue 통과 / STG 실학습 중 / 공격 미완료**
+
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R03-feduba-reproduction/README.md)
+
+- **조건:** ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b와 저자 PDF/ZIP; DISLAB CPU 원본 import 및 AST 함수 실행. stcebra/FUBA 모델과 구별.
+- **정상 대조·비교:** 같은 합성32샘플의 shuffled batch1 대 sequential batch1; 고정 Arguments의 FL/FU 소유권 대 보조자료 helper 소유권; 저자 ZIP 대 Git blob.
+- **결과:** 저자 ZIP9파일 모두 고정 Git blob과 동일. 두 원본 import는 utils/models 부재로 종료1. 민감도 순회 위치를 데이터 ID로 재사용하는 경로의 합성 순위 일치0/32 대 순차 대조32/32; 실제 FL/FU 공격자5/7 대 보조자료2/3 불일치 확인. 실제 공격 FL/FU·CA/ASR·탐지율은 생성하지 않았다. 논문-코드 조건과 평가 정의 차이를 기록하고 G0/G1에서 전체 학습 진입을 중단했다. 이것은 실제 공격 성공률이나 논문 공격 불가능성의 증명이 아니다. 최신사용자가SSS/BEA의FedUBA구현을명시하여기존FUBA우선지시를대체했다. 기존FUBA대기parent48688과정확예약작업만상태/정체검사후중지·비활성화했고두완료실패/8미시작과모든모델/default를보존했다. 새별도원문식5~8·stable ID/소유권·정확budget·x-delta요청/x+delta평가·실제FedEraser수식 core와새DISLAB CPU계약을준비했다. 누락모델은동일ResNet18/201기호의Narcissus고정코드를명시회복후보로선정했으며저자누락파일과동일하다고인증하지않았다. 실제FL/FU성능은아직미측정이다. 새명시core의DISLAB CPU6계약이실제통과했다(CORE_CPU_RESULT). 원64표본ID/analytic score·정확소유예산·BEA부호/라벨·원AST FU·복구모델10/201 CPU·투영trigger1step이며실공격성능은아니다. 새고정20RcleanFLfoundation의fixture/실제200역할/독립검증계약을게시했다. 게시commit a9acbec 뒤GPUfixture실제통과(peak1010/984MiB)·공식CIFAR MD5/새initial·분할준비후 parent35368/controller9492/trainer54660으로freshcleanFL20을1회시작했고첫두역할전체10epoch를확인했다. 실제20R완료·최종CA·FedUBA ASR은아직없다. 외부자료CPU준비첫task는다운로드/OUT생성전CUDA가능여부assert에서중단됐다. 원task/source/freeze/trace를incident에보존하고GPU가보이는지와CPU수행을분리하는fresh-child진단·명시CPU2운영복구계약을게시했다. cleanFL은중단/재학습하지않았다. 빈CUDA값에서availableTrue/device_count0/미초기화/CPU tensor를진단하고-1로명시CPU2복구했다. 원실패보존. CPU2에서Tiny100000/200x500·CRC 및고정Git CIFAR10.1v6 2000/target200 준비·victimtrain/test exact중복각0을실측완료했다. 새literalSGD평균gradient/투영·고정theta/BN·입력clip·외부dataset의DISLAB CPU4계약도통과했다. STG_PROFILE은미실행/launchfalse이며fullSTG·SSS·공격/정상FU는아직남는다. 별도동일수치STG_LAUNCH_PROFILE/전체runner·audit·sourcefreeze를5df1852에선게시후새STG controller34020을1회시작했다. fresh외부surrogate CPU준비STG_READY는실제통과했으며cleanFL20 독립검증/효용·원foundation종료/자원guard대기다. 실제STG GPU학습이나78410batch완료를주장하지않는다. 구준비profile은불변이다. 새FU_PROFILE/paired-data·owner5/7·동적batch·variableparticipants/first-round effective-history 정책을게시후DISLAB 새CPU4계약통과했다. 기존core/원AST반복이나실SSS/FU실행이아니다. FU launchfalse·actual20R case등록/선택과STG완료/감사는아직필요하다. 새SSS logger 합성61 CPUv1은decimal poly의analytic식 atol1e-7 검사에서실패했고원source/freeze/trace발췌를보존했다. 실victim/SSS/FU실행은없다. 사후허용치확대대신별도primitive roundoff진단·binary-exact 분모128/정확동일CPU2계약을준비했다. 원logger/core/실실험허용치는불변이다. SSS fulllogger/runner/독립audit 코드추가·실SSS미실행. v1소수합성fixture상쇄오차1.043e-7을별도primitive진단으로확인하고원실패보존. logger/core/실실험허용치는불변인채분모128 binary-exact CPU2의정확torch.equal/새4계약이실제통과했다. 실SSS launchprofile/freeze는아직없고source-only freeze로검토가능하게했다. fullFU공유engine/branchrunner와독립CPUaudit 코드를준비했다. 새합성CPU integration에서benign14/attack16 각5epoch·실10batch/150exposure·원ID/optimizer/RNG/sampler/직렬화가실제통과했다. FU_SOURCE_FREEZE는code-only이고실FU launchprofile/freeze는없다. 실모델/FU/성능재현은미실행이다. 정상FL 실제20R/200roles/2000epoch/40000batch 학습이완료됐으며trainer10000장CA8795/10000=87.95를기록했다. 독립원검증은원controller가아직실행중이므로최종검증통과·STG시작으로미리해석하지않는다. 새readonly normal packet export계약을준비했다. 원독립검증도20R/200role/2000epoch/40000batch·모든집계/optimizer/RNG/원ID와10000장8795정답CA87.95를통과했다. 원foundation은종료했고기존STG parent34020이새trainer49888을한번자동시작했다. 정상검토packet48파일/3payload remoteCPU봉인export가완료됐고local전달/등록은아직이다. 전체STG/공격재현성공은아니다. 정상review양쪽48파일·3payload strictCPU/hash/readonly전달과main23→24/PR20→21/DISLAB21→22 diagnostic case등록·guard/부적격purpose거절이완료됐다. 기존모든case/default/audit를보존했다. full200role는원DISLAB경로보존이며로컬history승인은없다. 원receipt false는역사/최신CLEAN_DELIVERY_COMPLETE가완료근거다. 실제STG trainer49888의surrogate5epoch/3910batch이상을확인했고원normal작업은종료했다. 세모델전체평가/독립전체재추론과순차controller코드를준비하고TF32off/argmax정확일치등을사전선언했다. code-only freeze이며실SSS/FU/평가launch는아직없다. 새23합성평가CPU계약만1회예정이고기존완료검사는반복하지않는다. 새23합성평가CPU계약3개가PR e7cb150 선게시뒤DISLAB에서1회통과했다. 실모델/SSS/FU/평가는미실행이며원계약/실패는불변이다. 미실행독립평가gate를직접정수교차곱으로정적검토한source-only revision2와순차controller가준비됐고실launchprofile은없다. 실SSS query전수치환경을TF32off/matmulhighest/deterministic·실제getter/정책SHA로명시한source-only revision2를준비했다. 기존SSS 수식/선택/허용치·모든완료CPUfreeze와활성STG는불변이며실SSS launch는아직없다. PR5e9a6c5게시뒤원격SSS source-v1을보존하고신source-only/활성STG/완료CPUfreeze해시일치를확인했다. source검토만했으며fixture나실query는반복하지않았다.
+- **non-IID에 대해 남길 교훈:** 적격 공격 양성 확보 전 탐지를 검증할 수 없고, 재현 통과 자체도 D08 공격0.75848/정상0.75525·0.76188 및 D15 반례를 해결하지 않는다.
+- **반복하지 않을 주장:** 누락 utils/models를 추측해 넣고 untouched 논문 재현이라고 부르거나 stcebra/FUBA 실패 모델을 FedUBA로 대체하지 않는다. 완료된 감사 runner와 이전 FUBA 유한 작업을 자동 반복하지 않는다.
+- **재검토 조건:** 권위 있는 누락 정의·데이터/ID/BEA 의미 및 설정 차이를 해소한 별도 고정 profile, 실제 동일 FU 정상 대조, 독립 정상 보정과 새로운 행동 가설을 먼저 확보한다.
+
+**원문·증거:**
+
+- [research/feduba_reproduction_audit_20261031/PROTOCOL.txt](feduba_reproduction_audit_20261031/PROTOCOL.txt)
+- [research/feduba_reproduction_audit_20261031/FREEZE.json](feduba_reproduction_audit_20261031/FREEZE.json)
+- [research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt](feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt)
+- [research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt](feduba_reproduction_audit_20261031/DETECTION_GATES.txt)
+- [research/feduba_reproduction_audit_20261031/REPORT_KO.txt](feduba_reproduction_audit_20261031/REPORT_KO.txt)
+- [research/feduba_reproduction_audit_20261031/RESULTS.json](feduba_reproduction_audit_20261031/RESULTS.json)
+- [research/feduba_reproduction_audit_20261031/ASSET_SUMMARY.json](feduba_reproduction_audit_20261031/ASSET_SUMMARY.json)
+- [research/feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json](feduba_reproduction_audit_20261031/DISLAB_VERIFICATION.json)
+- [research/feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt](feduba_reproduction_audit_20261031/DISLAB_AMENDMENT.txt)
+- [research/feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json](feduba_reproduction_audit_20261031/PUBLICATION_MANIFEST.json)
+- [research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt](feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json](feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json)
+- [research/feduba_paper_implementation_20261031/SOURCE_PROVENANCE.json](feduba_paper_implementation_20261031/SOURCE_PROVENANCE.json)
+- [research/feduba_paper_implementation_20261031/CORE_CONTRACT.txt](feduba_paper_implementation_20261031/CORE_CONTRACT.txt)
+- [research/feduba_paper_implementation_20261031/CORE_FREEZE.json](feduba_paper_implementation_20261031/CORE_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json](feduba_paper_implementation_20261031/CORE_CPU_RESULT.json)
+- [research/feduba_paper_implementation_20261031/REPORT_KO.txt](feduba_paper_implementation_20261031/REPORT_KO.txt)
+- [research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt](feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_FREEZE.json](feduba_paper_implementation_20261031/GPU_PREFLIGHT_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt](feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json](feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_FL_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/FOUNDATION_FREEZE.json](feduba_paper_implementation_20261031/FOUNDATION_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt](feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json](feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_READY.json](feduba_paper_implementation_20261031/CLEAN_FL_READY.json)
+- [research/feduba_paper_implementation_20261031/FOUNDATION_ONCE.json](feduba_paper_implementation_20261031/FOUNDATION_ONCE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_STARTED.json](feduba_paper_implementation_20261031/CLEAN_FL_STARTED.json)
+- [research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt](feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/ASSET_PROFILE.json](feduba_paper_implementation_20261031/ASSET_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/ASSET_FREEZE.json](feduba_paper_implementation_20261031/ASSET_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json](feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json)
+- [research/feduba_paper_implementation_20261031/ASSET_FAILURE.json](feduba_paper_implementation_20261031/ASSET_FAILURE.json)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt](feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json](feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json](feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json)
+- [research/feduba_paper_implementation_20261031/CPU_VISIBILITY_DIAGNOSIS.json](feduba_paper_implementation_20261031/CPU_VISIBILITY_DIAGNOSIS.json)
+- [research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt](feduba_paper_implementation_20261031/STG_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/STG_PROFILE.json](feduba_paper_implementation_20261031/STG_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json](feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json](feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU2_ONCE.json](feduba_paper_implementation_20261031/ASSET_CPU2_ONCE.json)
+- [research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json](feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json)
+- [research/feduba_paper_implementation_20261031/STG_LAUNCH_PROTOCOL.txt](feduba_paper_implementation_20261031/STG_LAUNCH_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/STG_LAUNCH_PROFILE.json](feduba_paper_implementation_20261031/STG_LAUNCH_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/STG_FREEZE.json](feduba_paper_implementation_20261031/STG_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/STG_CONTROLLER_ONCE.json](feduba_paper_implementation_20261031/STG_CONTROLLER_ONCE.json)
+- [research/feduba_paper_implementation_20261031/STG_READY.json](feduba_paper_implementation_20261031/STG_READY.json)
+- [research/feduba_paper_implementation_20261031/FU_PROTOCOL.txt](feduba_paper_implementation_20261031/FU_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/FU_PROFILE.json](feduba_paper_implementation_20261031/FU_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json](feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json](feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json)
+- [research/feduba_paper_implementation_20261031/SSS_PROTOCOL.txt](feduba_paper_implementation_20261031/SSS_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_FREEZE.json](feduba_paper_implementation_20261031/SSS_LOGGER_CPU_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt](feduba_paper_implementation_20261031/SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_FREEZE.json](feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/incidents/sss_logger_cpu_v1/MANIFEST.json](feduba_paper_implementation_20261031/incidents/sss_logger_cpu_v1/MANIFEST.json)
+- [research/feduba_paper_implementation_20261031/SSS_SOURCE_FREEZE.json](feduba_paper_implementation_20261031/SSS_SOURCE_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_RESULT.json](feduba_paper_implementation_20261031/SSS_LOGGER_CPU2_RESULT.json)
+- [research/feduba_paper_implementation_20261031/SSS_ROUNDOFF_DIAGNOSIS.json](feduba_paper_implementation_20261031/SSS_ROUNDOFF_DIAGNOSIS.json)
+- [research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_PROTOCOL.txt](feduba_paper_implementation_20261031/FU_ENGINE_CPU_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_FREEZE.json](feduba_paper_implementation_20261031/FU_ENGINE_CPU_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/FU_EXECUTION_CONTRACT.txt](feduba_paper_implementation_20261031/FU_EXECUTION_CONTRACT.txt)
+- [research/feduba_paper_implementation_20261031/FU_SOURCE_FREEZE.json](feduba_paper_implementation_20261031/FU_SOURCE_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_RESULT.json](feduba_paper_implementation_20261031/FU_ENGINE_CPU_RESULT.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_RESULT.json](feduba_paper_implementation_20261031/CLEAN_FL_RESULT.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_PROTOCOL.txt](feduba_paper_implementation_20261031/CLEAN_DELIVERY_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/CLEAN_EXPORT_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_EXPORT_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_FL_VERIFIED.json](feduba_paper_implementation_20261031/CLEAN_FL_VERIFIED.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json](feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/STG_STARTED.json](feduba_paper_implementation_20261031/STG_STARTED.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json](feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_COMPLETE.json](feduba_paper_implementation_20261031/CLEAN_DELIVERY_COMPLETE.json)
+- [research/feduba_paper_implementation_20261031/REGISTRATION_LAUNCH_FAILURE_v1.json](feduba_paper_implementation_20261031/REGISTRATION_LAUNCH_FAILURE_v1.json)
+- [research/feduba_paper_implementation_20261031/registrations/clean_main/REGISTERED.json](feduba_paper_implementation_20261031/registrations/clean_main/REGISTERED.json)
+- [research/feduba_paper_implementation_20261031/registrations/clean_pr/REGISTERED.json](feduba_paper_implementation_20261031/registrations/clean_pr/REGISTERED.json)
+- [research/feduba_paper_implementation_20261031/registrations/clean_dislab/REGISTERED.json](feduba_paper_implementation_20261031/registrations/clean_dislab/REGISTERED.json)
+- [research/feduba_paper_implementation_20261031/STG_STATE.json](feduba_paper_implementation_20261031/STG_STATE.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_PROTOCOL.txt](feduba_paper_implementation_20261031/PAIR_EVAL_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_PROFILE.json](feduba_paper_implementation_20261031/PAIR_EVAL_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_FREEZE.json](feduba_paper_implementation_20261031/PAIR_EVAL_CPU_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_SOURCE_FREEZE.json](feduba_paper_implementation_20261031/PAIR_EVAL_SOURCE_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_RESULT.json](feduba_paper_implementation_20261031/PAIR_EVAL_CPU_RESULT.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_CHECKS.json](feduba_paper_implementation_20261031/PAIR_EVAL_CPU_CHECKS.json)
+- [research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_ONCE.json](feduba_paper_implementation_20261031/PAIR_EVAL_CPU_ONCE.json)
+- [research/feduba_paper_implementation_20261031/SSS_NUMERIC_POLICY.json](feduba_paper_implementation_20261031/SSS_NUMERIC_POLICY.json)
+- [research/feduba_paper_implementation_20261031/SSS_NUMERIC_PROTOCOL.txt](feduba_paper_implementation_20261031/SSS_NUMERIC_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/SSS_NUMERIC_SOURCE_CHECKS.json](feduba_paper_implementation_20261031/SSS_NUMERIC_SOURCE_CHECKS.json)
+
+**묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031)
 
 <a id="d01"></a>
 
@@ -802,4 +1009,37 @@
 - [research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json](fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json)
 
 **묶은 폴더:** [fuba_projection_check_20261025](fuba_projection_check_20261025)
+
+<a id="n02"></a>
+
+## N02 · 공개 코드 정체와 넓은 탐지 주장부터의 반증 감사
+
+**가설 한 줄: 클린 정확도 보존과 삭제 후 조건부 오분류만으로 공격의 필연적 PCA직교성과 정상큰삭제의 정확직교소거를 도출할 수 있다.**
+
+**판정: 필요기하반례 확인·공통 탐지 보류**
+
+[실험 시작 이유와 실제 실행 과정 읽기](../experiments/05-parked/N02-broad-claim-audit/README.md)
+
+- **조건:** 서로다른 upstream source/commit과 선언된 실제 실행을 구분. 두 유한 유리수 함수/자료 반례를 계산 전 동결. 실모델 학습이나 새 탐지점수 튜닝 없음.
+- **정상 대조·비교:** 클린4점에서25%정당삭제와, 동일클린span 내부의 정확도보존 전후함수. D08/D15의 실제큰정상삭제 실패와 D18 투영전 비교를 보존.
+- **결과:** PR의계획/코드게시후 Fraction 두사례를계산하고독립재실행이일치했다. 정상25%삭제직교기울기0→-1/120, 클린span내정확도보존조건부전환/FC가중치변화0 반례로 제시한보편기하필요조건을기각했다. 공개9파일blob/AST검토는missing models/utils와순위인덱스문제를기록했다. 실제공통탐지성능/모든탐지불가능성은주장하지않는다. 같은고정코드의DISLAB CPU독립검산4명령도통과했고로컬과결과JSON이동일했다. 실제학습반복수는늘지않았다.
+- **non-IID에 대해 남길 교훈:** 정상희귀기여의 삭제가 작은분산방향의 결정론적 기울기를 바꿀 수 있는지를 먼저 반증한다. 반례는 D08해결이나 모든탐지불가능성의 증거가 아니다.
+- **반복하지 않을 주장:** FUBA/FedUBA/서로다른라운드를 섞거나 단순norm을 새탐지법으로 제안하지 않는다. 좁은한시드 분리를 범용성/낮은운영오탐으로 승격하지 않는다.
+- **재검토 조건:** 유효한 코드별실제잠복쌍·동등FU큰정상대조·획득가능한새행동관측·D08/D15구별근거·독립정상보정/중단규칙을 먼저 확보해야 실모델 공통탐지를 재검토한다.
+
+**원문·증거:**
+
+- [research/detection_claim_audit_20261031/PROTOCOL.txt](detection_claim_audit_20261031/PROTOCOL.txt)
+- [research/detection_claim_audit_20261031/PLAN.json](detection_claim_audit_20261031/PLAN.json)
+- [research/detection_claim_audit_20261031/CODE_REVIEW.txt](detection_claim_audit_20261031/CODE_REVIEW.txt)
+- [research/detection_claim_audit_20261031/CLAIMS_AND_GATES.txt](detection_claim_audit_20261031/CLAIMS_AND_GATES.txt)
+- [research/detection_claim_audit_20261031/SOURCE_MANIFEST.json](detection_claim_audit_20261031/SOURCE_MANIFEST.json)
+- [research/detection_claim_audit_20261031/EVIDENCE.json](detection_claim_audit_20261031/EVIDENCE.json)
+- [research/detection_claim_audit_20261031/REPORT_KO.txt](detection_claim_audit_20261031/REPORT_KO.txt)
+- [research/detection_claim_audit_20261031/MATH_RESULTS.json](detection_claim_audit_20261031/MATH_RESULTS.json)
+- [research/detection_claim_audit_20261031/SOURCE_AUDIT.json](detection_claim_audit_20261031/SOURCE_AUDIT.json)
+- [research/detection_claim_audit_20261031/DISLAB_AMENDMENT.txt](detection_claim_audit_20261031/DISLAB_AMENDMENT.txt)
+- [research/detection_claim_audit_20261031/DISLAB_VERIFICATION.json](detection_claim_audit_20261031/DISLAB_VERIFICATION.json)
+
+**묶은 폴더:** [detection_claim_audit_20261031](detection_claim_audit_20261031)
 
