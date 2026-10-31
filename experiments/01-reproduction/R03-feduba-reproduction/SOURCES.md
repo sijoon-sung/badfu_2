@@ -199,3 +199,4 @@
 | [COPY_PROVENANCE.json](../../../research/feduba_mixed_trigger_20261101/COPY_PROVENANCE.json) | `research/feduba_mixed_trigger_20261101` |
 | [SOURCE_ONLY_REVIEW.json](../../../research/feduba_mixed_trigger_20261101/SOURCE_ONLY_REVIEW.json) | `research/feduba_mixed_trigger_20261101` |
 | [REPORT_KO.txt](../../../research/feduba_mixed_trigger_20261101/REPORT_KO.txt) | `research/feduba_mixed_trigger_20261101` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_mixed_trigger_20261101/SOURCE_PUBLICATION.json) | `research/feduba_mixed_trigger_20261101` |

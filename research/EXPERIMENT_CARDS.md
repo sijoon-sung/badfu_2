@@ -510,6 +510,7 @@
 - [research/feduba_mixed_trigger_20261101/COPY_PROVENANCE.json](feduba_mixed_trigger_20261101/COPY_PROVENANCE.json)
 - [research/feduba_mixed_trigger_20261101/SOURCE_ONLY_REVIEW.json](feduba_mixed_trigger_20261101/SOURCE_ONLY_REVIEW.json)
 - [research/feduba_mixed_trigger_20261101/REPORT_KO.txt](feduba_mixed_trigger_20261101/REPORT_KO.txt)
+- [research/feduba_mixed_trigger_20261101/SOURCE_PUBLICATION.json](feduba_mixed_trigger_20261101/SOURCE_PUBLICATION.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031) · [feduba_stage_diagnosis_20261101](feduba_stage_diagnosis_20261101) · [feduba_mixed_surrogate_20261101](feduba_mixed_surrogate_20261101) · [feduba_mixed_trigger_20261101](feduba_mixed_trigger_20261101)
 
