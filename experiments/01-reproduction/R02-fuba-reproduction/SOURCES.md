@@ -182,3 +182,16 @@
 | [MONITOR_PROTOCOL.txt](../../../research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt) | `research/fuba_reference_mnist_dba_20261031` |
 | [DELIVERY_PROTOCOL.txt](../../../research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt) | `research/fuba_reference_mnist_dba_20261031` |
 | [DELIVERY_SOURCE_FREEZE.json](../../../research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [FINAL_REPORT_KO.txt](../../../research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt) | `research/fuba_reference_mnist_dba_20261031` |
+| [RESULT.json](../../../research/fuba_reference_mnist_dba_20261031/RESULT.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [VERIFIED.json](../../../research/fuba_reference_mnist_dba_20261031/VERIFIED.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [CPU_AUDIT_through0100.json](../../../research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [REMOTE_REVIEW_RECEIPT.json](../../../research/fuba_reference_mnist_dba_20261031/REMOTE_REVIEW_RECEIPT.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [LOCAL_DELIVERY.json](../../../research/fuba_reference_mnist_dba_20261031/LOCAL_DELIVERY.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [CATALOG_ENTRY.json](../../../research/fuba_reference_mnist_dba_20261031/CATALOG_ENTRY.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [CATALOG_AUDIT.json](../../../research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [CATALOG_GUARD_LOCAL.json](../../../research/fuba_reference_mnist_dba_20261031/CATALOG_GUARD_LOCAL.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [FINAL_COMPLETION.json](../../../research/fuba_reference_mnist_dba_20261031/FINAL_COMPLETION.json) | `research/fuba_reference_mnist_dba_20261031` |
+| [PROTOCOL.txt](../../../research/fuba_stage_localization_20261031/PROTOCOL.txt) | `research/fuba_stage_localization_20261031` |
+| [PROFILE.json](../../../research/fuba_stage_localization_20261031/PROFILE.json) | `research/fuba_stage_localization_20261031` |
+| [FREEZE.json](../../../research/fuba_stage_localization_20261031/FREEZE.json) | `research/fuba_stage_localization_20261031` |

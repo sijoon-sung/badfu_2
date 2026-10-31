@@ -104,3 +104,12 @@ v7의 최종100R와 실제KD10은 완료·검증·전달됐지만 전CA77.76/ASR
 사용자 지시에 따라 기존 stcebra/FUBA를 우선하고 논문 Algorithm1/2를 최종 기준으로 삼는다. 별도 MNIST/DBA는 같은 논문의 BN·생성기 없는 Net/고정 패치에서 핵심 알고리즘을 먼저 확인하는 조건이다. DISLAB에서 full100R/E50/B64 후 실제client4기여차감/KD10을 시작했고 CPU8계약과 첫 정상역할50epoch/2350batch 저장 검사를 통과했다. 아직 최종100R/KD10 성능·전달은 미완료다. CIFAR/IBA 실패를 지우거나 대체하지 않으며 D08/D15 탐지 반례는 미해결이다.
 
 [optimizer 진단](../../../research/fuba_optimizer_isolation_20261031/REPORT_KO.txt) · [반경 진단](../../../research/fuba_radius_alignment_20261031/REPORT_KO.txt) · [MNIST/DBA 실행](../../../research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt) · [지속 확인 계약](../../../research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt)
+
+
+## MNIST/DBA 최종100R와 실제 전달
+
+전체100R/800역할/1358phase·67900epoch·3042500batch 및실제KD10/470을완료했다. 독립10000/9026평가는전CA99.11/ASR30.60048748,후CA99.08/ASR32.35098604로일치했으며두성능게이트를실패했다. 원래완료작업을다시실행하지않았다.
+
+선택한69modelpayload의strictCPU/finiteforward와전후/KD10/optimizer/RNG·전체로그984파일의양쪽전달hash/봉인/catalogueguard를통과했다. case `fuba.reference.mnist.dba.s20261023.pre100.post.kd10`은diagnostic만허용한다. 전체원시는DISLAB에보존한다. 기존모든case/default/실패를변경하지않으며큰정상nonIID 탐지성공은아니다.
+
+[최종 결과와 전달](../../../research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt) · [새 제한 단계 진단](../../../research/fuba_stage_localization_20261031/PROTOCOL.txt)

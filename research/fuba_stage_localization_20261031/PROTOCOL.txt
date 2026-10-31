@@ -1,0 +1,20 @@
+가설: 이 고정 MNIST/DBA 조건의 약한 삭제후 활성화는, 실제 기여 차감 직후에는 강했던 백도어가 KD10에서 다시 약해졌기 때문이다.
+관련 R02/D08/D15/N02. 이는 한 가지 실패 경로를 분리하는 제한 진단이며 새 탐지법이나 다음100R 자동실행이 아니다.
+
+현재 근거
+같은논문의100R/KD10은완료·검증·전달됐지만전CA99.11/ASR30.60048748,후CA99.08/ASR32.35098604로성능미달이다. CASE fuba.reference.mnist.dba.s20261023.pre100.post.kd10은양쪽봉인/69payload CPU검사/전체1358phase/800roles/67900epoch감사를통과한diagnostic이다. pre/post만봤던결과에서원인을확정하지않는다. 기존CIFAR/IBA optimizer/반경실패와별개다.
+
+새 관측/비교
+1. 새로 after_subtraction.pt(실제41기여 차감 직후, KD전)의 untouched 모델을전체10000/타깃제외9026장으로한번평가한다. 이미독립확인한before/after정수수는그대로재사용하며완료된원래평가기를다시돌리지않는다.
+2. 실패단계를찾기위해저장된최초공격자7/client0,최초억제자6/client4와100R선택악성역할들의 incoming/anchor1/anchor2/embedding/recovery-or-representative/submitted를평가한다. 같은파일/같은payload의전체평가는캐시하여중복하지않는다. 선택은시간순/역할순이며ASR로고르지않는다. 검토packet에선택저장된payload만소비한다.
+3. 각상태의정상CA,정상입력타깃쏠림,global DBA 합집합ASR와원래local validation300의실제role패치ASR를함께기록한다. 마지막일치여부나큰ASR만으로악성탐지라고부르지않는다. 추가학습·optimizer변경·노름/코사인·모델편집은하지않는다.
+
+판정/종료
+차감직후CA>=97/ASR>=60이고KD후CA>=97/ASR<60이어야이run에서KD가강한활성화를약화시켰다는가설을지지한다. 차감직후부터ASR<60이면그원인주장을기각하고KD만바꾸는수정을정당화하지않는다. 단계별관측은실패위치를좁히는자료이며개별클라이언트ASR60을논문필수조건으로발명하지않는다.
+고정선택 최대7역할/각6상태 및차감직후1상태만평가하고종료한다. 독립된FL seed/새100R/FU/입력탐색은없다. source/봉인/데이터/비유한/runtime실패는즉시증거보존·중단하며동일유한진단을자동반복하지않는다. 결과에따른다음수정은별도근거/계약으로한다.
+
+출처/자원/한계
+stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d의논문Algorithm1/2/본문및기존최종보고서를기준으로한다. 원공개comm_utils의global minmax와DBA local-patch gamma평가는다시확인했으나이를새원인으로단정하지않는다. 공개코드의방향/거리4제곱/단축epoch 등의기존불일치는보존하고그대로되돌리지않는다.
+명시case diagnostic selector와외부manifest SHA0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c/전체hash를통과한뒤만load한다. evaluator-only target/trigger/role정보는진단평가에만쓰며server 탐지선택/학습에넣지않는다.
+새 D:/FUBA_STAGE_LOCALIZATION_20261031. DISLAB에서만GPU추론한다. util<=5/free>=7000/used<=2048MiB 및경쟁trainer/evaluator PID부재를시작전에확인한다. 다른앱을종료하지않는다. 기존finite trainer/controller/observer/verify/export는재실행하지않는다. 새source/계약을같은PR에고정한후일회실행하며로그/결과를남긴다.
+D08 공격0.75848이큰정상0.75525/0.76188사이였고D15반례도남는다. 이번관측은재현실패위치의진단이며큰정상nonIID를구별하는증거를추가하지않는다. 잠복공격성능/저장무결성/탐지를분리한다.

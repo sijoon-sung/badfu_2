@@ -2,14 +2,14 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "6df4ed28e72696a571576660e1d8012bb45b7bce5fbec5b851a13c1f260048cd",
+  "registry_sha256": "d61b9c431da4d8ce8359cd63a5eda79ca58abed8c1a6a5375905740a163ced03",
   "cards": 28,
-  "unique_source_documents": 263,
-  "top_level_folders": 102,
-  "folders_linked_to_cards": 54,
+  "unique_source_documents": 276,
+  "top_level_folders": 103,
+  "folders_linked_to_cards": 55,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
-    "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
+    "research/00_trajectories/catalog.json": "d1326729633372662d7ca0b3aeae9885b67623887d8b02ba1b8e5bc65d9163d6",
     "research/badfu_algorithm_audit_20261023/README.md": "980a6b75c98a67f86a26e1084323c4099546e3ba2ed2a41e03d7415712e22215",
     "research/continuation_20261023/README.md": "547fae74fdd9e8e9c0ad342f8593e8e8dd0332d403862baf811f485bb88fe382",
     "research/asr_root_cause_20261022/REPORT_KO.md": "7dace28efe7dbea61bb250cd52f5d8ff74b73bfcea220dd8455d79fa629c5ed8",
@@ -185,7 +185,20 @@
     "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json": "525dfb8c04d6e2c3e45d81edb1d81d954c04a6524acf08fdec203f5bc2a97ece",
     "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt": "6b5fffda697dbf601144367cc35abca8c30656048a11006dae3848356a631c53",
     "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt": "3ea4f8a222207ef8adb3f89943b8c6af4d771287eeb3a4ed3a7cdc854c1df6e7",
-    "research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json": "8055232420225984f0600f96ebc9a888525e61900f12ccc6a62e78fe2bd73cc0",
+    "research/fuba_reference_mnist_dba_20261031/DELIVERY_SOURCE_FREEZE.json": "a664c6e4ffbb1822fdefc8cef10ba3c7fa5e8fed8c7be2f1355b93e53d2ebbff",
+    "research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt": "9f506b645bd04ce97d08e11178d1fa731dc321449aef2bd4c7d372ca7a3cf227",
+    "research/fuba_reference_mnist_dba_20261031/RESULT.json": "f4eb1057cfec4c7939660e9579962c44ac22d7c2aa4ea4c9e341103c61b9b754",
+    "research/fuba_reference_mnist_dba_20261031/VERIFIED.json": "f531895a6e01256edcfb6bc2a5aaf28cfd575b43987b3156756976bfd831a73a",
+    "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json": "3bfc400367951665c9d1bc82bf1b37e290ee50a390e1c843349cfb02ba760a24",
+    "research/fuba_reference_mnist_dba_20261031/REMOTE_REVIEW_RECEIPT.json": "3ae97990eb0e89267add991ab3f7d23cfbbbc88a7719b4dac1ffb3cbf829efa3",
+    "research/fuba_reference_mnist_dba_20261031/LOCAL_DELIVERY.json": "7aeba3be01599852442aad023331b2fa3de84c7abe9a5a0237e2ac79a96ac67e",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_ENTRY.json": "feb6c0b96d55da378e5f72a444894ec39272a53d810bd6323719f193fdcf6ca0",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
+    "research/fuba_reference_mnist_dba_20261031/CATALOG_GUARD_LOCAL.json": "1fdc7fca346b072d1db2cb3aade1db6edd61eff0b43e14c6bd566c07d961b98f",
+    "research/fuba_reference_mnist_dba_20261031/FINAL_COMPLETION.json": "b74a28a8b8cde1aff48e73272f5aff1bfeaf4248fa514fc47e428133e0285680",
+    "research/fuba_stage_localization_20261031/PROTOCOL.txt": "ed831e5c9efce7c81b430f762a3efd29dec401dce7438576036c68ce17deac15",
+    "research/fuba_stage_localization_20261031/PROFILE.json": "aae4c02b53b2030029d28d541fc059a6ce3e377fefd45ddb9b7cfc41aa354b4d",
+    "research/fuba_stage_localization_20261031/FREEZE.json": "4ad78847f346af34d4a8f0acc6f41e150f452d07910091ba88777ba9397c7372",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -780,12 +793,26 @@
       ],
       "top_level_documents": [
         "research/fuba_reference_mnist_dba_20261031/AUDIT_FREEZE.json",
+        "research/fuba_reference_mnist_dba_20261031/CATALOG_AUDIT.json",
         "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0006.json",
         "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0007.json",
+        "research/fuba_reference_mnist_dba_20261031/CPU_AUDIT_through0100.json",
         "research/fuba_reference_mnist_dba_20261031/DELIVERY_PROTOCOL.txt",
+        "research/fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt",
         "research/fuba_reference_mnist_dba_20261031/MONITOR_PROTOCOL.txt",
         "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt",
-        "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt"
+        "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt",
+        "research/fuba_reference_mnist_dba_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_stage_localization_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_stage_localization_20261031/PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

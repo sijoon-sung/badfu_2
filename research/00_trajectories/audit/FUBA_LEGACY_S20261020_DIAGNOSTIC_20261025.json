@@ -1,0 +1,44 @@
+{
+  "schema": "historical-fuba-diagnostic-registration-v1",
+  "case_id": "fuba.legacy.s20261020.retained_pairs.diagnostic",
+  "registration_scope": "existing classifier export hashes and provenance reports only; not a full trajectory or latent reproduction approval",
+  "source_config": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\rapid_checkpoint_validation_20261023\\FUBA_CONFIG.json",
+  "source_config_sha256": "bc6521e3ce90bc4b144a10a084d58d6981ca31e5b3e4905308bdb9f72012673e",
+  "source_export_script": "research/UNKNOWN_TRIGGER_RUN_20261021/prepare_inputs.py",
+  "export_script_sha256": "7f3d8702f481fbd45c3d05c655a892ceed4fb9fbbef4a2add5dc40a0e0a287d7",
+  "known_failure_correction": "research/asr_root_cause_20261022/REPORT_KO.md",
+  "known_failure_correction_sha256": "7dace28efe7dbea61bb250cd52f5d8ff74b73bfcea220dd8455d79fa629c5ed8",
+  "server_inputs": {
+    "m07": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m07.pt",
+      "sha256": "4643d84eab916a3f4bacbd745e68a2ae83f7c610db1e56ee83686f0cd06d64c3",
+      "payload_key": null,
+      "committed_rounds": 100
+    },
+    "m08": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m08.pt",
+      "sha256": "ac2444194493c054eb3660b052af5a3d44df8844bc8d438e054aaba38c65b384",
+      "payload_key": null,
+      "committed_rounds": 100
+    },
+    "m09": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m09.pt",
+      "sha256": "0c29b8fd26fe6abcf91a1cee446c9ed90888271d5aafaa37a324da594f592a68",
+      "payload_key": null,
+      "committed_rounds": 100
+    },
+    "m10": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\classifiers\\m10.pt",
+      "sha256": "d529cfefae569cab3d46006d102c5e015a4bd28d18809de78308422bc10b3f3b",
+      "payload_key": null,
+      "committed_rounds": 100
+    }
+  },
+  "architecture_source": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\UNKNOWN_TRIGGER_RUN_20261021\\local_worker\\resnet.py",
+  "architecture_sha256": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+  "approved_latent_pair": false,
+  "allowed_purposes": [
+    "diagnostic"
+  ],
+  "source_files_moved": false
+}

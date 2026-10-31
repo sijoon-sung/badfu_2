@@ -28,6 +28,10 @@ def finite_cpu(value):
 def main():
     assert not PACKET.exists(), 'Existing packet is preserved; do not overwrite'
     assert PACKET.resolve().is_relative_to(ROOT.resolve())
+    assert not (ROOT / 'DELIVERY_MANIFEST.json').exists()
+    assert not (ROOT / 'DELIVERY_SEAL.json').exists()
+    for name, digest in read(ROOT / 'DELIVERY_SOURCE_FREEZE.json')['files'].items():
+        assert sha(ROOT / name) == digest, name
     r, v, a = (read(ROOT / name) for name in ['RESULT.json', 'VERIFIED.json', 'CPU_AUDIT_through0100.json'])
     assert r['state'] == 'completed100R_KD10' and r['rounds'] == 100 and r['roles'] == 800
     assert v['state'] == a['state'] == 'passed' and a['through_round'] == 100
@@ -67,7 +71,7 @@ def main():
     for role in selected:
         for phase in role['phases'] + [role['submitted']]:
             assert sha(ROOT / phase['path']) == phase['sha256']
-            model_payloads[phase['path']] = ['model']
+            model_payloads[phase['path'].replace('\\', '/')] = ['model']
     snapshot = {}
     for path in sorted(ROOT.rglob('*')):
         if not path.is_file() or '__pycache__' in path.parts or path.is_relative_to(PACKET):
@@ -77,6 +81,7 @@ def main():
         snapshot[rel] = {'sha256': sha(path), 'bytes': path.stat().st_size}
     selected_files = set(model_payloads)
     selected_files.update(rel for rel in snapshot if not rel.endswith('.pt'))
+    assert selected_files.issubset(snapshot), sorted(selected_files - snapshot.keys())
     assert 'run/events.jsonl' in selected_files and 'run/MANIFEST.json' in selected_files
     torch.set_num_threads(1)
     model = load_model_class()().cpu().eval()

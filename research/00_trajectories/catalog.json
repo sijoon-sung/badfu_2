@@ -1417,6 +1417,101 @@
         "실제client ID/weights 역사기여제거+무라벨2500장10KD.참여자제외만한모델과구분한다.",
         "공개코드와본문차이/정정/BN정책은PROTOCOL에명시.untouched author execution/FedEraser/전체6FU표재현으로표시하지않는다."
       ]
+    },
+    {
+      "id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+      "folder": "04_reproduction_failed/FUBA_reference_MNIST_DBA_s20261023_KD10_pair",
+      "title": "FUBA MNIST/DBA 실제100R·KD10 진단 전후쌍",
+      "family": "fuba",
+      "source_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+      "integrity": "passed_100R_KD10_pair_hash_delivery_and_CPU_model_checks",
+      "reproduction": "pre_suppression_and_post_activation_gates_failed",
+      "seed": 20261023,
+      "post_type": "actual_historical_client4_update_subtraction_then_KD10",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/before.pt",
+          "sha256": "418da107bf5f143416818dface2e57685bfec07404765904c811dc8c1acec64c",
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/after.pt",
+          "sha256": "8a70d76a27ba9ad73c075bacd9bbdb015860a8137eb2983d9086fa29c22b0034",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_MANIFEST.json",
+        "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+        "seal_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_SEAL.json",
+        "seal_sha256": "cf502a8ae7af82cae04a59d4bfe229ad3dc61081e5c5df55511d5401a6c08bcf",
+        "loader_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+        "server_inputs": {
+          "pre": {
+            "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/before.pt",
+            "sha256": "418da107bf5f143416818dface2e57685bfec07404765904c811dc8c1acec64c",
+            "payload_key": null
+          },
+          "post": {
+            "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/after.pt",
+            "sha256": "8a70d76a27ba9ad73c075bacd9bbdb015860a8137eb2983d9086fa29c22b0034",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_MANIFEST.json",
+          "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+          "seal_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_SEAL.json",
+          "seal_sha256": "cf502a8ae7af82cae04a59d4bfe229ad3dc61081e5c5df55511d5401a6c08bcf",
+          "loader_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "before": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9911,
+          "target_successes": 2762,
+          "clean_non_target_target_count": 11,
+          "CA_pct": 99.11,
+          "ASR_pct": 30.600487480611566,
+          "clean_target_bias_pct": 0.12187015289164635,
+          "trigger_role": 4,
+          "both_eval": true
+        },
+        "after": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9908,
+          "target_successes": 2920,
+          "clean_non_target_target_count": 12,
+          "CA_pct": 99.08,
+          "ASR_pct": 32.35098604032794,
+          "clean_target_bias_pct": 0.13294925769997784,
+          "trigger_role": 4,
+          "both_eval": true
+        },
+        "actual_pre_post_pair": true,
+        "latent_attack_reproduction_success": false,
+        "independent_counts_exact": true,
+        "evaluator_sha256": "c17a4760c0b291da9aacba0fca688653c1e9084e6dd2fbfe1758d6769262ea92"
+      },
+      "limits": [
+        "stcebra/FUBA 논문 Algorithm1/2의 명시 해석; 저자공인 유일 실행이 아니다.",
+        "MNIST/DBA 단일 seed. 전CA99.11/ASR30.600487480611566, 후CA99.08/ASR32.35098604032794로 두 성능게이트 미달.",
+        "모든1358phase/800역할/67900epoch·3042500batch 및gamma146trace 선택산술을 검증했다. 모든gamma 독립재추론은 아니다.",
+        "전체원시는 DISLAB에 보존한다. 로컬984파일에는 선택한69 model payload, 전후/KD10/optimizer/RNG와 전체로그·role JSON이 있다.",
+        "CIFAR/IBA 실패와 D08/D15 큰 정상nonIID 탐지 반례는 미해결이다."
+      ]
     }
   ],
   "supplemental_audits": [
@@ -1459,6 +1554,11 @@
     {
       "path": "audit/FUBA_V5_KD10_PAIR_DELIVERY.json",
       "sha256": "df7ef9d6506bf7c440692712a3f8510154bf7c2126ebe0ee3e19c58cac9801c2"
+    },
+    {
+      "path": "audit/FUBA_REFERENCE_MNIST_DBA_20261031_DELIVERY.json",
+      "sha256": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
+      "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10"
     }
   ],
   "default_full_history_case": "badfu.paper32.s20261020",

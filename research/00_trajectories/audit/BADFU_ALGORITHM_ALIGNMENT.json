@@ -1,0 +1,87 @@
+{
+  "state": "passed",
+  "case_id": "badfu.multiseed.s20261023",
+  "profile": "Paper-aligned BadFU / BadNet / Dominant0.7 / FedAvg / retained-data retraining",
+  "independent_first_round_replays": 2,
+  "fresh_independent_update_hashes_matched": 10,
+  "training_sample_tensors_exactly_matched": 99150,
+  "author_partition_seed42_matches": true,
+  "all3_initializers_match_author": true,
+  "original_author_script_bitwise_reproduction": false,
+  "paper_three_run_mean_reproduction": "not_established",
+  "corrected_evaluation_layout": "contiguous_NCHW",
+  "author_evaluation_rows": [
+    {
+      "key": "pre",
+      "checkpoint_sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+      "CA": 90.38,
+      "ASR": 14.28888888888889,
+      "clean_n": 10000,
+      "ASR_n": 9000,
+      "recorded_difference_pp": {
+        "CA_pp": -1.4210854715202004e-14,
+        "ASR_pp": 0.0
+      },
+      "corrected_evaluator_difference_pp": {
+        "CA_pp": 1.4210854715202004e-14,
+        "ASR_pp": 0.0
+      },
+      "evaluator": "Unmodified evaluate_model from immutable author commit",
+      "memory_format": "contiguous_NCHW",
+      "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+    },
+    {
+      "key": "post",
+      "checkpoint_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+      "CA": 90.46,
+      "ASR": 100.0,
+      "clean_n": 10000,
+      "ASR_n": 9000,
+      "recorded_difference_pp": {
+        "CA_pp": 0.0,
+        "ASR_pp": 0.0
+      },
+      "corrected_evaluator_difference_pp": {
+        "CA_pp": 0.0,
+        "ASR_pp": 0.0
+      },
+      "evaluator": "Unmodified evaluate_model from immutable author commit",
+      "memory_format": "contiguous_NCHW",
+      "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+    },
+    {
+      "key": "clean_pre",
+      "checkpoint_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+      "CA": 90.8,
+      "ASR": 1.3888888888888888,
+      "clean_n": 10000,
+      "ASR_n": 9000,
+      "recorded_difference_pp": {
+        "CA_pp": 0.0,
+        "ASR_pp": -0.022222222222222143
+      },
+      "corrected_evaluator_difference_pp": {
+        "CA_pp": 0.0,
+        "ASR_pp": 0.0
+      },
+      "evaluator": "Unmodified evaluate_model from immutable author commit",
+      "memory_format": "contiguous_NCHW",
+      "legacy_record_policy": "Preserve historical channels-last metrics; record author-format evaluation separately"
+    }
+  ],
+  "evidence_location": "D:/BADFU_ALGORITHM_AUDIT_20261023",
+  "evidence_sha256": {
+    "README.md": "980a6b75c98a67f86a26e1084323c4099546e3ba2ed2a41e03d7415712e22215",
+    "AUTHOR_REFERENCE.json": "50896b610cbce6d4de4b56e53fc878938cb785ff31682c531c9347a49375e4d1",
+    "COMPARISON.json": "c3dcf2fcd32a47f279a5bea7e024e40106fd30ffbe75c7b7ce5aaee877a983bc",
+    "FRESH_AUTHOR_EVALUATION.json": "a969d34449fe5516865568a1071a6566867480ab9a466e7dae15f6f87eeace38",
+    "EVALUATION_LAYOUT_DIAGNOSIS.json": "d0391c4bc65d97631f50d63cc2857c1ddf1ea48076239a11ccb30ed136cfeaed",
+    "AGGREGATION_DEVICE_CHECK.json": "a7df96b3dfb796c42b49591757c9221fba4360f180a056fbd7d19f8921545156",
+    "PROFILE_VALIDATION.json": "c41f105e6ee5b6c91a98fc8b549b023532658b301b5383cc019b31c41515f162",
+    "remote_compare.py": "eb3b933ca5cae4008a0fa29ad185a010d4515336d5ebf776f7e4a1be424496ca",
+    "fresh_endpoint_check.py": "8065e00e5f34c48fe8c0df5a6d45c1b4752fedfa258105dadbc8789ad5928e87",
+    "author_aligned_evaluation.py": "dd89914fa86481b8af74523ecee68fe7f5b5e44bcccb3feaef3bc4f330b7c25f",
+    "validate_profile.py": "b7fad5567ad7ce039c8a8d52896856db1626e603068189a7eedfe07def06e023",
+    "NUMERICAL_COMPARISON.csv": "b518d8bbc898e16140896f7847cf6baddbd54ddca5d52b9796e15bbaff272821"
+  }
+}
