@@ -1220,6 +1220,8 @@
 - [research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/student_refresh_REFRESH_TRACE.json](badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/student_refresh_REFRESH_TRACE.json)
 - [research/badfu_feduba_defense_20261031/CUDA_BRIDGE_PROTOCOL.txt](badfu_feduba_defense_20261031/CUDA_BRIDGE_PROTOCOL.txt)
 - [research/badfu_feduba_defense_20261031/CUDA_BRIDGE_FREEZE.json](badfu_feduba_defense_20261031/CUDA_BRIDGE_FREEZE.json)
+- [research/badfu_feduba_defense_20261031/CUDA_BRIDGE_LOGGING_CORRECTION.txt](badfu_feduba_defense_20261031/CUDA_BRIDGE_LOGGING_CORRECTION.txt)
+- [research/badfu_feduba_defense_20261031/CUDA_BRIDGE_PREPARATION_FREEZE_V1.json](badfu_feduba_defense_20261031/CUDA_BRIDGE_PREPARATION_FREEZE_V1.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 

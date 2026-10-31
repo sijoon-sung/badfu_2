@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "10455c10adea372f4eef748bb38b420888ccdfacf241b9453262f4a9d58a3cc6",
+  "registry_sha256": "61e57b2668aa6496c5988eafc6e5bc76160e7495d4ae43594ddd1b1d6ee28762",
   "cards": 29,
-  "unique_source_documents": 570,
+  "unique_source_documents": 572,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -577,7 +577,9 @@
     "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/fixed_post_refresh_REFRESH_TRACE.json": "a4e3887160a31c72857eac1b919479e2882105925316ec11c319afa3ae42ed29",
     "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/student_refresh_REFRESH_TRACE.json": "105a23c8e8e07253104f806474db11502a49ae702d1c8dec957a764635f8f196",
     "research/badfu_feduba_defense_20261031/CUDA_BRIDGE_PROTOCOL.txt": "3a30631bb26020ce3cca413dc9448c2daaaa7fd90559854436d07e1e0a1c081b",
-    "research/badfu_feduba_defense_20261031/CUDA_BRIDGE_FREEZE.json": "cca4428a23de1299b05841b37e4243b080c8483cd50870ca8b25047e1fab350f"
+    "research/badfu_feduba_defense_20261031/CUDA_BRIDGE_FREEZE.json": "6d2c746032255bfbdbe80e0061b28de895364fdeec74d2dcca98a57efa3ccc9a",
+    "research/badfu_feduba_defense_20261031/CUDA_BRIDGE_LOGGING_CORRECTION.txt": "840c8c8f550aa2e678805fba6be55ef81e36056c798c26fd8b6ae61d989e243d",
+    "research/badfu_feduba_defense_20261031/CUDA_BRIDGE_PREPARATION_FREEZE_V1.json": "cca4428a23de1299b05841b37e4243b080c8483cd50870ca8b25047e1fab350f"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
