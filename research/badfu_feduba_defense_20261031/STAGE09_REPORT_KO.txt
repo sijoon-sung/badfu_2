@@ -1,0 +1,17 @@
+H9 실제 정상9668삭제 평가 및 독립검산 완료. 2026-10-31, R01/P01/P02/P04/D08/D15/D18/N02.
+가설: H8의 교정을 공개 Post 기능 보존 규칙으로 연속 조절하면 큰정상 삭제의 효용과 실제 삭제 누설을 보존하는 nonzero 후보를 얻을 수 있다.
+과정:100step H8두모델불변.500무라벨영상의KL<=.010/전체Post예측98%/각Post예측class95%를실행전에고정.각arm11grid+6boundedprobes총34점을모두보존하고선택모델/hash를저장한후에만true label/실제삭제자료를평가했다.타깃/트리거/ASR은선택에사용하지않았다. 선택된alpha는실제검사한점중최대이며전역최대증명이아니다.
+
+기준: nativepost heldout9500 CA89.8%, actualremoved9668 true-label advantage.00216725.
+clean_only: alpha.0453125; proxyKL.00958247/예측일치98.6%.
+  CA90.0526316%, worstclass감소.1047120pp; true-labeladv.00334061/maxconfidenceadv.00805327.
+  회원-비회원정확도gap.00514863; prior90%교정보존가설96.6981%.
+query_transfer: alpha.0703125; proxyKL.00975036/예측일치98.8%.
+  CA89.8421053%, worstclass감소1.2618297pp; true-labeladv.00238674/maxconfidenceadv.00718608.
+  정확도gap.00430606; prior90%교정보존91.5094%.
+두arm모두 nonzero, 전체CA/각class/실제삭제누설/기존점별교정90%조건을이조건에서통과했다. H8의효용실패와H5삭제누설복원실패는그대로보존한다.
+
+검산:34개proxy row의KL/예측/class일치조건과11+6adaptive경로/최대통과선택을NumPy로독립재계산했다.선택모델이원래Post→각H8학생보간인지텐서별확인/BN고정/엄격로드/유한값/모든출력hash가통과했다. 실제member40 class AUC와heldout정답수/각class/gap/원gate도독립순위계산에서일치했다.새모델추론을재실행하거나threshold를완화하지않았다.
+
+범위:한기존BadFU학습시드의큰정상삭제필요조건을통과한것이며, 실제공격을아직시험하지않았다. 같은공개/heldout분할을여러개발단계에서사용하여독립확증시험은아니다. finite membership감사통과는형식적삭제증명이아니고정상에서의publicKL/alpha는공격탐지점수가아니다. D08/D15의다른FU/시드실패를지우지않는다.
+수정/확장 H10:동일recipe/선택규칙을실제attack_cover850에그대로적용한다.후보고정후전체9000 actualtrigger ASR필요조건부터검사하고,통과한고정arm만실제삭제cover/clean효용과same850정상조건을연이어검사한다.공격에서실패하면전체방어실패로보존하고같은budget을재튜닝하지않는다. FedUBA별도검증및추가조건은계속필요하다.

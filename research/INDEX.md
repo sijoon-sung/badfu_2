@@ -123,7 +123,7 @@ flowchart TD
 | [P01 · 삭제 전후 반응 전이 정화](EXPERIMENT_CARDS.md#p01) | 제한된 정화 관찰 |
 | [P02 · 마지막 분류층 교정](EXPERIMENT_CARDS.md#p02) | 제한된 정화 관찰 |
 | [P03 · A/C 손실 분산·프루닝·헤드 증류 파일럿](EXPERIMENT_CARDS.md#p03) | 목표 판정 제외 — 입력 선택 오류 |
-| [P04 · BadFU·FedUBA 방어 개발: 교차 결합·헤드 운반·모듈 개입](EXPERIMENT_CARDS.md#p04) | H8 학생2arm 삭제audit통과·효용실패 / H9 공개기능보존 연속교정 실행중 |
+| [P04 · BadFU·FedUBA 방어 개발: 표상 복원·삭제 감사·공개 기능 보존](EXPERIMENT_CARDS.md#p04) | H9 큰정상 효용·삭제 감사 통과 / H10 동일규칙 실제공격 확장 동결 |
 
 ### 미검증 제안·보류
 
