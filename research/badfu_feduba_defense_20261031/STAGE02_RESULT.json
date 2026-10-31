@@ -1,0 +1,329 @@
+{
+  "hypothesis": "H2",
+  "trigger": "H1 failed; predeclared repair",
+  "cases": {
+    "benign_big19336": {
+      "metrics": {
+        "n": 9500,
+        "correct": 8347,
+        "ca_pct": 87.86315789473684,
+        "class_correct": [
+          882,
+          922,
+          760,
+          706,
+          838,
+          755,
+          871,
+          884,
+          867,
+          862
+        ],
+        "class_n": [
+          958,
+          955,
+          951,
+          940,
+          943,
+          950,
+          948,
+          969,
+          943,
+          943
+        ],
+        "class_ca_pct": [
+          92.06680584551148,
+          96.54450261780104,
+          79.91587802313354,
+          75.1063829787234,
+          88.86532343584305,
+          79.47368421052632,
+          91.87763713080169,
+          91.2280701754386,
+          91.9406150583245,
+          91.41039236479321
+        ],
+        "post_beneficial_n": 212,
+        "post_beneficial_kept_n": 69,
+        "post_beneficial_kept_fraction": 0.32547169811320753,
+        "post_harmful_n": 306,
+        "post_harmful_repaired_n": 198,
+        "disagree_with_post_n": 917
+      },
+      "gate": {
+        "overall_drop_pp": 1.9368421052631533,
+        "worst_class_drop_pp": 5.783385909568878,
+        "overall_pass": false,
+        "class_pass": false,
+        "beneficial_pass": false,
+        "passed": false
+      },
+      "ridge": 10.380117349621754,
+      "derived_head_sha256": "6ce5cad399c4d69a5b94f70c76760dbefc52598c9347404f5ceadaf7eb199052",
+      "full10000": {
+        "n": 10000,
+        "correct": 8795,
+        "ca_pct": 87.94999999999999,
+        "class_correct": [
+          922,
+          966,
+          803,
+          754,
+          889,
+          794,
+          923,
+          911,
+          918,
+          915
+        ],
+        "class_n": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "class_ca_pct": [
+          92.2,
+          96.6,
+          80.3,
+          75.4,
+          88.9,
+          79.4,
+          92.3,
+          91.1,
+          91.8,
+          91.5
+        ],
+        "post_beneficial_n": 222,
+        "post_beneficial_kept_n": 78,
+        "post_beneficial_kept_fraction": 0.35135135135135137,
+        "post_harmful_n": 323,
+        "post_harmful_repaired_n": 203,
+        "disagree_with_post_n": 927
+      }
+    },
+    "benign_same850": {
+      "metrics": {
+        "n": 9500,
+        "correct": 8420,
+        "ca_pct": 88.63157894736841,
+        "class_correct": [
+          863,
+          899,
+          786,
+          724,
+          840,
+          764,
+          891,
+          879,
+          900,
+          874
+        ],
+        "class_n": [
+          958,
+          955,
+          951,
+          940,
+          943,
+          950,
+          948,
+          969,
+          943,
+          943
+        ],
+        "class_ca_pct": [
+          90.08350730688936,
+          94.13612565445027,
+          82.64984227129338,
+          77.02127659574468,
+          89.07741251325557,
+          80.42105263157895,
+          93.9873417721519,
+          90.71207430340557,
+          95.44008483563097,
+          92.6829268292683
+        ],
+        "post_beneficial_n": 196,
+        "post_beneficial_kept_n": 66,
+        "post_beneficial_kept_fraction": 0.336734693877551,
+        "post_harmful_n": 241,
+        "post_harmful_repaired_n": 142,
+        "disagree_with_post_n": 750
+      },
+      "gate": {
+        "overall_drop_pp": 1.684210526315809,
+        "worst_class_drop_pp": 3.1545741324921153,
+        "overall_pass": false,
+        "class_pass": false,
+        "beneficial_pass": false,
+        "passed": false
+      },
+      "ridge": 10.380117349621754,
+      "derived_head_sha256": "5b0880d64f037d9ee19b80da58a9ea26ee8d2afc182efa686877e9e94c4f9c21",
+      "full10000": {
+        "n": 10000,
+        "correct": 8876,
+        "ca_pct": 88.75999999999999,
+        "class_correct": [
+          903,
+          943,
+          828,
+          772,
+          892,
+          806,
+          941,
+          907,
+          957,
+          927
+        ],
+        "class_n": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "class_ca_pct": [
+          90.3,
+          94.3,
+          82.8,
+          77.2,
+          89.2,
+          80.6,
+          94.1,
+          90.7,
+          95.7,
+          92.7
+        ],
+        "post_beneficial_n": 209,
+        "post_beneficial_kept_n": 77,
+        "post_beneficial_kept_fraction": 0.3684210526315789,
+        "post_harmful_n": 253,
+        "post_harmful_repaired_n": 145,
+        "disagree_with_post_n": 759
+      }
+    },
+    "attack_cover850_clean_only": {
+      "metrics": {
+        "n": 9500,
+        "correct": 8311,
+        "ca_pct": 87.48421052631579,
+        "class_correct": [
+          847,
+          906,
+          762,
+          712,
+          830,
+          746,
+          882,
+          872,
+          898,
+          856
+        ],
+        "class_n": [
+          958,
+          955,
+          951,
+          940,
+          943,
+          950,
+          948,
+          969,
+          943,
+          943
+        ],
+        "class_ca_pct": [
+          88.4133611691023,
+          94.86910994764398,
+          80.12618296529969,
+          75.74468085106383,
+          88.016967126193,
+          78.52631578947368,
+          93.0379746835443,
+          89.98968008255935,
+          95.22799575821846,
+          90.77412513255567
+        ],
+        "post_beneficial_n": 261,
+        "post_beneficial_kept_n": 96,
+        "post_beneficial_kept_fraction": 0.367816091954023,
+        "post_harmful_n": 259,
+        "post_harmful_repaired_n": 155,
+        "disagree_with_post_n": 917
+      },
+      "gate": {
+        "overall_drop_pp": 3.0315789473684163,
+        "worst_class_drop_pp": 6.309148264984216,
+        "overall_pass": false,
+        "class_pass": false,
+        "beneficial_pass": true,
+        "passed": false
+      },
+      "ridge": 10.26857946623297,
+      "derived_head_sha256": "a60a53baee751acb1fcf969387a4afeff3bacace214952a51126a56d159770e8",
+      "full10000": {
+        "n": 10000,
+        "correct": 8761,
+        "ca_pct": 87.61,
+        "class_correct": [
+          887,
+          950,
+          803,
+          760,
+          882,
+          785,
+          932,
+          900,
+          952,
+          910
+        ],
+        "class_n": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "class_ca_pct": [
+          88.7,
+          95.0,
+          80.3,
+          76.0,
+          88.2,
+          78.5,
+          93.2,
+          90.0,
+          95.2,
+          91.0
+        ],
+        "post_beneficial_n": 280,
+        "post_beneficial_kept_n": 114,
+        "post_beneficial_kept_fraction": 0.40714285714285714,
+        "post_harmful_n": 272,
+        "post_harmful_repaired_n": 160,
+        "disagree_with_post_n": 926
+      }
+    }
+  },
+  "passed": false,
+  "attack_ASR_measured": false,
+  "formal_deletion_measured": false,
+  "fit_uses_true_labels": false,
+  "fit_uses_attack_metadata": false
+}

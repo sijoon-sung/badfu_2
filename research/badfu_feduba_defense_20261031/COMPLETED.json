@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-10-31T09:45:07.205949+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.1+cu118",
+  "host": "DESKTOP-QUB35TD",
+  "cpu_threads": 2,
+  "cuda_used": false,
+  "training_seeds_added": 0,
+  "files": {
+    "FREEZE.json": "7f63ccf49c3562cce7530e264e41e1eb9b0b91f6ea41bafe8064d00f04cecc1b",
+    "hybrid_predictions.pt": "21af829079d6257ff511c64b102aee4441f0d82011f550283772f2f23a370447",
+    "INPUT_MANIFEST.json": "83ada7c5231e95b3c58f3624bb4f401361673c9d682842d759864277e42f24d0",
+    "PROTOCOL.txt": "7ef9a216e9a9313e1b5a63a18807a5f0479f0754fe8d9e43113aaa644fc4a822",
+    "PROXY_SPLIT.json": "f93073799b5e1fb920459dd6473d36bc8fa7c4d3a8dcee356794a96ba6fcc341",
+    "SELECTED_CASE.json": "1df64e7a10bf3d52730eb46b3a147bdaebc9991000a9c1d91f6e5cbd6d8016a0",
+    "stage01.py": "fb5adac05fa6f6951d70c35c0e4d1914fadce1a182b8979034fdf8b5571b4456",
+    "STAGE01_RESULT.json": "d5729228b63c63dc5a07db4e9218f5ba4a1d6bbc9bc3ad2abd31f8fe5e9ce512",
+    "STAGE02_RESULT.json": "494d117c4f783f78ae5eaad208d988f59813e27bd5abb15c19adf3d609b24e1c",
+    "transport_attack_cover850_clean_only.pt": "a60a53baee751acb1fcf969387a4afeff3bacace214952a51126a56d159770e8",
+    "transport_benign_big19336.pt": "6ce5cad399c4d69a5b94f70c76760dbefc52598c9347404f5ceadaf7eb199052",
+    "transport_benign_same850.pt": "5b0880d64f037d9ee19b80da58a9ea26ee8d2afc182efa686877e9e94c4f9c21"
+  }
+}

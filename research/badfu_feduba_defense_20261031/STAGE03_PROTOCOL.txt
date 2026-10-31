@@ -1,0 +1,20 @@
+가설 H3: Pre-backbone/Post-head의 공격 억제와 정상 클래스 훼손은 backbone trainable/state weights, BN running buffers, FC head 중 서로 다른 개입에서 발생하여 전체백본 복원보다 작은 수정의 설계 근거를 제공한다.
+관련 R01/R03/T01/D08/D15/D18/N02/P01/P02. H1/H2 실패 후 수정. 2026-10-31 KST.
+
+큰 가설 H0 공동방어는 여전히 미입증이다. H3는 원인 분해를 위한 유한 관측이며 trigger-family 독립 탐지나 삭제 인증이 아니다. 단순norm 점수를 만들지 않는다. 큰 정상 non-IID 반례를 같은 상태조합으로 먼저 검사해 공격만 ASR을 보고 고르는 오류를 막는다. 첫3쌍은 같은 BadFU1학습시드/유지자료재학습 조건이며 D08의 별도 실제FU, 정상22.790%, 독립시드 및 FedUBA는 이후 필수 검증으로 남는다.
+
+고정 상태 조합
+각 쌍: 큰정상19.336(clean_pre/clean_big_post), 정상850(clean_pre/clean_post), 공격위장850(pre/post).
+요인W: FC와 BN running buffers를 제외한 backbone state는 pre 또는 post. BN affine gamma/beta는W에 포함.
+요인B: running_mean/running_var/num_batches_tracked는 pre 또는 post.
+요인H: fc.weight/fc.bias는 pre 또는 post.
+2x2x2=8조합/쌍. 동일W/B에서feature를한번추출하고두head를FP64로적용한다. 각쌍4feature 추론이며 총12조합(같은clean_pre/clean_pre는공유캐시로중복추론하지않는다). 이전H2파생head도기존pre/pre feature에서평가한다. head상태는H2완료해시에묶인고정값을사용하며재학습하지않는다.
+모든 후보 정의와 head hash를 actual trigger 접근 전에 고정한다. 실제 trigger/target/역할은 평가자만 사용한다. 모든8조합을 보고하고 ASR최저만 채택하지 않는다. 새로운 서버선택기/배포규칙은 결과 뒤 별도프로토콜로 고정해야 한다.
+
+입력·평가
+case badfu.confirmed.s20261023.v1/purification_pilot을 DISLAB selector로 선택하고 외부 manifest/seal/전체파일을 검증한다. 원본모델은불변이며파생state는새root에저장한다. 원래data asset hash와9000개saved trigger image sha를확인한다. 동일clean10000/trigger9000, target제외분모, contiguous-NCHW/FP32/batch32/eval/TF32False로추론하고head곱만CPU FP64로기록한다. evaluator버전 defense_factorial_W_B_H_v1. 과거GPU/runtime와의비트동일성은보장하지않는다. native5모델CA/ASR의원정수수차이를기록하며각지표0.1%p초과면성능해석을중단하고그차이부터분리한다.
+fit500/heldout9500 split은단계01그대로사용한다. 전체clean/ASR및클래스효용/유익교정보존을모두보존한다. 공격ASR<=10,전체CA post대비-0.5%p이내/각클래스-2%p이내,두정상교정보존90%는후보에대한필요조건표시이며사후최저ASR선택법이아니다. 모듈별개입의해당조건변화가새관측이다. 삭제품질은별도검사전미확보로남긴다.
+
+자원·실행·중단
+DISLAB현재실제PID/명령행과GPU를검사한다. 이새inference프로필은free>=3072MiB/util<=10/경쟁학습PID0을요구하고프로세스별GPU메모리를전체의25%로제한한다. 기존FUBA훈련의7GB guard를승계하거나완화한것이아니라batch32전용별도추론프로필이다. 조건미달시새job은대기하고다른앱을종료하지않는다. GPU OOM/데이터/모델/소스/hash/비유한오류면즉시증거를저장하고중단한다. exclusive started파일과실제PID/status/로그를보존해중복실행을막는다.
+이유한8조합완료뒤이단계는재실행하지않는다. H3 미지지시BN/가중치기여가설을기각하고관측에근거한다음수정을만든다. 전체H0목표는성공이증명될때까지계속하며계산검증통과를방어성공으로바꾸지않는다.
