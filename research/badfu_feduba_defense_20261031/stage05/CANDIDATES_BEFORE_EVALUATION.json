@@ -1,0 +1,16 @@
+{
+  "heads": {
+    "benign_big19336_aligned_head.pt": "9a1427e9637ee4577fb79afb1081f9307fa0023969e6767f4e1515880c2f7395",
+    "benign_same850_aligned_head.pt": "d623159ead01221d6486cba3652277466ffbb4281ff36196e2cd6f7fb7a75224",
+    "attack_cover850_aligned_head.pt": "6f9b9859a09c93a22178004f01945de9fd4e7509bd70dedb2f2c5a9a91a00eb8"
+  },
+  "models": {
+    "benign_big19336_aligned_model.pt": "11400ef0cfde0d6eba36b6e48b0a9741bb960e128dfda6c2c8db57cff7cc92a9",
+    "benign_same850_aligned_model.pt": "e4910631c9a5489a11575cf256429979ee3c0fc24cfe3d5141f20301f2e44ee8",
+    "attack_cover850_aligned_model.pt": "5d8cf531bcf4d3c28d64d54aca92b60a806290f68fc08e9db47e07e6562bd1f8"
+  },
+  "fit_uses_labels": false,
+  "fit_uses_ASR": false,
+  "cached_trigger_features_opened": false,
+  "deleted_data_opened": false
+}

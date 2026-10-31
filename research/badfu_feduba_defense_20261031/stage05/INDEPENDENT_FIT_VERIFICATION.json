@@ -1,0 +1,23 @@
+{
+  "fit": {
+    "benign_big19336": {
+      "numpy_SVD_head_max_error": 0.0,
+      "clean_correct": 8602,
+      "attack_target_n": 160,
+      "integer_counts_match": true
+    },
+    "benign_same850": {
+      "numpy_SVD_head_max_error": 0.0,
+      "clean_correct": 8612,
+      "attack_target_n": 99,
+      "integer_counts_match": true
+    },
+    "attack_cover850": {
+      "numpy_SVD_head_max_error": 0.0,
+      "clean_correct": 8607,
+      "attack_target_n": 313,
+      "integer_counts_match": true
+    }
+  },
+  "delete": "pending"
+}

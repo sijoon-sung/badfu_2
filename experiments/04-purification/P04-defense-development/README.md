@@ -9,3 +9,7 @@
 다음 H3은 [backbone 가중치·BN 통계·head를 분리한 실제 개입](../../../research/badfu_feduba_defense_20261031/STAGE03_PROTOCOL.txt)이다. 이 진단은 공격 목표를 서버 선택에 넣지 않으며, 적격 FedUBA 모델과 삭제 품질은 아직 별도 필요조건이다.
 
 [연구 카드와 근거](../../../research/EXPERIMENT_CARDS.md#p04)
+
+H3의 전체9000장 검사에서 단순 교차 결합은 ASR5.2444%지만 클래스별 효용 기준에 미달했고, H4의 무라벨 block 선택은 원래 post를 선택하여 ASR100%로 남았다. 이를 보존한 뒤 특징 좌표의 직교 정렬 H5로 수정했다.
+
+[H5 실제 결과](../../../research/badfu_feduba_defense_20261031/STAGE05_REPORT_KO.txt): 동일 BadFU 공격 ASR3.4778%, 세 쌍의 전체/각class 정확도 필요조건 통과. 엄격한 post 교정90%보존 가설은 실패하며, 실제 삭제표본의 누설 감사는 GPU 자원 대기 중이다. 방어 완성이나 FedUBA 성공을 선언하지 않는다.
