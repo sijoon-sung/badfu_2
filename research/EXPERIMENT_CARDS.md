@@ -1099,6 +1099,8 @@
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/RESULT.json](badfu_feduba_defense_20261031/stage11/benign_big19336/RESULT.json)
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/COMPLETED.json](badfu_feduba_defense_20261031/stage11/benign_big19336/COMPLETED.json)
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json](badfu_feduba_defense_20261031/stage11/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json)
+- [research/badfu_feduba_defense_20261031/STAGE11_ATTACK_INPUT_AUDIT.json](badfu_feduba_defense_20261031/STAGE11_ATTACK_INPUT_AUDIT.json)
+- [research/badfu_feduba_defense_20261031/stage11/attack_cover850/SOURCE_INPUTS.json](badfu_feduba_defense_20261031/stage11/attack_cover850/SOURCE_INPUTS.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
