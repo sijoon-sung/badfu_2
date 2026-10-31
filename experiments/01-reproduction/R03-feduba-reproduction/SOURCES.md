@@ -21,3 +21,11 @@
 | [SOURCE_PROVENANCE.json](../../../research/feduba_paper_implementation_20261031/SOURCE_PROVENANCE.json) | `research/feduba_paper_implementation_20261031` |
 | [CORE_CONTRACT.txt](../../../research/feduba_paper_implementation_20261031/CORE_CONTRACT.txt) | `research/feduba_paper_implementation_20261031` |
 | [CORE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CORE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [CORE_CPU_RESULT.json](../../../research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [REPORT_KO.txt](../../../research/feduba_paper_implementation_20261031/REPORT_KO.txt) | `research/feduba_paper_implementation_20261031` |
+| [GPU_PREFLIGHT_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [GPU_PREFLIGHT_FREEZE.json](../../../research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_FL_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_FL_PROFILE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_FL_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [FOUNDATION_FREEZE.json](../../../research/feduba_paper_implementation_20261031/FOUNDATION_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
