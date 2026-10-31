@@ -161,3 +161,8 @@
 | [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/pair_pr/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/pair_pr` |
 | [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/pair_dislab/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/pair_dislab` |
 | [PAIR_CATALOGUE_FORMAT_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_CATALOGUE_FORMAT_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
+| [PROTOCOL.txt](../../../research/feduba_stage_diagnosis_20261101/PROTOCOL.txt) | `research/feduba_stage_diagnosis_20261101` |
+| [PROFILE.json](../../../research/feduba_stage_diagnosis_20261101/PROFILE.json) | `research/feduba_stage_diagnosis_20261101` |
+| [FREEZE.json](../../../research/feduba_stage_diagnosis_20261101/FREEZE.json) | `research/feduba_stage_diagnosis_20261101` |
+| [SOURCE_CHECKS.json](../../../research/feduba_stage_diagnosis_20261101/SOURCE_CHECKS.json) | `research/feduba_stage_diagnosis_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_stage_diagnosis_20261101/REPORT_KO.txt) | `research/feduba_stage_diagnosis_20261101` |

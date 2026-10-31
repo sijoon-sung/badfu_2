@@ -1,0 +1,35 @@
+{
+  "state": "passed_source_and_metadata_only_before_CPU8",
+  "utc": "2026-10-31T16:19:04.134665+00:00",
+  "freeze_sha256": "c4f0bd6b2b29cf12b75435dc36dd8942ddc2b11755290cf0a0128268f294e465",
+  "python_AST_files": 3,
+  "new_model_loads": 0,
+  "new_model_forwards": 0,
+  "old_research_processes": [],
+  "old_terminal_metadata": {
+    "PAIR_CONTROLLER_STATE.json": {
+      "sha256": "5ad4942227b7bb960519d03648bbdb4793a22d8f80e8387f2400df817318dca9",
+      "state": "completed_pair_evaluation_delivery_pending"
+    },
+    "PAIR_EVAL_VERIFIED.json": {
+      "sha256": "59938998149589c9cb1791457930ec0309bd739f72668b36b99284d714686c99",
+      "state": "passed"
+    },
+    "FU_benign_VERIFIED.json": {
+      "sha256": "b2980e63ec17d5d113effa41db90a5cc1c2ed86d8dc1260d4a9946358e42004a",
+      "state": "passed"
+    },
+    "FU_attack_VERIFIED.json": {
+      "sha256": "d9908a6918b93c16591b6be3c4aca1a24a6bd11e5103573783707bf0220e518b",
+      "state": "passed"
+    },
+    "STG_CPU_TRIGGER_CONTROLLER_STATE.json": {
+      "sha256": "b1af65a1cf080e80522128fc5197a1fa8475a9130e4d65b2ceacd284dfd34401",
+      "state": "completed_CPU_trigger100_verified"
+    }
+  },
+  "source_and_packet_bindings_match": true,
+  "original_GPU_STG_failure_preserved": true,
+  "source_only_no_torch_import": true,
+  "completed_finite_jobs_repeated": false
+}

@@ -1,0 +1,5 @@
+FedUBA 원인진단 준비 — R03/R02/N02/D08/D15, 2026-11-01 KST
+완료 pair의 잠복 활성화 성능실패와 실제 양쪽967파일전달/세catalogue등록은 그대로다. 새 원인진단은 source와 저장자료를 먼저 읽어 surrogate BN mode 차이로 범위를 좁혔다. 원CPU trigger CE는 마지막100epoch에도6.605510063171387이고, 고정 저자 trigger source는 warmup train 뒤 trigger 전에 eval을 호출하지 않는다. 현재 명시해석은 BN까지 eval고정이었다. 이것만으로 유일원인/유일저자정답을 인증하지 않는다.
+새 PROTOCOL/PROFILE은 마지막저장2batch의 eval/trainBN × zero/기존최종δ 정확8forward/800sample-forward·학습0회 비교를 고정했다. target200 counts와CE만 측정하며 victim재평가/새augmentation/새δ/seed/lr/epoch/budget/허용치 탐색은없다. trainBNcopy는 disposable 진단용이며 model저장·후속채택은없다. 고정40hit/CE1.0/양batch증가 rule과 미달중단, 독립저장logit 산술검산을 계산전에 선언했다.
+DISLAB SOURCE_CHECKS는 3Python AST/6동결파일·원논문/원source/모델/δ/2step hash/typed메타데이터와 원parent/모든연구child 종료·두20Rmanifest·원GPU실패보존을 확인했다. torchimport/modelLoad/모델forward는0이다. 이 source/profile/freeze를 PR선게시한 뒤 새정확CPU8task를한번시작한다. 현재이보고서 작성시 실제8forward/독립검산은미실행이다.
+BN mode 차이는 benign/nonIID에도 생길 수 있다. D08 공격.75848이큰정상.75525/.76188사이, D15 공격7/정상8은 해결하지 않으며 서버탐지/unknowntrigger/최종FU인과 성공을 주장하지 않는다. 예전훈련/감사/평가/전달/등록은 반복하지 않는다.
