@@ -1,0 +1,13 @@
+현재학생 query 재탐색의 큰 정상 삭제 결과 / 실제 공격 비교 진행, 2026-11-01 KST.
+R01/R03/P01/P04/D08/D12/D14/D15/D17/D18/N02. 명시 badfu.confirmed.s20261023.v1/purification_pilot, 유지자료 재학습/기존FL1시드. 원래Post 대 현재학생을 generator로 쓰는 것만 바꾼 동예산 새비교이며 코드·기준은 ADAPTIVE_QUERY_FREEZE.json의51파일로 고정했다. 이전 P01 학생재탐색 자체의 최초 신규성 주장은 하지 않는다.
+과정: 실제 once PID57036이 큰정상9668에서 두arm 각100Adam/9refresh/1800image-gradient를 마쳤다. 원래Post 대조는90/90, 현재학생 조건은89/90 시도가 teacher의 원source를 유지해 대체됐고, 거절1개는 원래 유효query를 유지했다. 주arm의9개 실제 generator 상태와 전체시도/거절/gradient objective/은행hash/optimizer/RNG를 보존했다.11+6 무라벨 공개선택 후에만 별도 heldout9500·삭제9668의 정답/회원 감사를 열었다. 학습/선택에는 실제 정답·trigger·target·회원자료가 제공되지 않았다.
+
+결과 (nativePost heldout CA89.8% 대비)
+arm                  alpha      CA%          worstclass손실pp    true-labeladv    maxlogadv
+fixed_post_refresh   .1265625   89.9684211   .8412198            .001912320       .006938939
+student_refresh      .1093750   90.0315789   .3191489            .002348545       .006892977
+모든4종 advantage/weighted-class-advantage 증가의 최대는 대조+.000096441/주-.000365594, 절대정확도gap 증가는+.000695638/-.000851326이다. 현 전체.5pp/각class2pp/adv증가.04/abs-gap증가.02 필요조건은 두arm 모두 통과했다.
+삭제후 유익교정212개 중 대조는189개(89.1509%), 주방법은193개(91.0377%)를 유지했다. 현재학생 arm은 이전90% 교정 유지 목표도 이 사례에서 통과했고 대조는 미달이다. 이전 Post-anchor의187/190개 미달과 H11의다른정상양성·공격실패를 지우지 않는다. 모든 정상요청/독립시드/형식망각 인증을 증명했다는 뜻은 아니다.
+
+검증 상태: 각 case COMPLETED/RESULT/선택/100step·9refresh 공개로그를 로컬로 복사했고 받은 파일들의 SHA가 봉인 receipt와 일치했다. 비공개 모델/입력/개별기록은 DISLAB 원위치에 보존했다. 전체 독립검산과 제한10update/첫refresh 재생은 아직 실행 전이다. 사전에 고정한13파일 audit source를 DISLAB에 전달·검증했으며 원래 pipeline 완료·실제PID 종료 후에만 수행한다. actor가 보고한 정상 필요조건 통과와 독립검산 완료를 혼동하지 않는다.
+같은 원래 actor는 동일 source/profile로 실제공격850 조건 학습에 진입했다. 같은arm의 실제 ASR10%와원정답 견고성2/5pp, 후속정상850·추가삭제감사는 아직 미측정이다. 실제공격 필요조건이 실패하면 해당finite pipeline을 선언대로 중단·보존하고, 결과를근거로 다음새가설/관측/비교/중단조건을정한다. 정상 통과나193/212만으로 전체방어·역할식별·FedUBA 효능을선언하지 않는다. D08/D15와D14/D17의실패·source다양성한계를유지한다.

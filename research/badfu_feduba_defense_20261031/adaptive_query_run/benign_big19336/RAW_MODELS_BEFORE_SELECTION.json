@@ -1,0 +1,18 @@
+{
+  "fixed_post_refresh": {
+    "path": "fixed_post_refresh_raw.pt",
+    "sha256": "bf2eee976b687651e612280d86901e2d6c52ca6265fd10d31e76e6c4d6b6bc28",
+    "steps": 100,
+    "identity_fallback": false,
+    "refreshes": 9,
+    "image_gradient_evaluations": 1800
+  },
+  "student_refresh": {
+    "path": "student_refresh_raw.pt",
+    "sha256": "5f83363c50fb59b1b89a831193eda66e720eca9752938c4f11085c750c9d0949",
+    "steps": 100,
+    "identity_fallback": false,
+    "refreshes": 9,
+    "image_gradient_evaluations": 1800
+  }
+}

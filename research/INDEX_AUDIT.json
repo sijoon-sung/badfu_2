@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "30fccc26ad0d4dcc82da36d803287521d19e1aad1ef7cb39650b1ba143077328",
+  "registry_sha256": "6a71cefa0a70b40af5e69193ff28705054ded8bccfa76ed7d1559260317197e8",
   "cards": 29,
-  "unique_source_documents": 560,
+  "unique_source_documents": 568,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -567,7 +567,15 @@
     "research/badfu_feduba_defense_20261031/external_feduba_evaluation/PAIR_EVAL_VERIFIED.json": "59938998149589c9cb1791457930ec0309bd739f72668b36b99284d714686c99",
     "research/badfu_feduba_defense_20261031/external_feduba_evaluation/PAIR_EVALUATION_COMPLETION.json": "19934c7ddfb53f298d1c8bcb018ee3f6939284f8d42e76a4eae9c8fb51d921a2",
     "research/badfu_feduba_defense_20261031/external_feduba_evaluation/ORIGIN.json": "26d5a40449e91ec9490b51a32feb0b7c966c5fc8b37ca29b3e45d32494293448",
-    "research/badfu_feduba_defense_20261031/P01_HISTORY_SCOPE_AMENDMENT_20261101.txt": "071258f97eb67d70f61b0cd06f29f3c71eadbd1d48922a967660fce7bd0c7f0a"
+    "research/badfu_feduba_defense_20261031/P01_HISTORY_SCOPE_AMENDMENT_20261101.txt": "071258f97eb67d70f61b0cd06f29f3c71eadbd1d48922a967660fce7bd0c7f0a",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_NORMAL_REPORT_KO.txt": "87e3c88a99d9b2f017e781067a03addda6e8b706e92805ecbe3c78adfae563b5",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/ROOT_RESULT_AFTER_NORMAL.json": "306cbf484c89a519115972afd6bb7baf13397fbed907fda99b519dc9d0df7811",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/RESULT.json": "8db8be149ec42532218ebb56de2f59cf13ae386386038a46e7aae32023743325",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/COMPLETED.json": "07c402fb6244c9428d7c6a6bbe6503e3d2482eb65af07edf8d22b3d3bd7e032e",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json": "b5fd43fb97dc5ebf21c34ceec17a5517e4316be1465c4f7a0b7b1c456efcd584",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json": "e12d19cd9eb0c9061cb9dbd39bcfbc9fd820dbed2454ce4ce7673163f164930d",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/fixed_post_refresh_REFRESH_TRACE.json": "a4e3887160a31c72857eac1b919479e2882105925316ec11c319afa3ae42ed29",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/student_refresh_REFRESH_TRACE.json": "105a23c8e8e07253104f806474db11502a49ae702d1c8dec957a764635f8f196"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -715,6 +723,7 @@
         "P04"
       ],
       "top_level_documents": [
+        "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_NORMAL_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_VERIFICATION_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/BACKBONE_ONLY_PARKED_PROTOCOL.txt",

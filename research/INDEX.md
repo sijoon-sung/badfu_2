@@ -123,7 +123,7 @@ flowchart TD
 | [P01 · 삭제 전후 반응 전이 정화](EXPERIMENT_CARDS.md#p01) | 제한된 정화 관찰 |
 | [P02 · 마지막 분류층 교정](EXPERIMENT_CARDS.md#p02) | 제한된 정화 관찰 |
 | [P03 · A/C 손실 분산·프루닝·헤드 증류 파일럿](EXPERIMENT_CARDS.md#p03) | 목표 판정 제외 — 입력 선택 오류 |
-| [P04 · BadFU·FedUBA 방어 개발: 표상 복원·삭제 감사·공개 기능 보존](EXPERIMENT_CARDS.md#p04) | Post-anchor 실제실패·전이진단완료 / 현재학생 query 재탐색 동예산 비교 실제시작 |
+| [P04 · BadFU·FedUBA 방어 개발: 표상 복원·삭제 감사·공개 기능 보존](EXPERIMENT_CARDS.md#p04) | 현재학생 query 재탐색 큰정상 필요조건/90%교정유지 통과 / 실제공격 학습중 |
 
 ### 미검증 제안·보류
 
