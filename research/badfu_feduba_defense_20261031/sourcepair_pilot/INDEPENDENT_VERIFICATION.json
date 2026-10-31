@@ -1,0 +1,173 @@
+{
+  "state": "passed",
+  "cases": {
+    "benign_big19336": {
+      "teacher_not_k": {
+        "source_correct_n": 10,
+        "teacher_counts": [
+          7,
+          2,
+          61,
+          0,
+          0,
+          10,
+          9,
+          0,
+          0,
+          1
+        ],
+        "joint_success_n": 8,
+        "source_preserved_count_per_source": [
+          2,
+          0,
+          5,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        "source_preserved_count_per_requested_target": [
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      "teacher_source": {
+        "source_correct_n": 74,
+        "teacher_counts": [
+          12,
+          9,
+          14,
+          8,
+          5,
+          7,
+          13,
+          6,
+          6,
+          10
+        ],
+        "joint_success_n": 54,
+        "source_preserved_count_per_source": [
+          9,
+          8,
+          9,
+          7,
+          5,
+          7,
+          9,
+          6,
+          6,
+          8
+        ],
+        "source_preserved_count_per_requested_target": [
+          7,
+          8,
+          5,
+          7,
+          8,
+          9,
+          6,
+          9,
+          8,
+          7
+        ]
+      }
+    },
+    "attack_cover850": {
+      "teacher_not_k": {
+        "source_correct_n": 12,
+        "teacher_counts": [
+          4,
+          0,
+          50,
+          5,
+          0,
+          27,
+          2,
+          0,
+          0,
+          2
+        ],
+        "joint_success_n": 9,
+        "source_preserved_count_per_source": [
+          0,
+          0,
+          8,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "source_preserved_count_per_requested_target": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          0,
+          1
+        ]
+      },
+      "teacher_source": {
+        "source_correct_n": 78,
+        "teacher_counts": [
+          10,
+          8,
+          9,
+          8,
+          6,
+          15,
+          7,
+          8,
+          9,
+          10
+        ],
+        "joint_success_n": 70,
+        "source_preserved_count_per_source": [
+          9,
+          7,
+          9,
+          8,
+          6,
+          9,
+          7,
+          7,
+          8,
+          8
+        ],
+        "source_preserved_count_per_requested_target": [
+          8,
+          8,
+          9,
+          9,
+          9,
+          4,
+          9,
+          8,
+          7,
+          7
+        ]
+      }
+    }
+  },
+  "fresh_model_inference": false,
+  "all_PGD_gradients_recomputed": false,
+  "initial_pseudo_labels_independently_forwarded": false,
+  "verifier_sha256": "d82e446518172d6b29a04e4921f785805bf162f4edb82a9d255f7b7b193ef261"
+}

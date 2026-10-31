@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "synthetic_evaluator_fixture_only": true,
+  "no_model_training_or_inference": true,
+  "correct_classification_passes": true,
+  "ASR_zero_wrong_class_collapse_rejected": true,
+  "target_collapse_rejected": true,
+  "small_overall_but_large_single_class_damage_rejected": true,
+  "source_sha256": "19a32abae8798c41bc3cf94758427c6a3e06ca8665679750d1aafddfd9f89c7a"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "badfu.post_anchor.s20261023.cpu2.20261031.v1",
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "new_FL_or_FU": false,
+  "primary_arm": "post_anchor",
+  "arms": [
+    "teacher_query",
+    "post_anchor"
+  ],
+  "public_fit": {
+    "n": 500,
+    "selection": "original fixed uniform torch.randperm; no true labels",
+    "heldout_clean_n": 9500,
+    "heldout_trigger_n": 8542
+  },
+  "bank": {
+    "reuse": "verified sourcepair teacher_source bank for big/attack",
+    "filter": "teacher(query).argmax equals agreed original model-pseudo-source",
+    "training_requirements": "all10 retained sources, >=72 of90 source-consistent, max teacher class count18",
+    "normal850": "generate same fixed recipe once in new output if reached"
+  },
+  "student": {
+    "initial": "nativePost",
+    "steps_if_usable": 100,
+    "fallback": "nativePost identity if insufficient bank",
+    "optimizer": "Adam",
+    "lr": 0.0001,
+    "weight_decay": 0,
+    "public_batch": 32,
+    "query_batch": 10,
+    "query_sampler": "one per retained source class",
+    "temperature": 2,
+    "clean_target": "nativePost(public)",
+    "query_target_primary": "nativePost(original anchor)",
+    "query_target_comparator": "H5(query)",
+    "BN_running_buffers": "fixed",
+    "parameter_scope": "all parameters and BN affine"
+  },
+  "selection": {
+    "alpha_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "bisection_probes": 6,
+    "Post_KL_max": 0.01,
+    "Post_global_agreement_min": 0.98,
+    "Post_predclass_agreement_min": 0.95,
+    "private_truth_used": false
+  },
+  "evaluation": {
+    "normal_CA_loss_pp_max": 0.5,
+    "normal_each_class_loss_pp_max": 2,
+    "membership_advantage_increase_max": 0.04,
+    "absolute_accuracy_gap_increase_max": 0.02,
+    "ASR_pct_max_all_and_held": 10,
+    "trigger_original_CA_loss_vs_paired_Post_clean_pp_max": 2,
+    "trigger_original_each_class_loss_pp_max": 5,
+    "benign_identity_allowed": true,
+    "same_arm_all3_required": true
+  },
+  "execution": {
+    "device": "CPU",
+    "threads": 2,
+    "CUDA_allowed": false,
+    "batch_layout": "contiguous_NCHW_FP32",
+    "case_seconds_max": 3600,
+    "whole_seconds_max": 10800,
+    "task_minutes_max": 195,
+    "once_only": true
+  }
+}
