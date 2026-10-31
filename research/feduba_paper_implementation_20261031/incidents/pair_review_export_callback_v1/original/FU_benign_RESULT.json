@@ -1,0 +1,26 @@
+{
+  "state": "completed_FU20",
+  "branch": "benign",
+  "profile": "feduba.paper.cifar10.sss_bea_federaser.s42.20261031",
+  "rounds": 20,
+  "new_trained_roles": 200,
+  "actual_local_epochs": 1000,
+  "actual_batches": 20000,
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "4027f5a984d99d72572f5972840d03bc3d62877c74f814adb435a31cb792e404",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "SSS_result_sha256": "69c2f28ba95d69341c3efa3d0126241fb31952448668883972c9aea499dc2a56",
+  "history_manifest_sha256": "b8d9b74e57bf880dca5a577c35bb43ac01252ff5fb2380f6eef4e2585d013a9c",
+  "performance_not_yet_evaluated": true,
+  "trigger_binding_sha256": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5",
+  "FedUBA_attack_completed": false
+}

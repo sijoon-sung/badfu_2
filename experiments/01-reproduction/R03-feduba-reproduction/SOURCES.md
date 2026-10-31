@@ -142,3 +142,11 @@
 | [PAIR_REVIEW_EXECUTION_CONTRACT.txt](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_EXECUTION_CONTRACT.txt) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_REVIEW_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_REVIEW_SOURCE_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_SOURCE_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_PUBLICATION.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_PUBLICATION.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_EXPORT_ONCE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_EXPORT_ONCE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_EXPORT_FAILURE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_EXPORT_FAILURE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_FAILED_PREFIX.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_FAILED_PREFIX.json) | `research/feduba_paper_implementation_20261031` |
+| [MANIFEST.json](../../../research/feduba_paper_implementation_20261031/incidents/pair_review_export_callback_v1/MANIFEST.json) | `research/feduba_paper_implementation_20261031/incidents/pair_review_export_callback_v1` |
+| [PAIR_REVIEW_RECOVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_RECOVERY_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_RECOVERY_SOURCE_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_SOURCE_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
