@@ -7,5 +7,5 @@
 | ID | 실험 | 현재 판단 |
 |---|---|---|
 | R01 | [BadFU 학습과 삭제 전후 모델 확인](R01-badfu-reproduction/README.md) | 검증 범위 한정 |
-| R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](R02-fuba-reproduction/README.md) | 고정seed 첫새100R/KD10 전달완료·성능미달 / 다음seed GPU자원 대기 |
-| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | 공식 배포 누락·원본 ID 계약 실패 / 공격 성능 재현·탐지 사용 미검증 |
+| R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](R02-fuba-reproduction/README.md) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
+| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | 사용자 정정으로 FedUBA 활성구현 전환 / 원문STG·SSS·BEA core계약 준비 |

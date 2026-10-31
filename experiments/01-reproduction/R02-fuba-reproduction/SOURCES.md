@@ -250,3 +250,4 @@
 | [DELIVERY_COMPLETE.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/DELIVERY_COMPLETE.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
 | [REPORT_KO.txt](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/REPORT_KO.txt) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
 | [FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json](../../../research/00_trajectories/audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json) | `research/00_trajectories/audit` |
+| [PREVIOUS_QUEUE_STOPPED.json](../../../research/feduba_paper_implementation_20261031/PREVIOUS_QUEUE_STOPPED.json) | `research/feduba_paper_implementation_20261031` |
