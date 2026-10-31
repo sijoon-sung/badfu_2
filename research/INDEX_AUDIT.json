@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "e6e7648b58cdc5727b69b39eb5e8254a349321bad01abcb0f598c2e43a69f4d5",
+  "registry_sha256": "1635644a61bc7a46f00c9c69ae8ba8b6e44c7d8e4f587582ca565b5e783b7b2b",
   "cards": 29,
-  "unique_source_documents": 401,
+  "unique_source_documents": 403,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -408,7 +408,9 @@
     "research/badfu_feduba_defense_20261031/STAGE10_FREEZE.json": "4c8ac180b156770ccc613944176178448ca26f54d0ab2afc1da2471da42e3da8",
     "research/badfu_feduba_defense_20261031/stage10/STARTED.json": "19ea1520cd4d617cdf1ea72358126542a6d52be0914186af5d4d9a3d850f0f07",
     "research/badfu_feduba_defense_20261031/stage10/attack_cover850/SOURCE_INPUTS.json": "af90f74744c33929f6e2e5a08b09490b7a8bece06c39048f3f9c9a790aaae4eb",
-    "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json": "99bc87ecae56538bebfeff7e88a45b1a6f78bb2fb844ac490877c25789b5fa57"
+    "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json": "99bc87ecae56538bebfeff7e88a45b1a6f78bb2fb844ac490877c25789b5fa57",
+    "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_CORRECTION_PROTOCOL.txt": "5a5b46c45da6ad6f26a4e7aacdacc5fc10df64e407c523948e391accb5f810f5",
+    "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_FREEZE.json": "4306548340706723a42b29db7b15dfd5b328ad0c6801bf09da2a27ebe430cd57"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -557,6 +559,7 @@
       ],
       "top_level_documents": [
         "research/badfu_feduba_defense_20261031/COMPLETED.json",
+        "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_CORRECTION_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/LAUNCH_RECOVERY_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE01_REPORT_KO.txt",

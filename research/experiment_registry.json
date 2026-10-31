@@ -953,11 +953,11 @@
       "id": "P04",
       "group": "정화·별도 단계",
       "title": "BadFU·FedUBA 방어 개발: 표상 복원·삭제 감사·공개 기능 보존",
-      "status": "H9 큰정상 효용·삭제 감사 통과 / H10 동일규칙 실제공격 CPU실행중",
+      "status": "H10 실제공격 실행중 / public500제외 삭제감사 대조군 정정",
       "hypothesis": "실제 삭제 품질과 정상 non-IID 삭제의 효용을 보존하는 공개 기능 교정은 BadFU와 FedUBA의 활성화를 억제할 수 있다.",
       "conditions": "사용자 지속 개발 지시. 명시 BadFU confirmed v1/purification_pilot,1실학습시드/재학습3쌍. 단계01은D18해시검증캐시를DISLAB CPU로연산했고새FL반복이아니다.500무라벨fit/9500heldout. 실제FedUBA는별도구현중이며미검증.",
       "controls": "정상19.336%전체삭제를먼저검사하고정상850과공격clean효용을같은규칙으로비교. 전체CA와각클래스/유익교정보존을분리한다. D08/D15다른FU반례를보존.",
-      "result": "H1 단순 Pre-backbone/Post-head 결합은 ASR5.2444%지만 큰정상 worstclass-5.6204pp, H2 head운반은 CA실패였다. H3 실제24조합/11고유backbone은 native5 정수수일치를확인했고 BN/head단독복원 ASR100을보였다. H4 discrete block선택은 모두identity/공격ASR100. H5 정렬은 ASR3.4778%/세쌍CA기준을통과했지만 실제삭제advantage 큰정상.172122/정상850 .387489/공격.835412로실패했다. H6 Post표현역운반은삭제감사통과/ASR100. H8 Post학생 두arm은 큰정상삭제감사기준통과(adv.015067/.018977), CA85.3579/85.6421(기준89.8)로효용실패. 同batch진단은cleanAdam overshoot와queryjoint손실감소에도전체clean손실증가를구분하여 단순optimizer교체만채택하지않았다. H9는P01 KL.010/H4 예측일관성으로각11grid+6probes중연속교정을고정선택했다. alpha.0453125/.0703125, 큰정상CA90.0526/89.8421, worstclass감소.1047/1.2618pp, adv.003341/.002387, 기존교정90%가설96.6981/91.5094%로두arm모두큰정상필요조건통과.34proxy정책/40classAUC/모델보간/hash/엄격로드검산통과. H9의공격ASR은아직검사하지않았고 H10 동일recipe의실제attack9000장확장은독립검산을선행조건으로동결했다. 모든이전실패와준비오류/수치정정을원보고서에보존하며두공격공동성공을주장하지않는다. H10 PID56484/once task에서실제query26/32를관측했고사용teacherSHA가원H5봉인과일치했다.기존H5/H7부모입력receipt해시의로컬/DISLAB일치도새추론전확인했다.공격ASR결과는아직없으며실행시작을효과로부르지않는다.",
+      "result": "H1 단순 Pre-backbone/Post-head 결합은 ASR5.2444%지만 큰정상 worstclass-5.6204pp, H2 head운반은 CA실패였다. H3 실제24조합/11고유backbone은 native5 정수수일치를확인했고 BN/head단독복원 ASR100을보였다. H4 discrete block선택은 모두identity/공격ASR100. H5 정렬은 ASR3.4778%/세쌍CA기준을통과했지만 실제삭제advantage 큰정상.172122/정상850 .387489/공격.835412로실패했다. H6 Post표현역운반은삭제감사통과/ASR100. H8 Post학생 두arm은 큰정상삭제감사기준통과(adv.015067/.018977), CA85.3579/85.6421(기준89.8)로효용실패. 同batch진단은cleanAdam overshoot와queryjoint손실감소에도전체clean손실증가를구분하여 단순optimizer교체만채택하지않았다. H9는P01 KL.010/H4 예측일관성으로각11grid+6probes중연속교정을고정선택했다. alpha.0453125/.0703125, 큰정상CA90.0526/89.8421, worstclass감소.1047/1.2618pp, adv.003341/.002387, 기존교정90%가설96.6981/91.5094%로두arm모두큰정상필요조건통과.34proxy정책/40classAUC/모델보간/hash/엄격로드검산통과. H9의공격ASR은아직검사하지않았고 H10 동일recipe의실제attack9000장확장은독립검산을선행조건으로동결했다. 모든이전실패와준비오류/수치정정을원보고서에보존하며두공격공동성공을주장하지않는다. H10 PID56484/once task에서실제query26/32를관측했고사용teacherSHA가원H5봉인과일치했다.기존H5/H7부모입력receipt해시의로컬/DISLAB일치도새추론전확인했다.공격ASR결과는아직없으며실행시작을효과로부르지않는다. 비회원대조군에학생학습public500이포함된평가구성오류를발견했다.모든이전수치는보존하고동일heldout9500/원BDtestID기반heldouttrigger만으로nativepost기준과모든후보를재계산하는정정을사전동결했다. H9기존삭제통과는정정확인전잠정이며H10source/학습은변경하지않는다.",
       "non_iid_lesson": "전체CA는클래스별훼손을가릴수있고Pre표현복원은실제삭제회원구별가능성을되살릴수있었다. Post학생은유한누설기준을지켜도효용을잃을수있어실제교정기능/전체정상보존/삭제감사를분리한다. 한큰정상조건의통과는D08/D15의다른FU·시드반례해결이나trigger-family-independent탐지의증거가아니며finite MIA통과는형식적망각인증이아니다.",
       "do_not_repeat": "전체CA만으로무손실/삭제보존이라고부르지않고ASR사후최저후보선택/실제타깃을fit에쓰지않는다. 완료된H1/H2를재실행하거나실패를삭제하지않는다. FUBA를FedUBA로바꾸어부르지않는다.",
       "revisit_condition": "가중치/BN/head원인분해후고정서버규칙을새프로토콜로정하고큰정상동일FU/독립시드/전체공격평가/삭제품질을함께통과해야채택한다. 각후보실패는보존후수정하고전체방어목표는계속한다.",
@@ -1034,7 +1034,9 @@
         "research/badfu_feduba_defense_20261031/STAGE10_FREEZE.json",
         "research/badfu_feduba_defense_20261031/stage10/STARTED.json",
         "research/badfu_feduba_defense_20261031/stage10/attack_cover850/SOURCE_INPUTS.json",
-        "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json"
+        "research/badfu_feduba_defense_20261031/STAGE10_INPUT_AUDIT.json",
+        "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_CORRECTION_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_FREEZE.json"
       ],
       "process_report": "experiments/04-purification/P04-defense-development/README.md",
       "github_group": "04-purification"
