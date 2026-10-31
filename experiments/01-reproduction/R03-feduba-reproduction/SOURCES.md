@@ -176,3 +176,10 @@
 | [COMPLETION.json](../../../research/feduba_stage_diagnosis_20261101/COMPLETION.json) | `research/feduba_stage_diagnosis_20261101` |
 | [NEXT_CURRICULUM_RATIONALE.txt](../../../research/feduba_stage_diagnosis_20261101/NEXT_CURRICULUM_RATIONALE.txt) | `research/feduba_stage_diagnosis_20261101` |
 | [CHECKS.json](../../../research/feduba_stage_diagnosis_20261101/CHECKS.json) | `research/feduba_stage_diagnosis_20261101` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_surrogate_20261101/PROTOCOL.txt) | `research/feduba_mixed_surrogate_20261101` |
+| [PROFILE.json](../../../research/feduba_mixed_surrogate_20261101/PROFILE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [FREEZE.json](../../../research/feduba_mixed_surrogate_20261101/FREEZE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [MONITOR_PROTOCOL.txt](../../../research/feduba_mixed_surrogate_20261101/MONITOR_PROTOCOL.txt) | `research/feduba_mixed_surrogate_20261101` |
+| [COPY_PROVENANCE.json](../../../research/feduba_mixed_surrogate_20261101/COPY_PROVENANCE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [SOURCE_CHECKS.json](../../../research/feduba_mixed_surrogate_20261101/SOURCE_CHECKS.json) | `research/feduba_mixed_surrogate_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_surrogate_20261101/REPORT_KO.txt) | `research/feduba_mixed_surrogate_20261101` |

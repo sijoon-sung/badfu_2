@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "9b074044e549f2963b94617dc90740b4a8bc3652dc8b0f38fa35ecb99dee68ef",
+  "registry_sha256": "eff19d52624155d177bcf23511f37309eec634cd2b3e4977646dae482ba0dcea",
   "cards": 28,
-  "unique_source_documents": 491,
-  "top_level_folders": 109,
-  "folders_linked_to_cards": 61,
+  "unique_source_documents": 498,
+  "top_level_folders": 110,
+  "folders_linked_to_cards": 62,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -424,6 +424,13 @@
     "research/feduba_stage_diagnosis_20261101/COMPLETION.json": "73acb6a8000e779631caa10fe740426477673f1b2d4ffdbbd57a3fb5fcdfef68",
     "research/feduba_stage_diagnosis_20261101/NEXT_CURRICULUM_RATIONALE.txt": "1c16f6fd99bd5857af5bf2429e27a6afa4f6604d7854eeb703e6d7d4edd34196",
     "research/feduba_stage_diagnosis_20261101/CHECKS.json": "eb9d69ce2656d629db838303f98df127ffc316fc1084ec0c8e1308743553dd6a",
+    "research/feduba_mixed_surrogate_20261101/PROTOCOL.txt": "17ed47579f5fce820585e293d8d19e2e5c534c4ed399b0e53cebde9b6cdb38e8",
+    "research/feduba_mixed_surrogate_20261101/PROFILE.json": "47c14d13bab0e359066330b652fbbe8ca4d1801ea275d3d8bc862f00454b7ef9",
+    "research/feduba_mixed_surrogate_20261101/FREEZE.json": "3ab036a02e1e6a418fbe9e1a3f90e72e98f561aa264f80747af96842bcea7ab3",
+    "research/feduba_mixed_surrogate_20261101/MONITOR_PROTOCOL.txt": "52d2f7227344c98e62bf02edf0dc84f09255eabd9eaa72b3190928ce8ed7c1e9",
+    "research/feduba_mixed_surrogate_20261101/COPY_PROVENANCE.json": "cc2a14b7d013c18e77e4323a2f64ad99639a8d0c1602e46d33275c1475ea2da9",
+    "research/feduba_mixed_surrogate_20261101/SOURCE_CHECKS.json": "9c0e272e1e983e3237f2858f2afb27e8191864ba85ec3712c4d77cfd03264a71",
+    "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt": "fa430ab7a8201aa7a66f5f7b19301c047e8f98401376156d81fc744aa1fb6652",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -804,6 +811,18 @@
         "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"
+    },
+    {
+      "path": "research/feduba_mixed_surrogate_20261101",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_mixed_surrogate_20261101/MONITOR_PROTOCOL.txt",
+        "research/feduba_mixed_surrogate_20261101/PROTOCOL.txt",
+        "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
     },
     {
       "path": "research/feduba_paper_implementation_20261031",

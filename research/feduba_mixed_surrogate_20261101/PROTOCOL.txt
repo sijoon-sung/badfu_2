@@ -1,0 +1,27 @@
+FedUBA mixed surrogate teacher100 + warmup5 — 새 명시 유한 교정, 2026-11-01 KST
+관련 R03/R02/N02/D08/D15. AGENTS/INDEX/관련카드·원보고서/정정과 CPU8원자료를 읽었다.
+
+한문장 가설: 공개source의 target+외부자료 concoct_dataset 호출에 근거해 surrogate pretrain에서target200 양성노출을 보존하면, Tiny-only201 뒤 warmup5까지0/200이던 교사의 목표인식 필요조건을 회복할 수 있다.
+새 관측: 같은고정fresh201 initial에서 새단일mixedcurriculum100+warmup5의 실제노출/도메인/원ID·105epoch전체상태와, 기존CPU8 zero의 정확같은target x에서 새교사의 예측을 관측한다. 이전교사/CPU8/기존FU/전수평가/전달을 반복하지 않는다.
+
+근거/미인증
+원warmup5 모두0/200, CPU8 eval/trainBN × zero/finalδ 모두0/200이고 BN개선rule은기각됐다. 원201출력 pretrain은Tiny라벨0..199만받았다. 원문p10498은surrogate/target자료와두단계학습을설명하며고정upstream은두자료를concoct_dataset에전달한다. 누락utils의helperbody는없어정확Concat이나라벨/샘플링이저자코드와같다고인증할수없다. 이번명시Concat은그호출을보존하는단일회복후보이며untouched/유일저자정답/성능성공이아니다. R02 FUBA별도역할쌍/자동부호반전을이식하지않는다.
+
+고정 조건과 새작업
+- 계산전게시뒤새CPU2 합성domain계약1회가Tiny/외부원ID400충돌·라벨·양배열선택/정확정규화의7getitem과100200/200 sampler각1pass·tail104/72를확인한다. expanded합성배열을쓰고실자료읽기/모델forward/optimizer는0이다. 기존core/GPU/SSS/FUfixture를반복하지않는다. 실패면GPU시작없이보존한다.
+- 새root D:/FEDUBA_MIXED_SURROGATE_20261101 / 정확task Codex-FedUBA-mixed-surrogate100-warmup5-20261101. 1controller→새CPU domain계약→GPUteacher→CPUaudit→CPUendpoint→저장logit독립검산만 각각1회. 새trigger/SSS/FU/추가모델재훈련/평가선택은시작하지않는다.
+- 원STG_READY의fresh201 initial SHA6d1952e6.../payload model과 원고정Tiny100000/target200 blob을읽는다. originalcleanFL과surrogate/warmup/CPUtrigger완료branch는불변이며기존준비기를다시실행하지않는다. 원clean diagnostic case/select_case/외부manifest/seal/preSHA/payload guard와원CPU8·실패증거를별도핀한다. 정상pre를교사초기로쓰지않는다.
+- SimpleConcat 순서는Tiny100000(라벨0..199), 외부target200(새label200)이다. 각epoch100200장을중복없는shuffle1pass로학습한다. 배수/class balancing/oversampling/새자료는없다. mixed position과(domain,originalID)를모두저장해Tiny400과외부400을구별한다. 학습배치128/tail104로783,100epoch78300batch다.
+- 원base seed0/phase1000·2000, 같은augmentation/SGD.1 mom.9 wd5e-4 cos100와warmupRAdam.001/5epoch/B128 tail72=10batch다. 총105epoch/78310batch/10021000exposure/target21000노출이다. 모든epoch model/optimizer/scheduler·입출력chain/전체source domain·ID·label/loader와전후global Python/NumPy/CPU/CUDA RNG를저장한다. 실제batch의target/Tiny seen·correct도별도로남긴다.
+- 새GPU전 실제CIM PID/commandline/parent·기존task종료와사전B128근거의util<=5/free>=4000/used<=6000/경쟁trainer0·disk20GiB를확인한다. 다른앱을종료하지않는다. CPUparent는자원부족에만대기하고학습child를중복시작하지않는다. ownCUDA시작후증가를시작guard실패로오인하지않는다.
+- FP32/AMPoff,matmulTF32off/cudnnTF32on/benchmarkfalse/deterministicfalse/highest/CPU1을실제getter로기록한다. 이는원source의현재기본값을명시한것이며원run미기록getter까지bit동일이라고소급인증하지않는다. Python/torch/torchvision/NumPy/Pillow버전을PROFILE로핀했다.
+
+독립감사/endpoint
+1. GPUteacher105epoch종료뒤새CPU1프로세스가모든105hash/strictmodel·optimizer/scheduler·phase/원initial연결·전노출/ID/domain/label/sampler·RNG연속과phase시드·BNcounter정확누적78310을검산한다. 최종bare201이warmup5와모든tensor정확일치함도확인한다. 모든SGDgradient/rawaugmentation을독립재생하는감사는아니다.
+2. 새CPU2/MKLDNN/FP32/-1·CUDA미초기화/eval에서신teacher만정확4forward/400sample-forward를수행한다. target200은원readonlypacket의마지막trigger100의저장x128/72를그대로사용해기존CPU8 eval/zero와입력·원ID·장치를맞춘다. δ/새augmentation은없다. 추가Tiny200은각class의최소원index1장씩결과를보기전고정하고deterministic Normalize.5로학습대표자료의상수class200붕괴만진단한다. held-out일반화평가가아니다.
+3. 사전최소필요조건은같은target200에서기존0보다정답증가(>0) 및Tiny의서로다른2개이상class정답이다. 필요조건일뿐trigger전이/잠복공격/전체paper성능충분조건이아니며어느결과여도이controller는여기서종료한다. 성능을보고δ/seed/lr/epoch/budget/분모/tolerance를선택하지않는다.
+4. 독립CPU1 새프로세스는저장400logit의Pythonargmax·안정logsumexp/fsum CE·counts/동일target입력/ID·고정Tiny rawuint8의정확전처리를검산한다. 모델forward0이며독립모델재추론은아니다. CE atol5e-6+rtol1e-5와정수count정확일치를사전고정한다.
+
+중단/보존/넓은범위
+고정100+5는중간성능으로중단/튜닝하지않는다. source/hash/ID/finite/count/RNG/storage/runtime/수치실패면현prefix/trace를보존하고종료하며자동retry/사후허용치확대는없다. 새source/profile/freeze/source-only검사를같은PR에게시한뒤PUBLICATION/원격freeze를확인하고새task를처음시작한다. PS호출은새process -NoProfile -ExecutionPolicy Bypass -File로고정해저장machine/user정책을바꾸지않는다. 기존실행source/profile/결과/원receipt/catalogue/default/incident는수정하지않는다.
+D08공격.75848은큰정상.75525/.76188사이고D15공격7/정상8이다. 정상교사도목표인식을배울수있어이번관측으로이반례를구별하지못한다. norm/cosine/CKA/RMS/민감도탐지나unknown-trigger-family검증으로승격하지않는다. evaluator-only target/δ/역할진실을server방법선택에넣지않는다. 원GPU감사실패/CPU복구/두FU성능실패와967파일전달완료를유지하고전체목표는미완료로남긴다.

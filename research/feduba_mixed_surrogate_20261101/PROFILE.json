@@ -1,0 +1,215 @@
+{
+  "id": "feduba.teacher.mixed_tiny100000_external200.s0.100_5.20261101",
+  "execution_root": "D:/FEDUBA_MIXED_SURROGATE_20261101",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "Positive exposure of the external target label200 during surrogate pretraining, inferred from the public target+outer concoct_dataset call, can restore the teacher target recognition that was absent after Tiny-only201 and warmup5.",
+  "new_observable": "One new curriculum from the identical pinned fresh201 initial, full domain/ID/label/exposure audit, and teacher predictions on exactly the old CPU8 zero target inputs plus fixed Tiny training representatives.",
+  "change_from_previous_run": "Declared concatenation Tiny100000 labels0..199 followed by existing external200 label200 during pretrain, rather than Tiny-only201. Warmup dataset, initial, seed, epochs, batch size and optimizers remain fixed.",
+  "public_helper_body_recovered": false,
+  "author_certified_unique_interpretation": false,
+  "untouched_author_execution": false,
+  "upstream_commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "paper_DOI": "10.1109/TDSC.2026.3703139",
+  "seed": 0,
+  "batch_size": 128,
+  "workers": 0,
+  "surrogate_epochs": 100,
+  "warmup_epochs": 5,
+  "output_classes": 201,
+  "pretrain_data": {
+    "Tiny_N": 100000,
+    "external_target_N": 200,
+    "labels": "Tiny0..199, external200",
+    "sampling": "shuffle one pass without replacement each epoch, no class reweighting/oversampling",
+    "identity": "mixed position0..99999 maps domain0/Tiny original index;100000..100199 maps domain1/external original ID; preserve raw-ID overlaps across domains"
+  },
+  "surrogate_optimizer": {
+    "name": "SGD",
+    "lr": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "scheduler": "CosineAnnealingLR100"
+  },
+  "warmup_optimizer": {
+    "name": "RAdam",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "epochs": 5,
+    "batches_per_epoch": 2
+  },
+  "augmentation": "Identical RandomCrop32_pad4/RandomHorizontalFlip/ToTensor/Normalize0.5 for mixed training and warmup; no new data download/preparer.",
+  "phase_seeds": {
+    "mixed_surrogate": 1000,
+    "warmup": 2000
+  },
+  "fixed_budget": {
+    "model_epochs": 105,
+    "training_batches": 78310,
+    "sample_exposures": 10021000,
+    "external_target_exposures": 21000,
+    "mixed_batches_per_epoch": 783,
+    "mixed_tail": 104,
+    "warmup_tail": 72,
+    "endpoint_CPU_forward_calls": 4,
+    "endpoint_sample_forwards": 400,
+    "independent_endpoint_model_forwards": 0,
+    "trigger_steps": 0,
+    "SSS_queries": 0,
+    "FU_rounds": 0,
+    "new_synthetic_domain_contract": {
+      "image_getitems": 7,
+      "sampler_passes": 2,
+      "real_data_reads": 0,
+      "model_forwards": 0,
+      "optimizer_steps": 0
+    }
+  },
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "GPU_training_math": {
+    "dtype": "FP32",
+    "AMP": false,
+    "matmul_TF32": false,
+    "cudnn_TF32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "torch_deterministic_algorithms": false,
+    "matmul_precision": "highest",
+    "CPU_threads": 1,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "interpretation": "Explicit current defaults matching original source settings; original run did not record all getters, so bit/numerical-policy identity is not retroactively certified."
+  },
+  "CPU_endpoint_math": {
+    "threads": 2,
+    "MKLDNN": true,
+    "dtype": "FP32",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "CUDA_initialized": false,
+    "mode": "eval, all weights and BN frozen",
+    "AMP": false,
+    "matmul_precision": "highest"
+  },
+  "endpoint_target_probe": "Exactly the two original saved epoch100 target x/IDs from CPU8 zero cells, no perturbation/new augmentation; current teacher only. Old teacher/logits are not rerun.",
+  "endpoint_Tiny_probe": "One already training image per Tiny class0..199, lowest original index, deterministic Normalize0.5; 200 training representatives, not held-out/generalization evidence.",
+  "endpoint_minimal_condition": "target correct > original0/200 AND at least two distinct Tiny classes correctly recognized; minimal noncollapse/recognition prerequisite only, not sufficient for trigger transfer, latent activation or attack success.",
+  "endpoint_CE_atol": 5e-06,
+  "endpoint_CE_rtol": 1e-05,
+  "audit_scope": "New CPU1 audit of every105 model/optimizer/scheduler/hash/ID/domain/label/loader/RNG/BN-counter chain and exact final bare teacher. No local SGD gradient or all raw augmentation independent replay. New CPU1 endpoint audit uses saved logits and source inputs only, zero model forwards.",
+  "minimum_free_storage_bytes": 21474836480,
+  "GPU_start_guard": {
+    "util_max": 5,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000,
+    "competing_trainers": 0
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "normal_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "normal_manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "normal_seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "normal_pre_sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+  "bindings": {
+    "initial": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/stg_initial.pt",
+      "sha256": "6d1952e6b1521441a9721995d1a5d2042edc08b21cc27f9a013008e6cab9e9cd",
+      "bytes": 45167625,
+      "payload_key": "model"
+    },
+    "tiny": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/surrogate_tiny_train.pt",
+      "sha256": "7994e99cd4fd4798a17d1302598bcf83ff76b11a2facbbb5ff74e0697bd4d543",
+      "bytes": 308005157,
+      "payload_key": null
+    },
+    "target": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/target_external.pt",
+      "sha256": "8a40deeb76740157aaeecb259d013740ff83b3f54c155ccf6c3802a7bba2ab4a",
+      "bytes": 618597,
+      "payload_key": null
+    },
+    "architecture": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "paper": {
+      "path": "D:/FEDUBA_REPRO_AUDIT_20261031/FedUBA-TDSC26.pdf",
+      "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98"
+    },
+    "upstream_source": {
+      "path": "D:/FEDUBA_REPRO_AUDIT_20261031/upstream_author/trigger_generate_function.py",
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06"
+    },
+    "old_ready": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/STG_READY.json",
+      "sha256": "073c8b722ca3f24d551b70bc5366c70e8b164f50e2c83d61beeeaa1ae6fa6056"
+    },
+    "asset_receipt": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/ASSET_CPU2_RESULT.json",
+      "sha256": "97b037b15a9f826a93c9495fefeb2c3ccf79357fdec73fba0bba93c74f2797ae"
+    },
+    "clean_verified": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_VERIFIED.json",
+      "sha256": "bd44e8ac785dbee5478ee2f5976b19dd807e90843f8f4de0b2880da3cd14d471"
+    },
+    "foundation_state": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/FOUNDATION_STATE.json",
+      "sha256": "612c4a7233c455d4beae3bcc36afc120a09d06f67b6c9aa53f611f521950d3b8"
+    },
+    "original_runtime_common": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/runtime_common.py",
+      "sha256": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e"
+    },
+    "old_CPU8_result": {
+      "path": "D:/FEDUBA_STAGE_DIAGNOSIS_20261101/RESULT.json",
+      "sha256": "ca708caba26653f31a1701792041bcf2ba8ec2906f7b755ab79317542e3455ef"
+    },
+    "old_CPU8_verified": {
+      "path": "D:/FEDUBA_STAGE_DIAGNOSIS_20261101/VERIFIED.json",
+      "sha256": "e901197679ae22d331309729e5fc2caf3ea920d6af383d1898e989b90a055e8b"
+    },
+    "pair_manifest": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031/DELIVERY_MANIFEST.json",
+      "sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb"
+    },
+    "pair_seal": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031/DELIVERY_SEAL.json",
+      "sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7"
+    },
+    "target_probe_step1": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031/private_tensor_evidence/stg_cpu_trigger_recovery/steps/epoch100_batch1.pt",
+      "sha256": "b90768c972846d00b84452abdd6a9f7d7e65003c29ab5a4d51e5246d7bafcbdf",
+      "bytes": 1620177,
+      "payload_key": null
+    },
+    "target_probe_step2": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031/private_tensor_evidence/stg_cpu_trigger_recovery/steps/epoch100_batch2.pt",
+      "sha256": "baea138b6abb9f7388d44c3e1271fc32cbf588e79c532c88a55852c7fe024a82",
+      "bytes": 931153,
+      "payload_key": null
+    }
+  },
+  "stop_rule": "Complete fixed100+5 without performance early stopping or tuning; after CPU audit and4 CPU probes/logit audit stop regardless of the minimal condition. Any source/hash/ID/finite/count/RNG/storage/runtime/numeric failure preserves prefix and exits with no automatic retry. New trigger/SSS/FU require a separate explicit source binding and prepublished launch contract; this controller never starts them.",
+  "D08_D15_scope": "Teacher recognition also occurs for benign models and does not separate large benign non-IID deletion. Preserve attack.75848 between benign.75525/.76188 and D15 attack7/benign8. No norm/change-magnitude detector or unknown-trigger-family claim.",
+  "raw_privacy": "105 model/optimizer/RNG/IDs, full epoch events and endpoint inputs/logits remain in private_run on DISLAB; public Git contains only source, counts/hash/aggregate metadata and actual failures/checks.",
+  "overall_goal_complete": false
+}
