@@ -6,3 +6,7 @@
 D08/D15 큰 정상 nonIID 반례는 해결되지 않았으며 새 탐지 점수나 성공 ASR/CA는 주장하지 않는다.
 
 실행정정: PR commit a9acbec 게시뒤 원격source freeze 검사를통과하고 새예약작업을1회시작했다. 실제parent35368/controller9492/trainer54660이생존하며 첫역할client0/3의각전체10epoch200batch를확인했다. GPUfixture batch128 모델10/201 peakreserved1010/984MiB 통과, 공식CIFAR MD5와새분할/초기화CPU준비도통과했다. 실제FL20은진행중이며아직완료CA나FedUBA ASR은없다. 다른GPU앱종료나옛guard수정은없었다. MONITOR_PROTOCOL과원결과JSON을따른다.
+
+외부자료준비완료: 첫CPU task는다운로드전available검사가빈CUDA환경에서True여서중단됐다. 새fresh-child 진단은빈값에서availableTrue/device_count0/initializedFalse/CPU tensor, -1에서는availableFalse/device_count0/initializedFalse/CPU tensor를실측했다. GPU계산을했다는뜻이아니다. 원source/trace/ONCE/task조건을incidents/asset_cpu_visibility_v1에원바이트보존하고별도명시CPU2 작업으로만복구했다.
+최신 ASSET_CPU2_RESULT/STATE=passed가정상완료근거이며원ASSET_FAILURE는과거실패로남는다. 실제외부TinyImageNet train100000/200x500/ZIP248100043bytes SHA6198c8ae015e2b3e007c7841da39ec069199b9aa3bfa943a462022fe5e43c821/전체CRC와CIFAR10.1 v6 고정blob2000/10x200·target class2 200장을준비했다. victim train50000/test10000과같은RGB32x32 byte표현으로양쪽외부자료exact중복은각0이다. semantic/near duplicate나저자target모음동일성은인증하지않는다. raw/packed/source별hash·원ID/image manifest는DISLAB보존했다. 원자료준비·진단을재실행하지않는다.
+새별도STG_SGD_CPU_RESULT=passed/4계약: 독립CE평균analyticgradient/literalSGD+projection, surrogate theta/BN불변, 입력clip chain rule, 외부dataset정규화/targetlabel200. 기존genericRAdam/core6을반복하지않았다. canonical STG_PROFILE은원문식5/Algorithm1의SGD고정alpha.1·각step투영·고정evaltheta/BN과본문Tiny-only pretrain→외부target warmup을선언하며공개RAdam/cos/mixedpretrain 차이를숨기지않는다. 아직launch_enabled=false이며실제STG runner/SSS/FU전후공격학습은남았다. 기반cleanFL은중단/재실행없이진행중이다.

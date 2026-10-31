@@ -46,3 +46,6 @@
 | [STG_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [STG_PROFILE.json](../../../research/feduba_paper_implementation_20261031/STG_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_SGD_CPU_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_CPU2_RESULT.json](../../../research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_CPU2_ONCE.json](../../../research/feduba_paper_implementation_20261031/ASSET_CPU2_ONCE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_SGD_CPU_RESULT.json](../../../research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json) | `research/feduba_paper_implementation_20261031` |

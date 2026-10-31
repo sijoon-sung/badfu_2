@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a5409696f481c91d387a777b273fce3fd614da7cadb16fe0b02feca7f17722a0",
+  "registry_sha256": "de7806150e22115d6d348dade5a7502f9963faa1f4167b2dd70a5febd511da42",
   "cards": 28,
-  "unique_source_documents": 361,
+  "unique_source_documents": 364,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -270,14 +270,14 @@
     "research/feduba_paper_implementation_20261031/CORE_CONTRACT.txt": "be167ae76cd34c873a4402a539e5f57da1145ad8dcb7bc7e1fb9aa717d1b7fa3",
     "research/feduba_paper_implementation_20261031/CORE_FREEZE.json": "3a4c811daea6e538612baf5d92491cecdc14aa90a422af30ca68bc35af281a2f",
     "research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json": "09d63773522c94dae3883422a5b3597c2d7629b3443a013727b91d1898293ed7",
-    "research/feduba_paper_implementation_20261031/REPORT_KO.txt": "17793915178e3505dea951948ddceb64300c3a6aa14302d38098ee09857c2c7b",
+    "research/feduba_paper_implementation_20261031/REPORT_KO.txt": "3ad68c0bc7acb484ab373b5fc9b5249e12119ebaecfc4823db7b50136786d3d3",
     "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt": "066b8ed676fbc083a91ad2cf59ab53ac6d741d24eb86a9db6bbf838a9bce71c7",
     "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_FREEZE.json": "f9e12d0b5334e4229d4257e67abaabd5262aa9558c71442fc2d4afb3c0e64aee",
     "research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt": "572c6f5b16f263aba84d70300f7f948599ce24a29e735a63632fc7aef1880a9c",
     "research/feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json": "91f91b4ade27fc0b210f887fa24a0a923b25df3720850790c155d3d03c0fe96a",
     "research/feduba_paper_implementation_20261031/CLEAN_FL_FREEZE.json": "2cef58625125bc3b3e27d2089ac12045d75a6773b95cfebf7ed2e5162e34f4ec",
     "research/feduba_paper_implementation_20261031/FOUNDATION_FREEZE.json": "de63996b29bc7097d6a83b042165007b5c3ad3d0df67e91c88d36cdadaecf8f9",
-    "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt": "72a31cf8ed74c5aa2aafadf41179b7093e47e4e53a9b76c20cde021ebead8adb",
+    "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt": "5b0f75496d39ca4115c178f68b627863be6252629449ecd394abe0d2b7905e22",
     "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_RESULT.json": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c",
     "research/feduba_paper_implementation_20261031/CLEAN_FL_READY.json": "8126d795438f3c87942258c5f06e34284eb83610e8bef418673273d8255df498",
     "research/feduba_paper_implementation_20261031/FOUNDATION_ONCE.json": "af2a3060b2cbf06f90f8e7e0e9b2989a71a66f8a68baea6cd8b0b41270ab0eb5",
@@ -294,6 +294,9 @@
     "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt": "b47baa2aa0fe32cea920657a0df8a88d66968f3acdcba67e9c4cc197e010658e",
     "research/feduba_paper_implementation_20261031/STG_PROFILE.json": "aa4669c58235e63f6bbcf323cb5badfa3bb9b27403fb4661cebb2d1f5e63c07e",
     "research/feduba_paper_implementation_20261031/STG_SGD_CPU_FREEZE.json": "b7b36f3e37db4f5ed6264ed2af992d101fce6af8efe62f1343caf216f98b5417",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json": "97b037b15a9f826a93c9495fefeb2c3ccf79357fdec73fba0bba93c74f2797ae",
+    "research/feduba_paper_implementation_20261031/ASSET_CPU2_ONCE.json": "2e8e87a9239ec825ace7836c56315bd85219a67925bd10ecca6c62320cb81fec",
+    "research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json": "035d8d38511559371a768dd8d004c9b4970e49c779268817f4691943bbebd40a",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -681,6 +684,7 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_paper_implementation_20261031/ASSET_CPU2_RESULT.json",
         "research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt",
@@ -690,7 +694,8 @@
         "research/feduba_paper_implementation_20261031/MONITOR_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/REPORT_KO.txt",
         "research/feduba_paper_implementation_20261031/RETARGET_PROTOCOL.txt",
-        "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt"
+        "research/feduba_paper_implementation_20261031/STG_PROTOCOL.txt",
+        "research/feduba_paper_implementation_20261031/STG_SGD_CPU_RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
