@@ -1,0 +1,38 @@
+{
+  "state": "attack_FU20_training_complete_independent_CPU_audit_in_progress",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "task": "Codex-FedUBA-SSS-pairedFU20-20261031",
+  "parent_pid_observed": 31888,
+  "completed_trainer_pid": 19552,
+  "independent_CPU_auditor_pid_observed": 37328,
+  "actual_rounds": 20,
+  "actual_new_trained_roles": 200,
+  "actual_local_epochs": 1000,
+  "actual_batches": 20000,
+  "source_result": "FU_attack_RESULT.json",
+  "source_result_sha256": "6a846d1140818f091c2e9d6a3a3ceace7c08f01b8a43cf72c692916af8516fba",
+  "source_result_bytes": 959,
+  "after": {
+    "path": "fu/attack/after.pt",
+    "sha256": "979c789d106a4209d43a7b1cfc0db1cab210508a7367f47e0828afdc9338f0d2",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "observed_independent_audit_prefix": {
+    "rounds": 9,
+    "roles": 90,
+    "actual_epochs": 450,
+    "actual_batches": 9000
+  },
+  "independent_audit_not_yet_complete_at_observation": true,
+  "performance_not_yet_evaluated": true,
+  "training_or_audit_restarted": false,
+  "original_GPU_STG_failure_preserved": true,
+  "overall_goal_complete": false
+}

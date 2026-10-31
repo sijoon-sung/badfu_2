@@ -1,3 +1,6 @@
+최신상태 — 공격FU20 학습완료/독립CPU감사중
+paired parent31888 아래attack trainer19552는20R/200role/1000epoch/20000batch완료·종료했고verify_fu.py --branch attack PID37328이감사중이다. 최초관측prefix9R/90role. 현재CIM/state/manifest/events와FU_attack_AUDIT_FAILURE/PAIR_CONTROLLER_FAILURE를함께확인하며실행중/완료한finite runner/audit를중복실행하지않는다. 감사통과뒤동일parent가primary/독립sameδ전수평가를각1회진행한다. 아직성능은미평가다. 새PAIR_DELIVERY_PROTOCOL은평가전저장범위선언만이며export코드/실행은미완료다. 현재동결소스/profile/허용치·seed/자료·수치는불변이다. 아래상태는관측당시역사다.
+
 최신상태 — 정상FU20 독립CPU검증완료/공격FU20 시작
 FU_benign_RESULT와VERIFIED=passed 및FU_BENIGN_COMPLETION이최신완료근거다. 실제20R/200role/1000epoch/20000batch·420payload hash/원ID순회·optimizer/RNG·정확보정/집계가통과했다. 원trainer23964/auditor41516은종료했고같은paired parent31888→fu_runner.py --branch attack PID19552를확인했다. 공격runner/전체PAIR source/profile/freezes는현재동결이며재실행/덮어쓰기하지않는다. 기록PID는관측값으로현재CIM/state/manifest/events를함께대조한다. 원정상훈련·완료CPU감사·SSS를재실행하지않는다. FU_*_AUDIT_FAILURE도감시한다. 아래감사중/정상훈련중기록은관측당시역사다. 성능은아직없고sameparent가attack20→CPUaudit→primary/독립전수평가를순차진행한다.
 
