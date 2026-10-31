@@ -1,0 +1,92 @@
+{
+  "state": "observed_generation_completed_training_running",
+  "observed_utc": "2026-10-31T12:32:59.769301+00:00",
+  "case": "benign_big19336",
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "pid": 21236,
+  "evidence_sha256": "7ec9f9a84b90a0aa53e6788ca2fee457d05950d74775621717bb4e60f0f99505",
+  "arms": {
+    "matched_kl": {
+      "n": 240,
+      "nativepost_class_counts": [
+        0,
+        0,
+        16,
+        195,
+        0,
+        22,
+        4,
+        0,
+        0,
+        3
+      ],
+      "teacher_class_counts": [
+        4,
+        0,
+        164,
+        24,
+        0,
+        5,
+        42,
+        0,
+        0,
+        1
+      ],
+      "joint_success_per_requested_class": [
+        0,
+        0,
+        0,
+        16,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "joint_success_total": 17
+    },
+    "all_class_disjoint": {
+      "n": 240,
+      "nativepost_class_counts": [
+        24,
+        16,
+        53,
+        22,
+        19,
+        27,
+        25,
+        15,
+        18,
+        21
+      ],
+      "teacher_class_counts": [
+        7,
+        1,
+        181,
+        4,
+        2,
+        27,
+        18,
+        0,
+        0,
+        0
+      ],
+      "joint_success_per_requested_class": [
+        24,
+        15,
+        21,
+        22,
+        17,
+        23,
+        22,
+        15,
+        18,
+        21
+      ],
+      "joint_success_total": 198
+    }
+  },
+  "attack_effect_measured": false,
+  "utility_and_deletion_gates_measured": false
+}
