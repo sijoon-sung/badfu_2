@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "cc4ed70129befa72ace70e538258a31e118161e96ed4b3a97137afda893f6af0",
+  "registry_sha256": "511bc930c083f5e4c63a6e9fe0b3b85997de16529abda5ae51a2a028aae1e807",
   "cards": 29,
-  "unique_source_documents": 384,
+  "unique_source_documents": 386,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -391,7 +391,9 @@
     "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_REPORT.txt": "82c65fad6f923c2147ed3e5f01ed1450f1c016a1ddd5a1b36098491a62adbb0f",
     "research/badfu_feduba_defense_20261031/step_diagnosis/RESULT.json": "98212dd79632a64972b612555dddf0967ddee5d66565433b432df7b9a293d83b",
     "research/badfu_feduba_defense_20261031/step_diagnosis/COMPLETED.json": "f4611b7cecbd002e3ac2564341e775c635451aa008ecc85948086364e6728809",
-    "research/badfu_feduba_defense_20261031/stage08/MODELS_BEFORE_PRIVATE_EVALUATION.json": "0c66be9bd135222a7af4045c2d3ca2ad7eff627243a133eea3dc339ac92e3d57"
+    "research/badfu_feduba_defense_20261031/stage08/MODELS_BEFORE_PRIVATE_EVALUATION.json": "0c66be9bd135222a7af4045c2d3ca2ad7eff627243a133eea3dc339ac92e3d57",
+    "research/badfu_feduba_defense_20261031/STAGE09_PROTOCOL.txt": "ec4aca24743b5d50c119a6fbcc235bfca25f2adf2167c4649c33c1b4bf8028bb",
+    "research/badfu_feduba_defense_20261031/STAGE09_FREEZE.json": "85adcfc751541a3d012b80cd9d865b31e306f86a98b98029a93678bab0698f47"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -557,6 +559,7 @@
         "research/badfu_feduba_defense_20261031/STAGE07_CPU_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE07_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/STAGE08_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE09_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_REPORT.txt"
       ],
