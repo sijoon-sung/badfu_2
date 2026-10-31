@@ -236,3 +236,17 @@
 | [FIRST_NEW_ROUND_CPU_AUDIT.json](../../../research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json) | `research/fuba_seed_repro_20261031` |
 | [DATASET_AUDIT.json](../../../research/fuba_seed_repro_20261031/DATASET_AUDIT.json) | `research/fuba_seed_repro_20261031` |
 | [FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json](../../../research/fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json) | `research/fuba_seed_repro_20261031` |
+| [DELIVERY_PROTOCOL.txt](../../../research/fuba_seed_repro_20261031/DELIVERY_PROTOCOL.txt) | `research/fuba_seed_repro_20261031` |
+| [RESULT.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/RESULT.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [VERIFIED.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/VERIFIED.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CPU_AUDIT_through0100.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CPU_AUDIT_through0100.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [LOCAL_DELIVERY.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/LOCAL_DELIVERY.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [REMOTE_DELIVERY.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/REMOTE_DELIVERY.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CATALOG_ENTRY.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_ENTRY.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CATALOG_AUDIT.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_AUDIT.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CATALOG_GUARD_main.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_main.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CATALOG_GUARD_pr.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_pr.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [CATALOG_GUARD_dislab.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/CATALOG_GUARD_dislab.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [DELIVERY_COMPLETE.json](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/DELIVERY_COMPLETE.json) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [REPORT_KO.txt](../../../research/fuba_seed_repro_20261031/deliveries/seed_5129832/REPORT_KO.txt) | `research/fuba_seed_repro_20261031/deliveries/seed_5129832` |
+| [FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json](../../../research/00_trajectories/audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json) | `research/00_trajectories/audit` |

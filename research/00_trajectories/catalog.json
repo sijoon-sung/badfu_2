@@ -1512,6 +1512,108 @@
         "전체원시는 DISLAB에 보존한다. 로컬984파일에는 선택한69 model payload, 전후/KD10/optimizer/RNG와 전체로그·role JSON이 있다.",
         "CIFAR/IBA 실패와 D08/D15 큰 정상nonIID 탐지 반례는 미해결이다."
       ]
+    },
+    {
+      "id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+      "folder": "04_reproduction_failed/FUBA_seed_repro_MNIST_DBA_s5129832_KD10_pair",
+      "title": "FUBA MNIST/DBA seed5129832 실제100R·KD10 진단 전후쌍",
+      "family": "fuba",
+      "source_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+      "integrity": "passed_actual100R_KD10_independent_counts_CPU_and_both_host_delivery",
+      "reproduction": "registered_single_run_gates_failed",
+      "seed": 5129832,
+      "post_type": "actual_historical_client4_update_subtraction_then_KD10",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R02",
+        "D08",
+        "D15",
+        "N02"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/run/before.pt",
+          "sha256": "ee5b1baebffa12285c9e1f2e12ac2de22e16c8ae829113caa364fbe81b511b36",
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/run/after.pt",
+          "sha256": "2856486c4b42dc313a65c395a20be55282f4ae0d2101390b188498f6f58cdeda",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/DELIVERY_MANIFEST.json",
+        "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+        "seal_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/DELIVERY_SEAL.json",
+        "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+        "loader_path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/load_checkpoint.py"
+      },
+      "local_copy": {
+        "root": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+        "server_inputs": {
+          "pre": {
+            "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/run/before.pt",
+            "sha256": "ee5b1baebffa12285c9e1f2e12ac2de22e16c8ae829113caa364fbe81b511b36",
+            "payload_key": null
+          },
+          "post": {
+            "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/run/after.pt",
+            "sha256": "2856486c4b42dc313a65c395a20be55282f4ae0d2101390b188498f6f58cdeda",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/DELIVERY_MANIFEST.json",
+          "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+          "seal_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/DELIVERY_SEAL.json",
+          "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+          "loader_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/load_checkpoint.py"
+        }
+      },
+      "evaluator_only": {
+        "before": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9912,
+          "target_successes": 2076,
+          "clean_non_target_target_count": 10,
+          "CA_pct": 99.12,
+          "ASR_pct": 23.000221582096167,
+          "clean_target_bias_pct": 0.11079104808331487,
+          "trigger_role": 4,
+          "both_eval": true
+        },
+        "after": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9915,
+          "target_successes": 2619,
+          "clean_non_target_target_count": 9,
+          "CA_pct": 99.15,
+          "ASR_pct": 29.016175493020164,
+          "clean_target_bias_pct": 0.09971194327498338,
+          "trigger_role": 4,
+          "both_eval": true
+        },
+        "actual_pre_post_pair": true,
+        "registered_single_run_gates_passed": false,
+        "independent_counts_exact": true,
+        "evaluator_sha256": "c17a4760c0b291da9aacba0fca688653c1e9084e6dd2fbfe1758d6769262ea92",
+        "ten_seed_study_complete": false,
+        "author_Adam_profile_exact_reproduction_demonstrated": false
+      },
+      "limits": [
+        "Declared Algorithm-SGD interpretation of stcebra/FUBA Algorithms1/2; not author-certified unique source or ity207/FedUBA.",
+        "Before CA99.12/ASR23.000221582096167; after CA99.15/ASR29.016175493020164. Both registered performance gates failed.",
+        "Full CPU100R/800roles/1394phases/69700epochs/3117500batches and152 gamma selection arithmetic traces verified. All gamma scores were not independently re-inferred.",
+        "Both hosts retain readonly982-file selected-tensor/full-log packets; local74 model payloads passed strict CPU/finite forward. All raw intermediate phases remain on DISLAB.",
+        "Original interrupted3-epoch launch remains preserved; same uncommitted first role was recomputed with identical initial/SPLIT/source.",
+        "One failed baseline plus nine fixed new seeds; this is the first new completed seed. No successful-seed selection, seed expansion or default replacement.",
+        "CIFAR/IBA failures and D08/D15 large benign non-IID detection counterexamples remain unresolved."
+      ]
     }
   ],
   "supplemental_audits": [
@@ -1559,6 +1661,11 @@
       "path": "audit/FUBA_REFERENCE_MNIST_DBA_20261031_DELIVERY.json",
       "sha256": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
       "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10"
+    },
+    {
+      "path": "audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json",
+      "sha256": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+      "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031"
     }
   ],
   "default_full_history_case": "badfu.paper32.s20261020",

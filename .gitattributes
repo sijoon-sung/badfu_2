@@ -10,3 +10,8 @@
 /research/fuba_recovery_current_ab_20261031/* text eol=lf
 /research/fuba_seed_repro_20261031/** text eol=lf
 /research/fuba_seed_repro_20261031/incidents/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/research/00_trajectories/catalog.json text eol=lf
+/research/00_trajectories/README.md text eol=lf
+/research/experiment_registry.json text eol=lf
+/research/00_trajectories/04_reproduction_failed/FUBA_seed_repro_*/** text eol=lf
+/research/fuba_seed_repro_20261031/deliveries/**/CATALOG_GUARD_*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

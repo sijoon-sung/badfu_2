@@ -13,3 +13,5 @@ DISLAB에서 새로운9개초기모델/분할을만들었다. baseline20261023�
 현재성능성공은미측정이며고정9개순서의100R/KD10·독립평가·fullCPU감사·봉인전달은계속한다. 운영복구성공을FUBA성능성공으로세지않는다.
 
 최초악성역할이포함된6R 별도CPU감사도통과했다:48역할/54phase/2700epoch/125300batch, attacker1/defender1,원래수치source/optimizer/RNG/실제제출식/정확집계/연결/11점gamma선택산술1개를확인했다. 미달zero는0이다. 모든gamma독립추론이나최종공격성능성공은아니다. 이prefix감사는완료했으므로재실행하지않는다.
+
+첫새seed5129832의실제100R/KD10/독립평가/fullCPU감사/양쪽982파일·74CPU모델전달과세catalogueguard를완료했다. 전CA99.12/ASR23.000221582096167,후CA99.15/ASR29.016175493020164로두성능gate실패다. 다음seed4059094는기존parent48688이GPUresourceguard에서대기한다. 상세최종결과는deliveries/seed_5129832/REPORT_KO.txt와DELIVERY_COMPLETE.json을따른다. 이전진행중문구는당시기록이며전체10행/전체구현목표는미완료다.

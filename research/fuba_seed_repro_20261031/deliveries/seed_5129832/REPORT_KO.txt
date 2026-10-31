@@ -1,0 +1,9 @@
+첫 새 독립시드5129832 최종 결과와 전달 — R02/D08/D15/N02, 2026-10-31
+실제100R/800역할/1394phase/69700epoch/3117500batch와실제client4기여47개차감/KD10/470batch를완료했다. 원래verify와별도fullCPU감사100R은완료했고다시실행하지않았다.
+독립동일DBA global10000/9026평가정수수가기록과정확일치했다: 전CA99.12/ASR23.000221582096167(2076/9026),후CA99.15/ASR29.016175493020164(2619/9026). 두성능게이트는미달이다. 성공한잠복전후쌍으로사용하지않는다.
+CPU감사는800역할/152attacker/46defender/602benign의소스·optimizer/RNG·연결·정확제출/집계·전체69700epoch로그와152개11점gamma선택산술을확인했다. 한역할은미달exactzero였다. 모든gamma독립추론은아니다.
+동일한외부manifest/seal을유지한readonly982파일을양쪽CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10에보존했다. 로컬74modelpayload를별도strictCPU/finiteforward했고모든파일의SHA/bytes가일치했다. 전체raw/all intermediate phase는DISLAB에남는다.
+case fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031을각호스트catalogue에따로append했다. main22/PR19/DISLAB20개기존case와모든old audit/default를보존했고세select_case guard가통과했다. 허용용도는diagnostic뿐이며기존BadFU/FUBA기본입력은변경하지않았다.
+원래3epoch미커밋launch소실과그동일원조건복구는별도근거로보존한다. 종료원인은미확정이고여기에저장된완료모델은복구시작이후실제100R/KD10이다.
+10행study는기존실패baseline+첫새실패2행까지완료이며새8개가남았다. 현재parent48688은다음seed4059094의resourceguard를기다린다: 전달완료직후GPUutil0/free5045/used5009MiB,경쟁trainer0. 고정진입기준free>=7000/used<=2048미달이며다른앱종료/guard완화/중복launch는하지않았다. 자원조건을만족하면같은parent가자동순차계속한다.
+전체10행평균/시드적격쌍은미확정이며성공행선택/목록확장은없다. 본문Adam과literalSGD의선언해석차이,CIFAR/IBA기존실패,D08/D15큰정상nonIID반례는남는다. 전체구현/탐지목표와heartbeat는완료되지않았다.

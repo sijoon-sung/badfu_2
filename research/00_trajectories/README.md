@@ -78,3 +78,5 @@ FUBA v3는16R γ0 로컬 기준 실패로 중단됐습니다. [15R 사본 전달
 **2026-10-25 기존 FUBA 진단 입력 명시:** `fuba.legacy.s20261020.retained_pairs.diagnostic` — [기존 억제/정상 삭제 전후](04_reproduction_failed/FUBA_legacy_s20261020_diagnostic/README.md). diagnostic만 허용하며 잠복 재현 실패/큰 정상 대조 부재는 유지한다. 최신v5와 모든 기존 기본사례는 바뀌지 않는다.
 
 FUBA v5의 실제 KD10 삭제 전후 모델과 로그: [fuba.v5.s20261023.post.kd10](04_reproduction_failed/FUBA_v5_s20261023_KD10_pair/README.md). 사전 성능 미달은 보존합니다.
+
+FUBA 고정시드검증의 첫 새 전후쌍: [seed5129832 실제100R/KD10](04_reproduction_failed/FUBA_seed_repro_MNIST_DBA_s5129832_KD10_pair/README.md). 양쪽모델/로그/CPU/봉인검증은통과했고성능게이트는미달이다. diagnostic만허용하며기존defaults는그대로다.

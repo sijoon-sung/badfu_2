@@ -1,0 +1,477 @@
+{
+  "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+  "state": "pair_and_both_host_delivery_evidence_verified_diagnostic_only",
+  "related_cards": [
+    "R02",
+    "D08",
+    "D15",
+    "N02"
+  ],
+  "result": {
+    "state": "completed100R_KD10",
+    "profile": "fuba.algorithm_sgd.mnist.dba.s5129832.fl100.kd10.seed_repro20261031",
+    "rounds": 100,
+    "roles": 800,
+    "KD_epochs": 10,
+    "KD_batches": 470,
+    "before": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9912,
+      "target_successes": 2076,
+      "clean_non_target_target_count": 10,
+      "CA_pct": 99.12,
+      "ASR_pct": 23.000221582096167,
+      "clean_target_bias_pct": 0.11079104808331487,
+      "trigger_role": 4,
+      "both_eval": true
+    },
+    "after": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9915,
+      "target_successes": 2619,
+      "clean_non_target_target_count": 9,
+      "CA_pct": 99.15,
+      "ASR_pct": 29.016175493020164,
+      "clean_target_bias_pct": 0.09971194327498338,
+      "trigger_role": 4,
+      "both_eval": true
+    },
+    "before_checkpoint": {
+      "path": "run\\before.pt",
+      "sha256": "ee5b1baebffa12285c9e1f2e12ac2de22e16c8ae829113caa364fbe81b511b36",
+      "bytes": 181189
+    },
+    "after_checkpoint": {
+      "path": "run\\after.pt",
+      "sha256": "2856486c4b42dc313a65c395a20be55282f4ae0d2101390b188498f6f58cdeda",
+      "bytes": 181189
+    },
+    "before_gate": false,
+    "after_gate": false,
+    "forgotten_contribution_count": 47,
+    "trigger": "DBA_global",
+    "scope": "One declared MNIST/DBA seed, not CIFAR/IBA or trigger-independent detection."
+  },
+  "local_delivery": {
+    "state": "delivered_hash_verified",
+    "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+    "seed": 5129832,
+    "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+    "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+    "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+    "all_files_verified": 982,
+    "copied_packet_readonly": true,
+    "full_raw_history_local": false,
+    "remote_packet_CPU_payloads": 74,
+    "local_CPU_checks": [
+      {
+        "path": "initial.pt",
+        "payload_key": "$",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch01.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch02.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch03.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch04.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch05.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch06.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch07.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch08.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch09.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/KD/epoch10.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/after.pt",
+        "payload_key": "$",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/after_subtraction.pt",
+        "payload_key": "$",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/before.pt",
+        "payload_key": "$",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client03/phase01.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client03/phase02.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client03/phase03.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client03/phase04.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client03/submitted.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client04/phase01.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client04/phase02.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client04/phase03.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client04/phase04.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0006_client04/submitted.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client02/phase01.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client02/phase02.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client02/phase03.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client02/phase04.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client02/submitted.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client04/phase01.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client04/phase02.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client04/phase03.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client04/phase04.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/phases/round0100_client04/submitted.pt",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "incoming",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "after",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/0",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/1",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/2",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/3",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/4",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/5",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/6",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0001.pt",
+        "payload_key": "submitted/7",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "incoming",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "after",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/0",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/1",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/2",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/3",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/4",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/5",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/6",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0006.pt",
+        "payload_key": "submitted/7",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "incoming",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "after",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/0",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/1",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/2",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/3",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/4",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/5",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/6",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0007.pt",
+        "payload_key": "submitted/7",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "incoming",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "after",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/0",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/1",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/2",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/3",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/4",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/5",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/6",
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "path": "run/rounds/round0100.pt",
+        "payload_key": "submitted/7",
+        "strict_CPU_finite_forward": true
+      }
+    ],
+    "local_CPU_check_requested": true,
+    "source_sha256": "7897f69b2418894a2205c85c298991dfdcfe40ee700168d163728c425014c846",
+    "numeric_run_modified": false
+  },
+  "remote_delivery": {
+    "state": "delivered_hash_verified",
+    "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+    "seed": 5129832,
+    "root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+    "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+    "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+    "all_files_verified": 982,
+    "copied_packet_readonly": true,
+    "full_raw_history_local": false,
+    "remote_packet_CPU_payloads": 74,
+    "local_CPU_checks": [],
+    "local_CPU_check_requested": false,
+    "source_sha256": "7897f69b2418894a2205c85c298991dfdcfe40ee700168d163728c425014c846",
+    "numeric_run_modified": false
+  },
+  "source_receipt": {
+    "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+    "root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1",
+    "packet_root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1\\delivery_packet",
+    "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+    "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+    "archive": "D:\\FUBA_SEED_REPRO_20261031\\archives_recovery\\seed_5129832.zip",
+    "archive_sha256": "275297feba8c5815ea078a965b9e6830006070d7f1c2c7ee360d6f182ac1ef5d",
+    "archive_bytes": 20635331,
+    "full_CPU_audit_sha256": "ae80423ed189d314fc1c6b528d25ceae5ff95941b200b88bd1333d8996f05fc5",
+    "independent_verification_sha256": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615",
+    "local_delivery_complete": false,
+    "catalogue_registration_complete": false
+  },
+  "full_CPU_audit_sha256": "ae80423ed189d314fc1c6b528d25ceae5ff95941b200b88bd1333d8996f05fc5",
+  "independent_verification_sha256": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615",
+  "overall_user_goal_complete": false
+}
