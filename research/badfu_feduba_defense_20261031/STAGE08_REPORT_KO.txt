@@ -1,0 +1,18 @@
+H8 실제 DISLAB CPU2 실행/독립검산 완료, sourceb2ff6d7; 2026-10-31.
+관련 R01/R03/T01/D08/D15/D18/N02/P01/P02/P04. 한 BadFU 학습시드의 정상9668삭제 조건이며, 공격 ASR/FedUBA를 측정한 실험이 아니다.
+
+가설: 전체Pre weights를 복원하지 않고 Post에서 초기화한 학생에 공개/합성 질의의 교정 기능을 증류하면 실제 삭제 누설 복원을 피하면서 정상 기능을 보존할 수 있다.
+과정: 공개무라벨500장과 전체이미지 synthetic256(10 sign-ascent×32batch)을 고정. 실제trigger/target/삭제자료/정답라벨 미사용. clean_only/query_transfer 동일100 Adam steps(.0001)/public sample order, queryarm만 추가queryloss. BN running buffers 고정. 두 최종model/hash 저장 후9500heldout/실제9668삭제자료 평가. 총1140.47초, CUDA초기화false. 실제두100step/optimizer전파라미터step100/각step로그/optimizer/RNG/모델엄격로드/유한값/보호원본해시를 독립검사했다. 회원추론40 class AUC와집계/gate/정답수도 독립순위계산으로 일치했다.
+
+결과(기준 nativepost CA89.8%, true-label membership advantage.00216725):
+clean_only: CA85.3578947%, 감소4.4421053%p; worstclass감소8.3333333%p.
+             true-labeladv .01506723/max-confidenceadv .02003889; 회원-비회원정확도gap .00534785.
+query_transfer: CA85.6421053%, 감소4.1578947%p; worstclass감소11.9830329%p.
+                true-labeladv .01897683/max-confidenceadv .02154261; 정확도gap .00158906.
+두 arm 모두 기존 actual deletion 필요gate는 통과했지만 전체/각class 효용gate에 미달하여 전체필요gate실패다. H5의같은정상9668삭제adv.172122보다낮은누설은제한된긍정관측으로보존한다. 이것이인증된망각이나공격억제증거는아니다. 기존post유익교정90%보존가설도clean_only53.7736%/query49.0566%로실패한다.
+
+작은원인진단: 동일첫batch의Adam update에서 clean_only objective.278→8.952 overshoot. queryarm은jointobjective37.731→20.287감소에도fullpubliccleanobjective.3815→5.7286증가. SGDsamebatch감소도fullpublic보존을보장하지않았으며이반례를보존했다. 단순optimizer교체만완전수정으로채택하지않는다.
+
+수정 H9: P01 normal-outputKL예산과 H4 public예측일관성을 연결하여, Post→학생 연속보간의실제선택규칙을추가했다. 선택에는500무라벨예측만사용하고전체실제ASR/정답/삭제자료는사용하지않는다. 11grid+6boundedprobes의최대실제통과점을선택하며전역최적alpha나정화보장을주장하지않는다. 두 원래H8모델/실패는변경하지않고별도stage09에서선택/평가한다. 실제공격및FedUBA에대한확장은큰정상gate통과후별도고정실험으로이어야하며공동방어목표는계속미완료다.
+
+보존범위: DISLAB에실제두학생.pt/optimizer/RNG/합성querybank/모든step로그/clean+memberlogits가있다. 로컬/PR에는소스/동결/공개aggregate결과/실행로그/검증receipt를전달했다. 삭제표본ID/이미지/개별출력은공개하지않는다. 부모case/default/완료된oldjobs는변경하지않았다.

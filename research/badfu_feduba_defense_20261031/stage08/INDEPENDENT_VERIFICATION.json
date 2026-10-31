@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "arms": {
+    "clean_only": {
+      "optimizer_steps": 100,
+      "independent_class_AUC_checks": 20,
+      "gate_matches": true,
+      "necessary_gate": false,
+      "strict_prior_correction_fraction": 0.5377358490566038
+    },
+    "query_transfer": {
+      "optimizer_steps": 100,
+      "independent_class_AUC_checks": 20,
+      "gate_matches": true,
+      "necessary_gate": false,
+      "strict_prior_correction_fraction": 0.49056603773584906
+    }
+  },
+  "source_and_all_output_hashes": "passed",
+  "querybank_contract": "passed",
+  "verifier_sha256": "13f4a4d684e612edc3b38a3137da5364956bf867e55601a0e7a6acd1c73dac66",
+  "new_model_inference": false
+}
