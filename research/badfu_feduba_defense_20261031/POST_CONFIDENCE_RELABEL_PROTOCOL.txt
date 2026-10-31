@@ -1,0 +1,16 @@
+가설: 공개 Post확신도로 제한한 label교정과 Post logit순열은 H5의 실제트리거 class교정을전달하면서 H5전체출력의 삭제누설복원을줄인다.
+R01/R03/P01/P02/P04/D02/D06/D07/D08/D12/D14/D15/D17/D18/N02. 2026-11-01. 미검증 새합성출력 방법이며 기존 shared-feature 학습/source/profile/선택은불변이다. 단순변화량 탐지나역할식별을제안하지않는다.
+
+과정근거/큰→작은: H5는실제ASR3.4778%/CA통과지만true-label membershipadv정상큰.171865/정상850.386387/공격.834895로탈락했다. Post원본목표의학습들은삭제/정상통과에도실제trigger원정답2%대였다. 가중치전체복원/합성은행학습이외의별도행동가설로, H5의argmax와Post의confidence를분리한다. 여전히 Pre가 side information이어서형식적forgetting보장은불가능할수있다. 유한score불변을삭제보장으로오인하지않는다.
+새관측은 H5와Post의예측이갈리고Post확신도가공개상한수준인입력에서, true-label누설과정답복원이함께어떻게바뀌는지다. 큰 정상 삭제도높은Post확신도의정상오류를만들수있으므로이행동이공격고유라고단정하지않는다. D08 .75848이정상.75525/.76188 사이/D15 7vs8%를보존하며모든요청에같은공개선택·정화를적용한다. 새로운탐지threshold/오탐률주장이아니다.
+
+방법: nativePost logit z와공개정렬H5 logit t를받는다. a=argmax(z),b=argmax(t). 조건부arm은a!=b이고softmax(z).max>=tau이면 z의a,b두성분만교환하며그외는z그대로다. plain_relabel 대조는 tau없이다른class전부교환한다. primary=confidence_gated_relabel. identity도별도기준으로보존한다. H5의확률크기·feature·기억값을출력하지않고class선택만쓴다. 기본stage05의고정정렬head/원seal을그대로사용하며새fit은없다.
+
+조건부증명: 유한logit의성분순열이므로각입력의logsumexp,최대logit/최대logprob,전체softmax값의multiset,entropy,모든class와무관한대칭score는Post와수학적으로같다. 따라서동일표본의maxlogprob membershipscore는실수산술에서동일하다. 하지만어느class가최댓값인지는H5정보이며 true-labelscore/accuracy/label기반攻撃/각class leakage와full forgetting분포는보존되지않는다. tie에서는교환해도argmax가원하지않는class가될수있어건수로명시하고숨기지않는다. FP64실제계산에서logsoftmax행sum연산순서오차를<=1e-12로확인하되AUC불변은별도독립검산한다. arbitrary side-info이있는postprocessing privacy theorem을주장하지않는다.
+
+선택: public500의nativePost 최대softmax q분위수, q=[0,.5,.75,.9,.95,.99,1] 및off(None)8후보를만든다. quantile은torch.float64 linearinterpolation이다. 각후보출력의Post KL<=.010/전체argmax일치>=98%/각Post-predclass>=95%인것중가장낮은tau(많이교정가능한것)를선택한다. off는identityfallback이다. 실제target/trigger/정답/삭제ID/회원/ASR에맞춰q/grid를바꾸지않는다. 모든case는선택config와public후보logit/모든수치/원modelhash를먼저봉인한뒤사후평가한다. plain대조는선택없이그대로평가하고큰정상탈락이면그arm의공격까지연장하지않는다.
+
+입력/자원: badfu.confirmed.s20261023.v1/purification_pilot explicitcatalogue/seal/payload/hash. public500 동일torch.randperm/held9500·trigger8542 정정분할. 이전실제원CNN에서저장한봉인feature와FP64head를조합하는cached-output pilot이다. nativePost/H5 clean/attack/member source receipt를모두검증한다. 공개선택함수에는public logit만넘긴다. 실제labels/triggers/target/member는evaluator이후에만사용한다. shared-feature actor5744와별도CPU2 산술작업이며새CNN/학습/GPU초기화없다. 기존삭제회원은원본TRAIN자료850/9668,비회원대조는fit500을제외한다. FedUBA는유효activationpair가없어미실행이다.
+
+중단/성공기준: 먼저큰정상19.336%삭제. Post대비CA손실<=.5pp/각class<=2pp, class조건부advantage/weightedclassadv 증가각<=.04,절대accuracygap증가<=.02. 같은arm만실제9000/8542 ASR<=10% 및원정답pairedclean대비전체<=2pp/각class<=5pp→정상850로연장한다. 모든arm큰정상탈락이면actual공격을열지않는다. actual단계탈락이면추가정상850중단한다. 이전90%유익교정은별도보고한다. case별좋은arm을합쳐parent주장을통과시키지않는다. 개인별경로/tau를ASR로튜닝하지않는다.
+경계: 통과해도실제두CNN일치·별도독립forward확인/독립BadFU조건/실제FedUBA/라벨기반공격/MIA다른적대자/형식forgetting은미검증이다. 이bounded pilot의양성을최종완료로올리지않는다. 실패는같은PR에보존하고다음수정의명시근거로쓴다. 원모델/실행중학습을수정하거나완료finite재실행은없다.
