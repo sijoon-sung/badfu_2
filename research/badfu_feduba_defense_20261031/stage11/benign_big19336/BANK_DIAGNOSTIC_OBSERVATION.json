@@ -1,0 +1,294 @@
+{
+  "state": "observed_saved_bank_diagnostic",
+  "fresh_model_inference": false,
+  "case": "benign_big19336",
+  "selection_sha256": "3a356bb177bfa43461f01cbc93dabefc5f02c9f1ed986bb71ed740011f82c5af",
+  "script_sha256": "902abe98b9d6806a709274b61c07b5ce370a54ee7b69fc2be5482c50b7f660ef",
+  "arms": {
+    "matched_kl": {
+      "bank_sha256": "d47bdd2172637af5184c46c07f339a57012a1557c5f9e26fb9fbef387ef5c2c7",
+      "saved_logit_sha256": "df365ad19eab94d3ec8f74fd1e60f953f9dfb8c5c6a3cc40ed4afd2539ee4d57",
+      "raw_teacher_agreement_pct": 86.66666666666667,
+      "nativepost_teacher_agreement_pct": 16.25,
+      "raw_predicted_class_counts": [
+        3,
+        0,
+        143,
+        52,
+        0,
+        6,
+        35,
+        0,
+        0,
+        1
+      ],
+      "per_requested_output": [
+        {
+          "requested_class": 0,
+          "n": 24,
+          "teacher_agreement_n": 20,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 1,
+          "n": 24,
+          "teacher_agreement_n": 21,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 2,
+          "n": 24,
+          "teacher_agreement_n": 23,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 3,
+          "n": 24,
+          "teacher_agreement_n": 20,
+          "discovered_post_k_teacher_not_k_n": 16,
+          "raw_student_still_k_on_discovered_n": 4
+        },
+        {
+          "requested_class": 4,
+          "n": 24,
+          "teacher_agreement_n": 22,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 5,
+          "n": 24,
+          "teacher_agreement_n": 20,
+          "discovered_post_k_teacher_not_k_n": 1,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 6,
+          "n": 24,
+          "teacher_agreement_n": 18,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 7,
+          "n": 24,
+          "teacher_agreement_n": 22,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 8,
+          "n": 24,
+          "teacher_agreement_n": 24,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 9,
+          "n": 24,
+          "teacher_agreement_n": 18,
+          "discovered_post_k_teacher_not_k_n": 0,
+          "raw_student_still_k_on_discovered_n": 0
+        }
+      ],
+      "per_teacher_predicted_output": [
+        {
+          "teacher_predicted_class": 0,
+          "n": 4,
+          "raw_student_agreement_n": 3
+        },
+        {
+          "teacher_predicted_class": 1,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 2,
+          "n": 164,
+          "raw_student_agreement_n": 140
+        },
+        {
+          "teacher_predicted_class": 3,
+          "n": 24,
+          "raw_student_agreement_n": 24
+        },
+        {
+          "teacher_predicted_class": 4,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 5,
+          "n": 5,
+          "raw_student_agreement_n": 5
+        },
+        {
+          "teacher_predicted_class": 6,
+          "n": 42,
+          "raw_student_agreement_n": 35
+        },
+        {
+          "teacher_predicted_class": 7,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 8,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 9,
+          "n": 1,
+          "raw_student_agreement_n": 1
+        }
+      ]
+    },
+    "all_class_disjoint": {
+      "bank_sha256": "2fa354d2f76629b9c2269882ed9e67b802abd05bf9150b45210bdd5dab9df043",
+      "saved_logit_sha256": "5558011d3ce646478e334ff25967b88b9822b225e8509f6bf694876790e0c1e3",
+      "raw_teacher_agreement_pct": 96.25,
+      "nativepost_teacher_agreement_pct": 16.666666666666664,
+      "raw_predicted_class_counts": [
+        6,
+        1,
+        188,
+        3,
+        2,
+        25,
+        14,
+        1,
+        0,
+        0
+      ],
+      "per_requested_output": [
+        {
+          "requested_class": 0,
+          "n": 24,
+          "teacher_agreement_n": 24,
+          "discovered_post_k_teacher_not_k_n": 24,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 1,
+          "n": 24,
+          "teacher_agreement_n": 23,
+          "discovered_post_k_teacher_not_k_n": 15,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 2,
+          "n": 24,
+          "teacher_agreement_n": 22,
+          "discovered_post_k_teacher_not_k_n": 21,
+          "raw_student_still_k_on_discovered_n": 2
+        },
+        {
+          "requested_class": 3,
+          "n": 24,
+          "teacher_agreement_n": 24,
+          "discovered_post_k_teacher_not_k_n": 22,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 4,
+          "n": 24,
+          "teacher_agreement_n": 22,
+          "discovered_post_k_teacher_not_k_n": 17,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 5,
+          "n": 24,
+          "teacher_agreement_n": 23,
+          "discovered_post_k_teacher_not_k_n": 23,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 6,
+          "n": 24,
+          "teacher_agreement_n": 24,
+          "discovered_post_k_teacher_not_k_n": 22,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 7,
+          "n": 24,
+          "teacher_agreement_n": 22,
+          "discovered_post_k_teacher_not_k_n": 15,
+          "raw_student_still_k_on_discovered_n": 1
+        },
+        {
+          "requested_class": 8,
+          "n": 24,
+          "teacher_agreement_n": 24,
+          "discovered_post_k_teacher_not_k_n": 18,
+          "raw_student_still_k_on_discovered_n": 0
+        },
+        {
+          "requested_class": 9,
+          "n": 24,
+          "teacher_agreement_n": 23,
+          "discovered_post_k_teacher_not_k_n": 21,
+          "raw_student_still_k_on_discovered_n": 0
+        }
+      ],
+      "per_teacher_predicted_output": [
+        {
+          "teacher_predicted_class": 0,
+          "n": 7,
+          "raw_student_agreement_n": 6
+        },
+        {
+          "teacher_predicted_class": 1,
+          "n": 1,
+          "raw_student_agreement_n": 1
+        },
+        {
+          "teacher_predicted_class": 2,
+          "n": 181,
+          "raw_student_agreement_n": 180
+        },
+        {
+          "teacher_predicted_class": 3,
+          "n": 4,
+          "raw_student_agreement_n": 3
+        },
+        {
+          "teacher_predicted_class": 4,
+          "n": 2,
+          "raw_student_agreement_n": 2
+        },
+        {
+          "teacher_predicted_class": 5,
+          "n": 27,
+          "raw_student_agreement_n": 25
+        },
+        {
+          "teacher_predicted_class": 6,
+          "n": 18,
+          "raw_student_agreement_n": 14
+        },
+        {
+          "teacher_predicted_class": 7,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 8,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        },
+        {
+          "teacher_predicted_class": 9,
+          "n": 0,
+          "raw_student_agreement_n": 0
+        }
+      ]
+    }
+  },
+  "actual_attack_efficacy_evaluated": false
+}

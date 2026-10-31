@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-31T12:44:24.670729+00:00",
+  "state": "public_selection_fixed_private_evaluation_in_progress",
+  "pid": 21236,
+  "case": "benign_big19336",
+  "selection_sha256": "3a356bb177bfa43461f01cbc93dabefc5f02c9f1ed986bb71ed740011f82c5af",
+  "models": {
+    "matched_kl": {
+      "path": "matched_kl_selected.pt",
+      "sha256": "dadab91ff43ac9c18d51b431d30d9aee1a5c0a251dbfa112add2164cad4a19cb",
+      "alpha": 0.0640625
+    },
+    "all_class_disjoint": {
+      "path": "all_class_disjoint_selected.pt",
+      "sha256": "012c849fa82e9a5ad64771cf1075d875440be264617611cc03912e7e3b56dd6b",
+      "alpha": 0.07187500000000001
+    }
+  },
+  "private_evaluation_results_used_for_selection": false,
+  "full_pipeline_verified": false
+}
