@@ -1,0 +1,9 @@
+가설: 미실행 SSS의 GPU forward 수치 설정을 계산 전에 고정하고 실제 설정값을 영수증으로 남기면 기존 독립 CPU 두batch 재생에서 장치 설정과 logit 오차의 출처를 구분할 수 있다. 관련 R03/R02/N02/D08/D15/SSS_PROTOCOL. 새 관측은 실제 backend flags·장치/torch version·policy SHA의 query 전 확인과 결과/audit pin이다. 공격자 SSS의 수치 재현 계약이며 새 서버 탐지 관측이나 D08/D15 큰 정상 nonIID 반례의 해결이 아니다.
+
+정적 검토에서 기존 SSS runner는 FP32 tensor와 cudnn benchmarkfalse만 명시했고 TF32·matmul 정밀도·deterministic 설정을 실행 영수증에 남기지 않았다. 아직 실 SSS query/선택/성능을 보지 않았으므로 이 준비 단계에서 query의 수치 환경을 명시한다. AMP/TF32 off, matmul highest, cudnn benchmarkfalse/deterministictrue, torch deterministic algorithms true, CUBLAS_WORKSPACE_CONFIG=:4096:8, CPU1thread를 GPU query에 고정한다. runtime getter의 실제 값이 policy와 일치해야 진행한다. CPU audit는 기존2thread와 사전 logit atol2e-4/rtol1e-4·score atol2e-5를 그대로 유지한다.
+
+공개 원문에서 이 backend flags의 유일 정답을 인증했다고 하지 않는다. 같은 수식에 대한 수치 실행 조건의 선언이다. SSS의 두 forward/FP32 L2·stable ID·owner5/7·5000전체class·top125·δ·query배수1/clip없음·모든 tie/rank 규칙은 불변이다. 실제 결과를 본 뒤 설정이나 허용치를 바꾸는 수치 튜닝이 아니다. 원문 Algorithm1/식5~8 대응과 누락 모델의 출처 제한도 불변이다.
+
+실행 활성화 아님: SSS_NUMERIC_POLICY는 launchfalse이고 SSS_SOURCE_FREEZE는 code-only revision2다. 과거 미실행 source/freeze는 이전 Git commit과 원격 source_reviews에 보존한다. 실제 SSS_LAUNCH_PROFILE/SSS_FREEZE는 STG100/5/100·독립 감사 완료 뒤 별도 계약에서만 만든다. 미래 profile에 numeric_policy_sha256과 logger_CPU_result=SSS_LOGGER_CPU2_RESULT.json을 핀해야 한다. query result와 CPU audit도 같은 policy SHA/실제 설정을 남긴다.
+
+진행 중 STG/완료 FL/FU engine·runtime_common·core·sss_logging·SSS_PROTOCOL 및 모든 완료 CPU fixture source/freeze는 바꾸지 않는다. 완료 logger/core/정책/평가 fixture를 재실행하지 않는다. 새 검사는 로컬 AST/JSON과 원격 source hash의 가벼운 검토뿐이며 모델/실자료 forward나 새 GPU job을 실행하지 않는다. 실제 SSS는 새 계약의 case/hash/payload·독립STG audit·PID 종료/자원 guard 통과 뒤 한 번만 한다. 이후 kernel/값/score/rank/CPU replay 오류가 나면 prefix·trace를 보존하고 사후 tolerance/δ/선택/장치를 바꿔 통과시키지 않는다.

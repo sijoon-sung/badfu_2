@@ -7,6 +7,7 @@ import subprocess
 import sys
 import time
 import traceback
+os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
 import torch
 from torch.utils.data import DataLoader, Subset
 from torchvision import transforms
@@ -25,6 +26,8 @@ def main():
     freeze_check('SSS_FREEZE.json')
     p = read(ROOT / 'SSS_LAUNCH_PROFILE.json')
     assert p['launch_enabled'] and args.case_id == p['required_clean_case_id']
+    assert p['numeric_policy_sha256'] == sha(ROOT / 'SSS_NUMERIC_POLICY.json')
+    numeric_policy = read(ROOT / 'SSS_NUMERIC_POLICY.json')
     assert read(ROOT / 'CLEAN_FL_VERIFIED.json')['utility_gate']
     assert read(ROOT / 'FOUNDATION_STATE.json')['state'] == 'completed_clean_FL_foundation_only'
     assert read(ROOT / 'STG_CONTROLLER_STATE.json')['state'] == 'completed_STG_verified_only'
@@ -47,7 +50,21 @@ def main():
     delta = torch.load(ROOT / stg['delta']['path'], map_location='cpu', weights_only=True)
     delta = delta if stg['delta']['payload_key'] is None else delta[stg['delta']['payload_key']]
     assert delta.shape == (1, 3, 32, 32) and float(delta.abs().max()) <= 32 / 255 + 1e-7
-    torch.set_num_threads(1); torch.backends.cudnn.benchmark = False
+    torch.set_num_threads(1); torch.set_float32_matmul_precision('highest')
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+    torch.use_deterministic_algorithms(True)
+    numeric_settings = {'TF32_matmul': torch.backends.cuda.matmul.allow_tf32,
+          'TF32_cudnn': torch.backends.cudnn.allow_tf32,
+          'float32_matmul_precision': torch.get_float32_matmul_precision(),
+          'cudnn_benchmark': torch.backends.cudnn.benchmark,
+          'cudnn_deterministic': torch.backends.cudnn.deterministic,
+          'torch_deterministic_algorithms': torch.are_deterministic_algorithms_enabled(),
+          'CPU_threads': torch.get_num_threads(),
+          'CUBLAS_WORKSPACE_CONFIG': os.environ['CUBLAS_WORKSPACE_CONFIG']}
+    assert numeric_settings == numeric_policy['GPU_query_settings']
     model = model_reference.ResNet18().cuda().eval()
     model.load_state_dict(state, strict=True)
     for parameter in model.parameters():
@@ -65,6 +82,7 @@ def main():
         nonlocal actual_calls
         actual_calls += 1
         assert not torch.is_grad_enabled() and not model.training
+        assert x.dtype == torch.float32 and x.is_contiguous()
         return model(x)
     for owner in owners:
         ids = parts[owner]; ownership[owner] = ids
@@ -91,6 +109,8 @@ def main():
               'selected_by_owner': {str(k): v for k, v in selected_ids.items()}, 'request_budget': 125,
               'query_packets': packets, 'case_selection_sha256': sha(out / 'CASE_SELECTION.json'),
               'pre_and_delta_source_hashes_unchanged': True, 'model_state_unchanged': True,
+              'numeric_policy_sha256': p['numeric_policy_sha256'], 'numeric_settings': numeric_settings,
+              'device': torch.cuda.get_device_name(0), 'torch_version': str(torch.__version__),
               'real_FU_executed': False, 'FedUBA_attack_completed': False}
     write(ROOT / 'SSS_RESULT.json', result)
     write(ROOT / 'SSS_STATE.json', {'state': 'completed_SSS_queries', 'pid': os.getpid(), 'updated_unix': time.time()})

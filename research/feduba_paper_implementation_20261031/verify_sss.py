@@ -19,6 +19,12 @@ def main():
     assert not torch.cuda.is_initialized()
     result = read(ROOT / 'SSS_RESULT.json')
     assert result['state'] == 'completed_SSS_queries'
+    assert result['numeric_policy_sha256'] == sha(ROOT / 'SSS_NUMERIC_POLICY.json')
+    numeric_policy = read(ROOT / 'SSS_NUMERIC_POLICY.json')
+    assert result['numeric_settings'] == numeric_policy['GPU_query_settings']
+    assert numeric_policy['CPU_replay_threads'] == torch.get_num_threads() == 2
+    assert numeric_policy['CPU_logit_atol'] == 2e-4 and numeric_policy['CPU_logit_rtol'] == 1e-4
+    assert numeric_policy['score_atol'] == 2e-5
     assert sha(ROOT / 'sss/CASE_SELECTION.json') == result['case_selection_sha256']
     parts = read(ROOT / 'CLEAN_SPLIT.json')['indices']
     train = CIFAR10(read(ROOT / 'CLEAN_FL_PROFILE.json')['data_root'], train=True, download=False)
@@ -91,6 +97,8 @@ def main():
                 'max_independent_score_abs_error': max_score_error, 'selected_by_owner': result['selected_by_owner'],
                 'fixed_CPU_query_batch_replays': replays, 'all5000_model_queries_independently_recomputed': False,
                 'SSS_result_sha256': sha(ROOT / 'SSS_RESULT.json'), 'FedUBA_attack_completed': False}
+    verified['numeric_policy_sha256'] = result['numeric_policy_sha256']
+    verified['recorded_GPU_query_settings'] = result['numeric_settings']
     write(ROOT / 'SSS_VERIFIED.json', verified)
     print(json.dumps({k: verified[k] for k in ['state', 'CPU_only', 'all_score_rows', 'float64_top125_same_ID_sets']}))
 
