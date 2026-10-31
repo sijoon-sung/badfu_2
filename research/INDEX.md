@@ -123,7 +123,7 @@ flowchart TD
 | [P01 · 삭제 전후 반응 전이 정화](EXPERIMENT_CARDS.md#p01) | 제한된 정화 관찰 |
 | [P02 · 마지막 분류층 교정](EXPERIMENT_CARDS.md#p02) | 제한된 정화 관찰 |
 | [P03 · A/C 손실 분산·프루닝·헤드 증류 파일럿](EXPERIMENT_CARDS.md#p03) | 목표 판정 제외 — 입력 선택 오류 |
-| [P04 · BadFU·FedUBA 방어 개발: 교차 결합·헤드 운반·모듈 개입](EXPERIMENT_CARDS.md#p04) | 단순교차·head운반 실패 보존 / BN분해 완료 / 무라벨 block rollback 선택 실험 |
+| [P04 · BadFU·FedUBA 방어 개발: 교차 결합·헤드 운반·모듈 개입](EXPERIMENT_CARDS.md#p04) | H1/H2/H4 실패 보존·BN분해 완료 / H5 좌표정렬·실제삭제 감사 분리 |
 
 ### 미검증 제안·보류
 

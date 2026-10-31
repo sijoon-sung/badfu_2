@@ -1,0 +1,18 @@
+가설 H5: pre/post 특징의공개정상좌표차이를직교정렬하면단순/비제약head운반의효용손실을줄일수있으며,복원된표현의실제삭제자료기억은nativepost보다악화하지않는다.
+관련 R01/R03/T01/D08/D15/D18/N02/P01/P02/P04. H1~H4실패를보존한후등록한수정이다.2026-10-31 KST.
+큰가설H0는BadFU/FedUBA공동방어이며미완료다. 이단계는singleBadFU조건에서공개좌표정렬의실제정화가능성과삭제누설의필요조건을확인한다. norm탐지기/필연적직교공격이론을제안하지않는다. 큰정상nonIID삭제도서로다른표현좌표와기억격차를갖는다는가능성을같은실험에포함한다.
+
+고정방법: stage01의동일proxy500장/heldout9500을사용한다. true label/역할/actualtrigger/ASR은fit함수에전달하지않는다. X=pre feature centered,Y=post feature centered. M=X^TY+lambda I,lambda=.01*(trace(X^TX)+trace(Y^TY))/(2d),d512. M=U S V^T의SVD후A=UV^T. pre표현의좌표를z'=(z-mu_pre)A+mu_post로옮기고posthead를그대로적용한다.파생headW=(A Wpost^T)^T,b=bpost+mu_post Wpost^T-mu_pre A Wpost^T.1개고정lambda/샘플수만실행하며튜닝하지않는다. SVD는공개정상좌표의제약정렬이며특이값크기를악성점수로쓰지않는다.
+3쌍의새head/전체파생model/hash를모두저장한후에만실제삭제자료와트리거를평가한다. 실제trainablebackbone은pre이므로삭제누설위험이있는후보임을처음부터기록한다. nativepre/post,기존H1/H2와새H5를동일평가하며ASR좋은head를사후고르지않는다.
+
+실제삭제품질의새관측
+attackcover850: 기존plain_cover_file_sha256과원래label/coverindex850을검증하고실제attack_FU COMPLETE의removed_indices_sha256과대조한다. 같은trigger를가진미사용test9000장을원본정답라벨과함께대조로쓴다.
+normal850: 같은원본index850의cleantrain자료를사용하고실제normal_same850의removedhash에대조한다. 미사용clean test10000장대조.
+normalbig19.336%: fixedsplitclient4의9668원본cleantrain자료와실제normal_big4의removedhash를대조한다. 미사용clean test10000장대조.
+모든MIA는평가자전용이다.멤버/비멤버를정답클래스별나누고true-label logprob와max logprob각각의정확rank AUC를계산한뒤멤버클래스빈도로가중한다. 방향반전도누설로보기위해advantage=2*abs(AUC-.5)를보존한다.클래스조건부멤버-비멤버정확도격차도함께계산한다. 학습원본/표본ID/특징/이미지는공개PR에올리지않는다. 이검사는실제삭제자료에대한유한공격감사이며완전/형식적삭제인증이아니다. 비사용분포차이는nativepre/post대조와함께보고한다.
+삭제필요조건:두MIA점수의advantage가각각nativepost보다.04넘게증가하지않고,absolute accuracy gap이nativepost보다2%p넘게증가하지않아야후속검증후보로둔다.그외공격ASR<=10/전체CApost-.5%p/각클래스post-2%p는같이필요하다. 기존H1의교정90%보존은별도엄격가설로계속보고하며MIA와동일시하거나실패를삭제하지않는다.
+정렬후특징heldout오차/교정보존도기록하되이를탐지증거로쓰지않는다.실제nativepost보다MIA가높아지면Pre백본을그대로유지하는설계가위험하다는근거로삼고삭제된표현을복원하지않는수정으로나아간다. H5실패시같은lambda/표본으로다시돌리거나결과에맞춰gate를완화하지않는다.
+
+실행/보존
+실행 전 분리 명시: 다른 채팅의 FedUBA 학습이 실제로 시작되어 GPU를 사용 중이다. H5의 CPU fit/기존 캐시 평가와 신규 삭제자료 GPU 추론을 별도 once 단계로 분리한다. 두 단계는 같은 동결 소스/프로토콜을 사용한다. CPU fit은 DISLAB 2threads, GPU 초기화 없음이다. 삭제 추론은 경쟁 학습 종료와 고정 resource_guard 통과 전에는 실행하지 않는다. CPU 결과만으로 삭제 감사를 완료했다고 하지 않는다. 클래스별 누설 방향의 상쇄를 숨기지 않도록 가중평균 AUC로부터의 advantage와 함께 클래스별 absolute advantage의 가중평균도 보존하며, 후자에도 동일 +.04 gate를 적용한다. 이는 실제 계산 전 명시한 보수적 추가 필요조건이다.
+DISLABCPU정렬,모델별삭제자료featureforward만H3GPU고정자원프로필로실행한다. clean/testtrigger features는해시검증된H3캐시를재사용하여기존전체평가를재실행하지않는다. 원래모델/데이터/기본case는불변이다. 새실행전selector/외부봉인/모든입력과image해시/고정source/실제PID/자원guard를확인한다. exclusive STARTED와실제process/로그/exit를보존한다. 다음단계는실측원인에근거해새protocol로고정한다. FedUBA미구현입력을대체하거나두공격공동성공을선언하지않는다.

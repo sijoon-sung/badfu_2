@@ -1,0 +1,196 @@
+{
+  "state": "completed",
+  "selection_sha256_before_trigger": "fe7ccc42d8c6ee7f67955b2b05ba78f0865998060c24d1ab26f94ce7bdb2c8f9",
+  "cases": {
+    "benign_big19336": {
+      "choice": {
+        "mask": 0,
+        "restored_blocks": 0,
+        "agreement": 1.0,
+        "disagree_n": 0,
+        "teacher_class_agreement": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "teacher_class_n": [
+          53,
+          45,
+          44,
+          60,
+          55,
+          48,
+          53,
+          33,
+          55,
+          54
+        ],
+        "KL": 6.247451597522612e-12
+      },
+      "heldout_clean": {
+        "n": 9500,
+        "correct": 8531,
+        "CA_pct": 89.8,
+        "class_CA_pct": [
+          91.7536534446764,
+          96.33507853403141,
+          85.69926393270242,
+          80.1063829787234,
+          91.1983032873807,
+          81.15789473684211,
+          93.88185654008439,
+          93.08565531475749,
+          93.00106044538707,
+          91.62248144220572
+        ],
+        "beneficial_n": 212,
+        "beneficial_kept_n": 212,
+        "beneficial_kept_fraction": 1.0,
+        "disagree_post_n": 0
+      },
+      "full_clean_correct": 8977,
+      "clean_n": 10000,
+      "attack_target_n": 149,
+      "attack_n": 9000,
+      "ASR_pct": 1.6555555555555557,
+      "overall_drop_pp": 0.0,
+      "worst_class_drop_pp": 0.0,
+      "necessary_utility_gate": true
+    },
+    "benign_same850": {
+      "choice": {
+        "mask": 0,
+        "restored_blocks": 0,
+        "agreement": 1.0,
+        "disagree_n": 0,
+        "teacher_class_agreement": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "teacher_class_n": [
+          45,
+          45,
+          48,
+          59,
+          58,
+          50,
+          52,
+          33,
+          56,
+          54
+        ],
+        "KL": 5.6705168328560535e-12
+      },
+      "heldout_clean": {
+        "n": 9500,
+        "correct": 8580,
+        "CA_pct": 90.31578947368422,
+        "class_CA_pct": [
+          93.1106471816284,
+          95.6020942408377,
+          85.8044164037855,
+          78.51063829787233,
+          90.77412513255567,
+          82.10526315789474,
+          95.25316455696202,
+          92.46646026831785,
+          95.54612937433721,
+          93.84941675503711
+        ],
+        "beneficial_n": 196,
+        "beneficial_kept_n": 196,
+        "beneficial_kept_fraction": 1.0,
+        "disagree_post_n": 0
+      },
+      "full_clean_correct": 9034,
+      "clean_n": 10000,
+      "attack_target_n": 125,
+      "attack_n": 9000,
+      "ASR_pct": 1.3888888888888888,
+      "overall_drop_pp": 0.0,
+      "worst_class_drop_pp": 0.0,
+      "necessary_utility_gate": true
+    },
+    "attack_cover850": {
+      "choice": {
+        "mask": 0,
+        "restored_blocks": 0,
+        "agreement": 1.0,
+        "disagree_n": 0,
+        "teacher_class_agreement": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "teacher_class_n": [
+          47,
+          45,
+          49,
+          61,
+          54,
+          44,
+          53,
+          34,
+          56,
+          57
+        ],
+        "KL": 6.335470239354701e-12
+      },
+      "heldout_clean": {
+        "n": 9500,
+        "correct": 8599,
+        "CA_pct": 90.51578947368421,
+        "class_CA_pct": [
+          92.17118997912317,
+          96.33507853403141,
+          86.43533123028391,
+          79.14893617021276,
+          89.92576882290561,
+          82.73684210526315,
+          94.9367088607595,
+          92.67285861713106,
+          96.07635206786851,
+          94.59172852598091
+        ],
+        "beneficial_n": 261,
+        "beneficial_kept_n": 261,
+        "beneficial_kept_fraction": 1.0,
+        "disagree_post_n": 0
+      },
+      "full_clean_correct": 9046,
+      "clean_n": 10000,
+      "attack_target_n": 9000,
+      "attack_n": 9000,
+      "ASR_pct": 100.0,
+      "overall_drop_pp": 0.0,
+      "worst_class_drop_pp": 0.0,
+      "necessary_utility_gate": true
+    }
+  },
+  "rule_uses_attack_metadata": false,
+  "deletion_quality_checked": false,
+  "necessary_gate_passed": false,
+  "finished_unix": 1793440806.0251384
+}

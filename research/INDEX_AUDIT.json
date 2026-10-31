@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "6f4b2b66925c136a55e3273174c1bac18ea64c0b0b4fa4063009732142690110",
+  "registry_sha256": "7a6566b3a570fdc1e88bb1aae2e495026de12547c80ebc01856482b6f2e59602",
   "cards": 29,
-  "unique_source_documents": 346,
+  "unique_source_documents": 352,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -353,7 +353,13 @@
     "research/badfu_feduba_defense_20261031/stage03/RESULT.json": "bfbe99d49922d5664237589ea4121204763b8107716d8f26c65610517efaa4e0",
     "research/badfu_feduba_defense_20261031/stage03/COMPLETED.json": "9facbdd7a1a2d515b46e02e2b3d024162dd269012f12f6c979a8f91b9d7a9f2d",
     "research/badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt": "4524844cf0f5f4b2970a2d68d85d9027ef2fcad2157a60200101c1fc39167721",
-    "research/badfu_feduba_defense_20261031/STAGE04_FREEZE.json": "92e6bd3779664ce8e65b84bfe1063de9f3f917965f8dc7d7d29f170282e9b48e"
+    "research/badfu_feduba_defense_20261031/STAGE04_FREEZE.json": "92e6bd3779664ce8e65b84bfe1063de9f3f917965f8dc7d7d29f170282e9b48e",
+    "research/badfu_feduba_defense_20261031/STAGE04_REPORT_KO.txt": "7172cb7d8ab60500f656fb6b024791f0d228ff728c01c40960d6972919e2e6e1",
+    "research/badfu_feduba_defense_20261031/stage04/RESULT.json": "755b34b4e7bc3ce754d2238962198c8b447c99f9ad990d977e8f516f026423a8",
+    "research/badfu_feduba_defense_20261031/stage04/COMPLETED.json": "e4e48a5ce064103451fc8e432f3c285f5ed6c18944a29099efd7359c6d235925",
+    "research/badfu_feduba_defense_20261031/stage04/SELECTION_BEFORE_TRIGGER.json": "fe7ccc42d8c6ee7f67955b2b05ba78f0865998060c24d1ab26f94ce7bdb2c8f9",
+    "research/badfu_feduba_defense_20261031/STAGE05_PROTOCOL.txt": "674d0dfa8bfd6abaea7570bf72fa2db6c72794f8c00cd75741cf1aa401de0ea8",
+    "research/badfu_feduba_defense_20261031/STAGE05_FREEZE.json": "4d78bc448658bbb5ef110df3b730e720c870bd3412bf2818d1fe8fb91980342b"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -509,7 +515,9 @@
         "research/badfu_feduba_defense_20261031/STAGE02_RESULT.json",
         "research/badfu_feduba_defense_20261031/STAGE03_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE03_REPORT_KO.txt",
-        "research/badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt"
+        "research/badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE04_REPORT_KO.txt",
+        "research/badfu_feduba_defense_20261031/STAGE05_PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

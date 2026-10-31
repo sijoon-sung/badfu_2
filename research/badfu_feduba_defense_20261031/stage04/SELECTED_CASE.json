@@ -1,0 +1,47 @@
+{
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "post_type": "retained_data_retraining",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+      "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+      "payload_key": null,
+      "committed_rounds": 40
+    },
+    "post": {
+      "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+      "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+      "payload_key": null,
+      "committed_rounds": 40
+    },
+    "clean_pre": {
+      "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+      "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+      "payload_key": null,
+      "committed_rounds": 40
+    },
+    "clean_post": {
+      "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+      "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+      "payload_key": null,
+      "committed_rounds": 40
+    },
+    "clean_big_post": {
+      "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+      "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+      "payload_key": null,
+      "committed_rounds": 40
+    }
+  },
+  "source_root": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+    "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+    "seal_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+    "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+    "loader_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

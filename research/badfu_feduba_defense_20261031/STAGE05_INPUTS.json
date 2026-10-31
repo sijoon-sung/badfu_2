@@ -1,0 +1,26 @@
+{
+  "train": {
+    "path": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261020/stage1_migrated_20261020/research/stage1_20261020/assets/cifar_train_raw.pt",
+    "sha256": "9a0a8a58a74280c91fe4c729c410d5e1ec81a6fc6b8dc5fa992b0be28b237633"
+  },
+  "split": {
+    "path": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261020/stage1_migrated_20261020/research/stage1_20261020/assets/badfu_full6_split.json",
+    "sha256": "1d83a25a93e946862f255a04ef623a223843da22127ec72fc7ab6842a08c9def"
+  },
+  "alignment": {
+    "path": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261020/stage1_migrated_20261020/research/stage1_fresh_20261020/paper_input_alignment.json",
+    "sha256": "7b588dcff8517ea4e3c001873d015a9e82a320ff9b13927281e522374d6f6457"
+  },
+  "attack_complete": {
+    "path": "D:/MULTISEED_ACTUAL_FU_20261022/badfu/seed_20261023/attack_FU/COMPLETE.json",
+    "sha256": "d4891b555318678b90dd15ba6ff249051bc6cc3069c30f3c0819381b08e192bf"
+  },
+  "same_complete": {
+    "path": "D:/MULTISEED_ACTUAL_FU_20261022/badfu/seed_20261023/normal_same850_FU/COMPLETE.json",
+    "sha256": "31e98853682b771ebd91f6a8d9a00832d42c941f67d11dd7352f58c1d5bc852f"
+  },
+  "big_complete": {
+    "path": "D:/MULTISEED_ACTUAL_FU_20261022/badfu/seed_20261023/normal_big4_FU/COMPLETE.json",
+    "sha256": "fd4a1805525363d2fcfbdc62c1b84c024127e997ffa8bae3c31a9c4857c776b9"
+  }
+}

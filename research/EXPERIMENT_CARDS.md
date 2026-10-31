@@ -968,13 +968,13 @@
 
 **가설 한 줄: 언러닝 후 필요한 정상 기능을 보존하는 표현·헤드 개입은 BadFU와 FedUBA의 활성화를 억제할 수 있다.**
 
-**판정: 단순교차·head운반 실패 보존 / BN분해 완료 / 무라벨 block rollback 선택 실험**
+**판정: H1/H2/H4 실패 보존·BN분해 완료 / H5 좌표정렬·실제삭제 감사 분리**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P04-defense-development/README.md)
 
 - **조건:** 사용자 지속 개발 지시. 명시 BadFU confirmed v1/purification_pilot,1실학습시드/재학습3쌍. 단계01은D18해시검증캐시를DISLAB CPU로연산했고새FL반복이아니다.500무라벨fit/9500heldout. 실제FedUBA는별도구현중이며미검증.
 - **정상 대조·비교:** 정상19.336%전체삭제를먼저검사하고정상850과공격clean효용을같은규칙으로비교. 전체CA와각클래스/유익교정보존을분리한다. D08/D15다른FU반례를보존.
-- **결과:** H1큰정상 전체CA+0.0526%p에도worst-class-5.6204%p,유익교정36/212만보존. 정상850은22/196. 사전고정H2무라벨ridge헤드운반은post대비CA-1.9368/-1.6842/-3.0316%p로실패. H1/H2source와결과/파생head는보존하고H3가중치/BN통계/head8조합의고정실제forward진단으로수정했다. 전체ASR/삭제품질/두공격공동성공은미측정. H3실제24조합/11개고유backbone추론에서 native5모델의CA/ASR정수수가일치했다. 전체9000장H1 ASR5.2444/H2 9.4이나효용실패는남고,BN/head단독복원은ASR100이었다. 가중치/BN을block별함께rollback하고무라벨500장의post예측일관성만으로32개조합중고정선택하는H4로수정했다. 새선택ASR은아직미측정이다.
+- **결과:** H1큰정상 전체CA+0.0526%p에도worst-class-5.6204%p,유익교정36/212만보존. 정상850은22/196. 사전고정H2무라벨ridge헤드운반은post대비CA-1.9368/-1.6842/-3.0316%p로실패. H1/H2source와결과/파생head는보존하고H3가중치/BN통계/head8조합의고정실제forward진단으로수정했다. 전체ASR/삭제품질/두공격공동성공은미측정. H3실제24조합/11개고유backbone추론에서 native5모델의CA/ASR정수수가일치했다. 전체9000장H1 ASR5.2444/H2 9.4이나효용실패는남고,BN/head단독복원은ASR100이었다. 가중치/BN을block별함께rollback하고무라벨500장의post예측일관성만으로32개조합중고정선택하는H4로수정했다. 새선택ASR은아직미측정이다. H4실행에서3쌍모두mask0인nativepost를선택했고공격ASR100으로실패했다. H5는공개무라벨500장의직교좌표정렬과실제삭제표본membership감사로수정했다. FedUBA경쟁학습중이므로CPUfit/캐시평가와삭제자료GPU추론을분리하며후자는자원guard전미실행이다.
 - **non-IID에 대해 남길 교훈:** 큰정상전체삭제에서전체정확도개선이클래스별손실을가릴수있다. 이결과는탐지구별이나개인정보망각실패를확정하지않는다. 새로운관측은고정개입의집단별행동과정상교정보존이며norm탐지기가아니다.
 - **반복하지 않을 주장:** 전체CA만으로무손실/삭제보존이라고부르지않고ASR사후최저후보선택/실제타깃을fit에쓰지않는다. 완료된H1/H2를재실행하거나실패를삭제하지않는다. FUBA를FedUBA로바꾸어부르지않는다.
 - **재검토 조건:** 가중치/BN/head원인분해후고정서버규칙을새프로토콜로정하고큰정상동일FU/독립시드/전체공격평가/삭제품질을함께통과해야채택한다. 각후보실패는보존후수정하고전체방어목표는계속한다.
@@ -996,6 +996,12 @@
 - [research/badfu_feduba_defense_20261031/stage03/COMPLETED.json](badfu_feduba_defense_20261031/stage03/COMPLETED.json)
 - [research/badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt](badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt)
 - [research/badfu_feduba_defense_20261031/STAGE04_FREEZE.json](badfu_feduba_defense_20261031/STAGE04_FREEZE.json)
+- `research/badfu_feduba_defense_20261031/STAGE04_REPORT_KO.txt` (로컬 보관)
+- `research/badfu_feduba_defense_20261031/stage04/RESULT.json` (로컬 보관)
+- `research/badfu_feduba_defense_20261031/stage04/COMPLETED.json` (로컬 보관)
+- `research/badfu_feduba_defense_20261031/stage04/SELECTION_BEFORE_TRIGGER.json` (로컬 보관)
+- `research/badfu_feduba_defense_20261031/STAGE05_PROTOCOL.txt` (로컬 보관)
+- `research/badfu_feduba_defense_20261031/STAGE05_FREEZE.json` (로컬 보관)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
