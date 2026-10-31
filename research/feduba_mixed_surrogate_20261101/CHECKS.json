@@ -1,0 +1,40 @@
+{
+  "state": "new_source_publication_domain_contract_and_live_start_checked",
+  "source_publication_commit": "860ebd8",
+  "frozen_files": 13,
+  "source_only_AST_files": 8,
+  "source_only_PS_AST": "passed",
+  "new_domain_contract": {
+    "state": "passed",
+    "synthetic_getitems": 7,
+    "sampler_passes": 2,
+    "real_data_reads": 0,
+    "model_forwards": 0
+  },
+  "actual_controller_pid_observed": 53016,
+  "actual_trainer_pid_observed": 12068,
+  "first_committed_epoch_examples": 100200,
+  "first_committed_epoch_batches": 783,
+  "first_epoch_target_seen": 200,
+  "independent_teacher_CPU_audit_or_endpoint_completed": false,
+  "completed_old_fixture_or_run_repeated": false,
+  "old_GPU_failure_and_CPU8_rejection_preserved": true,
+  "old_failed_FU_pair_and_deliveries_preserved": true,
+  "private_history_or_sample_IDs_not_staged": true,
+  "source_bindings_inputs_and_versions_pinned": true,
+  "current_running_source_not_modified": true,
+  "main_index_check": {
+    "cards": 28,
+    "sources": 579,
+    "folders": 113,
+    "linked_folders": 65
+  },
+  "PR_index_check": {
+    "cards": 28,
+    "sources": 506,
+    "folders": 110,
+    "linked_folders": 62
+  },
+  "GitHub_links_checked": 1137,
+  "overall_goal_complete": false
+}

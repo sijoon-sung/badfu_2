@@ -1,0 +1,67 @@
+{
+  "state": "mixed_teacher_running_after_published_source_and_new_domain_contract",
+  "utc": "2026-10-31T16:57:52.297445+00:00",
+  "task": "Codex-FedUBA-mixed-surrogate100-warmup5-20261101",
+  "source_publication_commit": "860ebd8",
+  "processes": [
+    {
+      "ProcessId": 53016,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_MIXED_SURROGATE_20261101/mixed_controller.py"
+    },
+    {
+      "ProcessId": 12068,
+      "ParentProcessId": 53016,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_MIXED_SURROGATE_20261101\\mixed_teacher_runner.py"
+    }
+  ],
+  "observed_training_state": {
+    "state": "training",
+    "pid": 12068,
+    "phase": "mixed_surrogate",
+    "epoch": 2,
+    "committed_epochs": 1,
+    "committed_batches": 783,
+    "epoch_batches_completed": 700,
+    "epoch_examples_seen": 89600,
+    "actual_batches_including_uncommitted": 1483,
+    "updated_unix": 1793465732.699576
+  },
+  "observed_committed_epochs": 1,
+  "first_committed_epoch": {
+    "phase": "mixed_surrogate",
+    "epoch": 1,
+    "examples": 100200,
+    "batches": 783,
+    "cumulative_batches": 783,
+    "loss": 4.761714987764339,
+    "train_correct": 4723,
+    "Tiny_seen": 100000,
+    "target_seen": 200,
+    "Tiny_correct": 4723,
+    "target_correct": 0,
+    "lr_before": 0.1,
+    "lr_after": 0.09997532801828658,
+    "checkpoint": {
+      "path": "private_run/mixed_surrogate/epoch001.pt",
+      "sha256": "598f7016af65af7b5cd27a14bbe080f658a714dd49e1fe1a6112e31edb88e521",
+      "bytes": 93513467,
+      "payload_key": "model"
+    }
+  },
+  "new_domain_contract_sha256": "a0c89bcf12b863bce8a98783511f0d0a8b7c929c9990e9977c02c7900d8aaa2a",
+  "new_domain_contract_passed": true,
+  "initial_guard": {
+    "utilization_pct": 0,
+    "free_MiB": 5045,
+    "used_MiB": 5009,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000,
+    "free_storage_bytes": 921674854400
+  },
+  "own_CUDA_memory_increase_is_not_a_start_guard_failure": true,
+  "first_observer_file_absent_during_startup_was_read_only_race_not_job_failure": true,
+  "completed_older_experiments_repeated": false,
+  "teacher105_CPU_audit_or_endpoint_completed": false,
+  "overall_goal_complete": false
+}

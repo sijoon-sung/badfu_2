@@ -183,3 +183,11 @@
 | [COPY_PROVENANCE.json](../../../research/feduba_mixed_surrogate_20261101/COPY_PROVENANCE.json) | `research/feduba_mixed_surrogate_20261101` |
 | [SOURCE_CHECKS.json](../../../research/feduba_mixed_surrogate_20261101/SOURCE_CHECKS.json) | `research/feduba_mixed_surrogate_20261101` |
 | [REPORT_KO.txt](../../../research/feduba_mixed_surrogate_20261101/REPORT_KO.txt) | `research/feduba_mixed_surrogate_20261101` |
+| [PUBLICATION.json](../../../research/feduba_mixed_surrogate_20261101/PUBLICATION.json) | `research/feduba_mixed_surrogate_20261101` |
+| [CONTROLLER_ONCE.json](../../../research/feduba_mixed_surrogate_20261101/CONTROLLER_ONCE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [TRAIN_ONCE.json](../../../research/feduba_mixed_surrogate_20261101/TRAIN_ONCE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [NORMAL_SELECTION.json](../../../research/feduba_mixed_surrogate_20261101/NORMAL_SELECTION.json) | `research/feduba_mixed_surrogate_20261101` |
+| [DOMAIN_CONTRACT_ONCE.json](../../../research/feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_ONCE.json) | `research/feduba_mixed_surrogate_20261101` |
+| [DOMAIN_CONTRACT_RESULT.json](../../../research/feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_RESULT.json) | `research/feduba_mixed_surrogate_20261101` |
+| [STARTED_OBSERVATION.json](../../../research/feduba_mixed_surrogate_20261101/STARTED_OBSERVATION.json) | `research/feduba_mixed_surrogate_20261101` |
+| [CHECKS.json](../../../research/feduba_mixed_surrogate_20261101/CHECKS.json) | `research/feduba_mixed_surrogate_20261101` |
