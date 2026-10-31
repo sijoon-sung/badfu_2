@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "ab7cdb0ee54e1b4d92c111fa2367cc414fc941d4321e10ccb353a966c7a6a2ab",
+  "registry_sha256": "412cd346e76274da4e4cd18dc52615694acef43900f2b0ecee1eaa7442e5832f",
   "cards": 29,
-  "unique_source_documents": 546,
+  "unique_source_documents": 550,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -553,7 +553,11 @@
     "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROFILE.json": "8ba7f46704bc1a08d874e4ee2c382f08be509775d332fb89744fb167e2abe718",
     "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json": "2f365474e5d92649df8a247eff484f2b22c897a5328566170d408df1eb13ee98",
     "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_OBJECTIVE_CONTRACT.json": "7c64d3ec5b24e9cf5955b9e3498f1e40f1037ccc27654f9069983da001448883",
-    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_FREEZE.json": "efd2ce7205ee3cf10933a13111aed343e34b8e7eca61af29b8576fc1dfa175b9"
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_FREEZE.json": "efd2ce7205ee3cf10933a13111aed343e34b8e7eca61af29b8576fc1dfa175b9",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_LAUNCH.json": "0caba3bd3dc030c2737260528654db3ecbbd841569f0477436d7ece5b15ec927",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/STARTED.json": "7699fafb1e3eea078d2bd4266ecf831164d4ef47592b550276d4ece4a35bacad",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/SOURCE_INPUTS.json": "013aa6ea41369de176cc6a7be02f00213d658a9f3e0fc8dbe0bbcc56fab43765",
+    "research/badfu_feduba_defense_20261031/adaptive_query_run/benign_big19336/BANK_BEFORE_TRAINING.json": "87dfe9e3f41d78d5ead4872e339596e17f22f982efc637e65f571ed0fd6203e5"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
