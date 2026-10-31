@@ -150,3 +150,14 @@
 | [PAIR_REVIEW_RECOVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_REVIEW_RECOVERY_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_REVIEW_RECOVERY_SOURCE_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_SOURCE_CHECKS.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_RECOVERY_PUBLICATION.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_PUBLICATION.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_RECOVERY_ONCE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_ONCE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_RECOVERY_RESULT.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_RECOVERY_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_DELIVERY_REMOTE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_DELIVERY_REMOTE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_REVIEW_LOCAL_COMPLETE.json](../../../research/feduba_paper_implementation_20261031/PAIR_REVIEW_LOCAL_COMPLETE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_DELIVERY_COMPLETE.json](../../../research/feduba_paper_implementation_20261031/PAIR_DELIVERY_COMPLETE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_DELIVERY_REPORT_KO.txt](../../../research/feduba_paper_implementation_20261031/PAIR_DELIVERY_REPORT_KO.txt) | `research/feduba_paper_implementation_20261031` |
+| [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/pair_main/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/pair_main` |
+| [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/pair_pr/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/pair_pr` |
+| [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/pair_dislab/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/pair_dislab` |
+| [PAIR_CATALOGUE_FORMAT_CHECKS.json](../../../research/feduba_paper_implementation_20261031/PAIR_CATALOGUE_FORMAT_CHECKS.json) | `research/feduba_paper_implementation_20261031` |

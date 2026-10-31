@@ -1684,6 +1684,266 @@
           "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
         }
       }
+    },
+    {
+      "id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+      "folder": "05_diagnostic/feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+      "title": "FedUBA CPU trigger / SSS125 / actual attack FedEraser20 diagnostic",
+      "family": "feduba_declared_paper_CPU_trigger",
+      "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+      "integrity": "both_FU20_full_CPU_and_all10000_three_models_independently_verified_readonly_packet",
+      "reproduction": "failed_minimum_latent_activation_performance_gate",
+      "seed": 42,
+      "post_type": "actual_FedEraser20_attack_same_selected_source_IDs",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R03",
+        "R02",
+        "N02",
+        "D08",
+        "D15"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\before.pt",
+          "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\attack_after.pt",
+          "sha256": "979c789d106a4209d43a7b1cfc0db1cab210508a7367f47e0828afdc9338f0d2",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_MANIFEST.json",
+        "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_SEAL.json",
+        "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\load_checkpoint.py"
+      },
+      "history_scope": {
+        "raw_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/fu/attack",
+        "manifest_sha256": "f11566da1850d3a8ca8b043fff9497bdce4c7f54ddfd6c00411adafe7e136da1",
+        "representative_role_tensors_only_in_packet": true,
+        "local_history_use_approved": false,
+        "role_payload_key": "model",
+        "global_payload_key": null
+      },
+      "evaluator_only": {
+        "metrics": {
+          "pre": {
+            "N": 10000,
+            "clean_correct": 8794,
+            "non_target_N": 9000,
+            "triggered_target_hits": 627,
+            "CA_pct": 87.94,
+            "ASR_pct": 6.966666666666667
+          },
+          "benign": {
+            "N": 10000,
+            "clean_correct": 8658,
+            "non_target_N": 9000,
+            "triggered_target_hits": 569,
+            "CA_pct": 86.58,
+            "ASR_pct": 6.322222222222222
+          },
+          "attack": {
+            "N": 10000,
+            "clean_correct": 8676,
+            "non_target_N": 9000,
+            "triggered_target_hits": 570,
+            "CA_pct": 86.76,
+            "ASR_pct": 6.333333333333333
+          }
+        },
+        "target": 2,
+        "trigger_multiplier": 1.5,
+        "trigger": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\delta.pt",
+          "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+          "payload_key": null
+        },
+        "minimum_operational_gate": {
+          "passed": false,
+          "checks": {
+            "pre_ASR": true,
+            "attack_ASR": false,
+            "attack_minus_pre": false,
+            "attack_minus_benign": false,
+            "all_three_CA": true,
+            "both_post_CA_drop": true
+          },
+          "attack_minus_pre_ASR_pp": -0.6333333333333333,
+          "attack_minus_benign_ASR_pp": 0.011111111111111112,
+          "post_CA_drop_pp": {
+            "benign": 1.36,
+            "attack": 1.18
+          },
+          "is_server_detection_threshold": false,
+          "is_exact_paper_mean_reproduction": false
+        },
+        "paired_control_case_id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.benignfu20.20261031",
+        "verified_stealth_latent_pair": false,
+        "original_GPU_STG_audit_remains_failed": true
+      },
+      "evidence": [
+        "audit/FEDUBA_PAIR_S42_CPU_SSS125_FU20_20261031_DELIVERY.json"
+      ],
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          },
+          "post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\attack_after.pt",
+            "sha256": "979c789d106a4209d43a7b1cfc0db1cab210508a7367f47e0828afdc9338f0d2",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\load_checkpoint.py"
+        }
+      }
+    },
+    {
+      "id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.benignfu20.20261031",
+      "folder": "05_diagnostic/feduba.paper.cifar10.s42.cpu_trigger.sss125.benignfu20.20261031",
+      "title": "FedUBA CPU trigger / SSS125 / actual benign FedEraser20 diagnostic",
+      "family": "feduba_declared_paper_CPU_trigger",
+      "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+      "integrity": "both_FU20_full_CPU_and_all10000_three_models_independently_verified_readonly_packet",
+      "reproduction": "failed_minimum_latent_activation_performance_gate",
+      "seed": 42,
+      "post_type": "actual_FedEraser20_benign_same_selected_source_IDs",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R03",
+        "R02",
+        "N02",
+        "D08",
+        "D15"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\before.pt",
+          "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\benign_after.pt",
+          "sha256": "4027f5a984d99d72572f5972840d03bc3d62877c74f814adb435a31cb792e404",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_MANIFEST.json",
+        "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_SEAL.json",
+        "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\load_checkpoint.py"
+      },
+      "history_scope": {
+        "raw_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/fu/benign",
+        "manifest_sha256": "b8d9b74e57bf880dca5a577c35bb43ac01252ff5fb2380f6eef4e2585d013a9c",
+        "representative_role_tensors_only_in_packet": true,
+        "local_history_use_approved": false,
+        "role_payload_key": "model",
+        "global_payload_key": null
+      },
+      "evaluator_only": {
+        "metrics": {
+          "pre": {
+            "N": 10000,
+            "clean_correct": 8794,
+            "non_target_N": 9000,
+            "triggered_target_hits": 627,
+            "CA_pct": 87.94,
+            "ASR_pct": 6.966666666666667
+          },
+          "benign": {
+            "N": 10000,
+            "clean_correct": 8658,
+            "non_target_N": 9000,
+            "triggered_target_hits": 569,
+            "CA_pct": 86.58,
+            "ASR_pct": 6.322222222222222
+          },
+          "attack": {
+            "N": 10000,
+            "clean_correct": 8676,
+            "non_target_N": 9000,
+            "triggered_target_hits": 570,
+            "CA_pct": 86.76,
+            "ASR_pct": 6.333333333333333
+          }
+        },
+        "target": 2,
+        "trigger_multiplier": 1.5,
+        "trigger": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\delta.pt",
+          "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+          "payload_key": null
+        },
+        "minimum_operational_gate": {
+          "passed": false,
+          "checks": {
+            "pre_ASR": true,
+            "attack_ASR": false,
+            "attack_minus_pre": false,
+            "attack_minus_benign": false,
+            "all_three_CA": true,
+            "both_post_CA_drop": true
+          },
+          "attack_minus_pre_ASR_pp": -0.6333333333333333,
+          "attack_minus_benign_ASR_pp": 0.011111111111111112,
+          "post_CA_drop_pp": {
+            "benign": 1.36,
+            "attack": 1.18
+          },
+          "is_server_detection_threshold": false,
+          "is_exact_paper_mean_reproduction": false
+        },
+        "paired_control_case_id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+        "verified_stealth_latent_pair": false,
+        "original_GPU_STG_audit_remains_failed": true
+      },
+      "evidence": [
+        "audit/FEDUBA_PAIR_S42_CPU_SSS125_FU20_20261031_DELIVERY.json"
+      ],
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          },
+          "post": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\benign_after.pt",
+            "sha256": "4027f5a984d99d72572f5972840d03bc3d62877c74f814adb435a31cb792e404",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\load_checkpoint.py"
+        }
+      }
     }
   ],
   "supplemental_audits": [
@@ -1740,6 +2000,10 @@
     {
       "path": "audit/FEDUBA_CLEANFL20_S42_20261031_DELIVERY.json",
       "sha256": "ccf44400ef582afc07c517a10147d5cf2f10b116790f23492cafdb992f816dcd"
+    },
+    {
+      "path": "audit/FEDUBA_PAIR_S42_CPU_SSS125_FU20_20261031_DELIVERY.json",
+      "sha256": "87eaf0a4b184446abad86abdbe39fd32376342946f790fb0fb7375060ea8d215"
     }
   ],
   "default_full_history_case": "badfu.paper32.s20261020",
