@@ -1,0 +1,227 @@
+{
+  "state": "normal_foundation_delivery_and_three_host_diagnostic_registration_complete",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "actual_normal_rounds": 20,
+  "actual_original_roles": 200,
+  "actual_original_epochs": 2000,
+  "actual_original_batches": 40000,
+  "independent_N": 10000,
+  "independent_clean_correct": 8795,
+  "CA_pct": 87.95,
+  "remote_packet": {
+    "state": "exported_verified_normal_review",
+    "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+    "archive_path": "D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\CLEAN_REVIEW_DELIVERY.zip",
+    "archive_sha256": "db347532f2d502888bedf7e84e1be3d6b2200fcdaf5f4befb052a066e820d9cb",
+    "archive_bytes": 180309159,
+    "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+    "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+    "payload_file_count": 46,
+    "packet_total_files": 48,
+    "tensor_payload_count": 3,
+    "guard": {
+      "state": "passed",
+      "verified_payload_files": 46,
+      "all_readonly": true
+    },
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null
+    },
+    "local_delivery_complete": false,
+    "catalogue_registered": false,
+    "FedUBA_attack_completed": false
+  },
+  "local_packet": {
+    "state": "local_delivery_complete",
+    "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "packet_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+    "archive_sha256": "db347532f2d502888bedf7e84e1be3d6b2200fcdaf5f4befb052a066e820d9cb",
+    "archive_bytes": 180309159,
+    "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+    "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+    "packet_total_files": 48,
+    "payload_file_count": 46,
+    "guard": {
+      "state": "passed",
+      "verified_payload_files": 46,
+      "all_readonly": true
+    },
+    "CPU_only": true,
+    "payload_checks": [
+      {
+        "file": "run/before.pt",
+        "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+        "payload_key": null,
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "file": "run/initial.pt",
+        "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+        "payload_key": null,
+        "strict_CPU_finite_forward": true
+      },
+      {
+        "file": "run/last_role.pt",
+        "sha256": "3d1ba1afe49d0ef95ecc6b9908e28b73f1fc81ebe9ddce946d128a2961cbf6fc",
+        "payload_key": "model",
+        "strict_CPU_finite_forward": true
+      }
+    ],
+    "local_delivery_complete": true,
+    "catalogue_registered": false,
+    "FedUBA_attack_completed": false,
+    "original_export_receipt_modified": false
+  },
+  "registrations": {
+    "main": {
+      "state": "registered_diagnostic_only",
+      "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "host_label": "main",
+      "old_case_count": 23,
+      "new_case_count": 24,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "catalogue_sha256": "8e9c8beca8842ed1c4a45128fa042d8daaa3f06916ebb4abe5e8601ffd49741f",
+      "external_audit_sha256": "a32386f5e3dba740186a9c9a9e3b730938804beaa20527e85d28decb402d88a1",
+      "selection": {
+        "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+        "purpose": "diagnostic",
+        "post_type": "none_clean_pre_only",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          }
+        },
+        "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+        "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+        },
+        "guard_state": "all_snapshot_files_verified_on_this_host"
+      },
+      "unapproved_purposes_denied": [
+        {
+          "purpose": "retrain_activation",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: retrain_activation\n"
+        },
+        {
+          "purpose": "client_history",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: client_history\n"
+        }
+      ]
+    },
+    "pr": {
+      "state": "registered_diagnostic_only",
+      "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "host_label": "pr",
+      "old_case_count": 20,
+      "new_case_count": 21,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "catalogue_sha256": "9623447976b82c3716cb3f72d57b95503d2c05147175903f2c627f7e09dc3e58",
+      "external_audit_sha256": "ccf44400ef582afc07c517a10147d5cf2f10b116790f23492cafdb992f816dcd",
+      "selection": {
+        "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+        "purpose": "diagnostic",
+        "post_type": "none_clean_pre_only",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          }
+        },
+        "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+        "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+        },
+        "guard_state": "all_snapshot_files_verified_on_this_host"
+      },
+      "unapproved_purposes_denied": [
+        {
+          "purpose": "retrain_activation",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: retrain_activation\n"
+        },
+        {
+          "purpose": "client_history",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: client_history\n"
+        }
+      ]
+    },
+    "dislab": {
+      "state": "registered_diagnostic_only",
+      "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "host_label": "dislab",
+      "old_case_count": 21,
+      "new_case_count": 22,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "catalogue_sha256": "3e23a74b6eb27a6501555498c60c21eae4c225e7ca2a7ffb3b5b2da3ece30fe2",
+      "external_audit_sha256": "cafd2586fa4ea7b6d6dbc278d2dabae248bc7438e58031a507f9739700dff0bf",
+      "selection": {
+        "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+        "purpose": "diagnostic",
+        "post_type": "none_clean_pre_only",
+        "server_inputs": {
+          "pre": {
+            "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          }
+        },
+        "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+        "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+        "checkpoint_guard": {
+          "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+          "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+          "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+        },
+        "guard_state": "all_snapshot_files_verified_on_this_host"
+      },
+      "unapproved_purposes_denied": [
+        {
+          "purpose": "retrain_activation",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: retrain_activation\n"
+        },
+        {
+          "purpose": "client_history",
+          "exit_code": 1,
+          "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: client_history\n"
+        }
+      ]
+    }
+  },
+  "latest_STG_snapshot": {
+    "state": "training",
+    "pid": 49888,
+    "phase": "surrogate",
+    "epoch": 7,
+    "phase_epochs": 100,
+    "committed_epochs": 7,
+    "actual_batches": 5474,
+    "updated_unix": 1793445219.0675569
+  },
+  "full_raw_role_tensors_remain_on_DISLAB": true,
+  "local_packet_has_all200_role_tensors": false,
+  "source_export_or_local_receipt_historical_flags_modified": false,
+  "FedUBA_attack_completed": false,
+  "overall_goal_complete": false
+}

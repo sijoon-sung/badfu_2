@@ -1614,6 +1614,76 @@
         "One failed baseline plus nine fixed new seeds; this is the first new completed seed. No successful-seed selection, seed expansion or default replacement.",
         "CIFAR/IBA failures and D08/D15 large benign non-IID detection counterexamples remain unresolved."
       ]
+    },
+    {
+      "id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "folder": "05_diagnostic/FedUBA_cleanFL20_s42_20261031",
+      "title": "FedUBA CIFAR10 정상 FL20 기반 모델·진단 전용",
+      "family": "feduba_clean_foundation",
+      "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+      "integrity": "passed_actual20R_200roles_all_CPU_history_independent10000_and_readonly_packet",
+      "reproduction": "normal_only_no_STG_SSS_BEA_or_unlearning_pair",
+      "seed": 42,
+      "post_type": "none_clean_pre_only",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "related_cards": [
+        "R03",
+        "R02",
+        "N02",
+        "D08",
+        "D15"
+      ],
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+          "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+          "payload_key": null
+        }
+      },
+      "checkpoint_guard": {
+        "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+        "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+        "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+        "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+        "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+      },
+      "history_scope": {
+        "raw_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/clean_fl",
+        "manifest_sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28",
+        "all200_role_tensors_only_on_DISLAB": true,
+        "local_history_use_approved": false,
+        "role_payload_key": "model",
+        "global_payload_key": null
+      },
+      "evaluator_only": {
+        "N": 10000,
+        "clean_correct": 8795,
+        "CA_pct": 87.95,
+        "ASR_measured": false,
+        "actual_attack_pair": false
+      },
+      "evidence": [
+        "audit/FEDUBA_CLEANFL20_S42_20261031_DELIVERY.json"
+      ],
+      "local_copy": {
+        "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+        "server_inputs": {
+          "pre": {
+            "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+            "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+            "payload_key": null
+          }
+        },
+        "checkpoint_guard": {
+          "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+          "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+          "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+          "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+          "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+        }
+      }
     }
   ],
   "supplemental_audits": [
@@ -1666,6 +1736,10 @@
       "path": "audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json",
       "sha256": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
       "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031"
+    },
+    {
+      "path": "audit/FEDUBA_CLEANFL20_S42_20261031_DELIVERY.json",
+      "sha256": "ccf44400ef582afc07c517a10147d5cf2f10b116790f23492cafdb992f816dcd"
     }
   ],
   "default_full_history_case": "badfu.paper32.s20261020",
