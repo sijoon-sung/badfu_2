@@ -112,3 +112,13 @@
 | [STG_CPU_TRIGGER_VERIFIED.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_VERIFIED.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_CPU_SOURCE_BINDING.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_SOURCE_BINDING.json) | `research/feduba_paper_implementation_20261031` |
 | [CPU_BINDING_LAUNCH_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/CPU_BINDING_LAUNCH_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [SSS_LAUNCH_PROFILE.json](../../../research/feduba_paper_implementation_20261031/SSS_LAUNCH_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_LAUNCH_PROFILE.json](../../../research/feduba_paper_implementation_20261031/FU_LAUNCH_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_LAUNCH_PROFILE.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_LAUNCH_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_LAUNCH_PROFILE.json](../../../research/feduba_paper_implementation_20261031/PAIR_LAUNCH_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [SSS_FREEZE.json](../../../research/feduba_paper_implementation_20261031/SSS_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_RUN_FREEZE.json](../../../research/feduba_paper_implementation_20261031/FU_RUN_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_RUN_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_RUN_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_RUN_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_RUN_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_PREPARE_ONCE.json](../../../research/feduba_paper_implementation_20261031/PAIR_PREPARE_ONCE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_PREPARE_RESULT.json](../../../research/feduba_paper_implementation_20261031/PAIR_PREPARE_RESULT.json) | `research/feduba_paper_implementation_20261031` |
