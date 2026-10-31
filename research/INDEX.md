@@ -63,7 +63,7 @@ flowchart TD
 | 실험 카드 | 현재 판정 |
 |---|---|
 | [R01 · 승인된 BadFU 모델과 삭제 방식](EXPERIMENT_CARDS.md#r01) | 검증 범위 한정 |
-| [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | MNIST/DBA 성능미달·전달완료 / 고정seed검증 첫launch 중단보존·동일조건복구 준비 |
+| [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | MNIST/DBA 성능미달·전달완료 / 고정10행seed검증 복구후DISLAB 실행중 |
 | [R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사](EXPERIMENT_CARDS.md#r03) | 공식 배포 누락·원본 ID 계약 실패 / 공격 성능 재현·탐지 사용 미검증 |
 
 ### 이력·영향력

@@ -230,3 +230,8 @@
 | [PRELAUNCH_INCIDENT.json](../../../research/fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json) | `research/fuba_seed_repro_20261031` |
 | [LAUNCH_RECOVERY_READY.json](../../../research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json) | `research/fuba_seed_repro_20261031` |
 | [RECOVERY_PREPARE_V1_FAILURE.json](../../../research/fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json) | `research/fuba_seed_repro_20261031` |
+| [REMOTE_SNAPSHOT_AFTER_RECOVERY.json](../../../research/fuba_seed_repro_20261031/REMOTE_SNAPSHOT_AFTER_RECOVERY.json) | `research/fuba_seed_repro_20261031` |
+| [LIVE_EXECUTION_VERIFIED.json](../../../research/fuba_seed_repro_20261031/LIVE_EXECUTION_VERIFIED.json) | `research/fuba_seed_repro_20261031` |
+| [TASK_EXECUTION_VERIFIED.json](../../../research/fuba_seed_repro_20261031/TASK_EXECUTION_VERIFIED.json) | `research/fuba_seed_repro_20261031` |
+| [FIRST_NEW_ROUND_CPU_AUDIT.json](../../../research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json) | `research/fuba_seed_repro_20261031` |
+| [DATASET_AUDIT.json](../../../research/fuba_seed_repro_20261031/DATASET_AUDIT.json) | `research/fuba_seed_repro_20261031` |
