@@ -1,0 +1,42 @@
+{
+  "state": "passed",
+  "rows": [
+    {
+      "classes": 10,
+      "batch_size": 128,
+      "loss": 2.3559181690216064,
+      "peak_allocated_MiB": 666.4931640625,
+      "peak_reserved_MiB": 1010.0,
+      "checkpoint": {
+        "path": "private_assets/GPU_fixture_10.pt",
+        "sha256": "5f40f7442ec9cfb8759c5eb7f7481dc908516bbc11b8b6cdad4e19fe9caa7010",
+        "bytes": 89497419
+      }
+    },
+    {
+      "classes": 201,
+      "batch_size": 128,
+      "loss": 5.511425495147705,
+      "peak_allocated_MiB": 667.83349609375,
+      "peak_reserved_MiB": 984.0,
+      "checkpoint": {
+        "path": "private_assets/GPU_fixture_201.pt",
+        "sha256": "d724de170aae4bf24cef0d99ff0199cd451cbec57e18ca6327adbf89c3d68df1",
+        "bytes": 90281291
+      }
+    }
+  ],
+  "initial_guard": {
+    "utilization_pct": 0,
+    "free_MiB": 5045,
+    "used_MiB": 5009,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000
+  },
+  "source_sha256": "2761cf79a5d39ae7aee33047015ab8109809ab932f0db249e4971dde507bed9e",
+  "foundation_free_min_MiB": 4000,
+  "foundation_used_max_MiB": 6000,
+  "attack_performance_measured": false,
+  "old_FUBA_guard_modified": false,
+  "other_apps_stopped": false
+}

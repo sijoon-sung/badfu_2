@@ -4,3 +4,5 @@
 공식 누락 모델은 Narcissus의 동일 심볼 구현을 바이트 그대로 복원한 명시 후보이며 저자 인증은 없다. SSS 원 ID와 Eq7/8 선택·부호 등을 선언 교정했다. 원 코드 실행·선언 구현·성능 재현은 별개다.
 다음 GPU 검사는 batch128 메모리·수치 통합 유한 fixture이고 공격 성능이 아니다. 실제20R clean FL은 새 초기화·전체 개별 제출·optimizer/RNG/원 ID/로그를 남기는 기반 단계다. STG/SSS/BEA 공격FU와 동일 ID 정상FU·독립평가·전달이 남는다.
 D08/D15 큰 정상 nonIID 반례는 해결되지 않았으며 새 탐지 점수나 성공 ASR/CA는 주장하지 않는다.
+
+실행정정: PR commit a9acbec 게시뒤 원격source freeze 검사를통과하고 새예약작업을1회시작했다. 실제parent35368/controller9492/trainer54660이생존하며 첫역할client0/3의각전체10epoch200batch를확인했다. GPUfixture batch128 모델10/201 peakreserved1010/984MiB 통과, 공식CIFAR MD5와새분할/초기화CPU준비도통과했다. 실제FL20은진행중이며아직완료CA나FedUBA ASR은없다. 다른GPU앱종료나옛guard수정은없었다. MONITOR_PROTOCOL과원결과JSON을따른다.

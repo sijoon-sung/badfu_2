@@ -8,4 +8,4 @@
 |---|---|---|
 | R01 | [BadFU 학습과 삭제 전후 모델 확인](R01-badfu-reproduction/README.md) | 검증 범위 한정 |
 | R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](R02-fuba-reproduction/README.md) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
-| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | 사용자 정정으로 FedUBA 구현 활성 / 명시 core DISLAB CPU6 통과 / 실제 공격 재현 미완료 |
+| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | FedUBA core CPU6·batch128 GPUfixture 통과 / fresh clean FL20 실제 실행 중 / 공격 미완료 |
