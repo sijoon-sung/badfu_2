@@ -1,0 +1,33 @@
+{
+  "state": "CPU_trigger_recovery_started",
+  "prepublished_commit": "db35406",
+  "original_STG_and_diagnosis_not_restarted": true,
+  "snapshot": {
+    "processes": [
+      {
+        "ProcessId": 40388,
+        "ParentProcessId": 2428,
+        "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/cpu_trigger_controller.py"
+      },
+      {
+        "ProcessId": 51664,
+        "ParentProcessId": 40388,
+        "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\cpu_trigger_recovery.py"
+      }
+    ],
+    "controller": {
+      "state": "running",
+      "pid": 40388,
+      "step": "cpu_trigger_recovery.py",
+      "child_pid": 51664,
+      "time_unix": 1793453308.223655
+    },
+    "state": {
+      "state": "training_CPU_trigger",
+      "pid": 51664,
+      "epoch": 17,
+      "actual_batches": 34,
+      "time_unix": 1793453412.3118353
+    }
+  }
+}

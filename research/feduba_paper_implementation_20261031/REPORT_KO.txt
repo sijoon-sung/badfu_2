@@ -40,3 +40,5 @@ STG 독립CPU gradient 검증실패보존: 원학습100/5/100·78410batch는완�
 
 유한수치진단완료: PR7355f6f 선게시뒤고정2step×4모드8개gradient만계산했다. 같은GPU default두재생은원저장gradient와maxabs0으로정확일치했고CPU_MKLDNN은원실패0.009947020560503006/마지막0.00042789464350789785를기록했다. CPU native·strictGPU도원cross-device기준을해결하지못했다. 단일kernel/비미분경계원인은미확정이며원audit실패는유지한다. 진단parent328과모든child는종료해재실행하지않는다.
 새명시CPU trigger복구계약: 원100surrogate/5warmup frozen모델SHA는그대로재사용하고새stg_cpu_trigger_recovery에원seed3000/δ0·같은외부200·literalSGD.1/투영·100epoch200batch를DISLAB CPU2 FP32에서한번실행한다. 원GPUbranch와모든데이터/실패는불변이며기존CPU gradient/projection 허용치를넓히지않는다. 독립검산은새100epoch/200step/ID/RNG와같은첫/마지막두gradient다. GPU-CPU동등성을주장하지않고새CPU분기성공뒤에도원실패를보존한새binding없이SSS/FU를시작하지않는다.
+
+새CPU복구실행확인: PRdb35406과원격freeze통과뒤정확한새task를1회시작했다. 실제parent40388/trainer51664·CPU trigger5epoch/10batch 이상진행을확인했다. 원STG/진단은재실행하지않고SSS/FU는아직미실행이다. 원GPUδ/실패와별개인새CPU결과·독립검증을기다린다.

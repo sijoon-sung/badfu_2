@@ -107,3 +107,4 @@
 | [STG_CPU_TRIGGER_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [STG_CPU_TRIGGER_PROFILE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_CPU_TRIGGER_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_STARTED.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_STARTED.json) | `research/feduba_paper_implementation_20261031` |
