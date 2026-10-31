@@ -1,3 +1,9 @@
+최신상태 — 정상FU20 독립CPU검증완료/공격FU20 시작
+FU_benign_RESULT와VERIFIED=passed 및FU_BENIGN_COMPLETION이최신완료근거다. 실제20R/200role/1000epoch/20000batch·420payload hash/원ID순회·optimizer/RNG·정확보정/집계가통과했다. 원trainer23964/auditor41516은종료했고같은paired parent31888→fu_runner.py --branch attack PID19552를확인했다. 공격runner/전체PAIR source/profile/freezes는현재동결이며재실행/덮어쓰기하지않는다. 기록PID는관측값으로현재CIM/state/manifest/events를함께대조한다. 원정상훈련·완료CPU감사·SSS를재실행하지않는다. FU_*_AUDIT_FAILURE도감시한다. 아래감사중/정상훈련중기록은관측당시역사다. 성능은아직없고sameparent가attack20→CPUaudit→primary/독립전수평가를순차진행한다.
+
+정상FU20 학습완료/독립CPU 감사중 — 아래 기록은 관측 당시 역사
+정확paired task/parent31888가유지되며benign trainer23964는완료·종료했다. verify_fu.py --branch benign CPU41516이실제감사중이고최신관측prefix는17R/170role다. 항상실제CIM PID/parent/commandline과PAIR_CONTROLLER_STATE 및FU_*_AUDIT_STATE/VERIFIED/AUDIT_FAILURE·fu/*/MANIFEST/events를함께읽는다. 완료훈련이나실행중감사를중복실행하지않는다. 감사통과뒤같은parent가attack20→CPUaudit→primary/독립전수평가를자동진행한다. 현재성능/공격쌍은아직없으며동결소스·허용치·수치·자료/seed는불변이다.
+
 최신 활성 운영상태 — 실제 paired SSS→정상/공격 FU20(아래 이전기록은 역사)
 정확task Codex-FedUBA-SSS-pairedFU20-20261031/directPython paired_controller.py가활성이다. 실parent31888/benign runner23964와1R/client9/2epoch이상을확인했다. 현재실제CIM PID/commandline/parent와PAIR_CONTROLLER_STATE/FAILURE, FU_benign/attack STATE/RESULT/VERIFIED/AUDIT_STATE/FAILURE, 각fu branch MANIFEST의실커밋round·events 마지막epoch를함께읽는다. 기록PID만믿거나실행중/완료한finite child를중복시작하지않는다. 원parent가benign20→CPUaudit→attack20→CPUaudit→primary전수평가→독립전수평가를각1회자동진행한다. 현재source/profile/runfreezes는동결이므로덮어쓰지않는다.
 실SSS는5000장/40batch/80query·125선택(owner5=60/7=65)과독립score/FP32rank·FP64top125집합/사전두CPU replay를통과해종료했다. SSS를다시query/audit하지않는다. 원ID/rank와rawquery tensors는DISLAB/로컬gitignored private보존이며공개SSS_COMPLETION_SUMMARY는counts/원해시만포함한다. 원SSS_RESULT/VERIFIED를원IDs와함께PR에stage하지않는다.
