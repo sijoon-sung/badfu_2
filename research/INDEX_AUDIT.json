@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "83e07190aead8c19c232b0fa56dc1742050ea636979474c495245d6f07bb27f3",
+  "registry_sha256": "c613b82ddb4ae6a71d8eedfb260d0db79ffc07568f46e0266187f2a155042a6b",
   "cards": 29,
-  "unique_source_documents": 451,
+  "unique_source_documents": 454,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -458,7 +458,10 @@
     "research/badfu_feduba_defense_20261031/stage11/benign_big19336/COMPLETED.json": "bfae73115b69b5e22081d308b16d234ddce7d38e5bbe6c2fd8a6f90137001574",
     "research/badfu_feduba_defense_20261031/stage11/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json": "208c893086aba2f89448cf59ae667a969f0db2deabb48cfabff42edbc1a24f7a",
     "research/badfu_feduba_defense_20261031/STAGE11_ATTACK_INPUT_AUDIT.json": "b620969d0baf441f5edd6cfcdd7b5cb4db144933b0ff972225d0cecc87bc0b25",
-    "research/badfu_feduba_defense_20261031/stage11/attack_cover850/SOURCE_INPUTS.json": "af90f74744c33929f6e2e5a08b09490b7a8bece06c39048f3f9c9a790aaae4eb"
+    "research/badfu_feduba_defense_20261031/stage11/attack_cover850/SOURCE_INPUTS.json": "af90f74744c33929f6e2e5a08b09490b7a8bece06c39048f3f9c9a790aaae4eb",
+    "research/badfu_feduba_defense_20261031/STAGE11_ATTACK_GENERATION_OBSERVATION.json": "f218c28105471f871f104ac6062cbdd2755cbb92bb785f08254138192f7270e6",
+    "research/badfu_feduba_defense_20261031/stage11/attack_cover850/QUERYBANKS_BEFORE_TRAINING.json": "cda21acb3d3a47978bc6f957ff6ee38581b12f566b321a5ba752a8a40ae4bf25",
+    "research/badfu_feduba_defense_20261031/BACKBONE_ONLY_PARKED_PROTOCOL.txt": "d8b080bfeb6c78b7c122e7d5afbf417ce975fd30a58f340eed3f5437ea6142af"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -606,6 +609,7 @@
         "P04"
       ],
       "top_level_documents": [
+        "research/badfu_feduba_defense_20261031/BACKBONE_ONLY_PARKED_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/COMPLETED.json",
         "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_REPORT_KO.txt",
