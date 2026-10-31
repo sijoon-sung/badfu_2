@@ -1,0 +1,38 @@
+{
+  "state": "passed",
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "BadFU_legacy_states": {
+    "benign_big19336": {
+      "exact_full_state_equality": true,
+      "matched_tensors": 122,
+      "head_path": "model.fc"
+    },
+    "benign_same850": {
+      "exact_full_state_equality": true,
+      "matched_tensors": 122,
+      "head_path": "model.fc"
+    },
+    "attack_cover850": {
+      "exact_full_state_equality": true,
+      "matched_tensors": 122,
+      "head_path": "model.fc"
+    }
+  },
+  "FedUBA_fixture": "two_new_random10class_models_same_coordinate_synthetic128x512_features",
+  "FedUBA_exact_Post_head_Pre_nonhead": true,
+  "all_original_endpoint_states_unchanged": true,
+  "actual_FedUBA_checkpoint_selected": false,
+  "fresh_model_inference": false,
+  "training_or_gradient_updates": false,
+  "defense_efficacy_evaluated": false,
+  "trusted_teacher": false,
+  "rejected": [
+    "wrong_head",
+    "surrogate201",
+    "wrong_features",
+    "nonfinite"
+  ],
+  "verifier_sha256": "1a320b2c74398fc23aea6ff1b0bf1d74363033649ba008f397b916291b72ff81",
+  "constructor_sha256": "68822d48e36335893a4fff476e33bdc9ea2aa95ef0b6cfd2009414692dcf9ca5"
+}

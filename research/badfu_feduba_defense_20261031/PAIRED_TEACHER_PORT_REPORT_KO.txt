@@ -1,0 +1,10 @@
+명시적 두 모델 참조 구성부 연결 검사 완료, 2026-11-01 KST.
+R01/R03/P01/P04/D08/D15/D18/N02. 코드·프로토콜·16파일 freeze는 실행 전 commit028ff9f와 PR comment6545084934에 게시했다. 이는 방어 효능 결과가 아니다.
+
+가설: head 이름/차원을 명시한 새 구성부가 기존 BadFU H5 세 전체 state를 정확히 재현하고, FedUBA의 다른 head 구조에서도 입력 모델을 훼손하지 않고 같은 좌표 규칙을 적용할 수 있다.
+실행: DISLAB CPU2/noCUDA, once task Codex-BadFU-FedUBA-pairedref-port-20261101, 실제 PID35052, 약10초. 명시적 badfu.confirmed.s20261023.v1/purification_pilot 및 원래 catalogue/payload/seal을 다시 선택·검증했다. 기존 무라벨 public500 특징만 읽었고 CNN forward/학습/gradient update는 하지 않았다. FedUBA는 고정 model_reference.py SHA57d92398…를 read-only로 import한 새 무작위10-class 모델 두 개와 동일좌표 합성128x512 특징만 사용했다. 다른 채팅의 실제 훈련 모델/소스/job은 소비·수정하지 않았다.
+결과: 큰정상/정상850/공격850의 기존 H5 전체 state 각각122tensor, 총366tensor가 완전히 일치했고 strict load를 통과했다. FedUBA linear head는 동일좌표에서 Post head와 정확히 같고 모든 비-head tensor는 Pre와 정확히 같았다. 모든 원본 endpoint의 tensor digest는 불변이다. 잘못된 BadFU head 지정,201-class surrogate,511차원 특징,nonfinite 특징을 거절했다. 원본 seal과 고정 source 재검증도 통과했다. 로컬로 전달한 결과·소스freeze 해시는 receipt와 일치했다.
+
+실행 사고와 회복: 최초 로컬 준비는 콘솔 인코딩 오류로 freeze 생성 전에 끝났고4개 소스만 전송됐다. 콘솔 출력만 고쳐 freeze를 생성한 뒤 실행 전16파일 hash를 다시 검증했다. 첫 Start-Process PID29828은 wrapper stdout/stderr/exit/STARTED/출력폴더가 생기기 전에 사라졌음을 별도 조회로 확인했다. 원인은 확정하지 않는다. 실제 audit가 수행되지 않았으므로 같은 고정 wrapper를 별도 once ScheduledTask로 연결했고 PID35052가 한 번 완료했다. 두 launch receipt와 사건 기록을 보존한다. 기존 Post-anchor trainer는 계속 실행됐으며 수정/재시작하지 않았다.
+
+판정과 남은 범위: explicit model.fc/linear 연결과 기존 BadFU 구성 호환성이라는 구현 가설만 지지한다. H5 자체의 삭제 감사 실패는 그대로이며 안전하거나 신뢰하는 teacher라고 부르지 않는다. 실제 FedUBA 모델 선택, 정상/공격 행동, 삭제 품질, 역할식별, 공통 방어 성공은 이 검사에서 평가하지 않았다. D08/D15 큰 정상 삭제 반례를 해결한 것도 아니다. 실제 포트는 적격 FedUBA pair/목적/seal/payload 및 별도 고정 성능·원정답·삭제참조 계약을 갖춘 뒤 수행해야 한다. 이 finite audit는 완료됐으므로 다시 실행하지 않는다.

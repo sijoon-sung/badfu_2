@@ -1,0 +1,11 @@
+{
+  "first_launch_pid": 29828,
+  "verified_pid_missing": true,
+  "STARTED_exists": false,
+  "stdout_stderr_or_exit_exists": false,
+  "output_directory_exists": false,
+  "cause": "not established; process disappeared before wrapper started",
+  "training_or_inference_repeated": false,
+  "recovery": "new once-only ScheduledTask calling the SAME frozen wrapper after checking no process/output/log exists",
+  "preparation_note": "The initial local preparation failed on console encoding before freeze creation;4 source files transferred but no audit ran. Corrected console output, created freeze, and verified all16 files remotely before either launch attempt."
+}

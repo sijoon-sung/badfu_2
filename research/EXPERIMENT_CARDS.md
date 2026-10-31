@@ -968,13 +968,13 @@
 
 **가설 한 줄: 실제 삭제 품질과 정상 non-IID 삭제의 효용을 보존하는 공개 기능 교정은 BadFU와 FedUBA의 활성화를 억제할 수 있다.**
 
-**판정: Post-anchor 큰정상 필요조건 통과 / 실제공격 비교 학습중 / 전체독립감사 대기**
+**판정: Post-anchor 큰정상 필요조건 통과 / 실제공격 평가중 / 명시적 구성부 포트 호환성 통과**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P04-defense-development/README.md)
 
 - **조건:** 사용자 지속 개발 지시. 명시 BadFU confirmed v1/purification_pilot,1실학습시드/재학습3쌍. 단계01은D18해시검증캐시를DISLAB CPU로연산했고새FL반복이아니다.500무라벨fit/9500heldout. 실제FedUBA는별도구현중이며미검증.
 - **정상 대조·비교:** 정상19.336%전체삭제를먼저검사하고정상850과공격clean효용을같은규칙으로비교. 전체CA와각클래스/유익교정보존을분리한다. D08/D15다른FU반례를보존.
-- **결과:** H1 Pre-body/Post-head는 ASR5.2444%였지만 큰정상 worstclass5.6204pp 손실로 실패했고 H2도 효용 실패였다. H3의24조합/11고유body에서 BN/head 단독은 ASR100, H4는 identity였다. H5 정렬teacher는 ASR3.4778%/CA를 통과했지만 정정된 삭제회원 true-label advantage 큰정상.171865/정상850.386387/공격.834895로 실패했다. H6은 삭제감사 통과/ASR100이었다. H8 Post학생은 큰정상 CA85.3579/85.6421(Post89.8)로 실패했다. H9 공개선택은 alpha.0453125/.0703125에서 CA90.0526/89.8421과 삭제감사를 통과했지만 H10 실제공격 raw100/99.7667→선택100/100으로 억제에 실패했다. 공개500을 비회원 대조에서 제외한 별도 정정(clean9500/trigger8542,440classAUC) 후에도 판단은 유지됐다. H11 동예산 KL/전출력공동탐색은 큰정상 CA90.0/89.8421과 삭제감사를 통과했지만 실제공격 raw98.5667/53.5222→선택100/100이었다. 전체 독립검산 통과; same850/추가공격 clean-member는 중단규칙상 미실행. 낮아진 rawASR53.52도 원정답806/8542=9.4357%, target0=4580/class5=3936의 다른 오답 쏠림이어서 유효정화로 채택하지 않는다. FC 복원 경로도 정상기능을 복구하지 못했고 준비한 head고정 source는 parked/미실행이다. Sourcepair pilot은 같은 자연 시작점의 source 보존을 정상10→74/90, 공격12→78/90으로 높였으며 NumPy/RNG/공개픽셀/봉인 검산을 통과했다(새CNN/전체PGD 독립반복 아님). 현재 Post-anchor는 이 은행을 재사용해 nativePost(원래 시작점)를 query 목표로 학습하고, 동일조건 H5(query) 목표와 비교한다. 큰정상9668에서 두100step/공개선택을 실제 완료: 비교/주방법 alpha.1328125/.1265625, CA89.968421/89.957895, worstclass손실.315789/.946372pp, true-labeladv.002963541/.002006907로 현 효용/유한삭제 필요조건 통과. 다만 유익교정187/212·190/212는 이전90% 유지 목표 미달이며 별도 지표로 보존한다. 봉인 case의 공개파일 전달해시는 일치; 새 전체독립검산은 미완료다. 동일 actor PID49732가 실제공격 조건 학습에 진입했으며 실제 ASR/원정답 견고성은 아직 미측정이다. 원본 SAU는 학생 변경에 따른 query 재생성을 사용함을 commit 고정 소스로 확인했으나 새 효능으로 채택하지 않았다. 별도 FedUBA 인터페이스 합성계약은 실제효능이 아니며, 적격 pair/원래훈련ID·동일ID benignFU 삭제참조가 필요하다. 독립BadFU 조건/FedUBA 공동효능/역할식별/형식망각인증은 미검증이다.
+- **결과:** H1 Pre-body/Post-head는 ASR5.2444%였지만 큰정상 worstclass5.6204pp 손실로 실패했고 H2도 효용 실패였다. H3의24조합/11고유body에서 BN/head 단독은 ASR100, H4는 identity였다. H5 정렬teacher는 ASR3.4778%/CA를 통과했지만 정정된 삭제회원 true-label advantage 큰정상.171865/정상850.386387/공격.834895로 실패했다. H6은 삭제감사 통과/ASR100이었다. H8 Post학생은 큰정상 CA85.3579/85.6421(Post89.8)로 실패했다. H9 공개선택은 alpha.0453125/.0703125에서 CA90.0526/89.8421과 삭제감사를 통과했지만 H10 실제공격 raw100/99.7667→선택100/100으로 억제에 실패했다. 공개500을 비회원 대조에서 제외한 별도 정정(clean9500/trigger8542,440classAUC) 후에도 판단은 유지됐다. H11 동예산 KL/전출력공동탐색은 큰정상 CA90.0/89.8421과 삭제감사를 통과했지만 실제공격 raw98.5667/53.5222→선택100/100이었다. 전체 독립검산 통과; same850/추가공격 clean-member는 중단규칙상 미실행. 낮아진 rawASR53.52도 원정답806/8542=9.4357%, target0=4580/class5=3936의 다른 오답 쏠림이어서 유효정화로 채택하지 않는다. FC 복원 경로도 정상기능을 복구하지 못했고 준비한 head고정 source는 parked/미실행이다. Sourcepair pilot은 같은 자연 시작점의 source 보존을 정상10→74/90, 공격12→78/90으로 높였으며 NumPy/RNG/공개픽셀/봉인 검산을 통과했다(새CNN/전체PGD 독립반복 아님). 현재 Post-anchor는 이 은행을 재사용해 nativePost(원래 시작점)를 query 목표로 학습하고, 동일조건 H5(query) 목표와 비교한다. 큰정상9668에서 두100step/공개선택을 실제 완료: 비교/주방법 alpha.1328125/.1265625, CA89.968421/89.957895, worstclass손실.315789/.946372pp, true-labeladv.002963541/.002006907로 현 효용/유한삭제 필요조건 통과. 다만 유익교정187/212·190/212는 이전90% 유지 목표 미달이며 별도 지표로 보존한다. 봉인 case의 공개파일 전달해시는 일치; 새 전체독립검산은 미완료다. 동일 actor PID49732가 실제공격 조건 학습에 진입했으며 실제 ASR/원정답 견고성은 아직 미측정이다. 원본 SAU는 학생 변경에 따른 query 재생성을 사용함을 commit 고정 소스로 확인했으나 새 효능으로 채택하지 않았다. 별도 FedUBA 인터페이스 합성계약은 실제효능이 아니며, 적격 pair/원래훈련ID·동일ID benignFU 삭제참조가 필요하다. 독립BadFU 조건/FedUBA 공동효능/역할식별/형식망각인증은 미검증이다. 별도 명시적 참조 구성부 포트는 실제 BadFU 세 참조의366tensor 완전 일치와 source고정 FedUBA 무작위모델 identity-coordinate 계약/오입력 거절을 통과했다. 새CNN/학습/실제FedUBA checkpoint 선택은 없었으며 첫 launch가 wrapper 시작 전 사라진 사건과 once task회복을 보존했다. 이는 H5의 삭제 실패를 되돌리거나 공통 방어 효능을 뜻하지 않는다. 원래 Post-anchor 두 공격100step/공개선택도 완료했고 실제9000 입력 평가에 진입했다.
 - **non-IID에 대해 남길 교훈:** 전체CA는클래스별훼손을가릴수있고Pre표현복원은실제삭제회원구별가능성을되살릴수있었다. Post학생은유한누설기준을지켜도효용을잃을수있어실제교정기능/전체정상보존/삭제감사를분리한다. 한큰정상조건의통과는D08/D15의다른FU·시드반례해결이나trigger-family-independent탐지의증거가아니며finite MIA통과는형식적망각인증이아니다.
 - **반복하지 않을 주장:** 전체CA만으로무손실/삭제보존이라고부르지않고ASR사후최저후보선택/실제타깃을fit에쓰지않는다. 완료된H1/H2를재실행하거나실패를삭제하지않는다. FUBA를FedUBA로바꾸어부르지않는다.
 - **재검토 조건:** 같은 고정 방법이 큰정상·실제공격·정상850의효용/삭제품질/억제조건을함께통과한뒤 독립BadFU조건과적격FedUBA전후쌍으로검사한다. 정상또는한시드통과는부모가설을완성하지않는다. 실패프로토콜을보존하고새관측/중단규칙이있는수정으로전체방어목표를계속한다.
@@ -1167,6 +1167,14 @@
 - [research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json](badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json)
 - [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_PROTOCOL.txt](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_PROTOCOL.txt)
 - [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_FREEZE.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_FREEZE.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_REPORT_KO.txt](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_REPORT_KO.txt)
+- [research/badfu_feduba_defense_20261031/paired_teacher_port/RESULT.json](badfu_feduba_defense_20261031/paired_teacher_port/RESULT.json)
+- [research/badfu_feduba_defense_20261031/paired_teacher_port/COMPLETED.json](badfu_feduba_defense_20261031/paired_teacher_port/COMPLETED.json)
+- [research/badfu_feduba_defense_20261031/paired_teacher_port/STARTED.json](badfu_feduba_defense_20261031/paired_teacher_port/STARTED.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH_INCIDENT.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_LAUNCH_INCIDENT.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_RECOVERY_LAUNCH.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_RECOVERY_LAUNCH.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_EXIT.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
