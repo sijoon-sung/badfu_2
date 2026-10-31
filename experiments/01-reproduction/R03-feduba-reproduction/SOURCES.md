@@ -57,3 +57,4 @@
 | [FU_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/FU_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [FU_PROFILE.json](../../../research/feduba_paper_implementation_20261031/FU_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
 | [FU_POLICY_CPU_FREEZE.json](../../../research/feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_POLICY_CPU_RESULT.json](../../../research/feduba_paper_implementation_20261031/FU_POLICY_CPU_RESULT.json) | `research/feduba_paper_implementation_20261031` |
