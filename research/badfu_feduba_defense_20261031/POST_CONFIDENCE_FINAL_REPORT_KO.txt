@@ -1,0 +1,13 @@
+가설: H5의 class교정을조건부사용하고Post출력확신도를순열로유지하면,삭제정보복원을줄이면서실제공격을정화할수있다.
+R01/R03/P01/P02/P04/D08/D14/D15/N02. fixed badfu.confirmed.s20261023.v1/purification_pilot/유지자료재학습1시드, DISLAB CPU2 cached-output once PID1596 완료·종료, 독립저장검산PID32468 완료·종료. 새CNN/학습/실제FedUBA는없었다. 원래4arm학습PID5744는변경하지않았다.
+
+실제결과:
+큰정상 plain_relabel: CA90.547368%,true-labeladv.01728594로이전H5의.171865보다낮았어도absolute accuracygap증가.08007818로삭제gate실패. H5확신도를복사하지않는것만으로label기반정보복원이사라지지않는다. 사전규칙대로이arm의공격은평가하지않았다.
+큰정상 primary: public선택tau.9999296551701196, clean10000중1/삭제member9668중20개교환, CA89.789474%(Post89.8), worstclass손실.106045pp,trueadv.001427213,gap증가.002232771로현필요조건통과했다. 이정상양성은실제공격실패와분리해보존한다.
+실제공격 primary: tau.9999158159003888, clean10000중2/member850중304교환. ASR5915/9000=65.722222%(held5611/8542=65.687193%),원정답2611/8542=30.566612%(pairednativeclean90.330133%)로실제품질실패. trueadv.073371388,accuracygap증가.051387961로삭제품질도실패했다. 정상850는사전중단상미실행. source/target/정답/member를선택에쓰지않았다.
+
+독립검산/원인상한:
+원source와각case모든file receipt/최대8public후보/최초passing선택을검사했고행별NumPy두성분교환과actualtarget·원정답·각class정수가일치했다. 큰정상public분위수endpoint의FP64 cutoff에서단1개의경계차이가<=1e-12로있어기록했다. 사전계약밖의mask불일치는없었다. pilot의60classAUC는이미독립combined tie-rank와일치했다. 실제logit순열의maxlogprob오차는사전1e-12안이었다. 이는추가CNN재추론이아니다.
+새로확인한작은필요조건: 실제Post는9000장모두target0을예측하고실제정답은모두비0이다. 임의gate가이Post label또는고정H5 argmax중하나만선택하면,정답집합은H5가정답인집합의부분집합이다. 따라서원정답상한은H5의held7328/8542=85.787872%이며 요구88.330133%보다낮다. class1~5도각class필요상한에미달했다. 이고정label-provider선택군은임계값을계속고쳐도현재원정답조건을만족할수없다. 이는다른교사/새학습/다른후처리/모든방어의불가능성이아니다. oracle label이나GT를방법에채택하지않았다.
+
+수정판정: 해당candidate는기각한다. Post score의대칭불변과label삭제보존은다르며,H5를그대로선택하는것의한계를확인했다. 다음수정에는실제trigger상태에서더좋은원정답을주는label-provider를구성하고삭제품질을함께유지하는필요조건이남는다. 현재고정된공유변형×Post특징학습은그별도관측을얻는경로이며결과전성공을주장하지않는다. Ext-MND/D18의기존탐지양성과이정화실패는서로대체하지않는다. 전체목표/trigger-family독립탐지/역할식별/형식forgetting/유효FedUBA평가는미완료다.

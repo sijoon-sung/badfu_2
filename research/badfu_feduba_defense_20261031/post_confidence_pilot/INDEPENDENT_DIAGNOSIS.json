@@ -1,0 +1,121 @@
+{
+  "state": "passed_saved_output_diagnosis",
+  "pid": 32468,
+  "CPU": {
+    "NumberOfLogicalProcessors": 20,
+    "LoadPercentage": 1,
+    "load_source": "Win32_Processor"
+  },
+  "cases": {
+    "benign_big19336": {
+      "arms": {
+        "plain_relabel": {
+          "independent_rowwise_permutation_exact": true
+        },
+        "confidence_gated_relabel": {
+          "independent_rowwise_permutation_exact": true
+        }
+      },
+      "floating_cutoff_boundary_disagreements": 1
+    },
+    "attack_cover850": {
+      "arms": {
+        "confidence_gated_relabel": {
+          "independent_rowwise_permutation_exact": true,
+          "independent_attack_counts": {
+            "target_n": 5915,
+            "n": 9000,
+            "heldout_target_n": 5611,
+            "heldout_n": 8542,
+            "original_label_correct_n": 2747,
+            "heldout_original_label_correct_n": 2611,
+            "quality_gate": false,
+            "original_class_CA_pct": [
+              null,
+              53.089005235602095,
+              11.88222923238696,
+              29.893617021276597,
+              11.876988335100743,
+              20.105263157894736,
+              38.291139240506325,
+              23.9422084623323,
+              35.63096500530223,
+              50.47720042417816
+            ]
+          },
+          "fixed_label_provider_gate_family_bound": {
+            "Post_all_actual_target": true,
+            "heldout_n": 8542,
+            "teacher_upper_correct_n": 7328,
+            "upper_original_CA_pct": 85.78787169281199,
+            "required_original_CA_pct": 88.3301334582065,
+            "global_necessary_possible": false,
+            "class_rows": [
+              {
+                "class": 1,
+                "teacher_upper_CA_pct": 83.7696335078534,
+                "required_CA_pct": 91.33507853403141,
+                "meets_required": false
+              },
+              {
+                "class": 2,
+                "teacher_upper_CA_pct": 79.91587802313354,
+                "required_CA_pct": 81.43533123028391,
+                "meets_required": false
+              },
+              {
+                "class": 3,
+                "teacher_upper_CA_pct": 73.93617021276596,
+                "required_CA_pct": 74.14893617021276,
+                "meets_required": false
+              },
+              {
+                "class": 4,
+                "teacher_upper_CA_pct": 84.41145281018028,
+                "required_CA_pct": 84.92576882290561,
+                "meets_required": false
+              },
+              {
+                "class": 5,
+                "teacher_upper_CA_pct": 77.36842105263158,
+                "required_CA_pct": 77.73684210526315,
+                "meets_required": false
+              },
+              {
+                "class": 6,
+                "teacher_upper_CA_pct": 92.9324894514768,
+                "required_CA_pct": 89.9367088607595,
+                "meets_required": true
+              },
+              {
+                "class": 7,
+                "teacher_upper_CA_pct": 89.47368421052632,
+                "required_CA_pct": 87.67285861713106,
+                "meets_required": true
+              },
+              {
+                "class": 8,
+                "teacher_upper_CA_pct": 95.54612937433721,
+                "required_CA_pct": 91.07635206786851,
+                "meets_required": true
+              },
+              {
+                "class": 9,
+                "teacher_upper_CA_pct": 94.69777306468717,
+                "required_CA_pct": 89.59172852598091,
+                "meets_required": true
+              }
+            ],
+            "all_quality_necessary_possible": false,
+            "applies_only_to_any_gate_selecting_this_fixed_Post_or_H5_argmax": true
+          }
+        }
+      },
+      "floating_cutoff_boundary_disagreements": 0
+    }
+  },
+  "new_CNN_or_training": false,
+  "root_result_sha256": "3a756c99e8f314b3426d42fc5f6c3f35699900475c667a4e7a0d3dda365fd824",
+  "source_freeze_sha256": "4fdf237a9d386abf0016248a1b848730222d75bae927dca41a58db97098fac7b",
+  "finished_unix": 1793467529.2849581
+}
