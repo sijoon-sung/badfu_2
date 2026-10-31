@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "7de308ba93ab50675326a6781f10791e48b4e1ac6e88de28060f579c67f48ef5",
+  "registry_sha256": "ab7cdb0ee54e1b4d92c111fa2367cc414fc941d4321e10ccb353a966c7a6a2ab",
   "cards": 29,
-  "unique_source_documents": 544,
+  "unique_source_documents": 546,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -551,7 +551,9 @@
     "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_EXIT.json": "bdd4e68be10f447792423d1061f43104e84d136a835d7e849470e4ee128d4b2b",
     "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt": "9eee3b0267494a0942bfadd8901a8e1713fb7b45e0c6a4f5e6d0285aeb0b262f",
     "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROFILE.json": "8ba7f46704bc1a08d874e4ee2c382f08be509775d332fb89744fb167e2abe718",
-    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json": "2f365474e5d92649df8a247eff484f2b22c897a5328566170d408df1eb13ee98"
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json": "2f365474e5d92649df8a247eff484f2b22c897a5328566170d408df1eb13ee98",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_OBJECTIVE_CONTRACT.json": "7c64d3ec5b24e9cf5955b9e3498f1e40f1037ccc27654f9069983da001448883",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_FREEZE.json": "efd2ce7205ee3cf10933a13111aed343e34b8e7eca61af29b8576fc1dfa175b9"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
