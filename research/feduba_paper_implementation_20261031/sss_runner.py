@@ -30,7 +30,7 @@ def main():
     assert read(ROOT / 'STG_CONTROLLER_STATE.json')['state'] == 'completed_STG_verified_only'
     verified, stg = read(ROOT / 'STG_VERIFIED.json'), read(ROOT / 'STG_RESULT.json')
     assert verified['state'] == 'passed' and verified['delta'] == stg['delta']
-    assert read(ROOT / 'SSS_LOGGER_CPU_RESULT.json')['state'] == 'passed'
+    assert read(ROOT / p['logger_CPU_result'])['state'] == 'passed'
     selected = json.loads(subprocess.check_output([sys.executable, '-u', str(args.catalog_root / 'select_case.py'),
                           args.case_id, '--purpose', 'diagnostic'], text=True, encoding='utf-8'))
     assert selected['case_id'] == args.case_id and selected['guard_state'] == 'all_snapshot_files_verified_on_this_host'
