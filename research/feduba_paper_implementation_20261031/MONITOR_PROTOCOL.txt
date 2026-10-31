@@ -1,3 +1,6 @@
+최신상태 — 양FU20·primary/독립전수평가완료, 잠복활성화 성능실패/최종전달미완료
+PAIR_CONTROLLER_STATE=completed_pair_evaluation_delivery_pending·PAIR_EVAL_VERIFIED=passed가근거다. 원parent31888/공격trainer19552/감사37328/primary48424/독립46064는실제모두종료했다. 원AUDIT_STATE auditing이나과거PID를생존으로보거나SSS/훈련/CPU감사/평가/metadata prepare를재실행하지않는다. 같은δ의실ASR pre627/9000=6.9667%, benign569/9000=6.3222%, attack570/9000=6.3333%; CA87.94/86.58/86.76이다. 독립전수모든예측/count/logit(maxabs0)일치지만최소잠복성능gate는실패했다. 원정상CA87.95 평가역사와원GPU STG실패는보존한다. primary결과의independent=false는당시역사이며VERIFIED/PAIR_EVALUATION_COMPLETION이최신근거다. 다음은미실행전달코드/freeze를PR선게시한뒤PAIR_DELIVERY_PROTOCOL의양쪽packet/strictCPU/봉인·각catalogue/index guards와별도완료ledger다. 새성능튜닝/완료유한작업반복/기존source나receipt조작은없고전체목표·heartbeat는미완료다. 아래진행상태는역사다.
+
 최신상태 — 공격FU20 학습완료/독립CPU감사중
 paired parent31888 아래attack trainer19552는20R/200role/1000epoch/20000batch완료·종료했고verify_fu.py --branch attack PID37328이감사중이다. 최초관측prefix9R/90role. 현재CIM/state/manifest/events와FU_attack_AUDIT_FAILURE/PAIR_CONTROLLER_FAILURE를함께확인하며실행중/완료한finite runner/audit를중복실행하지않는다. 감사통과뒤동일parent가primary/독립sameδ전수평가를각1회진행한다. 아직성능은미평가다. 새PAIR_DELIVERY_PROTOCOL은평가전저장범위선언만이며export코드/실행은미완료다. 현재동결소스/profile/허용치·seed/자료·수치는불변이다. 아래상태는관측당시역사다.
 

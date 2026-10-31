@@ -1,0 +1,29 @@
+{
+  "state": "attack_FU20_training_and_independent_CPU_audit_complete",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "rounds": 20,
+  "new_trained_roles": 200,
+  "actual_local_epochs": 1000,
+  "actual_batches": 20000,
+  "after_sha256": "979c789d106a4209d43a7b1cfc0db1cab210508a7367f47e0828afdc9338f0d2",
+  "result_sha256": "6a846d1140818f091c2e9d6a3a3ceace7c08f01b8a43cf72c692916af8516fba",
+  "verified_sha256": "d9908a6918b93c16591b6be3c4aca1a24a6bd11e5103573783707bf0220e518b",
+  "verified_bytes": 48834,
+  "verified_history_hashes": 420,
+  "all_role_source_ID_permutations_optimizer_RNG_checked": true,
+  "independent_all_effective_source_calibration_and_aggregation_exact": true,
+  "all_local_SGD_gradients_independently_recomputed": false,
+  "completed_trainer_and_verifier_observed_exited": true,
+  "continuing_parent_pid_observed": 31888,
+  "primary_evaluation_pid_observed": 48424,
+  "new_duplicate_parent_launched": false,
+  "full_pair_independent_evaluation_not_yet_complete_at_observation": true,
+  "original_GPU_STG_audit_failure_preserved": true,
+  "overall_goal_complete": false
+}

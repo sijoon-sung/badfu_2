@@ -132,3 +132,10 @@
 | [FU_attack_RESULT.json](../../../research/feduba_paper_implementation_20261031/FU_attack_RESULT.json) | `research/feduba_paper_implementation_20261031` |
 | [FU_ATTACK_TRAINING_COMPLETE.json](../../../research/feduba_paper_implementation_20261031/FU_ATTACK_TRAINING_COMPLETE.json) | `research/feduba_paper_implementation_20261031` |
 | [PAIR_DELIVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/PAIR_DELIVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [FU_attack_VERIFIED.json](../../../research/feduba_paper_implementation_20261031/FU_attack_VERIFIED.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_ATTACK_COMPLETION.json](../../../research/feduba_paper_implementation_20261031/FU_ATTACK_COMPLETION.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_RESULT.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_VERIFIED.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_VERIFIED.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_CONTROLLER_STATE.json](../../../research/feduba_paper_implementation_20261031/PAIR_CONTROLLER_STATE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVALUATION_COMPLETION.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVALUATION_COMPLETION.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVALUATION_REPORT_KO.txt](../../../research/feduba_paper_implementation_20261031/PAIR_EVALUATION_REPORT_KO.txt) | `research/feduba_paper_implementation_20261031` |
