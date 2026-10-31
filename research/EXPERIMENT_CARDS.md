@@ -1036,11 +1036,11 @@
 - [research/badfu_feduba_defense_20261031/stage08/MODELS_BEFORE_PRIVATE_EVALUATION.json](badfu_feduba_defense_20261031/stage08/MODELS_BEFORE_PRIVATE_EVALUATION.json)
 - [research/badfu_feduba_defense_20261031/STAGE09_PROTOCOL.txt](badfu_feduba_defense_20261031/STAGE09_PROTOCOL.txt)
 - [research/badfu_feduba_defense_20261031/STAGE09_FREEZE.json](badfu_feduba_defense_20261031/STAGE09_FREEZE.json)
-- `research/badfu_feduba_defense_20261031/STAGE08_REPORT_KO.txt` (로컬 보관)
-- `research/badfu_feduba_defense_20261031/stage08/RESULT.json` (로컬 보관)
-- `research/badfu_feduba_defense_20261031/stage08/COMPLETED.json` (로컬 보관)
-- `research/badfu_feduba_defense_20261031/stage08/INDEPENDENT_VERIFICATION.json` (로컬 보관)
-- `research/badfu_feduba_defense_20261031/STAGE08_WRAPPER_EXIT.json` (로컬 보관)
+- [research/badfu_feduba_defense_20261031/STAGE08_REPORT_KO.txt](badfu_feduba_defense_20261031/STAGE08_REPORT_KO.txt)
+- [research/badfu_feduba_defense_20261031/stage08/RESULT.json](badfu_feduba_defense_20261031/stage08/RESULT.json)
+- [research/badfu_feduba_defense_20261031/stage08/COMPLETED.json](badfu_feduba_defense_20261031/stage08/COMPLETED.json)
+- [research/badfu_feduba_defense_20261031/stage08/INDEPENDENT_VERIFICATION.json](badfu_feduba_defense_20261031/stage08/INDEPENDENT_VERIFICATION.json)
+- [research/badfu_feduba_defense_20261031/STAGE08_WRAPPER_EXIT.json](badfu_feduba_defense_20261031/STAGE08_WRAPPER_EXIT.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
