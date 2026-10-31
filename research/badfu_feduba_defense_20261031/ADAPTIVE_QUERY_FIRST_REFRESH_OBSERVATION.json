@@ -1,0 +1,33 @@
+{
+    "observed_utc":  "2026-10-31T15:29:13.1847313Z",
+    "scientific_efficacy_measured":  false,
+    "new_FL_seed":  false,
+    "first_fixed_post_refresh":  {
+                                     "index":  0,
+                                     "after_student_steps":  10,
+                                     "attempted":  10,
+                                     "accepted":  10,
+                                     "path":  "private_fixed_post_refresh_refresh_00.pt",
+                                     "sha256":  "6acbbbd7d0dacece3bbbb35e5176056ba583188298dee55399fe205f07cfc483",
+                                     "model_tensor_sha256":  "47201ac3c48029665f7b8d79dd643d579810b7f7a23cd74f9e5bf4a727437b09",
+                                     "generator_state_path":  null,
+                                     "generator_state_file_sha256":  null,
+                                     "bank_queries_sha256":  "c3e576244ab58f6bf6b280da6476dcd06d41ad12d820b7035fefb04213cd81bb"
+                                 },
+    "actual_process":  {
+                           "ProcessId":  57036,
+                           "CommandLine":  "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/BADFU_FEDUBA_DEFENSE_20261031/background_adaptive_query.py"
+                       },
+    "progress":  {
+                     "arm":  "fixed_post_refresh",
+                     "step":  32,
+                     "clean_loss":  0.5681670904159546,
+                     "query_loss":  0.517602264881134,
+                     "query_n":  10,
+                     "seconds":  2.594000000040978,
+                     "public_draw_sha256":  "ef8dd4c13fe4edb96566b2def8ccad52df9d5a090d00475837197ccb6127fa78",
+                     "query_draw_sha256":  "8793277a6bc7b09eb75b8922321b5cf7b95cd7750c759051e2dd51c24c6e5173",
+                     "bank_queries_sha256":  "c3e576244ab58f6bf6b280da6476dcd06d41ad12d820b7035fefb04213cd81bb",
+                     "time":  1793460552.6890295
+                 }
+}
