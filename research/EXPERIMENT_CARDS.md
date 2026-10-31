@@ -389,6 +389,8 @@
 - [research/feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json](feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json)
 - [research/feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json)
 - [research/feduba_paper_implementation_20261031/STG_STARTED.json](feduba_paper_implementation_20261031/STG_STARTED.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json](feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json](feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031)
 

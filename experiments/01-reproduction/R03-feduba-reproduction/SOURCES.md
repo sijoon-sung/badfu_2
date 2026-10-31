@@ -78,3 +78,5 @@
 | [CLEAN_REVIEW_DELIVERY_REMOTE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json) | `research/feduba_paper_implementation_20261031` |
 | [CLEAN_RECEIVE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [STG_STARTED.json](../../../research/feduba_paper_implementation_20261031/STG_STARTED.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_REGISTRATION_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_REGISTRATION_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_REVIEW_LOCAL_COMPLETE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_REVIEW_LOCAL_COMPLETE.json) | `research/feduba_paper_implementation_20261031` |
