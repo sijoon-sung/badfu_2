@@ -1,0 +1,31 @@
+{
+  "original_bit_guard_failed_preserved": true,
+  "input_and_labels_bit_equal": true,
+  "loader_RNG_equal": true,
+  "behavior": {
+    "original": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9865,
+      "target_successes": 8869,
+      "CA_pct": 98.65,
+      "ASR_pct": 98.26058054509195,
+      "clean_target_bias_pct": 0.35453135386660756
+    },
+    "current_A": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9865,
+      "target_successes": 8869,
+      "CA_pct": 98.65,
+      "ASR_pct": 98.26058054509195,
+      "clean_target_bias_pct": 0.35453135386660756
+    }
+  },
+  "differences_pct_points": {
+    "CA_pct": 0.0,
+    "ASR_pct": 0.0,
+    "clean_target_bias_pct": 0.0
+  },
+  "gate_passed": true
+}

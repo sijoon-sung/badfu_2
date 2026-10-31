@@ -1,0 +1,6 @@
+고정10행 시드검증 준비 결과 — R02/D08/D15/N02, 2026-10-31
+DISLAB에서 새로운9개초기모델/분할을만들었다. baseline20261023은완료실패로재사용하며재훈련하지않았다. 9개initial SHA가모두다르고,각20개IID3000분할은disjoint60000전체를덮으며CPU출력유한/READY를통과했다.
+실제Windows share-delete잠금fixture에서5회PermissionError후bounded replacement가성공했고payload는정확했다. 기존파일은건드리지않았다.
+별도CPU준비감사는9개PROFILE의seed/id/partition외원래조건이같고,reference_core/runner/prepare/controller/verify/audit의원래바이트가같으며,common의write/save외함수AST가같음을확인했다. 모든생성Python source문법이통과했다. resourceguard는util0/free8223/used1830MiB/competingPID0으로통과했다. 다른GPU앱은종료하지않았다.
+원래동일수식8CPU계약은원receipt를그대로재사용했고9번새로실행했다고세지않았다. 준비메타데이터의원격zip SHA/bytes를검증하고양쪽로컬뷰에전달했다.
+현재새100R/KD10은아직시작전이다. 코드/프로토콜을PR에고정한뒤새one-time task만시작한다. 성능성공/10-seed평균성공/본문Adam프로필정확재현/탐지주장은아직없다. optimizer/globalgamma의실패를보존하고그변경은채택하지않는다. D08/D15반례와CIFAR/IBA실패는그대로다.

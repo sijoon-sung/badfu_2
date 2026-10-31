@@ -1,0 +1,25 @@
+가설: 고정한Algorithm-SGD 해석에서현재한시드의실패가모든독립시드의실패를대표하지않으며,논문이보고한10개시드범위에서는적격전후쌍또는최소평균성능gate가성립할수있다.
+관련 R02/D08/D15/N02. 새관측은같은수치알고리즘/같은MNIST·DBA조건의독립초기화·IID분할·참여자선택·배치순서10개와각실제100R/KD10전후이다. 한stored round나같은학습모델의단계들을독립시드로세지않는다.
+
+왜 다음 전체 실행인가
+본문2899는10random seeds의평균을보고한다. 현재이선언된MNIST/DBA 전체조건은seed20261023/partition20261020 한개뿐이다. 이미완료된수식구현·전체1358phase검증과2개의optimizer선택비교는근거있는교정을제공하지않았다. gamma-global의한round수정도사전10기준에실패했고그선택으로100R을열지않는다. 그래서실패한선택을채택하거나조건을조절하는대신,기존알고리즘그대로의시드변동과논문수준반복범위를검사한다. 이는제안된강한변경이아니라보고된반복범위의미확인필요조건이다.
+본문실험의Adam과literalSGD식의해석차이는그대로남는다. 이번은현재고정한Algorithm-SGD 해석의10-seed검증이며저자공인유일코드/본문Adam프로필의정확수치재현이라고주장하지않는다. source_norm/변화량탐지에대한새주장은없다.
+
+사전고정 시드와 조건
+이미완료·전달·봉인된seed20261023을첫행으로포함한다. random.Random(20261031).sample(range(3,10000003),9)을한번만사용해다음9개를결과보기전에확정했다:
+5129832,4059094,6302389,1221271,8598638,685659,3502047,4145799,7983344.
+각partition seed=training seed-3으로원래관계20261023→20261020을보존한다. 순서/시드/분할을성능에따라변경·추가하지않는다. 성공을만나도멈추지않고실패행도평균에포함한다.
+원래baseline의reference_core.py/runner.py/prepare.py/controller.py/verify.py/전체CPU감사는수치코드를그대로복사·해시고정한다. 새초기Net/20개disjoint IID3000/MNIST60000·10000/target8/4공격자+1억제자/8참여/E50/B64/lr.001/λ2/고정30%poison/11gamma/local DBA검사와미달exactzero정책은동일하다. 실제100R후client4모든기여실제.125차감·originalglobal teacher/retainedclient5 무라벨3000·T30/SGD.01momentum.9/noT²/KD10·470도동일하다.
+source는외부봉인된case fuba.reference.mnist.dba.s20261023.pre100.post.kd10 diagnostic과manifest0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c의코드다. 기존학습weights에서시작하지않고새seed별initial.pt를만든다. 원래Net source SHA6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026을검사한다.
+
+Windows 저장 보강
+새common.py의원자적replace에는파일공유잠금에대한최대40회/50ms의bounded retry만넣는다. 기존v5감독의atomic-rename 공유오류가문서화되어있으며긴검증에대한운영보강이다. 수치학습/optimizer/loader/RNG코드는바꾸지않는다. 같은재시도가실패하면원오류를보존하고중단한다. 실제Windows share-delete잠금fixture를DISLAB CPU에서검사한후만시작한다. 8개수식CPU계약은동일reference_core.py와동일test_contracts.py에대한원래통과receipt를출처와함께재사용하며새9회실행했다고세지않는다. seed별새분할/초기모델/READY의해시·유한CPU출력은별도확인한다.
+
+실행/판정/중단
+새D:/FUBA_SEED_REPRO_20261031 아래seed별새root에서순차1GPU로실행한다. 기존완료trainer/controller/audit/evaluator/export와기존root는재실행/덮어쓰지않는다. one-time/no-trigger/no-retry Windows task가새9개만차례로실행한다. 새seed진입전util<=5/free>=7000/used<=2048MiB/경쟁trainer부재guard를만족할때까지대기하며다른앱을종료하지않는다.
+성능이낮아도각실제100R/KD10을끝낸다. 각조건preCA>=97/ASR<=10,postCA>=97/ASR>=60을기록한다. 최종10행평균/표준편차/적격쌍개수를모두보고한다. H1은최소한새시드한개가그적격조건을충족하는것, H2는10개평균도같은최소gate를충족하는것이다. TableI의10-seed평균(BA.993/preASR.072/postKD BA.991/ASR.829)과도표시하되minimum gate와정확수치일치를구분한다.
+10개가끝나면이seed검증은종료한다. 전부실패하면시드범위를늘려성공을찾지않는다. source/hash/data/비유한/저장/runtime오류는즉시현재상태·로그·모델을보존하고해당원조건에서진단/복구한다. 그오류를이유로완료된seed나기존작업을다시실행하지않는다. 불완전한seed를완료행으로넣거나성공행만으로논문재현이라고하지않는다.
+각새seed는원래100R/KD10검증과별도fullCPU lineage/optimizer/RNG/epoch/gamma선택산술/집계/기여차감검사를끝낸뒤CPU모델검사·모든전후/KD/선택phase·전체epoch/800role로그를봉인export한다. local전송sha/별도catalogue등록/양쪽guard가끝나야전달완료다. 전체원시는DISLAB에보존한다. 적격쌍은그명시시드/MNIST/DBA/해석범위의제한양성으로남기고기존defaults를자동변경하지않는다.
+
+non-IID/주장 범위
+D08 공격0.75848이큰정상0.75525/0.76188사이에있고D15반례도남는다. 이번은유효한공격재현입력의필요조건을확인할뿐그반례를구별하지않는다. 좁은시드양성/10개평균양성이생겨도CIFAR/IBA·모든trigger family·큰정상nonIID 탐지로승격하지않는다. 그후비교할정상삭제대조와탐지프로토콜은별도필요조건부터검증한다. evaluator-only target/trigger/role은server방법선택/학습으로유출하지않는다.

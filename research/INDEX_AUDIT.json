@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "530e8553a10c4f68286c0d7007d6ab4366db26c62c3f20e5db7f21a76c4e42da",
+  "registry_sha256": "a887efc2c1945de3ea24e70b8babd2ccf67d2cbe911d912e3403bf0f8da936ec",
   "cards": 28,
-  "unique_source_documents": 294,
-  "top_level_folders": 106,
-  "folders_linked_to_cards": 58,
+  "unique_source_documents": 307,
+  "top_level_folders": 107,
+  "folders_linked_to_cards": 59,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "d1326729633372662d7ca0b3aeae9885b67623887d8b02ba1b8e5bc65d9163d6",
@@ -217,6 +217,19 @@
     "research/fuba_recovery_current_ab_20261031/PROTOCOL.txt": "6016b40f038c194b55497d7d9f538f1c643356c8b4f715fced3144ee756cae03",
     "research/fuba_recovery_current_ab_20261031/PROFILE.json": "5d99f87acd401940cebcf692fcd48a502442ca94ed3bd079755f0e2d38faf314",
     "research/fuba_recovery_current_ab_20261031/FREEZE.json": "558e9b1fbc2e6f2e1f1f76663d9d153840b7490db0308842b1b3a8443d19c3a9",
+    "research/fuba_recovery_current_ab_20261031/RESULT.json": "f0155e93c449b86c9b4f3639c229318cc28ecf93ba764d7e569135d92ae53000",
+    "research/fuba_recovery_current_ab_20261031/CONTROL_PREFLIGHT.json": "2daf83df8d3eda7dbecd2eadbd366fd64cbc2f42cd8f18e26820a3cf5bd40cbc",
+    "research/fuba_recovery_current_ab_20261031/LOCAL_DELIVERY.json": "b8c1190b537111816a72e3fac511d5857c9ec72bae02c107ab20c9d60c2931e9",
+    "research/fuba_recovery_current_ab_20261031/REPORT_KO.txt": "2831f62bbbee434310cb6597a2c362b9504df05598cfc75637c25b6fad7d0e87",
+    "research/fuba_seed_repro_20261031/PROFILE.json": "6785e737bca58f02895fda5e9f05480d9bc2a19a4ad3f39cd33ee44c3524a764",
+    "research/fuba_seed_repro_20261031/PROTOCOL.txt": "7ae5af5f76519e9e2f233afa5e8439a551ae14e00bc175332302609ffb344ca3",
+    "research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt": "187c3cfa76b334d0d0ff5696aa9735e9fe7eb48c61d97e0d9ed70b5ab5633ece",
+    "research/fuba_seed_repro_20261031/STUDY_FREEZE.json": "504aadda3f8b4dfb56118ca64c5b4cfd4ea2973a0e16f2c019c342871e7ed199",
+    "research/fuba_seed_repro_20261031/PREPARED.json": "1d0e4048eddedc60bd6de30d094753dafece41292371feb7ec13a49f0766e729",
+    "research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json": "1b221f02a255955475613044b85595de2881a981b9c0bc5626ea0b0b685b4170",
+    "research/fuba_seed_repro_20261031/STORAGE_CONTRACT.json": "b0600850bb76359fe97361b32bfb33eda0565b07508c241465d567768c263257",
+    "research/fuba_seed_repro_20261031/PREPARATION_RECEIPT.json": "9392c29d439c8cf6efcd2eee204d7bb1ce2cc5cfc5e4e089cbae43d541b8c337",
+    "research/fuba_seed_repro_20261031/REPORT_KO.txt": "7c57c395f38bb2700d34ef1d8bb161a7e94806d2c7d34ee580caf3a141d85155",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -833,7 +846,9 @@
         "R02"
       ],
       "top_level_documents": [
-        "research/fuba_recovery_current_ab_20261031/PROTOCOL.txt"
+        "research/fuba_recovery_current_ab_20261031/PROTOCOL.txt",
+        "research/fuba_recovery_current_ab_20261031/REPORT_KO.txt",
+        "research/fuba_recovery_current_ab_20261031/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
@@ -854,6 +869,19 @@
         "research/fuba_reference_mnist_dba_20261031/PROTOCOL.txt",
         "research/fuba_reference_mnist_dba_20261031/REPORT_KO.txt",
         "research/fuba_reference_mnist_dba_20261031/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_seed_repro_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json",
+        "research/fuba_seed_repro_20261031/PROTOCOL.txt",
+        "research/fuba_seed_repro_20261031/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

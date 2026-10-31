@@ -1,0 +1,22 @@
+{
+  "state": "actual_models_and_logs_transferred",
+  "files": {
+    "Adam_derived.pt": {
+      "sha256": "080a2b9ca80587608469b6bc09dd16c096b1803747fc3ac56519aba636b116c6",
+      "bytes": 361255
+    },
+    "Adam_recovery.pt": {
+      "sha256": "8be2135867dbf10ff3dd1ea84be73e6afd1118cf0ed0dee1a2d7f281cc588b22",
+      "bytes": 557666
+    },
+    "SGD_derived.pt": {
+      "sha256": "315179638ea1344314154281d9cc6428890123cf4310f000c294d74c0c146209",
+      "bytes": 361255
+    },
+    "SGD_recovery_reused.pt": {
+      "sha256": "3f13e280b00fe5fe74849c9c352d6ba88f38539c7328dc16f4677e53096e576d",
+      "bytes": 194876
+    }
+  },
+  "models_are_diagnostic_only": true
+}
