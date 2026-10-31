@@ -365,6 +365,9 @@
 - [research/feduba_paper_implementation_20261031/STG_FREEZE.json](feduba_paper_implementation_20261031/STG_FREEZE.json)
 - [research/feduba_paper_implementation_20261031/STG_CONTROLLER_ONCE.json](feduba_paper_implementation_20261031/STG_CONTROLLER_ONCE.json)
 - [research/feduba_paper_implementation_20261031/STG_READY.json](feduba_paper_implementation_20261031/STG_READY.json)
+- [research/feduba_paper_implementation_20261031/FU_PROTOCOL.txt](feduba_paper_implementation_20261031/FU_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/FU_PROFILE.json](feduba_paper_implementation_20261031/FU_PROFILE.json)
+- [research/feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json](feduba_paper_implementation_20261031/FU_POLICY_CPU_FREEZE.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031)
 
