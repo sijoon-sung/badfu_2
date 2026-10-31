@@ -1,0 +1,18 @@
+H5/H6 actual deletion audit completed on DISLAB CPU, 2026-10-31. R01/R03/D08/D15/D18/N02/P01/P02/P04.
+All three removed-index hashes and nativepost checkpoint hashes matched actual training COMPLETE records. cover850 images individually matched original plain-cover hashes/labels. Member features use CPU2 FP32 NCHW32; nonmember features use pinned prior GPU caches. Five native states×32clean/32trigger CPU/GPU fixture had top1 mismatches0 and maximum logit error3.14823e-5; no CUDA context was initialized. Actual9668+850+850 members were inferred on both nativepre/nativepost backbones, once each. Initial pre-forward Path fault and separate v2 recovery remain preserved.
+
+True-label classconditional membership advantage=2|weighted AUC-.5|:
+case                 nativepre    nativepost    H1         H2         H5         H6
+normal9668           .189853      .002167      .170886    .145553    .172122    .001004
+normal850            .397024      .007146      .386433    .322772    .387489    .004941
+attackcover850       .885228      .005438      .841059    .752572    .835412    .007593
+
+Classweighted member-minus-nonmember accuracy gap, nativepost vs H5:
+normal9668: .005378→.084639; normal850: -.001394→.095401; attackcover850:0→.142266.
+The max-confidence score and classwise absolute-advantage audit are also stored. All three H5/H1/H2 deletion gates fail. All three H6 necessary deletion gates pass, but H6 attack ASR100% remains a failure. No tested candidate satisfies attack suppression, normal utility and this actual deletion audit together.
+
+Independent verification: combined-population average tie ranks exactly reproduced360 class AUCs from exactly reconstructed original Torch scores; all aggregate advantages/accuracy gaps match. The first all-NumPy pipeline had a1.4784e-7 AUC near-tie mismatch. This is preserved. Separate all-NumPy recomputation differs by at most1.3306e-6 over all classes; every difference is within its derived score-error/ambiguous-pair bound. No tensor inference, model or scientific threshold was changed by this verifier correction.
+
+Interpretation: H5's CA/ASR improvement is a real bounded observation, but restoring the Pre representation also restores measurable removed-member distinguishability. Thus it is unsuitable as a completed unlearning defense. This finite audit is not a universal privacy proof, and the unmodified Post models' low scores do not certify all membership attacks. The two conclusions must stay separate.
+
+Modification: do not deploy full Pre weights as the repaired model. Start a student from nativepost; obtain correction targets only on explicit public/synthetic queries; compare clean-only compression with full-image discrepancy queries, then re-audit actual removed members. No norm attack detector or family-specific trigger is used. Passing a benign control alone will not validate BadFU or FedUBA; the joint goal continues. Related P01 already tested limited response transfer and P02 head repair; a new nonlinear public-query comparison must preserve those limitations and use a separately frozen protocol.
