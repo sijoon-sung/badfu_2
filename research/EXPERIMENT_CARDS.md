@@ -968,16 +968,16 @@
 
 **가설 한 줄: 실제 삭제 품질과 정상 non-IID 삭제의 효용을 보존하는 공개 기능 교정은 BadFU와 FedUBA의 활성화를 억제할 수 있다.**
 
-**판정: H10 실제공격 실패·대조군 정정 / H11 큰정상 우선 실제실행**
+**판정: H11 큰정상 두후보 독립검산통과 / 실제공격 확장중**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/04-purification/P04-defense-development/README.md)
 
 - **조건:** 사용자 지속 개발 지시. 명시 BadFU confirmed v1/purification_pilot,1실학습시드/재학습3쌍. 단계01은D18해시검증캐시를DISLAB CPU로연산했고새FL반복이아니다.500무라벨fit/9500heldout. 실제FedUBA는별도구현중이며미검증.
 - **정상 대조·비교:** 정상19.336%전체삭제를먼저검사하고정상850과공격clean효용을같은규칙으로비교. 전체CA와각클래스/유익교정보존을분리한다. D08/D15다른FU반례를보존.
-- **결과:** H1 결합 ASR5.2444%/큰정상 worstclass-5.6204pp, H2 효용실패, H3 BN/head단독 ASR100, H4 identity만 선택. H5 정렬 ASR3.4778%/세쌍CA통과지만 실제삭제 누설복원, H6 삭제감사통과/ASR100. H8 Post학생은큰정상 CA85.3579/85.6421(기준89.8)로실패했고 optimizer 단독교체를채택하지않았다. H9 public선택 alpha.0453125/.0703125에서큰정상 CA90.0526/89.8421, worstclass감소.1047/1.2618pp와기존교정90%가설을통과했다. H10 같은recipe 공격확장 rawASR100/99.7667, selected100/100으로실패; same850와추가clean/member는stop규칙상미계산. 100step/34proxy점/4ASR정수수/모델BN/optimizer/hash검산통과. 비회원대조에학생학습public500이들어간평가오류를별도정정: clean9500/원testID기반trigger8542, 440classAUC검산. H5 true-labeladv 큰정상.171865/정상850.386387/공격.834895로실패유지, H9큰정상.003071/.002138로필요조건통과유지. 원수치/실패/수치정정은모두보존한다. 1280합성추론 충실도진단에서queryraw teacher일치synthetic77.7344%/heldouttrigger3.6057%, selected19.9219%/3.4184%; heldoutASRraw99.7776/selected100이다. 256query의Post출력이[1,0,135,3,0,1,116,0,0,0]로집중됐다. 이를고유원인으로확정하지않고모든출력class동일예산의H11을별도동결했다. 동일240시작/20PGD/100학생step으로KL와Post-k/teacher-not-k목표를비교하며새큰정상부터검사한다. DISLAB 목적함수 확률항/gradient방향/포화안정성계약검산통과; 학습/효과는아직미측정이다. BadFU한시드개발이며FedUBA/독립시드/범용성/형식망각성공을주장하지않는다. H11 once task/PID21236/실제query3of30와원H5teacher해시일치를확인했다. CPU2/noCUDA이며효과는아직미측정이다. H11 큰정상 query생성완료:KL은Post한class195/240집중, disjoint는10class모두실제출력/요청별공동성공15~24of24(총198/240 대KL17/240). 학생학습중이며효용/삭제감사/실제공격효과는미측정이다. 정상에서도성공하는탐색행동을악성증거로쓰지않는다. 별도FedUBA source-only interface계약은DISLAB CPU2에서통과했다:새random10class/합성2장,직접정규화출력/512특징-head/입력gradient정확일치,BN보존,잘못된head/201surrogate/uint8/범위/training모드거절. 실제FedUBA모델/효능평가는아니며진행중인H11은변경하지않았다. H11 공개선택은alpha.0640625/.071875로고정되어외부관측해시를보존했다. 저장rawbanklogit의추가추론없는진단에서KL학생 teacher일치86.6667%, disjoint96.25%; disjoint의발견198입력중3개만학생에요청k가남았다. 이는큰정상합성자료의학습관측이며실제공격효과가아니다. teacher출력7~9무표본등불균형도그대로공개했다.
+- **결과:** H1 단순 Pre-body/Post-head는 ASR5.2444%/큰정상 worstclass-5.6204pp로실패했고,H2운반도효용실패였다. H3의24조합/11고유body에서BN/head단독은ASR100,H4는모두identity를선택했다. H5정렬teacher는ASR3.4778%/세쌍CA를통과했지만정정된실제삭제adv 큰정상.171865/정상850.386387/공격.834895로실패했다. H6 Post표현역운반은삭제감사통과/ASR100. H8 Post학생은큰정상삭제감사기준내였지만CA85.3579/85.6421(기준89.8)로실패했고같은batch진단만으로optimizer교체를채택하지않았다. H9 공개기능선택은alpha.0453125/.0703125에서큰정상CA90.0526/89.8421과유한삭제감사/유익교정90%를통과했으나,H10같은recipe공격확장rawASR100/99.7667→선택후100/100으로실패했다. same850/추가clean-member는stop규칙상미계산이며이전실패를보존한다. 학생학습public500이비회원대조에들어간오류는별도정정:clean9500/원testID기준trigger8542,440classAUC검산. H9통과와H5/H10실패는정정후유지됐다. H10충실도진단은raw학생의teacher일치가synthetic77.7344%/heldouttrigger3.6057%로갈림과query의Post출력두class집중을확인했다. H11은모든출력동일예산의KL대Post-k/teacher-not-k를같은240시작점/20PGD/100학생step으로고정비교했다. 큰정상에서실제출력10class/공동성공198of240(KL17)과raw-bank teacher일치96.25%(KL86.67)를관측했으며teacher의불균형도보존한다. 공개선택alpha.0640625/.071875에서큰정상CA90.0/89.8421,worstclass감소.630915/1.051525pp,유익교정197/212·198/212,true-labeladv.002873835/.002695229로두arm정상gate통과.34선택점/40classAUC/표본추출RNG/optimizer/BN/보간/봉인hash를새추론없이독립prefix검산했다. host경고중단과동일검산wrapper회복은보존했으며학습조건은불변이다. PID21236의같은recipe실제공격확장중;공격효과/전체세쌍성공은아직미측정이다. 별도FedUBA source-only random2이미지계약은정규화/512head/입력gradient/BN/오입력거절을통과했으며실제FedUBA효능이아니다. 독립BadFU조건/FedUBA공동효능/역할식별/형식적망각인증은미검증이다.
 - **non-IID에 대해 남길 교훈:** 전체CA는클래스별훼손을가릴수있고Pre표현복원은실제삭제회원구별가능성을되살릴수있었다. Post학생은유한누설기준을지켜도효용을잃을수있어실제교정기능/전체정상보존/삭제감사를분리한다. 한큰정상조건의통과는D08/D15의다른FU·시드반례해결이나trigger-family-independent탐지의증거가아니며finite MIA통과는형식적망각인증이아니다.
 - **반복하지 않을 주장:** 전체CA만으로무손실/삭제보존이라고부르지않고ASR사후최저후보선택/실제타깃을fit에쓰지않는다. 완료된H1/H2를재실행하거나실패를삭제하지않는다. FUBA를FedUBA로바꾸어부르지않는다.
-- **재검토 조건:** 가중치/BN/head원인분해후고정서버규칙을새프로토콜로정하고큰정상동일FU/독립시드/전체공격평가/삭제품질을함께통과해야채택한다. 각후보실패는보존후수정하고전체방어목표는계속한다.
+- **재검토 조건:** 같은 고정 방법이 큰정상·실제공격·정상850의효용/삭제품질/억제조건을함께통과한뒤 독립BadFU조건과적격FedUBA전후쌍으로검사한다. 정상또는한시드통과는부모가설을완성하지않는다. 실패프로토콜을보존하고새관측/중단규칙이있는수정으로전체방어목표를계속한다.
 
 **원문·증거:**
 
@@ -1089,6 +1089,16 @@
 - [research/badfu_feduba_defense_20261031/STAGE11_NORMAL_SELECTION_OBSERVATION.json](badfu_feduba_defense_20261031/STAGE11_NORMAL_SELECTION_OBSERVATION.json)
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json](badfu_feduba_defense_20261031/stage11/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json)
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/BANK_DIAGNOSTIC_OBSERVATION.json](badfu_feduba_defense_20261031/stage11/benign_big19336/BANK_DIAGNOSTIC_OBSERVATION.json)
+- [research/badfu_feduba_defense_20261031/STAGE11_PREFIX_AUDIT_PROTOCOL.txt](badfu_feduba_defense_20261031/STAGE11_PREFIX_AUDIT_PROTOCOL.txt)
+- [research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_V2_FREEZE.json](badfu_feduba_defense_20261031/STAGE11_VERIFICATION_V2_FREEZE.json)
+- [research/badfu_feduba_defense_20261031/STAGE11_PREFIX_HOST_INCIDENT.txt](badfu_feduba_defense_20261031/STAGE11_PREFIX_HOST_INCIDENT.txt)
+- [research/badfu_feduba_defense_20261031/STAGE11_PREFIX_AUDIT_EXIT.json](badfu_feduba_defense_20261031/STAGE11_PREFIX_AUDIT_EXIT.json)
+- [research/badfu_feduba_defense_20261031/STAGE11_NORMAL_REPORT_KO.txt](badfu_feduba_defense_20261031/STAGE11_NORMAL_REPORT_KO.txt)
+- [research/badfu_feduba_defense_20261031/stage11/PREFIX_VERIFICATION.json](badfu_feduba_defense_20261031/stage11/PREFIX_VERIFICATION.json)
+- [research/badfu_feduba_defense_20261031/stage11/ROOT_RESULT_AT_PREFIX.json](badfu_feduba_defense_20261031/stage11/ROOT_RESULT_AT_PREFIX.json)
+- [research/badfu_feduba_defense_20261031/stage11/benign_big19336/RESULT.json](badfu_feduba_defense_20261031/stage11/benign_big19336/RESULT.json)
+- [research/badfu_feduba_defense_20261031/stage11/benign_big19336/COMPLETED.json](badfu_feduba_defense_20261031/stage11/benign_big19336/COMPLETED.json)
+- [research/badfu_feduba_defense_20261031/stage11/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json](badfu_feduba_defense_20261031/stage11/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 

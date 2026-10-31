@@ -1,0 +1,56 @@
+{
+  "state": "passed",
+  "cases": {
+    "benign_big19336": {
+      "state": "completed",
+      "arms": {
+        "matched_kl": {
+          "steps": 100,
+          "alpha": 0.0640625,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            0,
+            0,
+            0,
+            16,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_teacher_bank_agreement": 0.8666666666666667,
+          "independent_class_AUC_checks": 20
+        },
+        "all_class_disjoint": {
+          "steps": 100,
+          "alpha": 0.07187500000000001,
+          "policy_points": 17,
+          "query_joint_success_per_requested_class": [
+            24,
+            15,
+            21,
+            22,
+            17,
+            23,
+            22,
+            15,
+            18,
+            21
+          ],
+          "raw_teacher_bank_agreement": 0.9625,
+          "independent_class_AUC_checks": 20
+        }
+      },
+      "case_receipt_sha256": "bfae73115b69b5e22081d308b16d234ddce7d38e5bbe6c2fd8a6f90137001574"
+    }
+  },
+  "fresh_model_inference": false,
+  "verifier_sha256": "5f34ce5be5e12bbdf9ee397c030cf4d7bc018225e4178641196e431b3f1090e5",
+  "verification_freeze_sha256": "2b5806eede9847a6bf26989163031589680867932662237106d4bc7dabd197c7",
+  "scope": "completed_case_prefix",
+  "pipeline_completed": false,
+  "full_objective_achieved": false,
+  "root_result_snapshot_sha256": "18d45f12c2f1cf5605c51c3316c09c97d1b7674d334909d8332b93bfd776c93a"
+}

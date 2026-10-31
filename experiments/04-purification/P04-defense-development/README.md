@@ -19,12 +19,14 @@
 | H10 동일 규칙의 공격 확장 | 실제9000장 ASR raw100/99.7667%, 선택 후 두arm100%로 실패. 같은850 후속 실험은 중단 |
 | 평가 대조군 정정 | 학생학습 public500을 비회원 대조에서 제외. 9500 clean/8542 trigger로440 class AUC를 검산했고 H9 큰정상 필요조건은 유지 |
 | 전달 충실도 진단 | query 학생은 합성 자료에서 teacher와77.7344% 일치하지만 실제 heldout trigger에서는3.6057% 일치. 합성 탐색의 출력 대부분이 두 클래스로 집중됨 |
-| H11 모든 출력 클래스 탐색 | 같은240시작점/20탐색step/100학생step으로 KL탐색과 모든클래스 공동목표를 비교하는 새 고정 프로토콜. 큰정상부터 다시 검사하며 아직 효과 미검증 |
+| H11 모든 출력 클래스 탐색 | 같은240시작점/20탐색step/100학생step. 큰정상 CA90.00/89.8421%, 기존 유익교정197/212·198/212와 삭제 감사 기준을 두arm 모두 통과.34공개선택점/40classAUC 등 독립prefix검산 통과. 같은recipe 실제공격 확장 중 |
 
 [실제 삭제 감사](../../../research/badfu_feduba_defense_20261031/STAGE07_REPORT_KO.txt)는 초기 낮은 ASR이 삭제 기억 복원과 함께 나타났음을 확인했다. [H8 결과](../../../research/badfu_feduba_defense_20261031/STAGE08_REPORT_KO.txt)는 Pre 전체를 복사하지 않는 증류에서도 효용 손실을 제어해야 함을 보였다. [H9 결과](../../../research/badfu_feduba_defense_20261031/STAGE09_REPORT_KO.txt)는 정상 필요조건을 통과했지만 [H10 실제공격 결과](../../../research/badfu_feduba_defense_20261031/STAGE10_REPORT_KO.txt)는 동일 recipe의 공격 억제 실패를 보였다.
 
 [H10 고정 프로토콜](../../../research/badfu_feduba_defense_20261031/STAGE10_PROTOCOL.txt)은 실제 트리거/타깃/ASR을 학습이나 서버 선택에 넣지 않는다. 원래 H8 후보와 교정 후 후보를 모두 보존하고, 공격 필요조건 실패 시 같은 예산을 사후 조절하지 않는다.
 
 [대조군 정정 결과](../../../research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_CORRECTION_REPORT_KO.txt)가 삭제 감사의 최신 기준이다. 과거 all-test 수치는 지우지 않되 학생에게 미관측인 비회원 결과로 해석하지 않는다. [충실도 진단](../../../research/badfu_feduba_defense_20261031/FIDELITY_DIAGNOSIS_REPORT_KO.txt)을 바탕으로 만든 [H11 프로토콜](../../../research/badfu_feduba_defense_20261031/STAGE11_PROTOCOL.txt)은 실제 공격 타깃을 입력하지 않고 모든 출력 인덱스에 같은 탐색 예산을 배정한다. 이 자체가 충분한 영역 포괄이나 정상 non-IID 구별을 보장하지 않으므로 큰정상 삭제부터 동일 고정 기준으로 다시 검사한다.
+
+[H11 큰정상 결과와 독립 검산](../../../research/badfu_feduba_defense_20261031/STAGE11_NORMAL_REPORT_KO.txt)은 두 학생의 정상 필요조건 통과를 확인했다. 실험 전체가 끝났다는 뜻은 아니다. 같은 arm이 실제공격과 정상850까지 통과해야 하며, 독립 조건과 적격 FedUBA 검사는 별도로 남아 있다. [FedUBA 입력·특징 연결 계약](../../../research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_REPORT_KO.txt)도 통과했지만 새 random모델의 구현 확인이므로 실제 FedUBA 공격·방어 결과로 세지 않는다.
 
 현재는 기존 BadFU 한 시드와 재사용한 공개 분할의 개발 결과다. D08/D15의 다른 FU·시드 반례, 적격 FedUBA 전후 모델, 추가 확인 조건을 대신하지 않는다. 유한 회원 추론 감사 통과는 형식적 삭제 증명이 아니며, 공개 KL이나 alpha는 공격 탐지 점수가 아니다. [연구 카드와 전체 근거](../../../research/EXPERIMENT_CARDS.md#p04).
