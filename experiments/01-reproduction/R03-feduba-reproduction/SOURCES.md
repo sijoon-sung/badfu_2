@@ -86,3 +86,7 @@
 | [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/clean_pr/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/clean_pr` |
 | [REGISTERED.json](../../../research/feduba_paper_implementation_20261031/registrations/clean_dislab/REGISTERED.json) | `research/feduba_paper_implementation_20261031/registrations/clean_dislab` |
 | [STG_STATE.json](../../../research/feduba_paper_implementation_20261031/STG_STATE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_PROFILE.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_CPU_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_CPU_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [PAIR_EVAL_SOURCE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/PAIR_EVAL_SOURCE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
