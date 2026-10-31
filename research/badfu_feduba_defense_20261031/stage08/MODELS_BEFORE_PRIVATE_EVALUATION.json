@@ -1,0 +1,14 @@
+{
+  "clean_only": {
+    "path": "clean_only_final.pt",
+    "sha256": "291510e8e9d28e4e8344db2631082b30fcaa072d31e837e8fc2c6e9a8c48744a",
+    "steps": 100,
+    "pre_weights_copied": false
+  },
+  "query_transfer": {
+    "path": "query_transfer_final.pt",
+    "sha256": "1e9e05ea11394b6d7b8c842d0e8e817f9c5646c38b15b89e1d62d1e322ed7845",
+    "steps": 100,
+    "pre_weights_copied": false
+  }
+}

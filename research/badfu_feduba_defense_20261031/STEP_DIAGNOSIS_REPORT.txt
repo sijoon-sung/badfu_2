@@ -1,0 +1,21 @@
+Bounded same-batch optimizer diagnosis completed on DISLAB CPU2, PID3880; source2e0cf57. R01/P01/P04/D08/D15.
+Both reconstructed first-batch losses matched the live H8 source logs within1e-6. No100-step job or original model was restarted or changed. No true labels, removed records or actual trigger were used.
+
+clean_only:
+  Same batch objective before.2783692479; original Adam.0001 after8.9517536163.
+  Full500 public objective before.3815257071; Adam after6.3008735809.
+  Bounded SGD first passing same-batch step lr.00015625: same batch.2119657695,
+  but full500 .3841707933 is slightly HIGHER than before. All7 tried rates retained.
+  Thus the one-step Adam overshoot hypothesis holds here, but same-batch descent alone does not guarantee full-public descent.
+
+query_transfer:
+  Same batch joint objective before37.7312126160; Adam after20.2869796753 (decreases).
+  Full500 clean objective before.3815257071; Adam after5.7285653687 (increases greatly).
+  SGD first passing same-batch step lr.0003125: joint objective35.3188858032,
+  full500 clean objective15.4359602661. All6 tried rates retained.
+  The preregistered 'Adam joint-objective overshoot' hypothesis is FALSE for this arm.
+  Replacing Adam with same-batch-descent SGD alone is not supported as the complete fix.
+
+Interpretation and modification rationale:
+Training-objective decrease and normal-function preservation are different observables, even on the same public data. The next correction should explicitly constrain the whole public Post function, rather than relying on optimizer loss decrease or a simple optimizer swap. P01 already studied output-KL budgets, so such a correction must be labeled an extension of that line, not invented as a new detection principle. H4's discrete block restore selectedidentity; a continuous correction budget remains a distinct unvalidated possibility. Actual heldout class utility, deleted-member leakage and attack suppression remain necessary; public KL is not their proof and is not an attack score.
+The fixed100-step H8 candidates are being evaluated under their original protocol. This diagnostic does not change their gates or establish their final efficacy. Any new candidate requires a separately frozen protocol and preserved H8 endpoint results.

@@ -1,0 +1,89 @@
+{
+  "state": "completed",
+  "arms": {
+    "clean_only": {
+      "same_batch_before": 0.2783692479133606,
+      "full500_before": 0.38152570712566375,
+      "adam_same_batch_after": 8.951753616333008,
+      "adam_full500_after": 6.300873580932617,
+      "adam_sha256": "a7003ceecc80242d383671914b79eed7dd37eb0c24c2eb3645cb6a8fb6f12b15",
+      "sgd_trials": [
+        {
+          "lr": 0.01,
+          "same_batch_after": 26.75811004638672
+        },
+        {
+          "lr": 0.005,
+          "same_batch_after": 10.469209671020508
+        },
+        {
+          "lr": 0.0025,
+          "same_batch_after": 2.9544668197631836
+        },
+        {
+          "lr": 0.00125,
+          "same_batch_after": 1.476732611656189
+        },
+        {
+          "lr": 0.000625,
+          "same_batch_after": 0.7104359865188599
+        },
+        {
+          "lr": 0.0003125,
+          "same_batch_after": 0.3315083980560303
+        },
+        {
+          "lr": 0.00015625,
+          "same_batch_after": 0.21196576952934265
+        }
+      ],
+      "sgd_accepted": {
+        "lr": 0.00015625,
+        "same_batch_after": 0.21196576952934265,
+        "full500_after": 0.3841707932949066,
+        "sha256": "3cfdaa3d0304bb19e6c83ade2d13cb98cdfc64b5fa34c60ef3966d037c0e3c54"
+      },
+      "hypothesis_supported": true
+    },
+    "query_transfer": {
+      "same_batch_before": 37.7312126159668,
+      "full500_before": 0.38152570712566375,
+      "adam_same_batch_after": 20.28697967529297,
+      "adam_full500_after": 5.728565368652344,
+      "adam_sha256": "5f9c5bbf9789f8105a342dd4939e2aade22eabab6f73cf9ba06778e15ba01d36",
+      "sgd_trials": [
+        {
+          "lr": 0.01,
+          "same_batch_after": 544015515648.0
+        },
+        {
+          "lr": 0.005,
+          "same_batch_after": 19940562.0
+        },
+        {
+          "lr": 0.0025,
+          "same_batch_after": 45340.04296875
+        },
+        {
+          "lr": 0.00125,
+          "same_batch_after": 881.4765014648438
+        },
+        {
+          "lr": 0.000625,
+          "same_batch_after": 137.8490447998047
+        },
+        {
+          "lr": 0.0003125,
+          "same_batch_after": 35.318885803222656
+        }
+      ],
+      "sgd_accepted": {
+        "lr": 0.0003125,
+        "same_batch_after": 35.318885803222656,
+        "full500_after": 15.43596026611328,
+        "sha256": "e8c0cb9e168160324fea4034a6b20ef92296bbba46b0e5abe5ba6c6557070104"
+      },
+      "hypothesis_supported": false
+    }
+  }
+}
