@@ -1,0 +1,37 @@
+{
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "cache_files": {
+    "head_states.pt": "44fd44f35d4eb22c2fce8b7822ee4462cb19e281852d081ffc9fed402956e0fe",
+    "clean_predictions.pt": "9da781d78569d93aebe7e788d07a1b7b781d26dab48002cb14ddbe71ee620162",
+    "features_pre.pt": "e4c2c681b104d7d49ae1fa622746523027e1eacd1ea06f9795c16f523c2c131b",
+    "features_post.pt": "7ed092ca2c31559182067b812c65e664d001e474396c3a19f6a37764eebf6739",
+    "features_clean_pre.pt": "d2d226008569eeb7b9ee256ada19dec3358bcbad0739eb384276ca9d896f38c4",
+    "features_clean_post.pt": "730f7c5983e6f1de97954c6d9efcb9adbbbfb321b8e48f6ad256ebc50d274a28",
+    "features_clean_big_post.pt": "d62ef9e5a0f98126a26700cb7eb1f7097dad6c0c8987307294a1cedbc1ed71da",
+    "logits_pre.pt": "758dfdd08866263e53f32d65909ba4c0bfe29675519481dc6824e4a2d7e85fd3",
+    "logits_post.pt": "648ebbada4bfe487320ed047510deef8fe1417004bf944a6d612b37501e0189d",
+    "logits_clean_pre.pt": "74c32ee29c7fb5790d4ea14fb014fb8e876308d170ba072438c5f0bf57001c0a",
+    "logits_clean_post.pt": "94b5cc3bfa50b58b88010397e5806ce72c6f26002f7eca79524819a41eb0f90a",
+    "logits_clean_big_post.pt": "01276a21c3c8824deeeacb141e159d1644a5b18c7cdc49d9bd60b7d1a3e9456b"
+  },
+  "original_source_receipt_sha256": "ef0d5ec74cf1d9bb8a5c8c4545f035d8e2edfca8bcf193ab89255759760c91dd",
+  "selected_case_sha256": "1df64e7a10bf3d52730eb46b3a147bdaebc9991000a9c1d91f6e5cbd6d8016a0",
+  "original_cache_evaluator": {
+    "python": "3.11.17 | packaged by conda-forge | (main, Oct  6 2026, 23:51:21) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.4.1+cu118",
+    "numpy": "1.26.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cuda": "11.8",
+    "cudnn": 90100,
+    "batch_size": 32,
+    "memory_format": "contiguous_NCHW",
+    "model_compute": "float32",
+    "projection_compute": "CPU float64",
+    "evaluator_version": "fc_projection_readonly_v1_author_nchw_v2_normalization",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "tf32": false
+  },
+  "source_checkpoint_guard": "all_snapshot_files_verified_on_this_host"
+}
