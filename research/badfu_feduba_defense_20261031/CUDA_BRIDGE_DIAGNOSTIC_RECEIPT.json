@@ -1,0 +1,15 @@
+{
+    "scope":  "supplemental_seal_of_synthetic_debug_arrays_after_completed_contract",
+    "original_completion_sha256":  "d71ad9f71c6243fc83ff0369613915aae4da9969f934af59afafab11ac8ef55f",
+    "result_sha256":  "f357a5175cd4efb229539e86cff3db126c870eac6b1c12ad8404a71d69a2493d",
+    "files":  {
+                  "private_logits_comparison.pt":  {
+                                                       "bytes":  27075,
+                                                       "sha256":  "7df2ebe777f6cc8c498fd4651d69e0556e2ef137531f11c708350095089b0f6b"
+                                                   },
+                  "private_gradient_comparison.pt":  {
+                                                         "bytes":  51269,
+                                                         "sha256":  "801dcd25a2351df69c892d9c281cbd6127bc2d1c6fb8c45a52d0142345a724fa"
+                                                     }
+              }
+}

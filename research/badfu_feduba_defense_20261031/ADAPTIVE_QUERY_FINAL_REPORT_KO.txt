@@ -1,0 +1,18 @@
+현재학생 query 재탐색 완료 / 실제공격 억제 실패 / 제한 독립재생 통과, 2026-11-01 KST.
+R01/R03/P01/P02/P04/D08/D12/D14/D15/D17/D18/N02. fixed badfu.confirmed.s20261023.v1/purification_pilot, 기존FL1시드/유지자료재학습. 원래PID57036은완료·종료했고 새bounded audit PID20284도완료·종료했다. 원모델/파생raw·selected/9주방법중간모델/optimizer/RNG/전step·refreshtensor·거절은DISLAB원위치에보존한다. 기존finite작업을반복하지않는다.
+
+가설/과정: 은행source를잘맞혀도실제trigger로전달되지않았던Post-anchor 결과를근거로, 같은초기은행·Post원본목표·100step·선택에서 재탐색generator만원래Post대현재학생으로바꿨다. 양쪽1800image-gradient/9refresh,공개32·source별query10/BN고정/Adam.0001이다. 실제정답·trigger·target·삭제회원은학습·선택에전달하지않았다. 큰정상부터실행했고현재학생정상CA90.031579/최대class손실.319149pp/유한삭제감사·유익교정193/212=91.0377%의제한된양성은유지한다. 대조정상189/212의90%미달도보존한다.
+
+실제공격:
+arm                 rawASR full9000 / held8542      raw 원정답held8542        selected alpha /ASR
+fixed_post_refresh  97.277778 /97.412784%           187/8542=2.189183%        .1078125 /100%(full·held)
+student_refresh     97.011111 /97.096699%           224/8542=2.622337%        .0906250 /100%(full·held)
+두selected는원정답0/8542다. raw도원정답품질·ASR10%에못미쳤으므로 선택만고치면해결된다고할수없다. 사전규칙에따라정상850/추가공격clean·member는미실행이며 결과를채워넣지않는다. 학생재탐색추가만으로이한시드실제backdoor를교정하지못했다. 모든adaptive학습이불가능하다는결론은아니다.
+
+독립검산/재생:
+전체source/model/bank/file seal·100draw/samplerRNG·Adam100/BN/모델보간·68공개정책점·40classAUC·actual target/원정답class행·동일arm/중단을검산했다.9refresh교체를각시도tensor와수용mask로재구성했고18개현재학생중간모델을strictload·digest대조했다. 큰정상10update와공격10update를각새disposable copy에서독립재생한상태가모든tensor byte동일/최대오차0이었다. 각case 양arm의첫20step 입력역전파도최종query·logit·acceptance가byte동일이고전objective오차0이었다. 이는총20개검산용update/800image-gradient며 새FL시드나채택모델이아니다. 나머지90update/8refresh gradient/actual9000 CNN을독립재실행한것은아니다. 구현이실제로현재학생을참조한첫경로와전체저장측정은확인됐지만이를모든미검사경로의무오류로확대하지않는다.
+원래anchor확률독립복원오차최대2.607e-7, 초기query-loss오차최대5.605e-7로 사전2e-5/1e-3 이내였다. 공격source-preserving 재탐색수용은대조90/90·학생87/90이며거절3개는기존유효query를유지했다.
+
+남은 병목/수정 근거:
+최종생성은행의raw source정답은정상73/74·66/74, 공격76/78·71/78이다. 현재학생이더어려운query를실제로만들고학습했다는관측과 실제trigger 원정답2.62%를함께남긴다. 합성은행적합과실제전이가여전히다르고, 최적화부담도증가했으므로한원인만증명하지않는다. 다음에는 입력변형이이미지별인지여러source에공유되는지, 그리고Post원본의최종512특징을명시적으로보존하는지가바뀌는별도고정비교를검토한다. class균형/추가관측/큰변화그자체를악성표지로다시쓰지않는다.
+별도GPU실행경로합성계약은통과해향후새profile을더빠르게계산할수있는전제만확인했다. 이번CPU결과를GPU결과로소급하거나재시작하지않는다. P01의기존조건부양성, D14/D17의규칙전이·source다양성실패, D08/D15큰정상반례를보존하며새source/비교/정보가정/중단기준을실행전에고정한다. 실제FedUBA는여전히유효활성화입력이없고, 독립BadFU조건/역할식별/형식망각인증도미검증이다. 전체방어목표는완료되지않았다.

@@ -1,0 +1,7 @@
+FedUBA 외부단계 진단의 읽기전용 반영, R03/R01/P04/D08/D15/N02, 2026-11-01 KST.
+다른채팅의최신worktree commit1c906f9에서새INDEX/REPORT/VERIFIED/COMPLETION/NEXT_CURRICULUM_RATIONALE을읽었다. aggregate보고서4개를external_feduba_stage_diagnosis에byte동일사본/ORIGIN해시로보존했다. 원모델/개별target ID/private logits는소비하지않았고상대source/job을수정하거나새진단을중복실행하지않았다.
+기존실패pair의양쪽967파일전달과세catalogue등록은그보고시점완료됐지만잠복활성화성능실패는불변이다. 전달·등록통과를유효활성화로바꾸지않는다. 원primary의delivery=false는당시기록이고새완료보고를기준으로읽는다. 여기서새case를정화용으로선택한것은아니다.
+추가로정확8forward/800sample/학습0의BN-mode진단이끝났다. class200목표정답은eval/zero·eval/finalδ·trainBN/zero·trainBN/finalδ모두0/200이다. CE는각9.027816/6.603473/9.027884/9.154375였다.40hit증가/CE1.0감소/양batch증가의사전BN-gap규칙은모두거짓이라해당수정을채택하지않는다. 독립저장logit산술검산오차최대5.769e-7로통과했으나독립CNN재추론은아니다. 원8회와감사모두완료·종료했고반복하지않는다.
+저장로그를읽은더이른필요조건관측도있다. 원warmup5epoch 모두target200 train_correct0/200, CE10.421→9.294였으며실행코드는201-output교사를Tiny0..199만으로100epoch학습한뒤target200으로10update했다. label200을victimtarget2로잘못읽었다는주장을하는것이아니다. 명시된교사의목표클래스인식단계자체가성립하지않았다는관측이다. 이것이최종FU실패의유일원인이라는인과증명도아니다.
+다음mixed Tiny100000+기존외부target200 curriculum은공개concoct_dataset인자/원문/저장로그에근거한미실행교정후보다. 누락helper의유일동작/저자인증/seed·δ·budget튜닝으로성능을찾았다고말하지않는다. 새고정source/profile/원ID노출/teacher100+warmup5·필요조건/중단·독립감사전에는해당문서만으로후속trigger/SSS/FU를시작하지않는다는producer조건을유지한다. 작은교사양성도FedUBA전체재현이나공통방어성공을대체하지못한다.
+방어측해석: 공격의전후활성화→그앞단teacher인식이라는큰가설의필요조건을구분할근거가추가됐다. 유효한FedUBA양성확보는별도로남고BadFU의실제정화개발을이비활성case통과로축소하지않는다. D08/D15/nonIID·unknowntrigger·역할식별한계는해결되지않았다.

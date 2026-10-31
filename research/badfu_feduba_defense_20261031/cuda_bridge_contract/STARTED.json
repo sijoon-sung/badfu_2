@@ -1,0 +1,34 @@
+{
+  "pid": 6736,
+  "time": 1793463697.4490108,
+  "CPU": {
+    "NumberOfLogicalProcessors": 20,
+    "LoadPercentage": 0,
+    "load_source": "Win32_Processor"
+  },
+  "GPU_before": [
+    {
+      "total_MiB": 10240,
+      "used_MiB": 5009,
+      "free_MiB": 5045,
+      "utilization_pct": 0
+    },
+    {
+      "total_MiB": 10240,
+      "used_MiB": 5009,
+      "free_MiB": 5045,
+      "utilization_pct": 0
+    },
+    {
+      "total_MiB": 10240,
+      "used_MiB": 5009,
+      "free_MiB": 5045,
+      "utilization_pct": 0
+    }
+  ],
+  "existing_services": {
+    "13000": "LMStudio llama-server; arguments omitted",
+    "31756": "prediction server port8767",
+    "37492": "advanced prediction service port8769"
+  }
+}
