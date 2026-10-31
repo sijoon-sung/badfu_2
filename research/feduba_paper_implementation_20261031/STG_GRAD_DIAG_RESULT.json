@@ -1,0 +1,300 @@
+{
+  "state": "completed_bounded_numeric_diagnosis",
+  "modes": {
+    "cpu_mkldnn": {
+      "state": "completed_fixed_mode",
+      "settings": {
+        "mode": "cpu_mkldnn",
+        "device": "cpu",
+        "torch_version": "2.7.1+cu118",
+        "CPU_threads": 2,
+        "mkldnn_enabled": true,
+        "matmul_precision": "highest",
+        "matmul_TF32": false,
+        "cudnn_TF32": true,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "cudnn_benchmark": false
+      },
+      "steps": [
+        {
+          "epoch": 1,
+          "batch": 1,
+          "examples": 128,
+          "loss": 9.052312850952148,
+          "max_abs_error_to_original": 0.009947020560503006,
+          "original_CPU_gate_failed_elements": 2971,
+          "tight_replay_failed_elements": 3071,
+          "output": {
+            "path": "gradient_diagnosis/cpu_mkldnn/epoch001_batch1.pt",
+            "sha256": "efc81aa381bcb76365814b66e0b3f58bb2f8a3efc96fb0dd40ca41ad78b3a5c4",
+            "bytes": 117733
+          }
+        },
+        {
+          "epoch": 100,
+          "batch": 2,
+          "examples": 72,
+          "loss": 6.52498722076416,
+          "max_abs_error_to_original": 0.00042789464350789785,
+          "original_CPU_gate_failed_elements": 1696,
+          "tight_replay_failed_elements": 3067,
+          "output": {
+            "path": "gradient_diagnosis/cpu_mkldnn/epoch100_batch2.pt",
+            "sha256": "9c41fbd78dc3552f51651dc5a0f52c675bc768151c5e35434c373d53ff4f7511",
+            "bytes": 72677
+          }
+        }
+      ],
+      "original_gradient_tolerances_unchanged": true,
+      "optimizer_steps": 0,
+      "training_restarted": false,
+      "whole_original_verifier_repeated": false,
+      "original_STG_audit_remains_failed": true,
+      "real_SSS_FU_or_ASR_evaluation_executed": false
+    },
+    "cpu_native": {
+      "state": "completed_fixed_mode",
+      "settings": {
+        "mode": "cpu_native",
+        "device": "cpu",
+        "torch_version": "2.7.1+cu118",
+        "CPU_threads": 2,
+        "mkldnn_enabled": false,
+        "matmul_precision": "highest",
+        "matmul_TF32": false,
+        "cudnn_TF32": true,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "cudnn_benchmark": false
+      },
+      "steps": [
+        {
+          "epoch": 1,
+          "batch": 1,
+          "examples": 128,
+          "loss": 9.052312850952148,
+          "max_abs_error_to_original": 0.009930137544870377,
+          "original_CPU_gate_failed_elements": 2968,
+          "tight_replay_failed_elements": 3071,
+          "output": {
+            "path": "gradient_diagnosis/cpu_native/epoch001_batch1.pt",
+            "sha256": "040538f93a2f7048b937b0ac3e359c2e51dc1ae7c74039b2f65fa2f638ea003a",
+            "bytes": 117733
+          }
+        },
+        {
+          "epoch": 100,
+          "batch": 2,
+          "examples": 72,
+          "loss": 6.52498722076416,
+          "max_abs_error_to_original": 0.00042789755389094353,
+          "original_CPU_gate_failed_elements": 1695,
+          "tight_replay_failed_elements": 3067,
+          "output": {
+            "path": "gradient_diagnosis/cpu_native/epoch100_batch2.pt",
+            "sha256": "db9de1c9b422ecee240d975518045173c7c54c348680b072a20c2957ad9ed69b",
+            "bytes": 72677
+          }
+        }
+      ],
+      "original_gradient_tolerances_unchanged": true,
+      "optimizer_steps": 0,
+      "training_restarted": false,
+      "whole_original_verifier_repeated": false,
+      "original_STG_audit_remains_failed": true,
+      "real_SSS_FU_or_ASR_evaluation_executed": false
+    },
+    "gpu_default": {
+      "state": "completed_fixed_mode",
+      "settings": {
+        "mode": "gpu_default",
+        "device": "cuda",
+        "torch_version": "2.7.1+cu118",
+        "CPU_threads": 1,
+        "mkldnn_enabled": true,
+        "matmul_precision": "highest",
+        "matmul_TF32": false,
+        "cudnn_TF32": true,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "cudnn_benchmark": false
+      },
+      "steps": [
+        {
+          "epoch": 1,
+          "batch": 1,
+          "examples": 128,
+          "loss": 9.052353858947754,
+          "max_abs_error_to_original": 0.0,
+          "original_CPU_gate_failed_elements": 0,
+          "tight_replay_failed_elements": 0,
+          "output": {
+            "path": "gradient_diagnosis/gpu_default/epoch001_batch1.pt",
+            "sha256": "b90920365250e8d7107966b226f912ee84d7f6da8f6d8be9b8a714cbff843080",
+            "bytes": 117733
+          }
+        },
+        {
+          "epoch": 100,
+          "batch": 2,
+          "examples": 72,
+          "loss": 6.524970054626465,
+          "max_abs_error_to_original": 0.0,
+          "original_CPU_gate_failed_elements": 0,
+          "tight_replay_failed_elements": 0,
+          "output": {
+            "path": "gradient_diagnosis/gpu_default/epoch100_batch2.pt",
+            "sha256": "0ad24ffc0da3fdef0dc2fd17d41ca5c5d13ec65120e707b6aec39d42ffb5db5a",
+            "bytes": 72677
+          }
+        }
+      ],
+      "original_gradient_tolerances_unchanged": true,
+      "optimizer_steps": 0,
+      "training_restarted": false,
+      "whole_original_verifier_repeated": false,
+      "original_STG_audit_remains_failed": true,
+      "real_SSS_FU_or_ASR_evaluation_executed": false
+    },
+    "gpu_strict": {
+      "state": "completed_fixed_mode",
+      "settings": {
+        "mode": "gpu_strict",
+        "device": "cuda",
+        "torch_version": "2.7.1+cu118",
+        "CPU_threads": 1,
+        "mkldnn_enabled": true,
+        "matmul_precision": "highest",
+        "matmul_TF32": false,
+        "cudnn_TF32": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "cudnn_benchmark": false
+      },
+      "steps": [
+        {
+          "epoch": 1,
+          "batch": 1,
+          "examples": 128,
+          "loss": 9.052312850952148,
+          "max_abs_error_to_original": 0.009964145720005035,
+          "original_CPU_gate_failed_elements": 2974,
+          "tight_replay_failed_elements": 3071,
+          "output": {
+            "path": "gradient_diagnosis/gpu_strict/epoch001_batch1.pt",
+            "sha256": "1df02fd9993e9f2a59ba5244f2f9a997bb6626bbc7b02e322585c3e562737c09",
+            "bytes": 117733
+          }
+        },
+        {
+          "epoch": 100,
+          "batch": 2,
+          "examples": 72,
+          "loss": 6.524986743927002,
+          "max_abs_error_to_original": 0.00041454145684838295,
+          "original_CPU_gate_failed_elements": 1650,
+          "tight_replay_failed_elements": 3063,
+          "output": {
+            "path": "gradient_diagnosis/gpu_strict/epoch100_batch2.pt",
+            "sha256": "482b109ace52336ae8b7fb6c335da0ea20548a3abc120bc57d9e093704ab3afd",
+            "bytes": 72677
+          }
+        }
+      ],
+      "original_gradient_tolerances_unchanged": true,
+      "optimizer_steps": 0,
+      "training_restarted": false,
+      "whole_original_verifier_repeated": false,
+      "original_STG_audit_remains_failed": true,
+      "real_SSS_FU_or_ASR_evaluation_executed": false
+    }
+  },
+  "comparisons": [
+    {
+      "step": 0,
+      "left": "cpu_mkldnn",
+      "right": "cpu_native",
+      "max_abs_gradient_error": 0.0008563250303268433,
+      "original_tolerance_failed_elements": 266,
+      "max_abs_logit_error": 1.239776611328125e-05
+    },
+    {
+      "step": 0,
+      "left": "cpu_mkldnn",
+      "right": "gpu_default",
+      "max_abs_gradient_error": 0.009947020560503006,
+      "original_tolerance_failed_elements": 2971,
+      "max_abs_logit_error": 0.01127481460571289
+    },
+    {
+      "step": 0,
+      "left": "cpu_mkldnn",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.0008867233991622925,
+      "original_tolerance_failed_elements": 276,
+      "max_abs_logit_error": 4.240870475769043e-05
+    },
+    {
+      "step": 0,
+      "left": "cpu_native",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.00039608776569366455,
+      "original_tolerance_failed_elements": 219,
+      "max_abs_logit_error": 4.175305366516113e-05
+    },
+    {
+      "step": 0,
+      "left": "gpu_default",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.009964145720005035,
+      "original_tolerance_failed_elements": 2974,
+      "max_abs_logit_error": 0.011267662048339844
+    },
+    {
+      "step": 1,
+      "left": "cpu_mkldnn",
+      "right": "cpu_native",
+      "max_abs_gradient_error": 5.628389772027731e-06,
+      "original_tolerance_failed_elements": 0,
+      "max_abs_logit_error": 3.814697265625e-06
+    },
+    {
+      "step": 1,
+      "left": "cpu_mkldnn",
+      "right": "gpu_default",
+      "max_abs_gradient_error": 0.00042789464350789785,
+      "original_tolerance_failed_elements": 1694,
+      "max_abs_logit_error": 0.0025367438793182373
+    },
+    {
+      "step": 1,
+      "left": "cpu_mkldnn",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.00013069063425064087,
+      "original_tolerance_failed_elements": 411,
+      "max_abs_logit_error": 1.609325408935547e-05
+    },
+    {
+      "step": 1,
+      "left": "cpu_native",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.00013069435954093933,
+      "original_tolerance_failed_elements": 412,
+      "max_abs_logit_error": 1.5735626220703125e-05
+    },
+    {
+      "step": 1,
+      "left": "gpu_default",
+      "right": "gpu_strict",
+      "max_abs_gradient_error": 0.00041454145684838295,
+      "original_tolerance_failed_elements": 1650,
+      "max_abs_logit_error": 0.00253334641456604
+    }
+  ],
+  "new_gradient_replays": 8,
+  "optimizer_steps": 0,
+  "original_audit_not_relabelled_passed": true,
+  "SSS_FU_still_blocked": true,
+  "same_GPU_replay_is_not_original_runtime_flag_certification": true
+}

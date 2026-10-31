@@ -103,3 +103,7 @@
 | [MANIFEST.json](../../../research/feduba_paper_implementation_20261031/incidents/stg_cpu_gradient_v1/MANIFEST.json) | `research/feduba_paper_implementation_20261031/incidents/stg_cpu_gradient_v1` |
 | [STG_GRAD_DIAG_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_GRAD_DIAG_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [STG_GRAD_DIAG_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_GRAD_DIAG_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_GRAD_DIAG_RESULT.json](../../../research/feduba_paper_implementation_20261031/STG_GRAD_DIAG_RESULT.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_PROFILE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_CPU_TRIGGER_FREEZE.json](../../../research/feduba_paper_implementation_20261031/STG_CPU_TRIGGER_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
