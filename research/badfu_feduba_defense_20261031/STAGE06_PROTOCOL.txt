@@ -1,0 +1,7 @@
+2026-10-31 H6: Post 표현을 보존하는 반대 방향 좌표 운반. 관련 R01/R03/D08/D15/D18/N02/P01/P02/P04.
+H5는 실제 단일BadFU CA/ASR 필요조건을 통과했지만 Pre backbone을 보존하여 삭제된 기억 복원 위험이 있다. 아직 실제 membership 결과는 열리지 않았으므로 위험을 관측사실로 부르지 않는다. H3의 Post-backbone/Pre-head 단순결합 ASR100%도 보존한다.
+가설 한 줄: Post backbone을 그대로 유지하면서 공개 정상 pre/post 좌표에 맞게 Pre head를 역운반하면, H3 단순결합보다 나은 공격 억제를 얻고 Pre backbone 복원 위험을 피할 수 있다. 이는 삭제 품질 보장의 증명이 아니다.
+새 관측: H5와 반대 backbone에서의 고정 좌표운반 실제 CA/ASR과, 후속 동일 실제 삭제feature의 membership 감사. 단순 norm/변화량 탐지기가 아니다. D08/D15의 큰정상 삭제도 좌표관계가 다를 수 있으므로 같은 정상9668/850삭제를 먼저 평가한다.
+방법: H5가 무라벨500장으로 고정한 A,mu_pre,mu_post를 재사용한다. Post z를 (z-mu_post) A^T+mu_pre로 운반하고 Pre head를 적용한다. W6=Wpre A, b6=bpre+mu_pre Wpre^T-mu_post A^T Wpre^T. 새 fit, tuning, target/trigger/label/ASR 선택은 없다. full derived model은 Post backbone + float32 W6/b6이다. 세 후보/hash 모두 고정 후 H3캐시 평가를 시작한다.
+전체CA nativepost-.5%p/각class-2%p, 공격ASR<=10을 그대로 필요조건으로 쓴다. strict post교정90%보존은 별도 가설로 보고하고 개인정보 삭제와 동일시하지 않는다. 모든후보/실패 보존. H6가 공격ASR필요조건을 실패하면 같은head/regularizer를재튜닝하지않고,선형head운반만으로Post표현의활성화를막지못했다는좁은결론으로비선형표현을재학습하는수정을검토한다. H6가 통과해도 실제삭제/다른시드/FedUBA없이는완성아니다.
+실행은 DISLAB CPU2threads/기존검증feature만으로 한다. GPU 초기화/새원본모델forward 없음. H5 삭제GPU감사와 다른채팅FedUBA학습을 건드리지 않는다. H6의 실제 삭제감사는 같은 stage05 private membercache가 완성된 뒤 새추론 없이 별도 수행한다.
