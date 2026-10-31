@@ -1191,6 +1191,9 @@
 - [research/badfu_feduba_defense_20261031/post_anchor_diagnosis/COMPLETED.json](badfu_feduba_defense_20261031/post_anchor_diagnosis/COMPLETED.json)
 - [research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_LAUNCH.json](badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_LAUNCH.json)
 - [research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_EXIT.json](badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_EXIT.json)
+- [research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt](badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt)
+- [research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROFILE.json](badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROFILE.json)
+- [research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json](badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 

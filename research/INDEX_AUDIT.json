@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "a87ebbecf7eba683f793460e0dad871432d562fb5e4e79ccd8fd93bfc37a881e",
+  "registry_sha256": "7de308ba93ab50675326a6781f10791e48b4e1ac6e88de28060f579c67f48ef5",
   "cards": 29,
-  "unique_source_documents": 541,
+  "unique_source_documents": 544,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -548,7 +548,10 @@
     "research/badfu_feduba_defense_20261031/post_anchor_diagnosis/RESULT.json": "73a539a57b089e2aeefaf68e8afd3970038d3d8a71537a4b5882524d21118ef9",
     "research/badfu_feduba_defense_20261031/post_anchor_diagnosis/COMPLETED.json": "d5c5795b47d16c5cf23585fef51a3f75064f113dff7455bb3923d4f463350e18",
     "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_LAUNCH.json": "af5f04fa165e73a96db35613397601972c1cfb4e25e477c34b640ed9131f49e2",
-    "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_EXIT.json": "bdd4e68be10f447792423d1061f43104e84d136a835d7e849470e4ee128d4b2b"
+    "research/badfu_feduba_defense_20261031/POST_ANCHOR_DIAGNOSIS_EXIT.json": "bdd4e68be10f447792423d1061f43104e84d136a835d7e849470e4ee128d4b2b",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt": "9eee3b0267494a0942bfadd8901a8e1713fb7b45e0c6a4f5e6d0285aeb0b262f",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROFILE.json": "8ba7f46704bc1a08d874e4ee2c382f08be509775d332fb89744fb167e2abe718",
+    "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PREPARATION_FREEZE.json": "2f365474e5d92649df8a247eff484f2b22c897a5328566170d408df1eb13ee98"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -696,6 +699,7 @@
         "P04"
       ],
       "top_level_documents": [
+        "research/badfu_feduba_defense_20261031/ADAPTIVE_QUERY_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/BACKBONE_ONLY_PARKED_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/COMPLETED.json",
         "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt",

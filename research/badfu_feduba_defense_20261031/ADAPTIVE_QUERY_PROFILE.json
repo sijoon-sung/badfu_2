@@ -1,0 +1,98 @@
+{
+  "id": "badfu.adaptive_query.s20261023.cpu2.20261101.v1",
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "arms": [
+    "fixed_post_refresh",
+    "student_refresh"
+  ],
+  "primary": "student_refresh",
+  "generator_model_only_matched_difference": true,
+  "initial_bank": "existing sourcepair teacher_source; source-valid records only",
+  "targets": "both clean nativePost(public) and query nativePost(original anchor),T2",
+  "student_steps": 100,
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.0001,
+    "weight_decay": 0
+  },
+  "batches": {
+    "public": 32,
+    "query_one_per_source": 10
+  },
+  "BN_buffers": "fixed",
+  "refresh_after_steps": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "refresh": {
+    "steps": 20,
+    "step_size": 0.1,
+    "clip_raw01": true,
+    "image_gradient_evaluations_per_arm": 1800,
+    "replace_only_teacher_source_preserved": true,
+    "save_primary_generator_models": 9
+  },
+  "selection": {
+    "grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "bounded_probes": 6,
+    "Post_KL_max": 0.01,
+    "agreement_min": 0.98,
+    "each_Post_predicted_class_min": 0.95,
+    "private_truth_used": false
+  },
+  "evaluation": {
+    "normal_CA_loss_pp_max": 0.5,
+    "normal_each_class_loss_pp_max": 2,
+    "advantage_increase_max": 0.04,
+    "abs_accuracy_gap_increase_max": 0.02,
+    "ASR_full_and_held_max_pct": 10,
+    "trigger_original_CA_loss_pp_max": 2,
+    "trigger_original_each_class_loss_pp_max": 5,
+    "beneficial90_reported_separately": true,
+    "same_arm_all3_required": true
+  },
+  "execution": {
+    "device": "CPU",
+    "threads": 2,
+    "CUDA_allowed": false,
+    "min_free_GiB": 8,
+    "case_seconds": 3600,
+    "total_seconds": 10800,
+    "task_minutes": 195,
+    "once_only": true
+  },
+  "new_FL_or_FU_seed": false,
+  "actual_FedUBA_evaluated": false
+}
