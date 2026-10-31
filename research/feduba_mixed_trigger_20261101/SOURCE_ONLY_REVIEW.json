@@ -1,0 +1,30 @@
+{
+  "state": "passed_source_only_closed_launch_gate",
+  "utc": "2026-10-31T17:24:10.015340+00:00",
+  "source_freeze_sha256": "5f5146b6a266754f7e3a9ffbcd341c838c704d7d7a16786277301dfe01731a86",
+  "Python_AST_files": 10,
+  "PowerShell_AST": "passed",
+  "copied_helpers_exact": true,
+  "reused_completed_SGD_CPU4_not_reexecuted": true,
+  "active_teacher13_source_hashes_unchanged": true,
+  "observed_teacher_processes": [
+    {
+      "ProcessId": 53016,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_MIXED_SURROGATE_20261101/mixed_controller.py"
+    },
+    {
+      "ProcessId": 12068,
+      "ParentProcessId": 53016,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_MIXED_SURROGATE_20261101\\mixed_teacher_runner.py"
+    }
+  ],
+  "teacher_output_model_hashed_or_loaded": false,
+  "new_model_queries": 0,
+  "torch_imported": false,
+  "new_fixture_or_training_executed": false,
+  "prepare_launch_executed": false,
+  "actual_launch_profile_or_run_freeze_created": false,
+  "closed_run_gate_rejected_as_expected": true,
+  "overall_goal_complete": false
+}

@@ -1,0 +1,24 @@
+Mixed teacher 후속 CPU trigger100 — source-only 사전 구현 계약, 2026-11-01 KST
+관련 R03/R02/N02/D08/D15. AGENTS/INDEX/관련카드·원보고서/정정, mixed teacher 고정계약과 원CPU복구/STG수치근거를읽었다.
+
+가설: 단일mixed교사100+5가전체감사와사전최소목표인식필요조건을통과하면같은literalSGD/project STG를그새frozenθ에한번실행하고저장대수/독립2gradient로검산할수있다. 새관측은새교사에고정결합한100epoch δ·200step 실제입력/원ID/gradient/δ전후와고정첫/마지막두step재생이다. 아직새교사성공을가정하거나새모델query를수행하지않는다.
+
+현재닫힌상태
+SOURCE_PROFILE.launch_enabled=false/teacher_binding=null이며actual LAUNCH_PROFILE/RUN_FREEZE/RUN_PUBLICATION/ONCE/δ는없다. D:/FEDUBA_MIXED_TRIGGER_20261101의source-only검토만허용한다. Python/PS AST·source/hash·code-only런거절을확인하고Torchimport/모델query/teacheroutput모델hash읽기/새fixture/prepare/학습은0이다. 현재활성교사13source/profile은일절바꾸지않는다. core/stg_training/runtime_common은원바이트복사이고기존완료SGD_CPU4receipt의helper SHA를재사용한다. 그fixture나원100/5/100·CPU복구/CPU8·SSS/FU/평가/전달을다시실행하지않는다.
+
+미래실제launch전강제조건
+1. 새로운mixed교사TRAIN_RESULT/VERIFIED·MANIFEST·ENDPOINT_RESULT/VERIFIED·COMPLETION의원SHA연결을확인한다. 105epoch/78310batch·strict201/optimizer/RNG/ID감사passed 및기존사전최소teacher조건True여야한다. 그약한조건이전이/잠복/탐지충분조건이라는뜻은아니다. sourcefreeze13/SOURCE_PUBLICATION도정확일치해야한다.
+2. 실제CIM commandline/parent가teacherroot와일치하는모든Python이없고정확teacher task의LastTaskResult0을확인한다. 과거PID/파일상태만으로종료를추정하지않는다. 이후에만bare fixed_teacher201.pt/modelSHA/bytes/payload null을핀한다. 이름이비슷한이전Tiny-only frozen모델을대체하지않는다.
+3. stdlib-only prepare_launch.py는위조건과명시정상case diagnostic/select_case·외부seal/manifest/preSHA/payload를검사한뒤한번만실제teacher binding/LAUNCH_PROFILE/RUN_FREEZE/TEACHER_TERMINAL을만든다. Torchload/모델forward는0이다. source_only helper의기존PR게시증거도필요하다. 이prepare는현재학습중에호출하지않는다.
+4. 실제profile/freezes를기존draft PR에게시하고RUN_PUBLICATION을만든뒤정확새CPUtask Codex-FedUBA-mixed-teacher-CPU-trigger100-20261101을처음시작한다. 코드만게시했다는이유로이runprofile게시를생략하지않는다. SOURCE_FREEZE는code-only이고실행승인은아니다.
+
+고정미래수치/증거
+- 새mixedθ201을재학습하지않고원외부target200/label200/원ID·같은augmentation/seed3000/loader3000·δ0/B128 tail72/CPU2 FP32 MKLDNN/highest/-1·CUDA미초기화를유지한다.
+- literalSGD상수alpha.1/mom0/wd0/foreachFalse/fusedFalse/meanCE,입력clip(x+δ,-1,1),매step model32/255(raw16/255)투영·evalθ/BN을고정한다. δ0/낮은loss/zero-gradient/전이결과로seed/lr/epoch/ε/target/budget/tolerance를바꾸지않고100epoch/200batch/20000노출을완주한다.
+- 모든200step x/target/원ID/augmentation직전CPURNG/gradient/δ전후·optimizer와100epoch δ/입출력checkpoint/loader·Python/NumPy/CPU·emptyCUDA RNG/전체로그를private_run에보존한다. epochstrictreadback/finite/hash뒤commit하고마지막100δ만사용한다. 좋았던중간epoch를선택하지않는다.
+- 별도CPU2 감사는100epoch+200step의전체hash/원ID/loader/RNG연결·frozenstate·optimizer/literalSGD投影대수atol1e-7·끝δ를확인한다. 고정epoch1/batch1과epoch100/batch2만augmentation정확재생과독립log_softmax/gather meanCE gradient를기존atol2e-5+rtol1e-3로검산한다. 모두200gradient를독립재계산하지는않는다. GPU/CPUgradient동등성이나유일kernel원인해결도주장하지않는다.
+- 실패는prefix/trace/원source를보존하고자동retry/사후허용치확대없다. CPU task/controller/runner/audit 각각ONCE로중복을막는다. 끝나도새SSS/FU/평가/전달은자동시작하지않고새δ/모델/역할·원historySHA의명시후속계약으로연결한다. oldSSS125·after모델을새δ결과로재사용하지않는다.
+
+범위/반례/보존
+D08공격.75848은큰정상.75525/.76188사이이고D15공격7/정상8이다. 정상교사도목표인식/δ반응을보일수있어이번관측은이반례를구별하는서버행동증거가아니다. L-inf/대수검산은구현constraint검증이지새norm탐지점수가아니다. trigger-family-independent/unknowntrigger탐지제안은보류하고evaluator-only target/δ/역할진실을server방법선택에넣지않는다.
+원GPU-STG감사실패와원STG_VERIFIED부재,원CPU복구성공/CPU8가설기각/기존정상·공격FU잠복성능실패/양쪽967파일전달·모든case/default/외부audit/incident를그대로보존한다. 새file을원STG_VERIFIED로이름바꾸지않는다. 누락저자models와concoct helper는회복후보/미인증이며untouched/저자유일실행/성능성공을구별한다. 전체목표/자동확인은미완료로계속한다.
