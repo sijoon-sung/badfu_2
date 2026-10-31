@@ -1,0 +1,10 @@
+Primary-source comparison, no baseline execution or success claim. 2026-10-31; P01/P04/R03/D08/D15.
+SAU (NeurIPS2023): https://proceedings.neurips.cc/paper_files/paper/2023/file/520425a5a4c2fb7f7fc345078b188201-Paper-Conference.pdf
+Its formulation uses labeled clean data and shared adversarial errors of poisoned/purified models. Its risk bound assumes the admissible perturbation set contains the actual trigger transformation; finite PGD is an optimization approximation. Our H10 uses a Pre-derived teacher and unlabeled outputs, so it is not untouched SAU and cannot inherit that guarantee. A public loss on finitely generated images does not certify unknown-trigger risk or legitimate deletion.
+Official repository snapshot inspected by GitHub MCP: shawkui/Shared_Adversarial_Unlearning@ddff2fc9375c5aeb41126d1c8082e71a668a478a.
+
+NAD (ICLR2021): https://arxiv.org/abs/2101.05930 ; https://github.com/bboylyg/NAD
+This framework transfers intermediate attention from a teacher obtained by clean-data fine-tuning. The official demonstration uses a small labeled clean subset and a different network. It suggests a representation-transfer comparator to our logit-only compression, but a label-free Pre-teacher adaptation would be a declared new variant, not a reproduced NAD result. No BadFU/FedUBA success or deletion guarantee follows from the published ordinary-backdoor experiments.
+Official repository snapshot inspected by GitHub MCP: bboylyg/NAD@f17b71390f61fe24335728bfea53e4fe86ee450b.
+
+The user's pasted manuscript explicitly requires no image-class labels for its zero-knowledge auditing claim. Public true labels are therefore kept evaluator-only in the present primary method. All-output-index enumeration is model information, not knowledge of the attacker's particular target. Older foundation documents' suggested comparisons are historical context; they do not authorize treating a new adaptation as an established defense.

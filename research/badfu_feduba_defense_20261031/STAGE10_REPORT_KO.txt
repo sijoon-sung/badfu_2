@@ -1,0 +1,14 @@
+H10 실제 BadFU 공격 확장 완료·필요ASR실패. R01/P01/P04/D08/D15/D18/N02, 2026-10-31.
+가설은 큰정상삭제에서 통과한 동일H8/H9 recipe/공개선택규칙이 실제활성화도 억제한다는 것이었다. 명시case badfu.confirmed.s20261023.v1/purification_pilot, 한기존학습시드/유지자료재학습 전후이며FedEraser가아니다.
+각100Adamstep/256full-image query/고정public500/두후보alpha선택을마친뒤실제trigger9000장을열었다. raw학생과선택모델/hash/optimizer/RNG/모든step/selectiontrace/실제출력을보존했다. 실제target/trigger/ASR은fit에사용하지않았다.
+
+실제전체9000결과:
+clean_only raw9000/9000=100%; alpha.05선택후9000/9000=100%.
+query_transfer raw8979/9000=99.7666667%; alpha.059375선택후9000/9000=100%.
+두arm모두ASR<=10필요조건실패. 사전규칙대로same850후속학습과공격조건의추가clean/member추론은하지않았다. 해당미측정지표를성공/실패숫자로만들지않는다. 전체공동방어목표는미완료이며이유한프로필의실패를보존한다.
+독립검사에서100step/optimizer전파라미터step100/유한값/BNbuffer고정/34proxy선택경로/선택보간/hash/엄격로드/4ASR정수수가일치했다.새전체추론은재실행하지않았다. 원래H9큰정상조건긍정은이공격실패를대체하지않는다.
+
+평가정정과추가진단:
+기존MIA nonmember에학생학습public500이포함된구성오류는별도HELDOUT_REFERENCE_CORRECTION_PROTOCOL로정정했다.원래수치/모델/소스는변경하지않는다.큰정상H9은정정후에도통과했다. 실제test원ID와고정heldout을사용한8542 trigger분리에서도raw100/99.7775697%,선택100/100으로실패가유지됐다.
+학생은생성query에서교사를77.7344%따랐지만heldouttrigger에서는3.6057%만따랐다. Query의nativepost예측은[1,0,135,3,0,1,116,0,0,0]으로몇개출력에몰렸다. 이는일반query학습이일부이루어져도실제활성화행동으로전달되지않았음을보여준다. 단순alpha제약만의문제라고부를수없고, 원인을하나로확정하지도않는다.
+수정H11은동일예산의전출력class 대칭탐색과KL탐색을비교한다.실제target0을알려주지않고모든출력index를균등시도하며새로운큰정상조건부터검사한다.균등class탐색이모든triggerfamily를포괄했다는주장은하지않는다.

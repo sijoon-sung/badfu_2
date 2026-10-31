@@ -1,0 +1,16 @@
+삭제기억 감사 대조군 구성 정정 완료. 2026-10-31, R01/P01/P04/D08/D15/D18.
+오류: 기존파생학생의nonmember에그학생이학습한공개500 test원본이포함됐다. 원학습모델에서test였다는이유만으로파생정화알고리즘의미사용대조군이라고할수없다. 이를정정하고이전숫자는역사적기록으로보존한다.
+조치: nativepre/post,H1/H2/H5/H6세쌍 및H8/H9큰정상학생의모든기존all-reference수치를먼저재현했다. 이후고정heldout9500과bd_test원ID순서에대응하는8542개만nonmember로사용했다. 실제training삭제member850/9668은그대로다. Train/test IDnamespace를구분하여숫자가같은TRAIN ID를잘못제외하지않았다. Threshold .04/.02는바꾸지않았다.
+추가모델추론/학습없이기존feature/logit를사용했다. 독립combined tie-rank로440class AUC를검산했고보호모델/입력hash와old수치재현이통과했다.
+
+정정후true-label membership advantage:
+case                 nativepre  nativepost H5
+큰정상9668           .187832   .003335    .171865
+정상850              .395304   .005534    .386387
+공격cover850         .884786   .006000    .834895
+H5삭제누설실패라는판정은변하지않았다.
+H8큰정상raw학생 adv clean_only.003801/query.004091, 실제삭제gate는통과하지만기존CA효용실패는변하지않았다.
+H9큰정상선택학생 adv clean_only.003071/query.002138, 두arm모두원래CA·각class·정정삭제gate를통과했다. 유한membership감사통과이며형식적망각증명은아니다.
+
+별도fidelity진단에서H10의full9000와heldout8542ASR을같이재계산했다. raw100/99.7667→heldout100/99.7776, 선택100/100→heldout100/100으로실제공격실패가유지됐다. 원래사전ASR실패중단으로계산하지않은공격privacy/CA를새로만들지않았다.
+정정후에도공동방어는미완료다. 앞으로모든새후보는학습public500을제외한대조군으로부터실제삭제gate를계산한다. 기존보고서의전체test를미사용이라고한표현은파생학생에대해이보고서로대체한다.

@@ -1,0 +1,428 @@
+{
+  "state": "completed",
+  "query_reference": "actual saved CPU-FP32 teacher probabilities atT2",
+  "public_trigger_reference": "pinned GPU-FP32 features/FP64 head cache",
+  "nativepost_on_queries": {
+    "n": 256,
+    "teacher_student_agreement": 0.18359375,
+    "distillation_loss_T2": 27.736453511275336,
+    "teacher_class_counts": [
+      3,
+      0,
+      76,
+      43,
+      0,
+      100,
+      19,
+      0,
+      0,
+      15
+    ],
+    "student_class_counts": [
+      1,
+      0,
+      135,
+      3,
+      0,
+      1,
+      116,
+      0,
+      0,
+      0
+    ]
+  },
+  "arms": {
+    "clean_only": {
+      "raw": {
+        "publicfit": {
+          "n": 500,
+          "teacher_student_agreement": 0.946,
+          "distillation_loss_T2": 0.31559330711060446,
+          "teacher_class_counts": [
+            49,
+            45,
+            48,
+            65,
+            53,
+            45,
+            53,
+            34,
+            53,
+            55
+          ],
+          "student_class_counts": [
+            51,
+            46,
+            46,
+            56,
+            56,
+            49,
+            53,
+            32,
+            55,
+            56
+          ]
+        },
+        "generated": {
+          "n": 256,
+          "teacher_student_agreement": 0.25,
+          "distillation_loss_T2": 8.641200774742543,
+          "teacher_class_counts": [
+            3,
+            0,
+            76,
+            43,
+            0,
+            100,
+            19,
+            0,
+            0,
+            15
+          ],
+          "student_class_counts": [
+            11,
+            0,
+            159,
+            3,
+            0,
+            2,
+            78,
+            0,
+            0,
+            3
+          ]
+        },
+        "heldout_trigger": {
+          "n": 8542,
+          "teacher_student_agreement": 0.0341840318426598,
+          "distillation_loss_T2": 8.650474006673347,
+          "teacher_class_counts": [
+            292,
+            808,
+            846,
+            891,
+            882,
+            865,
+            1009,
+            936,
+            1004,
+            1009
+          ],
+          "student_class_counts": [
+            8542,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "full_ASR_pct": 100.0,
+        "full_target_n": 9000,
+        "heldout_ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "teacher_heldout_ASR_pct": 3.41840318426598,
+        "directional_risk_heldout": 0.9658159681573402,
+        "heldout_and_full_ASR_gate": false
+      },
+      "selected": {
+        "publicfit": {
+          "n": 500,
+          "teacher_student_agreement": 0.946,
+          "distillation_loss_T2": 0.29958604816917506,
+          "teacher_class_counts": [
+            49,
+            45,
+            48,
+            65,
+            53,
+            45,
+            53,
+            34,
+            53,
+            55
+          ],
+          "student_class_counts": [
+            46,
+            45,
+            49,
+            59,
+            53,
+            47,
+            53,
+            34,
+            57,
+            57
+          ]
+        },
+        "generated": {
+          "n": 256,
+          "teacher_student_agreement": 0.18359375,
+          "distillation_loss_T2": 26.480070547113186,
+          "teacher_class_counts": [
+            3,
+            0,
+            76,
+            43,
+            0,
+            100,
+            19,
+            0,
+            0,
+            15
+          ],
+          "student_class_counts": [
+            1,
+            0,
+            135,
+            3,
+            0,
+            1,
+            116,
+            0,
+            0,
+            0
+          ]
+        },
+        "heldout_trigger": {
+          "n": 8542,
+          "teacher_student_agreement": 0.0341840318426598,
+          "distillation_loss_T2": 19.196924462943855,
+          "teacher_class_counts": [
+            292,
+            808,
+            846,
+            891,
+            882,
+            865,
+            1009,
+            936,
+            1004,
+            1009
+          ],
+          "student_class_counts": [
+            8542,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "full_ASR_pct": 100.0,
+        "full_target_n": 9000,
+        "heldout_ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "teacher_heldout_ASR_pct": 3.41840318426598,
+        "directional_risk_heldout": 0.9658159681573402,
+        "heldout_and_full_ASR_gate": false
+      }
+    },
+    "query_transfer": {
+      "raw": {
+        "publicfit": {
+          "n": 500,
+          "teacher_student_agreement": 0.952,
+          "distillation_loss_T2": 0.36882449842135745,
+          "teacher_class_counts": [
+            49,
+            45,
+            48,
+            65,
+            53,
+            45,
+            53,
+            34,
+            53,
+            55
+          ],
+          "student_class_counts": [
+            47,
+            46,
+            46,
+            60,
+            61,
+            45,
+            51,
+            35,
+            53,
+            56
+          ]
+        },
+        "generated": {
+          "n": 256,
+          "teacher_student_agreement": 0.77734375,
+          "distillation_loss_T2": 1.3873721814999798,
+          "teacher_class_counts": [
+            3,
+            0,
+            76,
+            43,
+            0,
+            100,
+            19,
+            0,
+            0,
+            15
+          ],
+          "student_class_counts": [
+            0,
+            0,
+            126,
+            29,
+            0,
+            95,
+            1,
+            0,
+            0,
+            5
+          ]
+        },
+        "heldout_trigger": {
+          "n": 8542,
+          "teacher_student_agreement": 0.03605712947787403,
+          "distillation_loss_T2": 10.026884127298041,
+          "teacher_class_counts": [
+            292,
+            808,
+            846,
+            891,
+            882,
+            865,
+            1009,
+            936,
+            1004,
+            1009
+          ],
+          "student_class_counts": [
+            8523,
+            0,
+            0,
+            1,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "full_ASR_pct": 99.76666666666667,
+        "full_target_n": 8979,
+        "heldout_ASR_pct": 99.77756965581831,
+        "heldout_target_n": 8523,
+        "teacher_heldout_ASR_pct": 3.41840318426598,
+        "directional_risk_heldout": 0.9635916647155233,
+        "heldout_and_full_ASR_gate": false
+      },
+      "selected": {
+        "publicfit": {
+          "n": 500,
+          "teacher_student_agreement": 0.934,
+          "distillation_loss_T2": 0.3104014528229443,
+          "teacher_class_counts": [
+            49,
+            45,
+            48,
+            65,
+            53,
+            45,
+            53,
+            34,
+            53,
+            55
+          ],
+          "student_class_counts": [
+            46,
+            45,
+            48,
+            60,
+            57,
+            45,
+            52,
+            33,
+            58,
+            56
+          ]
+        },
+        "generated": {
+          "n": 256,
+          "teacher_student_agreement": 0.19921875,
+          "distillation_loss_T2": 19.648580181058957,
+          "teacher_class_counts": [
+            3,
+            0,
+            76,
+            43,
+            0,
+            100,
+            19,
+            0,
+            0,
+            15
+          ],
+          "student_class_counts": [
+            1,
+            0,
+            144,
+            4,
+            0,
+            2,
+            105,
+            0,
+            0,
+            0
+          ]
+        },
+        "heldout_trigger": {
+          "n": 8542,
+          "teacher_student_agreement": 0.0341840318426598,
+          "distillation_loss_T2": 19.181884008345325,
+          "teacher_class_counts": [
+            292,
+            808,
+            846,
+            891,
+            882,
+            865,
+            1009,
+            936,
+            1004,
+            1009
+          ],
+          "student_class_counts": [
+            8542,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "full_ASR_pct": 100.0,
+        "full_target_n": 9000,
+        "heldout_ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "teacher_heldout_ASR_pct": 3.41840318426598,
+        "directional_risk_heldout": 0.9658159681573402,
+        "heldout_and_full_ASR_gate": false
+      }
+    }
+  },
+  "heldout_trigger_n": 8542,
+  "new_model_forward_images": 1280,
+  "new_training": false,
+  "finished_unix": 1793447444.9041352
+}

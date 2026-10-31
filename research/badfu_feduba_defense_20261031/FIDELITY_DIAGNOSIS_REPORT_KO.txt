@@ -1,0 +1,7 @@
+실제H10실패후교사전달충실도진단완료. R01/P01/P04/D08/D15/D18/N02, 2026-10-31.
+유한1280 synthetic입력추론(256×nativePost/4학생)만추가했다. 전체9000재추론/새학습없음. public/trigger교사는기존H3GPU특징+H5FP64head, bank교사는실제저장된CPUFP32확률이며수치profile차이를명시한다.
+query_transfer raw: publicfit 교사일치95.2%, synthetic77.7344%, heldouttrigger3.6057%.
+선택후: public93.4%, synthetic19.9219%, heldouttrigger3.4184%.
+nativePost의bank교사일치18.3594%에서raw학생77.7344%로개선되어일부합성입력학습은이루어졌다. 그러나실제triggerASRraw99.7776%/selected100%로기능전달실패다. 최종alpha규칙만의원인이나모든지식증류불가능성으로확대하지않는다.
+banknativePost classcounts[1,0,135,3,0,1,116,0,0,0], teacher[3,0,76,43,0,100,19,0,0,15]. 다수출력class가기존query에거의등장하지않았다. 이관측은다음전출력균등시도의근거이며실제공격target을특별취급하는허가가아니다.
+동일분포에서student의target출력사건은teacher의target출력또는student-target/teacher-nontarget사건에포함된다는기본확률상계도수치로확인했다. public/synthetic분포의충실도를미지trigger분포에그대로대입할수없으며, 이항등식을새범용증명으로광고하지않는다. 큰정상반례/삭제품질/실제공격을계속별도검사한다.
