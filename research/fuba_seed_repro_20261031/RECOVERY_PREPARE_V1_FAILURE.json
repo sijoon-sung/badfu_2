@@ -1,0 +1,6 @@
+{
+  "state": "preserved_before_training_and_copy",
+  "error": "A missing named ScheduledTask returns PowerShell exit1 even with SilentlyContinue; check_output correctly stopped preparation",
+  "correction": "V2 queries all tasks then filters exact name; no state/task/input modified by V1 except its exclusive once marker",
+  "numeric_source_unchanged": true
+}

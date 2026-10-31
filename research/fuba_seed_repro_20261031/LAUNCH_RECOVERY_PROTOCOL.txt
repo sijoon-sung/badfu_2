@@ -1,0 +1,6 @@
+가설: 수치 학습 오류 없이 사라진 첫 launch를 보존하고, 과거 장시간 실행에 사용했던 직접 Python 예약 작업으로 같은 미커밋 첫 역할을 복구하면 고정 seed 연구를 계속할 수 있다. R02/D08/D15/N02.
+관측된 사실: parent11688/controller8400/trainer15836이 첫seed5129832의1R/client0/benign3epoch/141batch 뒤 모두 없어졌고 예약작업도 없다. Python exception/FAILURE/완료phase/커밋round는 없다. TaskScheduler Operational log는비활성이라종료주체/원인은미확정이다. wrapper가원인이라고단정하지않는다. 첫.ps1직접호출의execution-policy차단은별도기록이며machine policy는바꾸지않았다.
+복구 전에 원래task부재와실제세PID부재,run/MANIFEST와.pt단계부재,정확한3개epoch로그만있음을검사한다. 원래STUDY_STATE/ONCE와원래seed전체파일의목록/hash/원본상태/로그를incidents/first_launch_terminated에보존하며기존seed폴더를지우거나옮기지않는다.
+완료된trainer/phase/seed를반복하지않는다. 중단역할은optimizer체크포인트가없으므로epoch4부터연속했다고주장할수없다. 같은기존initial.pt/SPLIT/수치source/profile/READY를seed_5129832_recovery1으로동일hash복사하고미커밋첫역할을동일원조건에서처음부터재계산한다. 이중단은추가독립seed/성능실패완료행으로세지않고study10행의같은첫새seed에연결한다. GPU비트재현은주장하지않는다. 다른8개prepared root는그대로쓴다.
+새parent는원controller의관리경로/once/log/archive경로만별도복구파일로바꾸며동일수치child source와성능gate/100R/KD10/검증/전달정책을유지한다. 기존장시간작업처럼직접Python action/Hidden/S4U/Limited/유한72시간/no-trigger/no-retry/no-other-app-closure로새예약작업하나만등록한다. 원래launch와복구source/hash는모두PR에고정한다.
+실제parent/controller/trainer PID와epoch가SSH호출종료후에도살아있고첫50epoch모델저장이끝나는지확인한다. 같은작업소실이반복되면반복launch하지않고운영원인을추가진단한다. source/hash/data/nonfinite/runtime실패는보존하고원조건복구이며중간성능에따른튜닝은없다. 이운영복구는알고리즘성능/논문재현/큰정상nonIID 탐지의증거가아니다. D08/D15는미해결이다.

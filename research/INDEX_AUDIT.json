@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a887efc2c1945de3ea24e70b8babd2ccf67d2cbe911d912e3403bf0f8da936ec",
+  "registry_sha256": "ebb7fe8a510ecae1cff194aec0804b5252565bede3e608e0f181c202b7b1d36e",
   "cards": 28,
-  "unique_source_documents": 307,
+  "unique_source_documents": 311,
   "top_level_folders": 107,
   "folders_linked_to_cards": 59,
   "source_sha256": {
@@ -230,6 +230,10 @@
     "research/fuba_seed_repro_20261031/STORAGE_CONTRACT.json": "b0600850bb76359fe97361b32bfb33eda0565b07508c241465d567768c263257",
     "research/fuba_seed_repro_20261031/PREPARATION_RECEIPT.json": "9392c29d439c8cf6efcd2eee204d7bb1ce2cc5cfc5e4e089cbae43d541b8c337",
     "research/fuba_seed_repro_20261031/REPORT_KO.txt": "7c57c395f38bb2700d34ef1d8bb161a7e94806d2c7d34ee580caf3a141d85155",
+    "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt": "3aea66183db5d1e6983afde84fe1b13eb57a892505db558164d3f815fa533f99",
+    "research/fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json": "da887ecd0a38f178894e78cc2252001b9cd85fd8b0339b496d8ab2adc97e5318",
+    "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json": "91709a73a8d8b75c8685da8f9c4b34f4aaaed00a7b501aa1ca9d2929722fb81e",
+    "research/fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json": "1c9d1083d1cc48cdc887ca1a346b8a2b3daa30a60ef16883144e7147c289c8fd",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -878,6 +882,7 @@
         "R02"
       ],
       "top_level_documents": [
+        "research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt",
         "research/fuba_seed_repro_20261031/MONITOR_PROTOCOL.txt",
         "research/fuba_seed_repro_20261031/PREPARATION_AUDIT.json",
         "research/fuba_seed_repro_20261031/PROTOCOL.txt",

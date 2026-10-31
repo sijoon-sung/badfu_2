@@ -226,3 +226,7 @@
 | [STORAGE_CONTRACT.json](../../../research/fuba_seed_repro_20261031/STORAGE_CONTRACT.json) | `research/fuba_seed_repro_20261031` |
 | [PREPARATION_RECEIPT.json](../../../research/fuba_seed_repro_20261031/PREPARATION_RECEIPT.json) | `research/fuba_seed_repro_20261031` |
 | [REPORT_KO.txt](../../../research/fuba_seed_repro_20261031/REPORT_KO.txt) | `research/fuba_seed_repro_20261031` |
+| [LAUNCH_RECOVERY_PROTOCOL.txt](../../../research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_PROTOCOL.txt) | `research/fuba_seed_repro_20261031` |
+| [PRELAUNCH_INCIDENT.json](../../../research/fuba_seed_repro_20261031/PRELAUNCH_INCIDENT.json) | `research/fuba_seed_repro_20261031` |
+| [LAUNCH_RECOVERY_READY.json](../../../research/fuba_seed_repro_20261031/LAUNCH_RECOVERY_READY.json) | `research/fuba_seed_repro_20261031` |
+| [RECOVERY_PREPARE_V1_FAILURE.json](../../../research/fuba_seed_repro_20261031/RECOVERY_PREPARE_V1_FAILURE.json) | `research/fuba_seed_repro_20261031` |
