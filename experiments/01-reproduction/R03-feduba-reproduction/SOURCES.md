@@ -68,3 +68,6 @@
 | [SSS_ROUNDOFF_DIAGNOSIS.json](../../../research/feduba_paper_implementation_20261031/SSS_ROUNDOFF_DIAGNOSIS.json) | `research/feduba_paper_implementation_20261031` |
 | [FU_ENGINE_CPU_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [FU_ENGINE_CPU_FREEZE.json](../../../research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_EXECUTION_CONTRACT.txt](../../../research/feduba_paper_implementation_20261031/FU_EXECUTION_CONTRACT.txt) | `research/feduba_paper_implementation_20261031` |
+| [FU_SOURCE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/FU_SOURCE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [FU_ENGINE_CPU_RESULT.json](../../../research/feduba_paper_implementation_20261031/FU_ENGINE_CPU_RESULT.json) | `research/feduba_paper_implementation_20261031` |
