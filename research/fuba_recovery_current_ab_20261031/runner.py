@@ -83,7 +83,7 @@ def main():
         def log(arm):
             def emit(**value):
                 record = {'arm': arm, **value}; logs.append(record)
-                with (ROOT / 'epochs.jsonl').open('a', encoding='utf-8') as f:
+                with (ROOT / 'epochs.jsonl').open('a', encoding='utf-8', newline='\n') as f:
                     f.write(json.dumps(record, allow_nan=False) + '\n')
             return emit
         def save(name, model, optimizer, loader_rng):
