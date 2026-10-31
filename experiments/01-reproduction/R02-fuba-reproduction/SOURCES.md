@@ -206,3 +206,10 @@
 | [PROTOCOL.txt](../../../research/fuba_defender_recovery_20261031/PROTOCOL.txt) | `research/fuba_defender_recovery_20261031` |
 | [PROFILE.json](../../../research/fuba_defender_recovery_20261031/PROFILE.json) | `research/fuba_defender_recovery_20261031` |
 | [FREEZE.json](../../../research/fuba_defender_recovery_20261031/FREEZE.json) | `research/fuba_defender_recovery_20261031` |
+| [CONTROL.json](../../../research/fuba_defender_recovery_20261031/CONTROL.json) | `research/fuba_defender_recovery_20261031` |
+| [FAILURE.json](../../../research/fuba_defender_recovery_20261031/FAILURE.json) | `research/fuba_defender_recovery_20261031` |
+| [NUMERICAL_TRIAGE.json](../../../research/fuba_defender_recovery_20261031/NUMERICAL_TRIAGE.json) | `research/fuba_defender_recovery_20261031` |
+| [REPORT_KO.txt](../../../research/fuba_defender_recovery_20261031/REPORT_KO.txt) | `research/fuba_defender_recovery_20261031` |
+| [PROTOCOL.txt](../../../research/fuba_recovery_current_ab_20261031/PROTOCOL.txt) | `research/fuba_recovery_current_ab_20261031` |
+| [PROFILE.json](../../../research/fuba_recovery_current_ab_20261031/PROFILE.json) | `research/fuba_recovery_current_ab_20261031` |
+| [FREEZE.json](../../../research/fuba_recovery_current_ab_20261031/FREEZE.json) | `research/fuba_recovery_current_ab_20261031` |

@@ -1,0 +1,4 @@
+원래tensor재현 gate 실패 — R02/D08/D15/N02, 2026-10-31
+A SGD recovery는실제50epoch/2150batch를완료했지만원99/client4 phase4의tensorbit재현조건을실패했다. 등록조건대로중단했고Adam B는훈련되지않았다. B의성능가설을기각하거나검증한결과가아니다.
+A model/optimizer/RNG·50epoch로그와CONTROL/FAILURE를양쪽보존했다. read-only수치무결성진단에서optimizer/loader RNG/CPU RNG/CUDA RNG가같았고최대원소차이는8.940696716308594e-08이었다. 수치차이의특정kernel원인을확정하지않고공격점수로쓰지않는다.
+이strictbit실패를통과로바꾸거나A를다시훈련하지않는다. 별도새질문은원데이터경로의입력bit일치및old/new A 행동차이1%p이내를먼저검사한후에만,완료된current A50epoch를재사용해아직미실행인B50epoch를최초실행하는현재runtime비교다. 기존실패와그한계를그대로유지한다. 전체100R 또는Adam채택은여기서정당화되지않는다.
