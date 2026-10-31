@@ -1165,6 +1165,8 @@
 - [research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/COMPLETED.json](badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/COMPLETED.json)
 - [research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json](badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/RAW_MODELS_BEFORE_SELECTION.json)
 - [research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json](badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/SELECTION_BEFORE_PRIVATE_EVALUATION.json)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_PROTOCOL.txt](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_PROTOCOL.txt)
+- [research/badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_FREEZE.json](badfu_feduba_defense_20261031/PAIRED_TEACHER_PORT_FREEZE.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 

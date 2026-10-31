@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-31T15:00:46.972914+00:00",
+  "files": {
+    "paired_teacher.py": "68822d48e36335893a4fff476e33bdc9ea2aa95ef0b6cfd2009414692dcf9ca5",
+    "verify_paired_teacher_port.py": "1a320b2c74398fc23aea6ff1b0bf1d74363033649ba008f397b916291b72ff81",
+    "run_paired_teacher_port.py": "1ecbc98668a80044aeecdf2deadce1402c10042a0f25b83a71c70019f30f6f87",
+    "PAIRED_TEACHER_PORT_PROTOCOL.txt": "be3d8b48c395ac63ebd82034683f5c3fdf94a98f4c255229b7a2ed8f9230b0a7",
+    "endpoint_interface.py": "4d712d419ca004a2bcfefed8ddeb0f14b330d0c41075dddf84e2476b7b1f8558",
+    "sourcepair_pilot.py": "2824595d6a5e55486e2c16efd4b30c12312827db023f417899da56f069d35ff4",
+    "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
+    "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
+    "STAGE05_FREEZE.json": "4d78bc448658bbb5ef110df3b730e720c870bd3412bf2818d1fe8fb91980342b",
+    "INPUT_MANIFEST.json": "83ada7c5231e95b3c58f3624bb4f401361673c9d682842d759864277e42f24d0",
+    "PROXY_SPLIT.json": "f93073799b5e1fb920459dd6473d36bc8fa7c4d3a8dcee356794a96ba6fcc341",
+    "stage05/CANDIDATES_BEFORE_EVALUATION.json": "f73a37a35943cb6bd1553c619cf508b8731c315efd93db57534bc70a635add7c",
+    "stage05/FIT_COMPLETED.json": "a9f874187373aa640141b7ef81b1b87892c71bafefdbb3fe8f04b0e06a5c3250",
+    "ENDPOINT_INTERFACE_FREEZE.json": "9e7e35c63baf6432d5554f5efb86f4df9bf94419b75435dfd1b5150c87ed8d8d",
+    "endpoint_interface_contract/RESULT.json": "60d7b9fcb541d8a5d1277722a61ec6fd0e1b4511dfd8605e58e0513dd8cff56e",
+    "endpoint_interface_contract/COMPLETED.json": "25f1f921ea7893182a62ffecb7b45eca12207b98980dd226999c911639f005bb"
+  },
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "actual_FedUBA_checkpoint_selected": false,
+  "new_model_inference": false
+}
