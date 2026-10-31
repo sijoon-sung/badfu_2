@@ -34,3 +34,7 @@
 | [CLEAN_FL_READY.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_READY.json) | `research/feduba_paper_implementation_20261031` |
 | [FOUNDATION_ONCE.json](../../../research/feduba_paper_implementation_20261031/FOUNDATION_ONCE.json) | `research/feduba_paper_implementation_20261031` |
 | [CLEAN_FL_STARTED.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_STARTED.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_PROFILE.json](../../../research/feduba_paper_implementation_20261031/ASSET_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_FREEZE.json](../../../research/feduba_paper_implementation_20261031/ASSET_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [EXTERNAL_SOURCE_METADATA.json](../../../research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json) | `research/feduba_paper_implementation_20261031` |

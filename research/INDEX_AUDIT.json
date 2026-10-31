@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a0aec0064cb1c62e86f4cab250d5946b62aa0cc7837b2ebf80a582a2dfb75d48",
+  "registry_sha256": "940728ba50722ce604f3b68f6357158ed54d56cd9333af097bffe1a29394fdda",
   "cards": 28,
-  "unique_source_documents": 349,
+  "unique_source_documents": 353,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -282,6 +282,10 @@
     "research/feduba_paper_implementation_20261031/CLEAN_FL_READY.json": "8126d795438f3c87942258c5f06e34284eb83610e8bef418673273d8255df498",
     "research/feduba_paper_implementation_20261031/FOUNDATION_ONCE.json": "af2a3060b2cbf06f90f8e7e0e9b2989a71a66f8a68baea6cd8b0b41270ab0eb5",
     "research/feduba_paper_implementation_20261031/CLEAN_FL_STARTED.json": "988e8606384ac65dd36ea96dcddd50c83b379fec1ded971fa41eb490dc05b0d1",
+    "research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt": "38cb0128dfd941916b8fd825fd1bc136fe54be10e12fdaa03414ef1b9ea125f4",
+    "research/feduba_paper_implementation_20261031/ASSET_PROFILE.json": "62a2f26b4aa1757a3f39428622cb852d4d2c0b132d45eb708885a516c1286e9f",
+    "research/feduba_paper_implementation_20261031/ASSET_FREEZE.json": "90cd56c1b02e234a4bc4986e3c56f79172621ed6da13569c89cf88ae867d6489",
+    "research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json": "d0e26393370a75277a19819ed318f1ba128e5d063502518170af6274bb9cd96e",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -669,6 +673,7 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_paper_implementation_20261031/ASSET_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/CLEAN_FL_PROTOCOL.txt",
         "research/feduba_paper_implementation_20261031/CORE_CPU_RESULT.json",
         "research/feduba_paper_implementation_20261031/GPU_PREFLIGHT_PROTOCOL.txt",
