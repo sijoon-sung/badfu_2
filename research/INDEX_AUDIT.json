@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "f706b2eecd2cd13ebbb761a098b9902ce7c3f47ea62bc5cd914d5f52c14c91cf",
+  "registry_sha256": "301b9bdd46ec4a131f0ce3da4114b54a2e162e2ad3589a0c5df3849253a6af63",
   "cards": 29,
-  "unique_source_documents": 422,
+  "unique_source_documents": 427,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -429,7 +429,12 @@
     "research/badfu_feduba_defense_20261031/STAGE11_PROTOCOL.txt": "797b4b4081a4de96ba5e73cf2b45a0c0059c6cb350cc0af9a7e983c86017a602",
     "research/badfu_feduba_defense_20261031/STAGE11_FREEZE.json": "e9d0f063ba0dd8cfe38c790eb433c2e9932e9e18dbb867781bddde75f28bf0e0",
     "research/badfu_feduba_defense_20261031/STAGE11_OBJECTIVE_VERIFICATION.json": "705274cf6afca71f45adf9d4a9ec5579c2b1ba434d7d44dc50759758f78b034d",
-    "research/badfu_feduba_defense_20261031/STAGE11_OBJECTIVE_RECEIPT_CORRECTION.txt": "2b0e69b17f4076e070f2a2f8de42cbba9575e3e7b0df7da7b83c9a620613df46"
+    "research/badfu_feduba_defense_20261031/STAGE11_OBJECTIVE_RECEIPT_CORRECTION.txt": "2b0e69b17f4076e070f2a2f8de42cbba9575e3e7b0df7da7b83c9a620613df46",
+    "research/badfu_feduba_defense_20261031/STAGE11_LAUNCH.json": "c559ec155429955c88b3fe29ddd28cab3a3dad33f1912fc5554b649a7a5e88aa",
+    "research/badfu_feduba_defense_20261031/stage11/STARTED.json": "fe0c0986f06a30a9ed918605e24be0bc92a44f38cfec1fad4980a069f9b4e4ea",
+    "research/badfu_feduba_defense_20261031/stage11/benign_big19336/SOURCE_INPUTS.json": "013aa6ea41369de176cc6a7be02f00213d658a9f3e0fc8dbe0bbcc56fab43765",
+    "research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_PROTOCOL.txt": "5f81e72cee745eaef026a7bfded44d3ae4e481649202b91fcc4fa332429d2c6a",
+    "research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_FREEZE.json": "0c92f5cb8dae9b3d4990a7f1ec3efd92a832587b637d6cf31f2f310919e81dea"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -607,6 +612,7 @@
         "research/badfu_feduba_defense_20261031/STAGE10_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STAGE10_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/STAGE11_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/STEP_DIAGNOSIS_REPORT.txt"
       ],

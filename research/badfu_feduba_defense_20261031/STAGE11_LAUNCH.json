@@ -1,0 +1,23 @@
+{
+  "state": "observed_running",
+  "observed_utc": "2026-10-31T12:22:59.321287+00:00",
+  "task": "Codex-BadFU-FedUBA-defense-allclass-20261031",
+  "pid": 21236,
+  "CPU": {
+    "NumberOfLogicalProcessors": 20,
+    "LoadPercentage": 0
+  },
+  "source_freeze_sha256": "e9d0f063ba0dd8cfe38c790eb433c2e9932e9e18dbb867781bddde75f28bf0e0",
+  "frozen_files_checked": 34,
+  "case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "large_benign_teacher_matches_original_H5": true,
+  "actual_query_progress_observed": {
+    "arm": "matched_kl",
+    "batch": 3,
+    "total": 30
+  },
+  "performance_result": null,
+  "training_source_commit": "a986d8f",
+  "PR_comment": "https://github.com/sijoon-sung/badfu_2/pull/1#issuecomment-6543288362"
+}
