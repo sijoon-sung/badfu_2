@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "85dba1d5fecc5718391ab3f497e826ab707995cfa3d8ee66c0fd425870f18ecc",
+  "registry_sha256": "dcb75ed728d11a2e54025d0b9e03ac867c28e510dab4985237153406e3395caf",
   "cards": 29,
-  "unique_source_documents": 430,
+  "unique_source_documents": 432,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -437,7 +437,9 @@
     "research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_FREEZE.json": "0c92f5cb8dae9b3d4990a7f1ec3efd92a832587b637d6cf31f2f310919e81dea",
     "research/badfu_feduba_defense_20261031/DEVELOPMENT_MODEL_KO.txt": "43ca51aae10221522452ffb504ce861b5346150e6e187c5009605a1817865157",
     "research/badfu_feduba_defense_20261031/STAGE11_GENERATION_OBSERVATION.json": "899a5aa7fb13fdcf80c890fd12b41128e62e2f5a37346ef61334b3c668d43765",
-    "research/badfu_feduba_defense_20261031/stage11/benign_big19336/QUERYBANKS_BEFORE_TRAINING.json": "7ec9f9a84b90a0aa53e6788ca2fee457d05950d74775621717bb4e60f0f99505"
+    "research/badfu_feduba_defense_20261031/stage11/benign_big19336/QUERYBANKS_BEFORE_TRAINING.json": "7ec9f9a84b90a0aa53e6788ca2fee457d05950d74775621717bb4e60f0f99505",
+    "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt": "b06844507a4b4f26e55b77f9b83f5a3b494f12958a98d43d2430f05c14ff56a3",
+    "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_FREEZE.json": "9e7e35c63baf6432d5554f5efb86f4df9bf94419b75435dfd1b5150c87ed8d8d"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -586,6 +588,7 @@
       ],
       "top_level_documents": [
         "research/badfu_feduba_defense_20261031/COMPLETED.json",
+        "research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/FIDELITY_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/FIDELITY_DIAGNOSIS_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/HELDOUT_REFERENCE_CORRECTION_PROTOCOL.txt",

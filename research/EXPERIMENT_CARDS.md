@@ -1080,6 +1080,8 @@
 - [research/badfu_feduba_defense_20261031/DEVELOPMENT_MODEL_KO.txt](badfu_feduba_defense_20261031/DEVELOPMENT_MODEL_KO.txt)
 - [research/badfu_feduba_defense_20261031/STAGE11_GENERATION_OBSERVATION.json](badfu_feduba_defense_20261031/STAGE11_GENERATION_OBSERVATION.json)
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/QUERYBANKS_BEFORE_TRAINING.json](badfu_feduba_defense_20261031/stage11/benign_big19336/QUERYBANKS_BEFORE_TRAINING.json)
+- [research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt](badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_PROTOCOL.txt)
+- [research/badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_FREEZE.json](badfu_feduba_defense_20261031/ENDPOINT_INTERFACE_FREEZE.json)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
