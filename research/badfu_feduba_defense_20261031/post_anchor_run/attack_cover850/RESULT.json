@@ -1,0 +1,143 @@
+{
+  "state": "failed_necessary_attack_behavior",
+  "cases": {},
+  "selection_sha256": "73ba05d7e4124cec3aa9ac314c1d25557c518251d8a3fddbef6dc4dcb9b44ca0",
+  "formal_deletion_certificate": false,
+  "paired_native_clean_reference": {
+    "CA_pct": 90.3301334582065,
+    "class_CA_pct": [
+      null,
+      96.33507853403141,
+      86.43533123028391,
+      79.14893617021276,
+      89.92576882290561,
+      82.73684210526315,
+      94.9367088607595,
+      92.67285861713106,
+      96.07635206786851,
+      94.59172852598091
+    ],
+    "n": 8542,
+    "profile": "sealed_H3_GPU_features_FP64_head_original_Post_paired_IDs_evaluator_only"
+  },
+  "all_ASR": {
+    "teacher_query": {
+      "raw": {
+        "target_n": 8824,
+        "n": 9000,
+        "ASR_pct": 98.04444444444445,
+        "heldout_target_n": 8384,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 98.15031608522594,
+        "original_label_correct_n": 166,
+        "original_label_CA_pct": 1.8444444444444443,
+        "heldout_original_label_correct_n": 150,
+        "heldout_original_label_CA_pct": 1.756029033013346,
+        "heldout_original_class_CA_pct": [
+          null,
+          0.7329842931937173,
+          0.0,
+          0.2127659574468085,
+          0.0,
+          5.263157894736842,
+          8.438818565400844,
+          0.0,
+          0.2120890774125133,
+          0.9544008483563097
+        ],
+        "original_label_drop_from_paired_clean_pp": 88.57410442519316,
+        "worst_original_class_drop_from_paired_clean_pp": 95.864262990456,
+        "original_label_robustness_gate": false,
+        "reused_logits_from": null
+      },
+      "selected": {
+        "target_n": 9000,
+        "n": 9000,
+        "ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 100.0,
+        "original_label_correct_n": 0,
+        "original_label_CA_pct": 0.0,
+        "heldout_original_label_correct_n": 0,
+        "heldout_original_label_CA_pct": 0.0,
+        "heldout_original_class_CA_pct": [
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "original_label_drop_from_paired_clean_pp": 90.3301334582065,
+        "worst_original_class_drop_from_paired_clean_pp": 96.33507853403141,
+        "original_label_robustness_gate": false,
+        "reused_logits_from": null
+      }
+    },
+    "post_anchor": {
+      "raw": {
+        "target_n": 8749,
+        "n": 9000,
+        "ASR_pct": 97.21111111111111,
+        "heldout_target_n": 8316,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 97.35424959025988,
+        "original_label_correct_n": 213,
+        "original_label_CA_pct": 2.3666666666666667,
+        "heldout_original_label_correct_n": 191,
+        "heldout_original_label_CA_pct": 2.236010302036994,
+        "heldout_original_class_CA_pct": [
+          null,
+          0.8376963350785341,
+          0.0,
+          1.702127659574468,
+          0.0,
+          8.526315789473685,
+          6.645569620253164,
+          0.30959752321981426,
+          0.4241781548250266,
+          1.6967126193001063
+        ],
+        "original_label_drop_from_paired_clean_pp": 88.09412315616952,
+        "worst_original_class_drop_from_paired_clean_pp": 95.65217391304348,
+        "original_label_robustness_gate": false,
+        "reused_logits_from": null
+      },
+      "selected": {
+        "target_n": 9000,
+        "n": 9000,
+        "ASR_pct": 100.0,
+        "heldout_target_n": 8542,
+        "heldout_n": 8542,
+        "heldout_ASR_pct": 100.0,
+        "original_label_correct_n": 0,
+        "original_label_CA_pct": 0.0,
+        "heldout_original_label_correct_n": 0,
+        "heldout_original_label_CA_pct": 0.0,
+        "heldout_original_class_CA_pct": [
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "original_label_drop_from_paired_clean_pp": 90.3301334582065,
+        "worst_original_class_drop_from_paired_clean_pp": 96.33507853403141,
+        "original_label_robustness_gate": false,
+        "reused_logits_from": null
+      }
+    }
+  },
+  "extension_permitted": false,
+  "clean_member_audits": "skipped_by_preregistered_attack_behavior_stop"
+}

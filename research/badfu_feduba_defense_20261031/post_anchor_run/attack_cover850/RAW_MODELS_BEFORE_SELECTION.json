@@ -1,0 +1,14 @@
+{
+  "teacher_query": {
+    "path": "teacher_query_raw.pt",
+    "sha256": "6a15e0aa8b605493f39a0a31bf1b919c8f173ea4d7e757b6cd27f4517ccc9b11",
+    "steps": 100,
+    "identity_fallback": false
+  },
+  "post_anchor": {
+    "path": "post_anchor_raw.pt",
+    "sha256": "080e6ad927730af454226953e8c71b0c89870bd543662539173163bdf5758cd0",
+    "steps": 100,
+    "identity_fallback": false
+  }
+}

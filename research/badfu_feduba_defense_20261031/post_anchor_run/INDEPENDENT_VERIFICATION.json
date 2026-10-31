@@ -1,0 +1,151 @@
+{
+  "state": "passed",
+  "cases": {
+    "benign_big19336": {
+      "state": "completed",
+      "arms": {
+        "teacher_query": {
+          "steps": 100,
+          "alpha": 0.1328125,
+          "policy_points": 17,
+          "anchor_probability_max_abs_error": 2.6066317027062524e-07,
+          "first_query_loss_abs_error": 7.362755773954177e-07,
+          "identity": false,
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        },
+        "post_anchor": {
+          "steps": 100,
+          "alpha": 0.1265625,
+          "policy_points": 17,
+          "anchor_probability_max_abs_error": 2.6066317027062524e-07,
+          "first_query_loss_abs_error": 5.604733921416027e-07,
+          "identity": false,
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        }
+      },
+      "source_valid_n": 74,
+      "case_receipt_sha256": "9ffaf5646fca20631e4154555c4bc739a816ec8a525900ed61a08c09e76298bd"
+    },
+    "attack_cover850": {
+      "state": "failed_necessary_attack_behavior",
+      "arms": {
+        "teacher_query": {
+          "steps": 100,
+          "alpha": 0.0484375,
+          "policy_points": 17,
+          "anchor_probability_max_abs_error": 2.1089062496315591e-07,
+          "first_query_loss_abs_error": 1.3708452328842213e-06,
+          "identity": false,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 8824,
+              "n": 9000,
+              "heldout_target_n": 8384,
+              "heldout_n": 8542,
+              "original_label_correct_n": 166,
+              "heldout_original_label_correct_n": 150,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.7329842931937173,
+                0.0,
+                0.2127659574468085,
+                0.0,
+                5.263157894736842,
+                8.438818565400844,
+                0.0,
+                0.2120890774125133,
+                0.9544008483563097
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "post_anchor": {
+          "steps": 100,
+          "alpha": 0.07500000000000001,
+          "policy_points": 17,
+          "anchor_probability_max_abs_error": 2.1089062496315591e-07,
+          "first_query_loss_abs_error": 3.478294452463615e-07,
+          "identity": false,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 8749,
+              "n": 9000,
+              "heldout_target_n": 8316,
+              "heldout_n": 8542,
+              "original_label_correct_n": 213,
+              "heldout_original_label_correct_n": 191,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.8376963350785341,
+                0.0,
+                1.702127659574468,
+                0.0,
+                8.526315789473685,
+                6.645569620253164,
+                0.30959752321981426,
+                0.4241781548250266,
+                1.6967126193001063
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "source_valid_n": 78,
+      "case_receipt_sha256": "18b6a608d335315c7356e1b33a0121e7a5f57456987c5f93669c25f6f2d87a09"
+    }
+  },
+  "fresh_model_inference": false,
+  "all_gradients_recomputed": false,
+  "scope": "finished_pipeline",
+  "full_objective_achieved": false,
+  "FedUBA_evaluated": false,
+  "verifier_sha256": "c8734539e55f233f09ea79ec33cd7e0a31bd62b01aa2f7117874ae9c91bca23f",
+  "verification_freeze_sha256": "3df9c5bbc1768279d68ed318c72c0b9dedfb7972aab8b9ffb1a90d834d34cc9c",
+  "root_result_sha256": "e6088cac35c0169bb58f224d700f7434b70d33162aeb4c41c510d93380907942"
+}
