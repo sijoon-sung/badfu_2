@@ -1,0 +1,9 @@
+FedUBA 적용을 위한 입력/특징 인터페이스 계약 완료. R01/R03/P04/N02/D08/D15, 2026-10-31.
+정식 공격 모델을 대체하지 않는 작은 구현 확인이다. 별도 채팅이 사용 중인 model_reference.py의 고정 SHA57d92398...와 로컬/DISLAB 동일성을 확인하고, 그 파일을 읽기 전용으로 import했다. 이는 Narcissus에서 명시 회복한 모델 정의이며 FedUBA 저자 누락 파일의 유일한 원본으로 인증된 것은 아니다.
+새 무작위 초기화 ResNet18과 합성32x32 이미지2장만 사용했다. 실제 학습된 FedUBA 모델/공격/FU/ASR은 평가하지 않았고 다른 채팅의 소스·실행을 바꾸지 않았다.
+
+실제 DISLAB CPU2 계약 결과:
+raw[0,1]→FedUBA 선언[-1,1] 전처리의 직접 forward와 공용 인터페이스 logits가 정확히 일치했다. 추출한512특징을 실제 linear head에 넣은 출력도 정확히 일치했다. 입력 gradient가 finite이며 직접 경로와 정확히 같았고 모델 상태/BN buffer는 전부 보존됐다. hook도 제거됐다. BadFU와 FedUBA의 선언 전처리가 알려진 끝점에서 각각 맞는지 검사했다.
+잘못된 head 경로,201-class STG surrogate, uint8 입력, 범위 밖 입력, training mode를 모두 거절했다. CUDA는 초기화하지 않았다. 원래 H11 source/profile/진행 중 학습은 수정하지 않았다.
+
+이것은 적용 준비의 통과이며 방어 효과나 유효한 FedUBA 활성화 전후쌍을 만든 결과가 아니다. 실제 적용은 적격 catalogue case/purpose/봉인/payload/전처리/native 평가가 확보된 뒤 수행한다. D08/D15 큰정상 반례를 해결했다고 주장하지 않으며 BadFU와 동일하게 실제 큰정상 효용·삭제 품질·공격 억제를 검사해야 한다. 유효한 모델이 없다는 이유로 FUBA나 합성 모델 성능을 FedUBA 결과로 대체하지 않는다.

@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "fixture": "new_random_initialization_two_synthetic_images",
+  "actual_FedUBA_model_selected": false,
+  "source_sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+  "interface_sha256": "4d712d419ca004a2bcfefed8ddeb0f14b330d0c41075dddf84e2476b7b1f8558",
+  "verifier_sha256": "76e1b5f945a8e10582ff13cfc86c8fecf4ff7b615178d24e7e601b0415c3a973",
+  "exact_logits_and_feature_head_reconstruction": true,
+  "exact_finite_input_gradient": true,
+  "BN_buffers_and_all_model_state_unchanged": true,
+  "forward_hook_removed": true,
+  "normalization_endpoints_checked": true,
+  "rejected": [
+    "wrong_head",
+    "surrogate201",
+    "uint8",
+    "out_of_range",
+    "training_mode"
+  ],
+  "CUDA_initialized": false,
+  "defense_efficacy_evaluated": false
+}
