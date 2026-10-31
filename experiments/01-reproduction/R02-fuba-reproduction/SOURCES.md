@@ -195,3 +195,9 @@
 | [PROTOCOL.txt](../../../research/fuba_stage_localization_20261031/PROTOCOL.txt) | `research/fuba_stage_localization_20261031` |
 | [PROFILE.json](../../../research/fuba_stage_localization_20261031/PROFILE.json) | `research/fuba_stage_localization_20261031` |
 | [FREEZE.json](../../../research/fuba_stage_localization_20261031/FREEZE.json) | `research/fuba_stage_localization_20261031` |
+| [RESULT.json](../../../research/fuba_stage_localization_20261031/RESULT.json) | `research/fuba_stage_localization_20261031` |
+| [REPORT_KO.txt](../../../research/fuba_stage_localization_20261031/REPORT_KO.txt) | `research/fuba_stage_localization_20261031` |
+| [STARTED.json](../../../research/fuba_stage_localization_20261031/STARTED.json) | `research/fuba_stage_localization_20261031` |
+| [PROTOCOL.txt](../../../research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt) | `research/fuba_dba_gamma_scope_20261031` |
+| [PROFILE.json](../../../research/fuba_dba_gamma_scope_20261031/PROFILE.json) | `research/fuba_dba_gamma_scope_20261031` |
+| [FREEZE.json](../../../research/fuba_dba_gamma_scope_20261031/FREEZE.json) | `research/fuba_dba_gamma_scope_20261031` |

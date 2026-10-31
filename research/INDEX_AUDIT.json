@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "d61b9c431da4d8ce8359cd63a5eda79ca58abed8c1a6a5375905740a163ced03",
+  "registry_sha256": "714592d325f6759f7df1a717e4a1e99f6a80c304510147b01e812d531481a85e",
   "cards": 28,
-  "unique_source_documents": 276,
-  "top_level_folders": 103,
-  "folders_linked_to_cards": 55,
+  "unique_source_documents": 282,
+  "top_level_folders": 104,
+  "folders_linked_to_cards": 56,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "d1326729633372662d7ca0b3aeae9885b67623887d8b02ba1b8e5bc65d9163d6",
@@ -199,6 +199,12 @@
     "research/fuba_stage_localization_20261031/PROTOCOL.txt": "ed831e5c9efce7c81b430f762a3efd29dec401dce7438576036c68ce17deac15",
     "research/fuba_stage_localization_20261031/PROFILE.json": "aae4c02b53b2030029d28d541fc059a6ce3e377fefd45ddb9b7cfc41aa354b4d",
     "research/fuba_stage_localization_20261031/FREEZE.json": "4ad78847f346af34d4a8f0acc6f41e150f452d07910091ba88777ba9397c7372",
+    "research/fuba_stage_localization_20261031/RESULT.json": "aeaaec5a7fda93abbc140018467f088bee5f02c66f98655909938262b686fca3",
+    "research/fuba_stage_localization_20261031/REPORT_KO.txt": "a5025884a7f5254bf9a63120d56a6d997c89deb983647e6bac2cf58ef1805b97",
+    "research/fuba_stage_localization_20261031/STARTED.json": "2f6aa5880be66482e4589dea00c065a01a49489d26e323989947ccc2197bad91",
+    "research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt": "e2905cff11b146189f0f9359b438aec8ee4966e863f9e14166ec9b23d79537aa",
+    "research/fuba_dba_gamma_scope_20261031/PROFILE.json": "77bcf3f5f6c673b71565739806b28faf1a1582b66818839f99d2b807f3b25da4",
+    "research/fuba_dba_gamma_scope_20261031/FREEZE.json": "80f64d682da7bb26777be2022c694f7ce720037b3b43be8a0401954a5539db96",
     "research/feduba_reproduction_audit_20261031/PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
     "research/feduba_reproduction_audit_20261031/FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
     "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
@@ -662,6 +668,16 @@
       "review": "대표 기록 재검토·카드 연결"
     },
     {
+      "path": "research/fuba_dba_gamma_scope_20261031",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_dba_gamma_scope_20261031/PROTOCOL.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/fuba_execution_audit_20261025",
       "related_cards": [
         "R02"
@@ -812,7 +828,9 @@
         "R02"
       ],
       "top_level_documents": [
-        "research/fuba_stage_localization_20261031/PROTOCOL.txt"
+        "research/fuba_stage_localization_20261031/PROTOCOL.txt",
+        "research/fuba_stage_localization_20261031/REPORT_KO.txt",
+        "research/fuba_stage_localization_20261031/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
