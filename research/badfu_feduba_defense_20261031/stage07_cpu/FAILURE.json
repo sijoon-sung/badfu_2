@@ -1,0 +1,3 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\stage07_cpu.py\", line 105, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\stage07_cpu.py\", line 46, in main\n    model=sealed.model_class(selected['source_root'])().eval()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py\", line 48, in model_class\n    tree = ast.parse((root / 'evidence/author_badfu.py').read_text(encoding='utf-8-sig'))\n                      ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\nTypeError: unsupported operand type(s) for /: 'str' and 'str'\n"
+}
