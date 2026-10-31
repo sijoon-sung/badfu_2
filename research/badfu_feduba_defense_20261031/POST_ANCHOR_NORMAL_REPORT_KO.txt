@@ -1,0 +1,22 @@
+Post-anchor 큰 정상 삭제 결과 / 실제 공격 비교 진행, 2026-10-31.
+R01/R03/P01/P04/D08/D12/D14/D15/D18/N02. case badfu.confirmed.s20261023.v1/purification_pilot, 유지자료 재학습, 실제FL1시드. 프로토콜/소스는 POST_ANCHOR_FREEZE.json의 고정 버전이다.
+
+가설과 수정
+H11의 낮아진 rawASR이 원래 정답 복원이 아니라 class5 오답 쏠림이었음을 반영했다. 같은 자연 시작점의 모델 분류s를 유지하는 sourcepair 은행을 재사용하고, primary post_anchor는 H5(query) 대신 nativePost(원래 자연 시작점)의 확률을 배운다. H5는 query의 source 보존 제약을 제공한다. teacher_query 비교 arm과 은행/표본/학습/공개선택은 같고 query 목표만 다르다. 실제 정답/트리거/삭제자료는 학습·선택에 제공하지 않는다. D08/D15에서 정상 변화도 크다는 사실을 공격 점수로 다시 사용하지 않는다.
+
+실제 과정
+원래 once task/PID49732가 큰 정상9668 조건에서 두 arm 각100Adam step을 마쳤다. 같은 source보존74/90 은행, source별1개 query, 공개32개, 고정BN buffers를 사용했다. 실제 정답을 보지 않는11+6 공개선택 후 별도 heldout9500과 실제 삭제9668 자료를 평가했다. case COMPLETED.json이 쓰였고 원래 actor는 같은 고정 recipe로 공격850 조건에 진입해 실제 학습 중이다. 별도 새FL/FU 학습이 아니며 FedUBA 실험도 아니다.
+
+결과 (고정된 nativePost heldout CA89.8% 대비)
+arm             alpha       CA%          worstclass손실pp   true-label adv    maxlog adv
+teacher_query   .1328125    89.9684211    .3157895           .002963541        .008462555
+post_anchor     .1265625    89.9578947    .9463722           .002006907        .006997156
+모든 선언된 advantage/weighted-class-advantage 증가 중 최대는 각각 .000831438/.000352323, 절대정확도gap 증가는 -.000622742/+.000510567이었다. 전체 .5pp/각클래스2pp/adv증가.04/gap증가.02의 현 프로토콜 필요조건은 두 arm 모두 통과했다.
+
+남겨야 할 제한
+유익했던 삭제 후 교정212개 중 유지한 수는187개(88.2075%)/190개(89.6226%)다. 이전90% 교정 유지 목표에는 두 arm 모두 못 미친다. 현재 프로토콜은 실행 전에 이 항목을 별도 보고 지표로 선언했다. 현재 필요조건 통과를 모든 정상 교정 보존이나 완성된 방어 성공으로 표현하지 않는다. 두 점수의 유한 회원추론 감사도 형식적인 언러닝 인증은 아니다.
+공개 보고서·step log만 로컬로 복사했고 전달된 파일의 해시가 봉인된 case receipt와 일치했다. 원래 모델/비공개 tensor는 DISLAB에 그대로 보존했다. 전체 독립 tensor/표본RNG/목표/정책/AUC 검산은 미완료이며, 미리 고정한 verify_post_anchor.py가 원래 pipeline 종료 후 수행한다. 이 보고서는 독립 검산 완료라고 주장하지 않는다.
+
+다음 관측과 중단 규칙
+공격 조건에서 같은 arm의 ASR10% 이하와 원정답 복원을 함께 요구한다. 원정답은 짝지어진 nativePost 원본 clean 대비 전체2pp/각클래스5pp 안이어야 한다. 실패하면 해당 유한 pipeline의 정상850/추가공격 clean·member 평가는 생략하고 실제 raw/selected 상태와 실패를 보존한다. 개별 pipeline의 중단이 전체 개발의 중단은 아니다. 실제 결과와 독립 검산을 바탕으로 다음 수정의 새 관측·비교·중단 규칙을 정의한다. 원본 SAU의 학생별 query 재생성 차이는 별도 source review로 확인했으나 아직 새 수정의 효능으로 채택하지 않았다.
+공격 억제/정상850/독립BadFU 조건/적격FedUBA pair/위장·공격자 역할 식별은 아직 검증되지 않았다. 서로 다른 arm의 좋은 수치나 정상 통과만으로 상위 가설을 통과시키지 않는다.

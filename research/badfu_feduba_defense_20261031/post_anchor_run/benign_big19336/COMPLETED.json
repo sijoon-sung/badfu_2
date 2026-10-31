@@ -1,0 +1,29 @@
+{
+  "result_sha256": "21711683a4caf77a6a798dd4fa9e833e1bc5aabf1c68b4813b7e88ef69454a72",
+  "bank_receipt_path": "D:\\BADFU_FEDUBA_DEFENSE_20261031\\sourcepair_pilot\\benign_big19336\\COMPLETED.json",
+  "bank_receipt_sha256": "cf444691f53d9f957f798fc05b967cda69f015c89a89ee9d152eddf51a9817c5",
+  "files": {
+    "BANK_BEFORE_TRAINING.json": "87dfe9e3f41d78d5ead4872e339596e17f22f982efc637e65f571ed0fd6203e5",
+    "post_anchor_optimizer_rng.pt": "085ad1333e27974cbe9357a08f771793f74bf4cd8514ff2fdb54ee2941f6de70",
+    "post_anchor_raw.pt": "3abf904c2b6c5f5a5d97bad77268e3708bd4fbb784b8cabcda242bee741746c3",
+    "post_anchor_selected.pt": "9ca0e7079d07abc124435f32f754b44df68ec79a508cad4407a2d237ccf921e0",
+    "post_anchor_steps.jsonl": "ea085ab32ae36e3fd4b748e2aa3fcae1cbc9a7f588322062270f99cb12840dbd",
+    "private_post_anchor_bank_diagnostic.pt": "20fc119534b7fb52d147330cbfd6da2d9428d1f65882a0fdde2a115e222d7737",
+    "private_post_anchor_evaluation.pt": "a84fbbfa0b76025cd958ad3d5b875efc23eed2e1f218bc46556dac2cebd7f3b3",
+    "private_post_anchor_proxy.pt": "b10088cbf1499de7677e8f159a0683610819f68468cb21714fe18bb349366788",
+    "private_teacher_query_bank_diagnostic.pt": "12e0b452af6a6d1b20a095c94fe27f8b4bb713870eba7b3d19ff946f4e986111",
+    "private_teacher_query_evaluation.pt": "748bbd2b43c1cf6d55361be62488a59e1ec65628639a9e6937dc653a3b013805",
+    "private_teacher_query_proxy.pt": "8b082356938c9f25356bd11d2feaa4a50ad404c06c35889a863dd65a42619efb",
+    "PROGRESS.json": "9a6cc7ae9c91182752e4e4aba13d25e1cb979654f8f1c883ebff39edb0725366",
+    "RAW_MODELS_BEFORE_SELECTION.json": "56e04b7ab674e08054d2099043eaf18180c4d785384f44d220d1666f07e9c42a",
+    "RESULT.json": "21711683a4caf77a6a798dd4fa9e833e1bc5aabf1c68b4813b7e88ef69454a72",
+    "SELECTION_BEFORE_PRIVATE_EVALUATION.json": "daa50c3c7bbd8621bc682017f4572964cd97cf1f0ee2dde946fb3093ead25692",
+    "SELECTION_PROGRESS.json": "073c4bcc05ad521ca9330d1590db99c0d0e16790d7450f8942a0facd7d846e0c",
+    "SOURCE_INPUTS.json": "013aa6ea41369de176cc6a7be02f00213d658a9f3e0fc8dbe0bbcc56fab43765",
+    "teacher_query_optimizer_rng.pt": "a7ea770d85c24af6ff97a5c8bd733210f69fbff9c1e89d0b8e0d0397f3094d46",
+    "teacher_query_raw.pt": "fe2a0241964d4b199d6d9c1c478d47d2565a87e4df498c55d51dc0ed0e2368b0",
+    "teacher_query_selected.pt": "40c175f02b8b4347c2f356d69a9bf91f6f64071417a7d0ad7f4cb84a1b24a388",
+    "teacher_query_steps.jsonl": "c68201554c90639f1753f51b2fb1f96bf4880fcfc2eab34ae1fb965b62d1e6c2",
+    "TRAIN_PROGRESS.json": "54d18b5b7c3cf21e5b4af518e741787586fc3946f0daee493490a1af5e707bea"
+  }
+}
