@@ -1,0 +1,24 @@
+가설 H3: backbone weights/BN running buffers/head의분리개입은전체백본복원보다작은수정의근거를준다.
+관련 R01/R03/T01/D08/D15/D18/N02/P01/P02. 2026-10-31 KST.
+
+실제과정
+H1/H2실패를commit4a59cfb에보존하고H3를사전고정했다. 최초Start-Process PID40728이본체STARTED전사라져원래0바이트로그/메타데이터를보존했다. 가설/코드/입력은바꾸지않은일회ScheduledTask direct-Python으로운영복구했으며실제PID5940/epoch가아닌이미지배치/출력/exit0을확인했다. 완료된forward의재실행은없다.
+같은소스/외부봉인5모델/입력파일과9000개이미지개별SHA를검증했다. case badfu.confirmed.s20261023.v1/purification_pilot. DISLAB GPU batch32/FP32/contiguousNCHW/TF32False,head계산CPU FP64. 3쌍x8=24결과,동일backbone캐시공유로11개실제feature추론쌍을수행했다. native5모델의clean/ASR정수수가기존현재원함수기록과모두정확히일치했다. peakGPU할당112662528바이트. 모델상태/원본파일사용전후guard통과.
+
+실제공격850결과(W=backbone trainable state,B=BN buffers,H=head,0pre/1post)
+W0B0H0: CAheldout90.4947 / ASR14.2889
+W0B0H1: CAheldout90.4632 / ASR5.2444 (원1000장4.10과9000장전체5.2444를구분)
+W0B1H0: CA86.3789 / ASR2.2444
+W0B1H1: CA85.7684 / ASR0.7111
+W1B0H0: CA81.0632 / ASR100
+W1B0H1: CA83.7474 / ASR100
+W1B1H0: CA90.3368 / ASR100
+W1B1H1: CA90.5158 / ASR100
+H2파생head는이미동결한상태로그대로평가했고ASR9.4였다. 효용실패는그대로남는다.
+
+큰정상19.336% 결과
+단순H1은전체CA89.8526이지만최악클래스-5.6204%p,유익교정36/212보존이다. preweights/postBN+posthead는CA83.0842,postweights/preBN+posthead는86.4632로가중치/BN불일치가효용을크게훼손했다. nativepost는89.8/유익교정212/212다. 정상850도같은양상의효용실패를보존한다.
+
+판정과수정
+이조건에서head단독/BN단독복원은공격억제를제공하지않는다. 전체weights복원의ASR감소는있지만정상집단훼손을해결하지못했다. 공격활성화가항상모든weights에분산되거나보편적으로BN과무관하다고확대하지않는다. 기제진단을공격자신원/공통탐지/삭제보증으로쓰지않는다.
+다음H4는weights와BN을각block단위로함께운반하여불일치를줄이고,실제타깃/트리거/ASR없이post의무라벨정상행동을보존하는최대block복원을고정선택한다. 모든새block조합의공격평가전에선택을저장한다. 큰정상대조에도동일규칙을적용하고같은CA/클래스/교정보존필요조건으로검사한다. 이는실제로작동하는서버선택규칙을만들기위한수정이며성공은미측정이다.

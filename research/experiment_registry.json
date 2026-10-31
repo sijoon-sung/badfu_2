@@ -1,7 +1,7 @@
 {
   "schema": "research-experiment-index-v1",
   "as_of": "2026-10-31",
-  "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
+  "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
   "hypothesis_note": "가설은 색인을 위한 한 줄 요약이며 새 사전등록이 아니다. 원 보고서의 개별 가설·프로토콜·판정 범위를 우선한다.",
   "entries": [
     {
@@ -948,6 +948,41 @@
       ],
       "process_report": "experiments/05-parked/N02-broad-claim-audit/README.md",
       "github_group": "05-parked"
+    },
+    {
+      "id": "P04",
+      "group": "정화·별도 단계",
+      "title": "BadFU·FedUBA 방어 개발: 교차 결합·헤드 운반·모듈 개입",
+      "status": "단순교차·head운반 실패 보존 / BN분해 완료 / 무라벨 block rollback 선택 실험",
+      "hypothesis": "언러닝 후 필요한 정상 기능을 보존하는 표현·헤드 개입은 BadFU와 FedUBA의 활성화를 억제할 수 있다.",
+      "conditions": "사용자 지속 개발 지시. 명시 BadFU confirmed v1/purification_pilot,1실학습시드/재학습3쌍. 단계01은D18해시검증캐시를DISLAB CPU로연산했고새FL반복이아니다.500무라벨fit/9500heldout. 실제FedUBA는별도구현중이며미검증.",
+      "controls": "정상19.336%전체삭제를먼저검사하고정상850과공격clean효용을같은규칙으로비교. 전체CA와각클래스/유익교정보존을분리한다. D08/D15다른FU반례를보존.",
+      "result": "H1큰정상 전체CA+0.0526%p에도worst-class-5.6204%p,유익교정36/212만보존. 정상850은22/196. 사전고정H2무라벨ridge헤드운반은post대비CA-1.9368/-1.6842/-3.0316%p로실패. H1/H2source와결과/파생head는보존하고H3가중치/BN통계/head8조합의고정실제forward진단으로수정했다. 전체ASR/삭제품질/두공격공동성공은미측정. H3실제24조합/11개고유backbone추론에서 native5모델의CA/ASR정수수가일치했다. 전체9000장H1 ASR5.2444/H2 9.4이나효용실패는남고,BN/head단독복원은ASR100이었다. 가중치/BN을block별함께rollback하고무라벨500장의post예측일관성만으로32개조합중고정선택하는H4로수정했다. 새선택ASR은아직미측정이다.",
+      "non_iid_lesson": "큰정상전체삭제에서전체정확도개선이클래스별손실을가릴수있다. 이결과는탐지구별이나개인정보망각실패를확정하지않는다. 새로운관측은고정개입의집단별행동과정상교정보존이며norm탐지기가아니다.",
+      "do_not_repeat": "전체CA만으로무손실/삭제보존이라고부르지않고ASR사후최저후보선택/실제타깃을fit에쓰지않는다. 완료된H1/H2를재실행하거나실패를삭제하지않는다. FUBA를FedUBA로바꾸어부르지않는다.",
+      "revisit_condition": "가중치/BN/head원인분해후고정서버규칙을새프로토콜로정하고큰정상동일FU/독립시드/전체공격평가/삭제품질을함께통과해야채택한다. 각후보실패는보존후수정하고전체방어목표는계속한다.",
+      "folders": [
+        "research/badfu_feduba_defense_20261031"
+      ],
+      "sources": [
+        "research/badfu_feduba_defense_20261031/PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/FREEZE.json",
+        "research/badfu_feduba_defense_20261031/INPUT_MANIFEST.json",
+        "research/badfu_feduba_defense_20261031/STAGE01_REPORT_KO.txt",
+        "research/badfu_feduba_defense_20261031/STAGE01_RESULT.json",
+        "research/badfu_feduba_defense_20261031/STAGE02_RESULT.json",
+        "research/badfu_feduba_defense_20261031/COMPLETED.json",
+        "research/badfu_feduba_defense_20261031/STAGE03_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE03_FREEZE.json",
+        "research/badfu_feduba_defense_20261031/LAUNCH_RECOVERY_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE03_REPORT_KO.txt",
+        "research/badfu_feduba_defense_20261031/stage03/RESULT.json",
+        "research/badfu_feduba_defense_20261031/stage03/COMPLETED.json",
+        "research/badfu_feduba_defense_20261031/STAGE04_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/STAGE04_FREEZE.json"
+      ],
+      "process_report": "experiments/04-purification/P04-defense-development/README.md",
+      "github_group": "04-purification"
     }
   ],
   "process_reporting": {

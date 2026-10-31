@@ -1,0 +1,45 @@
+{
+  "GPU": "0, 5045, 5009",
+  "processes": [
+    {
+      "ProcessId": 2120,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\hermes\\tools\\python-3.14.7+20260901-win32-x64\\python.exe -m hermes_cli.main gateway run"
+    },
+    {
+      "ProcessId": 29736,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u \"C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261019\\normal_stress_v1\\sources\\detached_worker.py\""
+    },
+    {
+      "ProcessId": 29032,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe  C:\\Users\\DISLAB\\Desktop\\relay_dislab.py"
+    },
+    {
+      "ProcessId": 51588,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -m aider --gui --openai-api-base http://localhost:1234/v1 --openai-api-key lm-studio --model openai/gemma-4-12b"
+    },
+    {
+      "ProcessId": 4400,
+      "CommandLine": "\"C:\\Users\\DISLAB\\micromobility-parking-vision-20261031\\.venv\\Scripts\\python.exe\" -u -X utf8 server.py --port 8767"
+    },
+    {
+      "ProcessId": 31756,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u -X utf8 server.py --port 8767"
+    },
+    {
+      "ProcessId": 37176,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u -X utf8 research_code/prediction_service.py --h7-artifacts C:/Users/DISLAB/tashu-research-20261031-ddb1af2/h7-51a1349/research/runs/H-0007-20261031-od-gcn/artifacts --h4-artifacts C:/Users/DISLAB/tashu-research-20261031-ddb1af2/h4-e07e92b/research/runs/H-0004-20261031-historical/artifacts --station-metadata C:/Users/DISLAB/tashu-research-20261031-ddb1af2/inputs/data/forecast-display-stations.csv serve --replay-panel C:/Users/DISLAB/tashu-research-20261031-ddb1af2/inputs/data/observed_panel.npz --port 8768"
+    },
+    {
+      "ProcessId": 37492,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u -X utf8 research_code/advanced_prediction_service.py --h7-artifacts C:/Users/DISLAB/tashu-research-20261031-ddb1af2/h7-51a1349/research/runs/H-0007-20261031-od-gcn/artifacts --h4-artifacts C:/Users/DISLAB/tashu-research-20261031-ddb1af2/h4-e07e92b/research/runs/H-0004-20261031-historical/artifacts --h9-artifacts C:/Users/DISLAB/tashu-research-20261031-ddb1af2/h9-4ff082f/research/runs/H-0009-20261031-scaled-seoul-flow/artifacts --station-metadata C:/Users/DISLAB/tashu-research-20261031-ddb1af2/inputs/data/forecast-display-stations.csv --replay-panel C:/Users/DISLAB/tashu-research-20261031-ddb1af2/inputs/data/observed_panel.npz --port 8769"
+    },
+    {
+      "ProcessId": 5940,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/BADFU_FEDUBA_DEFENSE_20261031/background_stage03.py"
+    }
+  ],
+  "competing_experiment_processes": [],
+  "free_min_MiB": 3072,
+  "utilization_max": 10,
+  "per_process_fraction": 0.25
+}

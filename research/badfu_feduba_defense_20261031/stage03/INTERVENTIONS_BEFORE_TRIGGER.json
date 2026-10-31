@@ -1,0 +1,110 @@
+{
+  "benign_big19336_W0B0": {
+    "tensor_sha256": "9906d3af42d3a4c7a62e451fc70ce3bbbb269af7d421ce58975afb0fab564a87",
+    "file_sha256": "42f2970e6c555d248f9ac284378b0a6c5fb718f27e3461b8e82a591de3ba826e",
+    "pre_role": "clean_pre",
+    "post_role": "clean_big_post",
+    "W": 0,
+    "BN": 0,
+    "head": 1
+  },
+  "benign_big19336_W0B1": {
+    "tensor_sha256": "2b051d922921fd9eb3a54f688760fd3f30800697ed54ce734bf5502db3b16608",
+    "file_sha256": "f86dbf4918a8be3d17e599a513949655b307767f348707394c12780d692afad7",
+    "pre_role": "clean_pre",
+    "post_role": "clean_big_post",
+    "W": 0,
+    "BN": 1,
+    "head": 1
+  },
+  "benign_big19336_W1B0": {
+    "tensor_sha256": "267aab714febd3d752fb126cb73b88229bd169050ab8e3e09b8ffa57d63bdf6e",
+    "file_sha256": "1b17eb9ac06aae560ab98ac807677548178066b92aaeb828c7d585726b7d316a",
+    "pre_role": "clean_pre",
+    "post_role": "clean_big_post",
+    "W": 1,
+    "BN": 0,
+    "head": 1
+  },
+  "benign_big19336_W1B1": {
+    "tensor_sha256": "47201ac3c48029665f7b8d79dd643d579810b7f7a23cd74f9e5bf4a727437b09",
+    "file_sha256": "f4a829e605918d44885c0bd30cae7838ffcbbe2b5e227ae05ccef15469b2ec26",
+    "pre_role": "clean_pre",
+    "post_role": "clean_big_post",
+    "W": 1,
+    "BN": 1,
+    "head": 1
+  },
+  "benign_same850_W0B0": {
+    "tensor_sha256": "2ab89054d8b354924f861226b28de3853569809ddc64c02c9a20c98076eee575",
+    "file_sha256": "6a6c975988e22facd8d36df19ba280d10437c217268b9b4d7c4e2f4831d12ebf",
+    "pre_role": "clean_pre",
+    "post_role": "clean_post",
+    "W": 0,
+    "BN": 0,
+    "head": 1
+  },
+  "benign_same850_W0B1": {
+    "tensor_sha256": "461d3723c873152c78e37d6f63e443c2e9fd7be7206a95529f8cb9f1ba4b705e",
+    "file_sha256": "062ff8877458d28c0f5e0b0619778a19c29ade2977c4de519e8e271cd6209ca2",
+    "pre_role": "clean_pre",
+    "post_role": "clean_post",
+    "W": 0,
+    "BN": 1,
+    "head": 1
+  },
+  "benign_same850_W1B0": {
+    "tensor_sha256": "6df1c8a9ffa04796eacde9f41f9c39424e34e0d725d2013724c3740ec4cb50b7",
+    "file_sha256": "70162c3a54a1530cfa2a952930448601ea079ed4f5e305d28cd4d444f366e9ec",
+    "pre_role": "clean_pre",
+    "post_role": "clean_post",
+    "W": 1,
+    "BN": 0,
+    "head": 1
+  },
+  "benign_same850_W1B1": {
+    "tensor_sha256": "24a375addc2c68591f629e6441c51da9457cb793494f179538d2ad054ec5d3a3",
+    "file_sha256": "4b86aafae96cf2779dced03066501369347bb9d85da6cc44287c20099b261b6a",
+    "pre_role": "clean_pre",
+    "post_role": "clean_post",
+    "W": 1,
+    "BN": 1,
+    "head": 1
+  },
+  "attack_cover850_W0B0": {
+    "tensor_sha256": "01ec3632c54eb0c974bf28779e48e2bb5ca356dddb647e2a729132e45b7009e9",
+    "file_sha256": "4b0af73b9f154ce92b49761f30d97e81fd03363292aa784d9dcbf2c2c391b6dc",
+    "pre_role": "pre",
+    "post_role": "post",
+    "W": 0,
+    "BN": 0,
+    "head": 1
+  },
+  "attack_cover850_W0B1": {
+    "tensor_sha256": "36d16170f6bf0b829df9c38c9c2ff6559f0722fd12f5d6618843b7784591c98c",
+    "file_sha256": "93a9fe5762a7755847323a79fbd3fd9677d3558ceff19ce4579321bd69d4d46b",
+    "pre_role": "pre",
+    "post_role": "post",
+    "W": 0,
+    "BN": 1,
+    "head": 1
+  },
+  "attack_cover850_W1B0": {
+    "tensor_sha256": "e767f512ccc5165d68507a7f4b3d5ce2bc76ce1b19f9bfc5bbc2018640c226aa",
+    "file_sha256": "d6459a59cce849389005917920d643e048c1bcf0fe9e6a664faadf9479761207",
+    "pre_role": "pre",
+    "post_role": "post",
+    "W": 1,
+    "BN": 0,
+    "head": 1
+  },
+  "attack_cover850_W1B1": {
+    "tensor_sha256": "42b0f34805fbd8e4a6349101363d2c16bf455e91dae064bcad963d02ab9926d0",
+    "file_sha256": "b9cd5c13b676b8f2162419f88e689ab0536fbed0b98fd7b31d31f30ecf84f595",
+    "pre_role": "pre",
+    "post_role": "post",
+    "W": 1,
+    "BN": 1,
+    "head": 1
+  }
+}
