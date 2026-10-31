@@ -235,3 +235,4 @@
 | [TASK_EXECUTION_VERIFIED.json](../../../research/fuba_seed_repro_20261031/TASK_EXECUTION_VERIFIED.json) | `research/fuba_seed_repro_20261031` |
 | [FIRST_NEW_ROUND_CPU_AUDIT.json](../../../research/fuba_seed_repro_20261031/FIRST_NEW_ROUND_CPU_AUDIT.json) | `research/fuba_seed_repro_20261031` |
 | [DATASET_AUDIT.json](../../../research/fuba_seed_repro_20261031/DATASET_AUDIT.json) | `research/fuba_seed_repro_20261031` |
+| [FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json](../../../research/fuba_seed_repro_20261031/FIRST_NEW_MALICIOUS_ROUND_CPU_AUDIT.json) | `research/fuba_seed_repro_20261031` |

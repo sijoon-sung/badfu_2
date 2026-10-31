@@ -11,3 +11,5 @@ DISLAB에서 새로운9개초기모델/분할을만들었다. baseline20261023�
 첫새1R의별도CPU검사가8역할/8phase/400epoch/18800batch·입력연결/정확집계/optimizer/RNG/로그/strictCPU출력을통과했다. 정상warmup 검사이며악성단계/gamma성능/최종100R완료의증거로확대하지않는다.
 추가DISLAB CPU자료감사는현재MNIST의공식torchvision MD54개와gzip해제전체바이트의동일성/60000·10000·non-target9026을확인했다. 자료수정/다운로드는없었고과거baseline실행시점의자료비트동일성까지소급증명했다고하지않는다.
 현재성능성공은미측정이며고정9개순서의100R/KD10·독립평가·fullCPU감사·봉인전달은계속한다. 운영복구성공을FUBA성능성공으로세지않는다.
+
+최초악성역할이포함된6R 별도CPU감사도통과했다:48역할/54phase/2700epoch/125300batch, attacker1/defender1,원래수치source/optimizer/RNG/실제제출식/정확집계/연결/11점gamma선택산술1개를확인했다. 미달zero는0이다. 모든gamma독립추론이나최종공격성능성공은아니다. 이prefix감사는완료했으므로재실행하지않는다.
