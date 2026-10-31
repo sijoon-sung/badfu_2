@@ -74,3 +74,7 @@
 | [CLEAN_FL_RESULT.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_RESULT.json) | `research/feduba_paper_implementation_20261031` |
 | [CLEAN_DELIVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/CLEAN_DELIVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
 | [CLEAN_EXPORT_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_EXPORT_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_FL_VERIFIED.json](../../../research/feduba_paper_implementation_20261031/CLEAN_FL_VERIFIED.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_REVIEW_DELIVERY_REMOTE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_REVIEW_DELIVERY_REMOTE.json) | `research/feduba_paper_implementation_20261031` |
+| [CLEAN_RECEIVE_FREEZE.json](../../../research/feduba_paper_implementation_20261031/CLEAN_RECEIVE_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [STG_STARTED.json](../../../research/feduba_paper_implementation_20261031/STG_STARTED.json) | `research/feduba_paper_implementation_20261031` |

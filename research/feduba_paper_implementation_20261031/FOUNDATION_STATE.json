@@ -1,7 +1,13 @@
 {
-  "state": "running",
+  "state": "completed_clean_FL_foundation_only",
   "pid": 35368,
-  "step": "clean_fl_controller.py",
-  "child_pid": 9492,
-  "updated_unix": 1793440935.0667589
+  "updated_unix": 1793444757.0701563,
+  "overall_FedUBA_goal_complete": false,
+  "remaining": [
+    "STG",
+    "SSS",
+    "BEA_and_benign_FU",
+    "evaluation",
+    "delivery"
+  ]
 }
