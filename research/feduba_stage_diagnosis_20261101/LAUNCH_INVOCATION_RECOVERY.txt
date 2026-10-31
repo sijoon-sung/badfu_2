@@ -1,0 +1,3 @@
+새 CPU8 launcher 호출의 운영 교정 — 연구/source/profile 교정 아님
+원호출은 Restricted PowerShell에서 launch.ps1 파일 실행 자체가 UnauthorizedAccess로 거절됐다. 실제 task/CONTROLLER_ONCE/RUN_ONCE/STATE가 전부없고 새Python도0임을 확인했다. 모델계산0이고 기존유한작업 재실행은없다. LAUNCH_INVOCATION_FAILURE.json을보존한다.
+같은 원동결 launch.ps1을 별도 powershell.exe -NoProfile -ExecutionPolicy Bypass -File 명령으로 한 번 실행한다. 이 새PowerShell프로세스의 script 실행 설정만 적용하며 machine/user의 저장된정책을 변경하지 않는다. launcher의 publication/freeze/기존task/ONCE/원연구종료 guard는 그대로 실행한다. 파일 바이트/연구수치/기존결과는 불변이다. 이 교정기록을 같은PR에게시한뒤미시작task를처음등록/시작한다. 실패하면보존하고자동retry하지않는다.

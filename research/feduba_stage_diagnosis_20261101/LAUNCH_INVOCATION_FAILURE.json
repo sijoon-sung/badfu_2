@@ -1,0 +1,19 @@
+{
+  "state": "launcher_file_rejected_before_task_registration",
+  "utc": "2026-10-31T16:23:14.755914+00:00",
+  "published_commit": "591e6e4",
+  "invocation": "& 'D:/FEDUBA_STAGE_DIAGNOSIS_20261101/launch.ps1'",
+  "error_category": "PowerShell UnauthorizedAccess / script execution policy Restricted",
+  "error_observed": "launch.ps1 cannot be loaded because running scripts is disabled on this system; the launcher body did not execute. Remote error arrived as CLIXML with Korean encoding loss in the transport.",
+  "post_failure_observation": {
+    "task_exists": false,
+    "controller_once_exists": false,
+    "run_once_exists": false,
+    "state_exists": false,
+    "actual_diagnosis_python_processes": 0,
+    "Get_ExecutionPolicy_numeric": 3
+  },
+  "model_forwards": 0,
+  "completed_finite_job_repeated": false,
+  "original_launcher_sha256": "ae258026c33f52c25bd7e736a3878fcc1006cddd99ff6bf7aaccbfe0354a5648"
+}
