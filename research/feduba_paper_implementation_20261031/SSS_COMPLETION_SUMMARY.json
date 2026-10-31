@@ -1,0 +1,65 @@
+{
+  "state": "SSS_queries_and_independent_audit_complete",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "pre_checkpoint": {
+    "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+    "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+    "payload_key": null
+  },
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "trigger_binding_sha256": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5",
+  "numeric_policy_sha256": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74",
+  "numeric_settings": {
+    "TF32_matmul": false,
+    "TF32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "torch_deterministic_algorithms": true,
+    "CPU_threads": 1,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "observed_samples": 5000,
+  "query_batches": 40,
+  "actual_forward_calls": 80,
+  "forward_sample_evaluations": 10000,
+  "request_budget": 125,
+  "selected_owner_counts": {
+    "5": 60,
+    "7": 65
+  },
+  "private_full_result_sha256": "69c2f28ba95d69341c3efa3d0126241fb31952448668883972c9aea499dc2a56",
+  "private_full_audit_sha256": "178a617df9082818d4cd8fddaf24057da5bd60153a2f43a17ad2f0e2a27abfcc",
+  "raw_ID_ranks_and_query_tensors_publicly_published": false,
+  "float64_top125_same_ID_sets": true,
+  "max_independent_score_abs_error": 1.2952233809926383e-06,
+  "fixed_CPU_query_batch_replays": [
+    {
+      "owner": 5,
+      "batch": 1,
+      "samples": 128,
+      "clean_max_abs_error": 3.4332275390625e-05,
+      "perturbed_max_abs_error": 2.47955322265625e-05,
+      "atol": 0.0002,
+      "rtol": 0.0001
+    },
+    {
+      "owner": 7,
+      "batch": 20,
+      "samples": 68,
+      "clean_max_abs_error": 1.9550323486328125e-05,
+      "perturbed_max_abs_error": 2.47955322265625e-05,
+      "atol": 0.0002,
+      "rtol": 0.0001
+    }
+  ],
+  "all5000_model_queries_independently_recomputed": false,
+  "original_GPU_STG_gradient_audit_remains_failed": true,
+  "actual_FU_performance_not_yet_evaluated": true,
+  "overall_goal_complete": false
+}
