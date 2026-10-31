@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-31T14:42:36.322570+00:00",
+  "files": {
+    "verify_post_anchor.py": "c8734539e55f233f09ea79ec33cd7e0a31bd62b01aa2f7117874ae9c91bca23f",
+    "run_post_anchor_audit.py": "8c0b13f3b9928b8b3e3a1ebc3d5367d46cbe65535c68401f0975c1ba010e6b40",
+    "POST_ANCHOR_VERIFICATION_PROTOCOL.txt": "0f39f75d19a219a39a82df233596490575d54d48849871b8f1df9c3f410ccf17",
+    "POST_ANCHOR_FREEZE.json": "fa960eaeda57cf8879eac9af51f6638b4a0b2f94e6602cbd770d8c61170a78ad",
+    "verify_stage10.py": "c0130511aae5e70ebdbc9694c58a6744705e61a8e753c07c2ec761fda397cada",
+    "verify_stage09.py": "f0b3c34d48ac47c36da899051b22698f5b751938040b76080672a2704c4d59b6",
+    "verify_stage05_results.py": "750c5c9812a448313a516bd887169f67cbfdb044110316ccc148ab85044801ff",
+    "stage07_cpu_v2/COMPLETED.json": "4155cead49b4ca8e884718ea2cfce7128a9143b5dc6ee687214c965176640d50"
+  },
+  "fresh_model_inference": false,
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D18",
+    "N02"
+  ],
+  "source_case": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "anchor_probability_atol": 2e-05,
+  "first_query_loss_atol": 0.001
+}
