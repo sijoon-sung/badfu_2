@@ -1077,6 +1077,7 @@
 - [research/badfu_feduba_defense_20261031/stage11/benign_big19336/SOURCE_INPUTS.json](badfu_feduba_defense_20261031/stage11/benign_big19336/SOURCE_INPUTS.json)
 - [research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_PROTOCOL.txt](badfu_feduba_defense_20261031/STAGE11_VERIFICATION_PROTOCOL.txt)
 - [research/badfu_feduba_defense_20261031/STAGE11_VERIFICATION_FREEZE.json](badfu_feduba_defense_20261031/STAGE11_VERIFICATION_FREEZE.json)
+- [research/badfu_feduba_defense_20261031/DEVELOPMENT_MODEL_KO.txt](badfu_feduba_defense_20261031/DEVELOPMENT_MODEL_KO.txt)
 
 **묶은 폴더:** [badfu_feduba_defense_20261031](badfu_feduba_defense_20261031)
 
