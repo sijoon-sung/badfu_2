@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-31T17:27:18.830636+00:00",
+  "files": {
+    "verify_adaptive_query.py": "edf7b33eced7756bf34ab92b85d5ef86411513650e7e10bd15ec41a4be813385",
+    "run_adaptive_query_audit.py": "e88bf133d58e7fac26ba8cd4211796ec66b064bdae492e58f00ab0e4847f0010",
+    "ADAPTIVE_QUERY_VERIFICATION_PROTOCOL.txt": "befe3ed80b614f04135519951a83198d2aecbdc720b18282ed01fb69573ac9bb",
+    "ADAPTIVE_QUERY_FREEZE.json": "efd2ce7205ee3cf10933a13111aed343e34b8e7eca61af29b8576fc1dfa175b9",
+    "verify_post_anchor.py": "c8734539e55f233f09ea79ec33cd7e0a31bd62b01aa2f7117874ae9c91bca23f",
+    "verify_stage10.py": "c0130511aae5e70ebdbc9694c58a6744705e61a8e753c07c2ec761fda397cada",
+    "verify_stage09.py": "f0b3c34d48ac47c36da899051b22698f5b751938040b76080672a2704c4d59b6",
+    "verify_stage05_results.py": "750c5c9812a448313a516bd887169f67cbfdb044110316ccc148ab85044801ff",
+    "stage05_common.py": "81a2c683c1627f3c099e5b1a9601c61e1eb1646a2001f1c85f1d46e4f2a91824",
+    "stage03.py": "de46b8aaf76aed1579d718821a36d8c97d6c71306ed46e2eade614eac0bfc67f",
+    "stage08.py": "f9192ef1a3a4ea5048bfa4e95eb2ca5086d307ca78a11799587ec7d883d51881",
+    "sourcepair_pilot.py": "2824595d6a5e55486e2c16efd4b30c12312827db023f417899da56f069d35ff4",
+    "stage07_cpu_v2/COMPLETED.json": "4155cead49b4ca8e884718ea2cfce7128a9143b5dc6ee687214c965176640d50",
+    "verify_shared_feature.py": "4549776753eaf1168a55e52c6f5af0499ab11a71be3d95a066c70c38d0cddc24",
+    "run_shared_feature_audit.py": "fe108997af85107f36bdb2d57d4329a2dc4d08278643c1edd639cb6c40cb06e7",
+    "SHARED_FEATURE_VERIFICATION_PROTOCOL.txt": "3f2196fa48cdc1fd9dd86e230fdfc6e2565dfa8736d88c858ddd7fa62d16f2ca",
+    "SHARED_FEATURE_FREEZE.json": "4ee550e1f03d13405c1ec6ad29e582f4fe8ae6fda542a394b541f24102c94435"
+  },
+  "parent_scientific_actor_running": true,
+  "parent_results_not_yet_available": true,
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P04",
+    "D08",
+    "D14",
+    "D15",
+    "D17",
+    "N02"
+  ],
+  "new_method_training": false,
+  "new_FL_seeds": 0
+}

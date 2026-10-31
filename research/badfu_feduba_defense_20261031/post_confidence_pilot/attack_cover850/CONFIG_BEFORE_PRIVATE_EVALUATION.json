@@ -1,0 +1,201 @@
+{
+  "selected_index": 1,
+  "selected": {
+    "quantile": 0.5,
+    "threshold": 0.9999158159003888,
+    "routed_n": 0,
+    "mean_KL": 0.0,
+    "agreement": 1.0,
+    "class_agreement": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "eligible": true
+  },
+  "points": [
+    {
+      "quantile": 0.0,
+      "threshold": 0.3118577471273241,
+      "routed_n": 35,
+      "mean_KL": 0.09860317902522249,
+      "agreement": 0.93,
+      "class_agreement": [
+        0.9361702127659575,
+        0.9777777777777777,
+        0.8775510204081632,
+        0.9016393442622951,
+        0.9259259259259259,
+        0.9090909090909091,
+        0.9622641509433962,
+        0.9411764705882353,
+        0.9285714285714286,
+        0.9473684210526315
+      ],
+      "eligible": false
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.9999158159003888,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.75,
+      "threshold": 0.9999981803638414,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.9,
+      "threshold": 0.9999999245980881,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 0.9999999896316488,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.99,
+      "threshold": 0.9999999993090637,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 1.0,
+      "threshold": 0.9999999999562945,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": null,
+      "threshold": null,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    }
+  ],
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "pre_role": "pre",
+  "post_role": "post",
+  "post_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+  "post_sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+  "teacher_path": "D:\\BADFU_FEDUBA_DEFENSE_20261031\\stage05\\attack_cover850_aligned_model.pt",
+  "teacher_sha256": "5d8cf531bcf4d3c28d64d54aca92b60a806290f68fc08e9db47e07e6562bd1f8",
+  "public_evidence_sha256": "d1534335d5f1b1f53d96717f88c0923a7bf5578be5c1a912602b09af8376c54e",
+  "groundtruth_used": false,
+  "actual_trigger_used": false,
+  "member_used": false,
+  "ASR_used": false,
+  "active_arms": [
+    "confidence_gated_relabel"
+  ]
+}

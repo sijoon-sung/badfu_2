@@ -1,0 +1,5 @@
+가설: Post logit순열로대칭score를보존해도label교정의삭제품질/원정답상한때문에본고정교사기반gate군은실패할수있다.
+R01/R03/P01/P04/D08/D15/N02. 원cached pilot1596 완료·종료뒤의저장출력독립검산/실패해부이며새후보fit/threshold탐색이아니다. 원source/config/학습중인공유특징actor5744는불변이다.
+source/freeze/모든case receipt와최대8공개후보/최초passing선택/두logit교환을NumPy행별연산으로대조하고actual원정답/target정수와class별숫자를독립검산한다. cutoff 경계에서softmax FP64오차<=1e-12인동률은건수를따로기록한다. 경계에서멀리있는mask불일치는실패다. 기존유한class AUC는pilot에서독립combined tie-rank로60행검산했고이를새CNN재추론이라고하지않는다.
+새관측: 실제Post가모든비target이미지를같은target으로분류할때임의gate로Post/H5 argmax중하나만선택하는전체방법군의원정답수는H5 argmax정답수를넘을수없다. 저장된teacher attacklogit에서그상한과pairedclean−2pp/각class−5pp필요조건을계산한다. 위반하면threshold를더고르는일을멈추고labelprovider수정이필요하다는고정쌍한정결론을남긴다. oracle gate를채택하거나actualGT로방법을학습하지않는다. H5전체모델불가능성/모든teacher·방법불가능성으로확대하지않는다.
+DISLAB CPU2/noCUDA/최대5분/once,새CNN·gradient·학습0. 모든원출력/실패와정상양성은보존한다. 본검산이통과해도범용탐지/역할식별/형식망각/FedUBA를증명하지않는다.

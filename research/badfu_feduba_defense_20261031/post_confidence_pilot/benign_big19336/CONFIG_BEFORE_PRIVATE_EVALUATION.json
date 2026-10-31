@@ -1,0 +1,202 @@
+{
+  "selected_index": 1,
+  "selected": {
+    "quantile": 0.5,
+    "threshold": 0.9999296551701196,
+    "routed_n": 0,
+    "mean_KL": 0.0,
+    "agreement": 1.0,
+    "class_agreement": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "eligible": true
+  },
+  "points": [
+    {
+      "quantile": 0.0,
+      "threshold": 0.3691764366986267,
+      "routed_n": 32,
+      "mean_KL": 0.09488942591889077,
+      "agreement": 0.936,
+      "class_agreement": [
+        0.9056603773584906,
+        0.9555555555555556,
+        0.9545454545454546,
+        0.9,
+        0.9272727272727272,
+        0.9375,
+        0.9811320754716981,
+        0.9393939393939394,
+        0.9090909090909091,
+        0.9629629629629629
+      ],
+      "eligible": false
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.9999296551701196,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.75,
+      "threshold": 0.999998951098638,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.9,
+      "threshold": 0.9999999770132485,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 0.9999999987747499,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 0.99,
+      "threshold": 0.999999999992484,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": 1.0,
+      "threshold": 0.9999999999999072,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    },
+    {
+      "quantile": null,
+      "threshold": null,
+      "routed_n": 0,
+      "mean_KL": 0.0,
+      "agreement": 1.0,
+      "class_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "eligible": true
+    }
+  ],
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "pre_role": "clean_pre",
+  "post_role": "clean_big_post",
+  "post_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+  "post_sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+  "teacher_path": "D:\\BADFU_FEDUBA_DEFENSE_20261031\\stage05\\benign_big19336_aligned_model.pt",
+  "teacher_sha256": "11400ef0cfde0d6eba36b6e48b0a9741bb960e128dfda6c2c8db57cff7cc92a9",
+  "public_evidence_sha256": "e23d3a033c2451f23a0abecb9946324c94814b0bfb18a84e893e95cb8a4e27ca",
+  "groundtruth_used": false,
+  "actual_trigger_used": false,
+  "member_used": false,
+  "ASR_used": false,
+  "active_arms": [
+    "plain_relabel",
+    "confidence_gated_relabel"
+  ]
+}

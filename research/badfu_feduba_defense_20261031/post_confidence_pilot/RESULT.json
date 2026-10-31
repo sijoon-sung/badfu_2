@@ -1,0 +1,706 @@
+{
+  "state": "completed",
+  "cases": {
+    "benign_big19336": {
+      "selection_sha256": "005bd583b3257299065d7e01daec5b774a1096cb2962199787689ad830a79374",
+      "cases": {
+        "plain_relabel": {
+          "threshold": 0.0,
+          "clean": {
+            "n": 9500,
+            "correct": 8602,
+            "CA_pct": 90.54736842105264,
+            "class_CA_pct": [
+              95.72025052192068,
+              97.69633507853403,
+              85.90956887486855,
+              81.38297872340425,
+              90.66808059384942,
+              82.0,
+              94.72573839662446,
+              93.2920536635707,
+              92.78897136797455,
+              91.09225874867445
+            ],
+            "beneficial_n": 212,
+            "beneficial_kept_n": 37,
+            "beneficial_kept_fraction": 0.17452830188679244,
+            "disagree_post_n": 633
+          },
+          "deletion_audit": {
+            "member_n": 9668,
+            "nonmember_n": 9500,
+            "scores": {
+              "true_label_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 370,
+                    "nonmember_n": 958,
+                    "AUC": 0.5099305986571122,
+                    "advantage": 0.01986119731422442
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 362,
+                    "nonmember_n": 955,
+                    "AUC": 0.5164617743195163,
+                    "advantage": 0.032923548639032685
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 364,
+                    "nonmember_n": 951,
+                    "AUC": 0.556057244543049,
+                    "advantage": 0.11211448908609789
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 361,
+                    "nonmember_n": 940,
+                    "AUC": 0.5507661931985619,
+                    "advantage": 0.10153238639712381
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 364,
+                    "nonmember_n": 943,
+                    "AUC": 0.48350774358197474,
+                    "advantage": 0.03298451283605053
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 361,
+                    "nonmember_n": 950,
+                    "AUC": 0.5245662633036886,
+                    "advantage": 0.049132526607377214
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 363,
+                    "nonmember_n": 948,
+                    "AUC": 0.5020050911880601,
+                    "advantage": 0.004010182376120275
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 363,
+                    "nonmember_n": 969,
+                    "AUC": 0.5125132552658587,
+                    "advantage": 0.02502651053171734
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 3378,
+                    "nonmember_n": 943,
+                    "AUC": 0.4993567635884869,
+                    "advantage": 0.0012864728230261857
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 3382,
+                    "nonmember_n": 943,
+                    "AUC": 0.508643633282809,
+                    "advantage": 0.017287266565618076
+                  }
+                ],
+                "weighted_AUC": 0.5086429697154281,
+                "advantage": 0.017285939430856212,
+                "weighted_class_advantage": 0.020668659304357427
+              },
+              "max_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 370,
+                    "nonmember_n": 958,
+                    "AUC": 0.5054561868758111,
+                    "advantage": 0.010912373751622129
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 362,
+                    "nonmember_n": 955,
+                    "AUC": 0.5152989499869833,
+                    "advantage": 0.03059789997396667
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 364,
+                    "nonmember_n": 951,
+                    "AUC": 0.5330305866583469,
+                    "advantage": 0.06606117331669381
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 361,
+                    "nonmember_n": 940,
+                    "AUC": 0.49921023162609773,
+                    "advantage": 0.001579536747804533
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 364,
+                    "nonmember_n": 943,
+                    "AUC": 0.46885087341078857,
+                    "advantage": 0.06229825317842286
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 361,
+                    "nonmember_n": 950,
+                    "AUC": 0.47716868348155705,
+                    "advantage": 0.04566263303688589
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 363,
+                    "nonmember_n": 948,
+                    "AUC": 0.498250630586649,
+                    "advantage": 0.0034987388267020414
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 363,
+                    "nonmember_n": 969,
+                    "AUC": 0.5047662098042058,
+                    "advantage": 0.009532419608411669
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 3378,
+                    "nonmember_n": 943,
+                    "AUC": 0.49157388554347353,
+                    "advantage": 0.016852228913052936
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 3382,
+                    "nonmember_n": 943,
+                    "AUC": 0.49667489854905233,
+                    "advantage": 0.00665020290189533
+                  }
+                ],
+                "weighted_AUC": 0.4959765053970827,
+                "advantage": 0.008046989205834576,
+                "weighted_class_advantage": 0.01686381863980357
+              }
+            },
+            "weighted_accuracy_gap": 0.08501891952400902,
+            "class_accuracy_gaps": [
+              0.04279749478079331,
+              0.023036649214659644,
+              0.14090431125131442,
+              0.18617021276595747,
+              0.0933191940615058,
+              0.18000000000000005,
+              0.052742616033755296,
+              0.06707946336429305,
+              0.07033408738597391,
+              0.08848604645766711
+            ]
+          },
+          "increase_over_post": {
+            "true_label_logprob": {
+              "advantage": 0.013951092598058712,
+              "weighted_class_advantage": 0.007015935132855021
+            },
+            "max_logprob": {
+              "advantage": 0.0,
+              "weighted_class_advantage": 0.0
+            }
+          },
+          "absolute_accuracy_gap_increase": 0.08007817702570937,
+          "necessary_deletion_gate": false,
+          "overall_drop_pp": -0.7473684210526415,
+          "worst_class_drop_pp": 0.5302226935312717,
+          "routed_clean_n": 665,
+          "routed_member_n": 786,
+          "maxlogprob_permutation_max_abs_error": 4.4398078963281407e-16,
+          "attack_quality": null,
+          "necessary_gate": false
+        },
+        "confidence_gated_relabel": {
+          "threshold": 0.9999296551701196,
+          "clean": {
+            "n": 9500,
+            "correct": 8530,
+            "CA_pct": 89.78947368421053,
+            "class_CA_pct": [
+              91.7536534446764,
+              96.33507853403141,
+              85.69926393270242,
+              80.1063829787234,
+              91.1983032873807,
+              81.15789473684211,
+              93.88185654008439,
+              93.08565531475749,
+              93.00106044538707,
+              91.51643690349947
+            ],
+            "beneficial_n": 212,
+            "beneficial_kept_n": 212,
+            "beneficial_kept_fraction": 1.0,
+            "disagree_post_n": 1
+          },
+          "deletion_audit": {
+            "member_n": 9668,
+            "nonmember_n": 9500,
+            "scores": {
+              "true_label_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 370,
+                    "nonmember_n": 958,
+                    "AUC": 0.5067567567567568,
+                    "advantage": 0.013513513513513598
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 362,
+                    "nonmember_n": 955,
+                    "AUC": 0.515599780162564,
+                    "advantage": 0.03119956032512805
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 364,
+                    "nonmember_n": 951,
+                    "AUC": 0.5380831051178054,
+                    "advantage": 0.07616621023561088
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 361,
+                    "nonmember_n": 940,
+                    "AUC": 0.5117640124948429,
+                    "advantage": 0.02352802498968587
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 364,
+                    "nonmember_n": 943,
+                    "AUC": 0.4655792245930104,
+                    "advantage": 0.06884155081397925
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 361,
+                    "nonmember_n": 950,
+                    "AUC": 0.49261408368566845,
+                    "advantage": 0.014771832628663106
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 363,
+                    "nonmember_n": 948,
+                    "AUC": 0.49711441224674824,
+                    "advantage": 0.005771175506503523
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 363,
+                    "nonmember_n": 969,
+                    "AUC": 0.5069268536760797,
+                    "advantage": 0.013853707352159406
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 3378,
+                    "nonmember_n": 943,
+                    "AUC": 0.4934056495557619,
+                    "advantage": 0.013188700888476235
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 3382,
+                    "nonmember_n": 943,
+                    "AUC": 0.5008423673957255,
+                    "advantage": 0.0016847347914510369
+                  }
+                ],
+                "weighted_AUC": 0.4992863934026111,
+                "advantage": 0.0014272131947777877,
+                "weighted_class_advantage": 0.014509345428591842
+              },
+              "max_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 370,
+                    "nonmember_n": 958,
+                    "AUC": 0.5054561868758111,
+                    "advantage": 0.010912373751622129
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 362,
+                    "nonmember_n": 955,
+                    "AUC": 0.5152989499869833,
+                    "advantage": 0.03059789997396667
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 364,
+                    "nonmember_n": 951,
+                    "AUC": 0.5330305866583469,
+                    "advantage": 0.06606117331669381
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 361,
+                    "nonmember_n": 940,
+                    "AUC": 0.49921023162609773,
+                    "advantage": 0.001579536747804533
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 364,
+                    "nonmember_n": 943,
+                    "AUC": 0.46885087341078857,
+                    "advantage": 0.06229825317842286
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 361,
+                    "nonmember_n": 950,
+                    "AUC": 0.47716868348155705,
+                    "advantage": 0.04566263303688589
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 363,
+                    "nonmember_n": 948,
+                    "AUC": 0.498250630586649,
+                    "advantage": 0.0034987388267020414
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 363,
+                    "nonmember_n": 969,
+                    "AUC": 0.5047662098042058,
+                    "advantage": 0.009532419608411669
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 3378,
+                    "nonmember_n": 943,
+                    "AUC": 0.49157388554347353,
+                    "advantage": 0.016852228913052936
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 3382,
+                    "nonmember_n": 943,
+                    "AUC": 0.49667489854905233,
+                    "advantage": 0.00665020290189533
+                  }
+                ],
+                "weighted_AUC": 0.4959765053970827,
+                "advantage": 0.008046989205834576,
+                "weighted_class_advantage": 0.01686381863980357
+              }
+            },
+            "weighted_accuracy_gap": 0.007173513112598943,
+            "class_accuracy_gaps": [
+              0.02030130339107372,
+              0.0035000433889675886,
+              0.01113922880484397,
+              -0.0032798962692284217,
+              -0.019125890016664093,
+              0.0055955678670359665,
+              -0.0021794469435435504,
+              0.014047028119642757,
+              0.003381935510605394,
+              0.013871704294396214
+            ]
+          },
+          "increase_over_post": {
+            "true_label_logprob": {
+              "advantage": -0.0019076336380197123,
+              "weighted_class_advantage": 0.0008566212570894367
+            },
+            "max_logprob": {
+              "advantage": 0.0,
+              "weighted_class_advantage": 0.0
+            }
+          },
+          "absolute_accuracy_gap_increase": 0.0022327706142992905,
+          "necessary_deletion_gate": true,
+          "overall_drop_pp": 0.010526315789462615,
+          "worst_class_drop_pp": 0.10604453870625719,
+          "routed_clean_n": 1,
+          "routed_member_n": 20,
+          "maxlogprob_permutation_max_abs_error": 2.2204418140855768e-16,
+          "attack_quality": null,
+          "necessary_gate": true
+        }
+      },
+      "state": "completed",
+      "independent_class_AUC_checks": 40,
+      "formal_deletion_certificate": false
+    },
+    "attack_cover850": {
+      "selection_sha256": "c84636ddc79b710a2590afc9a5ef268001013dfdd8105e62913e8e1548bde0a5",
+      "cases": {
+        "confidence_gated_relabel": {
+          "threshold": 0.9999158159003888,
+          "clean": {
+            "n": 9500,
+            "correct": 8597,
+            "CA_pct": 90.49473684210525,
+            "class_CA_pct": [
+              92.17118997912317,
+              96.33507853403141,
+              86.43533123028391,
+              79.04255319148936,
+              89.92576882290561,
+              82.73684210526315,
+              94.9367088607595,
+              92.67285861713106,
+              95.97030752916224,
+              94.59172852598091
+            ],
+            "beneficial_n": 261,
+            "beneficial_kept_n": 259,
+            "beneficial_kept_fraction": 0.9923371647509579,
+            "disagree_post_n": 2
+          },
+          "deletion_audit": {
+            "member_n": 850,
+            "nonmember_n": 8542,
+            "scores": {
+              "true_label_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 0,
+                    "nonmember_n": 0,
+                    "AUC": 0.5,
+                    "advantage": 0.0
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 104,
+                    "nonmember_n": 955,
+                    "AUC": 0.5472009665726943,
+                    "advantage": 0.0944019331453887
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 87,
+                    "nonmember_n": 951,
+                    "AUC": 0.5641490506061375,
+                    "advantage": 0.12829810121227503
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 90,
+                    "nonmember_n": 940,
+                    "AUC": 0.5619385342789598,
+                    "advantage": 0.12387706855791958
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 99,
+                    "nonmember_n": 943,
+                    "AUC": 0.4971989245584155,
+                    "advantage": 0.005602150883168955
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 96,
+                    "nonmember_n": 950,
+                    "AUC": 0.542828947368421,
+                    "advantage": 0.08565789473684204
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 86,
+                    "nonmember_n": 948,
+                    "AUC": 0.5245682464920027,
+                    "advantage": 0.049136492984005464
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 101,
+                    "nonmember_n": 969,
+                    "AUC": 0.4879686111025963,
+                    "advantage": 0.024062777794807366
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 99,
+                    "nonmember_n": 943,
+                    "AUC": 0.5815846696016367,
+                    "advantage": 0.16316933920327337
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 88,
+                    "nonmember_n": 943,
+                    "AUC": 0.5262460233297985,
+                    "advantage": 0.05249204665959706
+                  }
+                ],
+                "weighted_AUC": 0.5366856938274245,
+                "advantage": 0.07337138765484896,
+                "weighted_class_advantage": 0.08039480764240034
+              },
+              "max_logprob": {
+                "class_rows": [
+                  {
+                    "class": 0,
+                    "member_n": 0,
+                    "nonmember_n": 0,
+                    "AUC": 0.5,
+                    "advantage": 0.0
+                  },
+                  {
+                    "class": 1,
+                    "member_n": 104,
+                    "nonmember_n": 955,
+                    "AUC": 0.48011478050745066,
+                    "advantage": 0.03977043898509869
+                  },
+                  {
+                    "class": 2,
+                    "member_n": 87,
+                    "nonmember_n": 951,
+                    "AUC": 0.5397585119112368,
+                    "advantage": 0.07951702382247361
+                  },
+                  {
+                    "class": 3,
+                    "member_n": 90,
+                    "nonmember_n": 940,
+                    "AUC": 0.4753191489361702,
+                    "advantage": 0.04936170212765956
+                  },
+                  {
+                    "class": 4,
+                    "member_n": 99,
+                    "nonmember_n": 943,
+                    "AUC": 0.48925093994022945,
+                    "advantage": 0.02149812011954111
+                  },
+                  {
+                    "class": 5,
+                    "member_n": 96,
+                    "nonmember_n": 950,
+                    "AUC": 0.484155701754386,
+                    "advantage": 0.031688596491228016
+                  },
+                  {
+                    "class": 6,
+                    "member_n": 86,
+                    "nonmember_n": 948,
+                    "AUC": 0.5029928368167992,
+                    "advantage": 0.005985673633598365
+                  },
+                  {
+                    "class": 7,
+                    "member_n": 101,
+                    "nonmember_n": 969,
+                    "AUC": 0.457805842503755,
+                    "advantage": 0.08438831499249
+                  },
+                  {
+                    "class": 8,
+                    "member_n": 99,
+                    "nonmember_n": 943,
+                    "AUC": 0.5302334051008494,
+                    "advantage": 0.06046681020169875
+                  },
+                  {
+                    "class": 9,
+                    "member_n": 88,
+                    "nonmember_n": 943,
+                    "AUC": 0.48439458208811337,
+                    "advantage": 0.031210835823773264
+                  }
+                ],
+                "weighted_AUC": 0.49317652461608663,
+                "advantage": 0.013646950767826738,
+                "weighted_class_advantage": 0.04522098186197466
+              }
+            },
+            "weighted_accuracy_gap": 0.05138796082117941,
+            "class_accuracy_gaps": [
+              0.0,
+              0.06526379379782521,
+              0.13405127089452124,
+              0.0566193853427896,
+              0.012543247962123902,
+              0.04894736842105263,
+              0.0008095378274948772,
+              -0.02160030244510519,
+              0.11843782469445246,
+              0.05204617757640018
+            ]
+          },
+          "increase_over_post": {
+            "true_label_logprob": {
+              "advantage": 0.06737175082500257,
+              "weighted_class_advantage": 0.04238579004567042
+            },
+            "max_logprob": {
+              "advantage": 0.0,
+              "weighted_class_advantage": 0.0
+            }
+          },
+          "absolute_accuracy_gap_increase": 0.05138796082117941,
+          "necessary_deletion_gate": false,
+          "overall_drop_pp": 0.02105263157895365,
+          "worst_class_drop_pp": 0.10638297872340274,
+          "routed_clean_n": 2,
+          "routed_member_n": 304,
+          "maxlogprob_permutation_max_abs_error": 4.440824335864846e-16,
+          "attack_quality": {
+            "target_n": 5915,
+            "n": 9000,
+            "ASR_pct": 65.72222222222223,
+            "heldout_target_n": 5611,
+            "heldout_n": 8542,
+            "heldout_ASR_pct": 65.68719269491923,
+            "original_label_correct_n": 2747,
+            "original_label_CA_pct": 30.522222222222222,
+            "heldout_original_label_correct_n": 2611,
+            "heldout_original_label_CA_pct": 30.56661203465231,
+            "heldout_original_class_CA_pct": [
+              null,
+              53.089005235602095,
+              11.88222923238696,
+              29.893617021276597,
+              11.876988335100743,
+              20.105263157894736,
+              38.291139240506325,
+              23.9422084623323,
+              35.63096500530223,
+              50.47720042417816
+            ],
+            "original_label_drop_from_paired_clean_pp": 59.763521423554195,
+            "worst_original_class_drop_from_paired_clean_pp": 78.04878048780486,
+            "original_label_robustness_gate": false
+          },
+          "necessary_gate": false
+        }
+      },
+      "state": "completed",
+      "independent_class_AUC_checks": 20,
+      "formal_deletion_certificate": false
+    }
+  },
+  "scope": "one_existing_BadFU_seed_cached_output_composition",
+  "new_CNN_inference": false,
+  "new_training": false,
+  "FedUBA_evaluated": false,
+  "full_objective_achieved": false,
+  "finished_unix": 1793467048.6243145,
+  "same850_executed": false,
+  "method_necessary_gates": {
+    "plain_relabel": false,
+    "confidence_gated_relabel": false
+  }
+}

@@ -1,0 +1,6 @@
+가설: 저장된공유변형×Post특징 실행은 사전고정한입력공유/특징학습/선택/정상·공격중단규칙을실제로따르고있다.
+R01/R03/P01/P04/D08/D14/D15/D17/N02. 2026-11-01. 본실험효능결과전의제한적독립감사계획이며 새방법/새FL시드가아니다. 원actor5744/source/profile/선택/모델불변이다.
+본root COMPLETED/RESULT/원PID종료후CPUguard/load<=60/2threads/noCUDA/디스크여유를확인하고고유once감사1회만실행한다. 실행중인actor와동시에연산을반복하거나원결과를수정하지않는다. 최대35분/task40분. 명시case/seal/payload와모든원source/freeze/각casefile receipt를검증한다. 원미검사경로를무오류라고확대하지않는다.
+전체저장검산: public500/held9500·actual9000/8542 ID순서,90anchors의실제공개픽셀/10sourcepool/RNG/index,point/shared최종·전20step delta/q/clipping범위와공유shape,rawsource효력과원anchor대체,같은은행사용,head/BN불변,4arm100draw/Adam100/표본RNG/68최대공개policy점과최대passing선택/모델보간/finite·strictload,actualtarget·원정답/각class정수,전체 유한삭제classAUC/accuracygap/큰정상→공격→정상850같은arm중단을검산한다. 실제heldout/trigger/member 전체CNN은새로추론하지않는다.
+제한새CNN/gradient: 각실행case의nativePost에public500+anchors90을원CNN으로재추론해저장targetlogit·512feature와byte동일을요구한다. 각case pointwise/shared의requested0만각20step을명시행index목적함수로독립입력역전파해gradienthash/delta/q모두byte동일과목적값오차<=1e-6을요구한다(360image-gradient/case). 다른9requested의gradient는재실행하지않는다. primary shared_features의첫10update를별도CPUcopy/독립hook/KL/MSE로재생하여저장step010와모든state byte동일을요구한다. 나머지90update/다른3arm 전체gradient는반복하지않는다. 모든불일치/부분성은원결과옆별도기록하며그감사를실패로보존한다.
+이검산의통과는실제효능의성공이나독립학습/FedUBA재현/범용망각증명이아니다. 원본finitetrainer를반복하지않고원case결과/부모실패는보존한다. 양성일때만별도독립CNN/독립조건확인을새protocol로계획하며성공을미리채우지않는다.
