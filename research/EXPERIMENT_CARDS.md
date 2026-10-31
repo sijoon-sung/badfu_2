@@ -502,6 +502,7 @@
 - [research/feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_RESULT.json](feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_RESULT.json)
 - [research/feduba_mixed_surrogate_20261101/STARTED_OBSERVATION.json](feduba_mixed_surrogate_20261101/STARTED_OBSERVATION.json)
 - [research/feduba_mixed_surrogate_20261101/CHECKS.json](feduba_mixed_surrogate_20261101/CHECKS.json)
+- [research/feduba_mixed_surrogate_20261101/LIVE_SOURCE_CHECKS.json](feduba_mixed_surrogate_20261101/LIVE_SOURCE_CHECKS.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031) · [feduba_stage_diagnosis_20261101](feduba_stage_diagnosis_20261101) · [feduba_mixed_surrogate_20261101](feduba_mixed_surrogate_20261101)
 

@@ -191,3 +191,4 @@
 | [DOMAIN_CONTRACT_RESULT.json](../../../research/feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_RESULT.json) | `research/feduba_mixed_surrogate_20261101` |
 | [STARTED_OBSERVATION.json](../../../research/feduba_mixed_surrogate_20261101/STARTED_OBSERVATION.json) | `research/feduba_mixed_surrogate_20261101` |
 | [CHECKS.json](../../../research/feduba_mixed_surrogate_20261101/CHECKS.json) | `research/feduba_mixed_surrogate_20261101` |
+| [LIVE_SOURCE_CHECKS.json](../../../research/feduba_mixed_surrogate_20261101/LIVE_SOURCE_CHECKS.json) | `research/feduba_mixed_surrogate_20261101` |
