@@ -310,7 +310,7 @@
 
 - **조건:** ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b와 저자 PDF/ZIP; DISLAB CPU 원본 import 및 AST 함수 실행. stcebra/FUBA 모델과 구별.
 - **정상 대조·비교:** 같은 합성32샘플의 shuffled batch1 대 sequential batch1; 고정 Arguments의 FL/FU 소유권 대 보조자료 helper 소유권; 저자 ZIP 대 Git blob.
-- **결과:** 저자 ZIP9파일 모두 고정 Git blob과 동일. 두 원본 import는 utils/models 부재로 종료1. 민감도 순회 위치를 데이터 ID로 재사용하는 경로의 합성 순위 일치0/32 대 순차 대조32/32; 실제 FL/FU 공격자5/7 대 보조자료2/3 불일치 확인. 실제 공격 FL/FU·CA/ASR·탐지율은 생성하지 않았다. 논문-코드 조건과 평가 정의 차이를 기록하고 G0/G1에서 전체 학습 진입을 중단했다. 이것은 실제 공격 성공률이나 논문 공격 불가능성의 증명이 아니다. 최신사용자가SSS/BEA의FedUBA구현을명시하여기존FUBA우선지시를대체했다. 기존FUBA대기parent48688과정확예약작업만상태/정체검사후중지·비활성화했고두완료실패/8미시작과모든모델/default를보존했다. 새별도원문식5~8·stable ID/소유권·정확budget·x-delta요청/x+delta평가·실제FedEraser수식 core와새DISLAB CPU계약을준비했다. 누락모델은동일ResNet18/201기호의Narcissus고정코드를명시회복후보로선정했으며저자누락파일과동일하다고인증하지않았다. 실제FL/FU성능은아직미측정이다. 새명시core의DISLAB CPU6계약이실제통과했다(CORE_CPU_RESULT). 원64표본ID/analytic score·정확소유예산·BEA부호/라벨·원AST FU·복구모델10/201 CPU·투영trigger1step이며실공격성능은아니다. 새고정20RcleanFLfoundation의fixture/실제200역할/독립검증계약을게시했다. 게시commit a9acbec 뒤GPUfixture실제통과(peak1010/984MiB)·공식CIFAR MD5/새initial·분할준비후 parent35368/controller9492/trainer54660으로freshcleanFL20을1회시작했고첫두역할전체10epoch를확인했다. 실제20R완료·최종CA·FedUBA ASR은아직없다.
+- **결과:** 저자 ZIP9파일 모두 고정 Git blob과 동일. 두 원본 import는 utils/models 부재로 종료1. 민감도 순회 위치를 데이터 ID로 재사용하는 경로의 합성 순위 일치0/32 대 순차 대조32/32; 실제 FL/FU 공격자5/7 대 보조자료2/3 불일치 확인. 실제 공격 FL/FU·CA/ASR·탐지율은 생성하지 않았다. 논문-코드 조건과 평가 정의 차이를 기록하고 G0/G1에서 전체 학습 진입을 중단했다. 이것은 실제 공격 성공률이나 논문 공격 불가능성의 증명이 아니다. 최신사용자가SSS/BEA의FedUBA구현을명시하여기존FUBA우선지시를대체했다. 기존FUBA대기parent48688과정확예약작업만상태/정체검사후중지·비활성화했고두완료실패/8미시작과모든모델/default를보존했다. 새별도원문식5~8·stable ID/소유권·정확budget·x-delta요청/x+delta평가·실제FedEraser수식 core와새DISLAB CPU계약을준비했다. 누락모델은동일ResNet18/201기호의Narcissus고정코드를명시회복후보로선정했으며저자누락파일과동일하다고인증하지않았다. 실제FL/FU성능은아직미측정이다. 새명시core의DISLAB CPU6계약이실제통과했다(CORE_CPU_RESULT). 원64표본ID/analytic score·정확소유예산·BEA부호/라벨·원AST FU·복구모델10/201 CPU·투영trigger1step이며실공격성능은아니다. 새고정20RcleanFLfoundation의fixture/실제200역할/독립검증계약을게시했다. 게시commit a9acbec 뒤GPUfixture실제통과(peak1010/984MiB)·공식CIFAR MD5/새initial·분할준비후 parent35368/controller9492/trainer54660으로freshcleanFL20을1회시작했고첫두역할전체10epoch를확인했다. 실제20R완료·최종CA·FedUBA ASR은아직없다. 외부자료CPU준비첫task는다운로드/OUT생성전CUDA가능여부assert에서중단됐다. 원task/source/freeze/trace를incident에보존하고GPU가보이는지와CPU수행을분리하는fresh-child진단·명시CPU2운영복구계약을게시했다. cleanFL은중단/재학습하지않았다.
 - **non-IID에 대해 남길 교훈:** 적격 공격 양성 확보 전 탐지를 검증할 수 없고, 재현 통과 자체도 D08 공격0.75848/정상0.75525·0.76188 및 D15 반례를 해결하지 않는다.
 - **반복하지 않을 주장:** 누락 utils/models를 추측해 넣고 untouched 논문 재현이라고 부르거나 stcebra/FUBA 실패 모델을 FedUBA로 대체하지 않는다. 완료된 감사 runner와 이전 FUBA 유한 작업을 자동 반복하지 않는다.
 - **재검토 조건:** 권위 있는 누락 정의·데이터/ID/BEA 의미 및 설정 차이를 해소한 별도 고정 profile, 실제 동일 FU 정상 대조, 독립 정상 보정과 새로운 행동 가설을 먼저 확보한다.
@@ -349,6 +349,10 @@
 - [research/feduba_paper_implementation_20261031/ASSET_PROFILE.json](feduba_paper_implementation_20261031/ASSET_PROFILE.json)
 - [research/feduba_paper_implementation_20261031/ASSET_FREEZE.json](feduba_paper_implementation_20261031/ASSET_FREEZE.json)
 - [research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json](feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json)
+- [research/feduba_paper_implementation_20261031/ASSET_FAILURE.json](feduba_paper_implementation_20261031/ASSET_FAILURE.json)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt](feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt)
+- [research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json](feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json)
+- [research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json](feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031)
 

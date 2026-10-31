@@ -38,3 +38,7 @@
 | [ASSET_PROFILE.json](../../../research/feduba_paper_implementation_20261031/ASSET_PROFILE.json) | `research/feduba_paper_implementation_20261031` |
 | [ASSET_FREEZE.json](../../../research/feduba_paper_implementation_20261031/ASSET_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
 | [EXTERNAL_SOURCE_METADATA.json](../../../research/feduba_paper_implementation_20261031/EXTERNAL_SOURCE_METADATA.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_FAILURE.json](../../../research/feduba_paper_implementation_20261031/ASSET_FAILURE.json) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_CPU_RECOVERY_PROTOCOL.txt](../../../research/feduba_paper_implementation_20261031/ASSET_CPU_RECOVERY_PROTOCOL.txt) | `research/feduba_paper_implementation_20261031` |
+| [ASSET_CPU2_FREEZE.json](../../../research/feduba_paper_implementation_20261031/ASSET_CPU2_FREEZE.json) | `research/feduba_paper_implementation_20261031` |
+| [MANIFEST.json](../../../research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1/MANIFEST.json) | `research/feduba_paper_implementation_20261031/incidents/asset_cpu_visibility_v1` |

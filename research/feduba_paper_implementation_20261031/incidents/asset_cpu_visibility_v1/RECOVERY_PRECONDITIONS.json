@@ -1,0 +1,21 @@
+﻿{
+    "last_task_result":  1,
+    "external_output_exists":  false,
+    "clean_FL_state":  {
+                           "state":  "training",
+                           "pid":  54660,
+                           "rounds":  3,
+                           "round":  4,
+                           "client":  13,
+                           "epoch":  4,
+                           "epochs":  10,
+                           "batches":  80,
+                           "examples":  2500,
+                           "loss":  0.6592760015487671,
+                           "lr":  0.00945503262094184,
+                           "updated_unix":  1793441484.196554,
+                           "profile":  "feduba.paper.cifar10.cleanfl20.s42.20261031"
+                       },
+    "original_task":  "Codex-FedUBA-external-assets-CPU-20261031",
+    "state":  "Ready"
+}
