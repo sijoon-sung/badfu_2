@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "0a71dc68f398340477f3613ea887baed4a6119eb3c8560207cc09c56acb2dff9",
+  "registry_sha256": "a054e1420484be8501c751d1c1ffbf3b6a8b44212acb7ef64392cc2e7eddac6f",
   "cards": 29,
-  "unique_source_documents": 502,
+  "unique_source_documents": 506,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -509,7 +509,11 @@
     "research/badfu_feduba_defense_20261031/POST_ANCHOR_PROTOCOL.txt": "5ad0f40d701eee4941bbd11a8b3c83b3823085707d95b49fed62f139ff7ab19a",
     "research/badfu_feduba_defense_20261031/POST_ANCHOR_FREEZE.json": "fa960eaeda57cf8879eac9af51f6638b4a0b2f94e6602cbd770d8c61170a78ad",
     "research/badfu_feduba_defense_20261031/POST_ANCHOR_QUALITY_CONTRACT.json": "037a6a6b8fef30db18a9766e9ed4cd76ee17c00b1d4f179808208e0de96ed898",
-    "research/badfu_feduba_defense_20261031/POST_ANCHOR_PROFILE.json": "c88d4827ee48919f5f3a00b41b04eff6b55f4d11271c6b387027bd32ea6e17f8"
+    "research/badfu_feduba_defense_20261031/POST_ANCHOR_PROFILE.json": "c88d4827ee48919f5f3a00b41b04eff6b55f4d11271c6b387027bd32ea6e17f8",
+    "research/badfu_feduba_defense_20261031/POST_ANCHOR_LAUNCH.json": "ba43e4960ab63210bc49969e1e0f91a1091ff60d182656d9383e352bdf437312",
+    "research/badfu_feduba_defense_20261031/post_anchor_run/STARTED.json": "f04f00b252bd1be2b6fca50b3f90faff64882e0d77beaf585064cffd568b74bc",
+    "research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/SOURCE_INPUTS.json": "013aa6ea41369de176cc6a7be02f00213d658a9f3e0fc8dbe0bbcc56fab43765",
+    "research/badfu_feduba_defense_20261031/post_anchor_run/benign_big19336/BANK_BEFORE_TRAINING.json": "87dfe9e3f41d78d5ead4872e339596e17f22f982efc637e65f571ed0fd6203e5"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
