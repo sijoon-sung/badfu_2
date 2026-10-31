@@ -1,0 +1,62 @@
+{
+  "pre": {
+    "clean": {
+      "max_feature_error": 1.4781951904296875e-05,
+      "max_logit_error": 2.1992722324171154e-05,
+      "top1_mismatches": 0
+    },
+    "attack": {
+      "max_feature_error": 1.049041748046875e-05,
+      "max_logit_error": 1.5973923767731435e-05,
+      "top1_mismatches": 0
+    }
+  },
+  "post": {
+    "clean": {
+      "max_feature_error": 1.3828277587890625e-05,
+      "max_logit_error": 3.148228787352991e-05,
+      "top1_mismatches": 0
+    },
+    "attack": {
+      "max_feature_error": 8.106231689453125e-06,
+      "max_logit_error": 7.836490352630676e-06,
+      "top1_mismatches": 0
+    }
+  },
+  "clean_pre": {
+    "clean": {
+      "max_feature_error": 1.1920928955078125e-05,
+      "max_logit_error": 2.2526419982349388e-05,
+      "top1_mismatches": 0
+    },
+    "attack": {
+      "max_feature_error": 1.430511474609375e-05,
+      "max_logit_error": 3.0446145473206343e-05,
+      "top1_mismatches": 0
+    }
+  },
+  "clean_post": {
+    "clean": {
+      "max_feature_error": 1.33514404296875e-05,
+      "max_logit_error": 2.168585405648571e-05,
+      "top1_mismatches": 0
+    },
+    "attack": {
+      "max_feature_error": 1.6927719116210938e-05,
+      "max_logit_error": 1.8011389524730248e-05,
+      "top1_mismatches": 0
+    }
+  },
+  "clean_big_post": {
+    "clean": {
+      "max_feature_error": 1.3828277587890625e-05,
+      "max_logit_error": 2.5819719723152446e-05,
+      "top1_mismatches": 0
+    },
+    "attack": {
+      "max_feature_error": 1.2516975402832031e-05,
+      "max_logit_error": 1.9391099003396306e-05,
+      "top1_mismatches": 0
+    }
+  }
+}
