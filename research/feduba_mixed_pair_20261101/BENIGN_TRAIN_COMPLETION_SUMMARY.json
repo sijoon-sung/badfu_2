@@ -1,0 +1,68 @@
+{
+  "state": "completed_new_benign_FU20_independent_audit_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "observed_utc": "2026-11-01T04:33:01.2992081Z",
+  "result_sha256": "1cbe33d2d2f928be222d23b0ef11454e7e94dcb83a064d85b3f17b512aaeb537",
+  "result_bytes": 975,
+  "remote_sha256_matches_local_copy": true,
+  "result": {
+    "state": "completed_FU20",
+    "branch": "benign",
+    "profile": "feduba.mixed_teacher.pairedFU20.s42.20261101",
+    "rounds": 20,
+    "new_trained_roles": 200,
+    "actual_local_epochs": 1000,
+    "actual_batches": 19955,
+    "after": {
+      "path": "fu/benign/after.pt",
+      "sha256": "cd0e6e544a6993e7672e75fff56488141de09d4b12c6e58317cc28bc25793d16",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "delta": {
+      "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+      "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+      "bytes": 13865,
+      "payload_key": null
+    },
+    "SSS_result_sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1",
+    "history_manifest_sha256": "57531052efdb38b5ec2ac0ddef4e4283911350eaa699b7813695263b538d934c",
+    "performance_not_yet_evaluated": true,
+    "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+    "FedUBA_attack_completed": false
+  },
+  "committed_manifest_rounds": 20,
+  "trained_checkpoints": 200,
+  "calibrated_checkpoints": 200,
+  "global_round_checkpoints": 20,
+  "expected_batches_before_training": 19955,
+  "actual_batches": 19955,
+  "selection_owner5": 56,
+  "selection_owner7": 69,
+  "remaining_owner5_samples": 2444,
+  "remaining_owner7_samples": 2431,
+  "owner7_participating_rounds": 9,
+  "dynamic_batch_count_changed_after_results": false,
+  "independent_audit_completed_at_observation": false,
+  "controller_pid_observed": 7756,
+  "normal_trainer_46748_already_exited": true,
+  "current_auditor_pid_observed": 38220,
+  "actual_CIM_parent_and_commandline_matched": true,
+  "new_model_queries_by_this_observer": 0,
+  "finite_training_or_audit_reexecuted": false,
+  "live_console_log_read_or_hashed": false,
+  "new_attack_FU_complete": false,
+  "new_performance_evaluated": false,
+  "overall_goal_complete": false,
+  "limitations": [
+    "This is a completed training receipt, not independent audit completion.",
+    "All local SGD gradients/raw augmentation are not independently replayed.",
+    "D08/D15 benign non-IID confounding and unknown trigger family detection remain unresolved."
+  ]
+}
