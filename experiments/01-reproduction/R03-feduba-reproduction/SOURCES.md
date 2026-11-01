@@ -327,3 +327,10 @@
 | [REPORT_KO.txt](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/REPORT_KO.txt) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
 | [SOURCE_CHECKS.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/SOURCE_CHECKS.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
 | [verify_prefix.py](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/verify_prefix.py) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [CPU_AUDIT_PUBLICATION.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/CPU_AUDIT_PUBLICATION.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [AUDIT_RESULT.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/AUDIT_RESULT.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [AUDIT_ONCE.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/AUDIT_ONCE.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [TASK_LAUNCH_ONCE.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/TASK_LAUNCH_ONCE.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [TERMINAL_CHECKS.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/TERMINAL_CHECKS.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [COMPLETION_OBSERVATION.json](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/COMPLETION_OBSERVATION.json) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
+| [NEXT_GPU_RECOVERY_DESIGN.txt](../../../research/feduba_mixed_attack_prefix_guard_v2_20261101/NEXT_GPU_RECOVERY_DESIGN.txt) | `research/feduba_mixed_attack_prefix_guard_v2_20261101` |
