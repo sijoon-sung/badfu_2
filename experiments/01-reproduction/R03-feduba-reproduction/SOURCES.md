@@ -219,3 +219,9 @@
 | [STARTED_OBSERVATION.json](../../../research/feduba_mixed_trigger_20261101/STARTED_OBSERVATION.json) | `research/feduba_mixed_trigger_20261101` |
 | [CONTROLLER_ONCE.json](../../../research/feduba_mixed_trigger_20261101/CONTROLLER_ONCE.json) | `research/feduba_mixed_trigger_20261101` |
 | [TRIGGER_ONCE.json](../../../research/feduba_mixed_trigger_20261101/TRIGGER_ONCE.json) | `research/feduba_mixed_trigger_20261101` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_pair_20261101/PROTOCOL.txt) | `research/feduba_mixed_pair_20261101` |
+| [SOURCE_PROFILE.json](../../../research/feduba_mixed_pair_20261101/SOURCE_PROFILE.json) | `research/feduba_mixed_pair_20261101` |
+| [SOURCE_FREEZE.json](../../../research/feduba_mixed_pair_20261101/SOURCE_FREEZE.json) | `research/feduba_mixed_pair_20261101` |
+| [COPY_PROVENANCE.json](../../../research/feduba_mixed_pair_20261101/COPY_PROVENANCE.json) | `research/feduba_mixed_pair_20261101` |
+| [MONITOR_PROTOCOL.txt](../../../research/feduba_mixed_pair_20261101/MONITOR_PROTOCOL.txt) | `research/feduba_mixed_pair_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_pair_20261101/REPORT_KO.txt) | `research/feduba_mixed_pair_20261101` |

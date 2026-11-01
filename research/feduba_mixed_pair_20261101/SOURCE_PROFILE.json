@@ -1,0 +1,168 @@
+{
+  "id": "feduba.mixed_trigger.pair.source_only.20261101",
+  "launch_enabled": false,
+  "trigger_binding": null,
+  "execution_root": "D:/FEDUBA_MIXED_PAIR_20261101",
+  "foundation_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "trigger_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+  "required_mixed_teacher_sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "After the single source-grounded mixed teacher and unchanged CPU trigger pass their preregistered audits, the same SSS/BEA/FU and evaluation conditions can test latent activation using a newly bound delta and newly selected125 source IDs, preserving the old failed pair.",
+  "new_observable": "New5000 owner queries/top125; two actualFU20 trajectories and their complete CPU audits; same-new-delta pre/benign/attack full primary+independent counts.",
+  "non_IID_scope": "Implementation/performance prerequisite only. D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8 remain unresolved; no server detector or response-magnitude proposal.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "normal_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "normal_pre_sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+  "normal_manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "normal_seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "foundation_history_manifest": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/clean_fl/MANIFEST.json",
+    "sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28"
+  },
+  "history_role_payload_key": "model",
+  "history_global_payload_key": null,
+  "trigger_predeclared_files": {
+    "SOURCE_FREEZE.json": "5f5146b6a266754f7e3a9ffbcd341c838c704d7d7a16786277301dfe01731a86",
+    "LAUNCH_PROFILE.json": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+    "RUN_FREEZE.json": "d9a214d747b6aac897fd8e74d2ba0e74434d576d07c1ae53b50c6cf973528eb2",
+    "RUN_PUBLICATION.json": "49fad7d44a02f7cdb1523bf11068fb9d5f1bbfd4a5ca0dd6d31f8f6ca638ac6f"
+  },
+  "old_GPU_failure": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/STG_AUDIT_FAILURE.json",
+    "sha256": "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce"
+  },
+  "external_evidence": {
+    "runtime_common.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/runtime_common.py",
+      "sha256": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e"
+    },
+    "core.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5"
+    },
+    "sss_logging.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/sss_logging.py",
+      "sha256": "1edd3927efb6c02ae9aca2026fad4f3c15352c13ce84de0344a128443face0d7"
+    },
+    "fu_core.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/fu_core.py",
+      "sha256": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e"
+    },
+    "fu_training.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/fu_training.py",
+      "sha256": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320"
+    },
+    "pair_eval_core.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/pair_eval_core.py",
+      "sha256": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8"
+    },
+    "model_reference.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "FU_PROFILE.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/FU_PROFILE.json",
+      "sha256": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318"
+    },
+    "PAIR_EVAL_PROFILE.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/PAIR_EVAL_PROFILE.json",
+      "sha256": "8ea422a4d76c42333024437e328d475e1f86894f42c7b322e0cc7b69edc631c8"
+    },
+    "SSS_NUMERIC_POLICY.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/SSS_NUMERIC_POLICY.json",
+      "sha256": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74"
+    },
+    "SSS_LOGGER_CPU2_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/SSS_LOGGER_CPU2_RESULT.json",
+      "sha256": "e653b408bbeaf0e5e9fbcd052dc7d0d4b6071231ca74c58ed6486cd305fb69a3"
+    },
+    "FU_ENGINE_CPU_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/FU_ENGINE_CPU_RESULT.json",
+      "sha256": "85b0ab87c9a587a650ae64e6ae116a6bb1da59a83e8146deef573a7029641d79"
+    },
+    "FU_POLICY_CPU_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/FU_POLICY_CPU_RESULT.json",
+      "sha256": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d"
+    },
+    "PAIR_EVAL_CPU_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/PAIR_EVAL_CPU_RESULT.json",
+      "sha256": "98987c3e71a7326c66214dfb63e2f1075b5680b7802fdb45ad6d5b800d0394b5"
+    },
+    "CLEAN_FL_PROFILE.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_PROFILE.json",
+      "sha256": "91f91b4ade27fc0b210f887fa24a0a923b25df3720850790c155d3d03c0fe96a"
+    },
+    "CLEAN_FL_READY.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_READY.json",
+      "sha256": "8126d795438f3c87942258c5f06e34284eb83610e8bef418673273d8255df498"
+    },
+    "CLEAN_FL_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_RESULT.json",
+      "sha256": "92be8444a0cfdda3dc224ce71e28e265125bac3efd941fc2e4f838e1b6764f31"
+    },
+    "CLEAN_FL_VERIFIED.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_VERIFIED.json",
+      "sha256": "bd44e8ac785dbee5478ee2f5976b19dd807e90843f8f4de0b2880da3cd14d471"
+    },
+    "CLEAN_DELIVERY_COMPLETE.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_DELIVERY_COMPLETE.json",
+      "sha256": "40be20e87c4469165e2216ef4d6a13ac390d4942333b8c04575a9f5a34eb9999"
+    },
+    "FOUNDATION_STATE.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/FOUNDATION_STATE.json",
+      "sha256": "612c4a7233c455d4beae3bcc36afc120a09d06f67b6c9aa53f611f521950d3b8"
+    },
+    "GPU_PREFLIGHT_RESULT.json": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/GPU_PREFLIGHT_RESULT.json",
+      "sha256": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c"
+    }
+  },
+  "source_only_budget": {
+    "torch_imports": 0,
+    "model_loads": 0,
+    "model_forwards": 0,
+    "new_fixture_executions": 0,
+    "prepare_calls": 0,
+    "trigger_output_model_or_delta_hash_reads": 0,
+    "actual_launch_profiles": 0
+  },
+  "fixed_future_budget": {
+    "SSS_samples": 5000,
+    "SSS_batches": 40,
+    "SSS_calls": 80,
+    "SSS_sample_forwards": 10000,
+    "selected_IDs": 125,
+    "FU_branches": 2,
+    "FU_rounds_each": 20,
+    "FU_trained_roles_each": 200,
+    "FU_calibrated_roles_each": 200,
+    "FU_globals_each": 20,
+    "FU_epochs_each": 1000,
+    "attack_batches": 20000,
+    "benign_batches": "dynamic from exact same ID deletion",
+    "primary_sample_forwards": 60000,
+    "independent_sample_forwards": 60000,
+    "primary_calls": 474,
+    "independent_calls": 474
+  },
+  "constants_source": "Exact copied FU_PROFILE/PAIR_EVAL_PROFILE/SSS_NUMERIC_POLICY; no numerical/tolerance changes",
+  "stop_rule": "Source-only cannot launch. Metadata prepare only after trigger verified and actual exit/task0; publish actual profiles/freezes before all numerical entrypoints. Preserve prefix on source/hash/ID/count/finite/RNG/storage/runtime/numeric failure, no retries/tolerance widening. Performance misses do not skip a branch or delivery. No seed/lr/epoch/target/epsilon/budget/denominator grids.",
+  "overall_goal_complete": false
+}

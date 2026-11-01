@@ -1,0 +1,37 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "rows": [
+    {
+      "branch": "benign",
+      "source_N": 14,
+      "actual_epochs": 5,
+      "actual_batches": 5,
+      "sample_exposures": 70,
+      "strict_CPU_roundtrip": true
+    },
+    {
+      "branch": "attack",
+      "source_N": 16,
+      "actual_epochs": 5,
+      "actual_batches": 5,
+      "sample_exposures": 80,
+      "strict_CPU_roundtrip": true
+    }
+  ],
+  "new_actual_SGD_epochs": 10,
+  "actual_batches": 10,
+  "actual_sample_exposures": 150,
+  "model": "synthetic_Linear3072_to10_not_paper_victim",
+  "source_hashes": {
+    "FU_ENGINE_CPU_PROTOCOL.txt": "fc0dbb25b9ef6cb5ca078f36afc68955b27dd81a79990343d12ab5e828a52a68",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "test_fu_engine.py": "8ddbdb26eaf25733c78ae5fc7035d7975a34a9ff55a5f1ebffa44a26c6311b9e",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318"
+  },
+  "real_SSS_or_FU_executed": false,
+  "prior_finite_contracts_repeated": false
+}
