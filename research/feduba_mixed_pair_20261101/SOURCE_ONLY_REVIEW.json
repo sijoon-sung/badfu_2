@@ -1,0 +1,24 @@
+{
+  "state": "passed_source_only_no_queries_or_prepare",
+  "utc": "2026-11-01T03:11:57.047442+00:00",
+  "source_freeze_sha256": "edfc7e0a640b01c0a4c6c12b85c8fc87635b81dd1ef22a64b0e2a56a6b78b47c",
+  "Python_AST_files": 18,
+  "PowerShell_AST": "passed",
+  "seven_helpers_and_canonical_profiles_exact_copies": true,
+  "completed_fixture_receipts_reused_not_reexecuted": [
+    "SSS_LOGGER_CPU2_RESULT.json",
+    "FU_ENGINE_CPU_RESULT.json",
+    "FU_POLICY_CPU_RESULT.json",
+    "PAIR_EVAL_CPU_RESULT.json"
+  ],
+  "current_trigger15_and_predeclared_profiles_unchanged": true,
+  "new_model_queries": 0,
+  "torch_imports": 0,
+  "prepare_calls": 0,
+  "trigger_output_model_or_delta_hash_reads": 0,
+  "new_fixtures": 0,
+  "closed_numerical_gate_rejected_as_expected": true,
+  "future_exact_task": "absent",
+  "actual_launch_profiles_created": false,
+  "overall_goal_complete": false
+}

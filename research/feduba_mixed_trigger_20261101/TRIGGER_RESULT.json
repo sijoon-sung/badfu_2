@@ -1,0 +1,39 @@
+{
+  "state": "completed_CPU_mixed_teacher_trigger100",
+  "new_epochs": 100,
+  "actual_batches": 200,
+  "sample_exposures": 20000,
+  "teacher": {
+    "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+    "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+    "bytes": 45162251,
+    "payload_key": null,
+    "classes": 201
+  },
+  "reused_mixed_teacher_epochs": 105,
+  "source_target": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/target_external.pt",
+    "sha256": "8a40deeb76740157aaeecb259d013740ff83b3f54c155ccf6c3802a7bba2ab4a",
+    "bytes": 618597,
+    "payload_key": null
+  },
+  "delta": {
+    "path": "private_run/delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "numeric_environment": {
+    "CPU_threads": 2,
+    "MKLDNN": true,
+    "FP32": true,
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "CUDA_initialized": false,
+    "matmul_precision": "highest",
+    "torch": "2.7.1+cu118"
+  },
+  "manifest_sha256": "7a24c1aad699ba6f65101bc63909937e8d15e6cabdb205f1da27f55b62b20f89",
+  "original_GPU_STG_failure_preserved": true,
+  "new_SSS_FU_or_attack_performance_completed": false,
+  "overall_goal_complete": false
+}

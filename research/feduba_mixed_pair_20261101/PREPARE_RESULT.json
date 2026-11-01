@@ -1,0 +1,23 @@
+{
+  "state": "passed_metadata_binding_actual_profiles_not_started",
+  "profiles_and_freezes_sha256": {
+    "SSS_LAUNCH_PROFILE.json": "b8f615dad5b3623a560378d2870cb274aea5db28b669f15e553904b0e5847783",
+    "FU_LAUNCH_PROFILE.json": "c312149c7c0d9fdad06ff0d2e9f2aa1f664328329c8faaba582b9b41ac903aac",
+    "PAIR_EVAL_LAUNCH_PROFILE.json": "8431c9d7bda0172dbae7e70ef77b78a03fa9d3415965658c27b4424069fe4516",
+    "PAIR_LAUNCH_PROFILE.json": "4af67b42fe6991555a8818011c1932e2ca38963d23590aec7478790abde932d0",
+    "SSS_FREEZE.json": "866823dd0c5645f190156d9024c5a5d76e54ff71dd9d4ca19277199b5ba36b8e",
+    "FU_RUN_FREEZE.json": "866823dd0c5645f190156d9024c5a5d76e54ff71dd9d4ca19277199b5ba36b8e",
+    "PAIR_EVAL_RUN_FREEZE.json": "866823dd0c5645f190156d9024c5a5d76e54ff71dd9d4ca19277199b5ba36b8e",
+    "PAIR_RUN_FREEZE.json": "8055386b92f79d64ac50be3854abe2061c803eaa8e504504e752f498af36136b"
+  },
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "model_loads": 0,
+  "model_forwards": 0,
+  "next_required": "Publish these exact actual profiles/freezes to existing PR before any numerical execution"
+}
