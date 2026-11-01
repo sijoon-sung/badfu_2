@@ -1,0 +1,4 @@
+새복구1회진행감시 — R03/R02/N02/D08/D15
+반복reader는observe_status.py를python -B로호출한다. QUERY_STATUS는고정newroot의조건부PREPARE/CONTROLLER/FU/감사/평가/완료JSON에서명시필드만읽고현재CIM commandline/parent·manifest committed round·마지막event를[string]→ConvertFrom-Json→명시필드로파싱한다. 응답25000문자상한/torch·modelquery0/finite재실행0이다. 원raw eventstring/wholelogs·privateSSS/rawIDs를깊은JSON에넣거나공개stage하지않는다.
+현재pid는관측값이며실CIM/FAILURE가과거STATE보다우선이다. source/inputhash 준비가ONCE/STATE전일수있으므로startup부재만으로재시작하지않는다. task실행중lastTaskResult를완료근거로쓰지않고실terminal뒤만확인한다. live recovery_console.log/진행중평가파일은hash/read하지않고완료receipt/명시불변freeze만hash한다.
+metadata prepare/새controller/각child는정확1회이고기존모든완료job/oldrunner·CPUguard실패task는재호출하지않는다. FU_attack_RESULT의legacy counts는유효이력200/1000/20000,실여기계산은154/770/15400이고원lost5epoch100batch는별도다. 불일치면prefix/trace보존·새명시계약없이는retry하지않는다. primary/독립완료뒤전달은별도코드/freeze가필요하다. 보통진행은조용히확인하고완료/새실패/필수사용자결정만알린다.
