@@ -1,0 +1,15 @@
+{
+  "state": "passed_remote_frozen_SHA_and_Python_PS_AST",
+  "frozen_files": 24,
+  "Python_AST": 14,
+  "PowerShell_AST": 2,
+  "five_helpers_exact_original_bytes": true,
+  "two_numerical_loop_ASTs_exact": true,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "native_probe_executed": false,
+  "metadata_prepare_executed": false,
+  "actual_GPU_task_started": false,
+  "source_freeze_sha256": "41b426ae77145513cf66d7f836e8e69e268d9e3e23a65ee980fb920def49313d",
+  "remote_PS_metadata_count_representation": "array_of_24_property_Count_values_each_1; all24_hashes_checked; explicit_frozen_map_len24"
+}

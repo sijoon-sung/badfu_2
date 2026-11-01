@@ -1,0 +1,30 @@
+{
+  "state": "completed_full_CPU_attack_recovery_audit_passed_primary_guard_failed_before_forward",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "verified_sha256": "c5a9c3f245b12255f2ce1cfbf3b866bb8b7b933db7173fe1678b25a69c2e8705",
+  "verified_bytes": 65547,
+  "rounds": 20,
+  "effective_trained_roles": 200,
+  "effective_calibrated_roles": 200,
+  "effective_globals": 20,
+  "effective_epochs": 1000,
+  "effective_batches": 20000,
+  "history_hashes": 420,
+  "reused_original_roles": 46,
+  "executed_here_roles": 154,
+  "all_role_source_ID_optimizer_RNG_checked": true,
+  "independent_effective_source_calibration_aggregation_exact": true,
+  "all_SGD_gradients_recomputed": false,
+  "new_ASR_CA_available": false,
+  "original_task_ready_exit": 1,
+  "original_current_processes": [],
+  "primary_failure_before_ONCE": true,
+  "primary_victim_model_forward_calls": 0,
+  "original_failed_jobs_reexecuted": false
+}
