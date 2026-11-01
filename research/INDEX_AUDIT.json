@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "41fb0411e81771cb6e88e21dc485154ddac6f64f31248c7650cbacef4ca933b8",
+  "registry_sha256": "c85f7d0c470b4863df8f3816d5d3509a7f4b8ce8916f2843f6ea4f6e167fa4e2",
   "cards": 28,
-  "unique_source_documents": 515,
+  "unique_source_documents": 530,
   "top_level_folders": 111,
   "folders_linked_to_cards": 63,
   "source_sha256": {
@@ -430,7 +430,7 @@
     "research/feduba_mixed_surrogate_20261101/MONITOR_PROTOCOL.txt": "52d2f7227344c98e62bf02edf0dc84f09255eabd9eaa72b3190928ce8ed7c1e9",
     "research/feduba_mixed_surrogate_20261101/COPY_PROVENANCE.json": "cc2a14b7d013c18e77e4323a2f64ad99639a8d0c1602e46d33275c1475ea2da9",
     "research/feduba_mixed_surrogate_20261101/SOURCE_CHECKS.json": "9c0e272e1e983e3237f2858f2afb27e8191864ba85ec3712c4d77cfd03264a71",
-    "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt": "d74f117c5e4e4674a8129de8a5087dd540c0676321fa0f870f660a2ef14b6e9c",
+    "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt": "8f9f9f4cba833cd66ed15dd5a8cad1cd9e84f44558a54c579c1028d621b3557e",
     "research/feduba_mixed_surrogate_20261101/PUBLICATION.json": "f509ad61e4ed9b0684c16841c43248bc6b3912ff9c98fcc0b21c742c29161f38",
     "research/feduba_mixed_surrogate_20261101/CONTROLLER_ONCE.json": "a22a34cd20ce7d9d6c5efe749bf1e6341c241ef7e18b433e6cd8f23c3e1eb3d6",
     "research/feduba_mixed_surrogate_20261101/TRAIN_ONCE.json": "daab8cf42137b1c7feb6049954c536272a544128c5b4c329b45f4bd9505be74c",
@@ -446,8 +446,23 @@
     "research/feduba_mixed_trigger_20261101/MONITOR_PROTOCOL.txt": "58d81c3b4d4df2e92724c2a308438385600e9030dab7cec4adfd8324e151bd27",
     "research/feduba_mixed_trigger_20261101/COPY_PROVENANCE.json": "ba82dc5b593034dda75c38f1c6139a80df8adbf42ec1d4837a20e1a4c0782df9",
     "research/feduba_mixed_trigger_20261101/SOURCE_ONLY_REVIEW.json": "6f2635abef26bd6d94f71873de5a3d3c411ddeb1b23b31857bae1649120ef87a",
-    "research/feduba_mixed_trigger_20261101/REPORT_KO.txt": "272651c5c69f74fe5239d00180b38bb965072e72d27aa4e889b9ca3358093a33",
+    "research/feduba_mixed_trigger_20261101/REPORT_KO.txt": "a3409664f184ff70f6ccd63eed49e8e371cb8d53129127e9bea33eb594b0d4f0",
     "research/feduba_mixed_trigger_20261101/SOURCE_PUBLICATION.json": "0732081da843e8761777d1977d93af0fc7caf666e718161d88149bd8c3fbf97a",
+    "research/feduba_mixed_surrogate_20261101/TRAIN_RESULT.json": "6b3a9076b9fae2aa12e70d3207fb0ebf14ffeca17654b8a58451dd95bacef3df",
+    "research/feduba_mixed_surrogate_20261101/TRAIN_VERIFIED.json": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+    "research/feduba_mixed_surrogate_20261101/ENDPOINT_RESULT.json": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+    "research/feduba_mixed_surrogate_20261101/ENDPOINT_VERIFIED.json": "6bf479abfd8be48a3b9a5acbc2f120ad91ba294833113cafe47f0f6410690ace",
+    "research/feduba_mixed_surrogate_20261101/COMPLETION.json": "ff6f10c9d5db18d47d2358560b758e391cd99e5bc36c1163c11371795a01414f",
+    "research/feduba_mixed_surrogate_20261101/MANIFEST.json": "0c4cd0f1246403d5c3ca4fc512f175196d5f3442e5d4379a0f04f157c46cb6eb",
+    "research/feduba_mixed_surrogate_20261101/TERMINAL_OBSERVATION.json": "1eacef873b042b36e59e444bb5c271d305f396535b4f0cc5e161aab12281de86",
+    "research/feduba_mixed_surrogate_20261101/COMPLETION_REPORT_KO.txt": "8a7dea9200ddb529f03b7be5358cf2b76b687bca27dac7703e79ebec9ad49169",
+    "research/feduba_mixed_trigger_20261101/PREPARE_ONCE.json": "c5511fea40d19b9f298a10ad095231de014aba4a4b268456bc3b66e40c993593",
+    "research/feduba_mixed_trigger_20261101/PREPARE_RESULT.json": "ea61ec6d0cbbb3c62d50cee3d4211facc1498b030aaacf3f4b00d7e145b4e46a",
+    "research/feduba_mixed_trigger_20261101/TEACHER_TERMINAL.json": "9921fc6435cd27cfae52a0519fe3fa950c7090f8b17c37b9d68f46a1d762a31a",
+    "research/feduba_mixed_trigger_20261101/NORMAL_SELECTION.json": "540c0634d241754e215d9ce60bc73340f175a4dfb4ed747715c4b9054e516ea4",
+    "research/feduba_mixed_trigger_20261101/LAUNCH_PROFILE.json": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+    "research/feduba_mixed_trigger_20261101/RUN_FREEZE.json": "d9a214d747b6aac897fd8e74d2ba0e74434d576d07c1ae53b50c6cf973528eb2",
+    "research/feduba_mixed_trigger_20261101/LAUNCH_BINDING_CHECKS.json": "9c02a42cee2e00ea56e44d2f9593a35dc3423f545e420c7c29cd17d7ed7d82ca",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -835,10 +850,13 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_mixed_surrogate_20261101/COMPLETION_REPORT_KO.txt",
         "research/feduba_mixed_surrogate_20261101/DOMAIN_CONTRACT_RESULT.json",
+        "research/feduba_mixed_surrogate_20261101/ENDPOINT_RESULT.json",
         "research/feduba_mixed_surrogate_20261101/MONITOR_PROTOCOL.txt",
         "research/feduba_mixed_surrogate_20261101/PROTOCOL.txt",
-        "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt"
+        "research/feduba_mixed_surrogate_20261101/REPORT_KO.txt",
+        "research/feduba_mixed_surrogate_20261101/TRAIN_RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
@@ -849,6 +867,7 @@
       ],
       "top_level_documents": [
         "research/feduba_mixed_trigger_20261101/MONITOR_PROTOCOL.txt",
+        "research/feduba_mixed_trigger_20261101/PREPARE_RESULT.json",
         "research/feduba_mixed_trigger_20261101/PROTOCOL.txt",
         "research/feduba_mixed_trigger_20261101/REPORT_KO.txt"
       ],

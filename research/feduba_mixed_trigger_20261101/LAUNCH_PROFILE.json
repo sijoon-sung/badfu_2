@@ -1,0 +1,92 @@
+{
+  "state": "prepared_single_mixed_teacher_CPU_trigger100",
+  "launch_enabled": true,
+  "execution_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+  "source_profile_sha256": "f03d0e50d4df8c65094c8655dd53990b0efc97a0caa0f4aef52036c0481de477",
+  "constants": {
+    "epochs": 100,
+    "batches": 200,
+    "target_N": 200,
+    "target_label": 200,
+    "sample_exposures": 20000,
+    "batch_size": 128,
+    "tail": 72,
+    "seed": 3000,
+    "loader_seed": 3000,
+    "optimizer": "SGD",
+    "alpha": 0.1,
+    "momentum": 0,
+    "weight_decay": 0,
+    "foreach": false,
+    "fused": false,
+    "loss_reduction": "mean",
+    "initial_delta": "zeros_1x3x32x32",
+    "epsilon_model": 0.12549019607843137,
+    "epsilon_raw": 0.06274509803921569,
+    "input_clip": [
+      -1,
+      1
+    ],
+    "theta_and_BN_mode": "eval_frozen",
+    "workers": 0,
+    "CPU_threads": 2,
+    "MKLDNN": true,
+    "dtype": "FP32",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "CUDA_initialized": false,
+    "matmul_precision": "highest",
+    "projection_every_batch": true,
+    "algebra_atol": 1e-07,
+    "gradient_atol": 2e-05,
+    "gradient_rtol": 0.001,
+    "independent_gradient_steps": [
+      [
+        1,
+        1
+      ],
+      [
+        100,
+        2
+      ]
+    ],
+    "audit_gradient_examples": 200,
+    "all200_gradients_independently_recomputed": false,
+    "minimum_free_storage_bytes": 2147483648
+  },
+  "teacher_bindings": {
+    "TRAIN_RESULT.json": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\TRAIN_RESULT.json",
+      "sha256": "6b3a9076b9fae2aa12e70d3207fb0ebf14ffeca17654b8a58451dd95bacef3df",
+      "bytes": 969
+    },
+    "TRAIN_VERIFIED.json": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\TRAIN_VERIFIED.json",
+      "sha256": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+      "bytes": 12891
+    },
+    "ENDPOINT_RESULT.json": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\ENDPOINT_RESULT.json",
+      "sha256": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+      "bytes": 2041
+    },
+    "ENDPOINT_VERIFIED.json": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\ENDPOINT_VERIFIED.json",
+      "sha256": "6bf479abfd8be48a3b9a5acbc2f120ad91ba294833113cafe47f0f6410690ace",
+      "bytes": 625
+    },
+    "COMPLETION.json": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\COMPLETION.json",
+      "sha256": "ff6f10c9d5db18d47d2358560b758e391cd99e5bc36c1163c11371795a01414f",
+      "bytes": 604
+    },
+    "teacher": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+      "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+      "bytes": 45162251,
+      "payload_key": null,
+      "classes": 201
+    }
+  },
+  "normal_selection_sha256": "540c0634d241754e215d9ce60bc73340f175a4dfb4ed747715c4b9054e516ea4",
+  "source_review_sha256": "6f2635abef26bd6d94f71873de5a3d3c411ddeb1b23b31857bae1649120ef87a"
+}
