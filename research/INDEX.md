@@ -64,7 +64,7 @@ flowchart TD
 |---|---|
 | [R01 · 승인된 BadFU 모델과 삭제 방식](EXPERIMENT_CARDS.md#r01) | 검증 범위 한정 |
 | [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
-| [R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사](EXPERIMENT_CARDS.md#r03) | mixed 정상FU20·감사완료 / prefix46 CPU감사passed / 복구154 실profile 준비완료·계산전게시 |
+| [R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사](EXPERIMENT_CARDS.md#r03) | mixed 정상FU20·감사완료 / MemoryError·CPU46감사 보존 / 공격154역할 복구실행중 |
 
 ### 이력·영향력
 

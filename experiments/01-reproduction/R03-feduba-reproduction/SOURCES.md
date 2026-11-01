@@ -379,3 +379,10 @@
 | [SOURCE_REVIEW_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/SOURCE_REVIEW_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
 | [SOURCE_REVIEW_RESULT.json](../../../research/feduba_mixed_attack_recovery_run_20261101/SOURCE_REVIEW_RESULT.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
 | [TERMINAL_OBSERVATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/TERMINAL_OBSERVATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RECOVERY_ATTACK_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RECOVERY_ATTACK_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RECOVERY_CONTROLLER_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RECOVERY_CONTROLLER_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RECOVERY_TASK_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RECOVERY_TASK_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RUN_PUBLICATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RUN_PUBLICATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [START_RECEIPT_COPY_CHECKS.json](../../../research/feduba_mixed_attack_recovery_run_20261101/START_RECEIPT_COPY_CHECKS.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [STARTED_OBSERVATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/STARTED_OBSERVATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [TRAIN_RUNTIME_OBSERVATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/TRAIN_RUNTIME_OBSERVATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
