@@ -257,3 +257,6 @@
 | [FIRST_PROBE_FAILURE.json](../../../research/feduba_mixed_monitor_20261101/FIRST_PROBE_FAILURE.json) | `research/feduba_mixed_monitor_20261101` |
 | [RECOVERY_V2_PROTOCOL.txt](../../../research/feduba_mixed_monitor_20261101/RECOVERY_V2_PROTOCOL.txt) | `research/feduba_mixed_monitor_20261101` |
 | [FREEZE_V2.json](../../../research/feduba_mixed_monitor_20261101/FREEZE_V2.json) | `research/feduba_mixed_monitor_20261101` |
+| [BOUNDED_OBSERVATION_V2.json](../../../research/feduba_mixed_monitor_20261101/BOUNDED_OBSERVATION_V2.json) | `research/feduba_mixed_monitor_20261101` |
+| [ACTIVE_FREEZE_CHECKS.json](../../../research/feduba_mixed_monitor_20261101/ACTIVE_FREEZE_CHECKS.json) | `research/feduba_mixed_monitor_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_monitor_20261101/REPORT_KO.txt) | `research/feduba_mixed_monitor_20261101` |

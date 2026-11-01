@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "2e759ea9eca280c2f882d49c4a8420f8dc36a05db9e113a64303289b3ce81b6c",
+  "registry_sha256": "a5fcba10dad290b2fa7317907bf268820e552637289f21a7d13ef49a0576949d",
   "cards": 28,
-  "unique_source_documents": 572,
+  "unique_source_documents": 575,
   "top_level_folders": 113,
   "folders_linked_to_cards": 65,
   "source_sha256": {
@@ -505,6 +505,9 @@
     "research/feduba_mixed_monitor_20261101/FIRST_PROBE_FAILURE.json": "44319df23a80dbee19c1ab7da1b8a581c8e41125b60af4797efbda6a1381c038",
     "research/feduba_mixed_monitor_20261101/RECOVERY_V2_PROTOCOL.txt": "172dea5bcedabecc87f503873eacc8406ac0a492b9802bbc689c955ca4ebf943",
     "research/feduba_mixed_monitor_20261101/FREEZE_V2.json": "b9ad2addbf212ebbebb903d4623a88e06b3cb0f8b2b2f403fa0b66831d9ed90b",
+    "research/feduba_mixed_monitor_20261101/BOUNDED_OBSERVATION_V2.json": "5265a8e827cce741a906c08856069561646ad790d7239481bcaffaceb7fcfa43",
+    "research/feduba_mixed_monitor_20261101/ACTIVE_FREEZE_CHECKS.json": "1faf65af0b78fe32fe71ccfa04dfb5a3b9457d6f68282810b3ef5d3411c6fb8e",
+    "research/feduba_mixed_monitor_20261101/REPORT_KO.txt": "836d6f83e10b501e47b94f5875f13b5879c9bec1189d9a4a60d7b9a34973b573",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -893,7 +896,8 @@
       ],
       "top_level_documents": [
         "research/feduba_mixed_monitor_20261101/PROTOCOL.txt",
-        "research/feduba_mixed_monitor_20261101/RECOVERY_V2_PROTOCOL.txt"
+        "research/feduba_mixed_monitor_20261101/RECOVERY_V2_PROTOCOL.txt",
+        "research/feduba_mixed_monitor_20261101/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
