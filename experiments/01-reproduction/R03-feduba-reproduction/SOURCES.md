@@ -519,3 +519,15 @@
 | [source_review.py](../../../research/feduba_mixed_pair_delivery_20261101/source_review.py) | `research/feduba_mixed_pair_delivery_20261101` |
 | [SOURCE_REVIEW_ONCE.json](../../../research/feduba_mixed_pair_delivery_20261101/SOURCE_REVIEW_ONCE.json) | `research/feduba_mixed_pair_delivery_20261101` |
 | [SOURCE_REVIEW_RESULT.json](../../../research/feduba_mixed_pair_delivery_20261101/SOURCE_REVIEW_RESULT.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [DELIVERY_PUBLICATION.json](../../../research/feduba_mixed_pair_delivery_20261101/DELIVERY_PUBLICATION.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [PAIR_REVIEW_TASK_ONCE.json](../../../research/feduba_mixed_pair_delivery_20261101/PAIR_REVIEW_TASK_ONCE.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [PAIR_REVIEW_EXPORT_ONCE.json](../../../research/feduba_mixed_pair_delivery_20261101/PAIR_REVIEW_EXPORT_ONCE.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [PAIR_REVIEW_DELIVERY_REMOTE.json](../../../research/feduba_mixed_pair_delivery_20261101/PAIR_REVIEW_DELIVERY_REMOTE.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [ARCHIVE_TRANSFER_CHECKS.json](../../../research/feduba_mixed_pair_delivery_20261101/ARCHIVE_TRANSFER_CHECKS.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [observe_delivery_status.py](../../../research/feduba_mixed_pair_delivery_20261101/observe_delivery_status.py) | `research/feduba_mixed_pair_delivery_20261101` |
+| [observe_local_receive.py](../../../research/feduba_mixed_pair_delivery_20261101/observe_local_receive.py) | `research/feduba_mixed_pair_delivery_20261101` |
+| [MONITOR_PROTOCOL.txt](../../../research/feduba_mixed_pair_delivery_20261101/MONITOR_PROTOCOL.txt) | `research/feduba_mixed_pair_delivery_20261101` |
+| [MONITOR_FREEZE.json](../../../research/feduba_mixed_pair_delivery_20261101/MONITOR_FREEZE.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [LOCAL_RECEIVE_RESOURCE_OBSERVATION.json](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_RESOURCE_OBSERVATION.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [REMOTE_EXPORT_TERMINAL_CHECKS.json](../../../research/feduba_mixed_pair_delivery_20261101/REMOTE_EXPORT_TERMINAL_CHECKS.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [DELIVERY_PROGRESS.json](../../../research/feduba_mixed_pair_delivery_20261101/DELIVERY_PROGRESS.json) | `research/feduba_mixed_pair_delivery_20261101` |

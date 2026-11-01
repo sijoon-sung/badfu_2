@@ -1,0 +1,32 @@
+{
+  "state": "read_only_local_receiver_resource_observation",
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 5270446080,
+    "committedBytes": 21865365504,
+    "commitLimit": 50775060480
+  },
+  "own_storage_processes": [
+    {
+      "ProcessId": 31852,
+      "ParentProcessId": 16968,
+      "Name": "python.exe",
+      "CommandLine": "C:/ProgramData/miniconda3/python.exe  -B tmp/feduba_mixed_delivery_transfer_receive_once.py"
+    },
+    {
+      "ProcessId": 30540,
+      "ParentProcessId": 31852,
+      "Name": "python.exe",
+      "CommandLine": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\envs\\badfu-original\\python.exe -B C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_delivery_20261101\\receive_pair_review.py"
+    }
+  ],
+  "model_queries": 0,
+  "finite_reexecution": false,
+  "observation_utc": "2026-11-01T07:27:20.389795+00:00",
+  "fixed_available_min_bytes": 8589934592,
+  "fixed_commit_headroom_min_bytes": 17179869184,
+  "local_CPU_or_extraction_started": false,
+  "local_delivery_complete": false
+}
