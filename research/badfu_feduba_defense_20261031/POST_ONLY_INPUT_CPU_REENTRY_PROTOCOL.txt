@@ -1,0 +1,10 @@
+가설: 동일Post-only입력방법의첫실효능은GPU를사용하지않는별도CPU2고정profile에서도큰정상/삭제→실제원정답·ASR→정상850순으로검사할수있다.
+R01/R03/P01/P04/D08/D14/D15/N02. 2026-11-01 KST. scientific가설/연산/공개선택/대조/중단gate는POST_ONLY_INPUT_PROTOCOL그대로이며새방법이나성공이아니다. 새관측은아직계산되지않은실제필터성능/정상큰삭제의품질이다. D08/D15를다른반응량/관측추가로해결했다고하지않는다.
+
+원GPU once task는CPU/RAM/3서비스검사후알수없는추가GPUcompute PID가있어guard에서실패했다. 원PID26856은종료/taskexit1, STARTED/모델load/자료load/public calibration/CUDA초기화/실CNN은0이다. FAILURE/EXIT와원89freeze/profile/로그를원위치보존한다. 14:48:03 KST실조회에서total10240/used5674/free4380/util0,기존13000/31756/37492외다른Python9376(parent29836)이GPU점유중이었다. 원commandline은기록하지않았고다른앱/그프로세스를종료하거나allowlist/자원guard를완화하지않았다. 원GPUjob을재호출하지않는다.
+
+새profile badfu.postonly_input.s20261023.cpu2.20261101.v2를처음부터끝까지DISLAB CPU2/noCUDA/FP32/NCHW/B32/eval/결정론으로고정한다. 원pure postonly_inputs.py와실제NumPy합성계약의SHA를재사용하고그계약을반복하지않는다. 새runner는원GPUrunner의복사본에서outputroot/새profile·freeze/evaluator명/CPUguard와backend·runtime메타데이터만바꾼다. key/raw01/predict함수와공개선택/필터/eval수식/모든효용·삭제·ASR·원정답한계/동일500·9500·9000·8542/상태불변검사는같다. AST·명시diff·두sourceSHA를새provenance에보존한다. numerical함수변경/중간장치전환/원실패삭제가아니다.
+CPU실측load<=60%/논리>=8/RAMavailable>=8GiB·commit여유>=16GiB/disk>=8GiB,torch2.7.1+cu118에서CUDA미초기화를진입/각case/종료에요구한다. CPU는GPU를점유하지않으므로GPUfree/PID조건을낮추어적용하는것이아니다. 별도output postonly_input_cpu_v2/로그·실PID/고유task1회이며case<=3600초/total<=10800초/task195분이다. 예산은기존CPU2모델평가의관측실행비용에맞춘사전조건이다. 실제기능/삭제/원정답gate는완화하지않는다.
+새같은nativeCPU와기존H3 GPUfeature/FP64head를같이비교하고원1e-3최대logit/argmax5장한계를유지한다. 원GPU실효능결과가없으므로GPU/CPU방법성능을서로일치했다고주장하지않는다. CPUlabelcount가한계밖이면필터성능결론전에평가경로오류로보존중단한다. 원source/모델seal·case/payload·새freeze/선게시/이전finite모든종료·새중복PID/task0을확인한뒤시작한다. source/runtime/nonfinite/저장/수치오류는보존하며별도원단계교정없이retry하지않는다.
+
+bounded양성도controlled-inferenceguard필요조건이며raw가중치백도어삭제/FLclient가중치접근·적응공격/범용탐지/역할식별/유효FedUBA를대체하지않는다. 원문IntGuard의명시가정/과거범위,Ext-MND기존실측분리,모든이전기각/정상양성/default는보존한다. 전체방어목표는계속미완료다.

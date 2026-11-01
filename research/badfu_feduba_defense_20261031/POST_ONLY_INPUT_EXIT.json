@@ -1,0 +1,6 @@
+{
+  "state": "failed",
+  "pid": 26856,
+  "time": 1793511892.2900763,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\background_postonly_input.py\", line 7, in <module>\n    try:runpy.run_path(str(r/'postonly_input_run.py'),run_name='__main__')\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\postonly_input_run.py\", line 172, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\postonly_input_run.py\", line 48, in main\n    resources=guard()\n              ^^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\cuda_entry_postonly.py\", line 24, in guard\n    assert {int(v.strip()) for v in pids if v.strip()}<=set(inv),'competing GPU compute process'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: competing GPU compute process\n"
+}

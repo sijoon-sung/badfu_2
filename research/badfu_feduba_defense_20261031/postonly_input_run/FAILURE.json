@@ -1,0 +1,3 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\postonly_input_run.py\", line 172, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\postonly_input_run.py\", line 48, in main\n    resources=guard()\n              ^^^^^^^\n  File \"D:\\BADFU_FEDUBA_DEFENSE_20261031\\cuda_entry_postonly.py\", line 24, in guard\n    assert {int(v.strip()) for v in pids if v.strip()}<=set(inv),'competing GPU compute process'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: competing GPU compute process\n"
+}
