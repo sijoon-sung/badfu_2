@@ -1,0 +1,27 @@
+가설: 공유 clipped-additive 변형과 Post 원본특징 일치는 이미지별 logit 교정보다 실제 trigger 원정답을 복원하고 큰 정상 삭제의 기능·삭제 품질을 보존한다.
+R01/R03/P01/P02/P04/D02/D06/D07/D08/D14/D15/D17/D18/N02. fixed badfu.confirmed.s20261023.v1/purification_pilot,1FL시드/유지자료재학습. 원actor5744/독립audit39188 완료·종료/task0. 원모델/100학습·전PGD/파생raw·selected/Adam/RNG/검산은DISLAB 원위치에보존한다. 완료finite작업은반복하지않는다.
+
+과정: 같은90공개anchor에서pointwise/shared각20PGD·1800image-gradient은행1회씩을만들고logit/feature arm이동일은행을공유했다. 각100Adam/.0001/public32/query10/고정Posthead·BN버퍼,public11+최대6보간선택이다. 실정답/trigger/target/member는방법·선택에전달하지않았다. prefeature복원없이Post 원본feature를목표로했다.
+
+큰정상19336삭제 (Post heldCA89.8%,모든필요조건통과):
+arm                 alpha       CA_pct       worstclassloss_pp   true_label_adv    beneficial_kept/212
+pointwise_logits    .0578125    89.957895    .842105             .002812986        199
+shared_logits       .109375     89.768421   1.378579             .003104889        185
+pointwise_features  .050000     89.978947    .531915             .002841554        201
+shared_features     .125000     89.778947   1.444788             .002167819        184
+유익교정90%의옛목표는pointwise두arm만통과했고shared두arm미달은그대로보존한다. 모두현CA/각class/유한삭제advantage증가.04/절대accuracygap증가.02규칙은통과했다. 강한정상반례가해결된범용탐지라는뜻은아니다.
+
+실제공격 (full9000/held8542; 각선택후ASR100%/원정답0):
+arm                 rawASRfull/held_pct        raw_original_correct_held/8542   selectedalpha
+pointwise_logits    90.244444/90.470616        722=8.452353%                    .0781250
+shared_logits       84.188889/84.383048        579=6.778272%                    .0781250
+pointwise_features  95.544444/95.715289        321=3.757902%                    .1343750
+shared_features     87.855556/88.059003        493=5.771482%                    .0468750
+shared는같은loss의pointwise보다rawtargetASR이낮아졌지만원정답은더낮았다. feature항도이한고정비교에서실제원정답을개선하지못했다. ASR감소만정화로채택하지않는다. 모든arm탈락해정상850/추가공격clean-member는사전중단상미실행이다. 원protocol의'raw와selected모두ASR<=10'문장과parent evaluator의selected-only 채택식은범위가다르지만이번에는양쪽모두실패해기각판정에차이가없다. 미래protocol에서는raw진단/selected채택의구분을명시하고사후완화하지않는다.
+
+독립감사:
+전체source/freeze/model·90anchor/pixel/pool/RNG/20PGD delta·공유shape/clipping·거절anchor대체/4arm100draw·Adam100·head/BN불변/보간·68publicpolicy·선택/원정답/target·각class정수/유한80classAUC/중단검산을통과했다. 각case nativePost의public500+anchor90 logit·512feature를새CPU원CNN으로재추론해저장target과byte동일이었다. pointwise/shared각requested0의20PGD를독립명시행목적함수로재생해전gradienthash/delta/query/objective가exact, 각primary첫10update재생도전state byte동일/최대오차0이었다. 총1180개의사용공개/anchor 재추론·720image-gradient·20disposable update이며독립FL시드가아니다. 다른9requested/나머지90update/전체heldout·actualtrigger·member CNN 독립재추론은아니다.
+
+새관측과수정근거:
+공유구조와Postfeature추가만으로실제trigger교정이전달되지않았다. 은행raw sourcevalid는정상pointwise90/shared73(17대체),공격90/71(19대체)였고,이를실제semantic보존이나실제triggercoverage로동일시하지않는다. 최종은행source학습정도와실제trigger간전이의원인은추가저장출력진단전유일확정하지않는다. 현재교사를그대로고르는후처리는다른진단에서원정답상한85.7879<요구88.3301로탈락했다. 같은교사/같은합성은행의소폭선택수정만으로문제를해결했다고하지않는다.
+후속은원고의Int-Guard 계열을다시원source와대조하여Pre 의존이없는Post-only 입력경로의필요조건을별도고정한다. preprocessing을새범용탐지/가중치백도어제거/클라이언트역할식별로승격하지않고,큰정상/삭제와실제원정답·ASR을분리해확인한다. 기존Ext-MND/D18실측양성은이정화실패로없어지지않는다. 목표전체는미완료다.

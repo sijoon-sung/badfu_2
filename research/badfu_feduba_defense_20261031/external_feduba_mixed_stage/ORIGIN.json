@@ -1,0 +1,30 @@
+{
+  "producer_head_at_read": "e2cd2c4",
+  "actual_models_or_private_logits_consumed": false,
+  "files": {
+    "mixed_teacher_completion.txt": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_surrogate_20261101\\COMPLETION_REPORT_KO.txt",
+      "sha256": "8a7dea9200ddb529f03b7be5358cf2b76b687bca27dac7703e79ebec9ad49169"
+    },
+    "mixed_trigger_completion.txt": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_trigger_20261101\\COMPLETION_REPORT_KO.txt",
+      "sha256": "f55e79c44303b2ce19efabf72e47da81d9699a6d82ecf97f0a32eb3c11b21cd1"
+    },
+    "mixed_pair_report.txt": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_pair_20261101\\REPORT_KO.txt",
+      "sha256": "02b39bfd6535fefe3fc5130292db3f4111d021f61686ba09341f6efb0eafd92f"
+    },
+    "memory_recovery_report.txt": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_pair_memory_recovery_20261101\\REPORT_KO.txt",
+      "sha256": "fd080722363d2ddbf1848075490674a064cec5ddccfe7329bff1a866db2ff92f"
+    },
+    "next_recovery_rationale.txt": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_pair_memory_recovery_20261101\\NEXT_RECOVERY_RATIONALE.txt",
+      "sha256": "4031c83eca411422e514c20be4eff71f03c830e86340f8964ee9672e3c465ca5"
+    },
+    "preservation_terminal.json": {
+      "source_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-pr-detection-20261031\\research\\feduba_mixed_pair_memory_recovery_20261101\\PRESERVATION_TERMINAL_CHECKS.json",
+      "sha256": "4de1e5fea5df0e6bc27bed030e2ad1b496d207132018770d44679b4599beceb2"
+    }
+  }
+}

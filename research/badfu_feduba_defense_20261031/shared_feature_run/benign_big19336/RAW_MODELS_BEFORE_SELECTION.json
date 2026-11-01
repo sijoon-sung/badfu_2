@@ -1,0 +1,26 @@
+{
+  "pointwise_logits": {
+    "path": "pointwise_logits_raw.pt",
+    "sha256": "8c6e8e63d6d67c17b9715146f0fc4c55915bef38839ed8b63e9a52f3da0371cc",
+    "steps": 100,
+    "identity_fallback": false
+  },
+  "shared_logits": {
+    "path": "shared_logits_raw.pt",
+    "sha256": "4f8787f06d5b195545fa43b4f768748a67b5b77438a071458695cb110f04bc7e",
+    "steps": 100,
+    "identity_fallback": false
+  },
+  "pointwise_features": {
+    "path": "pointwise_features_raw.pt",
+    "sha256": "500be01b52108bdd96656621f6dbdb7cdeca13199dc77d9f71c6547857695cc0",
+    "steps": 100,
+    "identity_fallback": false
+  },
+  "shared_features": {
+    "path": "shared_features_raw.pt",
+    "sha256": "cd9e55af655b43672fc0935fe57bba2902c2e37dc62fb9cc70903d045cb9c02e",
+    "steps": 100,
+    "identity_fallback": false
+  }
+}

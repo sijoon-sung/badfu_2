@@ -1,0 +1,305 @@
+{
+  "state": "passed",
+  "scope": "finished_pipeline",
+  "cases": {
+    "benign_big19336": {
+      "arms": {
+        "pointwise_logits": {
+          "steps": 100,
+          "alpha": 0.0578125,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true
+        },
+        "shared_logits": {
+          "steps": 100,
+          "alpha": 0.109375,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true
+        },
+        "pointwise_features": {
+          "steps": 100,
+          "alpha": 0.05,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true
+        },
+        "shared_features": {
+          "steps": 100,
+          "alpha": 0.125,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true
+        }
+      },
+      "independent_private_checks": {
+        "pointwise_logits": {
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        },
+        "shared_logits": {
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        },
+        "pointwise_features": {
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        },
+        "shared_features": {
+          "independent_class_AUC_checks": 20,
+          "necessary_gate": true
+        }
+      },
+      "bounded_replay": {
+        "generation_replay": {
+          "pointwise": {
+            "first_requested0_all20_delta_query_gradient_hash_exact": true,
+            "objective_max_abs_error": 0.0
+          },
+          "shared": {
+            "first_requested0_all20_delta_query_gradient_hash_exact": true,
+            "objective_max_abs_error": 0.0
+          }
+        },
+        "fresh_public_and_anchor_logits_features_exact": true,
+        "first10_primary_updates_exact": true,
+        "maximum_state_abs_error": 0.0,
+        "input_gradient_image_evaluations": 360,
+        "disposable_classifier_updates": 10,
+        "other9_requested_targets_or_remaining90_updates_recomputed": false
+      }
+    },
+    "attack_cover850": {
+      "arms": {
+        "pointwise_logits": {
+          "steps": 100,
+          "alpha": 0.07812500000000001,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 8122,
+              "n": 9000,
+              "heldout_target_n": 7728,
+              "heldout_n": 8542,
+              "original_label_correct_n": 780,
+              "heldout_original_label_correct_n": 722,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                10.157068062827225,
+                1.9978969505783386,
+                13.191489361702127,
+                2.9692470837751856,
+                11.157894736842106,
+                14.451476793248947,
+                5.366357069143446,
+                4.3478260869565215,
+                12.513255567338282
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "shared_logits": {
+          "steps": 100,
+          "alpha": 0.07812500000000001,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 7577,
+              "n": 9000,
+              "heldout_target_n": 7208,
+              "heldout_n": 8542,
+              "original_label_correct_n": 628,
+              "heldout_original_label_correct_n": 579,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.5235602094240838,
+                30.5993690851735,
+                2.553191489361702,
+                6.256627783669141,
+                4.736842105263158,
+                3.481012658227848,
+                1.0319917440660475,
+                9.331919406150584,
+                2.545068928950159
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "pointwise_features": {
+          "steps": 100,
+          "alpha": 0.13437500000000002,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 8599,
+              "n": 9000,
+              "heldout_target_n": 8176,
+              "heldout_n": 8542,
+              "original_label_correct_n": 352,
+              "heldout_original_label_correct_n": 321,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                7.12041884816754,
+                0.31545741324921134,
+                3.2978723404255317,
+                0.5302226935312832,
+                6.105263157894736,
+                1.0548523206751055,
+                2.9927760577915374,
+                3.1813361611876987,
+                9.225874867444327
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "shared_features": {
+          "steps": 100,
+          "alpha": 0.046875,
+          "policy_points": 17,
+          "head_and_BN_exact_fixed": true,
+          "independent_attack_counts": {
+            "raw": {
+              "target_n": 7907,
+              "n": 9000,
+              "heldout_target_n": 7522,
+              "heldout_n": 8542,
+              "original_label_correct_n": 531,
+              "heldout_original_label_correct_n": 493,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                24.500525762355416,
+                0.3191489361702127,
+                1.6967126193001063,
+                0.42105263157894735,
+                0.0,
+                0.0,
+                24.072110286320257,
+                1.0604453870625663
+              ]
+            },
+            "selected": {
+              "target_n": 9000,
+              "n": 9000,
+              "heldout_target_n": 8542,
+              "heldout_n": 8542,
+              "original_label_correct_n": 0,
+              "heldout_original_label_correct_n": 0,
+              "quality_gate": false,
+              "original_class_CA_pct": [
+                null,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "independent_private_checks": {},
+      "bounded_replay": {
+        "generation_replay": {
+          "pointwise": {
+            "first_requested0_all20_delta_query_gradient_hash_exact": true,
+            "objective_max_abs_error": 0.0
+          },
+          "shared": {
+            "first_requested0_all20_delta_query_gradient_hash_exact": true,
+            "objective_max_abs_error": 0.0
+          }
+        },
+        "fresh_public_and_anchor_logits_features_exact": true,
+        "first10_primary_updates_exact": true,
+        "maximum_state_abs_error": 0.0,
+        "input_gradient_image_evaluations": 360,
+        "disposable_classifier_updates": 10,
+        "other9_requested_targets_or_remaining90_updates_recomputed": false
+      }
+    }
+  },
+  "CPU": {
+    "NumberOfLogicalProcessors": 20,
+    "LoadPercentage": 0,
+    "load_source": "Win32_Processor"
+  },
+  "full_objective_achieved": false,
+  "fresh_actual_trigger_clean_member_inference": false,
+  "limited_disposable_replay": true,
+  "all_gradients_recomputed": false,
+  "root_result_sha256": "1faa11fa8a30bc9a7a96227fa815a314a7410c3df741a25028bb0e65ca228373",
+  "verifier_sha256": "4549776753eaf1168a55e52c6f5af0499ab11a71be3d95a066c70c38d0cddc24",
+  "verification_freeze_sha256": "6304f106a3837148319be6e56869b4d2319faa9db9875ce175142134699e8fc1"
+}
