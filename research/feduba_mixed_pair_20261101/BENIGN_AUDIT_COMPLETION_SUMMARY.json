@@ -1,0 +1,66 @@
+{
+  "state": "passed_new_benign_FU20_independent_CPU_audit_attack_process_started",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "observed_utc": "2026-11-01T04:40:37.0683599Z",
+  "verified_sha256": "94f24baee932422b64a0910f581b5fce7f400c130bd4080ab41a54b0dfd1c950",
+  "verified_bytes": 48834,
+  "result_sha256": "1cbe33d2d2f928be222d23b0ef11454e7e94dcb83a064d85b3f17b512aaeb537",
+  "remote_and_local_receipt_hashes_match": true,
+  "CPU_only": true,
+  "rounds": 20,
+  "trained_roles": 200,
+  "calibrated_roles": 200,
+  "global_round_checkpoints": 20,
+  "local_epochs": 1000,
+  "actual_batches": 19955,
+  "history_hash_count": 420,
+  "all_role_source_ID_permutations_optimizer_RNG_checked": true,
+  "independent_all_effective_source_calibration_and_aggregation_exact": true,
+  "all_local_SGD_gradients_independently_recomputed": false,
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "cd0e6e544a6993e7672e75fff56488141de09d4b12c6e58317cc28bc25793d16",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "original_first_round_submissions_reused": [
+    {
+      "round": 1,
+      "clients": [
+        0,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        13,
+        14,
+        17
+      ]
+    }
+  ],
+  "normal_trainer_and_CPU_auditor_already_exited": true,
+  "original_AUDIT_STATE_auditing_is_historical_not_liveness": true,
+  "same_controller_pid_observed": 7756,
+  "new_attack_process_pid_observed": 37112,
+  "actual_CIM_parent_commandline_matches": true,
+  "attack_TRAIN_STATE_not_present_at_initial_process_observation": true,
+  "new_attack_FU_complete": false,
+  "new_performance_evaluated": false,
+  "new_observer_model_loads_or_forwards": 0,
+  "finite_training_audit_fixture_or_prepare_reexecuted": false,
+  "live_pair_console_log_read_or_hashed": false,
+  "overall_goal_complete": false,
+  "unvalidated_scopes": [
+    "new mixed-trigger latent attack performance",
+    "D08/D15 large benign non-IID deletion separation",
+    "unknown trigger family detection"
+  ]
+}
