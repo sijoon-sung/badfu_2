@@ -287,3 +287,9 @@
 | [PREFIX_LAUNCH_PROTOCOL.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_LAUNCH_PROTOCOL.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [launch_prefix_task.ps1](../../../research/feduba_mixed_pair_memory_recovery_20261101/launch_prefix_task.ps1) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [INVOCATION_FREEZE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/INVOCATION_FREEZE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_LAUNCH_PUBLICATION.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_LAUNCH_PUBLICATION.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_ONCE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_ONCE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_PRESERVED.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_PRESERVED.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_TASK_LAUNCH_ONCE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_TASK_LAUNCH_ONCE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PRESERVATION_TERMINAL_CHECKS.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PRESERVATION_TERMINAL_CHECKS.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [NEXT_RECOVERY_RATIONALE.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/NEXT_RECOVERY_RATIONALE.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
