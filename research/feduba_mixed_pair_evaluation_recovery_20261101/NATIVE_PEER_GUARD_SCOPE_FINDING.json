@@ -1,0 +1,14 @@
+{
+  "state": "metadata_probe_passed_strict_all_Python_guard_not_launchable_no_prepare_no_GPU",
+  "native_probe_pid": 37304,
+  "native_CIM_all_name_PID_parent_match": true,
+  "native_self_commandline_CIM_match": true,
+  "observed_other_Python_processes": 10,
+  "all_other_Python_are_competing_trainers_proved": false,
+  "existing_processes_stopped": 0,
+  "prepare_executed": false,
+  "LAUNCH_PROFILE_created": false,
+  "GPU_task_created": false,
+  "native_v1_source_frozen_and_unchanged": true,
+  "next_correction": "Separate native_v2 reads actual command lines and restores original fixed named-trainer predicate; unknown query errors fail closed; no privileged API changes"
+}

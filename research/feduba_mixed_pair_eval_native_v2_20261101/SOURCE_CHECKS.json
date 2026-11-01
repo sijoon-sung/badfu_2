@@ -1,0 +1,16 @@
+{
+  "state": "passed_remote_frozen_SHA_and_Python_PS_AST_before_v2_probe",
+  "frozen_files": 32,
+  "Python_AST": 14,
+  "PowerShell_AST": 3,
+  "original15trainer_tokens_exact": true,
+  "five_helpers_exact": true,
+  "two_numeric_loop_ASTs_exact": true,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "native_v2_probe_executed": false,
+  "metadata_prepare_executed": false,
+  "actual_GPU_task_started": false,
+  "source_freeze_sha256": "8b4f33f947b68d58eba7415aaee2cbd3ba924e2d83a4930fda7a188efe00fc64",
+  "local_invocation_route": "cmd.exe with explicit script file; no PowerShell -c or quoted inline Python"
+}

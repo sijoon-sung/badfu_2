@@ -1,0 +1,15 @@
+{
+  "state": "local_tool_PowerShell_CreateProcess_denied_before_command_body",
+  "error": "Failed to create unified exec process: access denied (os error5)",
+  "attempted_source_command_executed": false,
+  "source_files_changed_by_failed_command": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "new_finite_jobs_started": false,
+  "distinct_read_only_cmd_exe_ver_succeeded": true,
+  "permanent_policy_or_privilege_changed": false,
+  "unique_cause_proved": false,
+  "local_JS_wrapper_SyntaxErrors_before_tool_body": 2,
+  "local_cmd_inline_Python_quoting_error_before_Python_body": true,
+  "distinct_file_based_cmd_python_version_succeeded": true
+}
