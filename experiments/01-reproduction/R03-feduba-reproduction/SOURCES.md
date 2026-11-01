@@ -254,3 +254,6 @@
 | [PROTOCOL.txt](../../../research/feduba_mixed_monitor_20261101/PROTOCOL.txt) | `research/feduba_mixed_monitor_20261101` |
 | [INCIDENT.json](../../../research/feduba_mixed_monitor_20261101/INCIDENT.json) | `research/feduba_mixed_monitor_20261101` |
 | [FREEZE.json](../../../research/feduba_mixed_monitor_20261101/FREEZE.json) | `research/feduba_mixed_monitor_20261101` |
+| [FIRST_PROBE_FAILURE.json](../../../research/feduba_mixed_monitor_20261101/FIRST_PROBE_FAILURE.json) | `research/feduba_mixed_monitor_20261101` |
+| [RECOVERY_V2_PROTOCOL.txt](../../../research/feduba_mixed_monitor_20261101/RECOVERY_V2_PROTOCOL.txt) | `research/feduba_mixed_monitor_20261101` |
+| [FREEZE_V2.json](../../../research/feduba_mixed_monitor_20261101/FREEZE_V2.json) | `research/feduba_mixed_monitor_20261101` |
