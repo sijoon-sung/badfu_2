@@ -268,3 +268,15 @@
 | [BENIGN_AUDIT_COMPLETION_OBSERVATION.json](../../../research/feduba_mixed_pair_20261101/BENIGN_AUDIT_COMPLETION_OBSERVATION.json) | `research/feduba_mixed_pair_20261101` |
 | [BENIGN_AUDIT_COMPLETION_SUMMARY.json](../../../research/feduba_mixed_pair_20261101/BENIGN_AUDIT_COMPLETION_SUMMARY.json) | `research/feduba_mixed_pair_20261101` |
 | [ATTACK_STARTED_OBSERVATION.json](../../../research/feduba_mixed_pair_20261101/ATTACK_STARTED_OBSERVATION.json) | `research/feduba_mixed_pair_20261101` |
+| [ATTACK_MEMORY_FAILURE_OBSERVATION.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/ATTACK_MEMORY_FAILURE_OBSERVATION.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [FU_attack_FAILURE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/FU_attack_FAILURE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [OPS_PROFILE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/OPS_PROFILE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [OWN_OBSERVER_IDENTITY.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/OWN_OBSERVER_IDENTITY.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PAIR_CONTROLLER_FAILURE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PAIR_CONTROLLER_FAILURE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [preserve_prefix.py](../../../research/feduba_mixed_pair_memory_recovery_20261101/preserve_prefix.py) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/PROTOCOL.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/REPORT_KO.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [SOURCE_CHECKS.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/SOURCE_CHECKS.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [SOURCE_FREEZE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/SOURCE_FREEZE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [STOP_OWN_OBSERVER.ps1](../../../research/feduba_mixed_pair_memory_recovery_20261101/STOP_OWN_OBSERVER.ps1) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [TERMINAL_SYSTEM_SUMMARY.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/TERMINAL_SYSTEM_SUMMARY.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |

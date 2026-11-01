@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 7756,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\paired_controller.py\", line 94, in <module>\n    main()\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\paired_controller.py\", line 81, in main\n    run('fu_runner.py', log, p, gpu=True, branch=branch)\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\paired_controller.py\", line 57, in run\n    if child.wait(): raise RuntimeError(name + ' failed; preserved, no automatic repeat')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: fu_runner.py failed; preserved, no automatic repeat\n"
+}
