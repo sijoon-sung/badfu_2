@@ -1,0 +1,44 @@
+{
+  "state": "passed_new_delivery_source_and_completed_metadata_review",
+  "Python_AST_files": 8,
+  "frozen_file_count": 13,
+  "input_receipts": 26,
+  "representative_roles": [
+    {
+      "branch": "attack",
+      "owner": 5,
+      "round": 20,
+      "source_N": 2500,
+      "batches": 100
+    },
+    {
+      "branch": "benign",
+      "owner": 5,
+      "round": 20,
+      "source_N": 2444,
+      "batches": 100
+    },
+    {
+      "branch": "attack",
+      "owner": 7,
+      "round": 18,
+      "source_N": 2500,
+      "batches": 100
+    },
+    {
+      "branch": "benign",
+      "owner": 7,
+      "round": 18,
+      "source_N": 2431,
+      "batches": 95
+    }
+  ],
+  "SSS_query_packets": 40,
+  "evaluation_input_packets": 79,
+  "evaluation_logit_packets": 237,
+  "new_CPU_trigger_records": 300,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "torch_imported": false,
+  "old_finite_called": false
+}

@@ -1,0 +1,43 @@
+{
+  "state": "new_mixed_pair_delivery_source_provenance",
+  "unchanged_helpers": {
+    "model_reference.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_eval_native_v2_20261101\\model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "native_memory.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_eval_native_v2_20261101\\native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3"
+    },
+    "native_processes.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_eval_native_v2_20261101\\native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed"
+    }
+  },
+  "derived_sources": {
+    "pair_review_common.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_paper_implementation_20261031\\pair_review_common.py",
+      "original_sha256": "dfdadf4c8519110d02c324fc9702a7b7d2cf6945de2bee0553216d83ac9cfd2b",
+      "changes_declared_in": "EXECUTION_CONTRACT.txt"
+    },
+    "receive_pair_review.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_paper_implementation_20261031\\receive_pair_review.py",
+      "original_sha256": "d145dc83397bca51ae7e92a86480f7da38ae610537f7dfefa91b9c9bdd6f9eb0",
+      "changes_declared_in": "EXECUTION_CONTRACT.txt"
+    },
+    "register_pair_cases.py": {
+      "original": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_paper_implementation_20261031\\register_pair_cases.py",
+      "original_sha256": "f079aa3d354448af57071d119b1a6409ef014d6eeb60b11fd86173785fff43e5",
+      "changes_declared_in": "EXECUTION_CONTRACT.txt"
+    }
+  },
+  "old_failed_export_not_reexecuted": true,
+  "new_export_callback_first_argument": "event_type",
+  "numeric_training_or_performance_loops_copied": false,
+  "new_cpu_storage_checks": "SGD momentum shapes and same source ID set across five saved epochs, finite CPU storage only",
+  "unchanged_function_AST": [
+    "safe",
+    "verify",
+    "finite"
+  ]
+}

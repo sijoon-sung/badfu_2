@@ -1,0 +1,32 @@
+{
+  "state": "passed_actual_completed_and_new_source_freezes_before_export",
+  "freezes": [
+    {
+      "root": "D:/FEDUBA_MIXED_PAIR_20261101",
+      "files": 37,
+      "source_freeze_sha256": "edfc7e0a640b01c0a4c6c12b85c8fc87635b81dd1ef22a64b0e2a56a6b78b47c"
+    },
+    {
+      "root": "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101",
+      "files": 25,
+      "source_freeze_sha256": "9385af91525f2729aa9d46fadb633e14d591740542b81d906f496b3825078acf"
+    },
+    {
+      "root": "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101",
+      "files": 32,
+      "source_freeze_sha256": "8b4f33f947b68d58eba7415aaee2cbd3ba924e2d83a4930fda7a188efe00fc64"
+    },
+    {
+      "root": "D:/FEDUBA_MIXED_PAIR_DELIVERY_20261101",
+      "files": 13,
+      "source_freeze_sha256": "17be254bc8954d86ba3a427b6e678f29d311beec7effdbc8e9ba7ecd295a1b68"
+    }
+  ],
+  "related_current_PID_count": 0,
+  "evaluation_task_state": "Ready",
+  "evaluation_task_result": 0,
+  "free_D_bytes": 852523229184,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "utc": "2026-11-01T07:13:53.0736384Z"
+}

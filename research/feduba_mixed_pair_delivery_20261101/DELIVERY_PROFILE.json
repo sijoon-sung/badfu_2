@@ -1,0 +1,144 @@
+{
+  "id": "feduba.mixed105.s42.SSS125.FU20.paired_readonly_delivery.20261101",
+  "launch_enabled": true,
+  "roots": {
+    "foundation": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+    "teacher": "D:/FEDUBA_MIXED_SURROGATE_20261101",
+    "trigger": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+    "pair": "D:/FEDUBA_MIXED_PAIR_20261101",
+    "memory": "D:/FEDUBA_MIXED_PAIR_MEMORY_RECOVERY_20261101",
+    "prefix_v1": "D:/FEDUBA_MIXED_ATTACK_RESUME_20261101",
+    "prefix_v2": "D:/FEDUBA_MIXED_ATTACK_PREFIX_GUARD_V2_20261101",
+    "attack": "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101",
+    "eval_v1": "D:/FEDUBA_MIXED_PAIR_EVALUATION_RECOVERY_20261101",
+    "eval": "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101"
+  },
+  "input_receipts": {
+    "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_VERIFIED.json": {
+      "sha256": "bd44e8ac785dbee5478ee2f5976b19dd807e90843f8f4de0b2880da3cd14d471",
+      "bytes": 24610
+    },
+    "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/STG_AUDIT_FAILURE.json": {
+      "sha256": "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce",
+      "bytes": 494
+    },
+    "D:/FEDUBA_MIXED_SURROGATE_20261101/TRAIN_RESULT.json": {
+      "sha256": "6b3a9076b9fae2aa12e70d3207fb0ebf14ffeca17654b8a58451dd95bacef3df",
+      "bytes": 969
+    },
+    "D:/FEDUBA_MIXED_SURROGATE_20261101/TRAIN_VERIFIED.json": {
+      "sha256": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+      "bytes": 12891
+    },
+    "D:/FEDUBA_MIXED_TRIGGER_20261101/TRIGGER_RESULT.json": {
+      "sha256": "0c0bcc89817e68bfcd4c4294df2122274dd6055f3e4df8381ba93254275faabf",
+      "bytes": 1297
+    },
+    "D:/FEDUBA_MIXED_TRIGGER_20261101/TRIGGER_VERIFIED.json": {
+      "sha256": "0a4e9e22a3af89ac9a5a2a625e6a58ecc840aaeae4f2ddea58ca8be472ca919c",
+      "bytes": 34716
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/FU_benign_RESULT.json": {
+      "sha256": "1cbe33d2d2f928be222d23b0ef11454e7e94dcb83a064d85b3f17b512aaeb537",
+      "bytes": 975
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/FU_benign_VERIFIED.json": {
+      "sha256": "94f24baee932422b64a0910f581b5fce7f400c130bd4080ab41a54b0dfd1c950",
+      "bytes": 48834
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/SOURCE_FREEZE.json": {
+      "sha256": "edfc7e0a640b01c0a4c6c12b85c8fc87635b81dd1ef22a64b0e2a56a6b78b47c",
+      "bytes": 3678
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/PAIR_RUN_FREEZE.json": {
+      "sha256": "8055386b92f79d64ac50be3854abe2061c803eaa8e504504e752f498af36136b",
+      "bytes": 4792
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/FU_attack_RESULT.json": {
+      "sha256": "f62f63662510da96983047fe46b3d0de7dae221d68fb4e35314de41f5e642e7a",
+      "bytes": 1720
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/FU_attack_VERIFIED.json": {
+      "sha256": "c5a9c3f245b12255f2ce1cfbf3b866bb8b7b933db7173fe1678b25a69c2e8705",
+      "bytes": 65547
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/SOURCE_FREEZE.json": {
+      "sha256": "9385af91525f2729aa9d46fadb633e14d591740542b81d906f496b3825078acf",
+      "bytes": 2481
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/RUN_FREEZE.json": {
+      "sha256": "ae54acb74b3c9af7a9346b5468f508268e5a06768d75e0b0ae4227072d714c96",
+      "bytes": 3088
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/RECOVERY_INPUT_BINDING.json": {
+      "sha256": "ff1509b1df4fd8730fe219bd262a5b60492aec12665bc6672e8ac97f61b91104",
+      "bytes": 10833
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/PAIR_EVAL_FAILURE.json": {
+      "sha256": "abde975709fc7832e1305bbfeacc0042200812a25b67b661f9eba49dc748e942",
+      "bytes": 2220
+    },
+    "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/RECOVERY_CONTROLLER_FAILURE.json": {
+      "sha256": "0b54ce733a3f5a0bdc8c5b7b270cf6b4878e1b68e8e081e375ca00579edf05fd",
+      "bytes": 722
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/PAIR_EVAL_RESULT.json": {
+      "sha256": "e6904fb060acfcd80bf7286c698c1a9de8b70d853ea0fd9e1ba72ad60751fec4",
+      "bytes": 84559
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/PAIR_EVAL_VERIFIED.json": {
+      "sha256": "b01011c91f252874eb254ec4c3d9766ceabac4c71694be47c9d5c99a1bef2b58",
+      "bytes": 3177
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/COMPLETION.json": {
+      "sha256": "f8f289b27550bb8be1da97dcfa5251fce80d11f0bd96d2188307281776f98e45",
+      "bytes": 265
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/SOURCE_FREEZE.json": {
+      "sha256": "8b4f33f947b68d58eba7415aaee2cbd3ba924e2d83a4930fda7a188efe00fc64",
+      "bytes": 3358
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/RUN_FREEZE.json": {
+      "sha256": "5133dd21d94929de1ab1f4ad99fa0a64d2667df4db5aa763c9c75c4b7f54ddf5",
+      "bytes": 4124
+    },
+    "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/RUN_PUBLICATION.json": {
+      "sha256": "9a120c3838cb70d988d3265d49391827a586c442b1040959e6f23b3bd19b243d",
+      "bytes": 637
+    },
+    "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/clean_fl/MANIFEST.json": {
+      "sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28"
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/SSS_RESULT.json": {
+      "sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1"
+    },
+    "D:/FEDUBA_MIXED_PAIR_20261101/SSS_VERIFIED.json": {
+      "sha256": "6b4653e307bd2b009be14c3cbaaa620cb34e9eb966df5524689dcb1688488cb6"
+    }
+  },
+  "packet_name": "FedUBA_s42_mixed105_CPUtrigger_SSS125_FU20_pair_20261101",
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.attackfu20.20261101",
+    "benign": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.benignfu20.20261101"
+  },
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "model_zero_forward_batch": 1,
+  "fresh_data_or_training": false,
+  "performance_reproduction_succeeded": false,
+  "full_history_local_approved": false,
+  "metadata_file_max_bytes": 134217728,
+  "memory_guard": {
+    "available_min_bytes": 8589934592,
+    "commit_headroom_min_bytes": 17179869184,
+    "wait_max_seconds": 86400,
+    "poll_seconds": 15
+  },
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ]
+}
