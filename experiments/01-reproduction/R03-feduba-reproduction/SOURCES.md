@@ -500,3 +500,6 @@
 | [EVALUATION_COMPLETION_SUMMARY.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/EVALUATION_COMPLETION_SUMMARY.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
 | [PAPER_COMPARISON.txt](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAPER_COMPARISON.txt) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
 | [COMPLETION_REPORT_KO.txt](../../../research/feduba_mixed_pair_eval_native_v2_20261101/COMPLETION_REPORT_KO.txt) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_pair_delivery_20261101/PROTOCOL.txt) | `research/feduba_mixed_pair_delivery_20261101` |
+| [DESIGN_INPUT_STATE.json](../../../research/feduba_mixed_pair_delivery_20261101/DESIGN_INPUT_STATE.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_pair_delivery_20261101/REPORT_KO.txt) | `research/feduba_mixed_pair_delivery_20261101` |
