@@ -215,3 +215,7 @@
 | [LAUNCH_PROFILE.json](../../../research/feduba_mixed_trigger_20261101/LAUNCH_PROFILE.json) | `research/feduba_mixed_trigger_20261101` |
 | [RUN_FREEZE.json](../../../research/feduba_mixed_trigger_20261101/RUN_FREEZE.json) | `research/feduba_mixed_trigger_20261101` |
 | [LAUNCH_BINDING_CHECKS.json](../../../research/feduba_mixed_trigger_20261101/LAUNCH_BINDING_CHECKS.json) | `research/feduba_mixed_trigger_20261101` |
+| [RUN_PUBLICATION.json](../../../research/feduba_mixed_trigger_20261101/RUN_PUBLICATION.json) | `research/feduba_mixed_trigger_20261101` |
+| [STARTED_OBSERVATION.json](../../../research/feduba_mixed_trigger_20261101/STARTED_OBSERVATION.json) | `research/feduba_mixed_trigger_20261101` |
+| [CONTROLLER_ONCE.json](../../../research/feduba_mixed_trigger_20261101/CONTROLLER_ONCE.json) | `research/feduba_mixed_trigger_20261101` |
+| [TRIGGER_ONCE.json](../../../research/feduba_mixed_trigger_20261101/TRIGGER_ONCE.json) | `research/feduba_mixed_trigger_20261101` |
