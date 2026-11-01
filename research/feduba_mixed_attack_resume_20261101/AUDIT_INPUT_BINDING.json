@@ -1,0 +1,75 @@
+{
+  "state": "pinned_existing_terminal_attack_prefix_for_new_CPU_only46_audit",
+  "external_files": {
+    "PREFIX_PRESERVED.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_MEMORY_RECOVERY_20261101/PREFIX_PRESERVED.json",
+      "sha256": "e27f4c6dfd55412bd926230074f897cda432701b67f8d0b62e3930015037d695",
+      "bytes": 23748
+    },
+    "OPS_RESULT.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_MEMORY_RECOVERY_20261101/OPS_RESULT.json",
+      "sha256": "5c2fedbbc740a9fe36fb8f1429a2c7f1082a9033e7babae085330b1536fb4e6c",
+      "bytes": 1035
+    },
+    "original_FU_attack_FAILURE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/FU_attack_FAILURE.json",
+      "sha256": "11f6e8684cdbb6b5a9a4fd48a91b11eb08d8256465368edd327d99324ad59e66",
+      "bytes": 784
+    },
+    "original_PAIR_CONTROLLER_FAILURE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/PAIR_CONTROLLER_FAILURE.json",
+      "sha256": "b9949b809a50553c6844b3c2deecd17a872cce85a739cd3ed58002935e66777f",
+      "bytes": 675
+    },
+    "original_FU_benign_VERIFIED.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/FU_benign_VERIFIED.json",
+      "sha256": "94f24baee932422b64a0910f581b5fce7f400c130bd4080ab41a54b0dfd1c950",
+      "bytes": 48834
+    },
+    "original_SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/SOURCE_FREEZE.json",
+      "sha256": "edfc7e0a640b01c0a4c6c12b85c8fc87635b81dd1ef22a64b0e2a56a6b78b47c",
+      "bytes": 3678
+    },
+    "original_PAIR_RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/PAIR_RUN_FREEZE.json",
+      "sha256": "8055386b92f79d64ac50be3854abe2061c803eaa8e504504e752f498af36136b",
+      "bytes": 4792
+    },
+    "original_FU_RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/FU_RUN_FREEZE.json",
+      "sha256": "866823dd0c5645f190156d9024c5a5d76e54ff71dd9d4ca19277199b5ba36b8e",
+      "bytes": 4506
+    },
+    "original_PAIR_PUBLICATION.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/PAIR_PUBLICATION.json",
+      "sha256": "c6df080d4c370d9dc97c18a768d9b2db53003c125925d80b9028f86bddecdca4",
+      "bytes": 1424
+    },
+    "original_FU_LAUNCH_PROFILE.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/FU_LAUNCH_PROFILE.json",
+      "sha256": "c312149c7c0d9fdad06ff0d2e9f2aa1f664328329c8faaba582b9b41ac903aac",
+      "bytes": 2669
+    },
+    "original_TRIGGER_SOURCE_BINDING.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/TRIGGER_SOURCE_BINDING.json",
+      "sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+      "bytes": 2873
+    },
+    "original_SSS_RESULT.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_RESULT.json",
+      "sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1",
+      "bytes": 302980
+    },
+    "original_SSS_VERIFIED.json": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_VERIFIED.json",
+      "sha256": "6b4653e307bd2b009be14c3cbaaa620cb34e9eb966df5524689dcb1688488cb6",
+      "bytes": 3145
+    }
+  },
+  "original_root": "D:/FEDUBA_MIXED_PAIR_20261101",
+  "foundation_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "model_paths_not_inferred_from_basename": true,
+  "original_source_or_tensor_copied_or_modified": false,
+  "normal_audit_not_reexecuted": true
+}

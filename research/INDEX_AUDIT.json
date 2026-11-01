@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "838059c6d506f810e224aceeaf5679674ea8429097dcc1979f15d547f762d18c",
+  "registry_sha256": "1e482f624eb57b2e5b194e2f72f5f2c9b1015328b8045ff0196bffaa11a4f873",
   "cards": 28,
-  "unique_source_documents": 608,
-  "top_level_folders": 114,
-  "folders_linked_to_cards": 66,
+  "unique_source_documents": 621,
+  "top_level_folders": 115,
+  "folders_linked_to_cards": 67,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -541,6 +541,19 @@
     "research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_TASK_LAUNCH_ONCE.json": "91ee8e87cc9e2f036f810d4ea4b47b439dff6f49f8204ec92f6cc4ca360d2e7c",
     "research/feduba_mixed_pair_memory_recovery_20261101/PRESERVATION_TERMINAL_CHECKS.json": "4de1e5fea5df0e6bc27bed030e2ad1b496d207132018770d44679b4599beceb2",
     "research/feduba_mixed_pair_memory_recovery_20261101/NEXT_RECOVERY_RATIONALE.txt": "4031c83eca411422e514c20be4eff71f03c830e86340f8964ee9672e3c465ca5",
+    "research/feduba_mixed_attack_resume_20261101/audit_common.py": "20b766cd73f57ffe266fb34f3f46a52892f9fead25459861945fb191e4711051",
+    "research/feduba_mixed_attack_resume_20261101/AUDIT_INPUT_BINDING.json": "deaaa47f97e77b622f45f29904dc7adda51d44f8f0ad1e13187ecbacb84a6daa",
+    "research/feduba_mixed_attack_resume_20261101/COPY_PROVENANCE.json": "bbafdad472bfec9ced23069284e4bf5dbb6849d34924b78a052f72f206d93734",
+    "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_FREEZE.json": "5722e754a1a68816dd456af1c8179c577a152331ee5988f012ff8e5c0c5b34d0",
+    "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PROFILE.json": "01cb69bbba3e750d4a2a5dbd443c63028df0eb33235b2fbf283f3173e06672d9",
+    "research/feduba_mixed_attack_resume_20261101/launch_cpu_audit.ps1": "ac7eefb7e4a4a8bd11d6c2538ad5faa76c67cb8b2e1be38f581ef2284a4ae5af",
+    "research/feduba_mixed_attack_resume_20261101/MONITOR_PROTOCOL.txt": "d41ab462944f61070e32bb1167ef59bbdc9f414de861ce8dc8cda92803a5abad",
+    "research/feduba_mixed_attack_resume_20261101/observe_cpu_status.py": "781fd98219a644221d4d5f832c522712cbda3d834b8b818e30bfad6bc9317671",
+    "research/feduba_mixed_attack_resume_20261101/PROTOCOL.txt": "48f3b6e4ab73bd3f45f1ca5b9fec15c7142e291da402bdf7025a0ee5e027fffd",
+    "research/feduba_mixed_attack_resume_20261101/QUERY_CPU_STATUS.ps1": "553402cee29128a5ac7a34d4dcab9c5b0bd16f9293383c7f8213998583965a18",
+    "research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt": "be9ee4688296f02d47db3aac2728058e279204d9c828138d7f5f2f7e1f282312",
+    "research/feduba_mixed_attack_resume_20261101/SOURCE_CHECKS.json": "d9e6d4747324c451df56d826912c80617b4e1dc03441ea51f9a5cb7ed2af1510",
+    "research/feduba_mixed_attack_resume_20261101/verify_prefix.py": "371db7c8efdfb5d1e2f605a2f43a8a11592e87f0881aa4bed461525246035e36",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -921,6 +934,21 @@
         "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"
+    },
+    {
+      "path": "research/feduba_mixed_attack_resume_20261101",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_mixed_attack_resume_20261101/AUDIT_INPUT_BINDING.json",
+        "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_FREEZE.json",
+        "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PROFILE.json",
+        "research/feduba_mixed_attack_resume_20261101/MONITOR_PROTOCOL.txt",
+        "research/feduba_mixed_attack_resume_20261101/PROTOCOL.txt",
+        "research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
     },
     {
       "path": "research/feduba_mixed_monitor_20261101",

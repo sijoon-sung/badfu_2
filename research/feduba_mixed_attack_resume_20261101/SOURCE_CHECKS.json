@@ -1,0 +1,18 @@
+{
+  "state": "passed_source_only_prepublication_review",
+  "remote_source_SHA_files": 9,
+  "remote_Python_AST": 3,
+  "remote_PowerShell_AST": 2,
+  "no_new_finite_entrypoint_invoked": true,
+  "torch_imported": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "new_CPU_audit_executed": false,
+  "old_or_new_fixture_executed": false,
+  "GPU_resume_launch_enabled": false,
+  "freeze_sha256": "5722e754a1a68816dd456af1c8179c577a152331ee5988f012ff8e5c0c5b34d0",
+  "remote_python_result": {
+    "Python_AST": 3,
+    "torch_imported": false
+  }
+}

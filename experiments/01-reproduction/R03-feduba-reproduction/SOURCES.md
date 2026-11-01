@@ -293,3 +293,16 @@
 | [PREFIX_TASK_LAUNCH_ONCE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_TASK_LAUNCH_ONCE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [PRESERVATION_TERMINAL_CHECKS.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PRESERVATION_TERMINAL_CHECKS.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [NEXT_RECOVERY_RATIONALE.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/NEXT_RECOVERY_RATIONALE.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [audit_common.py](../../../research/feduba_mixed_attack_resume_20261101/audit_common.py) | `research/feduba_mixed_attack_resume_20261101` |
+| [AUDIT_INPUT_BINDING.json](../../../research/feduba_mixed_attack_resume_20261101/AUDIT_INPUT_BINDING.json) | `research/feduba_mixed_attack_resume_20261101` |
+| [COPY_PROVENANCE.json](../../../research/feduba_mixed_attack_resume_20261101/COPY_PROVENANCE.json) | `research/feduba_mixed_attack_resume_20261101` |
+| [CPU_AUDIT_FREEZE.json](../../../research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_FREEZE.json) | `research/feduba_mixed_attack_resume_20261101` |
+| [CPU_AUDIT_PROFILE.json](../../../research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PROFILE.json) | `research/feduba_mixed_attack_resume_20261101` |
+| [launch_cpu_audit.ps1](../../../research/feduba_mixed_attack_resume_20261101/launch_cpu_audit.ps1) | `research/feduba_mixed_attack_resume_20261101` |
+| [MONITOR_PROTOCOL.txt](../../../research/feduba_mixed_attack_resume_20261101/MONITOR_PROTOCOL.txt) | `research/feduba_mixed_attack_resume_20261101` |
+| [observe_cpu_status.py](../../../research/feduba_mixed_attack_resume_20261101/observe_cpu_status.py) | `research/feduba_mixed_attack_resume_20261101` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_attack_resume_20261101/PROTOCOL.txt) | `research/feduba_mixed_attack_resume_20261101` |
+| [QUERY_CPU_STATUS.ps1](../../../research/feduba_mixed_attack_resume_20261101/QUERY_CPU_STATUS.ps1) | `research/feduba_mixed_attack_resume_20261101` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt) | `research/feduba_mixed_attack_resume_20261101` |
+| [SOURCE_CHECKS.json](../../../research/feduba_mixed_attack_resume_20261101/SOURCE_CHECKS.json) | `research/feduba_mixed_attack_resume_20261101` |
+| [verify_prefix.py](../../../research/feduba_mixed_attack_resume_20261101/verify_prefix.py) | `research/feduba_mixed_attack_resume_20261101` |
