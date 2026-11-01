@@ -1,0 +1,4 @@
+가설: 새8이웃switching median 구현은선언된reflect/중심제외/FP32임계비교를따르고off·cascade·resize범위를보존한다.
+R01/R03/P01/P04/D08/D14/D15/N02. 6a68114 source/86freeze선게시뒤DISLAB CPU2 synthetic once PID48632가완료·종료했다. 새실자료/model/trigger/CUDA/학습은0이다.
+고정random2x3x32x32 tensor를NumPy명시6,144픽셀×8이웃index/sort/FP32threshold로독립재구성한출력이byte동일이었다. 상수입력/off는identity,순수합성checker의중앙제외8이웃중앙값효과는선언값.5,resize/cascade범위·identity/상호구성은통과했다. FP64·잘못된축·범위·nonfinite4입력거절도통과했다. 이것을실제BadFU/FedUBA trigger제거/semantic보존/독립망각인증으로세지않는다.
+실제Post모델GPU경로는이전별도합성bridge계약만통과한전제다. 새실평가에는최종source/profile/freezes,실CPU/RAM/GPU서비스identity·경쟁PID guard와새matchednative대기존cache숫자검사가필요하다. 과거finite bridge/학습/감사를반복하거나현재FedUBA복구작업/기존앱을종료하지않는다. 단계별조건을통과해야큰정상/actual원정답·ASR/삭제품질을측정한다. 현재효능은미측정이다.

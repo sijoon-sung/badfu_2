@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "pid": 48632,
+  "time": 1793511739.20049,
+  "method_sha256": "d694499896849fe7e2a93534fbf2916dab207d0b7e00849d51928d37187ac5eb",
+  "checker_sha256": "f5bec00950622bd62c1c906fd3f0a8a265c42d7645686426b37e0c551b59ad3e",
+  "preparation_freeze_sha256": "12061a4266394a6f15467cbeb36e597091c3bb0c36da5dcbe949db100ad52675",
+  "independent_NumPy_reflect8_neighbour_switch_exact": true,
+  "constant_identity": true,
+  "synthetic_checker_operator_only": true,
+  "resize_range_and_cascade_exact": true,
+  "off_identity_exact": true,
+  "invalid_input_rejections": 4,
+  "real_images_models_or_trigger_used": false,
+  "GPU_initialized": false,
+  "defense_efficacy_measured": false
+}

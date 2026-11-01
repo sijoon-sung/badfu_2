@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다. 2026-10-31 P04의실제정상집단훼손/고정수정실패/진행중모듈개입을추가하며전체방어성공은미확정으로둔다.",
-  "registry_sha256": "02a2e6945807af9422e1d15d9f312279f02d6f507a2b9ed4aa06ac5af034675f",
+  "registry_sha256": "3cca509e0193f72877c75125751ec0367b82263be9b9d2f6dcc437174d2aa83d",
   "cards": 29,
-  "unique_source_documents": 712,
+  "unique_source_documents": 715,
   "top_level_folders": 108,
   "folders_linked_to_cards": 60,
   "source_sha256": {
@@ -719,7 +719,10 @@
     "research/badfu_feduba_defense_20261031/cpu_io_cuda_bridge.py": "65d293180fcc4cc83d4e71c2f8e85ae951718ac822f7bdc13879e1367b01b2f3",
     "research/badfu_feduba_defense_20261031/correct_reference_audit.py": "147424437c609ea9aad0dad481ea2b992c3b9a9a7ba822039159ea103a883b36",
     "research/badfu_feduba_defense_20261031/verify_stage05_results.py": "750c5c9812a448313a516bd887169f67cbfdb044110316ccc148ab85044801ff",
-    "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_PREPARATION_FREEZE.json": "12061a4266394a6f15467cbeb36e597091c3bb0c36da5dcbe949db100ad52675"
+    "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_PREPARATION_FREEZE.json": "12061a4266394a6f15467cbeb36e597091c3bb0c36da5dcbe949db100ad52675",
+    "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_CONTRACT.json": "5b30afbd2b28adb2fd31c04223fef7258e97bd1567728e8a2a816f19a004b7d2",
+    "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_CONTRACT_REPORT_KO.txt": "8edb746912c914fa1c7711aaeafe58a1960f4d313b8c23d067e6731a16a5b820",
+    "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_FREEZE.json": "5b0b26fde0c663bd8f5ba9317724c10b68affd887f30c2450bf91f50a179a59b"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -899,6 +902,7 @@
         "research/badfu_feduba_defense_20261031/POST_CONFIDENCE_DIAGNOSIS_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/POST_CONFIDENCE_FINAL_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/POST_CONFIDENCE_RELABEL_PROTOCOL.txt",
+        "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_CONTRACT_REPORT_KO.txt",
         "research/badfu_feduba_defense_20261031/POST_ONLY_INPUT_PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/PROTOCOL.txt",
         "research/badfu_feduba_defense_20261031/REFERENCE_AUDIT_EXIT.json",
