@@ -488,3 +488,15 @@
 | [LAUNCH_PROFILE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/LAUNCH_PROFILE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
 | [RUN_FREEZE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/RUN_FREEZE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
 | [PREPARATION_COPY_CHECKS.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PREPARATION_COPY_CHECKS.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [RUN_PUBLICATION.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/RUN_PUBLICATION.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [EVALUATION_TASK_ONCE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/EVALUATION_TASK_ONCE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [EVALUATION_CONTROLLER_ONCE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/EVALUATION_CONTROLLER_ONCE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PAIR_EVAL_ONCE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAIR_EVAL_ONCE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PAIR_EVAL_AUDIT_ONCE.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAIR_EVAL_AUDIT_ONCE.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PAIR_EVAL_RESULT.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAIR_EVAL_RESULT.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PAIR_EVAL_VERIFIED.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAIR_EVAL_VERIFIED.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [COMPLETION.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/COMPLETION.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [EVALUATION_COMPLETION_COPY_CHECKS.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/EVALUATION_COMPLETION_COPY_CHECKS.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [EVALUATION_COMPLETION_SUMMARY.json](../../../research/feduba_mixed_pair_eval_native_v2_20261101/EVALUATION_COMPLETION_SUMMARY.json) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [PAPER_COMPARISON.txt](../../../research/feduba_mixed_pair_eval_native_v2_20261101/PAPER_COMPARISON.txt) | `research/feduba_mixed_pair_eval_native_v2_20261101` |
+| [COMPLETION_REPORT_KO.txt](../../../research/feduba_mixed_pair_eval_native_v2_20261101/COMPLETION_REPORT_KO.txt) | `research/feduba_mixed_pair_eval_native_v2_20261101` |

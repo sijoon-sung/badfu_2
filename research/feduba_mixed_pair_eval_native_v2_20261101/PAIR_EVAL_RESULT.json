@@ -1,0 +1,2017 @@
+{
+  "state": "completed_primary_pair_evaluation",
+  "profile": "feduba.mixed_teacher.paired_evaluation.s42.20261101",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "trigger_source_kind": "new_mixed105_teacher_verified_CPU_trigger100",
+  "source_models": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "fu/benign/after.pt",
+      "sha256": "cd0e6e544a6993e7672e75fff56488141de09d4b12c6e58317cc28bc25793d16",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "attack": {
+      "path": "D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\fu\\attack\\after.pt",
+      "sha256": "7ada5a25c181e3d5d16d17c97b9de06286d619f3176c0735ccc5c1fa984d86b7",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "test_file_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "source_receipt_hashes": {
+    "CLEAN_FL_VERIFIED.json": "bd44e8ac785dbee5478ee2f5976b19dd807e90843f8f4de0b2880da3cd14d471",
+    "TRIGGER_SOURCE_BINDING.json": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+    "SSS_RESULT.json": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1",
+    "SSS_VERIFIED.json": "6b4653e307bd2b009be14c3cbaaa620cb34e9eb966df5524689dcb1688488cb6",
+    "FU_benign_RESULT.json": "1cbe33d2d2f928be222d23b0ef11454e7e94dcb83a064d85b3f17b512aaeb537",
+    "FU_benign_VERIFIED.json": "94f24baee932422b64a0910f581b5fce7f400c130bd4080ab41a54b0dfd1c950",
+    "FU_attack_RESULT.json": "f62f63662510da96983047fe46b3d0de7dae221d68fb4e35314de41f5e642e7a",
+    "FU_attack_VERIFIED.json": "c5a9c3f245b12255f2ce1cfbf3b866bb8b7b933db7173fe1678b25a69c2e8705"
+  },
+  "case_selection_sha256": "540c0634d241754e215d9ce60bc73340f175a4dfb4ed747715c4b9054e516ea4",
+  "input_packets": [
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch01.pt",
+      "sha256": "bec60d1769c51ce2c065ef5ba124b3b9572129fa52ec8f4e8ba62c0f4c5a6d0e",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch02.pt",
+      "sha256": "f51f56e950832e41994e681ec183585097d93a7b03196408e6ad72534a7a54fd",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch03.pt",
+      "sha256": "e2fb30eacd7d368005d6ddb972c15ed0f84e4f4b6b7577f83aecbda397e7a4f3",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch04.pt",
+      "sha256": "c8b19cc2d6e76ce7c6011a15c8d94eca31e5d4fae81f0f5d779423ca0cda1a28",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch05.pt",
+      "sha256": "144c41618135beffa603e4235b159cd0c54c9bb2f67e3529fdc43615de709e48",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch06.pt",
+      "sha256": "e7d05c18831ba5254595562ca09dbeb45c760c0a17ce46ec1068d4638cd0d181",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch07.pt",
+      "sha256": "973cec9333117f2f437a1e5921334926ee7914966bff322e4dcc30f62b69d4ff",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch08.pt",
+      "sha256": "09cc6e4f4be5d23d0adb902685237b66eff303561a0c9db654752bd3f54ddaf7",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch09.pt",
+      "sha256": "8fdd65dcb5cbbc4f36166ec36ea3fd3454c6f1c91eebed3f0d4f32dce93fcb7c",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch10.pt",
+      "sha256": "e5e1486b7af12f23a86f58455e85a4ed909cee8edf9fd9aea624b7eff89a6190",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch11.pt",
+      "sha256": "b7e226c4734bca05a1d9f546009941009827777e8f43315f8778a9d0b4679e46",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch12.pt",
+      "sha256": "9c509ec5448f66696a1adfee946257827399325bc347ab09751010b2ee89bad2",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch13.pt",
+      "sha256": "857035fb4b3a5045a9b7505b08b2b2c4c2bc4907d02dcdfbf50cae650b245697",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch14.pt",
+      "sha256": "6f553bd54c4bd3a87e9c04817deb74504db6154465735a42515a125e79a92d29",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch15.pt",
+      "sha256": "96c8337014e3a1820b6d48af4e448e243d9df39c1b5ede44c39363d8e1aae659",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch16.pt",
+      "sha256": "b5c07e209efc90bfabda0d4add8cc7e134fe5347a0edeaaf387bb993b46286ff",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch17.pt",
+      "sha256": "141cccc5560fb0dfe9303f7c461acf078e90670ebb2d02e78ad1cc4dc409f59f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch18.pt",
+      "sha256": "12f76ccc2fe44b347c0c9483bc2382d0acf7f6351cb35f5cbfdb006cc6a7f498",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch19.pt",
+      "sha256": "c69df9f898e14c72782b56638c041e1b97412c09417a0071bbc00da683a4df23",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch20.pt",
+      "sha256": "b3aead04211c91714ae01e9daa8bfed86a73cdce8b2a4c2a4e76ef148762fda0",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch21.pt",
+      "sha256": "93233e600d962c42bf0bb30b22f5f36b17f251fbe3ccd82a71b878a3248a7780",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch22.pt",
+      "sha256": "c9b8cc877a845f207236f837f0d5bb4d37eb17cf5bf70f321f11c17f808acb41",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch23.pt",
+      "sha256": "7ef7a635fae628c4c22ebe9dc9aff3ed18997bc7ece91ddd4ac3d4db2cc3ccff",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch24.pt",
+      "sha256": "4f29fd0062f08a8fe8e8917b44d27f01844f5b6b5a5318ab251b2c30ed7d95bc",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch25.pt",
+      "sha256": "bea0913bbed7e56e857d90b1edffe582dd99bd65eed51d2da23e4f9e02186442",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch26.pt",
+      "sha256": "073b7fd1eae4f2b9e0b12084aa978dd6d00259bed8b21d425bdaa87cabebe46f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch27.pt",
+      "sha256": "13846f0a7ac1ba274817b1f72a7d70db257dc5749a2ed869867ff4e10b8a90c2",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch28.pt",
+      "sha256": "e24468d146c29af18832e398ede884d6a9e7e16819da29a4606c56882e42393f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch29.pt",
+      "sha256": "024d4ac96ad16a099f4d65c957079d4c4b24dd0843f2cd87eb33c2cc5c98f3b8",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch30.pt",
+      "sha256": "79078e1d9d2208998a57c51f107eddb1895830a0277ee21db04df08a9e242977",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch31.pt",
+      "sha256": "c33432c98332145440fcd5b1a691536ce913b3adcfb004634d8792787b8c9121",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch32.pt",
+      "sha256": "14cbe85488047a953562890c10ce9f4edb58172902c5a2e4ac096f964b598ff4",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch33.pt",
+      "sha256": "6e0cbed92a66a08c08a7bbabfc6bf217cad41a607147d20cfd5b01beceaa4b3f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch34.pt",
+      "sha256": "a9701db41229dd9f877010570df00e055187778a3d544b1751e8b14703607d5c",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch35.pt",
+      "sha256": "782668fd94ad6d78941c780e3f445f52b8e23ba04c06f389324d9bbacf2c0b95",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch36.pt",
+      "sha256": "f40232f657aac188da7d07e9bf750c664062f7aed7e6af3014561f27f64d5fef",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch37.pt",
+      "sha256": "9952f46fd76b99f4c1cece091bcb5b2a8f441160b4727236dca860fb0eef7b77",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch38.pt",
+      "sha256": "298fe789dfce7484ba6033c15ec1adce5407fb2ca06356667411980b17cb6fa7",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch39.pt",
+      "sha256": "fba6888b27a476ff2ee82b805b4836897f79b18485d7eef2ad8ac05dd4b0a334",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch40.pt",
+      "sha256": "524b5deb59629f5f173712d3cd3d64575084a6d2b4771a4e1066c4347f6aff0a",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch41.pt",
+      "sha256": "c302c4c0643d802c97d4bd23b7b32f3e3e6faaa5a6e0471e5fac421f4f749e44",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch42.pt",
+      "sha256": "e1a6ca01aae205a81b1481dbe10b92149652e097d943048d3dbc131bb4194f7d",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch43.pt",
+      "sha256": "ee3489f084e1398ddb70e87b9d0d384bf551e7a231d10b0a5b6b679464f9974f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch44.pt",
+      "sha256": "73e39e36234acc88920ab4cf52e76373c1515b2b28aed3879035860589467576",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch45.pt",
+      "sha256": "749ecae990ad65c2260839229993171fcd9a9b9772fd1ac940ae6854b943bf2a",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch46.pt",
+      "sha256": "aefe297c0f34f8654359609dccbabef99189d912759916c92beb889a7e3fb851",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch47.pt",
+      "sha256": "9a03229a2ba7d0ba2760d21d7882eadc7b66d38c09fc02256a92cef31cfdf86b",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch48.pt",
+      "sha256": "86daf8a968619feeab555fd7b1285cd31e697fccc09d8a29a695cf54ff5bd5ee",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch49.pt",
+      "sha256": "264e80c6bfd43dce885883db68aab4877bea7873b84336a148e8e7fbf5333887",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch50.pt",
+      "sha256": "d9fb7f7f1cd2adb8b4914312255be7defa0276f019a2cc300ab2c1debd7a2fec",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch51.pt",
+      "sha256": "97ac8e1de66723c28c4bbd7abf44b6119b216970dc742a35c506692a1747449f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch52.pt",
+      "sha256": "4bcc9221031908aefcc390c74b58efc894ec46b4a9351f1f09689fd95f943ff8",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch53.pt",
+      "sha256": "525eb17747aad3437c138bc3b4a740606ad171ae0de50102f845744afe8f49ea",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch54.pt",
+      "sha256": "fe1b3d61506a399b8c4bdb290cc119645fc47bf261f53ef34ed07cb7804dea65",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch55.pt",
+      "sha256": "5ce166d8faabcffad3bcda2e69380422658d200814cdce2f383b1d5e12facd14",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch56.pt",
+      "sha256": "4cf52e298e425611fc06bafc1add32caa28796cd1774f6a2591c671fac1746c5",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch57.pt",
+      "sha256": "3cfc121bd83872435b694131c437637eba3ab470fdcaf8d6273d4731fac43fbb",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch58.pt",
+      "sha256": "8639829e3542ff9c66051dc8d9ba2e708d4357fc22c92992dfef6efb16b415be",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch59.pt",
+      "sha256": "79839cd50e19be9a8148c133c3ade466021ab8752b3063e75133453cec7f72c4",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch60.pt",
+      "sha256": "655c71d456720b21c4469ac040768abe27b4c0a29d8799749ea00cf4d919db6e",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch61.pt",
+      "sha256": "7fa0a29c65a73b72f47f7a5a29eb8b6a67ce2d626eae61886fd3def656f14f2b",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch62.pt",
+      "sha256": "6eaf080e874fae8725240779341f3338cd6824aae34d27fae0e147f1721a9df7",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch63.pt",
+      "sha256": "f0ce18cabdc9f4a8e30ec4713fe444db1e59f128eb93c719b3b5b735b284c772",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch64.pt",
+      "sha256": "35420668f63d203f73dedee30d070813950028233c66ca943761464cc9100d4f",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch65.pt",
+      "sha256": "5abb43b7ff58658db40486577fb93bccf706430d932ff74fe4129c2340b0096e",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch66.pt",
+      "sha256": "b42b632db2e5fd6a48d0c57eece58502a892dbe220ad3e7c66c953a6d49efced",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch67.pt",
+      "sha256": "008a5802f2399c319491e0c80d771562be7d7de7037cde51c3266745bd043987",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch68.pt",
+      "sha256": "8e23ff9fba264627173e05b3eebfc81ac5d0aa2c67e69222925ecb1ad73f25c2",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch69.pt",
+      "sha256": "3076aa284b274a907dff95f1b91a92aa8de78600fd70f8bf4fb3901b1917858b",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch70.pt",
+      "sha256": "b4b23c73b3b88f12209e28355eaf49cda429f6ff8eedcba01feddf8656b354fd",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch71.pt",
+      "sha256": "5085e8397886e7bb90ff14984b97b719771551285d21b75b87f8ac71cd8e089c",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch72.pt",
+      "sha256": "ed07cfb836330361ed73e40ca92beadcf98c227ae00333a7402102abc083d0e4",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch73.pt",
+      "sha256": "2a6fe87a41eaedc8e3c4b39861c9e14260aee9342c6cecada32a988fca31e3bb",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch74.pt",
+      "sha256": "109a4ee47bae9f07a6702a6770edca390a17b09cdc93d0fb658b9e7868149dbc",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch75.pt",
+      "sha256": "d33507f3376e8a3b4642dcb5356f493e6fd612dd017eddb6427858f1930b5d4e",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch76.pt",
+      "sha256": "0ec792c17251e67afe8d9e5c92e85b68e27274f9041ee6269567c5e174da8df4",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch77.pt",
+      "sha256": "f985051850d3927d49bf67f89c20b88ca93e0ed0818ceb14cc3f7aaa3406aa21",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch78.pt",
+      "sha256": "c8c41db6ac97cfc3e811a5b5d39153c327b2ae3e825a2f9df48e245b41aad851",
+      "bytes": 3149981,
+      "payload_key": null
+    },
+    {
+      "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\inputs\\batch79.pt",
+      "sha256": "65c3c667f64b1c698adf8e266a4ff961de084bfce22df48603a339c159b06f52",
+      "bytes": 395677,
+      "payload_key": null
+    }
+  ],
+  "logit_packets": {
+    "pre": [
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch01.pt",
+        "sha256": "609b56a7a32376d121ff3993f534688dc3457f735208fb4864cc5a31c0f3730e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch02.pt",
+        "sha256": "b4266056dee802e3eeb9116eded300a2a691c4d04ab148217f64311684a950ee",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch03.pt",
+        "sha256": "576804226df29105d4bbd30026765e267b05ebc2062b28d708e7445f269d24cc",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch04.pt",
+        "sha256": "b91572340e48db97c1831336bf69bbf9cbba79dcaca9843ac3537e41fa51cbe3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch05.pt",
+        "sha256": "c71ca311c15b8784ffb5bef8bd9aefecd0ef1b02d894ede8390e7139c2af2ad0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch06.pt",
+        "sha256": "a629aaac0da4687472e9763bd969619527263a78a0a733d03ed4b65abb32dbb5",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch07.pt",
+        "sha256": "290031f14cd62e7579721d9139ee9b8ac96184a430450982e25579026cca3d7d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch08.pt",
+        "sha256": "b76fe68115c11ce65eb116c6218135c70f3e7c44823c3eca19452ab92559c78e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch09.pt",
+        "sha256": "928635230352cfb24ff1b4755e5bc8103ba5b805549c0c568bc4fe9e26a2ef36",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch10.pt",
+        "sha256": "04f1e65f7e8de3eef323a71c8b205500914594b10b36e813fd4aa121b79cfd58",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch11.pt",
+        "sha256": "7f085da6b5f487b77cd291c82167b3e8d66cd810b52606f228265b320a8d83c0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch12.pt",
+        "sha256": "b35c14e8108f624b092572cf0def49dd380c1e23fec4945c89f84816dcea7d39",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch13.pt",
+        "sha256": "79fd82ab63c50ca162e3f42fe00770ad19b44edeec354b4c5b623c83df4fd776",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch14.pt",
+        "sha256": "f47af2bc3d02a4164764048e1f7424f22143c04d2b94227e847217aeb6da47ca",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch15.pt",
+        "sha256": "57607d0477f06cd0c5ae42fb4fbe744c70011ce2d2d3631c0a8efe11dbc142de",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch16.pt",
+        "sha256": "2eb7af1236d03d5a9aac628bb2d684c1fdee8ef432935dedd0dacb6c9b159fd4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch17.pt",
+        "sha256": "90955e7e6e182bb9daaea868c5413239da78524328d746002b1e8f9d548c2809",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch18.pt",
+        "sha256": "75f99cf6431370e6f6e3f2ebbc6ee32a4e54164bdcb561d159089b79ce5885e1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch19.pt",
+        "sha256": "95c14e7fca2655d5fb59fdacb9646fa1e9525b04498526275607aeb950ce736a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch20.pt",
+        "sha256": "04b2377cab9407bdba05ecc20c3fc462d46a2dcc498b0597c2adc6abb16ea4e3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch21.pt",
+        "sha256": "60b38b61038db459c0bf1b25d33b6317bfc4b1ca10f37eca53492c5e51d94bfe",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch22.pt",
+        "sha256": "354a784240de6d0599d225286bfafdb645e6c0f46359dd0e5cf49bafb2b91a7d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch23.pt",
+        "sha256": "19e7b0b2a8155d4f81a1e30b42d01ec864daefa48f505eb510b30fa3b90628dd",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch24.pt",
+        "sha256": "aba484c7b29f9f71125f65f4a3a309599c00dd805547b0a33a96c73e81a3b294",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch25.pt",
+        "sha256": "4c93246206201425c5c66e97ca356fab38ce3e9ec2b73ef87cf6cf13932db915",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch26.pt",
+        "sha256": "f01ff31300af596668326589fcbe96816a98bc3569aa08cfbe785ce9ffc181e0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch27.pt",
+        "sha256": "fe9d186719d94151942cb653321efb801e0686f6b49fbb639fba6672ed6ec676",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch28.pt",
+        "sha256": "9b0e2b488d9aeaa14d990c6bbe69c3c370c6942dd6a5a6163d898e7507526883",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch29.pt",
+        "sha256": "fd50a1ec4541b35dcbfc2f3766d6565dafac6f3405a6deaafb66ee265e7b55fa",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch30.pt",
+        "sha256": "ba90f647aef0ccd747bd18d0ed947ba4b0fadfd4a24f646a116e2bdba277c018",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch31.pt",
+        "sha256": "15a2936617098ae29b4de42e24927a72417bcc9231f855d7486a5070c510d8e6",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch32.pt",
+        "sha256": "090cf1034cb00b6696d8f6ef3c7a6dc4292494033e5358d6956f0ce087012813",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch33.pt",
+        "sha256": "62649fce75f660b717fbfce2abc8ea2aa963ed2f3c3d7ad17eafd1124ae10245",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch34.pt",
+        "sha256": "1542ee0f333936debcb3ac334d129c127a065a9e4e8033e87baad3ddfc4f7611",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch35.pt",
+        "sha256": "7761e58c5e3ca80c0f64b116e3cb9b06367830f6a63e17dda3b137773c6c4f77",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch36.pt",
+        "sha256": "19f752df32a07468b099f4545da63de889e58717286fe4cbff680f4c0653c553",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch37.pt",
+        "sha256": "6f2bbfe059f7b657c6d328299928817d3ad407c7315237c430a76602ca0668e0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch38.pt",
+        "sha256": "8a0582d1c53ec9ceb532c7a03700ea2790a64e58628f1cc3982be5bab46c7aca",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch39.pt",
+        "sha256": "8ea560c914d207131b5e329552e1277caff2db34d7041b45198a6b10fa6e2acd",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch40.pt",
+        "sha256": "2179f6acac810921f79fcbcbd837363eb4acd77ee554f2baee26e2233fa7980d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch41.pt",
+        "sha256": "90400c8fb554869f44b9c32620d84264a9cba241ffb11feeb2e977e5c595c437",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch42.pt",
+        "sha256": "fcc4c69015239768c7da962c03fa1052016267a518296920fb7a9910cd71d37a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch43.pt",
+        "sha256": "ecf6fd80c3fabd8938049102e31ef4bd49c45782dc33c4d7b5a567b08341158d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch44.pt",
+        "sha256": "c26398cf621cc88cd6db32f8a145f9d3f268d311f3d295fe1bcf7b791afd67c7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch45.pt",
+        "sha256": "acb37ca0dff96e810189202dfa3bf881b098296dee96a5fb337a6563440a5562",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch46.pt",
+        "sha256": "05f242ce0db3dfc25f0220b33e2ed047d8609935dfb8a45644114570176be466",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch47.pt",
+        "sha256": "79b344780d0be5a69a6b3dd8fb6280dd88dfde07ee490c75bf8264b47c321317",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch48.pt",
+        "sha256": "7518b3cc81a4edf9d6b10380c80e9791b2ad53077fb7297ab4b56e81c60fb394",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch49.pt",
+        "sha256": "12c9947241e6959d10ec0d4a5f1845e9fd0100c7d6cabe3e2395fd836b26abe4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch50.pt",
+        "sha256": "517b6720275f39e9bdc39285a8c187e61c67d5d56ffc28641d4505f86b336694",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch51.pt",
+        "sha256": "b94a60fc223b90107437c7f62c715ba5a85955296dd16f72335a8671fcd85b2a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch52.pt",
+        "sha256": "a40a02d8fa00764c3dc1d6472051793a727aa6c5547a799728543b71c14ba207",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch53.pt",
+        "sha256": "82accd85ff7702c110c2b1e99c69dc5113d12f43988be328e3a93dbf0a3a2a54",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch54.pt",
+        "sha256": "4b98356b89c274eaad720a8a5be25c09f7ee72c9c99c40cbe8eed45759ca546d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch55.pt",
+        "sha256": "bcc7d1f771523590ecd84257c3b8103b9d403887b0fd1c8e6e08f12ec98af1ec",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch56.pt",
+        "sha256": "c8682c3d7cbf0fd660b0b176ddf00893a72c0ac8e273e25535cff83b183f7dfb",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch57.pt",
+        "sha256": "8b8da29f0324e20c0133519a9f07761ddb65f3d3fee91bca5a5060acecc3f56a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch58.pt",
+        "sha256": "254645171997dd105672afbaa41538afe99888b5ce7770e77c6b6475aa8a0853",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch59.pt",
+        "sha256": "cac43d28ca356120913399b3a8ed1f1f997fe3809241b153db3268c39695626d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch60.pt",
+        "sha256": "8ce555f02a34c17bc1f7736d881c1e9b4cf584bf17eecae2e1ed83663a8f120d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch61.pt",
+        "sha256": "690659522250c169cb63821a56ac61dec7145efa824cf7fbf016b98bb97c61ca",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch62.pt",
+        "sha256": "5a7f3e71ed2e51689170dc4c441edd355c5061f63860590c76fb8cdb0e7aa657",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch63.pt",
+        "sha256": "b48b622e34d182650e8246edf469bb7941fcd2895c5e1d914d5d966f820ed886",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch64.pt",
+        "sha256": "1c10a99f21ba9adf4eedb1d33644834c857e2181426de0134329d3085f574ec8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch65.pt",
+        "sha256": "8a43a49d1f8881d840df144cfbe35213c05676535baea64ab7cbdd5d27a2391d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch66.pt",
+        "sha256": "b948eab0d96059bdf531e8233f37cc0549de7b09987295174e88eb002b72a0a1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch67.pt",
+        "sha256": "e0d305a5fc6460b6200274e1f7b907f9e57cd89dfdfc9f25587ba5e87e509826",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch68.pt",
+        "sha256": "8236d450f7d58287223cc4a7ce2088c43831c40c30b5590bcf42b452af9e703d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch69.pt",
+        "sha256": "64cb656cbd33a7e9e4727f30c2f743c5f3f56590ff2f9f8f9eb42ef84abbeed2",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch70.pt",
+        "sha256": "c6f98bb48aaf8c6960611e7176b75081cbbe233aa5b372482e7911d2d511a0b1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch71.pt",
+        "sha256": "219d9a6de13f397febe5ba1ff418917a51967e2fc6f462b65c6fdc5083e18df1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch72.pt",
+        "sha256": "9b31328d7121b26f9be8271faa3d63a8f170c66f61e04600f9aadc1bf2d772f0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch73.pt",
+        "sha256": "a78f5974cc284abff6710a32c7c3bf7c861b6901eacd3a31c7f36cbe4750204f",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch74.pt",
+        "sha256": "3398590086e391f65236fffe5e1a64c70a51bd32339de63955707e1a9044e348",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch75.pt",
+        "sha256": "63a1df4394be754f04ca529702ad4347604e93a16899616731a898fc5150c8bc",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch76.pt",
+        "sha256": "9a984218c9c3592c1137a891d2091a30fcf78cc73f5885c0cbcae79ca40ca80b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch77.pt",
+        "sha256": "def2ba163506a4e4ecb260c0aac17aa96124d1b8a33a8224f7d491d550e3a6fb",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch78.pt",
+        "sha256": "7ea9928c7f0526b81087db21525de53949f3ea2cfc63d5f02883b85abe807899",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\pre\\batch79.pt",
+        "sha256": "5007cdab69134cdf076ee9ed8bda601a3fb0a6f5c0be6283a41db0aa51a15a5f",
+        "bytes": 3873,
+        "payload_key": null
+      }
+    ],
+    "benign": [
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch01.pt",
+        "sha256": "7fbcff46baa0b7db2728fb863870689832d3cc955f8b5310a0f9f86e5efebfe9",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch02.pt",
+        "sha256": "49c1b5b4a11babeadc82332bbb2ab61c5ac05a934ac3726bcfeaa0261978c6d3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch03.pt",
+        "sha256": "d39538523c0c469d961a2b8b7de3ad6647c9f9616efb11d20495fa0c15e2d8a0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch04.pt",
+        "sha256": "7d1d48c39645916cfcafa3e601ea68d2e9694f9021fa887afc415de2c3e224c2",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch05.pt",
+        "sha256": "5a369872695dbb3a53958eefc69e911402850a7a50286c13b8854c82065b3336",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch06.pt",
+        "sha256": "9064a077d87adb288e18909446007ad62bd052511e7d97863f0f4e627d23d0c4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch07.pt",
+        "sha256": "0e29dbd9158d7f7844da4044568e9d8cb18d1b5039f2f7c163e3cd4b0ac5cdbb",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch08.pt",
+        "sha256": "a69425d867003a27a490c3303d3f15e1e480b20de2f7c940a95a16c4e7025b3a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch09.pt",
+        "sha256": "09dd30aed4a7e91c4df91a05e238ada729ba50fa133d5efa4dc916fb507a11f4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch10.pt",
+        "sha256": "af79269be9750cf65653e41200d3ae61c329c22882c6a6625969a2a95e125d51",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch11.pt",
+        "sha256": "187ad5d1c8aabd0ed2af68d9cc08dd3f977aeca5635718ff6fc7c6ef68961b59",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch12.pt",
+        "sha256": "b4fb1817e5c8d34ee165a03666965b2317f11f5694c44b34a55bf457eb35ceb6",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch13.pt",
+        "sha256": "bd74aff2eb68e1f6c68b47a2971748ec196f445f74af32f0f54fa1033c502bb3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch14.pt",
+        "sha256": "34725cdf18f5b449731e27e5604ef013258d70e5edea97d5e4d268e42030bb0c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch15.pt",
+        "sha256": "4f791e2d71b5136e97f2a5ff55c3dbadd0abc51981e18eaac4641d4124204b94",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch16.pt",
+        "sha256": "eb21f9543e863e8487a9ddbf98c165a8107dcb6c04cce340571cf8c0fef11ba4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch17.pt",
+        "sha256": "f097b4f232734092d87b74c7ef1c9cb490e6a2324c263af7284de69e5a21ee72",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch18.pt",
+        "sha256": "a723a0d616c7d2d546b34e1650190d53986ee6eef186b943405e5d46552c983a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch19.pt",
+        "sha256": "193a537ecb22106ed807844575bb5f3b8a6e9182c8ce58e4ff87d9604f329ec5",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch20.pt",
+        "sha256": "d6474183618756af2dcce5cc65861ef25e7e4f2ca414e3ceb371f51c7be5eeba",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch21.pt",
+        "sha256": "64cb5116fa32744c6ee88af3df69d657e4abab0a792389b241b43b1548148f5e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch22.pt",
+        "sha256": "027b35d589ede88ac91e6fd6d42b084ea4d860e4e1c1565923425e45635c9255",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch23.pt",
+        "sha256": "04cd4b016d13c1a8795b87e480dc40593b3398fa244464dc829edbab79806dae",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch24.pt",
+        "sha256": "cf8f014c9ee6e2dd5cd1e02e394c7b7b27b51019c6537febe76105a0f96f601a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch25.pt",
+        "sha256": "ce102d8b3f31d4c9b22664b36e0ba2e9cc0690d1ef8d5dc306d9154e830b19cc",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch26.pt",
+        "sha256": "9901d828439e5615072babd3efa4e1f3f4e4ed7d673a3165c9084aebfaae0b2b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch27.pt",
+        "sha256": "367bc03d115e4a9bc9637bfeabb65672d1f52b6272b2628b094fd26fd5249532",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch28.pt",
+        "sha256": "40081e844a4d59afd42a8ea6ec38de1cead60c1f3a51736df609b6f5840eafc1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch29.pt",
+        "sha256": "72f86b2cf8c39bd0aa0aa3116f9341a4fcf117f13b578535a861b9ffc679339e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch30.pt",
+        "sha256": "f2dfdba0ae844bf1f661e47f1d8426fc3c2e0eb954479a15fad6c635cc40b02d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch31.pt",
+        "sha256": "e37673cff71af5e0194cb7db5c34996b3fcdb99ea3abecb2824b7580ab1c9f1f",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch32.pt",
+        "sha256": "ccd55f18cb11dc332abd5274df4e157bbad09b93b30153cc07dd0f802bd9d900",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch33.pt",
+        "sha256": "c3a3efb5b84758dea7c179833a64533f7029d99e677c849f1ec7f28ccaa00ca3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch34.pt",
+        "sha256": "afd7a5d5dfba799d3942843e7cd794d662e950e3ad9a0be59ddf55b54c9bfbf3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch35.pt",
+        "sha256": "1370b237a528b0cef548ec148cea5985f4f4fde110114d827819865b2437c9bd",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch36.pt",
+        "sha256": "28628a6911773928f55ac79f3e5201929775d762d0e60e18360f0a9a37075341",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch37.pt",
+        "sha256": "5af438c41cc6bbb30498d7af3ccd7e7a312a4d6c8a9651af91828e0c5f5c0d5d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch38.pt",
+        "sha256": "fbc413840fc3081afacfa05f9fbdeb08680e185b821a5c094d4e5d8f463c9e92",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch39.pt",
+        "sha256": "6df6f244d7bc431063f3a6bb4cf19b93ef0e265eba18278da2d102374f009307",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch40.pt",
+        "sha256": "834e45e958c661ef4bb59e3ec92b9dce56fc773f1be4e84c8f4e8b376501c6f1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch41.pt",
+        "sha256": "39c9f6da1f54889f48b28113b6da5eb0ca6f83e2776454643fd1051d4cacd149",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch42.pt",
+        "sha256": "f0db7ccf38a976924cf38d8f18d0f9460ddb1e0e4c81b517e9865d163e7de762",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch43.pt",
+        "sha256": "6c505ca97426496b412d301a0f6c33ec18c6cdcd3cab4b30a279539d191e4e39",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch44.pt",
+        "sha256": "613f3b518e3229d4a2c874f009c893935d071beb4d14eb457b88d32782919b64",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch45.pt",
+        "sha256": "f3a11f1c033ff5a98a046941859fecca43215984ed0181cb6f8d0d4b2f70c48e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch46.pt",
+        "sha256": "bc9e779397eada3286b1c444211798e6646ab9ca5f9a2a005cfd8ffb27e4f9c1",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch47.pt",
+        "sha256": "5a2b97c550d09a58d2cf57827142483a68fcb216e6d4e5bb1353fc14ad7431b9",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch48.pt",
+        "sha256": "a0a2d775e9de0a91e7efe6ad7f6b6c3c1bfa1efe6129b9122b245ee5aa0ac745",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch49.pt",
+        "sha256": "0097595f2b08b32b931fd132e2b85fb201f4551539c48f7d8f760b09d5c9373e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch50.pt",
+        "sha256": "ecae8ccecc1b0709fcf0b213f63062c69565449a2e70ba8388064b87a0e431d4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch51.pt",
+        "sha256": "3f7d9def9f7b0e18d1f1e164b88f22bf4120f656610d7544cb4b3ff63da1d495",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch52.pt",
+        "sha256": "bf9b1716149353f65de0978031c647919618d50c818876c5095a9549828d44f8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch53.pt",
+        "sha256": "374591a6580775972ebe93b7d8c69b8e3c459cef2112a0ddf5865a41310d8705",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch54.pt",
+        "sha256": "1f5f432e19e9dec5eae9f5afd16e55f9b11b4607f91cf5f8b048959cb92d620d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch55.pt",
+        "sha256": "bdbf8f37c4939b16ced1ca92b5c555b054313c39cbfd976197a90203dcfa18c7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch56.pt",
+        "sha256": "5816bc662c8f837a67432b9f84159927252054a92c52ecc0314bd1f57b5181e9",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch57.pt",
+        "sha256": "9728530cb50a93b320a8375d40561d2571f1d9f929de08f5887a38d3c75031d6",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch58.pt",
+        "sha256": "3fd72133d655b6bb80926aacb662a793650feb5dfcefee6a1de46a3850256215",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch59.pt",
+        "sha256": "c56d458405ba57c07919ab13fa5639b8e75ed7230a609a19833f8a34a439bd4d",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch60.pt",
+        "sha256": "75f4e61cb6b122d9452b3227c55304ede761d6cd7f88a40e775c22d986e6ed71",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch61.pt",
+        "sha256": "2ef4c4afef11db480e31d90e36379055ca7c07b3af854c86f941843c813fd7fc",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch62.pt",
+        "sha256": "697a70c8752bf31195a46378889f9326973fa19f0267a6551f367c70e9901eda",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch63.pt",
+        "sha256": "7bbf1d6c7eeb6129e3d5d06eaa41242295be1237c0aa543e261eae57c3f65887",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch64.pt",
+        "sha256": "fe2fdb52c5e43630d009644eaa778145058012984d0588337d6a4ccfad853a29",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch65.pt",
+        "sha256": "e4eb6951f7ac7e67b69f8b937ef38e42baaad28359b819d1ac0e2a3e5856cb6f",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch66.pt",
+        "sha256": "cde810799349ebc32d7605ee965aa9b6d1ba7f5778a7b87ee764aa489d3edab4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch67.pt",
+        "sha256": "c33c1d491055af578fee87ff4ba7de453fdeffb751509858eb7a21896cb5735b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch68.pt",
+        "sha256": "81d887ac04be12942eea4578bafce7c7245fb274e316d0bc4f8a3d1c8c98947e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch69.pt",
+        "sha256": "212d3a3bc1847a4187e3d9111afa94aac4a4344eaff501f2a11195e2f8263eb7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch70.pt",
+        "sha256": "b4aa6773211d91b75f808d3e858767d20b820fba38d16f59f2da6d88f03cc949",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch71.pt",
+        "sha256": "b68429baccc76526e8b771eff823eb6700c2f6b9250b3dc6826bedc183329767",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch72.pt",
+        "sha256": "9a2ba68076aea971bb7134e6d0f06e7f173cffc3055d3f32609f3a9d8aaf8f93",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch73.pt",
+        "sha256": "eb82fceb39c228380fef431747e6a6e8d79e078674d83e34eedfcea23116caa4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch74.pt",
+        "sha256": "2269d4d90d0f87b3b7537c8d97e5152c3f87756c4866af7e107c12fc18d23399",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch75.pt",
+        "sha256": "73a573e195ea6bb53ceebb9fed7562a5416d5b6226f297724eaf9bda33187c8b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch76.pt",
+        "sha256": "b3ad7828fa1655cd10833136020ff4e9c71512327930aabe692803a4b9db524c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch77.pt",
+        "sha256": "1b87f2007d564169d619efc1f6c3daa87cd44bfb6a90addfc8ea2a211f806332",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch78.pt",
+        "sha256": "6c7997f5ab8c8aee966964f078c2becc2dae04872f5ee5c282a114cd8da1e41a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\benign\\batch79.pt",
+        "sha256": "2543bdf6a469f48f16c4da0d0d311a0d696d85cce641bc31a449b43c485f7ae2",
+        "bytes": 3809,
+        "payload_key": null
+      }
+    ],
+    "attack": [
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch01.pt",
+        "sha256": "3e776ed180ae6e0c3b4dd04ea7c8c5dfab22bf6022683eea07fb346bbfe83da8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch02.pt",
+        "sha256": "88c333d631e8716d8985e16035f782bbb6eb53e6cbb32df70729c71c213ed264",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch03.pt",
+        "sha256": "c0d877744c2505493f64861c6af3cc4a624a391518673d242ad721ffef146b04",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch04.pt",
+        "sha256": "1d8fc321e3b4ce1d7064e6f41c6a608a1c4b00738f362dee83887d75b3f61239",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch05.pt",
+        "sha256": "b8f49eb00193ad8b21745de0f7dd13f4cf594866c37ed52f2e2d7aec57c3d9ad",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch06.pt",
+        "sha256": "76c3dab0984a2f82e67b36aea87af17bc068446d09d8963a8802311324a4a5f8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch07.pt",
+        "sha256": "c2d5decfae15ef1eb620bcbb02ca83ff33958dea127334d2b667a56ec1691d92",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch08.pt",
+        "sha256": "0dc977d28c73cf7cd8e4a29f5c784407d20d3b34e6f80efc6a723b993c0e5b8e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch09.pt",
+        "sha256": "951aebd96c63a7bc46d950cd71cdffe8a507c8351ddcae94f4b53c230801a372",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch10.pt",
+        "sha256": "136bb863fae6f7a8d75e26d15f1b7c81ce47141c76a816196292569211bffa00",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch11.pt",
+        "sha256": "f072c815cba4675665c267067ada8ae16718948f56de80a9163e1432859b038c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch12.pt",
+        "sha256": "34cbb898d9484ae472e82952381b99359392d13c51f1df6b7f5ada698488cd22",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch13.pt",
+        "sha256": "3f9f4b0cb83fa91c3487d0abeb9778db756c27a0bad12f8675d080d4f916e05b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch14.pt",
+        "sha256": "d734690e35c2205ee8ac9a8548e3e15048f57497b7b0857cd8360b972ead39e7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch15.pt",
+        "sha256": "4a3da4ead988d78f4d08fa8fbff7c20c67cbfe4e096cce8364782a3f04f8d147",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch16.pt",
+        "sha256": "f5c0afcc3dbea6b5baa8fe7e4b225a16afef53f5d44388a152ef98cbfdc8108a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch17.pt",
+        "sha256": "2eae031942e9996d8cf659146de9ecbefa3bc90aae81bff14ffa10108625f4e9",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch18.pt",
+        "sha256": "59edda8c14ebba0ab786e0c1ff8b6e7d4adb861ddf856feb85e4ec4945e415fa",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch19.pt",
+        "sha256": "fd1a6a1697e2d35a071031c37e54a10af0478b7a0fbacfc8fc682f470e4915f8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch20.pt",
+        "sha256": "89208bc69cbed30909d8d1bb26cf264510d87701b0ad7ee1ea339e83fa6db830",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch21.pt",
+        "sha256": "66349adc1c890a99b75f748de3a1b0dc441c81807b4a102278815be3adcb55d6",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch22.pt",
+        "sha256": "922e9c184ff7e04630fb2c0141fcb20e1776b325cd246e7228dc2b43448f22c4",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch23.pt",
+        "sha256": "b97f0ff329fd24bbe19cb363d90a7021b55060d67887851e2cf1af7195573990",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch24.pt",
+        "sha256": "8272af8c2760add708caa98fabcb0c1ae8bd4d0cf23e2520d4e8ba8ed28bea2c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch25.pt",
+        "sha256": "0cc4a68ef35c01dc534f366417e0b292fcb65cfba661ba67bd4eed9480989317",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch26.pt",
+        "sha256": "81486aa46f73434d3337021d6ef89c0f826896fff3fa53fe24a414ecc6fd13c8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch27.pt",
+        "sha256": "77eb2020ec223f2895bd2a91d708e12742fe2b5121be94afd916c45eecbc46d7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch28.pt",
+        "sha256": "8c87d9bf701b34f60e404cabfc378776f1a3541e58fa527ebc1d58006683c12e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch29.pt",
+        "sha256": "1d4317d6f5a35b4a85bc74092d2da2cd3c9cc886a0c792ae245b9f1b31a6f918",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch30.pt",
+        "sha256": "eb830c0d436cb94d626d99f9da9db46cc0101fbacd617491fdedc4ddff6868a8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch31.pt",
+        "sha256": "eb97c62eecbead32643800bfb4e5b320db50a6ed09a615c184cb84b7ba26129a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch32.pt",
+        "sha256": "db650eb52450c068327aeb0c3b6b84b80cabfe41af3c332ef4071bf43cacf19f",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch33.pt",
+        "sha256": "0b8b0e673c8b129f7deea4d2ca572ded0785b6f79295ecab76194b257beeb846",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch34.pt",
+        "sha256": "3ef369e226e6cbd0e8ad8433f787728ed72a9e61639ce7b18791f61562e7d899",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch35.pt",
+        "sha256": "fee1a58e109f9cbe9d57e842003b5452652a7c4d9a6e44d40bc15cc90b3dbd4a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch36.pt",
+        "sha256": "1ec605ce2fe047d0982430c6c61a61f3ed7c6d44939ba69d8ac7bac6dcdd7693",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch37.pt",
+        "sha256": "dbcea61b805d048b829d70ef2f84deb85dab99a104f8ebfcde99e55cd5291bb2",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch38.pt",
+        "sha256": "30cefb526555ba6889b0791d02b7b106f70161b1acffcf30db669d9c82843505",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch39.pt",
+        "sha256": "d7a42054c9b6f4121f451ee3dc02d808785d39789a4777eda37bcb589617eb4a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch40.pt",
+        "sha256": "46345104b7d2ece0364d6c2536f54af3c5bb4e1c64d117fe1708229a5b7170d0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch41.pt",
+        "sha256": "69432821abad948198c08ace365191652150b64ff1deb96435fb8e44acf54deb",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch42.pt",
+        "sha256": "4e7a05db8caba43e3aa6ddeaf0fc7482a94380332c380130f1f146d99a163129",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch43.pt",
+        "sha256": "f89dd43cb19868844cd35cf38fa9133ac0b655cbf13b03a4551c18bb2aaa9e46",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch44.pt",
+        "sha256": "912b711fd379285bde4f5dc260245da2afbc9e4793ee5150a0d028d51faca92a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch45.pt",
+        "sha256": "fdbd4e96f12791adc19a97817c174598d7b1b94688ce870ca5239a36857b2efb",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch46.pt",
+        "sha256": "80fb0416c204e0f3b761e3556185b770aac2cf3afc4c1ff10cf9e16f17c42eb7",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch47.pt",
+        "sha256": "a39feee19ed87b44bd31a292f63b73a4ba5d68e7f8810a14447bf6a138041f2e",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch48.pt",
+        "sha256": "191f440bf58a3a4f8abc252a016f3e3f79d253a1e61e09665f184472613988c8",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch49.pt",
+        "sha256": "0aceb934bdefa43b3773e926f8917428d5dca429ac023d354415c4b6031a43c3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch50.pt",
+        "sha256": "476a4e2bde3ebae6fcb8a8d658493a91e3e3a54d61335df7452e6801b96ce907",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch51.pt",
+        "sha256": "a33484e5a7268cc319a9c451980179eff83f717db9fa092e8c9d0844bad6c298",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch52.pt",
+        "sha256": "84cebefb01232f2437df85e6adffa508f5e39705f84b3325ae6a126be2d82690",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch53.pt",
+        "sha256": "5eae3cc3eb14c084c34e9fb531fde125c4393ca5cd3c52ab5d478118a7299e96",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch54.pt",
+        "sha256": "fbb0f017bf11da263f507975ebe9b580378c73fbf762c85944e765b64b358188",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch55.pt",
+        "sha256": "da6d10fc87ca1d39e6174efca46b22eb8a8fa854865f5bb6b1eec4d996f785ab",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch56.pt",
+        "sha256": "0f6a50ada5200dd5b3e8bcb7b82c8447f10488c7351fb90820c0f221cde4727a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch57.pt",
+        "sha256": "b176b264cc96463134893bc6b4cf662d1d22d79ea067c543a2cd15a9b5eb0023",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch58.pt",
+        "sha256": "9974f9ea4c43f18e3f20c8bf46a7ab219cbf82923ef16745d2ab540b146afa27",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch59.pt",
+        "sha256": "8d40e3d40ef672adead976df105b8cbc209d3987f2b4b41448ba9a6cf2324717",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch60.pt",
+        "sha256": "3351272019db5f9ca59f92ca1d89b6896a42b4cee5f3234bad5ff9a7cd970b46",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch61.pt",
+        "sha256": "5f8e037d7fbfa10f067a969da55f4144bd5985b8aeab4cd47f85ae0c20d50100",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch62.pt",
+        "sha256": "f0a5e815483f285fbc0d708d61c614e37f063d222fdf98515f8440eb9e66962a",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch63.pt",
+        "sha256": "911a09f4cc94aab49edc684bf55697247337337ff680291f820b4fbf1d626be0",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch64.pt",
+        "sha256": "99b98ee32b6bba00df4bf762d723930d87ec14429cca8cc696f83831e2348e04",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch65.pt",
+        "sha256": "2b1439c7548ea88383ff3be64ea814d1f55f6bbfbef3a2df04f5840bcc8375da",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch66.pt",
+        "sha256": "9247f40c4c933ef81e88c56cdbb74761cbb5297474c6c790b7c071373f1203b3",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch67.pt",
+        "sha256": "045487516877ce41e337a40aeaf1ccd321f55a2bed744bbfc238fef9cb41056c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch68.pt",
+        "sha256": "389c82d5f69acf746b413cc31b6c7e4299b26e8aa9ecf8a5998c787513162e8b",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch69.pt",
+        "sha256": "b145dc31001aa6a28d07ab1ecf8c57324b5cefabd3d2974fa46cb1bf7d361478",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch70.pt",
+        "sha256": "7441488e297c89b3fb35fa4f2a8d6522edfc8512c81e7987a70875743fe3f176",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch71.pt",
+        "sha256": "7033706172c79b70864f30ccd1ab90e30cb5224e93b1204a892cbb6684479ccf",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch72.pt",
+        "sha256": "092ca90d8614e8c4789685a05233ac75c1d1e22704e7818a3570d8b4bfa30f40",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch73.pt",
+        "sha256": "56e8b5f7acc20d7cfc3226f99782d637a2db99d0d2a83431791124dd263bb49c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch74.pt",
+        "sha256": "ab53b5677d78309c4601c6a69871abda42b12ea3e45eb5b945237eef2c6ae00c",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch75.pt",
+        "sha256": "5ba2e53bbb159080aff6a86019cb53a1c8e109aab488d4d63a7383d819651527",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch76.pt",
+        "sha256": "787808c6671e8e1f930bc46571926dff2a4f36778030b2eecb513b713789b974",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch77.pt",
+        "sha256": "e9925d21fab0171c53235dbb4fd46bdfdf4ebb094c8009a54ebe9310ed904274",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch78.pt",
+        "sha256": "86c1d267a7c7060428ed1322ae24ebdacfb1c6d3eac8f1583eae7a6002c25251",
+        "bytes": 13729,
+        "payload_key": null
+      },
+      {
+        "path": "D:\\FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101\\pair_evaluation\\attack\\batch79.pt",
+        "sha256": "1188be2bb674d7fc4a1e19003cf9c1f6063ecea559e2eafa3274a7d98c9edbdf",
+        "bytes": 3873,
+        "payload_key": null
+      }
+    ]
+  },
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8794,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2652,
+      "CA_pct": 87.94,
+      "ASR_pct": 29.466666666666665
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8677,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2218,
+      "CA_pct": 86.77,
+      "ASR_pct": 24.644444444444446
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8682,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1740,
+      "CA_pct": 86.82,
+      "ASR_pct": 19.333333333333332
+    }
+  },
+  "actual_forward_calls": 474,
+  "actual_sample_forwards": 60000,
+  "target": 2,
+  "trigger_multiplier": 1.5,
+  "normalization": "ToTensor_then_sub0.5_div0.5",
+  "layout": "contiguous_NCHW_FP32",
+  "precision": {
+    "TF32": false,
+    "AMP": false,
+    "cudnn_benchmark": false,
+    "deterministic": true
+  },
+  "device": "NVIDIA GeForce RTX 3080",
+  "torch_version": "2.7.1+cu118",
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -10.133333333333333,
+    "attack_minus_benign_ASR_pp": -5.311111111111111,
+    "post_CA_drop_pp": {
+      "benign": 1.17,
+      "attack": 1.12
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "independent_full_evaluation_complete": false,
+  "delivery_complete": false,
+  "detection_success_implied": false,
+  "overall_goal_complete": false,
+  "recovery_input_binding_sha256": "ff1509b1df4fd8730fe219bd262a5b60492aec12665bc6672e8ac97f61b91104",
+  "evaluation_recovery_input_binding_sha256": "c2a1ceadec0017036637c886f2a4daeecf6c58f4bf54bbe7493eba2310d0d2d0",
+  "evaluation_recovery_execution_profile": "feduba.mixed_pair.evaluation_native_commandline_v2.s42.20261101.actual"
+}
