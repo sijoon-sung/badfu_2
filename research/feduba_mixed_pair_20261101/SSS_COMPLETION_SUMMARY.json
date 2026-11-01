@@ -1,0 +1,39 @@
+{
+  "state": "completed_SSS_queries",
+  "samples": 5000,
+  "batches": 40,
+  "calls": 80,
+  "sample_forwards": 10000,
+  "selected_owner5": 56,
+  "selected_owner7": 69,
+  "new_delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "result_sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1",
+  "verified": true,
+  "independent_score_max_abs": 2.448869238946827e-06,
+  "CPU_query_replays": [
+    {
+      "owner": 5,
+      "batch": 1,
+      "samples": 128,
+      "clean_max_abs_error": 3.4332275390625e-05,
+      "perturbed_max_abs_error": 3.0517578125e-05,
+      "atol": 0.0002,
+      "rtol": 0.0001
+    },
+    {
+      "owner": 7,
+      "batch": 20,
+      "samples": 68,
+      "clean_max_abs_error": 1.9550323486328125e-05,
+      "perturbed_max_abs_error": 2.1457672119140625e-05,
+      "atol": 0.0002,
+      "rtol": 0.0001
+    }
+  ],
+  "all5000_models_independently_reinferred": false,
+  "SSS_verified_sha256": "6b4653e307bd2b009be14c3cbaaa620cb34e9eb966df5524689dcb1688488cb6",
+  "private_full_results_on_DISLAB_and_local_ignored_private_run": true,
+  "original_SSS_or_fixture_reexecuted": false,
+  "real_new_FU_complete": false,
+  "overall_goal_complete": false
+}
