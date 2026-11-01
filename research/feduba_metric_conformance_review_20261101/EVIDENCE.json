@@ -1,0 +1,181 @@
+{
+  "state": "completed_read_only_paper_metric_and_profile_review_new_performance_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "review_time_utc": "2026-11-01T06:10:13.515228+00:00",
+  "paper": {
+    "source": "https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf",
+    "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+    "pages_reviewed": [
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "metric_equations": [
+      16,
+      17,
+      18
+    ],
+    "IID_ASR_figure_caption": "Fig.3",
+    "nonIID_ASR_figure_caption": "Fig.4",
+    "CIFAR10_FedEraser_FedAvg_TableII_CA_pct": {
+      "clean_mean": 85.82,
+      "clean_plus_minus": 0.74,
+      "malicious_unlearned_mean": 85.16,
+      "malicious_unlearned_plus_minus": 0.45
+    },
+    "ASR_precise_numeric_endpoints_read_from_plot": false,
+    "text_ASR_B_approximate_pct": 15,
+    "text_post_ASR_approximate_up_to_pct": 89
+  },
+  "observed_definition": {
+    "CA": "100*clean_correct/10000",
+    "ASR": "100*triggered_target_hits_with_original_label_not2/9000",
+    "ASR_B": "same_trigger_on_benign_FU_model; pre_ASR_recorded_separately",
+    "trigger_input": "clip(normalized_x+1.5*delta,-1,1)",
+    "stored_delta_linf_bound_normalized_units": "32/255",
+    "preclip_evaluation_noise_bound_normalized_units": "48/255",
+    "preclip_evaluation_noise_bound_raw01_units": "24/255",
+    "paper_epsilon_coordinate_identity_certified": false
+  },
+  "scope": {
+    "actual_method": "FedEraser",
+    "aggregation": "FedAvg",
+    "partition": "IID",
+    "training_seed": 42,
+    "official_train_N": 50000,
+    "samples_per_client": 2500,
+    "paper_described_total_N": 60000,
+    "paper_described_samples_per_client": 3000,
+    "request_count": 125,
+    "request_fraction_of_nominal10clients25000": 0.005,
+    "request_fraction_of_all50000": 0.0025,
+    "repeated_paper_plus_minus_reproduced": false
+  },
+  "gate": {
+    "original_fixed_limits_unchanged": {
+      "pre_ASR_max_pct": 20,
+      "attack_ASR_min_pct": 80,
+      "attack_minus_pre_ASR_min_pp": 50,
+      "attack_minus_benign_FU_ASR_min_pp": 50,
+      "all_three_CA_min_pct": 80,
+      "post_CA_drop_max_pp": 5
+    },
+    "is_exact_paper_reproduction_criterion": false,
+    "paper_CA_change_example_pp": 0.66,
+    "current_gate_allows_post_CA_drop_pp": 5
+  },
+  "source_receipts": {
+    "research/feduba_mixed_pair_20261101/PAIR_EVAL_PROFILE.json": {
+      "sha256": "8ea422a4d76c42333024437e328d475e1f86894f42c7b322e0cc7b69edc631c8",
+      "bytes": 1585
+    },
+    "research/feduba_mixed_pair_20261101/FU_PROFILE.json": {
+      "sha256": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+      "bytes": 2331
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/pair_eval_core.py": {
+      "sha256": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8",
+      "bytes": 2868
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/evaluate_pair.py": {
+      "sha256": "24c4ee436602930f39583b58bcbcafbdb1d0a82691dc77d1c21844b3f319135a",
+      "bytes": 9486
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/verify_pair_evaluation.py": {
+      "sha256": "fc4d57889eebd88e734d5926c1c853f74dc30ec489af804862b609eac8e694db",
+      "bytes": 11688
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/recovery_controller.py": {
+      "sha256": "d91624c737c5c1f788f0a6ac7ca8b22ffec2b4fbaff466a299da8a6ef33808a8",
+      "bytes": 4205
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/resume_attack.py": {
+      "sha256": "c0b08d7962745f9102a3dd5009821c8aaf3611722ee6f8cebbe97c6865efc069",
+      "bytes": 14339
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/SOURCE_FREEZE.json": {
+      "sha256": "9385af91525f2729aa9d46fadb633e14d591740542b81d906f496b3825078acf",
+      "bytes": 2481
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/RUN_FREEZE.json": {
+      "sha256": "ae54acb74b3c9af7a9346b5468f508268e5a06768d75e0b0ae4227072d714c96",
+      "bytes": 3088
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/LAUNCH_PROFILE.json": {
+      "sha256": "fde68d27d0c53280336a9a7753d25e8763acde2d8784e8493e27fd98746bd2ed",
+      "bytes": 882
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/RECOVERY_INPUT_BINDING.json": {
+      "sha256": "ff1509b1df4fd8730fe219bd262a5b60492aec12665bc6672e8ac97f61b91104",
+      "bytes": 10833
+    },
+    "research/feduba_mixed_attack_recovery_run_20261101/TRAIN_RUNTIME_OBSERVATION.json": {
+      "sha256": "9d53b5c1df3cd32bbf8b6c394002bb69431b16a6ae249072c6ac2e505c8bd4ae",
+      "bytes": 375
+    },
+    "research/feduba_paper_implementation_20261031/CLEAN_FL_PROFILE.json": {
+      "sha256": "91f91b4ade27fc0b210f887fa24a0a923b25df3720850790c155d3d03c0fe96a",
+      "bytes": 1555
+    },
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_RESULT.json": {
+      "sha256": "4a19ee24fb1c970c3e5ad721df953fc9447532149b7777c1abdb346b1a9a5819",
+      "bytes": 69070
+    },
+    "research/feduba_paper_implementation_20261031/PAIR_EVAL_VERIFIED.json": {
+      "sha256": "59938998149589c9cb1791457930ec0309bd739f72668b36b99284d714686c99",
+      "bytes": 2775
+    }
+  },
+  "checks": {
+    "published_source_and_actual_run_freezes_unchanged": true,
+    "evaluation_core_exact_original_bytes": true,
+    "evaluation_code_AST_read_only": true,
+    "new_model_loads": 0,
+    "new_model_forwards": 0,
+    "numerical_jobs_reexecuted": false,
+    "active_sources_profiles_thresholds_modified": false,
+    "new_ASR_CA_available_at_review": false
+  },
+  "limitations": [
+    "same-shape_recovered_model_not_author_certified",
+    "missing_concoct_dataset_helper_body",
+    "declared_STG_optimizer_and_BN_policy",
+    "global_top125_selection_is_declared_interpretation",
+    "single_seed_and_one_FU_aggregation_IID_condition",
+    "D08_D15_unknown_trigger_detection_unresolved"
+  ],
+  "previous_failed_branch_saved_integer_arithmetic": {
+    "source": "research/feduba_paper_implementation_20261031/PAIR_EVAL_RESULT.json",
+    "same_as_new_mixed_branch": false,
+    "new_model_query": false,
+    "rows": {
+      "pre": {
+        "clean_correct": 8794,
+        "CA_pct": 87.94,
+        "target_hits": 627,
+        "ASR_pct": 6.966666666666667
+      },
+      "benign": {
+        "clean_correct": 8658,
+        "CA_pct": 86.58,
+        "target_hits": 569,
+        "ASR_pct": 6.322222222222222
+      },
+      "attack": {
+        "clean_correct": 8676,
+        "CA_pct": 86.76,
+        "target_hits": 570,
+        "ASR_pct": 6.333333333333333
+      }
+    }
+  }
+}

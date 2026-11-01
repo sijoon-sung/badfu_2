@@ -1,0 +1,30 @@
+FedUBA 논문 지표·현재 실행 대조 검토 — 2026-11-01 KST
+관련 R03/R02/N02/D08/D15. 사용자 요청: 문제 없는지, ASR 등 지표와 조건이 논문에 맞는지 확인.
+가설: 원문 식16–18과 고정 평가 코드의 분자·분모/모델역할을 대조하면 지표정의 일치와 논문 성능·조건 재현을 구별할 수 있다. 새관측은 동일PDF SHA의 완전한 관련쪽/표·그림캡션 검토와 실행source/profile·현재CIM/STATE/FAILURE/manifest·저장 정수집계의 metadata/AST 대조다. 새탐지/모델실험이아니다. D08/D15 큰정상반례/unknowntrigger미검증은유지한다. 불일치가있어도실행중 source/threshold를바꾸거나모델query/finite재실행하지않고원근거와검토를보존한다.
+
+판정: 지표 계산식은 원문/공개 평가경로에 대응한다. 그러나 현재 구현은 명시한 한 조건의 교정구현이며, 논문과 정확히 같은 조건·성능이 재현됐다는 판정은 할 수 없다. 검토시 새 공격학습이12R commit 뒤진행중이고 새FU/ASR/CA/fullCPU/양쪽전달은미완료였다. 현재CIM parent15944/trainer30812와STATE/event가같은진행을보이고새FAILURE는없었다. 25source·실RUN_FREEZE와평가core원바이트는불변이었다. 전체완료감사/새성능평가전에무결성·성공을확정하지않는다.
+
+직접 출처
+저자PDF https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf SHA5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98 / DOI10.1109/TDSC.2026.3703139 / 17쪽. DISLAB원PDF를읽기용로컬tmp로전달해동일SHA확인후원문4/6/7/8/9/10쪽을확인했다. p8(10501) 식16–18, p9(10502)TableII, p10(10503)Fig3/4를렌더링해표머리·축·캡션까지확인했다. PDF/PNG/원문전체는공개PR에재배포하지않는다.
+고정 upstream ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b 의Fed_test.py/Fed_Unlearn_main.py/Fed_data_change.py를직접조회했다. 원문의본문그림참조번호와실제캡션이일부어긋나므로IID는실제Fig3캡션,nonIID는Fig4캡션으로식별한다.
+
+계산식과 모델역할
+1. ASR: 원문식16은trigger를붙인입력중공격target으로예측된비율이다. 공개Fed_test.test_backdoor는원라벨target을제외한다. 현재counts는labels!=2를eligible로고정해target2 hit/9000×100을계산한다. 원target1000장을분모에넣거나clean정답률을ASR로쓰지않는다. 공개누락poison_image_label의정확body까지저자와동일하다는인증은없다.
+2. ASR-B: 원문은FedUBA없는정상FU의ASR이다. 현재benign은정확같은새선택ID를실삭제한완료FU20모델로같은새δ를평가한다. pre-ASR은별도모델/필드이며ASR-B를대체하지않는다.
+3. CA: 원문식17/18은clean test정답비율이며현재10000장전체정답/10000×100이다. pre의CA는clean global, attack후CA는malicious unlearned global에대응한다. benign후CA는추가대조다. CE loss나teacher class200 인식률은이CA/ASR이아니다.
+4. 평가입력: 현재Normalize.5의x에1.5δ를더한뒤clip[-1,1]이다. δ저장bound는model좌표32/255,평가직전bound는48/255model좌표=24/255raw[0,1]좌표(clip으로실제는작아질수있음)다. 배수1.5는공개main기본값이다. 논문epsilon32/255의좌표·누락helper의고유의도는미확정이므로epsilon숫자만같다는이유로정확동일조건이라고하지않는다.
+5. 독립검사: primary/독립은같은GPU새프로세스각60000sample-forward474calls·모든raw입력/argmax/count정확일치·logit1e-6+rtol1e-5를고정한다. 검토에서모델추론이나완료평가/합성fixture를재실행하지않았다. 이새분기의독립평가는아직미완료다.
+
+논문에서 직접 확인한 비교값
+IID/TableII/CIFAR-10/FedEraser/FedAvg clean AccG85.82±0.74%, malicious-unlearned AccG85.16±0.45%다. 논문본문은CIFAR-10등ASR-B약15%,활성화후ASR최대약89%를기술한다. 이것을해당한조건의정확한원시ASR끝점으로취급하지않고Fig3의선을소수점정확수치로읽어만들지않았다. 표의한쌍CA차이는0.66pp이며본문의약1%내효용변화와함께읽는다.
+현재FU_PROFILE의preASR<=20/attackASR>=80/증가>=50pp/정상초과>=50pp/세CA>=80/후CA하락<=5pp는별도최소운영gate다. 논문의정확표평균/허용범위/통계재현기준이아니며특히CA하락5pp허용은논문보고효용변화보다느슨하다. 이gate통과만으로논문재현완료라고하지않는다. 진행중gate/tolerance/수치는수정하지않고완료후실제수치를논문비교표에별도로제시한다.
+
+남은 조건차이와 미인증
+공식CIFAR학습50000/평가10000·20client각2500 대원문총60000/각3000기술이일치하지않는다. 125요청은고정공개main의nominal10client×2500=25000의0.5%이며전체50000의0.25%다. 논문0.5%와동일분모라고인증하지않는다. 현재한seed42/IID/FedEraser/FedAvg만대상이어서논문의±보고·다른FU(KNOT/FUKD)/다른집계/nonIID Dirichlet.5 전체를재현하지않았다.
+누락models/utils·회복후보Narcissus ResNet18/201, 외부target200/CIFAR10.1v6 및Tiny혼합Concat·공개concoct_dataset helperbody미인증, STGoptimizer/BN해석과global top125선택은원보고차이를그대로남긴다. 원publicfixed10 대원문roundrandom10에서현재는후자의명시해석이다. untouched/저자유일정답/공격성능성공을구별한다.
+
+이전 완료 실패값(현재새mixed분기값아님)
+pre CA87.94/ASR6.966666666666667; benignFU CA86.58/ASR-B6.322222222222222; attackFU CA86.76/ASR6.333333333333333이다. 원integer8794/8658/8676 of10000,627/569/570 of9000에서표시산술을읽기용으로확인했다. 원독립전수모든logitmaxabs0·count/argmax일치와기존양쪽전달완료는역사로보존하며재실행하지않는다. 이전성능은논문의활성화차이를재현하지못했다. 새δ/SSS/정상after/복구공격결과에이값을복사하지않는다.
+
+이번검토의검사범위
+원문관련쪽·표·캡션/고정source·AST·기존profile 및freeze·현재read-only monitor·기존정수산술만검사했다. 모델load/forward/backward/optimizerstep0,새실험·fixture·완료감사·prepare·task재실행0,활성source/profile/seed/lr/epoch/δ/선택/budget/분모/허용치변경0이다. 라이브console/rawSSS/원sampleID를read/hash/공개stage하지않았다. 오류없는현재진행과미완료최종감사/성능을구별한다. 전체FedUBA/탐지목표·자동확인은계속한다.
