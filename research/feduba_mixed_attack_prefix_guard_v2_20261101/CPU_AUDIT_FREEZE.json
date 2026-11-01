@@ -1,0 +1,17 @@
+{
+  "state": "frozen_separate_native_memory_guard_v2_CPU_prefix46_audit",
+  "files": {
+    "audit_common.py": "0bf801149c5ac1295ace524b41f4c3ac5509c0922bd09895e5f22270e31be3eb",
+    "verify_prefix.py": "371db7c8efdfb5d1e2f605a2f43a8a11592e87f0881aa4bed461525246035e36",
+    "observe_cpu_status.py": "39a4b792e1e0abd6822d69f72d3a5689b4b5d9193161f05fff8f2a8a3b184c38",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "QUERY_CPU_STATUS.ps1": "8fac4ca34f77c43e6879c8a406c7a981f5539799f041130316ea6dbcdf39b4c3",
+    "launch_cpu_audit.ps1": "073f1c6d3d3e628e813e4692a785de48355fe99e2b76ad0644a16e49ddf4426a",
+    "CPU_AUDIT_PROFILE.json": "d2c12ca4e024962d8fb71a70a9a2c7f0572245f763b36df1a95dba3fdc41e93c",
+    "AUDIT_INPUT_BINDING.json": "9f607977043194f0a772355df6560006b4dbac0d78cba77c2e66e371abd47a9e",
+    "PROTOCOL.txt": "532460016d2eb2a1d2d484716587986320e9d5fe66ab17add6f288a7ab04dc48",
+    "MONITOR_PROTOCOL.txt": "d41ab462944f61070e32bb1167ef59bbdc9f414de861ce8dc8cda92803a5abad"
+  },
+  "GPU_resume_launch_enabled": false,
+  "numerical_auditor_bytes_equal_previous_guard_v1": true
+}

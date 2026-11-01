@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "1e482f624eb57b2e5b194e2f72f5f2c9b1015328b8045ff0196bffaa11a4f873",
+  "registry_sha256": "50a3f97884753dc64cb4940236d66f207aa31a6de56bbb17a6b4aa06853c3e66",
   "cards": 28,
-  "unique_source_documents": 621,
-  "top_level_folders": 115,
-  "folders_linked_to_cards": 67,
+  "unique_source_documents": 642,
+  "top_level_folders": 116,
+  "folders_linked_to_cards": 68,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -551,9 +551,30 @@
     "research/feduba_mixed_attack_resume_20261101/observe_cpu_status.py": "781fd98219a644221d4d5f832c522712cbda3d834b8b818e30bfad6bc9317671",
     "research/feduba_mixed_attack_resume_20261101/PROTOCOL.txt": "48f3b6e4ab73bd3f45f1ca5b9fec15c7142e291da402bdf7025a0ee5e027fffd",
     "research/feduba_mixed_attack_resume_20261101/QUERY_CPU_STATUS.ps1": "553402cee29128a5ac7a34d4dcab9c5b0bd16f9293383c7f8213998583965a18",
-    "research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt": "be9ee4688296f02d47db3aac2728058e279204d9c828138d7f5f2f7e1f282312",
+    "research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt": "91b4c17c685aa6b4d75c8827c54ef527ccc9cb4ee5effbeeb532c41c6ca79485",
     "research/feduba_mixed_attack_resume_20261101/SOURCE_CHECKS.json": "d9e6d4747324c451df56d826912c80617b4e1dc03441ea51f9a5cb7ed2af1510",
     "research/feduba_mixed_attack_resume_20261101/verify_prefix.py": "371db7c8efdfb5d1e2f605a2f43a8a11592e87f0881aa4bed461525246035e36",
+    "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PUBLICATION.json": "ac50b6ea978204fee7e5f7c4137d9c15c0bba1fe9252ed1ecb31bbc70b298b8a",
+    "research/feduba_mixed_attack_resume_20261101/STARTED_OBSERVATION.json": "72f512588d1cd121d8a90c2b1cd997f87bbd8f8aca34b10a08491e443a3129e1",
+    "research/feduba_mixed_attack_resume_20261101/TASK_LAUNCH_ONCE.json": "0dae245ebd78dfd8d3cbb575fb9ee63121d547e7f9f060d6ae42748d0c2a8215",
+    "research/feduba_mixed_attack_resume_20261101/AUDIT_FAILURE.json": "51f5f92d3abf7f5f9be321c1d34d6987952eb758cf74428acb2854db749b1d60",
+    "research/feduba_mixed_attack_resume_20261101/AUDIT_FAILURE_TERMINAL.json": "be456a71dc1788bc01a8ce7057b3d87b2b1d428c6bed54f8d4f4b67588887a46",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/audit_common.py": "0bf801149c5ac1295ace524b41f4c3ac5509c0922bd09895e5f22270e31be3eb",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/AUDIT_INPUT_BINDING.json": "9f607977043194f0a772355df6560006b4dbac0d78cba77c2e66e371abd47a9e",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/COPY_PROVENANCE.json": "ad5ae3688875074a4fad85f6928b663475cf68ba112ee9b8dfc630e96d56e0c1",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/CPU_AUDIT_FREEZE.json": "741ac26f4430d76fedcb8dc9be91eb2b41d0b1e10fae7f9a27696e5d80c63836",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/CPU_AUDIT_PROFILE.json": "d2c12ca4e024962d8fb71a70a9a2c7f0572245f763b36df1a95dba3fdc41e93c",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/launch_cpu_audit.ps1": "073f1c6d3d3e628e813e4692a785de48355fe99e2b76ad0644a16e49ddf4426a",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/MONITOR_PROTOCOL.txt": "d41ab462944f61070e32bb1167ef59bbdc9f414de861ce8dc8cda92803a5abad",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/observe_cpu_status.py": "39a4b792e1e0abd6822d69f72d3a5689b4b5d9193161f05fff8f2a8a3b184c38",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/PRIOR_GUARD_FAILURE.json": "51f5f92d3abf7f5f9be321c1d34d6987952eb758cf74428acb2854db749b1d60",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/PRIOR_GUARD_TERMINAL.json": "be456a71dc1788bc01a8ce7057b3d87b2b1d428c6bed54f8d4f4b67588887a46",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/PROTOCOL.txt": "532460016d2eb2a1d2d484716587986320e9d5fe66ab17add6f288a7ab04dc48",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/QUERY_CPU_STATUS.ps1": "8fac4ca34f77c43e6879c8a406c7a981f5539799f041130316ea6dbcdf39b4c3",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/REPORT_KO.txt": "2d3e2d15da0d324eda1aa71303caaf9defaddcbf8ff004ef7984027c2b6aaff7",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/SOURCE_CHECKS.json": "a1ba2e513bae335d47900f332b29af0de09843da80cd87ce97e1ffbf0d3153e0",
+    "research/feduba_mixed_attack_prefix_guard_v2_20261101/verify_prefix.py": "371db7c8efdfb5d1e2f605a2f43a8a11592e87f0881aa4bed461525246035e36",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -936,14 +957,32 @@
       "review": "폴더 색인만·내용 판정 미재검토"
     },
     {
+      "path": "research/feduba_mixed_attack_prefix_guard_v2_20261101",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/AUDIT_INPUT_BINDING.json",
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/CPU_AUDIT_FREEZE.json",
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/CPU_AUDIT_PROFILE.json",
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/MONITOR_PROTOCOL.txt",
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/PROTOCOL.txt",
+        "research/feduba_mixed_attack_prefix_guard_v2_20261101/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/feduba_mixed_attack_resume_20261101",
       "related_cards": [
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_mixed_attack_resume_20261101/AUDIT_FAILURE.json",
+        "research/feduba_mixed_attack_resume_20261101/AUDIT_FAILURE_TERMINAL.json",
         "research/feduba_mixed_attack_resume_20261101/AUDIT_INPUT_BINDING.json",
         "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_FREEZE.json",
         "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PROFILE.json",
+        "research/feduba_mixed_attack_resume_20261101/CPU_AUDIT_PUBLICATION.json",
         "research/feduba_mixed_attack_resume_20261101/MONITOR_PROTOCOL.txt",
         "research/feduba_mixed_attack_resume_20261101/PROTOCOL.txt",
         "research/feduba_mixed_attack_resume_20261101/REPORT_KO.txt"
