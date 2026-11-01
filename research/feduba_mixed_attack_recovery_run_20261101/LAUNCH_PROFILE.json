@@ -1,0 +1,20 @@
+{
+  "id": "feduba.mixed_attack.recovery_run.s42.20261101.actual",
+  "launch_enabled": true,
+  "source_profile_sha256": "145b1be3f2c9500c0168c89fd933770e7190bafcb39777248412c74102d5e3fb",
+  "input_binding_sha256": "ff1509b1df4fd8730fe219bd262a5b60492aec12665bc6672e8ac97f61b91104",
+  "CPU_result_sha256": "301b4b2050fffeefc8d74a58d3b940cb8b8153cd8fd62f008278c8cf2d3e15b0",
+  "original_attack_manifest_sha256": "ab668dc39a98dbbe899da1f426401e7e77b3727846cafbb8e4ade87c6cba23f3",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_purpose": "diagnostic",
+  "reused_roles": 46,
+  "new_roles": 154,
+  "new_epochs": 770,
+  "new_batches": 15400,
+  "effective_roles": 200,
+  "effective_epochs": 1000,
+  "effective_batches": 20000,
+  "original_failed_unsaved_batches": 100,
+  "physical_batches_including_failure": 20100
+}

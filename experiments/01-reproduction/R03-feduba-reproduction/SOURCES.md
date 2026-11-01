@@ -365,3 +365,17 @@
 | [trigger_binding.py](../../../research/feduba_mixed_attack_recovery_run_20261101/trigger_binding.py) | `research/feduba_mixed_attack_recovery_run_20261101` |
 | [verify_fu.py](../../../research/feduba_mixed_attack_recovery_run_20261101/verify_fu.py) | `research/feduba_mixed_attack_recovery_run_20261101` |
 | [verify_pair_evaluation.py](../../../research/feduba_mixed_attack_recovery_run_20261101/verify_pair_evaluation.py) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [CASE_GUARD.json](../../../research/feduba_mixed_attack_recovery_run_20261101/CASE_GUARD.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [DATA_CHECKS.json](../../../research/feduba_mixed_attack_recovery_run_20261101/DATA_CHECKS.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [LAUNCH_PROFILE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/LAUNCH_PROFILE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [PREPARATION_COPY_CHECKS.json](../../../research/feduba_mixed_attack_recovery_run_20261101/PREPARATION_COPY_CHECKS.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [PREPARATION_TERMINAL.json](../../../research/feduba_mixed_attack_recovery_run_20261101/PREPARATION_TERMINAL.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [PREPARE_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/PREPARE_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [PREPARE_RESULT.json](../../../research/feduba_mixed_attack_recovery_run_20261101/PREPARE_RESULT.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [PREPARE_TASK_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/PREPARE_TASK_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RECOVERY_INPUT_BINDING.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RECOVERY_INPUT_BINDING.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [RUN_FREEZE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/RUN_FREEZE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/SOURCE_PUBLICATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [SOURCE_REVIEW_ONCE.json](../../../research/feduba_mixed_attack_recovery_run_20261101/SOURCE_REVIEW_ONCE.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [SOURCE_REVIEW_RESULT.json](../../../research/feduba_mixed_attack_recovery_run_20261101/SOURCE_REVIEW_RESULT.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [TERMINAL_OBSERVATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/TERMINAL_OBSERVATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
