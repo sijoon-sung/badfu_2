@@ -389,3 +389,6 @@
 | [REPORT_KO.txt](../../../research/feduba_metric_conformance_review_20261101/REPORT_KO.txt) | `research/feduba_metric_conformance_review_20261101` |
 | [EVIDENCE.json](../../../research/feduba_metric_conformance_review_20261101/EVIDENCE.json) | `research/feduba_metric_conformance_review_20261101` |
 | [STATUS_OBSERVATION.json](../../../research/feduba_metric_conformance_review_20261101/STATUS_OBSERVATION.json) | `research/feduba_metric_conformance_review_20261101` |
+| [FU_attack_RESULT.json](../../../research/feduba_mixed_attack_recovery_run_20261101/FU_attack_RESULT.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [ATTACK_TRAIN_COMPLETION_OBSERVATION.json](../../../research/feduba_mixed_attack_recovery_run_20261101/ATTACK_TRAIN_COMPLETION_OBSERVATION.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
+| [ATTACK_TRAIN_COMPLETION_SUMMARY.json](../../../research/feduba_mixed_attack_recovery_run_20261101/ATTACK_TRAIN_COMPLETION_SUMMARY.json) | `research/feduba_mixed_attack_recovery_run_20261101` |
