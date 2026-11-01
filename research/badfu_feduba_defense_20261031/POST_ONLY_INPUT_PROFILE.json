@@ -1,0 +1,96 @@
+{
+  "id": "badfu.postonly_input.s20261023.cuda_fp32.20261101.v1",
+  "related_cards": [
+    "R01",
+    "R03",
+    "P01",
+    "P02",
+    "P04",
+    "D02",
+    "D06",
+    "D07",
+    "D08",
+    "D12",
+    "D14",
+    "D15",
+    "D17",
+    "D18",
+    "N02"
+  ],
+  "case_id": "badfu.confirmed.s20261023.v1",
+  "purpose": "purification_pilot",
+  "arms": [
+    "switch_median",
+    "resize_aa",
+    "median_then_resize"
+  ],
+  "primary_arm": "switch_median",
+  "thresholds": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.75,
+    null
+  ],
+  "sizes": [
+    16,
+    20,
+    24,
+    28,
+    30,
+    32
+  ],
+  "public_n": 500,
+  "Pre_or_H5_in_method": false,
+  "training": false,
+  "raw_weight_backdoor_removed_claim": false,
+  "controlled_inference_pilot": true,
+  "selection": {
+    "Post_KL_max": 0.01,
+    "agreement_min": 0.98,
+    "each_Post_predclass_min": 0.95,
+    "first_passing_strength_order": true,
+    "all_points_saved": true
+  },
+  "gates": {
+    "normal_CA_loss_pp_max": 0.5,
+    "normal_each_class_loss_pp_max": 2,
+    "advantage_increase_max": 0.04,
+    "abs_accuracy_gap_increase_max": 0.02,
+    "ASR_full_and_held_max_pct": 10,
+    "trigger_original_CA_loss_pp_max": 2,
+    "trigger_original_each_class_loss_pp_max": 5,
+    "beneficial90_reported_separately": true,
+    "same_arm_all3_required": true
+  },
+  "evaluator": {
+    "profile": "postonly_input_cuda_FP32_NCHW_B32_TF32off_20261101_v1",
+    "native_historical_max_logit_error": 0.001,
+    "native_historical_max_argmax_disagreement": 5,
+    "normal_and_privacy_must_pass_both_matched_and_historical": true
+  },
+  "execution": {
+    "device": "CUDA0 CNN_CPU2_inputs",
+    "torch": "2.7.1+cu118",
+    "AMP": false,
+    "TF32": false,
+    "batch": 32,
+    "GPU_memory_fraction": 0.25,
+    "startup_min_free_MiB": 4096,
+    "startup_max_util_pct": 5,
+    "startup_GPU_samples": 3,
+    "RAM_min_available_GiB": 8,
+    "commit_min_headroom_GiB": 16,
+    "disk_min_free_GiB": 8,
+    "CPU_load_max": 60,
+    "case_seconds": 1800,
+    "total_seconds": 5400,
+    "task_minutes": 100,
+    "once_only": true
+  },
+  "new_FL_seed": false,
+  "actual_FedUBA_evaluated": false
+}

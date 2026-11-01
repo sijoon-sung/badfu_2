@@ -1,0 +1,20 @@
+가설: Post-only 선택적 이웃중앙값 입력정화는 Pre 기억을 가져오지 않고 큰 정상 삭제의 기능·유한삭제감사를 보존하면서 실제 BadFU trigger의 원정답을 복원할 수 있다.
+R01/R03/P01/P02/P04/D02/D06/D07/D08/D12/D14/D15/D17/D18/N02. 2026-11-01 KST. 새후보/미검증. 단순변화량 탐지/역할식별을제안하지않는다. 기본목표 BadFU+ity207/FedUBA를유지하며아직유효FedUBA activation pair가없어그실평가는후속이다.
+
+큰→작은/새관측: H5 복원은 실제ASR3.48%에도 삭제기억복원으로탈락했고 고정H5/Post label선택군은 원정답상한85.7879%<요구88.3301%였다. 현재학생query재탐색과 공유변형×Post특징 2x2도 실제교정에실패했고 제한독립gradient/10update재생이통과했다. 이번에는 Pre/H5/query/학습을전혀받지않는함수로입력을바꾸어 원Post가원래가진class기능을사용하는경로다. 새관측은 같은새GPU실행조건에서public-only로고정한필터의 실제ASR·원정답/각sourceclass와큰정상유한삭제score/accuracygap이다. 필터가그저입력을파괴해target을낮추는경우는원정답/정상classgate로기각한다.
+
+기존발견/제한: 원고Int-Guard의입력재표본아이디어를계승한별도선언후보다. 실제 test_resample_tuning.py는과거FUBA63R진단모델/target8외500장과라벨있는100장/15SGD.002의clean+resampled CE를썼다. 원고의순수추론·무라벨500·현재FedUBA 유효pair의전수성공을그source가증명한다고하지않고완료옛작업을반복하지않는다. 새baseline은선언bilinear antialias/clamp로원bicubic스크립트정확재현이아니다. 입력변환/선택적median은기존방어발상이며최초기법이라는주장은없다. https://www.usenix.org/system/files/usenixsecurity23-wei-chengan.pdf 의input-filtering 실험은비적응공격완화와적응공격잔존을함께보였고,그다른모델/자료의숫자를현재효능으로전용하지않는다. 필터union도trigger-family-independent 탐지의증거가아니다.
+
+D08/D15 큰정상반례: 공격.75848이정상.75525/.76188사이이고다른행동검사에서공격7%/정상8%였다. 이번은그반응량을새이름으로점수화하지않는모든요청의동일입력처리다. 정상큰삭제에도같은처리를적용해Post대비CA손실<=.5pp/각class<=2pp와class조건부advantage/weightedclassadv증가<=.04,절대accuracygap증가<=.02를먼저요구한다. 참조추가/균등화/필터구성자체로반례를해결했다고하지않는다.
+
+방법3arm: switch_median(primary),resize_aa,median_then_resize. raw FP32[0,1] RGB32x32에서연산하고이후명시BADFU정규화/원Post만추론한다. switch_median은reflect padding3x3의중심을뺀8이웃을정렬해4·5번째평균을구하고,원픽셀과차이가tau보다엄격히클때만그값으로바꾼다. tau=[0,.05,.10,.20,.35,.50,.75,None(off)]를고정한다. 중앙픽셀이median에투표하지않는변형이며표준9pixel median과구분한다. resize_aa는bilinear antialias=True/align_corners=False로32→s→32, s=[16,20,24,28,30,32(off)]와[0,1]clip이다. cascade는먼저공개선택된동일median tau를핀하고같은resize grid를평가한다. 세arm사이개인성능으로승자를고르지않고같은arm의모든case통과를요구한다. tau/s의이미지처리값은공격탐지score가아니다.
+
+공개선택: 동일기존무라벨public500(torch.randperm 고정,GTstratification없음)만받는다. 각arm강한처리→약한처리순의전체8/6/6후보를먼저계산한다. nativePost공개출력대비KL<=.010/argmax일치>=98%/각Post-predclass>=95%인첫후보를선택한다. off는identityfallback이다. cascade의앞단선택은public만사용하고GT/actualtrigger/target/회원/삭제ID/Pre/H5/역할을받지않는다. 같은public output cache/config/후보전체수치/source·Post모델SHA를사후평가전에봉인한다. strength를ASR에맞춰바꾸지않는다.
+
+모델/평가: badfu.confirmed.s20261023.v1/purification_pilot explicitcatalogue/seal/hash/payload null. 원가중치와BN버퍼를고정한추론용composite/config를새폴더에보존하고원파일불변을끝에확인한다. 새profile badfu.postonly_input.s20261023.cuda_fp32.20261101.v1이며원CPU연구를GPU로재실행하거나장치전환하지않는다. matched nativePost/필터모두같은FP32 contiguous-NCHW/B32/eval/TF32off/AMPoff/CUDA결정론이다. nativeclean전체10000의기존H3 FP64head cache대최대logit오차<=1e-3/argmax차이<=5를사전평가기준검사로요구하고초과하면필터효능결론전runtime/evaluator문제로보존중단한다. 기존H3기준은역사비교로보존하고새matchednative와기존native양쪽에정상/삭제한계를요구해평가차이로gate를완화하지않는다. held9500/actual9000·held8542/삭제TRAIN회원850·9668·IDnamespace는그대로다.
+
+중단: 큰정상→실제공격→정상850순,같은arm만연장. 정상기능·유한삭제gate에서모두실패하면공격을열지않는다. 실제selected full/heldASR<=10%와pairednativeclean대비원정답손실전체<=2pp/각sourceclass<=5pp를matched와역사기준양쪽에서요구한다. actual품질모두실패면추가공격clean/member·정상850는중단한다. identity는정상에서허용하되공격정화성공으로세지않는다. 90%유익교정옛목표는별도보고한다. raw학습모델이없는추론방법이므로선택config가실배포후보다. 최소한계통과가관측되기전효능을주장하지않는다.
+
+자원/1회: DISLAB CPU2 입력연산 + CUDA CNN,기존검증된CPU-I/O bridge를사용한다. source/version/CPUload<=60/logical>=8/disk>=8GiB/RAMavailable>=8GiB·commit여유>=16GiB를확인한다. 모델GPU진입전3회free>=4096MiB/util<=5와기존3서비스PID의실명령identity를메모리에서만확인하고이외compute PID는거절한다. 원commandline/인증인자는저장하지않는다. allocator25%=2560MiB,TF32/AMPoff. 경쟁FedUBA trainer가생기면계산전중단/보존하며다른앱을종료하지않는다. case<=1800초/total<=5400초/once task100분,확인된source/runtime/nonfinite/봉인오류는보존진단하며silent retry/retune/장치전환없다. 별도순수합성CPU연산계약과최종freeze를통과한뒤PR선게시/고유task1회로시작한다.
+
+증명가능범위: POST_ONLY_PROCESSING_SCOPE.txt의고정Post-only mapping에대한조건부postprocessing 성질만가능하다. 현재모델에없는인증망각을새로획득하거나untouched R과의거리보존/finite-MIA불변을주장하지않는다. controlled inference 입력guard의성능조사이며raw Post가중치의백도어를삭제한것은아니다. raw가중치접근/적응공격/클라이언트배포위협모형을해결하지않은상태를최종방어완료로바꾸지않는다. trigger-family-independent탐지/악성역할식별/독립BadFU조건/실FedUBA평가는계속남는다. 양성은유효한경로의필요조건으로보존하고원실패를덮지않는다.

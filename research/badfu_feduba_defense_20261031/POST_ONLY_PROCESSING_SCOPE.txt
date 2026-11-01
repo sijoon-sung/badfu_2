@@ -1,0 +1,6 @@
+가설: 삭제후모델과삭제자료에독립인고정public만사용하는mapping은,동일mapping을적용한재학습참조에대한기존분포구별불가능성을보존한다.
+R01/P01/P04/D08/D15/N02. 새방법의효능증명이아닌조건부수학명제다.
+가정: U는unlearning출력분포,R은잔류자료재학습분포다. 모든가측사건A에서 P(U∈A)<=exp(epsilon)P(R∈A)+delta 및역방향부등식이이미성립한다고가정한다. epsilon>=0,delta>=0. public P와고정mapping F_P는삭제된자료/원Pre기억에독립이며같은mapping을양쪽에적용한다. F_P에는public-only결정론적필터선택,Post가중치와선택config의포장/추론함수구성이포함될수있다.
+명제/증명: 임의사건B의원상A=F_P^{-1}(B)를기존부등식에대입하면 P(F_P(U)∈B)=P(U∈A)<=exp(epsilon)P(R∈A)+delta=exp(epsilon)P(F_P(R)∈B)+delta다. 역방향도같다. 따라서 F_P(U)와F_P(R)에같은구별불가능성이성립한다. 같은독립randomness의고정kernel도조건화·적분으로성립한다.
+필수범위: 참조는 F_P(R)이며untouched R이아니다. 기존U≈R을증명하지않고새로인증망각을얻는것도아니다. public/알고리즘이삭제private정보를사용하면이명제의가정은없어진다. Pre를사용하는교정은U만의고정postprocessing으로해석할수없다. 예를들어U가항상상태0으로삭제bit b를모두잊었더라도F(Pre,U)=b이면출력은그bit를복원한다. Pre가있는모든방법이실패한다는뜻은아니다.
+또한이명제는멤버십AUC/accuracygap/개별class함수/백도어ASR/정상정확도의불변을말하지않는다. 그런유한지표는별도실측해야한다. raw가중치를그대로품은wrapper가가중치접근공격/적응형trigger에안전하다는보장도없다. 이번입력guard는controlled inference의필요조건실험이며전체방어/탐지/역할식별완료가아니다. 원고의잘못된보편직교소거정리를이postprocessing명제로대체해공격억제까지증명했다고하지않는다.
