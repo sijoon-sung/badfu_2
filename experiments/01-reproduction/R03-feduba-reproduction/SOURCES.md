@@ -280,3 +280,10 @@
 | [SOURCE_FREEZE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/SOURCE_FREEZE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [STOP_OWN_OBSERVER.ps1](../../../research/feduba_mixed_pair_memory_recovery_20261101/STOP_OWN_OBSERVER.ps1) | `research/feduba_mixed_pair_memory_recovery_20261101` |
 | [TERMINAL_SYSTEM_SUMMARY.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/TERMINAL_SYSTEM_SUMMARY.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PUBLICATION.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PUBLICATION.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [OPS_ONCE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/OPS_ONCE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [OPS_RESULT.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/OPS_RESULT.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_LAUNCH_INVOCATION_FAILURE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_LAUNCH_INVOCATION_FAILURE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [PREFIX_LAUNCH_PROTOCOL.txt](../../../research/feduba_mixed_pair_memory_recovery_20261101/PREFIX_LAUNCH_PROTOCOL.txt) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [launch_prefix_task.ps1](../../../research/feduba_mixed_pair_memory_recovery_20261101/launch_prefix_task.ps1) | `research/feduba_mixed_pair_memory_recovery_20261101` |
+| [INVOCATION_FREEZE.json](../../../research/feduba_mixed_pair_memory_recovery_20261101/INVOCATION_FREEZE.json) | `research/feduba_mixed_pair_memory_recovery_20261101` |
