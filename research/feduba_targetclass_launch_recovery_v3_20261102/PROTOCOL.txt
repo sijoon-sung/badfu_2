@@ -1,0 +1,3 @@
+Literal directory binding recovery. R03/R02/N02/D08/D15.
+V2 compact loader expanded $r inside a double-quoted replacement, causing CommandNotFoundException on the directory assignment before original launcher guards. Task/artifacts/processes0 at2026-11-02T14:02:58.8438165Z; model0. Preserve original and both failed wrappers.
+V3 decodes the literal directory assignment from fixed base64 and verifies transformed body SHA against the locally frozen intended body before calling. Original launcher source/hash, task/action/principal/guards/scientific source/profile stay unchanged. No policy/privilege change. Exactly one invocation after publication, any fault preserved, no implicit retry.
