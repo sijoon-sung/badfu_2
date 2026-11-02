@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-02T12:31:52.3279079Z",
+  "processes": [],
+  "failures": [],
+  "completion": {
+    "state": "completed_fixed_semantic_transfer_probe_and_audit",
+    "result_sha256": "6e426b8db77f701ebf7093a51fb782274a0d39c8b4589967c949b2ca8ac0d370",
+    "verified_sha256": "8f430688511241b9b3b223be1ae5ce7849555b92603482f730be8c2c37805ace",
+    "overall_goal_complete": false
+  },
+  "controller": {
+    "state": "completed",
+    "pid": 57304,
+    "exit_code": 0
+  },
+  "source_freeze_sha256": "d732cd277bf18adb0101dc8ae7c4dbcbf752cc22ed15ab354c81ceb8c4ba4385"
+}
