@@ -1,0 +1,24 @@
+FedUBA 공개 STG 패키지 DISLAB 비교 완료 — 2026-11-02
+R03/R02/N02/D08/D15.
+
+실제 DISLAB에서 새 단일100epoch/200batch/20000표본forward·200backward와 교사endpoint6forward/600표본을 완료했다. parent26988/runner27516/독립auditor26284는 종료했고 foreground SSH도exit0,현재rootPython0·CONTROLLER_STATE completed/exit0·failure0이다. STATE의running/epoch100/batch2는마지막배치기록이므로현재생존으로해석하지않는다. COMPLETION/TERMINAL_OBSERVATION이종료근거다.
+
+사전게시8c37972의actualsource/profile와동일하며 SOURCE_FREEZE SHA113b61e4ad91875437c6b6610be8c390ff338c2ce440ad6341fca7ce2ba2d0ae는불변이다. 최초detached호출본문0은별도실패관측으로보존했고 f86f905는foreground전송만교정했다. 원수치코드/프로필/학습조건은수정하지않았다. 공식 AST174..216/limit_noise를역포트검증한CPU코드이며누락add helper/회복Narcissus/명시mixed교사·고정입력재생을포함하므로fulluntouched저자실행이라하지않는다.
+
+같은 원교사 weights+BN과 같은 기존최종epoch100의augmented200입력을 고정한 새실측:
+무교란:65/200,평균CE2.5103088665008544.
+기존SGDδ:184/200,평균CE0.34251151859760287.
+새공개STG패키지δ:0/200,평균CE9.553011207580566.
+이번에는동일입력/원교사복원으로정답수를직접관측했다. 기존65→184는이조건의δ효과를보이므로'기존트리거가교사에서도전혀학습되지않았다'는설명은맞지않는다. 외부전체/heldout/비target ASR나피해모델전이·BEA활성화를확정하지않는다.
+
+새패키지는 RAdam+cos/trainBN/latentforwardclamp를묶어바꾼비교다. 새훈련로그의마지막100epoch도target5/200·두batch단순평균CE6.601011514663696/최소97epoch6.5261945724487305였다. 기존훈련로그는표본가중평균·배치당갱신전값이므로그수치와직접차감하지않는다. 새패키지가기존frozen교사입력에서개선되지않았으므로RAdam/BN을맞추면해결된다는추정을지지하지않는다. 각요소별인과는분리하지못했으며이새δ를개선안으로채택하거나새SSS/FU에자동사용하지않았다.
+
+독립 DISLAB 감사: 모든새200RAdamstep/상태와100scheduler·latent/제약δ가정확일치했다. 새첫1/1·마지막100/2의CPUgradient재생maxabs각0,BN상태일치와logit기존허용치를통과했다. 새gradient2회/200표본forward이며모든200modelgradient재생아니다. 저장endpointlogit의독립Python 정답수·CE 산술 최대오차6.660779003908601e-7로통과했다. 원teacher/oldSGD/SSS/양FU/성능평가를재실행하지않았다. 원본실행자료/RNG/BN/optimizer/δ/inputs/logits는DISLABprivate_run에보존하고로컬은JSON만수신했다.
+
+새δ SHA89c26f310460ea5e7bcabffbbf80c18023520edf7255ed7965a103d1df245e96. RESULT SHA445bdfd28ba68ede87477071264b9998db81f2bd5d95b79d703ef72ab8de080e. VERIFIED SHA91b927d85b9cc34593249efa7fcf66e93a4b48230947ed1bdd485eae8e7e896f.
+
+추가읽기전용출처: 관련Narcissus util.py의고정blob837564b.../11643bytes를읽었다. concoct_dataset은outer원라벨+target추가클래스의순서로이어붙여현재mixed해석을관련소스패턴으로지지한다. 하지만FedUBA호출의세번째CIFARflag body는없어FedUBA저자고유helper복구인증은아니다. 이확인은active소스/프로필을바꾸거나새모델계산을시작하지않았다. RELATED_HELPER_REFERENCE.json의직접URL/blob/SHA를따른다.
+
+정확한전체성능실패원인은아직미분리다. 기존mixed피해모델ASR29.4667→공격19.3333/정상24.6444,독립전수정확일치/4성능gate실패는그대로다. 새같은입력교사성공184/200과피해모델최종실패를함께보존하며교사목표달성과피해전이/SSS/BEA연결을구별한다. 이번계약은여기서종료하며그연결을시험하는후속은별도사전가설·새관측·source/profile/binding이필요하다. 유리한seed/lr/epoch/epsilon/budget탐색은하지않는다.
+
+D08공격.75848이큰정상.75525/.76188사이·D15공격7/정상8·unknowntriggerfamily미검증과단순변화량탐지금지는유지한다. 새교사실측도큰정상nonIID구별을제공하지않으며전체논문재현/탐지성공아니다. 로컬수신중단/RAM은별도운영이력으로DISLAB연구교정의선행조건이아니다. 전체목표는미완료다.

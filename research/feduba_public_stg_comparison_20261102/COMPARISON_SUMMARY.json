@@ -1,0 +1,70 @@
+{
+  "state": "completed_bounded_public_STG_package_candidate_not_adopted",
+  "same_input_teacher_endpoint": {
+    "zero": {
+      "N": 200,
+      "hits": 65,
+      "mean_CE": 2.5103088665008544
+    },
+    "previous_SGD_delta": {
+      "N": 200,
+      "hits": 184,
+      "mean_CE": 0.34251151859760287
+    },
+    "public_stage_delta": {
+      "N": 200,
+      "hits": 0,
+      "mean_CE": 9.553011207580566
+    }
+  },
+  "training_last": {
+    "epoch": 100,
+    "target_hits": 5,
+    "N": 200,
+    "unweighted_mean_CE": 6.601011514663696
+  },
+  "audit": {
+    "state": "passed_new_public_STG_comparison_audit",
+    "all_optimizer_steps": 200,
+    "independent_gradient_calls": 2,
+    "independent_sample_forwards": 200,
+    "gradients": [
+      {
+        "epoch": 1,
+        "batch": 1,
+        "max_abs": 0
+      },
+      {
+        "epoch": 100,
+        "batch": 2,
+        "max_abs": 0
+      }
+    ],
+    "max_endpoint_CE_error": 6.660779003908601e-7,
+    "all_training_gradients_replayed": false,
+    "victim_ASR_or_FU_validated": false,
+    "overall_goal_complete": false
+  },
+  "terminal": {
+    "utc": "2026-11-02T12:21:20.1441316Z",
+    "processes": [],
+    "failures": [],
+    "completion": {
+      "state": "completed_new_public_STG_comparison_and_audit",
+      "result_sha256": "445bdfd28ba68ede87477071264b9998db81f2bd5d95b79d703ef72ab8de080e",
+      "verified_sha256": "91b927d85b9cc34593249efa7fcf66e93a4b48230947ed1bdd485eae8e7e896f",
+      "no_SSS_FU_or_victim_evaluation_started": true,
+      "overall_goal_complete": false
+    },
+    "controller": {
+      "state": "completed",
+      "pid": 26988,
+      "exit_code": 0
+    },
+    "source_freeze_sha256": "113b61e4ad91875437c6b6610be8c390ff338c2ce440ad6341fca7ce2ba2d0ae"
+  },
+  "candidate_adopted": false,
+  "individual_factor_causality": false,
+  "victim_ASR_measured": false,
+  "overall_goal_complete": false
+}

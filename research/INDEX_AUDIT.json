@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "93bac0de689bef92aab1bdececd9ec4ed143d50ef15d24df8aa08622a06f4f6c",
+  "registry_sha256": "b076aac62355a024c14edf5efa0a234bab38b427a67c3816e079a2698850103e",
   "cards": 28,
-  "unique_source_documents": 941,
-  "top_level_folders": 126,
-  "folders_linked_to_cards": 78,
+  "unique_source_documents": 968,
+  "top_level_folders": 127,
+  "folders_linked_to_cards": 79,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -874,6 +874,33 @@
     "research/feduba_public_stg_comparison_20261102/source_review.py": "8a1d64a043417019d859a7f0471dde3cfe938d70f955e84a9d4d63171ea24d1b",
     "research/feduba_public_stg_comparison_20261102/SOURCE_REVIEW_RESULT.json": "23b3b744f50ee40c9e5fe39af1c62f7d8faa08e94aec4da9c52113165164fe11",
     "research/feduba_public_stg_comparison_20261102/verify_comparison.py": "6d70238487fecd27f9ab6926b6164b752057c1dc90666edb5344fdbd9a9669b5",
+    "research/feduba_public_stg_comparison_20261102/AUDIT_ONCE.json": "2751d2e8783847b6590578474ac7015b9f17bd8539ea3cd98b2aafef8b3bcd48",
+    "research/feduba_public_stg_comparison_20261102/COMPARISON_SUMMARY.json": "a462ea82535c4a01a93e847b2317fdd128c5b20bf308279f7804be9811d45672",
+    "research/feduba_public_stg_comparison_20261102/COMPLETION.json": "8df9f000f52171f05ac0eb7c4cd3ea9f7487e406678255417542aea9ac1d2783",
+    "research/feduba_public_stg_comparison_20261102/COMPLETION_REPORT_KO.txt": "778d784b2d657b3d75d1afbb1143069cd78644be795a9f8e745e54b72ec42f30",
+    "research/feduba_public_stg_comparison_20261102/CONTROLLER_ONCE.json": "07a33a04e031ca331abde0636555990efb340d59276f7fa1f907c74d43a14319",
+    "research/feduba_public_stg_comparison_20261102/CONTROLLER_STATE.json": "ddd55e966a005bcb1a277ba3a7e9f2235a1fe1b63c0f9e4065444f9f04afb016",
+    "research/feduba_public_stg_comparison_20261102/FOREGROUND_LAUNCH_ONCE.json": "e6ed19803396ac38e491117cf7383d5d4dcc55eedf18b55a2a0703d74817f222",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_ONCE.json": "36905ed37295f43df698bf31500a1f1d03aa59b570aa73384e2f1468c1a8266e",
+    "research/feduba_public_stg_comparison_20261102/MANIFEST.json": "a138f9dda7bb940d51c01535cecfbd35c87542a8c760fbb8182f5c4b4974ec0c",
+    "research/feduba_public_stg_comparison_20261102/NORMAL_CASE_SELECTION.json": "540c0634d241754e215d9ce60bc73340f175a4dfb4ed747715c4b9054e516ea4",
+    "research/feduba_public_stg_comparison_20261102/RELATED_HELPER_REFERENCE.json": "b92857c60c00851be8e34c244062e128d3fbf2e6a7862147e221e113e6ac3ca7",
+    "research/feduba_public_stg_comparison_20261102/RESULT.json": "445bdfd28ba68ede87477071264b9998db81f2bd5d95b79d703ef72ab8de080e",
+    "research/feduba_public_stg_comparison_20261102/RUN_ONCE.json": "03c962ffc9bec33f4c913208d035e34b6363bac9c64010737b0d74d6f50ee2a7",
+    "research/feduba_public_stg_comparison_20261102/TERMINAL_OBSERVATION.json": "c3980cdfbad37d24dd8cbb7d37a62416278f226fe29bae0dcd86ddbc131fb52b",
+    "research/feduba_public_stg_comparison_20261102/VERIFIED.json": "91b927d85b9cc34593249efa7fcf66e93a4b48230947ed1bdd485eae8e7e896f",
+    "research/feduba_semantic_transfer_diagnosis_20261102/controller.py": "c14946648c9dbbf0d135df88de4d0d169941550486b7527447a8616051b6a0cf",
+    "research/feduba_semantic_transfer_diagnosis_20261102/io_guard.py": "0dd9c90e6676c21051295108bd6352159b017e109d32ab0ff6ad62d2909544f6",
+    "research/feduba_semantic_transfer_diagnosis_20261102/launch_foreground.py": "69085773e4c438f39aca761a9f8d6b9136fb047cd2bf2051bb60fa6c85076efb",
+    "research/feduba_semantic_transfer_diagnosis_20261102/native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "research/feduba_semantic_transfer_diagnosis_20261102/native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "research/feduba_semantic_transfer_diagnosis_20261102/PROFILE.json": "0d3f035c9c43fdde8c9ca3b4f03512cfd73244017b200e5ca15743d830cfbfe9",
+    "research/feduba_semantic_transfer_diagnosis_20261102/PROTOCOL.txt": "2f95c86645a07be82576121ffefdb1b62f5a307f9fac5f547b76a20efbe61c7d",
+    "research/feduba_semantic_transfer_diagnosis_20261102/semantic_diagnosis.py": "d0515aaeb0b2e939f9bad7c7a6e0e807e5b6393f930b0c32d04b192ed0a80c25",
+    "research/feduba_semantic_transfer_diagnosis_20261102/SOURCE_FREEZE.json": "d732cd277bf18adb0101dc8ae7c4dbcbf752cc22ed15ab354c81ceb8c4ba4385",
+    "research/feduba_semantic_transfer_diagnosis_20261102/source_review.py": "28a86ccf2a8a315dfdf8d7ce370f1710916cad84e3479c209d7b7b9763594c09",
+    "research/feduba_semantic_transfer_diagnosis_20261102/SOURCE_REVIEW_RESULT.json": "7f1df3460329e09434de14942c521124f5c0fab106f18ad0a28b1781717c89f9",
+    "research/feduba_semantic_transfer_diagnosis_20261102/TRANSPORT_FREEZE.json": "5e62aeaa6496053a0a961aaa32400da8373c3fe1c80515c43d4caa12d225be90",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1561,9 +1588,13 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_public_stg_comparison_20261102/AUDIT_ONCE.json",
+        "research/feduba_public_stg_comparison_20261102/COMPARISON_SUMMARY.json",
+        "research/feduba_public_stg_comparison_20261102/COMPLETION_REPORT_KO.txt",
         "research/feduba_public_stg_comparison_20261102/LAUNCH_RECOVERY_PROTOCOL.txt",
         "research/feduba_public_stg_comparison_20261102/LAUNCH_REPORT_KO.txt",
         "research/feduba_public_stg_comparison_20261102/PROTOCOL.txt",
+        "research/feduba_public_stg_comparison_20261102/RESULT.json",
         "research/feduba_public_stg_comparison_20261102/SOURCE_REVIEW_RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
@@ -1580,6 +1611,17 @@
         "research/feduba_reproduction_audit_20261031/PROTOCOL.txt",
         "research/feduba_reproduction_audit_20261031/REPORT_KO.txt",
         "research/feduba_reproduction_audit_20261031/RESULTS.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/feduba_semantic_transfer_diagnosis_20261102",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_semantic_transfer_diagnosis_20261102/PROTOCOL.txt",
+        "research/feduba_semantic_transfer_diagnosis_20261102/SOURCE_REVIEW_RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

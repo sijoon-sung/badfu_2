@@ -1,0 +1,26 @@
+{
+  "state": "read_only_related_repository_helper_reference",
+  "repository": "reds-lab/Narcissus",
+  "commit": "de128d870d7ef0560a4804e413b1c57909883195",
+  "path": "util.py",
+  "url": "https://github.com/reds-lab/Narcissus/blob/de128d870d7ef0560a4804e413b1c57909883195/util.py",
+  "blob": "837564b738637378b8567ae3fc25ff32a5e599cf",
+  "bytes": 11643,
+  "sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+  "symbols": [
+    {
+      "name": "def apply_noise_patch",
+      "line": 214
+    },
+    {
+      "name": "class concoct_dataset",
+      "line": 326
+    }
+  ],
+  "observation": "Narcissus concoct_dataset indexes the outer dataset first with its original labels, then target samples relabeled to len(outer.classes). This supports the declared mixed concatenation curriculum as a related-source pattern. Its constructor has two arguments; the FedUBA call has a third CIFAR flag whose missing body remains unknown. The add branch of apply_noise_patch adds noise to each image before caller clipping.",
+  "FedUBA_missing_helper_body_recovered_or_author_certified": false,
+  "active_numeric_source_or_profile_changed": false,
+  "model_loads": 0,
+  "forward_calls": 0,
+  "causal_performance_explanation": false
+}
