@@ -17,3 +17,6 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 - [DISLAB 실제 결과](../../../research/feduba_reproduction_audit_20261031/RESULTS.json)
 - [판정과 중단 지점](../../../research/feduba_reproduction_audit_20261031/REPORT_KO.txt)
 - [큰 주장부터의 탐지 진입 조건](../../../research/feduba_reproduction_audit_20261031/DETECTION_GATES.txt)
+
+
+2026-11-02 최신: 실제target-only125 정상·공격 체크포인트 생성을 DISLAB에서 진행한다. 기존all-class 선택에는목표클래스가0개였고 새선택125개는모두class2(owner58/67)다. 저장형식키누락으로학습전중단한첫시도와호출오류를보존한뒤 별도동일조건복구의실제trainer가시작됐다. 현재최종성능은미측정이다. [고정실행·오류·현재범위](../../../research/feduba_targetclass_pair_recovery_20261102/REPORT_KO.txt)와 [원조건·중단규칙](../../../research/feduba_targetclass_pair_recovery_20261102/PROTOCOL.txt)을읽는다. D08/D15와trigger-family독립탐지한계는해결하지않았다.
