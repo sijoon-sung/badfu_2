@@ -1,0 +1,42 @@
+{
+  "state": "passed_actual_receiver_and_durable_guardwait_metadata_only",
+  "utc": "2026-11-02T04:18:02.913672+00:00",
+  "current_process": {
+    "ProcessId": 30052,
+    "ParentProcessId": 3508,
+    "Name": "python.exe",
+    "CommandLine": "\"C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe\" -B \"C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_mixed_pair_receive_recovery_v2_20261102/receive_recovery.py\""
+  },
+  "task_COM": {
+    "run_level": 0,
+    "state": 4,
+    "last_result": 267009,
+    "enabled": true
+  },
+  "state_sample": 4,
+  "state_elapsed_seconds": 60.062999999999874,
+  "last_durable_event": {
+    "utc": "2026-11-02T04:17:51.172587+00:00",
+    "pid": 30052,
+    "event_type": "resource_guard",
+    "state": "waiting_fixed_memory_guard",
+    "sample": 4,
+    "extraction_started": false,
+    "CPU_payloads_checked": 0
+  },
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 2866167808,
+    "committedBytes": 22956113920,
+    "commitLimit": 50775060480
+  },
+  "deadline_utc": "2026-11-03T04:16:51.108230+00:00",
+  "extraction_started": false,
+  "CPU_payloads_checked": 0,
+  "original_or_V1_V2_launchers_reinvoked": false,
+  "task_created_or_updated_by_start_recovery": false,
+  "model_queries": 0,
+  "registration_called": false
+}

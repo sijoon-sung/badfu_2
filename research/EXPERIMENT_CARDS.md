@@ -304,7 +304,7 @@
 
 **가설 한 줄: 공식 FedUBA 배포본이 논문의 실행 절차와 표본 정체를 보존하여 탐지 검증에 쓸 실제 공격 전후쌍을 제공한다.**
 
-**판정: mixed 성능실패 / 수신원소실·V1/V2 launch실패 보존 / 기존미실행task start-only 선게시**
+**판정: mixed 성능실패 / 수신원소실·V1/V2 launch실패 보존 / 새receiver 실제실행·고정RAM대기**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R03-feduba-reproduction/README.md)
 
@@ -314,6 +314,7 @@
 2026-11-02 별도 receive-only 복구 계약: 원수신 종료원인 미확정을 보존하고 새ONCE-before-wait/fsync상태/native실제process·terminal을 추가했다. 원13storage수치/검사·source/영수증과CPU1/-1/8GiB/commit16GiB/15초24h는 유지한다. 새5Python/1XML 실profile·freeze·모델0source review·각host 새case/등록부재·remote Ready0/currentprocess0을 PR선게시하며, 이후 새task 단1회만 가능하다. 완료export/scp/훈련/감사/성능평가 재실행0이고 local실제완료 전등록0이다. 성능·D08/D15/unknowntrigger미검증은 불변이다.
 2026-11-02 수신복구V1는 source/실profile 선게시후task생성1회가XML인코딩전환불가exit1로실패·task/receiver본문0이며원문·ONCE·failure·terminal을보존했다. 별도monitor import경로오류도metadata본문전모델0으로보존했다. 새별도V2는UTF16LE BOM/선언·monitor경로만교정하고V1실패SHA/부재를추가핀했다. receive_recovery/launcher본문·원13storage함수/17JSON·중단보고/monitor3·고정8GiB/commit16GiB/CPU1/-1/15초24h는같다. 새11source/5Python·1XML·실profile·모델0검사를실행전같은PR선게시하며원/V1helper·receiver재호출과완료export/scp/훈련/감사/평가재실행0이다. actuallocal완료전등록0/전체성능·D08/D15·unknowntrigger미검증은불변이다.
 2026-11-02 V2 UTF16 task생성0/query0후기본RunLevel필드생략검증실패를보존했다. task는미실행Ready3/267011이고수신본문·ONCE0이다. 별도start-only 모델0검사는실COM RunLevel0/state3/neverrun267011·실등록XMLcanonicalSHA를확인했다. 새4Python/1readonlyJScript·실profile/freeze를선게시한뒤기존task첫/Run만1회요청하며task재생성/수정/원V1V2launcher재호출0이다. 수신본문·원13storage/원archive·영수증·8GiB/commit16GiB/CPU1/-1/24h는불변이고완료계산재실행0·actuallocal완료전등록0·성능/D08/D15/unknowntrigger미검증은유지한다.
+2026-11-02 8b007fa start-only 실source/profile 선게시후이미등록된미실행V2task첫/Run1회exit0. 실제native PID30052/parent3508 exactcommand와COM RunLevel0/Running4/267009·대기전ONCE·실process·24hdeadline/fsync상태·최소2개15초guard sample이일치했다. 원/V1/V2launcher재호출·task재생성/수정0이다. 가용8GiB/commit16GiB 대기이며추출/672localCPU/완료/등록0·완료export/scp/훈련/감사/성능평가재실행0이다. 실제PID는시점관측이며반복metadata는새observe_start.py를쓴다. 원소실원인미확정과V1 XML/V2기본필드검증실패·모든sourcefreeze/성능실패/D08/D15/unknowntrigger미검증을보존한다.
 - **non-IID에 대해 남길 교훈:** 적격 공격 양성 확보 전 탐지를 검증할 수 없고, 재현 통과 자체도 D08 공격0.75848/정상0.75525·0.76188 및 D15 반례를 해결하지 않는다.
 - **반복하지 않을 주장:** 누락 utils/models를 추측해 넣고 untouched 논문 재현이라고 부르거나 stcebra/FUBA 실패 모델을 FedUBA로 대체하지 않는다. 완료된 감사 runner와 이전 FUBA 유한 작업을 자동 반복하지 않는다.
 - **재검토 조건:** 권위 있는 누락 정의·데이터/ID/BEA 의미 및 설정 차이를 해소한 별도 고정 profile, 실제 동일 FU 정상 대조, 독립 정상 보정과 새로운 행동 가설을 먼저 확보한다.
@@ -895,6 +896,14 @@
 - [research/feduba_mixed_pair_receive_recovery_v2_20261102/TASK_ONCE.json](feduba_mixed_pair_receive_recovery_v2_20261102/TASK_ONCE.json)
 - [research/feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_FAILURE.json](feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_FAILURE.json)
 - [research/feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_TERMINAL_OBSERVATION.json](feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_TERMINAL_OBSERVATION.json)
+- [research/feduba_mixed_pair_receive_start_20261102/START_PUBLICATION.json](feduba_mixed_pair_receive_start_20261102/START_PUBLICATION.json)
+- [research/feduba_mixed_pair_receive_start_20261102/START_ONCE.json](feduba_mixed_pair_receive_start_20261102/START_ONCE.json)
+- [research/feduba_mixed_pair_receive_start_20261102/START_TERMINAL.json](feduba_mixed_pair_receive_start_20261102/START_TERMINAL.json)
+- [research/feduba_mixed_pair_receive_start_20261102/RECEIVE_RUNNING_OBSERVATION.json](feduba_mixed_pair_receive_start_20261102/RECEIVE_RUNNING_OBSERVATION.json)
+- [research/feduba_mixed_pair_receive_start_20261102/GUARD_WAIT_DURABILITY_CHECK.json](feduba_mixed_pair_receive_start_20261102/GUARD_WAIT_DURABILITY_CHECK.json)
+- [research/feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_ONCE.json](feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_ONCE.json)
+- [research/feduba_mixed_pair_receive_recovery_v2_20261102/ACTUAL_PROCESS.json](feduba_mixed_pair_receive_recovery_v2_20261102/ACTUAL_PROCESS.json)
+- [research/feduba_mixed_pair_receive_recovery_v2_20261102/RESOURCE_WAIT_BEGIN.json](feduba_mixed_pair_receive_recovery_v2_20261102/RESOURCE_WAIT_BEGIN.json)
 
 **묶은 폴더:** [feduba_reproduction_audit_20261031](feduba_reproduction_audit_20261031) · [feduba_paper_implementation_20261031](feduba_paper_implementation_20261031) · [feduba_stage_diagnosis_20261101](feduba_stage_diagnosis_20261101) · [feduba_mixed_surrogate_20261101](feduba_mixed_surrogate_20261101) · [feduba_mixed_trigger_20261101](feduba_mixed_trigger_20261101) · [feduba_mixed_pair_20261101](feduba_mixed_pair_20261101) · [feduba_mixed_monitor_20261101](feduba_mixed_monitor_20261101) · [feduba_mixed_pair_memory_recovery_20261101](feduba_mixed_pair_memory_recovery_20261101) · [feduba_mixed_attack_resume_20261101](feduba_mixed_attack_resume_20261101) · [feduba_mixed_attack_prefix_guard_v2_20261101](feduba_mixed_attack_prefix_guard_v2_20261101) · [feduba_mixed_attack_recovery_run_20261101](feduba_mixed_attack_recovery_run_20261101) · [feduba_metric_conformance_review_20261101](feduba_metric_conformance_review_20261101) · [feduba_mixed_pair_evaluation_recovery_20261101](feduba_mixed_pair_evaluation_recovery_20261101) · [feduba_mixed_pair_eval_native_v2_20261101](feduba_mixed_pair_eval_native_v2_20261101) · [feduba_mixed_pair_delivery_20261101](feduba_mixed_pair_delivery_20261101) · [feduba_mixed_pair_receive_recovery_20261102](feduba_mixed_pair_receive_recovery_20261102) · [feduba_mixed_pair_receive_recovery_v2_20261102](feduba_mixed_pair_receive_recovery_v2_20261102) · [feduba_mixed_pair_receive_start_20261102](feduba_mixed_pair_receive_start_20261102)
 

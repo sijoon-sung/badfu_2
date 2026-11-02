@@ -581,3 +581,11 @@
 | [TASK_ONCE.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/TASK_ONCE.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
 | [LAUNCH_FAILURE.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_FAILURE.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
 | [LAUNCH_TERMINAL_OBSERVATION.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/LAUNCH_TERMINAL_OBSERVATION.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
+| [START_PUBLICATION.json](../../../research/feduba_mixed_pair_receive_start_20261102/START_PUBLICATION.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [START_ONCE.json](../../../research/feduba_mixed_pair_receive_start_20261102/START_ONCE.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [START_TERMINAL.json](../../../research/feduba_mixed_pair_receive_start_20261102/START_TERMINAL.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [RECEIVE_RUNNING_OBSERVATION.json](../../../research/feduba_mixed_pair_receive_start_20261102/RECEIVE_RUNNING_OBSERVATION.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [GUARD_WAIT_DURABILITY_CHECK.json](../../../research/feduba_mixed_pair_receive_start_20261102/GUARD_WAIT_DURABILITY_CHECK.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [RECEIVE_ONCE.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_ONCE.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
+| [ACTUAL_PROCESS.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/ACTUAL_PROCESS.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
+| [RESOURCE_WAIT_BEGIN.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/RESOURCE_WAIT_BEGIN.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
