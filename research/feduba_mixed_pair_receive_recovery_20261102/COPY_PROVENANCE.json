@@ -1,0 +1,28 @@
+{
+  "state": "separate_receive_only_operational_wrapper_imports_original_storage_functions",
+  "original_source_freeze_sha256": "17be254bc8954d86ba3a427b6e678f29d311beec7effdbc8e9ba7ecd295a1b68",
+  "original_files": {
+    "COPY_PROVENANCE.json": "eca21d404cf7ccde6ba2c23b22b1c15a999492451c177d6c4f7447eff08f3a9d",
+    "DELIVERY_PROFILE.json": "e4e080e62505fb88858b432189e6823af92219b3a75750394b02199f8374538a",
+    "EXECUTION_CONTRACT.txt": "2642b039dff037f6bf29b2cbf0fb6d5c4e2e92438463b53ef1a15166ee82be6b",
+    "PROTOCOL.txt": "42620990a1cc7a3c3913cb118497942754df46cab3211045d21979e387786fd2",
+    "export_mixed_pair.py": "d207715a98ae1282e40f3957468dedd0aee48406e778fdb1bbf51497aef4c73f",
+    "launch_export.ps1": "3542e78bf64b698afc2f4fab2f7265d9a2f8028ac6811fddecfc2cfd14d5972a",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "pair_review_common.py": "84be2bfcff162eb33d1dd15427165d30aacfe1052051830ffecd6d6637c313b2",
+    "receive_pair_review.py": "576e37773876dfa307e1c2d3806db29ff73d5097b4e89a0b93caf093d97991ee",
+    "register_pair_cases.py": "27a5a2894827d6e161fa3bd131ddc30e8e56f623c39c9dc31eb490c482abd289",
+    "source_review.py": "14892da33e02dee0d43da99d22967ff6f5a57e0d38c5d47bd16b9eecd493b81c"
+  },
+  "original_monitor_files": {
+    "observe_delivery_status.py": "98af928989fd240108019719e5f520b119cc414543186caccdb6572140052da5",
+    "observe_local_receive.py": "07b7b8a60778fde56fa5703a4d696590932ee647833a62d871c569190d918eaf",
+    "MONITOR_PROTOCOL.txt": "4eb588e8a40b6239ce1c27fe2c8086d7c60e341a95dc04694b438807b9b801af"
+  },
+  "numerical_storage_checks_changed": false,
+  "new_wait_io_and_scheduler_only": true,
+  "old_receiver_called": false,
+  "model_queries_during_source_review": 0
+}

@@ -533,3 +533,17 @@
 | [DELIVERY_PROGRESS.json](../../../research/feduba_mixed_pair_delivery_20261101/DELIVERY_PROGRESS.json) | `research/feduba_mixed_pair_delivery_20261101` |
 | [LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json) | `research/feduba_mixed_pair_delivery_20261101` |
 | [LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt) | `research/feduba_mixed_pair_delivery_20261101` |
+| [.gitignore](../../../research/feduba_mixed_pair_receive_recovery_20261102/.gitignore) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [COPY_PROVENANCE.json](../../../research/feduba_mixed_pair_receive_recovery_20261102/COPY_PROVENANCE.json) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [PROTOCOL.txt](../../../research/feduba_mixed_pair_receive_recovery_20261102/PROTOCOL.txt) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [RECEIVE_PROFILE.json](../../../research/feduba_mixed_pair_receive_recovery_20261102/RECEIVE_PROFILE.json) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [REMOTE_METADATA_PREFLIGHT.json](../../../research/feduba_mixed_pair_receive_recovery_20261102/REMOTE_METADATA_PREFLIGHT.json) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [REPORT_KO.txt](../../../research/feduba_mixed_pair_receive_recovery_20261102/REPORT_KO.txt) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [SOURCE_FREEZE.json](../../../research/feduba_mixed_pair_receive_recovery_20261102/SOURCE_FREEZE.json) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [SOURCE_REVIEW_RESULT.json](../../../research/feduba_mixed_pair_receive_recovery_20261102/SOURCE_REVIEW_RESULT.json) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [launch_receive_once.py](../../../research/feduba_mixed_pair_receive_recovery_20261102/launch_receive_once.py) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [observe_receive.py](../../../research/feduba_mixed_pair_receive_recovery_20261102/observe_receive.py) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [receive_ops.py](../../../research/feduba_mixed_pair_receive_recovery_20261102/receive_ops.py) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [receive_recovery.py](../../../research/feduba_mixed_pair_receive_recovery_20261102/receive_recovery.py) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [receive_task.xml](../../../research/feduba_mixed_pair_receive_recovery_20261102/receive_task.xml) | `research/feduba_mixed_pair_receive_recovery_20261102` |
+| [source_checks.py](../../../research/feduba_mixed_pair_receive_recovery_20261102/source_checks.py) | `research/feduba_mixed_pair_receive_recovery_20261102` |
