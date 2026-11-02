@@ -1,0 +1,80 @@
+{
+  "state": "first_remote_diagnostic_registration_call",
+  "source_sha256": "898bcafda7c619fd20c0958fd9e34a1a9a64f3f863f23014f92bffa52d9b627f",
+  "precheck": {
+    "catalogue_sha256": "4bc6cce95cf7a2a015b10925057d1681ef6b7b3148c9acb9718b41c42b767f4c",
+    "old_case_count": 24,
+    "old_audits": {
+      "audit/BADFU_RESUMED_COMPLETED.json": "650d4982b1dbfb6b7ed3970309eb4b6344fd8fc4050dd45ce267f94f8e4935a6",
+      "audit/BADFU_ALGORITHM_ALIGNMENT.json": "c1f2f6e67b00285cd0cfdd52f15d88d777862a28d759259dc84063d6aeb1df0f",
+      "audit/CONFIRMED_BADFU_S20261023_V1.json": "86109663ef96360335ea89a103b0c4856ca8f507ef0e51fe0e05eac6501a99ba",
+      "audit/FUBA_PARTIAL_ROUND0063_DELIVERY.json": "b6e4b8b5f251198252f835ae4457bf388523fbd9f9b738fed101f7d820fa161b",
+      "audit/FUBA_V2_ROUND100_DELIVERY.json": "68086cbb6bb3ff90dc7ff9b4b1d2610038e30b652d0d2d1cfd9e1b6f65de013f",
+      "audit/FUBA_V3_STOPPED15_DELIVERY.json": "92ab3db8c18fc36c98cfa5737f7fb35a5f0670f74834d6bfc5f9ade0d222320a",
+      "audit/FUBA_V4_STOPPED23_DELIVERY.json": "5d7b915e487b0c64d948b3636c2839c39224761ddeffd1e6b65c5ccd18a98a7e",
+      "audit/FUBA_V5_ROUND100_DELIVERY.json": "198902f9ad893704802d687fc6f132ceaa47865765a841d2ba53dba456e1a7b3",
+      "audit/FUBA_V5_KD10_PAIR_DELIVERY.json": "df7ef9d6506bf7c440692712a3f8510154bf7c2126ebe0ee3e19c58cac9801c2",
+      "audit/FUBA_V6_KD10_PAIR_DELIVERY.json": "afbe74371dc22c285e4c535c2bed2e6d416cdab335e4177fca76be1d545b760a",
+      "audit/FUBA_V7_KD10_PAIR_DELIVERY.json": "4688331e69d2e269c73f68b4721dbe6d0e817a428bbe001826fa59a6fa9370fb",
+      "audit/FUBA_REFERENCE_MNIST_DBA_20261031_DELIVERY.json": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
+      "audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+      "audit/FEDUBA_CLEANFL20_S42_20261031_DELIVERY.json": "cafd2586fa4ea7b6d6dbc278d2dabae248bc7438e58031a507f9739700dff0bf",
+      "audit/FEDUBA_PAIR_S42_CPU_SSS125_FU20_20261031_DELIVERY.json": "8512ed1c143ca843b78013d962fc8151e6faa22994dc2877c81f397765fe039a"
+    },
+    "new_case_absent": true,
+    "existing_ledger_absent": true
+  },
+  "export_terminal": {
+    "observed_utc": "2026-11-02T16:44:37.0234242Z",
+    "task": {
+      "state": "Ready",
+      "last_result": 0,
+      "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+      "arguments": "-B -u D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103/export_clean_review.py",
+      "working_directory": "D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103",
+      "user": "DISLAB",
+      "logon_type": "S4U",
+      "run_level": "Limited"
+    },
+    "processes": [],
+    "receipts": {
+      "TASK_ONCE.json": {
+        "state": "first_new_targetclass_pair_controller_launch"
+      },
+      "LAUNCH_FAILURE.json": null,
+      "CLEAN_EXPORT_ONCE.json": {
+        "pid": 3144,
+        "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+      },
+      "CLEAN_EXPORT_FAILURE.json": null,
+      "CLEAN_REVIEW_DELIVERY_REMOTE.json": {
+        "state": "exported_verified_normal_review",
+        "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+        "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103",
+        "archive_path": "D:\\FEDUBA_FIXED10_CLEAN_DELIVERY_20261103\\CLEAN_REVIEW_DELIVERY.zip",
+        "archive_sha256": "8b976c6ffdc51a3117dadd6f97c4e79d0c366156d163a4c077c71698076f4b15",
+        "archive_bytes": 165932820,
+        "manifest_sha256": "35087cb2487449a5d7c53c67e3233c2b1989f93eb39192aba0ce32ffc46b5ff4",
+        "seal_sha256": "5ba8ddb2a13e496b9945726415de62673a9b1e2f3df817a987702ad8d90472b1",
+        "payload_file_count": 71,
+        "packet_total_files": 73,
+        "tensor_payload_count": 3,
+        "guard": {
+          "state": "passed",
+          "verified_payload_files": 71,
+          "all_readonly": true
+        },
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103\\run\\before.pt",
+          "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+          "payload_key": null
+        },
+        "local_delivery_complete": false,
+        "catalogue_registered": false,
+        "FedUBA_attack_completed": false
+      },
+      "REGISTRATION_FAILURE.json": null
+    },
+    "registered_summary": null
+  }
+}

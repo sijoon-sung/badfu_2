@@ -1,0 +1,18 @@
+{
+  "state": "observed_local_receipt_decode_failure_after_successful_DISLAB_append",
+  "caller": "C:/Users/sijoo/Documents/ChatGPT/badFU/tmp/feduba_fixed10_clean_register_dislab_once_20261103.py",
+  "caller_sha256": "e6a3bd81f83ffbfe95bc2e982182eff479c1e1c55a54f53c6a0c9d7a69784387",
+  "remote_register_stdout": {
+    "state": "registered_diagnostic_only",
+    "host_label": "dislab",
+    "old_case_count": 24,
+    "new_case_count": 25
+  },
+  "scp_receipt_completed": true,
+  "local_failure_phase": "reg=json.loads((out/REGISTERED.json).read_text()) after remote success and SCP",
+  "exception": "UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 1843: illegal multibyte sequence",
+  "producer_registration_failure_written": false,
+  "registration_retry_authorized": false,
+  "model_loads": 0,
+  "model_forwards": 0
+}

@@ -1,0 +1,22 @@
+{
+  "state": "passed_existing_UTF8_registration_readback_no_registration_retry",
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "host": "DISLAB",
+  "case_counts": [
+    24,
+    25
+  ],
+  "old_cases_defaults_and_audit_bytes_preserved": true,
+  "old_supplemental_audit_count": 15,
+  "registered_sha256": "ac853c19c71e4ae8887f8603c44bda3964ec46af83ec1a0ef642e965d84562a7",
+  "current_catalogue_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "declined_purposes": [
+    "retrain_activation",
+    "client_history"
+  ],
+  "local_case_registered": false,
+  "registration_calls_in_recovery": 0,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "export_receipt_sha256": "1d7f6e65651f025e5f8d8382a6b3a3c23c94a841d62334e76c67019b173628f3"
+}

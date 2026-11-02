@@ -1,0 +1,97 @@
+{
+  "id": "feduba.public_fixed10.newSSS5000.targetclass125.s42.20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "launch_enabled": true,
+  "required_clean_case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "case_purpose": "diagnostic",
+  "malicious_owner_ids": [
+    5,
+    7
+  ],
+  "SSS_owners_total_samples": 5000,
+  "SSS_query_mode": "forward_only_eval_logits_no_gradients_or_victim_parameters_to_selection",
+  "SSS_transform": "deterministic_ToTensor_Normalize0.5",
+  "SSS_batch_size": 128,
+  "SSS_trigger_multiplier": 1,
+  "SSS_clip": false,
+  "SSS_score": "L2(f(x+delta)-f(x))",
+  "SSS_scope": "global_top125_only_targetclass2_eligible_owned_by_clients5_7_after_all5000_queries",
+  "request_budget": 125,
+  "request_budget_reference": "floor(10_selected_clients*2500_each*0.005)",
+  "request_budget_fraction_of_all50000": 0.0025,
+  "BEA_selected_images": "clip(x-delta,-1,1)_after_training_augmentation",
+  "BEA_labels": "original_unchanged",
+  "attack_dataset_size": "unchanged",
+  "benign_control": "remove_exact_same_source_IDs_with_original_labels",
+  "FU_initial": "original_clean_fresh_global0",
+  "FU_rounds": 20,
+  "FU_participants": "fixed_public_selected_clients_2_3_5_7_9_12_13_16_18_19_every_round",
+  "FU_local_epochs": 5,
+  "FU_batch_size": 128,
+  "FU_optimizer": "SGD_lr0.01_momentum0.9_weight_decay0_global_cosine20",
+  "FU_role_seed": "42+500000+round*10000+client*100_same_for_both_branches",
+  "FU_first_round_policy": "train_all10_then_replace_nonmalicious_effective_submissions_with_original_local_models_per_public_source",
+  "FU_calibration": "per_state_key_old_update_L2_times_new_update_direction_plus_new_global_zero_direction_preserved_then_load_dtype",
+  "FU_aggregation": "equal_FedAvg_float32_sequential_last_client_BN_counter",
+  "branch_order": [
+    "benign",
+    "attack"
+  ],
+  "eval_target": 2,
+  "eval_trigger_multiplier": 1.5,
+  "eval_input_clip": [
+    -1,
+    1
+  ],
+  "eval_batch_size": 128,
+  "eval_layout_precision": "contiguous_NCHW_FP32",
+  "evaluation_models": [
+    "pre",
+    "benign_FU_ASR_B",
+    "attack_FU"
+  ],
+  "minimum_operational_latent_pair_gate": {
+    "pre_ASR_max_pct": 20,
+    "attack_ASR_min_pct": 80,
+    "attack_minus_pre_ASR_min_pp": 50,
+    "attack_minus_benign_FU_ASR_min_pp": 50,
+    "all_three_CA_min_pct": 80,
+    "post_CA_drop_max_pp": 5
+  },
+  "gate_is_exact_paper_table_reproduction": false,
+  "detection_success_implied": false,
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "logger_CPU_result": "SSS_LOGGER_CPU2_RESULT.json",
+  "numeric_policy_sha256": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74",
+  "bound_delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "SSS_target_class_only": 2,
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "pre_checkpoint": {
+    "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103\\run\\before.pt",
+    "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+    "payload_key": null
+  },
+  "foundation_binding_sha256": "102e7e3d16fcbce94d8cfe6c535be1cfeb64d0343a99a2788d2c4ff280ebe91e"
+}
