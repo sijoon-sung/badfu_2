@@ -1,0 +1,8 @@
+{
+  "state": "passed_actual_publication_exact_bytes",
+  "commit": "4152be6",
+  "public_files": 23,
+  "mismatches": [],
+  "method": "Each public RUN_FREEZE file SHA checked against actual file, PR working file and git show HEAD:relativePath blob bytes; private split and initialization payload remain private and separately pinned.",
+  "model_operations": 0
+}
