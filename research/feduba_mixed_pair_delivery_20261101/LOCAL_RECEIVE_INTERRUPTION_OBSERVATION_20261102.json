@@ -1,0 +1,114 @@
+{
+  "state": "local_receiver_absent_without_terminal_receipt_preserved_no_retry",
+  "observed_at_local_clock_utc": "2026-11-02T03:54:36.530Z",
+  "heartbeat_trigger_utc": "2026-11-02T03:52:13.658Z",
+  "previous_heartbeat_confirmed_alive_utc": "2026-11-01T17:10:01.835Z",
+  "first_heartbeat_found_absent_utc": "2026-11-02T03:52:13.658Z",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "local_metadata": {
+    "state": "read_only_local_receiver_resource_observation",
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 2609065984,
+      "committedBytes": 18717306880,
+      "commitLimit": 50775060480
+    },
+    "own_storage_processes": [],
+    "model_queries": 0,
+    "finite_reexecution": false
+  },
+  "remote_metadata": {
+    "utc": "2026-11-02T03:51:57.0011637Z",
+    "task_state": "Ready",
+    "last_result": 0,
+    "processes": [],
+    "files": {
+      "PAIR_REVIEW_EXPORT_ONCE.json": {
+        "state": "",
+        "pid": 27080,
+        "packet_total_files": null,
+        "tensor_payload_count": null,
+        "archive_bytes": null,
+        "traceback": ""
+      },
+      "PAIR_REVIEW_DELIVERY_REMOTE.json": {
+        "state": "exported_verified_diagnostic_pair_review",
+        "pid": null,
+        "packet_total_files": 1345,
+        "tensor_payload_count": 672,
+        "archive_bytes": 1530790988,
+        "traceback": ""
+      }
+    },
+    "last_event": {
+      "event_type": "CPU_checked",
+      "file": "private_tensor_evidence/trigger/private_run/steps/epoch100_batch2.pt",
+      "bytes": null,
+      "kind": "tensor_evidence"
+    },
+    "model_queries": 0,
+    "finite_reexecution": false
+  },
+  "archive_and_receive_files": {
+    "PAIR_REVIEW_DELIVERY.zip": {
+      "exists": true,
+      "bytes": 1530790988
+    },
+    "PAIR_REVIEW_DELIVERY.zip.part": {
+      "exists": false
+    },
+    "PAIR_REVIEW_RECEIVE_ONCE.json": {
+      "exists": false
+    },
+    "PAIR_REVIEW_RECEIVE_FAILURE.json": {
+      "exists": false
+    },
+    "PAIR_REVIEW_LOCAL_COMPLETE.json": {
+      "exists": false
+    }
+  },
+  "local_packet_exists": false,
+  "original_source_checks": {
+    "main_source13": 13,
+    "pr_source13": 13,
+    "monitors": 3
+  },
+  "preserved_original_file_sha256": {
+    "SOURCE_FREEZE.json": "17be254bc8954d86ba3a427b6e678f29d311beec7effdbc8e9ba7ecd295a1b68",
+    "MONITOR_FREEZE.json": "0a825fb0ad85864f9176a142444222c3a50ad48996a9b5464bc2ac1850e99881",
+    "DELIVERY_PUBLICATION.json": "8803e8f2abef1abf9a669e992776c4581912d19c8bed2c0eecae3ba0cb2a2670",
+    "PAIR_REVIEW_DELIVERY_REMOTE.json": "c46062ba4da04525999a7d799f81698587256b96635171dce32e5d7aca854ece",
+    "ARCHIVE_TRANSFER_CHECKS.json": "6a2d654b3789fb22e3f113eed9c6f4b6d6ecb95b9c45359c89f9953d3feff965",
+    "DELIVERY_PROGRESS.json": "41ab973daf61256553463c4d794b5346d57ec45dd93586a3e0e2e6ce592b5eb0",
+    "LOCAL_RECEIVE_RESOURCE_OBSERVATION.json": "9aa788166ce40cfdb8387afe431c451669601fe98d7fa7757fdc009eb80814ec",
+    "REMOTE_EXPORT_TERMINAL_CHECKS.json": "e3014a833ffba4ca44090c7328b50c182c9a33905182e462cdfcad39e16241b7"
+  },
+  "prior_session_lookup": {
+    "session_id": 48700,
+    "result": "Unknown process id 48700",
+    "exit_code_available": false
+  },
+  "termination_time_known": false,
+  "termination_cause_known": false,
+  "timeout_proved": false,
+  "reboot_or_external_termination_proved": false,
+  "local_extraction_observed": false,
+  "local_CPU_storage_validation_observed": false,
+  "local_delivery_complete": false,
+  "new_case_registration_attempted": false,
+  "completed_jobs_reexecuted": false,
+  "receiver_or_transfer_restarted": false,
+  "other_apps_closed": false,
+  "guard_bypassed": false,
+  "model_queries": 0,
+  "overall_goal_complete": false,
+  "next_stage": "Keep original archive and all frozen sources and receipts; do not call old helper or receiver. Any receive recovery requires a separately prepublished explicit stage contract, source and actual profile with unchanged fixed resource thresholds and checks; registration remains gated on real local completion."
+}

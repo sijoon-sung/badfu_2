@@ -531,3 +531,5 @@
 | [LOCAL_RECEIVE_RESOURCE_OBSERVATION.json](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_RESOURCE_OBSERVATION.json) | `research/feduba_mixed_pair_delivery_20261101` |
 | [REMOTE_EXPORT_TERMINAL_CHECKS.json](../../../research/feduba_mixed_pair_delivery_20261101/REMOTE_EXPORT_TERMINAL_CHECKS.json) | `research/feduba_mixed_pair_delivery_20261101` |
 | [DELIVERY_PROGRESS.json](../../../research/feduba_mixed_pair_delivery_20261101/DELIVERY_PROGRESS.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json) | `research/feduba_mixed_pair_delivery_20261101` |
+| [LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt](../../../research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt) | `research/feduba_mixed_pair_delivery_20261101` |

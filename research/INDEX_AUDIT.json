@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "f5e240310f44e832953679cbc77e8a07b66b3a278e37f4dd36dad80218557b58",
+  "registry_sha256": "a6d0d52c5c2f9b4f458c097baa6dafba15d4278ab17cc0cbb43dee27abd6af0e",
   "cards": 28,
-  "unique_source_documents": 846,
+  "unique_source_documents": 848,
   "top_level_folders": 121,
   "folders_linked_to_cards": 73,
   "source_sha256": {
@@ -750,7 +750,7 @@
     "research/feduba_mixed_pair_eval_native_v2_20261101/COMPLETION_REPORT_KO.txt": "8028487b73678b098720a35409aeac42ca863ea61a0939edf03a7ae02f213882",
     "research/feduba_mixed_pair_delivery_20261101/PROTOCOL.txt": "42620990a1cc7a3c3913cb118497942754df46cab3211045d21979e387786fd2",
     "research/feduba_mixed_pair_delivery_20261101/DESIGN_INPUT_STATE.json": "1f9e1a174e44dbbdddce019eb67fb3bed19b8d3541db6710e94d445a77a68873",
-    "research/feduba_mixed_pair_delivery_20261101/REPORT_KO.txt": "4b199f9ee7c9f3e4663b567a40ebbba17a2bfebd74a8657984d765f2545e5ecd",
+    "research/feduba_mixed_pair_delivery_20261101/REPORT_KO.txt": "e203781eb022d179c20e61c1fbb2f9e96e8c0391e5928c1968a3bef9efad1b74",
     "research/feduba_mixed_pair_delivery_20261101/ACTUAL_SOURCE_FREEZE_CHECKS.json": "a5862992c6afda1f004ce058e9f9182df90c1374049213ff0df6d6252966c804",
     "research/feduba_mixed_pair_delivery_20261101/COPY_PROVENANCE.json": "eca21d404cf7ccde6ba2c23b22b1c15a999492451c177d6c4f7447eff08f3a9d",
     "research/feduba_mixed_pair_delivery_20261101/DELIVERY_PROFILE.json": "e4e080e62505fb88858b432189e6823af92219b3a75750394b02199f8374538a",
@@ -779,6 +779,8 @@
     "research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_RESOURCE_OBSERVATION.json": "9aa788166ce40cfdb8387afe431c451669601fe98d7fa7757fdc009eb80814ec",
     "research/feduba_mixed_pair_delivery_20261101/REMOTE_EXPORT_TERMINAL_CHECKS.json": "e3014a833ffba4ca44090c7328b50c182c9a33905182e462cdfcad39e16241b7",
     "research/feduba_mixed_pair_delivery_20261101/DELIVERY_PROGRESS.json": "41ab973daf61256553463c4d794b5346d57ec45dd93586a3e0e2e6ce592b5eb0",
+    "research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json": "de10f4c1cac24c1deede44de304198330d11270b224a49f3e2747f659964b084",
+    "research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt": "8f9d05b1507979091e6a427a1850d1decd50f7041cee6c51892f7296506ce37a",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1269,6 +1271,7 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_mixed_pair_delivery_20261101/LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt",
         "research/feduba_mixed_pair_delivery_20261101/MONITOR_PROTOCOL.txt",
         "research/feduba_mixed_pair_delivery_20261101/PROTOCOL.txt",
         "research/feduba_mixed_pair_delivery_20261101/REPORT_KO.txt",

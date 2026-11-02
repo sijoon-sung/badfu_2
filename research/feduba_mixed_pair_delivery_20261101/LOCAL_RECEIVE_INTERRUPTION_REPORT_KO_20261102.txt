@@ -1,0 +1,12 @@
+로컬 수신 중단 관측 — 원인 미확정 / 재실행 없음
+R03/R02/N02/D08/D15. 2026-11-02 KST. 저장 전달 단계의 운영 관측이며 새 연구 실험/탐지 제안이 아니다.
+
+직전 2026-11-01T17:10:01.835Z heartbeat까지 실제 명령줄로 확인한 parent31852와 receiver30540이 2026-11-02T03:52:13.658Z heartbeat의 native 조회에서 모두 없었다. 기존 exec session48700도 Unknown process id로 종료 출력/exit code를 회수할 수 없었다. 정확한 종료 시각·원인·24h timeout·재부팅·외부 종료 중 어느 것도 입증하지 못했다. 가용 RAM 부족 자체를 종료 원인으로 확정하지 않는다.
+
+PAIR_REVIEW_RECEIVE_ONCE/PAIR_REVIEW_RECEIVE_FAILURE/PAIR_REVIEW_LOCAL_COMPLETE와 새 local packet은 모두 없다. 기존 receiver는 freeze→wait_memory→archive 검증 뒤 ONCE/배타 추출을 하며, BaseException을 받으면 FAILURE를 쓰도록 되어 있다. 따라서 정상적인 대기 중 예외 trace가 남았다고 주장할 수 없다. local strictCPU/finite/zero1은 미실행 관측이고 실제 로컬 전달과 사례 등록은 미완료다. 이전 DELIVERY_PROGRESS와 LOCAL_RECEIVE_RESOURCE_OBSERVATION의 live RAM 대기 설명은 그 당시의 기록으로 보존하며 현재 생존 근거로 쓰지 않는다.
+
+PAIR_REVIEW_DELIVERY.zip은1530790988bytes로 남고 .part는 없다. 이미 완료한 외부SHA/bytes 전송 검사 ARCHIVE_TRANSFER_CHECKS는 불변이다. archive 재전송/재해시/추출/CPU검사를 이번 관측에서 실행하지 않았다. 원격 export는 Ready/exit0/관련 현재process0이며1345files/1343hash/672typed의 완료 영수증은 그대로다. 13실행source/profile는 main/PR 각각13SHA, 별도monitor3SHA가 동결값과 같았다. 원 publication/export/transfer/progress/resource 관측의 SHA도 새 관측JSON에 핀했다. source_review/launch/export/완료훈련/감사/평가를 재실행하지 않았다.
+
+새 가설이나 새 ASR/CA는 없다. mixed pre CA87.94/ASR29.466666666666665, 정상CA86.77/ASR-B24.644444444444446, 공격CA86.82/ASR19.333333333333332의4성능gate 실패·CA2gate 통과는 불변이다. D08 공격.75848이 정상.75525/.76188 사이인 반례와 D15 공격7/정상8, unknowntriggerfamily 미검증은 해결하지 않았다.
+
+후속은 고정 available8GiB/commit여유16GiB 상태를 metadata로 확인한다. 기존 helper/receiver를 다시 부르거나 다른 앱을 종료/guard를 우회하지 않는다. 수신 복구는 실패 단계만의 별도 명시 계약과 새 source/실profile의 PR선게시, 기존 프로세스/ONCE/partial 부재 확인 뒤에만 가능하다. 원 archive·receipt·freeze를 덮어쓰지 않고 실제 local completion 전에는 register_pair_cases.py를 호출하지 않는다. 새 권위 PAIR_DELIVERY_COMPLETE도 아직 없다. 전체 구현/성능/탐지 목표와 heartbeat는 계속 유지한다.
