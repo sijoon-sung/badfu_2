@@ -1,0 +1,5 @@
+{
+  "utc": "2026-11-02T04:13:42.735650+00:00",
+  "state": "failed_preserved_no_retry",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_receive_recovery_v2_20261102\\launch_receive_once.py\", line 29, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_receive_recovery_v2_20261102\\launch_receive_once.py\", line 21, in main\n    validate_xml(actual['stdout'],p)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_receive_recovery_v2_20261102\\source_checks.py\", line 12, in validate_xml\n    assert get('t:Principals/t:Principal/t:RunLevel')=='LeastPrivilege'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

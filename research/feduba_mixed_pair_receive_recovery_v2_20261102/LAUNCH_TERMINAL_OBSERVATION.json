@@ -1,0 +1,32 @@
+{
+  "state": "task_created_but_registered_XML_default_omission_check_failed_before_run",
+  "utc": "2026-11-02T04:14:40.655948+00:00",
+  "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+  "create_exit_code": 0,
+  "query_exit_code": 0,
+  "task_last_result": 267011,
+  "run_request_count": 0,
+  "receiver_body_receipts_absent": [
+    "TASK_START_REQUESTED.json",
+    "private_run/TASK_RUN_RESULT.json",
+    "RECEIVE_ONCE.json",
+    "ACTUAL_PROCESS.json",
+    "RESOURCE_WAIT_BEGIN.json",
+    "RECEIVE_STATE.json",
+    "EXTRACTION_ONCE.json",
+    "RECEIVE_FAILURE.json",
+    "RECEIVE_TERMINAL.json",
+    "private_run/PAIR_REVIEW_LOCAL_COMPLETE.json"
+  ],
+  "actual_receivers": [],
+  "local_packet_exists": false,
+  "launch_failure_sha256": "df010bbea4740fd8a9c6d123c5760ce638b9071c76bab6246ed550343585eb9d",
+  "registered_task_query_sha256": "74d5fc7cb914f3785676feda043ec91ccc51f891c9e87da0b33dc94a4bcdb486",
+  "source_freeze_sha256": "7de150894fb7257d82dcf72fc9ef4c68926fdf7b389a0e91fa80e0b2c25a1b07",
+  "xml_RunLevel_omitted": true,
+  "input_XML_RunLevel": "LeastPrivilege",
+  "monitor_now_works_model0": true,
+  "old_receiver_termination_cause": "unproved",
+  "original_or_V1_retry": false,
+  "model_queries": 0
+}

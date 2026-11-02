@@ -1,0 +1,37 @@
+{
+  "id": "feduba.mixed105.s42.existing_unrun_V2_task_start_only.20261102",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+  "registered_task_canonical_sha256": "16d3dfed4e1fca3ff8f45ed24412762df2a877b4f502c1c891034338fe5e546a",
+  "prior_v2_sha256": {
+    "SOURCE_FREEZE.json": "7de150894fb7257d82dcf72fc9ef4c68926fdf7b389a0e91fa80e0b2c25a1b07",
+    "RECEIVE_PROFILE.json": "8872c0a42c47e104af9f5ed50948652f6bfdcc3e59daf580e8a60ab9ce27e79f",
+    "RECEIVE_PUBLICATION.json": "15669edfb4685a91a6ae0c5b27df9b97861d82e9395fa0e3e1334005ceeaf694",
+    "TASK_ONCE.json": "3d78bde9a5befff18c15af8118e1ecd4ce1b025c28946a766a3f51e7c7787557",
+    "LAUNCH_FAILURE.json": "df010bbea4740fd8a9c6d123c5760ce638b9071c76bab6246ed550343585eb9d",
+    "LAUNCH_TERMINAL_OBSERVATION.json": "dcdcc94212313412309853103ce84efca55eb7a46b718bfdbf077e93837f6431",
+    "private_run/TASK_CREATE_RESULT.json": "dcf250d001ff3d6eff726d8a0625e20cfc08bb7b9404fe8f3a8435a3bd853a80",
+    "private_run/REGISTERED_TASK_QUERY.json": "74d5fc7cb914f3785676feda043ec91ccc51f891c9e87da0b33dc94a4bcdb486"
+  },
+  "memory_guard": {
+    "available_min_bytes": 8589934592,
+    "commit_headroom_min_bytes": 17179869184,
+    "wait_max_seconds": 86400,
+    "poll_seconds": 15
+  },
+  "expected_actual_COM_RunLevel": 0,
+  "expected_before_start_COM_state": 3,
+  "expected_before_start_LastTaskResult": 267011,
+  "task_create_update_delete": false,
+  "run_request_max_count": 1,
+  "original_or_V1_V2_launcher_retry": false,
+  "receiver_source_changed": false,
+  "full_goal_complete": false
+}
