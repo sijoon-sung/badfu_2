@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "5711c21e50385cd87c9cc87f92d692e49a648be8907eab4c7607c31485ee4e7a",
+  "registry_sha256": "9120de7d7dc278a331e8ec0b4a8ab82f21a9e358e60607255fbdf82d69291b62",
   "cards": 28,
-  "unique_source_documents": 1181,
-  "top_level_folders": 134,
-  "folders_linked_to_cards": 86,
+  "unique_source_documents": 1200,
+  "top_level_folders": 135,
+  "folders_linked_to_cards": 87,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -1114,6 +1114,25 @@
     "research/feduba_fixed10_foundation_20261103/SOURCE_PROFILE.json": "714d0195c5e5a94a03c8bd05aa0a9ac85e2ebb82bed7f10e1fbc75be8edfe707",
     "research/feduba_fixed10_foundation_20261103/SOURCE_PUBLICATION.json": "b5d2c25c4b688710b4899b4329f5dd125782eaec787e4f6a8de32baeed222a68",
     "research/feduba_fixed10_foundation_20261103/verify_clean_fl.py": "a2cc42cc5eac97736bb4b3699a3dd0ad831e6d686a2ef7de748b9e6144bf2084",
+    "research/feduba_fixed10_clean_delivery_20261103/PROTOCOL.txt": "07f7a1e5af6c0851da0f7bddc5048510717667749f68a8f42a0e9b94d7928a1f",
+    "research/feduba_fixed10_clean_delivery_20261103/REPORT_KO.txt": "6b9633a850ee98831e4f07b642c27a205e9b69850715816be7cf019b6bb6e90f",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_FREEZE.json": "b37c48ac59a305a00fa404efafb7913015db2e0e992bfb8365c44f010e50adc9",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_PROFILE.json": "545c0aff5131510e4d11ea35c2b4273d8e4472ebd9a28fbfcb636fb3f0b7e43f",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_PUBLICATION.json": "f34e1c35083df7a2789a75885fa4d02c2a84f1d6bebb64ae3a9e871f0f899e10",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_REVIEW_RESULT.json": "da971394e91ba904e5f664e7ed9175f46b4a6cf9b4b7c5269db6b0dc34788d3a",
+    "research/feduba_fixed10_clean_delivery_20261103/clean_delivery_binding.py": "34f1446da18296adaccaf44220216786530c9a8dbf791be9fe6c93abe1585daf",
+    "research/feduba_fixed10_clean_delivery_20261103/export_clean_review.py": "d06a432b28b475a8682ac4fd673a800759180c47c06d8cf4a9b477494b56a229",
+    "research/feduba_fixed10_clean_delivery_20261103/launch_once.ps1": "240af76e1030ab4a393a470d39581a5ea80099ab9046902c5acfdfac1ec06a3d",
+    "research/feduba_fixed10_clean_delivery_20261103/launch_via_ssh_once.py": "c7eb163f841c0582d6a38ba69c8e1f555af206b783e2ebe83fd3dea4ba68fbf1",
+    "research/feduba_fixed10_clean_delivery_20261103/model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "research/feduba_fixed10_clean_delivery_20261103/native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "research/feduba_fixed10_clean_delivery_20261103/native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "research/feduba_fixed10_clean_delivery_20261103/prepare_actual.py": "407d8e542a113c11e55435ede490edf9f5ab70a31b52bf0e58120899613972e0",
+    "research/feduba_fixed10_clean_delivery_20261103/prepare_via_ssh_once.py": "d162f562f8e943ccf9cb668019e27f9f23afb135727ccfbf8d99f2e5929a8e8e",
+    "research/feduba_fixed10_clean_delivery_20261103/register_clean_case.py": "898bcafda7c619fd20c0958fd9e34a1a9a64f3f863f23014f92bffa52d9b627f",
+    "research/feduba_fixed10_clean_delivery_20261103/review_loader.py": "a157692f89b1877d0f9df43bfb7f3a9334e00c7af5b28103065a189c77b74c0b",
+    "research/feduba_fixed10_clean_delivery_20261103/runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "research/feduba_fixed10_clean_delivery_20261103/source_review.py": "5fa59084e37a8d3cd6e85536183b476bc86ceea0484a144d5afe265c1223d643",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1494,6 +1513,18 @@
         "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"
+    },
+    {
+      "path": "research/feduba_fixed10_clean_delivery_20261103",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_fixed10_clean_delivery_20261103/PROTOCOL.txt",
+        "research/feduba_fixed10_clean_delivery_20261103/REPORT_KO.txt",
+        "research/feduba_fixed10_clean_delivery_20261103/SOURCE_REVIEW_RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
     },
     {
       "path": "research/feduba_fixed10_foundation_20261103",
