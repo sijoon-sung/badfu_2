@@ -1,0 +1,23 @@
+{
+  "state": "passed_fixed10_pair_source_only",
+  "source_freeze_sha256": "4c05dd98d3f6f83eb70649399d167b95de11c5b5d74724b9a27a46308a4f19f9",
+  "python_AST_files": 21,
+  "exact_reused_files": 18,
+  "FU_runner_verifier_and_primary_independent_evaluator_bytes_unchanged": true,
+  "required_FU_profile_keys": [
+    "history_global_payload_key",
+    "history_manifest_sha256",
+    "history_role_payload_key",
+    "id",
+    "launch_enabled",
+    "required_clean_case_id",
+    "trigger_binding_sha256"
+  ],
+  "history_global_payload_key": null,
+  "history_role_payload_key": "model",
+  "all_original_six_gates_unchanged": true,
+  "new_foundation_and_SSS_freezes_exact": true,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "actual_prepare_training_started": false
+}
