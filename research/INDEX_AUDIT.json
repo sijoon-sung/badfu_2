@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "c2c025f56e576750885da1849a9f35d691437b6468975b69b2c5b2b18d3b29fa",
+  "registry_sha256": "ffa2a5dc9cc7c58a292620883d276006f49f889330f75c9177b28c6cf7fd35d2",
   "cards": 28,
-  "unique_source_documents": 1120,
+  "unique_source_documents": 1124,
   "top_level_folders": 132,
   "folders_linked_to_cards": 84,
   "source_sha256": {
@@ -1053,6 +1053,10 @@
     "research/feduba_targetclass_pair_recovery_20261102/verify_fu.py": "80b64586664a1e0dd12cccfbcfad258b15ff7a312e8e3d068a85e8d0460f1336",
     "research/feduba_targetclass_pair_recovery_20261102/verify_pair_evaluation.py": "2ab0c64742ad71fc4fef44eb0bd0342d404d3f3cfe50f9b180ccb163dcf2cd5e",
     "research/feduba_targetclass_pair_recovery_20261102/ROUND_PROGRESS_OBSERVATION.json": "ed076dbf92bda24548647c08a30f7dfbc0434f680b4573b344242afe9fb6d0d5",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_benign_RESULT.json": "c5c787cfafc00eb3a76dc3fa6393c789a4cc8fc7256557e0f31f58b9420e6aa3",
+    "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_OBSERVATION.json": "8af285f5637a4a234dfe270c3386da7858c8c25b3f49e03cab13e303125395f3",
+    "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_SUMMARY.json": "e5d8167f1893077d09d5194319a0ae8a38b494fb389f5e8972a725911e89914f",
+    "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_REPORT_KO.txt": "7ce2c730aa176b350b4690c4b40b4d3e0ecad576ce8e3a43e5ea53b2f4ef27a4",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1858,7 +1862,10 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_REPORT_KO.txt",
+        "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_SUMMARY.json",
         "research/feduba_targetclass_pair_recovery_20261102/CLEAN_FL_RESULT.json",
+        "research/feduba_targetclass_pair_recovery_20261102/FU_benign_RESULT.json",
         "research/feduba_targetclass_pair_recovery_20261102/FU_ENGINE_CPU_RESULT.json",
         "research/feduba_targetclass_pair_recovery_20261102/FU_POLICY_CPU_RESULT.json",
         "research/feduba_targetclass_pair_recovery_20261102/GPU_PREFLIGHT_RESULT.json",

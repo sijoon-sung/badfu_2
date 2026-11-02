@@ -1,0 +1,69 @@
+{
+  "state": "normal_FU20_training_completed_independent_audit_not_yet_claimed",
+  "observed_utc": "2026-11-02T14:42:55.4220967Z",
+  "result_sha256": "c5c787cfafc00eb3a76dc3fa6393c789a4cc8fc7256557e0f31f58b9420e6aa3",
+  "normal_after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "8b44c116d8d5fff963f37ffeeeedcef31623cc98a182e91f6bf39e8e5a48a035",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "rounds": 20,
+  "roles": 200,
+  "epochs": 1000,
+  "batches": 20000,
+  "current_controller": {
+    "state": "running",
+    "pid": 33084,
+    "child": 52780,
+    "step": "verify_fu.py",
+    "arguments": [
+      "--branch",
+      "benign"
+    ],
+    "guard": {
+      "utilization_pct": 0,
+      "free_MiB": 5045,
+      "used_MiB": 5009,
+      "memory": {
+        "getter": "Windows_GetPerformanceInfo",
+        "structure_bytes": 104,
+        "page_bytes": 4096,
+        "availableBytes": 18983112704,
+        "committedBytes": 44701093888,
+        "commitLimit": 90276544512
+      },
+      "competing_trainers": 0
+    },
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "current_CPU_audit": {
+    "state": "auditing",
+    "pid": 52780,
+    "rounds": 13,
+    "checked_roles": 130,
+    "actual_epochs": 650,
+    "actual_batches": 13000
+  },
+  "current_native_processes": [
+    {
+      "Name": "python.exe",
+      "ProcessId": 33084,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/controller.py"
+    },
+    {
+      "Name": "python.exe",
+      "ProcessId": 52780,
+      "ParentProcessId": 33084,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102\\verify_fu.py --branch benign"
+    }
+  ],
+  "failures": 0,
+  "new_model_loads": 0,
+  "new_model_forwards": 0,
+  "training_or_audit_rerun": false,
+  "performance_measured": false,
+  "attack_branch_completed": false,
+  "overall_goal_complete": false
+}
