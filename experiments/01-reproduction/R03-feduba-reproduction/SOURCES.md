@@ -589,3 +589,11 @@
 | [RECEIVE_ONCE.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_ONCE.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
 | [ACTUAL_PROCESS.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/ACTUAL_PROCESS.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
 | [RESOURCE_WAIT_BEGIN.json](../../../research/feduba_mixed_pair_receive_recovery_v2_20261102/RESOURCE_WAIT_BEGIN.json) | `research/feduba_mixed_pair_receive_recovery_v2_20261102` |
+| [preserve_receiver_interruption_20261102.py](../../../research/feduba_mixed_pair_receive_start_20261102/preserve_receiver_interruption_20261102.py) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [RECEIVER_INTERRUPTION_OBSERVATION_20261102.json](../../../research/feduba_mixed_pair_receive_start_20261102/RECEIVER_INTERRUPTION_OBSERVATION_20261102.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [RESTART_WINDOW_EVIDENCE_20261102.json](../../../research/feduba_mixed_pair_receive_start_20261102/RESTART_WINDOW_EVIDENCE_20261102.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [REMOTE_AFTER_RECEIVER_INTERRUPTION_METADATA.json](../../../research/feduba_mixed_pair_receive_start_20261102/REMOTE_AFTER_RECEIVER_INTERRUPTION_METADATA.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [INTERRUPTION_PRESERVATION_CHECKS_20261102.json](../../../research/feduba_mixed_pair_receive_start_20261102/INTERRUPTION_PRESERVATION_CHECKS_20261102.json) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [RECEIVER_INTERRUPTION_REPORT_KO_20261102.txt](../../../research/feduba_mixed_pair_receive_start_20261102/RECEIVER_INTERRUPTION_REPORT_KO_20261102.txt) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [INTERRUPTION_METADATA_PROTOCOL.txt](../../../research/feduba_mixed_pair_receive_start_20261102/INTERRUPTION_METADATA_PROTOCOL.txt) | `research/feduba_mixed_pair_receive_start_20261102` |
+| [INTERRUPTION_METADATA_FREEZE.json](../../../research/feduba_mixed_pair_receive_start_20261102/INTERRUPTION_METADATA_FREEZE.json) | `research/feduba_mixed_pair_receive_start_20261102` |

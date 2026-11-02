@@ -1,0 +1,45 @@
+{
+  "state": "passed_metadata_only_all_source_freezes_original_receipts_and_catalogues_preserved",
+  "sources": {
+    "feduba_mixed_pair_delivery_20261101": {
+      "files": 13,
+      "main_and_PR_exact": true,
+      "source_freeze_sha256": "17be254bc8954d86ba3a427b6e678f29d311beec7effdbc8e9ba7ecd295a1b68"
+    },
+    "feduba_mixed_pair_receive_recovery_20261102": {
+      "files": 10,
+      "main_and_PR_exact": true,
+      "source_freeze_sha256": "4c4cf83135eb0923f10a30f8cb2faa4daa8aaa624ed0a4e2e98f118a2d4fb3b2"
+    },
+    "feduba_mixed_pair_receive_recovery_v2_20261102": {
+      "files": 11,
+      "main_and_PR_exact": true,
+      "source_freeze_sha256": "7de150894fb7257d82dcf72fc9ef4c68926fdf7b389a0e91fa80e0b2c25a1b07"
+    },
+    "feduba_mixed_pair_receive_start_20261102": {
+      "files": 8,
+      "main_and_PR_exact": true,
+      "source_freeze_sha256": "a45ae230da2cbb4e973ccd01f42e0d283423cd0baed617279860f72b7c45b133"
+    }
+  },
+  "original_preserved_receipts": 18,
+  "catalogues": {
+    "main": {
+      "sha256": "557425237090c464173f332e1ef0da01eb6eb9b0dec287023278044526590f2b",
+      "case_count": 26,
+      "new_cases_absent": true,
+      "unchanged_since_preflight": true
+    },
+    "pr": {
+      "sha256": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
+      "case_count": 23,
+      "new_cases_absent": true,
+      "unchanged_since_preflight": true
+    }
+  },
+  "prefix_SHA256": "a614b73207303f9e211f7bf4b8de6774e311dc947a31622c0a1049ee4b8d2a6e",
+  "new_task_or_receiver_run_requests": 0,
+  "new_extract_or_CPU_or_registration": 0,
+  "model_queries": 0,
+  "original_or_completed_export_scp_training_audit_performance_reexecution": false
+}
