@@ -1046,3 +1046,7 @@
 | [BENIGN_TRAINING_COMPLETION_SUMMARY.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_SUMMARY.json) | `research/feduba_fixed10_pair_20261103` |
 | [BENIGN_TRAINING_COMPLETION_OBSERVATION.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_OBSERVATION.json) | `research/feduba_fixed10_pair_20261103` |
 | [BENIGN_TRAINING_COMPLETION_REPORT_KO.txt](../../../research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_REPORT_KO.txt) | `research/feduba_fixed10_pair_20261103` |
+| [FU_benign_VERIFIED.json](../../../research/feduba_fixed10_pair_20261103/FU_benign_VERIFIED.json) | `research/feduba_fixed10_pair_20261103` |
+| [BENIGN_AUDIT_COMPLETION_SUMMARY.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_SUMMARY.json) | `research/feduba_fixed10_pair_20261103` |
+| [BENIGN_AUDIT_COMPLETION_OBSERVATION.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_OBSERVATION.json) | `research/feduba_fixed10_pair_20261103` |
+| [BENIGN_AUDIT_COMPLETION_REPORT_KO.txt](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_REPORT_KO.txt) | `research/feduba_fixed10_pair_20261103` |
