@@ -1,0 +1,20 @@
+target-class-only125 FU20 쌍 완료 — 성능 실패 보존
+관련 R03/R02/N02/D08/D15. 실제 계산·독립 검사·원격봉인이 완료됐지만 좋은 잠복공격 체크포인트 확보 목표는 달성하지 못했다. 전체목표미완료.
+
+실제표준 CIFAR10 test10000/비target9000,동일기존mixedδ×1.5,target2,clip±1,B128contiguousNCHWFP32의새결과다.
+pre: CA87.94%(8794/10000),ASR29.466666666666665%(2652/9000).
+정상FU20: CA86.58%(8658/10000),ASR-B22.288888888888888%(2006/9000).
+공격FU20: CA86.88%(8688/10000),ASR26.155555555555555%(2354/9000).
+공격-pre=-3.311111111111111pp,공격-정상=3.8666666666666667pp. 원6gate중4성능조건실패/2CA조건통과다. 같은pre29.4667이강한pre20gate를못맞춘점과별개로공격80/전후50pp/정상초과50pp도실패했다. target-only선택만으로활성화가복구된다는가설을지지하지않는다.
+
+원normal/attack각20R/200trained+200calibratedroles/1000epoch/20000batch와각420historyhash·전체ID순열/optimizer/RNG·유효보정/집계CPU감사가passed다. 모든SGDgradient/rawaugmentation재생은아니다. 실제after정상8b44c116d8d5fff963f37ffeeeedcef31623cc98a182e91f6bf39e8e5a48a035,공격74a89cab181896bce275a271d373db40d55fad9b4942261b75f441bea5b4e182/각44770315bytes/bare null이다.
+
+primary57700/독립56976은각60000sample-forward/474calls를완료했다. 모든10000raw입력/3모델argmax/count정확일치,logitmaxabs0,atol1e-6/rtol1e-5불변. source model과weight/BN은불변이다. 원parent33084/모든child종료·정확taskReady/lastresult0/actualnativeprocess0/새FAILURE0을확인했다. FINAL_TERMINAL_OBSERVATION·FINAL_RESULT_SUMMARY와원RESULT/VERIFIED/COMPLETION이최신권위이며과거AUDIT_STATE auditing20은진행역사다. 원평가/완료감사/훈련/fixture/export재실행0이다.
+
+원receipt SHA: {"FU_attack_VERIFIED.json":"673738d654aafa515f87089499d2716d6e2ce76c522fff15097ddeb46769d738","PAIR_EVAL_RESULT.json":"3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341","PAIR_EVAL_VERIFIED.json":"a6cf3cfe81fab83a1cadd4e01867777329357651f24787aaf30d1788be29a2e4","COMPLETION.json":"1b7fada7df33f326ab662a6669d7973d618dd1449af762f959335e06c1a9fb38","REMOTE_CHECKPOINT_REVIEW.json":"4c96e9da4d78f4efbee15b7782231b571dc4e1ac76093c67986ea9ee719658a6"}
+
+원격readonlyreview완료: D:\CHECKPOINTS_FOR_REVIEW\FedUBA_s42_targetclass2_SSS125_FU20_pair_recovery_20261102; hashed459/typed365,manifest62f30b7169c12a15aba840b11817a434231d8a2dfc3aea789920cf538371e451,seal d371215a2ed191e1865742bac4b4614c3e93a95a8f5c4957cdc82df04bf1e179. archive677129078bytes/SHAf6438638e95b32f82e5295f17b3844849d5bd99e96d37ad51fc53aa5c750167c. strictCPU/finite/8modelzero1보관검사는성능재평가가아니다. 실제pre/새정상/새공격/teacher/δ/대표실기여4개·optimizer/RNG/전체로그/private선택·재사용SSS40/전수평가자료범위다. 모든raw400role/중간fullhistory는DISLAB원위치에있다. 로컬전달/strictCPU/새diagnostic등록은별도미완료이며oldcase를이름바꾸지않았다.
+
+기존allclass125 성능pre29.4667/정상24.6444/공격19.3333실패도보존한다. 새target-only125는공개codegrounded대안이지만변경으로owner배분과정상batch수도달라졌으므로상승폭을유일인과/일반개선으로과장하지않는다. source의누락helper/model·교사·좌표/분모·고정seed/IID/FedEraser해석과미인증은남는다.
+
+D08 .75848 공격이큰정상 .75525/.76188사이,D15 공격7/정상8,unknowntrigger-family탐지미검증은불변. 이결과는탐지기나보편불가능성의증거가아니다. 다음수정은이실패와공개source/실profile불일치의새근거에따른별도고정계약·actualsource/profile 선게시뒤만실행하며seed/lr/epoch/δ/budget성능탐색은하지않는다.

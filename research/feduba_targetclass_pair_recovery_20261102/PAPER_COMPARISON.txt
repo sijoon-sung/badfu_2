@@ -1,0 +1,11 @@
+논문과 새 target-only125 실제 성능 비교
+관련 R03/R02/N02/D08/D15. 고정PDF/정의 출처는 ../feduba_metric_conformance_review_20261101/REPORT_KO.txt와EVIDENCE.json이다.
+
+논문IID/CIFAR10/FedEraser/FedAvg TableII: pre CA85.82±0.74%,공격FU후CA85.16±0.45%. 본문ASR-B약15%,활성화후ASR최대약89%이며그림의한조건끝점을정확소수로만들지않는다.
+새target-only125: pre CA87.94/ASR29.466666666666665; 정상CA86.58/ASR-B22.288888888888888; 공격CA86.88/ASR26.155555555555555. 공격ASR이pre보다3.311111111111111pp낮고정상보다3.8666666666666667pp높아논문수준활성화를재현하지못했다. CA보존과공격성능실패를분리한다.
+
+ASR-B는정상FU후ASR이며pre-ASR이아니다. 원6gate는별도운영기준이지논문평균/분산정확재현기준이아니며후CA5pp허용은논문의약1pp보다느슨하다. 같은pre에따른강한pre20실패만으로이번결론을만들지않고attack80·전후50pp·정상초과50pp실패를함께남긴다.
+
+현재seed42한조건/IID/20clients매roundrandom10·공식50000각2500/정확global125=.5%nominal25000·.25%전체50000·epsilonmodel좌표32/255/평가배수1.5·missinghelpers회복·mixed105교사/CPU-SGD-STG조건은저자유일조건으로미인증이다. 공개main은고정selected10을everyround사용하지만현재foundation은선언된random10/20이다. 이조건차이는새source대조대상일뿐실패의유일원인으로확정하지않는다.
+
+이전allclass125와oldδ6.97%평가실패는각각별도조건으로보존한다. primary/독립full입력·argmax·count정확일치/logit0은현재평가수치정합을보일뿐성공·탐지·모든FU/nonIID/seed재현을보장하지않는다.

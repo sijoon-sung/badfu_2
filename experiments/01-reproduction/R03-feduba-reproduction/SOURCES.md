@@ -817,3 +817,16 @@
 | [ATTACK_TRAINING_COMPLETION_OBSERVATION.json](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_OBSERVATION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [ATTACK_TRAINING_COMPLETION_SUMMARY.json](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_SUMMARY.json) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [ATTACK_TRAINING_COMPLETION_REPORT_KO.txt](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_REPORT_KO.txt) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [FU_attack_VERIFIED.json](../../../research/feduba_targetclass_pair_recovery_20261102/FU_attack_VERIFIED.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [PAIR_EVAL_RESULT.json](../../../research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_RESULT.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [PAIR_EVAL_VERIFIED.json](../../../research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_VERIFIED.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [COMPLETION.json](../../../research/feduba_targetclass_pair_recovery_20261102/COMPLETION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [REMOTE_CHECKPOINT_REVIEW.json](../../../research/feduba_targetclass_pair_recovery_20261102/REMOTE_CHECKPOINT_REVIEW.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [FINAL_TERMINAL_OBSERVATION.json](../../../research/feduba_targetclass_pair_recovery_20261102/FINAL_TERMINAL_OBSERVATION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [FINAL_RESULT_SUMMARY.json](../../../research/feduba_targetclass_pair_recovery_20261102/FINAL_RESULT_SUMMARY.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [FINAL_REPORT_KO.txt](../../../research/feduba_targetclass_pair_recovery_20261102/FINAL_REPORT_KO.txt) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [PAPER_COMPARISON.txt](../../../research/feduba_targetclass_pair_recovery_20261102/PAPER_COMPARISON.txt) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [HISTORY_METADATA.json](../../../research/feduba_fixed_cohort_review_20261103/HISTORY_METADATA.json) | `research/feduba_fixed_cohort_review_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_fixed_cohort_review_20261103/REPORT_KO.txt) | `research/feduba_fixed_cohort_review_20261103` |
+| [REVIEW_FREEZE.json](../../../research/feduba_fixed_cohort_review_20261103/REVIEW_FREEZE.json) | `research/feduba_fixed_cohort_review_20261103` |
+| [REVIEW_PROFILE.json](../../../research/feduba_fixed_cohort_review_20261103/REVIEW_PROFILE.json) | `research/feduba_fixed_cohort_review_20261103` |

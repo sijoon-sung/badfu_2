@@ -1,0 +1,80 @@
+{
+  "state": "target_only125_pair_completed_performance_gates_failed_preserved",
+  "observed_utc": "2026-11-02T15:32:42.3842800Z",
+  "task": {
+    "state": "Ready",
+    "last_result": 0,
+    "last_run": "2026-11-02T14:06:34.0000000Z",
+    "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "arguments": "-B -u D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/controller.py",
+    "working_directory": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102",
+    "user": "DISLAB",
+    "logon_type": "S4U",
+    "run_level": "Limited"
+  },
+  "native_processes": [],
+  "receipt_sha256": {
+    "FU_attack_VERIFIED.json": "673738d654aafa515f87089499d2716d6e2ce76c522fff15097ddeb46769d738",
+    "PAIR_EVAL_RESULT.json": "3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341",
+    "PAIR_EVAL_VERIFIED.json": "a6cf3cfe81fab83a1cadd4e01867777329357651f24787aaf30d1788be29a2e4",
+    "COMPLETION.json": "1b7fada7df33f326ab662a6669d7973d618dd1449af762f959335e06c1a9fb38",
+    "REMOTE_CHECKPOINT_REVIEW.json": "4c96e9da4d78f4efbee15b7782231b571dc4e1ac76093c67986ea9ee719658a6"
+  },
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8794,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2652,
+      "CA_pct": 87.94,
+      "ASR_pct": 29.466666666666665
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8658,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2006,
+      "CA_pct": 86.58,
+      "ASR_pct": 22.288888888888888
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8688,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2354,
+      "CA_pct": 86.88,
+      "ASR_pct": 26.155555555555555
+    }
+  },
+  "operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -3.311111111111111,
+    "attack_minus_benign_ASR_pp": 3.8666666666666667,
+    "post_CA_drop_pp": {
+      "benign": 1.36,
+      "attack": 1.06
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "max_logit_abs_error": 0.0,
+  "primary_and_independent_each_sample_forwards": 60000,
+  "primary_and_independent_each_calls": 474,
+  "all_raw_inputs_predictions_counts_exact": true,
+  "both_FU_CPU_audits_passed": true,
+  "each_CPU_historyhashes": 420,
+  "all_SGD_gradients_replayed": false,
+  "new_model_loads": 0,
+  "new_model_forwards": 0,
+  "finite_job_rerun": false,
+  "local_delivery_complete": false,
+  "overall_goal_complete": false
+}
