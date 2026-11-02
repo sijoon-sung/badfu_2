@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 9396,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\fu_runner.py\", line 145, in <module>\n    main()\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\fu_runner.py\", line 71, in main\n    new_global = checked(original['fresh_initial'], p['history_global_payload_key'])\n                                                    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'history_global_payload_key'\n"
+}

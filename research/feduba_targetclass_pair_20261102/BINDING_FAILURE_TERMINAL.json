@@ -1,0 +1,101 @@
+{
+  "observed_utc": "2026-11-02T14:04:51.0497125Z",
+  "task": {
+    "state": "Ready",
+    "last_result": 1,
+    "last_run": "2026-11-02T14:03:32.0000000Z",
+    "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "arguments": "-B -u D:/FEDUBA_TARGETCLASS_PAIR_20261102/controller.py",
+    "working_directory": "D:/FEDUBA_TARGETCLASS_PAIR_20261102",
+    "user": "DISLAB",
+    "logon_type": "S4U",
+    "run_level": "Limited"
+  },
+  "processes": [],
+  "receipts": {
+    "TASK_ONCE.json": {
+      "state": "first_new_targetclass_pair_controller_launch"
+    },
+    "LAUNCH_FAILURE.json": null,
+    "CONTROLLER_ONCE.json": {
+      "pid": 27160,
+      "started_unix": 1793628213.2447476,
+      "run_publication_sha256": "e650c6b1a1d6f312524ccd8c5d06b7a2f368a0b4c0cff55716ac703453ae2648"
+    },
+    "CONTROLLER_STATE.json": {
+      "state": "running",
+      "pid": 27160,
+      "child": 9396,
+      "step": "fu_runner.py",
+      "arguments": [
+        "--branch",
+        "benign",
+        "--catalog-root",
+        "D:/TRAJECTORY_CATALOG_20261023",
+        "--case-id",
+        "feduba.paper.cifar10.cleanfl20.s42.20261031"
+      ],
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18519027712,
+          "committedBytes": 44835598336,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "0"
+    },
+    "CONTROLLER_FAILURE.json": {
+      "state": "failed_preserved",
+      "pid": 27160,
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\controller.py\", line 67, in <module>\n    try: main()\n         ^^^^^^\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\controller.py\", line 56, in main\n    assert code == 0, name + ' exit=' + str(code)\n           ^^^^^^^^^\nAssertionError: fu_runner.py exit=1\n"
+    },
+    "FU_benign_ONCE.json": {
+      "pid": 9396,
+      "started_unix": 1793628215.7094426,
+      "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18304331776,
+          "committedBytes": 45362528256,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      }
+    },
+    "FU_benign_STATE.json": null,
+    "FU_benign_FAILURE.json": {
+      "state": "failed_preserved",
+      "pid": 9396,
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\fu_runner.py\", line 145, in <module>\n    main()\n  File \"D:\\FEDUBA_TARGETCLASS_PAIR_20261102\\fu_runner.py\", line 71, in main\n    new_global = checked(original['fresh_initial'], p['history_global_payload_key'])\n                                                    ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'history_global_payload_key'\n"
+    },
+    "FU_benign_RESULT.json": null,
+    "FU_benign_AUDIT_STATE.json": null,
+    "FU_benign_AUDIT_FAILURE.json": null,
+    "FU_attack_ONCE.json": null,
+    "FU_attack_STATE.json": null,
+    "FU_attack_FAILURE.json": null,
+    "FU_attack_RESULT.json": null,
+    "FU_attack_AUDIT_STATE.json": null,
+    "FU_attack_AUDIT_FAILURE.json": null,
+    "PAIR_EVAL_STATE.json": null,
+    "PAIR_EVAL_FAILURE.json": null,
+    "PAIR_EVAL_AUDIT_STATE.json": null,
+    "PAIR_EVAL_AUDIT_FAILURE.json": null,
+    "EXPORT_FAILURE.json": null,
+    "REMOTE_CHECKPOINT_REVIEW.json": null,
+    "COMPLETION.json": null
+  }
+}
