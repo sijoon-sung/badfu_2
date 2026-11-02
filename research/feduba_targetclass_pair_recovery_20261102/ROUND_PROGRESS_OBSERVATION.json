@@ -1,0 +1,116 @@
+{
+  "observed_utc": "2026-11-02T14:11:46.6367274Z",
+  "task": {
+    "state": "Running",
+    "last_result": 267009,
+    "last_run": "2026-11-02T14:06:34.0000000Z",
+    "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "arguments": "-B -u D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/controller.py",
+    "working_directory": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102",
+    "user": "DISLAB",
+    "logon_type": "S4U",
+    "run_level": "Limited"
+  },
+  "processes": [
+    {
+      "Name": "python.exe",
+      "ProcessId": 33084,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/controller.py"
+    },
+    {
+      "Name": "python.exe",
+      "ProcessId": 41032,
+      "ParentProcessId": 33084,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102\\fu_runner.py --branch benign --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.paper.cifar10.cleanfl20.s42.20261031"
+    }
+  ],
+  "receipts": {
+    "TASK_ONCE.json": {
+      "state": "first_new_targetclass_pair_controller_launch"
+    },
+    "LAUNCH_FAILURE.json": null,
+    "CONTROLLER_ONCE.json": {
+      "pid": 33084,
+      "started_unix": 1793628395.2668483,
+      "run_publication_sha256": "6c870cb37ef6b6e49026ad264ec3bb32d7d86956b86dd4e2d98ee2fda2a03a7b"
+    },
+    "CONTROLLER_STATE.json": {
+      "state": "running",
+      "pid": 33084,
+      "child": 41032,
+      "step": "fu_runner.py",
+      "arguments": [
+        "--branch",
+        "benign",
+        "--catalog-root",
+        "D:/TRAJECTORY_CATALOG_20261023",
+        "--case-id",
+        "feduba.paper.cifar10.cleanfl20.s42.20261031"
+      ],
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18519789568,
+          "committedBytes": 44802342912,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "0"
+    },
+    "CONTROLLER_FAILURE.json": null,
+    "FU_benign_ONCE.json": {
+      "pid": 41032,
+      "started_unix": 1793628397.786433,
+      "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18300182528,
+          "committedBytes": 45320953856,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      }
+    },
+    "FU_benign_STATE.json": {
+      "state": "training",
+      "pid": 41032,
+      "round": 4,
+      "rounds": 3,
+      "client": 3,
+      "epoch": 5,
+      "cumulative_role_batches": 100,
+      "examples": 2500,
+      "updated_unix": 1793628706.0252845
+    },
+    "FU_benign_FAILURE.json": null,
+    "FU_benign_RESULT.json": null,
+    "FU_benign_AUDIT_STATE.json": null,
+    "FU_benign_AUDIT_FAILURE.json": null,
+    "FU_attack_ONCE.json": null,
+    "FU_attack_STATE.json": null,
+    "FU_attack_FAILURE.json": null,
+    "FU_attack_RESULT.json": null,
+    "FU_attack_AUDIT_STATE.json": null,
+    "FU_attack_AUDIT_FAILURE.json": null,
+    "PAIR_EVAL_STATE.json": null,
+    "PAIR_EVAL_FAILURE.json": null,
+    "PAIR_EVAL_AUDIT_STATE.json": null,
+    "PAIR_EVAL_AUDIT_FAILURE.json": null,
+    "EXPORT_FAILURE.json": null,
+    "REMOTE_CHECKPOINT_REVIEW.json": null,
+    "COMPLETION.json": null
+  }
+}

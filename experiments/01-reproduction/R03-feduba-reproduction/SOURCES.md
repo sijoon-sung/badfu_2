@@ -804,3 +804,4 @@
 | [TRIGGER_SOURCE_BINDING.json](../../../research/feduba_targetclass_pair_recovery_20261102/TRIGGER_SOURCE_BINDING.json) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [verify_fu.py](../../../research/feduba_targetclass_pair_recovery_20261102/verify_fu.py) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [verify_pair_evaluation.py](../../../research/feduba_targetclass_pair_recovery_20261102/verify_pair_evaluation.py) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [ROUND_PROGRESS_OBSERVATION.json](../../../research/feduba_targetclass_pair_recovery_20261102/ROUND_PROGRESS_OBSERVATION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
