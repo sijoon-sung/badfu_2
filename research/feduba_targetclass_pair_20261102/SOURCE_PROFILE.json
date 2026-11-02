@@ -1,0 +1,130 @@
+{
+  "id": "feduba.targetclass2.corrected_pair.source.20261102",
+  "launch_enabled": false,
+  "execution_root": "D:/FEDUBA_TARGETCLASS_PAIR_20261102",
+  "foundation_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "old_pair_root": "D:/FEDUBA_MIXED_PAIR_20261101",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "Target-class-only BEA eligibility from the pinned public feature branch may restore target-aligned unlearning activation relative to the completed all-class125 implementation. Keep the verified mixed delta and all other scientific constants fixed.",
+  "new_observable": "Actual new target-only125 selection and class/owner distribution, two full new FU20 trajectories/checkpoints/optimizer/RNG/logs, independent CPU audits and standard primary+independent CA/ASR.",
+  "change": "Intended scientific change is target-class2 eligibility. Keep stable IDs/owners and exact global125 budget; upstream ceil126/per-owner allocation is not silently adopted. Data quantity per owner follows this fixed filter.",
+  "source_target": "ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b Fed_data_change.py feature branch selects sliced_influence_idx_list[triggerToClass]. Paper Eq7 all-D versus code target-only remains a declared ambiguity, not unique author certification.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "normal_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "normal_pre_sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+  "normal_manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "normal_seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "foundation_history_manifest": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/clean_fl/MANIFEST.json",
+    "sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28"
+  },
+  "required_mixed_teacher_sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+  "required_delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "inputs": {
+    "teacher": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+      "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+      "bytes": 45162251,
+      "payload_key": null,
+      "classes": 201
+    },
+    "old_SSS_result": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_RESULT.json",
+      "sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1"
+    },
+    "old_SSS_verified": {
+      "path": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_VERIFIED.json",
+      "sha256": "6b4653e307bd2b009be14c3cbaaa620cb34e9eb966df5524689dcb1688488cb6"
+    },
+    "previous_eval_result": {
+      "path": "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/PAIR_EVAL_RESULT.json",
+      "sha256": "e6904fb060acfcd80bf7286c698c1a9de8b70d853ea0fd9e1ba72ad60751fec4"
+    },
+    "previous_eval_verified": {
+      "path": "D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/PAIR_EVAL_VERIFIED.json",
+      "sha256": "b01011c91f252874eb254ec4c3d9766ceabac4c71694be47c9d5c99a1bef2b58"
+    },
+    "semantic_result": {
+      "path": "D:/FEDUBA_SEMANTIC_TRANSFER_DIAGNOSIS_20261102/RESULT.json",
+      "sha256": "6e426b8db77f701ebf7093a51fb782274a0d39c8b4589967c949b2ca8ac0d370"
+    },
+    "semantic_verified": {
+      "path": "D:/FEDUBA_SEMANTIC_TRANSFER_DIAGNOSIS_20261102/VERIFIED.json",
+      "sha256": "8f430688511241b9b3b223be1ae5ce7849555b92603482f730be8c2c37805ace"
+    },
+    "upstream_selection": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_change.py",
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8"
+    }
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "reused_helpers": {
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "fu_runner.py": "704906319c78fca8635e499735759d9042d9d66ddf86afce85c02dbca1671c5c",
+    "verify_fu.py": "80b64586664a1e0dd12cccfbcfad258b15ff7a312e8e3d068a85e8d0460f1336",
+    "pair_eval_core.py": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8",
+    "evaluate_pair.py": "7cb44ea4b7f822a9ecfd1a908bd4e8a5f2b291eb2fc9046590a279e3ef3ff4e8",
+    "trigger_binding.py": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd"
+  },
+  "fixed_future_budget": {
+    "new_SSS_queries": 0,
+    "reused_SSS_scores": 5000,
+    "selected_IDs": 125,
+    "FU_branches": 2,
+    "FU_rounds_each": 20,
+    "FU_roles_each": 200,
+    "FU_epochs_each": 1000,
+    "attack_batches": 20000,
+    "benign_batches": "computed before training",
+    "primary_calls": 474,
+    "independent_calls": 474,
+    "primary_sample_forwards": 60000,
+    "independent_sample_forwards": 60000,
+    "export_CPU_zero1_model_calls": 8
+  },
+  "review_packet_root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_targetclass2_SSS125_FU20_pair_20261102",
+  "minimum_free_storage_bytes": 85899345920,
+  "resource_wait_max_seconds": 86400,
+  "resource_wait_poll_seconds": 15,
+  "task_name": "Codex-FedUBA-targetclass125-pairedFU20-20261102",
+  "stop_rule": "Complete bothFU20/audits/standard primary+independent evaluation/remote review even if metrics miss. Do not skip branches or stop for intermediate CA/ASR. Source/hash/ID/count/finite/RNG/storage/runtime/numeric faults preserve prefix/trace; no retry without explicit recovery contract. No seed/lr/epoch/target/epsilon/budget/tolerance search. Keep all original six gates unchanged; pre-ASR20 is a separate stronger operational gate, not paper ASR-B.",
+  "non_IID_scope": "Implementation and checkpoint generation only. D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8 remain; unknown trigger-family-independent detection is unvalidated. No norm/cosine/CKA/RMS or renamed sensitivity detector.",
+  "whole_raw_scope": "All400new role tensors/full optimizer/RNG histories stay on DISLAB. Remote sealed review has endpoints, representative actual contributions, full event logs, reused private SSS, and evaluation. Local delivery remains separate and does not block DISLAB training.",
+  "overall_goal_complete": false
+}
