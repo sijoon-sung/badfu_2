@@ -1,0 +1,21 @@
+{
+  "state": "prepared_fixed10_same_initial_split_actual_profile",
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "initial_sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+  "split_sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee",
+  "official_data_bytes_exactly_equal": true,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "new_training_started": false
+}

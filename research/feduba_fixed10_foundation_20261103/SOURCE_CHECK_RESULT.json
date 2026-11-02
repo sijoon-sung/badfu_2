@@ -1,0 +1,36 @@
+{
+  "state": "passed_fixed10_source_and_metadata",
+  "source_freeze_sha256": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b",
+  "python_AST_files": 12,
+  "clean_runner_and_independent_verifier_AST_exact_except_declared_selector_and_publication_binding": true,
+  "public_default_fixed_clients_exact": true,
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 18919559168,
+    "committedBytes": 44235407360,
+    "commitLimit": 90276544512
+  },
+  "GPU": {
+    "util": 0,
+    "free": 5045,
+    "used": 5009
+  },
+  "competing_trainers": 0,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "completed_fixture_rerun": false
+}
