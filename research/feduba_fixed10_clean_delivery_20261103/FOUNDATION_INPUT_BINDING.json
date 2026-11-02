@@ -1,0 +1,48 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "foundation_root": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103",
+  "receipt_sha256": {
+    "SOURCE_FREEZE.json": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b",
+    "RUN_FREEZE.json": "fdfe32f75f351f9dcd25bc82bcfbe82134aee18b2202e20e8f396b331ba844bb",
+    "RUN_PUBLICATION.json": "c3ad31f81081a2b2407d2ffb323c55193a6435c6751012d3b5c6ff2353ffbc64",
+    "CLEAN_FL_RESULT.json": "8bd7cc42bdc90472b63695a6241a45accfab1360b9bba12812c3d5531b6253c7",
+    "CLEAN_FL_VERIFIED.json": "c18d7af6b0800cc8ff8810d4440f337239d04839ea320b46ff8251baa37485a2",
+    "COMPLETION.json": "a9d6a3c06f42f1f8781d386dad4527bbd57d93dee8b0b54b7ced1a432b81ec99",
+    "clean_fl/MANIFEST.json": "dc4c4e338c56506b629aee8140b21e43b8d9579d52447c9857f1fdce68caf4fe"
+  },
+  "payloads": {
+    "run/before.pt": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "run/initial.pt": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\private_assets\\clean_initial.pt",
+      "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "run/last_role.pt": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client19.pt",
+      "sha256": "eb44fc37bcf019eb6494736d4da55b2b5a08f901438e78e87545cc5564f6346a",
+      "bytes": 89510537,
+      "payload_key": "model"
+    }
+  },
+  "fixed_cohort": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "clean_correct": 8552,
+  "CA_pct": 85.52,
+  "last_role_client": 19
+}
