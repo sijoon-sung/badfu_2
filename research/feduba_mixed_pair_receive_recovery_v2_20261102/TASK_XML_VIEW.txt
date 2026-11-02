@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo><Description>FedUBA one receive-only recovery; no automatic triggers or retries.</Description></RegistrationInfo>
+  <Triggers />
+  <Principals><Principal id="Author"><UserId>S-1-5-21-763480091-3013934517-187036823-1001</UserId><LogonType>InteractiveToken</LogonType><RunLevel>LeastPrivilege</RunLevel></Principal></Principals>
+  <Settings><MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy><DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>false</StopIfGoingOnBatteries><AllowHardTerminate>false</AllowHardTerminate><StartWhenAvailable>false</StartWhenAvailable><RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable><AllowStartOnDemand>true</AllowStartOnDemand><Enabled>true</Enabled><Hidden>true</Hidden><RunOnlyIfIdle>false</RunOnlyIfIdle><WakeToRun>false</WakeToRun><ExecutionTimeLimit>PT0S</ExecutionTimeLimit><Priority>7</Priority></Settings>
+  <Actions Context="Author"><Exec><Command>C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe</Command><Arguments>-B &quot;C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_mixed_pair_receive_recovery_v2_20261102/receive_recovery.py&quot;</Arguments><WorkingDirectory>C:/Users/sijoo/Documents/ChatGPT/badFU</WorkingDirectory></Exec></Actions>
+</Task>

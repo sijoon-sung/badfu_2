@@ -1,0 +1,8 @@
+V2 receive-only 복구 / 실행 전 선게시
+R03/R02/N02/D08/D15. V1는1b4eb16 선게시 후 task 생성1회에서 XML 인코딩 전환 불가 exit1로 실패했다. task부재/실receiver0/ONCE·guardwait·추출·CPU·완료0을 별도 terminal관측에 남겼다. V1 모니터도 native_memory import 경로 누락으로 metadata 본문 전 실패했다. 원문·실패·sourcefreeze와실profile는보존하고 V1 launcher/receiver/monitor를다시호출하지않는다. 원 Nov1 parent/receiver 소실 원인은 여전히 미확정이다.
+
+새V2는 UTF16LE BOM/UTF16선언이 일치하는 작업 XML과 monitor의 원모듈 경로만 교정하고 V1 실패SHA/부재를 추가guard로 핀했다. receive_recovery/launch_receive_once의 본문바이트는V1와같고 원13 safe/verify/finite/cpu_check/digest/원17JSON·중단보고/monitor3와CPU1/-1/가용8GiB/commit여유16GiB/15초24h는불변이다. XML원bytes와UTF8열람뷰를함께게시한다. source검사는5AST/BOM선언·열람뷰 일치/원13·monitor3/이전V1실패/양쪽task부재/main·PR새case부재를모델0으로통과했다.
+
+새task는 다른이름 Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2/LeastPrivilege/hidden/no-trigger/no-restart/directPython이며 source/실profile/freeze를PR에먼저게시한뒤단1회만요청한다. 대기전ONCE·실제command/PID/parent·fsync guardwait/STATE·별도terminal계약을유지한다. SHA/storage/runtime/finite/count/24h timeout이면partial·trace보존후중단하며재시도/기준완화/앱종료/권한변경0이다. 새local권위ledger는본V2 private_run/PAIR_REVIEW_LOCAL_COMPLETE.json이다. 원수신/export local=false를수정하지않는다. actuallocal완료전각host등록금지다.
+
+완료export/scp/훈련/FU감사/성능평가는반복하지않았다. local새추출·CPU보관검사도아직0이다. mixed4성능gate실패·CA2gate통과/D08공격.75848이정상.75525/.76188사이/D15공격7·정상8/unknowntriggerfamily미검증은불변이다. 이운영관측은탐지근거나성공재현이아니다. DISLAB fullraw와local대표실기여/전체로그/privateSSS/평가자료범위를구별하고전체목표와heartbeat를유지한다.

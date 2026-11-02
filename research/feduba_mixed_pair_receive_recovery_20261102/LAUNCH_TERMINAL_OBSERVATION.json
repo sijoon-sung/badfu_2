@@ -1,0 +1,27 @@
+{
+  "state": "task_creation_failed_before_receive_body_no_retry",
+  "utc": "2026-11-02T04:11:44.310739+00:00",
+  "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102",
+  "create_exit_code": 1,
+  "create_error_verbatim": "오류: 작업 XML의 형식이 잘못되었습니다.\r\r\n(1,40)::오류: 인코딩을 전환할 수 없습니다.",
+  "task_absent": true,
+  "actual_receiver_processes": [],
+  "receiver_body_receipts_absent": [
+    "RECEIVE_ONCE.json",
+    "ACTUAL_PROCESS.json",
+    "RESOURCE_WAIT_BEGIN.json",
+    "RECEIVE_STATE.json",
+    "EXTRACTION_ONCE.json",
+    "RECEIVE_FAILURE.json",
+    "RECEIVE_TERMINAL.json",
+    "private_run/PAIR_REVIEW_LOCAL_COMPLETE.json"
+  ],
+  "local_packet_exists": false,
+  "archive_bytes": 1530790988,
+  "original_evidence_unchanged": true,
+  "original_receive_cause_unproved": true,
+  "model_queries": 0,
+  "source_freeze_sha256": "4c4cf83135eb0923f10a30f8cb2faa4daa8aaa624ed0a4e2e98f118a2d4fb3b2",
+  "task_create_result_sha256": "5637e5311909dc0131ef36aec1b05a03335c26ad2a2d35eaba835fdbc205b0c9",
+  "launch_failure_sha256": "6d1ab7c0a0bde5b963af95d5673ca1038a940bd4113487426b247dbc2ce8ccb9"
+}

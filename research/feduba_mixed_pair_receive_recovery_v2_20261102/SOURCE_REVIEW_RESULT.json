@@ -1,0 +1,63 @@
+{
+  "state": "passed_receive_only_source_review_no_model_or_storage_check",
+  "utc": "2026-11-02T04:13:27.442162+00:00",
+  "python_AST": [
+    "launch_receive_once.py",
+    "observe_receive.py",
+    "receive_ops.py",
+    "receive_recovery.py",
+    "source_checks.py"
+  ],
+  "original_frozen_storage_functions_reused": [
+    "safe",
+    "verify",
+    "cpu_check",
+    "finite",
+    "digest"
+  ],
+  "original_source_files": 13,
+  "original_monitors": 3,
+  "memory_guard_identical": true,
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 3566493696,
+    "committedBytes": 21888450560,
+    "commitLimit": 50775060480
+  },
+  "scheduler": {
+    "direct_python": true,
+    "triggers": 0,
+    "automatic_restart": false,
+    "run_level": "LeastPrivilege",
+    "hidden": true,
+    "BOM_and_declaration_match_UTF16": true
+  },
+  "task_absence": {
+    "task_absent": true,
+    "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+    "inventory_query_exit_code": 0
+  },
+  "prior_failed_task_absence": {
+    "task_absent": true,
+    "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102",
+    "inventory_query_exit_code": 0
+  },
+  "catalogues": {
+    "main": {
+      "sha256": "557425237090c464173f332e1ef0da01eb6eb9b0dec287023278044526590f2b",
+      "case_count": 26,
+      "new_cases_absent": true
+    },
+    "pr": {
+      "sha256": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
+      "case_count": 23,
+      "new_cases_absent": true
+    }
+  },
+  "model_loads": 0,
+  "model_queries": 0,
+  "archive_hash_or_extraction": false,
+  "original_receiver_retry": false
+}
