@@ -1,0 +1,22 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "count": 4,
+  "contracts": [
+    "actual_owner_IDs_exact125_and_foreign_owner_rejection",
+    "paired_BEA_label_preserving_minus_and_same_ID_true_removal",
+    "dynamic_batch_counts_and_fixed_role_lr_seed",
+    "variable_participant_first_round_effective_history_reuse_and_later_new_states"
+  ],
+  "source_hashes": {
+    "FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+    "FU_PROTOCOL.txt": "9465f7769e65a455496f329e8a351209722e9479f1a6ff10f420196dc53f054d",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "test_fu_policy.py": "31a0abf7fe2da21a50a8544b06bec66124746bcd340857478db362f090d4ff8e",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "upstream/Fed_Unlearn_attack.py": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d"
+  },
+  "old_core_or_original_AST_audits_repeated": false,
+  "real_SSS_or_FU_executed": false
+}
