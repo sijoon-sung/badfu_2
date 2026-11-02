@@ -813,3 +813,7 @@
 | [BENIGN_AUDIT_COMPLETION_OBSERVATION.json](../../../research/feduba_targetclass_pair_recovery_20261102/BENIGN_AUDIT_COMPLETION_OBSERVATION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [BENIGN_AUDIT_COMPLETION_SUMMARY.json](../../../research/feduba_targetclass_pair_recovery_20261102/BENIGN_AUDIT_COMPLETION_SUMMARY.json) | `research/feduba_targetclass_pair_recovery_20261102` |
 | [BENIGN_AUDIT_COMPLETION_REPORT_KO.txt](../../../research/feduba_targetclass_pair_recovery_20261102/BENIGN_AUDIT_COMPLETION_REPORT_KO.txt) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [FU_attack_RESULT.json](../../../research/feduba_targetclass_pair_recovery_20261102/FU_attack_RESULT.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [ATTACK_TRAINING_COMPLETION_OBSERVATION.json](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_OBSERVATION.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [ATTACK_TRAINING_COMPLETION_SUMMARY.json](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_SUMMARY.json) | `research/feduba_targetclass_pair_recovery_20261102` |
+| [ATTACK_TRAINING_COMPLETION_REPORT_KO.txt](../../../research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_REPORT_KO.txt) | `research/feduba_targetclass_pair_recovery_20261102` |

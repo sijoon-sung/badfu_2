@@ -1,0 +1,10 @@
+공격 FU20 실제 학습 완료 — 독립 감사 진행 중
+관련 R03/R02/N02/D08/D15. 기존 source/실profile/선택/조건/중단규칙은 불변이다.
+
+새 targetclass2-only125 공격분기도20R/200trained roles/1000local epochs/20000batches를실제완료했다. after는fu/attack/after.pt, SHA74a89cab181896bce275a271d373db40d55fad9b4942261b75f441bea5b4e182/44770315bytes/bare null이다. FU_attack_RESULT SHA7151c089963eceba8a30feeb6e4c2b71597b196a26f4b124fb46c72453c32d63를JSON원바이트복사로확인했다. old공격모델을이름바꾼것이아니다.
+
+정상분기의20R·독립CPU감사는이미완료됐으며after8b44c116.../VERIFIED3713eb50...는불변이다. 원공격trainer46984는실종료했고같은parent33084가새독립CPUauditor14808을1회자동시작했다. ATTACK_TRAINING_COMPLETION_OBSERVATION의실명령줄/parent/taskRunning·auditSTATE가현재감사진행근거다. 이수집은JSON/metadata읽기뿐이며새model load/forward0이고원훈련·감사재실행0이다.
+
+현재실제pre/새정상after/새공격after는DISLAB에보존되었지만공격독립감사최종통과·CA/ASR·성공을미리주장하지않는다. 원parent는감사통과뒤같은δ의표준primary/독립각60000sample474calls→readonlyreview/archive를진행한다. 실패는prefix/trace보존후새명시복구계약을유지하고source/6gate/분모/예산/허용치/자원guard를바꾸지않는다.
+
+D08공격.75848/큰정상.75525·.76188,D15공격7/정상8,unknown-trigger-family탐지미검증은그대로다. 공격모델실제생성은유용한성능이나탐지성공을증명하지않는다. 전체목표미완료.
