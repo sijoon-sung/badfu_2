@@ -1,0 +1,23 @@
+FedUBA STG 실패 원인 질문에 대한 읽기 전용 소스·저장로그 검토 — 2026-11-02
+R03/R02/N02/D08/D15.
+
+판정: 실제mixedCPU STG는공개원본과수치동일한경로가아니다. 이것은CORE_CONTRACT/실profile에이미선언된차이를실제entrypoint→helper→core AST와동결SHA로다시결속한것이며이번에유일성능실패원인을밝혔다는뜻이아니다. 논문Algorithm1의유일정답이공개RAdam이라는판정도하지않는다. 원본을안해봤다는주장이나완료실험재실행근거로쓰지않는다.
+
+직접원본정체: ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b trigger_generate_function.py의fullraw8763bytes를Gitblob bb5096dbb192fa8d5cffa7fc9d97559d15157127/SHA256 53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06으로확인했다. 원본읽기범위의줄바꿈표현만으로fullfileSHA를혼동하지않도록base64원bytes로검증했다. 공개PR에는원본전체를중복게시하지않고URL/blob/hash/함수·줄번호를남긴다.
+
+항목 | 고정공개source | 실제완료mixedCPUsource
+trigger optimizer | batch_opt RAdam | mixed_cpu_trigger.main의SGD alpha.1/mom0/wd0
+LR | CosineAnnealingLR(T_max=100) | 고정.1/새scheduler없음
+θ/BN | warmup에서train호출,trigger전에해당모델eval호출없음 | trigger_common.model_and_target에서eval/weightsrequires_gradFalse
+제약변수 | latent batch_pert를optimizer가갱신하고forward/final에서limit_noise | core.trigger_step의optimizer.step뒤delta in-placeclamp
+실제호출 | trigger_generate의batch_opt.step | main→projected_sgd_batch→core.trigger_step
+
+새EVIDENCE는실제15sourceSHA와SOURCE_PROFILE/LAUNCH_PROFILE/교사binding을검사하고실함수호출줄을보존했다. 다른파일에함수가존재한다는사실만으로그함수를실행했다고보지않는다. 원models/utils/concoct_dataset 누락을Narcissus ResNet18/201·명시Concat으로보충한조건과epsilon좌표/학습자료수·선택해석차이는그대로이며이번검토가저자누락body를복구하지않는다.
+
+원인설명에서놓치지말아야할저장로그: 교사의무교란고정endpoint는target65/200·CE2.5103088665008544였고최소gate는기존0보다큰target정답/서로다른Tiny2class뿐이다. 이값만으로새trigger가전혀학습되지않았다고단정할수없다. 완료한새trigger100의기존manifest에는epoch1 CE2.826232032775879,2 CE7.263700485229492,3 CE6.337439823150635,98 CE0.578123791217804,99 CE0.40191831707954406,100 CE0.4310444688796997가있다. 손실은단조감소가아니며최소는99epoch다. 이는이미수행된augmentation/두batch의훈련목적값이지새평가·목표정답수·ASR가아니다. 무교란endpoint와서로다른입력이므로두CE의차이를통제된효과로빼거나정답률을추정하지않는다. 낮은교사훈련목적값과최종victim활성화실패를동시에보존한다.
+
+확정된최종실패는preASR29.466666666666665→정상FU24.644444444444446/공격FU19.333333333333332이고원각60000/474독립전수입력/argmax/count/logitmaxabs0이었다. 따라서평가분모/재평가불일치가이번수치차이를설명하지않으며,교사내목적값이낮아졌다는것만으로피해모델전이·SSS/BEA의활성화연결이보장되지않았다. 어느차이가실패를만들었는지는아직분리하지못했다. 원CPU8 oldteacher의BN-gap가설기각0/200은그대로이며이번newteacher로BN을바꿔봤다고말하거나원CPU8을반복하지않는다.
+
+이번작업: AST/JSON/작은sourcehash/이미저장된100loss열만읽었다. 모델/tensor/원ID/queryload0,forward/backward/optimizerstep0,새CPUgradient/훈련/SSS/FU감사/성능평가/전송/추출/등록0이다. 원15STG source와모든기존source/profile/receipt·실패를바꾸지않았다. publicRAdam/BN/epsilon을맞추면성공한다고단정하거나새비교를자동시작하지않는다. 새모델계산은별도명시비교·새관측·중단규칙과source/실profile선게시가필요하다.
+
+원인범위: D08 공격.75848이큰정상.75525/.76188사이·D15 공격7/정상8·unknowntrigger미검증을해결하지않았고단순변화량탐지는제안하지않는다. local수신중단/OS종료·새시작시간대/8GiB미달은완료DISLAB성능실패와별도운영문제다. 전체성능·탐지·local전달목표는미완료이며이를정리완료로종료하지않는다.
