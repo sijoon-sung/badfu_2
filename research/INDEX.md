@@ -64,7 +64,7 @@ flowchart TD
 |---|---|
 | [R01 · 승인된 BadFU 모델과 삭제 방식](EXPERIMENT_CARDS.md#r01) | 검증 범위 한정 |
 | [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
-| [R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사](EXPERIMENT_CARDS.md#r03) | fixed10性能失敗保存 / related-helper正符号FU20進行・後続評価source準備 |
+| [R03 · FedUBA 공식 배포본·논문 대응과 표본 정체 감사](EXPERIMENT_CARDS.md#r03) | fixed10 성능실패 보존 / related-helper 정 부호 FU20 진행·후속 평가 source 검토완료 |
 
 ### 이력·영향력
 

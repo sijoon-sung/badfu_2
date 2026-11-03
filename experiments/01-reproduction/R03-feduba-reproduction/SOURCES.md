@@ -1201,3 +1201,6 @@
 | [trigger_binding.py](../../../research/feduba_related_helper_positive_evaluation_20261103/trigger_binding.py) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [verify_pair_evaluation.py](../../../research/feduba_related_helper_positive_evaluation_20261103/verify_pair_evaluation.py) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_FREEZE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_PUBLICATION.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [SOURCE_REVIEW_RESULT.json](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_REVIEW_RESULT.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [SOURCE_REVIEW_REPORT_KO.txt](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_REVIEW_REPORT_KO.txt) | `research/feduba_related_helper_positive_evaluation_20261103` |

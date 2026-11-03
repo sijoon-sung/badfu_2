@@ -8,4 +8,4 @@
 |---|---|---|
 | R01 | [BadFU 학습과 삭제 전후 모델 확인](R01-badfu-reproduction/README.md) | 검증 범위 한정 |
 | R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](R02-fuba-reproduction/README.md) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
-| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | fixed10性能失敗保存 / related-helper正符号FU20進行・後続評価source準備 |
+| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](R03-feduba-reproduction/README.md) | fixed10 성능실패 보존 / related-helper 정 부호 FU20 진행·후속 평가 source 검토완료 |
