@@ -1,0 +1,48 @@
+{
+  "state": "DISLAB_local_summary_metadata_exact",
+  "files": [
+    {
+      "name": "RUN_PUBLICATION.json",
+      "sha256": "23e5e4818144ae3a256b52ce53a2c069a1768454ccde238cca8208dca54bfb74",
+      "bytes": 2194
+    },
+    {
+      "name": "RESULT.json",
+      "sha256": "6dae0b9207e11f4814b1e5f8561f913fe2c95e9a308d788e4c491d5ec8280aee",
+      "bytes": 1175
+    },
+    {
+      "name": "COMPLETION.json",
+      "sha256": "d42329171ad5634edb202f9db7c4317d76de4c8af3f397a1598ea26a795ecb51",
+      "bytes": 438
+    },
+    {
+      "name": "ONCE.json",
+      "sha256": "b2fff0232574be06a4ed518a042cc2a68df1c48582854017fc78d4e3821977b9",
+      "bytes": 398
+    },
+    {
+      "name": "PUBLICATION_BYTE_CHECKS.json",
+      "sha256": "11181affea342003f4e50e79e1721395416211eb4cf709642b93fa324363ed19",
+      "bytes": 2271
+    },
+    {
+      "name": "TERMINAL_OBSERVATION.json",
+      "sha256": "fd9b87187ad9a0ce20d4fc3246ea084d3f9717ba0d6480758719d9c3ba9961da",
+      "bytes": 287
+    },
+    {
+      "name": "REPORT_KO.txt",
+      "sha256": "c6cd5e6520453af7b29759ed9998c22c79c3782371f31a7be9f1932b253f4f8a",
+      "bytes": 2252
+    },
+    {
+      "name": "NEXT_STAGE_RATIONALE.txt",
+      "sha256": "998d0b860b3e24103dffefea2af9e8729aabf38c5ce977c5f5008679664398e0",
+      "bytes": 1063
+    }
+  ],
+  "model_reads": 0,
+  "forward_calls": 0,
+  "source_freeze_unchanged": true
+}

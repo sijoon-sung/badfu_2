@@ -1,0 +1,10 @@
+관련 concoct_dataset 의존성 호환성 한정 검토 완료 — 새 성능교정 채택 없음
+R03/R02/N02/D08/D15. source/실PROFILE f4b706ff742ebd1df6b3093ee7ac42ba59832092 선게시와9publicactual/local/PR/GitHub bytes결속뒤DISLAB stdlib만으로1회실행했다.
+
+미검토였던 고정 Narcissus util.py@de128d870d7ef0560a4804e413b1c57909883195 SHA5693c215...의concoct_dataset(326–343행)은(target_dataset,outter_dataset) 두인수만받는다. FedUBA005959ab의trigger_generate_function87행은세번째인수 FL_params.data_name=='CIFAR10'까지전달한다. AST arity와원ClassDef만실행한고정합성3인수호출은예상TypeError를보였다. 따라서이관련class를수정없이drop-in저자helper로회복했다고쓸수없다. 세번째flag의빠진정의/의미는여전히미확정이며새adapter나가정으로채우지않았다. 이예상음성은producer failure가아니다.
+
+관련helper의5합성위치(outer3+target2)는outer-first와라벨[0,1,2,3,3]을정확반환했다. outer이미지와label을위해각dataset[idx]를두번읽어outer6/target2·전체8회getter였고,실MixedImages소스는getitem당transform1회/targetlabel200을쓴다. concat/추가class라벨의선언해석과관련근거는맞지만추가getter가있는완전helper포트는아니다. 실제RNG를실행/재현하지않았고이관측으로교사/FU실패의원인이나시드·RNG정책교정/전체재훈련을채택하지않는다. BEApoison_image의기존4합성부호계약을반복한것도아니다.
+
+모든원source4입력SHA전후동일,torch/NumPy import0·RNG실행0·실자료/tensor/model읽기0·forward/backward/optimizer0. 합성5위치/최대8getter와3인수필요조건만한정검사했고원Domain계약·교사105·STG/SSS/FU/primary/독립/복구/보관/export는재호출하지않았다. 2026-11-03T11:35:59Z foregroundexit0/rootnative0/failure0,새WindowsTask0이다.
+
+이출처후보는검토종료다. 누락FedUBAutils회복/저자고유함수/원수치전이·성능개선은미검증이며기존plusASR58.7444·CA84.45/4성능gate실패는변경없다. D08큰정상반례/D15/unknown-trigger-family탐지미검증과모든원source/profile/모델/packet/seal/실패/default/catalogue를보존한다.

@@ -1320,3 +1320,12 @@
 | [PROTOCOL.txt](../../../research/feduba_concoct_helper_source_review_20261103/PROTOCOL.txt) | `research/feduba_concoct_helper_source_review_20261103` |
 | [review_helper.py](../../../research/feduba_concoct_helper_source_review_20261103/review_helper.py) | `research/feduba_concoct_helper_source_review_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_concoct_helper_source_review_20261103/SOURCE_FREEZE.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_concoct_helper_source_review_20261103/RUN_PUBLICATION.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [RESULT.json](../../../research/feduba_concoct_helper_source_review_20261103/RESULT.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [COMPLETION.json](../../../research/feduba_concoct_helper_source_review_20261103/COMPLETION.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [ONCE.json](../../../research/feduba_concoct_helper_source_review_20261103/ONCE.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_concoct_helper_source_review_20261103/PUBLICATION_BYTE_CHECKS.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [TERMINAL_OBSERVATION.json](../../../research/feduba_concoct_helper_source_review_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_concoct_helper_source_review_20261103/REPORT_KO.txt) | `research/feduba_concoct_helper_source_review_20261103` |
+| [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_concoct_helper_source_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_concoct_helper_source_review_20261103` |
+| [FINAL_METADATA_CHECK.json](../../../research/feduba_concoct_helper_source_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_concoct_helper_source_review_20261103` |

@@ -1,0 +1,36 @@
+{
+  "state": "completed_related_concoct_source_compatibility_review",
+  "related_constructor_args": [
+    "target_dataset",
+    "outter_dataset"
+  ],
+  "FedUBA_call_positional_args": 3,
+  "FedUBA_third_arg_AST": "FL_params.data_name == 'CIFAR10'",
+  "exact_direct_drop_in_compatible": false,
+  "expected_three_argument_TypeError": "concoct_dataset.__init__() takes 3 positional arguments but 4 were given",
+  "synthetic_composite_positions": 5,
+  "synthetic_labels": [
+    0,
+    1,
+    2,
+    3,
+    3
+  ],
+  "outer_getitem_calls": 6,
+  "target_getitem_calls": 2,
+  "total_wrapped_getitems": 8,
+  "actual_MixedImages_transform_calls_per_getitem_source": 1,
+  "actual_target_label_literal_source": 200,
+  "concatenation_and_extra_class_mapping_supports_declared_candidate_only": true,
+  "missing_FedUBA_helper_recovered": false,
+  "third_flag_semantics_known": false,
+  "causal_performance_explanation_established": false,
+  "new_correction_adopted": false,
+  "new_training_authorized_by_this_result": false,
+  "torch_imports": 0,
+  "RNG_executions": 0,
+  "model_tensor_or_real_data_reads": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0,
+  "overall_goal_complete": false
+}
