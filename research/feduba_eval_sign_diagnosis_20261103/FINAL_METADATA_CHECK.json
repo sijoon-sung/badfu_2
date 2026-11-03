@@ -1,0 +1,105 @@
+{
+  "state": "DISLAB_local_sign_diagnosis_metadata_exact",
+  "files": [
+    {
+      "name": "COMPARISON.json",
+      "sha256": "72752e3581d86e20db0ed1547380199b2ca0782074812b66c34c38ee8022ba79",
+      "bytes": 4704
+    },
+    {
+      "name": "REPORT_KO.txt",
+      "sha256": "ef29eb81ed597f9adbdd6612463371b7d1f80688f6d443ae80d0938665b98879",
+      "bytes": 4145
+    },
+    {
+      "name": "NEXT_STAGE_RATIONALE.txt",
+      "sha256": "8c5394e2f7751ab7c14ca1b94c6fc05b63709563617417a1e01e190fd5fa135f",
+      "bytes": 1381
+    },
+    {
+      "name": "MONITOR_READBACK_PROTOCOL.txt",
+      "sha256": "e7da6092730d5a0978b5d067e14397c3761de80752a92eb4b199a9c6a31837b0",
+      "bytes": 625
+    },
+    {
+      "name": "LOCAL_MONITOR_FAILURE_OBSERVATION.json",
+      "sha256": "fb9c0a7c6cb8e0b2a5ba139c0c11ea12b6a8455124c46a1f49d7abe402234e31",
+      "bytes": 713
+    },
+    {
+      "name": "RUN_PUBLICATION.json",
+      "sha256": "79343623cdbe8683f8183dd33735bea55505a364160b1dede18dcdea7aba0bbf",
+      "bytes": 2088
+    },
+    {
+      "name": "RESULT.json",
+      "sha256": "0a70f50c3fcc6e7cea0486a2c32681f606fcf4cc53e1b9dd50b746000ef7ac0f",
+      "bytes": 87984
+    },
+    {
+      "name": "VERIFIED.json",
+      "sha256": "1089e0a186d3ad4f532a601572c8883bb24a441b5ed4099dcffe247cf5f5d1b2",
+      "bytes": 3130
+    },
+    {
+      "name": "COMPLETION.json",
+      "sha256": "9f5428f4a434b0fb155a6a62ab9a2319d89109b1adbcfcc26d1d4e4862d817fd",
+      "bytes": 3695
+    },
+    {
+      "name": "PRIMARY_ONCE.json",
+      "sha256": "c8d58814392d14f3f4dbf02729eeb0e2284be54138e982df78d47d73691866cf",
+      "bytes": 167
+    },
+    {
+      "name": "INDEPENDENT_ONCE.json",
+      "sha256": "de07589c339155685499b1d2def83c4703f7800088027370a0b24fb8bba79030",
+      "bytes": 171
+    },
+    {
+      "name": "CONTROLLER_ONCE.json",
+      "sha256": "f88733552a87cf60cc70ab50ca59b944cfc161a22cb787d739fac8c88c6ee37f",
+      "bytes": 52
+    },
+    {
+      "name": "PRIMARY_STATE.json",
+      "sha256": "1e18f75786e6340bb700b767c0bfd2adba4515363af8b7dd60a5e1dd0db704bd",
+      "bytes": 67
+    },
+    {
+      "name": "INDEPENDENT_STATE.json",
+      "sha256": "37b8697462624dd1015628b90d3ab6cfe7284ab8a9579218dadc1ae6200da24c",
+      "bytes": 67
+    },
+    {
+      "name": "CONTROLLER_STATE.json",
+      "sha256": "506d86cf525abe797a8cb26db0d651c8f8e164863002f2d78e555710aa4feeca",
+      "bytes": 61
+    },
+    {
+      "name": "GUARD_STATE.json",
+      "sha256": "b06532bff71630086bded52be1ffbf328d3eda949f28cbd303939db83a871bab",
+      "bytes": 448
+    },
+    {
+      "name": "CHILD_EXITS.json",
+      "sha256": "b68f4821c77e7b857aa815b3015d935f67a9a3109125e617660aae2b49734256",
+      "bytes": 220
+    },
+    {
+      "name": "CASE_SELECTION.json",
+      "sha256": "9729e2ab60690f366c2e5db70940b87fa5389750e75818dda8eb3a60c6cd736b",
+      "bytes": 1240
+    },
+    {
+      "name": "TERMINAL_OBSERVATION.json",
+      "sha256": "ce5d56459d64195f6bacb83384e72086f5584f0b78459ca565e729f4d6e6681e",
+      "bytes": 284
+    }
+  ],
+  "model_reads": 0,
+  "forward_calls": 0,
+  "source_freeze_sha256": "87339364a803d0691819c72f08a438ee5e207f7d812aa9464a43995ac2572df2",
+  "source_freeze_unchanged": true,
+  "old_models_packets_defaults_modified": false
+}
