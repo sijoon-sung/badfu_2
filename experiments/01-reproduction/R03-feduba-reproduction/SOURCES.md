@@ -1430,3 +1430,14 @@
 | [FAILED_PIN_PUBLISH_CALLER.py](../../../research/feduba_historical_selector_source_review_20261103/FAILED_PIN_PUBLISH_CALLER.py) | `research/feduba_historical_selector_source_review_20261103` |
 | [PIN_PUBLICATION_FAILURE.json](../../../research/feduba_historical_selector_source_review_20261103/PIN_PUBLICATION_FAILURE.json) | `research/feduba_historical_selector_source_review_20261103` |
 | [PIN_PATH_RECOVERY_PROTOCOL.txt](../../../research/feduba_historical_selector_source_review_20261103/PIN_PATH_RECOVERY_PROTOCOL.txt) | `research/feduba_historical_selector_source_review_20261103` |
+| [RESULT.json](../../../research/feduba_historical_selector_source_review_20261103/RESULT.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [COMPLETION.json](../../../research/feduba_historical_selector_source_review_20261103/COMPLETION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [ONCE.json](../../../research/feduba_historical_selector_source_review_20261103/ONCE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [ADMISSION.json](../../../research/feduba_historical_selector_source_review_20261103/ADMISSION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_historical_selector_source_review_20261103/PUBLICATION_BYTE_CHECKS.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [TERMINAL_OBSERVATION.json](../../../research/feduba_historical_selector_source_review_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_historical_selector_source_review_20261103/REPORT_KO.txt) | `research/feduba_historical_selector_source_review_20261103` |
+| [COMPARISON.json](../../../research/feduba_historical_selector_source_review_20261103/COMPARISON.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_historical_selector_source_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_historical_selector_source_review_20261103` |
+| [PINNED_HISTORY_OBSERVATION.json](../../../research/feduba_historical_selector_source_review_20261103/PINNED_HISTORY_OBSERVATION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [FINAL_METADATA_CHECK.json](../../../research/feduba_historical_selector_source_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_historical_selector_source_review_20261103` |

@@ -1,0 +1,717 @@
+{
+  "state": "completed_historical_selector_source_information_access_review",
+  "scope": "Syntactic source reachability; branch execution and runtime numerical behavior were not measured. Attacker observer interface is distinguished from its query-service harness.",
+  "historical_member_metadata": {
+    "FedUBA-code/influence_function.py": {
+      "sha256": "79e8590613ddaf317b89c79f93f53e148a2580a12dc6d648c73b17c4c44044b6",
+      "bytes": 5274,
+      "git_blob": "c4680108c92db048b9150fac0052f3c3be4d4c7a"
+    },
+    "FedUBA-code/Fed_data_change.py": {
+      "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab",
+      "bytes": 4488,
+      "git_blob": "55161bdeb5a6d822839cd1c3daff190cf87181b3"
+    }
+  },
+  "historical_influence_source_matches_previously_known_unused_root_git_blob": true,
+  "historical_entry_arguments": "x_test, y_test, dataloader, model, FL_params",
+  "historical_local_call_graph": {
+    "influence_sort_function": [
+      "grad_z",
+      "s_test"
+    ],
+    "s_test": [
+      "calc_loss",
+      "grad_z",
+      "hvp"
+    ],
+    "hvp": [],
+    "grad_z": [
+      "calc_loss"
+    ],
+    "calc_loss": []
+  },
+  "historical_reachable_functions": {
+    "calc_loss": {
+      "line": 113,
+      "end_line": 127,
+      "arguments": "y, t",
+      "calls": [
+        {
+          "line": 124,
+          "callee": "torch.nn.functional.log_softmax",
+          "resolved": "torch.nn.functional.log_softmax"
+        },
+        {
+          "line": 125,
+          "callee": "torch.nn.functional.nll_loss",
+          "resolved": "torch.nn.functional.nll_loss"
+        }
+      ],
+      "access_sites": [
+        {
+          "line": 125,
+          "callee": "torch.nn.functional.nll_loss",
+          "resolved": "torch.nn.functional.nll_loss",
+          "tags": [
+            "label_loss_API"
+          ]
+        }
+      ],
+      "returns": [
+        "loss"
+      ]
+    },
+    "grad_z": {
+      "line": 130,
+      "end_line": 160,
+      "arguments": "z, t, model, gpu=-1",
+      "calls": [
+        {
+          "line": 132,
+          "callee": "model.eval",
+          "resolved": "model.eval"
+        },
+        {
+          "line": 151,
+          "callee": "model",
+          "resolved": "model"
+        },
+        {
+          "line": 152,
+          "callee": "calc_loss",
+          "resolved": "calc_loss"
+        },
+        {
+          "line": 155,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad"
+        },
+        {
+          "line": 160,
+          "callee": "list",
+          "resolved": "list"
+        },
+        {
+          "line": 136,
+          "callee": "torch.cuda.empty_cache",
+          "resolved": "torch.cuda.empty_cache"
+        },
+        {
+          "line": 143,
+          "callee": "torch.no_grad",
+          "resolved": "torch.no_grad"
+        },
+        {
+          "line": 144,
+          "callee": "model",
+          "resolved": "model"
+        },
+        {
+          "line": 145,
+          "callee": "calc_loss",
+          "resolved": "calc_loss"
+        },
+        {
+          "line": 140,
+          "callee": "z.cuda",
+          "resolved": "z.cuda"
+        },
+        {
+          "line": 140,
+          "callee": "t.cuda",
+          "resolved": "t.cuda"
+        },
+        {
+          "line": 148,
+          "callee": "model.parameters",
+          "resolved": "model.parameters"
+        },
+        {
+          "line": 158,
+          "callee": "g.clone().detach",
+          "resolved": "g.clone().detach"
+        },
+        {
+          "line": 158,
+          "callee": "g.clone",
+          "resolved": "g.clone"
+        }
+      ],
+      "access_sites": [
+        {
+          "line": 155,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad",
+          "tags": [
+            "gradient_or_Hessian_API"
+          ]
+        },
+        {
+          "line": 148,
+          "callee": "model.parameters",
+          "resolved": "model.parameters",
+          "tags": [
+            "model_parameter_access"
+          ]
+        }
+      ],
+      "returns": [
+        "list(grads)"
+      ]
+    },
+    "hvp": {
+      "line": 164,
+      "end_line": 192,
+      "arguments": "y, w, v",
+      "calls": [
+        {
+          "line": 176,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad"
+        },
+        {
+          "line": 180,
+          "callee": "zip",
+          "resolved": "zip"
+        },
+        {
+          "line": 184,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad"
+        },
+        {
+          "line": 187,
+          "callee": "zip",
+          "resolved": "zip"
+        },
+        {
+          "line": 166,
+          "callee": "len",
+          "resolved": "len"
+        },
+        {
+          "line": 166,
+          "callee": "len",
+          "resolved": "len"
+        },
+        {
+          "line": 167,
+          "callee": "ValueError",
+          "resolved": "ValueError"
+        },
+        {
+          "line": 173,
+          "callee": "p.clone().detach",
+          "resolved": "p.clone().detach"
+        },
+        {
+          "line": 177,
+          "callee": "g.clone().detach",
+          "resolved": "g.clone().detach"
+        },
+        {
+          "line": 181,
+          "callee": "p.data.add_",
+          "resolved": "p.data.add_"
+        },
+        {
+          "line": 188,
+          "callee": "p.data.copy_",
+          "resolved": "p.data.copy_"
+        },
+        {
+          "line": 190,
+          "callee": "zip",
+          "resolved": "zip"
+        },
+        {
+          "line": 173,
+          "callee": "p.clone",
+          "resolved": "p.clone"
+        },
+        {
+          "line": 177,
+          "callee": "g.clone",
+          "resolved": "g.clone"
+        }
+      ],
+      "access_sites": [
+        {
+          "line": 176,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad",
+          "tags": [
+            "gradient_or_Hessian_API"
+          ]
+        },
+        {
+          "line": 184,
+          "callee": "grad",
+          "resolved": "torch.autograd.grad",
+          "tags": [
+            "gradient_or_Hessian_API"
+          ]
+        }
+      ],
+      "returns": [
+        "return_grads"
+      ]
+    },
+    "influence_sort_function": {
+      "line": 6,
+      "end_line": 51,
+      "arguments": "x_test, y_test, dataloader, model, FL_params",
+      "calls": [
+        {
+          "line": 11,
+          "callee": "s_test",
+          "resolved": "s_test"
+        },
+        {
+          "line": 15,
+          "callee": "range",
+          "resolved": "range"
+        },
+        {
+          "line": 46,
+          "callee": "torch.stack",
+          "resolved": "torch.stack"
+        },
+        {
+          "line": 47,
+          "callee": "influence.numpy",
+          "resolved": "influence.numpy"
+        },
+        {
+          "line": 48,
+          "callee": "influence.argsort",
+          "resolved": "influence.argsort"
+        },
+        {
+          "line": 11,
+          "callee": "model.to",
+          "resolved": "model.to"
+        },
+        {
+          "line": 15,
+          "callee": "len",
+          "resolved": "len"
+        },
+        {
+          "line": 30,
+          "callee": "grad_z",
+          "resolved": "grad_z"
+        },
+        {
+          "line": 34,
+          "callee": "zip",
+          "resolved": "zip"
+        },
+        {
+          "line": 38,
+          "callee": "influence.append",
+          "resolved": "influence.append"
+        },
+        {
+          "line": 18,
+          "callee": "print",
+          "resolved": "print"
+        },
+        {
+          "line": 21,
+          "callee": "torch.cuda.empty_cache",
+          "resolved": "torch.cuda.empty_cache"
+        },
+        {
+          "line": 38,
+          "callee": "inner_product.cpu",
+          "resolved": "inner_product.cpu"
+        },
+        {
+          "line": 43,
+          "callee": "torch.cuda.empty_cache",
+          "resolved": "torch.cuda.empty_cache"
+        },
+        {
+          "line": 25,
+          "callee": "x.unsqueeze(0).cuda",
+          "resolved": "x.unsqueeze(0).cuda"
+        },
+        {
+          "line": 25,
+          "callee": "torch.tensor([y]).cuda",
+          "resolved": "torch.tensor([y]).cuda"
+        },
+        {
+          "line": 27,
+          "callee": "x.unsqueeze",
+          "resolved": "x.unsqueeze"
+        },
+        {
+          "line": 27,
+          "callee": "torch.tensor",
+          "resolved": "torch.tensor"
+        },
+        {
+          "line": 36,
+          "callee": "torch.sum",
+          "resolved": "torch.sum"
+        },
+        {
+          "line": 18,
+          "callee": "len",
+          "resolved": "len"
+        },
+        {
+          "line": 25,
+          "callee": "x.unsqueeze",
+          "resolved": "x.unsqueeze"
+        },
+        {
+          "line": 25,
+          "callee": "torch.tensor",
+          "resolved": "torch.tensor"
+        }
+      ],
+      "access_sites": [
+        {
+          "line": 48,
+          "callee": "influence.argsort",
+          "resolved": "influence.argsort",
+          "tags": [
+            "iteration_or_sort_index"
+          ]
+        }
+      ],
+      "returns": [
+        "influence"
+      ]
+    },
+    "s_test": {
+      "line": 55,
+      "end_line": 110,
+      "arguments": "z_test, t_test, model, z_loader, gpu=-1, damp=0.01, scale=25.0, recursion_depth=2500",
+      "calls": [
+        {
+          "line": 78,
+          "callee": "grad_z",
+          "resolved": "grad_z"
+        },
+        {
+          "line": 79,
+          "callee": "v.copy",
+          "resolved": "v.copy"
+        },
+        {
+          "line": 82,
+          "callee": "range",
+          "resolved": "range"
+        },
+        {
+          "line": 88,
+          "callee": "model",
+          "resolved": "model"
+        },
+        {
+          "line": 89,
+          "callee": "calc_loss",
+          "resolved": "calc_loss"
+        },
+        {
+          "line": 91,
+          "callee": "hvp",
+          "resolved": "hvp"
+        },
+        {
+          "line": 98,
+          "callee": "enumerate",
+          "resolved": "enumerate"
+        },
+        {
+          "line": 107,
+          "callee": "print",
+          "resolved": "print"
+        },
+        {
+          "line": 87,
+          "callee": "x.cuda",
+          "resolved": "x.cuda"
+        },
+        {
+          "line": 87,
+          "callee": "t.cuda",
+          "resolved": "t.cuda"
+        },
+        {
+          "line": 90,
+          "callee": "model.parameters",
+          "resolved": "model.parameters"
+        },
+        {
+          "line": 96,
+          "callee": "zip",
+          "resolved": "zip"
+        },
+        {
+          "line": 99,
+          "callee": "torch.isnan(_h_e).any",
+          "resolved": "torch.isnan(_h_e).any"
+        },
+        {
+          "line": 100,
+          "callee": "torch.isnan(_h_e).sum().item",
+          "resolved": "torch.isnan(_h_e).sum().item"
+        },
+        {
+          "line": 101,
+          "callee": "torch.nan_to_num",
+          "resolved": "torch.nan_to_num"
+        },
+        {
+          "line": 99,
+          "callee": "torch.isnan",
+          "resolved": "torch.isnan"
+        },
+        {
+          "line": 100,
+          "callee": "torch.isnan(_h_e).sum",
+          "resolved": "torch.isnan(_h_e).sum"
+        },
+        {
+          "line": 100,
+          "callee": "torch.isnan",
+          "resolved": "torch.isnan"
+        }
+      ],
+      "access_sites": [
+        {
+          "line": 98,
+          "callee": "enumerate",
+          "resolved": "enumerate",
+          "tags": [
+            "iteration_or_sort_index"
+          ]
+        },
+        {
+          "line": 90,
+          "callee": "model.parameters",
+          "resolved": "model.parameters",
+          "tags": [
+            "model_parameter_access"
+          ]
+        }
+      ],
+      "returns": [
+        "h_estimate"
+      ]
+    }
+  },
+  "historical_reachable_information_access": [
+    {
+      "function": "calc_loss",
+      "line": 125,
+      "callee": "torch.nn.functional.nll_loss",
+      "resolved": "torch.nn.functional.nll_loss",
+      "tags": [
+        "label_loss_API"
+      ]
+    },
+    {
+      "function": "grad_z",
+      "line": 155,
+      "callee": "grad",
+      "resolved": "torch.autograd.grad",
+      "tags": [
+        "gradient_or_Hessian_API"
+      ]
+    },
+    {
+      "function": "grad_z",
+      "line": 148,
+      "callee": "model.parameters",
+      "resolved": "model.parameters",
+      "tags": [
+        "model_parameter_access"
+      ]
+    },
+    {
+      "function": "hvp",
+      "line": 176,
+      "callee": "grad",
+      "resolved": "torch.autograd.grad",
+      "tags": [
+        "gradient_or_Hessian_API"
+      ]
+    },
+    {
+      "function": "hvp",
+      "line": 184,
+      "callee": "grad",
+      "resolved": "torch.autograd.grad",
+      "tags": [
+        "gradient_or_Hessian_API"
+      ]
+    },
+    {
+      "function": "influence_sort_function",
+      "line": 48,
+      "callee": "influence.argsort",
+      "resolved": "influence.argsort",
+      "tags": [
+        "iteration_or_sort_index"
+      ]
+    },
+    {
+      "function": "s_test",
+      "line": 98,
+      "callee": "enumerate",
+      "resolved": "enumerate",
+      "tags": [
+        "iteration_or_sort_index"
+      ]
+    },
+    {
+      "function": "s_test",
+      "line": 90,
+      "callee": "model.parameters",
+      "resolved": "model.parameters",
+      "tags": [
+        "model_parameter_access"
+      ]
+    }
+  ],
+  "historical_actual_caller_sites": [
+    {
+      "line": 43,
+      "callee": "influence_sort_function",
+      "positional_args": [
+        "x_test",
+        "y_test",
+        "dataloader",
+        "model",
+        "FL_params"
+      ]
+    }
+  ],
+  "historical_import_aliases": {
+    "torch": "torch",
+    "grad": "torch.autograd.grad"
+  },
+  "historical_parameter_API_present_in_reachable_source": true,
+  "historical_gradient_or_Hessian_API_present_in_reachable_source": true,
+  "necessary_forward_only_paper_contract_supported_by_this_source": false,
+  "actual_observer_query_call_sites": [
+    {
+      "line": 10,
+      "callee": "query_logits",
+      "resolved": "query_logits"
+    },
+    {
+      "line": 12,
+      "callee": "query_logits",
+      "resolved": "query_logits"
+    }
+  ],
+  "actual_observer_access_sites": [
+    {
+      "line": 24,
+      "callee": "sorted",
+      "resolved": "sorted",
+      "tags": [
+        "iteration_or_sort_index"
+      ]
+    }
+  ],
+  "actual_observer_parameter_or_gradient_API_present": false,
+  "actual_observer_decorators": [
+    "torch.inference_mode()"
+  ],
+  "paperlinked_high_sensitivity_calls": [
+    {
+      "line": 125,
+      "callee": "FL_params.trigger.to",
+      "resolved": "FL_params.trigger.to"
+    },
+    {
+      "line": 126,
+      "callee": "model.eval",
+      "resolved": "model.eval"
+    },
+    {
+      "line": 154,
+      "callee": "sens_list.sort",
+      "resolved": "sens_list.sort"
+    },
+    {
+      "line": 133,
+      "callee": "BatchSampler",
+      "resolved": "torch.utils.data.BatchSampler"
+    },
+    {
+      "line": 134,
+      "callee": "DataLoader",
+      "resolved": "torch.utils.data.DataLoader"
+    },
+    {
+      "line": 136,
+      "callee": "torch.no_grad",
+      "resolved": "torch.no_grad"
+    },
+    {
+      "line": 137,
+      "callee": "enumerate",
+      "resolved": "enumerate"
+    },
+    {
+      "line": 133,
+      "callee": "SequentialSampler",
+      "resolved": "torch.utils.data.SequentialSampler"
+    },
+    {
+      "line": 138,
+      "callee": "x.to",
+      "resolved": "x.to"
+    },
+    {
+      "line": 141,
+      "callee": "model",
+      "resolved": "model"
+    },
+    {
+      "line": 144,
+      "callee": "model",
+      "resolved": "model"
+    },
+    {
+      "line": 147,
+      "callee": "torch.norm(logits2 - logits1, p=2).item",
+      "resolved": "torch.norm(logits2 - logits1, p=2).item"
+    },
+    {
+      "line": 151,
+      "callee": "sens_list.append",
+      "resolved": "sens_list.append"
+    },
+    {
+      "line": 147,
+      "callee": "torch.norm",
+      "resolved": "torch.norm"
+    }
+  ],
+  "paper_forward_only_constraints_confirmed_in_cached_text": true,
+  "paper_PDF_fresh_extraction": false,
+  "source_body_review_sha256": "6c383408bab849e466e350f876586e09d4e4e0d5e0e9f191b9e68831ee5feaf2",
+  "source_member_reads": 2,
+  "download_calls": 0,
+  "upstream_code_executions": 0,
+  "torch_imports": 0,
+  "RNG_executions": 0,
+  "real_data_tensor_model_loads": 0,
+  "gradient_or_forward_executions": 0,
+  "optimizer_steps": 0,
+  "selector_adopted": false,
+  "new_training_launched": false,
+  "old_finite_jobs_rerun": 0,
+  "overall_goal_complete": false
+}

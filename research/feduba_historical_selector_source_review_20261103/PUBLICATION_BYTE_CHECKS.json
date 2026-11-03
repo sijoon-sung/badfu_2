@@ -1,0 +1,82 @@
+{
+    "state":  "actual15publicsource_bytes_exact",
+    "commit":  "43e44163f3e97888f63d4053f5d9110361a185da",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "f7c3ae93802efafaca44707c50b8c71ff98c042d49ec0c847827fc1b5e00f8fc",
+                      "bytes":  58
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "44dcee2b96e22db92091766965857e2037687d00aa97a97f4d315c81b9b9a69d",
+                      "bytes":  2457
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "90082e8b8bbc96a3499b739fbb574aa1d6ea97c116e18dbc5aa622fc72dbb9c9",
+                      "bytes":  2822
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "1b552637616e24652159333106a0aea7dab36a13bf336cd1c353d8428038f9ed",
+                      "bytes":  2563
+                  },
+                  {
+                      "name":  "PAPER_EVIDENCE.json",
+                      "sha256":  "43c22888388a6fe6f1cec3a43cbc1b982b54b0faa0cb09e2efc65aac7be8c7a8",
+                      "bytes":  815
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "review_selector.py",
+                      "sha256":  "15a1aa7adca9e301228d49e0c938773ac0823c3d2dd418dfe2ba60b740929e2e",
+                      "bytes":  10341
+                  },
+                  {
+                      "name":  "LOCAL_INPUT_PATH_TRANSPORT_FAILURE.json",
+                      "sha256":  "9e4c89bed4990fe093054abed10324b5d63a8e1a34b5a1daac38c72376ecf9ee",
+                      "bytes":  528
+                  },
+                  {
+                      "name":  "INPUT_PATH_TRANSPORT_READBACK_PROTOCOL.txt",
+                      "sha256":  "131cc23e229ae1e26ac902b28fb8faa48563b683c43ad3a9b974de26319d95b7",
+                      "bytes":  649
+                  },
+                  {
+                      "name":  "INPUT_PATH_READBACK.json",
+                      "sha256":  "de4a34adcb26e2d04975427533d42253f401add80e2fef0c6dfbedef8a9b8814",
+                      "bytes":  136
+                  },
+                  {
+                      "name":  "PREPUBLICATION_LOCATION_CORRECTION.json",
+                      "sha256":  "ce9ceff5ee3cf5a4c684323ce9a0d3362c42e37bbef4091059bf98553b709a0f",
+                      "bytes":  676
+                  },
+                  {
+                      "name":  "PREPUBLICATION_FAILED_LOCATION_CALLER.py",
+                      "sha256":  "868537a0139da522f5b3a2f28d20315e3b7ba60033bb3fd041ab7e8b2ea440bd",
+                      "bytes":  422
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "b6cad4cd313325e3d785388af0e120b0b20b53a2edb1596c9b781e3a93a9c789",
+                      "bytes":  1294
+                  }
+              ],
+    "model_reads":  0
+}
