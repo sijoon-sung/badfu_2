@@ -1,0 +1,34 @@
+{
+  "related_repository": "reds-lab/Narcissus",
+  "related_commit": "de128d870d7ef0560a4804e413b1c57909883195",
+  "related_blob": "837564b738637378b8567ae3fc25ff32a5e599cf",
+  "FedUBA_commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "inputs": {
+    "related_util": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/private_inputs/related_util.py",
+      "sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+      "bytes": 11643
+    },
+    "public_trigger": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/trigger_generate_function.py",
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+      "bytes": 8763
+    },
+    "actual_mixed_common": {
+      "path": "D:/FEDUBA_MIXED_SURROGATE_20261101/mixed_common.py",
+      "sha256": "4cf86b7643395afdbf11a699eb4a2a0dac2e4e35431c6d12bbf28c2fe8de38da",
+      "bytes": 7795
+    },
+    "actual_mixed_profile": {
+      "path": "D:/FEDUBA_MIXED_SURROGATE_20261101/PROFILE.json",
+      "sha256": "47c14d13bab0e359066330b652fbbe8ca4d1801ea275d3d8bc862f00454b7ef9",
+      "bytes": 10153
+    }
+  },
+  "related_concoct_lines": [
+    326,
+    343
+  ],
+  "FedUBA_call_line": 87,
+  "real_model_or_data_inputs": 0
+}

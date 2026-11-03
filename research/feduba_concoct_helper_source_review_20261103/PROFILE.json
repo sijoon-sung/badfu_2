@@ -1,0 +1,79 @@
+{
+  "id": "feduba.related_concoct_source_compatibility.20261103",
+  "launch_enabled": true,
+  "execution_root": "D:/FEDUBA_CONCOCT_HELPER_SOURCE_REVIEW_20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The pinned related Narcissus concoct_dataset can serve as an exact direct replacement of the missing FedUBA three-argument mixing helper without additional source assumptions.",
+  "new_observable": "Constructor and caller arity/defaults, exact five-position synthetic concatenation/label behavior, and wrapper getitem multiplicity of the previously unreviewed related mixing helper; compare actual declared mixed source structure without executing it.",
+  "candidate_scope": "Necessary source-compatibility condition only; no proof of the missing FedUBA helper or performance cause. Related poison_image sign contract and old domain/RNG/model checks are not repeated.",
+  "fixed_comparison": {
+    "outer_labels": [
+      0,
+      1,
+      2
+    ],
+    "target_N": 2,
+    "synthetic_composite_positions": 5,
+    "expected_labels": [
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    "related_wrapper_getitems": 5,
+    "max_wrapped_dataset_getitems": 8,
+    "constructor_three_argument_probe": 1
+  },
+  "budget": {
+    "torch_imports": 0,
+    "numpy_imports": 0,
+    "real_data_or_tensor_reads": 0,
+    "model_loads": 0,
+    "RNG_executions": 0,
+    "model_forwards": 0,
+    "optimizer_steps": 0,
+    "source_reviews": 1
+  },
+  "non_IID_scope": "No D08/D15 large-benign distinction or detector. This only investigates an attack-implementation dependency boundary.",
+  "guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py"
+  ],
+  "stop_rule": "Any source/hash/AST/shape/count/runtime failure preserves prefix and stops without retry. Incompatible direct arity is an expected negative candidate result, not a producer error; do not adapt the missing third flag, change labels/RNG, or launch teacher/STG/SSS/FU from this result.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "overall_goal_complete": false
+}

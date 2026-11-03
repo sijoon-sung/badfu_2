@@ -1313,3 +1313,10 @@
 | [COMPLETION_REPORT_KO.txt](../../../research/feduba_positive_independent_recovery_20261103/COMPLETION_REPORT_KO.txt) | `research/feduba_positive_independent_recovery_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_positive_independent_recovery_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_positive_independent_recovery_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_positive_independent_recovery_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_concoct_helper_source_review_20261103/INPUT_BINDING.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [native_memory.py](../../../research/feduba_concoct_helper_source_review_20261103/native_memory.py) | `research/feduba_concoct_helper_source_review_20261103` |
+| [native_processes.py](../../../research/feduba_concoct_helper_source_review_20261103/native_processes.py) | `research/feduba_concoct_helper_source_review_20261103` |
+| [PROFILE.json](../../../research/feduba_concoct_helper_source_review_20261103/PROFILE.json) | `research/feduba_concoct_helper_source_review_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_concoct_helper_source_review_20261103/PROTOCOL.txt) | `research/feduba_concoct_helper_source_review_20261103` |
+| [review_helper.py](../../../research/feduba_concoct_helper_source_review_20261103/review_helper.py) | `research/feduba_concoct_helper_source_review_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_concoct_helper_source_review_20261103/SOURCE_FREEZE.json) | `research/feduba_concoct_helper_source_review_20261103` |

@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "8687ddd54c479afdccae0d69de6a85c87b7bd72a706a89fa35ecf572be8e5b76",
+  "registry_sha256": "333968be977b7d88b6b45584779e7b4edced46eddd6542c5ee5e99d112a4d45c",
   "cards": 28,
-  "unique_source_documents": 1628,
-  "top_level_folders": 144,
-  "folders_linked_to_cards": 96,
+  "unique_source_documents": 1635,
+  "top_level_folders": 145,
+  "folders_linked_to_cards": 97,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -1561,6 +1561,13 @@
     "research/feduba_positive_independent_recovery_20261103/COMPLETION_REPORT_KO.txt": "5e211dcbea0463ddbf9dc8d8d1d4b2ae1e0355bfbd0fa7c3dab5a0114e5e9fdb",
     "research/feduba_positive_independent_recovery_20261103/NEXT_STAGE_RATIONALE.txt": "0ea4d1b47e593fd02087bb61c41bd388291d44465563ebd6f53b7dfcd44c94df",
     "research/feduba_positive_independent_recovery_20261103/FINAL_METADATA_CHECK.json": "370937b3a3bbf54e0dc257f8897b6a446fb25640319a4f3d5561181fbd1f674b",
+    "research/feduba_concoct_helper_source_review_20261103/INPUT_BINDING.json": "20aa23f17af6af228d86da02997769935150af67190b8b7d0e2a28e40813b379",
+    "research/feduba_concoct_helper_source_review_20261103/native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "research/feduba_concoct_helper_source_review_20261103/native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "research/feduba_concoct_helper_source_review_20261103/PROFILE.json": "2cdc58ac85d11521d3b3f3a11dbd81478279f1e7ec85b7f54ab26f01f53b05a7",
+    "research/feduba_concoct_helper_source_review_20261103/PROTOCOL.txt": "494275a53fd8ec67c8aefa02dd49d9f935e99c190f8d2b6b6ca4448af0d83852",
+    "research/feduba_concoct_helper_source_review_20261103/review_helper.py": "f94d6711810392235522cdf87b38592edf827ed44bfe36556f5f0cda672aff01",
+    "research/feduba_concoct_helper_source_review_20261103/SOURCE_FREEZE.json": "01c834037fcbe5c0878420d49063b918e6f8a16c38e244ff75e2f3726e07c092",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1954,6 +1961,16 @@
         "research/feduba_author_archive_review_20261103/PROTOCOL.txt",
         "research/feduba_author_archive_review_20261103/REPORT_KO.txt",
         "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/feduba_concoct_helper_source_review_20261103",
+      "related_cards": [
+        "R03"
+      ],
+      "top_level_documents": [
+        "research/feduba_concoct_helper_source_review_20261103/PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
