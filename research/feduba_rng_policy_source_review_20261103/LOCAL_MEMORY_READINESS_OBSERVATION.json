@@ -1,0 +1,15 @@
+{
+  "state": "read_only_native_memory_admission_not_ready",
+  "trigger_utc": "2026-11-03T08:58:34.924Z",
+  "source": "one read-only Windows GetPerformanceInfo call in tmp/feduba_local_memory_readiness_20261103_0858.py; console observation, not a receiver ledger",
+  "availableBytes": 5053108224,
+  "committedBytes": 20625473536,
+  "commitLimit": 50775060480,
+  "required_availableBytes": 8589934592,
+  "required_commit_freeBytes": 17179869184,
+  "new_receiver_admission_ready": false,
+  "receiver_started": false,
+  "new_long_waiter_started": false,
+  "apps_closed": false,
+  "model_imports": 0
+}
