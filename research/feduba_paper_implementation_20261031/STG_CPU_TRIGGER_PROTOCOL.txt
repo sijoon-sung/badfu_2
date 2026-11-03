@@ -1,0 +1,13 @@
+명시 수치 복구계약, R03/R02/N02/D08/D15/STG_GRAD_DIAG_PROTOCOL. 가설: 같은 고정 surrogate·외부target200·원seed3000·δ0·meanCE/projected literalSGD를 원CPU 감사와 같은 CPU2thread FP32/MKLDNN 환경에서 새100epoch 실행하면 backend가 다른 gradient 재생 실패를 허용치 변경 없이 검증 가능한 별도 δ로 국소 복구할 수 있다. 새 관측은 새100epoch/200step·실입력/원ID/optimizer/RNG·전체SGD투영 대수와 독립CPU 코드의 기존첫/마지막 두gradient 재생이다. 공격 성능/새 탐지점수를 보고 장치나 수치를 고른 것이 아니다. D08/D15 큰 정상nonIID 반례는 미해결이다.
+
+수치 진단의 실제근거: 원고정2step×4모드에서 같은GPU default 재생은 저장gradient와두개모두 maxabs0으로정확일치했다. 원CPU MKLDNN 재생오차는첫0.009947020560503006/마지막0.00042789464350789785이고CPU native도둘다원기준실패다. strictGPU도CPU와두개모두원기준에서일치하지않았다. CPU_MKLDNN/native간첫gradient오차0.0008563250303268433과작은forward오차를관측했으나단일kernel/비미분ReLU 경계를유일원인으로인증한것은아니다. 원8회진단은완료해재실행하지않는다.
+
+원실패 유지: 원STG100/5/100·78410batch의source/모델/모든원raw·3381f718... δ·controller/audit failed_preserved·26파일 incident는불변이다. 원STG_VERIFIED는만들지않고원CPU-GPU gate가통과했다고하지않는다. 이번은같은원100surrogate/5warmup의frozen201모델을정확같은SHA로재사용하며그105모델epoch나정상FL20을재학습하지않는다. GPU노이즈최적화를재개하거나그중좋은epoch를고르지않는다. 원GPU trigger100과별도 stg_cpu_trigger_recovery에 δ0부터새CPU trigger100을실행하는명시수치분기다.
+
+고정수치: CPU2threads·FP32·MKLDNN enabled·matmul highest·CUDA_VISIBLE_DEVICES=-1/미초기화. 외부target200와label200·PILcrop/flip/ToTensor Normalize.5·B128/tail72·원seed3000·동일loader generator3000. SGD alpha.1/momentum0/weight_decay0/foreachFalse/fusedFalse·매batch epsilon_model32/255 투영·evaltheta/BN 고정·100epoch/200batch·20000 sample exposure를바꾸지않는다. δ가영이거나loss/전이가낮아도계속하며이장치변경을저자유일수치실행/원CUDA bit동일복구라고하지않는다.
+
+실제새step의x/target/δ_before/gradient/δ_after·외부원ID/augmentation직전CPU RNG, epoch별optimizer/loader/globalRNG전후·δ/checkpoint/전체로그·frozenθ참조를모두남긴다. 별도CPU audit는원warmup5와frozenθ텐서정확일치·새100epoch/200step해시/ID/loader permutation/RNG연결·모든투영대수(old atol1e-7)·끝δ를검산한다. 사전같은첫/마지막 두step만augmentation정확재생/독립meanCE gradient를원기준atol2e-5+rtol1e-3로비교한다. 전체200gradient를독립재계산한것은아니다. GPU/CPU동등성성공을주장하지않으며원교차장치실패를그대로기록한다.
+
+중단: source/hash/ID/수량/finite/frozenstate/저장/runtime/대수/독립gradient기준실패면원자료·prefix·trace를보존하고자동retry/사후tolerance변경을하지않는다. 100epoch/200batch한번후종료하며다른seed/device/lr/δ/target을자동확장하지않는다. 새정확task Codex-FedUBA-STG-CPU-trigger100-recovery-20261031/directPython cpu_trigger_controller.py가CPU runner→독립CPU audit를각한번수행한다. 이전진단/원trainer/audit는중복하지않는다.
+
+이계약과source/profile/freeze를PR 선게시뒤시작한다. 새CPUδ/감사통과뒤에도SSS/FU를자동실행하지않으며새명시binding/launch 계약에서원실패와새CPU branch 정체·같은δ/hash를연결한다. 원GPUδ와이름만바꿔대체하지않는다. 이후기존SSS125/정상FU20/공격FU20/같은δ 배수1.5 target2의전체독립평가·모델/기여/optimizer/RNG/로그양쪽전달·catalogue/index guards와큰정상탐지검증은계속필요하다.

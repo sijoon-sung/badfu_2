@@ -1,0 +1,2575 @@
+{
+  "state": "completed_primary_negative_sign_diagnosis",
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "CA_pct": 85.53,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1016,
+      "ASR_pct": 11.28888888888889
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "CA_pct": 84.74,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 858,
+      "ASR_pct": 9.533333333333333
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "CA_pct": 84.69,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5241,
+      "ASR_pct": 58.233333333333334
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "CA_pct": 84.45,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 677,
+      "ASR_pct": 7.522222222222222
+    }
+  },
+  "positive_models_reused": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1244,
+      "CA_pct": 84.69,
+      "ASR_pct": 13.822222222222223
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "source_models": {
+    "pre": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_public_fixed10_cleanFL20_s42_20261103/run/before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu/benign/after.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "minus_attack": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu/attack/after.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "plus_attack": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/fu/attack/after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/private_run/delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "eval_sign": -1,
+  "multiplier": 1.5,
+  "clip": [
+    -1,
+    1
+  ],
+  "target": 2,
+  "input_packets": [
+    {
+      "path": "private_run/inputs/batch01.pt",
+      "sha256": "a7cb863e92bef8e1523ef084f54b596d40f4d2783b40de9d4ee525225c613539",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch02.pt",
+      "sha256": "c856f05481d7e918258351991a848054e311fc2d3fc434f97c045176e37e052f",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch03.pt",
+      "sha256": "870d4491e2517c4a27823d8eb05a22cdc3122b04f7ca1b10dbf743d4d6de7334",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch04.pt",
+      "sha256": "5c02cdbe761228cf6d9e8d8b48f7271c03300f5a8ce2bde72a37a75d16d6e787",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch05.pt",
+      "sha256": "015e82a52ce78f2abaa79ea9519f342d117302385c0ab9b5f71242ada9abff64",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch06.pt",
+      "sha256": "2506543319067a9f53aa46007972d551d042aece497d744c083067ee42123b80",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch07.pt",
+      "sha256": "08163ae03805cca9c353717a395e366a1914a7c69b7a90fa7397774492d83974",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch08.pt",
+      "sha256": "4db820478691b467487a95823887b419aa94a50290e89a7043726a7cdc553a60",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch09.pt",
+      "sha256": "b8dfc7037a15e1dfe3167e5916a2f8f5dbd21e2d13c9d2d88ec8a276cbdd46ce",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch10.pt",
+      "sha256": "d526d1434fbd553644273531c32d04369a65cc3e319394f307d5876d69e9fdc8",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch11.pt",
+      "sha256": "eca344665169f18eedbb18186f1bdf8715208a9be6466ea917630bfe3f26fbfa",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch12.pt",
+      "sha256": "1643bb951a5fb2f0ddabc34251a76601eea3c0eae64ef6e368a3cd3ee28c240a",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch13.pt",
+      "sha256": "ac578f6fe2c73859f9f2a2ecd3425a67c7764abb1ca60f6954fb2b725d6af60e",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch14.pt",
+      "sha256": "8cd584d01ed01f36002d150297acdb277a0b6f6c84bea30ff7b26b4c6f6e2038",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch15.pt",
+      "sha256": "6576f528922104557904a7b26d549be25bc86494820791e26313c1ea300717c7",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch16.pt",
+      "sha256": "750f22aa70365d01eb18eb4ff8f6eb828cf3c14de49ef8d06ef8f65a75fb7ee1",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch17.pt",
+      "sha256": "e21517dd21d38aafd5a8b2d271ef9a7eaae8a706bf517fbc37ddc6995b7033a8",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch18.pt",
+      "sha256": "e468fbcb85c35715ba0d9dc9df3008992428b93e1c2d79775448d9c574d6e383",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch19.pt",
+      "sha256": "53d8fca50a7f3437f6381290291c9f17e31361a3b540b43a58c012b4b201dea8",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch20.pt",
+      "sha256": "91e77f2970bb2e6ecd64600eda4e4ef98b690020176d9a1b9dd903b1aa478d60",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch21.pt",
+      "sha256": "bea48f55d2188961d16c5a49a7a513bf5d9ae269b25c1fa34b47c97b63e8df70",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch22.pt",
+      "sha256": "d7c96e9b814865ed5f0885e1b29d1a4204e30589093def83e9485df24cb0b980",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch23.pt",
+      "sha256": "23110c43d3776d11778ae314313f0ef373290dec794f37c3ccae34526f73cb22",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch24.pt",
+      "sha256": "a7df76a03a9bf40de054907088aab528ec8d112d6971a859bbd25d4ca8c3676c",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch25.pt",
+      "sha256": "52ff3c96fc8c10afd809696a3a74cbc88b34870d083fb06ab2a4c40cab6b9569",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch26.pt",
+      "sha256": "f528bebe37f7a488b6a6f7c3a641d3c5e816fdb2f64f7a0b0f60fc8e389db3db",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch27.pt",
+      "sha256": "dbb993ffba2d97dcff1ab35c43b1bbf3b528736184d14faf113985d30f3d0098",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch28.pt",
+      "sha256": "febfd37abe4fc987c2ca45671c8657bcecc0e24b341edbc09c8280b002ffc1a9",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch29.pt",
+      "sha256": "8d39df4b0db90563f9fa7455f39fc2547db52b5f457d07e5ac16fbc5d6752bb9",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch30.pt",
+      "sha256": "fdd5e5957223390021cb25048353c8021a5227e1225c7d00188d4e228f9b46ab",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch31.pt",
+      "sha256": "d354ff06fd8b125b7ade0275462d956beca02311ccdba74d734515c47d2837d9",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch32.pt",
+      "sha256": "605cd9ac787d8305d1038274f3de56a20fc9a9a25713d44446c19d2badc04af6",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch33.pt",
+      "sha256": "9efc04c9c0ca85dee48ea7ecbbc6919f7b3738faf97d5bba7a7d435d3a9be0bc",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch34.pt",
+      "sha256": "26fdda15f27c9b32114bea8852aa628caeafbe7c33a194e12cbd8a9f2ca9fb62",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch35.pt",
+      "sha256": "fcbdb38bcb5f68ded94f5ee851f24ce3a3c985b6ccbc5c42c7db5f83adb2bc25",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch36.pt",
+      "sha256": "82414c69ef251f7ebecc01275e0333225f403fd7de6ffe2535e6aeb0dc4b58dc",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch37.pt",
+      "sha256": "42d77c19db8f695f1dfc7a097e3ba044498881867f36ae6fd6b201d504eb501c",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch38.pt",
+      "sha256": "7bc57e894e38a56c3972586623cb997b90a80acc5a681f0170a09ef197136ef4",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch39.pt",
+      "sha256": "702b5bd7857957e3762c55c25e42e57abcc9c6bec7ad3e55936bb12a60c9d856",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch40.pt",
+      "sha256": "643f03eb3921e99534a061da5f3e00aafb98b347bd3e120747d1bc073ffc3f1e",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch41.pt",
+      "sha256": "3bb5ccd76b2f1537bfd343d99e59bcf7fd6b0304ff4b10dd808f160e152c7846",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch42.pt",
+      "sha256": "5e976aabc45ab8a5b23c37bf776857567c2d0b6015bda0b0adb2a3537c59e402",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch43.pt",
+      "sha256": "715dd7bb0cc760ec0bb2adba43aac1786df359aa6e8f1c977868b622ece47cac",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch44.pt",
+      "sha256": "833027ab8784163b4dd9b87be5e1535eb247aea5286c887775effab9e4dfb496",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch45.pt",
+      "sha256": "8826c306815e64785ecc91db68c2e5e031ada9316691bed7151acf35025e8e4e",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch46.pt",
+      "sha256": "3b7cb0afba8a68314c1e36b528b49e3328791511e7e5cd70dcaca212c2489f20",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch47.pt",
+      "sha256": "efbbc45087b02be034abaa81d40faa4d79807b0227eb4fd23709ca368d167517",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch48.pt",
+      "sha256": "9d0aa12cc2e41a2bbeba282eeee159c853d8a85561a3ba775703659442bf750d",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch49.pt",
+      "sha256": "5313793bea4d52690ce42486ad7db2c752f1202ad1d0cd7086f5236f85634122",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch50.pt",
+      "sha256": "570fb26deb281171a7bd670faf10cb818cccdc4e19dfc6a020c62fc1d216cb97",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch51.pt",
+      "sha256": "f68edc64d53ac4adecd09f4f3c332c30c1e37c47f239add070456de9b2c3dd1a",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch52.pt",
+      "sha256": "48ee04597164b79574a13115780987b534306a0817eff262063c9e7bf9411f77",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch53.pt",
+      "sha256": "1496f960c8be2d80ba259d6bbab17478b5bbc3440cc59c3170112966f7f509b3",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch54.pt",
+      "sha256": "c19b18ba09e66c32b32e0d8170f34d5d1094fccda81b807370e2ee9556135c7d",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch55.pt",
+      "sha256": "74b5e6ff69f2517ad2e373b98cc53b220bf1ea919c09e7bfa9413f31e030dab3",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch56.pt",
+      "sha256": "bcf657287fec92263b0d9c7fadc3b0facf924a686ca1e6eee3e8dee4d6af178b",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch57.pt",
+      "sha256": "256af22dc65d6f06dc49a9492a77c7957b25c7568942bd2a6455ae380b65761c",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch58.pt",
+      "sha256": "6e1e4a3cfc1c91593c3a8c5bf8a736b1f9626c341d046f006420d960c1e0ed3a",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch59.pt",
+      "sha256": "ab76ec43b756e47a964af0bd23e0c921dc4113854e278540fdd04fec95070304",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch60.pt",
+      "sha256": "83ebd0ef49b11313e374b563182139c24cd578ee4c0a3f28f388f3854ad6a77d",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch61.pt",
+      "sha256": "ee454efeddd9004ce35bda4aefb8f76b89a8650f87f9f49b0b17bd5ccca86b31",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch62.pt",
+      "sha256": "701a121d07653ff00972f9e2d3365d11464f206bdfa52839c8a10a1380c77637",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch63.pt",
+      "sha256": "c9afde28f9e3e29deef2afff00802327dbef224ad564bff2984646308752371a",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch64.pt",
+      "sha256": "7bc664a305d743d0262fa0d589dfeb3adc35389c152c7b5b836f7ddbaf021033",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch65.pt",
+      "sha256": "ed2c4cddaf74b94ef3e8ad5ccf6dd40b5a63d224bb785933970a3d601c8fcbdb",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch66.pt",
+      "sha256": "2df43ca690f78106511ecc5937ee840d9aa13c4311577fcf678be19edbf12e70",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch67.pt",
+      "sha256": "2f1d531ca5ad1a8a77fd63bf15e2ea78f413f5f9b71841a3c265948259682386",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch68.pt",
+      "sha256": "a4fd422b2509664ff13f3f3dd8e9dab8f1ae68c59fa32b34d6edba947c200e37",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch69.pt",
+      "sha256": "8ee67868fccb9dc17f06df60cb904ed646f2a6e86a8a30e727184f885671cf92",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch70.pt",
+      "sha256": "76e90f298b54036a98d922136f50b6e74ede3fba0a599e9796fea8295aa5d065",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch71.pt",
+      "sha256": "e2d85f1d96ff6abd3703746602aa3268f7fe9e082e453e09bebc097aec006db4",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch72.pt",
+      "sha256": "7549788471af0fa7d512cea3f992d6f3bf51f6b561152fb56c655694a948e0d1",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch73.pt",
+      "sha256": "6931d58beedd123f658aa2b8e02abfa04006a53b96ff6bd9cb5022a425c01c40",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch74.pt",
+      "sha256": "829cb6c11badac28e5fb877f8247b558df62ccdc332ada9cae118d12ffd55187",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch75.pt",
+      "sha256": "5d23bd69c8404b3989a52a41b116eb249d381cee51d79d8e1eb044be74fb961b",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch76.pt",
+      "sha256": "27b962a0d5474c3484bcaeafbb974b76076ffb5e3c140a1995bd758fef01d90c",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch77.pt",
+      "sha256": "0258d6daf47dde78a352fd6117803f0d2b2e441f42da5e9ff6b983c62c1e7443",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch78.pt",
+      "sha256": "a18a4629516e27ae83dd342e7be4c38fe9d35f050ea3c14d996793597db979f5",
+      "bytes": 1577121,
+      "payload_key": null
+    },
+    {
+      "path": "private_run/inputs/batch79.pt",
+      "sha256": "3cd89e7f64e4ad9fef7b4bd38d48a2711e8ea90714bbcdd1dca211e0797a0803",
+      "bytes": 199073,
+      "payload_key": null
+    }
+  ],
+  "logit_packets": {
+    "pre": [
+      {
+        "path": "private_run/logits/pre/batch01.pt",
+        "sha256": "e6b6923eb695128b95014fec78dae499f41618496ddab55c10920f3c9d547fb6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch02.pt",
+        "sha256": "ae0c718da985e9b702c18fc88cbf543060c968380fa7c7daf91b511ed8f2a860",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch03.pt",
+        "sha256": "3f16b7f20e16f89b094cdb6c6e93cdcf3c87719703970feee7f910338877b363",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch04.pt",
+        "sha256": "c25ff09e11494483181593459028295e6ba1cb6d6d21d7914493d2e31cf2cb5f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch05.pt",
+        "sha256": "63a65ff226503d8b665da80d5f11724bf4cb64d33a4bcb8f41c93407facc3152",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch06.pt",
+        "sha256": "a167139e26f4e87e631cb0f2b6a7c0d43ba55c38c26e5de257d75c01e783b2d0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch07.pt",
+        "sha256": "d23aba7c439db9e6723ce8f9920507bd432967cf7e0ddbce3260c696687c664c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch08.pt",
+        "sha256": "6ed6d303702de7b8fa70cb685e51ca6fbbaf5b3e22fab1d668b6741410f63951",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch09.pt",
+        "sha256": "3ad9c86dee1b6ac6ca322c74b46d9b93c7bd6b741c18160e4eea8bbc12a0ae29",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch10.pt",
+        "sha256": "faaf6e68756d2a76215631bfe5ebc512f6dd1b86899ff6cf380908f1da6d64a3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch11.pt",
+        "sha256": "c3e88d7d40908f0203a3af83c6c48aaa7a828761f710fe10e26031c577e0be65",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch12.pt",
+        "sha256": "4484e97656cee4fdb27c76fc27c3b367ae80b3762ea9313bdaab3f238b8461a3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch13.pt",
+        "sha256": "12e27cb1fa99fe96600b1f14b1a78c29232ab5ae06a14aef2383615dfdd83ac7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch14.pt",
+        "sha256": "5c916e120d5b9b4ab9bf7ebce0a956759b3e2afdf751e026e14ba603af5e9a87",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch15.pt",
+        "sha256": "4accbf47a4932d50d16338bb4b4bc3b6d517795965379af4777ceece6b903623",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch16.pt",
+        "sha256": "0ec08abcafc3615083d0e306f19235c77f69e57d35649df7b39ef17181ff0c51",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch17.pt",
+        "sha256": "be53b908880606ddd2ec648ec7282bff20c56e4e1fa68e66d86f439fd13f79b1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch18.pt",
+        "sha256": "c6e925bd5df89bc5f314095ccd5d0e1bf356bc30cb418d74314d052441cf69c7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch19.pt",
+        "sha256": "e6670629133add9b7a6ea7b7b4f4300152fb738b3a2006b077c3fa51b1eeebc7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch20.pt",
+        "sha256": "c407782adc8490c207de373ff199a15131f23c42ab2eac16f0b1859a9403fc9e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch21.pt",
+        "sha256": "89a0e9753fe082c79876e3d6d3a847a2f40413771b31af2fd51594f14b085363",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch22.pt",
+        "sha256": "a8cccd1601a7aa0ecfd463e8e958b2f253ce379c18a36b5ed5e1f15404d38fb1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch23.pt",
+        "sha256": "f356cfd8a6b05cfccdc4d071b86c9a9c5f1b48e7e2703105ecf76031225bca30",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch24.pt",
+        "sha256": "d2f2d672200fb7cdf93c88926d60d13302016e36350067f0509dced7321887c2",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch25.pt",
+        "sha256": "956b76acd73c089085d786d587406254746fe99c0a32acde25538e94ecc505b2",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch26.pt",
+        "sha256": "a37ab299acd0c5514732a5aa3aa49e7721ef4714677b8e23c2f6b031f590bdc0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch27.pt",
+        "sha256": "aa07a133c4bdf044785ac1ecf4dc31b2921628ea91c049acba65e634c6cb3d88",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch28.pt",
+        "sha256": "fb0591e0e5186d7c95f6007592f5fe93376d61f2949f3078a196e5fa0b6eb592",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch29.pt",
+        "sha256": "ffff9a7df13f150396062efd20a067e87c4014d138d01bdbb3d15ac994834ab5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch30.pt",
+        "sha256": "fc4ce58a2a530fb8f4f178b9b0c8f9462c1f71bf329750ab3453bb7e9aef965b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch31.pt",
+        "sha256": "c6967055137d9ad538ffceb891279241163175deb24f13a4c611636a704020ac",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch32.pt",
+        "sha256": "bb7b134f185722a63ecbae84b683fba7104e5519f6254f18718c84baf75b22d3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch33.pt",
+        "sha256": "2b87545c1b218157843b89942ca358fa0cc3707acaa2abefdc2112c9ca2821a9",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch34.pt",
+        "sha256": "a1e8c4218853770fac17548864472f3a4ec72200f38c5c633ac14f508216831d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch35.pt",
+        "sha256": "20997f36398d7d0b6d0d63a7fe67b6aeaf3a09ea584f1e31ba22268fef9e7a3b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch36.pt",
+        "sha256": "bb0345b7d502f18f1eec4b060adb28bf60624aafa13d632a7e658efbe4ca043e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch37.pt",
+        "sha256": "a88a1625a6dd33a5b097163f616a67ccb7d353801df8164dd0b8f022fd24ac8c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch38.pt",
+        "sha256": "624dd64348657ea797b52cd1a04574528bf07c731cb8d4fbf8c98c1c2fbdb948",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch39.pt",
+        "sha256": "654a846f578a35b6b0e3064b3597f645ed4643419b32050209d27389b8446996",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch40.pt",
+        "sha256": "77271541d7bff9800a6eb70768a14b7fc5f3913d5e0b036248423914f4e9a452",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch41.pt",
+        "sha256": "0c059dcfad3d81c8df8653fb027328f957e9d9706bf38faff7a40ef7263a256c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch42.pt",
+        "sha256": "aefdba0c7aa35db47ff3f3dc5585fbefae3a2471383082d66a130d58918e1b16",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch43.pt",
+        "sha256": "84d72f84fe3dfc7f327e3d6f52cd719f8920dbe42c98c422fd686fd7439e35c5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch44.pt",
+        "sha256": "2e86678720d1f1d623ecdf9e7a562677b0f65d06fdbe6ad7f5a0c1918437dfe4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch45.pt",
+        "sha256": "c8cc0ba37f26fa18cebc53b230060dd84ab10bcf0963ce0dd58c84f9f5421192",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch46.pt",
+        "sha256": "d23bc5a5f9045285ac8354c5c517d34949caeabad94d69c64b66ed0adfd79931",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch47.pt",
+        "sha256": "2b444cfb867c9b8e3fcec5e936b1dd0ac09ac569375386065707287437d52ff0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch48.pt",
+        "sha256": "5b832ab560557977e34a1c3bf60a8c98c2f97797c443ecaea94e67023d6985ee",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch49.pt",
+        "sha256": "6af914a2c8edeac37e0c0efe8dd903fd8fe5afe2296e303543acb122a8548fb1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch50.pt",
+        "sha256": "8c6f72473b3ae4ac6f5c427f31a97d930dec25afb1d9ad994c937c70a127920c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch51.pt",
+        "sha256": "60952ea4da13a6c052b07823dab43d56429bbf836c4f430370deaf203bcd1fbf",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch52.pt",
+        "sha256": "a56219f9ea9806d6648a67aa5072221a545570e9816def4d6aac35cb12a4efb4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch53.pt",
+        "sha256": "2a2c4468fc0cfba0c8cad6857333363b93d193eb7ece149f641894becf86ba9a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch54.pt",
+        "sha256": "c00b5ee3bbe45e907b2a229914ddfc29ffa19f2b2eca4ee4060ad449c7753a9d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch55.pt",
+        "sha256": "abb275d220457c8e0f226414861f3d6714194d06691485537fe9082594984297",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch56.pt",
+        "sha256": "d9f7f6ecffcf30ae8cf711e41baaf625ef4386cf6d477296248090d9dc22dcb4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch57.pt",
+        "sha256": "73f145fa99f2599d41a2c57fe29c15e99fe26839ebc94d0e093dd6af24762d7f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch58.pt",
+        "sha256": "4a99c4c821208d77f1ff1a3cf493da01016c0453c67a7bc993bf238fe741ef56",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch59.pt",
+        "sha256": "39efd4fe088cdc8498d3bc9b5b8454481941723a0174a6e8a2171a43cb6f799b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch60.pt",
+        "sha256": "12f72a9ecab0aacdd63ff251f06bf64c9d68da2546f73765ff239ffc9446b482",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch61.pt",
+        "sha256": "eecd7acba133a0868b6e8813b6cd2e3848a0e448b8c2442ad8015f4e42fae64b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch62.pt",
+        "sha256": "53a14e30114c6486372b0fa58a7ebf2f9fc49d1b312d8de677d8fbe9c747167a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch63.pt",
+        "sha256": "6181d1895ad92fb96b99ecf567c6fd033bd7c427508e3b416e2a16171023d50d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch64.pt",
+        "sha256": "23228aa5d8c9ca57208e6c997691579eee86b8aac71ea2d7499e48e2e773baf7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch65.pt",
+        "sha256": "b7b05035f79ed739d821c08aebf221bb96937be305e77c225cfc9631ded59288",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch66.pt",
+        "sha256": "acfc940cce76f5a15dc8affc9df996d44bd4520e41c9a424afd10e695be1a76e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch67.pt",
+        "sha256": "ad118ad1af5a59a06d01182b36b8edddb43020c73224556cb6cbb6cf00e11663",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch68.pt",
+        "sha256": "294e0cac2b86f9fd0a16606214d5b54c261c52ae7190f18585997ccf69dfcc78",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch69.pt",
+        "sha256": "f747f1b4edab9fe6dd83bea1d503b990b94d31bf4aebcd04e7c45e89fb9d8ec6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch70.pt",
+        "sha256": "65db31f0919094f8baabd5820744e89f081e2d5e8f598990d623f626c4c883de",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch71.pt",
+        "sha256": "ec2bb548a1248db4cb0ae717d0e9ddd3df2797244825b36fcd4271f92e7e236b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch72.pt",
+        "sha256": "920796f35f4a1d35b20bd26feb485272204ebe53819bc1155b733fa96ba2ee4a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch73.pt",
+        "sha256": "f9b80e9b892d01e011908531170c55b7fdcb07b30d0bd110908f17ab8d7177a8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch74.pt",
+        "sha256": "811498f11b15689f146c95e6a53ec0de0e33f6572caee9d7de89bf231b44ebd2",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch75.pt",
+        "sha256": "c53a17d4a052ccb5f1bacf26fdc39ca39aa3e6fcbcbd6979dda6f6bc18d2ab3d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch76.pt",
+        "sha256": "d292a7e9a5e9afb58b65fa17792b4793df89df9c804a43a7af63ba31c373507a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch77.pt",
+        "sha256": "6b37769c9c171b17e564d9ec1ca146e4f0fabcd556a838089f0efdd7926a7ee1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch78.pt",
+        "sha256": "c9ea49707c72e5456369a35091991d0985f8eef7315b14164ed61569962c4387",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/pre/batch79.pt",
+        "sha256": "6d1f24c58e484806b41ed3130cb86de80369f56b3aedee8473bf75cd2449a65a",
+        "bytes": 2981,
+        "payload_key": null
+      }
+    ],
+    "benign": [
+      {
+        "path": "private_run/logits/benign/batch01.pt",
+        "sha256": "c02c2fca2c3513bc781bbfee30bc8febbf745aaf935e0208f3b8140060d24e82",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch02.pt",
+        "sha256": "49006ca1b0a1c72e110f7d6a817f78dcd78e2e354a9adfebc99c7169e347118c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch03.pt",
+        "sha256": "cb79cd99118e4281b84fadb871bb153375d32da27efac152d160e3cdc0f594ae",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch04.pt",
+        "sha256": "1020b09dff1ea5aa8ac02aa05669ff9505d08ea545c68edaedb18f766529be64",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch05.pt",
+        "sha256": "de287e324f365d7d0dc4c6f1c5ed25011c57e2ea50c9094f2efc6258828d98f7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch06.pt",
+        "sha256": "e36ecf1f06a722bc1d9192658c4177952e315b55e556f4b682ee3c6986404df1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch07.pt",
+        "sha256": "f2ffb77b7c7d00d02e21ce9ae94996eb26d0f0c31fe28f0f787124a17faba0e4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch08.pt",
+        "sha256": "c262ad9a3524c6cc4ab3cda7d436734338a571fa5afe3baaa19e52c5386ad5f3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch09.pt",
+        "sha256": "4bbdff805b46731d1a4917d8c8ef8606ef44f4eba2dd0e01eec5f10ff73d4886",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch10.pt",
+        "sha256": "b3b7ac36135b33c63a2cfc3973aa5e5219324cb41cbc928a4094bb2de277f0c2",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch11.pt",
+        "sha256": "2728b3811f22ad6f8dab72e4e153e4287c445cc0e84db671810bd97fa4c84508",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch12.pt",
+        "sha256": "c189d3fadc823dc7b069295f31c20de6d73629459057410e45f534962acc8103",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch13.pt",
+        "sha256": "286b7acdec6459d17b606fff20e4454dc524537863dd971bd532bdb5ba259949",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch14.pt",
+        "sha256": "8dd1c41c7305a7db5ee95ddba12c80b33897d4e60caae735d704e9dc313010f8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch15.pt",
+        "sha256": "10d0679c6646cf6b2c1162cf50854c47771a48dfbfbaf0299b79139ddae96894",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch16.pt",
+        "sha256": "b5e74ad5c7d9e30b39910353ae9d2764c4ac3bf0743d310bb5aa35486e9ae57f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch17.pt",
+        "sha256": "597c89695fd753c4a140b63afc2d627f0363ef4b0e1b2cfd0de69c9004b7954d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch18.pt",
+        "sha256": "18523398385c88f53ba4aed250df72ad608c33270431b1410d078e31d7c6727f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch19.pt",
+        "sha256": "8938f00007ad2c73c175c018aaf066b4d75b41ef70c0c9b8809d2c90ff8f8c94",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch20.pt",
+        "sha256": "4f03a49a77943878997890b7a8db0ec2747dff9af61ad4884009bbc337b00349",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch21.pt",
+        "sha256": "6e33ad32a748e122f37870fbc0f4aa02cb1e80a769da7bfc8da59b044e964cde",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch22.pt",
+        "sha256": "a116355aed3c9de1cd0a49156c3debd8f184fb1876610ba87bdedab53030e59f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch23.pt",
+        "sha256": "8364094b27c043ddbad603fccc019f253645ed0860ebd085ee0cba2d4750d156",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch24.pt",
+        "sha256": "4ee3d95112eb234984f2bc3811d4044b6600c9e99841942f8c2c7a502c8116ad",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch25.pt",
+        "sha256": "7cf3b3ffef005798c6f945eca512471fd37d0034b782ccb35aa284fb46ffdd60",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch26.pt",
+        "sha256": "362a81ffacc93e93258641a7df4a162c0c1621210be715da2fbe800fb93fdc34",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch27.pt",
+        "sha256": "8be95fb1099286820fdf076e66d92b773704a6d2cac5bacca96b0639bf9185b7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch28.pt",
+        "sha256": "1a63efa3ff124a6e2cc8e19b050884af1591727988fcf1afd58374c1f4f7c423",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch29.pt",
+        "sha256": "bd2b187d012d91a2f3049c55cc6b3240614211a76be631da428cc8bee8749874",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch30.pt",
+        "sha256": "494bd2209dfba65e482455997473e589c1011d089f3c687a2a0153431533314e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch31.pt",
+        "sha256": "7b129544ac554709b998a99959f6a9601e937fa6dd9eebcb605a70375d636b14",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch32.pt",
+        "sha256": "0296aedfea9e7f4eb29ee3ed0c52c0314c459cdf3a6824678c978215984e2d00",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch33.pt",
+        "sha256": "dfb58a4c8328efacb847a5cc59344fc8c71ec7cfb5a406c864fe1f2962269b77",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch34.pt",
+        "sha256": "1b64eef64a979dbd5e53fc81014b67b545dba958ae4dd21dd31cef14851a6abe",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch35.pt",
+        "sha256": "ac492b7121090689cb81e11c03c41f0857d695fb5b990061c91ce1e334f724a1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch36.pt",
+        "sha256": "990df0dd89cabb1d4536aee4d9d69f0ff84cf000f9bbdd4b92437e583ff013b0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch37.pt",
+        "sha256": "335cb5e3def52bdbca495890aed1d58132203b9a39c656430f5e2218f11eba78",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch38.pt",
+        "sha256": "07ebefdeb1fd087a266483c71c87036a8444f10039cb91171e6f63cb1c93846f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch39.pt",
+        "sha256": "6de9c703f1aa6683bae6d09c61f1edf0a3650da26c0878944815af8ee6d5f1cd",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch40.pt",
+        "sha256": "71f4c389f07af793df6fc75757796e516c31afe3a3326f334901923763afcdcd",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch41.pt",
+        "sha256": "92674c9419874b84f5f01d6c08aa2bc241ea764c4014ce147e5eb3bfdd960db3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch42.pt",
+        "sha256": "d51322ddeea536e3e8865bbb9cc9f9b42c988f315009d43b66f3158497a5568e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch43.pt",
+        "sha256": "4c6db829de4a194e15133ab3fa41b6422594bc9d1d5dcb79a08847aaaa2bf1c5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch44.pt",
+        "sha256": "bb18bffcb589438e9e72b96fb0de06353d4f80fe004086990b1f6bc7c321483d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch45.pt",
+        "sha256": "bda5bc987d2ee0e612625ccb86e3c9a53d4ea7b0a4520a00aad35f1b4e67128c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch46.pt",
+        "sha256": "48f0024386aaa9b816a92fc49395311fcf1e58954ea120e6e3e3c2a79a3de839",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch47.pt",
+        "sha256": "6cd22e946bc0bd73f98f3fbe0c69fa14e9c50741d2d4ac9263a592c5322c3fb3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch48.pt",
+        "sha256": "5ded0553c8e4e227c36de7290fb419f7f5d857601019b88291a25ffb17912551",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch49.pt",
+        "sha256": "2aaf2d10567ee142d24e1e075c0aa43673e81097932c958cacc68659357e17c4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch50.pt",
+        "sha256": "e682ba726a6f06ea156d2d4c6cfe338f8515865a657daff17dc1ad2cacc67955",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch51.pt",
+        "sha256": "b69ae61248d34e980c7c2ee439b4d300689f23a817e3092742a83a255eea87ac",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch52.pt",
+        "sha256": "9749b43a321f559b7abdb43de216b4442e90c469ec10d512489d38255b372105",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch53.pt",
+        "sha256": "8a558b4bf7583c4c57f5d08c633663e824420a88057fb530e7cb3a4dafd1fd34",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch54.pt",
+        "sha256": "5078fce10d9cadbde40e0f637069b33a7130efba1c6a0217b0ba28be0278130c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch55.pt",
+        "sha256": "966a77e942704f5189a7110dced3fb05fa2151e50094dffdf035699af84dd933",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch56.pt",
+        "sha256": "9083efa770bb7e87512cb6fb2ba0de5a5f7e943233b6f07486e51b95a65f05fb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch57.pt",
+        "sha256": "435e693af02e65a423c6a3a9d6aec13bfe449071af8ee76ddf8109c5ca6d7a48",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch58.pt",
+        "sha256": "6c076b3e74db126d12c03318462a2744a13bdda7db07194861ed66e3e85e2130",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch59.pt",
+        "sha256": "471664bb2c2da4c53010c446a9097e26d4f943625db9cb11664b09a247c3e7e4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch60.pt",
+        "sha256": "b4375cbc3f2816aa2fd4e7c19eee5c6d4d8c317aff6b8439da12c38a4ca6fdc8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch61.pt",
+        "sha256": "b8f9adb6419bf0397c7e8d0ea9ddf37774fbd3103dfd7e2ab3b39bf1ac6b285f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch62.pt",
+        "sha256": "09c3aa1e62b97b0fb0200bc72872ea3371c08deebae7ea3b79e3709bb5a575c4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch63.pt",
+        "sha256": "216dfe7e7181b1803281aa6ea2af59fd2ef68a9b396649b5406fc3ee7059ccfc",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch64.pt",
+        "sha256": "98b1c3e545dec78b145348b59661a796f4c1e9623730009c817532e26be15566",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch65.pt",
+        "sha256": "ba2286d3e0db2bc6ce826a84fb2eb89cfa7d14fe5e48099d33e25c050a462eab",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch66.pt",
+        "sha256": "929ace22cc504d076577016c273da676423c7e642614d8b7fa3d8e9225734878",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch67.pt",
+        "sha256": "b4eb8a231394052caa8b9ecda9cfbac27a54a1a5a0c6017998ffc4827f24e64d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch68.pt",
+        "sha256": "2d554f295505cf781a78e9d08bf570b73801ecf20871eda306301c65e5fab6cc",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch69.pt",
+        "sha256": "50e934eddd8aafe442a5a8d46841329cc6865b122e552389033d8f99f6740f3d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch70.pt",
+        "sha256": "656da119ff5366436dbf814d21c1266e2e02cbcfee8099cbe8fbf9edc4528d10",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch71.pt",
+        "sha256": "489a1a991db24d2918f181d40a5f0dad396b9a6ef972b192c2fb1c5eeba2d24d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch72.pt",
+        "sha256": "c2b0881bf841c89264b465e6148d579e150964024c3e11262a05a3170390d97b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch73.pt",
+        "sha256": "728f7c095cea6abe4d91de5aea9a795eddd697a5c81e42e43d670941fcedbec1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch74.pt",
+        "sha256": "b236a654c322fb9cbd656329a6dbd7c62e6f2cb43dfc38178997861bd5d28114",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch75.pt",
+        "sha256": "33641fe2b64324e583fc89857913d77cfe568d96ef41a2772894e0bb094869ce",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch76.pt",
+        "sha256": "22b402fa78167099500e6f749665a9beaafa4c350f75695bea21cc0a9596dbd6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch77.pt",
+        "sha256": "700dccd7ef922fef6fd0563e05513b654e0fd462e441adc4a11749161abf26a3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch78.pt",
+        "sha256": "b155419b985e36fba5129fb9458fd8fa1b44f771730bcf949394ef9af485e6b8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/benign/batch79.pt",
+        "sha256": "d630ba210de43043be0775c46ab3e2ddefb601939837c0be5237d3e70dc8c30b",
+        "bytes": 2981,
+        "payload_key": null
+      }
+    ],
+    "minus_attack": [
+      {
+        "path": "private_run/logits/minus_attack/batch01.pt",
+        "sha256": "d6f83c705706d470c738bb467e6ab12813e82789f784cf35f21b8b55c33b227a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch02.pt",
+        "sha256": "3f1c385309f521156ae2e23c86d5c741179b8f76f180e5bb3111d2b10143bbbe",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch03.pt",
+        "sha256": "6eb74ae7e0f735c5056f4fdac0bf36433f5d1195350602a240846bfa1272bbaa",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch04.pt",
+        "sha256": "336a786eb8a48949591baf2da4fa014fa8d024c3efb8d28e8bf9e8c72814742a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch05.pt",
+        "sha256": "c1a6d9eac021876aaf9ea884c79ae791b4eaa03b843991d097f704cf5134d274",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch06.pt",
+        "sha256": "adb38e0855d0e7d6edbf6cf435756af61e31473034a7469b854dd391171345cc",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch07.pt",
+        "sha256": "8e8bf2a0554e41b69fb9b53ac1b6f83bf2c882b24ed1c5d01761aec748cdd5ff",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch08.pt",
+        "sha256": "070445f5ef7e5c7e1c66c994346b7cae7c4c6475ff854df6b3edfe83c5c0bcf6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch09.pt",
+        "sha256": "8e7b80acc4b683d5c809b5a2af2fb818ecea9ccfe75f40e8ec83b27958fc1666",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch10.pt",
+        "sha256": "093f889c923b3a5c49d3f97eb9ceee8c515e0c4ce4c5bc95f93c550670456ba0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch11.pt",
+        "sha256": "5dfb35f0a08bccad45d282da0077d8008c86a92ba555f58a1325d04cb98ddbd1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch12.pt",
+        "sha256": "01c0f8098cba6a8ebc06dbeba2bba870fc864f753dbcafd8570bb5408b1aae91",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch13.pt",
+        "sha256": "55fcb927842405ac8b4222b2e236dd274cd6593a54c506c81726ea6f71d3cd1f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch14.pt",
+        "sha256": "a16d5797c84c49640772f18fa2fe51151351042d02a88f108a5f1e39a94dc152",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch15.pt",
+        "sha256": "12288ad130b5970ce16f74192343927b847d1f5e24237dfaa4aedb90abc13aa4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch16.pt",
+        "sha256": "4b09f6c6511d5331125800b79652096f7c8b5829430237f28c6408b86569d32b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch17.pt",
+        "sha256": "21fc1a5db03f81903fa115d55d45f02f66793f6b8162a6584ba6b1971578f830",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch18.pt",
+        "sha256": "4c38f6f2f2132c1e13a3f40b040a6f1ca8e42a638e532bccf55b61b2e8a734a8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch19.pt",
+        "sha256": "7b8ee8fb02650c418c6f94d7e631db408ab0f6d875ad3f677b9e9c906d20003d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch20.pt",
+        "sha256": "777131beeab98145396e3aeb936ad8c2adadb061096152fb4e039e4ad436f834",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch21.pt",
+        "sha256": "89898c27877b249da9af9b41ffb25fc465af24f225699336153d3c5766e83635",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch22.pt",
+        "sha256": "50856581371361bf532d51ca3479e30a08666156108912ee6d915ee2a6e457e5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch23.pt",
+        "sha256": "76eef863fc23766a7b7981f1da8c20567537e0f9f9d49e54d096d9f8f7bcb1d1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch24.pt",
+        "sha256": "22d504a86fb98b082c745ab856651878c287a2a95505a8e50075a208876359a8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch25.pt",
+        "sha256": "1259c2b6d48c00d9a41b9fb0385349b4bb0061456fce907a87490375f1bd78de",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch26.pt",
+        "sha256": "4acd3292cd0b47bd4de842e45cb6e0b0ccb1e9e8f9c58ad0bcabcee96eac2e9a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch27.pt",
+        "sha256": "da0d70a135f45876b0b622d88efdaa6ee422262d2b55ef371aee1b37295f220c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch28.pt",
+        "sha256": "0dcb1b8561cb738bdc3393abb5178d9402e76a8b857e1d1628d4d7585f31752a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch29.pt",
+        "sha256": "e3a50b3186eeb354309109023feb09ef5250c11a14fe03c03b0d0cc971e2d660",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch30.pt",
+        "sha256": "a800392d2a01db74eba2b456b32170f9d7bd28a65c394d09d8e1911658077fe8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch31.pt",
+        "sha256": "0701e243efc43417f28bc8b3640e10774b098c83e10c1d2571521dd57f7a17f4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch32.pt",
+        "sha256": "c8cce73e0331a3b0f51be0f6d460c5e0bd3ab0eb42f95f50ce3d429857c5fb60",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch33.pt",
+        "sha256": "ec3f724b9bf0319db773135f663e0e388bacd4c3fec671c5c6dbcddbdf8066a8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch34.pt",
+        "sha256": "eafefbeb690285584b19356da364455361c9d7e8d9bc03d94b200fc1ef72990b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch35.pt",
+        "sha256": "60a0db3accd1d7154fd78df4e6a6e0e4b62eb9cb723c7d4353c62cf05966ea38",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch36.pt",
+        "sha256": "8fd0b8883c196552470c41311181cfed3e6ced9d5bbed673d1d656170d64f100",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch37.pt",
+        "sha256": "160da505a3505b305bbb955aa909d2ddc5143248f0fe92e178953283789e73e7",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch38.pt",
+        "sha256": "d82c1d426bb5a2f3fe7ae678c59b52004dbbb7aad0e3f4b55b26850904cca26e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch39.pt",
+        "sha256": "aa425f760f8add765f4003a7aa54b93b246029d2757bb24b72482133a7c2e6a0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch40.pt",
+        "sha256": "5d517995577a586aacfd32f895a8c264d27e7028c031dd2e9f37f002ebf95ef0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch41.pt",
+        "sha256": "8b3c10ee8a0d403fb209b7e39e2069a94b6cdfbdbb4c367317a1cbf92f34d00f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch42.pt",
+        "sha256": "76de5e80cc04211a199273316c18732a2da81e8a218f0a7b7149af7a8004f44d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch43.pt",
+        "sha256": "624db143ca4fdd24dc5f952e8645e341c08f678dd4fc4b7c885418e93e33ca42",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch44.pt",
+        "sha256": "87860c3b8ae212125ae929bb5eda05f848d77cafa6e9a545a84a64c6311df7af",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch45.pt",
+        "sha256": "f397ce1e9d147bd03197b8822fec3056571256a589d2099a1fc62479d522b940",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch46.pt",
+        "sha256": "8dda53da9161d0dddab5212be3cd3d0fbcd725f0fe12ad20c49ed8c9d407ae61",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch47.pt",
+        "sha256": "57a5e813b82a8ec62f76ca69e413e7f46889aaffc8cfdd6fe0e29d5d42d10e3f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch48.pt",
+        "sha256": "41cf9839fcf0af904cd2a30690639eb97bbdb2fbb259e8409bd190c09d07ef71",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch49.pt",
+        "sha256": "40fd2beb0d841b70edf605ac799ccf5e1ccb7f2310fd871443f0d4b678d95482",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch50.pt",
+        "sha256": "353b4a27011b8f46e24f86e0dcb3d415326ca85a5e4a49a8137c686a984b23ac",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch51.pt",
+        "sha256": "41afd1c3f0d93a2cf103076e923d1e0a4e46542694d51d93311c9f06406c7be9",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch52.pt",
+        "sha256": "91514ff779e589a37f65ef92c0e71216a8ecb69c9cb5e642342b8ce48e00eac9",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch53.pt",
+        "sha256": "89fca29c0856829ca1d744c8dd294fb8c481be0c087e3511528743ad6abda2a0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch54.pt",
+        "sha256": "02f69f63fe3a98bbe21eb4c0d7071371622253093466441e8220083f9457b74c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch55.pt",
+        "sha256": "7a0b3c0133771f2ffdfc47f8a77f4a9e40b2ced4ca0c0ad5e3f26013a779cffb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch56.pt",
+        "sha256": "62d7cd88ce56b8fff29c3b1a3fff2f465793e4e751d0c46a0105a135605e8421",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch57.pt",
+        "sha256": "4b0d49246564df5583ca7dd1c41f1656c0db679d093605d4f0d58aab0bdb7553",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch58.pt",
+        "sha256": "1ec12a8fd1d86565e1c570918ac2ccb16d7008df7be0860f7775b2cb5f556528",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch59.pt",
+        "sha256": "d313854074694d72adcab0ae8e66882b2cb57ffbbf0cc9667b76a4e468b4277b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch60.pt",
+        "sha256": "b8b3ee989504d4f6b1715b37a172e5031762511d2dfca4f27a1ca9e939b4269c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch61.pt",
+        "sha256": "65e0a010669948f63daf62c724dc1d08bbd419922c157cf73cddc6ea696f0c07",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch62.pt",
+        "sha256": "fb798259c016ff835e7b16b4cac58c4d1711f302964b51fa2f7cead9956954cf",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch63.pt",
+        "sha256": "ee2354398add6791948e4a65eff3d552af1d90896166fcbc1c9c93b3aa3d4682",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch64.pt",
+        "sha256": "fd309eb2fc9e6b1779edcc827caa840eff5ef388a304d2749815dbef9a7452fb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch65.pt",
+        "sha256": "0e8a72c3c2c77d34a31596e7feefc268fd5aee8684eea4c64af8e6dd9e66dadd",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch66.pt",
+        "sha256": "950383f5f935971fd14a5370296211b6278199381dd2ce5ec24e3ca0586ad8ac",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch67.pt",
+        "sha256": "0483bdf8d5e4e96299e24aef02e0970ee339cfb832000cf73fc6265b4a59f111",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch68.pt",
+        "sha256": "40f20cf54ebd07a89547f715091539211a453b2840f4c179e4646ac43c5a61ae",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch69.pt",
+        "sha256": "1176725f8993f1ac0c2d01797157976a50e017cb58ae736537ab196549f93faf",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch70.pt",
+        "sha256": "c14f28ad92fd383ccc87c95450e097c7e518dbc0f50b0f12e47c7bb81342c184",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch71.pt",
+        "sha256": "246dcd61ca6d43889c8b850370ed561c5d14961f12cd3f738a30677352508cef",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch72.pt",
+        "sha256": "e2196fbe790066865f57af3cba22b62012fc28980413bc6199a43c6703742211",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch73.pt",
+        "sha256": "2cc4ba22b853d776b600f781df04191a19cc14309ca3a058aa87e50cf0aa43e4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch74.pt",
+        "sha256": "b7398753d2d136242ce01ffdb628a9b25b6c7dcac8233a5eff16496306ca503f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch75.pt",
+        "sha256": "67ada9bcb171900d713bd26bd2066973556b9b621f7aca210cb4fd5c61c21944",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch76.pt",
+        "sha256": "3d112f027707abd85554553529654729fc25ab5dc481d07f08bd10962526cd3a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch77.pt",
+        "sha256": "4def18b83a320b66ba9c6419af6413fe3fa744b32332dfcaa0556beaa5710719",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch78.pt",
+        "sha256": "284acc4ffda56806cca4046aab9ed49228e520bc99d4d8982d7105c031768967",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/minus_attack/batch79.pt",
+        "sha256": "22830730a003ff4e792806076031d12a8318dbc7f85d04d42b440bcf27b02c99",
+        "bytes": 2981,
+        "payload_key": null
+      }
+    ],
+    "plus_attack": [
+      {
+        "path": "private_run/logits/plus_attack/batch01.pt",
+        "sha256": "4f867b374a7b9c128e59fef0e82bc331b38278f6292e3c27afdb39fdc7f03fa1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch02.pt",
+        "sha256": "37b852d88ab3c784ee1b1b0f24008f79706e9c1d42adbb6c851bcca4758bc390",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch03.pt",
+        "sha256": "f85f8927e918a00d9ea323777577d877f2835e47f96b889405f7c1ee38a05115",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch04.pt",
+        "sha256": "e75d0da0211ea5ccad0b28f68dade1b758d1a7aab892937322ef7b43a65c4b6a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch05.pt",
+        "sha256": "24178009f063271f1d1798b659ec3e6e638edf7fd8fa71da276bafaf5d9a63eb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch06.pt",
+        "sha256": "c8c913b4b1e1b4bc5f82132c5d34eb34e423c93e67f545a76541df04cb3dfef0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch07.pt",
+        "sha256": "83bebd93010ea328ed37ebb0ee604883036d95cc0a14eb3d8dde2f5a979950f5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch08.pt",
+        "sha256": "d4a706d59f3b779676ff2a6d371278e7008e881db6c9091e0cc1b6e08129c850",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch09.pt",
+        "sha256": "c5bd4eaf4f5169df60f805256b3d5384dc1086335f39d3c8dae95fa251c25b04",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch10.pt",
+        "sha256": "ebb48dfe32e501c84e540cbebe920002f9c69c71ba8f739d4dedb7a9c7cc3740",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch11.pt",
+        "sha256": "5a24e4611fa012f55f189b48584e6a3b372a13803b1ff1c4e330e30be6c90191",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch12.pt",
+        "sha256": "8536538f84a5d285bd5acbaf33bcea35008196e36810900f222f03e8d7d1419f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch13.pt",
+        "sha256": "cad185febc17392af51f23b6cd414a5e9fa4fd3e87afbd49b90d9394106ad1f0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch14.pt",
+        "sha256": "631697006c8e693c402efce57dcee9d686ad9e0d453bac43f5c732432743e60a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch15.pt",
+        "sha256": "4c78055146fc2c2dd26ad2b088825b95ceb3f0422f2eb45e1d0b1e646a2d06b8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch16.pt",
+        "sha256": "8c403130050f83cbc6bb7db966aad63406efab0f1340f33ac1989c66e96b1e2b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch17.pt",
+        "sha256": "197b5f4d199458adb8213773e81e2166dd416892f0aeba9a903ba90cc6ac9db0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch18.pt",
+        "sha256": "2d9e208346ff8602e941612e6edcdd42afd09ec706b10a6b93e4464720c2a24e",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch19.pt",
+        "sha256": "13e0844c90897d56b4eab4cf7304f79cb6f664cc756ca6a5d7d4a9cb25ed5379",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch20.pt",
+        "sha256": "7bf3ef6618d843f8e3b7e00c364e463c2d193635ea34b6124bf105cf4c5c7792",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch21.pt",
+        "sha256": "bcb417bf82164a36bddb1ff95bd7461e7ab93ced8af73c4dd47180955f93b9a4",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch22.pt",
+        "sha256": "e00b8aa5f81d87c43673b9698126f57550185c218783861df6fa7b38318820fa",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch23.pt",
+        "sha256": "1d70b93245173cd29d7fbd0c0f11f8804e39ff73fe789d84042b26c3b505ddda",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch24.pt",
+        "sha256": "069cbcf7a081647d18f93bc2fe175106f6d4553b712c6340dbe8752e7d80de88",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch25.pt",
+        "sha256": "2f08fbe7ffedd1d51fbd7f541b2cfe8eb9001befa22243693bd83ad5a98a8903",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch26.pt",
+        "sha256": "a01f78b9a71d18c7f23e48d12c7dd895a2154d28f5330cdeb987b24410842e94",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch27.pt",
+        "sha256": "a40fa8edfc32c3730932ee3e3d506d24f2c70c86423f7856db65436975f1c412",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch28.pt",
+        "sha256": "3b4dd36393d3ad09667d81a0af439badf71595db67db93f44cada3e092f9abc9",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch29.pt",
+        "sha256": "eb06ed9ad37b797c51cb90d89e038412844ad24e9bded2f0da56b6f19632f5f6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch30.pt",
+        "sha256": "15d0cc09b4a3c73f5c5b75b55ff3397bea0eb157c00320ef6edbfd065ee38a0c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch31.pt",
+        "sha256": "e1e209ae10916ff5e64d6f721641956ae16b53d1506745c4e9d431fc26593f11",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch32.pt",
+        "sha256": "8fa5f490a871c0a25ea5c21f6e909d5934e20cee09b1efe7ca3bf13258f079cd",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch33.pt",
+        "sha256": "f69a92696f6fa168c5b7b3b9474e0a8df8f0693e0833c06e20995626d4fbcfdb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch34.pt",
+        "sha256": "6908eb0211cda04ee98c906a8b866a65d94897e4ee90ce1e897a30f1545b258f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch35.pt",
+        "sha256": "dd27fed02a87f99793fda64f1ffe5e64237431b5bfd8953e5799fd655f570872",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch36.pt",
+        "sha256": "c1b150720eda436148cfaefbadb0df7f16797c67fe8418593bd2a11c3ea00911",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch37.pt",
+        "sha256": "5d9d7773845b536c98a41ab58a3f233d5a91743dc57f1fc31325a989e9dd15e5",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch38.pt",
+        "sha256": "e6a1a98b5119328b466596fd8801859d1ed78d9858bd43c3a861d734075e7db3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch39.pt",
+        "sha256": "25cee9060cf7793fbe98ad2274ec7c52fc7717ee89e1a2053d869f450abdcf9a",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch40.pt",
+        "sha256": "91df58a9a9ddfab2fdc76673eafc3282469c3b5476e28423d9adddbbc0b203a0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch41.pt",
+        "sha256": "3ed473857e101632dacf3a15695486b85399ccfd0815ddce8c5116757ec8e219",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch42.pt",
+        "sha256": "b54ba4e1f6739b3ba8bf23452dd32ccda3535658b438c57b80b50f900e48cab3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch43.pt",
+        "sha256": "96bfe7b103db78adf515aa571e9c5f65618b611e434dc245e4491716df40a38b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch44.pt",
+        "sha256": "c882cf88129d9de408f2501ed7790280c1eb123f83353ab7e182881a92953e57",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch45.pt",
+        "sha256": "c9fd94aac375168188979d9c8e0a7918c3aae79457e459a140074dd13e121511",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch46.pt",
+        "sha256": "33590a86e169de25f6ec7d0e20fc83f1772e69460697513d07a59df308ad97c8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch47.pt",
+        "sha256": "04c47f6f84f45f30f40b0782d32b26bc964b8c4cd5a3d5b99e9e2b16ae36f8fc",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch48.pt",
+        "sha256": "c121b9a75e211aedbe834232daa460d1704eb976f2a8d1da3fcc49b794c6825b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch49.pt",
+        "sha256": "79d7e1f11f0c308d1c9f69c3958ec1ea639e9b069e87a05bdb41935685c2208f",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch50.pt",
+        "sha256": "0814ae4ba4a349d66541af22352ac1e18cbb581b1a948bd4e3ab33eba632d680",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch51.pt",
+        "sha256": "d74860af01f90621d1c907548ab1542408c84ee736607270cf59aa523e2bd0fb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch52.pt",
+        "sha256": "23c69c30404bef8076d6a521a986682526e0a3fd74ced6ae1ea0c6aa6675f821",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch53.pt",
+        "sha256": "9608f835aaa4dc05e7ca05f0ad9858cf03c7d377a610e6150a036f1c4ab276bf",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch54.pt",
+        "sha256": "2c8900e0e2557bb4a71954befc61a4f70216fbb949d2c46d29d3e72dadbf211c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch55.pt",
+        "sha256": "3ed7f35d7bcf96d908b41feb5a1dca4eb1b68704e7eee8b219ce37b9e1394341",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch56.pt",
+        "sha256": "a0d21086ac0cbb7816c14a932836e034df153f69cf4f7539f1656d253e43aaf3",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch57.pt",
+        "sha256": "37ab9338f85f5fb4160f12bb25cdee9378ca64a3f4d370a49cc640f6112d4907",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch58.pt",
+        "sha256": "47604eb32668f989ec13061b1c946fc30d3d7311f81a25310fa14dcc662e0d2d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch59.pt",
+        "sha256": "0227084a9951d5772213f1bacce7f9d0577a636118b8e23c8766dca72fb7890d",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch60.pt",
+        "sha256": "b8b57ae8eaa4bad0317e48c6d2ea1dba9556039d2cc28d844f26428cc688d2cb",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch61.pt",
+        "sha256": "4a9b498bb9b888e72a95edf841b9937e5064d20684788c245d6c3b508415f976",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch62.pt",
+        "sha256": "64f8d70a8c9ff6f68c1eedf9ab3a9d5d47bbfd4a3d6d11ef90d5f2524ad4e57b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch63.pt",
+        "sha256": "8dad326904c0cdc81281e43419602db465e7665a61f40a7bca3e38c1211f9c86",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch64.pt",
+        "sha256": "2dc4e528c0482f50ef68a49036c183366b926ceaa51b37b4fdd64bdf320fa7e0",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch65.pt",
+        "sha256": "c4bb56a05f98d5f72c2fd3428441494cebb62cd7cfe417e0a311af0046d5b05b",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch66.pt",
+        "sha256": "5fda5dccc71676b305b4e32d4d584858fe80f0e9369b4a3d4ce86b24e28ad444",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch67.pt",
+        "sha256": "c6d77fe376ee98f3288c3dcb27a1e8a2805f8a19a1f96c085e9c9a1d2923e2ed",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch68.pt",
+        "sha256": "b008c28f55ef3f8fc0301a92034db9233f2595f6d7138e71dfaaf5200e3f6984",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch69.pt",
+        "sha256": "fd4a8cc188b21bb66b4cb5593f2010b1f15b1c0b2659c722e87f24393d04cdc1",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch70.pt",
+        "sha256": "109662b7a51b24f92254dfabc54340722486082c21350d5b994786cd29af76d6",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch71.pt",
+        "sha256": "a2ac6f6f2bf7ced513447b24d8372c8f4bdc5a44be59fe3c47c08bc37dbf6282",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch72.pt",
+        "sha256": "7128c0fa398156858f6ea711c072586fcac1958e0e426f35a84dec9b22ff6152",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch73.pt",
+        "sha256": "d9547a79d6cac5c92ce14dafbace8d19ac6cd8e5fad7f164185ce6456c9b6b33",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch74.pt",
+        "sha256": "4e005f46354c5793706624b90e0c56d7d5176450c6e1721e6bfa06efb07fdb22",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch75.pt",
+        "sha256": "e6e7f0ec4631936f466c156dffdbfe82608bebe0e0c596a31f4a3d58d2538d2c",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch76.pt",
+        "sha256": "1538debf00dd3db5f9e4fba9f0b8b9c9f3b8abb3fa83c2569977f0cd0de343ff",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch77.pt",
+        "sha256": "e94b7e998c3a3cec2abd0e750429fc420499d7ae48212f073628cfc3764d21b8",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch78.pt",
+        "sha256": "0903ee9e1c7dafd6ec73f5bf8c48571dab852c58c335b35d555043fa711fbc88",
+        "bytes": 8357,
+        "payload_key": null
+      },
+      {
+        "path": "private_run/logits/plus_attack/batch79.pt",
+        "sha256": "5612dbf27bc72f2a221317a05a39d66bd626f5ac2aec30f63cab8469d9373765",
+        "bytes": 2981,
+        "payload_key": null
+      }
+    ]
+  },
+  "actual_forward_calls": 316,
+  "actual_sample_forwards": 40000,
+  "clean_forward_calls": 0,
+  "positive_forward_calls": 0,
+  "alignment_rule_passed": true,
+  "diagnostic_negative_gates": {
+    "minus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    },
+    "plus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    }
+  },
+  "original_standard_minus_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -6.322222222222222,
+    "attack_minus_benign_ASR_pp": -2.8444444444444446,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 0.84
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "original_standard_plus_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "standard_failure_replaced": false,
+  "paper_sign_ambiguity_resolved_as_author_intent": false,
+  "new_checkpoint_selected": false,
+  "overall_goal_complete": false,
+  "case_selection_sha256": "9729e2ab60690f366c2e5db70940b87fa5389750e75818dda8eb3a60c6cd736b",
+  "test_file_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "torch_version": "2.7.1+cu118",
+  "device": "NVIDIA GeForce RTX 3080"
+}

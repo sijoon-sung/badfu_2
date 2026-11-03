@@ -1,0 +1,61 @@
+{
+  "observed_utc": "2026-11-02T16:46:05.6985864Z",
+  "task": {
+    "state": "Ready",
+    "last_result": 0,
+    "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "arguments": "-B -u D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103/export_clean_review.py",
+    "working_directory": "D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103",
+    "user": "DISLAB",
+    "logon_type": "S4U",
+    "run_level": "Limited"
+  },
+  "processes": [],
+  "receipts": {
+    "TASK_ONCE.json": {
+      "state": "first_new_targetclass_pair_controller_launch"
+    },
+    "LAUNCH_FAILURE.json": null,
+    "CLEAN_EXPORT_ONCE.json": {
+      "pid": 3144,
+      "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+    },
+    "CLEAN_EXPORT_FAILURE.json": null,
+    "CLEAN_REVIEW_DELIVERY_REMOTE.json": {
+      "state": "exported_verified_normal_review",
+      "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+      "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103",
+      "archive_path": "D:\\FEDUBA_FIXED10_CLEAN_DELIVERY_20261103\\CLEAN_REVIEW_DELIVERY.zip",
+      "archive_sha256": "8b976c6ffdc51a3117dadd6f97c4e79d0c366156d163a4c077c71698076f4b15",
+      "archive_bytes": 165932820,
+      "manifest_sha256": "35087cb2487449a5d7c53c67e3233c2b1989f93eb39192aba0ce32ffc46b5ff4",
+      "seal_sha256": "5ba8ddb2a13e496b9945726415de62673a9b1e2f3df817a987702ad8d90472b1",
+      "payload_file_count": 71,
+      "packet_total_files": 73,
+      "tensor_payload_count": 3,
+      "guard": {
+        "state": "passed",
+        "verified_payload_files": 71,
+        "all_readonly": true
+      },
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103\\run\\before.pt",
+        "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+        "payload_key": null
+      },
+      "local_delivery_complete": false,
+      "catalogue_registered": false,
+      "FedUBA_attack_completed": false
+    },
+    "REGISTRATION_FAILURE.json": null
+  },
+  "registered_summary": {
+    "state": "registered_diagnostic_only",
+    "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+    "host_label": "dislab",
+    "old_case_count": 24,
+    "new_case_count": 25,
+    "catalogue_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+    "all_old_cases_defaults_and_audits_preserved": true
+  }
+}

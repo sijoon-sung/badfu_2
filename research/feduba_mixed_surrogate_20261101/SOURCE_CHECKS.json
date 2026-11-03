@@ -1,0 +1,27 @@
+{
+  "state": "passed_source_and_metadata_only",
+  "utc": "2026-10-31T16:50:38.459265+00:00",
+  "freeze_sha256": "3ab036a02e1e6a418fbe9e1a3f90e72e98f561aa264f80747af96842bcea7ab3",
+  "Python_AST_files": 8,
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "PowerShell_launcher_AST": "passed",
+  "pinned_initial_data_source_and_receipt_hashes_match": true,
+  "normal_case_diagnostic_guard": true,
+  "mixed_count_batches_tail_contract": {
+    "N": 100200,
+    "batches": 783,
+    "tail": 104
+  },
+  "old_original_GPU_failure_preserved": true,
+  "old_CPU8_rule_rejected_preserved": true,
+  "other_study_processes": [],
+  "new_model_loads": 0,
+  "new_model_forwards": 0,
+  "no_torch_import": true,
+  "completed_fixture_repeated": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "feduba.public_fixed10.newSSS5000.targetclass125.s42.20261103",
+  "launch_enabled": true,
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "new_SSS_samples": 5000,
+  "new_GPU_calls": 80,
+  "new_GPU_sample_forwards": 10000,
+  "CPU_fixed_batch_replay_calls": 4,
+  "CPU_fixed_batch_replay_sample_forwards": 400,
+  "eligible_class": 2,
+  "request_budget": 125,
+  "pre_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+  "delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "no_FU_started_by_this_task": true
+}

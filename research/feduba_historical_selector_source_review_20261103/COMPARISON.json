@@ -1,0 +1,107 @@
+{
+  "state": "historical_selector_candidate_closed_for_paper_forward_only_SSS_adoption",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "source_commit": "43e44163f3e97888f63d4053f5d9110361a185da",
+  "publication_recovery_commit": "c1a0b9189f49ea7589726f984f348290f9115674",
+  "source_freeze_sha256": "b6cad4cd313325e3d785388af0e120b0b20b53a2edb1596c9b781e3a93a9c789",
+  "result_sha256": "92b37a3a3b444f1ba3569481630b7c8e0653e0de5404e9e98d9d92dba7ec3246",
+  "completion_sha256": "415638a12d5d2930456bedca96b1d9b28c07e1128439ef04dc1c18905b92a54e",
+  "paper_required_access": "Only victim logits, two forward calls per sample; Eq5 surrogate gradients are a separate stage.",
+  "historical_call_graph": {
+    "influence_sort_function": [
+      "grad_z",
+      "s_test"
+    ],
+    "s_test": [
+      "calc_loss",
+      "grad_z",
+      "hvp"
+    ],
+    "hvp": [],
+    "grad_z": [
+      "calc_loss"
+    ],
+    "calc_loss": []
+  },
+  "information_access": {
+    "parameter_sites": [
+      {
+        "function": "grad_z",
+        "line": 148,
+        "callee": "model.parameters",
+        "resolved": "model.parameters",
+        "tags": [
+          "model_parameter_access"
+        ]
+      },
+      {
+        "function": "s_test",
+        "line": 90,
+        "callee": "model.parameters",
+        "resolved": "model.parameters",
+        "tags": [
+          "model_parameter_access"
+        ]
+      }
+    ],
+    "gradient_sites": [
+      {
+        "function": "grad_z",
+        "line": 155,
+        "callee": "grad",
+        "resolved": "torch.autograd.grad",
+        "tags": [
+          "gradient_or_Hessian_API"
+        ]
+      },
+      {
+        "function": "hvp",
+        "line": 176,
+        "callee": "grad",
+        "resolved": "torch.autograd.grad",
+        "tags": [
+          "gradient_or_Hessian_API"
+        ]
+      },
+      {
+        "function": "hvp",
+        "line": 184,
+        "callee": "grad",
+        "resolved": "torch.autograd.grad",
+        "tags": [
+          "gradient_or_Hessian_API"
+        ]
+      }
+    ],
+    "loss_site": [
+      {
+        "function": "calc_loss",
+        "line": 125,
+        "callee": "torch.nn.functional.nll_loss",
+        "resolved": "torch.nn.functional.nll_loss",
+        "tags": [
+          "label_loss_API"
+        ]
+      }
+    ]
+  },
+  "manual_static_source_findings": {
+    "entry": "actual archive caller line43 supplies x_test=FL_params.trigger and y_test target from lines40/41, then the full model; it is not an Eq6 per-image two-logit difference.",
+    "HVP_named_helper": "s_test default recursion_depth2500 uses local sample loss and parameters; grad_z/autograd.grad and the HVP-named helper access gradients. The helper also contains p.data.add_ and copy_. This is static presence, not a numerical HVP correctness or runtime mutation test.",
+    "indices": "Entry directly iterates dataloader.dataset[i], then returns ascending argsort of its per-position inner products. These are local dataset positions; do not attribute the separate paper-linked shuffled-loader enumerate bug to this different branch or certify global-ID semantics.",
+    "current_attacker_interface": "Completed actual observe_and_rank accepts query_logits, indexed_loader, delta and device, has exactly two query call sites, inference_mode and no parameter/gradient API. Labels are unused in the score, while target-class eligibility remains a separately declared attack-side selection restriction.",
+    "harness_distinction": "The local query-service runner instantiates/freezes a model to answer queries; backend parameters are not passed to the attacker observer. This source distinction is not new inference or a proof of all threat models."
+  },
+  "same_body_as_prior_known_unused_root": true,
+  "new_numeric_correction_justified": false,
+  "selector_adopted": false,
+  "new_training": 0,
+  "performance_changed": false,
+  "overall_goal_complete": false
+}

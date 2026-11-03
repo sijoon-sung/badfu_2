@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-03T08:24:26.1542087Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 0,
+    "action": "-B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/controller.py",
+    "state": "Ready"
+  },
+  "processes": [],
+  "audits": {
+    "attack": {
+      "batches": 20000,
+      "roles": 200,
+      "rounds": 20,
+      "state": "passed"
+    }
+  },
+  "receipts": {
+    "FU_benign_FAILURE": null,
+    "FU_attack_AUDIT_FAILURE": null,
+    "PAIR_EVAL_AUDIT_STATE": null,
+    "PAIR_EVAL_FAILURE": null,
+    "CONTROLLER_STATE": {
+      "state": "completed",
+      "pid": 8788,
+      "exit_code": 0
+    },
+    "FU_attack_AUDIT_STATE": {
+      "state": "auditing",
+      "pid": 32148,
+      "rounds": 20,
+      "checked_roles": 200,
+      "actual_epochs": 1000,
+      "actual_batches": 20000
+    },
+    "PAIR_EVAL_AUDIT_FAILURE": null,
+    "FU_benign_AUDIT_FAILURE": null,
+    "FU_benign_STATE": null,
+    "EXPORT_FAILURE": null,
+    "FU_attack_FAILURE": null,
+    "PAIR_EVAL_STATE": null,
+    "FU_attack_STATE": {
+      "state": "completed_FU20",
+      "pid": 38692,
+      "rounds": 20,
+      "updated_unix": 1793681879.562233
+    },
+    "CONTROLLER_FAILURE": null,
+    "COMPLETION": {
+      "state": "completed_positive_attack_FU20_and_independent_CPU_only",
+      "result_sha256": "d6d77e03d96b7d3476a3a7f26e745a43af8a63a1499ee4461680baba84be1e98",
+      "verified_sha256": "b0c2ec99aab73d444cea8d02f22b773f3eed7bb66fcf99288150b17c9c02d2ca",
+      "baseline_binding_sha256": "480f64f4e704a7928f6213994e794712d2c807623fcd493247bc8d753fa2685d",
+      "performance_evaluation_complete": false,
+      "remote_review_complete": false,
+      "local_delivery_complete": false,
+      "overall_goal_complete": false
+    },
+    "FU_benign_AUDIT_STATE": null
+  }
+}

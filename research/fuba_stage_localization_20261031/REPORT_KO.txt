@@ -1,0 +1,12 @@
+단계 분리 진단 결과 — R02/D08/D15/N02, 2026-10-31
+
+사전가설은이 고정run에서지지됐다. 실제41기여차감직후 CA98.88 / ASR68.3691557722136 (6171/9026); 같은run의검증된KD10후 CA99.08 / ASR32.35098604032794 (2920/9026). 차감직후CA97/ASR60과KD후CA97/ASR60미만의등록조건을통과했다.
+원래before/after평가기·trainer·KD를재실행하지않고검증된정수수를재사용했다. 새로차감직후와등록된3역할(7/client0,6/client4,100/client1)의저장된단계19상태만DISLAB에서한번평가했다. 모델편집/추가학습은없다.
+
+제한된양성관측을남긴다: 이run은KD전에정상성능98.88과globalDBA ASR68.3692의강한활성화가실제로있었다. 그러나삭제전ASR30.6005로사전억제는여전히실패했고,요청된KD10후도32.3510으로실패다. 이양성일부분을성공한잠복쌍/논문전체재현으로올리지않는다.
+
+100R/client1의incoming은global ASR37.0042지만자신의local패치validationASR은1.8868이었다. 학습embedded는global ASR100/CA96.2였고representative의global ASR25.7700/local1.8868이었다. local패치억제추정과global합집합을구분할새근거이며globalgamma로바꾸면전체FL이성공한다고아직주장하지않는다.
+최초7/client0 embedded CA83.84/정상타깃쏠림17.4607도보존한다. 큰ASR을정상효용과분리하지않는다.
+
+공개distillation.py의originalglobal교사/T30/SGD.01momentum.9/NoT²와현재선언을다시확인했다. 본문/보충의clean무라벨·10KD에맞춘기존정정은보존하며,강한ASR을맞추기위해teacher교체/epoch축소/트리거KD로되돌리지않는다. 그변경은이번관측만으로논문구현정정이라할수없다.
+D08/D15의큰정상nonIID반례는미해결이다. 이진단은공격구현의실패위치를좁혔고새탐지법을검증하지않았다. 다음은local/global gamma동작의제한비교이며전체재학습은그새계약의판정을따른다.

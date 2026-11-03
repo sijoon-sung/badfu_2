@@ -1,0 +1,20 @@
+{
+  "state": "new_attack_only_eval_review_source",
+  "baseline_root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+  "unchanged_files": {
+    "pair_eval_core.py": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "trigger_binding.py": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "PAIR_EVAL_CPU_RESULT.json": "98987c3e71a7326c66214dfb63e2f1075b5680b7802fdb45ad6d5b800d0394b5",
+    "GPU_PREFLIGHT_RESULT.json": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c",
+    "TRIGGER_SOURCE_BINDING.json": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+    "CLEAN_FL_PROFILE.json": "70693581f53c79ff9f7ca23bf2a3914765ae123618a513099cf22c0cb70ccd1d",
+    "CLEAN_FL_READY.json": "788ce2f3d0da0c3daf160b31bc4b969ceb0d71eea090a178933375714dd2b11f"
+  },
+  "primary_and_independent_model_loop_bodies_expected_AST_exact_except_model_iteration_attack_only": true,
+  "new_metadata_binding_and_budget_scope": "explicit pre/benign reuse; new attack20000/158 each",
+  "new_readonly_storage_scope": "3 newly produced models strictCPU/finite/zero1 only; old packet unchanged"
+}

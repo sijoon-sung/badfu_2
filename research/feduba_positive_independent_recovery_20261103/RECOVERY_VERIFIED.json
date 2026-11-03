@@ -1,0 +1,97 @@
+{
+  "state": "passed",
+  "primary_result_sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "trigger_source_kind": "new_mixed105_teacher_verified_CPU_trigger100",
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "source_models": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103\\run\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\after.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "attack": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "all_10000_raw_inputs_and_new_attack_model_independently_reinferred": true,
+  "pre_benign_counts_reused_not_reinferred": true,
+  "baseline_evaluation_sha256": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac",
+  "independent_sample_forwards": 20000,
+  "independent_forward_calls": 158,
+  "independent_counts_exactly_equal": true,
+  "max_logit_abs_error": 0.0,
+  "logit_comparison_atol": 1e-06,
+  "logit_comparison_rtol": 1e-05,
+  "all_sample_predictions_exactly_equal": true,
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "delivery_complete": false,
+  "detection_success_implied": false,
+  "overall_goal_complete": false,
+  "recovery_stage": true,
+  "original_verifier_completed_successfully": false,
+  "original_independent_VERIFIED_absent": true,
+  "original_failure_preserved": true,
+  "additional_recovery_forward_calls": 158,
+  "additional_recovery_sample_forwards": 20000
+}

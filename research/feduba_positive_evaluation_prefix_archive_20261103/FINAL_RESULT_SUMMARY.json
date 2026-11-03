@@ -1,0 +1,105 @@
+{
+  "state": "positive_sign_diagnostic_result_with_preserved_verifier_writer_failure",
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "minus_baseline": {
+    "CA_pct": 84.69,
+    "ASR_pct": 13.822222222222223,
+    "triggered_target_hits": 1244,
+    "non_target_N": 9000
+  },
+  "positive_minus_minus_ASR_pp": 44.922222222222224,
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "new_after_sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+  "original_primary_result_sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+  "original_independent_comparison_prefix": {
+    "calls": 158,
+    "sample_forwards": 20000,
+    "last_batch": 79,
+    "max_logit_abs_error": 0,
+    "receipt_construction_KeyError_preserved": true,
+    "original_VERIFIED_absent": true,
+    "original_task_exit": 1
+  },
+  "prefix_review_sha256": "45beaffd15cdfbea34d7442dd228935151a77cc5cbf684f83a0e66ac960597dc",
+  "new_CPU_archive": {
+    "state": "completed_failed_evaluation_prefix_and_new_CPU_archive",
+    "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_positive_failed_eval_prefix_s42_20261103",
+    "manifest_sha256": "629c24648b7052ce4377dd2efef029119afa325447c43171162ebb6f5b9edeee",
+    "seal_sha256": "89cc325c776f878c583a0a10ea35d94809fff99575d2c82dda2730a9fb94fece",
+    "hashed_files": 286,
+    "typed_payloads": 161,
+    "new_CPU_strict_finite_zero1_models": 3,
+    "old_model_checks_reused_not_reexecuted": true,
+    "archive": {
+      "path": "D:\\FEDUBA_POSITIVE_EVALUATION_PREFIX_ARCHIVE_20261103\\CHECKPOINT_PREFIX_REVIEW.zip",
+      "bytes": 357362282,
+      "sha256": "7bdc28ac0d5b0a1781f027a15c7821f7be9a8a2ef48a1c53eb8db193de969a26"
+    },
+    "minimum_operational_gate": {
+      "passed": false,
+      "checks": {
+        "pre_ASR": false,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "attack_minus_pre_ASR_pp": 38.6,
+      "attack_minus_benign_ASR_pp": 42.077777777777776,
+      "post_CA_drop_pp": {
+        "benign": 0.79,
+        "attack": 1.08
+      },
+      "is_server_detection_threshold": false,
+      "is_exact_paper_mean_reproduction": false
+    },
+    "local_delivery_complete": false,
+    "overall_goal_complete": false
+  },
+  "local_delivery_complete": false,
+  "overall_goal_complete": false
+}

@@ -1,0 +1,12 @@
+{
+  "TaskName": "Codex-FUBA-ten-seed-repro-recovery-20261031",
+  "State": "Running",
+  "Hidden": true,
+  "ExecutionTimeLimit": "PT72H",
+  "RestartCount": 0,
+  "TriggerCount": 0,
+  "Execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+  "Arguments": "-u D:/FUBA_SEED_REPRO_20261031/background_recovery.py",
+  "LastTaskResult": 267009,
+  "LastRunTime": "2026-10-31T14:14:47.0000000+09:00"
+}

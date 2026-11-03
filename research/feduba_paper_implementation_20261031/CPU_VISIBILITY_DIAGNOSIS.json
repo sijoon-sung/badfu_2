@@ -1,0 +1,29 @@
+{
+  "state": "completed",
+  "rows": [
+    {
+      "parent_requested_value": "",
+      "fresh_child": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "available": true,
+        "device_count": 0,
+        "initialized": false,
+        "default_tensor_device": "cpu"
+      }
+    },
+    {
+      "parent_requested_value": "-1",
+      "fresh_child": {
+        "CUDA_VISIBLE_DEVICES": "-1",
+        "available": false,
+        "device_count": 0,
+        "initialized": false,
+        "default_tensor_device": "cpu"
+      }
+    }
+  ],
+  "source_sha256": "79977c274d4093a510a47ec42589865840ef414f20fbf447f710f5aed71c8a92",
+  "models_or_data_loaded": false,
+  "GPU_tensor_allocations": false,
+  "original_asset_task_restarted": false
+}

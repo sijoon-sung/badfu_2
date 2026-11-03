@@ -1,0 +1,27 @@
+{
+  "case_id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+  "purpose": "diagnostic",
+  "post_type": "actual_FedEraser20_attack_same_selected_source_IDs",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null
+    },
+    "post": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\run\\attack_after.pt",
+      "sha256": "979c789d106a4209d43a7b1cfc0db1cab210508a7367f47e0828afdc9338f0d2",
+      "payload_key": null
+    }
+  },
+  "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_MANIFEST.json",
+    "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+    "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\DELIVERY_SEAL.json",
+    "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+    "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031\\load_checkpoint.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

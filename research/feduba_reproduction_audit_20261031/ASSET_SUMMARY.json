@@ -1,0 +1,28 @@
+{
+  "schema": "bounded-feduba-name-inventory-v1",
+  "roots": [
+    "D:/",
+    "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace"
+  ],
+  "excluded_names": [
+    ".git",
+    ".venv",
+    "DETECTION_CLAIM_AUDIT_20261031",
+    "FEDUBA_REPRO_AUDIT_20261031",
+    "data",
+    "envs",
+    "node_modules",
+    "reader_deps",
+    "reader_pinned",
+    "venv"
+  ],
+  "files_examined_by_name": {
+    "D:/": 63965,
+    "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace": 93097
+  },
+  "scope": "Filename/dirname inventory only, not tensor provenance verification; unlabelled or excluded files may exist.",
+  "matched_path_count": 0,
+  "error_count": 601,
+  "raw_inventory_sha256": "b3214daa1829aebd3841d6d8951e0ee1da87595f3ede9618d6b567d34d57f48f",
+  "completeness": "incomplete_name_inventory_no_global_absence_claim"
+}

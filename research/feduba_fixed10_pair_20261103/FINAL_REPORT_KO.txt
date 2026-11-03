@@ -1,0 +1,28 @@
+fixed10/newSSS targetclass125 정상·공격 FU20 완료 — 공격 활성화 재현 실패
+관련 R03/R02/N02/D08/D15. 원 PROTOCOL의 고정10참여자 교정 가설을 실제 새pre/새SSS와 함께 끝까지 검사했다. 이는 owner노출만의 단일인과 실험이 아니며 탐지법 제안도 아니다.
+
+최종 표준평가(공식test10000/비target9000, target2/동일SGD delta×1.5/clip±1):
+pre CA85.53%(8553/10000), ASR20.144444444444446%(1813/9000).
+정상FU CA84.74%(8474/10000), ASR-B16.666666666666668%(1500/9000).
+공격FU CA84.69%(8469/10000), ASR13.822222222222223%(1244/9000).
+공격-pre -6.322222222222222pp, 공격-정상 -2.8444444444444446pp. 원4성능gate 실패/2CA gate 통과다. pre20을0.1444pp 넘은 사실만으로 실패를 정한 것이 아니다. 공격80/증가50pp/정상초과50pp도 모두 실패했다. 고정10·owner5/7 매round 참여와 새로운target-only125(63/62)만으로 활성화가 복구됐다는 가설은 이 조건에서 지지되지 않았다. 실패를 모든 FedUBA 조건의 불가능성으로 확대하지 않는다.
+
+실제 두FU 각각20R/200trained+200calibratedroles/1000epoch/20000batch, 선택예제epoch노출12500. 각 독립CPU420historyhash·전체원ID순열/optimizer/RNG/유효첫round출처·독립보정/순차집계/BN정책 통과. 모든localSGDgradient/rawaugmentation 재생은 아니다. primary42640/독립55112 각60000sample-forward474calls·모든raw입력/argmax/count 정확일치, logitmaxabs0이다. 원허용치·예산·source/profile/freezes·6gate 변경0이다.
+
+실제모델(각44770315bytes/bare null):
+pre a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5
+정상after 85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d
+공격after 3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355
+정상VERIFIED f74afc84d93c9c727af9a90ed51df6e6d7cb9a59889f01c562a45f0af9e75e97
+공격VERIFIED 39a847b7bdb37767a14eff54d3ed707ca49b1fac06cad8c5cd62c0d894a7c881
+EVAL_RESULT 07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac
+EVAL_VERIFIED b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe
+COMPLETION 1ac3223ada7c52f12b7176d7c85a5129f67bfa9dc8360aadb81ecc0083e1be76
+
+2026-11-03T03:20:34.8863626Z 정확task Ready/exit0, native root process0, 모든FAILURE0, parent32316/정상17820/감사29824/공격22700/감사3252/평가42640/독립55112 모두종료. 낡은AUDIT_STATE auditing20과 과거running보고서는 역사이며 최종VERIFIED/COMPLETION이 우선한다. 새collector는완료JSON만 수신·DISLAB/local SHA/bytes 검산했으며 모델load/forward/finite재검사·학습/감사/평가/export 재실행0이다.
+
+Readonly remote packet D:\CHECKPOINTS_FOR_REVIEW\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103
+523hashed/365typed, manifest add45765c7903c3a1ae2c18534dae848a38b06a656d902fecf4ca431fc6f39c0, seal f36180d9d5eafcfebe31931ae347ae4992cfdcbeebe2d6c34ba37f278c7c3828. Archive 677289556bytes/SHA0979db17aa82cf37e077aaf333c5f99bb0edbcae808f5fdf7731d226ae1e98f1. Export의8model zero1/365strictCPU·finite 보관검사는 성능재평가가 아니다. 실제pre/양after/교사/delta/대표owner5/7 기여4개optimizerRNG/전체epoch로그/새privateSSS40 및source/profile/receipt/전수평가자료를 포함한다. 모든raw400role/fulloptimizerRNG는 원DISLAB root에 남는다. 원packet/외부seal 변경0, 이최종보고서는 원runroot 별도metadata다. Local전달·CPU·새pairedcase등록은 아직미완료다.
+
+Foundation clean전용 평가8552/10000=85.52%와 새paired strict평가8553/10000=85.53%의 한장차이는 EVALUATOR_ROUTE_DIFFERENCE.json에 보존했다. 서로다른평가route를 bit동일이라고 하지 않으며 원기록 덮어쓰기/추론retry0. SSS원400count계약 미충족/실392범위정정도 그대로 유지한다.
+D08 공격.75848이 큰정상.75525/.76188 사이, D15 공격7/정상8, unknown-trigger-family탐지 미검증은 불변이다. 무결성/저장완료를 공격성능/탐지성공으로 승격하지 않는다. 전체성능·탐지·local전달 목표 미완료로 자동확인은 유지한다.

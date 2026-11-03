@@ -1,0 +1,51 @@
+{
+  "state": "read_only_source_and_paper_sign_conflict_observation",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "paper": {
+    "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+    "url": "https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf",
+    "page": 6,
+    "printed_page": 10499,
+    "equation": 8,
+    "selected_sample_update": "x_prime=x-delta",
+    "PNG_sha256": "b491b44f26896bafcfa8b0254f23b83c654af685215d4bef04edc04cd2ef1e5e"
+  },
+  "public_wrapper": {
+    "repository": "ity207/FedUBA",
+    "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+    "path": "Fed_data_change.py",
+    "line": 111,
+    "call": "poison_image(dataset,modify_indices,trigger.cpu(),transform)",
+    "missing_helper_body_not_recovered": true
+  },
+  "related_helper": {
+    "repository": "reds-lab/Narcissus",
+    "commit": "de128d870d7ef0560a4804e413b1c57909883195",
+    "path": "util.py",
+    "blob": "837564b738637378b8567ae3fc25ff32a5e599cf",
+    "sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+    "class_line": 263,
+    "constructor_args": [
+      "dataset",
+      "indices",
+      "noise",
+      "transform"
+    ],
+    "selected_image_line": 273,
+    "addition_helper_lines": [
+      227,
+      236
+    ],
+    "selected_image_semantics": "clamp(augmented_image+noise,-1,1)",
+    "label_semantics": "original label",
+    "second_dataset_getitem_line": 274,
+    "side_effect": "The label lookup invokes dataset[idx] a second time. With random image transforms this consumes extra RNG; the proposed sign-only port deliberately keeps the completed single-getitem stream."
+  },
+  "scope": "Related-source sign-only alternative, not the missing FedUBA utils.py, not paper-Eq8-minus, and not an automatically adopted correction. Same data/seed/budget/delta/labels/augmentation/FedEraser remain fixed; no sign/epsilon search."
+}

@@ -1,0 +1,135 @@
+{
+  "state": "receiver_ended_without_producer_terminal_during_guardwait_no_retry",
+  "utc": "2026-11-02T04:37:47.438104+00:00",
+  "current_task": {
+    "COM": {
+      "run_level": 0,
+      "state": 3,
+      "last_result": 1073807364,
+      "enabled": true
+    },
+    "canonical_xml_sha256": "16d3dfed4e1fca3ff8f45ed24412762df2a877b4f502c1c891034338fe5e546a",
+    "xml_query_exit_code": 0
+  },
+  "current_receivers": [],
+  "current_memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 1664294912,
+    "committedBytes": 19081973760,
+    "commitLimit": 50775060480
+  },
+  "last_receiver_state": {
+    "utc": "2026-11-02T04:28:21.872873+00:00",
+    "pid": 30052,
+    "state": "waiting_fixed_memory_guard",
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 2664435712,
+      "committedBytes": 23475056640,
+      "commitLimit": 50775060480
+    },
+    "elapsed_seconds": 690.7659999999998,
+    "deadline_utc": "2026-11-03T04:16:51.108230+00:00",
+    "guard": {
+      "available_min_bytes": 8589934592,
+      "commit_headroom_min_bytes": 17179869184,
+      "wait_max_seconds": 86400,
+      "poll_seconds": 15
+    },
+    "sample": 46,
+    "extraction_started": false,
+    "CPU_payloads_checked": 0
+  },
+  "last_result_decimal": 1073807364,
+  "last_result_hex": "0x40010004",
+  "last_result_NTSTATUS_symbol": "DBG_TERMINATE_PROCESS",
+  "NTSTATUS_definition_is_not_killer_or_unique_cause_evidence": true,
+  "NTSTATUS_source": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55",
+  "exact_termination_time_or_actor_or_mechanism_proved": false,
+  "normal_24h_timeout_observed": false,
+  "RAM_shortage_proved_as_termination_cause": false,
+  "task_history": {
+    "configuration_query_exit": null,
+    "enabled": "false",
+    "own_task_events_query_exit": 0,
+    "own_task_events": [],
+    "query_error": ""
+  },
+  "bounded_system_window": {
+    "from_utc": "2026-11-02T04:16:45.000Z",
+    "to_utc": "2026-11-02T04:35:53.000Z",
+    "boot_shutdown_query_exit": 0,
+    "boot_shutdown_timestamps_only": [
+      {
+        "event_id": "12",
+        "utc": "2026-11-02T04:33:00.9055949Z",
+        "provider": "Microsoft-Windows-UserModePowerService"
+      },
+      {
+        "event_id": "12",
+        "utc": "2026-11-02T04:32:57.6121545Z",
+        "provider": "Microsoft-Windows-Wininit"
+      },
+      {
+        "event_id": "12",
+        "utc": "2026-11-02T04:32:39.8717366Z",
+        "provider": "Microsoft-Windows-Kernel-General"
+      },
+      {
+        "event_id": "13",
+        "utc": "2026-11-02T04:28:37.7427906Z",
+        "provider": "Microsoft-Windows-Kernel-General"
+      },
+      {
+        "event_id": "6005",
+        "utc": "2026-11-02T04:32:58.6051630Z",
+        "provider": "EventLog"
+      },
+      {
+        "event_id": "6006",
+        "utc": "2026-11-02T04:28:33.8340477Z",
+        "provider": "EventLog"
+      },
+      {
+        "event_id": "1074",
+        "utc": "2026-11-02T04:28:26.2168816Z",
+        "provider": "User32"
+      }
+    ],
+    "resource_pressure_query_exit": 0,
+    "resource_pressure_timestamps_only": [],
+    "event_timing_is_not_unique_process_termination_causality": true
+  },
+  "preserved_guardwait_prefix": {
+    "records": 47,
+    "samples": [
+      0,
+      46
+    ],
+    "first_utc": "2026-11-02T04:16:51.130787+00:00",
+    "last_utc": "2026-11-02T04:28:21.877974+00:00",
+    "bytes": 28550,
+    "sha256": "a614b73207303f9e211f7bf4b8de6774e311dc947a31622c0a1049ee4b8d2a6e",
+    "all_guardwait_no_extraction_or_CPU": true
+  },
+  "missing_producer_receipts": [
+    "EXTRACTION_ONCE.json",
+    "RECEIVE_FAILURE.json",
+    "RECEIVE_TERMINAL.json",
+    "LOCAL_STORAGE_COMPLETION_SUMMARY.json",
+    "private_run/PAIR_REVIEW_LOCAL_COMPLETE.json"
+  ],
+  "local_packet_exists": false,
+  "archive_bytes": 1530790988,
+  "archive_rehashed_or_transferred": false,
+  "models_loaded_or_queried": 0,
+  "new_receiver_or_task_run_requests": 0,
+  "all_prior_source_freezes_validated": true,
+  "catalogue_registration_called": false,
+  "current_observer_metadata_only": true,
+  "overall_goal_complete": false
+}

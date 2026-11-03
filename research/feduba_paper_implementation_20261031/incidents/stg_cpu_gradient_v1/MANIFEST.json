@@ -1,0 +1,139 @@
+﻿{
+    "original_audit_repeated":  false,
+    "scope":  "26 copied evidence files including first/last step and frozen surrogate; all205epoch/200step raw history remains original DISLAB root",
+    "original_root":  "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+    "files":  [
+                  {
+                      "path":  "STG_CONTROLLER_STATE.json",
+                      "sha256":  "e5a0fc1f69a5d95a6f2376a1a382d06ca6b4fbff79bdd63a59d17037877d2993",
+                      "bytes":  497
+                  },
+                  {
+                      "path":  "STG_CONTROLLER_ONCE.json",
+                      "sha256":  "f6957841fd4db9e99cf9eeb9cbb11221f42491aa05b10fcf8e9423131f38214d",
+                      "bytes":  49
+                  },
+                  {
+                      "path":  "STG_STATE.json",
+                      "sha256":  "3758c16d82e28d168f635997a7346a68d3f8e317d945b0a0754f1fcb9b6a4aae",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "STG_RESULT.json",
+                      "sha256":  "5b0b7b1a7d53aa8338d4cca48e38a012196f4b5c0a8bddc5174ffd6d619367ae",
+                      "bytes":  781
+                  },
+                  {
+                      "path":  "STG_AUDIT_STATE.json",
+                      "sha256":  "fa24b8efbe62b243c2d51493df5e37d1562640f7cf42ec855fe6cf1140348bcf",
+                      "bytes":  137
+                  },
+                  {
+                      "path":  "STG_AUDIT_FAILURE.json",
+                      "sha256":  "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce",
+                      "bytes":  494
+                  },
+                  {
+                      "path":  "STG_AUDIT_ONCE.json",
+                      "sha256":  "e0421d45d2b95ebc73650e4bb3833eb3b7ab09b2c35cc0397d0be9f69aba89b6",
+                      "bytes":  14
+                  },
+                  {
+                      "path":  "STG_STARTED.json",
+                      "sha256":  "b5d19bb83b0ccee6cb22069c77d9581f4244009d9afa242ce4f284e6514e6ae6",
+                      "bytes":  237
+                  },
+                  {
+                      "path":  "STG_FREEZE.json",
+                      "sha256":  "cc9e8cfa5cffcce14e0def44f1f2558b847c1c1dbdbca6a4b3e23ddbcf093af3",
+                      "bytes":  1595
+                  },
+                  {
+                      "path":  "STG_LAUNCH_PROFILE.json",
+                      "sha256":  "313ceb9a34500a2d18f2a6715121b404729ecafcaff380df5bcfa9abe247c40c",
+                      "bytes":  1741
+                  },
+                  {
+                      "path":  "STG_LAUNCH_PROTOCOL.txt",
+                      "sha256":  "ace094d0e56a4b7feb83d1d2e8bf186e419ce67fa5dbcbba2d1a1d9476e00701",
+                      "bytes":  4340
+                  },
+                  {
+                      "path":  "STG_READY.json",
+                      "sha256":  "073c8b722ca3f24d551b70bc5366c70e8b164f50e2c83d61beeeaa1ae6fa6056",
+                      "bytes":  3859
+                  },
+                  {
+                      "path":  "stg_controller.py",
+                      "sha256":  "0e4472efa3ad8a006ce7c6ef6f89799e466711395058cab9c1806a32e9fe4584",
+                      "bytes":  3992
+                  },
+                  {
+                      "path":  "trigger_runner.py",
+                      "sha256":  "2c5fe53c41827a4ef9b4e7493f97c37b9fc1396434c26da8d10159e09c79063f",
+                      "bytes":  11758
+                  },
+                  {
+                      "path":  "verify_stg.py",
+                      "sha256":  "1366deb8acf1c40e19a88c7ef29818bbfe32a1bb766c16501e2a4276be91095e",
+                      "bytes":  10943
+                  },
+                  {
+                      "path":  "stg_training.py",
+                      "sha256":  "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76",
+                      "bytes":  1724
+                  },
+                  {
+                      "path":  "core.py",
+                      "sha256":  "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+                      "bytes":  6168
+                  },
+                  {
+                      "path":  "model_reference.py",
+                      "sha256":  "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+                      "bytes":  4379
+                  },
+                  {
+                      "path":  "runtime_common.py",
+                      "sha256":  "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+                      "bytes":  3621
+                  },
+                  {
+                      "path":  "stg_console.log",
+                      "sha256":  "b72a8d14c4f74fa1114f45d5a4d88d80fecbbf65aa342d5b5462a6719c1ed912",
+                      "bytes":  1193
+                  },
+                  {
+                      "path":  "stg/MANIFEST.json",
+                      "sha256":  "6f805ba0b33b18e2b5a5dc95134357cff9d83db139bbb5cd31f102115b1384cd",
+                      "bytes":  102381
+                  },
+                  {
+                      "path":  "stg/events.jsonl",
+                      "sha256":  "5cffaeef9780fe6b9b888a33a0a09aa581160dce345c2ebb7424159ae04659f6",
+                      "bytes":  53936
+                  },
+                  {
+                      "path":  "stg/delta.pt",
+                      "sha256":  "3381f718df14da22490635a422c8a7f351e6b6305a585c78686aeffb898adfa7",
+                      "bytes":  13865
+                  },
+                  {
+                      "path":  "stg/fixed_surrogate.pt",
+                      "sha256":  "4768e90eb6efcb2b8f772a0ac41f535c967083dd3d6d6887ef443595e87c6765",
+                      "bytes":  45162251
+                  },
+                  {
+                      "path":  "stg/trigger_steps/epoch001_batch1.pt",
+                      "sha256":  "561eac103f99780da2e77976683eb081f291eb024f0183c9c2a0e2c2396f84d9",
+                      "bytes":  1620241
+                  },
+                  {
+                      "path":  "stg/trigger_steps/epoch100_batch2.pt",
+                      "sha256":  "738cf5951acb14e1cf56e140c7c5ed854e68fe258e3339d90efd8d16d0e05064",
+                      "bytes":  931217
+                  }
+              ],
+    "state":  "original_audit_failure_preserved",
+    "training_restarted":  false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "fuba.recovery.current_runtime_AB.mnist.dba.20261031",
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "related_cards": [
+    "R02",
+    "D08",
+    "D15",
+    "N02"
+  ],
+  "review_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+  "raw_root": "D:/FUBA_REFERENCE_MNIST_DBA_20261031",
+  "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+  "round": 99,
+  "client": 4,
+  "phase_seed": 21251427,
+  "phase3_sha256": "f14b6a189f27dc555e7ee68aa9b849eb1d076af511a1db5f9b509de29ac24729",
+  "phase4_sha256": "41107f5d8f2de14ea1c8360048af6a3314f3288fb7c926b857b8fbe1ad6fba91",
+  "epochs": 50,
+  "batch_size": 64,
+  "lr": 0.001,
+  "consistency": 2,
+  "full_training_started_by_this_script": false,
+  "current_A_path": "D:/FUBA_DEFENDER_RECOVERY_20261031/SGD_recovery.pt",
+  "current_A_sha256": "3f13e280b00fe5fe74849c9c352d6ba88f38539c7328dc16f4677e53096e576d",
+  "behavior_tolerance_pct_points": 1,
+  "new_training_epochs": 50,
+  "reused_A_training_epochs": 50
+}

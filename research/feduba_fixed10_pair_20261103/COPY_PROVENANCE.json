@@ -1,0 +1,82 @@
+{
+  "state": "fixed10_pair_prospective_source_only",
+  "unchanged": {
+    "core.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5"
+    },
+    "fu_core.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/fu_core.py",
+      "sha256": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e"
+    },
+    "fu_training.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/fu_training.py",
+      "sha256": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320"
+    },
+    "fu_runner.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/fu_runner.py",
+      "sha256": "704906319c78fca8635e499735759d9042d9d66ddf86afce85c02dbca1671c5c"
+    },
+    "verify_fu.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/verify_fu.py",
+      "sha256": "80b64586664a1e0dd12cccfbcfad258b15ff7a312e8e3d068a85e8d0460f1336"
+    },
+    "pair_eval_core.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/pair_eval_core.py",
+      "sha256": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8"
+    },
+    "evaluate_pair.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/evaluate_pair.py",
+      "sha256": "7cb44ea4b7f822a9ecfd1a908bd4e8a5f2b291eb2fc9046590a279e3ef3ff4e8"
+    },
+    "verify_pair_evaluation.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/verify_pair_evaluation.py",
+      "sha256": "2ab0c64742ad71fc4fef44eb0bd0342d404d3f3cfe50f9b180ccb163dcf2cd5e"
+    },
+    "model_reference.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "trigger_binding.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/trigger_binding.py",
+      "sha256": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd"
+    },
+    "runtime_common.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/runtime_common.py",
+      "sha256": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d"
+    },
+    "native_memory.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3"
+    },
+    "native_processes.py": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed"
+    },
+    "FU_ENGINE_CPU_RESULT.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/FU_ENGINE_CPU_RESULT.json",
+      "sha256": "85b0ab87c9a587a650ae64e6ae116a6bb1da59a83e8146deef573a7029641d79"
+    },
+    "FU_POLICY_CPU_RESULT.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/FU_POLICY_CPU_RESULT.json",
+      "sha256": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d"
+    },
+    "PAIR_EVAL_CPU_RESULT.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/PAIR_EVAL_CPU_RESULT.json",
+      "sha256": "98987c3e71a7326c66214dfb63e2f1075b5680b7802fdb45ad6d5b800d0394b5"
+    },
+    "GPU_PREFLIGHT_RESULT.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/GPU_PREFLIGHT_RESULT.json",
+      "sha256": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c"
+    },
+    "TRIGGER_SOURCE_BINDING.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/TRIGGER_SOURCE_BINDING.json",
+      "sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3"
+    }
+  },
+  "adapted": {
+    "pair_binding": "New foundation and newSSS receipt identity; exact complete fixed10 cohorts and targetclass2 eligibility; all numeric loops reused.",
+    "controller": "Only completion-state identity; same seven sequential child steps and fixed guards.",
+    "export": "Read current newSSS result/40 packets from its completed root; label as new victim-bound SSS and preserve its source/profiles/receipts; same8modelzero1 and finite/readonly sealing."
+  }
+}

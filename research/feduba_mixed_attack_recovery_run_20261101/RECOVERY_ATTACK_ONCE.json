@@ -1,0 +1,23 @@
+{
+  "pid": 30812,
+  "started_unix": 1793512324.5983343,
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "guard": {
+    "utilization_pct": 0,
+    "free_MiB": 4380,
+    "used_MiB": 5674,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 21871992832,
+      "committedBytes": 47313031168,
+      "commitLimit": 90411380736
+    },
+    "competing_trainers": 0
+  },
+  "reused_roles": 46,
+  "new_roles": 154
+}

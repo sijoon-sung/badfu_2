@@ -1,0 +1,21 @@
+{
+  "schema": "feduba-saved-receipt-verification-v1",
+  "state": "passed",
+  "checked_utc": "2026-10-30T18:16:59.212714+00:00",
+  "preregistered_commit": "23159e615cd19e8d6b93c569c1110206da9ca2df",
+  "no_audit_rerun": true,
+  "no_model_training_or_evaluation": true,
+  "files_sha256": {
+    "PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+    "FREEZE.json": "ab380639789d801df32eba60063b61c714a6d08db518d1c5ea0f8de79fba0c6f",
+    "audit_feduba.py": "3c923f885b2dacfacff723887e1260750830ed677f2ad83138eeb4a1e8d129ff",
+    "inventory_assets.py": "ae2a8658af73c0e64b2639564729ecafa406c1e2a554f21facde76ab0da335d3",
+    "verify_delivery.py": "3985a29a856d3224732dbccf883d071ea84ca75b7f8d230f5454a802b6e9d137",
+    "RESULTS.json": "7e2bcbad2e8a88e2b5fe5e4e42e1738063ef0dd3565b6df2c0330535e33674ca",
+    "STARTED.json": "c198e8d6674bf4190ddfb99dcbb0d557647ede660d2ebd5cded5b3139ba2860b",
+    "ASSET_SUMMARY.json": "0d90d43a32ff59b3d3922722a9c702f42f0f58183a50c388fb9fb4b92dfcc73a",
+    "CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+    "DETECTION_GATES.txt": "ef9fbd7c17d3590685111e9f0fb3dbb718d78f47a33156c409f8eaef4940b9c2",
+    "REPORT_KO.txt": "77f11be94a195ba18325a4fd04b6a64fe8c38d06451d29098e29222e8af26bae"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "utc": "2026-11-02T17:35:18.2088847Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 267009,
+    "action": "-B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py",
+    "state": "Running"
+  },
+  "processes": [
+    {
+      "ProcessId": 32316,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py"
+    },
+    {
+      "ProcessId": 22700,
+      "ParentProcessId": 32316,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_FIXED10_PAIR_20261103\\fu_runner.py --branch attack --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+    }
+  ],
+  "audits": {
+    "benign": {
+      "batches": 20000,
+      "roles": 200,
+      "rounds": 20,
+      "state": "passed"
+    }
+  },
+  "receipts": {
+    "FU_benign_FAILURE": null,
+    "FU_attack_AUDIT_FAILURE": null,
+    "PAIR_EVAL_AUDIT_STATE": null,
+    "PAIR_EVAL_FAILURE": null,
+    "CONTROLLER_STATE": {
+      "state": "running",
+      "pid": 32316,
+      "child": 22700,
+      "step": "fu_runner.py",
+      "arguments": [
+        "--branch",
+        "attack",
+        "--catalog-root",
+        "D:/TRAJECTORY_CATALOG_20261023",
+        "--case-id",
+        "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+      ],
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18909859840,
+          "committedBytes": 44763545600,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "0"
+    },
+    "FU_attack_AUDIT_STATE": null,
+    "PAIR_EVAL_AUDIT_FAILURE": null,
+    "FU_benign_AUDIT_FAILURE": null,
+    "FU_benign_STATE": {
+      "state": "completed_FU20",
+      "pid": 17820,
+      "rounds": 20,
+      "updated_unix": 1793640449.383864
+    },
+    "EXPORT_FAILURE": null,
+    "FU_attack_FAILURE": null,
+    "PAIR_EVAL_STATE": null,
+    "FU_attack_STATE": {
+      "state": "training",
+      "pid": 22700,
+      "round": 1,
+      "rounds": 0,
+      "client": 13,
+      "epoch": 2,
+      "cumulative_role_batches": 40,
+      "examples": 2500,
+      "updated_unix": 1793640916.9842472
+    },
+    "CONTROLLER_FAILURE": null,
+    "COMPLETION": null,
+    "FU_benign_AUDIT_STATE": {
+      "state": "auditing",
+      "pid": 29824,
+      "rounds": 20,
+      "checked_roles": 200,
+      "actual_epochs": 1000,
+      "actual_batches": 20000
+    }
+  }
+}

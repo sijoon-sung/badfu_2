@@ -19,11 +19,11 @@ SNAPSHOT = ROOT / 'reports/experiment_process_20261026'
 sys.stdout.reconfigure(encoding='utf-8')
 
 GROUPS = [
-    ('01-reproduction', '공격 재현', ['R01', 'R02'], '삭제 전후 모델이 어떤 절차로 만들어졌는지 확인한다.'),
+    ('01-reproduction', '공격 재현', ['R01', 'R02', 'R03'], '삭제 전후 모델이 어떤 절차로 만들어졌는지 확인한다.'),
     ('02-detection', '공격 탐지', [f'D{i:02}' for i in range(1, 20)], '공격 삭제와 큰 정상 참여자 삭제를 같은 조건에서 비교한다.'),
     ('03-mechanism', '원인 확인', ['T01'], '독성 자료와 위장 자료의 역할을 대조한다.'),
     ('04-purification', '정화', ['P01', 'P02', 'P03'], '삭제 후 공격을 줄이면서 정상 성능을 유지할 수 있는지 검사한다.'),
-    ('05-parked', '보류한 제안', ['N01'], '실행 근거가 부족한 제안과 다시 검토할 조건을 기록한다.'),
+    ('05-parked', '보류한 제안', ['N01', 'N02'], '실행 근거가 부족한 제안과 다시 검토할 조건을 기록한다.'),
 ]
 SLUGS = dict(zip(
     ['R01','R02'] + [f'D{i:02}' for i in range(1,20)] + ['T01','P01','P02','P03','N01'],
@@ -33,6 +33,7 @@ SLUGS = dict(zip(
      'conditional-transform','joint-search','retired-magnitude','direct-search',
      'feature-projection','fuba-projection','causal-controls','response-transfer',
      'classifier-repair','purification-pilot','trusted-reference']))
+SLUGS.update(R03='feduba-reproduction', N02='broad-claim-audit')
 DETECTION_SECTIONS = [
     ('학습 이력과 영향력', ['D01','D02']),
     ('입력·특징·참여자 응답', ['D03','D04','D05','D06','D07','D08']),
@@ -123,7 +124,7 @@ def main():
     index = ROOT / 'experiments/README.md'
     index_lines = ['# 실험 목록', '', '[저장소 첫 화면](../README.md) · [용어와 모델 구분](GUIDE.md) · [과거 세부 실험](archive/README.md)', '',
         '분야를 고른 뒤 실험 제목을 누르면 시작 이유, 조건, 실제 순서, 결과와 판단을 바로 읽을 수 있다. 각 실험의 `SOURCES.md`에는 원 보고서와 결과 파일을 모았다.', '',
-        '26개 항목은 연구 기록을 주제별로 묶은 것이다. 같은 모델을 여러 방법으로 검사한 경우가 있어 독립 학습 26회를 뜻하지 않는다.', '']
+        f'{len(ids)}개 항목은 연구 기록을 주제별로 묶은 것이다. 같은 모델을 여러 방법으로 검사한 경우가 있어 독립 학습 {len(ids)}회를 뜻하지 않는다.', '']
     for folder, title, group_ids, description in GROUPS:
         group_page = ROOT / 'experiments' / folder / 'README.md'
         lines = [f'# {title}', '', '[저장소 첫 화면](../../README.md) · [전체 실험](../README.md)', '', description, '']

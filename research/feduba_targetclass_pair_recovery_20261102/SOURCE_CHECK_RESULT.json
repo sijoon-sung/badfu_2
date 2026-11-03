@@ -1,0 +1,25 @@
+{
+  "state": "passed_targetclass_pair_source_metadata_review",
+  "source_freeze_sha256": "c002ae886e247fd369c743c3067cff7c1a12e59ab23727337057166269e25884",
+  "AST_files": 19,
+  "exact_reused_helpers": 9,
+  "seed_rng_cpu_AST_exact": true,
+  "independent_evaluator_all_numerical_For_AST_exact": true,
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 18894729216,
+    "committedBytes": 44224417792,
+    "commitLimit": 90276544512
+  },
+  "GPU": {
+    "util": 0,
+    "free": 5045,
+    "used": 5009
+  },
+  "competing_trainers": 0,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "old_fixture_or_training_rerun": false
+}

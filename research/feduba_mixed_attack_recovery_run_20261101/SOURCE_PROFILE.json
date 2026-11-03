@@ -1,0 +1,69 @@
+{
+  "id": "feduba.mixed_attack.recovery_run.s42.20261101",
+  "launch_enabled": false,
+  "actual_input_binding": null,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_root": "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101",
+  "original_root": "D:/FEDUBA_MIXED_PAIR_20261101",
+  "foundation_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "CPU_prefix_root": "D:/FEDUBA_MIXED_ATTACK_PREFIX_GUARD_V2_20261101",
+  "prefix_preservation_root": "D:/FEDUBA_MIXED_PAIR_MEMORY_RECOVERY_20261101",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_purpose": "diagnostic",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "helper_original_bytes": {
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "pair_eval_core.py": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "trigger_binding.py": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd"
+  },
+  "native_memory_original_bytes": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+  "required_CPU_prefix_result_sha256": "301b4b2050fffeefc8d74a58d3b940cb8b8153cd8fd62f008278c8cf2d3e15b0",
+  "required_prefix_preserved_sha256": "e27f4c6dfd55412bd926230074f897cda432701b67f8d0b62e3930015037d695",
+  "required_original_source_freeze_sha256": "edfc7e0a640b01c0a4c6c12b85c8fc87635b81dd1ef22a64b0e2a56a6b78b47c",
+  "required_original_pair_run_freeze_sha256": "8055386b92f79d64ac50be3854abe2061c803eaa8e504504e752f498af36136b",
+  "effective_roles": 200,
+  "effective_epochs": 1000,
+  "effective_batches": 20000,
+  "reused_roles": 46,
+  "new_roles": 154,
+  "new_epochs": 770,
+  "new_batches": 15400,
+  "failed_original_unsaved_epochs": 5,
+  "failed_original_unsaved_batches": 100,
+  "total_physical_epochs_including_failed_prefix": 1005,
+  "total_physical_batches_including_failed_prefix": 20100,
+  "GPU_guard": {
+    "util_max": 5,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000
+  },
+  "memory_guard": {
+    "available_min_bytes": 8589934592,
+    "commit_free_min_bytes": 17179869184
+  },
+  "resource_wait_seconds": 86400,
+  "automatic_retry": false,
+  "task_name": "Codex-FedUBA-mixed-attack-recovery154-FU20-pair-eval-20261101",
+  "after_eval_delivery_and_detection_remaining": true
+}

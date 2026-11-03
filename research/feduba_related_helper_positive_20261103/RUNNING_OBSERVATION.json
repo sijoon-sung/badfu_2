@@ -1,0 +1,79 @@
+{
+  "utc": "2026-11-03T04:33:39.6396879Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 267009,
+    "action": "-B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/controller.py",
+    "state": "Running"
+  },
+  "processes": [
+    {
+      "ProcessId": 8788,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/controller.py"
+    },
+    {
+      "ProcessId": 38692,
+      "ParentProcessId": 8788,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu_runner.py --branch attack --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+    }
+  ],
+  "audits": {},
+  "receipts": {
+    "FU_benign_FAILURE": null,
+    "FU_attack_AUDIT_FAILURE": null,
+    "PAIR_EVAL_AUDIT_STATE": null,
+    "PAIR_EVAL_FAILURE": null,
+    "CONTROLLER_STATE": {
+      "state": "running",
+      "pid": 8788,
+      "child": 38692,
+      "step": "fu_runner.py",
+      "arguments": [
+        "--branch",
+        "attack",
+        "--catalog-root",
+        "D:/TRAJECTORY_CATALOG_20261023",
+        "--case-id",
+        "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+      ],
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18309726208,
+          "committedBytes": 45009641472,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "0"
+    },
+    "FU_attack_AUDIT_STATE": null,
+    "PAIR_EVAL_AUDIT_FAILURE": null,
+    "FU_benign_AUDIT_FAILURE": null,
+    "FU_benign_STATE": null,
+    "EXPORT_FAILURE": null,
+    "FU_attack_FAILURE": null,
+    "PAIR_EVAL_STATE": null,
+    "FU_attack_STATE": {
+      "state": "training",
+      "pid": 38692,
+      "round": 5,
+      "rounds": 4,
+      "client": 19,
+      "epoch": 1,
+      "cumulative_role_batches": 20,
+      "examples": 2500,
+      "updated_unix": 1793680417.9425485
+    },
+    "CONTROLLER_FAILURE": null,
+    "COMPLETION": null,
+    "FU_benign_AUDIT_STATE": null
+  }
+}

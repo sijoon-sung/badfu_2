@@ -1,0 +1,50 @@
+{
+  "state": "normal_FU20_independent_CPU_audit_passed_attack_training_started",
+  "observed_utc": "2026-11-02T14:52:10.7318530Z",
+  "audit_sha256": "3713eb50979f2d71970dabcb3f135deb3f0faaf57a6b225c23234691c4c74d15",
+  "result_sha256": "c5c787cfafc00eb3a76dc3fa6393c789a4cc8fc7256557e0f31f58b9420e6aa3",
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "8b44c116d8d5fff963f37ffeeeedcef31623cc98a182e91f6bf39e8e5a48a035",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "history_hashes": 420,
+  "roles": 200,
+  "epochs": 1000,
+  "batches": 20000,
+  "all_ID_permutations_optimizer_RNG_checked": true,
+  "effective_calibration_and_aggregation_exact": true,
+  "all_SGD_gradients_replayed": false,
+  "native_processes": [
+    {
+      "Name": "python.exe",
+      "ProcessId": 33084,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/controller.py"
+    },
+    {
+      "Name": "python.exe",
+      "ProcessId": 46984,
+      "ParentProcessId": 33084,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102\\fu_runner.py --branch attack --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.paper.cifar10.cleanfl20.s42.20261031"
+    }
+  ],
+  "attack_training_state": {
+    "state": "training",
+    "pid": 46984,
+    "round": 5,
+    "rounds": 4,
+    "client": 2,
+    "epoch": 5,
+    "cumulative_role_batches": 100,
+    "examples": 2500,
+    "updated_unix": 1793631128.502134
+  },
+  "new_model_loads": 0,
+  "new_model_forwards": 0,
+  "completed_finite_jobs_rerun": false,
+  "performance_measured": false,
+  "attack_complete": false,
+  "overall_goal_complete": false
+}

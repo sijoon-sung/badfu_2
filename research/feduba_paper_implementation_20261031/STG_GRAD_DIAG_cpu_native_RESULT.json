@@ -1,0 +1,52 @@
+{
+  "state": "completed_fixed_mode",
+  "settings": {
+    "mode": "cpu_native",
+    "device": "cpu",
+    "torch_version": "2.7.1+cu118",
+    "CPU_threads": 2,
+    "mkldnn_enabled": false,
+    "matmul_precision": "highest",
+    "matmul_TF32": false,
+    "cudnn_TF32": true,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "cudnn_benchmark": false
+  },
+  "steps": [
+    {
+      "epoch": 1,
+      "batch": 1,
+      "examples": 128,
+      "loss": 9.052312850952148,
+      "max_abs_error_to_original": 0.009930137544870377,
+      "original_CPU_gate_failed_elements": 2968,
+      "tight_replay_failed_elements": 3071,
+      "output": {
+        "path": "gradient_diagnosis/cpu_native/epoch001_batch1.pt",
+        "sha256": "040538f93a2f7048b937b0ac3e359c2e51dc1ae7c74039b2f65fa2f638ea003a",
+        "bytes": 117733
+      }
+    },
+    {
+      "epoch": 100,
+      "batch": 2,
+      "examples": 72,
+      "loss": 6.52498722076416,
+      "max_abs_error_to_original": 0.00042789755389094353,
+      "original_CPU_gate_failed_elements": 1695,
+      "tight_replay_failed_elements": 3067,
+      "output": {
+        "path": "gradient_diagnosis/cpu_native/epoch100_batch2.pt",
+        "sha256": "db9de1c9b422ecee240d975518045173c7c54c348680b072a20c2957ad9ed69b",
+        "bytes": 72677
+      }
+    }
+  ],
+  "original_gradient_tolerances_unchanged": true,
+  "optimizer_steps": 0,
+  "training_restarted": false,
+  "whole_original_verifier_repeated": false,
+  "original_STG_audit_remains_failed": true,
+  "real_SSS_FU_or_ASR_evaluation_executed": false
+}

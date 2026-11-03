@@ -1,0 +1,12 @@
+{
+  "state": "passed_fixed10_newSSS_source_only",
+  "source_freeze_sha256": "8738a84c3854d70ce5f23c5d4e659fbd3525fe3bd6e2e36d9142a6aa12672197",
+  "python_AST_files": 16,
+  "unchanged_files": 11,
+  "query_backend_AST_exact": true,
+  "CPU_two_batch_replay_loop_AST_exact": true,
+  "foundation_source_and_run_freezes_exact": true,
+  "new_model_loads": 0,
+  "new_forward_queries": 0,
+  "actual_preparation_or_query_started": false
+}

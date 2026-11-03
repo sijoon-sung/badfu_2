@@ -1,0 +1,13 @@
+{
+  "torch_version": "2.7.1+cu118",
+  "device": "NVIDIA GeForce RTX 3080",
+  "CPU_threads": 1,
+  "matmul_TF32": false,
+  "cudnn_TF32": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "deterministic_algorithms": false,
+  "float32_matmul_precision": "highest",
+  "AMP_used": false,
+  "old_unrecorded_getters_or_unsaved_role_bit_identity_certified": false
+}

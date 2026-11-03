@@ -1,0 +1,2515 @@
+{
+  "epochs": [
+    {
+      "epoch": 1,
+      "unweighted_mean_of_batch_CE": 6.528804540634155,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 82.96682739257812,
+      "lr_after_scheduler": 0.09997532801828658,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch001_batch1.pt",
+          "sha256": "c908b78ca0ce565203ed9667b8c7c5eb9702aacb510cd651de5845e39c5866c8",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch001_batch2.pt",
+          "sha256": "f65a6d6f404d5d88af447f0d654c374fa2dac835fbda39c132db95e117b40f13",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch001.pt",
+        "sha256": "74a1bde1e931f81502bc53f7e720571d80644920e7078d1602f9eed076ad1ea3",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 2,
+      "unweighted_mean_of_batch_CE": 6.5689616203308105,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 97.90585327148438,
+      "lr_after_scheduler": 0.09990133642141358,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch002_batch1.pt",
+          "sha256": "3cd27dcdb3f2fd3bdc32a27d8f035e8fdcaa8296518b6aa1aef64a1301308a0c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch002_batch2.pt",
+          "sha256": "1e5c8208bbb2eccfe96d5d2698840d1b654e73cc4a72fb905ea7a4bacda41c8f",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch002.pt",
+        "sha256": "f079838a5a7b7ee470848a95252034d76a462abe4fff6c0a835f100c271ef838",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 3,
+      "unweighted_mean_of_batch_CE": 6.588114500045776,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 84.75372314453125,
+      "lr_after_scheduler": 0.099778098230154,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch003_batch1.pt",
+          "sha256": "cc66f8078868201b5a7139e6a0054638f940a87465c3450298f17b2a60c33d56",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch003_batch2.pt",
+          "sha256": "b10de0fdd83a696638e1c5ef56dcae19b80147664c90095851c905ff4c398ed7",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch003.pt",
+        "sha256": "427182e473f35df30407165351cdafab889ae0e685388d8b8f34e275454513ec",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 4,
+      "unweighted_mean_of_batch_CE": 6.588958024978638,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 87.95951843261719,
+      "lr_after_scheduler": 0.0996057350657239,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch004_batch1.pt",
+          "sha256": "46a2173107a838eef4a868b4caa583f1c4942f05fcf1cfcd4357e059c0fcb9be",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch004_batch2.pt",
+          "sha256": "d3b4c1b968ffb78fbee55644c45b417d00939711230435128c73571800122850",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch004.pt",
+        "sha256": "7636546039dfe2200413ef576ab5362aa87ede98321f74456cef43a8de0ea02a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 5,
+      "unweighted_mean_of_batch_CE": 6.5880982875823975,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 94.92977905273438,
+      "lr_after_scheduler": 0.09938441702975688,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch005_batch1.pt",
+          "sha256": "af53c88d976a1b2e69c66bf77f3c278ca20ad2a7e6ea4a445cfb0a8a37309d69",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch005_batch2.pt",
+          "sha256": "828b144219df205b791978ba455ac984902cd1a211894d2356b725320811b8ad",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch005.pt",
+        "sha256": "dd8024b6687009c8d0132abab7025c4cb2ce7908eb91f04996a0238d5f55d3b1",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 6,
+      "unweighted_mean_of_batch_CE": 6.676457166671753,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 88.40453338623047,
+      "lr_after_scheduler": 0.09911436253643444,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch006_batch1.pt",
+          "sha256": "0c620f810cd185d9d85983e0e13867550203df65bdb19dea2a6654c3da878b90",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch006_batch2.pt",
+          "sha256": "17d4f2e14983c8faf4dc0cce1a2af1ba480b8686e2b3a70d44c47c3af0bc7355",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch006.pt",
+        "sha256": "8cb3de632e56fbb1756b25a4f09fb2b45c4963d6e784cd1bc88f5ba79e69c67f",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 7,
+      "unweighted_mean_of_batch_CE": 6.693790674209595,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 97.1324462890625,
+      "lr_after_scheduler": 0.09879583809693737,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch007_batch1.pt",
+          "sha256": "924538ebb8d028d8e39b8fef50ed5249e12ca2c9065d8d4bea34b90942c7cc78",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch007_batch2.pt",
+          "sha256": "fa85444583bb3ff82a50867c891e109d04bbe638d3d84c9f9bdff6f79a7631f5",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch007.pt",
+        "sha256": "9f2a5cd47f3ed1c415895d394517ec78a868e990e993134ba625bece0952b9f2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 8,
+      "unweighted_mean_of_batch_CE": 6.654452800750732,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 107.48845672607422,
+      "lr_after_scheduler": 0.09842915805643156,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch008_batch1.pt",
+          "sha256": "2f637ca5ea54c6ad0f7c11f19c189890ba2656ef1348618c47328e08e3f9b306",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch008_batch2.pt",
+          "sha256": "6398dc45d6c78de37bdd6edb0ef59f7a008339947e9c508fc5c91a92dd14e790",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch008.pt",
+        "sha256": "4671814c2393f87f353be408dc9d4bdea38a1ddda1e83273dcbf8f0c9cc358ce",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 9,
+      "unweighted_mean_of_batch_CE": 6.63574481010437,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 101.75930786132812,
+      "lr_after_scheduler": 0.09801468428384716,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch009_batch1.pt",
+          "sha256": "595b6a6d81eabea600275a9732297106462eea807332daf5aac488f7880b4c14",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch009_batch2.pt",
+          "sha256": "9b33aa25ba546e54c6860068d983b650e120310ddca03bc19a34ae6f345ee932",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch009.pt",
+        "sha256": "1c06af0c9156129eb8fed5a80ff725e66c0bbc5ecc50ab9856cee3484679654f",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 10,
+      "unweighted_mean_of_batch_CE": 6.729368209838867,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 103.47832489013672,
+      "lr_after_scheduler": 0.09755282581475769,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch010_batch1.pt",
+          "sha256": "c4df2c81bdc065d5a7caa9f2ad14eb781ef393f1240b9de5ec3b1fc2b9eb9fdd",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch010_batch2.pt",
+          "sha256": "fd992818abd246f3fec65e77b5712e7c0a2f2a04752c9e1605008d9b9831ebf6",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch010.pt",
+        "sha256": "356cdaff78b5eb3b543d89bf099e677d8fef7a7a64111decbb33f6cd50c6723b",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 11,
+      "unweighted_mean_of_batch_CE": 6.6958160400390625,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 103.39640808105469,
+      "lr_after_scheduler": 0.09704403844771128,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch011_batch1.pt",
+          "sha256": "81792d94eb0e27f4f5b6fc4f66dad72138dc468763b5a4a88ea5043a5a872956",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch011_batch2.pt",
+          "sha256": "6824dc9edfff0a9f93b8d5ad6d5515395ab63c4f9ea39f6d4e48dc8ae5c74cf6",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch011.pt",
+        "sha256": "dc95b95b4b9e3807f30db86fde6afa616b5d7e0fc46fbd7645ba589c9094fd81",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 12,
+      "unweighted_mean_of_batch_CE": 6.668335676193237,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 101.6739730834961,
+      "lr_after_scheduler": 0.09648882429441258,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch012_batch1.pt",
+          "sha256": "20ccb5ea073c78349fc56958db2261b35f89ef2727d459f606fcf90ce364dcbf",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch012_batch2.pt",
+          "sha256": "453b3e44133a1c82d8707e9a6df44d313acb619f4e100f1a99aff9178bf3957a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch012.pt",
+        "sha256": "86b9c616939063d4dc8d1b113fbcaee6be2ddf63fc207711044a6640fe900b68",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 13,
+      "unweighted_mean_of_batch_CE": 6.796532392501831,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 108.74858093261719,
+      "lr_after_scheduler": 0.09588773128419906,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch013_batch1.pt",
+          "sha256": "0a71dc0e336933c5aaf797d39f27a3838f4c348949818cd3890981c8659157f2",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch013_batch2.pt",
+          "sha256": "f66fc3db1157e1e3e1ebefd2096ef702fce92f7ccb2d9066314f89bd49705521",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch013.pt",
+        "sha256": "3df38e9d073c52147eac56e5f7641bf6fa76b5914d5aa930e2381bda149b5517",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 14,
+      "unweighted_mean_of_batch_CE": 6.696189880371094,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 88.96320343017578,
+      "lr_after_scheduler": 0.09524135262330098,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch014_batch1.pt",
+          "sha256": "838aabf8b9c91d41cd0a32e01708f365c91204d52b0cb18ff18180bc155ba7cc",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch014_batch2.pt",
+          "sha256": "52a359ed3eaf8f0bdf866e2a716c25f59ad077ddef18f24cbfc37ba957ceecc4",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch014.pt",
+        "sha256": "0a702abfdb865c9e5d3d3a6876c9d5dc7c15cb863c56b6951c8ebabd2fcbd632",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 15,
+      "unweighted_mean_of_batch_CE": 6.682685613632202,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 93.21650695800781,
+      "lr_after_scheduler": 0.0945503262094184,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch015_batch1.pt",
+          "sha256": "956bb099e42e73ffda53c9d32a069148a4cb06c206eb3f38991c9cb2521ea539",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch015_batch2.pt",
+          "sha256": "ba1b8e55bc211523948db1b6f3122f02431d9e85698c7f0ccf58922f3fbb4e5a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch015.pt",
+        "sha256": "e0e853a0baa9d4283fd2c963d62c6f41215bcb8017c1e66d5a7ee7c89f461e7c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 16,
+      "unweighted_mean_of_batch_CE": 6.754603862762451,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 88.00260925292969,
+      "lr_after_scheduler": 0.09381533400219319,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch016_batch1.pt",
+          "sha256": "f820251462f6866edd40ffdf6d05f4af442a3953bda7231fa906c8fa68e732a1",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch016_batch2.pt",
+          "sha256": "4acdc67cdde2c3b9cdbc1c2458d17a7d2822fef70362d744a9b38468146acfc1",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch016.pt",
+        "sha256": "5590c51fc649ce6edb0d059fdefaa6e28bf0f6892570dbe78316048bc4b92e81",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 17,
+      "unweighted_mean_of_batch_CE": 6.782344102859497,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 90.42584228515625,
+      "lr_after_scheduler": 0.0930371013501972,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch017_batch1.pt",
+          "sha256": "0593bf5f7ba1dd75d3c5ccbc7d0fecbe81218ea2bbf93557ddfa53af6431601c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch017_batch2.pt",
+          "sha256": "d79f5920e8b04603cc514eeb259481fccd8a400edd1d668fc4f0feb5d5645944",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch017.pt",
+        "sha256": "ed1b343bb42fc9ab75d8e548b282f74569d5995e2818e4912e584338cef1baa8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 18,
+      "unweighted_mean_of_batch_CE": 6.754448890686035,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 99.8843002319336,
+      "lr_after_scheduler": 0.09221639627510078,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch018_batch1.pt",
+          "sha256": "add87f2009d65786f0437133e0e029b52252029e949d31d18e22824dfd66e37f",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch018_batch2.pt",
+          "sha256": "8bc1fe90d71bc41ef3b0281c1a1b5a6e6b0e6623682c5e1896f223bbae2646fc",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch018.pt",
+        "sha256": "934e94b888d526489ca63be1100b5ae97e0e79f4cbb43dd444a475bee7152dbd",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 19,
+      "unweighted_mean_of_batch_CE": 6.803621530532837,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 98.519287109375,
+      "lr_after_scheduler": 0.09135402871372812,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch019_batch1.pt",
+          "sha256": "6df38ddc0d87d7fb727e125f5d92b08c48c2fce6403856bba637d62f9872f54c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch019_batch2.pt",
+          "sha256": "50f77fa582d9cf40d497ef4666d06b84ee09d88d9756451d15ea6eea87df19bf",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch019.pt",
+        "sha256": "0e6d0de9aa3cf218c461df88dcd3361aa7e97cbda2e7922b7584bf0a18e01906",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 20,
+      "unweighted_mean_of_batch_CE": 6.795607805252075,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 95.04515838623047,
+      "lr_after_scheduler": 0.09045084971874741,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch020_batch1.pt",
+          "sha256": "55c43a6b488bd34e27a1c645bd2e6b8b0ce5b8dd1f6ee8a58c69800aa9b83a1f",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch020_batch2.pt",
+          "sha256": "b66841ea4c2940211a9359e4d4da4142bb375a97ac691f7d32e9ceb0c54f8fec",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch020.pt",
+        "sha256": "66de9012ef95df26f3185a9858c0ca430345d6b16b7327b6ee9e5cc5cd247c3d",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 21,
+      "unweighted_mean_of_batch_CE": 6.84165358543396,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 106.8846435546875,
+      "lr_after_scheduler": 0.08950775061878455,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch021_batch1.pt",
+          "sha256": "92eea4e6f76bb8956d40b88f3c49cd493254211f5ca935f3d8e0f057266356a8",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch021_batch2.pt",
+          "sha256": "713cab89e2448100b87e169fcb0eba6a603d212e6c4967cdadb96b6e3f34e649",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch021.pt",
+        "sha256": "535c21d6b33c86d2ec605f4294b50d6fd162d5ed94dd2ae4ef3f2c3d6f684ea9",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 22,
+      "unweighted_mean_of_batch_CE": 6.770104885101318,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 87.30098724365234,
+      "lr_after_scheduler": 0.08852566213878948,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch022_batch1.pt",
+          "sha256": "3c4dec00bd8f2bec9e86dfea93eac7f5e40685c030146c068a1dc7da964416c7",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch022_batch2.pt",
+          "sha256": "098afe865a8395daa800e55bad7ff0612c417da228449ce6d99348b8fd87b6ce",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch022.pt",
+        "sha256": "9bbdf5980fdcbb5c0127ad1e0691a47e752119922ae264d00b4d1865a206306c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 23,
+      "unweighted_mean_of_batch_CE": 6.819021463394165,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 95.2564697265625,
+      "lr_after_scheduler": 0.087505553481523,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch023_batch1.pt",
+          "sha256": "2c7773174f485940271fe88627d5448f8d42c9e5df719fb8080787952715ebd1",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch023_batch2.pt",
+          "sha256": "62efa9a84b589521bd9eae13a37931b881ffa2564fb47fed21c76d325a58a0fd",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch023.pt",
+        "sha256": "06327800eadd645a64806c538cab06b9ebdeb91a4265c9289bca351a8f2b0ec8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 24,
+      "unweighted_mean_of_batch_CE": 6.731486082077026,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 80.51991271972656,
+      "lr_after_scheduler": 0.0864484313710706,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch024_batch1.pt",
+          "sha256": "155873d395acd4f553518546643c4fc4e194713a4c54dc5ec1ea2c235b017ef1",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch024_batch2.pt",
+          "sha256": "ea59e78bbd7f8dfec19abc6295c7e25c52495055e042613603b7adea812675ce",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch024.pt",
+        "sha256": "0138ad1d5b3ca9e14af782cf5a55ba750299e180cf8a08f3fcad6c870371944a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 25,
+      "unweighted_mean_of_batch_CE": 6.708423852920532,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 87.19688415527344,
+      "lr_after_scheduler": 0.08535533905932739,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch025_batch1.pt",
+          "sha256": "04578a1aea55d15426d3197f958e33a127f9dffc9a2bdb7f10307fbeceebc9af",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch025_batch2.pt",
+          "sha256": "90673bc43afec6e05866e8837b37b20040d35a49ab2b600bad17300a650845c9",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch025.pt",
+        "sha256": "07ed1ee36c3fd797599c06129ebb4edd10c4084c383b3bbb17493eba3bccdd76",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 26,
+      "unweighted_mean_of_batch_CE": 6.742796897888184,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 83.25888061523438,
+      "lr_after_scheduler": 0.08422735529643445,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch026_batch1.pt",
+          "sha256": "a8a331fa12255031006f14d140fad3b0789405f68ec324450bce64ad341bafd2",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch026_batch2.pt",
+          "sha256": "bc6d84d7ad8eb74c5fc031ec263e76be451479862a730af3dd9fccb5591fd1e2",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch026.pt",
+        "sha256": "3f4583fb523b95a9fc209b7334db5add392b2fb694b04e7b806c1b41301ac27a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 27,
+      "unweighted_mean_of_batch_CE": 6.730238676071167,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 82.57351684570312,
+      "lr_after_scheduler": 0.08306559326618261,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch027_batch1.pt",
+          "sha256": "bcecc2975d33db31ac54ff4adb2efd509e9d838ea6792ac40762d1a54a837d7c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch027_batch2.pt",
+          "sha256": "09d5ad3efbdad561a98ea17edb8e703c42356096c26beb2a74df731ceb58967d",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch027.pt",
+        "sha256": "fec84be7691b8829be10b0221bf30a7808faff317cbd885849c919648da87e61",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 28,
+      "unweighted_mean_of_batch_CE": 6.862086296081543,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 87.05290222167969,
+      "lr_after_scheduler": 0.0818711994874345,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch028_batch1.pt",
+          "sha256": "a417a786ea072976d9f29bc4c731c8accf99185f7a2cac9e6cdd18fa00eef4e1",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch028_batch2.pt",
+          "sha256": "cc10051a0d30c463471e0d6f28c990a6c383c37f56a6467f9c9ba39e36c263b9",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch028.pt",
+        "sha256": "8a6069cadccf3b4f915fa06fa006de517a47c13da99894bfec5ec52a628644f4",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 29,
+      "unweighted_mean_of_batch_CE": 6.713000297546387,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 84.92598724365234,
+      "lr_after_scheduler": 0.08064535268264884,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch029_batch1.pt",
+          "sha256": "f9ba8bb0fb0e83af88df35058a3c9feb6b31dcfe2b972f92a9471161c1f33068",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch029_batch2.pt",
+          "sha256": "e41ca5eef31715a96d663024a35f0059295c8e5f8b7a695b337f2046503914b0",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch029.pt",
+        "sha256": "ed3bb10356f3cd0b7316fa70feb65b3cd2bc5574b5e83802f49d4ed0b3bc5c22",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 30,
+      "unweighted_mean_of_batch_CE": 6.797454833984375,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 78.53277587890625,
+      "lr_after_scheduler": 0.07938926261462369,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch030_batch1.pt",
+          "sha256": "da89ff3c30e4e0b9dbb88622e79cab7b37d1ca4dd5235f71142995a61447d1eb",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch030_batch2.pt",
+          "sha256": "7c462e648685969323d3c1fdc6b9290b16c41ca60e4b9e6d0108c1f416c0ed23",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch030.pt",
+        "sha256": "e0f1ae308bbd1d005c9df67c3b82d40692697da08d7cb31509e5c3000f3410c2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 31,
+      "unweighted_mean_of_batch_CE": 6.758702754974365,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 86.8188705444336,
+      "lr_after_scheduler": 0.07810416889260656,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch031_batch1.pt",
+          "sha256": "73bfdcde86d68c18c418cd9533d302339307482a951304b67918e1fc479275fc",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch031_batch2.pt",
+          "sha256": "80e9445bd2b55927e0c962deb00365ad782875253d69040924339bd01bb538c0",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch031.pt",
+        "sha256": "ce8e76a7f7d2d770c76ae293795d0015c0bc7dcaa5d1658446e84f26cce489a7",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 32,
+      "unweighted_mean_of_batch_CE": 6.897356271743774,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 83.19000244140625,
+      "lr_after_scheduler": 0.07679133974894985,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch032_batch1.pt",
+          "sha256": "1d950099039de90b35b9b75b4ad5dcc785c7b9ab93df2fa3432a5b0ed80c906c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch032_batch2.pt",
+          "sha256": "4cd8ae827685334df66b2a893f8651534579fb2d04618650c7ebe2695f87bf7f",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch032.pt",
+        "sha256": "068c504f59f6e436e297b41195394472b13345051fb6dbb3a6f779bc1709882c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 33,
+      "unweighted_mean_of_batch_CE": 6.778822183609009,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 69.49968719482422,
+      "lr_after_scheduler": 0.07545207078751859,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch033_batch1.pt",
+          "sha256": "fb4dae0d4c8737b5dfa9231a65defabdd5d413037170f9f9005e7a7495eb68b9",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch033_batch2.pt",
+          "sha256": "0e34a1d3e228d9d9bfab958455482c33f1651295b24fe83ace66620231b317e8",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch033.pt",
+        "sha256": "12afbc0a5c5c8afe0916e1f3c1eaf15a9e80a47ccced8d410c1b5343b6d9d4cd",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 34,
+      "unweighted_mean_of_batch_CE": 6.758791208267212,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 74.03408813476562,
+      "lr_after_scheduler": 0.07408768370508578,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch034_batch1.pt",
+          "sha256": "c969f321688405e8f2fe10b0d22960e5dcf8a84a0494b3320b40a33a7911df00",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch034_batch2.pt",
+          "sha256": "7adff7bf2a4b356595eb31d152e285ed9503b8c5335f6ce07ef2f15c38668fbe",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch034.pt",
+        "sha256": "606f51b5301023cf1f47c4011e8cbf69e3dc4ba720a7934ab3d2ba53d62ed7cc",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 35,
+      "unweighted_mean_of_batch_CE": 6.799330949783325,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 75.25706481933594,
+      "lr_after_scheduler": 0.07269952498697736,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch035_batch1.pt",
+          "sha256": "2d2efe913b9980140a4ef869f5f6cc2dd1a46a13e099a7ace839f50f0d5ec464",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch035_batch2.pt",
+          "sha256": "9e845fcc1de3c7db420b4f581de2461a91c7a1ebe22322896d99e4c53774ab9c",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch035.pt",
+        "sha256": "2538b49cdc14966286b20df541d497edb4587232cd9b535588c6dddde80e4f50",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 36,
+      "unweighted_mean_of_batch_CE": 6.790583848953247,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 73.19161987304688,
+      "lr_after_scheduler": 0.07128896457825365,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch036_batch1.pt",
+          "sha256": "faff936dc7ef272b9bd8a8fd1cf6e79db7362e6c3251cc0beb4f2341147bbca7",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch036_batch2.pt",
+          "sha256": "f708578d20ed26eeb1d9d0165fb2b287ba9d852d1c18c9a6292f73c3c9367fd4",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch036.pt",
+        "sha256": "e2ac1daf57acc818374836c8134d943e7c5ff4fe080c57e5bd3612337e395f6c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 37,
+      "unweighted_mean_of_batch_CE": 6.768102645874023,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 71.80795288085938,
+      "lr_after_scheduler": 0.06985739453173904,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch037_batch1.pt",
+          "sha256": "b193b6dddca15688084e49596524dba886a6d43ec60351206719c7ec47d3fbc4",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch037_batch2.pt",
+          "sha256": "a80714d1404b2c641acd7ba6240010eb3f93909a0814985dc3a91e89ae8a0aee",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch037.pt",
+        "sha256": "df1889aff7d11f7e66ed45b77c2278c328d83176769e3717f12463e1ea9e2e9e",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 38,
+      "unweighted_mean_of_batch_CE": 6.807848930358887,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 74.45340728759766,
+      "lr_after_scheduler": 0.06840622763423393,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch038_batch1.pt",
+          "sha256": "8e03f6535cf3ea39503b5991d297c6cc2c7bb3d94714658989ccad4f75f736fd",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch038_batch2.pt",
+          "sha256": "c6866f6e6b5176481d26cf60ac21d9ba13dc758fa5dff371f22691edcda10af8",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch038.pt",
+        "sha256": "e56c7d0d4c5e83f027ddddff97cac634826f75d14f37e5318e212d6acc478e7b",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 39,
+      "unweighted_mean_of_batch_CE": 6.830524206161499,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 68.68634033203125,
+      "lr_after_scheduler": 0.0669368960122646,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch039_batch1.pt",
+          "sha256": "b1fbf2d1049fa8d864df351be441d35af31174a82303e51a6fd263a60bb9ba23",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch039_batch2.pt",
+          "sha256": "d00d56063eefe04f972d206b9235d559565a6b728e2cda52b8ba3e666ffd10c2",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch039.pt",
+        "sha256": "e708705f33896936fe3a3aa4041df4e9832f623d5e6350207f9f937ada6d61fe",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 40,
+      "unweighted_mean_of_batch_CE": 6.822871923446655,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 67.95663452148438,
+      "lr_after_scheduler": 0.0654508497187474,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch040_batch1.pt",
+          "sha256": "64aa41d40df4e8f4980ae4fd695ab3254fa5ba3e9fe299486bba94489096e256",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch040_batch2.pt",
+          "sha256": "757c8e84da8ab75fe9657fb40ee574a22a24e11169951f67f38b47265c904342",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch040.pt",
+        "sha256": "5423669b9db27e8221acbe01f4be6062ec09de9f3cf11afb197924ef3963b8c2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 41,
+      "unweighted_mean_of_batch_CE": 6.771554946899414,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 73.55908203125,
+      "lr_after_scheduler": 0.0639495553019615,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch041_batch1.pt",
+          "sha256": "76eee9c6f946518723c3db5981a05cf963ae7d43df81a4e9403662eb12545009",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch041_batch2.pt",
+          "sha256": "61c52d332e018c112d5904e77e50e2b30519a808d121576773a281bf79d663d5",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch041.pt",
+        "sha256": "a18d606013c41efa2a0deaec6cfddc685f84fcfd08f7c22039bcd865c0ee4217",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 42,
+      "unweighted_mean_of_batch_CE": 6.826334238052368,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 70.59314727783203,
+      "lr_after_scheduler": 0.06243449435824276,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch042_batch1.pt",
+          "sha256": "c897a8f442a10e564ab0baf1e7fe66d66bf4d9e701c821c19eb92f09a58ce6b6",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch042_batch2.pt",
+          "sha256": "8795bf5eac583d0ddcdef73cc5778bcc8e916c3d7c0b7d03d722d6450df504db",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch042.pt",
+        "sha256": "4cd6ae444e024c1a786764f384ce2386dd56f1ca5634d485f9521921a778b759",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 43,
+      "unweighted_mean_of_batch_CE": 6.721405267715454,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.50562286376953,
+      "lr_after_scheduler": 0.060907162069827166,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch043_batch1.pt",
+          "sha256": "58acf08ea10cf8ecbcea1b03ce0cb1b82c714b48b519b250743b2d95024400c1",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch043_batch2.pt",
+          "sha256": "d1e244d368bb0a1a6e9775bbd77f9ff1b8859701d2b589a4d1518098b05aab60",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch043.pt",
+        "sha256": "b831cb82895a75e8bc4e745397960e81e4efc1f92440206560bdc70624efa39c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 44,
+      "unweighted_mean_of_batch_CE": 6.656287908554077,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 55.53462219238281,
+      "lr_after_scheduler": 0.059369065729286276,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch044_batch1.pt",
+          "sha256": "ed3056a95c7164166c3635762e5e671a2250bb5e276cd2a09e4c71648c02c1d5",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch044_batch2.pt",
+          "sha256": "5cc8cabd4ed60e72390617552a01259b69c09c488ec46f3bb83c121d99aea82e",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch044.pt",
+        "sha256": "ae4313fe37a1f8fc8711d30758ac2d926f6fdb8997bc27b37c0d992700446353",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 45,
+      "unweighted_mean_of_batch_CE": 6.695228576660156,
+      "target_hits": 6,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 59.68864822387695,
+      "lr_after_scheduler": 0.057821723252011584,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch045_batch1.pt",
+          "sha256": "891a20b36b3b3f88a197aef8598a6318421e1d5e600c55450b72ac0faed9c130",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch045_batch2.pt",
+          "sha256": "0c366d925fc42fee7629a054e924e480dda29363abff666025a745ad634bb554",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch045.pt",
+        "sha256": "b0a3c4a18b581860dcdee096a399b467a85b3b08667c7d50b1dd56bd2d6633b2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 46,
+      "unweighted_mean_of_batch_CE": 6.829455137252808,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 69.94251251220703,
+      "lr_after_scheduler": 0.05626666167821526,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch046_batch1.pt",
+          "sha256": "7a4bd6c9e39ab9100eef3e7d4fab2d444186277938e61d0f8dcd3e2e90517090",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch046_batch2.pt",
+          "sha256": "9cd7bd8025757fecfcfb865e1c2b47471cfc4a9e27d17ac6c32f8794428ffe6b",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch046.pt",
+        "sha256": "04ed154b375b053363b92c22c827a31c81d1014cb7dff4defb35a62e2a485e8d",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 47,
+      "unweighted_mean_of_batch_CE": 6.759198188781738,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 61.839500427246094,
+      "lr_after_scheduler": 0.054705415665925745,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch047_batch1.pt",
+          "sha256": "1d050c67d26a558d3572d77c0620692d24d8fd6bac6c588a4a5986bd24481c6c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch047_batch2.pt",
+          "sha256": "8101af8dcceaa97328e4031d0702c4763409fb945d708eb25f850d36113e73e5",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch047.pt",
+        "sha256": "3ff115787749f9c8085102dc423f5d1a5527dd3ffd6cbd4dcdf29d78d0a1b0f8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 48,
+      "unweighted_mean_of_batch_CE": 6.697520732879639,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 58.51256561279297,
+      "lr_after_scheduler": 0.05313952597646571,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch048_batch1.pt",
+          "sha256": "bf8e8fe29ad9121e4b9c7c74cbd2ca63bbb5841d2b00f88ff06ad8166ec5f537",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch048_batch2.pt",
+          "sha256": "341e7304206cd2e873a276b329c080ed264d3ebaf10d94c521578de41e7505bc",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch048.pt",
+        "sha256": "e066e562fec473e9b4ecc4f0319f96ebcf5efce43c0e6487d0140ae3cb005e3d",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 49,
+      "unweighted_mean_of_batch_CE": 6.766003608703613,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 53.644676208496094,
+      "lr_after_scheduler": 0.051570537953906447,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch049_batch1.pt",
+          "sha256": "3cb5488250b9af947e5747f4d223fa896adcaf777dbf4ca917ba5c08a47de867",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch049_batch2.pt",
+          "sha256": "b22bfd1a82736048c3e96079d642d5f0383b86c659a089504c2d8204a7dd8125",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch049.pt",
+        "sha256": "b0325d2810e2aaba74cbb08127fadbb4d0be764182a2a8b9e354f967e6d08d1e",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 50,
+      "unweighted_mean_of_batch_CE": 6.612498760223389,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.90520477294922,
+      "lr_after_scheduler": 0.05000000000000003,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch050_batch1.pt",
+          "sha256": "96ef002ecf1ec99c232af118a56e8bf0ffd7c670da9510fdd8ffdf5303e397f8",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch050_batch2.pt",
+          "sha256": "c4c3f228c2f9e1ebc06f9f60ab6940da7c6dd7071a38594f2a0eab9948d8834b",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch050.pt",
+        "sha256": "5291bed5dc965e14412ee90c7166a96736a99b9b30c65312a1cabf5cf715f5c7",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 51,
+      "unweighted_mean_of_batch_CE": 6.7658751010894775,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 60.10503387451172,
+      "lr_after_scheduler": 0.048429462046093615,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch051_batch1.pt",
+          "sha256": "30640f0616040855dc827cb8993ebd7a9c51c4d812f3320ce8c1ef29f8214f77",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch051_batch2.pt",
+          "sha256": "6f96009938205bb49a4f560c25fe0962c573b80231dea917981ac247df1315f3",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch051.pt",
+        "sha256": "d7aa41e923815a22f5b75e2b8cf94fd5507f3a1d70216f9650357566f910fd03",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 52,
+      "unweighted_mean_of_batch_CE": 6.771768808364868,
+      "target_hits": 0,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 63.494529724121094,
+      "lr_after_scheduler": 0.04686047402353436,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch052_batch1.pt",
+          "sha256": "fc657a7c9701de49c57d4600b7b47f683021ec74d53066eff97b251c45228526",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch052_batch2.pt",
+          "sha256": "fc92c864b18844696a35f038f3f605b6a6b87417480b7a11c6586d732d0c57c9",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch052.pt",
+        "sha256": "17ca472dcd020a35c5c06a874696a69897e767012379fb107b910ada6e058ac8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 53,
+      "unweighted_mean_of_batch_CE": 6.673509836196899,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 55.279396057128906,
+      "lr_after_scheduler": 0.04529458433407431,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch053_batch1.pt",
+          "sha256": "d4a42b78e0b9b22915b28a6794a2962f3b2af18fe86896a7995cddb53afa3285",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch053_batch2.pt",
+          "sha256": "617c4f4360aa989e0bf357078c0e3ed4213fe3d77973d34f3e1ec3ee9c587aad",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch053.pt",
+        "sha256": "a0140c317bc9c1f1334158855d2b84ffa1ad0d800e94456e59d672e86f5fc7a7",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 54,
+      "unweighted_mean_of_batch_CE": 6.617946147918701,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.69959259033203,
+      "lr_after_scheduler": 0.04373333832178482,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch054_batch1.pt",
+          "sha256": "312ed350984103ede8146d4110dfeddeb14ac158175fa418ff50f43572c522c6",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch054_batch2.pt",
+          "sha256": "6d9246dcd851950905ad3d87e23583f012164d3ea93bc163e8acde9feb5959ea",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch054.pt",
+        "sha256": "412160a05939e2ecc9878258687f9291725aba3fdff11c08ada58b9d238c7f0c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 55,
+      "unweighted_mean_of_batch_CE": 6.743752479553223,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.46962356567383,
+      "lr_after_scheduler": 0.04217827674798848,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch055_batch1.pt",
+          "sha256": "ec90e05c8c538a912931344223e208ff509c7982fab9accd72da6b3f05f9f56d",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch055_batch2.pt",
+          "sha256": "30ac5130e28f3b533d746c79294f06dcfd5bbdf952c9fe9f0b0a37d67d0c99d8",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch055.pt",
+        "sha256": "50b797f02ec42f763f2da1439d63f9cb2af5115618358f3d96b0a0000b5e572c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 56,
+      "unweighted_mean_of_batch_CE": 6.695935487747192,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 55.90595245361328,
+      "lr_after_scheduler": 0.04063093427071379,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch056_batch1.pt",
+          "sha256": "e529b21b487e7887f3ea33cd2ba597541ce8cc53fa5ce1858c7534d0e6a5c2c0",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch056_batch2.pt",
+          "sha256": "a113db94200fbcfbe33a090a202aae741e92b584725f3526bb6244e9cc23df61",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch056.pt",
+        "sha256": "4235d3b5088db41815bb2282cd16d0e2a42b3a50ae595faf678c5a1760572d60",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 57,
+      "unweighted_mean_of_batch_CE": 6.700440406799316,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 50.07611083984375,
+      "lr_after_scheduler": 0.03909283793017291,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch057_batch1.pt",
+          "sha256": "fda30b3841427183ff5e1e3aa51cb13f668f3672f29ec4e6df1811ed0b8dd3bc",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch057_batch2.pt",
+          "sha256": "d3f8bb7e8e22919afbbd5730b1eb0503b71c9b269340cefdb157c03f2f38c7b0",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch057.pt",
+        "sha256": "d976057981c5c4ac1ddaf8ff065ad07014356c90b18c157920e165fc4a2af96f",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 58,
+      "unweighted_mean_of_batch_CE": 6.6240503787994385,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 49.291709899902344,
+      "lr_after_scheduler": 0.03756550564175728,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch058_batch1.pt",
+          "sha256": "7adc15574b5019130703ff6619cc41fdb1b19a21169275208dcf905151a47566",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch058_batch2.pt",
+          "sha256": "4ff4228d6033e3b6054fdf42f0f0b11e48b26e97e805a42690104f4740a452a6",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch058.pt",
+        "sha256": "e9f5b2fdf0d09ddd86ca75584aa40e19ff6a5272ce8f2cca1da7a27c08e8f5bf",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 59,
+      "unweighted_mean_of_batch_CE": 6.77911639213562,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 55.93602752685547,
+      "lr_after_scheduler": 0.036050444698038565,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch059_batch1.pt",
+          "sha256": "46d5c0b6c9abcf9d3064b4157e523019021ec601ebd638b0c58a10a88ec6bd86",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch059_batch2.pt",
+          "sha256": "14c38a069f4c46b30a4e40cde4ce00ecf39653d3fa519a0b7874dc9802f55e55",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch059.pt",
+        "sha256": "20f105d8f56305d523eb9d5f993c58751c161d6455096d4b112f00d1025e55a6",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 60,
+      "unweighted_mean_of_batch_CE": 6.666315793991089,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 52.87150573730469,
+      "lr_after_scheduler": 0.03454915028125267,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch060_batch1.pt",
+          "sha256": "2613bc641e765dd4d2a92b47ebefca252126ab10ad1a2799b76c89b4a742e1b2",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch060_batch2.pt",
+          "sha256": "eaa9263de25dd7c5629d57dee985bc3656135961ae886c760c8240c9303b4ed7",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch060.pt",
+        "sha256": "2bbeea8bf730bc90111a0d3867e432a2a371637325d4c53d24ae95ada9e2f52a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 61,
+      "unweighted_mean_of_batch_CE": 6.778595447540283,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 54.69913864135742,
+      "lr_after_scheduler": 0.03306310398773545,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch061_batch1.pt",
+          "sha256": "9b7283ece413c40f2bd5e7d0acb9fe7be04d8d255badd1a710e003ed8c42652b",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch061_batch2.pt",
+          "sha256": "ef2d9f6f278b405668b5bdb4b8c9f7166693c187fd114692d2ab733735b7c808",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch061.pt",
+        "sha256": "12e0e5c09baed23053abdde7b6952381236c7a99e4d987b652cac1c0d27374d7",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 62,
+      "unweighted_mean_of_batch_CE": 6.755324125289917,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 61.32234191894531,
+      "lr_after_scheduler": 0.03159377236576614,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch062_batch1.pt",
+          "sha256": "a1cbfb892b0656234a6a8f0be10cbe1bf7e6f8bf44b2b2881394b95adcadeaa3",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch062_batch2.pt",
+          "sha256": "e02c30835c5ad0216f30c93b1626df6078fcecdbaba7e1718e82351b7471777b",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch062.pt",
+        "sha256": "048ce49ba446461bcca570f2f3f94883c84803139bb1fff08a4201f473f810e8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 63,
+      "unweighted_mean_of_batch_CE": 6.707047462463379,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 52.06463623046875,
+      "lr_after_scheduler": 0.030142605468260985,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch063_batch1.pt",
+          "sha256": "a6fe913621f098997d0f2a7e38202d4e33fa4fb1f6770281579de5b583dcf057",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch063_batch2.pt",
+          "sha256": "7bfb50ee4f1fd58c539721ddb45b0094b00f4f4cc707c016535ae64d32981074",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch063.pt",
+        "sha256": "51fc539bb5795c321289683d7e2cd448d3e84237798c35b0223586802983100d",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 64,
+      "unweighted_mean_of_batch_CE": 6.702723026275635,
+      "target_hits": 6,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.1669921875,
+      "lr_after_scheduler": 0.028711035421746387,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch064_batch1.pt",
+          "sha256": "77ea66dbd261cac12c5ba16e2cef8e92ef08aaf2fd32f48654f1b540126bd679",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch064_batch2.pt",
+          "sha256": "9531569b71ed912125944518f9eeecbce74a55bcd5ba8e18086669d821a6bd86",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch064.pt",
+        "sha256": "61e55e6c2b850cbf471f9134fb8a0f1fc4ee8a6de0855b015e4d1f9da08f22ec",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 65,
+      "unweighted_mean_of_batch_CE": 6.702393293380737,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 49.39372253417969,
+      "lr_after_scheduler": 0.02730047501302268,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch065_batch1.pt",
+          "sha256": "83401b8f0265c31b7c09b2c808cd97dd4233774f566a04f3081ac2deb6be6114",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch065_batch2.pt",
+          "sha256": "def2fa76b8c21ecea74e59254cf329d35f28b604d3e494d6d21f93ca8a49188e",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch065.pt",
+        "sha256": "1a467b5d620c4def5794c83fbc2b85585e6c263f63f0b4462a33a83bc1b30868",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 66,
+      "unweighted_mean_of_batch_CE": 6.706069707870483,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 55.15412139892578,
+      "lr_after_scheduler": 0.025912316294914247,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch066_batch1.pt",
+          "sha256": "8f4de426690101e01a61ba2b673653ae75771ae8fc100dad926cfb87cb0963b9",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch066_batch2.pt",
+          "sha256": "29713357e511698f6a01ff0c8c1d991fba1bed349c6bda2cb642a9890806443a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch066.pt",
+        "sha256": "02ae6b238dbf722c90b0afe1d2544b0b95dfae01f6ec8120b037e9d780707fc4",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 67,
+      "unweighted_mean_of_batch_CE": 6.662692308425903,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 53.560691833496094,
+      "lr_after_scheduler": 0.024547929212481452,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch067_batch1.pt",
+          "sha256": "c1c35c24f60426526efa9cc6c810b5b923af4ca70aba9933d5761396efb7aaaf",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch067_batch2.pt",
+          "sha256": "7a3c2efaf32cea8add77265ea4bd9d6ec5c5f2056133bca6fc7c81b41e2a32f1",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch067.pt",
+        "sha256": "9bf3054b153d70c63ab557a0e65d34d62207c9e0c594df1d42f5c6ac8c2e665d",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 68,
+      "unweighted_mean_of_batch_CE": 6.73538064956665,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 52.233638763427734,
+      "lr_after_scheduler": 0.023208660251050173,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch068_batch1.pt",
+          "sha256": "23cfac7589a55d0d56424ba6a4fcb44c8f8469c75b9b0572c59cce67b7263fcd",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch068_batch2.pt",
+          "sha256": "287a14ed69a2a28266010467cc76299014063a1025254e930242698cc2593c01",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch068.pt",
+        "sha256": "1a07990e70a35ab9110c4d6dfe3ecca474ced259217459d939af68bfac36f140",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 69,
+      "unweighted_mean_of_batch_CE": 6.641765594482422,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 53.95758056640625,
+      "lr_after_scheduler": 0.02189583110739348,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch069_batch1.pt",
+          "sha256": "995910807186e8854bd13716094ba35431c470e342c5809120fe578214ddc60b",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch069_batch2.pt",
+          "sha256": "25d8166ecca07e48f795f74808231c0c0143538b957cc4c67cbdb74fdb885347",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch069.pt",
+        "sha256": "481734db3df25b30238a4c98f13c2341af0a96b4130cfe0f12ed608ab44801b2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 70,
+      "unweighted_mean_of_batch_CE": 6.641386270523071,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 49.729793548583984,
+      "lr_after_scheduler": 0.020610737385376363,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch070_batch1.pt",
+          "sha256": "eb042fc107ae063c8326dcd3b45770bfbc9f8437dc8a48b7a872b03837dc393b",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch070_batch2.pt",
+          "sha256": "043491f043e7a1998db863120293e5c64901cd7a975a2a72c04ab604a3309765",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch070.pt",
+        "sha256": "01b3b673ee314e4180757ed55e1ed05efd8fdb6c0058e7ffb479c8e8cf510f1c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 71,
+      "unweighted_mean_of_batch_CE": 6.731240510940552,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 51.53425598144531,
+      "lr_after_scheduler": 0.019354647317351183,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch071_batch1.pt",
+          "sha256": "5ab2438dc07f909b0aa65d60519d9e59c4a21ff705196be5d89986c8c62afcb2",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch071_batch2.pt",
+          "sha256": "81fe87564eede446f525c92bddb8f08935a9653a5c8cd0e76b89ac65a65077e1",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch071.pt",
+        "sha256": "8c240fc04730df6af51256a351c8f3ce8d69aebfc49ad74750e1c89fa595753b",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 72,
+      "unweighted_mean_of_batch_CE": 6.63818621635437,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 50.3408203125,
+      "lr_after_scheduler": 0.018128800512565525,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch072_batch1.pt",
+          "sha256": "bb08508e0caa7448b36b8d799a24874b27a0c0ef89a1da871d765916f4abda61",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch072_batch2.pt",
+          "sha256": "e4516b55d58e7b2f3087c7055dcbb7bce931787452023209187c81c6ec6d40f1",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch072.pt",
+        "sha256": "2164208cb76b834864ec8460246f8a852b031431ba608d63a693b071fda1a485",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 73,
+      "unweighted_mean_of_batch_CE": 6.642070293426514,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 51.805538177490234,
+      "lr_after_scheduler": 0.016934406733817426,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch073_batch1.pt",
+          "sha256": "7d49cfbbd3455195b0899d3d42bb7f636735162afb81f05d12843535ef18fc29",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch073_batch2.pt",
+          "sha256": "dda90a26618fadcc69bdefda7c059b73d77ba18452b0eef9d41e6a73ee0e0135",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch073.pt",
+        "sha256": "b3c9262c1fcfe1c8dc9651677c33216739b4b5f66a158dbf5cb404241cf9d9e6",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 74,
+      "unweighted_mean_of_batch_CE": 6.741026401519775,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 53.47373962402344,
+      "lr_after_scheduler": 0.015772644703565576,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch074_batch1.pt",
+          "sha256": "c3332c20dbfa8d0e59a18ac3c7b41178a0765e055c33af6ea30987c0ceb8611c",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch074_batch2.pt",
+          "sha256": "7db8c7bb2e2124f865904286d4da903cbe9617eba4c0bd5f50c563fce7ee6cf8",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch074.pt",
+        "sha256": "a03c52612c7279a476508db971e2ee63da6e9d3427d53f1c7fe3d65f0a81b17e",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 75,
+      "unweighted_mean_of_batch_CE": 6.709260702133179,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 48.17618942260742,
+      "lr_after_scheduler": 0.014644660940672639,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch075_batch1.pt",
+          "sha256": "fac7128badc380896a36846996f0744902ef98d048459f822aa6468ab0322523",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch075_batch2.pt",
+          "sha256": "86c9db187be2167cf3c3869ddcc08cb61382282abe2c330097022c5a5bb0f577",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch075.pt",
+        "sha256": "9d055b4fd6b291600637bb011f44400da309e2ecb76b08c300ed31430be9ccea",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 76,
+      "unweighted_mean_of_batch_CE": 6.63725209236145,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 54.97030258178711,
+      "lr_after_scheduler": 0.013551568628929445,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch076_batch1.pt",
+          "sha256": "739d43d25e6c4f68dde068556d12b59477d29a877a7066690c0875ad699d5e8a",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch076_batch2.pt",
+          "sha256": "ed2911ebef1dec87d8354d30bb6c9c11c8d93ac205e5c27186ef7a628bb2c470",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch076.pt",
+        "sha256": "7b89c67cbf0b4eda62cb945c04561c156ff3ce618667474b060593dcb50cd85a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 77,
+      "unweighted_mean_of_batch_CE": 6.624961853027344,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 46.866458892822266,
+      "lr_after_scheduler": 0.012494446518477037,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch077_batch1.pt",
+          "sha256": "9092f73d7dd2e8f5a02f400404f3a2da2c08b23c0452fb0bb972130393b51aa4",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch077_batch2.pt",
+          "sha256": "83ca20ca734513ab0a13eccf4f2b538d07505ccac47dc261ea2b1c6eebe25be6",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch077.pt",
+        "sha256": "60bddeb64f4b8c56229978cfd1a79ba257bc8cfd72982672360e6674c418ca64",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 78,
+      "unweighted_mean_of_batch_CE": 6.591194152832031,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 46.00217819213867,
+      "lr_after_scheduler": 0.011474337861210554,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch078_batch1.pt",
+          "sha256": "08483de9a7e544b4cc616b5daaf0f302c922be0e0e1ae513ef70330ba238907f",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch078_batch2.pt",
+          "sha256": "5a6dbc1ba397f8ad09426dee817b0d06df99611b08a12910ac09b0adf215ae0a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch078.pt",
+        "sha256": "c4d109b5f75cde78bb6da248930babe191d1f62ec473a51538e727e0dbfe14b8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 79,
+      "unweighted_mean_of_batch_CE": 6.746831655502319,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 50.364837646484375,
+      "lr_after_scheduler": 0.01049224938121549,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch079_batch1.pt",
+          "sha256": "a10c42aa48710ed65f5a58bd4b3ef30d2527744f90b1092f1f0eb44097a86331",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch079_batch2.pt",
+          "sha256": "933c5a1d746d926c60ab82914f5e4a3a29bbd4c847724c3bbc0bb522c4dac4cc",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch079.pt",
+        "sha256": "818be4a047bd6513eb64676a8c5ae5d2f84f03b0a6937f86e66d71e4500f2101",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 80,
+      "unweighted_mean_of_batch_CE": 6.688878297805786,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 42.39417266845703,
+      "lr_after_scheduler": 0.009549150281252642,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch080_batch1.pt",
+          "sha256": "d6fe60b8f3597e2ce4842ea0117e073492c7899067cc8732e1b9383ce45dcfdc",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch080_batch2.pt",
+          "sha256": "c0702e4957870122399d04d3f889986aad6741d85dfa553c962f5d02a31c4cbb",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch080.pt",
+        "sha256": "e79974ddc26d71a1752a74a92f095ff4c5d479cda79c1b85c2ac777aacc9732a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 81,
+      "unweighted_mean_of_batch_CE": 6.625711917877197,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 56.650081634521484,
+      "lr_after_scheduler": 0.008645971286271927,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch081_batch1.pt",
+          "sha256": "86fa4a169e9a5255454545d1413053aadda138b417437bcfbae5d0109ae9f973",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch081_batch2.pt",
+          "sha256": "21965154c1a3077cc7a3adf594f6a8c33eb52f3ddde75c02ca75354900bcc8cb",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch081.pt",
+        "sha256": "c07d0f40362a89b2991571348c40bc49a381e2df6709467fc5cdf4caec0f03d5",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 82,
+      "unweighted_mean_of_batch_CE": 6.6860878467559814,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 44.074928283691406,
+      "lr_after_scheduler": 0.007783603724899264,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch082_batch1.pt",
+          "sha256": "8b34a242bbcd79890591d29bf65ba0e8db92dc8e4d7882e31448535317a36bf2",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch082_batch2.pt",
+          "sha256": "db6b35e092d1cec004cdbb8baf4a74417178d9b7ede57cb60106da722d149ad2",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch082.pt",
+        "sha256": "8771c820281f1bea53b3ac69e46e7527f5cec8fa1ba7119e90bf1c4f1f084278",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 83,
+      "unweighted_mean_of_batch_CE": 6.588209867477417,
+      "target_hits": 7,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 47.020416259765625,
+      "lr_after_scheduler": 0.006962898649802819,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch083_batch1.pt",
+          "sha256": "3b73cdafaa014f6c3b9bda48d2aa7d1c7e75f7a63edc082d157e6b463e109c5d",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch083_batch2.pt",
+          "sha256": "4dc4aa92fc0e0dfa4cd02cfa789a2072cdd7b4d1262a89b11bf755c6cade048f",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch083.pt",
+        "sha256": "7186ba65ffa17b9bbab8b2e7cb2d6a243b2107d301b26f2af9db8f63bc08e81f",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 84,
+      "unweighted_mean_of_batch_CE": 6.590898036956787,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 43.87159729003906,
+      "lr_after_scheduler": 0.0061846659978068265,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch084_batch1.pt",
+          "sha256": "6d2a5251ed84819774a50cb596b37ff97b623b3fa5a495c1edcf5a497343e82e",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch084_batch2.pt",
+          "sha256": "fa9d73e914bf1a3f481f439034605d474461d123b4c3b263f365c23bb4c30e7a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch084.pt",
+        "sha256": "0a3282749f742b13cbe6e23ee5ce5ad22a93a8be0b54dfd8b2473023b5748be8",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 85,
+      "unweighted_mean_of_batch_CE": 6.665050268173218,
+      "target_hits": 8,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 47.62861251831055,
+      "lr_after_scheduler": 0.005449673790581615,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch085_batch1.pt",
+          "sha256": "d2d618d9d58614a551193d80b2b43fa72068fa0d91ba5feb56d19358c7419c71",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch085_batch2.pt",
+          "sha256": "c6d99ccdf47b8a18865666359400fd6ed1c9be22762ad95e5f1f25f5d58f1888",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch085.pt",
+        "sha256": "c64be61860a736a109e0b64744b177a031a3c52fd56dbbfefbeed5f4586ce4ad",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 86,
+      "unweighted_mean_of_batch_CE": 6.676905632019043,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 49.928733825683594,
+      "lr_after_scheduler": 0.004758647376699036,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch086_batch1.pt",
+          "sha256": "d2339c5402c45fc909aca7b309ce3aae671f963695a04456f40378b217ad991a",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch086_batch2.pt",
+          "sha256": "f5955ca6a5518a2b1e28991cf794b8e23211605121c1f975726f9921e762e586",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch086.pt",
+        "sha256": "dea5cae2ff03ede7f84628ae828c27a5271e2c82ab13ff3f643070712d109dac",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 87,
+      "unweighted_mean_of_batch_CE": 6.604340076446533,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 44.06283950805664,
+      "lr_after_scheduler": 0.004112268715800957,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch087_batch1.pt",
+          "sha256": "acfc323f3f0f5c49e6130b3dd779ab369e5d54ba2e5a6f65f351cf9eddc9a337",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch087_batch2.pt",
+          "sha256": "93c0db1bb96a0048200500a7ca7d257d1bb2f3324e766ae6a7de10925acfe46d",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch087.pt",
+        "sha256": "826bbebb5d5e65daae8d7b30012f8b09922a02eb0ce51127e2ae92d978583ad9",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 88,
+      "unweighted_mean_of_batch_CE": 6.678968191146851,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 57.12859344482422,
+      "lr_after_scheduler": 0.003511175705587435,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch088_batch1.pt",
+          "sha256": "17d6619fc10ef564fd6f4f8b10cf62d99c17d79a43f54e2732a40918619cefcd",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch088_batch2.pt",
+          "sha256": "a9af95b4ea061cb55a30a01f1dfd8931b2d0ea1d691d26df11ceb5753acb9c1c",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch088.pt",
+        "sha256": "f8fce36195e79f3bf3d88452c1d256a6ec490558731a16ddc1b07e50fa86bd91",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 89,
+      "unweighted_mean_of_batch_CE": 6.697246551513672,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 48.879695892333984,
+      "lr_after_scheduler": 0.0029559615522887295,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch089_batch1.pt",
+          "sha256": "80f96884744d41cc23f2558b9b67bb74e571fef2110355b65d099f415db049ea",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch089_batch2.pt",
+          "sha256": "81bb61f4739a600b1be8b789779268f7795b42c179c6e5be6bfef6b20114f7b5",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch089.pt",
+        "sha256": "96fe63a8edb9fe7b80d05fb0d481850cf001283f943410ba0f2ccb3630981001",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 90,
+      "unweighted_mean_of_batch_CE": 6.605428218841553,
+      "target_hits": 2,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 44.55998992919922,
+      "lr_after_scheduler": 0.0024471741852423253,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch090_batch1.pt",
+          "sha256": "166549b84eca33a547450abfdbf61e6e99e1515b2cb98e0508f462a3b92bf397",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch090_batch2.pt",
+          "sha256": "68641259bf2378c3893976d9b5148762cce14f8e4ebd673780caa18b6b9431b2",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch090.pt",
+        "sha256": "c9a1c6866507436f47471da6b7697fb465228a6d190ca4200bdbd4b259c5a058",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 91,
+      "unweighted_mean_of_batch_CE": 6.649389266967773,
+      "target_hits": 6,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 45.296180725097656,
+      "lr_after_scheduler": 0.0019853157161528537,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch091_batch1.pt",
+          "sha256": "2e612a0775635408895e0530693f239bde1a0c0f00633998596bb429887284e9",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch091_batch2.pt",
+          "sha256": "21fc80752e1025a1dd17f9c4b87b981fc546b7b80bdee583d7a144599a97a463",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch091.pt",
+        "sha256": "b0bd7ecebac53de12b06a70dcea97444157a23206c9f677c4b63323b4bca1217",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 92,
+      "unweighted_mean_of_batch_CE": 6.682084560394287,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 49.25486755371094,
+      "lr_after_scheduler": 0.0015708419435684529,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch092_batch1.pt",
+          "sha256": "3441593bc85d2a52203643aae054e6c50dffa66a604a506b399327a78859b0ed",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch092_batch2.pt",
+          "sha256": "11b312c91b6b4331064d01e287758232eafb58756a3d592a102baafd80d22e70",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch092.pt",
+        "sha256": "85af6be7087ecffc98df5ecf9bc4bdf87cf3b071b283ab69d63c3f795dca8551",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 93,
+      "unweighted_mean_of_batch_CE": 6.633181810379028,
+      "target_hits": 4,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 46.45586395263672,
+      "lr_after_scheduler": 0.0012041619030626347,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch093_batch1.pt",
+          "sha256": "088e2d74f427e9da522a87f05793b4e7dabb0987575442a63836eed7df0d9c33",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch093_batch2.pt",
+          "sha256": "8bcded2629bc7fba76a13cd054f7ffaa8a3aaef7767e3a940def96de639a718c",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch093.pt",
+        "sha256": "462b9a7f3afd2a976622fc9e8f387e3572d2025d0489ecaac7d06e9e0f53cd23",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 94,
+      "unweighted_mean_of_batch_CE": 6.5808961391448975,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 41.26384735107422,
+      "lr_after_scheduler": 0.0008856374635655646,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch094_batch1.pt",
+          "sha256": "10f92d104fea838523efc6f546e9d19d717667e86f33c148a57e7135fbbe34ee",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch094_batch2.pt",
+          "sha256": "312e1f43433ea2c209d56cd6c87be2a625106424f079fbdcb3ecd802adb44379",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch094.pt",
+        "sha256": "d42eec9cd74f134755da7a9efd793aeb999784555f9dd5f6c3e38e713dcd4dd6",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 95,
+      "unweighted_mean_of_batch_CE": 6.662924289703369,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 47.68910217285156,
+      "lr_after_scheduler": 0.0006155829702431174,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch095_batch1.pt",
+          "sha256": "b1778e290fc6b54ee13b05f352f81b70bbf56e4605bd1d67db2ee07000b7b9b7",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch095_batch2.pt",
+          "sha256": "7201427e8ac95a6dbcbbc667d0fd36a1d90e10a239489f56d7a173a4c2a1b3f1",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch095.pt",
+        "sha256": "02e14617ddc0fb4b1bdd8f89b0b6293cf510cc622449c3bc8508d4f3abe654b5",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 96,
+      "unweighted_mean_of_batch_CE": 6.634758472442627,
+      "target_hits": 1,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 50.085819244384766,
+      "lr_after_scheduler": 0.00039426493427611206,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch096_batch1.pt",
+          "sha256": "e932508d2ae6f4d773a6b863dcae7ba12af245e9e0391705b687b9f62b049329",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch096_batch2.pt",
+          "sha256": "83149c35ce8c6ee6682ac71b0e437ea302c12562d68fece1d2feb70c80954d2a",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch096.pt",
+        "sha256": "5d83baf5faa9f3f4c8d9a4e607f718259e2525c5e43dbda3fd36b872496b512e",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 97,
+      "unweighted_mean_of_batch_CE": 6.5261945724487305,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 46.82731246948242,
+      "lr_after_scheduler": 0.00022190176984600036,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch097_batch1.pt",
+          "sha256": "9cea6b813171c2fc42bf25dbe35701e68abf2d3e5c6ad7a3f5312d0fc85bd755",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch097_batch2.pt",
+          "sha256": "d7baa2ac43499340a5a522206878c9c07db546cbe65ca9458423c284d789fadd",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch097.pt",
+        "sha256": "358ba79b19337785360847efdd8fc04fd8662e4ba65262c07c54cd799ad7ec3a",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 98,
+      "unweighted_mean_of_batch_CE": 6.612441539764404,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 54.368812561035156,
+      "lr_after_scheduler": 9.866357858642213e-05,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch098_batch1.pt",
+          "sha256": "c072a3af9a0d94c729eca1a2c9d6fdf0bb9357c9c7fa753e2be1ae4b514ac351",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch098_batch2.pt",
+          "sha256": "508c212b4b4d9065f7eaf53f88f5f09ebe2dd59c23131334af2bdd6fb7a47eca",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch098.pt",
+        "sha256": "cb102f1f906b435cc571676668ba6b2ef8e6f3cc7ca9097fa50fed69d04502b2",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 99,
+      "unweighted_mean_of_batch_CE": 6.685248613357544,
+      "target_hits": 3,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 47.04508590698242,
+      "lr_after_scheduler": 2.4671981713420017e-05,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch099_batch1.pt",
+          "sha256": "d938651008d2f2e06c677c453589e516f13d613f0934703386b1a773f310fb93",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch099_batch2.pt",
+          "sha256": "e5080181747f0568cd45f6e53a9c8bd2a83f601d2ba7fae13ee4de08ec74925b",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch099.pt",
+        "sha256": "63acd58bc4043178d2cc1e3dbc8da8e6ff48a50827f09017433ab5134cc44a1c",
+        "bytes": 100128
+      }
+    },
+    {
+      "epoch": 100,
+      "unweighted_mean_of_batch_CE": 6.601011514663696,
+      "target_hits": 5,
+      "N": 200,
+      "last_batch_gradient_L1_for_original_zero_break": 41.661285400390625,
+      "lr_after_scheduler": 0.0,
+      "steps": [
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch100_batch1.pt",
+          "sha256": "0e794cca17064d85be9ad8a324a04cc49a745fe9442dc65e6ad62ab2b3890b11",
+          "bytes": 302587
+        },
+        {
+          "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\steps\\epoch100_batch2.pt",
+          "sha256": "860d814b3c6d24f39a093a123565d466fc8bdc541a4319e6cb53beac36fe5270",
+          "bytes": 257531
+        }
+      ],
+      "checkpoint": {
+        "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\epochs\\epoch100.pt",
+        "sha256": "b5c6b2c6dbee98f45c6c4c3882b4508b70feeb4590b1f57f407b9ad32f403598",
+        "bytes": 100128
+      }
+    }
+  ],
+  "input_sequence": {
+    "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/MANIFEST.json",
+    "sha256": "7a24c1aad699ba6f65101bc63909937e8d15e6cabdb205f1da27f55b62b20f89"
+  },
+  "numeric": {
+    "threads": 2,
+    "MKLDNN": true,
+    "torch": "2.7.1+cu118",
+    "CUDA_initialized": false,
+    "dtype": "FP32"
+  }
+}

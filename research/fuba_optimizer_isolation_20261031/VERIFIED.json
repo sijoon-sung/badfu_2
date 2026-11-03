@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "actual_epoch_records": 100,
+  "actual_training_batches": 3600,
+  "same_50_epoch_orders": true,
+  "files": {
+    "algorithm_sgd.pt": {
+      "sha256": "066866c2927f1830bcb9d130ed76f0c1cf1d53f4ddadf72e03f326ec7fc84d34",
+      "strict_CPU_finite_forward": true,
+      "optimizer_RNG_full_epochs_verified": true
+    },
+    "experimental_adam.pt": {
+      "sha256": "f6d2f9a1eea7f41703a4d68f93f4760441ddb0ed5fc06398946869cc2ebec0ca",
+      "strict_CPU_finite_forward": true,
+      "optimizer_RNG_full_epochs_verified": true
+    },
+    "fixed_generator.pt": {
+      "sha256": "e8194020e1b28718a8dccab6726c7e7177bacfa168baac0fdcab913a78dc41ee",
+      "CPU_load_finite": true
+    },
+    "incoming_classifier.pt": {
+      "sha256": "7f7620f58f769d0c23b59529fa3e0d1fd99ea71624e5dca09c007afcb0e2346b",
+      "CPU_load_finite": true
+    }
+  },
+  "scope": "Saved newly derived models and integer count arithmetic; not another independent full inference."
+}

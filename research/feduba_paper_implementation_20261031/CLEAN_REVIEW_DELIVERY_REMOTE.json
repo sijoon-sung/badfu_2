@@ -1,0 +1,26 @@
+{
+  "state": "exported_verified_normal_review",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+  "archive_path": "D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\CLEAN_REVIEW_DELIVERY.zip",
+  "archive_sha256": "db347532f2d502888bedf7e84e1be3d6b2200fcdaf5f4befb052a066e820d9cb",
+  "archive_bytes": 180309159,
+  "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "payload_file_count": 46,
+  "packet_total_files": 48,
+  "tensor_payload_count": 3,
+  "guard": {
+    "state": "passed",
+    "verified_payload_files": 46,
+    "all_readonly": true
+  },
+  "pre": {
+    "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+    "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+    "payload_key": null
+  },
+  "local_delivery_complete": false,
+  "catalogue_registered": false,
+  "FedUBA_attack_completed": false
+}

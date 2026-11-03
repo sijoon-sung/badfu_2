@@ -1,0 +1,27 @@
+{
+  "state": "running",
+  "pid": 52668,
+  "child": 57372,
+  "step": "verify_pair_evaluation.py",
+  "arguments": [
+    "--catalog-root",
+    "D:/TRAJECTORY_CATALOG_20261023",
+    "--case-id",
+    "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+  ],
+  "guard": {
+    "utilization_pct": 0,
+    "free_MiB": 5045,
+    "used_MiB": 5009,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18323378176,
+      "committedBytes": 44897890304,
+      "commitLimit": 90276544512
+    },
+    "competing_trainers": 0
+  },
+  "CUDA_VISIBLE_DEVICES": "0"
+}

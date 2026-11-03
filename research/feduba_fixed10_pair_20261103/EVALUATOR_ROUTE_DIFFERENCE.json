@@ -1,0 +1,36 @@
+{
+  "state": "preserved_between_evaluation_route_count_difference_no_retry",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "same_pre_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+  "foundation": {
+    "receipt": "../feduba_fixed10_foundation_20261103/CLEAN_FL_VERIFIED.json",
+    "sha256": "c18d7af6b0800cc8ff8810d4440f337239d04839ea320b46ff8251baa37485a2",
+    "N": 10000,
+    "clean_correct": 8552,
+    "CA_pct": 85.52
+  },
+  "paired": {
+    "receipt": "PAIR_EVAL_VERIFIED.json",
+    "sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe",
+    "N": 10000,
+    "clean_correct": 8553,
+    "CA_pct": 85.53,
+    "independent_predictions_and_counts_exact": true
+  },
+  "new_correct_count_difference": 1,
+  "source_observations": [
+    "Foundation verifier constructs CPU normalized contiguousNCHWFP32 input then evaluates on CUDA; its source does not explicitly disable TF32 or enable deterministic algorithms.",
+    "Paired primary and fresh independent evaluators explicitly disable TF32 and enable deterministic algorithms/highest precision/CUBLAS4096:8."
+  ],
+  "causal_attribution": "Not isolated; source-policy differences do not prove which image or numeric operation caused the count difference.",
+  "original_receipts_changed": false,
+  "model_loads": 0,
+  "forwards": 0,
+  "retry": false
+}

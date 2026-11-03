@@ -1,0 +1,10 @@
+Read-only STG source conformance and saved-log review, 2026-11-02
+Related R03/R02/N02/D08/D15.
+
+Hypothesis: the actual mixed CPU STG path is numerically identical to the public pinned trigger_generate_function.py. This is a source equality claim to check, not an attack-success or detector hypothesis. New observable: verified full upstream Git blob/SHA256, AST linkage from actual entrypoint through projected_sgd_batch/core.trigger_step, exact frozen profile constants, and loss values already written during the completed100-epoch run. No model/tensor/SSS-ID load or new inference/gradient/optimizer call is allowed.
+
+Read INDEX/cards and original contracts/reports first. Distinguish explicit declared differences from new causal evidence. Preserve the old BN CPU8 rejection; it tested the old teacher and must not be rerun or generalized as a demonstrated new teacher fix. Teacher zero-delta endpoint and augmented trigger training losses use different inputs/procedures: do not turn their difference into a controlled effect or derive ASR from CE. A declining saved training loss cannot prove victim transfer or unlearning activation.
+
+The review addresses the human question why following the paper did not work. It cannot resolve D08 attack0.75848 between benign0.75525/0.76188, D15 attack7/benign8, or unknown trigger families, and proposes no score or detection method. Public RAdam is not automatically the unique interpretation of the paper Algorithm1; missing models/utils/concoct helpers and coordinate/data differences remain declared uncertainty.
+
+Stopping rule: reject a source/hash/blob/profile/AST binding mismatch and preserve it; do not modify original code/profiles, retry completed jobs, change hyperparameters, or start a comparison experiment. This review is metadata/source-only and leaves all numerical/storage freezes, original failures, completed training/gradient audits/evaluations, transfer/archive and catalogue defaults untouched. Any future model computation needs its own explicit comparison/rationale/source/profile publication before execution. Local RAM/storage interruption remains an independent operational issue.

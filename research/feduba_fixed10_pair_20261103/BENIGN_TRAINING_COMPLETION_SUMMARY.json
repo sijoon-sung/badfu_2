@@ -1,0 +1,41 @@
+{
+  "state": "actual_fixed10_benign_FU20_training_completed",
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "result_sha256": "26c70d5fd9e871ad83f3fbcb75765becd56eb7b87310061105298a3fd2c67f99",
+  "rounds": 20,
+  "new_trained_roles": 200,
+  "local_epochs": 1000,
+  "batches": 20000,
+  "actual_endpoint_SHA_bytes_match": true,
+  "observed_utc": "2026-11-02T17:32:08.0130984Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 267009,
+    "action": "-B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py",
+    "state": "Running"
+  },
+  "current_processes": [
+    {
+      "ProcessId": 32316,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py"
+    },
+    {
+      "ProcessId": 29824,
+      "ParentProcessId": 32316,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_FIXED10_PAIR_20261103\\verify_fu.py --branch benign"
+    }
+  ],
+  "audit_at_observation": null,
+  "training_restarted": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "CA_ASR_not_yet_evaluated": true,
+  "overall_goal_complete": false
+}

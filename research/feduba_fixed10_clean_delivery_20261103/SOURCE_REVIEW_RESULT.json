@@ -1,0 +1,18 @@
+{
+  "state": "passed_fixed10_normal_delivery_source_only",
+  "source_freeze_sha256": "b37c48ac59a305a00fa404efafb7913015db2e0e992bfb8365c44f010e50adc9",
+  "python_AST_files": 12,
+  "unchanged_helpers": [
+    "model_reference.py",
+    "runtime_common.py",
+    "native_memory.py",
+    "native_processes.py",
+    "review_loader.py"
+  ],
+  "foundation_source_and_run_freezes_exact": true,
+  "new_case_not_registered_yet": true,
+  "catalogue_sha256": "4bc6cce95cf7a2a015b10925057d1681ef6b7b3148c9acb9718b41c42b767f4c",
+  "model_loads": 0,
+  "model_forwards": 0,
+  "actual_export_or_registration_started": false
+}

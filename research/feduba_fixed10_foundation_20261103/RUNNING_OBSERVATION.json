@@ -1,0 +1,96 @@
+{
+  "observed_utc": "2026-11-02T15:44:51.2411458Z",
+  "task": {
+    "state": "Running",
+    "last_result": 267009,
+    "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+    "arguments": "-B -u D:/FEDUBA_FIXED10_FOUNDATION_20261103/foundation_controller.py",
+    "working_directory": "D:/FEDUBA_FIXED10_FOUNDATION_20261103",
+    "user": "DISLAB",
+    "logon_type": "S4U",
+    "run_level": "Limited"
+  },
+  "processes": [
+    {
+      "Name": "python.exe",
+      "ProcessId": 14064,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_FIXED10_FOUNDATION_20261103/foundation_controller.py"
+    },
+    {
+      "Name": "python.exe",
+      "ProcessId": 13216,
+      "ParentProcessId": 14064,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl_runner.py"
+    }
+  ],
+  "receipts": {
+    "TASK_ONCE.json": {
+      "state": "first_new_targetclass_pair_controller_launch"
+    },
+    "LAUNCH_FAILURE.json": null,
+    "FOUNDATION_CONTROLLER_ONCE.json": {
+      "pid": 14064,
+      "started_unix": 1793634217.6264563,
+      "publication_sha256": "c3ad31f81081a2b2407d2ffb323c55193a6435c6751012d3b5c6ff2353ffbc64"
+    },
+    "FOUNDATION_CONTROLLER_STATE.json": {
+      "state": "running",
+      "pid": 14064,
+      "child": 13216,
+      "step": "clean_fl_runner.py",
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18572140544,
+          "committedBytes": 44818382848,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      }
+    },
+    "FOUNDATION_CONTROLLER_FAILURE.json": null,
+    "CLEAN_FL_STARTED.json": {
+      "pid": 13216,
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18339962880,
+          "committedBytes": 45327712256,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "started_unix": 1793634219.9160395
+    },
+    "CLEAN_FL_STATE.json": {
+      "state": "training",
+      "pid": 13216,
+      "rounds": 0,
+      "round": 1,
+      "client": 9,
+      "epoch": 5,
+      "epochs": 10,
+      "batches": 100,
+      "examples": 2500,
+      "loss": 1.5092886100769043,
+      "lr": 0.01,
+      "updated_unix": 1793634290.140112,
+      "profile": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+    },
+    "CLEAN_FL_FAILURE.json": null,
+    "CLEAN_FL_RESULT.json": null,
+    "COMPLETION.json": null
+  },
+  "verified_summary": null
+}

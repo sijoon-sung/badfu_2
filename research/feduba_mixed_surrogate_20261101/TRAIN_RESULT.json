@@ -1,0 +1,31 @@
+{
+  "state": "completed_mixed100_warmup5_teacher_only",
+  "model_epochs": 105,
+  "actual_batches": 78310,
+  "sample_exposures": 10021000,
+  "target_exposures": 21000,
+  "fixed_teacher": {
+    "path": "private_run/fixed_teacher201.pt",
+    "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+    "bytes": 45162251,
+    "payload_key": null
+  },
+  "manifest_sha256": "0c4cd0f1246403d5c3ca4fc512f175196d5f3442e5d4379a0f04f157c46cb6eb",
+  "numeric_environment": {
+    "threads": 1,
+    "AMP": false,
+    "precision": "highest",
+    "matmul_TF32": false,
+    "cudnn_TF32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "torch": "2.7.1+cu118"
+  },
+  "GPU_device": "NVIDIA GeForce RTX 3080",
+  "GPU_peak_allocated_bytes": 790982144,
+  "CPU_audit_completed": false,
+  "trigger_or_SSS_or_FU_started": false,
+  "paper_performance_reproduction": false,
+  "overall_goal_complete": false
+}

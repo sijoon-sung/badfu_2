@@ -1,0 +1,24 @@
+고정모델 평가입력 부호 진단 완료 — 요청/평가 부호 의존성 관측, 성공재현 아님
+R03/R02/N02/D08/D15. 고정저자PDF SHA5db60221...의p4/식2에는삭제후입력x_i-delta*가있고식1/SectionVI에는x+delta가있다. page4원PNG SHAa997364951a312fad8bb5020ad67a53164d56165b337eaba8cb7434ac99aa5ae를직접확인한이내부불명확성에근거해새진단을사전등록했다. 원표준은clip(x+1.5delta)이고새한정조건은clip(x-1.5delta)이다. 배수1.5를고정해부호만분리했으므로단위배수식2literal재현/저자의도나오타확정이아니다.
+
+source/실profile 8cbbdc25a37a17b005290e346713a49c04e374d6·actual70cfd57203170f9e6f2dbac7cbb28db23afe1474·sourcefreeze87339364.../runfreeze3b4ca5f6...를같은PR先게시·14source/7actualmetadata GitHub/PR/local/DISLAB byte결속뒤각새primary/freshindependent를1회실행했다. 네기존endpoint(pre/benign/minus-request/plus-request)와delta91998234...는SHA/payload null로고정했다. 새훈련/trigger/SSS/FU/optimizer/기존positive평가/완료verifier/CPU보관/export반복0이며모델weights/BN전후정확불변이다.
+
+비target9000에서원positive재사용 -> 새negative hits/ASR:
+pre 1813/20.144444444444446 -> 1016/11.28888888888889
+benign 1500/16.666666666666668 -> 858/9.533333333333333
+minus-request 1244/13.822222222222223 -> 5241/58.233333333333334
+plus-request 5287/58.74444444444445 -> 677/7.522222222222222
+cleanCA85.53/84.74/84.69/84.45는같은고정weights의기존공식평가counts명시재사용이며새clean forward0이다. 새negative평가는official10000각4model·target2제외분모9000·B12879batch/contiguousFP32NCHW·AMP/TF32off/highest/deterministic/CUBLAS4096:8로primary/independent각40000sample316calls이다. 모든rawnegative입력/argmax/정수count정확/logitmaxabs0,원atol1e-6/rtol1e-5를통과했다.
+
+사전조건(negative에서minus-request hits>plus-request hits AND 기존positive에서plus-request>minus-request)은참이다. 하지만이것은부호조건별행동관측이며유일FU실패인과/저자missinghelper회복/논문성공이나탐지성공이아니다. 동일positive입력에서의기존plus-minus+44.9222pp효과를다른입력부호까지일반화하지않는다. 각요청과같은부호입력에서minus58.2333와plus58.7444는모두약58%이며,부호교체하나로80%목표는회복되지않았다.
+
+새negative/minus기준으로pre대비46.94444444444444pp/benign대비48.7pp이다. 원6gate를바꾸지않은diagnosticnegative판정은공격80/전후50pp/정상초과50pp3개실패,pre20/CA80/drop5통과다. plus의negative판정도3개성능실패다. 원standardpositive의4성능실패2CA통과는그대로보존하며유리한route만골라새표준으로대체하지않는다.
+
+RESULT SHA0a70f50c3fcc6e7cea0486a2c32681f606fcf4cc53e1b9dd50b746000ef7ac0f
+VERIFIED SHA1089e0a186d3ad4f532a601572c8883bb24a441b5ed4099dcffe247cf5f5d1b2
+COMPLETION SHA9f5428f4a434b0fb155a6a62ab9a2319d89109b1adbcfcc26d1d4e4862d817fd
+2026-11-03T11:57:38Z 새foregroundexit0/두childexit0/native0/evaluatorfailure0/새WindowsTask0. 새private79input+316logit395payload와원ID별자료는DISLAB에만보존하고local/PR은source/요약/receipt·hashmetadata만받는다. 모델checkpoint/기존packet/seal/catalogue/default변경0/local모델전달·등록은미완료다.
+
+첫진행조회용localPS는Test-Path경로연결문법에서실패해관측파일을쓰지못했다. 원caller/hash와LOCAL_MONITOR_FAILURE_OBSERVATION/MONITOR_READBACK_PROTOCOL을별도로보존하고원caller재호출0이었다. 계산producer와새독립평가는중단되지않았고완료뒤다른literal경로의메타데이터reader만실행했다. 이조회오류를수치실패나원평가재시작으로쓰지않는다.
+
+D08공격.75848이큰정상.75525/.76188사이/D15공격7·정상8/unknown-trigger-family독립탐지미검증은불변이다. 평가자target/delta/역할/ASR는server선택에넣지않는다. 이새진단은종료하며sameendpoint/부호/배수grid나추가훈련을자동허용하지않는다. 전체공격성능/탐지/local전달목표는미완료다.

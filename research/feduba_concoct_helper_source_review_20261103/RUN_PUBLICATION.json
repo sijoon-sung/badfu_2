@@ -1,0 +1,64 @@
+{
+  "state": "published_actual_concoct_source_review_before_execution",
+  "commit": "f4b706ff742ebd1df6b3093ee7ac42ba59832092",
+  "source_freeze_sha256": "01c834037fcbe5c0878420d49063b918e6f8a16c38e244ff75e2f3726e07c092",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "blob": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    {
+      "name": ".gitignore",
+      "blob": "96e6a9a86ab74d87bcd2793e8e3a38efa5ba1c6b",
+      "sha256": "9a9a1c4e10f27f87de3c28b8b14f9ae53b314abf753a8ff57eb9c981418fcee7",
+      "bytes": 28
+    },
+    {
+      "name": "INPUT_BINDING.json",
+      "blob": "843d047deb7fa1d39ae83fc93ade86289339df83",
+      "sha256": "20aa23f17af6af228d86da02997769935150af67190b8b7d0e2a28e40813b379",
+      "bytes": 1237
+    },
+    {
+      "name": "native_memory.py",
+      "blob": "ba7f906cc6514b2dfe00256357038c1b2fa89604",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+      "bytes": 1471
+    },
+    {
+      "name": "native_processes.py",
+      "blob": "4289b9c718234c79c5970865f5c96dfe895ec024",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+      "bytes": 3972
+    },
+    {
+      "name": "PROFILE.json",
+      "blob": "9a8129f2fc983b99401dea45092e992fc1570c3d",
+      "sha256": "2cdc58ac85d11521d3b3f3a11dbd81478279f1e7ec85b7f54ab26f01f53b05a7",
+      "bytes": 2639
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "blob": "7c6f9357e4a2a14df69a27ebe3b5c1604c2639e2",
+      "sha256": "494275a53fd8ec67c8aefa02dd49d9f935e99c190f8d2b6b6ca4448af0d83852",
+      "bytes": 2016
+    },
+    {
+      "name": "review_helper.py",
+      "blob": "f70d1b3c4460c8a765b991eff71b33cf06709344",
+      "sha256": "f94d6711810392235522cdf87b38592edf827ed44bfe36556f5f0cda672aff01",
+      "bytes": 6280
+    },
+    {
+      "name": "SOURCE_FREEZE.json",
+      "blob": "9e9482780a587f26e5200473517fc6e3bdee0152",
+      "sha256": "01c834037fcbe5c0878420d49063b918e6f8a16c38e244ff75e2f3726e07c092",
+      "bytes": 624
+    }
+  ],
+  "actual_source_profile_GitHub_exact": true,
+  "model_reads": 0,
+  "forward_calls": 0
+}

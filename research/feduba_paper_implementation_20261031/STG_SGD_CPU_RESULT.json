@@ -1,0 +1,20 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "contracts": [
+    "independent_analytic_mean_CE_gradient_and_literal_SGD_projection",
+    "surrogate_weights_and_BN_buffers_frozen",
+    "input_clamp_chain_rule",
+    "external_dataset_normalization_and_target_label200"
+  ],
+  "count": 4,
+  "source_hashes": {
+    "STG_PROTOCOL.txt": "b47baa2aa0fe32cea920657a0df8a88d66968f3acdcba67e9c4cc197e010658e",
+    "stg_training.py": "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76",
+    "test_stg_sgd_contract.py": "fb80093b8e37000da63c0c2284299b2d532e8c893f2f1b3b751da15cfdba9493",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e"
+  },
+  "core_RAdam_fixture_repeated": false,
+  "real_STG_training_executed": false
+}

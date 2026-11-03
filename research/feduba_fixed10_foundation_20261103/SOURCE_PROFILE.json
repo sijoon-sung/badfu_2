@@ -1,0 +1,113 @@
+{
+  "id": "feduba.fixed10.foundation.source.20261103",
+  "launch_enabled": false,
+  "execution_root": "D:/FEDUBA_FIXED10_FOUNDATION_20261103",
+  "old_foundation_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "upstream_commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "task_name": "Codex-FedUBA-public-fixed10-cleanFL20-20261103",
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "malicious_owners": [
+    5,
+    7
+  ],
+  "hypothesis": "The pinned public fixed10 cohort keeps both attacker owners in every FL/FU round. A separately regenerated fixed10 clean history may restore attack activation in a later exact125 paired FU; this is not proved causal or guaranteed successful.",
+  "new_observable": "Fresh fixed10 cleanFL20 before/history/roles/logs and independent full history+10000CA; later new-pre SSS/pairedFU is required, not replaced by this prerequisite.",
+  "source_change": "Change the participant selector only from20-round random10of20 to pinned public constant [2,3,5,7,9,12,13,16,18,19]. Restore no old learned round. Reuse the exact original seed42 fresh initializer and disjoint split bytes as initialization inputs, not an old trained endpoint.",
+  "reused_helpers": {
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+  },
+  "inputs": {
+    "original_ready": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_FL_READY.json",
+      "sha256": "8126d795438f3c87942258c5f06e34284eb83610e8bef418673273d8255df498"
+    },
+    "original_initial": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/clean_initial.pt",
+      "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+      "bytes": 44770315
+    },
+    "original_split": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/CLEAN_SPLIT.json",
+      "sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee"
+    },
+    "upstream_main": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_Unlearn_main.py",
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d"
+    },
+    "prior_failure_result": {
+      "path": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/PAIR_EVAL_RESULT.json",
+      "sha256": "3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341"
+    }
+  },
+  "fixed_budget": {
+    "rounds": 20,
+    "roles": 200,
+    "local_epochs": 2000,
+    "batches": 40000,
+    "trainer_clean_evaluation_calls": 1580,
+    "trainer_clean_sample_forwards": 200000,
+    "independent_clean_calls": 79,
+    "independent_clean_sample_forwards": 10000
+  },
+  "resource_guard": {
+    "available_RAM_bytes": 8589934592,
+    "commit_free_bytes": 17179869184,
+    "GPU_util_max_pct": 5,
+    "GPU_free_min_MiB": 4000,
+    "GPU_used_max_MiB": 6000,
+    "competing_trainers": 0,
+    "disk_free_min_bytes": 85899345920,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "stop_rule": "Complete20R and independent audit without intermediate utility/ASR abort or seed/lr/epoch/budget tuning. Integrity/source/hash/ID/count/finite/RNG/storage/runtime/numerical faults preserve prefix and require a new explicit recovery contract; no silent retry. After foundation completion, new-case guard and separately published new-pre SSS/FU actual profiles are required. This stage does not complete the requested attack pair.",
+  "non_IID_scope": "Attack implementation prerequisite only; D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8/unknown-trigger-family limitations unchanged. No magnitude detector.",
+  "overall_goal_complete": false
+}

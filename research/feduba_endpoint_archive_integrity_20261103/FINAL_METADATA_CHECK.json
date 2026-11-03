@@ -1,0 +1,126 @@
+{
+    "state":  "metadata_exact_on_DISLAB_and_local_after_archive_integrity",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "7d6a0eaff01f4bd8e86d0e6971b35ae7a088efefe0f91b7ade22c882f81511e5",
+                      "bytes":  34
+                  },
+                  {
+                      "name":  "ADMISSION.json",
+                      "sha256":  "4ecbf1b8a7911bb0f4cffa0f905a804cf42abd55c2311d4f294dc6da3f4da167",
+                      "bytes":  339
+                  },
+                  {
+                      "name":  "COMPLETION.json",
+                      "sha256":  "51bbbb3a28f23101001f7b1de5e7463d2d872774cef657cced01493dfb0e5b30",
+                      "bytes":  274
+                  },
+                  {
+                      "name":  "FINAL_RESULT_SUMMARY.json",
+                      "sha256":  "9f56bb4faf1bd95c3857780518935bb551f37e26740eb648d35d638153674fc9",
+                      "bytes":  2485
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "5ae48248d927f7561df028df9295f1f19901101515fff13d588fc1fd901c5e29",
+                      "bytes":  1056
+                  },
+                  {
+                      "name":  "LOCAL_CPU_RUNTIME_CANDIDATE.json",
+                      "sha256":  "2d08de99ef6f529bd4e9763aa1f9e23d792e362b5b70b4443891403da501021b",
+                      "bytes":  669
+                  },
+                  {
+                      "name":  "LOCAL_LAUNCH_ONCE.json",
+                      "sha256":  "f476043ae22c9c06536dce918e0b7ed6270de0b4c3a3dfe0646bc305ba6fbd9b",
+                      "bytes":  122
+                  },
+                  {
+                      "name":  "MANUAL_SOURCE_COVERAGE.json",
+                      "sha256":  "641e3fb0b46ff84ba02c1ff53d4791e3dc91c8e9294b4ef442f9124f651d91a5",
+                      "bytes":  2363
+                  },
+                  {
+                      "name":  "NEXT_STAGE_RATIONALE.txt",
+                      "sha256":  "fb22789e6a9ae1daf76108b9cab9b2ef28fb77fc46e6ca69ee7d881cd7f8180f",
+                      "bytes":  1924
+                  },
+                  {
+                      "name":  "ONCE.json",
+                      "sha256":  "6fd730ab6ab2e9d2cd0f7bdf717747020e728e7492a54867d28910f5dbb543d8",
+                      "bytes":  136
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "9c9e77bf92934a2416b9fe941f34aa5dc3b7ba5b53c23e902ff4de905e22ad98",
+                      "bytes":  3818
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "280d9c970d1832f3f5339d7072956854c48b415d667ec59e7e2261412e6e7c9a",
+                      "bytes":  2251
+                  },
+                  {
+                      "name":  "PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "b99e72efa4076990f6b9e4c644874f2d7a1b1a5acb37eea54e300193b2ba3242",
+                      "bytes":  2693
+                  },
+                  {
+                      "name":  "REPORT_KO.txt",
+                      "sha256":  "4e2c8d5047de1f16a9b942a038d05fa827fe5de0d3d499d2f90a097807c1d1c4",
+                      "bytes":  3849
+                  },
+                  {
+                      "name":  "RESULT.json",
+                      "sha256":  "8f9ec3cd1481a509e96262c563d8f1f71aaa510b3e770149941642f5c5d8b51e",
+                      "bytes":  6491
+                  },
+                  {
+                      "name":  "RUN_PUBLICATION.json",
+                      "sha256":  "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f",
+                      "bytes":  2683
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "7742062cdf804be8ffccdf4e846eff8dc0c81995ae0fc34f5c4aba8e146d3ef0",
+                      "bytes":  932
+                  },
+                  {
+                      "name":  "SOURCE_PUBLICATION.json",
+                      "sha256":  "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f",
+                      "bytes":  2683
+                  },
+                  {
+                      "name":  "TERMINAL_OBSERVATION.json",
+                      "sha256":  "4f61d9169894e0207316ddb43c157f10627b1c7c6bd0263cc732d0bcf2853119",
+                      "bytes":  427
+                  },
+                  {
+                      "name":  "check_archive.py",
+                      "sha256":  "2cd1cb606e3f188113d767f26780a232e16f9ef78309f3cff6648e2607600631",
+                      "bytes":  9065
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  }
+              ],
+    "metadata_files":  23,
+    "mirror_plan_sha256":  "a486c0be530e0b960d4932e2d91b0f3114f2cc55fcebd3ea742fd94e465fd389",
+    "catalogue_sha256":  "8cbb86b98bf44cfa344daca6df1326f1b2fafe946c3eceb3cf75dd961a21ec38",
+    "utc":  "2026-11-03T14:19:01.9599285Z",
+    "new_model_or_archive_readback":  false,
+    "local_model_delivery_completed":  false
+}

@@ -1,0 +1,89 @@
+{
+  "state": "passed",
+  "primary_result_sha256": "3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341",
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "trigger_source_kind": "new_mixed105_teacher_verified_CPU_trigger100",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "source_models": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "fu/benign/after.pt",
+      "sha256": "8b44c116d8d5fff963f37ffeeeedcef31623cc98a182e91f6bf39e8e5a48a035",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "attack": {
+      "path": "fu/attack/after.pt",
+      "sha256": "74a89cab181896bce275a271d373db40d55fad9b4942261b75f441bea5b4e182",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "all_10000_raw_inputs_and_all_3_models_independently_reinferred": true,
+  "independent_sample_forwards": 60000,
+  "independent_forward_calls": 474,
+  "independent_counts_exactly_equal": true,
+  "max_logit_abs_error": 0.0,
+  "logit_comparison_atol": 1e-06,
+  "logit_comparison_rtol": 1e-05,
+  "all_sample_predictions_exactly_equal": true,
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8794,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2652,
+      "CA_pct": 87.94,
+      "ASR_pct": 29.466666666666665
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8658,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2006,
+      "CA_pct": 86.58,
+      "ASR_pct": 22.288888888888888
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8688,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2354,
+      "CA_pct": 86.88,
+      "ASR_pct": 26.155555555555555
+    }
+  },
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -3.311111111111111,
+    "attack_minus_benign_ASR_pp": 3.8666666666666667,
+    "post_CA_drop_pp": {
+      "benign": 1.36,
+      "attack": 1.06
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "delivery_complete": false,
+  "detection_success_implied": false,
+  "overall_goal_complete": false
+}

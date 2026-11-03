@@ -1,0 +1,61 @@
+{
+  "state": "passed_bounded_CPU_audit_metadata_observation",
+  "response_characters": 1053,
+  "model_queries": 0,
+  "finite_audit_executed_by_observer": false,
+  "observation": {
+    "utc": "2026-11-01T05:28:50.1220593Z",
+    "root": "D:/FEDUBA_MIXED_ATTACK_PREFIX_GUARD_V2_20261101",
+    "files": {
+      "AUDIT_ONCE.json": {
+        "state": null,
+        "pid": 16396,
+        "roles": null,
+        "epochs": null,
+        "batches": null,
+        "last_round": null,
+        "last_client": null,
+        "saved_roles": null,
+        "saved_epochs": null,
+        "saved_batches": null,
+        "committed_rounds": null,
+        "partial_round5_saved_roles": null,
+        "forward_calls": null,
+        "new_training_launched": null
+      },
+      "AUDIT_STATE.json": {
+        "state": "passed_new_CPU_attack_prefix46_audit",
+        "pid": 16396,
+        "roles": 46,
+        "epochs": 230,
+        "batches": 4600,
+        "last_round": null,
+        "last_client": null,
+        "saved_roles": null,
+        "saved_epochs": null,
+        "saved_batches": null,
+        "committed_rounds": null,
+        "partial_round5_saved_roles": null,
+        "forward_calls": null,
+        "new_training_launched": null
+      },
+      "AUDIT_RESULT.json": {
+        "state": "passed_new_CPU_attack_prefix46_audit",
+        "pid": null,
+        "roles": null,
+        "epochs": null,
+        "batches": null,
+        "last_round": null,
+        "last_client": null,
+        "saved_roles": 46,
+        "saved_epochs": 230,
+        "saved_batches": 4600,
+        "committed_rounds": 4,
+        "partial_round5_saved_roles": 6,
+        "forward_calls": 0,
+        "new_training_launched": false
+      }
+    },
+    "processes": []
+  }
+}

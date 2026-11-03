@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "profile": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "fresh_initial": {
+    "path": "private_assets/clean_initial.pt",
+    "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+    "bytes": 44770315
+  },
+  "split_sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee",
+  "official_CIFAR10_integrity_checks_passed": true,
+  "data_files_sha256": {
+    "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+    "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+    "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+    "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+    "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154",
+    "test_batch": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+    "batches.meta": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"
+  },
+  "train_N": 50000,
+  "test_N": 10000,
+  "source_hashes": {
+    ".gitignore": "53f5d3530716a13ae0c9700193db7bc7c56caf63091e252ef8f97d2565c53382",
+    "CLEAN_FL_PROFILE.json": "70693581f53c79ff9f7ca23bf2a3914765ae123618a513099cf22c0cb70ccd1d",
+    "GPU_PREFLIGHT_RESULT.json": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c",
+    "PROTOCOL.txt": "62aa579728be6a5b9db9d0a4eeddbf29fc7e41f6d7fad026a3ed8bd32c9c8621",
+    "SOURCE_PROFILE.json": "714d0195c5e5a94a03c8bd05aa0a9ac85e2ebb82bed7f10e1fbc75be8edfe707",
+    "clean_fl_runner.py": "46ee258ea39d39bc9820e7a686635ecb074fbe5d6f748ba247efd31864705d1c",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "foundation_binding.py": "012565430ad65c5ac16c0465ce69fbbd629e6aba612c76484110a16a4cb06c87",
+    "foundation_controller.py": "cf05d02b3120eb276305191c61119f0de23929f879ba3d289c279a2ff586b3d0",
+    "launch_once.ps1": "dcede4a1865d6f6bab3ff5835d5068d791026c27b8bf692f972ff4416ee3886e",
+    "launch_via_ssh_once.py": "c7eb163f841c0582d6a38ba69c8e1f555af206b783e2ebe83fd3dea4ba68fbf1",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "prepare_foundation.py": "f6b3f1f7a78e73265387c782d0993e8d9e5da585e5c7f070e63ba97086ef0834",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "source_checks.py": "0e00bee1bd579dac661c75364b6d8aa656c33090e2395ba6d93665e086ee8857",
+    "verify_clean_fl.py": "a2cc42cc5eac97736bb4b3699a3dd0ad831e6d686a2ef7de748b9e6144bf2084"
+  },
+  "model_parameters": 11173962,
+  "initialization_input": "Exact copied original seed42 fresh initializer, no old trained checkpoint"
+}

@@ -1,0 +1,67 @@
+{
+  "state": "archive_member_transport_integrity_complete_local_receiver_and_performance_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "source_commit": "23ca735ed0397e41316e1ba4c4d38c157a73e42b",
+  "pin_commit": "cd657c9f8651e1387d563542468336854f525bd4",
+  "source_freeze_sha256": "7742062cdf804be8ffccdf4e846eff8dc0c81995ae0fc34f5c4aba8e146d3ef0",
+  "result_sha256": "8f9ec3cd1481a509e96262c563d8f1f71aaa510b3e770149941642f5c5d8b51e",
+  "completion_sha256": "51bbbb3a28f23101001f7b1de5e7463d2d872774cef657cced01493dfb0e5b30",
+  "archive": {
+    "path": "D:\\FEDUBA_ENDPOINT_REVIEW_DELIVERY_20261103\\ENDPOINT_REVIEW.zip",
+    "bytes": 165494920,
+    "sha256": "f74d8f1cd2df54622965606e9614bb73927ed7aef55ccd68761bb6d497a0b58d"
+  },
+  "CRC_entries": 16,
+  "exact_member_SHA_and_bytes": 16,
+  "manifest_hashed_entries": 14,
+  "model_bytes_members": 4,
+  "scalar_epoch_rows": 3000,
+  "member_stream_passes": 1,
+  "archive_SHA_checks": 2,
+  "manifest_sha256": "10cb99c38fbd72aed399e1e1ec258342544ac63520727f03b1f617ccc85c1b1c",
+  "seal_sha256": "69986537c105ee6ee77e1e2db37deb007ee5c4ead0ce22f855521eda7ca0136a",
+  "original_exporter_or_source_snapshot_guards_reinvoked": false,
+  "model_or_tensor_loads": 0,
+  "CPU_model_forwards": 0,
+  "training_or_optimizer_or_RNG_execution": false,
+  "extracted_or_copied_payloads": 0,
+  "local_native_memory_repolled": false,
+  "local_CPU_runtime_candidate_metadata_only": true,
+  "local_runtime_usable_verified": false,
+  "local_receiver_or_model_transfer_started": false,
+  "case_or_default_or_catalogue_changes": false,
+  "performance_success": false,
+  "overall_goal_complete": false,
+  "terminal": {
+    "state": "completed_archive_integrity_foreground_exit0_native0",
+    "utc": "2026-11-03T14:17:14.9356196Z",
+    "foreground_exit_code": 0,
+    "root_native_processes": 0,
+    "failure_count": 0,
+    "new_Windows_task_created": false,
+    "new_model_or_tensor_loads": 0,
+    "new_CPU_model_forward_calls": 0,
+    "local_native_memory_repolled": false,
+    "local_receiver_or_transfer_started": false
+  },
+  "DISLAB_admission": {
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18639622144,
+      "committedBytes": 44497133568,
+      "commitLimit": 90276544512
+    },
+    "disk_free_bytes": 683069501440,
+    "GPU": "0, 5045, 5009",
+    "competitors": 0,
+    "wait_seconds": 0.06300000008195639
+  }
+}

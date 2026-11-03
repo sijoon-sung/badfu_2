@@ -1,0 +1,14 @@
+실행 기록 — 2026-10-31
+
+stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d 및 저장 본문/보충에 근거한 별도 MNIST/DBA 구현이다. criterion은 논문 Algorithm1/2이며 anchor/normal/representative Adam과 수식 update SGD를 명시한 해석이다. untouched author execution/유일한 저자공인 해석으로 부르지 않는다.
+
+계획/소스는 PR #1의 e751834e6b95b4870a8ee87d065a982badc78564에서 실행 전 고정했다. 기존 CIFAR/IBA optimizer/반경 진단의 실패를 보존한다. BN/생성기 없는 같은 논문 조건으로 핵심 알고리즘을 먼저 검사하며 IBA 재현을 대체하지 않는다.
+
+DISLAB CPU 계약8개가 통과했다. MNIST60000/10000, raw/255와 ToTensor의 동일성, 원공개 Net SHA, fresh initial/SPLIT/source hash를 READY에 고정했다. 새로 실제100R/E50/B64/8명 집계 후 client4 이력 차감/KD10을 수행하는 일회 작업을 시작했다.
+작업: Codex-FUBA-reference-MNIST-DBA100-KD10-20261031
+경로: D:/FUBA_REFERENCE_MNIST_DBA_20261031
+확인한 controller PID54048/trainer PID52136 및 실제 GPU 진행이 있다. 첫 정상 역할1R/client0의 실제50epoch/2350batch 모델과 submitted가 정확히 같고 strict 저장 검사를 통과했다. 이후 실제 역할을 학습 중이다. 아직100R/악성역할/삭제후 성능은 완료되지 않았다. 현재 상태는 ops.py 출력과 원격 STATE/CONTROLLER_STATE/실제 PID를 함께 따른다.
+
+중간 성능으로 재튜닝하지 않는다. 수식·해시·데이터·비유한·저장·실행 오류는 보존·수정한다. 최종1만장 동일global trigger 독립평가, 전체800역할/단계/집계/기여차감, 전후.pt/로그 전달을 완료해야 최종 판정한다. R02/D08/D15/N02. 정상 큰nonIID와의 탐지 구별은 이 구현 검사에 포함하지 않는다.
+
+첫 실제 악성 역할 저장 감사도 통과했다. 원격 별도 CPU 감사에서6R까지48역할/51phase/119050batch,7R까지56역할/65phase/3250epoch로그/150350batch를 확인했다.7R prefix에는정상53/억제자2/공격자1이 있다. 각optimizer/RNG/실제50epoch, 모든phase SHA/strictload, 실제제출과phase의정확수식,8명집계/연결이일치했다. 공격자11점gamma trace와최대strictpassing선택의산술을확인했으며모든gamma를독립재추론한것은아니다. 원trainer/코드/조건은바꾸지않았다. 이후원조건100R학습은계속중이며최종성능/전달완료는아니다.

@@ -1,0 +1,129 @@
+{
+  "id": "feduba.DISLAB.only.fixed10.three.diagnostic.endpoint_registration.20261103",
+  "launch_enabled": true,
+  "execution_root": "D:/FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "Explicit diagnostic IDs and a new metadata guard can expose three already verified remote endpoint pairs while preserving failed performance, external seals and every old host-owned catalogue record.",
+  "new_observable": "Append three diagnostic-only cases on DISLAB25-to28 with external two-packet guard, exact pre/post SHA/payload_key, three guarded selections,15 forbidden-purpose rejections and old-case/default/audit invariance; no new model calculations.",
+  "owner_identity_certified": false,
+  "max_members": 500,
+  "max_total_uncompressed_bytes": 10485760,
+  "max_source_member_bytes": 1048576,
+  "archive_depth": 1,
+  "source_only_extensions": [
+    ".py"
+  ],
+  "readme_body_match": true,
+  "skip_binary_payload_contents": true,
+  "AppleDouble_skip_requires_path_and_magic": true,
+  "source_AST_only": true,
+  "upstream_code_execution": 0,
+  "torch_imports": 0,
+  "RNG_execution": 0,
+  "model_tensor_or_data_loads": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0,
+  "non_IID_scope": "Dependency provenance for attack implementation only. D08/D15 and unknown-trigger-family detection remain unresolved; no server-method receives evaluator-only metadata.",
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py",
+    "sign_eval.py"
+  ],
+  "resource_guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "stop_rule": "Exclusive registration once. Before mutation verify source/profile/publication, original catalogue SHA/defaults/count, pinned successful stored receipts and both original seals/809 file hashes. Save host-owned original catalogue privately. Append only three diagnostic cases and one audit, preserve old case/default/audit values and format; test exact guard selection and reject all five wider purposes. On integrity/hash/count/runtime/storage failure preserve source/prefix/catalogue state/trace and stop without retry, rollback, recomputing CPU checks, changing models/seals or claiming delivery/success.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "overall_goal_complete": false,
+  "download_calls": 0,
+  "source_member_reads": 0,
+  "synthetic_code_execution": 0,
+  "new_model_calculation_adoption_rule": "No model calculation follows registration metadata; future actual registration needs its own frozen source/profile, host-only append contract and guard checks. Existing failed performance and D08/D15 remain.",
+  "stage": "host_owned_diagnostic_only_registration",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "expected_case_count": 25,
+  "packet_binding": "PACKET_BINDING.json",
+  "registration_enabled": true,
+  "expected_catalog_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "expected_selector_source_sha256": "bac9f7ed02fd5adce93dc904ad369939f180e8258292c5333dcf97a0f1c649bf",
+  "expected_defaults": {
+    "default_case": "badfu.confirmed.s20261023.v1",
+    "default_full_history_case": "badfu.paper32.s20261020",
+    "default_checkpoint_case": "badfu.confirmed.s20261023.v1"
+  },
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "endpoints": {
+    "pre": {
+      "packet": "baseline",
+      "member": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "benign": {
+      "packet": "baseline",
+      "member": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "minus": {
+      "packet": "baseline",
+      "member": "models/attack.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "plus": {
+      "packet": "positive",
+      "member": "models/attack_after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "guard_pass_budget": 4,
+  "expected_hash_file_checks_per_guard": 809,
+  "new_model_loads": 0,
+  "new_CPU_forward_calls": 0,
+  "new_case_count": 28,
+  "local_registration_or_delivery": false,
+  "guard_capsule_root": "D:/FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103/guard",
+  "external_audit_name": "FEDUBA_FIXED10_THREE_ENDPOINTS_DISLAB_DIAGNOSTIC_20261103.json"
+}

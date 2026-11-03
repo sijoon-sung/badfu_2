@@ -1,0 +1,9 @@
+{
+  "state": "passed_source_and_metadata_only_no_tensor_read",
+  "AST_files": 4,
+  "freeze_files": 17,
+  "guard_import_does_not_import_torch": true,
+  "path_rejection_cases": 5,
+  "both_branch_original_participation_and_representative_role_metadata_checked": true,
+  "existing_finite_fixtures_repeated": false
+}

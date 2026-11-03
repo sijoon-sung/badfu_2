@@ -1,0 +1,23 @@
+{
+  "active_target": "ity207/FedUBA",
+  "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "paper_DOI": "10.1109/TDSC.2026.3703139",
+  "paper_SHA256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+  "role_structure": "one or more malicious clients issuing STG/SSS/BEA requests; no separate Adv-defender role",
+  "model_recovery_reference": "reds-lab/Narcissus@de128d870d7ef0560a4804e413b1c57909883195/models/resnet.py",
+  "model_Git_blob": "63c50f75283f2e32e2b6199a9db2836c91b9d18c",
+  "model_SHA256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+  "author_missing_model_identity_certified": false,
+  "upstream_files": {
+    "Fed_data_change.py": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8",
+    "Fed_data_preprocess.py": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+    "Fed_model_initiation.py": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+    "Fed_test.py": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+    "Fed_train.py": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+    "Fed_Unlearn_attack.py": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+    "Fed_Unlearn_main.py": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+    "README.md": "ca56265247744c325bb833d4dd910c9f65d7488054c1456851e0c1d5c4bdb262",
+    "trigger_generate_function.py": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06"
+  },
+  "CIFAR10_1_external_candidate": "modestyachts/CIFAR-10.1@d9982abb0bfc4846b8d13a11e66b887d946205d0 v6; not yet used for real training"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "feduba.public_fixed10.targetclass125.pairedFU20.s42.20261103",
+  "launch_enabled": true,
+  "selected_IDs": 125,
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "execution_root": "D:\\FEDUBA_FIXED10_PAIR_20261103",
+  "pre_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+  "selection_sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28",
+  "selection_audit_sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46",
+  "foundation_binding_sha256": "3160386a588c2934015e7a749a3b5478d7e9e310ae7b34430ed8a92a53c27649",
+  "preparation_sha256": "5730812b3ca79a1d29d81372dbf6d88a56317b67b07d63525ee099fc7efaa63f",
+  "FU_benign_batches": 20000,
+  "FU_attack_batches": 20000,
+  "each_FU_rounds": 20,
+  "each_FU_epochs": 1000,
+  "primary_and_independent_each_calls": 474,
+  "primary_and_independent_each_sample_forwards": 60000,
+  "reuse_old_FU_after_models": false,
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ]
+}

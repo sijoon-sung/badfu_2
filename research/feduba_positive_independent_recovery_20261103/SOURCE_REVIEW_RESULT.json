@@ -1,0 +1,24 @@
+{
+  "state": "passed_source_only_recovery_review",
+  "time": 1793704256.5942898,
+  "original_verifier_sha256": "52a208e6e65ebd4716d14dddd430ee9593293b5b193a3b6b614f0f11ca2bf9f1",
+  "recovery_verifier_sha256": "9829046eda62d86f8c77b2abdca5bd3832c925369aecbfa122091b26e0073de9",
+  "all_main_AST_equal_after_only_binding_and_ONCE_normalization": true,
+  "numeric_loop_gate_AST_unchanged": true,
+  "receipt_uses_unshadowed_input_binding": true,
+  "all_outputs_routed_to_new_root": true,
+  "parsed_python_files": [
+    "controller.py",
+    "native_memory.py",
+    "native_processes.py",
+    "recovery_contract.py",
+    "review_recovery.py",
+    "verify_recovery.py"
+  ],
+  "torch_imports": 0,
+  "model_tensor_reads": 0,
+  "forward_calls": 0,
+  "original_VERIFIED_absent": true,
+  "original_failure_preserved": true,
+  "original_verifier_success_claim": false
+}

@@ -1,0 +1,30 @@
+{
+  "state": "terminal_observation_completed_metadata_only",
+  "remote_utc": "2026-11-01T02:58:06.3192548Z",
+  "processes": [],
+  "task_exit": 0,
+  "failures": [],
+  "hashes": {
+    "TRAIN_STATE.json": "fe17d94e83e5a75f04c0ef3c8a4eb35cc50e381c1189111dae60f9544daabdf2",
+    "COMPLETION.json": "ff6f10c9d5db18d47d2358560b758e391cd99e5bc36c1163c11371795a01414f",
+    "CONTROLLER_STATE.json": "ff6f10c9d5db18d47d2358560b758e391cd99e5bc36c1163c11371795a01414f",
+    "MANIFEST.json": "0c4cd0f1246403d5c3ca4fc512f175196d5f3442e5d4379a0f04f157c46cb6eb",
+    "TRAIN_VERIFIED.json": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+    "ENDPOINT_RESULT.json": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+    "TRAIN_RESULT.json": "6b3a9076b9fae2aa12e70d3207fb0ebf14ffeca17654b8a58451dd95bacef3df",
+    "ENDPOINT_VERIFIED.json": "6bf479abfd8be48a3b9a5acbc2f120ad91ba294833113cafe47f0f6410690ace",
+    "FREEZE.json": "3ab036a02e1e6a418fbe9e1a3f90e72e98f561aa264f80747af96842bcea7ab3"
+  },
+  "frozen13_unchanged": true,
+  "local_observed_utc": "2026-11-01T03:00:26.392293+00:00",
+  "observer_timeout_preserved": {
+    "operation": "initial combined read-only status query",
+    "exception": "subprocess.TimeoutExpired after60seconds",
+    "research_job_failure": false,
+    "processes_terminated_or_restarted": false,
+    "recovery": "separate metadata and actual CIM/task reads succeeded",
+    "training_or_audit_or_endpoint_reexecuted": false
+  },
+  "new_model_queries": 0,
+  "overall_goal_complete": false
+}

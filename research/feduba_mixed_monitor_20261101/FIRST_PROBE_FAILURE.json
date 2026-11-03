@@ -1,0 +1,19 @@
+{
+  "state": "first_bounded_observer_probe_failed_before_remote_body",
+  "source_commit": "1bea3c0",
+  "source_freeze_sha256": "152cef3949c112babda93751850f4ad41a1a8dd1442f5ca1a9a7e909e232d820",
+  "source_file_sha256": "96bd1c4f3b6f8ee7bae007dddcb8eba59b448c52972ced1059a7ab7a72e5fba4",
+  "exit_code": 1,
+  "error_type": "ParserError InvalidLeftHandSide",
+  "traceback_excerpt": "observe_status.py:79 result=observe -> line58 dislab_audit.remote(QUERY) -> dislab_audit.py:29 run -> line19 RuntimeError; remote PowerShell line3: + +$r=... ; FullyQualifiedErrorId InvalidLeftHandSide",
+  "cause": "Unintended literal leading + in embedded PowerShell query; Python AST did not validate embedded PowerShell syntax.",
+  "complete_raw_trace_in_local_evidence_file": false,
+  "original_tool_trace_preserved": true,
+  "remote_query_body_executed": false,
+  "research_source_or_model_changed": false,
+  "training_or_audit_restart": false,
+  "BOUNDED_OBSERVATION_created": false,
+  "new_model_queries": 0,
+  "local_v2_preparation_note": "First construction script incorrectly expected a newline before + and stopped at its assertion before writing any v2 file; dependent AST command therefore reported missing file. No v2 observation was executed. Corrected construction matches the actual preserved string prefix.",
+  "recovery": "New v2 Python and explicit PS script, PS AST validation before a new metadata-only observation; original v1 bytes unchanged."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "feduba.paper.cifar10.paired20.s42.20261031",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "launch_enabled": true,
+  "required_clean_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_purpose": "diagnostic",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "history_manifest_sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28",
+  "trigger_binding_sha256": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5",
+  "trigger_source_kind": "CPU_trigger100_after_reused_original_105_model_epochs",
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "branch_order": [
+    "SSS",
+    "SSS_CPU_audit",
+    "benign_FU20",
+    "benign_CPU_audit",
+    "attack_FU20",
+    "attack_CPU_audit",
+    "primary_evaluation",
+    "independent_full_evaluation"
+  ],
+  "resource_wait_max_hours_per_GPU_stage": 24,
+  "automatic_retries": 0,
+  "performance_gate_is_a_stopping_rule_between_branches": false,
+  "delivery_still_required": true,
+  "detection_success_implied": false
+}

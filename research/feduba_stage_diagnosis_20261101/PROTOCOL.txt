@@ -1,0 +1,32 @@
+FedUBA 실패단계 유한 원인진단: CPU8 surrogate BN mode — 사전 계약, 2026-11-01 KST
+관련 카드: R03 / R02 / N02 / D08 / D15. 원INDEX/카드/원보고서와 정정을 읽었다.
+
+가설: 완료 STG의 frozen-eval 목적함수 실패는 같은 surrogate 학습 파라미터가 minibatch BN 통계에서는 target200을 분류하지만 고정 running 통계에서는 그렇지 못하는 mode 차이와 일치할 수 있다.
+새 관측: 저장된 외부 target200 두 배치에 대해 eval/train-BN × zero/finalδ의 class200 정답수와 CE를 처음으로 짝비교한다. 기존 투영/gradient 검산과 victim 세모델 성능평가는 이 factorial 관측이 아니다.
+
+근거와 범위
+- 완료 CPU trigger 원events의 CE는 epoch1 9.085924491882324, epoch2 9.15089298248291, epoch99 6.610583744049072, epoch100 6.605510063171387이다. 저장로그를 읽은 관측이며 새 모델계산/성공기준이 아니다.
+- 고정 upstream trigger_generate_function.py는 warmup에 train()을 호출하고 trigger 전에 eval()을 호출하지 않는다. 현재 명시 본문 해석은 theta와 BN을 eval로 고정했다. 해당 소스 SHA는 PROFILE에 핀했다.
+- 논문 Algorithm1의 fixed theta만으로 BN buffer 정책의 유일 저자 정답을 인증하지 않는다. 공개 mixedTiny+Dt/RAdam/cos 등 다른 차이도 있어 이번 비교는 BN의 전체 실행 인과분리가 아니다.
+- 원문 DOI10.1109/TDSC.2026.3703139/PDF SHA와 upstream commit, 회복 Narcissus 모델 SHA, 등록된 diagnostic case/packet manifest/seal/typed payload를 PROFILE에서 고정한다. 누락 저자 models와 바이트동일 인증은 없다.
+- R02의 FUBA 실패를 FedUBA로 이름바꾸지 않는다. 원GPU STG의 CPUgradient 실패, 별도CPU 성공, 두FU의 최종 성능실패는 그대로 보존한다.
+
+고정 예산/비교
+1. 기존 case의 purpose diagnostic/select_case/hash/payload guard를 통과한 readonly packet만 읽는다. endpoint guard로 전체history를 승인하지 않는다. 이번 진단은 packet의 명시 fixed201/δ/두step만 사용한다.
+2. 새 D:/FEDUBA_STAGE_DIAGNOSIS_20261101에서 정확 CPU8 task/controller를 한 번만 실행한다. 이전 parent/trainer/audit/evaluator/export/receive/register/metadata prepare는 모두 종료한 상태를 실제CIM으로 확인한다. 새GPU 작업은 없다.
+3. 원 surrogate100/warmup5와 frozen201 학습파라미터를 재사용한다. target200/원δ/마지막 epoch100의 배치1(128)/2(72) actual x와 원ID/target을 재사용한다. 새 자료/augmentation/학습/δ 탐색은 없다.
+4. CPU2 FP32/MKLDNN, CUDA_VISIBLE_DEVICES=-1/미초기화에서 eval_frozen과 train_BN_copy를 각각 zero와 final_delta로 비교한다. 입력은 x 또는 clip(x+δ,-1,1), 배수1이다. 각 cell마다 원state를 새 모델에 복사하고 모든 learned parameter를 freeze한다. dropout 없음도 확인한다.
+5. 정확 2batch × 2mode × 2perturbation=8forward/800sample-forward, backward0/optimizer0/victim추론0이다. eval의 모든state는 불변, train copy의 BN buffer만 변경 허용하며 바로 폐기한다. 새 모델을 저장/후속교사로 채택하지 않는다.
+6. 외부 target200 자체에 대한 surrogate class200 hit와 CE다. victim 공격 ASR이나 서버 탐지점수가 아니다. zero 입력은 δ와 무관한 mode 간격 대조다.
+
+사전 유한 판정/중단
+- finalδ에서 pooled train hit - eval hit >=40/200(20pp), eval CE - train CE >=1.0, 두 배치 모두 hit 엄격증가가 동시에 충족될 때만 이번 BN-gap rule과 일치로 기록한다.
+- 실패하면 이 고정 rule을 기각하고 같은 예산을 확장/재실행하지 않는다. 통과해도 최종FU 실패의 유일원인, BNtrain 채택, 새 trigger/전체FU 재훈련, 논문 성능성공을 자동승인하지 않는다.
+- 새 독립프로세스 CPU1에서 저장 FP32 logits의 Python argmax/안정 fsum-logsumexp CE를 검산한다. 모든 count/ID/cell 정확일치와 CE atol5e-6+rtol1e-5, 같은 사전rule을 확인한다. 모델forward를 반복하는 독립재현은 아니다.
+- source/hash/shape/ID/finite/runtime/storage/검산 실패면 prefix/trace를 보존하고 종료한다. 자동retry/허용치확대/모델교체는 없다.
+
+큰 정상 non-IID 반례와 넓은 주장
+D08 공격.75848은 큰정상 .75525/.76188 사이이고 D15 공격7/정상8이다. benign 모델도 BN mode 차이를 보일 수 있으므로 이 관측은 이 반례를 구별하는 근거가 아니다. 이것은 구현의 실패단계를 좁히는 진단이며 norm/cosine/CKA/RMS/민감도 탐지 제안이나 unknown-trigger-family 검증으로 승격하지 않는다. evaluator-only δ/target/역할진실을 서버 방법선택에 쓰지 않는다.
+
+게시/보존
+새 source/profile/protocol/freeze와 source-only 검사만 같은 draft PR에 먼저 게시한 뒤 PUBLICATION을 만들고 새CPU task를 시작한다. 원실험/허용치/receipt/packet/catalogue/default는 바꾸지 않는다. 원ID와8logit은 새 private_outputs에만 저장하고 공개Git에는 aggregate/count/hash/실패와 실제검사만 게시한다. 결과가 어느 방향이어도 기록하고 전체 FedUBA/탐지 목표는 미완료로 남긴다.

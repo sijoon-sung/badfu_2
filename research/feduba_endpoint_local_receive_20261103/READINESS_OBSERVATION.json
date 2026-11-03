@@ -1,0 +1,21 @@
+{
+  "utc_unix": 1793716887.5508273,
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 3644542976,
+    "committedBytes": 29006360576,
+    "commitLimit": 50775060480
+  },
+  "disk_free_bytes": 3043122176000,
+  "native_ready": false,
+  "waiter_started": false,
+  "state": "completed_native_readiness_observation_only",
+  "pid": 3740,
+  "source_freeze_sha256": "c155696ae98cab708267aaec165ef3eb45229ddf4e8cdf17f1edd39afb726476",
+  "torch_imported": false,
+  "CPU_runtime_probed": false,
+  "receiver_started": false,
+  "transfer_started": false
+}

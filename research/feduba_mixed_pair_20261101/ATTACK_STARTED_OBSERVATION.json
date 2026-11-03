@@ -1,0 +1,133 @@
+{
+  "state": "passed_bounded_readonly_metadata_observation",
+  "output_characters": 2306,
+  "source_freeze_sha256": "b9ad2addbf212ebbebb903d4623a88e06b3cb0f8b2b2f403fa0b66831d9ed90b",
+  "query_sha256": "7fed72bb129ab57fbabbec140fc7853f1fad5d2a515bfe32d5f5243ca8d30365",
+  "new_model_queries": 0,
+  "training_or_audit_reexecuted": false,
+  "observation": {
+    "utc": "2026-11-01T04:41:42.9762359Z",
+    "root": "D:/FEDUBA_MIXED_PAIR_20261101",
+    "states": {
+      "FU_benign_STATE.json": {
+        "state": "completed_FU20",
+        "pid": 46748,
+        "step": null,
+        "branch": null,
+        "child_pid": null,
+        "round": null,
+        "rounds": 20,
+        "client": null,
+        "epoch": null,
+        "examples": null,
+        "cumulative_role_batches": null,
+        "checked_roles": null,
+        "actual_epochs": null,
+        "actual_batches": null
+      },
+      "PAIR_CONTROLLER_STATE.json": {
+        "state": "running",
+        "pid": 7756,
+        "step": "fu_runner.py",
+        "branch": "attack",
+        "child_pid": 37112,
+        "round": null,
+        "rounds": null,
+        "client": null,
+        "epoch": null,
+        "examples": null,
+        "cumulative_role_batches": null,
+        "checked_roles": null,
+        "actual_epochs": null,
+        "actual_batches": null
+      },
+      "FU_benign_AUDIT_STATE.json": {
+        "state": "auditing",
+        "pid": 38220,
+        "step": null,
+        "branch": null,
+        "child_pid": null,
+        "round": null,
+        "rounds": 20,
+        "client": null,
+        "epoch": null,
+        "examples": null,
+        "cumulative_role_batches": null,
+        "checked_roles": 200,
+        "actual_epochs": 1000,
+        "actual_batches": 19955
+      },
+      "FU_attack_STATE.json": {
+        "state": "training",
+        "pid": 37112,
+        "step": null,
+        "branch": null,
+        "child_pid": null,
+        "round": 1,
+        "rounds": 0,
+        "client": 3,
+        "epoch": 4,
+        "examples": 2500,
+        "cumulative_role_batches": 80,
+        "checked_roles": null,
+        "actual_epochs": null,
+        "actual_batches": null
+      }
+    },
+    "processes": [
+      {
+        "ProcessId": 7756,
+        "ParentProcessId": 2428,
+        "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/FEDUBA_MIXED_PAIR_20261101/paired_controller.py"
+      },
+      {
+        "ProcessId": 37112,
+        "ParentProcessId": 7756,
+        "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u D:\\FEDUBA_MIXED_PAIR_20261101\\fu_runner.py --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.paper.cifar10.cleanfl20.s42.20261031 --branch attack"
+      }
+    ],
+    "committed_rounds": {
+      "benign": 20
+    },
+    "last_events": {
+      "attack": {
+        "kind": "local_epoch",
+        "branch": "attack",
+        "round": 1,
+        "client": 3,
+        "epoch": 4,
+        "examples": 2500,
+        "batches": 20,
+        "cumulative_role_batches": 80
+      },
+      "benign": {
+        "kind": "round_commit",
+        "branch": null,
+        "round": 20,
+        "client": null,
+        "epoch": null,
+        "examples": null,
+        "batches": null,
+        "cumulative_role_batches": null
+      }
+    },
+    "completed": {
+      "FU_benign_RESULT.json": {
+        "state": "completed_FU20",
+        "branch": "benign",
+        "rounds": 20,
+        "new_trained_roles": 200,
+        "actual_local_epochs": 1000,
+        "actual_batches": 19955
+      },
+      "FU_benign_VERIFIED.json": {
+        "state": "passed",
+        "branch": "benign",
+        "rounds": 20,
+        "new_trained_roles": 200,
+        "actual_local_epochs": 1000,
+        "actual_batches": 19955
+      }
+    }
+  }
+}

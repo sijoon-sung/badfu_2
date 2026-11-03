@@ -1,0 +1,52 @@
+{
+  "state": "completed_fixed_mode",
+  "settings": {
+    "mode": "gpu_default",
+    "device": "cuda",
+    "torch_version": "2.7.1+cu118",
+    "CPU_threads": 1,
+    "mkldnn_enabled": true,
+    "matmul_precision": "highest",
+    "matmul_TF32": false,
+    "cudnn_TF32": true,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "cudnn_benchmark": false
+  },
+  "steps": [
+    {
+      "epoch": 1,
+      "batch": 1,
+      "examples": 128,
+      "loss": 9.052353858947754,
+      "max_abs_error_to_original": 0.0,
+      "original_CPU_gate_failed_elements": 0,
+      "tight_replay_failed_elements": 0,
+      "output": {
+        "path": "gradient_diagnosis/gpu_default/epoch001_batch1.pt",
+        "sha256": "b90920365250e8d7107966b226f912ee84d7f6da8f6d8be9b8a714cbff843080",
+        "bytes": 117733
+      }
+    },
+    {
+      "epoch": 100,
+      "batch": 2,
+      "examples": 72,
+      "loss": 6.524970054626465,
+      "max_abs_error_to_original": 0.0,
+      "original_CPU_gate_failed_elements": 0,
+      "tight_replay_failed_elements": 0,
+      "output": {
+        "path": "gradient_diagnosis/gpu_default/epoch100_batch2.pt",
+        "sha256": "0ad24ffc0da3fdef0dc2fd17d41ca5c5d13ec65120e707b6aec39d42ffb5db5a",
+        "bytes": 72677
+      }
+    }
+  ],
+  "original_gradient_tolerances_unchanged": true,
+  "optimizer_steps": 0,
+  "training_restarted": false,
+  "whole_original_verifier_repeated": false,
+  "original_STG_audit_remains_failed": true,
+  "real_SSS_FU_or_ASR_evaluation_executed": false
+}

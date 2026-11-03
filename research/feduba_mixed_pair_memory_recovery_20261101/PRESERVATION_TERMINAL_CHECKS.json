@@ -1,0 +1,37 @@
+{
+  "utc": "2026-11-01T05:09:49.7270409Z",
+  "processes": [],
+  "task": {
+    "state": "Ready",
+    "lastResult": 0
+  },
+  "files": [
+    {
+      "sha256": "6a048595a012d48918b72ba4630aa8451e948ca7446d9dd138cf096c74260166",
+      "name": "PREFIX_ONCE.json",
+      "bytes": 53
+    },
+    {
+      "sha256": "e27f4c6dfd55412bd926230074f897cda432701b67f8d0b62e3930015037d695",
+      "name": "PREFIX_PRESERVED.json",
+      "bytes": 23748
+    },
+    {
+      "sha256": "91ee8e87cc9e2f036f810d4ea4b47b439dff6f49f8204ec92f6cc4ca360d2e7c",
+      "name": "PREFIX_TASK_LAUNCH_ONCE.json",
+      "bytes": 54
+    },
+    {
+      "sha256": "4c38f6610c211f22698774d0c0e971a027cf0bbccba5de79255ea0ca7694aabf",
+      "name": "OPS_ONCE.json",
+      "bytes": 589
+    },
+    {
+      "sha256": "5c2fedbbc740a9fe36fb8f1429a2c7f1082a9033e7babae085330b1536fb4e6c",
+      "name": "OPS_RESULT.json",
+      "bytes": 1035
+    }
+  ],
+  "prefix_failure_present": false,
+  "new_training_launched": 0
+}

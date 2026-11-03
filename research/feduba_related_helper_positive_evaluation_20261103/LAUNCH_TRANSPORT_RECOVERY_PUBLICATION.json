@@ -1,0 +1,11 @@
+{
+  "state": "published_transport_only_recovery_before_existing_PS_invocation",
+  "commit": "93bdb6bc3053c1e3c6059ac84ad78f4cbafad25a",
+  "pull_request": "https://github.com/sijoon-sung/badfu_2/pull/1",
+  "recovery_freeze_sha256": "5216e4c04d42e6f6d1c012c46d9dbfdd7eaf94bdebe713607a749d482b5daf55",
+  "existing_numeric_source_freeze_sha256": "031d84db35347dc79878edc260649b63e6617d399016920f144456bda0f62e87",
+  "existing_actual_run_freeze_sha256": "a98811b9a598e74813a02a9f0451e98cd36f136d798a71449a5a304af6f27457",
+  "original_failure_sha256": "b9031554f3a18d5b3d90d93f03b74d1ec0b4c9e590eb2dbefbfb71599ef9d9e9",
+  "original_caller_not_reinvoked": true,
+  "existing_remote_PS_invocations_authorized": 1
+}

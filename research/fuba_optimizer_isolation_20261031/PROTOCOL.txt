@@ -1,0 +1,30 @@
+가설: 학습된 previous-round G와 같은 앵커/미니배치/RNG를 고정하면, FUBA의 재가중 embedding 단계에서 실험문단의 Adam을 쓰는 것이 v7의 literal SGD보다 정상 효용을 유지하면서 고정G 백도어 학습을 강화한다.
+
+관련 R02/R03/N02/D08/D15/D18/D19. 2026-10-31 사용자 정정: 우선 대상은 stcebra/FUBA이며 ity207/FedUBA가 아니다. 이전 FedUBA 감사는 보존하되 별도 FedUBA 구현/학습은 진행하지 않는다.
+
+읽은 근거
+INDEX/EXPERIMENT_CARDS R02/R03, EXPERIMENT_RULES, fuba_paper_grid100_20261027/FINAL_PAPER_COMPARISON.txt, fuba_v6_failure_diagnosis_20261027/REPORT_KO.txt 및 v7 코드/프로필. FUBA bc233610aca36e1647d0c815597cc7148292139d; 논문 원본 SHA256 61d7ae7a51137288df4ac711d7e29c6b8d0e4861cf042326e7ee23ca743d1365. 실험 Adam과 표시 수식 SGD의 충돌은 기존에 기록된 사실이다. 새로 발견했다고 하지 않는다.
+
+새 관측과 범위
+기존 v6는 새 localG, v7은 previousG/다른 gamma grid를 사용하여 두 변경이 섞였다. 이전 단일역할 비교는 최초 악성 역할의 미학습 previousG였다. 이번에는 99라운드까지 실제 학습된 G를 사용하는 고정100R/client1의 embedding 한 단계만 같은 조건에서 두 번 학습한다. 새 관측은 optimizer 한 요인의 실제50epoch 결과와 같은 미니배치 순서 보존이다. 이 한 역할을 독립 시드 또는 전체 FL/FU 재현 성공으로 세지 않는다.
+
+입력과 선택
+case fuba.v7.s20261023.pre100.post.kd10, purpose diagnostic. 실제 DISLAB select_case.py의 전체 전달 guard 통과 후 소비한다. 100R의 선택된 공격자 중 최소 client ID라는 사전 규칙으로 client1을 정하며 CA/ASR로 역할을 고르지 않는다. 봉인된 last_phases/round0100_client01/post_generator.pt의 incoming/classifier_generator, phase01.pt/phase02.pt의 model, phase02.pt의 rng를 사용한다. 각 파일은 등록 DELIVERY_MANIFEST의 해시와 비교한다. payload_key를 명시해 읽고, 원본에 새 학습을 쓰지 않는다.
+
+실제 비교
+- A algorithm_sgd: lr.001, momentum0, 원래 v7 재가중 SGD.
+- B experimental_adam: lr.001, 기본betas/epsilon, 새 Adam. gradient weighting 이전/이후 순서와 손실은 동일하다.
+- 공통: 같은 incoming, 고정 phase1/phase2 앵커에서 산출한 Eq1 가중치, 이전G99(eval/frozen), v7 epsilon 일정, target8, CIFAR10 ToTensor[0,1], client1의2250 train/250 local validation, batch64, full50epoch. 단계별 새 optimizer. BN은 실제 학습 통계를 유지하고 별도 재보정하지 않는다.
+- 각 arm 시작 직전 동일 phase2 RNG를 복원한다. 각 epoch의 실제 데이터 ID 순서 해시가 두 arm에서 정확히 같아야 한다. 중간 loss/CA/ASR에 맞춘 재튜닝이나 epoch 선택은 하지 않는다.
+- full10000 clean/9000 non-target test 평가를 새 A/B 끝점에 같은 고정G·epsilon.05·eval·contiguous-NCHW로 수행한다. local250 평가도 별도 기록한다. 깨끗한 non-target의 target8 오분류도 기록해 단순 target-collapse와 구별한다.
+
+사전 판정과 중단
+H 지지에는 B의 full-test ASR이 A보다20%p 이상 높고, B의 CA가 A 및 incoming 대비 각각5%p 이상 낮지 않으며, clean non-target target bias가 A 및 incoming 대비 각각5%p 이상 증가하지 않아야 한다. 최종50epoch만 판정한다. 조건 미달이면 이 가설을 기각/미지지로 보존하고 자동100R 학습을 열지 않는다. 차이 자체를 성공으로 세지 않는다.
+해시/데이터 분할/배치 순서/RNG/비유한/저장/런타임 오류는 즉시 보존하고 해당 비교를 중단한다. 원래 phase3와 새 A의 tensor 비트 일치 여부는 별도 구현 검산이며, 불일치하면 현재 runtime의 A/B 비교로 한정한다. 원래 phase3를 새 결과로 바꾸지 않는다.
+
+큰 정상 non-IID 반례와 탐지
+D08 공격0.75848 대 큰 정상0.75525/0.76188, D15 추가시드 공격7% 대 큰 정상8%는 미해결이다. 이 실험은 재현 실패의 학습 경로 진단이며 새 탐지 점수/임계값을 만들지 않는다. H가 지지되어도 실제 억제·활성화 전후쌍과 동일FU의 큰 정상 삭제 대조 없이 탐지 또는 보편 기하를 주장하지 않는다.
+
+자원과 보존
+새 경로 D:/FUBA_OPTIMIZER_ISOLATION_20261031만 사용한다. 이전 유한 trainer/controller/evaluator/export를 실행하지 않는다. 기존 GPU 유휴64MiB guard는 이전 profile의 규칙으로 보존한다. 이번 별도 두-arm 진단은 GPU utilization<=5%, free>=7000MiB, used<=2048MiB와 경쟁 학습 PID 부재에서만 시작하도록 명시한다. 다른 앱을 닫지 않고 순차 한 GPU로 실행한다. 이 자원 조건은 기존100R profile의 기준 변경이나 우회가 아니다.
+동결 plan/코드를 PR에 게시한 뒤 DISLAB CPU 계약검사와 실제 GPU 두-arm 학습을 한 번 실행한다. 각 arm의 모델/optimizer/RNG/전체epoch 로그/평가 정수 수를 남기고 전달한다. 이전 모든 모델/기본값/실패는 그대로 둔다.

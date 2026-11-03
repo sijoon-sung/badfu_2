@@ -1,0 +1,54 @@
+{
+  "id": "feduba.mixed_attack.prefix46.CPU_audit.20261101",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "CPU_audit_enabled": true,
+  "GPU_resume_launch_enabled": false,
+  "execution_root": "D:/FEDUBA_MIXED_ATTACK_RESUME_20261101",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "input_binding_sha256": "deaaa47f97e77b622f45f29904dc7adda51d44f8f0ad1e13187ecbacb84a6daa",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_purpose": "diagnostic",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "pre_checkpoint_sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+  "allowed_tensor_roots": [
+    "D:/FEDUBA_MIXED_PAIR_20261101",
+    "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+    "D:/FEDUBA_MIXED_TRIGGER_20261101"
+  ],
+  "CPU_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "available_RAM_min_bytes": 8589934592,
+  "commit_free_min_bytes": 17179869184,
+  "committed_rounds": 4,
+  "committed_roles": 40,
+  "saved_partial_round5_roles": 6,
+  "saved_total_roles": 46,
+  "saved_total_epochs": 230,
+  "saved_total_batches": 4600,
+  "original_unsaved_event_epochs": 5,
+  "original_unsaved_event_batches": 100,
+  "independent_calibration_and_aggregation": "exact_torch_equal_CPU1_same_sequential_dtype_policy",
+  "model_forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "all_SGD_gradients_independently_recomputed": false,
+  "raw_augmentation_independently_replayed": false,
+  "task_name": "Codex-FedUBA-mixed-attack-prefix46-CPU-audit-20261101",
+  "automatic_retry": false
+}

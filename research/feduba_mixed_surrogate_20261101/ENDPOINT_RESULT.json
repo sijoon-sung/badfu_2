@@ -1,0 +1,79 @@
+{
+  "state": "completed_CPU_teacher_endpoint_only",
+  "fixed_teacher": {
+    "path": "private_run/fixed_teacher201.pt",
+    "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+    "bytes": 45162251,
+    "payload_key": null
+  },
+  "teacher_audit_sha256": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+  "records": [
+    {
+      "group": "target",
+      "batch": 1,
+      "N": 128,
+      "correct": 42,
+      "mean_CE": 2.531937599182129
+    },
+    {
+      "group": "target",
+      "batch": 2,
+      "N": 72,
+      "correct": 23,
+      "mean_CE": 2.471857786178589
+    },
+    {
+      "group": "Tiny_training_representatives",
+      "batch": 1,
+      "N": 128,
+      "correct": 128,
+      "mean_CE": 0.04643087834119797
+    },
+    {
+      "group": "Tiny_training_representatives",
+      "batch": 2,
+      "N": 72,
+      "correct": 71,
+      "mean_CE": 0.04087261110544205
+    }
+  ],
+  "summary": {
+    "target": {
+      "N": 200,
+      "correct": 65,
+      "mean_CE": 2.5103088665008544
+    },
+    "Tiny_training_representatives": {
+      "N": 200,
+      "correct": 199,
+      "mean_CE": 0.04442990213632583
+    }
+  },
+  "Tiny_correct_class_count": 199,
+  "old_same_saved_target_zero_cell": {
+    "N": 200,
+    "target_hits": 0,
+    "target_hit_pct": 0.0,
+    "mean_CE": 9.02781639099121
+  },
+  "minimal_functional_checks": {
+    "target_count_exceeds_old_zero": true,
+    "at_least_two_distinct_Tiny_classes_correct": true
+  },
+  "minimal_functional_condition_passed": true,
+  "condition_is_not_sufficient_for_transfer_or_attack": true,
+  "forward_calls": 4,
+  "sample_forwards": 400,
+  "CPU_threads": 2,
+  "MKLDNN": true,
+  "CUDA_initialized": false,
+  "torch_version": "2.7.1+cu118",
+  "raw_private_outputs": {
+    "path": "private_run/endpoint_inputs_logits.pt",
+    "sha256": "525a5b4b1d098c29e4fa80b0545081f9b70877aa20ad56ff78457624be317a34",
+    "bytes": 5248051
+  },
+  "no_independent_model_replay_claim": true,
+  "trigger_or_SSS_or_FU_started": false,
+  "overall_goal_complete": false
+}

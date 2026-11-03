@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-02T04:16:49.318227+00:00",
+  "state": "existing_unrun_task_start_claim",
+  "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+  "preflight": {
+    "COM": {
+      "run_level": 0,
+      "state": 3,
+      "last_result": 267011,
+      "enabled": true
+    },
+    "canonical_xml_sha256": "16d3dfed4e1fca3ff8f45ed24412762df2a877b4f502c1c891034338fe5e546a",
+    "xml_query_exit_code": 0
+  },
+  "source_freeze_sha256": "a45ae230da2cbb4e973ccd01f42e0d283423cd0baed617279860f72b7c45b133",
+  "publication_sha256": "fb2c843e3b79233a6375d071726c5d6fa6601b5ab9c8d3a530e3963e5044f715"
+}

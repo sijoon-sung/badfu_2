@@ -1,0 +1,20 @@
+{
+  "state": "confirmed_own_historical_encoded_readonly_observer",
+  "pid": 39652,
+  "parent_pid": 13028,
+  "creation_unix_ms": 1793502042326,
+  "commandline_sha256": "f16fe2d5f46c84737ff30e6bc565001a2888c39b3b36066a29a2cf0ab1561f8f",
+  "decoded_query_sha256": "2a0964d44e63de8ada49afb387027e38d7a630b39d6f8c8d8cc3bd7d99b85545",
+  "query_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+  "query_reads": [
+    "CIM Python IDs",
+    "trigger conditional STATE/failures/results",
+    "raw last event string",
+    "task last result"
+  ],
+  "serialization_depth": 9,
+  "numerical_training_or_mutation_tokens_present": false,
+  "matches_our_FedUBA_metadata_query_shape": true,
+  "unique_cause_of_MemoryError_proved": false,
+  "full_process_commandline_kept_private": true
+}

@@ -1,0 +1,46 @@
+{
+  "state": "same_condition_targetclass_selection_reused_payload_binding_restored",
+  "source_freeze_sha256": "c002ae886e247fd369c743c3067cff7c1a12e59ab23727337057166269e25884",
+  "model_queries": 0,
+  "old_selected_class_counts": [
+    17,
+    18,
+    0,
+    5,
+    7,
+    2,
+    2,
+    6,
+    47,
+    21
+  ],
+  "new_selected_class_counts": [
+    0,
+    0,
+    125,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "eligible_target_counts_by_owner": {
+    "5": 242,
+    "7": 226
+  },
+  "selected_counts_by_owner": {
+    "5": 58,
+    "7": 67
+  },
+  "expected_benign_batches": 20000,
+  "expected_attack_batches": 20000,
+  "CIFAR_MD5_checked": true,
+  "same_old_score_values_used": true,
+  "old_global_top125_preserved": true,
+  "whole_goal_complete": false,
+  "prior_preparation_sha256": "08ab4e82cecdb71f957dcb799bd5eb9be5283f4b44e77e8a19e7884e3faf02f3",
+  "new_model_loads": 0,
+  "new_model_queries": 0
+}

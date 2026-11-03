@@ -1,0 +1,32 @@
+가설: 학습된 previousG·같은 시작 모델/앵커/배치 순서에서 재가중 embedding의 Adam이 SGD보다 정상 효용을 유지하며 고정G ASR을20%p 이상 개선한다.
+관련 R02/R03/N02/D08/D15/D18/D19. 2026-10-31 KST.
+
+판정: 이 고정 역할에서 가설 미지지. 단순 optimizer 교체로 해결됐다는 근거가 없으며 Adam을 정식 알고리즘으로 채택하지 않는다. 새100R/FU는 시작하지 않았다. 최종 기준은 논문의 Algorithm1/2와 본문이며 공개 코드의 무수정 여부나 원하는 ASR만으로 구현을 정하지 않는다.
+
+명칭과 범위 정정
+사용자는 기존 stcebra/FUBA를 우선 대상으로 확정했다. 별도 ity207/FedUBA를 구현하는 작업은 진행하지 않는다. “공개 원본을 먼저 한 번도 실행하지 않아서 문제가 생겼다”는 설명은 부정확하다. 과거 원코드 기반 실행과 수정 이력이 있고, 현재 v7은 선언된 논문 해석 구현이다. 원본 복원/WSL 설치가 해법이라고 단정하지 않는다. FUBA/BadFU/FedUBA의 차이는 IDENTITY_AND_SCOPE.txt에 연결했다.
+
+실제로 한 작업
+실행 전 commit42dbadb3c1c8a761c4cbb6bfac67181da87b515c에 PROTOCOL/PROFILE/코드를 게시했다.
+DISLAB select_case.py로 fuba.v7.s20261023.pre100.post.kd10을 diagnostic 용도로 선택하고 전체 전달 guard를 통과했다. 후속 소비에서 등록 manifest/seal 및11개 소스/앵커/역할 입력의 해시를 다시 확인했다. 입력과 payload_key는 INPUT_CHECKS.json.
+100R의 선택 공격자 중 가장 작은 ID라는 규칙으로 client1을 고정했다. 같은 incoming, 원래 phase1/2 앵커의 Eq1 가중치, 실제 previousG99, phase2 RNG,2250train/250valid/batch64/full50epoch/학습eps.2730719854242219를 사용했다. optimizer만 A SGD(lr.001, momentum0), B Adam(lr.001)으로 바꿨다.
+CPU 계약4개 통과 후 GPU 두 arm을 실제 학습했다. 총100epoch/3600batch,각arm112500개 학습 예제 노출을 기록했다.50개 epoch별 데이터 ID 순서 해시는 두 arm에서 모두 정확히 같았다. 중간 성능으로 epoch/조건을 고르지 않았다.
+
+전체10000clean/9000non-target, 같은 previousG99/epsilon.05/eval/contiguous-NCHW 결과
+조건                  CA                  ASR                  clean non-target target bias
+incoming              77.08%(7708)         6.2444444%(562)      .7444444%(67)
+A algorithm_sgd       72.97%(7297)          .6777778%(61)       .0888889%(8)
+B experimental_adam   72.43%(7243)         1.7444444%(157)      .1555556%(14)
+괄호는 각각 실제 정수 수/분모10000 또는9000이다. 원래 v7 최종 전후 성능이 아니라 이 고정 로컬 역할의 새 derived 모델이다. local250 결과는 RESULT.json에 별도로 보존했다.
+ASR B-A는+1.0666667%p로 사전20%p 게이트를 실패했다. CA B-A는-.54%p, B-incoming은-4.65%p였다. 두 arm의 target bias가 작으므로 target-collapse 성공을 만들지 않았지만, 원하는 낮은 강도 백도어도 이 단계에서 학습됐다고 할 수 없다.
+
+구현/검증과 한계
+새 optimizer_policy.py는 algorithm_sgd와 experimental_adam을 명시적으로 구분하며 암묵 기본값을 허용하지 않는다. 실험용 Adam으로 본문 SGD 수식을 대체하지 않는다. PAPER_ALGORITHM_CONTRACT.txt에 논문 줄/식→현재 함수→남은 해석을 기록했다.
+두 새 모델 .pt의 optimizer/RNG/full50epoch, strict CPU load/유한 출력,100개epoch 로그/3600batch, 평가 정수 수 산술과 고정G/incoming 파일 검증이 통과했다(VERIFIED.json). 같은 모델의 별도 전체 독립추론을 다시 수행한 검사는 아니다.
+새 A는 원래 v7 phase3와 tensor bit 일치하지 않았다. 따라서 원래 phase3의 비트 재생이라고 하지 않고, 현재 runtime에서 공통 입력·가중치·RNG를 고정한 A/B 비교로 한정한다. Eq1 가중치를 보존 앵커의 CPU 사본에서 계산했다는 점도 원래 GPU 계산과 구분한다. 비트 불일치의 유일 원인을 확정하지 않는다.
+학습된 G 한 역할/한 시드/한 단계이며 정상 효용 제약을 둔 진단이다. 전체 FUBA 억제·언러닝 활성화 또는 정상 큰non-IID 탐지의 성공이 아니다. D08 공격0.75848 대 정상0.75525/0.76188, D15 추가시드 반례는 보존한다.
+
+자원/운영
+기존 GPU 점유 약1830MiB인 다른 앱을 종료하지 않았다. 별도 사전 조건(util<=5/free>=7000/used<=2048MiB, 경쟁 학습 PID 부재)을 통과해 한 GPU에서 순차 실행했다. 이전 유휴64MiB profile의 기준은 바꾸지 않았다. 실제 trainer PID30836/controller49360, one-time Windows task Codex-FUBA-optimizer-isolation-20261031이다.
+첫 Start-Process PID19652는 STARTED 없이 사라져 실행 실패를 보존했고, 동일 동결 runner를 별도 one-time task로 실행했다. 과학 코드/조건 변경이나 이전100R trainer 재시작이 아니다(LAUNCH_CORRECTION.txt).
+원격 D:/FUBA_OPTIMIZER_ISOLATION_20261031에 새 모델/고정G/incoming/optimizer/RNG/전체epoch 로그를 보관한다. 기존 v7/모든 과거 모델·catalogue/default는 변경하지 않았다. 전달/색인/PR 확인은 FINAL_CHECKS.json을 따른다.

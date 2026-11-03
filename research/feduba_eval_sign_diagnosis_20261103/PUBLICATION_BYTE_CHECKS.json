@@ -1,0 +1,77 @@
+{
+    "state":  "actual14publicsource_bytes_exact",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "e26d626bfc8f932a9c1beab108d64e05ea4070cbc432edb1f644a08c283ce40b",
+                      "bytes":  34
+                  },
+                  {
+                      "name":  "common.py",
+                      "sha256":  "9c53472b8cea4b94971930414568635280a36b31f7c9060d382dad24a8c72b1c",
+                      "bytes":  6282
+                  },
+                  {
+                      "name":  "controller.py",
+                      "sha256":  "e3af631315923b72a63b0f3b21aebe8cdc06bf238134aad2911595ec2579d8cb",
+                      "bytes":  3076
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "b78604c82243d665ee526ba0c1011bde8e20a777d820a99a368a2ee13f7abd40",
+                      "bytes":  4474
+                  },
+                  {
+                      "name":  "model_reference.py",
+                      "sha256":  "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+                      "bytes":  4379
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "PAPER_SIGN_EVIDENCE.json",
+                      "sha256":  "f3b77e23503e316be0511f82ea3d754e3b796674c45a827ecfb8aefa7b74bb7d",
+                      "bytes":  987
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "c3e242925f904ce12d998cdc01a3111fc2ef141f9a292f4f7da2dd894cd2d582",
+                      "bytes":  3751
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "3508e1da9dc39b0eee12d47fc32da3dd69e91ebc8075a73f6d9ab7b34725f27d",
+                      "bytes":  3365
+                  },
+                  {
+                      "name":  "review_source.py",
+                      "sha256":  "a8022385d1156e516c6f446a7f9c89d87dfebcd1ffafe985c7ef4a3ac87d3d8e",
+                      "bytes":  2691
+                  },
+                  {
+                      "name":  "sign_eval.py",
+                      "sha256":  "c2b39f3d2a787ba641c410436166828ee993791e9890bb6773fec0d0997f13bd",
+                      "bytes":  10542
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "87339364a803d0691819c72f08a438ee5e207f7d812aa9464a43995ac2572df2",
+                      "bytes":  1089
+                  }
+              ],
+    "commit":  "8cbbdc25a37a17b005290e346713a49c04e374d6",
+    "model_payload_reads":  0
+}

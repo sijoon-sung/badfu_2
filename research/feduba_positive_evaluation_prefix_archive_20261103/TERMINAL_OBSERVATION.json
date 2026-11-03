@@ -1,0 +1,33 @@
+{
+  "manifest_sha256": "629c24648b7052ce4377dd2efef029119afa325447c43171162ebb6f5b9edeee",
+  "prefix_failure_count": 0,
+  "archive_sha256": "7bdc28ac0d5b0a1781f027a15c7821f7be9a8a2ef48a1c53eb8db193de969a26",
+  "utc": "2026-11-03T08:48:07.4756993Z",
+  "prefix_root_native_processes": 0,
+  "seal_sha256": "89cc325c776f878c583a0a10ea35d94809fff99575d2c82dda2730a9fb94fece",
+  "original_VERIFIED_exists": false,
+  "receipt_hashes": {
+    "REMOTE_CHECKPOINT_REVIEW.json": "4f10c839245f3969044d425ab5c0ce560192729d4968d71ed33a897ee89ebb50",
+    "SOURCE_PUBLICATION.json": "8ad1f6b63cd386c2f93eaa41071e876bb333926efd4249c588a113f1310d084b",
+    "COMPLETION.json": "dfeeb09ea9c9eb22e4d4dac2ab74b3f183721dd6877d5752c5d9ad8958f8e7c2",
+    "PREFIX_REVIEW_RESULT.json": "45beaffd15cdfbea34d7442dd228935151a77cc5cbf684f83a0e66ac960597dc",
+    "SOURCE_FREEZE.json": "e938ac09831cedc810ac2b2d6bce2fde9dda403d828dfaa75c3bda056f1a4079"
+  },
+  "tasks": [
+    {
+      "exit": 0,
+      "arguments": "-B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/controller.py",
+      "name": "Codex-FedUBA-related-helper-positive-FU20-20261103",
+      "level": "Limited",
+      "state": "Ready"
+    },
+    {
+      "exit": 1,
+      "arguments": "-B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/controller.py",
+      "name": "Codex-FedUBA-related-helper-positive-newmodel-eval-review-20261103",
+      "level": "Limited",
+      "state": "Ready"
+    }
+  ],
+  "archive_bytes": 357362282
+}

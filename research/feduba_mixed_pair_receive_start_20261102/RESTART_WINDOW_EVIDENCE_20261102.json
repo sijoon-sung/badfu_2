@@ -1,0 +1,46 @@
+{
+  "state": "system_shutdown_and_new_start_recorded_in_receiver_interruption_window",
+  "utc": "2026-11-02T04:39:46.054584+00:00",
+  "system_event_timestamps": [
+    {
+      "event_id": "12",
+      "utc": "2026-11-02T04:32:39.8717366Z",
+      "provider": "Microsoft-Windows-Kernel-General"
+    },
+    {
+      "event_id": "13",
+      "utc": "2026-11-02T04:28:37.7427906Z",
+      "provider": "Microsoft-Windows-Kernel-General"
+    },
+    {
+      "event_id": "6005",
+      "utc": "2026-11-02T04:32:58.6051630Z",
+      "provider": "EventLog"
+    },
+    {
+      "event_id": "6006",
+      "utc": "2026-11-02T04:28:33.8340477Z",
+      "provider": "EventLog"
+    },
+    {
+      "event_id": "1074",
+      "utc": "2026-11-02T04:28:26.2168816Z",
+      "provider": "User32"
+    }
+  ],
+  "native_OS_uptime_ms": 426875,
+  "estimated_boot_from_uptime_utc": "2026-11-02T04:32:39.179584+00:00",
+  "task_history_config_query_exit_code": 0,
+  "task_history_enabled": false,
+  "task_history_no_entries_is_not_no_shutdown_evidence": true,
+  "historical_first_receiver_disappearance_cause_still_unproved": true,
+  "individual_receiver_termination_actor_or_exact_mechanism_unproved": true,
+  "RAM_shortage_or_timeout_not_established_as_exit_cause": true,
+  "task_result_decimal": 1073807364,
+  "task_result_hex": "0x40010004",
+  "NTSTATUS_symbol_does_not_prove_debugger_attachment": true,
+  "original_configuration_or_privileges_changed": false,
+  "metadata_source": "read-only wevtutil gl/qe and native GetTickCount64",
+  "raw_system_payload_publication": false,
+  "model_queries": 0
+}

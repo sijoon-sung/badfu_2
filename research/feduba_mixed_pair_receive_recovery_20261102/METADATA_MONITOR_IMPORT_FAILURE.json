@@ -1,0 +1,9 @@
+{
+  "state": "metadata_only_failed_before_native_RAM_process_query",
+  "exception_type": "ModuleNotFoundError",
+  "message": "No module named 'native_memory'",
+  "script": "observe_receive.py",
+  "model_queries": 0,
+  "finite_reexecution": false,
+  "frozen_source_modified": false
+}

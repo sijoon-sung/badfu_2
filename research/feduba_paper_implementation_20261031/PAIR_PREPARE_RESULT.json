@@ -1,0 +1,47 @@
+{
+  "state": "passed_profiles_prepared_not_started",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_selection": {
+    "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "purpose": "diagnostic",
+    "post_type": "none_clean_pre_only",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+        "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+        "payload_key": null
+      }
+    },
+    "source_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+      "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+      "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+      "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+      "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  "history_manifest_sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28",
+  "delta": {
+    "path": "stg_cpu_trigger_recovery/delta.pt",
+    "sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "trigger_binding_sha256": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5",
+  "CPU_trigger_verified_sha256": "817e92a78fa2f498d2e2dc1a1805d782c1e6932cafaa60a0a86de67eee38aff2",
+  "profiles_and_freezes_sha256": {
+    "SSS_LAUNCH_PROFILE.json": "b09b873a49a9beb8c0d43026fbafa8ae91151fb057176d826c1cb851f7e3d564",
+    "FU_LAUNCH_PROFILE.json": "18f5e065ccc6d53fcf2c1b42b17932abae61e22ca4d0073fefe2757dcfb66e00",
+    "PAIR_EVAL_LAUNCH_PROFILE.json": "b246121648664e18999ef7bd2c68f92322593cecba4882d65146aeaffde3f049",
+    "PAIR_LAUNCH_PROFILE.json": "111df49da93a944091f10def0b046113dd07543f1a5985c0cee1abc8768794a0",
+    "SSS_FREEZE.json": "3ae0c3ff2f87d849678b2008f09f10b5a73ecb20d9ba1c24f3fa67f831682787",
+    "FU_RUN_FREEZE.json": "5b51242deaf4051b5445f80d2217e880581b73eb6b349664a9f58ccd85c6274a",
+    "PAIR_EVAL_RUN_FREEZE.json": "627758a404b44da9681b2eed8860b1e2cb40dd0a56f3109cdbffc6c80e665612",
+    "PAIR_RUN_FREEZE.json": "1d93420c1bb273cc7c93754ab59ef29fdca41a6fe2c769fddfa77d38a152b3d1"
+  },
+  "real_SSS_FU_or_pair_evaluation_executed": false,
+  "next_required": "Publish exact profiles/freezes to PR then record PAIR_PUBLICATION and launch once"
+}

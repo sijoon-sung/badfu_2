@@ -1,0 +1,1002 @@
+{
+  "state": "completed_model_free_alternative_publisher_archive_packaging_recovery",
+  "utc": "2026-11-03T03:38:38.561436+00:00",
+  "repository": "ity207/FedUBA-2",
+  "commit": "9e65a5cda5138f6573039b75903e1741c2f6114d",
+  "url": "https://raw.githubusercontent.com/ity207/FedUBA-2/9e65a5cda5138f6573039b75903e1741c2f6114d/FedUBA.zip",
+  "archive": {
+    "bytes": 26677,
+    "sha256": "a5da203a08ba2f82956dde5d5e7df0f1d4498c43776d905863fe540389799277",
+    "git_blob_sha1": "3bea03efa9c6544864e818ca670bacbd7462a25c"
+  },
+  "source_freeze_sha256": "f427a2bcdad24ebbdf2b68fa387fdf859290d0b476354ae654c90820cf776727",
+  "members": [
+    {
+      "path": "FedUBA/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "directory": true
+    },
+    {
+      "path": "__MACOSX/._FedUBA",
+      "bytes": 312,
+      "compressed_bytes": 178,
+      "directory": false
+    },
+    {
+      "path": "FedUBA/.DS_Store",
+      "bytes": 6148,
+      "compressed_bytes": 413,
+      "directory": false
+    },
+    {
+      "path": "__MACOSX/FedUBA/._.DS_Store",
+      "bytes": 120,
+      "compressed_bytes": 53,
+      "directory": false
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "bytes": 17985,
+      "compressed_bytes": 4053,
+      "directory": false,
+      "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+      "git_blob_sha1": "4eb1850b993b4fae675da99c8cbc45cbd34b2150",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_data_preprocess.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "bytes": 5218,
+      "compressed_bytes": 1311,
+      "directory": false,
+      "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+      "git_blob_sha1": "49f3866a7aae53e989c34cf283681f7378b423fb",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_test.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "bytes": 8763,
+      "compressed_bytes": 2341,
+      "directory": false,
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+      "git_blob_sha1": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._trigger_generate_function.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/README.md",
+      "bytes": 5003,
+      "compressed_bytes": 1626,
+      "directory": false,
+      "sha256": "ca56265247744c325bb833d4dd910c9f65d7488054c1456851e0c1d5c4bdb262",
+      "git_blob_sha1": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "bytes": 852,
+      "compressed_bytes": 279,
+      "directory": false,
+      "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+      "git_blob_sha1": "97785086ce548af4799c05e015cf9865b85aaf28",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_model_initiation.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "bytes": 10658,
+      "compressed_bytes": 2402,
+      "directory": false,
+      "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+      "git_blob_sha1": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_train.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "bytes": 6152,
+      "compressed_bytes": 2066,
+      "directory": false,
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8",
+      "git_blob_sha1": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_data_change.py",
+      "bytes": 219,
+      "compressed_bytes": 131,
+      "directory": false,
+      "sha256": "14b23ab89f153e904031a47139371657805621f54c347c32a8a1d466758ee0fd",
+      "git_blob_sha1": "fb2a003a9f3300693eb177df3d7a5906d29c8ec1",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "bytes": 7310,
+      "compressed_bytes": 2280,
+      "directory": false,
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+      "git_blob_sha1": "97b806ee736db9dccec13cc0a56684dc40fdd60d",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_Unlearn_main.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "bytes": 18334,
+      "compressed_bytes": 4135,
+      "directory": false,
+      "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+      "git_blob_sha1": "4baeb0931f39c139c325bcee9b4298e95f64c50a",
+      "CRC_checked_by_zip_read": true
+    },
+    {
+      "path": "__MACOSX/FedUBA/._Fed_Unlearn_attack.py",
+      "bytes": 212,
+      "compressed_bytes": 135,
+      "directory": false,
+      "sha256": "7f384e301c48f0735eb031e99c68a32139852ffe03ebff50301841350b39d468",
+      "git_blob_sha1": "8e534b82f7204489ce09e9f4bd902f40611944bd",
+      "CRC_checked_by_zip_read": true,
+      "kind": "AppleDouble_resource_metadata_not_Python_source",
+      "magic_hex": "00051607"
+    }
+  ],
+  "parsed_Python_files": 8,
+  "definitions": [
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "data_init",
+      "kind": "FunctionDef",
+      "line": 11
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "data_init_non_iid",
+      "kind": "FunctionDef",
+      "line": 52
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "balance_split",
+      "kind": "FunctionDef",
+      "line": 127
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "client_inner_dirichlet_partition",
+      "kind": "FunctionDef",
+      "line": 144
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "merge_client_subsets",
+      "kind": "FunctionDef",
+      "line": 200
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "data_set_for_attack",
+      "kind": "FunctionDef",
+      "line": 228
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "data_set",
+      "kind": "FunctionDef",
+      "line": 244
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "data_set_outter",
+      "kind": "FunctionDef",
+      "line": 333
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "NPZDataset",
+      "kind": "ClassDef",
+      "line": 425
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "__init__",
+      "kind": "FunctionDef",
+      "line": 426
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "__len__",
+      "kind": "FunctionDef",
+      "line": 439
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "name": "__getitem__",
+      "kind": "FunctionDef",
+      "line": 442
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "name": "test",
+      "kind": "FunctionDef",
+      "line": 17
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "name": "test_target",
+      "kind": "FunctionDef",
+      "line": 43
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "name": "test_backdoor",
+      "kind": "FunctionDef",
+      "line": 72
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "name": "trigger_generate",
+      "kind": "FunctionDef",
+      "line": 29
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "name": "limit_noise",
+      "kind": "FunctionDef",
+      "line": 223
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "name": "custom_collate_fn",
+      "kind": "FunctionDef",
+      "line": 236
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "name": "model_init",
+      "kind": "FunctionDef",
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "FL_Train",
+      "kind": "FunctionDef",
+      "line": 19
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "global_train_once",
+      "kind": "FunctionDef",
+      "line": 92
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "client_train_function",
+      "kind": "FunctionDef",
+      "line": 137
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "global_train_once_multi",
+      "kind": "FunctionDef",
+      "line": 164
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "fedavg",
+      "kind": "FunctionDef",
+      "line": 202
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "median",
+      "kind": "FunctionDef",
+      "line": 239
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "trim_mean",
+      "kind": "FunctionDef",
+      "line": 273
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "name": "cosine_annealing_lr",
+      "kind": "FunctionDef",
+      "line": 41
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "name": "dataloader_change_for_attack",
+      "kind": "FunctionDef",
+      "line": 11
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "name": "trigger_data_change",
+      "kind": "FunctionDef",
+      "line": 27
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "name": "CustomDatasetWithNarcissus",
+      "kind": "FunctionDef",
+      "line": 108
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "name": "high_sensitivity_sort",
+      "kind": "FunctionDef",
+      "line": 116
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "name": "Arguments",
+      "kind": "ClassDef",
+      "line": 17
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "name": "Save_paths_init",
+      "kind": "FunctionDef",
+      "line": 73
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "name": "Federated_Unlearning",
+      "kind": "FunctionDef",
+      "line": 112
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "name": "__init__",
+      "kind": "FunctionDef",
+      "line": 18
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "name": "federated_learning_unlearning",
+      "kind": "FunctionDef",
+      "line": 21
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "name": "unlearning_attack",
+      "kind": "FunctionDef",
+      "line": 126
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "name": "unlearning_step_once",
+      "kind": "FunctionDef",
+      "line": 274
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "name": "cosine_annealing_lr",
+      "kind": "FunctionDef",
+      "line": 220
+    }
+  ],
+  "imports": [
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "torch",
+      "line": 3
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "torch.utils.data",
+      "names": [
+        "DataLoader"
+      ],
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "numpy",
+      "line": 5
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "torchvision",
+      "names": [
+        "datasets",
+        "transforms"
+      ],
+      "line": 6
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "os",
+      "line": 8
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "torch.utils.data",
+      "names": [
+        "Dataset"
+      ],
+      "line": 421
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "PIL",
+      "names": [
+        "Image"
+      ],
+      "line": 422
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "matplotlib.pyplot",
+      "line": 61
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "medmnist",
+      "line": 273
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "medmnist",
+      "names": [
+        "INFO"
+      ],
+      "line": 274
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "medmnist",
+      "line": 354
+    },
+    {
+      "path": "FedUBA/Fed_data_preprocess.py",
+      "module": "medmnist",
+      "names": [
+        "INFO"
+      ],
+      "line": 355
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "torch",
+      "line": 1
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "torch.nn",
+      "line": 2
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "numpy",
+      "line": 3
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "sklearn.metrics",
+      "names": [
+        "accuracy_score"
+      ],
+      "line": 5
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "torch.utils.data",
+      "names": [
+        "Subset"
+      ],
+      "line": 7
+    },
+    {
+      "path": "FedUBA/Fed_test.py",
+      "module": "utils",
+      "names": [
+        "get_labels",
+        "poison_image_label"
+      ],
+      "line": 9
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "torch",
+      "line": 1
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "tqdm",
+      "line": 2
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "torch.utils.data",
+      "names": [
+        "Subset"
+      ],
+      "line": 4
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "models",
+      "names": [
+        "*"
+      ],
+      "line": 6
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "os",
+      "line": 8
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "random",
+      "line": 10
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "numpy",
+      "line": 12
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "utils",
+      "names": [
+        "*"
+      ],
+      "line": 14
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "Fed_model_initiation",
+      "names": [
+        "model_init"
+      ],
+      "line": 16
+    },
+    {
+      "path": "FedUBA/trigger_generate_function.py",
+      "module": "Fed_data_preprocess",
+      "names": [
+        "data_set_for_attack",
+        "data_set_outter"
+      ],
+      "line": 18
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.mobilenetv2",
+      "names": [
+        "MobileNetV2"
+      ],
+      "line": 6
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.mobilenetv2",
+      "names": [
+        "MobileNetV2"
+      ],
+      "line": 9
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.resnet",
+      "names": [
+        "ResNet18"
+      ],
+      "line": 12
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.resnet",
+      "names": [
+        "ResNet18_201"
+      ],
+      "line": 15
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.vgg",
+      "names": [
+        "VGG"
+      ],
+      "line": 18
+    },
+    {
+      "path": "FedUBA/Fed_model_initiation.py",
+      "module": "models.vgg",
+      "names": [
+        "VGG"
+      ],
+      "line": 21
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "torch",
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "torch.nn",
+      "line": 5
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "torch.optim",
+      "line": 6
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "numpy",
+      "line": 8
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "copy",
+      "line": 10
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "tqdm",
+      "line": 11
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "math",
+      "line": 13
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "Fed_test",
+      "names": [
+        "test"
+      ],
+      "line": 15
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "multiprocessing",
+      "line": 165
+    },
+    {
+      "path": "FedUBA/Fed_train.py",
+      "module": "multiprocessing",
+      "names": [
+        "RLock",
+        "freeze_support"
+      ],
+      "line": 166
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "torch",
+      "line": 2
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "torch.utils.data",
+      "names": [
+        "DataLoader",
+        "Dataset",
+        "SequentialSampler",
+        "BatchSampler"
+      ],
+      "line": 3
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "copy",
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "numpy",
+      "line": 5
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "torchvision",
+      "names": [
+        "transforms"
+      ],
+      "line": 6
+    },
+    {
+      "path": "FedUBA/Fed_data_change.py",
+      "module": "utils",
+      "names": [
+        "poison_image"
+      ],
+      "line": 9
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "torch",
+      "line": 2
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "numpy",
+      "line": 3
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "os",
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "Fed_model_initiation",
+      "names": [
+        "model_init"
+      ],
+      "line": 7
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "Fed_data_preprocess",
+      "names": [
+        "data_init",
+        "data_init_non_iid"
+      ],
+      "line": 8
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "Fed_Unlearn_attack",
+      "names": [
+        "federated_learning_unlearning"
+      ],
+      "line": 10
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_main.py",
+      "module": "trigger_generate_function",
+      "names": [
+        "trigger_generate"
+      ],
+      "line": 13
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "torch",
+      "line": 3
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "copy",
+      "line": 4
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "numpy",
+      "line": 5
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "time",
+      "line": 6
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "math",
+      "line": 8
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "Fed_test",
+      "names": [
+        "test",
+        "test_backdoor"
+      ],
+      "line": 10
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "Fed_train",
+      "names": [
+        "fedavg",
+        "global_train_once",
+        "FL_Train",
+        "median",
+        "trim_mean"
+      ],
+      "line": 12
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "tqdm",
+      "line": 13
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "os",
+      "line": 14
+    },
+    {
+      "path": "FedUBA/Fed_Unlearn_attack.py",
+      "module": "Fed_data_change",
+      "names": [
+        "dataloader_change_for_attack"
+      ],
+      "line": 16
+    }
+  ],
+  "root_comparison": {
+    "Fed_Unlearn_attack.py": {
+      "expected_blob": "4baeb0931f39c139c325bcee9b4298e95f64c50a",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_Unlearn_attack.py",
+          "git_blob_sha1": "4baeb0931f39c139c325bcee9b4298e95f64c50a"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_Unlearn_main.py": {
+      "expected_blob": "97b806ee736db9dccec13cc0a56684dc40fdd60d",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_Unlearn_main.py",
+          "git_blob_sha1": "97b806ee736db9dccec13cc0a56684dc40fdd60d"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_data_change.py": {
+      "expected_blob": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_data_change.py",
+          "git_blob_sha1": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_data_preprocess.py": {
+      "expected_blob": "4eb1850b993b4fae675da99c8cbc45cbd34b2150",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_data_preprocess.py",
+          "git_blob_sha1": "4eb1850b993b4fae675da99c8cbc45cbd34b2150"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_model_initiation.py": {
+      "expected_blob": "97785086ce548af4799c05e015cf9865b85aaf28",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_model_initiation.py",
+          "git_blob_sha1": "97785086ce548af4799c05e015cf9865b85aaf28"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_test.py": {
+      "expected_blob": "49f3866a7aae53e989c34cf283681f7378b423fb",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_test.py",
+          "git_blob_sha1": "49f3866a7aae53e989c34cf283681f7378b423fb"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "Fed_train.py": {
+      "expected_blob": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/Fed_train.py",
+          "git_blob_sha1": "f08a854350b32c7c8c55d021e60834468ea2e0a0"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "README.md": {
+      "expected_blob": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/README.md",
+          "git_blob_sha1": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e"
+        }
+      ],
+      "has_exact_match": true
+    },
+    "trigger_generate_function.py": {
+      "expected_blob": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+      "archive_candidates": [
+        {
+          "path": "FedUBA/trigger_generate_function.py",
+          "git_blob_sha1": "bb5096dbb192fa8d5cffa7fc9d97559d15157127"
+        }
+      ],
+      "has_exact_match": true
+    }
+  },
+  "missing_helper_definitions": {
+    "poison_image": [],
+    "poison_image_label": [],
+    "concoct_dataset": [],
+    "sur_target_dataset": [],
+    "apply_noise_patch": [],
+    "ResNet18": [],
+    "ResNet18_201": []
+  },
+  "all_required_helper_definitions_present": false,
+  "model_loads": 0,
+  "tensor_payload_reads": 0,
+  "torch_imports": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0,
+  "archive_code_executed": false,
+  "old_finite_jobs_replayed": false,
+  "existing_source_or_profile_changed": false,
+  "paper_performance_or_detection_success_implied": false
+}

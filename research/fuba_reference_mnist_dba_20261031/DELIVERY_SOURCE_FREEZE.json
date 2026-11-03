@@ -1,0 +1,10 @@
+{
+  "schema": "new-completed-run-export-source-v2",
+  "files": {
+    "DELIVERY_PROTOCOL.txt": "3ea4f8a222207ef8adb3f89943b8c6af4d771287eeb3a4ed3a7cdc854c1df6e7",
+    "package_delivery.py": "6195fb96403c4b9e154bc15a85ad79fe14d847e74cfe1503bb737b069ed16a4a"
+  },
+  "existing_trainer_controller_verifier_unchanged": true,
+  "execution_requires": "completed100R_KD10 + original VERIFIED + CPU_AUDIT_through0100 + inactive controller",
+  "correction": "Normalize Windows role paths before manifest lookup; precheck external seals and own source. Original export had not executed."
+}

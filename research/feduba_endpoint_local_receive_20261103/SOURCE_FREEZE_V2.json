@@ -1,0 +1,23 @@
+{
+  "state": "prepared_inactive_receiver_v2_readiness_binding_source_frozen_before_review",
+  "files": {
+    "PROFILE_V2.json": "07dba79f2653e9e08897eedf831526703d5892555978674daabc84401cc9248d",
+    "INPUT_BINDING.json": "f0e9d8a2947a972c05b5e39d7de6822f9aa9715703465b2f665b0e1d03bfc9e8",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "SOURCE_FREEZE.json": "c155696ae98cab708267aaec165ef3eb45229ddf4e8cdf17f1edd39afb726476",
+    "receive_common.py": "586163c7fc8ada99a31755884ac2bd3a724d278bc3e5790a41e4b83f770d2153",
+    "probe_cpu_runtime.py": "44041813ecbec0707094a15b8cbd6aa72b87caee1a865e69f320a7c14b8546db",
+    "verify_cpu_storage.py": "047d2fac4f3fdb2b459ed3daf2509dd5209a6caf97789caa3cbb4798696e4ca8",
+    "receive_packet.py": "f0066e4b8969d44d407ecf897d9d3428b4da56617d3635e5090875fe09898016",
+    "V2_DELTA_BINDING.json": "cb10a7c29248256afc2bebc9891cd05ed79c0f73efd4e23422814dcc5860106a",
+    "READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt": "753f1b1962b9ee7aa29294442d901dd44880a9d0e0d328325b5f1f7b915c3681",
+    "INSPECTION_PROFILE_V2.json": "1e4911096ad76447745d5991ad74c834fe13d92d19fd94069cd1bab175f2bf13",
+    "receive_common_v2.py": "683c354792a9c7fb06053fba7eff73e891ab9db0a95cc6d0b7fb2a2f7a621d4e",
+    "probe_cpu_runtime_v2.py": "df710ecb98425f690d0c4627d31851311d7ae8833808674dbc5b8f02c03b3513",
+    "verify_cpu_storage_v2.py": "f1d3df3e91b43f6e39c94eade65351cd32959716810a99e3c25cec379ec8373d",
+    "receive_packet_v2.py": "388319d168189c786ffd7074e4189c0ca8bf6136059169d029e8db7e77f5cc11",
+    "inspect_source_v2.py": "8d580eb9dd10c40ea667d951130c8d93f3ea7a3d1b037862df246c46702c5c2d"
+  },
+  "actual_receiver_enabled": false
+}

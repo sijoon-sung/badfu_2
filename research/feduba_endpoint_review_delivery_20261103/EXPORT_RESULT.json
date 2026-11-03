@@ -1,0 +1,65 @@
+{
+  "state": "completed_four_endpoint_and_scalar_epoch_review_export_only",
+  "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_fixed10_s42_four_endpoints_review_20261103",
+  "manifest_sha256": "10cb99c38fbd72aed399e1e1ec258342544ac63520727f03b1f617ccc85c1b1c",
+  "seal_sha256": "69986537c105ee6ee77e1e2db37deb007ee5c4ead0ce22f855521eda7ca0136a",
+  "hashed_files": 14,
+  "model_files": 4,
+  "scalar_epoch_rows": 3000,
+  "source_case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "source_guard_passes": 3,
+  "source_packet_file_hash_checks": 2427,
+  "models": {
+    "pre": {
+      "file": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "benign": {
+      "file": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "minus": {
+      "file": "models/minus.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "plus": {
+      "file": "models/plus.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    }
+  },
+  "archive": {
+    "path": "D:\\FEDUBA_ENDPOINT_REVIEW_DELIVERY_20261103\\ENDPOINT_REVIEW.zip",
+    "bytes": 165494920,
+    "sha256": "f74d8f1cd2df54622965606e9614bb73927ed7aef55ccd68761bb6d497a0b58d"
+  },
+  "source_catalogue_unchanged": true,
+  "source_packets_seals_and_original_failures_preserved": true,
+  "model_files_copied": 4,
+  "new_model_tensor_loads": 0,
+  "new_CPU_or_inference_calls": 0,
+  "new_training": false,
+  "local_receiver_started": false,
+  "local_delivery_complete": false,
+  "performance_success": false,
+  "overall_goal_complete": false
+}

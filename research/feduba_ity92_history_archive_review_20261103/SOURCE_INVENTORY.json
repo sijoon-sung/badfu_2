@@ -1,0 +1,2412 @@
+{
+  "archive_sha256": "ac9408f9bec5ff55f980d179a32d28f5ba33b574cb377ff94145402a91a065f5",
+  "members": [
+    {
+      "member": "FedUBA-code/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/._FedUBA-code",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/influence_function.py",
+      "bytes": 5274,
+      "compressed_bytes": 1875,
+      "extension": ".py",
+      "CRC32_declared": "79c49594",
+      "is_directory": false,
+      "sha256": "79e8590613ddaf317b89c79f93f53e148a2580a12dc6d648c73b17c4c44044b6",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._influence_function.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/result/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._result",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/.DS_Store",
+      "bytes": 8196,
+      "compressed_bytes": 694,
+      "extension": "",
+      "CRC32_declared": "fec5b6ae",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._.DS_Store",
+      "bytes": 120,
+      "compressed_bytes": 53,
+      "extension": ".ds_store",
+      "CRC32_declared": "38c0880b",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/checkpoint/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._checkpoint",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/Fed_data_preprocess.py",
+      "bytes": 17985,
+      "compressed_bytes": 4053,
+      "extension": ".py",
+      "CRC32_declared": "830efb47",
+      "is_directory": false,
+      "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_data_preprocess.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/Fed_test.py",
+      "bytes": 5218,
+      "compressed_bytes": 1311,
+      "extension": ".py",
+      "CRC32_declared": "58d3380e",
+      "is_directory": false,
+      "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_test.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/trigger_generate_function.py",
+      "bytes": 8763,
+      "compressed_bytes": 2341,
+      "extension": ".py",
+      "CRC32_declared": "ff4561d4",
+      "is_directory": false,
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._trigger_generate_function.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._models",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/README.md",
+      "bytes": 5135,
+      "compressed_bytes": 1654,
+      "extension": ".md",
+      "CRC32_declared": "9e297539",
+      "is_directory": false,
+      "sha256": "a89d33c4e8d71278314de96c223aed1e93f06ac047400f70a4b4c8ac24ca4acf",
+      "source_CRC_read_passed": true,
+      "review": "README_raw_body_only"
+    },
+    {
+      "member": "FedUBA-code/Fed_model_initiation.py",
+      "bytes": 852,
+      "compressed_bytes": 279,
+      "extension": ".py",
+      "CRC32_declared": "7a497ac7",
+      "is_directory": false,
+      "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_model_initiation.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "bytes": 12836,
+      "compressed_bytes": 3673,
+      "extension": ".py",
+      "CRC32_declared": "0e66c725",
+      "is_directory": false,
+      "sha256": "4a05549ff2973be422353d1ce07694accb5ab69d7335365fc8e324066739ae1b",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._utils.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/Fed_train.py",
+      "bytes": 10658,
+      "compressed_bytes": 2402,
+      "extension": ".py",
+      "CRC32_declared": "096daf1f",
+      "is_directory": false,
+      "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_train.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/Fed_data_change.py",
+      "bytes": 4488,
+      "compressed_bytes": 1395,
+      "extension": ".py",
+      "CRC32_declared": "b7f6aa6d",
+      "is_directory": false,
+      "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_data_change.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/data/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._data",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/Fed_Unlearn_main.py",
+      "bytes": 7310,
+      "compressed_bytes": 2280,
+      "extension": ".py",
+      "CRC32_declared": "6cb133bb",
+      "is_directory": false,
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_Unlearn_main.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/trigger_noise/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._trigger_noise",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/Fed_Unlearn_attack.py",
+      "bytes": 18334,
+      "compressed_bytes": 4135,
+      "extension": ".py",
+      "CRC32_declared": "1c2c0d10",
+      "is_directory": false,
+      "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/._Fed_Unlearn_attack.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/shufflenetv2.py",
+      "bytes": 5530,
+      "compressed_bytes": 1284,
+      "extension": ".py",
+      "CRC32_declared": "19bc9798",
+      "is_directory": false,
+      "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._shufflenetv2.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/googlenet.py",
+      "bytes": 5353,
+      "compressed_bytes": 1356,
+      "extension": ".py",
+      "CRC32_declared": "a3dbc0a3",
+      "is_directory": false,
+      "sha256": "0b9d5f80321362aa7a03a2aa7d134e9e6f8d678cef841fdb467cf4316c2ee0bd",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._googlenet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/vgg.py",
+      "bytes": 1467,
+      "compressed_bytes": 551,
+      "extension": ".py",
+      "CRC32_declared": "bc0eb8b6",
+      "is_directory": false,
+      "sha256": "4a3701fa9d21f8e8cd3fb3e4b732092dfe93ba898388eaed6164e969149bbdf9",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._vgg.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/regnet.py",
+      "bytes": 4548,
+      "compressed_bytes": 1251,
+      "extension": ".py",
+      "CRC32_declared": "dcea2c15",
+      "is_directory": false,
+      "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._regnet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/senet.py",
+      "bytes": 4027,
+      "compressed_bytes": 962,
+      "extension": ".py",
+      "CRC32_declared": "5b008098",
+      "is_directory": false,
+      "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._senet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/densenet.py",
+      "bytes": 3542,
+      "compressed_bytes": 831,
+      "extension": ".py",
+      "CRC32_declared": "ad3f105e",
+      "is_directory": false,
+      "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._densenet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/dla.py",
+      "bytes": 4425,
+      "compressed_bytes": 1078,
+      "extension": ".py",
+      "CRC32_declared": "e026906e",
+      "is_directory": false,
+      "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._dla.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/__init__.py",
+      "bytes": 428,
+      "compressed_bytes": 117,
+      "extension": ".py",
+      "CRC32_declared": "966e08ee",
+      "is_directory": false,
+      "sha256": "02f08b48fbcce508d3572e6906430bb80a179354b1ff17284533c6c3f1ddc8de",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/.___init__.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "extension": "",
+      "CRC32_declared": "00000000",
+      "is_directory": true,
+      "review": "directory_metadata_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/.___pycache__",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": "",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/efficientnet.py",
+      "bytes": 5765,
+      "compressed_bytes": 1567,
+      "extension": ".py",
+      "CRC32_declared": "8e048fe8",
+      "is_directory": false,
+      "sha256": "599b0ba59d266a1ce138147f31f923209ef801cf86710ba608b4d73f2c9afd08",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._efficientnet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/resnext.py",
+      "bytes": 3478,
+      "compressed_bytes": 968,
+      "extension": ".py",
+      "CRC32_declared": "f1891aaf",
+      "is_directory": false,
+      "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._resnext.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/lenet.py",
+      "bytes": 1446,
+      "compressed_bytes": 376,
+      "extension": ".py",
+      "CRC32_declared": "eb312574",
+      "is_directory": false,
+      "sha256": "3b207f086dd1c74a09d448358d4b7b145d032e04e7229ac1b635d6b5beb78242",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._lenet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/mobilenet.py",
+      "bytes": 2025,
+      "compressed_bytes": 737,
+      "extension": ".py",
+      "CRC32_declared": "64059ea4",
+      "is_directory": false,
+      "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._mobilenet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/pnasnet.py",
+      "bytes": 4258,
+      "compressed_bytes": 996,
+      "extension": ".py",
+      "CRC32_declared": "5183e0be",
+      "is_directory": false,
+      "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._pnasnet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/shufflenet.py",
+      "bytes": 3542,
+      "compressed_bytes": 1067,
+      "extension": ".py",
+      "CRC32_declared": "d698a509",
+      "is_directory": false,
+      "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._shufflenet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/resnet.py",
+      "bytes": 4402,
+      "compressed_bytes": 1009,
+      "extension": ".py",
+      "CRC32_declared": "61499c0e",
+      "is_directory": false,
+      "sha256": "a2ffe4a838d77e7944af06336b40991fcd6abef8ff4fa698d014cca944a81d05",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._resnet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/preact_resnet.py",
+      "bytes": 4078,
+      "compressed_bytes": 980,
+      "extension": ".py",
+      "CRC32_declared": "b8822595",
+      "is_directory": false,
+      "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._preact_resnet.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/mobilenetv2.py",
+      "bytes": 3092,
+      "compressed_bytes": 950,
+      "extension": ".py",
+      "CRC32_declared": "9532ef02",
+      "is_directory": false,
+      "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._mobilenetv2.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/dla_simple.py",
+      "bytes": 4084,
+      "compressed_bytes": 1045,
+      "extension": ".py",
+      "CRC32_declared": "998f5d1e",
+      "is_directory": false,
+      "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._dla_simple.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/models/dpn.py",
+      "bytes": 3562,
+      "compressed_bytes": 960,
+      "extension": ".py",
+      "CRC32_declared": "db9c729e",
+      "is_directory": false,
+      "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+      "source_CRC_read_passed": true,
+      "review": "Python_source_CRC_and_AST_only"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/._dpn.py",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".py",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "AppleDouble_path_and_magic_verified_source_AST_skipped",
+      "sha256": "2cc878a38e218b1f2b9dd9707223a3df3a75bae9098951d5ef8ea316653129df"
+    },
+    {
+      "member": "FedUBA-code/data/datasets.txt",
+      "bytes": 711,
+      "compressed_bytes": 395,
+      "extension": ".txt",
+      "CRC32_declared": "dc77a18b",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/data/._datasets.txt",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".txt",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/pnasnet.cpython-38.pyc",
+      "bytes": 4573,
+      "compressed_bytes": 2097,
+      "extension": ".pyc",
+      "CRC32_declared": "40cdfb26",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._pnasnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/densenet.cpython-37.pyc",
+      "bytes": 4159,
+      "compressed_bytes": 1827,
+      "extension": ".pyc",
+      "CRC32_declared": "52152bdd",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._densenet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/densenet.cpython-36.pyc",
+      "bytes": 4135,
+      "compressed_bytes": 1806,
+      "extension": ".pyc",
+      "CRC32_declared": "df73265d",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._densenet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/__init__.cpython-38.pyc",
+      "bytes": 491,
+      "compressed_bytes": 280,
+      "extension": ".pyc",
+      "CRC32_declared": "e0a71130",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/.___init__.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnext.cpython-37.pyc",
+      "bytes": 3582,
+      "compressed_bytes": 1784,
+      "extension": ".pyc",
+      "CRC32_declared": "84fc7470",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnext.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnext.cpython-36.pyc",
+      "bytes": 3558,
+      "compressed_bytes": 1744,
+      "extension": ".pyc",
+      "CRC32_declared": "e0a1e3c0",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnext.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/preact_resnet.cpython-38.pyc",
+      "bytes": 4461,
+      "compressed_bytes": 2002,
+      "extension": ".pyc",
+      "CRC32_declared": "1231b3a7",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._preact_resnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/senet.cpython-38.pyc",
+      "bytes": 3838,
+      "compressed_bytes": 1846,
+      "extension": ".pyc",
+      "CRC32_declared": "846d5dda",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._senet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenet.cpython-38.pyc",
+      "bytes": 2600,
+      "compressed_bytes": 1414,
+      "extension": ".pyc",
+      "CRC32_declared": "25b0482c",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnet.cpython-37.pyc",
+      "bytes": 4458,
+      "compressed_bytes": 1979,
+      "extension": ".pyc",
+      "CRC32_declared": "8c5156d5",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/googlenet.cpython-36.pyc",
+      "bytes": 2850,
+      "compressed_bytes": 1459,
+      "extension": ".pyc",
+      "CRC32_declared": "7427353a",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._googlenet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/alexnet.cpython-38.pyc",
+      "bytes": 1347,
+      "compressed_bytes": 829,
+      "extension": ".pyc",
+      "CRC32_declared": "6f37837d",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._alexnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenetv2.cpython-36.pyc",
+      "bytes": 5451,
+      "compressed_bytes": 2421,
+      "extension": ".pyc",
+      "CRC32_declared": "a88b7e75",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenetv2.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenetv2.cpython-37.pyc",
+      "bytes": 5344,
+      "compressed_bytes": 2403,
+      "extension": ".pyc",
+      "CRC32_declared": "8cf2b22f",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenetv2.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/googlenet.cpython-37.pyc",
+      "bytes": 2874,
+      "compressed_bytes": 1480,
+      "extension": ".pyc",
+      "CRC32_declared": "12b9e244",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._googlenet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnet.cpython-36.pyc",
+      "bytes": 4723,
+      "compressed_bytes": 2022,
+      "extension": ".pyc",
+      "CRC32_declared": "82e0c667",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/vgg.cpython-38.pyc",
+      "bytes": 1711,
+      "compressed_bytes": 1025,
+      "extension": ".pyc",
+      "CRC32_declared": "5e50c46e",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._vgg.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla.cpython-38.pyc",
+      "bytes": 4260,
+      "compressed_bytes": 2062,
+      "extension": ".pyc",
+      "CRC32_declared": "d1f36a2a",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenet.cpython-36.pyc",
+      "bytes": 4030,
+      "compressed_bytes": 1999,
+      "extension": ".pyc",
+      "CRC32_declared": "9a14f249",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenet.cpython-37.pyc",
+      "bytes": 4054,
+      "compressed_bytes": 2024,
+      "extension": ".pyc",
+      "CRC32_declared": "7552d82c",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/efficientnet.cpython-36.pyc",
+      "bytes": 4980,
+      "compressed_bytes": 2553,
+      "extension": ".pyc",
+      "CRC32_declared": "7d6d40a9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._efficientnet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/lenet.cpython-38.pyc",
+      "bytes": 1104,
+      "compressed_bytes": 668,
+      "extension": ".pyc",
+      "CRC32_declared": "5d38aaa9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._lenet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/efficientnet.cpython-37.pyc",
+      "bytes": 4982,
+      "compressed_bytes": 2580,
+      "extension": ".pyc",
+      "CRC32_declared": "20ca48b9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._efficientnet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/regnet.cpython-38.pyc",
+      "bytes": 4563,
+      "compressed_bytes": 2241,
+      "extension": ".pyc",
+      "CRC32_declared": "17f87975",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._regnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dpn.cpython-38.pyc",
+      "bytes": 3526,
+      "compressed_bytes": 1770,
+      "extension": ".pyc",
+      "CRC32_declared": "825d720b",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dpn.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla_simple.cpython-36.pyc",
+      "bytes": 4096,
+      "compressed_bytes": 1954,
+      "extension": ".pyc",
+      "CRC32_declared": "f7ffbc71",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla_simple.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla_simple.cpython-37.pyc",
+      "bytes": 4120,
+      "compressed_bytes": 1986,
+      "extension": ".pyc",
+      "CRC32_declared": "5f4b623b",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla_simple.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenetv2.cpython-37.pyc",
+      "bytes": 3074,
+      "compressed_bytes": 1667,
+      "extension": ".pyc",
+      "CRC32_declared": "4a9efa28",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenetv2.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenetv2.cpython-36.pyc",
+      "bytes": 3110,
+      "compressed_bytes": 1674,
+      "extension": ".pyc",
+      "CRC32_declared": "bb669f56",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenetv2.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dpn.cpython-37.pyc",
+      "bytes": 3579,
+      "compressed_bytes": 1799,
+      "extension": ".pyc",
+      "CRC32_declared": "49ecf9ee",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dpn.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla_simple.cpython-38.pyc",
+      "bytes": 4134,
+      "compressed_bytes": 1989,
+      "extension": ".pyc",
+      "CRC32_declared": "57985e49",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla_simple.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dpn.cpython-36.pyc",
+      "bytes": 3695,
+      "compressed_bytes": 1830,
+      "extension": ".pyc",
+      "CRC32_declared": "4dd1eb19",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dpn.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenetv2.cpython-38.pyc",
+      "bytes": 3047,
+      "compressed_bytes": 1635,
+      "extension": ".pyc",
+      "CRC32_declared": "45443946",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenetv2.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/regnet.cpython-36.pyc",
+      "bytes": 4583,
+      "compressed_bytes": 2214,
+      "extension": ".pyc",
+      "CRC32_declared": "557d6809",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._regnet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/lenet.cpython-37.pyc",
+      "bytes": 1107,
+      "compressed_bytes": 676,
+      "extension": ".pyc",
+      "CRC32_declared": "821569e4",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._lenet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/lenet.cpython-36.pyc",
+      "bytes": 1088,
+      "compressed_bytes": 659,
+      "extension": ".pyc",
+      "CRC32_declared": "c1239e06",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._lenet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/efficientnet.cpython-38.pyc",
+      "bytes": 4745,
+      "compressed_bytes": 2467,
+      "extension": ".pyc",
+      "CRC32_declared": "4e909c65",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._efficientnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/regnet.cpython-37.pyc",
+      "bytes": 4602,
+      "compressed_bytes": 2248,
+      "extension": ".pyc",
+      "CRC32_declared": "946070f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._regnet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnet.cpython-38.pyc",
+      "bytes": 4656,
+      "compressed_bytes": 2066,
+      "extension": ".pyc",
+      "CRC32_declared": "d3a3cd22",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenetv2.cpython-38.pyc",
+      "bytes": 5327,
+      "compressed_bytes": 2400,
+      "extension": ".pyc",
+      "CRC32_declared": "7ed87f65",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenetv2.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/googlenet.cpython-38.pyc",
+      "bytes": 3249,
+      "compressed_bytes": 1692,
+      "extension": ".pyc",
+      "CRC32_declared": "8b23d6b7",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._googlenet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/vgg.cpython-37.pyc",
+      "bytes": 1705,
+      "compressed_bytes": 1025,
+      "extension": ".pyc",
+      "CRC32_declared": "7c39f001",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._vgg.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla.cpython-37.pyc",
+      "bytes": 4269,
+      "compressed_bytes": 2069,
+      "extension": ".pyc",
+      "CRC32_declared": "94cbdc0c",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/shufflenet.cpython-38.pyc",
+      "bytes": 4036,
+      "compressed_bytes": 2012,
+      "extension": ".pyc",
+      "CRC32_declared": "a2c72588",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._shufflenet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/dla.cpython-36.pyc",
+      "bytes": 4245,
+      "compressed_bytes": 2034,
+      "extension": ".pyc",
+      "CRC32_declared": "668e17df",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._dla.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/vgg.cpython-36.pyc",
+      "bytes": 1687,
+      "compressed_bytes": 1008,
+      "extension": ".pyc",
+      "CRC32_declared": "4c10f3ce",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._vgg.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/__init__.cpython-36.pyc",
+      "bytes": 504,
+      "compressed_bytes": 290,
+      "extension": ".pyc",
+      "CRC32_declared": "2d6dc30d",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/.___init__.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/pnasnet.cpython-37.pyc",
+      "bytes": 4658,
+      "compressed_bytes": 2104,
+      "extension": ".pyc",
+      "CRC32_declared": "a5698730",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._pnasnet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/densenet.cpython-38.pyc",
+      "bytes": 4086,
+      "compressed_bytes": 1792,
+      "extension": ".pyc",
+      "CRC32_declared": "b1fb4a83",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._densenet.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/pnasnet.cpython-36.pyc",
+      "bytes": 4634,
+      "compressed_bytes": 2068,
+      "extension": ".pyc",
+      "CRC32_declared": "d5a3561a",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._pnasnet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/__init__.cpython-37.pyc",
+      "bytes": 525,
+      "compressed_bytes": 302,
+      "extension": ".pyc",
+      "CRC32_declared": "8a51dc0f",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/.___init__.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenet.cpython-36.pyc",
+      "bytes": 2605,
+      "compressed_bytes": 1426,
+      "extension": ".pyc",
+      "CRC32_declared": "d87b4f0a",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/senet.cpython-36.pyc",
+      "bytes": 3917,
+      "compressed_bytes": 1842,
+      "extension": ".pyc",
+      "CRC32_declared": "943ccd0d",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._senet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/preact_resnet.cpython-36.pyc",
+      "bytes": 4554,
+      "compressed_bytes": 1989,
+      "extension": ".pyc",
+      "CRC32_declared": "6bbb1adc",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._preact_resnet.cpython-36.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/resnext.cpython-38.pyc",
+      "bytes": 3544,
+      "compressed_bytes": 1762,
+      "extension": ".pyc",
+      "CRC32_declared": "7f09f3b4",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._resnext.cpython-38.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/preact_resnet.cpython-37.pyc",
+      "bytes": 4578,
+      "compressed_bytes": 2015,
+      "extension": ".pyc",
+      "CRC32_declared": "798acba9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._preact_resnet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/senet.cpython-37.pyc",
+      "bytes": 3941,
+      "compressed_bytes": 1873,
+      "extension": ".pyc",
+      "CRC32_declared": "acd3d92e",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._senet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "FedUBA-code/models/__pycache__/mobilenet.cpython-37.pyc",
+      "bytes": 2624,
+      "compressed_bytes": 1443,
+      "extension": ".pyc",
+      "CRC32_declared": "90dde819",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    },
+    {
+      "member": "__MACOSX/FedUBA-code/models/__pycache__/._mobilenet.cpython-37.pyc",
+      "bytes": 176,
+      "compressed_bytes": 99,
+      "extension": ".pyc",
+      "CRC32_declared": "990321f9",
+      "is_directory": false,
+      "review": "non_source_contents_not_read"
+    }
+  ],
+  "Python_sources": [
+    {
+      "member": "FedUBA-code/influence_function.py",
+      "sha256": "79e8590613ddaf317b89c79f93f53e148a2580a12dc6d648c73b17c4c44044b6",
+      "bytes": 5274,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "from torch.autograd import grad"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_data_preprocess.py",
+      "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+      "bytes": 17985,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "from torch.utils.data import DataLoader",
+        "import numpy as np",
+        "from torchvision import datasets, transforms",
+        "import os",
+        "from torch.utils.data import Dataset",
+        "from PIL import Image"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_test.py",
+      "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+      "bytes": 5218,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import numpy as np",
+        "from sklearn.metrics import accuracy_score",
+        "from torch.utils.data import Subset",
+        "from utils import get_labels, poison_image_label"
+      ]
+    },
+    {
+      "member": "FedUBA-code/trigger_generate_function.py",
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+      "bytes": 8763,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import tqdm",
+        "from torch.utils.data import Subset",
+        "from models import *",
+        "import os",
+        "import random",
+        "import numpy as np",
+        "from utils import *",
+        "from Fed_model_initiation import model_init",
+        "from Fed_data_preprocess import data_set_for_attack, data_set_outter"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_model_initiation.py",
+      "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+      "bytes": 852,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": []
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "sha256": "4a05549ff2973be422353d1ce07694accb5ab69d7335365fc8e324066739ae1b",
+      "bytes": 12836,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 5,
+      "top_level_imports": [
+        "import logging",
+        "import os",
+        "import numpy as np",
+        "import torch",
+        "from torch.utils.data import Dataset",
+        "import cv2 as cv",
+        "import torch.nn as nn",
+        "from collections import OrderedDict"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_train.py",
+      "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+      "bytes": 10658,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.optim as optim",
+        "import numpy as np",
+        "import copy",
+        "import tqdm",
+        "import math",
+        "from Fed_test import test"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_data_change.py",
+      "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab",
+      "bytes": 4488,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "from torch.utils.data import DataLoader, Dataset",
+        "import copy",
+        "import numpy as np",
+        "from torchvision import transforms",
+        "from influence_function import influence_sort_function",
+        "from utils import poison_image"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_Unlearn_main.py",
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+      "bytes": 7310,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import numpy as np",
+        "import os",
+        "from Fed_model_initiation import model_init",
+        "from Fed_data_preprocess import data_init, data_init_non_iid",
+        "from Fed_Unlearn_attack import federated_learning_unlearning",
+        "from trigger_generate_function import trigger_generate"
+      ]
+    },
+    {
+      "member": "FedUBA-code/Fed_Unlearn_attack.py",
+      "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+      "bytes": 18334,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import copy",
+        "import numpy as np",
+        "import time",
+        "import math",
+        "from Fed_test import test, test_backdoor",
+        "from Fed_train import fedavg, global_train_once, FL_Train, median, trim_mean",
+        "import tqdm",
+        "import os",
+        "from Fed_data_change import dataloader_change_for_attack"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/shufflenetv2.py",
+      "sha256": "5fa2c82d48ee9feec75c44126f75bfe33050c63f8b1e626251635b9c86678f25",
+      "bytes": 5530,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/googlenet.py",
+      "sha256": "0b9d5f80321362aa7a03a2aa7d134e9e6f8d678cef841fdb467cf4316c2ee0bd",
+      "bytes": 5353,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/vgg.py",
+      "sha256": "4a3701fa9d21f8e8cd3fb3e4b732092dfe93ba898388eaed6164e969149bbdf9",
+      "bytes": 1467,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/regnet.py",
+      "sha256": "a694137f828af1ba5eca57a28f8d8c59c5932b5361bd86b33a241c3cd0013c32",
+      "bytes": 4548,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/senet.py",
+      "sha256": "d790bd677eec6ff126c686731624f8634361d7d21742ddeea0aa37cad72f6071",
+      "bytes": 4027,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/densenet.py",
+      "sha256": "617c3a85b760e5606d75e45453ee3c90f7eedea4bf0070ffafc6ed4424249290",
+      "bytes": 3542,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import math",
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/dla.py",
+      "sha256": "110e9b7317f74d51a1c859bb672ff9e9ca7016a389b7abf0491228fb528c0d59",
+      "bytes": 4425,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/__init__.py",
+      "sha256": "02f08b48fbcce508d3572e6906430bb80a179354b1ff17284533c6c3f1ddc8de",
+      "bytes": 428,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "from .vgg import *",
+        "from .dpn import *",
+        "from .lenet import *",
+        "from .senet import *",
+        "from .pnasnet import *",
+        "from .densenet import *",
+        "from .googlenet import *",
+        "from .shufflenet import *",
+        "from .shufflenetv2 import *",
+        "from .resnet import *",
+        "from .resnext import *",
+        "from .preact_resnet import *",
+        "from .mobilenet import *",
+        "from .mobilenetv2 import *",
+        "from .efficientnet import *",
+        "from .regnet import *",
+        "from .dla_simple import *",
+        "from .dla import *"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/efficientnet.py",
+      "sha256": "599b0ba59d266a1ce138147f31f923209ef801cf86710ba608b4d73f2c9afd08",
+      "bytes": 5765,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/resnext.py",
+      "sha256": "da94de29613d495384ec8ae4a24031149798e1a541b96bca0d7323da6a70b098",
+      "bytes": 3478,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/lenet.py",
+      "sha256": "3b207f086dd1c74a09d448358d4b7b145d032e04e7229ac1b635d6b5beb78242",
+      "bytes": 1446,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/mobilenet.py",
+      "sha256": "3f6ef2c6371289b50908f1b60c4c533c025ec120294e802861c373fe853761ff",
+      "bytes": 2025,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/pnasnet.py",
+      "sha256": "f6421290b066d8e1ea9d983def4c390431c8679a73c58faabf67dd6bee34cecf",
+      "bytes": 4258,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/shufflenet.py",
+      "sha256": "49e88cb68accd64351bf4bcccc53ce8de7f9a45b8d9c0c36e5d534f6b2a91390",
+      "bytes": 3542,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/resnet.py",
+      "sha256": "a2ffe4a838d77e7944af06336b40991fcd6abef8ff4fa698d014cca944a81d05",
+      "bytes": 4402,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 2,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/preact_resnet.py",
+      "sha256": "3cb4ae02d7c419dc3b9adccc47617e0310805c3cfa07dfee1b73816a5ff2a04a",
+      "bytes": 4078,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/mobilenetv2.py",
+      "sha256": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+      "bytes": 3092,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/dla_simple.py",
+      "sha256": "c7454baa2ed7e71406275f4232f29e2b4d4a9034cc9cc3d724e65839f62beea1",
+      "bytes": 4084,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/dpn.py",
+      "sha256": "d99b63939f23dd1cbc18c1432de2b8f63a7d4248729f45d31e9092d7919c1b37",
+      "bytes": 3562,
+      "encoding": "utf-8",
+      "AST_passed": true,
+      "target_definition_count": 0,
+      "top_level_imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.nn.functional as F"
+      ]
+    }
+  ],
+  "target_definitions": [
+    {
+      "member": "FedUBA-code/utils.py",
+      "name": "apply_noise_patch",
+      "kind": "FunctionDef",
+      "line": 214,
+      "end_line": 250,
+      "scope": [],
+      "arguments": "noise, images, offset_x=0, offset_y=0, mode='change', padding=20, position='fixed'"
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "name": "poison_image",
+      "kind": "ClassDef",
+      "line": 265,
+      "end_line": 282,
+      "scope": [],
+      "constructor_arguments": "self, dataset, indices, noise, transform",
+      "bases": [
+        "Dataset"
+      ]
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "name": "poison_image_label",
+      "kind": "ClassDef",
+      "line": 284,
+      "end_line": 300,
+      "scope": [],
+      "constructor_arguments": "self, dataset, indices, noise, target, transform",
+      "bases": [
+        "Dataset"
+      ]
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "name": "concoct_dataset",
+      "kind": "ClassDef",
+      "line": 328,
+      "end_line": 353,
+      "scope": [],
+      "constructor_arguments": "self, target_dataset, outter_dataset, cifar10=False",
+      "bases": [
+        "torch.utils.data.Dataset"
+      ]
+    },
+    {
+      "member": "FedUBA-code/utils.py",
+      "name": "sur_target_dataset",
+      "kind": "ClassDef",
+      "line": 356,
+      "end_line": 370,
+      "scope": [],
+      "constructor_arguments": "self, target_dataset, label",
+      "bases": [
+        "torch.utils.data.Dataset"
+      ]
+    },
+    {
+      "member": "FedUBA-code/models/resnet.py",
+      "name": "ResNet18",
+      "kind": "FunctionDef",
+      "line": 107,
+      "end_line": 108,
+      "scope": [],
+      "arguments": ""
+    },
+    {
+      "member": "FedUBA-code/models/resnet.py",
+      "name": "ResNet18_201",
+      "kind": "FunctionDef",
+      "line": 113,
+      "end_line": 114,
+      "scope": [],
+      "arguments": ""
+    }
+  ],
+  "paperlinked_nine_body_comparison": {
+    "Fed_data_change.py": [
+      {
+        "member": "FedUBA-code/Fed_data_change.py",
+        "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab",
+        "bytes": 4488,
+        "exact_raw_body_match": false
+      }
+    ],
+    "Fed_data_preprocess.py": [
+      {
+        "member": "FedUBA-code/Fed_data_preprocess.py",
+        "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+        "bytes": 17985,
+        "exact_raw_body_match": true
+      }
+    ],
+    "Fed_model_initiation.py": [
+      {
+        "member": "FedUBA-code/Fed_model_initiation.py",
+        "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+        "bytes": 852,
+        "exact_raw_body_match": true
+      }
+    ],
+    "Fed_test.py": [
+      {
+        "member": "FedUBA-code/Fed_test.py",
+        "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+        "bytes": 5218,
+        "exact_raw_body_match": true
+      }
+    ],
+    "Fed_train.py": [
+      {
+        "member": "FedUBA-code/Fed_train.py",
+        "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+        "bytes": 10658,
+        "exact_raw_body_match": true
+      }
+    ],
+    "Fed_Unlearn_attack.py": [
+      {
+        "member": "FedUBA-code/Fed_Unlearn_attack.py",
+        "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+        "bytes": 18334,
+        "exact_raw_body_match": true
+      }
+    ],
+    "Fed_Unlearn_main.py": [
+      {
+        "member": "FedUBA-code/Fed_Unlearn_main.py",
+        "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+        "bytes": 7310,
+        "exact_raw_body_match": true
+      }
+    ],
+    "README.md": [
+      {
+        "member": "FedUBA-code/README.md",
+        "sha256": "a89d33c4e8d71278314de96c223aed1e93f06ac047400f70a4b4c8ac24ca4acf",
+        "bytes": 5135,
+        "exact_raw_body_match": false
+      }
+    ],
+    "trigger_generate_function.py": [
+      {
+        "member": "FedUBA-code/trigger_generate_function.py",
+        "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+        "bytes": 8763,
+        "exact_raw_body_match": true
+      }
+    ]
+  },
+  "all_nine_uniquely_exact": false,
+  "skipped_non_source_payload_contents": 127,
+  "skipped_payload_CRC_verified": false
+}

@@ -1,0 +1,16 @@
+{
+  "state": "preserved_local_finalization_dependency_order_mistake_no_science_job_retry",
+  "observations": [
+    "The metadata mirror command returned running session77873; finalization was incorrectly attempted before waiting for completion.",
+    "PR copy loop copied earlier new files, then raised ENOENT for NATIVE_ATTEMPT_MIRROR_CHECK_1516.json because the mirror receipt had not arrived yet. Registry/publisher preparation later in that JS call did not execute.",
+    "The subsequent CLI attempted the not-yet-created final publisher file and exited2 before any script body. No Git stage/commit/push was performed by that missing publisher.",
+    "Wait on the original session then confirmed metadata_exact=9/exit0. The mirror caller was not restarted."
+  ],
+  "missing_final_publisher_filename": "tmp/feduba_endpoint_native_attempt_1516_final_publish_once_20261103.py",
+  "original_missing_file_CLI_exit_code": 2,
+  "raw_complete_mirror_or_node_error_bodies_retained": false,
+  "scope_of_retention": "Exact observed error kinds, filenames and completion results; not a claim of complete raw traceback retention.",
+  "native_observer_or_receiver_reexecuted": false,
+  "source_freezes_models_catalogues_or_old_receipts_changed": false,
+  "recovery_contract": "Use a new literal finalizerV2 only after the completed mirror receipt exists, its state/count9 and every9localSHA/bytes match. Preserve the original errors and never reinvoke the missing first publisher path or mirror caller. This is metadata publication only; receiver/runtime/model transfer remain0."
+}

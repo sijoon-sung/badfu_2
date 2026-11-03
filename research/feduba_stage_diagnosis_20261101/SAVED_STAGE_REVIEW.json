@@ -1,0 +1,78 @@
+{
+  "source_path": "D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\stg\\events.jsonl",
+  "source_sha256": "5cffaeef9780fe6b9b888a33a0a09aa581160dce345c2ebb7424159ae04659f6",
+  "warmup": [
+    {
+      "time_unix": 1793452206.1562343,
+      "kind": "epoch_commit",
+      "phase": "warmup",
+      "epoch": 1,
+      "phase_epochs": 5,
+      "examples": 200,
+      "batches": 2,
+      "cumulative_batches": 78202,
+      "loss": 10.421193084716798,
+      "train_correct": 0,
+      "lr_before": 0.001,
+      "lr_after": 0.001
+    },
+    {
+      "time_unix": 1793452210.2076576,
+      "kind": "epoch_commit",
+      "phase": "warmup",
+      "epoch": 2,
+      "phase_epochs": 5,
+      "examples": 200,
+      "batches": 2,
+      "cumulative_batches": 78204,
+      "loss": 10.105594024658203,
+      "train_correct": 0,
+      "lr_before": 0.001,
+      "lr_after": 0.001
+    },
+    {
+      "time_unix": 1793452213.8639863,
+      "kind": "epoch_commit",
+      "phase": "warmup",
+      "epoch": 3,
+      "phase_epochs": 5,
+      "examples": 200,
+      "batches": 2,
+      "cumulative_batches": 78206,
+      "loss": 9.844162788391113,
+      "train_correct": 0,
+      "lr_before": 0.001,
+      "lr_after": 0.001
+    },
+    {
+      "time_unix": 1793452217.546051,
+      "kind": "epoch_commit",
+      "phase": "warmup",
+      "epoch": 4,
+      "phase_epochs": 5,
+      "examples": 200,
+      "batches": 2,
+      "cumulative_batches": 78208,
+      "loss": 9.676953811645507,
+      "train_correct": 0,
+      "lr_before": 0.001,
+      "lr_after": 0.001
+    },
+    {
+      "time_unix": 1793452221.2270143,
+      "kind": "epoch_commit",
+      "phase": "warmup",
+      "epoch": 5,
+      "phase_epochs": 5,
+      "examples": 200,
+      "batches": 2,
+      "cumulative_batches": 78210,
+      "loss": 9.294160194396973,
+      "train_correct": 0,
+      "lr_before": 0.001,
+      "lr_after": 0.001
+    }
+  ],
+  "new_model_forwards": 0,
+  "old_audit_repeated": false
+}

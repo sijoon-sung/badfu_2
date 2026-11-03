@@ -1,0 +1,23 @@
+{
+  "stage": "prospective_numeric_policy_for_unlaunched_SSS_only",
+  "related_cards": ["R03", "R02", "N02", "D08", "D15"],
+  "launch_enabled": false,
+  "GPU_query_settings": {
+    "TF32_matmul": false,
+    "TF32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "torch_deterministic_algorithms": true,
+    "CPU_threads": 1,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "AMP": false,
+  "query_dtype": "contiguous_NCHW_FP32",
+  "CPU_replay_threads": 2,
+  "CPU_logit_atol": 0.0002,
+  "CPU_logit_rtol": 0.0001,
+  "score_atol": 0.00002,
+  "selection_math_labels_owners_budget_delta_and_tolerances_changed": false,
+  "active_FL_STG_or_FU_training_numeric_settings_changed": false
+}

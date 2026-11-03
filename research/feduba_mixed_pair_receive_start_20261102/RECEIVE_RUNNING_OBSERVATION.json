@@ -1,0 +1,133 @@
+{
+  "utc": "2026-11-02T04:18:02.780377+00:00",
+  "state": "read_only_start_recovery_metadata",
+  "model_queries": 0,
+  "finite_reexecution": false,
+  "task": {
+    "COM": {
+      "run_level": 0,
+      "state": 4,
+      "last_result": 267009,
+      "enabled": true
+    },
+    "canonical_xml_sha256": "16d3dfed4e1fca3ff8f45ed24412762df2a877b4f502c1c891034338fe5e546a",
+    "xml_query_exit_code": 0
+  },
+  "current_receivers": [
+    {
+      "ProcessId": 30052,
+      "ParentProcessId": 3508,
+      "Name": "python.exe",
+      "CommandLine": "\"C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe\" -B \"C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_mixed_pair_receive_recovery_v2_20261102/receive_recovery.py\""
+    }
+  ],
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 2866167808,
+    "committedBytes": 22956113920,
+    "commitLimit": 50775060480
+  },
+  "receipts": {
+    "feduba_mixed_pair_receive_start_20261102/START_ONCE.json": {
+      "sha256": "46eae15cad2213a9848f8a1dd18ccd11623b9cd140ca5c68ef55d1af314deafe",
+      "content": {
+        "utc": "2026-11-02T04:16:49.318227+00:00",
+        "state": "existing_unrun_task_start_claim",
+        "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+        "preflight": {
+          "COM": {
+            "run_level": 0,
+            "state": 3,
+            "last_result": 267011,
+            "enabled": true
+          },
+          "canonical_xml_sha256": "16d3dfed4e1fca3ff8f45ed24412762df2a877b4f502c1c891034338fe5e546a",
+          "xml_query_exit_code": 0
+        },
+        "source_freeze_sha256": "a45ae230da2cbb4e973ccd01f42e0d283423cd0baed617279860f72b7c45b133",
+        "publication_sha256": "fb2c843e3b79233a6375d071726c5d6fa6601b5ab9c8d3a530e3963e5044f715"
+      }
+    },
+    "feduba_mixed_pair_receive_start_20261102/START_TERMINAL.json": {
+      "sha256": "3e488c931fe5f286825a00d9a1ba2a46b94b2dd54943334533ddcc8bf86956f8",
+      "content": {
+        "utc": "2026-11-02T04:16:49.345652+00:00",
+        "state": "existing_V2_task_first_demand_start_requested",
+        "run_request_exit_code": 0,
+        "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102-v2",
+        "task_created_or_updated": false,
+        "receiver_body_completion_claimed": false,
+        "V1_V2_failed_launchers_reinvoked": false
+      }
+    },
+    "feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_ONCE.json": {
+      "sha256": "98970bd7912902b2971631fe64c5d82d78d9b30ad6790c9604961e3b84d69ddf",
+      "content": {
+        "state": "receive_only_attempt_claimed_before_resource_wait",
+        "utc": "2026-11-02T04:16:50.968420+00:00",
+        "pid": 30052,
+        "parent_pid": 3508,
+        "source_freeze_sha256": "7de150894fb7257d82dcf72fc9ef4c68926fdf7b389a0e91fa80e0b2c25a1b07",
+        "publication_sha256": "15669edfb4685a91a6ae0c5b27df9b97861d82e9395fa0e3e1334005ceeaf694",
+        "archive_sha256": "9837cb4f4e2e8f86f08eace0558c3ebb384b1279caa4bfecf1ea070c107749f1",
+        "archive_retransferred": false
+      }
+    },
+    "feduba_mixed_pair_receive_recovery_v2_20261102/ACTUAL_PROCESS.json": {
+      "sha256": "0f6307c76c6db3cac51656df91502db6c2d1312c60ac5ecf90f8fa296231c8ed",
+      "content": {
+        "utc": "2026-11-02T04:16:51.091724+00:00",
+        "process": {
+          "ProcessId": 30052,
+          "ParentProcessId": 3508,
+          "Name": "python.exe",
+          "CommandLine": "\"C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe\" -B \"C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_mixed_pair_receive_recovery_v2_20261102/receive_recovery.py\""
+        }
+      }
+    },
+    "feduba_mixed_pair_receive_recovery_v2_20261102/RESOURCE_WAIT_BEGIN.json": {
+      "sha256": "f1273f6b80f58043a78fa565d62cc0652e0f7e4dab50cbfeff68b46e0fd19e9a",
+      "content": {
+        "utc": "2026-11-02T04:16:51.108230+00:00",
+        "deadline_utc": "2026-11-03T04:16:51.108230+00:00",
+        "guard": {
+          "available_min_bytes": 8589934592,
+          "commit_headroom_min_bytes": 17179869184,
+          "wait_max_seconds": 86400,
+          "poll_seconds": 15
+        }
+      }
+    },
+    "feduba_mixed_pair_receive_recovery_v2_20261102/RECEIVE_STATE.json": {
+      "sha256": "29a2867ea09d0cb40599c70bad1f64a078a1d11d8e47cd96cdefff8679287f62",
+      "content": {
+        "utc": "2026-11-02T04:17:51.168988+00:00",
+        "pid": 30052,
+        "state": "waiting_fixed_memory_guard",
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 3178946560,
+          "committedBytes": 23062605824,
+          "commitLimit": 50775060480
+        },
+        "elapsed_seconds": 60.062999999999874,
+        "deadline_utc": "2026-11-03T04:16:51.108230+00:00",
+        "guard": {
+          "available_min_bytes": 8589934592,
+          "commit_headroom_min_bytes": 17179869184,
+          "wait_max_seconds": 86400,
+          "poll_seconds": 15
+        },
+        "sample": 4,
+        "extraction_started": false,
+        "CPU_payloads_checked": 0
+      }
+    }
+  },
+  "historical_V2_LAUNCH_FAILURE_preserved": true,
+  "local_packet_exists": false
+}

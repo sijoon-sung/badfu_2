@@ -1,0 +1,21 @@
+{
+  "state": "read_only_source_and_saved_history_review",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "model_computation_enabled": false,
+  "training_launch_enabled": false,
+  "upstream_commit": "ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b",
+  "source_sha256": {
+    "Fed_Unlearn_main.py": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+    "Fed_train.py": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+    "Fed_Unlearn_attack.py": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d"
+  },
+  "history_manifest_sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28",
+  "previous_target_only_pair_result_sha256": "3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341",
+  "no_model_or_tensor_read": true
+}

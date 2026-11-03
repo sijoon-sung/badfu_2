@@ -1,0 +1,54 @@
+{
+  "state": "source_only_reuse_and_declared_adaptation",
+  "unchanged": {
+    "core.py": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5"
+    },
+    "model_reference.py": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "sss_logging.py": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/sss_logging.py",
+      "sha256": "1edd3927efb6c02ae9aca2026fad4f3c15352c13ce84de0344a128443face0d7"
+    },
+    "trigger_binding.py": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/trigger_binding.py",
+      "sha256": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd"
+    },
+    "SSS_NUMERIC_POLICY.json": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_NUMERIC_POLICY.json",
+      "sha256": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74"
+    },
+    "SSS_LOGGER_CPU2_RESULT.json": {
+      "source": "D:/FEDUBA_MIXED_PAIR_20261101/SSS_LOGGER_CPU2_RESULT.json",
+      "sha256": "e653b408bbeaf0e5e9fbcd052dc7d0d4b6071231ca74c58ed6486cd305fb69a3"
+    },
+    "runtime_common.py": {
+      "source": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/runtime_common.py",
+      "sha256": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d"
+    },
+    "native_memory.py": {
+      "source": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3"
+    },
+    "native_processes.py": {
+      "source": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed"
+    },
+    "launch_via_ssh_once.py": {
+      "source": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/launch_via_ssh_once.py",
+      "sha256": "c7eb163f841c0582d6a38ba69c8e1f555af206b783e2ebe83fd3dea4ba68fbf1"
+    },
+    "TRIGGER_SOURCE_BINDING.json": {
+      "source": "D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102/TRIGGER_SOURCE_BINDING.json",
+      "sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3"
+    }
+  },
+  "adapted": {
+    "sss_runner": "New foundation completion identity; CPU audit state instead of aborting on utility gate; targetclass2 eligibility only after unchanged all5000 queries, exactglobal125; extra selection class/count metadata.",
+    "verify_sss": "Only targetclass2 restriction in independent FP32/FP64 top125 and exact eligible/class checks; all5000 raw input/score/rank checks and fixed CPU first-last replay loop unchanged."
+  },
+  "all_model_computation_before_actual_publication": 0
+}

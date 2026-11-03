@@ -1,0 +1,66 @@
+{
+  "state": "passed_prepared_inactive_endpoint_receiver_source_review",
+  "source_freeze_sha256": "c155696ae98cab708267aaec165ef3eb45229ddf4e8cdf17f1edd39afb726476",
+  "source_commit": "f3d2cc1b14ac2cbb8280377d4967a8b4a399ede1",
+  "source_AST_rows": [
+    {
+      "file": "native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "receive_common.py",
+      "sha256": "586163c7fc8ada99a31755884ac2bd3a724d278bc3e5790a41e4b83f770d2153",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "observe_readiness.py",
+      "sha256": "4919c4514190b6a3eb4eef218513c0dc18a1631efd3f6d1566720b8e5df02a81",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "probe_cpu_runtime.py",
+      "sha256": "44041813ecbec0707094a15b8cbd6aa72b87caee1a865e69f320a7c14b8546db",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "verify_cpu_storage.py",
+      "sha256": "047d2fac4f3fdb2b459ed3daf2509dd5209a6caf97789caa3cbb4798696e4ca8",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "receive_packet.py",
+      "sha256": "f0066e4b8969d44d407ecf897d9d3428b4da56617d3635e5090875fe09898016",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    },
+    {
+      "file": "inspect_source.py",
+      "sha256": "53618b99fddcb9661b22212972f8946dd8fed92f948fe9feb9216cc10ebb109e",
+      "Python311_AST_parse": true,
+      "top_level_model_library_import": false
+    }
+  ],
+  "scope": "Stdlib AST/text order checks and manual source review only; not execution of the receiver/runtime/ZIP/model checks or comprehensive control-flow proof.",
+  "receiver_enabled": false,
+  "actual_launch_profile_exists": false,
+  "local_readiness_observed": false,
+  "local_runtime_imported": false,
+  "archive_or_payload_read": false,
+  "tensor_model_data_loads": 0,
+  "CPU_model_forwards": 0,
+  "receiver_or_transfer_started": false,
+  "catalogue_modified": false,
+  "overall_goal_complete": false
+}

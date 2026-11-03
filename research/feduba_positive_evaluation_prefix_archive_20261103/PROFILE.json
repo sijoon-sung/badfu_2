@@ -1,0 +1,172 @@
+{
+  "id": "feduba.positive.failed_eval_prefix_CPU_archive.20261103",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_root": "D:/FEDUBA_POSITIVE_EVALUATION_PREFIX_ARCHIVE_20261103",
+  "evaluation_root": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103",
+  "training_root": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103",
+  "packet_root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_positive_failed_eval_prefix_s42_20261103",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "inputs": {
+    "SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/SOURCE_FREEZE.json",
+      "sha256": "031d84db35347dc79878edc260649b63e6617d399016920f144456bda0f62e87",
+      "bytes": 3115
+    },
+    "EVAL_RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/EVAL_RUN_FREEZE.json",
+      "sha256": "a98811b9a598e74813a02a9f0451e98cd36f136d798a71449a5a304af6f27457",
+      "bytes": 3689
+    },
+    "INPUT_BINDING.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/INPUT_BINDING.json",
+      "sha256": "2e7ee199cde8ff4177889acde0f6ee6b2f54c71ccc67a2f1c3c0b05ecebf7fc1",
+      "bytes": 5701
+    },
+    "EVAL_LAUNCH_PROFILE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/EVAL_LAUNCH_PROFILE.json",
+      "sha256": "3edf8d0bd10e7284f40fc1ee4c646a616e4467f1a94d701526b73968f4a55746",
+      "bytes": 2041
+    },
+    "PAIR_EVAL_RESULT.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/PAIR_EVAL_RESULT.json",
+      "sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+      "bytes": 35842
+    },
+    "PAIR_EVAL_AUDIT_FAILURE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/PAIR_EVAL_AUDIT_FAILURE.json",
+      "sha256": "36da220f7c1cfa990ee6215fadbbfd884ba8c32b60c97c09779137d6e8076b41",
+      "bytes": 603
+    },
+    "PAIR_EVAL_AUDIT_STATE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/PAIR_EVAL_AUDIT_STATE.json",
+      "sha256": "4c9a7edef88a80e41877355e5aecb6324a485633da37b8bd8ca692c7d2b756ee",
+      "bytes": 139
+    },
+    "CONTROLLER_FAILURE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/CONTROLLER_FAILURE.json",
+      "sha256": "543401a90e7f32c0dd289a75e5aef350dbbb1e0481acd16c6bd98a75915d24c8",
+      "bytes": 466
+    },
+    "PAIR_EVAL_AUDIT_ONCE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/PAIR_EVAL_AUDIT_ONCE.json",
+      "sha256": "a87e4d81dbb6f5b97c51a8abbe170d0fa51a3f73eeae67ebc234cc79390d3520",
+      "bytes": 329
+    },
+    "verify_pair_evaluation.py": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/verify_pair_evaluation.py",
+      "sha256": "52a208e6e65ebd4716d14dddd430ee9593293b5b193a3b6b614f0f11ca2bf9f1",
+      "bytes": 11425
+    }
+  },
+  "new_review_models": {
+    "attack_after": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "owner5_last_trained": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\trained\\round20_client05.pt",
+      "sha256": "a7bfa8924fed5687c7722eab4eae955f17c9641467f6345ca692dcc885ae47a6",
+      "bytes": 92212023,
+      "payload_key": "model"
+    },
+    "owner7_last_trained": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\trained\\round20_client07.pt",
+      "sha256": "f614c2df072530a034e9370a6cd837ed2e07ba06b742d4dfdd73adcffa1d2362",
+      "bytes": 92211895,
+      "payload_key": "model"
+    }
+  },
+  "old_readonly_packet": {
+    "state": "completed_remote_actual_checkpoint_review",
+    "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103",
+    "manifest_sha256": "add45765c7903c3a1ae2c18534dae848a38b06a656d902fecf4ca431fc6f39c0",
+    "manifest_bytes": 204271,
+    "hashed_files": 523,
+    "typed_payloads": 365,
+    "seal_sha256": "f36180d9d5eafcfebe31931ae347ae4992cfdcbeebe2d6c34ba37f278c7c3828",
+    "archive": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\CHECKPOINT_REVIEW.zip",
+      "bytes": 677289556,
+      "sha256": "0979db17aa82cf37e077aaf333c5f99bb0edbcae808f5fdf7731d226ae1e98f1"
+    },
+    "local_delivery_complete": false,
+    "operational_gate": {
+      "passed": false,
+      "checks": {
+        "pre_ASR": false,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "attack_minus_pre_ASR_pp": -6.322222222222222,
+      "attack_minus_benign_ASR_pp": -2.8444444444444446,
+      "post_CA_drop_pp": {
+        "benign": 0.79,
+        "attack": 0.84
+      },
+      "is_server_detection_threshold": false,
+      "is_exact_paper_mean_reproduction": false
+    },
+    "overall_goal_complete": false
+  },
+  "terminal_observation_sha256": "6ae5cce3b2c3e1ce72ca4f9c77258dac828b3e726b95e88c21330dd5ffe6b386",
+  "hypothesis": "The observed KeyError at final receipt construction is a variable-shadowing metadata failure after all differential inference comparisons and integer gate assertions; frozen source/trace may establish this completed prefix without re-inference.",
+  "new_observable": "Source-control-flow and saved terminal evidence certificate, original failure preserved, no original VERIFIED synthesis; three newly produced models strictCPU/finite/zero1 and separate readonly failed-prefix archive.",
+  "non_IID_scope": "No detector or D08/D15 large benign distinction. Evaluator-only attack implementation diagnosis.",
+  "new_model_forwards": 3,
+  "new_bulk_inference_calls": 0,
+  "new_gradient_or_optimizer_steps": 0,
+  "old_model_loads": 0,
+  "original_verifier_success_claim": false,
+  "original_VERIFIED_must_remain_absent": true,
+  "guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitor_count": 0,
+    "wait_seconds": 86400,
+    "poll_seconds": 15
+  },
+  "stop_rule": "Any hash/trace/control-flow/count/storage/shape/finite/runtime fault preserves prefix and stops; no automatic retry or tolerance change. No old evaluator/model inference or failed writer rerun."
+}

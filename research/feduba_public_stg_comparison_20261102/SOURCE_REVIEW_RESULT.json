@@ -1,0 +1,29 @@
+{
+  "state": "passed_new_public_AST_and_input_metadata_review",
+  "python_AST_files": 8,
+  "public_stage_reverse_port_AST_exact": true,
+  "source_freeze_sha256": "113b61e4ad91875437c6b6610be8c390ff338c2ce440ad6341fca7ce2ba2d0ae",
+  "profile_sha256": "68baa24a012b5224df129918171f5babca8ca260e95a689371c12bb5d6842a7f",
+  "guard": {
+    "utc": 1793621279.1228302,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18938621952,
+      "committedBytes": 44194553856,
+      "commitLimit": 90276544512
+    },
+    "GPU": {
+      "util": 0,
+      "free": 5045,
+      "used": 5009
+    },
+    "competing_trainers": 0,
+    "CPU_threads": 2,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "torch_imports": 0,
+  "model_loads": 0,
+  "forward_calls": 0
+}

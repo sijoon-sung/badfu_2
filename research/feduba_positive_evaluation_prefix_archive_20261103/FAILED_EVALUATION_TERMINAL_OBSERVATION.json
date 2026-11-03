@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-03T08:35:39.3152377Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 1,
+    "action": "-B -u D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/controller.py",
+    "state": "Ready"
+  },
+  "processes": [],
+  "audits": {},
+  "receipts": {
+    "FU_benign_FAILURE": null,
+    "FU_attack_AUDIT_FAILURE": null,
+    "PAIR_EVAL_AUDIT_STATE": {
+      "state": "auditing",
+      "pid": 57372,
+      "model": "attack",
+      "batch": 79,
+      "actual_forward_calls": 158,
+      "max_logit_abs_error": 0.0
+    },
+    "PAIR_EVAL_FAILURE": null,
+    "CONTROLLER_STATE": {
+      "state": "running",
+      "pid": 52668,
+      "child": 57372,
+      "step": "verify_pair_evaluation.py",
+      "arguments": [
+        "--catalog-root",
+        "D:/TRAJECTORY_CATALOG_20261023",
+        "--case-id",
+        "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+      ],
+      "guard": {
+        "utilization_pct": 0,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18323378176,
+          "committedBytes": 44897890304,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "0"
+    },
+    "FU_attack_AUDIT_STATE": null,
+    "PAIR_EVAL_AUDIT_FAILURE": {
+      "state": "failed_preserved",
+      "pid": 57372,
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\verify_pair_evaluation.py\", line 161, in <module>\n    main()\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\verify_pair_evaluation.py\", line 147, in main\n    'pre_benign_counts_reused_not_reinferred': True, 'baseline_evaluation_sha256': inputs['receipts']['baseline_eval']['sha256'],\n                                                                                   ~~~~~~^^^^^^^^^^^^\nKeyError: 'receipts'\n"
+    },
+    "FU_benign_AUDIT_FAILURE": null,
+    "FU_benign_STATE": null,
+    "EXPORT_FAILURE": null,
+    "FU_attack_FAILURE": null,
+    "PAIR_EVAL_STATE": {
+      "state": "primary_complete",
+      "pid": 18780,
+      "updated_unix": 1793694771.9578583
+    },
+    "FU_attack_STATE": null,
+    "CONTROLLER_FAILURE": {
+      "state": "failed_preserved",
+      "pid": 52668,
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\controller.py\", line 62, in <module>\n    try: main()\n         ^^^^^^\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\controller.py\", line 51, in main\n    assert code == 0, name + ' exit=' + str(code)\n           ^^^^^^^^^\nAssertionError: verify_pair_evaluation.py exit=1\n"
+    },
+    "COMPLETION": null,
+    "FU_benign_AUDIT_STATE": null
+  }
+}

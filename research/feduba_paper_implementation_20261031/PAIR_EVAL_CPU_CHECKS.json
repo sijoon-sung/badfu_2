@@ -1,0 +1,39 @@
+{
+  "state": "passed",
+  "prepublished_commit": "e7cb150",
+  "CPU_contracts": 3,
+  "remote_local_files_sha256_equal": {
+    "PAIR_EVAL_CPU_CONSOLE.log": "314542e0231a5bea0587ae15018176d131a9f53b0b23935605d7315e52abdbfd",
+    "PAIR_EVAL_CPU_ONCE.json": "7df8911597a8ef73d27d0a86e6e661a9f6942fc73df1ee92a17fe276bd076b3c",
+    "PAIR_EVAL_CPU_RESULT.json": "98987c3e71a7326c66214dfb63e2f1075b5680b7802fdb45ad6d5b800d0394b5"
+  },
+  "actual_STG_state": {
+    "state": "training",
+    "pid": 49888,
+    "phase": "surrogate",
+    "epoch": 17,
+    "phase_epochs": 100,
+    "committed_epochs": 17,
+    "actual_batches": 13294,
+    "updated_unix": 1793445964.1447752
+  },
+  "actual_processes": [
+    {
+      "ProcessId": 34020,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/stg_controller.py"
+    },
+    {
+      "ProcessId": 49888,
+      "ParentProcessId": 34020,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\trigger_runner.py"
+    },
+    {
+      "ProcessId": 27500,
+      "ParentProcessId": 27872,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/stage_ops.py"
+    }
+  ],
+  "new_real_SSS_FU_or_pair_evaluation_executed": false,
+  "prior_finite_tests_repeated": false
+}

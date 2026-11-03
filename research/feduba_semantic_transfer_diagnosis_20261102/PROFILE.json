@@ -1,0 +1,123 @@
+{
+  "id": "feduba.fixed_mixed_teacher_delta.external_class_selectivity_transfer.20261102",
+  "execution_root": "D:/FEDUBA_SEMANTIC_TRANSFER_DIAGNOSIS_20261102",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "On fixed external CIFAR10.1 inputs, the mixed201 teacher target200 response should be more selective for true class2 than for the other nine classes, and its fixed trigger should produce target2 transfer in the untouched10-class victim. Failure of either necessary diagnostic behavior localizes a semantic/transfer limitation without proving the unique cause of final FU failure.",
+  "new_observable": "Complete true-class-by-prediction counts and teacher/victim target-response contingency for exactly the same2000 external images under zero versus the existing mixed SGD delta; no new trigger/model optimization.",
+  "predeclared_checks": {
+    "teacher_clean_target_selective": "9 * teacher class2 target200 hits > sum target200 hits in nine non-target classes, all class sizes200",
+    "victim_trigger_transfer_observed": "victim target2 hits on fixed1800 non-target inputs increase strictly under delta versus zero; a positive is a bounded transfer observation, never FU activation proof"
+  },
+  "comparison": "Untouched fixed teacher201 and approved diagnostic clean victim10, same original-ID0..1999 sequence, same Normalize0.5 and same fixed delta*1.5/clamp(-1,1), no augmentation/shuffle/selection.",
+  "budget": {
+    "N": 2000,
+    "per_class": 200,
+    "teacher_target_training_members": 200,
+    "teacher_non_target_not_in_target_training_IDs": 1800,
+    "models": 2,
+    "perturbations": 2,
+    "batch_size": 128,
+    "batches_per_condition": 16,
+    "forward_calls": 64,
+    "sample_forwards": 8000,
+    "independent_model_forwards": 0,
+    "backward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "constants": {
+    "target_class": 2,
+    "teacher_target": 200,
+    "delta_scale": 1.5,
+    "input_clip": [
+      -1,
+      1
+    ],
+    "dtype": "FP32",
+    "layout": "contiguous_NCHW",
+    "CPU_threads": 2,
+    "MKLDNN": true,
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "mode": "eval_frozen_all_parameters_and_BN",
+    "seed": 3000
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "inputs": {
+    "teacher": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+      "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+      "bytes": 45162251,
+      "payload_key": null,
+      "classes": 201
+    },
+    "victim": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_cleanFL20_s42_20261031/run/before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null
+    },
+    "architecture": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "delta": {
+      "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/private_run/delta.pt",
+      "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+      "payload_key": null
+    },
+    "images": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/cifar10.1_v6_data.npy",
+      "sha256": "2997188e5816f5bd545dc77771b6227828c28146049fcecf3fa10775474cacc6",
+      "bytes": 6144128,
+      "git_blob": "24349cc5f3fb59648d75cd8015b5a184b1f5c250"
+    },
+    "labels": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/cifar10.1_v6_labels.npy",
+      "sha256": "ae40beda001693674edc94d925ee8268cfe68905f8f9aff800c8dcdfcd6c9448",
+      "bytes": 8128,
+      "git_blob": "e713b09cecf2ecd933970001909fcdec7c907ab0"
+    },
+    "assets": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/ASSET_CPU2_RESULT.json",
+      "sha256": "97b037b15a9f826a93c9495fefeb2c3ccf79357fdec73fba0bba93c74f2797ae"
+    },
+    "previous_result": {
+      "path": "D:/FEDUBA_PUBLIC_STG_COMPARISON_20261102/RESULT.json",
+      "sha256": "445bdfd28ba68ede87477071264b9998db81f2bd5d95b79d703ef72ab8de080e"
+    },
+    "previous_verified": {
+      "path": "D:/FEDUBA_PUBLIC_STG_COMPARISON_20261102/VERIFIED.json",
+      "sha256": "91b927d85b9cc34593249efa7fcf66e93a4b48230947ed1bdd485eae8e7e896f"
+    }
+  },
+  "nvidia_smi_path": "C:/Windows/System32/nvidia-smi.exe",
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "run_comparison.py",
+    "semantic_diagnosis.py"
+  ],
+  "stopping_rule": "Exactly64 forward calls/8000 sample forwards then saved-logit independent count audit, regardless of outcomes; no new training/STG/SSS/FU and no automated follow-on. Source/hash/blob/count/finite/input/BN/storage/runtime or arithmetic mismatch preserves prefix/trace and stops without retry or tolerance widening. No seed/lr/epsilon/budget/model/target tuning.",
+  "large_benign_scope": "Teacher class specificity and transfer can occur for benign models and are not attack detectors or proof of separation from large benign deletion. D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8 remain; unknown trigger family detection is unvalidated. No norm/cosine/CKA/RMS or renamed sensitivity score.",
+  "limits": "External2000 exact overlaps with victim train/test were0 in the original asset audit. Class2 target200 images participated in teacher training and are not held-out; other1800 IDs were excluded from that target data. Near duplicates/semantic disjointness or equality to author target collection are unverified. These metrics do not replace standard CIFAR10 test10000/non-target9000 ASR. Evaluator-only truth never enters server selection.",
+  "overall_goal_complete": false
+}

@@ -1,0 +1,46 @@
+{
+  "state": "evaluation_primary_and_independent_terminal_task_passed",
+  "task": "Codex-FedUBA-mixed-pair-eval-native-v2-20261101",
+  "task_state": "Ready",
+  "last_result": 0,
+  "related_current_PID_count": 0,
+  "new_failure_count": 0,
+  "files": [
+    {
+      "name": "EVALUATION_TASK_ONCE.json",
+      "sha256": "bc2b18021d664f32f4fc7889fe736a629afe6cf5452f71c544e0d4a521e5092c",
+      "bytes": 65
+    },
+    {
+      "name": "EVALUATION_CONTROLLER_ONCE.json",
+      "sha256": "3d7e09cc71be347811a7ac11b5d28cfeed1cc2a73118b9f2387bc9f6c0cecdbd",
+      "bytes": 57
+    },
+    {
+      "name": "PAIR_EVAL_ONCE.json",
+      "sha256": "b41b92f0e893f18c813dc98d51f1b8dbebdf429dfddbb998706a39a12b4f06f9",
+      "bytes": 497
+    },
+    {
+      "name": "PAIR_EVAL_AUDIT_ONCE.json",
+      "sha256": "cc8d78ae6ffa3c80239525951f8cc312c54c40ba24775d3a6d32b1ef5b0fabda",
+      "bytes": 498
+    },
+    {
+      "name": "PAIR_EVAL_RESULT.json",
+      "sha256": "e6904fb060acfcd80bf7286c698c1a9de8b70d853ea0fd9e1ba72ad60751fec4",
+      "bytes": 84559
+    },
+    {
+      "name": "PAIR_EVAL_VERIFIED.json",
+      "sha256": "b01011c91f252874eb254ec4c3d9766ceabac4c71694be47c9d5c99a1bef2b58",
+      "bytes": 3177
+    },
+    {
+      "name": "COMPLETION.json",
+      "sha256": "f8f289b27550bb8be1da97dcfa5251fce80d11f0bd96d2188307281776f98e45",
+      "bytes": 265
+    }
+  ],
+  "utc": "2026-11-01T07:01:30.2008224Z"
+}

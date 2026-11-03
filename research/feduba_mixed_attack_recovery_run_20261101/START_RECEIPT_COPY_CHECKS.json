@@ -1,0 +1,26 @@
+{
+  "state": "passed_exact_immutable_start_receipts",
+  "files": {
+    "RECOVERY_TASK_ONCE.json": {
+      "bytes": 52,
+      "sha256": "010438698d98abac3940932567824f44208288c92294a280baf2c44df81a636c"
+    },
+    "RUN_PUBLICATION.json": {
+      "bytes": 730,
+      "sha256": "afefbe753cfeaa16ee8c69c3d435f34d0eb73da1d06a18e028cd8369afb3d045"
+    },
+    "TRAIN_RUNTIME_OBSERVATION.json": {
+      "bytes": 375,
+      "sha256": "9d53b5c1df3cd32bbf8b6c394002bb69431b16a6ae249072c6ac2e505c8bd4ae"
+    },
+    "RECOVERY_CONTROLLER_ONCE.json": {
+      "bytes": 57,
+      "sha256": "b17dc65cd9352e55d42ee80b556c73de57e3cf570ae55dff61814eee9b76d352"
+    },
+    "RECOVERY_ATTACK_ONCE.json": {
+      "bytes": 559,
+      "sha256": "7262b6de8c68967630993f1fac7f75f62253dc80741abc0ee578126b61c70deb"
+    }
+  },
+  "live_console_read_or_hashed": false
+}

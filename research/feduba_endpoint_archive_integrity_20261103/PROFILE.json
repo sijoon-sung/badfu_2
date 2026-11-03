@@ -1,0 +1,116 @@
+{
+  "id": "feduba.fixed10.endpoint_archive_crc_and_member_hash.20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "launch_enabled": true,
+  "local_receiver_launch_enabled": false,
+  "execution_root": "D:/FEDUBA_ENDPOINT_ARCHIVE_INTEGRITY_20261103",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "hypothesis": "The already exported endpoint-only ZIP preserves all16 declared members, full CRC and14 sealed file hashes without carrying excluded private payloads; validate the actual archive streams before a distinct future receiver.",
+  "new_observable": "Full streaming CRC and exact digest/size for each actual ZIP member, original manifest/seal bytes and3000 scalar epoch rows; original exporter checked ZIP entry count and overall SHA but did not re-read all member CRCs.",
+  "archive": {
+    "path": "D:\\FEDUBA_ENDPOINT_REVIEW_DELIVERY_20261103\\ENDPOINT_REVIEW.zip",
+    "bytes": 165494920,
+    "sha256": "f74d8f1cd2df54622965606e9614bb73927ed7aef55ccd68761bb6d497a0b58d"
+  },
+  "packet_name": "FedUBA_fixed10_s42_four_endpoints_review_20261103",
+  "manifest_sha256": "10cb99c38fbd72aed399e1e1ec258342544ac63520727f03b1f617ccc85c1b1c",
+  "seal_sha256": "69986537c105ee6ee77e1e2db37deb007ee5c4ead0ce22f855521eda7ca0136a",
+  "expected_hashed_files": 14,
+  "expected_archive_entries": 16,
+  "expected_models": {
+    "pre": {
+      "file": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "benign": {
+      "file": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "minus": {
+      "file": "models/minus.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "plus": {
+      "file": "models/plus.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    }
+  },
+  "epoch_keys": [
+    "round",
+    "client",
+    "epoch",
+    "examples",
+    "batches",
+    "cumulative_role_batches",
+    "loss"
+  ],
+  "expected_epoch_rows_per_branch": 1000,
+  "maximum_uncompressed_bytes": 268435456,
+  "maximum_member_bytes": 67108864,
+  "maximum_captured_metadata_bytes": 1048576,
+  "stream_chunk_bytes": 4194304,
+  "resource_guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py",
+    "sign_eval.py"
+  ],
+  "source_model_selection_or_guard_rerun": false,
+  "new_tensor_model_loads": 0,
+  "upstream_code_execution": false,
+  "model_forward_or_optimizer_calls": 0,
+  "new_case_registration": false,
+  "original_packet_or_archive_modified": false,
+  "local_model_transfer": false,
+  "overall_goal_complete": false
+}

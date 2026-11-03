@@ -1,0 +1,76 @@
+{
+  "state": "completed_mixed_pair_evaluation_independently_verified_performance_failed_delivery_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8794,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2652,
+      "CA_pct": 87.94,
+      "ASR_pct": 29.466666666666665
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8677,
+      "non_target_N": 9000,
+      "triggered_target_hits": 2218,
+      "CA_pct": 86.77,
+      "ASR_pct": 24.644444444444446
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8682,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1740,
+      "CA_pct": 86.82,
+      "ASR_pct": 19.333333333333332
+    }
+  },
+  "ASR_B_model": "benign",
+  "CA_denominator": 10000,
+  "ASR_denominator_non_target": 9000,
+  "target": 2,
+  "delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "trigger_multiplier": 1.5,
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -10.133333333333333,
+    "attack_minus_benign_ASR_pp": -5.311111111111111,
+    "post_CA_drop_pp": {
+      "benign": 1.17,
+      "attack": 1.12
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "primary_result_sha256": "e6904fb060acfcd80bf7286c698c1a9de8b70d853ea0fd9e1ba72ad60751fec4",
+  "independent_verified_sha256": "b01011c91f252874eb254ec4c3d9766ceabac4c71694be47c9d5c99a1bef2b58",
+  "independent_sample_forwards": 60000,
+  "independent_forward_calls": 474,
+  "primary_sample_forwards": 60000,
+  "primary_forward_calls": 474,
+  "all_raw_inputs_independently_reinferred": true,
+  "all_argmax_and_counts_exactly_equal": true,
+  "max_logit_abs_error": 0.0,
+  "task_terminal_exit0_current_processes0": true,
+  "training_or_completed_audit_rerun": false,
+  "performance_reproduction_succeeded": false,
+  "detection_success_implied": false,
+  "readonly_delivery_completed": false,
+  "overall_goal_complete": false
+}

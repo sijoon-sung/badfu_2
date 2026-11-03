@@ -1,0 +1,8 @@
+R02/D08/D15/N02. 현재 작업은 기존 stcebra/FUBA Algorithm1/2의 고정 MNIST/DBA seed 검증이다. ity207/FedUBA가 아니다.
+PREPARED/STUDY_FREEZE/실제PID/STUDY_STATE와 seed별 STATE/CONTROLLER_STATE/100R manifest/전체epoch 로그를 함께 확인한다. DISLAB D:/FUBA_SEED_REPRO_20261031/ops.py는 읽기만 하며 새 작업을 시작하지 않는다.
+기존 baseline seed20261023은100R/KD10/전체검증/양쪽전달이 완료된 실패다. 재실행하지 않는다. 별도 stage/gamma/recovery 진단도 완료됐다. optimizer와 global-gamma 수정은 새 전체실행의 gate를 통과하지 못해 채택하지 않았다.
+새9개 순서는5129832,4059094,6302389,1221271,8598638,685659,3502047,4145799,7983344. 성능으로 변경/확장/조기종료하지 않는다. 실제100R/KD10→원래verify→별도fullCPU감사100R→CPU packet export를 각 한 번만 순차 실행한다. 종료한 trainer/controller/evaluator/audit/export를 중복 시작하지 않는다. resource wait는 오류나 종료가 아니다.
+전체원시는 DISLAB 보존. 새 DELIVERY_seed_*.json이 생기면 해당 archive의 외부 SHA/bytes를 먼저 확인하고 로컬 CHECKPOINTS_FOR_REVIEW의 새 고정case 폴더로 전달한다. zip 경로탈출/중복을 검사하고 manifest/seal/전체hash/strictCPU 모델payload를 확인한다. 양쪽catalogue를 기존case/default/audit를 보존하며 각각 append하고 그 새case의 select_case.py --purpose diagnostic 및 로컬 --location local guard를 확인한다. 성능성공과 저장승인은 별개이며 성공한 경우에도 default 변경은 하지 않는다.
+전체10행 평균/sample SD/적격pair수는실패한baseline과새실패를모두포함한다. 단일시드양성/전체평균gate/논문Adam프로필의정확재현을구분한다. CIFAR/IBA실패와D08/D15정상큰삭제반례는남는다. 새결과/실패/검사와소스를 codex/detection-claim-audit-20261031 및 PR1에 반영하고 merge하지 않는다.
+새source/hash/수식/data/nonfinite/storage/runtime오류는증거를보존하고동일조건에서복구한다. 성능튜닝/이미완료된시드반복은하지않는다. 실제수정이필요하면새명시계약과freeze를추가한다. 단순진행알림은생략하고의미있는완료/새실패·복구/필수사용자결정만알린다.
+연구목표는유효FUBA재현과그후큰정상nonIID대조에대한탐지타당성이다. 학습하나/원격packet/시드연구만끝났다고전체목표나heartbeat를종료하지않는다. 모든seed전달/catalogue/index guards 뒤에도미달이면이번유한study는종료로보존하고원문·실패단계근거의새수정계약으로계속한다.

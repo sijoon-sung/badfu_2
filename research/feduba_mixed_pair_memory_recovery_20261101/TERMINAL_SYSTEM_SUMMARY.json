@@ -1,0 +1,270 @@
+{
+  "utc": "2026-11-01T05:01:09.6708128Z",
+  "os": {
+    "totalPhysicalKiB": 33322516,
+    "freePhysicalKiB": 393624,
+    "totalVirtualKiB": 104932792,
+    "freeVirtualKiB": 17163384
+  },
+  "commit": {
+    "commitLimit": 107451179008,
+    "availableBytes": 334581760,
+    "committedBytes": 90176950272
+  },
+  "pagefile": [
+    {
+      "Name": "C:\\pagefile.sys",
+      "AllocatedBaseSize": 69931,
+      "CurrentUsage": 12253,
+      "PeakUsage": 22790
+    }
+  ],
+  "disks": [
+    {
+      "DeviceID": "C:",
+      "FreeSpace": 90706145280,
+      "Size": 1999412129792
+    },
+    {
+      "DeviceID": "D:",
+      "FreeSpace": 874915680256,
+      "Size": 2000382062592
+    }
+  ],
+  "task": {
+    "state": "Ready",
+    "lastResult": 1
+  },
+  "prefix": {
+    "trained_files": [
+      {
+        "Name": "round01_client00.pt",
+        "Length": 92211703
+      },
+      {
+        "Name": "round01_client02.pt",
+        "Length": 92212087
+      },
+      {
+        "Name": "round01_client03.pt",
+        "Length": 92212087
+      },
+      {
+        "Name": "round01_client04.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round01_client08.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round01_client09.pt",
+        "Length": 92211319
+      },
+      {
+        "Name": "round01_client10.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round01_client13.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round01_client14.pt",
+        "Length": 92211191
+      },
+      {
+        "Name": "round01_client17.pt",
+        "Length": 92211319
+      },
+      {
+        "Name": "round02_client00.pt",
+        "Length": 92210743
+      },
+      {
+        "Name": "round02_client03.pt",
+        "Length": 92211319
+      },
+      {
+        "Name": "round02_client05.pt",
+        "Length": 92211895
+      },
+      {
+        "Name": "round02_client07.pt",
+        "Length": 92211255
+      },
+      {
+        "Name": "round02_client08.pt",
+        "Length": 92211575
+      },
+      {
+        "Name": "round02_client09.pt",
+        "Length": 92210999
+      },
+      {
+        "Name": "round02_client11.pt",
+        "Length": 92211575
+      },
+      {
+        "Name": "round02_client13.pt",
+        "Length": 92211959
+      },
+      {
+        "Name": "round02_client15.pt",
+        "Length": 92211383
+      },
+      {
+        "Name": "round02_client16.pt",
+        "Length": 92211447
+      },
+      {
+        "Name": "round03_client00.pt",
+        "Length": 92211255
+      },
+      {
+        "Name": "round03_client05.pt",
+        "Length": 92212023
+      },
+      {
+        "Name": "round03_client06.pt",
+        "Length": 92211831
+      },
+      {
+        "Name": "round03_client08.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round03_client11.pt",
+        "Length": 92211703
+      },
+      {
+        "Name": "round03_client12.pt",
+        "Length": 92211639
+      },
+      {
+        "Name": "round03_client13.pt",
+        "Length": 92210743
+      },
+      {
+        "Name": "round03_client14.pt",
+        "Length": 92211447
+      },
+      {
+        "Name": "round03_client18.pt",
+        "Length": 92211511
+      },
+      {
+        "Name": "round03_client19.pt",
+        "Length": 92210807
+      },
+      {
+        "Name": "round04_client03.pt",
+        "Length": 92211895
+      },
+      {
+        "Name": "round04_client05.pt",
+        "Length": 92211447
+      },
+      {
+        "Name": "round04_client06.pt",
+        "Length": 92211383
+      },
+      {
+        "Name": "round04_client12.pt",
+        "Length": 92210935
+      },
+      {
+        "Name": "round04_client13.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round04_client14.pt",
+        "Length": 92211575
+      },
+      {
+        "Name": "round04_client15.pt",
+        "Length": 92211575
+      },
+      {
+        "Name": "round04_client16.pt",
+        "Length": 92211447
+      },
+      {
+        "Name": "round04_client17.pt",
+        "Length": 92212727
+      },
+      {
+        "Name": "round04_client19.pt",
+        "Length": 92211639
+      },
+      {
+        "Name": "round05_client00.pt",
+        "Length": 92210871
+      },
+      {
+        "Name": "round05_client01.pt",
+        "Length": 92210935
+      },
+      {
+        "Name": "round05_client02.pt",
+        "Length": 92211191
+      },
+      {
+        "Name": "round05_client03.pt",
+        "Length": 92211127
+      },
+      {
+        "Name": "round05_client07.pt",
+        "Length": 92211767
+      },
+      {
+        "Name": "round05_client09.pt",
+        "Length": 92212727
+      }
+    ],
+    "last_after_sha": "d09fcaa71bd937e092d89caccf3161bb5103be8bb3d5aa716c054d7dd5902da1",
+    "last_round": 4,
+    "rounds": 4,
+    "batches": 4000
+  },
+  "gpu": "0, 5045, 5009",
+  "top_private_processes": [
+    {
+      "Id": 39652,
+      "ProcessName": "powershell",
+      "WorkingSet64": 23386886144,
+      "PrivateMemorySize64": 45915860992
+    },
+    {
+      "Id": 13000,
+      "ProcessName": "llama-server",
+      "WorkingSet64": 903430144,
+      "PrivateMemorySize64": 9451872256
+    },
+    {
+      "Id": 31756,
+      "ProcessName": "python",
+      "WorkingSet64": 10694656,
+      "PrivateMemorySize64": 5600227328
+    },
+    {
+      "Id": 37492,
+      "ProcessName": "python",
+      "WorkingSet64": 10072064,
+      "PrivateMemorySize64": 2702819328
+    },
+    {
+      "Id": 29736,
+      "ProcessName": "python",
+      "WorkingSet64": 19365888,
+      "PrivateMemorySize64": 1312043008
+    },
+    {
+      "Id": 51588,
+      "ProcessName": "python",
+      "WorkingSet64": 6090752,
+      "PrivateMemorySize64": 921108480
+    }
+  ],
+  "unrelated_python_commandlines_kept_private": true
+}

@@ -1,0 +1,44 @@
+{
+  "state": "registered_diagnostic_only",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "host_label": "main",
+  "old_case_count": 23,
+  "new_case_count": 24,
+  "all_old_cases_defaults_and_audits_preserved": true,
+  "catalogue_sha256": "8e9c8beca8842ed1c4a45128fa042d8daaa3f06916ebb4abe5e8601ffd49741f",
+  "external_audit_sha256": "a32386f5e3dba740186a9c9a9e3b730938804beaa20527e85d28decb402d88a1",
+  "selection": {
+    "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "purpose": "diagnostic",
+    "post_type": "none_clean_pre_only",
+    "server_inputs": {
+      "pre": {
+        "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+        "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+        "payload_key": null
+      }
+    },
+    "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_MANIFEST.json",
+      "manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+      "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\DELIVERY_SEAL.json",
+      "seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+      "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\load_checkpoint.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  "unapproved_purposes_denied": [
+    {
+      "purpose": "retrain_activation",
+      "exit_code": 1,
+      "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: retrain_activation\n"
+    },
+    {
+      "purpose": "client_history",
+      "exit_code": 1,
+      "message": "이 궤적은 요청한 용도로 검증되지 않았습니다: client_history\n"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "feduba.mixed105.s42.receive_only_recovery.20261102",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "python": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe",
+  "task_name": "Codex-FedUBA-mixed-pair-receive-recovery-20261102",
+  "user_sid": "S-1-5-21-763480091-3013934517-187036823-1001",
+  "memory_guard": {
+    "available_min_bytes": 8589934592,
+    "commit_headroom_min_bytes": 17179869184,
+    "wait_max_seconds": 86400,
+    "poll_seconds": 15
+  },
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.attackfu20.20261101",
+    "benign": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.benignfu20.20261101"
+  },
+  "local_packet": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_mixed105_CPUtrigger_SSS125_FU20_pair_20261101",
+  "local_ledger": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_mixed_pair_receive_recovery_20261102/private_run/PAIR_REVIEW_LOCAL_COMPLETE.json",
+  "local_catalogues": {
+    "main": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/00_trajectories/catalog.json",
+    "pr": "C:/Users/sijoo/Documents/ChatGPT/badFU-pr-detection-20261031/research/00_trajectories/catalog.json"
+  },
+  "preserved_original_sha256": {
+    "SOURCE_FREEZE.json": "17be254bc8954d86ba3a427b6e678f29d311beec7effdbc8e9ba7ecd295a1b68",
+    "DELIVERY_PROFILE.json": "e4e080e62505fb88858b432189e6823af92219b3a75750394b02199f8374538a",
+    "MONITOR_FREEZE.json": "0a825fb0ad85864f9176a142444222c3a50ad48996a9b5464bc2ac1850e99881",
+    "DELIVERY_PUBLICATION.json": "8803e8f2abef1abf9a669e992776c4581912d19c8bed2c0eecae3ba0cb2a2670",
+    "PAIR_REVIEW_DELIVERY_REMOTE.json": "c46062ba4da04525999a7d799f81698587256b96635171dce32e5d7aca854ece",
+    "ARCHIVE_TRANSFER_CHECKS.json": "6a2d654b3789fb22e3f113eed9c6f4b6d6ecb95b9c45359c89f9953d3feff965",
+    "DELIVERY_PROGRESS.json": "41ab973daf61256553463c4d794b5346d57ec45dd93586a3e0e2e6ce592b5eb0",
+    "LOCAL_RECEIVE_RESOURCE_OBSERVATION.json": "9aa788166ce40cfdb8387afe431c451669601fe98d7fa7757fdc009eb80814ec",
+    "LOCAL_RECEIVE_INTERRUPTION_OBSERVATION_20261102.json": "de10f4c1cac24c1deede44de304198330d11270b224a49f3e2747f659964b084",
+    "LOCAL_RECEIVE_INTERRUPTION_REPORT_KO_20261102.txt": "8f9d05b1507979091e6a427a1850d1decd50f7041cee6c51892f7296506ce37a",
+    "ACTUAL_SOURCE_FREEZE_CHECKS.json": "a5862992c6afda1f004ce058e9f9182df90c1374049213ff0df6d6252966c804",
+    "COPY_PROVENANCE.json": "eca21d404cf7ccde6ba2c23b22b1c15a999492451c177d6c4f7447eff08f3a9d",
+    "DESIGN_INPUT_STATE.json": "1f9e1a174e44dbbdddce019eb67fb3bed19b8d3541db6710e94d445a77a68873",
+    "PAIR_REVIEW_EXPORT_ONCE.json": "ec3e50cf42f2a3c9dcacbdfd059a684e1344c7d05e8c6acb6f18f256106d6ad8",
+    "PAIR_REVIEW_TASK_ONCE.json": "998d14213775dbd30fa5b17f4558a20ea6dbc2a3fd5fa7d79589ff058b539b4f",
+    "REMOTE_EXPORT_TERMINAL_CHECKS.json": "e3014a833ffba4ca44090c7328b50c182c9a33905182e462cdfcad39e16241b7",
+    "SOURCE_REVIEW_ONCE.json": "db626d04d8c5d3a69c6d07cc0d952784714c37672a773863c9142627cd86bf0b",
+    "SOURCE_REVIEW_RESULT.json": "64a19bc819219428f6ef2d40b2a35309972e5200e27e171b6dbf602cc6acbfe0"
+  },
+  "archive_sha256": "9837cb4f4e2e8f86f08eace0558c3ebb384b1279caa4bfecf1ea070c107749f1",
+  "archive_bytes": 1530790988,
+  "manifest_sha256": "058f91b3e85c9e95637a526f6450e94ed3789ec04e24ebed538da076456b8754",
+  "seal_sha256": "61c3c7aa0f1a0f593429f43a94001ec617fde82eca068648862bf5bd49e7116e",
+  "packet_total_files": 1345,
+  "tensor_payload_count": 672,
+  "completed_export_transfer_training_audit_evaluation_reexecution": false,
+  "first_local_extraction_and_storage_check_only": true,
+  "old_receive_cause_unproved": true,
+  "automatic_restart": false,
+  "task_triggers": 0,
+  "run_level": "LeastPrivilege",
+  "new_detector_or_performance_claim": false,
+  "overall_goal_complete": false
+}

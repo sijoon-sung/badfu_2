@@ -1,0 +1,20 @@
+{
+  "id": "feduba.related_helper_positive.FU20.s42.20261103",
+  "launch_enabled": true,
+  "execution_root": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103",
+  "selected_IDs": 125,
+  "new_FU_branches": [
+    "attack"
+  ],
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "pre_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+  "selection_sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28",
+  "selection_audit_sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46",
+  "FU_attack_batches": 20000,
+  "FU_attack_rounds": 20,
+  "FU_attack_epochs": 1000,
+  "selected_sample_epoch_exposures": 12500,
+  "baseline_binding_sha256": "480f64f4e704a7928f6213994e794712d2c807623fcd493247bc8d753fa2685d",
+  "later_performance_evaluation_required": true,
+  "overall_goal_complete": false
+}

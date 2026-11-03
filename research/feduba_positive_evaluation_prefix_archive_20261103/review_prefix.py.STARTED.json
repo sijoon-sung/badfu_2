@@ -1,0 +1,18 @@
+{
+  "parent": 8864,
+  "child": 28012,
+  "resources": {
+    "native_memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18563866624,
+      "committedBytes": 44458070016,
+      "commitLimit": 90276544512
+    },
+    "GPU_util": 0,
+    "GPU_free_MiB": 5045,
+    "GPU_used_MiB": 5009,
+    "competing_trainers": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "state": "completed_FU20",
+  "branch": "attack",
+  "profile": "feduba.mixed_attack.recovery_run.s42.20261101.actual",
+  "rounds": 20,
+  "new_trained_roles": 200,
+  "actual_local_epochs": 1000,
+  "actual_batches": 20000,
+  "legacy_count_fields_describe_effective_saved_history": true,
+  "reused_original_roles": 46,
+  "executed_here_roles": 154,
+  "executed_here_epochs": 770,
+  "executed_here_batches": 15400,
+  "original_failed_unsaved_epochs": 5,
+  "original_failed_unsaved_batches": 100,
+  "total_physical_epochs_including_original_failure": 1005,
+  "total_physical_batches_including_original_failure": 20100,
+  "after": {
+    "path": "D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\fu\\attack\\after.pt",
+    "sha256": "7ada5a25c181e3d5d16d17c97b9de06286d619f3176c0735ccc5c1fa984d86b7",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "SSS_result_sha256": "8728388584040b5fe2ca65c2a4332afb7aab14ba30b487008cd7d611339d60c1",
+  "history_manifest_sha256": "92ebfc3298ae27ee585fcf42a1655e09a329f5cf37aaf55a1a585ee55cf602ec",
+  "performance_not_yet_evaluated": true,
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "FedUBA_attack_completed": false,
+  "recovery_input_binding_sha256": "ff1509b1df4fd8730fe219bd262a5b60492aec12665bc6672e8ac97f61b91104",
+  "CPU_prefix_result_sha256": "301b4b2050fffeefc8d74a58d3b940cb8b8153cd8fd62f008278c8cf2d3e15b0",
+  "event_origins_sha256": "4b19e41fe3a73deb6e7017c341d8e7129189e081316ee9d69c79fa8b1301f2ac"
+}

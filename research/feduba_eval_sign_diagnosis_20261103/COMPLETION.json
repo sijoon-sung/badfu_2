@@ -1,0 +1,133 @@
+{
+  "state": "completed_fixed_endpoint_negative_sign_diagnosis",
+  "exit_code": 0,
+  "children": [
+    {
+      "mode": "primary",
+      "pid": 19332,
+      "exit_code": 0,
+      "ended_unix": 1793706937.2481563
+    },
+    {
+      "mode": "independent",
+      "pid": 14940,
+      "exit_code": 0,
+      "ended_unix": 1793706953.631289
+    }
+  ],
+  "primary_result_sha256": "0a70f50c3fcc6e7cea0486a2c32681f606fcf4cc53e1b9dd50b746000ef7ac0f",
+  "verified_sha256": "1089e0a186d3ad4f532a601572c8883bb24a441b5ed4099dcffe247cf5f5d1b2",
+  "source_freeze_sha256": "87339364a803d0691819c72f08a438ee5e207f7d812aa9464a43995ac2572df2",
+  "run_freeze_sha256": "3b4ca5f66b42a30d27cfb00ccfeb26c8cd877b6fea23e0249d9e2354f5e780df",
+  "negative_models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "CA_pct": 85.53,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1016,
+      "ASR_pct": 11.28888888888889
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "CA_pct": 84.74,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 858,
+      "ASR_pct": 9.533333333333333
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "CA_pct": 84.69,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5241,
+      "ASR_pct": 58.233333333333334
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "CA_pct": 84.45,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 677,
+      "ASR_pct": 7.522222222222222
+    }
+  },
+  "positive_models_reused": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1244,
+      "CA_pct": 84.69,
+      "ASR_pct": 13.822222222222223
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "alignment_rule_passed": true,
+  "diagnostic_negative_gates": {
+    "minus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    },
+    "plus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    }
+  },
+  "each_primary_and_independent_calls": 316,
+  "each_primary_and_independent_sample_forwards": 40000,
+  "clean_and_positive_forward_calls": 0,
+  "new_training_steps": 0,
+  "standard_positive_failure_replaced": false,
+  "author_intent_resolved": false,
+  "new_checkpoint_selected": false,
+  "local_delivery_complete": false,
+  "overall_goal_complete": false,
+  "finished_unix": 1793706953.7893977
+}

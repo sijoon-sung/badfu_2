@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-02T04:16:51.108230+00:00",
+  "deadline_utc": "2026-11-03T04:16:51.108230+00:00",
+  "guard": {
+    "available_min_bytes": 8589934592,
+    "commit_headroom_min_bytes": 17179869184,
+    "wait_max_seconds": 86400,
+    "poll_seconds": 15
+  }
+}

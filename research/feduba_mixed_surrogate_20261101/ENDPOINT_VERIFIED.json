@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "endpoint_result_sha256": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+  "independent_counts": {
+    "target": 65,
+    "Tiny_training_representatives": 199
+  },
+  "independent_CE": {
+    "target": 2.5103087935519532,
+    "Tiny_training_representatives": 0.044429943673109734
+  },
+  "max_CE_abs_error": 4.5184964081457224e-07,
+  "model_forward_calls": 0,
+  "same_target_inputs_IDs_exact": true,
+  "minimal_functional_condition_passed": true,
+  "automatic_next_stage_authorized_by_this_check": false,
+  "paper_performance_reproduction": false,
+  "overall_goal_complete": false
+}

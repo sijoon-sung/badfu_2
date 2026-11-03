@@ -1,0 +1,14 @@
+FedUBA 공식 STG 패키지의 DISLAB 실제 새 비교 시작 — 2026-11-02
+R03/R02/N02/D08/D15.
+
+최신사용자는로컬전달확인보다DISLAB에서논문구현을계속교정하라고명시했다. 로컬ZIP/RAM/수신은별도보류상태로보존하고DISLAB계산의선행조건으로쓰지않는다. 기존성능실패의정확원인은아직분리하지못했다.
+
+8c37972에새actual PROFILE/원소스·SOURCE_FREEZE를계산전에선게시했다. 공식8763byte upstream AST174..216/limit_noise를직접사용하고3cuda→cpu와기록용RAdam subclass만명시포트했으며역변환AST가정확일치했다. missingapply_noise_patch는명시add회복, mixed교사·saved-input200개순서·CPU2/FP32/MKLDNN/seed3000은기존과고정한다. 공개RAdam+cos100/trainBN잔류/latentforwardclamp묶음비교이며각차이의독립인과를분리하지않는다. 저자누락helper가복구인증됐거나fulluntouchedSTG/공격성공이라고하지않는다.
+
+DISLAB8AST/입력SHA/sourcefreeze/가용RAM18GiB/commit42GiB이상/idleGPU0·free5045·used5009/경쟁trainer0을모델0으로확인했다. 최초detachedPID16376은본문ONCE/실패/출력0으로소실돼LAUNCH_ONCE/빈stdout·stderr/관측을보존했다. 원인미확정이며numeric0이다. 별도f86f905 foreground연결복구계약만추가했고원수치source/profile/freezes는불변이다.
+
+실제foreground첫실행은parent26988→run_comparison.py27516의nativecommandline/ONCE/STATE로확인했다. RUNNING_OBSERVATION은31epoch/61step시점의관측이며현재생존은최신프로세스와함께판단한다. 원교사105/oldSGD100/SSS/정상FU20/공격FU20/전수평가는재실행하지않았다. 로컬모델계산0이며새개별배치tensor/RNG/BN/optimizer/δ는DISLABprivate_run에저장한다.
+
+최대100epoch/200step/20000표본forward와원본exactzero-gradientbreak만허용한다. 첫/마지막새CPUgradient·모든새RAdamstep독립검사와동일고정200입력에서원교사weight+BN을복원한zero/oldδ/newδ6forward후이단계는멈춘다. 이endpoint는교사훈련입력진단이며heldout/victimASR/SSS/BEA/FU성공아니다. 중간성능으로seed/lr/epoch/δ/budget를바꾸지않는다. source/hash/ID/finite/count/storage/runtime/numeric오류는prefix/trace보존후새명시복구없이retry0이다.
+
+기존mixed preASR29.4666667→공격19.3333333/정상24.6444444와독립전수정확일치/4성능gate실패는그대로다. D08공격.75848이큰정상.75525/.76188사이/D15공격7·정상8/unknowntriggerfamily미검증과단순변화량탐지금지는유지한다. 전체FedUBA성능/탐지/로컬전달은미완료다.

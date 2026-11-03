@@ -1,0 +1,34 @@
+{
+  "state": "copied_and_verified",
+  "case_id": "fuba.v2.s20261023.round0063.partial",
+  "round": 63,
+  "local_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063",
+  "zip_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v2_s20261023_round0063.zip",
+  "manifest_sha256": "3a30bc75778eed9f007e47fd632a55485ee60bdd390fd8a7f388119a01d9cb36",
+  "seal_sha256": "4f356fecc86eae992c58d3e509c39e2fc87c1064b378cf31f1a800e77f1ca4dc",
+  "checkpoint_sha256": "7bffd256301fbbc41b43ec9b36e0246e38073eeb8e1c3ea5b96913da4dbbfce6",
+  "CPU_load": {
+    "state": "passed",
+    "case_id": "fuba.v2.s20261023.round0063.partial",
+    "round": 63,
+    "files_verified": 18,
+    "strict_classifier_and_generator_load": true,
+    "finite_CPU_forward_shapes": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        3,
+        32,
+        32
+      ]
+    ],
+    "torch": "2.4.1+cu118",
+    "complete_training_run": false
+  },
+  "complete_training_run": false,
+  "remote_root": "D:\\FUBA_CHECKPOINT_RECOVERY_20261023\\partial_exports\\FUBA_v2_s20261023_round0063",
+  "source_zip_sha256": "8f6298eda0e19e5ae6a7a244831653b592ca8af99cb5bde05bb92eb884aaac14"
+}

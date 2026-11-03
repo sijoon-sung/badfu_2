@@ -1,0 +1,48 @@
+{
+  "id": "feduba.endpoint_local_receive.prepared_source_inspection.20261103.fresh_readiness_binding_v2",
+  "execution_root": "D:/FEDUBA_ENDPOINT_LOCAL_RECEIVE_SOURCE_REVIEW_20261103",
+  "inspection_enabled": true,
+  "actual_receiver_enabled": false,
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "resource_guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py",
+    "sign_eval.py"
+  ],
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "copied_sources": {
+    "runtime_common.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/runtime_common.py",
+      "sha256": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e"
+    },
+    "core.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5"
+    },
+    "stg_training.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/stg_training.py",
+      "sha256": "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76"
+    }
+  },
+  "all_three_byte_identical": true,
+  "ROOT_of_runtime_common_is_new_source_only_root": true,
+  "original_and_active_teacher_sources_modified": false,
+  "old_completed_SGD_CPU4_reused_not_reexecuted": true,
+  "new_gate_runner_auditor_controller": "Declared new binding and isolated future execution; not a resume or relabel of old CPU recovery."
+}

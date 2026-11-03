@@ -1,0 +1,7 @@
+다음 source근거 교정 후보 — 미실행/미채택, R03/R02/N02/D08/D15
+가설: 현재201출력의Tiny-only100epoch는target200에양성노출이전혀없어그head를학습목표로인식하지못하고,뒤의고정warmup5/10update가그실패를해결하지못했다. 공개source의surrogate_loader는target와외부자료를인자로받는concoct_dataset에서만들어지므로, target200의양성노출을surrogate단계부터보존하는명시mixed Tiny100000+기존외부target200 교정후보를별도검토한다.
+근거: 원warmup5의모든train_correct0/200·새CPU8의모든mode/zero/finalδ에서0/200·201head를Tiny0..199로100epoch학습하는실행source다. 원문p10498은surrogate와target자료를사용하는교사를설명한뒤두단계훈련을서술한다. 이것이초기pretrain의유일혼합법을인증하지는않는다. 공개concoct_dataset의body는누락utils에있으므로인자전달만검증됐고정확helper동작/저자자료동일성은미인증이다. 단순Concat은명시구현후보이며untouched나저자바이트회복이아니다.
+새관측: 고정초기201/기존고정외부자료·같은라벨0..199/200로한번만혼합교사100+warmup5를훈련했을때target200노출/원ID·counts가보존되는지,현재0인교사목표클래스인식이성립하는지측정한다. 기존CPU8 BN실험을반복하거나trainBN을채택하는후보가아니다. 기존모델/head를사후바꾸어기존결과에소급하지않는다.
+예산/중단의다음계약요구: 새source/profile/freeze/독립audit/실PID·GPUguard를PR에게시하기전에는실자료계산을시작하지않는다. 한개명시curriculum후보만허용하며surrogate100/warmup5의기존SGD/optimizer/schedule/seed/B128과기존200외부자료를보존한다. 100200장의원IDdomain을구분하고surrogate783batch/epoch·총78300+warmup10batch를동적으로검증한다. 새trigger/SSS/FU/평가는새동결교사/검증/δbinding 및별도launch계약전에는시작하지않는다. 혼합학습결과가미달해도seed/lr/epoch/target/자료/budget/tolerance를탐색하거나자동retry하지않는다. 정확한독립감사·endpoint필요조건·중단기준은후속실행코드와함께계산전에확정하며이근거문서만으로학습을시작하지않는다.
+큰정상반례/범위: target노출이나교사class200인식도benign교사에서발생가능하다. D08공격.75848/큰정상.75525·.76188, D15공격7/정상8을구별하는서버관측이아니며탐지주장은보류다. 목표는잘못작동한교사준비단계를source근거로교정하는것이고,좁은교사양성도FedUBA전체잠복성공으로승격하지않는다. δ/seed/lr/budget탐색을허용하는계약이아니다.
+현재상태: 후보근거만작성. 새mixed훈련/trigger/SSS/FU는미실행이며기존모든실패·모델·catalogue/default는불변이다.

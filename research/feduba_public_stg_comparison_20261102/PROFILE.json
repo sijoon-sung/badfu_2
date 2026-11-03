@@ -1,0 +1,140 @@
+{
+  "id": "feduba.public_STG_package.saved_mixed105_inputs.s3000.20261102",
+  "execution_root": "D:/FEDUBA_PUBLIC_STG_COMPARISON_20261102",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The pinned public trigger-stage package (RAdam/cosine, residual train BN, forward-clamped latent) may behave differently from the completed literal projected-SGD/eval implementation under exactly the same saved teacher and augmented input sequence. This tests a declared package correction, not a unique causal factor or a guaranteed performance fix.",
+  "new_observable": "A new public-AST trigger trajectory on the exact old200 input batches, all RAdam/BN/latent histories, first/last independent CPU gradients, and frozen-original-teacher zero/old/new-delta counts and CE on the same final200 inputs.",
+  "comparison": "Reuse the completed SGD manifest and delta as stored comparator; do not retrain the old teacher/SGD/SSS/FU/evaluation. CPU2/FP32/MKLDNN is the same as the completed CPU trigger; optimizer/scheduler/BN/projection are jointly changed. Individual causal effects are not isolated.",
+  "execution_host": "DISLAB only; local is edit/transport/metadata",
+  "launch_mode": "SSH Start-Process -WindowStyle Hidden direct Python controller; no task recreation, no autorestart",
+  "budget": {
+    "maximum_epochs": 100,
+    "training_batches_max": 200,
+    "training_sample_forwards_max": 20000,
+    "new_backward_calls_max": 200,
+    "independent_gradient_calls": 2,
+    "independent_sample_forwards": 200,
+    "endpoint_forward_calls": 6,
+    "endpoint_sample_forwards": 600
+  },
+  "constants": {
+    "initial_delta": "zero_1x3x32x32",
+    "seed": 3000,
+    "model_classes": 201,
+    "target": 200,
+    "training_batch_sizes": [
+      128,
+      72
+    ],
+    "optimizer": "pinned torch RAdam defaults,lr0.1",
+    "scheduler": "CosineAnnealingLR T_max100 per epoch",
+    "model_mode": "train, all parameters requires_grad False; BN buffers evolve in private copy",
+    "latent_projection": "none; public limit_noise clamp only in forward/final",
+    "l_inf_r_model": 0.06274509803921569,
+    "actual_forward_bound": 0.12549019607843137,
+    "input_clip": [
+      -1,
+      1
+    ],
+    "source_zero_gradient_break": "original ave_grad==0 at epoch end, no performance early stop",
+    "CPU_threads": 2,
+    "MKLDNN": true,
+    "AMP": false,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "author_source": {
+    "repo": "ity207/FedUBA",
+    "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+    "blob": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+    "stage_lines": [
+      174,
+      216
+    ],
+    "ports": "three .cuda() calls to .cpu(); RAdam constructor to audited subclass using super.step unchanged; missing apply_noise_patch explicitly recovered as add; saved-input loader and progress wrappers only",
+    "untouched_author_execution": false,
+    "author_certified_missing_helpers": false,
+    "full_STG_surrogate_retrained": false
+  },
+  "old_trigger_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+  "normal_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "inputs": {
+    "teacher": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+      "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+      "bytes": 45162251,
+      "payload_key": null,
+      "classes": 201
+    },
+    "architecture": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "upstream": {
+      "path": "D:/FEDUBA_REPRO_AUDIT_20261031/upstream_author/trigger_generate_function.py",
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06"
+    },
+    "paper": {
+      "path": "D:/FEDUBA_REPRO_AUDIT_20261031/FedUBA-TDSC26.pdf",
+      "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98"
+    },
+    "old_manifest": {
+      "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/MANIFEST.json",
+      "sha256": "7a24c1aad699ba6f65101bc63909937e8d15e6cabdb205f1da27f55b62b20f89"
+    },
+    "old_delta": {
+      "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/private_run/delta.pt",
+      "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+      "bytes": 13865,
+      "payload_key": null
+    },
+    "teacher_verified": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\TRAIN_VERIFIED.json",
+      "sha256": "a99d221545aacf645e7c13bc71be290c02ead7c6ce7e24215838156f63591b8f",
+      "bytes": 12891
+    },
+    "teacher_completion": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\COMPLETION.json",
+      "sha256": "ff6f10c9d5db18d47d2358560b758e391cd99e5bc36c1163c11371795a01414f",
+      "bytes": 604
+    }
+  },
+  "nvidia_smi_path": "C:/Windows/System32/nvidia-smi.exe",
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "run_comparison.py"
+  ],
+  "start_guard": {
+    "RAM_available_bytes": 8589934592,
+    "commit_headroom_bytes": 17179869184,
+    "GPU_util_max": 5,
+    "GPU_free_min": 4000,
+    "GPU_used_max": 6000,
+    "competing_trainers": 0
+  },
+  "stopping_rule": "Run one candidate to the fixed public100-epoch maximum or its original exact-zero-gradient break; preserve any source/hash/input-ID/finite/storage/RNG/runtime/numeric failure and stop with no automatic retry. No seed/lr/epoch/epsilon/data/budget tuning. Independent gradients atol2e-5/rtol.001 and logits1e-6/1e-5 unchanged. Stop after audit/endpoint whether favorable or not; SSS/FU/victim-ASR require a separate explicit source/profile binding before execution.",
+  "large_benign_scope": "This is attack-implementation conformance, not detection. A benign teacher can show the same response. D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8 remain unresolved; unknown trigger families are unvalidated. No change-magnitude detector proposed.",
+  "privacy": "All new tensors/RNG/BN/IDs/raw inputs/logits remain private on DISLAB. No bulk local packet is required for computation.",
+  "overall_goal_complete": false
+}

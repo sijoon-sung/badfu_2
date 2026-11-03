@@ -1,0 +1,38 @@
+{
+  "state": "manual_static_interpretation_of_completed_source_comparison",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "source_commit": "50dc586250e5373eedd7679ace9ee1c247dd5030",
+  "publication_binding_commit": "2b6420d6faab3a63353d2ec5c8363028980d9ec9",
+  "source_freeze_sha256": "c7b3d05c0bdeed3c7cf3ab41b41459e629f597cb6dbca5fce060f3d8baac04d6",
+  "result_sha256": "41972d6dc28f42e9bd5ef2453b19d0411b10894effb45481351c734df35db70b",
+  "completion_sha256": "b243667efe63b03b23af8810807916a6dca79c6f9d454941826531287ca23d33",
+  "source_body_review": {
+    "sha256": "29a5f1f7d31c3007bb6b5e1e306e0f1f3bd3eaf2ca30173c9568761bd1e94802",
+    "bytes": 14566,
+    "public_staged": false
+  },
+  "canonical_AST_ignores": [
+    "source_locations",
+    "docstrings_only"
+  ],
+  "helper_findings": {
+    "apply_noise_patch_poison_image_and_poison_image_label": "Canonical AST exactly matches pinned related Narcissus helpers; additive clipping and second label getter were already known. No newly isolated performance correction.",
+    "concoct_dataset": "New cifar10 flag: true returns integer outer-class-count label, false returns torch.long scalar. It changes label representation only; both branches use the same target image/extra-class value. Existing CIFAR10 declared MixedImages uses integer200, so this is source support, not new numeric correction.",
+    "sur_target_dataset": "One source target image getter and caller-supplied constant label; public trigger91/93 passes len(outer.classes). Consistent with declared target200 warmup mapping; no RNG replay."
+  },
+  "architecture": "BasicBlock/Bottleneck/ResNet and ResNet18/ResNet18_201 canonical AST exact; all ten shared top-level definitions exact. Whole module differs: archive has generic ResNet18_class and declared reference has ResNet18_11. No model import/tensor compatibility test; no architecture change adopted.",
+  "archive_selector_difference": "Fed_data_change now actually imports/calls influence_sort_function and omits high_sensitivity_sort; its README lists influence_function.py. Unlike the old separate unused root file, this archive has a real call-site link. It is a different selector from the fixed paper-linked logit sensitivity path, not automatically adopted as paper Eq6 or a detector.",
+  "new_model_calculation_justified_by_helper_or_architecture_comparison": false,
+  "owner_identity_certified": false,
+  "author_unique_code_certified": false,
+  "performance_changed": false,
+  "training_launched": false,
+  "source_correction_adopted": false,
+  "overall_goal_complete": false
+}

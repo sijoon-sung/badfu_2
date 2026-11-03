@@ -1,0 +1,8 @@
+새mixed teacher-only 감시 — R03/R02/N02/D08/D15
+root D:/FEDUBA_MIXED_SURROGATE_20261101. 정확task Codex-FedUBA-mixed-surrogate100-warmup5-20261101, directPython mixed_controller.py. 최초PUBLICATION/freeze/sourcecheck검증뒤한번만시작한다. task/CONTROLLER_ONCE가있으면재등록/재시작하지않는다.
+항상실제CIM PID/parent/commandline와CONTROLLER_STATE/FAILURE/ONCE,DOMAIN_CONTRACT_RESULT/FAILURE,TRAIN_STATE/RESULT/FAILURE,MANIFEST의committed epochs·마지막epoch와private_run/events·batch_progress, AUDIT_STATE/TRAIN_VERIFIED/AUDIT_FAILURE,ENDPOINT_RESULT/VERIFIED/FAILURE_run·verify,COMPLETION을함께본다. 기록PID만믿지않는다. failure가예전running/auditing보다우선이며taskexit와실제종료도확인한다.
+CPU합성7getitem/2sampler계약→자원guard대기→새GPU100mixed+5warmup→CPU1 full105상태감사→CPU2 4forward400sample endpoint→CPU1 저장logit검산이다. parent는자원부족에만30초대기하고trainer는아직없다. 실trainer가시작하면시작guard통과뒤ownCUDA증가를실패로보지않는다. 다른앱종료/guard우회/중복child/자동retry없다.
+TRAIN_STATE의actual_batches_including_uncommitted/epoch_batches_completed는실step관측이며MANIFEST commit과구별한다. model/optimizer/checkpoint는epochreadback·hash뒤commit이다. 매epochTiny100000/target200의actual source IDs/domains/labels/노출을남긴다. 중간loss/CA/targetcorrect로seed/lr/epochs/data/budget/tolerance를바꾸지않는다.
+새source/profile/freezes/runtime_common copy와원래모든완료source를대기/실행중덮어쓰지않는다. 원GPU-STG_VERIFIED는여전히없고oldGPU실패·CPU8기각·두FU성능실패·양쪽전달은보존한다. 새teacher필요조건통과여부와공격/탐지성공은별개다.
+COMPLETION이있어도원run의TRAIN_RESULT.CPU_audit_completed=false는작성당시역사로수정하지않는다. 새TRAIN_VERIFIED/ENDPOINT_VERIFIED와COMPLETION이실감사완료근거다. 이controller는새trigger/SSS/FU를시작하지않으며그단계는새source binding/실행계약게시뒤만진행한다. 전체목표/자동확인은종료하지않는다.
+원ID/전체모델·optimizer/RNG·실자료input/logits는private_run이며공개Git에stage하지않는다. 새JSON 요약/실패/checks만PR에연결하고각main/PR registry/index를별도append/rebuild/check한다. catalogue/default/외부audit는변경하지않는다.

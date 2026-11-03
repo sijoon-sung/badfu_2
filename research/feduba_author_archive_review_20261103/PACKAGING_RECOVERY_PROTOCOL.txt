@@ -1,0 +1,4 @@
+새명시모델0 패키징 복구계약 — 원inspect_archive 재호출0
+관련 R03/R02/N02/D08/D15. 5087690 source 선게시뒤첫DISLAB검토는ZIP26677bytes/Gitblob검증·다운로드를마친후AST에서NULbytes로실패했다. REVIEW_FAILURE/ONCE와원source/freezes/ZIP을원위치보존했다. 어떤member가원인인지는최초trace에없으므로아직특정하지않는다. 새가설은ZIP의macOS resourcefork가.py확장자를가진메타데이터로포함됐을수있다는것이며,실제memberpath와00051607 magic이함께맞는것만이판정근거다.
+새고정V2는기존다운로드ZIP을byte그대로재사용(download0)해member정보·CRC·header를기록한다. __MACOSX/._*경로이면서AppleDouble00051607인경우에만코드AST대상에서제외하고본문은resource metadata라고표시한다. 둘중하나라도안맞는NUL .py는동일하게실패/trace보존·다음자동retry0이다. 실제Python source의파싱/UTF8/동일9blob/정의존재검사는완화하지않는다. 원유한검토는그대로실패이며새복구결과와별도receipt를만든다.
+원source/profile/실패를바꾸지않고새RECOVERY_PROFILE/SOURCE_FREEZE_V2/inspect_archive_v2를같은PR선게시후단일foreground stdlib검토1회. 모델/tensor/upstream실행/torchimport/추론/optimizer0,새다운로드/학습/FU/SSS/기존감사재실행0. D08/D15/unknowntrigger탐지미검증·모든old모델/packet/catalogue/default불변. 모델새실험을이복구로허용하지않는다.

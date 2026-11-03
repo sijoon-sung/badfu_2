@@ -1,0 +1,5 @@
+Read-only 상태관측기 보강 완료 — R03/R02/N02/D08/D15
+원Get-Content eventstring의ETS PSDrive/Provider 재귀직렬화로관측출력이매우커졌다. 연구는정상FU4Rcommit/5R에서계속됐고source/model오류나프로세스재시작은없었다. 원도구trace/출력크기와fullraw파일미보관범위를INCIDENT에명시했다. 다른과거observer timeout의유일원인으로확대하지않는다.
+1bea3c0에먼저게시한v1 observer는embeddedPS선두의불필요한+로첫probe본문전에ParserError를냈다. Python AST만으로embeddedPS를검사하지못한관측코드오류이며v1원source/freeze와trace는보존했다. 로컬v2구성의newline가정assert/파일미작성AST오류도미실행범위와함께FIRST_PROBE_FAILURE에남겼다. 원v1을수정/재호출하지않았다.
+d735749에별도v2/explicitQUERY_V2.ps1/새FREEZE_V2·실패·교정계약을게시했다. Python/PS AST를확인한뒤새metadata관측이1319문자(고정상한50000)로통과했다. event를먼저JSON파싱하고명시8필드만선택해ETS확장을피했다. 실제parent7756/trainer46748·정상FU6Rcommit/7R/client8/1epoch의CIM·STATE/manifest/event가같았다. 이는새FU완료나성능평가가아니며일반진행은알리지않는다.
+새관측은torchimport/modelquery/학습·감사·fixture재실행/prepare/task등록·중지0이다. 원active37source와실runbinding의명시파일hash도모두그대로였다. live pair_console.log를읽거나hash하지않았다. 기존모든원실패/receipt/default/incident와D08공격.75848·큰정상.75525/.76188,D15공격7·정상8/unknowntrigger미검증은불변이다. 이도구는반복가능한read-only monitor이고이후호출은observe_status_v2.py를--save없이사용한다. 원failedv1/기존유한연구작업은재실행하지않는다.

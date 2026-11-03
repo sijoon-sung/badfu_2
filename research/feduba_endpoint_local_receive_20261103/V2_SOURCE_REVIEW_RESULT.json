@@ -1,0 +1,75 @@
+{
+  "state": "passed_prepared_v2_fresh_readiness_binding_source_contract",
+  "source_freeze_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "source_commit": "4092ce0e1172f26bfb8437a26b4e88a7affb9795",
+  "new_AST_files": [
+    {
+      "file": "receive_common_v2.py",
+      "sha256": "683c354792a9c7fb06053fba7eff73e891ab9db0a95cc6d0b7fb2a2f7a621d4e",
+      "Python311_AST_parse": true
+    },
+    {
+      "file": "probe_cpu_runtime_v2.py",
+      "sha256": "df710ecb98425f690d0c4627d31851311d7ae8833808674dbc5b8f02c03b3513",
+      "Python311_AST_parse": true
+    },
+    {
+      "file": "verify_cpu_storage_v2.py",
+      "sha256": "f1d3df3e91b43f6e39c94eade65351cd32959716810a99e3c25cec379ec8373d",
+      "Python311_AST_parse": true
+    },
+    {
+      "file": "receive_packet_v2.py",
+      "sha256": "388319d168189c786ffd7074e4189c0ca8bf6136059169d029e8db7e77f5cc11",
+      "Python311_AST_parse": true
+    },
+    {
+      "file": "inspect_source_v2.py",
+      "sha256": "8d580eb9dd10c40ea667d951130c8d93f3ea7a3d1b037862df246c46702c5c2d",
+      "Python311_AST_parse": true
+    }
+  ],
+  "unchanged_numeric_CPU_runtime_source_delta_files": 3,
+  "synthetic_readiness_contract_cases": [
+    {
+      "condition": "fresh_true",
+      "accepted": true,
+      "expected": true,
+      "synthetic_only": true
+    },
+    {
+      "condition": "recorded_false",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "wrong_SHA",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "outside_root",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "stale",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    }
+  ],
+  "old_false_actual_observation_not_overwritten": true,
+  "scope": "Prepared inactive operational source correction only;5syntheticJSON cases are not actual localRAM/runtime observations. Not a complete runtime or receiver execution proof.",
+  "real_local_native_RAM_queries": 0,
+  "torch_runtime_imports": 0,
+  "tensor_model_loads": 0,
+  "CPU_model_forwards": 0,
+  "archive_or_realdata_read": false,
+  "receiver_or_transfer_started": false,
+  "catalogue_modified": false,
+  "overall_goal_complete": false
+}

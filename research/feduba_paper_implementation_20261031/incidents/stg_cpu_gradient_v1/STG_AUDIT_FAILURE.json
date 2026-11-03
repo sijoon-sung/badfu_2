@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 47072,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\verify_stg.py\", line 173, in <module>\n    main()\n  File \"D:\\FEDUBA_PAPER_IMPLEMENTATION_20261031\\verify_stg.py\", line 154, in main\n    assert bool((diff <= 2e-5 + 1e-3 * step['gradient'].abs()).all()), float(diff.max())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0.009947020560503006\n"
+}

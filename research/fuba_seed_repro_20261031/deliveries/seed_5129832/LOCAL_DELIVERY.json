@@ -1,0 +1,387 @@
+{
+  "state": "delivered_hash_verified",
+  "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+  "seed": 5129832,
+  "root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+  "manifest_sha256": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+  "seal_sha256": "ca920869b9acc4b115082f9a32d75ad1c3cc141c23360001639d274652fe3d9d",
+  "all_files_verified": 982,
+  "copied_packet_readonly": true,
+  "full_raw_history_local": false,
+  "remote_packet_CPU_payloads": 74,
+  "local_CPU_checks": [
+    {
+      "path": "initial.pt",
+      "payload_key": "$",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch01.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch02.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch03.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch04.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch05.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch06.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch07.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch08.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch09.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/KD/epoch10.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/after.pt",
+      "payload_key": "$",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/after_subtraction.pt",
+      "payload_key": "$",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/before.pt",
+      "payload_key": "$",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client03/phase01.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client03/phase02.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client03/phase03.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client03/phase04.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client03/submitted.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client04/phase01.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client04/phase02.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client04/phase03.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client04/phase04.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0006_client04/submitted.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client02/phase01.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client02/phase02.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client02/phase03.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client02/phase04.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client02/submitted.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client04/phase01.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client04/phase02.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client04/phase03.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client04/phase04.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/phases/round0100_client04/submitted.pt",
+      "payload_key": "model",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "incoming",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "after",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/0",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/1",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/2",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/3",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/4",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/5",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/6",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0001.pt",
+      "payload_key": "submitted/7",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "incoming",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "after",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/0",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/1",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/2",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/3",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/4",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/5",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/6",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0006.pt",
+      "payload_key": "submitted/7",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "incoming",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "after",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/0",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/1",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/2",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/3",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/4",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/5",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/6",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0007.pt",
+      "payload_key": "submitted/7",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "incoming",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "after",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/0",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/1",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/2",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/3",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/4",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/5",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/6",
+      "strict_CPU_finite_forward": true
+    },
+    {
+      "path": "run/rounds/round0100.pt",
+      "payload_key": "submitted/7",
+      "strict_CPU_finite_forward": true
+    }
+  ],
+  "local_CPU_check_requested": true,
+  "source_sha256": "7897f69b2418894a2205c85c298991dfdcfe40ee700168d163728c425014c846",
+  "numeric_run_modified": false
+}

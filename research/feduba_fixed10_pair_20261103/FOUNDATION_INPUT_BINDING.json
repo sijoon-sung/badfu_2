@@ -1,0 +1,78 @@
+{
+  "state": "completed_new_fixed10_foundation_and_new_SSS_bound_before_FU",
+  "pre": {
+    "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_cleanFL20_s42_20261103\\run\\before.pt",
+    "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+    "payload_key": null
+  },
+  "manifest": {
+    "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\MANIFEST.json",
+    "sha256": "dc4c4e338c56506b629aee8140b21e43b8d9579d52447c9857f1fdce68caf4fe",
+    "bytes": 68998
+  },
+  "split": {
+    "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\CLEAN_SPLIT.json",
+    "sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee",
+    "bytes": 639383
+  },
+  "receipts": {
+    "foundation/SOURCE_FREEZE.json": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\SOURCE_FREEZE.json",
+      "sha256": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b",
+      "bytes": 1773
+    },
+    "foundation/RUN_FREEZE.json": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\RUN_FREEZE.json",
+      "sha256": "fdfe32f75f351f9dcd25bc82bcfbe82134aee18b2202e20e8f396b331ba844bb",
+      "bytes": 2448
+    },
+    "foundation/CLEAN_FL_RESULT.json": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\CLEAN_FL_RESULT.json",
+      "sha256": "8bd7cc42bdc90472b63695a6241a45accfab1360b9bba12812c3d5531b6253c7",
+      "bytes": 626
+    },
+    "foundation/CLEAN_FL_VERIFIED.json": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\CLEAN_FL_VERIFIED.json",
+      "sha256": "c18d7af6b0800cc8ff8810d4440f337239d04839ea320b46ff8251baa37485a2",
+      "bytes": 24819
+    },
+    "foundation/COMPLETION.json": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\COMPLETION.json",
+      "sha256": "a9d6a3c06f42f1f8781d386dad4527bbd57d93dee8b0b54b7ced1a432b81ec99",
+      "bytes": 326
+    },
+    "new_SSS/SOURCE_FREEZE.json": {
+      "path": "D:\\FEDUBA_FIXED10_SSS_20261103\\SOURCE_FREEZE.json",
+      "sha256": "8738a84c3854d70ce5f23c5d4e659fbd3525fe3bd6e2e36d9142a6aa12672197",
+      "bytes": 2601
+    },
+    "new_SSS/RUN_FREEZE.json": {
+      "path": "D:\\FEDUBA_FIXED10_SSS_20261103\\RUN_FREEZE.json",
+      "sha256": "ba4765e55f69aee4e93f563a859f7a56f18c364f35a8b892af461d93cc3a3ca6",
+      "bytes": 3678
+    },
+    "new_SSS/SSS_RESULT.json": {
+      "path": "D:\\FEDUBA_FIXED10_SSS_20261103\\SSS_RESULT.json",
+      "sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28",
+      "bytes": 303203
+    },
+    "new_SSS/SSS_VERIFIED.json": {
+      "path": "D:\\FEDUBA_FIXED10_SSS_20261103\\SSS_VERIFIED.json",
+      "sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46",
+      "bytes": 3145
+    },
+    "new_SSS/COMPLETION.json": {
+      "path": "D:\\FEDUBA_FIXED10_SSS_20261103\\COMPLETION.json",
+      "sha256": "37b71e7175e2d19a22c5a7c9f22068ed30bfb0edee273d08a68d94bc096a4627",
+      "bytes": 334
+    }
+  },
+  "selected_counts_by_owner": {
+    "5": 63,
+    "7": 62
+  },
+  "expected_benign_batches": 20000,
+  "expected_attack_batches": 20000,
+  "selected_sample_epoch_exposures": 12500,
+  "no_old_pre_SSS_rank_or_after_reuse": true
+}

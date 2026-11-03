@@ -1,0 +1,13 @@
+가설: 완료 STG의 같은 δ를 stable-ID SSS→정상FU20→공격FU20→독립 전수평가에 연결하면 원문식6~8/FedEraser의 실제 잠복 활성화 필요조건을 같은 ID의 정상 삭제와 비교할 수 있다. 관련 R03/R02/N02/D08/D15, RETARGET/CORE_CONTRACT/SSS/SSS_NUMERIC/FU/FU_EXECUTION/PAIR_EVAL의 기존 수치·자료·중단규칙을 그대로 따른다. 새 관측은 실제5000장 두forward/125선택·두20R/각200개 새기여·원history보정·optimizer/RNG/전체로그와 pre/benignFU ASR-B/attackFU의 같은 δ 전체평가다. 큰 정상nonIID D08(공격0.75848/정상0.75525·0.76188) 및 D15(공격7/정상8)의 반례는 미해결이다. 공격 재현의 입력 적격성이지 새 서버 탐지 성공이 아니다.
+
+선행 완료 뒤만 준비: prepare_pair_profiles는 원 STG controller/trainer/audit 실제 종료·STG100/5/100(105모델+100trigger epoch/78410batch)·독립205epoch/200step 감사 통과를 확인한다. 기존 normal20/fullCPU/utility80와 양쪽 normal 전달·호스트별등록, 명시 normalcase diagnostic guard/select_case/모델SHA·payload와 원clean_fl/MANIFEST SHA/실제200역할/원CPU감사 해시 연결을 확인한다. 로컬 endpoint가 전체history 사용을 승인한 것으로 해석하지 않는다. 새 구현 진단의 원rawhistory는 DISLAB 원위치/원manifest SHA·role model/global null key로 별도 핀하며 기존 client_history/default 승인을 바꾸지 않는다. 같은 완료 모델/fixture/등록을 다시 학습·감사·export하지 않는다.
+
+한 번의 CPU 메타데이터 준비는 아직 학습/실SSS 실행이 아니다. 완료 STG δ와 감사 SHA 및 이미 선언한 source-only freeze들을 묶어 SSS_LAUNCH_PROFILE/FU_LAUNCH_PROFILE/PAIR_EVAL_LAUNCH_PROFILE/PAIR_LAUNCH_PROFILE과 각 runfreeze를 새 배타파일로 만든다. 기존 launchfalse profile·CPU계약·원source/실패는 보존한다. SSS는 logger_CPU_result=SSS_LOGGER_CPU2_RESULT.json/numeric_policy_sha256을 핀한다. FU는 기존 FU_PROFILE 모든 수치·같은 원ID 정상 실제제거/공격 x−δ/원label·원global0/참여history/local5·첫round old유효제출정책을 유지한다. 평가는 기존 PAIR_EVAL_PROFILE의 같은δ/배수1.5/target2/클린10000·비target9000/B128 NCHW FP32/수치설정·독립 full재추론을 유지한다. 준비 결과나 δ 모양에 따라 값을 고르지 않는다.
+
+실행 전 게시: 준비 코드/계약은 먼저 기존 PR에 게시한다. 원격 준비 결과의 실제 profile/freezes도 다시 PR에 게시해 그 commit과 전체 profile/freezes SHA를 PAIR_PUBLICATION에 기록한 후에만 새 정확 task Codex-FedUBA-SSS-pairedFU20-20261031을 directPython paired_controller.py로 한 번 시작한다. S4U/Limited/Hidden/no-trigger/no-retry/72h이며 작업/ONCE가 존재하면 중복 시작하지 않는다. 현재 STG 예약작업을 재시작하거나 그source/profile을 바꾸지 않는다.
+
+기존 controller는 SSS→CPU검산→benignFU20→CPU검산→attackFU20→CPU검산→primary전수평가→다른코드 독립전수평가 순서다. 각 GPU 단계 전 원프로세스 종료와 고정guard(util<=5/free>=4000/used<=6000/경쟁trainer0)를 최대24h 기다린다. 다른 앱 종료/guard 우회는 없다. 실제 PID·parent·state·manifest·epoch/event를 함께 확인하고 완료/실행 중 유한 child를 새로 시작하지 않는다.
+
+성능은 두 branch를 끝낸 뒤 기존 사전 gate로 판정한다: preASR<=20/attack>=80/전후증가>=50pp/benignFU초과>=50pp/세CA>=80/양쪽후CA하락<=5pp. 원논문 정확평균이나 서버threshold가 아니다. 중간 score/CA/ASR로 owner/ID/budget/δ/target/seed/lr/epoch/tolerance를 바꾸거나 실패 branch를 빼지 않는다. source/hash/finite/ID/소유권/집계·보정/실제count/optimizer/RNG/저장/runtime/독립검산 오류는 prefix·trace를 보존하고 원단계를 새 명시계약으로만 교정한다. 자동 retry나 성공포장은 없다.
+
+마지막 독립평가가 끝나도 전체 목표 완료가 아니다. 실제 pre/두후모델·실제 기여·optimizer/RNG·전체로그의 양쪽 readonly 검토 사본/범위·원raw DISLAB보존·외부봉인/hash/로컬strictCPU·호스트별catalogue와registry/index guards까지 완수한다. 그 후에도 trigger종류 독립/큰 정상nonIID 탐지 주장은 별도 근거와 프로토콜 없이는 보류한다.

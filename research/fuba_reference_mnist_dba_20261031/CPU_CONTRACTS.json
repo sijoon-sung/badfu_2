@@ -1,0 +1,14 @@
+{
+  "state": "passed",
+  "contracts": [
+    "DBA_exact_local_and_global_coordinates",
+    "input_not_modified",
+    "Eq1_inverse_minmax",
+    "gamma_zero_identity",
+    "gamma_interpolation",
+    "Eq3_mixture",
+    "Eq4_clean_CE_plus_2_squared_L2_gradient",
+    "weighted_SGD_update_exact"
+  ],
+  "CPU_only": true
+}
