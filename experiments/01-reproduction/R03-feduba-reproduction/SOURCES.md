@@ -1425,3 +1425,8 @@
 | [PREPUBLICATION_LOCATION_CORRECTION.json](../../../research/feduba_historical_selector_source_review_20261103/PREPUBLICATION_LOCATION_CORRECTION.json) | `research/feduba_historical_selector_source_review_20261103` |
 | [PREPUBLICATION_FAILED_LOCATION_CALLER.py](../../../research/feduba_historical_selector_source_review_20261103/PREPUBLICATION_FAILED_LOCATION_CALLER.py) | `research/feduba_historical_selector_source_review_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_historical_selector_source_review_20261103/SOURCE_FREEZE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_historical_selector_source_review_20261103/SOURCE_PUBLICATION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_historical_selector_source_review_20261103/RUN_PUBLICATION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [FAILED_PIN_PUBLISH_CALLER.py](../../../research/feduba_historical_selector_source_review_20261103/FAILED_PIN_PUBLISH_CALLER.py) | `research/feduba_historical_selector_source_review_20261103` |
+| [PIN_PUBLICATION_FAILURE.json](../../../research/feduba_historical_selector_source_review_20261103/PIN_PUBLICATION_FAILURE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PIN_PATH_RECOVERY_PROTOCOL.txt](../../../research/feduba_historical_selector_source_review_20261103/PIN_PATH_RECOVERY_PROTOCOL.txt) | `research/feduba_historical_selector_source_review_20261103` |

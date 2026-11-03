@@ -1,0 +1,15 @@
+{
+  "state": "pin_metadata_publication_caller_failed_before_commit_push_or_remote_execution",
+  "caller_sha256": "fb5edd4a6ea02bd21b11492444a0ae1ba862301e734446a05d4794ddb46d70ce",
+  "local_exit_code": 1,
+  "failed_command_exit_code": 128,
+  "failed_rel": "research/feduba_historical_selector_pin_review_20261103",
+  "correct_existing_rel": "research/feduba_historical_selector_source_review_20261103",
+  "cause": "Overbroad metadata-prefix substitution also changed the experiment directory name in the local publisher",
+  "observed_stderr_detail": "CalledProcessError at git add; child git stderr was captured but not printed",
+  "staged_paths_after_failure": [],
+  "PR_head_after_failure": "43e44163f3e97888f63d4053f5d9110361a185da",
+  "source_commit": "43e44163f3e97888f63d4053f5d9110361a185da",
+  "model_or_source_inspector_launched": false,
+  "original_failed_caller_reinvoked": false
+}
