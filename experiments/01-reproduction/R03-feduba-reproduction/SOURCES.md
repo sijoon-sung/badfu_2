@@ -1217,3 +1217,12 @@
 | [PREPARATION_RESULT.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PREPARATION_RESULT.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [EVAL_RUN_FREEZE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/EVAL_RUN_FREEZE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [ACTUAL_EVALUATION_REPORT_KO.txt](../../../research/feduba_related_helper_positive_evaluation_20261103/ACTUAL_EVALUATION_REPORT_KO.txt) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_related_helper_positive_evaluation_20261103/RUN_PUBLICATION.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [PUBLIC_BYTE_EXPECTATIONS.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PUBLIC_BYTE_EXPECTATIONS.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PUBLICATION_BYTE_CHECKS.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [LOCAL_LAUNCH_FAILURE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/LOCAL_LAUNCH_FAILURE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [LAUNCH_TRANSPORT_RECOVERY_PROTOCOL.txt](../../../research/feduba_related_helper_positive_evaluation_20261103/LAUNCH_TRANSPORT_RECOVERY_PROTOCOL.txt) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [PRE_SSH_LAUNCH_FAILURE_OBSERVATION.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PRE_SSH_LAUNCH_FAILURE_OBSERVATION.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [LAUNCH_TRANSPORT_RECOVERY_PROFILE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/LAUNCH_TRANSPORT_RECOVERY_PROFILE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [launch_transport_recovery_once.py](../../../research/feduba_related_helper_positive_evaluation_20261103/launch_transport_recovery_once.py) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [LAUNCH_TRANSPORT_RECOVERY_FREEZE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/LAUNCH_TRANSPORT_RECOVERY_FREEZE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
