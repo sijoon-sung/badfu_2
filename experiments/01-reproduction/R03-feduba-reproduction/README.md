@@ -20,3 +20,6 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 
 
 2026-11-02 최신: 실제target-only125 정상·공격 체크포인트 생성을 DISLAB에서 진행한다. 기존all-class 선택에는목표클래스가0개였고 새선택125개는모두class2(owner58/67)다. 저장형식키누락으로학습전중단한첫시도와호출오류를보존한뒤 별도동일조건복구의실제trainer가시작됐다. 현재최종성능은미측정이다. [고정실행·오류·현재범위](../../../research/feduba_targetclass_pair_recovery_20261102/REPORT_KO.txt)와 [원조건·중단규칙](../../../research/feduba_targetclass_pair_recovery_20261102/PROTOCOL.txt)을읽는다. D08/D15와trigger-family독립탐지한계는해결하지않았다.
+
+
+2026-11-03 최신: fixed10/newSSS 정상·공격FU20과 양독립CPU·각60000sample474calls 표준평가·원격readonly봉인이 실제완료했다. pre CA85.53/ASR20.1444%, 정상CA84.74/ASR-B16.6667%, 공격CA84.69/ASR13.8222%로 4성능gate실패/2CA통과다. 공격활성화가 재현되지 않았으며 저장완료를 성능성공으로 취급하지 않는다. [최종실제결과·한계](../../../research/feduba_fixed10_pair_20261103/FINAL_REPORT_KO.txt), [논문비교](../../../research/feduba_fixed10_pair_20261103/PAPER_COMPARISON.txt), [후속근거범위](../../../research/feduba_fixed10_pair_20261103/NEXT_STAGE_RATIONALE.txt)를 읽는다. task Ready/exit0/native0/failure0이며 이전유한작업 재실행0. Local전달/탐지/전체성능목표는 미완료다.

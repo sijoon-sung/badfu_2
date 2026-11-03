@@ -1,0 +1,11 @@
+논문과 fixed10/newSSS pairedFU20 실제 성능 비교
+관련 R03/R02/N02/D08/D15. 고정PDF SHA5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98/DOI10.1109/TDSC.2026.3703139. 직접확인 출처: research/feduba_metric_conformance_review_20261101/REPORT_KO.txt와 EVIDENCE.json.
+
+논문 IID/CIFAR10/FedEraser/FedAvg TableII: pre CA85.82±0.74%, 공격FU후 CA85.16±0.45%. 본문 ASR-B 약15%, 활성화후 ASR 최대약89%다. 이를 특정선의 정확소수끝점/단일seed 원시값으로 만들지 않는다.
+새fixed10: pre CA85.53/ASR20.144444444444446; 정상CA84.74/ASR-B16.666666666666668; 공격CA84.69/ASR13.822222222222223. 공격ASR이 pre보다6.322222222222222pp, 정상보다2.8444444444444446pp 낮다. CA보존과 별개로 논문수준의 공격활성화를 재현하지 못했다. ASR-B는 정상FU후ASR이며 pre-ASR이 아니다.
+
+원6gate는 별도운영기준이며 정확논문평균/분산 재현기준이 아니다. 새pre가20%를약0.1444pp초과한 사전gate와 별도로 attack80/전후50pp/정상초과50pp도 실패했다. 두CAgate통과와 logit정합만으로 성공이라고 하지 않는다.
+
+이번은 공개main의 고정selected10을 모든FL/FU round에 유지했다. 그러나 새foundation/pre/SSS도 바뀌었으므로 owner노출만의 인과를 분리하지 않았다. seed42단일조건/IID/20clients각2500/공식50000(논문60000과다름)/정확global125(공개per-ownerceil126아님)/model좌표epsilon32/255·평가1.5/누락utils·models의명시회복/mixed105교사·CPU-SGD-STG/외부target 자료·BN해석은 저자유일조건으로 미인증이다. untouched author실행·선언교정구현·성능성공을 구분한다. 다른FU/집계/nonIID/독립학습seed 전체를 검증하지 않았다.
+
+이전 target-only randomcohort pre29.4667/정상22.2889/공격26.1556, allclassmixed29.4667/24.6444/19.3333의 실패와 원source/모델/감사/default/cases는 불변이다. 이번결과도 진단실패로 보존하며 D08/D15 구별/trigger-family독립탐지의 양성입력으로 승격하지 않는다.

@@ -1050,3 +1050,17 @@
 | [BENIGN_AUDIT_COMPLETION_SUMMARY.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_SUMMARY.json) | `research/feduba_fixed10_pair_20261103` |
 | [BENIGN_AUDIT_COMPLETION_OBSERVATION.json](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_OBSERVATION.json) | `research/feduba_fixed10_pair_20261103` |
 | [BENIGN_AUDIT_COMPLETION_REPORT_KO.txt](../../../research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_REPORT_KO.txt) | `research/feduba_fixed10_pair_20261103` |
+| [FU_attack_RESULT.json](../../../research/feduba_fixed10_pair_20261103/FU_attack_RESULT.json) | `research/feduba_fixed10_pair_20261103` |
+| [FU_attack_STATE.json](../../../research/feduba_fixed10_pair_20261103/FU_attack_STATE.json) | `research/feduba_fixed10_pair_20261103` |
+| [FU_attack_VERIFIED.json](../../../research/feduba_fixed10_pair_20261103/FU_attack_VERIFIED.json) | `research/feduba_fixed10_pair_20261103` |
+| [PAIR_EVAL_RESULT.json](../../../research/feduba_fixed10_pair_20261103/PAIR_EVAL_RESULT.json) | `research/feduba_fixed10_pair_20261103` |
+| [PAIR_EVAL_VERIFIED.json](../../../research/feduba_fixed10_pair_20261103/PAIR_EVAL_VERIFIED.json) | `research/feduba_fixed10_pair_20261103` |
+| [COMPLETION.json](../../../research/feduba_fixed10_pair_20261103/COMPLETION.json) | `research/feduba_fixed10_pair_20261103` |
+| [REMOTE_CHECKPOINT_REVIEW.json](../../../research/feduba_fixed10_pair_20261103/REMOTE_CHECKPOINT_REVIEW.json) | `research/feduba_fixed10_pair_20261103` |
+| [CONTROLLER_STATE.json](../../../research/feduba_fixed10_pair_20261103/CONTROLLER_STATE.json) | `research/feduba_fixed10_pair_20261103` |
+| [FINAL_TERMINAL_OBSERVATION.json](../../../research/feduba_fixed10_pair_20261103/FINAL_TERMINAL_OBSERVATION.json) | `research/feduba_fixed10_pair_20261103` |
+| [FINAL_RESULT_SUMMARY.json](../../../research/feduba_fixed10_pair_20261103/FINAL_RESULT_SUMMARY.json) | `research/feduba_fixed10_pair_20261103` |
+| [FINAL_REPORT_KO.txt](../../../research/feduba_fixed10_pair_20261103/FINAL_REPORT_KO.txt) | `research/feduba_fixed10_pair_20261103` |
+| [PAPER_COMPARISON.txt](../../../research/feduba_fixed10_pair_20261103/PAPER_COMPARISON.txt) | `research/feduba_fixed10_pair_20261103` |
+| [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_fixed10_pair_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_fixed10_pair_20261103` |
+| [EVALUATOR_ROUTE_DIFFERENCE.json](../../../research/feduba_fixed10_pair_20261103/EVALUATOR_ROUTE_DIFFERENCE.json) | `research/feduba_fixed10_pair_20261103` |
