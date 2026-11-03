@@ -1281,3 +1281,14 @@
 | [COMPLETION_REPORT_KO.txt](../../../research/feduba_rng_policy_source_review_20261103/COMPLETION_REPORT_KO.txt) | `research/feduba_rng_policy_source_review_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_rng_policy_source_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_rng_policy_source_review_20261103` |
 | [LOCAL_MEMORY_READINESS_OBSERVATION.json](../../../research/feduba_rng_policy_source_review_20261103/LOCAL_MEMORY_READINESS_OBSERVATION.json) | `research/feduba_rng_policy_source_review_20261103` |
+| [controller.py](../../../research/feduba_positive_independent_recovery_20261103/controller.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [COPY_PROVENANCE.json](../../../research/feduba_positive_independent_recovery_20261103/COPY_PROVENANCE.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_positive_independent_recovery_20261103/INPUT_BINDING.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [native_memory.py](../../../research/feduba_positive_independent_recovery_20261103/native_memory.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [native_processes.py](../../../research/feduba_positive_independent_recovery_20261103/native_processes.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [PROFILE.json](../../../research/feduba_positive_independent_recovery_20261103/PROFILE.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_positive_independent_recovery_20261103/PROTOCOL.txt) | `research/feduba_positive_independent_recovery_20261103` |
+| [recovery_contract.py](../../../research/feduba_positive_independent_recovery_20261103/recovery_contract.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [review_recovery.py](../../../research/feduba_positive_independent_recovery_20261103/review_recovery.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_positive_independent_recovery_20261103/SOURCE_FREEZE.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [verify_recovery.py](../../../research/feduba_positive_independent_recovery_20261103/verify_recovery.py) | `research/feduba_positive_independent_recovery_20261103` |
