@@ -1480,3 +1480,14 @@
 | [SOURCE_COVERAGE_NOTE.txt](../../../research/feduba_remote_diagnostic_registration_20261103/SOURCE_COVERAGE_NOTE.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_remote_diagnostic_registration_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_remote_diagnostic_registration_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [EXPORT_PROFILE.json](../../../research/feduba_endpoint_review_delivery_20261103/EXPORT_PROFILE.json) | `research/feduba_endpoint_review_delivery_20261103` |
+| [EXPORT_INPUT_BINDING.json](../../../research/feduba_endpoint_review_delivery_20261103/EXPORT_INPUT_BINDING.json) | `research/feduba_endpoint_review_delivery_20261103` |
+| [PACKET_BINDING.json](../../../research/feduba_endpoint_review_delivery_20261103/PACKET_BINDING.json) | `research/feduba_endpoint_review_delivery_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_endpoint_review_delivery_20261103/PROTOCOL.txt) | `research/feduba_endpoint_review_delivery_20261103` |
+| [native_memory.py](../../../research/feduba_endpoint_review_delivery_20261103/native_memory.py) | `research/feduba_endpoint_review_delivery_20261103` |
+| [native_processes.py](../../../research/feduba_endpoint_review_delivery_20261103/native_processes.py) | `research/feduba_endpoint_review_delivery_20261103` |
+| [load_checkpoint.py](../../../research/feduba_endpoint_review_delivery_20261103/load_checkpoint.py) | `research/feduba_endpoint_review_delivery_20261103` |
+| [export_endpoints.py](../../../research/feduba_endpoint_review_delivery_20261103/export_endpoints.py) | `research/feduba_endpoint_review_delivery_20261103` |
+| [readiness_observer_source.py](../../../research/feduba_endpoint_review_delivery_20261103/readiness_observer_source.py) | `research/feduba_endpoint_review_delivery_20261103` |
+| [LOCAL_READINESS_OBSERVATION.json](../../../research/feduba_endpoint_review_delivery_20261103/LOCAL_READINESS_OBSERVATION.json) | `research/feduba_endpoint_review_delivery_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_endpoint_review_delivery_20261103/SOURCE_FREEZE.json) | `research/feduba_endpoint_review_delivery_20261103` |
