@@ -1084,3 +1084,13 @@
 | [LOCAL_READBACK_FAILURE_OBSERVATION.json](../../../research/feduba_author_archive_review_20261103/LOCAL_READBACK_FAILURE_OBSERVATION.json) | `research/feduba_author_archive_review_20261103` |
 | [METADATA_READBACK_PROTOCOL.txt](../../../research/feduba_author_archive_review_20261103/METADATA_READBACK_PROTOCOL.txt) | `research/feduba_author_archive_review_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_author_archive_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_author_archive_review_20261103` |
+| [PROFILE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/PROFILE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/INPUT_BINDING.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/PROTOCOL.txt) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [native_memory.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/native_memory.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [native_processes.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/native_processes.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [common.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/common.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [derive_direction.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/derive_direction.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [verify_direction.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/verify_direction.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [controller.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/controller.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_FREEZE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
