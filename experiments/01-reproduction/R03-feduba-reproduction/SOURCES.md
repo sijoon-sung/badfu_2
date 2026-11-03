@@ -1559,3 +1559,13 @@
 | [SOURCE_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/SOURCE_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |
 | [INSPECTION_RUN_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/INSPECTION_RUN_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |
 | [READINESS_RUN_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/READINESS_RUN_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [PROFILE_V2.json](../../../research/feduba_endpoint_local_receive_20261103/PROFILE_V2.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [V2_DELTA_BINDING.json](../../../research/feduba_endpoint_local_receive_20261103/V2_DELTA_BINDING.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt](../../../research/feduba_endpoint_local_receive_20261103/READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt) | `research/feduba_endpoint_local_receive_20261103` |
+| [INSPECTION_PROFILE_V2.json](../../../research/feduba_endpoint_local_receive_20261103/INSPECTION_PROFILE_V2.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [receive_common_v2.py](../../../research/feduba_endpoint_local_receive_20261103/receive_common_v2.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [probe_cpu_runtime_v2.py](../../../research/feduba_endpoint_local_receive_20261103/probe_cpu_runtime_v2.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [verify_cpu_storage_v2.py](../../../research/feduba_endpoint_local_receive_20261103/verify_cpu_storage_v2.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [receive_packet_v2.py](../../../research/feduba_endpoint_local_receive_20261103/receive_packet_v2.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [inspect_source_v2.py](../../../research/feduba_endpoint_local_receive_20261103/inspect_source_v2.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [SOURCE_FREEZE_V2.json](../../../research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE_V2.json) | `research/feduba_endpoint_local_receive_20261103` |

@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "6a37fbbb92a42857f63cfbe79eca113ed4442fc795d7ecb032ee9628de629cca",
+  "registry_sha256": "36ea98ef4ea321e44abaa8e0a001aedaeec8998bb1a3e9e48ab93647678fabba",
   "cards": 28,
-  "unique_source_documents": 1874,
+  "unique_source_documents": 1884,
   "top_level_folders": 153,
   "folders_linked_to_cards": 105,
   "source_sha256": {
@@ -1807,6 +1807,16 @@
     "research/feduba_endpoint_local_receive_20261103/SOURCE_PUBLICATION.json": "b10469e96ee8497e748ccb95e7f5a5e463e7b002d2ccc89cd40fbee81d46c573",
     "research/feduba_endpoint_local_receive_20261103/INSPECTION_RUN_PUBLICATION.json": "cba1d47be2ce2e8bd96e5243fb25dc200a556aa995583a939f402399b6c3dcaa",
     "research/feduba_endpoint_local_receive_20261103/READINESS_RUN_PUBLICATION.json": "1f3c1db8a0680d680a9ae9ed975e2ce21be119c535fe40848388ca77003ee269",
+    "research/feduba_endpoint_local_receive_20261103/PROFILE_V2.json": "07dba79f2653e9e08897eedf831526703d5892555978674daabc84401cc9248d",
+    "research/feduba_endpoint_local_receive_20261103/V2_DELTA_BINDING.json": "cb10a7c29248256afc2bebc9891cd05ed79c0f73efd4e23422814dcc5860106a",
+    "research/feduba_endpoint_local_receive_20261103/READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt": "753f1b1962b9ee7aa29294442d901dd44880a9d0e0d328325b5f1f7b915c3681",
+    "research/feduba_endpoint_local_receive_20261103/INSPECTION_PROFILE_V2.json": "1e4911096ad76447745d5991ad74c834fe13d92d19fd94069cd1bab175f2bf13",
+    "research/feduba_endpoint_local_receive_20261103/receive_common_v2.py": "683c354792a9c7fb06053fba7eff73e891ab9db0a95cc6d0b7fb2a2f7a621d4e",
+    "research/feduba_endpoint_local_receive_20261103/probe_cpu_runtime_v2.py": "df710ecb98425f690d0c4627d31851311d7ae8833808674dbc5b8f02c03b3513",
+    "research/feduba_endpoint_local_receive_20261103/verify_cpu_storage_v2.py": "f1d3df3e91b43f6e39c94eade65351cd32959716810a99e3c25cec379ec8373d",
+    "research/feduba_endpoint_local_receive_20261103/receive_packet_v2.py": "388319d168189c786ffd7074e4189c0ca8bf6136059169d029e8db7e77f5cc11",
+    "research/feduba_endpoint_local_receive_20261103/inspect_source_v2.py": "8d580eb9dd10c40ea667d951130c8d93f3ea7a3d1b037862df246c46702c5c2d",
+    "research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE_V2.json": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -2247,7 +2257,8 @@
         "R03"
       ],
       "top_level_documents": [
-        "research/feduba_endpoint_local_receive_20261103/PROTOCOL.txt"
+        "research/feduba_endpoint_local_receive_20261103/PROTOCOL.txt",
+        "research/feduba_endpoint_local_receive_20261103/READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

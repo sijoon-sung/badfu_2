@@ -1,0 +1,256 @@
+{
+  "state": "prepared_v1_to_v2_metadata_binding_only_source_delta",
+  "files": [
+    {
+      "new_file": "probe_cpu_runtime_v2.py",
+      "base_file": "probe_cpu_runtime.py",
+      "base_sha256": "44041813ecbec0707094a15b8cbd6aa72b87caee1a865e69f320a7c14b8546db",
+      "allowed_literal_replacements": [
+        [
+          "from receive_common import",
+          "from receive_common_v2 import"
+        ],
+        [
+          "RUN_FREEZE.json",
+          "RUN_FREEZE_V2.json"
+        ],
+        [
+          "probe_cpu_runtime.py",
+          "probe_cpu_runtime_v2.py"
+        ],
+        [
+          "verify_cpu_storage.py",
+          "verify_cpu_storage_v2.py"
+        ],
+        [
+          "ROOT/'private_ledger';private.mkdir(exist_ok=False)",
+          "ROOT/'private_ledger'/'v2';private.mkdir(parents=True,exist_ok=False)"
+        ],
+        [
+          "RECEIVE_ONCE.json",
+          "RECEIVE_ONCE_V2.json"
+        ],
+        [
+          "RECEIVE_ADMISSION.json",
+          "RECEIVE_ADMISSION_V2.json"
+        ],
+        [
+          "RUNTIME_PROBE_ADMISSION.json",
+          "RUNTIME_PROBE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_VERIFIED.json",
+          "CPU_RUNTIME_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_FAILURE.json",
+          "CPU_RUNTIME_FAILURE_V2.json"
+        ],
+        [
+          "CPU_STORAGE_ADMISSION.json",
+          "CPU_STORAGE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_PRELOAD_PACKET_GUARD.json",
+          "CPU_PRELOAD_PACKET_GUARD_V2.json"
+        ],
+        [
+          "CPU_STORAGE_VERIFIED.json",
+          "CPU_STORAGE_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_STORAGE_FAILURE.json",
+          "CPU_STORAGE_FAILURE_V2.json"
+        ],
+        [
+          "TRANSFER_RECEIPT.json",
+          "TRANSFER_RECEIPT_V2.json"
+        ],
+        [
+          "RECEIVED_PACKET_GUARD.json",
+          "RECEIVED_PACKET_GUARD_V2.json"
+        ],
+        [
+          "RECEIVE_RESULT.json",
+          "RECEIVE_RESULT_V2.json"
+        ],
+        [
+          "RECEIVE_COMPLETION.json",
+          "RECEIVE_COMPLETION_V2.json"
+        ],
+        [
+          "RECEIVE_FAILURE.json",
+          "RECEIVE_FAILURE_V2.json"
+        ]
+      ]
+    },
+    {
+      "new_file": "verify_cpu_storage_v2.py",
+      "base_file": "verify_cpu_storage.py",
+      "base_sha256": "047d2fac4f3fdb2b459ed3daf2509dd5209a6caf97789caa3cbb4798696e4ca8",
+      "allowed_literal_replacements": [
+        [
+          "from receive_common import",
+          "from receive_common_v2 import"
+        ],
+        [
+          "RUN_FREEZE.json",
+          "RUN_FREEZE_V2.json"
+        ],
+        [
+          "probe_cpu_runtime.py",
+          "probe_cpu_runtime_v2.py"
+        ],
+        [
+          "verify_cpu_storage.py",
+          "verify_cpu_storage_v2.py"
+        ],
+        [
+          "ROOT/'private_ledger';private.mkdir(exist_ok=False)",
+          "ROOT/'private_ledger'/'v2';private.mkdir(parents=True,exist_ok=False)"
+        ],
+        [
+          "RECEIVE_ONCE.json",
+          "RECEIVE_ONCE_V2.json"
+        ],
+        [
+          "RECEIVE_ADMISSION.json",
+          "RECEIVE_ADMISSION_V2.json"
+        ],
+        [
+          "RUNTIME_PROBE_ADMISSION.json",
+          "RUNTIME_PROBE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_VERIFIED.json",
+          "CPU_RUNTIME_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_FAILURE.json",
+          "CPU_RUNTIME_FAILURE_V2.json"
+        ],
+        [
+          "CPU_STORAGE_ADMISSION.json",
+          "CPU_STORAGE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_PRELOAD_PACKET_GUARD.json",
+          "CPU_PRELOAD_PACKET_GUARD_V2.json"
+        ],
+        [
+          "CPU_STORAGE_VERIFIED.json",
+          "CPU_STORAGE_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_STORAGE_FAILURE.json",
+          "CPU_STORAGE_FAILURE_V2.json"
+        ],
+        [
+          "TRANSFER_RECEIPT.json",
+          "TRANSFER_RECEIPT_V2.json"
+        ],
+        [
+          "RECEIVED_PACKET_GUARD.json",
+          "RECEIVED_PACKET_GUARD_V2.json"
+        ],
+        [
+          "RECEIVE_RESULT.json",
+          "RECEIVE_RESULT_V2.json"
+        ],
+        [
+          "RECEIVE_COMPLETION.json",
+          "RECEIVE_COMPLETION_V2.json"
+        ],
+        [
+          "RECEIVE_FAILURE.json",
+          "RECEIVE_FAILURE_V2.json"
+        ]
+      ]
+    },
+    {
+      "new_file": "receive_packet_v2.py",
+      "base_file": "receive_packet.py",
+      "base_sha256": "f0066e4b8969d44d407ecf897d9d3428b4da56617d3635e5090875fe09898016",
+      "allowed_literal_replacements": [
+        [
+          "from receive_common import",
+          "from receive_common_v2 import"
+        ],
+        [
+          "RUN_FREEZE.json",
+          "RUN_FREEZE_V2.json"
+        ],
+        [
+          "probe_cpu_runtime.py",
+          "probe_cpu_runtime_v2.py"
+        ],
+        [
+          "verify_cpu_storage.py",
+          "verify_cpu_storage_v2.py"
+        ],
+        [
+          "ROOT/'private_ledger';private.mkdir(exist_ok=False)",
+          "ROOT/'private_ledger'/'v2';private.mkdir(parents=True,exist_ok=False)"
+        ],
+        [
+          "RECEIVE_ONCE.json",
+          "RECEIVE_ONCE_V2.json"
+        ],
+        [
+          "RECEIVE_ADMISSION.json",
+          "RECEIVE_ADMISSION_V2.json"
+        ],
+        [
+          "RUNTIME_PROBE_ADMISSION.json",
+          "RUNTIME_PROBE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_VERIFIED.json",
+          "CPU_RUNTIME_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_RUNTIME_FAILURE.json",
+          "CPU_RUNTIME_FAILURE_V2.json"
+        ],
+        [
+          "CPU_STORAGE_ADMISSION.json",
+          "CPU_STORAGE_ADMISSION_V2.json"
+        ],
+        [
+          "CPU_PRELOAD_PACKET_GUARD.json",
+          "CPU_PRELOAD_PACKET_GUARD_V2.json"
+        ],
+        [
+          "CPU_STORAGE_VERIFIED.json",
+          "CPU_STORAGE_VERIFIED_V2.json"
+        ],
+        [
+          "CPU_STORAGE_FAILURE.json",
+          "CPU_STORAGE_FAILURE_V2.json"
+        ],
+        [
+          "TRANSFER_RECEIPT.json",
+          "TRANSFER_RECEIPT_V2.json"
+        ],
+        [
+          "RECEIVED_PACKET_GUARD.json",
+          "RECEIVED_PACKET_GUARD_V2.json"
+        ],
+        [
+          "RECEIVE_RESULT.json",
+          "RECEIVE_RESULT_V2.json"
+        ],
+        [
+          "RECEIVE_COMPLETION.json",
+          "RECEIVE_COMPLETION_V2.json"
+        ],
+        [
+          "RECEIVE_FAILURE.json",
+          "RECEIVE_FAILURE_V2.json"
+        ]
+      ]
+    }
+  ],
+  "common_base_sha256": "586163c7fc8ada99a31755884ac2bd3a724d278bc3e5790a41e4b83f770d2153",
+  "common_change": "Parameterize a fresh readiness path/SHA/state/sourcefreeze/age binding; distinct V2 profile/publication/freezes/ledger names. No model or numeric kernel change."
+}
