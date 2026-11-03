@@ -1,0 +1,121 @@
+{
+    "state":  "final_source_and_metadata_readback",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "a81cf6aca879fb6a8469a5d29b2482dad85b25e052e652bd17869427dd294e70",
+                      "bytes":  40
+                  },
+                  {
+                      "name":  "DISCOVERY.json",
+                      "sha256":  "ad23cf5278a03c9e4f22d71997b71b32faf15f0b1de2b6dcc45b448efd7a8842",
+                      "bytes":  1180
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "0744c37800cd10a6463c8dfd100a53e5cf06e31a4ae60d89d5ce282ca11ff5ab",
+                      "bytes":  1653
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "2a1204e5cad6634d78c89a21005a1db2f624c0ba41995ff337e9727a8cfa1214",
+                      "bytes":  2787
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "810137528d25cfa15b6827a65db094731a8fec5f6223443f9e3e4e2cbd554ee0",
+                      "bytes":  2489
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "review_archive.py",
+                      "sha256":  "fb39920804ac6977f699d358a439d00855574793fca823bcc8de7d991d4062c3",
+                      "bytes":  9322
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "e56cdf056be88b0d552d73ec8e7bca9a35725d2fce369242360a98becf3f6297",
+                      "bytes":  724
+                  },
+                  {
+                      "name":  "SOURCE_PUBLICATION.json",
+                      "sha256":  "be7235fcda0cd3a72b968df6099627ada66f338d8cc58399b3f2de906b294de5",
+                      "bytes":  2828
+                  },
+                  {
+                      "name":  "RUN_PUBLICATION.json",
+                      "sha256":  "4ed9a1359cde0f2f405660a68524525de993e52e9b0469eebb36b86cbc52a892",
+                      "bytes":  2830
+                  },
+                  {
+                      "name":  "RESULT.json",
+                      "sha256":  "f17a9c78dfaf07c129c45dc0ff4edc67186eaae382e3798f6571013194201ca2",
+                      "bytes":  5393
+                  },
+                  {
+                      "name":  "COMPLETION.json",
+                      "sha256":  "b7cf6d00c321e47864ac92e4d72f7d7ad1fc1d81bdfc6c2d2ad8a8aec9af61ac",
+                      "bytes":  424
+                  },
+                  {
+                      "name":  "ONCE.json",
+                      "sha256":  "e53ac5a04f04bf9083d9b45717c7c2bda49d15253a27565e9bfd52b4402bc662",
+                      "bytes":  205
+                  },
+                  {
+                      "name":  "ADMISSION.json",
+                      "sha256":  "0ae2eee8a0af335a04620f7de81ca21c1b162d26c40a87534b9b2515e0b1d07d",
+                      "bytes":  339
+                  },
+                  {
+                      "name":  "DOWNLOAD_RECEIPT.json",
+                      "sha256":  "d0ca785b7d8b7906b413ceefed74330abbd58fb0301b5ab0785d2cb9d97c7960",
+                      "bytes":  318
+                  },
+                  {
+                      "name":  "SOURCE_INVENTORY.json",
+                      "sha256":  "ccccef1875023bdb157b83a151b4626f8d29d7567dbf1bd5a3c0f11df0f74ea4",
+                      "bytes":  77032
+                  },
+                  {
+                      "name":  "PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "df17168a82878d0049b671d057cc7710a8f615f79e96d164b8c13c2e2628b4a6",
+                      "bytes":  2506
+                  },
+                  {
+                      "name":  "TERMINAL_OBSERVATION.json",
+                      "sha256":  "921f53fd7eb41df1ffdd69c315a7e109a731fff803a27cd636da9fcd41c51256",
+                      "bytes":  331
+                  },
+                  {
+                      "name":  "REPORT_KO.txt",
+                      "sha256":  "8a4b300cebfb69cfd31b0032e7c883a2ca6d2db2028cba96e9378a0671c73af8",
+                      "bytes":  2731
+                  },
+                  {
+                      "name":  "FINAL_RESULT_SUMMARY.json",
+                      "sha256":  "28b8c95e430a7430a9a5f64fb7e305de254c712b671d371dc5dc5d1691232197",
+                      "bytes":  1214
+                  },
+                  {
+                      "name":  "NEXT_STAGE_RATIONALE.txt",
+                      "sha256":  "135c4013f9bb0db16cc53cdd197b62035f97c739bb9eb7f0db11838b72b0e93f",
+                      "bytes":  1385
+                  }
+              ],
+    "model_reads":  0
+}
