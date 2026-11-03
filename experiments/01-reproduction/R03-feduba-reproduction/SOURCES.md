@@ -1526,3 +1526,5 @@
 | [native_processes.py](../../../research/feduba_endpoint_archive_integrity_20261103/native_processes.py) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [check_archive.py](../../../research/feduba_endpoint_archive_integrity_20261103/check_archive.py) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_endpoint_archive_integrity_20261103/SOURCE_FREEZE.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/SOURCE_PUBLICATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/RUN_PUBLICATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
