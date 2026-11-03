@@ -1069,3 +1069,10 @@
 | [SOURCE_DISCOVERY.json](../../../research/feduba_author_archive_review_20261103/SOURCE_DISCOVERY.json) | `research/feduba_author_archive_review_20261103` |
 | [inspect_archive.py](../../../research/feduba_author_archive_review_20261103/inspect_archive.py) | `research/feduba_author_archive_review_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_author_archive_review_20261103/SOURCE_FREEZE.json) | `research/feduba_author_archive_review_20261103` |
+| [PACKAGING_RECOVERY_PROTOCOL.txt](../../../research/feduba_author_archive_review_20261103/PACKAGING_RECOVERY_PROTOCOL.txt) | `research/feduba_author_archive_review_20261103` |
+| [RECOVERY_PROFILE.json](../../../research/feduba_author_archive_review_20261103/RECOVERY_PROFILE.json) | `research/feduba_author_archive_review_20261103` |
+| [inspect_archive_v2.py](../../../research/feduba_author_archive_review_20261103/inspect_archive_v2.py) | `research/feduba_author_archive_review_20261103` |
+| [REVIEW_FAILURE.json](../../../research/feduba_author_archive_review_20261103/REVIEW_FAILURE.json) | `research/feduba_author_archive_review_20261103` |
+| [REVIEW_ONCE.json](../../../research/feduba_author_archive_review_20261103/REVIEW_ONCE.json) | `research/feduba_author_archive_review_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION.json) | `research/feduba_author_archive_review_20261103` |
+| [SOURCE_FREEZE_V2.json](../../../research/feduba_author_archive_review_20261103/SOURCE_FREEZE_V2.json) | `research/feduba_author_archive_review_20261103` |

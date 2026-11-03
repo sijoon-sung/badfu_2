@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "ab70a28d5181b874a6a8e2cbb867d74604640269c069594f135e29ce983ad551",
+  "registry_sha256": "cfdb55ed844f9179bc14e5588e5087dc5e36933023abbe214d23d76b565d31a2",
   "cards": 28,
-  "unique_source_documents": 1384,
+  "unique_source_documents": 1391,
   "top_level_folders": 138,
   "folders_linked_to_cards": 90,
   "source_sha256": {
@@ -1317,6 +1317,13 @@
     "research/feduba_author_archive_review_20261103/SOURCE_DISCOVERY.json": "41b73837abc6285a7dc4b5787cc3a00bfeeb222761590c286a55f3e6884a5d96",
     "research/feduba_author_archive_review_20261103/inspect_archive.py": "52f0651c502aca4b019d5465f323b374536a0b78b6a2b5a0aa8418d64cf9ed64",
     "research/feduba_author_archive_review_20261103/SOURCE_FREEZE.json": "558dfe9e36286780cc9c25696b2ac1fe6c06b6ec5eaea9007dcb85f92aa119c7",
+    "research/feduba_author_archive_review_20261103/PACKAGING_RECOVERY_PROTOCOL.txt": "2a250c4dc8cd5de1019dcbf8ecd9b0c6b1c8fa6157a5247d6e0bfdc9df08d92b",
+    "research/feduba_author_archive_review_20261103/RECOVERY_PROFILE.json": "bf5744fe79affe9383bd3421329a5c563e04c1bd5cc7d487721123ead0e9a695",
+    "research/feduba_author_archive_review_20261103/inspect_archive_v2.py": "55c367f9a34e829b1737f918112440f2bf866a4824b85cca33d9e7de5244f051",
+    "research/feduba_author_archive_review_20261103/REVIEW_FAILURE.json": "e3a7c06c288c8d3c7d1de3a38e4bbfaa2327d192cd8a32cf03bc2f18f49d4421",
+    "research/feduba_author_archive_review_20261103/REVIEW_ONCE.json": "6903812cc87959b87096086eef459a79f25cb465fdda0d280dff65cfccf9c3b8",
+    "research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION.json": "e237a143b6d90234fc37565164537b3b448f3aa3413166359d1817c84ddb4239",
+    "research/feduba_author_archive_review_20261103/SOURCE_FREEZE_V2.json": "f427a2bcdad24ebbdf2b68fa387fdf859290d0b476354ae654c90820cf776727",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1704,6 +1711,7 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_author_archive_review_20261103/PACKAGING_RECOVERY_PROTOCOL.txt",
         "research/feduba_author_archive_review_20261103/PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"

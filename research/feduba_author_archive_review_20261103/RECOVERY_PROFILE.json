@@ -1,0 +1,19 @@
+{
+  "state": "explicit_model_free_archive_packaging_recovery_before_execution",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "model_loads": 0,
+  "download_requests": 0,
+  "old_inspector_rerun": false,
+  "source_archive_reused": "private_inputs/publisher_archive.zip",
+  "required_archive_git_blob": "3bea03efa9c6544864e818ca670bacbd7462a25c",
+  "original_failure_sha256": "e3a7c06c288c8d3c7d1de3a38e4bbfaa2327d192cd8a32cf03bc2f18f49d4421",
+  "original_source_freeze_sha256": "558dfe9e36286780cc9c25696b2ac1fe6c06b6ec5eaea9007dcb85f92aa119c7",
+  "classification_rule": "Skip AST only for __MACOSX/._* entries whose first4bytes exactly match AppleDouble 00051607. All genuine .py files still require normal AST parsing without code execution; any other NUL/source failure stops and is preserved.",
+  "all_original_source_profile_failure_bytes_preserved": true
+}
