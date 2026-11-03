@@ -1466,3 +1466,17 @@
 | [METADATA_TERMINAL_OBSERVATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_TERMINAL_OBSERVATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [REGISTRATION_SOURCE_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_SOURCE_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [REGISTRATION_RUN_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_RUN_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTERED.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTERED.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_COMPLETION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_COMPLETION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_ONCE.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_ONCE.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_ADMISSION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_ADMISSION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_PUBLICATION_BYTE_CHECKS.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_TERMINAL_OBSERVATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_TERMINAL_OBSERVATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTERED_EXTERNAL_AUDIT.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTERED_EXTERNAL_AUDIT.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [GUARD_DESCRIPTOR.json](../../../research/feduba_remote_diagnostic_registration_20261103/GUARD_DESCRIPTOR.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [GUARD_DESCRIPTOR_SEAL.json](../../../research/feduba_remote_diagnostic_registration_20261103/GUARD_DESCRIPTOR_SEAL.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_remote_diagnostic_registration_20261103/REPORT_KO.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [FINAL_RESULT_SUMMARY.json](../../../research/feduba_remote_diagnostic_registration_20261103/FINAL_RESULT_SUMMARY.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [SOURCE_COVERAGE_NOTE.txt](../../../research/feduba_remote_diagnostic_registration_20261103/SOURCE_COVERAGE_NOTE.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_remote_diagnostic_registration_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [FINAL_METADATA_CHECK.json](../../../research/feduba_remote_diagnostic_registration_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_remote_diagnostic_registration_20261103` |

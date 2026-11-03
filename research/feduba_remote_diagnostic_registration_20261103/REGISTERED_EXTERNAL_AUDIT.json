@@ -1,0 +1,70 @@
+{
+  "state": "remote_only_three_diagnostic_endpoint_pairs_stored_and_guarded_performance_failed",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "host_label": "dislab",
+  "prior_catalog_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "prior_case_count": 25,
+  "source_freeze_sha256": "f0ca4c2bb87e939275fcb0fd0ee53b92ea8a4a2021cedbaefe2d2bdfc75c5b48",
+  "source_publication_commit": "44fd55e7ccdd084739f805b858ffb5271734376d",
+  "guard": {
+    "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+    "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+    "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+    "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+    "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+  },
+  "first_guard_result": {
+    "state": "both_external_sealed_packets_and_endpoint_hashes_verified",
+    "hashed_files": 809,
+    "model_or_tensor_loads": 0,
+    "endpoint_count": 4,
+    "existing_CPU_storage_receipts_reused": true
+  },
+  "existing_baseline_evaluation_sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe",
+  "existing_separate_positive_recovery_sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+  "original_positive_verifier_failed_and_absent_receipt_preserved": true,
+  "all_prior_audit_file_hashes": {
+    "audit/AUDIT.json": "12cce1ed035a90638bc2d0f1cbae5c130e290ee3526c50058c063f50c6933be7",
+    "audit/AUDIT_initial_bn_dtype_check.json": "57d3a79d1dc596b23a92f0e4caa0a2a5e65edfcad29259473623fce859b04271",
+    "audit/BADFU_ALGORITHM_ALIGNMENT.json": "c1f2f6e67b00285cd0cfdd52f15d88d777862a28d759259dc84063d6aeb1df0f",
+    "audit/BADFU_RESUMED_COMPLETED.json": "650d4982b1dbfb6b7ed3970309eb4b6344fd8fc4050dd45ce267f94f8e4935a6",
+    "audit/CONFIRMED_BADFU_S20261023_V1.json": "86109663ef96360335ea89a103b0c4856ca8f507ef0e51fe0e05eac6501a99ba",
+    "audit/FEDUBA_CLEANFL20_S42_20261031_DELIVERY.json": "cafd2586fa4ea7b6d6dbc278d2dabae248bc7438e58031a507f9739700dff0bf",
+    "audit/FEDUBA_PAIR_S42_CPU_SSS125_FU20_20261031_DELIVERY.json": "8512ed1c143ca843b78013d962fc8151e6faa22994dc2877c81f397765fe039a",
+    "audit/FEDUBA_PUBLIC_FIXED10_CLEANFL20_S42_20261103_DELIVERY.json": "dab196715977a754ca597845fdbc51fcf8e9b916f7c7fb15e6bf49bf0c547292",
+    "audit/FUBA_PARTIAL_ROUND0063_DELIVERY.json": "b6e4b8b5f251198252f835ae4457bf388523fbd9f9b738fed101f7d820fa161b",
+    "audit/FUBA_REFERENCE_MNIST_DBA_20261031_DELIVERY.json": "55c58eae2ef811c966a9e08e1f58b7ceb59c4a5f70000481b958d3696175477b",
+    "audit/FUBA_SEED_REPRO_S5129832_20261031_DELIVERY.json": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+    "audit/FUBA_V2_ROUND100_DELIVERY.json": "68086cbb6bb3ff90dc7ff9b4b1d2610038e30b652d0d2d1cfd9e1b6f65de013f",
+    "audit/FUBA_V3_STOPPED15_DELIVERY.json": "92ab3db8c18fc36c98cfa5737f7fb35a5f0670f74834d6bfc5f9ade0d222320a",
+    "audit/FUBA_V4_STOPPED23_DELIVERY.json": "5d7b915e487b0c64d948b3636c2839c39224761ddeffd1e6b65c5ccd18a98a7e",
+    "audit/FUBA_V5_KD10_PAIR_DELIVERY.json": "df7ef9d6506bf7c440692712a3f8510154bf7c2126ebe0ee3e19c58cac9801c2",
+    "audit/FUBA_V5_ROUND100_DELIVERY.json": "198902f9ad893704802d687fc6f132ceaa47865765a841d2ba53dba456e1a7b3",
+    "audit/FUBA_V6_KD10_PAIR_DELIVERY.json": "afbe74371dc22c285e4c535c2bed2e6d416cdab335e4177fca76be1d545b760a",
+    "audit/FUBA_V7_KD10_PAIR_DELIVERY.json": "4688331e69d2e269c73f68b4721dbe6d0e817a428bbe001826fa59a6fa9370fb",
+    "audit/INVENTORY.json": "8351062033e685c050e48f9df8bd31828637972976b7a3a94a95768a092f1309",
+    "audit/PARTITION_AUDIT.json": "676d2ada3f6caa779d7aaec3694dbcbf3b3a7d67410cb82e15934946f3accf26",
+    "audit/STATE.json": "5298a3b99fa0d731083089479f7188db782d90c563752d535f741a7bc7185934",
+    "audit/verify_remote_initial_dtype_check.py": "349f5e6f82f81287be375213fc79ffde3a62ed8ca7725acece38c96e21ed42e8",
+    "audit/setup_attempts/create_dislab_views.ps1": "c87b8b64493d3df3598b086eda7cfa972626b0b6411b5196a9434f80b93552ba",
+    "audit/original_navigation_remote/workspace_0/README.md": "c5fd182dc11604ce95cfe00a338877c6bee7a8b5b6f997b57a3fd54b2a3eb736"
+  },
+  "models_or_tensors_loaded": 0,
+  "CPU_or_evaluation_forward_calls": 0,
+  "model_files_copied": 0,
+  "local_delivery_complete": false,
+  "verified_stealth_latent_pair": false,
+  "detection_success_implied": false,
+  "overall_goal_complete": false
+}

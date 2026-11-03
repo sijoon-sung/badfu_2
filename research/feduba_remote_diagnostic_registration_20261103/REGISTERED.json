@@ -1,0 +1,197 @@
+{
+  "state": "registered_three_DISLAB_only_diagnostic_endpoint_pairs",
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "old_case_count": 25,
+  "new_case_count": 28,
+  "prior_catalog_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "new_catalog_sha256": "8cbb86b98bf44cfa344daca6df1326f1b2fafe946c3eceb3cf75dd961a21ec38",
+  "external_audit_sha256": "95b42f5bbc540983d451d48178271e885556e63859d3a2aa5a31e9b8fc93c209",
+  "external_audit_path": "D:\\TRAJECTORY_CATALOG_20261023\\audit\\FEDUBA_FIXED10_THREE_ENDPOINTS_DISLAB_DIAGNOSTIC_20261103.json",
+  "guard": {
+    "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+    "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+    "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+    "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+    "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+  },
+  "guard_passes": 4,
+  "declared_packet_file_hash_checks": 3236,
+  "selections": {
+    "benign": {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "diagnostic",
+      "post_type": "actual_FedEraser20_endpoint",
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+          "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+          "bytes": 44770315,
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\benign.pt",
+          "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+          "bytes": 44770315,
+          "payload_key": null
+        }
+      },
+      "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+      "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+        "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+        "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+        "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+        "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+      },
+      "guard_state": "all_snapshot_files_verified_on_this_host"
+    },
+    "minus": {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "diagnostic",
+      "post_type": "actual_FedEraser20_endpoint",
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+          "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+          "bytes": 44770315,
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\attack.pt",
+          "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+          "bytes": 44770315,
+          "payload_key": null
+        }
+      },
+      "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+      "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+        "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+        "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+        "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+        "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+      },
+      "guard_state": "all_snapshot_files_verified_on_this_host"
+    },
+    "plus": {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "diagnostic",
+      "post_type": "actual_FedEraser20_endpoint",
+      "server_inputs": {
+        "pre": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+          "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+          "bytes": 44770315,
+          "payload_key": null
+        },
+        "post": {
+          "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_positive_failed_eval_prefix_s42_20261103\\models\\attack_after.pt",
+          "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+          "bytes": 44770315,
+          "payload_key": null
+        }
+      },
+      "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+      "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+        "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+        "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+        "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+        "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+      },
+      "guard_state": "all_snapshot_files_verified_on_this_host"
+    }
+  },
+  "forbidden_purposes_denied": [
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "retrain_activation",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "global_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "client_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "purification_pilot",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "purpose": "approximate_FU",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "retrain_activation",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "global_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "client_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "purification_pilot",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "purpose": "approximate_FU",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "retrain_activation",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "global_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "client_history",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "purification_pilot",
+      "exit_code": 1
+    },
+    {
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "purpose": "approximate_FU",
+      "exit_code": 1
+    }
+  ],
+  "all_prior_cases_defaults_audit_bytes_preserved": true,
+  "local_catalogues_modified": false,
+  "local_model_delivery_complete": false,
+  "new_model_or_tensor_loads": 0,
+  "CPU_forward_calls": 0,
+  "new_training_or_evaluation": false,
+  "performance_gates_passed": false,
+  "overall_goal_complete": false
+}

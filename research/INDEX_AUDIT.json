@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "e3eeb460dfe3d2c1fe6d1d918e0cdd69f069ba8f98721a366a39fc02ef82acd7",
+  "registry_sha256": "a7c10f902e3839566211b185f3f75716cf871a1c0b5035a925f0a2c508c316ef",
   "cards": 28,
-  "unique_source_documents": 1781,
+  "unique_source_documents": 1795,
   "top_level_folders": 150,
   "folders_linked_to_cards": 102,
   "source_sha256": {
@@ -1714,6 +1714,20 @@
     "research/feduba_remote_diagnostic_registration_20261103/METADATA_TERMINAL_OBSERVATION.json": "c553e8b4b02e301bd01cc72e830b4a69c8b2002cdc3b88b2bab33a9ab055fe7d",
     "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_SOURCE_PUBLICATION.json": "8ccdbdd33d23fc038da57d617430a1a175a7819e4dfc11d156d1ef4488ab1b14",
     "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_RUN_PUBLICATION.json": "8ccdbdd33d23fc038da57d617430a1a175a7819e4dfc11d156d1ef4488ab1b14",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTERED.json": "3fa9732ff3a82f7f10588f7fea4ec79c6f554c1d3d8a5e6ba180ff027855c16f",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_COMPLETION.json": "2639b331871f284210f1e4b1ee7da092605d3adc5fe886f3d6976af0d31daa36",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_ONCE.json": "9c7b9a976e86f39662e4ffca946cd8da086627d269cf7caacfd766058db621e2",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_ADMISSION.json": "5355f05c257e77b3070d96eae53d2773dd2259605807c492786ffc8b3784af4b",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_PUBLICATION_BYTE_CHECKS.json": "77812d288ca423f0a83a391d0adc2e77397eefe19c29d0f3794ccb4bc05b281f",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_TERMINAL_OBSERVATION.json": "f783d91aa59ea4eaea756a72490600625582ffef0297feb798821d0ddcde30a8",
+    "research/feduba_remote_diagnostic_registration_20261103/REGISTERED_EXTERNAL_AUDIT.json": "95b42f5bbc540983d451d48178271e885556e63859d3a2aa5a31e9b8fc93c209",
+    "research/feduba_remote_diagnostic_registration_20261103/GUARD_DESCRIPTOR.json": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+    "research/feduba_remote_diagnostic_registration_20261103/GUARD_DESCRIPTOR_SEAL.json": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+    "research/feduba_remote_diagnostic_registration_20261103/REPORT_KO.txt": "fb7fd3e259323fd8664cea6b982cc35b034d67fd65192fa5bd5df858a98ce2f2",
+    "research/feduba_remote_diagnostic_registration_20261103/FINAL_RESULT_SUMMARY.json": "56f184cebaa69e5ea443db193d3b0016aa782e738bcae8b158d6b0545b969dae",
+    "research/feduba_remote_diagnostic_registration_20261103/SOURCE_COVERAGE_NOTE.txt": "3ea25fac39125bb123efdfeeff594736469e244dcca330e62b18a026b6e6972a",
+    "research/feduba_remote_diagnostic_registration_20261103/NEXT_STAGE_RATIONALE.txt": "a6e4a67111edab420427265ab2ee3c8e68168d2944b7f4a5351ba8d03b273878",
+    "research/feduba_remote_diagnostic_registration_20261103/FINAL_METADATA_CHECK.json": "fb115c8192807c8a5cc2785d0c6bc1cf4da891b9856ec944ef5dddac9833f3d3",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -2696,8 +2710,11 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_remote_diagnostic_registration_20261103/FINAL_RESULT_SUMMARY.json",
         "research/feduba_remote_diagnostic_registration_20261103/PROTOCOL.txt",
-        "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_PROTOCOL.txt"
+        "research/feduba_remote_diagnostic_registration_20261103/REGISTERED_EXTERNAL_AUDIT.json",
+        "research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_PROTOCOL.txt",
+        "research/feduba_remote_diagnostic_registration_20261103/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
