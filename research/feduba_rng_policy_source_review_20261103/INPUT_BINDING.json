@@ -1,0 +1,95 @@
+{
+  "state": "read_only_fixed_source_and_completed_actual_profile_metadata",
+  "inputs": {
+    "public/Fed_data_change.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_change.py",
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8"
+    },
+    "public/Fed_data_preprocess.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_preprocess.py",
+      "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb"
+    },
+    "public/Fed_model_initiation.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_model_initiation.py",
+      "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6"
+    },
+    "public/Fed_test.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_test.py",
+      "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421"
+    },
+    "public/Fed_train.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_train.py",
+      "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e"
+    },
+    "public/Fed_Unlearn_attack.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_Unlearn_attack.py",
+      "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d"
+    },
+    "public/Fed_Unlearn_main.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_Unlearn_main.py",
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d"
+    },
+    "public/README.md": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/README.md",
+      "sha256": "ca56265247744c325bb833d4dd910c9f65d7488054c1456851e0c1d5c4bdb262"
+    },
+    "public/trigger_generate_function.py": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/trigger_generate_function.py",
+      "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06"
+    },
+    "positive/fu_core.py": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/fu_core.py",
+      "sha256": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e"
+    },
+    "positive/fu_training.py": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/fu_training.py",
+      "sha256": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320"
+    },
+    "positive/runtime_common.py": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/runtime_common.py",
+      "sha256": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d"
+    },
+    "positive/fu_runner.py": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/fu_runner.py",
+      "sha256": "1bd6bc465980b85bbb2e6dd029711b25bda09ffe61815e8b40084a65d2c6864a"
+    },
+    "positive/SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/SOURCE_FREEZE.json",
+      "sha256": "1691ff30388b1444851d5a73bd566dbf893dc3a315464e6a1af63977541c0936"
+    },
+    "positive/FU_RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/FU_RUN_FREEZE.json",
+      "sha256": "1eefd2e292865e5adad041ca2ab4674a8dccc4305857281d3becee4f758a05b7"
+    },
+    "positive/FU_LAUNCH_PROFILE.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/FU_LAUNCH_PROFILE.json",
+      "sha256": "1b1dbd985b88b2aef6e7511c61a97bd5e428009d7d43ca6047d96f4a15c23b88"
+    },
+    "positive/FU_attack_VERIFIED.json": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/FU_attack_VERIFIED.json",
+      "sha256": "b0c2ec99aab73d444cea8d02f22b773f3eed7bb66fcf99288150b17c9c02d2ca"
+    },
+    "minus/fu_core.py": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu_core.py",
+      "sha256": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e"
+    },
+    "minus/fu_training.py": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu_training.py",
+      "sha256": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320"
+    },
+    "minus/runtime_common.py": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/runtime_common.py",
+      "sha256": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d"
+    },
+    "foundation/clean_fl_runner.py": {
+      "path": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/clean_fl_runner.py",
+      "sha256": "46ee258ea39d39bc9820e7a686635ecb074fbe5d6f748ba247efd31864705d1c"
+    },
+    "foundation/SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/SOURCE_FREEZE.json",
+      "sha256": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b"
+    }
+  },
+  "private_tensor_inputs": 0,
+  "old_model_or_query_reads": 0
+}

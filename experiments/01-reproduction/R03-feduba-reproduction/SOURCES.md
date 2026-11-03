@@ -1265,3 +1265,11 @@
 | [FINAL_REPORT_KO.txt](../../../research/feduba_positive_evaluation_prefix_archive_20261103/FINAL_REPORT_KO.txt) | `research/feduba_positive_evaluation_prefix_archive_20261103` |
 | [COMPARISON.txt](../../../research/feduba_positive_evaluation_prefix_archive_20261103/COMPARISON.txt) | `research/feduba_positive_evaluation_prefix_archive_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_positive_evaluation_prefix_archive_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_positive_evaluation_prefix_archive_20261103` |
+| [.gitattributes](../../../research/feduba_rng_policy_source_review_20261103/.gitattributes) | `research/feduba_rng_policy_source_review_20261103` |
+| [.gitignore](../../../research/feduba_rng_policy_source_review_20261103/.gitignore) | `research/feduba_rng_policy_source_review_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_rng_policy_source_review_20261103/INPUT_BINDING.json) | `research/feduba_rng_policy_source_review_20261103` |
+| [PROFILE.json](../../../research/feduba_rng_policy_source_review_20261103/PROFILE.json) | `research/feduba_rng_policy_source_review_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_rng_policy_source_review_20261103/PROTOCOL.txt) | `research/feduba_rng_policy_source_review_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_rng_policy_source_review_20261103/REPORT_KO.txt) | `research/feduba_rng_policy_source_review_20261103` |
+| [review_source.py](../../../research/feduba_rng_policy_source_review_20261103/review_source.py) | `research/feduba_rng_policy_source_review_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_rng_policy_source_review_20261103/SOURCE_FREEZE.json) | `research/feduba_rng_policy_source_review_20261103` |
