@@ -1,0 +1,165 @@
+{
+  "state": "completed_UTF8_readonly_registration_metadata_preparation",
+  "catalog_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "case_count": 25,
+  "case_ids": [
+    "badfu.confirmed.s20261023.v1",
+    "badfu.paper32.s20261020",
+    "badfu.multiseed.s20261023",
+    "badfu.multiseed.s20261023.normal_big4.partial",
+    "fuba.multiseed.s20261023.attack",
+    "fuba.multiseed.s20261023.normal",
+    "fuba.corrected.s20261020.attack",
+    "fuba.corrected.s20261020.normal",
+    "legacy.badfu.s42",
+    "legacy.fuba.s42",
+    "diagnostic.ac.wrong_source",
+    "fuba.v2.s20261023.round0063.partial",
+    "fuba.v2.s20261023.pre.round100",
+    "fuba.v3.s20261023.pre.round0015.stopped",
+    "fuba.v4.s20261023.pre.round0023.stopped",
+    "fuba.v5.s20261023.pre.round100",
+    "fuba.v5.s20261023.post.kd10",
+    "fuba.v6.s20261023.pre100.post.kd10",
+    "fuba.v7.s20261023.pre100.post.kd10",
+    "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+    "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+    "feduba.paper.cifar10.cleanfl20.s42.20261031",
+    "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+    "feduba.paper.cifar10.s42.cpu_trigger.sss125.benignfu20.20261031",
+    "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+  ],
+  "defaults": {
+    "default_case": "badfu.confirmed.s20261023.v1",
+    "default_full_history_case": "badfu.paper32.s20261020",
+    "default_checkpoint_case": "badfu.confirmed.s20261023.v1"
+  },
+  "selector_source_sha256": "bac9f7ed02fd5adce93dc904ad369939f180e8258292c5333dcf97a0f1c649bf",
+  "packets": {
+    "baseline": {
+      "manifest_keys": [
+        "state",
+        "files",
+        "payloads",
+        "models",
+        "operational_gate",
+        "scope",
+        "full_raw_history_root",
+        "local_delivery_complete",
+        "overall_goal_complete"
+      ],
+      "model_rows": [
+        {
+          "file": "models/pre.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": null,
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "models/benign.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": null,
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "models/attack.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": null,
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "models/teacher201.pt",
+          "kind": "model",
+          "classes": 201,
+          "payload_key": null,
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "representative_roles/benign/owner5_round20.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": "model",
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "representative_roles/benign/owner7_round20.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": "model",
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "representative_roles/attack/owner5_round20.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": "model",
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        },
+        {
+          "file": "representative_roles/attack/owner7_round20.pt",
+          "kind": "model",
+          "classes": 10,
+          "payload_key": "model",
+          "strict_CPU": true,
+          "finite": true,
+          "zero1_only": true
+        }
+      ],
+      "hashed_files": 523,
+      "typed_payloads": 365
+    },
+    "positive": {
+      "manifest_keys": [
+        "state",
+        "files",
+        "typed_payloads",
+        "scope"
+      ],
+      "model_rows": [
+        {
+          "path": "models/attack_after.pt",
+          "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+          "payload_key": null,
+          "CPU_strict_finite_zero1": true
+        },
+        {
+          "path": "models/owner5_last_trained.pt",
+          "sha256": "a7bfa8924fed5687c7722eab4eae955f17c9641467f6345ca692dcc885ae47a6",
+          "payload_key": "model",
+          "CPU_strict_finite_zero1": true
+        },
+        {
+          "path": "models/owner7_last_trained.pt",
+          "sha256": "f614c2df072530a034e9370a6cd837ed2e07ba06b742d4dfdd73adcffa1d2362",
+          "payload_key": "model",
+          "CPU_strict_finite_zero1": true
+        }
+      ],
+      "hashed_files": 286,
+      "typed_payloads": 161
+    }
+  },
+  "new_case_registration": 0,
+  "catalogue_or_packet_changes": 0,
+  "new_tensor_or_model_loads": 0,
+  "new_CPU_or_model_calls": 0,
+  "whole_catalogue_copied_to_local": false,
+  "overall_goal_complete": false
+}

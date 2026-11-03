@@ -1,0 +1,32 @@
+{
+  "metadata_completion": {
+    "path": "D:/FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103/METADATA_COMPLETION.json",
+    "bytes": 244,
+    "sha256": "e1f2e661a3e018aabdd4fa68b281683b3158fb263861500de207e338f60cab4e"
+  },
+  "metadata_observation": {
+    "path": "D:/FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103/PREPARATION_METADATA_OBSERVATION.json",
+    "bytes": 5062,
+    "sha256": "072f858cc0d8869c46cb174fe5ee85b9de73f874d17d85ed1de10040d98cbbef"
+  },
+  "baseline_eval": {
+    "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_VERIFIED.json",
+    "sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe",
+    "bytes": 2818
+  },
+  "baseline_complete": {
+    "path": "D:/FEDUBA_FIXED10_PAIR_20261103/COMPLETION.json",
+    "sha256": "1ac3223ada7c52f12b7176d7c85a5129f67bfa9dc8360aadb81ecc0083e1be76",
+    "bytes": 999
+  },
+  "positive_recovery": {
+    "path": "D:/FEDUBA_POSITIVE_INDEPENDENT_RECOVERY_20261103/RECOVERY_VERIFIED.json",
+    "sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+    "bytes": 3297
+  },
+  "positive_recovery_complete": {
+    "path": "D:/FEDUBA_POSITIVE_INDEPENDENT_RECOVERY_20261103/COMPLETION.json",
+    "sha256": "93b82036bad2d99c6cc87a11b561531ef95a561164159455f329a7d28c6f125d",
+    "bytes": 1903
+  }
+}
