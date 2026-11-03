@@ -1393,3 +1393,10 @@
 | [FINAL_RESULT_SUMMARY.json](../../../research/feduba_ity92_history_archive_review_20261103/FINAL_RESULT_SUMMARY.json) | `research/feduba_ity92_history_archive_review_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_ity92_history_archive_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_ity92_history_archive_review_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_ity92_history_archive_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_ity92_history_archive_review_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_dependency_semantics_review_20261103/INPUT_BINDING.json) | `research/feduba_dependency_semantics_review_20261103` |
+| [PROFILE.json](../../../research/feduba_dependency_semantics_review_20261103/PROFILE.json) | `research/feduba_dependency_semantics_review_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_dependency_semantics_review_20261103/PROTOCOL.txt) | `research/feduba_dependency_semantics_review_20261103` |
+| [native_memory.py](../../../research/feduba_dependency_semantics_review_20261103/native_memory.py) | `research/feduba_dependency_semantics_review_20261103` |
+| [native_processes.py](../../../research/feduba_dependency_semantics_review_20261103/native_processes.py) | `research/feduba_dependency_semantics_review_20261103` |
+| [compare_source.py](../../../research/feduba_dependency_semantics_review_20261103/compare_source.py) | `research/feduba_dependency_semantics_review_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_dependency_semantics_review_20261103/SOURCE_FREEZE.json) | `research/feduba_dependency_semantics_review_20261103` |

@@ -1,0 +1,63 @@
+{
+  "archive": {
+    "path": "D:/FEDUBA_ITY92_HISTORY_ARCHIVE_REVIEW_20261103/archive.zip",
+    "sha256": "ac9408f9bec5ff55f980d179a32d28f5ba33b574cb377ff94145402a91a065f5",
+    "bytes": 203237
+  },
+  "upstream_inventory_completion": {
+    "path": "D:/FEDUBA_ITY92_HISTORY_ARCHIVE_REVIEW_20261103/COMPLETION.json",
+    "name": "COMPLETION.json",
+    "bytes": 424,
+    "sha256": "b7cf6d00c321e47864ac92e4d72f7d7ad1fc1d81bdfc6c2d2ad8a8aec9af61ac"
+  },
+  "source_members": {
+    "FedUBA-code/utils.py": {
+      "sha256": "4a05549ff2973be422353d1ce07694accb5ab69d7335365fc8e324066739ae1b",
+      "bytes": 12836
+    },
+    "FedUBA-code/models/resnet.py": {
+      "sha256": "a2ffe4a838d77e7944af06336b40991fcd6abef8ff4fa698d014cca944a81d05",
+      "bytes": 4402
+    },
+    "FedUBA-code/Fed_data_change.py": {
+      "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab",
+      "bytes": 4488
+    },
+    "FedUBA-code/README.md": {
+      "sha256": "a89d33c4e8d71278314de96c223aed1e93f06ac047400f70a4b4c8ac24ca4acf",
+      "bytes": 5135
+    }
+  },
+  "reference_sources": {
+    "related_util": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/private_inputs/related_util.py",
+      "sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+      "bytes": 11643
+    },
+    "actual_model": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+      "bytes": 4379
+    },
+    "actual_core": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/core.py",
+      "sha256": "1894aef5bbbc6bdf16e0c7a5e9f41010c21e6f9c36bff73318f658b0d45a3315",
+      "bytes": 6174
+    },
+    "actual_mixed": {
+      "path": "D:/FEDUBA_MIXED_SURROGATE_20261101/mixed_common.py",
+      "sha256": "4cf86b7643395afdbf11a699eb4a2a0dac2e4e35431c6d12bbf28c2fe8de38da",
+      "bytes": 7795
+    },
+    "paperlinked_data_change": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_change.py",
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8",
+      "bytes": 6152
+    },
+    "paperlinked_readme": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/README.md",
+      "sha256": "ca56265247744c325bb833d4dd910c9f65d7488054c1456851e0c1d5c4bdb262",
+      "bytes": 5003
+    }
+  }
+}
