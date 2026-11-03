@@ -26,3 +26,7 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 
 
 2026-11-03 후속: 새추론없이기존SSS40의저장logit을분석했다. 선택target125중76에서positive-delta의targetmargin이감소했고,비선택target343중202도감소했다. 비target4532의margin은3858개에서증가했다. 과반가설은지지됐지만selector고유원인/새선택/재훈련채택으로승격하지않는다. [고정진단·독립검산·범위](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt)를읽는다. 모델load/forward0·원query/rank/FU재실행0이며표준ASR와다른학습자료진단이다.
+
+ 관련 helper의 동일 poison_image 호출 signature/positive addition 대 논문 Eq8 negative 부호 차이를 새 source-only 조건으로 분리했다. 정상/minus baseline·새SSS선택은 원위치 명시재사용, 변경은 selected-image sign 한 개이며 helper의 추가 dataset getitem/RNG는 미채택. synthetic4 CPU 계약·새 attackFU20/CPU·후속 새 모델만 평가 계획을 선게시하며 아직 신규실행/성능0, Eq8적합/누락helper복구/탐지성공 미주장.
+
+[별도 부호 조건 프로토콜](../../../research/feduba_related_helper_positive_20261103/PROTOCOL.txt) · [출처 근거](../../../research/feduba_related_helper_positive_20261103/SIGN_SOURCE_EVIDENCE.json)

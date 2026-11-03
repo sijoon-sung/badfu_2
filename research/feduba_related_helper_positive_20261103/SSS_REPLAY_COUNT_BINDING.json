@@ -1,0 +1,33 @@
+{
+  "state": "published_metadata_count_amendment_bound_before_first_paired_prepare",
+  "publication_commit": "d92fe4c7f2ede2ae614f8d530781d9d8ca2e80e1",
+  "original_declared400_not_met": true,
+  "supported_existing_evidence_sample_forwards": 392,
+  "model_calls": 4,
+  "actual_saved_audit": {
+    "verified_sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46",
+    "rows": 5000,
+    "sizes": [
+      128,
+      68
+    ],
+    "sample_forwards": 392,
+    "model_calls": 4,
+    "owners": [
+      5,
+      7
+    ],
+    "batches": [
+      1,
+      20
+    ]
+  },
+  "published_metadata_sha256": {
+    "CPU_REPLAY_COUNT_AMENDMENT_PROTOCOL.txt": "f5949eba136540c57bdb6341929e46b54441723c9a190eea7b5ef699625897a6",
+    "CPU_REPLAY_COUNT_DISCREPANCY.json": "a9cbf5c0745b0d8d4c5944e38d0d770b682de02e799e4f165452b6f3e8cd1a76",
+    "CPU_REPLAY_COUNT_RECONCILIATION.json": "424aebeb39ac2749cff5b8a53d2ce22a97508e109da563bf5a2e26c23baa3479"
+  },
+  "model_loads": 0,
+  "model_forwards": 0,
+  "retry_or_selection_tolerance_budget_change": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "feduba.related_helper_positive.synthetic_sign_contract.20261103",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "synthetic_inputs": 4,
+  "selected_positions": [
+    1,
+    2,
+    3
+  ],
+  "image_values": [
+    -0.984375,
+    -0.25,
+    0.25,
+    0.984375
+  ],
+  "delta": 0.03125,
+  "shape": [
+    3,
+    32,
+    32
+  ],
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "model_loads": 0,
+  "model_forwards": 0,
+  "real_data_reads": 0,
+  "related_helper_AST_only": [
+    "apply_noise_patch",
+    "poison_image"
+  ],
+  "exact_tolerance": 0,
+  "required_second_dataset_accesses_related_helper": 8,
+  "required_dataset_accesses_new_single_getitem": 4,
+  "not_full_helper_RNG_port": true,
+  "stop_rule": "Any source/hash/shape/label/arithmetic/runtime fault preserves failure; no automatic retry."
+}
