@@ -1556,3 +1556,6 @@
 | [receive_packet.py](../../../research/feduba_endpoint_local_receive_20261103/receive_packet.py) | `research/feduba_endpoint_local_receive_20261103` |
 | [inspect_source.py](../../../research/feduba_endpoint_local_receive_20261103/inspect_source.py) | `research/feduba_endpoint_local_receive_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/SOURCE_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [INSPECTION_RUN_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/INSPECTION_RUN_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [READINESS_RUN_PUBLICATION.json](../../../research/feduba_endpoint_local_receive_20261103/READINESS_RUN_PUBLICATION.json) | `research/feduba_endpoint_local_receive_20261103` |

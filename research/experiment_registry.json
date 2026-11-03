@@ -1934,7 +1934,10 @@
         "research/feduba_endpoint_local_receive_20261103/verify_cpu_storage.py",
         "research/feduba_endpoint_local_receive_20261103/receive_packet.py",
         "research/feduba_endpoint_local_receive_20261103/inspect_source.py",
-        "research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE.json"
+        "research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE.json",
+        "research/feduba_endpoint_local_receive_20261103/SOURCE_PUBLICATION.json",
+        "research/feduba_endpoint_local_receive_20261103/INSPECTION_RUN_PUBLICATION.json",
+        "research/feduba_endpoint_local_receive_20261103/READINESS_RUN_PUBLICATION.json"
       ],
       "process_report": "experiments/01-reproduction/R03-feduba-reproduction/README.md",
       "github_group": "01-reproduction"
