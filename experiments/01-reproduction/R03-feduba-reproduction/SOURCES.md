@@ -1599,3 +1599,6 @@
 | [V2_SOURCE_REVIEW_ONCE.json](../../../research/feduba_endpoint_local_receive_20261103/V2_SOURCE_REVIEW_ONCE.json) | `research/feduba_endpoint_local_receive_20261103` |
 | [V2_SOURCE_REVIEW_RESULT.json](../../../research/feduba_endpoint_local_receive_20261103/V2_SOURCE_REVIEW_RESULT.json) | `research/feduba_endpoint_local_receive_20261103` |
 | [V2_SOURCE_REVIEW_TERMINAL_OBSERVATION.json](../../../research/feduba_endpoint_local_receive_20261103/V2_SOURCE_REVIEW_TERMINAL_OBSERVATION.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_PROFILE_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_PROFILE_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [observe_receive_attempt_20261103_1516.py](../../../research/feduba_endpoint_local_receive_20261103/observe_receive_attempt_20261103_1516.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_SOURCE_FREEZE_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_SOURCE_FREEZE_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
