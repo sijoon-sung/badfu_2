@@ -1517,3 +1517,12 @@
 | [ANCESTOR_CHAIN_METADATA_20261103.json](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_CHAIN_METADATA_20261103.json) | `research/feduba_ity92_history_archive_review_20261103` |
 | [ANCESTOR_CHAIN_SCOPE_NOTE_20261103.txt](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_CHAIN_SCOPE_NOTE_20261103.txt) | `research/feduba_ity92_history_archive_review_20261103` |
 | [ANCESTOR_METADATA_MIRROR_CHECK_20261103.json](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_METADATA_MIRROR_CHECK_20261103.json) | `research/feduba_ity92_history_archive_review_20261103` |
+| [PROFILE.json](../../../research/feduba_endpoint_archive_integrity_20261103/PROFILE.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_endpoint_archive_integrity_20261103/INPUT_BINDING.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_endpoint_archive_integrity_20261103/PROTOCOL.txt) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [MANUAL_SOURCE_COVERAGE.json](../../../research/feduba_endpoint_archive_integrity_20261103/MANUAL_SOURCE_COVERAGE.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [LOCAL_CPU_RUNTIME_CANDIDATE.json](../../../research/feduba_endpoint_archive_integrity_20261103/LOCAL_CPU_RUNTIME_CANDIDATE.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [native_memory.py](../../../research/feduba_endpoint_archive_integrity_20261103/native_memory.py) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [native_processes.py](../../../research/feduba_endpoint_archive_integrity_20261103/native_processes.py) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [check_archive.py](../../../research/feduba_endpoint_archive_integrity_20261103/check_archive.py) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_endpoint_archive_integrity_20261103/SOURCE_FREEZE.json) | `research/feduba_endpoint_archive_integrity_20261103` |
