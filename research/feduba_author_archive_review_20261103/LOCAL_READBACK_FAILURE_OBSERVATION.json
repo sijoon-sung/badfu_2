@@ -1,0 +1,10 @@
+{
+  "state": "local_metadata_readback_failed_after_two_report_mirrors",
+  "producer_review_state": "completed_model_free_alternative_publisher_archive_packaging_recovery",
+  "failed_caller": "tmp/feduba_author_archive_finalize_once_20261103.py",
+  "failed_caller_sha256": "e30ab2d7d234a017cbcabc97554e9a125c3315de9893f31eddbf75e0d9bcbf48",
+  "failure_stage": "PowerShell CIM slash normalization used a single-backslash regular expression and raised InvalidRegularExpression, after both report SCP calls succeeded.",
+  "producer_replayed": false,
+  "models_loaded": 0,
+  "original_caller_rerun": false
+}

@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "cfdb55ed844f9179bc14e5588e5087dc5e36933023abbe214d23d76b565d31a2",
+  "registry_sha256": "d4f9734a2283124c82c89c207de4850c54245ad7f70d26724ab18ece177c140e",
   "cards": 28,
-  "unique_source_documents": 1391,
+  "unique_source_documents": 1399,
   "top_level_folders": 138,
   "folders_linked_to_cards": 90,
   "source_sha256": {
@@ -1324,6 +1324,14 @@
     "research/feduba_author_archive_review_20261103/REVIEW_ONCE.json": "6903812cc87959b87096086eef459a79f25cb465fdda0d280dff65cfccf9c3b8",
     "research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION.json": "e237a143b6d90234fc37565164537b3b448f3aa3413166359d1817c84ddb4239",
     "research/feduba_author_archive_review_20261103/SOURCE_FREEZE_V2.json": "f427a2bcdad24ebbdf2b68fa387fdf859290d0b476354ae654c90820cf776727",
+    "research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION_V2.json": "acc531a10e6b4d8a3e768f661a1219e393eb85be8e636c36e8e9407532a6a5fb",
+    "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_ONCE.json": "395fc648c67d3c72e0dad745e8bcd4e97086f13fd7668f7eff57d2234533f863",
+    "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_RESULT.json": "5b0290561e233b761019a0d161738cd8294185835454f0d2451b668ec38714be",
+    "research/feduba_author_archive_review_20261103/REPORT_KO.txt": "584614d36a680a7f8bf0cb8f97c3e81121673913133244d4964feffa0f8d054e",
+    "research/feduba_author_archive_review_20261103/COMPLETION_SUMMARY.json": "79bd3af1a957259771745716b3d736e5e0f9e633e99410cb7803c8d463070601",
+    "research/feduba_author_archive_review_20261103/LOCAL_READBACK_FAILURE_OBSERVATION.json": "65e4ed0148363a7945b2995c63524d79da44ca20affbcd25a505f929cd35073d",
+    "research/feduba_author_archive_review_20261103/METADATA_READBACK_PROTOCOL.txt": "23f28cc72a80102c0b88aed00954502daf271a65b14016a5f6395c51ae275aea",
+    "research/feduba_author_archive_review_20261103/FINAL_METADATA_CHECK.json": "8d57b9c0433457cb458b6671d650b8998e53f51ea9dfe097b89ff084eac04b0e",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1711,8 +1719,12 @@
         "R03"
       ],
       "top_level_documents": [
+        "research/feduba_author_archive_review_20261103/COMPLETION_SUMMARY.json",
+        "research/feduba_author_archive_review_20261103/METADATA_READBACK_PROTOCOL.txt",
         "research/feduba_author_archive_review_20261103/PACKAGING_RECOVERY_PROTOCOL.txt",
-        "research/feduba_author_archive_review_20261103/PROTOCOL.txt"
+        "research/feduba_author_archive_review_20261103/PROTOCOL.txt",
+        "research/feduba_author_archive_review_20261103/REPORT_KO.txt",
+        "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

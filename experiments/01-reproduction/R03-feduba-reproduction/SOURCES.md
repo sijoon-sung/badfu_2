@@ -1076,3 +1076,11 @@
 | [REVIEW_ONCE.json](../../../research/feduba_author_archive_review_20261103/REVIEW_ONCE.json) | `research/feduba_author_archive_review_20261103` |
 | [SOURCE_PUBLICATION.json](../../../research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION.json) | `research/feduba_author_archive_review_20261103` |
 | [SOURCE_FREEZE_V2.json](../../../research/feduba_author_archive_review_20261103/SOURCE_FREEZE_V2.json) | `research/feduba_author_archive_review_20261103` |
+| [SOURCE_PUBLICATION_V2.json](../../../research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION_V2.json) | `research/feduba_author_archive_review_20261103` |
+| [REVIEW_RECOVERY_ONCE.json](../../../research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_ONCE.json) | `research/feduba_author_archive_review_20261103` |
+| [REVIEW_RECOVERY_RESULT.json](../../../research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_RESULT.json) | `research/feduba_author_archive_review_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_author_archive_review_20261103/REPORT_KO.txt) | `research/feduba_author_archive_review_20261103` |
+| [COMPLETION_SUMMARY.json](../../../research/feduba_author_archive_review_20261103/COMPLETION_SUMMARY.json) | `research/feduba_author_archive_review_20261103` |
+| [LOCAL_READBACK_FAILURE_OBSERVATION.json](../../../research/feduba_author_archive_review_20261103/LOCAL_READBACK_FAILURE_OBSERVATION.json) | `research/feduba_author_archive_review_20261103` |
+| [METADATA_READBACK_PROTOCOL.txt](../../../research/feduba_author_archive_review_20261103/METADATA_READBACK_PROTOCOL.txt) | `research/feduba_author_archive_review_20261103` |
+| [FINAL_METADATA_CHECK.json](../../../research/feduba_author_archive_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_author_archive_review_20261103` |

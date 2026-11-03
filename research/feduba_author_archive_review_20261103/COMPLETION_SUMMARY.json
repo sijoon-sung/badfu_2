@@ -1,0 +1,28 @@
+{
+  "state": "completed_alternative_archive_review_no_missing_helper_recovery",
+  "archive": {
+    "bytes": 26677,
+    "sha256": "a5da203a08ba2f82956dde5d5e7df0f1d4498c43776d905863fe540389799277",
+    "git_blob_sha1": "3bea03efa9c6544864e818ca670bacbd7462a25c"
+  },
+  "source_commit": "5087690",
+  "recovery_commit": "f876c8b",
+  "zip_members": 21,
+  "python_source_files": 8,
+  "all_nine_pinned_paper_root_blobs_equal": true,
+  "appledouble_Python_metadata_entries": 8,
+  "missing_helper_definitions": {
+    "poison_image": [],
+    "poison_image_label": [],
+    "concoct_dataset": [],
+    "sur_target_dataset": [],
+    "apply_noise_patch": [],
+    "ResNet18": [],
+    "ResNet18_201": []
+  },
+  "old_parser_failure_preserved": true,
+  "model_loads": 0,
+  "forward_calls": 0,
+  "new_training_allowed": false,
+  "overall_goal_complete": false
+}
