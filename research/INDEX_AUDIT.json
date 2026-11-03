@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "f25c631d59ef4966bc9bc68629ab78e9cc768ed5b806407588104fd0712296ce",
+  "registry_sha256": "3989338c91c8cf27f6af37df20f07d42846917e552b2e87e5c5b52e7751fe1b2",
   "cards": 28,
-  "unique_source_documents": 1808,
+  "unique_source_documents": 1812,
   "top_level_folders": 151,
   "folders_linked_to_cards": 103,
   "source_sha256": {
@@ -1741,6 +1741,10 @@
     "research/feduba_endpoint_review_delivery_20261103/SOURCE_FREEZE.json": "6b709560e9a6f651312356bb61e77f7face2f8f5b8df9abeee46fbf6abd5304a",
     "research/feduba_endpoint_review_delivery_20261103/SOURCE_PUBLICATION.json": "2cf0bf27ffab5d3ef48e244300a92c4ba0bfeb06092f086d29c55cac2c2257f3",
     "research/feduba_endpoint_review_delivery_20261103/RUN_PUBLICATION.json": "2cf0bf27ffab5d3ef48e244300a92c4ba0bfeb06092f086d29c55cac2c2257f3",
+    "research/feduba_endpoint_review_delivery_20261103/FAILED_LOCAL_EXPORT_CALLER.py": "3d28e82170abd5514be7e4bbacc3bc2f78fd574ee1798c9bb75d0af7f3989800",
+    "research/feduba_endpoint_review_delivery_20261103/EXPORT_TRANSPORT_V2_CALLER.py": "78afcf31f4d092e4a595b7b6e8253071acf2cf1be6038c193226a425d84a927d",
+    "research/feduba_endpoint_review_delivery_20261103/LOCAL_EXPORT_CALLER_FAILURE.json": "a46c040636cf60b0ab2ac2169fefdc473fa0e48618d061679e461492a6d16073",
+    "research/feduba_endpoint_review_delivery_20261103/TRANSPORT_V2_PROTOCOL.txt": "49711226bdcc73d8be4d1fd23d2b30ed81e18bdbd389fbc3437c094404ea1f99",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -2167,7 +2171,8 @@
         "R03"
       ],
       "top_level_documents": [
-        "research/feduba_endpoint_review_delivery_20261103/PROTOCOL.txt"
+        "research/feduba_endpoint_review_delivery_20261103/PROTOCOL.txt",
+        "research/feduba_endpoint_review_delivery_20261103/TRANSPORT_V2_PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

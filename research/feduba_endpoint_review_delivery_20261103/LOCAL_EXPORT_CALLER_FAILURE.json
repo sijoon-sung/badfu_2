@@ -1,0 +1,12 @@
+{
+  "state": "local_SyntaxError_before_any_module_body",
+  "failed_caller_sha256": "3d28e82170abd5514be7e4bbacc3bc2f78fd574ee1798c9bb75d0af7f3989800",
+  "failed_caller": "tmp/feduba_endpoint_review_export_launch_once_20261103.py",
+  "phase": "Python parser",
+  "line": 14,
+  "cause": "Nested PowerShell double quotes were not escaped in Python source",
+  "observed_exit_code": 1,
+  "local_launch_once_exists": false,
+  "SSH_or_upload_or_remote_export_started": false,
+  "original_caller_will_not_be_reinvoked": true
+}
