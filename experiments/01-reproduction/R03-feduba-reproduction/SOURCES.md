@@ -1204,3 +1204,16 @@
 | [SOURCE_PUBLICATION.json](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_PUBLICATION.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [SOURCE_REVIEW_RESULT.json](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_REVIEW_RESULT.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
 | [SOURCE_REVIEW_REPORT_KO.txt](../../../research/feduba_related_helper_positive_evaluation_20261103/SOURCE_REVIEW_REPORT_KO.txt) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [FU_attack_RESULT.json](../../../research/feduba_related_helper_positive_20261103/FU_attack_RESULT.json) | `research/feduba_related_helper_positive_20261103` |
+| [FU_attack_VERIFIED.json](../../../research/feduba_related_helper_positive_20261103/FU_attack_VERIFIED.json) | `research/feduba_related_helper_positive_20261103` |
+| [COMPLETION.json](../../../research/feduba_related_helper_positive_20261103/COMPLETION.json) | `research/feduba_related_helper_positive_20261103` |
+| [CPU_COMPLETION_OBSERVATION.json](../../../research/feduba_related_helper_positive_20261103/CPU_COMPLETION_OBSERVATION.json) | `research/feduba_related_helper_positive_20261103` |
+| [CPU_COMPLETION_SUMMARY.json](../../../research/feduba_related_helper_positive_20261103/CPU_COMPLETION_SUMMARY.json) | `research/feduba_related_helper_positive_20261103` |
+| [CPU_COMPLETION_REPORT_KO.txt](../../../research/feduba_related_helper_positive_20261103/CPU_COMPLETION_REPORT_KO.txt) | `research/feduba_related_helper_positive_20261103` |
+| [PREPARE_ONCE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PREPARE_ONCE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [UPSTREAM_TERMINAL_CHECK.json](../../../research/feduba_related_helper_positive_evaluation_20261103/UPSTREAM_TERMINAL_CHECK.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_related_helper_positive_evaluation_20261103/INPUT_BINDING.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [EVAL_LAUNCH_PROFILE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/EVAL_LAUNCH_PROFILE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [PREPARATION_RESULT.json](../../../research/feduba_related_helper_positive_evaluation_20261103/PREPARATION_RESULT.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [EVAL_RUN_FREEZE.json](../../../research/feduba_related_helper_positive_evaluation_20261103/EVAL_RUN_FREEZE.json) | `research/feduba_related_helper_positive_evaluation_20261103` |
+| [ACTUAL_EVALUATION_REPORT_KO.txt](../../../research/feduba_related_helper_positive_evaluation_20261103/ACTUAL_EVALUATION_REPORT_KO.txt) | `research/feduba_related_helper_positive_evaluation_20261103` |

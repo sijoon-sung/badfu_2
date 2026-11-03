@@ -32,3 +32,5 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 [별도 부호 조건 프로토콜](../../../research/feduba_related_helper_positive_20261103/PROTOCOL.txt) · [출처 근거](../../../research/feduba_related_helper_positive_20261103/SIGN_SOURCE_EVIDENCE.json)
 
 [새 조건 실제 시작](../../../research/feduba_related_helper_positive_20261103/RUNNING_REPORT_KO.txt) · [새 모델만 평가 source](../../../research/feduba_related_helper_positive_evaluation_20261103/PROTOCOL.txt)。최종성능 미측정, 기존실패 불변.
+
+[새 정 부호 FU20·CPU 완료](../../../research/feduba_related_helper_positive_20261103/CPU_COMPLETION_REPORT_KO.txt) · [새 모델 평가 실제 준비](../../../research/feduba_related_helper_positive_evaluation_20261103/ACTUAL_EVALUATION_REPORT_KO.txt)。최종성능 미측정.
