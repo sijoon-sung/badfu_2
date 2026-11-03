@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "152cb984e27dd390963f806fd522850fb721531aee29e66b46314cc46a014824",
+  "registry_sha256": "73602d6871b8415479f55bc2737dbd79fb702f26d5306c0164fd042b9375f30f",
   "cards": 28,
-  "unique_source_documents": 1717,
+  "unique_source_documents": 1727,
   "top_level_folders": 148,
   "folders_linked_to_cards": 100,
   "source_sha256": {
@@ -1650,6 +1650,16 @@
     "research/feduba_dependency_semantics_review_20261103/SOURCE_FREEZE.json": "c7b3d05c0bdeed3c7cf3ab41b41459e629f597cb6dbca5fce060f3d8baac04d6",
     "research/feduba_dependency_semantics_review_20261103/SOURCE_PUBLICATION.json": "c139944e1ab4d415366a2f24a9105df70f1a8a7a1aa3b548868816f3f84ac252",
     "research/feduba_dependency_semantics_review_20261103/RUN_PUBLICATION.json": "c139944e1ab4d415366a2f24a9105df70f1a8a7a1aa3b548868816f3f84ac252",
+    "research/feduba_dependency_semantics_review_20261103/RESULT.json": "41972d6dc28f42e9bd5ef2453b19d0411b10894effb45481351c734df35db70b",
+    "research/feduba_dependency_semantics_review_20261103/COMPLETION.json": "b243667efe63b03b23af8810807916a6dca79c6f9d454941826531287ca23d33",
+    "research/feduba_dependency_semantics_review_20261103/ONCE.json": "df4a77e277d7d15ae58c58e88b7e2fe97af886c7d6e1af7ab6f98b95a56fc8db",
+    "research/feduba_dependency_semantics_review_20261103/ADMISSION.json": "0d57f6e450b8fdbf45933d1d284398b4db3d79cd81b2cb12f6a0d622cb5d5d4f",
+    "research/feduba_dependency_semantics_review_20261103/PUBLICATION_BYTE_CHECKS.json": "fa2b3edc4dc628fd36d242aa864ac2460660a520d87ca4f514e6ac5de4b784e3",
+    "research/feduba_dependency_semantics_review_20261103/TERMINAL_OBSERVATION.json": "d75e0180d7f971d6f7da8145c68c8826b8a86255bcc50569596ed273bdccafe6",
+    "research/feduba_dependency_semantics_review_20261103/REPORT_KO.txt": "2a9aeddef6ca133ca5f0ad6f14c6c6e7edcca6a6537eee25efc7f55f09629bf8",
+    "research/feduba_dependency_semantics_review_20261103/COMPARISON.json": "9f05339f41c2322533aff8dcb0952587d03d94708198128d58d97bc34889984c",
+    "research/feduba_dependency_semantics_review_20261103/NEXT_STAGE_RATIONALE.txt": "33a14ea4b0037206b477b4c92ecc98a49a5ff3f9ae8226e65579c56801dbf4ca",
+    "research/feduba_dependency_semantics_review_20261103/FINAL_METADATA_CHECK.json": "7ebe242cda4914e6effa21f75ed5d56c3e92fc5fb639fc0cd993fdea2c50b5c1",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -2064,7 +2074,9 @@
         "R03"
       ],
       "top_level_documents": [
-        "research/feduba_dependency_semantics_review_20261103/PROTOCOL.txt"
+        "research/feduba_dependency_semantics_review_20261103/PROTOCOL.txt",
+        "research/feduba_dependency_semantics_review_20261103/REPORT_KO.txt",
+        "research/feduba_dependency_semantics_review_20261103/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

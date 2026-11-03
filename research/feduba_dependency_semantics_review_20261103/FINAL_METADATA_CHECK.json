@@ -1,0 +1,112 @@
+{
+    "state":  "final_source_and_metadata_readback",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "af699006a7168ffab90142817fbb2eb0547615ed04d09114e85a853420ad889e",
+                      "bytes":  42
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "2f7182edc7353434c4f75a5a9f757e394cfafb463b46eb61dfd281e03c5734ee",
+                      "bytes":  2372
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "fa375ac3c699a0a8550bd006a9c9e23078a65185137de46c2eb6c76a078fc513",
+                      "bytes":  2528
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "701c963247fab84a0ca928dd524c588f9dd63d625fabaf684ebeac0eef4c7439",
+                      "bytes":  1991
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "compare_source.py",
+                      "sha256":  "6d12acc723b3a470ddb306ba9a8b7ee6781103fd97f156b66d36bc8a452a69e3",
+                      "bytes":  8434
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "c7b3d05c0bdeed3c7cf3ab41b41459e629f597cb6dbca5fce060f3d8baac04d6",
+                      "bytes":  636
+                  },
+                  {
+                      "name":  "SOURCE_PUBLICATION.json",
+                      "sha256":  "c139944e1ab4d415366a2f24a9105df70f1a8a7a1aa3b548868816f3f84ac252",
+                      "bytes":  2583
+                  },
+                  {
+                      "name":  "RUN_PUBLICATION.json",
+                      "sha256":  "c139944e1ab4d415366a2f24a9105df70f1a8a7a1aa3b548868816f3f84ac252",
+                      "bytes":  2583
+                  },
+                  {
+                      "name":  "RESULT.json",
+                      "sha256":  "41972d6dc28f42e9bd5ef2453b19d0411b10894effb45481351c734df35db70b",
+                      "bytes":  5163
+                  },
+                  {
+                      "name":  "COMPLETION.json",
+                      "sha256":  "b243667efe63b03b23af8810807916a6dca79c6f9d454941826531287ca23d33",
+                      "bytes":  342
+                  },
+                  {
+                      "name":  "ONCE.json",
+                      "sha256":  "df4a77e277d7d15ae58c58e88b7e2fe97af886c7d6e1af7ab6f98b95a56fc8db",
+                      "bytes":  143
+                  },
+                  {
+                      "name":  "ADMISSION.json",
+                      "sha256":  "0d57f6e450b8fdbf45933d1d284398b4db3d79cd81b2cb12f6a0d622cb5d5d4f",
+                      "bytes":  339
+                  },
+                  {
+                      "name":  "PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "fa2b3edc4dc628fd36d242aa864ac2460660a520d87ca4f514e6ac5de4b784e3",
+                      "bytes":  2272
+                  },
+                  {
+                      "name":  "TERMINAL_OBSERVATION.json",
+                      "sha256":  "d75e0180d7f971d6f7da8145c68c8826b8a86255bcc50569596ed273bdccafe6",
+                      "bytes":  344
+                  },
+                  {
+                      "name":  "REPORT_KO.txt",
+                      "sha256":  "2a9aeddef6ca133ca5f0ad6f14c6c6e7edcca6a6537eee25efc7f55f09629bf8",
+                      "bytes":  2787
+                  },
+                  {
+                      "name":  "COMPARISON.json",
+                      "sha256":  "9f05339f41c2322533aff8dcb0952587d03d94708198128d58d97bc34889984c",
+                      "bytes":  2603
+                  },
+                  {
+                      "name":  "NEXT_STAGE_RATIONALE.txt",
+                      "sha256":  "33a14ea4b0037206b477b4c92ecc98a49a5ff3f9ae8226e65579c56801dbf4ca",
+                      "bytes":  1798
+                  },
+                  {
+                      "name":  "SOURCE_BODY_REVIEW.json",
+                      "sha256":  "29a5f1f7d31c3007bb6b5e1e306e0f1f3bd3eaf2ca30173c9568761bd1e94802",
+                      "bytes":  14566
+                  }
+              ],
+    "model_reads":  0,
+    "source_body_review_public_staged":  false
+}
