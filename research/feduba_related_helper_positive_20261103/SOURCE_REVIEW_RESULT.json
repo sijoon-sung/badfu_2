@@ -1,0 +1,20 @@
+{
+  "state": "passed_sign_only_source_review",
+  "source_freeze_sha256": "1691ff30388b1444851d5a73bd566dbf893dc3a315464e6a1af63977541c0936",
+  "python_AST_files": 18,
+  "unchanged_byte_files": 17,
+  "one_core_sign_literal_only_numeric_change": true,
+  "runner_numeric_loops_exact": true,
+  "required_FU_keys": [
+    "history_global_payload_key",
+    "history_manifest_sha256",
+    "history_role_payload_key",
+    "id",
+    "launch_enabled",
+    "required_clean_case_id",
+    "trigger_binding_sha256"
+  ],
+  "all_six_gates_unchanged": true,
+  "model_loads": 0,
+  "forwards": 0
+}
