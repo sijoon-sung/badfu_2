@@ -1,0 +1,141 @@
+{
+  "state": "prepared_inactive_receiver_v2_source_contract_complete_actual_receive_not_started_native_guard_unmet",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "v1_source_commit": "f3d2cc1b14ac2cbb8280377d4967a8b4a399ede1",
+  "v1_pin_commit": "310d5f07e99c93a8db247abff82dde28a3642426",
+  "v1_freeze_sha256": "c155696ae98cab708267aaec165ef3eb45229ddf4e8cdf17f1edd39afb726476",
+  "v1_source_review_result_sha256": "0ec9b5298a02662ae0e64f76a24acbd2815edfa583c1a675e904400332f38cfb",
+  "v1_source_review_completion_sha256": "b5337c5d328c41e4abe53664dadffc2d44d435aaa06cfc88ac029f769dafa409",
+  "v2_source_commit": "4092ce0e1172f26bfb8437a26b4e88a7affb9795",
+  "v2_pin_commit": "2e55129ed67e5b2592c34d12606196b186d81f72",
+  "v2_freeze_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "v2_source_review_result_sha256": "184b608dd5d0e9463641b5dd1b34948c3bb434b29c2da1aebd784b58a7d7d67e",
+  "v2_source_review_completion_sha256": "e038857c3f5379eb5e58313b139ccb0d6ffe76e2c44345e96b02a2cf511a1fa1",
+  "v1_AST_files": 8,
+  "v2_new_AST_files": 5,
+  "v2_literal_source_delta_files": 3,
+  "v2_synthetic_readiness_cases": [
+    {
+      "condition": "fresh_true",
+      "accepted": true,
+      "expected": true,
+      "synthetic_only": true
+    },
+    {
+      "condition": "recorded_false",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "wrong_SHA",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "outside_root",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    },
+    {
+      "condition": "stale",
+      "accepted": false,
+      "expected": false,
+      "synthetic_only": true
+    }
+  ],
+  "old_v1_sources_and_false_actual_observation_preserved": true,
+  "actual_local_readiness_observation": {
+    "utc_unix": 1793716887.5508273,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 3644542976,
+      "committedBytes": 29006360576,
+      "commitLimit": 50775060480
+    },
+    "disk_free_bytes": 3043122176000,
+    "native_ready": false,
+    "waiter_started": false,
+    "state": "completed_native_readiness_observation_only",
+    "pid": 3740,
+    "source_freeze_sha256": "c155696ae98cab708267aaec165ef3eb45229ddf4e8cdf17f1edd39afb726476",
+    "torch_imported": false,
+    "CPU_runtime_probed": false,
+    "receiver_started": false,
+    "transfer_started": false
+  },
+  "actual_local_readiness_utc": "2026-11-03T14:41:27.550Z",
+  "local_available_GiB": 3.394245147705078,
+  "local_commit_free_GiB": 20.273681640625,
+  "local_native_observations_this_contract": 1,
+  "extra_local_native_queries_for_v2": 0,
+  "actual_receiver_enabled": false,
+  "actual_receive_launch_profile_or_run_freeze_created": false,
+  "runtime_candidate": {
+    "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe",
+    "python_version": [
+      3,
+      11,
+      17
+    ],
+    "torch_version": "2.4.1+cu118",
+    "metadata_candidate_only": true,
+    "expected_files": [
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe",
+        "sha256": "622a78be23baa163b26889c8e0d21ccb79752dd9a8149e7ffd776c7812175d22",
+        "bytes": 93184
+      },
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/conda-meta/python-3.11.17-hb12b558_1_cpython.json",
+        "sha256": "4186ac00ba25fdc58a753b900161673f3304929c9b67a449730ef9b91ecc2d46",
+        "bytes": 900083
+      },
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/Lib/site-packages/torch-2.4.1+cu118.dist-info/METADATA",
+        "sha256": "627845ebf00608d38d52bd475e7269df97111b11dcf928293de252b18c1c0763",
+        "bytes": 27167
+      }
+    ]
+  },
+  "runtime_import_or_usable_CPU_probe": false,
+  "model_or_tensor_loads": 0,
+  "CPU_model_forward_calls": 0,
+  "archive_or_model_transferred": false,
+  "local_catalogue_or_default_modified": false,
+  "local_delivery_complete": false,
+  "performance_success": false,
+  "overall_goal_complete": false,
+  "local_terminal": {
+    "state": "native_readiness_observer_exit0_native0_receiver_not_started",
+    "unix": 1793716887.614026,
+    "foreground_child_exit_code": 0,
+    "root_native_processes": 0,
+    "native_ready": false,
+    "receiver_started": false,
+    "runtime_probe_started": false,
+    "model_transfer_started": false,
+    "RECEIVE_LAUNCH_PROFILE_exists": false
+  },
+  "v2_DISLAB_terminal": {
+    "state": "completed_inactive_v2_readiness_binding_contract_exit0_native0",
+    "utc": "2026-11-03T14:47:25.8342698Z",
+    "foreground_exit_code": 0,
+    "root_native_processes": 0,
+    "failure_count": 0,
+    "new_Windows_task_created": false,
+    "receiver_or_transfer_started": false,
+    "local_RAM_observed": false,
+    "torch_or_model_imported": false
+  }
+}

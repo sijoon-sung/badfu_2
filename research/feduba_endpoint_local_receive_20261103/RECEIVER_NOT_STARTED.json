@@ -1,0 +1,10 @@
+{
+  "state": "not_started_native_resource_guard_unmet",
+  "readiness_sha256": "ffc81c268baa21010cd177a1d9bbdb5de25714e4b5a0a96235277ad4cc66c4f8",
+  "waiter_started": false,
+  "receiver_started": false,
+  "model_transfer_started": false,
+  "CPU_runtime_probed": false,
+  "catalogue_modified": false,
+  "next_action": "No retry/polling of this completed observer. A later distinct receive-attempt contract needs fresh native metadata."
+}
