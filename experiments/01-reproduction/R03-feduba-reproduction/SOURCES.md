@@ -1514,3 +1514,6 @@
 | [REPORT_KO.txt](../../../research/feduba_endpoint_review_delivery_20261103/REPORT_KO.txt) | `research/feduba_endpoint_review_delivery_20261103` |
 | [REPORT_MIRROR_PLAN.json](../../../research/feduba_endpoint_review_delivery_20261103/REPORT_MIRROR_PLAN.json) | `research/feduba_endpoint_review_delivery_20261103` |
 | [TERMINAL_OBSERVATION.json](../../../research/feduba_endpoint_review_delivery_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_endpoint_review_delivery_20261103` |
+| [ANCESTOR_CHAIN_METADATA_20261103.json](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_CHAIN_METADATA_20261103.json) | `research/feduba_ity92_history_archive_review_20261103` |
+| [ANCESTOR_CHAIN_SCOPE_NOTE_20261103.txt](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_CHAIN_SCOPE_NOTE_20261103.txt) | `research/feduba_ity92_history_archive_review_20261103` |
+| [ANCESTOR_METADATA_MIRROR_CHECK_20261103.json](../../../research/feduba_ity92_history_archive_review_20261103/ANCESTOR_METADATA_MIRROR_CHECK_20261103.json) | `research/feduba_ity92_history_archive_review_20261103` |

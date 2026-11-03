@@ -1,0 +1,100 @@
+{
+  "state": "completed_manual_readonly_pinned_ity92_ancestor_metadata_followup",
+  "observed_utc": "2026-11-03T14:05:03.450Z",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "reason": "The previously inspected ZIP commit has its own unreviewed parent chain, distinct from the parentless paper-linked ity207 commit.",
+  "actual_connector_GETs": 6,
+  "observations": [
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/git/commits/0b0601dd88f465b799fc580624a386bba6759647",
+      "kind": "commit",
+      "sha": "0b0601dd88f465b799fc580624a386bba6759647",
+      "tree": "fb4457fea40fd5ef80c80175a6fe24433d0b38e1",
+      "date": "2025-05-21T10:24:49Z",
+      "message": "Delete README.md",
+      "parents": [
+        "198cd37ac91fb951bc263eb4b27e656c1737206d"
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/git/commits/198cd37ac91fb951bc263eb4b27e656c1737206d",
+      "kind": "commit",
+      "sha": "198cd37ac91fb951bc263eb4b27e656c1737206d",
+      "tree": "c89df56a21c428076c45fd0393bf70e5c6137997",
+      "date": "2025-05-21T10:20:54Z",
+      "message": "Add files via upload",
+      "parents": [
+        "ed4aaa71111a4c5da3e6f509d2fe6e359d937ba1"
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/contents?ref=198cd37ac91fb951bc263eb4b27e656c1737206d",
+      "kind": "root_contents",
+      "entries": [
+        {
+          "name": "FedUBA-code.zip",
+          "sha": "9bc5829c8e67641c83a4fc856d50feff62da1796",
+          "bytes": 203237,
+          "type": "file"
+        },
+        {
+          "name": "README.md",
+          "sha": "30d480888eea7078457504f8b44846f2fa813efb",
+          "bytes": 8,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/git/commits/ed4aaa71111a4c5da3e6f509d2fe6e359d937ba1",
+      "kind": "commit",
+      "sha": "ed4aaa71111a4c5da3e6f509d2fe6e359d937ba1",
+      "tree": "7b485a8e3a2121965275333c912e09d88e27a64a",
+      "date": "2025-04-30T22:55:55Z",
+      "message": "Initial commit",
+      "parents": []
+    },
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/contents?ref=ed4aaa71111a4c5da3e6f509d2fe6e359d937ba1",
+      "kind": "root_contents",
+      "entries": [
+        {
+          "name": "README.md",
+          "sha": "30d480888eea7078457504f8b44846f2fa813efb",
+          "bytes": 8,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/ity92/FedUBA/git/blobs/30d480888eea7078457504f8b44846f2fa813efb",
+      "kind": "text_blob",
+      "git_blob": "30d480888eea7078457504f8b44846f2fa813efb",
+      "bytes": 8,
+      "body": "# FedUBA"
+    }
+  ],
+  "verified_readme_git_blob": "30d480888eea7078457504f8b44846f2fa813efb",
+  "existing_zip_git_blob_unchanged": "9bc5829c8e67641c83a4fc856d50feff62da1796",
+  "new_code_variant_or_dependency_source_found": false,
+  "additional_commits_beyond_initial_parentless_root": false,
+  "scope": "Only the pinned 0b0601dd->198cd37a->ed4aaa71 parent chain and returned roots/README; not all refs/repositories/private copies or author identity.",
+  "binary_downloads": 0,
+  "upstream_code_executions": 0,
+  "new_source_AST_reviews": 0,
+  "torch_numpy_imports": 0,
+  "RNG_or_model_data_tensor_execution": 0,
+  "new_training_or_inference": 0,
+  "original_archive_inventory_repeated": false,
+  "whole_training_justified": false,
+  "all_scientific_models_defaults_failures_unchanged": true,
+  "local_model_delivery_complete": false,
+  "overall_goal_complete": false,
+  "manual_metadata_reading_not_a_preregistered_numerical_experiment": true
+}
