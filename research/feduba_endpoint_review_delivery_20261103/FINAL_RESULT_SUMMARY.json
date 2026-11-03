@@ -1,0 +1,137 @@
+{
+  "state": "remote_four_endpoint_scalar_FU_epoch_review_export_complete_local_delivery_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "source_commit": "6e57c331bdc037814441c0e19f7f8cb1e01629b0",
+  "publication_pin_commit": "145d776cedbfc6caad72dda8f5fc7cf62b0a446a",
+  "transport_only_recovery_commit": "ca93bef1b9f8f79e98b1a92c85fcc15ada08569f",
+  "source_freeze_sha256": "6b709560e9a6f651312356bb61e77f7face2f8f5b8df9abeee46fbf6abd5304a",
+  "export_result_sha256": "0d73255e3d13dff9653189e61f05de795d985e8a7ba1c946ad389e0da6ad68ff",
+  "completion_sha256": "441ba86fdb9b17208f4de46094aecdba9ab9f70adccd2f27bbf97705f6c23043",
+  "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_fixed10_s42_four_endpoints_review_20261103",
+  "hashed_packet_files": 14,
+  "packet_files_including_manifest": 15,
+  "archive_entries_including_external_seal": 16,
+  "model_files": 4,
+  "scalar_FU_epoch_rows": 3000,
+  "manifest_sha256": "10cb99c38fbd72aed399e1e1ec258342544ac63520727f03b1f617ccc85c1b1c",
+  "external_seal_sha256": "69986537c105ee6ee77e1e2db37deb007ee5c4ead0ce22f855521eda7ca0136a",
+  "archive": {
+    "path": "D:\\FEDUBA_ENDPOINT_REVIEW_DELIVERY_20261103\\ENDPOINT_REVIEW.zip",
+    "bytes": 165494920,
+    "sha256": "f74d8f1cd2df54622965606e9614bb73927ed7aef55ccd68761bb6d497a0b58d"
+  },
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "models": {
+    "pre": {
+      "file": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "benign": {
+      "file": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "minus": {
+      "file": "models/minus.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "plus": {
+      "file": "models/plus.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    }
+  },
+  "source_guard_passes": 3,
+  "source_packet_hash_checks": 2427,
+  "all_three_scalar_epoch_logs_projection_exact": true,
+  "raw_full_history_RNG_roles_queries_remain_DISLAB": true,
+  "source_catalogue_sha256_unchanged": "8cbb86b98bf44cfa344daca6df1326f1b2fafe946c3eceb3cf75dd961a21ec38",
+  "new_model_tensor_loads": 0,
+  "new_CPU_model_checks": 0,
+  "new_forward_or_training": 0,
+  "prior_strict_CPU_receipts_reused": true,
+  "original_failed_positive_verifier_preserved": true,
+  "local_native_readiness_observation_only": {
+    "state": "new_native_local_delivery_readiness_metadata_only",
+    "utc": "2026-11-03T13:31:49.094644+00:00",
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 2635935744,
+      "committedBytes": 27853967360,
+      "commitLimit": 50775060480
+    },
+    "disk_free_bytes": 3043179552768,
+    "available_GiB": 2.454906463623047,
+    "commit_free_GiB": 21.34693145751953,
+    "readiness_8GiB_available_16GiB_commit_80GiB_disk": false,
+    "python": [
+      3,
+      14,
+      7
+    ],
+    "torch_distribution_metadata_only": null,
+    "torch_imported": false,
+    "model_tensor_loads": 0,
+    "receiver_or_transfer_launched": false,
+    "DISLAB_prerequisite": false,
+    "native_helper_sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "oneoff_source_sha256": "7b096306aeae3519cfa26a18817ce821d342d9713e70d7d8288921068608789f"
+  },
+  "new_local_receiver_or_model_transfer_started": false,
+  "new_local_case_registration": false,
+  "local_delivery_complete": false,
+  "performance_success": false,
+  "overall_goal_complete": false,
+  "terminal": {
+    "state": "completed_remote_endpoint_export_exit0_native0",
+    "utc": "2026-11-03T13:50:21.8047378Z",
+    "foreground_exit_code": 0,
+    "root_native_processes": 0,
+    "failure_count": 0,
+    "new_Windows_task_created": false,
+    "new_model_tensor_loads": 0,
+    "new_CPU_forward_calls": 0,
+    "local_receiver_started": false,
+    "local_model_transfer_started": false
+  },
+  "DISLAB_admission": {
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18562379776,
+      "committedBytes": 44524347392,
+      "commitLimit": 90276544512
+    },
+    "disk_free_bytes": 683414683648,
+    "GPU": "0, 5045, 5009",
+    "competitors": 0,
+    "wait_seconds": 0.06300000008195639
+  }
+}

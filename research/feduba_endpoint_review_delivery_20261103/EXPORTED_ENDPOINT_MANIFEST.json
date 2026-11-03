@@ -1,0 +1,184 @@
+{
+  "state": "sealed_four_diagnostic_endpoints_and_scalar_FU_epoch_logs",
+  "files": {
+    "CASE_SELECTIONS.json": {
+      "sha256": "5608b51a12c9975906a15f38ea09121e5c49430371dd0fd5713a366a33aec45c",
+      "bytes": 4854
+    },
+    "epoch_logs/benign.jsonl": {
+      "sha256": "07ebcd9b01af08224a080aa3799afdd259c3796a288c679faa8ce4b2c9f5efe3",
+      "bytes": 131571
+    },
+    "epoch_logs/minus.jsonl": {
+      "sha256": "a98e020e5a1d7792c09329823f4e83b1b70eec8f873e20b39426a5fb3cd8127e",
+      "bytes": 131610
+    },
+    "epoch_logs/plus.jsonl": {
+      "sha256": "faa2a9581d7c079bee29369ea0417cad2201da27f6034dab0df5191a474a5101",
+      "bytes": 131602
+    },
+    "EVALUATOR_ONLY_SUMMARY.json": {
+      "sha256": "302cb4813beb43110aa02a09826a73892c6f871c5c4362f7da1446ad43bbd36d",
+      "bytes": 1992
+    },
+    "load_checkpoint.py": {
+      "sha256": "60181666cd91f732731735a2afce1685f88fd6041d1eaa25db62d579babd9b9a",
+      "bytes": 1790
+    },
+    "model_reference.py": {
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+      "bytes": 4379
+    },
+    "models/benign.pt": {
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315
+    },
+    "models/minus.pt": {
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315
+    },
+    "models/plus.pt": {
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315
+    },
+    "models/pre.pt": {
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315
+    },
+    "README.txt": {
+      "sha256": "bbc736a3c9df17a7bcfdd131d81317bdde2d0ae38dd252f942ec1c95325b8e28",
+      "bytes": 650
+    },
+    "SCOPE.json": {
+      "sha256": "c1abe5265a99ab2b806ac0d5b50609b9a1386d1e957e771c39317c2d1e1855e8",
+      "bytes": 2367
+    },
+    "SOURCE_PROVENANCE.json": {
+      "sha256": "fa98f937fb0a45d71c2ca5c608d00860318b8e41a567e239f8d4acc8374c6162",
+      "bytes": 2873
+    }
+  },
+  "models": {
+    "pre": {
+      "file": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "benign": {
+      "file": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "minus": {
+      "file": "models/minus.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "plus": {
+      "file": "models/plus.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    }
+  },
+  "scope": {
+    "models": [
+      "pre",
+      "benign",
+      "minus",
+      "plus"
+    ],
+    "model_count": 4,
+    "new_model_or_tensor_loads": 0,
+    "new_CPU_forwards": 0,
+    "epoch_log_projection": {
+      "benign": {
+        "file": "epoch_logs/benign.jsonl",
+        "rows": 1000,
+        "source_packet": "baseline",
+        "source_member": "logs/benign/events.jsonl",
+        "source_sha256": "d895dbc10782cf47d91b1010850e9e9ae146fb742f7e443f649436a92bf9be36",
+        "columns": [
+          "round",
+          "client",
+          "epoch",
+          "examples",
+          "batches",
+          "cumulative_role_batches",
+          "loss"
+        ],
+        "all_scalar_epoch_values_copied_unchanged": true,
+        "raw_per_sample_fields_copied": false
+      },
+      "minus": {
+        "file": "epoch_logs/minus.jsonl",
+        "rows": 1000,
+        "source_packet": "baseline",
+        "source_member": "logs/attack/events.jsonl",
+        "source_sha256": "212b892133c5e2ec33c9debfe092f87f01c554059f91675d61f9b897e7015549",
+        "columns": [
+          "round",
+          "client",
+          "epoch",
+          "examples",
+          "batches",
+          "cumulative_role_batches",
+          "loss"
+        ],
+        "all_scalar_epoch_values_copied_unchanged": true,
+        "raw_per_sample_fields_copied": false
+      },
+      "plus": {
+        "file": "epoch_logs/plus.jsonl",
+        "rows": 1000,
+        "source_packet": "positive",
+        "source_member": "new_training/fu/attack/events.jsonl",
+        "source_sha256": "7e2fa2c663541d5c7de37af3fdc7b6f384cc0e92b66e9cdd3af4165d92cd4e20",
+        "columns": [
+          "round",
+          "client",
+          "epoch",
+          "examples",
+          "batches",
+          "cumulative_role_batches",
+          "loss"
+        ],
+        "all_scalar_epoch_values_copied_unchanged": true,
+        "raw_per_sample_fields_copied": false
+      }
+    },
+    "excluded": [
+      "role model states",
+      "optimizer/RNG",
+      "per-sample IDs",
+      "query inputs",
+      "per-ID logits",
+      "raw datasets",
+      "trigger delta",
+      "full raw history"
+    ],
+    "raw_pretraining_and_full_role_history_optimizer_RNG_and_queries_remain_on_DISLAB": true,
+    "full_original_epoch_logs_remain_on_DISLAB": true,
+    "diagnostic_only": true,
+    "local_receiver_launched": false,
+    "local_CPU_verification_completed": false,
+    "local_delivery_complete": false,
+    "whole_prior_packet_delivered": false,
+    "performance_success": false,
+    "overall_goal_complete": false
+  },
+  "new_tensor_loads": 0,
+  "new_CPU_model_checks": 0,
+  "origin_strict_CPU_receipts_reused": true
+}
