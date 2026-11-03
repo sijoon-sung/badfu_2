@@ -1,0 +1,19 @@
+{
+  "state": "prepared_inactive_local_endpoint_receiver_source_frozen_before_inspection_and_native_observation",
+  "files": {
+    "PROFILE.json": "e743a8330fb892940a40f19d71d9e777990f6c5a4d90337c872de5625c0e7380",
+    "INPUT_BINDING.json": "f0e9d8a2947a972c05b5e39d7de6822f9aa9715703465b2f665b0e1d03bfc9e8",
+    "PROTOCOL.txt": "d157feb6b32004c7e04682b0e664312b4b678f1dfbce16f722057d3b16d349a4",
+    "INSPECTION_PROFILE.json": "e0efa8e2340ae33a973857f91298fefcd0f7b65162a2bd303da824b4518835aa",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "receive_common.py": "586163c7fc8ada99a31755884ac2bd3a724d278bc3e5790a41e4b83f770d2153",
+    "observe_readiness.py": "4919c4514190b6a3eb4eef218513c0dc18a1631efd3f6d1566720b8e5df02a81",
+    "probe_cpu_runtime.py": "44041813ecbec0707094a15b8cbd6aa72b87caee1a865e69f320a7c14b8546db",
+    "verify_cpu_storage.py": "047d2fac4f3fdb2b459ed3daf2509dd5209a6caf97789caa3cbb4798696e4ca8",
+    "receive_packet.py": "f0066e4b8969d44d407ecf897d9d3428b4da56617d3635e5090875fe09898016",
+    "inspect_source.py": "53618b99fddcb9661b22212972f8946dd8fed92f948fe9feb9216cc10ebb109e"
+  },
+  "receiver_enabled": false,
+  "model_or_runtime_execution": false
+}

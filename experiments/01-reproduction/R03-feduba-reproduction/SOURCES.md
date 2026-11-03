@@ -1543,3 +1543,16 @@
 | [RESULT.json](../../../research/feduba_endpoint_archive_integrity_20261103/RESULT.json) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [TERMINAL_OBSERVATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [FINAL_PUBLIC_READBACK_OBSERVATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/FINAL_PUBLIC_READBACK_OBSERVATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [PROFILE.json](../../../research/feduba_endpoint_local_receive_20261103/PROFILE.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_endpoint_local_receive_20261103/INPUT_BINDING.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_endpoint_local_receive_20261103/PROTOCOL.txt) | `research/feduba_endpoint_local_receive_20261103` |
+| [INSPECTION_PROFILE.json](../../../research/feduba_endpoint_local_receive_20261103/INSPECTION_PROFILE.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [native_memory.py](../../../research/feduba_endpoint_local_receive_20261103/native_memory.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [native_processes.py](../../../research/feduba_endpoint_local_receive_20261103/native_processes.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [receive_common.py](../../../research/feduba_endpoint_local_receive_20261103/receive_common.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [observe_readiness.py](../../../research/feduba_endpoint_local_receive_20261103/observe_readiness.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [probe_cpu_runtime.py](../../../research/feduba_endpoint_local_receive_20261103/probe_cpu_runtime.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [verify_cpu_storage.py](../../../research/feduba_endpoint_local_receive_20261103/verify_cpu_storage.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [receive_packet.py](../../../research/feduba_endpoint_local_receive_20261103/receive_packet.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [inspect_source.py](../../../research/feduba_endpoint_local_receive_20261103/inspect_source.py) | `research/feduba_endpoint_local_receive_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_endpoint_local_receive_20261103/SOURCE_FREEZE.json) | `research/feduba_endpoint_local_receive_20261103` |
