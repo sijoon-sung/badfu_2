@@ -1,0 +1,69 @@
+{
+  "state": "prepared_receiver_v2_source_published_receive_disabled",
+  "commit": "4092ce0e1172f26bfb8437a26b4e88a7affb9795",
+  "source_freeze_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "files": [
+    {
+      "name": "PROFILE_V2.json",
+      "git_blob": "530ec5c00456a5846d6aca230206181d07b00429",
+      "sha256": "07dba79f2653e9e08897eedf831526703d5892555978674daabc84401cc9248d",
+      "bytes": 5596
+    },
+    {
+      "name": "V2_DELTA_BINDING.json",
+      "git_blob": "c422adbec8ee744e0e3a324ad4f8fd0b8fd86ff5",
+      "sha256": "cb10a7c29248256afc2bebc9891cd05ed79c0f73efd4e23422814dcc5860106a",
+      "bytes": 6793
+    },
+    {
+      "name": "READINESS_BINDING_CORRECTION_PROTOCOL_V2.txt",
+      "git_blob": "002df701810920f745ce0c6cbbe838d49dcea9b5",
+      "sha256": "753f1b1962b9ee7aa29294442d901dd44880a9d0e0d328325b5f1f7b915c3681",
+      "bytes": 2599
+    },
+    {
+      "name": "INSPECTION_PROFILE_V2.json",
+      "git_blob": "1bb2fa0856c703d630433ee3204881a22f355cd0",
+      "sha256": "1e4911096ad76447745d5991ad74c834fe13d92d19fd94069cd1bab175f2bf13",
+      "bytes": 1089
+    },
+    {
+      "name": "receive_common_v2.py",
+      "git_blob": "2319f4261c4cdcfda8e66bcafe130959978cfc15",
+      "sha256": "683c354792a9c7fb06053fba7eff73e891ab9db0a95cc6d0b7fb2a2f7a621d4e",
+      "bytes": 5774
+    },
+    {
+      "name": "probe_cpu_runtime_v2.py",
+      "git_blob": "daefbfe2118aba11bbf4ae3a531598aefd5ea9df",
+      "sha256": "df710ecb98425f690d0c4627d31851311d7ae8833808674dbc5b8f02c03b3513",
+      "bytes": 1281
+    },
+    {
+      "name": "verify_cpu_storage_v2.py",
+      "git_blob": "18121509ef4df5fba77000f660ccffa1b685fbf5",
+      "sha256": "f1d3df3e91b43f6e39c94eade65351cd32959716810a99e3c25cec379ec8373d",
+      "bytes": 3343
+    },
+    {
+      "name": "receive_packet_v2.py",
+      "git_blob": "189ba61ad8bf16968116b5ff9df4984a2016c1d0",
+      "sha256": "388319d168189c786ffd7074e4189c0ca8bf6136059169d029e8db7e77f5cc11",
+      "bytes": 6836
+    },
+    {
+      "name": "inspect_source_v2.py",
+      "git_blob": "f11350cd940dd81a78116b9c9baf823c810e4d44",
+      "sha256": "8d580eb9dd10c40ea667d951130c8d93f3ea7a3d1b037862df246c46702c5c2d",
+      "bytes": 6420
+    },
+    {
+      "name": "SOURCE_FREEZE_V2.json",
+      "git_blob": "45ae20814d24c08aba569b7ae40cbc09694936d5",
+      "sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+      "bytes": 1797
+    }
+  ],
+  "actual_receiver_enabled": false,
+  "source_actual_local_PR_GitHub_bytes_exact": true
+}
