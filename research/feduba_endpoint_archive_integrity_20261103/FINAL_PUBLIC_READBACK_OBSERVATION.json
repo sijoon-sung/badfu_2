@@ -1,0 +1,187 @@
+{
+  "state": "all25_original_final_public_files_match_GitHub_Git_blob_identity_and_size",
+  "checked_commit": "2013e3ef397dd432e346f6f98f8ee06647245aff",
+  "method": "Single GitHub directory metadata response compared with local PR commit Git blob IDs and exact local/PR/index byte checks; not a successful all25 raw-content fetch.",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "git_blob": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "bytes": 8,
+      "type": "file",
+      "local_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "name": ".gitignore",
+      "git_blob": "5944b2294cc3166186eb17882533ab89f214ac13",
+      "bytes": 34,
+      "type": "file",
+      "local_sha256": "7d6a0eaff01f4bd8e86d0e6971b35ae7a088efefe0f91b7ade22c882f81511e5"
+    },
+    {
+      "name": "ADMISSION.json",
+      "git_blob": "c1762c1a7e195e169bce6c13ca7922ba6440cb37",
+      "bytes": 339,
+      "type": "file",
+      "local_sha256": "4ecbf1b8a7911bb0f4cffa0f905a804cf42abd55c2311d4f294dc6da3f4da167"
+    },
+    {
+      "name": "COMPLETION.json",
+      "git_blob": "959bc4683bab3f90e847f4a926795f6e1322e7d9",
+      "bytes": 274,
+      "type": "file",
+      "local_sha256": "51bbbb3a28f23101001f7b1de5e7463d2d872774cef657cced01493dfb0e5b30"
+    },
+    {
+      "name": "FINAL_METADATA_CHECK.json",
+      "git_blob": "085ac965846288eeb9d47d6aa447a546e7fb5955",
+      "bytes": 5918,
+      "type": "file",
+      "local_sha256": "034d77ffb667b78c4b0d770254c4ce25ce4052495379f06a5061cb76f7d8bdce"
+    },
+    {
+      "name": "FINAL_RESULT_SUMMARY.json",
+      "git_blob": "1bc6c205c4a0425387eb129dcc54f0c8c51ea657",
+      "bytes": 2485,
+      "type": "file",
+      "local_sha256": "9f56bb4faf1bd95c3857780518935bb551f37e26740eb648d35d638153674fc9"
+    },
+    {
+      "name": "INPUT_BINDING.json",
+      "git_blob": "2cc4254cbef7b7b63147b09b8fda411cb96c1b7d",
+      "bytes": 1056,
+      "type": "file",
+      "local_sha256": "5ae48248d927f7561df028df9295f1f19901101515fff13d588fc1fd901c5e29"
+    },
+    {
+      "name": "LOCAL_CPU_RUNTIME_CANDIDATE.json",
+      "git_blob": "c53e23609ac3d71e97a488745a33f155d04c72a3",
+      "bytes": 669,
+      "type": "file",
+      "local_sha256": "2d08de99ef6f529bd4e9763aa1f9e23d792e362b5b70b4443891403da501021b"
+    },
+    {
+      "name": "LOCAL_LAUNCH_ONCE.json",
+      "git_blob": "ca0e9062770173cb08d90fe8039be07551b4e1df",
+      "bytes": 122,
+      "type": "file",
+      "local_sha256": "f476043ae22c9c06536dce918e0b7ed6270de0b4c3a3dfe0646bc305ba6fbd9b"
+    },
+    {
+      "name": "MANUAL_SOURCE_COVERAGE.json",
+      "git_blob": "3d140a8e231196c4b01efec38a409d8ded8f84cf",
+      "bytes": 2363,
+      "type": "file",
+      "local_sha256": "641e3fb0b46ff84ba02c1ff53d4791e3dc91c8e9294b4ef442f9124f651d91a5"
+    },
+    {
+      "name": "NEXT_STAGE_RATIONALE.txt",
+      "git_blob": "b62842b918c01b3b6ea848facaee2806d2006d02",
+      "bytes": 1924,
+      "type": "file",
+      "local_sha256": "fb22789e6a9ae1daf76108b9cab9b2ef28fb77fc46e6ca69ee7d881cd7f8180f"
+    },
+    {
+      "name": "ONCE.json",
+      "git_blob": "7408f610769a81b2c343a071415aefc9ed7b33d6",
+      "bytes": 136,
+      "type": "file",
+      "local_sha256": "6fd730ab6ab2e9d2cd0f7bdf717747020e728e7492a54867d28910f5dbb543d8"
+    },
+    {
+      "name": "PROFILE.json",
+      "git_blob": "58e4ec56c303901ef63f6c3d5a3e7d0dc18ad377",
+      "bytes": 3818,
+      "type": "file",
+      "local_sha256": "9c9e77bf92934a2416b9fe941f34aa5dc3b7ba5b53c23e902ff4de905e22ad98"
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "git_blob": "682f441ef6ebdd2c28a79c851a35dca48ed40ac3",
+      "bytes": 2251,
+      "type": "file",
+      "local_sha256": "280d9c970d1832f3f5339d7072956854c48b415d667ec59e7e2261412e6e7c9a"
+    },
+    {
+      "name": "PUBLICATION_BYTE_CHECKS.json",
+      "git_blob": "db0fc3e81af2eca78661de3751113f932649ec80",
+      "bytes": 2693,
+      "type": "file",
+      "local_sha256": "b99e72efa4076990f6b9e4c644874f2d7a1b1a5acb37eea54e300193b2ba3242"
+    },
+    {
+      "name": "REPORT_KO.txt",
+      "git_blob": "ef8566c7cf268dfe16c13a0302e7946f07caca54",
+      "bytes": 3849,
+      "type": "file",
+      "local_sha256": "4e2c8d5047de1f16a9b942a038d05fa827fe5de0d3d499d2f90a097807c1d1c4"
+    },
+    {
+      "name": "REPORT_MIRROR_PLAN.json",
+      "git_blob": "cf25fd20d3ee1792bb6fa6cfb8d82adb2e9aaa9c",
+      "bytes": 3618,
+      "type": "file",
+      "local_sha256": "a486c0be530e0b960d4932e2d91b0f3114f2cc55fcebd3ea742fd94e465fd389"
+    },
+    {
+      "name": "RESULT.json",
+      "git_blob": "3c1346a9f8358fd40040f711f455f2e0269c7942",
+      "bytes": 6491,
+      "type": "file",
+      "local_sha256": "8f9ec3cd1481a509e96262c563d8f1f71aaa510b3e770149941642f5c5d8b51e"
+    },
+    {
+      "name": "RUN_PUBLICATION.json",
+      "git_blob": "6c962ea7777d9999683d23789b78d2b540fe3135",
+      "bytes": 2683,
+      "type": "file",
+      "local_sha256": "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f"
+    },
+    {
+      "name": "SOURCE_FREEZE.json",
+      "git_blob": "318da55594885a6a36487d7512e5e3e75fb29386",
+      "bytes": 932,
+      "type": "file",
+      "local_sha256": "7742062cdf804be8ffccdf4e846eff8dc0c81995ae0fc34f5c4aba8e146d3ef0"
+    },
+    {
+      "name": "SOURCE_PUBLICATION.json",
+      "git_blob": "6c962ea7777d9999683d23789b78d2b540fe3135",
+      "bytes": 2683,
+      "type": "file",
+      "local_sha256": "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f"
+    },
+    {
+      "name": "TERMINAL_OBSERVATION.json",
+      "git_blob": "824392bc6fe61dc34e9762163ca4ea998a5ddf6d",
+      "bytes": 427,
+      "type": "file",
+      "local_sha256": "4f61d9169894e0207316ddb43c157f10627b1c7c6bd0263cc732d0bcf2853119"
+    },
+    {
+      "name": "check_archive.py",
+      "git_blob": "1742e0bf1efbcab94a1d6db3f0fdcca11ab9311d",
+      "bytes": 9065,
+      "type": "file",
+      "local_sha256": "2cd1cb606e3f188113d767f26780a232e16f9ef78309f3cff6648e2607600631"
+    },
+    {
+      "name": "native_memory.py",
+      "git_blob": "ba7f906cc6514b2dfe00256357038c1b2fa89604",
+      "bytes": 1471,
+      "type": "file",
+      "local_sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3"
+    },
+    {
+      "name": "native_processes.py",
+      "git_blob": "4289b9c718234c79c5970865f5c96dfe895ec024",
+      "bytes": 3972,
+      "type": "file",
+      "local_sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed"
+    }
+  ],
+  "prior_batch_raw_fetch_completed_successfully": false,
+  "prior_batch_limitation": "The attempted parallel25blob raw readback raised generic Final source fetch failed before reporting per-file results. Exact failed blob and individual error bodies were not preserved; do not claim they were. Source11 GitHub raw byte checks before execution had already passed. No exporter/model/source job was rerun.",
+  "recovery_scope": "A fresh single directory-metadata read checks the already published final25 Git blob IDs/sizes without resubmitting the failed raw-content batch.",
+  "scientific_results_or_sources_changed": false,
+  "new_model_or_tensor_execution": 0
+}

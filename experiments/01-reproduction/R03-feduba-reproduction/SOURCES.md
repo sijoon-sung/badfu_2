@@ -1542,3 +1542,4 @@
 | [REPORT_MIRROR_PLAN.json](../../../research/feduba_endpoint_archive_integrity_20261103/REPORT_MIRROR_PLAN.json) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [RESULT.json](../../../research/feduba_endpoint_archive_integrity_20261103/RESULT.json) | `research/feduba_endpoint_archive_integrity_20261103` |
 | [TERMINAL_OBSERVATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
+| [FINAL_PUBLIC_READBACK_OBSERVATION.json](../../../research/feduba_endpoint_archive_integrity_20261103/FINAL_PUBLIC_READBACK_OBSERVATION.json) | `research/feduba_endpoint_archive_integrity_20261103` |
