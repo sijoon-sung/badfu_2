@@ -1450,3 +1450,5 @@
 | [native_processes.py](../../../research/feduba_remote_diagnostic_registration_20261103/native_processes.py) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [metadata_reader.py](../../../research/feduba_remote_diagnostic_registration_20261103/metadata_reader.py) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [METADATA_SOURCE_FREEZE.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_SOURCE_FREEZE.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [METADATA_SOURCE_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_SOURCE_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [METADATA_RUN_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_RUN_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
