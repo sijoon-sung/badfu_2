@@ -1441,3 +1441,12 @@
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_historical_selector_source_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_historical_selector_source_review_20261103` |
 | [PINNED_HISTORY_OBSERVATION.json](../../../research/feduba_historical_selector_source_review_20261103/PINNED_HISTORY_OBSERVATION.json) | `research/feduba_historical_selector_source_review_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_historical_selector_source_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PACKET_BINDING.json](../../../research/feduba_remote_diagnostic_registration_20261103/PACKET_BINDING.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [METADATA_PROFILE.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_PROFILE.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_remote_diagnostic_registration_20261103/PROTOCOL.txt) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [FAILED_PREPARATION_METADATA_CALLER.py](../../../research/feduba_remote_diagnostic_registration_20261103/FAILED_PREPARATION_METADATA_CALLER.py) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [PREPARATION_METADATA_FAILURE.json](../../../research/feduba_remote_diagnostic_registration_20261103/PREPARATION_METADATA_FAILURE.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [native_memory.py](../../../research/feduba_remote_diagnostic_registration_20261103/native_memory.py) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [native_processes.py](../../../research/feduba_remote_diagnostic_registration_20261103/native_processes.py) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [metadata_reader.py](../../../research/feduba_remote_diagnostic_registration_20261103/metadata_reader.py) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [METADATA_SOURCE_FREEZE.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_SOURCE_FREEZE.json) | `research/feduba_remote_diagnostic_registration_20261103` |

@@ -1,0 +1,14 @@
+{
+  "state": "readonly_preparation_metadata_query_failed_before_registration",
+  "caller_sha256": "7decd5ee49c88e5034e4011278b1b5e869082b2fa83e5a94c53329bd389bcedd",
+  "local_exit_code": 1,
+  "observed_error": "PowerShell ConvertFrom-Json ArgumentException while reading existing catalogue; decoded CLIXML input/trace was printed and tool output truncated",
+  "raw_stderr_saved": false,
+  "cause_confirmed": false,
+  "all_requested_operations_read_only": true,
+  "registration_started": false,
+  "catalogue_or_packet_mutated": false,
+  "model_or_tensor_loads": 0,
+  "original_caller_reinvoked": false,
+  "new_contract": "New stdlib UTF8 JSON metadata reader; no PowerShell JSON conversion and no full catalogue copying to local/public."
+}
