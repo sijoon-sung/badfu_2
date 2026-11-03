@@ -1400,3 +1400,5 @@
 | [native_processes.py](../../../research/feduba_dependency_semantics_review_20261103/native_processes.py) | `research/feduba_dependency_semantics_review_20261103` |
 | [compare_source.py](../../../research/feduba_dependency_semantics_review_20261103/compare_source.py) | `research/feduba_dependency_semantics_review_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_dependency_semantics_review_20261103/SOURCE_FREEZE.json) | `research/feduba_dependency_semantics_review_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_dependency_semantics_review_20261103/SOURCE_PUBLICATION.json) | `research/feduba_dependency_semantics_review_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_dependency_semantics_review_20261103/RUN_PUBLICATION.json) | `research/feduba_dependency_semantics_review_20261103` |
