@@ -1,0 +1,25 @@
+{
+    "state":  "expected_old_tasks_terminal_native0_before_new_sign_evaluation",
+    "utc":  "2026-11-03T11:52:42.9356938Z",
+    "tasks":  [
+                  {
+                      "name":  "Codex-FedUBA-public-fixed10-targetclass125-pairedFU20-20261103",
+                      "state":  3,
+                      "exit":  0,
+                      "level":  "Limited"
+                  },
+                  {
+                      "name":  "Codex-FedUBA-related-helper-positive-FU20-20261103",
+                      "state":  3,
+                      "exit":  0,
+                      "level":  "Limited"
+                  },
+                  {
+                      "name":  "Codex-FedUBA-related-helper-positive-newmodel-eval-review-20261103",
+                      "state":  3,
+                      "exit":  1,
+                      "level":  "Limited"
+                  }
+              ],
+    "root_native_processes":  0
+}
