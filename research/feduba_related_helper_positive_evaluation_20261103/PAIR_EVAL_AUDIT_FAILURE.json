@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 57372,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\verify_pair_evaluation.py\", line 161, in <module>\n    main()\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\verify_pair_evaluation.py\", line 147, in main\n    'pre_benign_counts_reused_not_reinferred': True, 'baseline_evaluation_sha256': inputs['receipts']['baseline_eval']['sha256'],\n                                                                                   ~~~~~~^^^^^^^^^^^^\nKeyError: 'receipts'\n"
+}
