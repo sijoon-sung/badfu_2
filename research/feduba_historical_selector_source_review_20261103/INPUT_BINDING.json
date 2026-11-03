@@ -1,0 +1,61 @@
+{
+  "archive": {
+    "path": "D:/FEDUBA_ITY92_HISTORY_ARCHIVE_REVIEW_20261103/archive.zip",
+    "sha256": "ac9408f9bec5ff55f980d179a32d28f5ba33b574cb377ff94145402a91a065f5",
+    "bytes": 203237
+  },
+  "source_members": {
+    "FedUBA-code/influence_function.py": {
+      "bytes": 5274,
+      "sha256": "79e8590613ddaf317b89c79f93f53e148a2580a12dc6d648c73b17c4c44044b6"
+    },
+    "FedUBA-code/Fed_data_change.py": {
+      "bytes": 4488,
+      "sha256": "d6eac3863eacafbb4f2e3275a2b6a08d00a15af58a70f983a0f448b8df0aadab"
+    }
+  },
+  "reference_sources": {
+    "paper_pdf": {
+      "path": "D:/FEDUBA_REPRO_AUDIT_20261031/FedUBA-TDSC26.pdf",
+      "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+      "bytes": 7478516
+    },
+    "paperlinked_change": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_change.py",
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8",
+      "bytes": 6152
+    },
+    "actual_logger": {
+      "path": "D:/FEDUBA_FIXED10_SSS_20261103/sss_logging.py",
+      "sha256": "1edd3927efb6c02ae9aca2026fad4f3c15352c13ce84de0344a128443face0d7",
+      "bytes": 1491
+    },
+    "actual_runner": {
+      "path": "D:/FEDUBA_FIXED10_SSS_20261103/sss_runner.py",
+      "sha256": "be2f526eea2ac3b9dba370506d0c1ea9946bb9ed963570f224909f64e011d04c",
+      "bytes": 8301
+    },
+    "actual_core": {
+      "path": "D:/FEDUBA_FIXED10_SSS_20261103/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+      "bytes": 6168
+    },
+    "archive_completion": {
+      "path": "D:/FEDUBA_ITY92_HISTORY_ARCHIVE_REVIEW_20261103/COMPLETION.json",
+      "sha256": "b7cf6d00c321e47864ac92e4d72f7d7ad1fc1d81bdfc6c2d2ad8a8aec9af61ac",
+      "bytes": 424
+    },
+    "semantics_completion": {
+      "path": "D:/FEDUBA_DEPENDENCY_SEMANTICS_REVIEW_20261103/COMPLETION.json",
+      "sha256": "b243667efe63b03b23af8810807916a6dca79c6f9d454941826531287ca23d33",
+      "bytes": 342
+    },
+    "paper_page6_text": {
+      "path": "D:/FEDUBA_HISTORICAL_SELECTOR_SOURCE_REVIEW_20261103/private_inputs/page6.txt",
+      "sha256": "85f22599985fcc3fac1e6831d2e44b463e70b52478d7cae49c2e86a87e5b8f93",
+      "bytes": 5815
+    }
+  },
+  "previously_observed_unused_root_influence_git_blob": "c4680108c92db048b9150fac0052f3c3be4d4c7a",
+  "previous_root_scope": "Existing closed ity207/FedUBA-2 root metadata only; no old source reviewer/download is rerun."
+}

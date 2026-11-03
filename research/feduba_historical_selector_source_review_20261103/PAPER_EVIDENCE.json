@@ -1,0 +1,18 @@
+{
+  "paper_url": "https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf",
+  "paper_sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+  "page6_printed_page": 10499,
+  "page6_PNG_sha256": "b491b44f26896bafcfa8b0254f23b83c654af685215d4bef04edc04cd2ef1e5e",
+  "page6_PNG_bytes": 309556,
+  "Eq6_visual_review": true,
+  "Eq6": "s_i = norm(f(x_i+delta_star)-f(x_i))",
+  "Eq7": "descending Top-n over local scores",
+  "Eq8": "request x_j-delta_star",
+  "paper_explicit_constraints": {
+    "score_observation": "two forward calls per sample",
+    "no_victim_parameters": true,
+    "no_victim_gradients": true,
+    "no_victim_Hessian": true
+  },
+  "scope": "Static original source-conformance target; not new inference, model verification, author intent certification or detector evidence."
+}

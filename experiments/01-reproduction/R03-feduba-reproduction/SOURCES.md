@@ -1412,3 +1412,16 @@
 | [COMPARISON.json](../../../research/feduba_dependency_semantics_review_20261103/COMPARISON.json) | `research/feduba_dependency_semantics_review_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_dependency_semantics_review_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_dependency_semantics_review_20261103` |
 | [FINAL_METADATA_CHECK.json](../../../research/feduba_dependency_semantics_review_20261103/FINAL_METADATA_CHECK.json) | `research/feduba_dependency_semantics_review_20261103` |
+| [INPUT_BINDING.json](../../../research/feduba_historical_selector_source_review_20261103/INPUT_BINDING.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PROFILE.json](../../../research/feduba_historical_selector_source_review_20261103/PROFILE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_historical_selector_source_review_20261103/PROTOCOL.txt) | `research/feduba_historical_selector_source_review_20261103` |
+| [PAPER_EVIDENCE.json](../../../research/feduba_historical_selector_source_review_20261103/PAPER_EVIDENCE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [native_memory.py](../../../research/feduba_historical_selector_source_review_20261103/native_memory.py) | `research/feduba_historical_selector_source_review_20261103` |
+| [native_processes.py](../../../research/feduba_historical_selector_source_review_20261103/native_processes.py) | `research/feduba_historical_selector_source_review_20261103` |
+| [review_selector.py](../../../research/feduba_historical_selector_source_review_20261103/review_selector.py) | `research/feduba_historical_selector_source_review_20261103` |
+| [LOCAL_INPUT_PATH_TRANSPORT_FAILURE.json](../../../research/feduba_historical_selector_source_review_20261103/LOCAL_INPUT_PATH_TRANSPORT_FAILURE.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [INPUT_PATH_TRANSPORT_READBACK_PROTOCOL.txt](../../../research/feduba_historical_selector_source_review_20261103/INPUT_PATH_TRANSPORT_READBACK_PROTOCOL.txt) | `research/feduba_historical_selector_source_review_20261103` |
+| [INPUT_PATH_READBACK.json](../../../research/feduba_historical_selector_source_review_20261103/INPUT_PATH_READBACK.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PREPUBLICATION_LOCATION_CORRECTION.json](../../../research/feduba_historical_selector_source_review_20261103/PREPUBLICATION_LOCATION_CORRECTION.json) | `research/feduba_historical_selector_source_review_20261103` |
+| [PREPUBLICATION_FAILED_LOCATION_CALLER.py](../../../research/feduba_historical_selector_source_review_20261103/PREPUBLICATION_FAILED_LOCATION_CALLER.py) | `research/feduba_historical_selector_source_review_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_historical_selector_source_review_20261103/SOURCE_FREEZE.json) | `research/feduba_historical_selector_source_review_20261103` |
