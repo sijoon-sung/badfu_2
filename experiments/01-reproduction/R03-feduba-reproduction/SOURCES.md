@@ -1292,3 +1292,9 @@
 | [review_recovery.py](../../../research/feduba_positive_independent_recovery_20261103/review_recovery.py) | `research/feduba_positive_independent_recovery_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_positive_independent_recovery_20261103/SOURCE_FREEZE.json) | `research/feduba_positive_independent_recovery_20261103` |
 | [verify_recovery.py](../../../research/feduba_positive_independent_recovery_20261103/verify_recovery.py) | `research/feduba_positive_independent_recovery_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_positive_independent_recovery_20261103/SOURCE_PUBLICATION.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [SOURCE_REVIEW_RESULT.json](../../../research/feduba_positive_independent_recovery_20261103/SOURCE_REVIEW_RESULT.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [UPSTREAM_TERMINAL_CHECK.json](../../../research/feduba_positive_independent_recovery_20261103/UPSTREAM_TERMINAL_CHECK.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_positive_independent_recovery_20261103/PUBLICATION_BYTE_CHECKS.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [RUN_FREEZE.json](../../../research/feduba_positive_independent_recovery_20261103/RUN_FREEZE.json) | `research/feduba_positive_independent_recovery_20261103` |
+| [ACTUAL_RUN_REPORT_KO.txt](../../../research/feduba_positive_independent_recovery_20261103/ACTUAL_RUN_REPORT_KO.txt) | `research/feduba_positive_independent_recovery_20261103` |
