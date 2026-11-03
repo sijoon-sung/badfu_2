@@ -36,3 +36,5 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 [새 정 부호 FU20·CPU 완료](../../../research/feduba_related_helper_positive_20261103/CPU_COMPLETION_REPORT_KO.txt) · [새 모델 평가 실제 준비](../../../research/feduba_related_helper_positive_evaluation_20261103/ACTUAL_EVALUATION_REPORT_KO.txt)。최종성능 미측정.
 
 [새 평가의 원실패와 한정 보관 계약](../../../research/feduba_positive_evaluation_prefix_archive_20261103/PROTOCOL.txt): primaryASR58.7444,독립수치대조종료후확인서작성실패. 원VERIFIED합성/재추론0.
+
+[정 부호 최종 결과와 원실패 보존](../../../research/feduba_positive_evaluation_prefix_archive_20261103/FINAL_REPORT_KO.txt) · [고정 비교](../../../research/feduba_positive_evaluation_prefix_archive_20261103/COMPARISON.txt) · [후속 검토 범위](../../../research/feduba_positive_evaluation_prefix_archive_20261103/NEXT_STAGE_RATIONALE.txt). 새after/원raw와원평가exit1·VERIFIED부재를보존한별도CPU/봉인완료이며성공재현아님.

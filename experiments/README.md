@@ -12,7 +12,7 @@
 |---|---|---|
 | R01 | [BadFU 학습과 삭제 전후 모델 확인](01-reproduction/R01-badfu-reproduction/README.md) | 검증 범위 한정 |
 | R02 | [FUBA 재현의 수정 과정과 실제 삭제 후 결과](01-reproduction/R02-fuba-reproduction/README.md) | FUBA 두완료실패 보존 / 사용자 FedUBA 대상정정으로 나머지queue중지 |
-| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](01-reproduction/R03-feduba-reproduction/README.md) | positive primary ASR58.7444·4성능gate실패 / 독립확인서오류보존·prefix보관계약 |
+| R03 | [FedUBA 공식 배포본과 논문 재현의 진입 조건](01-reproduction/R03-feduba-reproduction/README.md) | positive ASR58.7444·4성능gate실패 / 원확인서오류·한정prefix/CPU보관완료 |
 
 ## [공격 탐지](02-detection/README.md)
 
