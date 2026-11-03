@@ -1064,3 +1064,8 @@
 | [PAPER_COMPARISON.txt](../../../research/feduba_fixed10_pair_20261103/PAPER_COMPARISON.txt) | `research/feduba_fixed10_pair_20261103` |
 | [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_fixed10_pair_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_fixed10_pair_20261103` |
 | [EVALUATOR_ROUTE_DIFFERENCE.json](../../../research/feduba_fixed10_pair_20261103/EVALUATOR_ROUTE_DIFFERENCE.json) | `research/feduba_fixed10_pair_20261103` |
+| [PROTOCOL.txt](../../../research/feduba_author_archive_review_20261103/PROTOCOL.txt) | `research/feduba_author_archive_review_20261103` |
+| [REVIEW_PROFILE.json](../../../research/feduba_author_archive_review_20261103/REVIEW_PROFILE.json) | `research/feduba_author_archive_review_20261103` |
+| [SOURCE_DISCOVERY.json](../../../research/feduba_author_archive_review_20261103/SOURCE_DISCOVERY.json) | `research/feduba_author_archive_review_20261103` |
+| [inspect_archive.py](../../../research/feduba_author_archive_review_20261103/inspect_archive.py) | `research/feduba_author_archive_review_20261103` |
+| [SOURCE_FREEZE.json](../../../research/feduba_author_archive_review_20261103/SOURCE_FREEZE.json) | `research/feduba_author_archive_review_20261103` |

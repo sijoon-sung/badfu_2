@@ -1,0 +1,48 @@
+{
+  "id": "feduba.alternative_author_archive.model_free.20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "review_enabled": true,
+  "launch_enabled": false,
+  "numerical_compute_allowed": false,
+  "execution_root": "D:/FEDUBA_AUTHOR_ARCHIVE_REVIEW_20261103",
+  "repository": "ity207/FedUBA-2",
+  "commit": "9e65a5cda5138f6573039b75903e1741c2f6114d",
+  "url": "https://raw.githubusercontent.com/ity207/FedUBA-2/9e65a5cda5138f6573039b75903e1741c2f6114d/FedUBA.zip",
+  "archive_git_blob_sha1": "3bea03efa9c6544864e818ca670bacbd7462a25c",
+  "archive_expected_bytes": 26677,
+  "expected_root_blobs": {
+    "Fed_Unlearn_attack.py": "4baeb0931f39c139c325bcee9b4298e95f64c50a",
+    "Fed_Unlearn_main.py": "97b806ee736db9dccec13cc0a56684dc40fdd60d",
+    "Fed_data_change.py": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9",
+    "Fed_data_preprocess.py": "4eb1850b993b4fae675da99c8cbc45cbd34b2150",
+    "Fed_model_initiation.py": "97785086ce548af4799c05e015cf9865b85aaf28",
+    "Fed_test.py": "49f3866a7aae53e989c34cf283681f7378b423fb",
+    "Fed_train.py": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+    "README.md": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e",
+    "trigger_generate_function.py": "bb5096dbb192fa8d5cffa7fc9d97559d15157127"
+  },
+  "max_members": 100,
+  "max_uncompressed_bytes": 20971520,
+  "request_timeout_seconds": 40,
+  "required_missing_symbols": [
+    "poison_image",
+    "poison_image_label",
+    "concoct_dataset",
+    "sur_target_dataset",
+    "apply_noise_patch",
+    "ResNet18",
+    "ResNet18_201"
+  ],
+  "allow_model_or_tensor_reads": false,
+  "allow_import_upstream": false,
+  "allow_extract_to_source_root": false,
+  "model_loads": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0
+}
