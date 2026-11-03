@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "64eb9fe8430beedbd70860eb3c920f81eea67e4b5abd214675d0ae10417ee451",
+  "registry_sha256": "5cd92cdd12abdea1ed5db8316841c6f67d0498a18bffdea4f3017a3269ed3ed8",
   "cards": 28,
-  "unique_source_documents": 1843,
+  "unique_source_documents": 1857,
   "top_level_folders": 152,
   "folders_linked_to_cards": 104,
   "source_sha256": {
@@ -1776,6 +1776,20 @@
     "research/feduba_endpoint_archive_integrity_20261103/SOURCE_FREEZE.json": "7742062cdf804be8ffccdf4e846eff8dc0c81995ae0fc34f5c4aba8e146d3ef0",
     "research/feduba_endpoint_archive_integrity_20261103/SOURCE_PUBLICATION.json": "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f",
     "research/feduba_endpoint_archive_integrity_20261103/RUN_PUBLICATION.json": "1287858999b3fdb991338e1f002d175ec618af644396b9f7835de7d7e11cba2f",
+    "research/feduba_endpoint_archive_integrity_20261103/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "research/feduba_endpoint_archive_integrity_20261103/.gitignore": "7d6a0eaff01f4bd8e86d0e6971b35ae7a088efefe0f91b7ade22c882f81511e5",
+    "research/feduba_endpoint_archive_integrity_20261103/ADMISSION.json": "4ecbf1b8a7911bb0f4cffa0f905a804cf42abd55c2311d4f294dc6da3f4da167",
+    "research/feduba_endpoint_archive_integrity_20261103/COMPLETION.json": "51bbbb3a28f23101001f7b1de5e7463d2d872774cef657cced01493dfb0e5b30",
+    "research/feduba_endpoint_archive_integrity_20261103/FINAL_METADATA_CHECK.json": "034d77ffb667b78c4b0d770254c4ce25ce4052495379f06a5061cb76f7d8bdce",
+    "research/feduba_endpoint_archive_integrity_20261103/FINAL_RESULT_SUMMARY.json": "9f56bb4faf1bd95c3857780518935bb551f37e26740eb648d35d638153674fc9",
+    "research/feduba_endpoint_archive_integrity_20261103/LOCAL_LAUNCH_ONCE.json": "f476043ae22c9c06536dce918e0b7ed6270de0b4c3a3dfe0646bc305ba6fbd9b",
+    "research/feduba_endpoint_archive_integrity_20261103/NEXT_STAGE_RATIONALE.txt": "fb22789e6a9ae1daf76108b9cab9b2ef28fb77fc46e6ca69ee7d881cd7f8180f",
+    "research/feduba_endpoint_archive_integrity_20261103/ONCE.json": "6fd730ab6ab2e9d2cd0f7bdf717747020e728e7492a54867d28910f5dbb543d8",
+    "research/feduba_endpoint_archive_integrity_20261103/PUBLICATION_BYTE_CHECKS.json": "b99e72efa4076990f6b9e4c644874f2d7a1b1a5acb37eea54e300193b2ba3242",
+    "research/feduba_endpoint_archive_integrity_20261103/REPORT_KO.txt": "4e2c8d5047de1f16a9b942a038d05fa827fe5de0d3d499d2f90a097807c1d1c4",
+    "research/feduba_endpoint_archive_integrity_20261103/REPORT_MIRROR_PLAN.json": "a486c0be530e0b960d4932e2d91b0f3114f2cc55fcebd3ea742fd94e465fd389",
+    "research/feduba_endpoint_archive_integrity_20261103/RESULT.json": "8f9ec3cd1481a509e96262c563d8f1f71aaa510b3e770149941642f5c5d8b51e",
+    "research/feduba_endpoint_archive_integrity_20261103/TERMINAL_OBSERVATION.json": "4f61d9169894e0207316ddb43c157f10627b1c7c6bd0263cc732d0bcf2853119",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -2202,7 +2216,11 @@
         "R03"
       ],
       "top_level_documents": [
-        "research/feduba_endpoint_archive_integrity_20261103/PROTOCOL.txt"
+        "research/feduba_endpoint_archive_integrity_20261103/FINAL_RESULT_SUMMARY.json",
+        "research/feduba_endpoint_archive_integrity_20261103/PROTOCOL.txt",
+        "research/feduba_endpoint_archive_integrity_20261103/REPORT_KO.txt",
+        "research/feduba_endpoint_archive_integrity_20261103/REPORT_MIRROR_PLAN.json",
+        "research/feduba_endpoint_archive_integrity_20261103/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
