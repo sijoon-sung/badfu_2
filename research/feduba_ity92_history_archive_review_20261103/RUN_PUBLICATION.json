@@ -1,0 +1,77 @@
+{
+  "state": "published_actual_ity92_source_archive_review_before_execution",
+  "commit": "efe6da9b5c7b580f80a86d1431d1dd12ebba4458",
+  "source_freeze_sha256": "e56cdf056be88b0d552d73ec8e7bca9a35725d2fce369242360a98becf3f6297",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8,
+      "git_blob": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": ".gitignore",
+      "sha256": "a81cf6aca879fb6a8469a5d29b2482dad85b25e052e652bd17869427dd294e70",
+      "bytes": 40,
+      "git_blob": "e59a4984e2014190594d2e969eccffa3689ca31c",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "DISCOVERY.json",
+      "sha256": "ad23cf5278a03c9e4f22d71997b71b32faf15f0b1de2b6dcc45b448efd7a8842",
+      "bytes": 1180,
+      "git_blob": "3e4c5e9e3393311c800e1878b0f47bbfe2d57cda",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "INPUT_BINDING.json",
+      "sha256": "0744c37800cd10a6463c8dfd100a53e5cf06e31a4ae60d89d5ce282ca11ff5ab",
+      "bytes": 1653,
+      "git_blob": "d971cb1262e0a1d2ddb6287b950b29ec8719c637",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "PROFILE.json",
+      "sha256": "2a1204e5cad6634d78c89a21005a1db2f624c0ba41995ff337e9727a8cfa1214",
+      "bytes": 2787,
+      "git_blob": "0df882a4a2d4cd3eb0775e6e17b038802aa77280",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "sha256": "810137528d25cfa15b6827a65db094731a8fec5f6223443f9e3e4e2cbd554ee0",
+      "bytes": 2489,
+      "git_blob": "2d0d3d9e55652693d0554c0396969f6230799dbf",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+      "bytes": 1471,
+      "git_blob": "ba7f906cc6514b2dfe00256357038c1b2fa89604",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+      "bytes": 3972,
+      "git_blob": "4289b9c718234c79c5970865f5c96dfe895ec024",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "review_archive.py",
+      "sha256": "fb39920804ac6977f699d358a439d00855574793fca823bcc8de7d991d4062c3",
+      "bytes": 9322,
+      "git_blob": "42508d17b11b70c961206298a614a32562cb33b7",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "SOURCE_FREEZE.json",
+      "sha256": "e56cdf056be88b0d552d73ec8e7bca9a35725d2fce369242360a98becf3f6297",
+      "bytes": 724,
+      "git_blob": "5d4afae931dfd6fc9ed3e3e4873ca02c05602972",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    }
+  ]
+}

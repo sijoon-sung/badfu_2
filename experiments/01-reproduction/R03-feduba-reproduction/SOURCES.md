@@ -1379,3 +1379,5 @@
 | [native_processes.py](../../../research/feduba_ity92_history_archive_review_20261103/native_processes.py) | `research/feduba_ity92_history_archive_review_20261103` |
 | [review_archive.py](../../../research/feduba_ity92_history_archive_review_20261103/review_archive.py) | `research/feduba_ity92_history_archive_review_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_ity92_history_archive_review_20261103/SOURCE_FREEZE.json) | `research/feduba_ity92_history_archive_review_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_ity92_history_archive_review_20261103/SOURCE_PUBLICATION.json) | `research/feduba_ity92_history_archive_review_20261103` |
+| [RUN_PUBLICATION.json](../../../research/feduba_ity92_history_archive_review_20261103/RUN_PUBLICATION.json) | `research/feduba_ity92_history_archive_review_20261103` |
