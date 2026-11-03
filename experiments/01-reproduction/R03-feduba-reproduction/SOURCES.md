@@ -1464,3 +1464,5 @@
 | [METADATA_ADMISSION.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_ADMISSION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [METADATA_PUBLICATION_BYTE_CHECKS.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_PUBLICATION_BYTE_CHECKS.json) | `research/feduba_remote_diagnostic_registration_20261103` |
 | [METADATA_TERMINAL_OBSERVATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/METADATA_TERMINAL_OBSERVATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_SOURCE_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_SOURCE_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
+| [REGISTRATION_RUN_PUBLICATION.json](../../../research/feduba_remote_diagnostic_registration_20261103/REGISTRATION_RUN_PUBLICATION.json) | `research/feduba_remote_diagnostic_registration_20261103` |
