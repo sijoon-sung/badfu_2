@@ -1603,3 +1603,11 @@
 | [observe_receive_attempt_20261103_1516.py](../../../research/feduba_endpoint_local_receive_20261103/observe_receive_attempt_20261103_1516.py) | `research/feduba_endpoint_local_receive_20261103` |
 | [NATIVE_ATTEMPT_SOURCE_FREEZE_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_SOURCE_FREEZE_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
 | [NATIVE_ATTEMPT_PUBLICATION_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_PUBLICATION_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_ONCE_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_ONCE_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_RECEIVE_READINESS_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_RECEIVE_READINESS_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_RESULT_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_RESULT_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_TERMINAL_20261103_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_TERMINAL_20261103_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_1516_SUMMARY.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_1516_SUMMARY.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_MIRROR_PLAN_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_MIRROR_PLAN_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_MIRROR_CHECK_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_MIRROR_CHECK_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
+| [NATIVE_ATTEMPT_FINALIZATION_ORDER_OBSERVATION_1516.json](../../../research/feduba_endpoint_local_receive_20261103/NATIVE_ATTEMPT_FINALIZATION_ORDER_OBSERVATION_1516.json) | `research/feduba_endpoint_local_receive_20261103` |
