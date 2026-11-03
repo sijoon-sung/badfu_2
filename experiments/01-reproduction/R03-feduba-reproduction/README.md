@@ -23,3 +23,6 @@ D08에서 공격0.75848이 큰 정상0.75525/0.76188 사이였던 반례는 그�
 
 
 2026-11-03 최신: fixed10/newSSS 정상·공격FU20과 양독립CPU·각60000sample474calls 표준평가·원격readonly봉인이 실제완료했다. pre CA85.53/ASR20.1444%, 정상CA84.74/ASR-B16.6667%, 공격CA84.69/ASR13.8222%로 4성능gate실패/2CA통과다. 공격활성화가 재현되지 않았으며 저장완료를 성능성공으로 취급하지 않는다. [최종실제결과·한계](../../../research/feduba_fixed10_pair_20261103/FINAL_REPORT_KO.txt), [논문비교](../../../research/feduba_fixed10_pair_20261103/PAPER_COMPARISON.txt), [후속근거범위](../../../research/feduba_fixed10_pair_20261103/NEXT_STAGE_RATIONALE.txt)를 읽는다. task Ready/exit0/native0/failure0이며 이전유한작업 재실행0. Local전달/탐지/전체성능목표는 미완료다.
+
+
+2026-11-03 후속: 새추론없이기존SSS40의저장logit을분석했다. 선택target125중76에서positive-delta의targetmargin이감소했고,비선택target343중202도감소했다. 비target4532의margin은3858개에서증가했다. 과반가설은지지됐지만selector고유원인/새선택/재훈련채택으로승격하지않는다. [고정진단·독립검산·범위](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt)를읽는다. 모델load/forward0·원query/rank/FU재실행0이며표준ASR와다른학습자료진단이다.

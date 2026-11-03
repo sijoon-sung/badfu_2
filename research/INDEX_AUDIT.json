@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "cb6ef00eceb03f035313d10cf9cca18799f58b27041d665750bf801fd025dcc5",
+  "registry_sha256": "e24934169522f70e19ab2cd1436ca1324d22c4430e8bca094cc348b229f6f762",
   "cards": 28,
-  "unique_source_documents": 1409,
+  "unique_source_documents": 1422,
   "top_level_folders": 139,
   "folders_linked_to_cards": 91,
   "source_sha256": {
@@ -1342,6 +1342,19 @@
     "research/feduba_fixed10_sss_direction_diagnosis_20261103/verify_direction.py": "506b03307897077a5d5bd774bfdd81cc40eec62058ff55adbf67232277730631",
     "research/feduba_fixed10_sss_direction_diagnosis_20261103/controller.py": "806f535a0b4c5031825bf9dd3e55af4cf0d6599521bcaf6f1efb1f3c53604016",
     "research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_FREEZE.json": "a240de55f1fb8c49a669889228860ac73679bd08fdc1c4f452ad82502a76f199",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_PUBLICATION.json": "fa470a95fd6a5ecb1ae1cb5629614d622d74d1182011c7feae4712ca69a4be35",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_FOREGROUND_ONCE.json": "5747881965a3db533be711dc33b7f26248dc97686d89c4227a17eaa6eb72ebf8",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_READBACK.json": "9e7a747fb499fb9ffd807069b37e943d50f75150953c44f29ae4e903033c2716",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/CONTROLLER_ONCE.json": "808f00d69a79178f159d4e420a18356d1beb0de5615124267b5c0955f320c6ed",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/PRIMARY_ONCE.json": "7dd35a02e15fdd1d5d6f00e09810a09e9b7b6f05c45e8138705583757613f6fa",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFY_ONCE.json": "f64431514dac107403fa565757ed4d427928121621969f339bcd26e39f5b4e48",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/STATE.json": "13c6ef399604ab20f2c62d6effbcfe98c81903ee4352a0c740a1c9ecf13e3e86",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/RESULT.json": "abf2519719e66873d5be4a8dc2e12f46d70067d4cfdf962fc27307b75fc3bbc6",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFIED.json": "2ccacb36deda7384101dbf11859a8b11df2479e541ac179d1e21aa911b90be20",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/COMPLETION.json": "13e548cfd55e57177e3e7c1267fdfa12cbc7604fb783ad34ec670f816ecb03ec",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/TERMINAL_OBSERVATION.json": "df6d32619491e5dbcbf5205fad5c3adac8bcefe35a06025c1402788a7ba5996b",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt": "abb50e7eccd81035eeaed457632bd6fd193236efb48b30ae5e86e35c7f5693fb",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/NEXT_STAGE_RATIONALE.txt": "71ad0b0e266aa1ffd3e580eada2475166cbe20d904bd95472144c36ef14e58f2",
     "research/03_detection/parked/history/README.md": "468d02da9533fbf35aa2290bf79826880a4f8eb3cc63c37224d46a555d80e2b0",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -1838,7 +1851,9 @@
         "R03"
       ],
       "top_level_documents": [
-        "research/feduba_fixed10_sss_direction_diagnosis_20261103/PROTOCOL.txt"
+        "research/feduba_fixed10_sss_direction_diagnosis_20261103/PROTOCOL.txt",
+        "research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt",
+        "research/feduba_fixed10_sss_direction_diagnosis_20261103/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

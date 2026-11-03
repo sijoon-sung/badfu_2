@@ -1,0 +1,15 @@
+{
+  "state": "passed_independent_scalar_saved_logit_arithmetic",
+  "primary_result_sha256": "abf2519719e66873d5be4a8dc2e12f46d70067d4cfdf962fc27307b75fc3bbc6",
+  "private_rows_sha256": "f22e2ab599cedf99b19cfaf5aa12f6d7ddcca30ae54d7ed83566051d83582f26",
+  "checked_rows": 5000,
+  "all_integer_counts_and_signs_exact": true,
+  "max_FP64_summary_abs_error": 3.552713678800501e-15,
+  "predeclared_majority_margin_decrease": true,
+  "model_loads": 0,
+  "forward_calls": 0,
+  "torch_imported": false,
+  "original_PT_packets_independently_reloaded": false,
+  "new_selection_or_training_allowed": false,
+  "overall_goal_complete": false
+}

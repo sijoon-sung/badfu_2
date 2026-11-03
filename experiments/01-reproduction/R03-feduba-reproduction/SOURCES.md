@@ -1094,3 +1094,16 @@
 | [verify_direction.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/verify_direction.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
 | [controller.py](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/controller.py) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
 | [SOURCE_FREEZE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_FREEZE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [SOURCE_PUBLICATION.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_PUBLICATION.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [LOCAL_FOREGROUND_ONCE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_FOREGROUND_ONCE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [LOCAL_READBACK.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_READBACK.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [CONTROLLER_ONCE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/CONTROLLER_ONCE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [PRIMARY_ONCE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/PRIMARY_ONCE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [VERIFY_ONCE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFY_ONCE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [STATE.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/STATE.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [RESULT.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/RESULT.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [VERIFIED.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFIED.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [COMPLETION.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/COMPLETION.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [TERMINAL_OBSERVATION.json](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/TERMINAL_OBSERVATION.json) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [REPORT_KO.txt](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
+| [NEXT_STAGE_RATIONALE.txt](../../../research/feduba_fixed10_sss_direction_diagnosis_20261103/NEXT_STAGE_RATIONALE.txt) | `research/feduba_fixed10_sss_direction_diagnosis_20261103` |
