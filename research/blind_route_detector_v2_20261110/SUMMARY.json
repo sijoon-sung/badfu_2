@@ -1,0 +1,22 @@
+{
+  "gaps": {
+    "baseline": {
+      "min_attack": 0.3288888888888889,
+      "max_benign": 0.12333333333333334,
+      "gap": 0.20555555555555555
+    },
+    "route": {
+      "min_attack": 0.41333333333333333,
+      "max_benign": 0.10888888888888888,
+      "gap": 0.30444444444444446
+    }
+  },
+  "route_gap_improvement": 0.09888888888888892,
+  "preregistered_added_value_supported": true,
+  "universal_trigger_family_independent_detection_validated": false,
+  "fuba_successful_latent_positive_available": false,
+  "attack_classification_status": "calibration_required",
+  "inference_scores_are_bounded_search_results_not_operational_TPR_FPR": true,
+  "primary_seconds": 508.4242260456085,
+  "independent_counts_exact": true
+}

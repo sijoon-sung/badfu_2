@@ -1,12 +1,12 @@
 {
   "schema": "research-index-audit-v1",
-  "as_of": "2026-10-31",
+  "as_of": "2026-11-10",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "0776562e9d715c9c5fe605e7ec7981b463c8e98ea35f3670e361e706a354bab8",
-  "cards": 30,
-  "unique_source_documents": 1952,
-  "top_level_folders": 155,
-  "folders_linked_to_cards": 107,
+  "registry_sha256": "b0a2816c2b8c07111d813aeee723f17f2dbf2feec14da855bdd6d0d65c8fa507",
+  "cards": 31,
+  "unique_source_documents": 1981,
+  "top_level_folders": 157,
+  "folders_linked_to_cards": 109,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -1959,7 +1959,36 @@
     "research/topdown_mechanism_20261110/external_evidence/STAGE03_PROTOCOL.txt": "b0c79616a7e348862b3796052ded13d315db95c6d11d8bca3bab3ff74ca3092f",
     "research/topdown_mechanism_20261110/external_evidence/HEAD_ROUTE_REPORT_KO.txt": "1bd8883710f73c8df2bfb45bd4a5e073c742cdeeb3a68239a0e9e194a53f6a7a",
     "research/topdown_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json": "2c97c69c418a8133fa6820687488676fbbbed89ba8ebd76a42602b85d1bbae17",
-    "research/topdown_mechanism_20261110/remote_results/FINAL_TERMINAL.json": "b2a98caa9de8e72d769af070f7d6f586aa23880abc62386a52be3e59a7b71932"
+    "research/topdown_mechanism_20261110/remote_results/FINAL_TERMINAL.json": "b2a98caa9de8e72d769af070f7d6f586aa23880abc62386a52be3e59a7b71932",
+    "research/blind_route_detector_20261110/PROTOCOL.txt": "bbe460f314b72762960203b33012e98936e3212987573f3f82c53b41ec83eb7c",
+    "research/blind_route_detector_20261110/FREEZE_INITIAL.json": "b6f7565576350d5a7993f7226f951943fc8070c567253491eddd25ead6d4b101",
+    "research/blind_route_detector_20261110/STOP_AUDIT.json": "1fc87a772cb34815fbc328f84a001649bbd83cf793086db3c983c226842bf52a",
+    "research/blind_route_detector_v2_20261110/REPORT_KO.txt": "993fd41d14b6482cead058e99aa34cbb92163df12acfc97f3e2715c3980e0669",
+    "research/blind_route_detector_v2_20261110/PROTOCOL.txt": "bbe460f314b72762960203b33012e98936e3212987573f3f82c53b41ec83eb7c",
+    "research/blind_route_detector_v2_20261110/CORRECTION_PROTOCOL.txt": "5840fbade252a761bc3b7ac51a768a82154219f026efc77ed317e79e7344f282",
+    "research/blind_route_detector_v2_20261110/RESOURCE_AMENDMENT.txt": "b8b976ac72b19cdef36b326a5b45c347e4388854a1f488177db83eccda7015a7",
+    "research/blind_route_detector_v2_20261110/LITERATURE_AND_SCOPE.txt": "e7443eff2bdac98d1209addb75d375320466cb1ccb7793b42eb55b11bc7a4950",
+    "research/blind_route_detector_v2_20261110/PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+    "research/blind_route_detector_v2_20261110/FREEZE.json": "ce980fee2fd43678193da5797a5439f1559431ffbbbe08ad42a95fd26580988b",
+    "research/blind_route_detector_v2_20261110/PUBLICATION.json": "2f8a62b140990a90503b831eb70560d4cf3ce09b3d78898ff86e0a42cfb1087a",
+    "research/blind_route_detector_v2_20261110/REUSE_BINDING.json": "9775b54580e5b8013e75ed41ce17d4773490f5b6866a40b35b5c68a8dade95cf",
+    "research/blind_route_detector_v2_20261110/VERIFIER_RECOVERY_PROTOCOL.txt": "6905ac96dd5cffdea0a1425d614761525ae49f5fdece0ee91b0f8630faf77c07",
+    "research/blind_route_detector_v2_20261110/VERIFIER_RECOVERY_FREEZE.json": "2a66cab8c8fd7d30685999cad1356751033125f95ee1d163678547472b6c33ef",
+    "research/blind_route_detector_v2_20261110/VERIFIER_RECOVERY_PUBLICATION.json": "208291f3404e2f1bdffcf9f94c2266c82a4e9bbb5b9ffb8949e55617c9a6d28b",
+    "research/blind_route_detector_v2_20261110/PACKET_PROTOCOL.txt": "82f352373bc3961066cfec671491ff61cc345c8a86b90afd858293af47190025",
+    "research/blind_route_detector_v2_20261110/PACKET_FREEZE.json": "589fc7791067c924bfc6f621415f7330ba25bd69447f20e58bf17ef3f27b24ae",
+    "research/blind_route_detector_v2_20261110/PACKET_PUBLICATION.json": "272ac1131bd09b4fdc0065b6d5632527f263190d3d588ccae8403fdeb49fffa2",
+    "research/blind_route_detector_v2_20261110/remote_results/REGISTRATION.json": "4c4c72617dec31b7ec0a1e044e6ef827adf0eee3350f2cbca999511f51d1bb80",
+    "research/blind_route_detector_v2_20261110/remote_results/FIXTURES.json": "8f5ff51d3d00057020699612e19033fc6bf09b55e823cb75ee46a4444d83caaa",
+    "research/blind_route_detector_v2_20261110/remote_results/RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+    "research/blind_route_detector_v2_20261110/remote_results/SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52",
+    "research/blind_route_detector_v2_20261110/remote_results/VERIFY_FAILURE.txt": "1367373b03ddb3f849176179e500c18e9e52ccbadc26bf795fe52288f10a9220",
+    "research/blind_route_detector_v2_20261110/remote_results/VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5",
+    "research/blind_route_detector_v2_20261110/remote_results/CPU_PAYLOAD_AUDIT.json": "65e9cb76e8a7030265a427239d631759ef27342fdf6883c161a8d75f58f95bc0",
+    "research/blind_route_detector_v2_20261110/remote_results/PACKET_SEAL.json": "3d19f8ba8a800550b4ec7702a894bdca17cbd1981c9b27b584e1c0dd5acf2a68",
+    "research/blind_route_detector_v2_20261110/remote_results/FINAL_TERMINAL.json": "106712afe07781a139cb06c23559de7f2ea2f4d44365b39e68a5baefa27a7dc6",
+    "research/blind_route_detector_v2_20261110/LOCAL_DELIVERY_VERIFIED.json": "1f83455d2727cad85366a67986897b8f87776f5251ea4c0e330c482a3dc20b39",
+    "research/blind_route_detector_v2_20261110/SUMMARY.json": "3135bd0482ca748e2af4d3b26cacc652596a1284f4ebcbcc3dc22135ef21febf"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -2098,6 +2127,33 @@
         "research/badfu_algorithm_audit_20261023/EVIDENCE_MANIFEST.json",
         "research/badfu_algorithm_audit_20261023/FINISH_STATUS.json",
         "research/badfu_algorithm_audit_20261023/README.md"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/blind_route_detector_20261110",
+      "related_cards": [
+        "D20"
+      ],
+      "top_level_documents": [
+        "research/blind_route_detector_20261110/PROTOCOL.txt",
+        "research/blind_route_detector_20261110/STOP_AUDIT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/blind_route_detector_v2_20261110",
+      "related_cards": [
+        "D20"
+      ],
+      "top_level_documents": [
+        "research/blind_route_detector_v2_20261110/CORRECTION_PROTOCOL.txt",
+        "research/blind_route_detector_v2_20261110/PACKET_PROTOCOL.txt",
+        "research/blind_route_detector_v2_20261110/PROTOCOL.txt",
+        "research/blind_route_detector_v2_20261110/REPORT_KO.txt",
+        "research/blind_route_detector_v2_20261110/STOP_AUDIT_V1.json",
+        "research/blind_route_detector_v2_20261110/SUMMARY.json",
+        "research/blind_route_detector_v2_20261110/VERIFIER_RECOVERY_PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

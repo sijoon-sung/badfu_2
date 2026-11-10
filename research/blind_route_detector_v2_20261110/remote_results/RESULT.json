@@ -1,0 +1,1192 @@
+{
+  "results": [
+    {
+      "case": "c00",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 9,
+      "n": 900,
+      "witness": 111,
+      "score": 0.12333333333333334,
+      "stable": 789,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 14
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 9
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 4
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 31
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c00",
+      "arm": "route",
+      "family": "additive",
+      "target": 7,
+      "n": 900,
+      "witness": 71,
+      "score": 0.07888888888888888,
+      "stable": 791,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 9
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 17
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 3
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c01",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 9,
+      "n": 900,
+      "witness": 87,
+      "score": 0.09666666666666666,
+      "stable": 775,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 9
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 7
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c01",
+      "arm": "route",
+      "family": "additive",
+      "target": 4,
+      "n": 900,
+      "witness": 80,
+      "score": 0.08888888888888889,
+      "stable": 785,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 9
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 17
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 4
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c02",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 9,
+      "n": 900,
+      "witness": 82,
+      "score": 0.09111111111111111,
+      "stable": 787,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 14
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c02",
+      "arm": "route",
+      "family": "additive",
+      "target": 9,
+      "n": 900,
+      "witness": 95,
+      "score": 0.10555555555555556,
+      "stable": 787,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 13
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 15
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 18
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c03",
+      "arm": "baseline",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 91,
+      "score": 0.10111111111111111,
+      "stable": 759,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 10
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 9
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 14
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 11
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c03",
+      "arm": "route",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 98,
+      "score": 0.10888888888888888,
+      "stable": 759,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 15
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 18
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 11
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c04",
+      "arm": "baseline",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 296,
+      "score": 0.3288888888888889,
+      "stable": 794,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 24
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 31
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 38
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 28
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 25
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 46
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 46
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 35
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 23
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c04",
+      "arm": "route",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 372,
+      "score": 0.41333333333333333,
+      "stable": 794,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 41
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 42
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 43
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 31
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 28
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 53
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 57
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 44
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 33
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c05",
+      "arm": "baseline",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 373,
+      "score": 0.41444444444444445,
+      "stable": 754,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 39
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 33
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 30
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 53
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 31
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 56
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 48
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 48
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 35
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c05",
+      "arm": "route",
+      "family": "mask",
+      "target": 0,
+      "n": 900,
+      "witness": 530,
+      "score": 0.5888888888888889,
+      "stable": 754,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 63
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 44
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 44
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 61
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 50
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 69
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 66
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 67
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 66
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c06",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 8,
+      "n": 900,
+      "witness": 47,
+      "score": 0.052222222222222225,
+      "stable": 673,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 1
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 2
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 10
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c06",
+      "arm": "route",
+      "family": "additive",
+      "target": 8,
+      "n": 900,
+      "witness": 49,
+      "score": 0.05444444444444444,
+      "stable": 673,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 0
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 4
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 6
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 0
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 11
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c07",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 123,
+      "score": 0.13666666666666666,
+      "stable": 737,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 20
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 18
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 13
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 20
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 8
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 5
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c07",
+      "arm": "route",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 131,
+      "score": 0.14555555555555555,
+      "stable": 737,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 23
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 13
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 18
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 21
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 11
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 6
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c08",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 291,
+      "score": 0.3233333333333333,
+      "stable": 743,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 30
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 21
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 35
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 39
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 35
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 51
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 26
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 29
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 25
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c08",
+      "arm": "route",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 299,
+      "score": 0.3322222222222222,
+      "stable": 743,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 34
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 22
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 37
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 41
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 37
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 52
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 23
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 31
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 22
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c09",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 307,
+      "score": 0.3411111111111111,
+      "stable": 740,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 35
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 30
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 26
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 39
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 39
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 61
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 32
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 25
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 20
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "c09",
+      "arm": "route",
+      "family": "additive",
+      "target": 2,
+      "n": 900,
+      "witness": 299,
+      "score": 0.3322222222222222,
+      "stable": 740,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 28
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 32
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 24
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 38
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 37
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 59
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 33
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 28
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 20
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    }
+  ],
+  "selection_sha256": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+  "seconds": 508.4242260456085,
+  "torch": "2.7.1+cu118",
+  "cuda": "11.8",
+  "model_mutations": 0,
+  "true_trigger_inputs": 0,
+  "role_truth_inputs": 0,
+  "independent_verification_pending": true
+}

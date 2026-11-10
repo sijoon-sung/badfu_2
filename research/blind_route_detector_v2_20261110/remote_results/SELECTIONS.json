@@ -1,0 +1,1222 @@
+[
+  {
+    "case": "c00",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 9,
+      "n": 180,
+      "witness": 24,
+      "score": 0.13333333333333333,
+      "stable": 151,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 3
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c00\\additive_baseline.pt",
+      "payload_sha256": "d3b47b74a0509ca4c717c5b982a301f85b37681218881af97e5a64dd0425d31d"
+    }
+  },
+  {
+    "case": "c00",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 7,
+      "n": 180,
+      "witness": 19,
+      "score": 0.10555555555555556,
+      "stable": 153,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 0
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c00\\additive_route.pt",
+      "payload_sha256": "4d11b689853438c13ceacc06dbb9eaf99abe2237413a2c4e4be0bd265a744b54"
+    }
+  },
+  {
+    "case": "c01",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 9,
+      "n": 180,
+      "witness": 23,
+      "score": 0.12777777777777777,
+      "stable": 150,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 1
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c01\\additive_baseline.pt",
+      "payload_sha256": "30097925ecc5e6854a85b9e746e634790fe90c2eadfe5448c26b7bcc819788d2"
+    }
+  },
+  {
+    "case": "c01",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 4,
+      "n": 180,
+      "witness": 21,
+      "score": 0.11666666666666667,
+      "stable": 148,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 1
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c01\\additive_route.pt",
+      "payload_sha256": "e8c5a6925ba7e315c9461239cb572dfc07c9bfb1a99642f1967fc7f2edc3a2ae"
+    }
+  },
+  {
+    "case": "c02",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 9,
+      "n": 180,
+      "witness": 17,
+      "score": 0.09444444444444444,
+      "stable": 150,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 6
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c02\\additive_baseline.pt",
+      "payload_sha256": "3a1d2bbe0c84e02d266591774545c98e031002feb2d74bd46130a98a82500be5"
+    }
+  },
+  {
+    "case": "c02",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 9,
+      "n": 180,
+      "witness": 19,
+      "score": 0.10555555555555556,
+      "stable": 150,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c02\\additive_route.pt",
+      "payload_sha256": "e5786863890c722f716efa096e963d7c6f3f4b0096f40fa49abe17b8963ca03f"
+    }
+  },
+  {
+    "case": "c03",
+    "arm": "baseline",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 20,
+      "score": 0.1111111111111111,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 1
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c03\\mask_baseline.pt",
+      "payload_sha256": "f2ea97992f07d9bdbf9c489b8683a40d8f7de64057fcd4278506d82826befc5a"
+    }
+  },
+  {
+    "case": "c03",
+    "arm": "route",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 19,
+      "score": 0.10555555555555556,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 2
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c03\\mask_route.pt",
+      "payload_sha256": "5cbf194a527da59125982d21f9e4237c11911ef63bb3ab00c0ae612a33901eba"
+    }
+  },
+  {
+    "case": "c04",
+    "arm": "baseline",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 55,
+      "score": 0.3055555555555556,
+      "stable": 150,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 10
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 12
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 1
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c04\\mask_baseline.pt",
+      "payload_sha256": "66e821eaf351220f339a111fbb8c3d080837d545744828cdc7f3c968515f41c0"
+    }
+  },
+  {
+    "case": "c04",
+    "arm": "route",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 74,
+      "score": 0.4111111111111111,
+      "stable": 150,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 10
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 13
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 12
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c04\\mask_route.pt",
+      "payload_sha256": "18a4977cd00e50b3e8f84b89c2c5665361d524f94dc655e418ddd89785cc3de2"
+    }
+  },
+  {
+    "case": "c05",
+    "arm": "baseline",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 84,
+      "score": 0.4666666666666667,
+      "stable": 145,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 11
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 14
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 13
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 8
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c05\\mask_baseline.pt",
+      "payload_sha256": "78b7a76a25b628b67f3c24ddd1539e7a85198d8f4ff52f5f702dd5c2d34611bb"
+    }
+  },
+  {
+    "case": "c05",
+    "arm": "route",
+    "chosen": {
+      "family": "mask",
+      "target": 0,
+      "n": 180,
+      "witness": 109,
+      "score": 0.6055555555555555,
+      "stable": 145,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 15
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 16
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 10
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 15
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 15
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 11
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c05\\mask_route.pt",
+      "payload_sha256": "a479a29d4ff5c2d1fef07748bd93f2a112b71debb27594ef6a6115c947df46f9"
+    }
+  },
+  {
+    "case": "c06",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 8,
+      "n": 180,
+      "witness": 11,
+      "score": 0.06111111111111111,
+      "stable": 132,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 3
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c06\\additive_baseline.pt",
+      "payload_sha256": "a461f5ccbfc99192b017079c87179e9650d9c032e803ad6504c835ed2ade9e8b"
+    }
+  },
+  {
+    "case": "c06",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 8,
+      "n": 180,
+      "witness": 10,
+      "score": 0.05555555555555555,
+      "stable": 132,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 2
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c06\\additive_route.pt",
+      "payload_sha256": "15cf18e7a1654173e20edab6a4308cc662b8979a8f75cc13f73cefeaef2bd6ac"
+    }
+  },
+  {
+    "case": "c07",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 31,
+      "score": 0.17222222222222222,
+      "stable": 147,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 2
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c07\\additive_baseline.pt",
+      "payload_sha256": "4a01e1c83ccc044766e0d20efd0f448e5dd558cd9618236322de219b98bb0090"
+    }
+  },
+  {
+    "case": "c07",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 34,
+      "score": 0.18888888888888888,
+      "stable": 147,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 3
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c07\\additive_route.pt",
+      "payload_sha256": "2b2e75362292e0b0401c77534d9a02b5b49d1e5ef619e201465143b6c6fec964"
+    }
+  },
+  {
+    "case": "c08",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 59,
+      "score": 0.3277777777777778,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 10
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 12
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c08\\additive_baseline.pt",
+      "payload_sha256": "d00a98dda58fab2bbd62bf55abd2843ce14f9c35ff67b218132a48e3950a3fab"
+    }
+  },
+  {
+    "case": "c08",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 61,
+      "score": 0.3388888888888889,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 10
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 12
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c08\\additive_route.pt",
+      "payload_sha256": "c70d5c9c56f336543202915507097bb73189cb1a14aa31082c4d1287ba819f93"
+    }
+  },
+  {
+    "case": "c09",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 62,
+      "score": 0.34444444444444444,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 14
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c09\\additive_baseline.pt",
+      "payload_sha256": "11432114d11e7efea85f8e2b4e28709bfc6a3c9dfd2ee22e8089ac129ebf77cf"
+    }
+  },
+  {
+    "case": "c09",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 2,
+      "n": 180,
+      "witness": 62,
+      "score": 0.34444444444444444,
+      "stable": 146,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 9
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 14
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\BLIND_ROUTE_DETECTOR_V2_20261110\\artifacts\\c09\\additive_route.pt",
+      "payload_sha256": "12776a83f7579adcff2b9ef6880479e96b7b351c69bd56d5a30e3c49ad9f9671"
+    }
+  }
+]

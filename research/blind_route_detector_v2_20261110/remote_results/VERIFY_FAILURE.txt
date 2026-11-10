@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "D:\BLIND_ROUTE_DETECTOR_V2_20261110\verify_results.py", line 72, in <module>
+    try: main()
+         ^^^^^^
+  File "D:\BLIND_ROUTE_DETECTOR_V2_20261110\verify_results.py", line 52, in main
+    stable = (predict(models[0], x) == y) & (predict(models[1], x) == y)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BLIND_ROUTE_DETECTOR_V2_20261110\verify_results.py", line 43, in predict
+    return model(xx.contiguous()).argmax(1)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DISLAB\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DISLAB\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BLIND_ROUTE_DETECTOR_V2_20261110\fuba_model.py", line 87, in forward
+    out = out.view(out.size(0), -1)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cannot reshape tensor of 0 elements into shape [0, -1] because the unspecified dimension size -1 can be any value and is ambiguous
