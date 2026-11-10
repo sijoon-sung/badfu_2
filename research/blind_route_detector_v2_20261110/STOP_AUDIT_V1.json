@@ -1,0 +1,35 @@
+{
+  "time": 1794300637.4657445,
+  "state": {
+    "state": "search",
+    "pid": 38144,
+    "case": "c01",
+    "arm": "route",
+    "family": "conditional",
+    "step": 100,
+    "loss": 14.91275691986084,
+    "seconds": 5.979938507080078
+  },
+  "binding_files": {
+    "INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+    "REGISTRATION.json": "4c4c72617dec31b7ec0a1e044e6ef827adf0eee3350f2cbca999511f51d1bb80",
+    "SELECTED_CASES.json": "ea793762dae2e5de77eb86a18eea5c72171528f7ef07e1c6b5e2113b45451f40"
+  },
+  "catalog_sha256": "b4da557f61a8e9f8afad4b5dbd87202126e88b37bfb74393e02cbf17f9144e6b",
+  "artifacts": {
+    "artifacts\\c00\\additive_baseline.pt": "d3b47b74a0509ca4c717c5b982a301f85b37681218881af97e5a64dd0425d31d",
+    "artifacts\\c00\\additive_route.pt": "9975b8c4962e3942ade38541b3f7a8fc53038d6d059364adb3794539843a0a02",
+    "artifacts\\c00\\conditional_baseline.pt": "27d202e13762e80bbbfa415b578e983630bd2d82fc039f5dde64ff5d57eaf831",
+    "artifacts\\c00\\conditional_route.pt": "d49e9b36d84f179e6195f27c0d5d8b54241cbe0e516106e2ee5b1ff0b0c7cf5b",
+    "artifacts\\c00\\mask_baseline.pt": "53883a17a999ac0793a87edba3b51df316875c25566d93aa6f8e920daf90a3eb",
+    "artifacts\\c00\\mask_route.pt": "9c40507476c5223160e0199231f59ad0c29150cc16b384231de5963fb2c1448e",
+    "artifacts\\c01\\additive_baseline.pt": "30097925ecc5e6854a85b9e746e634790fe90c2eadfe5448c26b7bcc819788d2",
+    "artifacts\\c01\\additive_route.pt": "addcc0793e37ee744e8bacb4712f4496ac22c63e7b4be7756cd58eea1c9b84c7",
+    "artifacts\\c01\\conditional_baseline.pt": "124b54eeaba99881097587b10d05a02b33118d1e956e88e698d5aa95dda276a0",
+    "artifacts\\c01\\mask_baseline.pt": "e6948d121471aa03b891143c939a6ce307fe7a00917c55f9c20f04fcd02fed4b",
+    "artifacts\\c01\\mask_route.pt": "b884bad1c52daa375daff30537f664e40345c655a5a1fb178b325e4adf579798"
+  },
+  "result_exists": false,
+  "selection_exists": false,
+  "stopped_reason": "Cross-head hook overwrote captured feature; invalid route arm. Owned child PIDs38144/3372 stopped after identity check; task disabled. No original model write."
+}

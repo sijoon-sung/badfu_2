@@ -1,0 +1,8 @@
+가설: 새 네경로 역산의 추가 관측과 정상 삭제 비교는 기존 trigger inversion과 구별되는 검증 질문을 제공한다.
+관련 D05/D13/D14/D15/D17/T03/N02. 최초성이나 성능개선을 미리 선언하지 않는다.
+
+Neural Cleanse: https://github.com/snutesh/NeuralCleanse 및 원논문 https://people.cs.uchicago.edu/~ravenben/publications/pdf/backdoor-sp19.pdf . 작은mask 역산과 이상도는기존도구다. 이번은L1크기를공격점수로쓰지않고입력예산으로만쓴다. 논문PDF 직접재조회는502였으며공식저자repo의설명범위만새로확인했다.
+UNICORN: https://arxiv.org/html/2304.02786 , 원문3/4절. 입력공간변환/중간표현행동을이용한trigger역산이선행한다. 여러변형을학습하거나feature를언급한다는사실만으로신규성주장0. 현재구현은UNICORN재현이아니며세변형군을넘는보장도없다.
+Lie Detector: https://arxiv.org/abs/2503.16872 및 https://openreview.net/pdf/48771c04fcac499e7cd5ef79ce91f34cc46e72ed.pdf . 두독립학습모델을비교하는cross-model inversion과CKA/finetuning sensitivity는선행한다. OpenReview 직접열기는browser challenge였고arXiv초록/검색된저자PDF발췌범위만확인했다. 그전체알고리즘과동일/상이하다고확정하지않는다. 이번은동일요청의실제FU전후 body/head교차분류와native최종전환,큰정상삭제를고정비교하며CKA/민감도점수는사용하지않는다.
+
+T03에서이미관측한postbody/prehead의기능이새입력역산에실제로이득을주는지검증하는것이이번추가질문이다. 두모델을사용하거나head를교체하는발상자체의최초성은미검증이다. novelty판정은같은예산native-only기준선과정상큰삭제에서의실측후에도별도문헌검토가필요하다.
