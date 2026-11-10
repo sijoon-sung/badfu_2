@@ -110,7 +110,7 @@ flowchart TD
 | [D15 · 전후 공동 탐색200회와 정상 협조자 확인](EXPERIMENT_CARDS.md#d15) | 두 시드 일관 구별 실패 |
 | [D17 · 직접400/800과 노출 복사본400](EXPERIMENT_CARDS.md#d17) | 노출 가설 기각·직접 탐색 한정 관찰 |
 | [D20 · 미지 조건의 전후 body/head 네 경로 역산과 큰 정상 삭제 고정 비교](EXPERIMENT_CARDS.md#d20) | BadFU2시드·정상4쌍 추가가치 기준 통과 / FUBA류 공통탐지·운영보정 미검증 |
-| [D21 · 고정 D20 탐색의 같은 FedUBA 구현 대규모 정상 FU20 반증 시험](EXPERIMENT_CARDS.md#d21) | CPU준비 통과·학습전 resource정지 보존 / 명시공유회복 준비·탐색미측정 |
+| [D21 · 고정 D20 탐색의 같은 FedUBA 구현 대규모 정상 FU20 반증 시험](EXPERIMENT_CARDS.md#d21) | 큰균형정상14.00%·독립검산통과 / 클래스집중정상FU20 진행·범용미검증 |
 
 ### 기제·수학
 
