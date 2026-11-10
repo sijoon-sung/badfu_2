@@ -9,8 +9,9 @@ from checkpoint_guard import sha
 ROOT = Path(__file__).resolve().parent
 
 
-def main():
-    (ROOT/'RESOURCE_RECOVERY_ONCE').open('x').write(str(os.getpid()))
+def main(recovery='command_identity'):
+    assert recovery == 'command_identity'
+    (ROOT/('RESOURCE_RECOVERY_'+recovery+'_ONCE')).open('x').write(str(os.getpid()))
     assert json.loads((ROOT/'PUBLICATION.json').read_text())['all_raw_blob_bytes_verified']
     for n,d in json.loads((ROOT/'FREEZE.json').read_text())['files'].items(): assert sha(ROOT/n) == d
     assert not any((ROOT/n).exists() for n in ('STATE.json','RESULT.json','SELECTIONS.json','ALGEBRA_CONTRACT.json','FIXTURES.json','VERIFY_ONCE'))
@@ -21,9 +22,10 @@ def main():
         if key not in ('memory_fraction','admission'): assert current[key] == original[key]
     for key in original['admission']:
         if key != 'gpu_free_mib': assert current['admission'][key] == original['admission'][key]
-    archive = ROOT/'admission_blocked'; archive.mkdir(exist_ok=False)
+    archive = ROOT/('admission_blocked_'+recovery); archive.mkdir(exist_ok=False)
     for name in ('CONTROLLER_ONCE','CONTROLLER_STATE.json','SEARCH_ONCE','SEARCH_FAILURE.txt','BOOTSTRAP_STATE.json',
-                 'run_search.py.stdout.txt','run_search.py.stderr.txt','controller.py.lifecycle.stdout.txt','controller.py.lifecycle.stderr.txt'):
+                 'run_search.py.stdout.txt','run_search.py.stderr.txt','RESOURCE_RECOVERY_STATE.json',
+                 'recovery_controller.stdout.txt','recovery_controller.stderr.txt'):
         p = ROOT/name
         if p.exists(): p.rename(archive/name)
     with (ROOT/'recovery_controller.stdout.txt').open('wb') as out, (ROOT/'recovery_controller.stderr.txt').open('wb') as err:

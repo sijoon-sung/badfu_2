@@ -34,9 +34,9 @@ def inspect():
         gateway = '"c:/users/dislab/appdata/local/hermes/tools/python-3.14.7+20260901-win32-x64/python.exe" -m hermes_cli.main gateway run'
         if command_line == gateway and p['ProcessId'] not in compute_pids:
             ignored_services.append(dict(pid=p['ProcessId'], identity='observed hermes CPU gateway', nvidia_compute=False))
-        elif any(p['ProcessId'] == s['pid'] and p['Created'] == s['created'] and
-                 hashlib.sha256(command_line.encode()).hexdigest() == s['command_sha256'] for s in service_identities):
+        elif any(hashlib.sha256(command_line.encode()).hexdigest() == s['command_sha256'] for s in service_identities):
             ignored_services.append(dict(pid=p['ProcessId'], identity='explicitly declared resident inference service',
+                                         created=p['Created'], command_sha256=hashlib.sha256(command_line.encode()).hexdigest(),
                                          nvidia_compute=p['ProcessId'] in compute_pids, shared_gpu=True))
         else: competitors.append(p)
     return dict(memory_gib=m.available/2**30, disk_gib=shutil.disk_usage('D:/').free/2**30,
