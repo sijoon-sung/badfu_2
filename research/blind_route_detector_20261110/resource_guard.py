@@ -20,9 +20,21 @@ def inspect():
     processes = json.loads(output) if output.strip() else []
     if isinstance(processes, dict): processes = [processes]
     own_root = str(Path(__file__).resolve().parent).replace('\\', '/').lower()
-    competitors = [p for p in processes if own_root not in (p.get('CommandLine') or '').replace('\\', '/').lower()]
+    compute = subprocess.check_output(['nvidia-smi', '--query-compute-apps=pid', '--format=csv,noheader,nounits'], text=True)
+    compute_pids = {int(line.strip()) for line in compute.splitlines() if line.strip().isdigit()}
+    ignored_services = []
+    competitors = []
+    for p in processes:
+        command_line = (p.get('CommandLine') or '').replace('\\', '/').lower()
+        if own_root in command_line: continue
+        # Observed resident CPU gateway, not a trainer. Require exact command
+        # and absence from NVIDIA compute PID inventory, never kill it.
+        gateway = '"c:/users/dislab/appdata/local/hermes/tools/python-3.14.7+20260901-win32-x64/python.exe" -m hermes_cli.main gateway run'
+        if command_line == gateway and p['ProcessId'] not in compute_pids:
+            ignored_services.append(dict(pid=p['ProcessId'], identity='observed hermes CPU gateway', nvidia_compute=False))
+        else: competitors.append(p)
     return dict(memory_gib=m.available/2**30, disk_gib=shutil.disk_usage('D:/').free/2**30,
-                gpu_free_mib=free, gpu_util=utilization, competitors=competitors)
+                gpu_free_mib=free, gpu_util=utilization, competitors=competitors, ignored_services=ignored_services)
 
 
 def admit(cfg):

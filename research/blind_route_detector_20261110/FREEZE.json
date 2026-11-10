@@ -2,10 +2,13 @@
   "files": {
     "BENCHMARK_LABELS.json": "7e193ac31af77b3e0af7a8d12ee446abf61afbf7c7dd735aca68052b0f776f65",
     "COPIED_SOURCE.json": "eb052cc260d5f176d415932f80bf3d3e05753998a750a0320fa421eea1778ebd",
+    "FREEZE_INITIAL.json": "b6f7565576350d5a7993f7226f951943fc8070c567253491eddd25ead6d4b101",
     "INITIAL_READ_FAILURE.json": "41d3a26fa34c6ba57e07928a8d609c224ea5a13297b312992ddce7caf20d6657",
+    "PRELAUNCH_CORRECTION.txt": "8162dae85e0f25a7303175df989841d74193fd16b1582a6fa14a5371ee74921c",
     "PRIOR_WORK.txt": "dac21d5ad52d53807b4063c52509ebd9dbe2f40c51bbbb9a29a1db20a23e4532",
     "PROFILE.json": "c6ac086088af83a102f0a1ee4caf9d374599f460cbc763cdd478a4634795cfd7",
     "PROTOCOL.txt": "bbe460f314b72762960203b33012e98936e3212987573f3f82c53b41ec83eb7c",
+    "bootstrap.py": "91b6a329c628f2d827bc9730c3fe8b8e23be3fedf4950b1e08f05e8ede29fdc1",
     "checkpoint_guard.py": "62be48b6613f5c5f31b8a5d8f365c330d181f4571e0d05609ee3512fe917f63f",
     "controller.py": "b42ee41fa894a91340bcec4b10b92390ab18d3bc51f74ff5f1fd52abbb8d1053",
     "feduba_model.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
@@ -14,7 +17,8 @@
     "ops.py": "c5b9f160b46b050dedd9e5ecceb04243cda98acf40c5621a0ea69952df06b7a4",
     "prepare.py": "e0998740860107d7a7a7f363e222ea01809edf84ce9312d4afe4dc3125c1c7c5",
     "probe_reference.py": "366e4b13ca0729a53bb8b991546fe42a8660aac85dba1c3b5e7d5b409abe7c63",
-    "resource_guard.py": "367c874f1b7c6fd90649f9d26003fd8fc76b13bba858740e5bc3b988cfbeb94f",
+    "resource_guard.py": "e758cfc2a9d159033d3e7d4979d41869a9ecdf04b7fa43f74e05cb6d98402a1b",
+    "resource_guard_prelaunch.py": "367c874f1b7c6fd90649f9d26003fd8fc76b13bba858740e5bc3b988cfbeb94f",
     "route_core.py": "dca6cfa31889bb454577f77b498e2175701040a126c6793e4b3edd1c0813fd4b",
     "run_search.py": "74e1fce417cf9a211e6d31999488d79d3a6524865811281b52bf833f800c9225",
     "verify_results.py": "b6248b65d191ed9336003164d1ed189c4e60e182c626f109f84c641547e215cf"
@@ -32,5 +36,6 @@
     "R02",
     "R03"
   ],
-  "scientific_runs_started": 0
+  "scientific_runs_started": 0,
+  "revision": "prelaunch lifecycle recovery; no search change"
 }
