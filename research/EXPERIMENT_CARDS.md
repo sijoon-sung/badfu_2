@@ -2572,3 +2572,75 @@
 
 **묶은 폴더:** [detection_claim_audit_20261031](detection_claim_audit_20261031)
 
+<a id="t02"></a>
+
+## T02 · FC영공간 필연성의 특징학습·정상삭제·좌표변환 반증
+
+**가설 한 줄: FC-PCA 직교 변화는 삭제 후 활성화 공격에 공통으로 필요한 좌표불변 메커니즘이다.**
+
+**판정: DISLAB 정확구성·독립검산 통과 / 보편 FC직교 필요조건 기각**
+
+[실험 시작 이유와 실제 실행 과정 읽기](nullspace_mechanism_20261110/REPORT_KO.txt)
+
+- **조건:** 사전 source/freeze PR1 게시 뒤 DISLAB 새경로에서 Fraction producer1/checker1. 특징학습 ERM 최적해·정당25%삭제·동일함수 가역특징좌표변환·정확로짓분해. 모델/추론/새FL시드0.
+- **정상 대조·비교:** 모든 라벨이 정당한100표본/25개 삭제, 원100개효용과 별도 의미보존 평가도메인. 기존 N02/D08/D15 및 D18 좁은긍정 보존.
+- **결과:** 위장제거 전후 특징계수1/2→2, 조건점수-1/2→1이지만 FC/bias변화0. 정상25%삭제도 같은전환/정확도99→97%. 모든함수동일 좌표변환은 PCA직교Z6 경보없음→row0. 두 DISLAB exact명령exit0/독립일치, RESULT2762d64e... . 고정특징/정확클린로짓보존 하에서만 span소거정리를 증명.
+- **non-IID에 대해 남길 교훈:** 정상희귀도메인 기여손실도 높은클린효용을 유지하며 조건부오분류를 만들 수 있다. 이 반례는 실제D08해결이나 모든탐지불가능성 증명이 아니다.
+- **반복하지 않을 주장:** 단순norm을 새탐지기로 재제안하거나 합성ERM을 실제BadFU/FUBA/FedUBA재현으로 부르지 않는다. 완료exact작업을 재실행하지 않는다.
+- **재검토 조건:** 고정표현의 경험적유용성과 범용필연성을 구별하며, 실제같은FU/큰정상과독립조건/새획득가능행동관측으로 공통탐지를 검증해야 한다.
+- **출처 구분:** 2026-11-10 사용자 공통메커니즘 증명요청 및 DISLAB계산지시. 원 source브랜치와 기존PR1 게시/실제원격결과를 구별.
+
+**원문·증거:**
+
+- [research/nullspace_mechanism_20261110/PROTOCOL.txt](nullspace_mechanism_20261110/PROTOCOL.txt)
+- [research/nullspace_mechanism_20261110/THEORY.txt](nullspace_mechanism_20261110/THEORY.txt)
+- [research/nullspace_mechanism_20261110/PAPER_MATRIX.txt](nullspace_mechanism_20261110/PAPER_MATRIX.txt)
+- [research/nullspace_mechanism_20261110/FREEZE.json](nullspace_mechanism_20261110/FREEZE.json)
+- [research/nullspace_mechanism_20261110/PUBLICATION.json](nullspace_mechanism_20261110/PUBLICATION.json)
+- [research/nullspace_mechanism_20261110/REPORT_KO.txt](nullspace_mechanism_20261110/REPORT_KO.txt)
+- [research/nullspace_mechanism_20261110/remote_results/RESULT.json](nullspace_mechanism_20261110/remote_results/RESULT.json)
+- [research/nullspace_mechanism_20261110/remote_results/CHECKED.json](nullspace_mechanism_20261110/remote_results/CHECKED.json)
+- [research/nullspace_mechanism_20261110/remote_results/EXECUTION.json](nullspace_mechanism_20261110/remote_results/EXECUTION.json)
+- [research/nullspace_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json](nullspace_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json)
+- [research/nullspace_mechanism_20261110/remote_results/FINAL_TERMINAL.json](nullspace_mechanism_20261110/remote_results/FINAL_TERMINAL.json)
+
+**묶은 폴더:** [nullspace_mechanism_20261110](nullspace_mechanism_20261110)
+
+<a id="t03"></a>
+
+## T03 · 큰 조건부 행동에서 FC·특징 기능으로 내려가는 native cache 분석
+
+**가설 한 줄: 다중 원클래스의 삭제 후 조건부 목표전환은 FC직교항보다 특징변화항으로 설명된다.**
+
+**판정: 한시드 oracle 관계 분리·FC직교항 필요성 기각 / blind탐지 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](topdown_mechanism_20261110/REPORT_KO.txt)
+
+- **조건:** badfu.confirmed.s20261023.v1/retrain_activation DISLAB봉인선택; 기존1FL시드/유지자료전체재학습 native5모델의봉인clean10000/condition9000 featurecache. CPU2 primary/독립SVD checker각1회, 새CNN/학습/GPU0. 원정답/실제trigger/target은평가자정보.
+- **정상 대조·비교:** 같은조건을공격위장850·정상850·정상19.336%전체삭제에고정. 원본전후정답/조건전정답→후목표오답을클래스별보존. D08/D15/정상22.790%및별도FU실패는미해결.
+- **결과:** 새의미보존조건부사건 공격6754/정상8·9개. 공격9원클래스모두전환. 직교FC항 제거후6754/6754사건유지/target9000, 그항만추가target916 대pre1286, 특징변화항만추가9000. 평균마진상호작용17.90763=평행-.26609+직교-.72804+특징18.90176이며6157사건에서직교항은음수. 독립9000행x3 검산최대4.2633e-14/두exit0.
+- **non-IID에 대해 남길 교훈:** 알려진실제trigger의조건부관계는이작은정상대조와달랐으나, unknown-trigger획득/독립정상보정이없다. 대수분해는표현좌표의존이며PCA잔차/특징변화의크기자체가악성표지가아니다.
+- **반복하지 않을 주장:** 진단항제거출력을원모델이나독립공격증거로삼지 않는다. 기존P04-H3/finiteCNN평가를반복하지 않는다. D15/D17의탐색을이름만바꿔신규성으로주장하지 않는다.
+- **재검토 조건:** 새입력조건의획득가능성/정보이득과큰정상반례구별근거를먼저고정하고, 독립시드·별도FU·22.790%정상·적격FUBA/FedUBA로확장해야blind공통탐지를주장할수있다.
+- **출처 구분:** 2026-11-10 큰현상→작은기능→탐지 지시. 별도defense브랜치 P04의완료native캐시/보고서를원해시로재사용한새대수분석.
+
+**원문·증거:**
+
+- [research/topdown_mechanism_20261110/PROTOCOL.txt](topdown_mechanism_20261110/PROTOCOL.txt)
+- [research/topdown_mechanism_20261110/REPORT_KO.txt](topdown_mechanism_20261110/REPORT_KO.txt)
+- [research/topdown_mechanism_20261110/DETECTION_RESEARCH_PATH.txt](topdown_mechanism_20261110/DETECTION_RESEARCH_PATH.txt)
+- [research/topdown_mechanism_20261110/FREEZE.json](topdown_mechanism_20261110/FREEZE.json)
+- [research/topdown_mechanism_20261110/PUBLICATION.json](topdown_mechanism_20261110/PUBLICATION.json)
+- [research/topdown_mechanism_20261110/REMOTE_CACHE_METADATA.json](topdown_mechanism_20261110/REMOTE_CACHE_METADATA.json)
+- [research/topdown_mechanism_20261110/remote_results/RESULT.json](topdown_mechanism_20261110/remote_results/RESULT.json)
+- [research/topdown_mechanism_20261110/remote_results/CHECKED.json](topdown_mechanism_20261110/remote_results/CHECKED.json)
+- [research/topdown_mechanism_20261110/remote_results/EXECUTION.json](topdown_mechanism_20261110/remote_results/EXECUTION.json)
+- [research/topdown_mechanism_20261110/external_evidence/ORIGIN.json](topdown_mechanism_20261110/external_evidence/ORIGIN.json)
+- [research/topdown_mechanism_20261110/external_evidence/STAGE03_REPORT_KO.txt](topdown_mechanism_20261110/external_evidence/STAGE03_REPORT_KO.txt)
+- [research/topdown_mechanism_20261110/external_evidence/STAGE03_PROTOCOL.txt](topdown_mechanism_20261110/external_evidence/STAGE03_PROTOCOL.txt)
+- [research/topdown_mechanism_20261110/external_evidence/HEAD_ROUTE_REPORT_KO.txt](topdown_mechanism_20261110/external_evidence/HEAD_ROUTE_REPORT_KO.txt)
+- [research/topdown_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json](topdown_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json)
+- [research/topdown_mechanism_20261110/remote_results/FINAL_TERMINAL.json](topdown_mechanism_20261110/remote_results/FINAL_TERMINAL.json)
+
+**묶은 폴더:** [topdown_mechanism_20261110](topdown_mechanism_20261110)
+

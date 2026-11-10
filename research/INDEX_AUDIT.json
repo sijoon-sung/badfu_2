@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-31",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a7c92f12a565667dbbec6d861ff698c5554c4f372b0593dda531074034c4c960",
-  "cards": 28,
-  "unique_source_documents": 1926,
-  "top_level_folders": 153,
-  "folders_linked_to_cards": 105,
+  "registry_sha256": "0776562e9d715c9c5fe605e7ec7981b463c8e98ea35f3670e361e706a354bab8",
+  "cards": 30,
+  "unique_source_documents": 1952,
+  "top_level_folders": 155,
+  "folders_linked_to_cards": 107,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -1933,7 +1933,33 @@
     "research/detection_claim_audit_20261031/MATH_RESULTS.json": "c532fa83ae457b1e2ffad00c3b061ad5d1f95e416b8b8b7961729e8568276ad8",
     "research/detection_claim_audit_20261031/SOURCE_AUDIT.json": "bbadb000b792628e29e8a3e7b3828e57cd37e498b2a838e9ef12eeecce35b261",
     "research/detection_claim_audit_20261031/DISLAB_AMENDMENT.txt": "cca04ff8901806b7eacf97c0584cc413f88ab027341a5dec14876facc0c5f15c",
-    "research/detection_claim_audit_20261031/DISLAB_VERIFICATION.json": "1b712ce210158a1041bbbf888c568b5f6b210e78febf40600fe098c58362c368"
+    "research/detection_claim_audit_20261031/DISLAB_VERIFICATION.json": "1b712ce210158a1041bbbf888c568b5f6b210e78febf40600fe098c58362c368",
+    "research/nullspace_mechanism_20261110/PROTOCOL.txt": "79929262619899d8ad49f07f8abe618b5929954ee2806d1e0b08ce7dad8060de",
+    "research/nullspace_mechanism_20261110/THEORY.txt": "72f2b351d80add43f67fe3c9b3c914b7f81aa74cf2c045b23ae978270df43996",
+    "research/nullspace_mechanism_20261110/PAPER_MATRIX.txt": "48310893f61f42a13c3d2ee62fecd668da1d8d25ed080bad9b44a44caff36b5d",
+    "research/nullspace_mechanism_20261110/FREEZE.json": "6b0e5387133fe71498e07b538aebefea6c7100001a864401f616ef5730df3dd8",
+    "research/nullspace_mechanism_20261110/PUBLICATION.json": "9d63b0365d6f2cfb3451348a6f1604c5126c926386b2fbdb9e3e82f7823c8f54",
+    "research/nullspace_mechanism_20261110/REPORT_KO.txt": "fe6c9c475ce8fda79a46eb4e4170928dbec71d6cb96ca7e23ccd524f37a47eb0",
+    "research/nullspace_mechanism_20261110/remote_results/RESULT.json": "2762d64eb66260311b69fe8f320d15bdf4b83246044c0ef71bff96b01311e2d7",
+    "research/nullspace_mechanism_20261110/remote_results/CHECKED.json": "a505fed5c0063fb6984cb6a4047af69fbe39aafc29121b4d566eb0476ede7215",
+    "research/nullspace_mechanism_20261110/remote_results/EXECUTION.json": "fe045d16aba1935458d5491f18235d86c11e002f28d93265b2987f0249618bf9",
+    "research/nullspace_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json": "7aedbafe9269f4492f9287305561ec2b59d5214a1ee5a01936459860910c83c5",
+    "research/nullspace_mechanism_20261110/remote_results/FINAL_TERMINAL.json": "e975d3c64fc86cb3f569538f4dc663be9780b7d0a932f4c6b80a0dedec4d61a3",
+    "research/topdown_mechanism_20261110/PROTOCOL.txt": "583d3116880d0ca5a362af144c566153152c79c7d75af3a88873d807c495cf4c",
+    "research/topdown_mechanism_20261110/REPORT_KO.txt": "bda5235bc2d4bc4adec21871370f1ab33d2d75d5d284de4a460a88d5a7958e39",
+    "research/topdown_mechanism_20261110/DETECTION_RESEARCH_PATH.txt": "4a5ddbd205380392f193f003ce8f6aef14700f686ff125dd198d34bb52c256fd",
+    "research/topdown_mechanism_20261110/FREEZE.json": "f6738f94789848db7a1dfe1a0e275393a89755dc520d21462439b69f5f005b06",
+    "research/topdown_mechanism_20261110/PUBLICATION.json": "11f016d7e7cd28eb03dee029094626832992fd2b6a7e6eebf2c4cfe9bcb0e226",
+    "research/topdown_mechanism_20261110/REMOTE_CACHE_METADATA.json": "2a216bc16687bcb6de753952673474545346855b5b2c86a7732694482276d8ed",
+    "research/topdown_mechanism_20261110/remote_results/RESULT.json": "4efaf2d5d27f635757438ea5bfc0d8fd956f6fa4af4789c511391b5b27b8d410",
+    "research/topdown_mechanism_20261110/remote_results/CHECKED.json": "458a17c47aa428a95817bbd9a9164d059ba73cd6b42c487dcbc96f75d9fad065",
+    "research/topdown_mechanism_20261110/remote_results/EXECUTION.json": "bc5a76f83b6ef1807481b84e8ee2c47329765e230480f7c8a065e82d8053dfc2",
+    "research/topdown_mechanism_20261110/external_evidence/ORIGIN.json": "6ffc93b11c8189b55ddfa1ebf5e3337cb1249c255ac053df879e140f542f8e31",
+    "research/topdown_mechanism_20261110/external_evidence/STAGE03_REPORT_KO.txt": "a10cd6a1f44d0d534039b57d63e6d90fe193bafedfcf01b4235593f3ce9d3bf0",
+    "research/topdown_mechanism_20261110/external_evidence/STAGE03_PROTOCOL.txt": "b0c79616a7e348862b3796052ded13d315db95c6d11d8bca3bab3ff74ca3092f",
+    "research/topdown_mechanism_20261110/external_evidence/HEAD_ROUTE_REPORT_KO.txt": "1bd8883710f73c8df2bfb45bd4a5e073c742cdeeb3a68239a0e9e194a53f6a7a",
+    "research/topdown_mechanism_20261110/PUBLICATION_ENCODING_INCIDENT.json": "2c97c69c418a8133fa6820687488676fbbbed89ba8ebd76a42602b85d1bbae17",
+    "research/topdown_mechanism_20261110/remote_results/FINAL_TERMINAL.json": "b2a98caa9de8e72d769af070f7d6f586aa23880abc62386a52be3e59a7b71932"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -3410,6 +3436,17 @@
       "review": "대표 기록 재검토·카드 연결"
     },
     {
+      "path": "research/nullspace_mechanism_20261110",
+      "related_cards": [
+        "T02"
+      ],
+      "top_level_documents": [
+        "research/nullspace_mechanism_20261110/PROTOCOL.txt",
+        "research/nullspace_mechanism_20261110/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/paired_probe_validation_20261023",
       "related_cards": [
         "D15",
@@ -3540,6 +3577,17 @@
         "research/stage1_fresh_20261020/execution_audit.json",
         "research/stage1_fresh_20261020/history_transfer_status.json",
         "research/stage1_fresh_20261020/README.md"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/topdown_mechanism_20261110",
+      "related_cards": [
+        "T03"
+      ],
+      "top_level_documents": [
+        "research/topdown_mechanism_20261110/PROTOCOL.txt",
+        "research/topdown_mechanism_20261110/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
