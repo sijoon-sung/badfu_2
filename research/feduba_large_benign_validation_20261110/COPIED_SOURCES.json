@@ -36,15 +36,18 @@
   },
   "resource_guard.py": {
     "source": "research/blind_route_detector_v2_20261110/resource_guard.py",
-    "sha256": "3aa0c7dc56ff5994dfa84c750daad7ae5579abf3142496003d389895aa142439",
+    "sha256": "0f3e1ac8ae13100a82e2091f3937c0c8c6c308c1929f3f70dde3e860155d3c52",
     "copy_exact": false,
     "original_sha256": "5c844e4384fa3e88e7dc6537e469ff09c7e8cb6a5bf9f95edead8b805a5417eb",
-    "declared_changes": "Limit owned process exemption to this new study including detector child dirs"
+    "declared_changes": "Previous ownership-root adaptation plus log identity description; numeric predicate unchanged",
+    "previous_executed_sha256": "3aa0c7dc56ff5994dfa84c750daad7ae5579abf3142496003d389895aa142439"
   },
   "SHARED_SERVICE_IDENTITIES.json": {
     "source": "research/blind_route_detector_v2_20261110/SHARED_SERVICE_IDENTITIES.json",
-    "sha256": "be9ba5c8f532e664ec96057496d66080ac0114217289bfa1445fc51c5665747f",
-    "copy_exact": true
+    "sha256": "79e6c8f91096f510e350320d949fb47629efeab8a2ce73f1b63cc6a38be1b297",
+    "copy_exact": false,
+    "previous_executed_sha256": "be9ba5c8f532e664ec96057496d66080ac0114217289bfa1445fc51c5665747f",
+    "declared_changes": "Exact two observed external live API commands explicitly admitted for shared GPU; CPU-only interpretation rejected"
   },
   "DETECTOR_PROFILE.json": {
     "source": "research/blind_route_detector_v2_20261110/PROFILE.json",

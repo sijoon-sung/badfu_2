@@ -38,7 +38,7 @@ def inspect():
         if command_line == gateway and p['ProcessId'] not in compute_pids:
             ignored_services.append(dict(pid=p['ProcessId'], identity='observed hermes CPU gateway', nvidia_compute=False))
         elif any(hashlib.sha256(command_line.encode()).hexdigest() == s['command_sha256'] for s in service_identities):
-            ignored_services.append(dict(pid=p['ProcessId'], identity='explicitly declared resident inference service',
+            ignored_services.append(dict(pid=p['ProcessId'], identity='explicitly admitted shared external workload',
                                          created=p['Created'], command_sha256=hashlib.sha256(command_line.encode()).hexdigest(),
                                          nvidia_compute=p['ProcessId'] in compute_pids, shared_gpu=True))
         else: competitors.append(p)
