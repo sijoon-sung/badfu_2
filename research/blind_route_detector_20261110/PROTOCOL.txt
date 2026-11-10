@@ -1,0 +1,37 @@
+가설: 삭제 후 특징추출기에서 분류층을 교체해도 유지되는 목표전환과 삭제 전 특징추출기의 원정답 보존을 함께 역산하면, native 전후만 쓰는 탐색보다 큰 정상 삭제와 구별되는 미지 조건입력을 더 안정적으로 찾는다.
+
+2026-11-10 KST. 사용자 직접 요청: 실제 trigger를 모르고 전환을 찾는 탐지방법 구현·DISLAB 계산·큰정상과 FUBA류 검증을 계속한다.
+관련 R01/R02/R03/D02/D05/D06/D07/D08/D13/D14/D15/D16/D17/D18/D19/T01/T02/T03/N01/N02 및 외부 P04-H3. INDEX/카드/원보고서/정정과 고정case catalogue를 먼저 읽었다.
+
+기존 실패와 새 관측의 차이
+D15는 native pre/post 두 함수만 최적화했고 추가시드 공격7%/큰정상8%가 겹쳤다. D17 직접400/800의 두시드 분리는 강한mask 후보에 한정됐다. D05 가상특징 출력쏠림과 D13/D14의 넓은변형도 범용구별을 입증하지 못했다.
+T03/P04-H3에서 알려진조건은 postbody에 prehead를 붙여도target9000/9000, prebody/posthead는 낮은반응이었다. 이번 새 관측은 norm/CKA/거리 대신, 동일한 실제입력에서 전후body와 전후head의 네 분류함수가 요구하는 관계다. 이는 기존원모델에서 계산가능하며 새신뢰모델/실제trigger/생성기/목표/악성ID가 필요없다.
+큰정상 non-IID도 body를 바꾸므로 네함수가 자동으로악성을구분한다고 가정하지 않는다. D08의 공격0.75848 대정상0.75525/0.76188은유지한다. 이번은같은정상대조의다른기능관측을검사하며, 주실험은retained-data 재학습이므로 D08의별도5시점FU를검증한것이아니다.
+
+서버 방법과 고정 비교
+모델 f_ij(x)=head_j(body_i(x)), i,j=0(pre),1(post), 네경로를 쓴다. 목표t는10개를모두탐색한다.
+baseline loss=CE(f_11(Tx),t)+CE(f_00(Tx),y).
+route loss=.5*[CE(f_11(Tx),t)+CE(f_10(Tx),t)]+.5*[CE(f_00(Tx),y)+CE(f_01(Tx),y)].
+동일head면두목적이정확히같다. 실제두body forward/그gradient 수는같고추가head곱만있다. 두arm은동일초기T/seed/모든400batch표본ID·optimizer/물리예산을공유한다. 모델가중치/BN은수정하지않으며 입력변환만최적화한다.
+입력조건표현은동결D15 Transform을그대로재사용(mask L1질량16, additive/conditional rawepsilon.05). 위치/무늬/목표정답은주지않는다. 계열3개의합집합을trigger-family독립성증명으로부르지않는다. 원D15 epsilon.04와다른현재공통.05는양arm에동일하며원실험재현이아니다. 이선택/400step은결과를보기전에고정한다.
+각family/arm당1초기값 seed20261110, Adam masklr.02/그외.005, B=20(목표별2장), 분류기eval/FP32/contiguousNCHW/TF32off/cuDNN deterministic/benchmarkFalse. torch 전체deterministic_algorithms는False(기존conditional bilinear gradient 경로 유지)이며모든RNG/표본열을저장한다. 전체gradient 비트재생을보장하지않는다.
+공개CIFAR10 test만사용한다. 같은새seed20261110 분할로fit32/class, calibration20/class, test100/class. 세집합은서로겹치지않으며이데이터셋이과거평가에사용됐다는제한은남긴다. 선택은calibration의native엄격새오류비율최대, 동률은고정family순서/target낮은순이다. 거리/변형크기/ASR은선택기준이아니다.
+모든10case/두arm의조건·target·family를먼저동결하고그뒤test를평가한다. 최종사건은x를native전후가모두정답, Tx는native전정답/후선택목표오답으로정의한다. crossed 함수의붕괴/반응을최종공격근거로쓰지않는다. 의미보존은제한된변형예산의가정이며사람검수를했다고하지않는다.
+
+명시case/비교/등록
+c00 정상19.336: badfu.confirmed.s20261023.v1/retrain_activation clean_pre→clean_big_post.
+c01 정상22.790: 기존20261030 로컬정상audit와동일SHA의DISLAB원endpoint를새diagnostic ID badfu.s20261023.normal_largest0.dislab.endpoint_20261110로메타등록한후select_case.py diagnostic. pre는확정clean_pre, post는기존 D:/MULTISEED_ACTUAL_FU_20261022/badfu/seed_20261023/normal_largest0_FU/final.pt SHA f6ec46894135725df8fa2da260d9325d1dbdde397de88421cfcc7d965b1f5ba2. 원모델copy/새학습없이외부guard/기존원case·audit·defaults보존을확인해remote catalogue28→29만append. history/기본입력승인없음.
+c02 정상850: 확정case clean_pre→clean_post.
+c03 감염모델정상850, c05 공격: badfu.paper32.s20261020/retrain_activation pre→infected_benign_post 또는post.
+c04 공격: 확정case pre→post. c00/c02/c04는같은FLseed이므로세독립학습으로세지않는다. 주공격은두실제FLseed/같은분할이다.
+c06 stcebra/FUBA diagnostic: fuba.v7.s20261023.pre100.post.kd10/diagnostic pre→post. 실제100R/KD10 pair지만원성능gate실패와CA77.76/ASR10.56→16.74를보존한다. matched큰정상FUBA와적격잠복양성이없어그성능을검증됐다고하지않는다.
+c07/c08/c09 ity207/FedUBA diagnostic: feduba.public_fixed10.cifar10.s42.sss125.{benignfu20,minusrequestfu20,plusrequestfu20}.20261103, 모두diagnostic/selectcase. 원성능실패/선언된helper부호차이/동일pre와같은선택ID의정상FU를보존한다. plus의약58%를논문급성공으로승격하지않는다. 모든세쌍을고정해높은ASR모델만고르지않는다. FUBA와FedUBA를동일시하지않는다.
+BadFU는불변snapshot의저자architecture AST, FUBA는실제v7 executed resnet.py, FedUBA는고정 recovered model_reference.py를쓴다. source/hash/payload/정규화계약을명시한다. BadFU mean/std, FUBA pixel01, FedUBA [-1,1]을섞지않는다. 원모델선택·해시·엄격load·native헤드재구성·입력gradient를실GPUfixture에서확인한다.
+case역할/성능정답은별도BENCHMARK_LABELS.json에격리하며method/search는읽지않는다. 실제trigger/G/delta/ASR/target/삭제자료는새코드에서열지않는다. 모델선택metadata의ID는파일추적용이며목적함수의분기가아니다.
+
+판정과중단
+운영attack판정 임계값/TPR/FPR은만들지않는다. 독립정상요청보정이없으므로predict는risk witness와calibration_required를반환한다. 새후보의제한된유용성은양arm의test분리격차 G=min(두BadFU공격score)-max(네정상score)를비교해판정한다. route G>0이고baseline보다.05이상커야이번고정비교에서추가가치를지지한다. 아니면추가가치가설을기각하고retune하지않는다. 이는사전연구중단기준이며운영임계값이아니다.
+FUBA/FedUBA는실패diagnostic score를그대로남기고공통탐지의TP로세지않는다. 다른FU/독립분할/trigger계열·정상반례를통과하기전범용성을주장하지않는다. 실패시모든탐지가불가능하다고확대하지않는다.
+hash/shape/payload/source/순서/예산/finite/모델변경/fixture무결성실패면즉시preserve+stop. native동일head logits maxabs1e-5, 동일모델zero-witness 정확0. 독립평가는선택후새native아키텍처 forward의argmax/원클래스counts/저장cal선택을확인한다. 모든gradient 독립재생이라고하지않는다.
+계산전source/profile/freezes를PR1에선게시하고Git blob을원UTF8바이트와직접대조한다. 새 D:/BLIND_ROUTE_DETECTOR_20261110 독점once/실PID/시간·진행·全trace·T/Adam/RNG를보존한다. 기존finite trainer/evaluator/observer/export/queue는재실행하지않는다.
+GPU검색은RAM>=6GiB/freeD>=2GiB/GPUfree>=6GiB·util<=10/경쟁Python-MPI訓練0,분수.30을지킨다. guard는새검색진입전에검사하고미달시최대120초대기후미시작종료한다. 다른앱종료0/정책변경0. 논문FL훈련의guard를승계/완화했다고하지않는다. 전체검색유한60arm×400step와독립확인뒤종료하며일반실패를보고새방법성공으로꾸미지않는다.
