@@ -1,0 +1,71 @@
+{
+  "core.py": {
+    "source": "research/feduba_related_helper_positive_20261103/core.py",
+    "sha256": "1894aef5bbbc6bdf16e0c7a5e9f41010c21e6f9c36bff73318f658b0d45a3315",
+    "copy_exact": true
+  },
+  "fu_core.py": {
+    "source": "research/feduba_related_helper_positive_20261103/fu_core.py",
+    "sha256": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "copy_exact": true
+  },
+  "fu_training.py": {
+    "source": "research/feduba_related_helper_positive_20261103/fu_training.py",
+    "sha256": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "copy_exact": true
+  },
+  "model_reference.py": {
+    "source": "research/feduba_related_helper_positive_20261103/model_reference.py",
+    "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "copy_exact": true
+  },
+  "probe_reference.py": {
+    "source": "research/blind_route_detector_v2_20261110/probe_reference.py",
+    "sha256": "366e4b13ca0729a53bb8b991546fe42a8660aac85dba1c3b5e7d5b409abe7c63",
+    "copy_exact": true
+  },
+  "feduba_model.py": {
+    "source": "research/blind_route_detector_v2_20261110/feduba_model.py",
+    "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "copy_exact": true
+  },
+  "route_core.py": {
+    "source": "research/blind_route_detector_v2_20261110/route_core.py",
+    "sha256": "b3c1c5c0f1b161fc6399edb5c13c2bca8c949884b84f9ad291b8a487b7574177",
+    "copy_exact": true
+  },
+  "resource_guard.py": {
+    "source": "research/blind_route_detector_v2_20261110/resource_guard.py",
+    "sha256": "3aa0c7dc56ff5994dfa84c750daad7ae5579abf3142496003d389895aa142439",
+    "copy_exact": false,
+    "original_sha256": "5c844e4384fa3e88e7dc6537e469ff09c7e8cb6a5bf9f95edead8b805a5417eb",
+    "declared_changes": "Limit owned process exemption to this new study including detector child dirs"
+  },
+  "SHARED_SERVICE_IDENTITIES.json": {
+    "source": "research/blind_route_detector_v2_20261110/SHARED_SERVICE_IDENTITIES.json",
+    "sha256": "be9ba5c8f532e664ec96057496d66080ac0114217289bfa1445fc51c5665747f",
+    "copy_exact": true
+  },
+  "DETECTOR_PROFILE.json": {
+    "source": "research/blind_route_detector_v2_20261110/PROFILE.json",
+    "sha256": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+    "copy_exact": true
+  },
+  "run_search.py": {
+    "source": "research/blind_route_detector_v2_20261110/run_search.py",
+    "sha256": "df68658a0d80531abbc435606f5451817533abbed74a80a30ee167d1c916128f",
+    "copy_exact": true
+  },
+  "verify_nonempty.py": {
+    "source": "research/blind_route_detector_v2_20261110/verify_nonempty.py",
+    "sha256": "035b444d393544409393918287053a8142004873d2844e08b340090ff165d12d",
+    "copy_exact": false,
+    "original_sha256": "47110ae3b5a07a3bb19c66a8564bb80fc65be13e2bcc47029052f72b771c7c07",
+    "declared_changes": "Dynamic count in print and inherited-fix receipt identity only; all native arithmetic unchanged"
+  },
+  "runtime_common.py": {
+    "source": "research/feduba_related_helper_positive_20261103/runtime_common.py",
+    "sha256": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "copy_exact": true
+  }
+}
