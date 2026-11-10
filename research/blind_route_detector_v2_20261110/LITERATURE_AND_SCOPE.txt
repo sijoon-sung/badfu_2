@@ -1,0 +1,13 @@
+Primary-source follow-up (2026-11-10; no search-loss or selection change)
+
+EX-RAY, CVPR2022, original paper: https://www.cs.purdue.edu/homes/shen447/files/paper/cvpr22_exray.pdf
+It already combines inverted conditions with bidirectional feature replacement and comparisons to natural class distinctions. Therefore 'functional replacement', 'symmetric tests', 'features rather than input size', and rejecting natural false positives are not new concepts by themselves. Our tested distinction is specifically pre/post deletion endpoints' four body/head routes used jointly during blind input acquisition, followed by native endpoint verification and large non-IID deletion controls. No head-to-head EX-RAY implementation comparison was performed here, and novelty priority is not established.
+
+FeatureRE, NeurIPS2022, official proceedings: https://papers.neurips.cc/paper_files/paper/2022/hash/3f9bf45ea04c98ad7cb857f951f499e2-Abstract-Conference.html
+Feature-space constrained inversion is prior work, including triggers outside static input patterns. Our three D15 transform parameterizations and the four-route constraint do not prove trigger-family independence. A generic 'feature mechanism + inversion' contribution would be insufficient.
+
+The earlier PRIOR_WORK also records Neural Cleanse, UNICORN and LieDetector. This bounded study tests added value over an equal-budget native paired inversion baseline; it does not establish superiority to all these scanners.
+
+Coordinate scope: with scalar bodies/heads h0(x)=h1(x)=x and W0=W1=1, native and crossed logits all equal x. Reparameterize only endpoint1 as h1'(x)=-x,W1'=-1. Native endpoint functions are identical to before, but the two crossed logits become -x. Thus crossed-head behavior is not invariant to independent endpoint coordinate gauges. The declared same-architecture/shared-channel-coordinate white-box assumption is substantive. The final native witness is invariant to that diagnostic reparameterization, but discovery can change. This is not a universal mechanistic necessity or an adaptive-robust detector.
+
+Non-IID scope: large legitimate deletions can change body functions, create adversarial conditions, or lose rare-domain information. A discovered input and a high event rate are risk evidence under the transform budget; malicious provenance is not logically implied. D08/D15 and T02 remain preserved. Request-level calibration would need genuinely independent representative benign deletion requests under an explicit sampling assumption; these shared-seed four controls do not provide calibrated operational FPR or TPR.
