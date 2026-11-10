@@ -1,0 +1,209 @@
+{
+  "schema": "exact_mechanism_constructions_v1",
+  "arithmetic": "fractions.Fraction",
+  "erm": {
+    "before_coefficient": "1/2",
+    "after_coefficient": "2",
+    "conditional_before": "-1/2",
+    "conditional_after": "1",
+    "original_before": "-1",
+    "original_after": "-1",
+    "fc_weight_before": "1",
+    "fc_weight_after": "1",
+    "bias_before": "0",
+    "bias_after": "0",
+    "dominant_clean_logits_identical": true,
+    "attack_construction": "P1+C3 same represented input, conflicting role labels",
+    "benign_training_count": 100,
+    "benign_deleted_count": 25,
+    "benign_deleted_fraction": "1/4",
+    "benign_retained_count": 75,
+    "all_benign_labels_semantically_correct": true,
+    "benign_original100_correct_before": 99,
+    "benign_original100_correct_after": 97,
+    "heldout_domain": -1,
+    "heldout_conditional_truth": "-1"
+  },
+  "gauge": {
+    "transform_diagonal": [
+      "1",
+      "100"
+    ],
+    "covariance_before": [
+      "1",
+      "1/100"
+    ],
+    "covariance_after": [
+      "1",
+      "100"
+    ],
+    "pca95_axis_before": 0,
+    "pca95_axis_after": 1,
+    "retained_energy_both": "100/101",
+    "logits_compared_exact": 80,
+    "all_input_identity": "(W A^-1)(A h)+b = W h+b",
+    "z_before": [
+      {
+        "row": 0,
+        "numerator": "-1/20",
+        "variance": "1/1500",
+        "z_squared": "15/4",
+        "alarm": false
+      },
+      {
+        "row": 1,
+        "numerator": "-7/180",
+        "variance": "31/40500",
+        "z_squared": "245/124",
+        "alarm": false
+      },
+      {
+        "row": 2,
+        "numerator": "-1/36",
+        "variance": "17/20250",
+        "z_squared": "125/136",
+        "alarm": false
+      },
+      {
+        "row": 3,
+        "numerator": "-1/60",
+        "variance": "1/1125",
+        "z_squared": "5/16",
+        "alarm": false
+      },
+      {
+        "row": 4,
+        "numerator": "-1/180",
+        "variance": "37/40500",
+        "z_squared": "5/148",
+        "alarm": false
+      },
+      {
+        "row": 5,
+        "numerator": "1/180",
+        "variance": "37/40500",
+        "z_squared": "5/148",
+        "alarm": false
+      },
+      {
+        "row": 6,
+        "numerator": "1/60",
+        "variance": "1/1125",
+        "z_squared": "5/16",
+        "alarm": false
+      },
+      {
+        "row": 7,
+        "numerator": "1/36",
+        "variance": "17/20250",
+        "z_squared": "125/136",
+        "alarm": false
+      },
+      {
+        "row": 8,
+        "numerator": "7/180",
+        "variance": "31/40500",
+        "z_squared": "245/124",
+        "alarm": false
+      },
+      {
+        "row": 9,
+        "numerator": "1/20",
+        "variance": "1/1500",
+        "z_squared": "15/4",
+        "alarm": false
+      }
+    ],
+    "z_after": [
+      {
+        "row": 0,
+        "numerator": "19/20",
+        "variance": "1/1500",
+        "z_squared": "5415/4",
+        "alarm": true
+      },
+      {
+        "row": 1,
+        "numerator": "-3/20",
+        "variance": "133/1500",
+        "z_squared": "135/532",
+        "alarm": false
+      },
+      {
+        "row": 2,
+        "numerator": "-5/36",
+        "variance": "901/10125",
+        "z_squared": "3125/14416",
+        "alarm": false
+      },
+      {
+        "row": 3,
+        "numerator": "-23/180",
+        "variance": "904/10125",
+        "z_squared": "2645/14464",
+        "alarm": false
+      },
+      {
+        "row": 4,
+        "numerator": "-7/60",
+        "variance": "403/4500",
+        "z_squared": "245/1612",
+        "alarm": false
+      },
+      {
+        "row": 5,
+        "numerator": "-19/180",
+        "variance": "3637/40500",
+        "z_squared": "1805/14548",
+        "alarm": false
+      },
+      {
+        "row": 6,
+        "numerator": "-17/180",
+        "variance": "1823/20250",
+        "z_squared": "1445/14584",
+        "alarm": false
+      },
+      {
+        "row": 7,
+        "numerator": "-1/12",
+        "variance": "203/2250",
+        "z_squared": "125/1624",
+        "alarm": false
+      },
+      {
+        "row": 8,
+        "numerator": "-13/180",
+        "variance": "3661/40500",
+        "z_squared": "845/14644",
+        "alarm": false
+      },
+      {
+        "row": 9,
+        "numerator": "-11/180",
+        "variance": "3667/40500",
+        "z_squared": "605/14668",
+        "alarm": false
+      }
+    ]
+  },
+  "decomposition": [
+    {
+      "parallel": "10/3",
+      "perpendicular": "-28/5",
+      "feature": "-3",
+      "constant": "73/30",
+      "total": "-17/6"
+    },
+    {
+      "parallel": "5",
+      "perpendicular": "-14/5",
+      "feature": "5",
+      "constant": "334/105",
+      "total": "218/21"
+    }
+  ],
+  "real_model_experiments": 0,
+  "clinical_or_operational_detection_claim": false,
+  "independent_training_seeds": 0
+}

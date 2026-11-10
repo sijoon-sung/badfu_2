@@ -1,0 +1,1121 @@
+{
+  "baseline_registry_sha256": "a7c92f12a565667dbbec6d861ff698c5554c4f372b0593dda531074034c4c960",
+  "baseline_cards": 28,
+  "baseline_inventory_folders": 153,
+  "copied_existing_metadata": [
+    {
+      "path": "research/01_reproduction/TRAJECTORY_SOURCE_AUDIT.json",
+      "sha256": "e0d7035fea7e77cddc996818cc689db1b643f44c7cc8b15994aa7a24065c8377"
+    },
+    {
+      "path": "research/04_theory/linear_example_results.json",
+      "sha256": "db6fbbffac418c83294b66528ed2be18e5ae8849c14165199fb29cd35d37a15b"
+    },
+    {
+      "path": "research/ac_feasibility_20261023/HYPOTHESIS_AUDIT.json",
+      "sha256": "385c5e02b7c7a486784fb7afcd57c9df7b75ce2991ca137410ca479ebee1eabd"
+    },
+    {
+      "path": "research/ac_feasibility_20261023/SUMMARY.json",
+      "sha256": "7174a862d1be1d807d797100806d6534cb0536682ccd509df423ac0f56181e8c"
+    },
+    {
+      "path": "research/active_fu_pairs_20261022/COMPLETE.json",
+      "sha256": "e734d1fb679c8e0393d03b772c607d2b25b32b25c231ef5854ab9697ffb681d4"
+    },
+    {
+      "path": "research/active_fu_pairs_20261022/PROTOCOL.json",
+      "sha256": "1ea1e924f4a2fe46b3fabd6c3f5acc576a6924ca246c12078cec826a6de9d108"
+    },
+    {
+      "path": "research/active_fu_pairs_20261022/SUMMARY.json",
+      "sha256": "00962230ee20b5e688c2fb9865882d52cd234d944f3494cd0fb7ef016c01c8c9"
+    },
+    {
+      "path": "research/active_unlearning_audit_20261022/COMPLETE.json",
+      "sha256": "f98e4a6a76d65c8f7a99c8e98e79b7f60dc22be2aeb888eddb3a3ebf40aecae1"
+    },
+    {
+      "path": "research/active_unlearning_audit_20261022/PROTOCOL.json",
+      "sha256": "9ca85977ae48acbab30f21809a2975e829dc20da19077a968a964fa3ce087767"
+    },
+    {
+      "path": "research/active_unlearning_audit_20261022/SUMMARY.json",
+      "sha256": "3a2723c5140501c07ce01656c27a16a5963ebb51a79a60a8ff76c32284651417"
+    },
+    {
+      "path": "research/asr_root_cause_20261022/AUDIT.json",
+      "sha256": "2e5bcc28216a06d85f1a5f1eb985488cb8c78d0630dde21772fd1b35584c0244"
+    },
+    {
+      "path": "research/asr_root_cause_20261022/CLIP_AUDIT.json",
+      "sha256": "fe325c991ccfb07dd567aee7e00c0ed23b006bce0ab109e60a92b7272e34881c"
+    },
+    {
+      "path": "research/asr_root_cause_20261022/PROTOCOL.json",
+      "sha256": "6b6781d248222e8e2997f5fb229bde24ebf6bf20ca5f41ab4d9c57bd1959d7cd"
+    },
+    {
+      "path": "research/asr_root_cause_20261022/SOURCE_AUDIT.json",
+      "sha256": "d11c2953e0963ef12b7a373916c1f223c4a4c15958ed497b3488cf33b8be9d34"
+    },
+    {
+      "path": "research/badfu_algorithm_audit_20261023/EVIDENCE_MANIFEST.json",
+      "sha256": "2d7c5bcf0828cd08ae425af86918a67720218d619cd7b8d99ae19de30f6d622a"
+    },
+    {
+      "path": "research/badfu_algorithm_audit_20261023/FINISH_STATUS.json",
+      "sha256": "c689631250271d1ad18c6e369cd3a49fb60146c729b64412c3d5e80da9f9a081"
+    },
+    {
+      "path": "research/boundary_mask_validation_20261022/COMPLETE.json",
+      "sha256": "89ebb7f2d4b4c7bbf66298465c3ff0947841dfdd14b4adeaf6b4dae9203e6c97"
+    },
+    {
+      "path": "research/boundary_mask_validation_20261022/PROTOCOL.json",
+      "sha256": "fba1be9c725f56585159b857e0780f18e9d4a9609ffcfc7a6203c76400b4cd57"
+    },
+    {
+      "path": "research/boundary_mask_validation_20261022/RESULTS.json",
+      "sha256": "dad5c034dde5aac9945aed38e04c7c2139a3f22773e1c3f401f20a07df77fada"
+    },
+    {
+      "path": "research/boundary_validation_20261022/COMPLETE.json",
+      "sha256": "0b2d86d548b99465febad6fa550bc8f95a2534a3fd1110826434c09d7c06e990"
+    },
+    {
+      "path": "research/boundary_validation_20261022/PROTOCOL.json",
+      "sha256": "8d1b9c1b2cec4b61fc3e0ba4e08cbe786aaf8dff6b30164ccd48b03118bc8b08"
+    },
+    {
+      "path": "research/boundary_validation_20261022/RESULTS.json",
+      "sha256": "44641ec5acc328eb1623e74f13bacabc887bf14575ddb5d0dccdfb7aceff1870"
+    },
+    {
+      "path": "research/continuation_20261023/BADFU_RESUMED_COMPLETED.json",
+      "sha256": "650d4982b1dbfb6b7ed3970309eb4b6344fd8fc4050dd45ce267f94f8e4935a6"
+    },
+    {
+      "path": "research/continuation_20261023/LIVE_STATUS.json",
+      "sha256": "f29d53554712297203f6c41a4ffbd37080e3be0e39d27562dedefa5b9bef8bd9"
+    },
+    {
+      "path": "research/cost_conditions_20261022/ADDITIONAL_PROTOCOL.json",
+      "sha256": "b611f6a8563938d760786c5c94e3e8bd40e5fbb65d61221ed6019247ce1e686c"
+    },
+    {
+      "path": "research/cross_attack_search_20261022/EXTENSION_PROTOCOL.json",
+      "sha256": "c81b2d34f44fd4b0660d58e5101c9e20e27d46bc133f670124213c4c1231d244"
+    },
+    {
+      "path": "research/cross_attack_search_20261022/status.json",
+      "sha256": "b1b65a67508fe27abeb68f2c0a6d7041fc6952d60564f6dc61ee2fcce2fce775"
+    },
+    {
+      "path": "research/DETECTION_REVIEW_20261021/fuba_queue_status.json",
+      "sha256": "54883b832bbe1e4282bbb8af7bf15223136a542e55f174dbe0fc3aa4fbebc7ce"
+    },
+    {
+      "path": "research/DETECTION_REVIEW_20261021/fuba_retry_status.json",
+      "sha256": "1642848d4b81761db5da9d0f5fcd0afcf6448ac3719b49471641df95750cdbe3"
+    },
+    {
+      "path": "research/DETECTION_REVIEW_20261021/normal_training_status.json",
+      "sha256": "f1bb08d068515701e6b001c9e307035d6b1a0feec4e64a46d874fdfa22300856"
+    },
+    {
+      "path": "research/DETECTION_REVIEW_20261021/protocol.json",
+      "sha256": "4edf32efc5ac5b8b4d0e1c0439846c81409cba037a8392a48bb9ff99397f9023"
+    },
+    {
+      "path": "research/DETECTION_REVIEW_20261021/status.json",
+      "sha256": "8ff789520ee5c8e5762efa8ee350901c7fc217533c3a1dd3e04834eb0f739c09"
+    },
+    {
+      "path": "research/existing_checkpoint_cost_20261023/EXISTING_BADFU_RESULT.json",
+      "sha256": "868f01565b522e8c8f7e18f9fbc6a92ee84fc5559329b1e9f4e72e9b933f0267"
+    },
+    {
+      "path": "research/exposure_validation_20261023/COMPLETE.json",
+      "sha256": "aca309db8de93a9c14362ebbebe58d82d23ee759a4eeaf7cccfa7cac8b78539f"
+    },
+    {
+      "path": "research/exposure_validation_20261023/POST_RESULT_DIAGNOSTIC_CHECK.json",
+      "sha256": "a742307be9e3918135c0576e82b07bdac50bb948b75cde8308973e1c05faf81d"
+    },
+    {
+      "path": "research/exposure_validation_20261023/PROTOCOL.json",
+      "sha256": "9a184045643afda3e0e871dda99a86b0319a07df2c1ec3b16a3c421899a80661"
+    },
+    {
+      "path": "research/exposure_validation_20261023/RESULTS.json",
+      "sha256": "420d48971ed7af1817cfbe52748c80d5491f1fb36772b90f69744f6fcf807da4"
+    },
+    {
+      "path": "research/feduba_reproduction_audit_20261031/audit_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/feduba_reproduction_audit_20261031/audit_stdout.txt",
+      "sha256": "e529165b9a461791de65ece52d911c83214d1728274515b92a4818ac290b3894"
+    },
+    {
+      "path": "research/FU_gpu20261020/badfu_independent_replay_result.json",
+      "sha256": "41fa38bb082f068656ba532ead8513fa2d0582c3d1d2e2624cd5cf6715f84f13"
+    },
+    {
+      "path": "research/FU_gpu20261020/worker_status.json",
+      "sha256": "5a64e8f8161c8dbb8ccf59936baebf8944fe46faa561cd3edc97ca121bd2732d"
+    },
+    {
+      "path": "research/fuba_algorithm_execution_20261025/LIVE_STATUS.json",
+      "sha256": "fbf4ef0d34bed46878f55e36e743b1041002ee74e3bf940eb0301b6bc7a801ae"
+    },
+    {
+      "path": "research/fuba_algorithm_execution_20261025/README_KO.txt",
+      "sha256": "f74c8897c50e95b13fd6120d5b7e78403203ba7e8cee9f839671b695e12510f6"
+    },
+    {
+      "path": "research/fuba_algorithm_execution_20261025/REGISTRY_BEFORE_LIVE_AUDIT.json",
+      "sha256": "db688edad1118727cfd189ead3393f30d7fbd4e1c468e2690cf3d2a298360474"
+    },
+    {
+      "path": "research/fuba_checkpoint_recovery_20261023/DELIVERY_COMPLETE.json",
+      "sha256": "9edf16ef35ae4290fc6ce6a7ca042a432bf2a96443b063f5b7ed9d59abb3b8e8"
+    },
+    {
+      "path": "research/fuba_checkpoint_recovery_20261023/LIVE_STATUS.json",
+      "sha256": "c5172e2c8c16401ebe0aaaddbc66665cdba315569eb6852a8bc58184288118db"
+    },
+    {
+      "path": "research/fuba_observation_20261023/COST_COUNTEREXAMPLE.json",
+      "sha256": "b12a3941ca2d77d87610b690e7e11a2f9943a2a8cf4271a7878e2fd59c4f8e81"
+    },
+    {
+      "path": "research/fuba_observation_20261023/REMOTE_BADFU_BATCH_AUDIT.json",
+      "sha256": "c4e5ef4bc8f51a363e65f616e823de4b19506063519751d916d176b16302c54b"
+    },
+    {
+      "path": "research/fuba_paper_completion_20261024/LIVE_STATUS.json",
+      "sha256": "26afaf37d409060c7dbb80201550978fa7add9c97ef8a2468dfb51ff79f29cd9"
+    },
+    {
+      "path": "research/fuba_paper_rebuild_20261024/LIVE_STATUS.json",
+      "sha256": "7cf71d2259f280ce072bcef97ee2162fb6902d198c7cdb98ecdc1b2150edf907"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/AUDIT_RESULTS.json",
+      "sha256": "36f14f5c00679b3c9ff2befa0cbd6cf71eaf6a9aba93e8be2b41ceba9a6020f8"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/AUDITOR_LABELS.json",
+      "sha256": "b6ee310aa5a0ad82cbca92a43609e0f711a652b97aee1d8cfbd14f5723c6b84a"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/endpoint_status.json",
+      "sha256": "56a869a48d2938841cfb408156f7bc6a9931f9ea685552a0bf742bed3cace9d6"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/forensics_status.json",
+      "sha256": "5b1de3680b63df7924df24bd20ff8a9325fa38f8ebadf6090373de7711d4115a"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/history_summary.json",
+      "sha256": "a6a6b92ef29fac1003072d0abff120650033c5d83bf5a959d63a5dd08e5a3268"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/PROTOCOL.json",
+      "sha256": "bc50717aa32cc5c6612ff0b571323dd969f26d661ba5ccadc9fdbe5cfeffb4b5"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/report_updater_pid.txt",
+      "sha256": "c324f7de6ff2e9eb5122329bd1991ea4638cc8f045235b1ae8baf082c3dd7c35"
+    },
+    {
+      "path": "research/INFLUENCE_RUN_20261022/RESULTS.md",
+      "sha256": "87975d00c5dfaa843130986bb1c9b575effaa958a4e9ddb581501264139221fd"
+    },
+    {
+      "path": "research/manifold_projection_check_20261025/SERVER_COMPLETED.json",
+      "sha256": "ef0d5ec74cf1d9bb8a5c8c4545f035d8e2edfca8bcf193ab89255759760c91dd"
+    },
+    {
+      "path": "research/mechanism_first_20261022/PROTOCOL.json",
+      "sha256": "9a3ac80d7c0e59181b85c417058fcfda5b351429a0694204fdb34af66e935421"
+    },
+    {
+      "path": "research/MOVE_TO_DISLAB_20261021/power_hold_status.json",
+      "sha256": "da60ce351220ab7ec3f4f68d4d6187c190ce2bdb9c945cc5606ae6ed17739044"
+    },
+    {
+      "path": "research/MOVE_TO_DISLAB_20261021/transfer_status.json",
+      "sha256": "7d41aa6ccb3af0a7bf58d0ee0c0a46cc9609540b945fd849066097b17af072ec"
+    },
+    {
+      "path": "research/multiseed_actual_fu_20261022/INCIDENT_STATUS_20261023_0230.json",
+      "sha256": "42e2af984fbeb99796f5a9f90066e70fdf54386b08aeb6bf8fd44b4306aebdae"
+    },
+    {
+      "path": "research/multiseed_actual_fu_20261022/REMOTE_PROTOCOL.json",
+      "sha256": "e86b50d15c9a75354249c4321299aa9bcf3187b9960a5bb427c89d1b4c9303d8"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/COMPLETE.json",
+      "sha256": "401c77759695767f212cb76b730498ec81ea3a00df56449b5de72ab7a485f044"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/FAMILY_SUMMARY.json",
+      "sha256": "ec3dfdf54694b9964692e959a6ccf6e46137b9685bad04ec22f51a5a364c1f32"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/LAYER_DIAGNOSTIC_PROTOCOL.json",
+      "sha256": "54083e6748696191fc513a23029f0b89a4f09568d0f7eca2fbd07b73d64bc17c"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/PROTOCOL.json",
+      "sha256": "25bc11c30007bfee349716c9364dfdf1d011a4b22dd20aeaa21f6a9f36ec2204"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/README_KO.txt",
+      "sha256": "7ac8d9bd087a9379c470d698919f80fc1e690aa10ab9ef8e7cccb12642dfda8d"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/RESULT_SCALARS.json",
+      "sha256": "c74866c89e9af31bc326a626f3befb00791e63ec0d61ed4524661b6164b1e8af"
+    },
+    {
+      "path": "research/paired_probe_validation_20261023/SUMMARY.json",
+      "sha256": "e628ec0b0ddf6d563e0e2e9731b91d63e3a7d0dcb89f68f134ffc05cea79a07a"
+    },
+    {
+      "path": "research/rapid_checkpoint_validation_20261023/FINAL_RESULT.json",
+      "sha256": "e786d3b6f01854dd8a100b9c848920e69913b081c5667f3d9754e6bc9b5b7247"
+    },
+    {
+      "path": "research/rapid_checkpoint_validation_20261023/PROTOCOL.json",
+      "sha256": "b5fb3c97513dd67140aaa9cab64111f571a7cca2be44e712eca3ed97977a8de8"
+    },
+    {
+      "path": "research/rapid_checkpoint_validation_20261023/REMOTE_EARLY_GATE_PROTOCOL.json",
+      "sha256": "3fe1e55f79ac6577a54b539e88ca8a855654d02246a146b97e03fbabc39f91c6"
+    },
+    {
+      "path": "research/rapid_checkpoint_validation_20261023/REMOTE_FUBA_RUNTIME_AUDIT.json",
+      "sha256": "eb296c9b7fdf21c0dc5275d96ea9b69cd161d8bd8cba19cd520691efd0f98906"
+    },
+    {
+      "path": "research/request_conditioned_federaser_20261022/EVALUATION_COMPLETE.json",
+      "sha256": "6bdf965745fffaac7901326c87bab2cbf645f6ec6e600754168fb5bfca1803fc"
+    },
+    {
+      "path": "research/request_conditioned_federaser_20261022/PIPELINE_COMPLETE.json",
+      "sha256": "ace935870d094aef61d6cf128417ca384a67ca30cdedd0324cc9adff19052ba1"
+    },
+    {
+      "path": "research/request_conditioned_federaser_20261022/PROTOCOL.json",
+      "sha256": "799b929fa0d41681b7c0a106fe5353f21075c17cf9082257c49d7b9f17d1586e"
+    },
+    {
+      "path": "research/request_conditioned_federaser_20261022/REQUEST_ID_AUDIT.json",
+      "sha256": "89809b0ef6a7fc9a45f6ebfb40476ad3af15e80e4db1ca87f97e8572a5eff059"
+    },
+    {
+      "path": "research/rule_transform_20261022/COMPLETE.json",
+      "sha256": "51a4a95717f427086a849e02cffc1f623e4af3f3a577b8d6eda86020b2e9a31d"
+    },
+    {
+      "path": "research/rule_transform_20261022/PROTOCOL.json",
+      "sha256": "cab1423177aa47b3da414aa7ac4ac6440780383fc5b2378b5c83cae9bd698d16"
+    },
+    {
+      "path": "research/rule_transform_20261022/RULE_VISUAL_AUDIT.json",
+      "sha256": "a99946040b778b19ec2a6980a085530f3531a27a1dcbfd15f0cbb80c81dc5349"
+    },
+    {
+      "path": "research/rule_transform_20261022/status.json",
+      "sha256": "785f46a07655b22332df3ebbea9d063b1f536a72b5dea16ed97bc155b861c71a"
+    },
+    {
+      "path": "research/rule_transform_20261022/SUMMARY.json",
+      "sha256": "6e7abba8b65a831396016da675f5c5949cdb2c83844ec1c6469f09ad33fcbd97"
+    },
+    {
+      "path": "research/server_features_20261022/clients_status.json",
+      "sha256": "1bf4ffc01e6ea1f69359b25357bee99a01c754e1e9cccc99819ad5506a440bcc"
+    },
+    {
+      "path": "research/server_features_20261022/COMPLETE.json",
+      "sha256": "f05b76a13092a23f7c8d285b4ac5c1cab76e09ac39bb00b85aaaad15c442ca16"
+    },
+    {
+      "path": "research/server_features_20261022/forgetting_status.json",
+      "sha256": "40bae898b85b3d9ffebff1f2682d31417f79be729d426801546b52561b5419bd"
+    },
+    {
+      "path": "research/server_features_20261022/freeeagle_status.json",
+      "sha256": "586ec59e43d63e9a2cd8a01743d39d0e398179f87470deb8b1cbf17b88d03d91"
+    },
+    {
+      "path": "research/server_features_20261022/PILOT_SUMMARY.json",
+      "sha256": "8b51ef1bee4cbc8fc66cb62b0dcfa217166ac8c5086bd6e98fa036c32f5abb44"
+    },
+    {
+      "path": "research/server_features_20261022/PROTOCOL.json",
+      "sha256": "e6005ba8a241a4021e3a92495a6afb545cac41183a5841a78f04b548a4054a1d"
+    },
+    {
+      "path": "research/stage1_20261020/badfu_full_evaluation_audit.json",
+      "sha256": "0dd430c6955de9c1ee6bf6261c33df3abb828d96d58ea858436a250abb1dec17"
+    },
+    {
+      "path": "research/stage1_20261020/configuration_audit.json",
+      "sha256": "3b44698de2953c9f17749cb0b304c3e44b24cb42265df9fd8cba7999ae3e849c"
+    },
+    {
+      "path": "research/stage1_20261020/cover_image_provenance_audit.json",
+      "sha256": "9648f28e6b044ea7df1347b8c4f9f243f97615aea443ef0b96da4ed61e3a1a97"
+    },
+    {
+      "path": "research/stage1_20261020/fuba_scaling_code_audit.json",
+      "sha256": "ea2560d8393896aa65c2aefa89621e8da5cd3a36e786e2fc08b9d31085c85180"
+    },
+    {
+      "path": "research/stage1_20261020/PROTOCOL.json",
+      "sha256": "527fbeb0ab8e7bece5a98c2a2cfbb1fc455f05b34fce4f1b5a847ec6ab4f912b"
+    },
+    {
+      "path": "research/stage1_20261020/summary.json",
+      "sha256": "7002e6c4c83a57aec8f60d6e8e3fc717f0da237dd3dd34847bf4cb718e8b0421"
+    },
+    {
+      "path": "research/STAGE1_BADFU_TEST_20261021/protocol.json",
+      "sha256": "4e6d20b167d41d3c9eb7c1c92d94bf7692bd724d730d8ec2baf31190fe281887"
+    },
+    {
+      "path": "research/STAGE1_BADFU_TEST_20261021/status.json",
+      "sha256": "c1da10d9c26339a5fbd30dba0b298d2a48d06063e5227242100a1a7edcc42d0f"
+    },
+    {
+      "path": "research/STAGE1_BADFU_TEST_20261021/supplement_protocol.json",
+      "sha256": "f6bcc86dd824238b8021d298f267010801e8899c783ba05a9ed2e3a5cf760bba"
+    },
+    {
+      "path": "research/STAGE1_BADFU_TEST_20261021/supplement_results.json",
+      "sha256": "3ef281c6aa71ec3a2551fd861c3d6b77f4bcba1a1cc30e782d7da8abad6d3fa9"
+    },
+    {
+      "path": "research/stage1_fresh_20261020/concurrent_status.json",
+      "sha256": "ec685c69855bf9af5630880d011a90b50f2603f9c47a9ccc8d7849f98ed878c2"
+    },
+    {
+      "path": "research/stage1_fresh_20261020/dislab_execution_status.json",
+      "sha256": "814ad7e82bc46293883cd5788ba08141bb017e237d13ec53b358114617651b48"
+    },
+    {
+      "path": "research/stage1_fresh_20261020/execution_audit.json",
+      "sha256": "12a1407e37b4c8583e61545b29e5b5dbf483fcc1c8b96ca598e34b1393227584"
+    },
+    {
+      "path": "research/stage1_fresh_20261020/history_transfer_status.json",
+      "sha256": "59d60d458f7676688e0b82433d8254de457d9898faad5d7e65147ad51ee5427d"
+    },
+    {
+      "path": "research/two_stage_detection_20261021/PROTOCOL.json",
+      "sha256": "5e4aee30ff8e444e3eed51b2ffe05d72d44195787a39d3e5b5bbfffafb3b1d8e"
+    },
+    {
+      "path": "research/UNKNOWN_TRIGGER_RUN_20261021/PROTOCOL.json",
+      "sha256": "fac6a95181a34e14336a1f1ebfa0c3da87c1d72d1630070fc81393a0fc4bba19"
+    },
+    {
+      "path": "research/UNKNOWN_TRIGGER_RUN_20261021/SUMMARY.json",
+      "sha256": "a2276f350f52d7db4e59e2740c30464d543d288d707e95e8903dcede9116846f"
+    },
+    {
+      "path": "research_20261018/adaptive_v1/results.json",
+      "sha256": "1498490582701b5694861b1a207a58e0e10b28197dcf411e2db5f3569fe5532f"
+    },
+    {
+      "path": "research_20261018/conditional_source/ANALYTIC_COUNTEREXAMPLE.json",
+      "sha256": "571ca0de4c97f3580780854873e0d25c5d0eff97b30dffbaee75cf5761e07c3a"
+    },
+    {
+      "path": "research_20261018/conditional_source/DECISION_RULE.json",
+      "sha256": "2d26c46d4d985ab027b879fca50fd8974bd174d8bb75f4e669a40f90b2a60b6b"
+    },
+    {
+      "path": "research_20261018/conditional_source/protocol.json",
+      "sha256": "ee8e94099bbea01b03a9cf68c51e4b84d24381dd36d8b30fd01d4310c90f6db2"
+    },
+    {
+      "path": "research_20261018/conditional_source/VALIDATION_AUDIT.json",
+      "sha256": "16add347be65922c69cff5375b8680b59588543677705f9e4b1b7f737fbc42ba"
+    },
+    {
+      "path": "research_20261018/deletion_paths/audit.json",
+      "sha256": "bd3101cf912c66c3985037e3d9b56634ca96ff7d22e1520ffa866b362e1cd032"
+    },
+    {
+      "path": "research_20261018/fl_information/analytic_counterexamples.json",
+      "sha256": "52f138232aa9cc49ba77f6b6317bc847d18434f4dc5a67578f93261c63b288f2"
+    },
+    {
+      "path": "research_20261018/fl_information/block_interventions_results.json",
+      "sha256": "aed0cc94be7c10a52a2da08437ec6db169f9f30031bb055c560aea0c9d1c5bf0"
+    },
+    {
+      "path": "research_20261018/fl_information/fedavg_v1_results.json",
+      "sha256": "c280c63d8efa5f6b24be114eedcd9d1ea38779d6006038f0136337a5866b7bff"
+    },
+    {
+      "path": "research_20261018/fl_information/final_evidence_audit.json",
+      "sha256": "953cc0c21d0f6145f767a112c10c46b35211b88fb99f7d13c59366305164508c"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_confirm74_results.json",
+      "sha256": "68bfb856b533da8af8c4cd44be06b4074992ecfce82a1c1861a48aef4c2204ff"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_confirm74_safe_results.json",
+      "sha256": "9805ef672ceac1923b3962e61d9172de1810459f4e5e50e6039283721ccead14"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_controls71_results.json",
+      "sha256": "34bf82ad712ac6d5dacfb537daec07ebe9140e4699b793e770fa06386d5128b8"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_matched_results.json",
+      "sha256": "311881c4cf5e2fb76cae7284dd6900652474fbc9a312cbd35f087ea85bc0a009"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_protocol.md",
+      "sha256": "b0c59ce327d73ad6c99e1e58436aa4afe6280fa6b0eae6781028a711bf3f91ee"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_requests_results.json",
+      "sha256": "78abe5f3868aceb69d7a6906b66ab4206d7cae3c666fe330bd9b76514ac23b31"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_v1_results.json",
+      "sha256": "583475898c76aeb8da162fd3c7602a1f9b59e1a20adc8126877c03a5cea542eb"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_v2_results.json",
+      "sha256": "dd77591b9ae824d16a271ef05110374b100973a2eee277ba1f82344683642b66"
+    },
+    {
+      "path": "research_20261018/fl_information/local_witness_v3_results.json",
+      "sha256": "32dff94465889b96663b82b485af6a1aad4c49894a70a57439d0a10d0342bde5"
+    },
+    {
+      "path": "research_20261018/fl_information/NOVELTY_DECISION.md",
+      "sha256": "21fc7cfc340f54b3d5ec3c8ebd143e0d23b2d4dc131fe0a15a67bed7e5132eed"
+    },
+    {
+      "path": "research_20261018/fl_information/optimized_ablation71_73_results.json",
+      "sha256": "b1ff224b13231311d3f8c3e33e0eedd54f1c2e76e38cec9253d98a2366749053"
+    },
+    {
+      "path": "research_20261018/fl_information/optimized_difference71_results.json",
+      "sha256": "2dae9f0da56461e8b18b50ee8be4d197e62f288783f92778c33f5fae029870ea"
+    },
+    {
+      "path": "research_20261018/fl_information/optimized_difference72_73_results.json",
+      "sha256": "c3e77aa72125e27ac0e9bfe1e34fa1ef7aa3a3ddf6778472b4a9eda9b191e518"
+    },
+    {
+      "path": "research_20261018/fl_information/PARTIAL_STATUS.json",
+      "sha256": "5b0b7806c5d73ec13071b5e9f6924aef5a268bac73bf97af7bb1f7122277db5b"
+    },
+    {
+      "path": "research_20261018/fl_information/PARTIAL_STATUS_0218.json",
+      "sha256": "bc092b55f66a4be1abd14f178c68fa6ea9f778902b0b29a4fd53349f1343be22"
+    },
+    {
+      "path": "research_20261018/fl_information/PROPOSAL_VALIDITY_AUDIT.md",
+      "sha256": "e735dec43b9f2e337b4c712dc716e060fbf574804ccfefdff905f24b486c2739"
+    },
+    {
+      "path": "research_20261018/fl_information/PROTOCOL.md",
+      "sha256": "139c5cae1153e2943008de5b98e45036145567a51eb6199c19d7e2cd92bdc5a7"
+    },
+    {
+      "path": "research_20261018/fl_information/remote_training_audit.json",
+      "sha256": "fa3da7c469da275617a62b0db3e82943181dae4984e2eea74039ab71594ee8d4"
+    },
+    {
+      "path": "research_20261018/fl_information/source_version_audit.json",
+      "sha256": "5a32a853ec71c79a57a63703894e95d7ce3e1464c49e58cbfa166f03ec6e1c91"
+    },
+    {
+      "path": "research_20261018/pair_purify/protocol_v1.json",
+      "sha256": "1d906937afa57fd18b0b60c2f9651fd3c0c5b9f20461a7f633fe7668fab43126"
+    },
+    {
+      "path": "research_20261018/pair_purify/protocol_v2.json",
+      "sha256": "31a663c5f00b6117e8b41ab23d50e7dad6f7809ada6739502ee500d97238553f"
+    },
+    {
+      "path": "research_20261018/pair_purify/protocol_v4.json",
+      "sha256": "50f5426375481bebd89631e048ff74174aca2d231bed72808157f4da1d64b4f7"
+    },
+    {
+      "path": "research_20261018/pilot_v2/results.json",
+      "sha256": "0c3d71f5f3d3ede9f7a446ea3c8f969d5d4375f510b5187904addb9edea5613d"
+    },
+    {
+      "path": "research_20261018/response_transport/ALL_COMPLETE.json",
+      "sha256": "69c1ac4df1cbe45e19926604f3aed8166c46b99e0a7c2febb7c6e78bdf1af416"
+    },
+    {
+      "path": "research_20261018/response_transport/protocol.json",
+      "sha256": "43a5fd5d688a74db9502ebeaf46cdc910d30f742df4b2c560c87f8f4eb8fe8d9"
+    },
+    {
+      "path": "research_20261018/response_transport/protocol_iterative.json",
+      "sha256": "e6af96fdf43f25241de1eeed4dd026c2035b6b9f03a0f4821353a59b6480a83c"
+    },
+    {
+      "path": "research_20261018/response_transport/protocol_small_step.json",
+      "sha256": "4dbe87ffe4d39c259010d04d5a5fb11346acb0e08de26f0a23a853003f73a39f"
+    },
+    {
+      "path": "research_20261018/response_transport/RESULT_STATUS.json",
+      "sha256": "125dbcb28c1c3da58b1fb2893fb9ba62cf4b8fc3b543013767ce6b66f360d245"
+    },
+    {
+      "path": "research_20261018/weight_surgery_audit/protocol.json",
+      "sha256": "464fefdbcd0d1607ede951cb11ae978b5314d6c4a5edcd914232ed85753ef35c"
+    },
+    {
+      "path": "research_20261019/patch_scale_v1/completed_results_remote.json",
+      "sha256": "88b04336d8a8dcbb52aa6ff49fcf25d2e431459d1f7de9a05006bed6111f8bb4"
+    },
+    {
+      "path": "research_20261019/patch_scale_v1/remote_summary.json",
+      "sha256": "845557f45e1171cf58236724cf8a275d3e50d5fb2877ad7da4b1ed8b60ceac28"
+    },
+    {
+      "path": "research_audit_20261019/evidence/verified_summary.json",
+      "sha256": "64b6f756b24508a8c481e84936e66bea627d3e02148d41372b192ce414b2a130"
+    },
+    {
+      "path": "pr_reports/evidence/patch_summary.json",
+      "sha256": "f62a6f0ec22ecce4bd4382868658dd1e4d40dda806bad9b60e8f60a903ca6abd"
+    }
+  ],
+  "restored_exact_baseline_source_bytes": [
+    "research/continuation_20261023/README.md",
+    "research/asr_root_cause_20261022/REPORT_KO.md",
+    "research/fuba_checkpoint_recovery_20261023/README.md",
+    "CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_pre_round100/README.md",
+    "research/fuba_paper_rebuild_20261024/PROTOCOL.txt",
+    "research/fuba_paper_rebuild_20261024/PROFILE.json",
+    "research/fuba_paper_rebuild_20261024/REPORT_KO.txt",
+    "research/fuba_paper_rebuild_20261024/TERMINAL_REPORT_KO.txt",
+    "research/fuba_paper_flow_20261024/PROTOCOL.txt",
+    "research/fuba_paper_flow_20261024/PAPER_COMPARISON.txt",
+    "research/fuba_paper_flow_20261024/FOLLOWUP.json",
+    "research/fuba_paper_flow_20261024/ASR_ALERT19_PROTOCOL.txt",
+    "research/fuba_paper_flow_20261024/ASR_ALERT19_REPORT_KO.txt",
+    "research/fuba_paper_flow_20261024/TERMINAL23_REPORT_KO.txt",
+    "research/fuba_paper_flow_20261024/CAP24_DIAGNOSIS_REPORT_KO.txt",
+    "research/fuba_paper_flow_20261024/CAP24_DIAGNOSIS_REPORT_KO_v1.txt",
+    "research/fuba_paper_flow_20261024/CAP24_REPORT_ERRATUM.txt",
+    "research/fuba_paper_flow_20261024/CAP24_REPLAY_PROTOCOL.txt",
+    "research/fuba_paper_flow_20261024/CAP24_CACHED_G_REPLAY_PROTOCOL.txt",
+    "research/fuba_paper_completion_20261024/FOLLOWUP.json",
+    "research/fuba_paper_completion_20261024/UTILITY31_REPORT_KO.txt",
+    "research/fuba_paper_completion_20261024/SUPERVISION_RECOVERY_PROTOCOL.txt",
+    "research/fuba_paper_completion_20261024/SUPERVISION_RECOVERY_REPORT_KO.txt",
+    "research/fuba_post_unlearning_20261025/PROTOCOL.txt",
+    "research/fuba_post_unlearning_20261025/PROFILE.json",
+    "research/fuba_execution_audit_20261025/PROTOCOL.txt",
+    "research/fuba_algorithm_execution_20261025/PROTOCOL.txt",
+    "research/fuba_algorithm_execution_20261025/PROFILE.json",
+    "research/fuba_algorithm_execution_20261025/LIVE_AUDIT_PROTOCOL.txt",
+    "research/fuba_algorithm_execution_20261025/EVALUATION_RESOURCE_BLOCK_REPORT_KO.txt",
+    "research/feduba_public_stg_comparison_20261102/comparison_controller.py",
+    "research/feduba_public_stg_comparison_20261102/DETACHED_LAUNCH_OBSERVATION.json",
+    "research/feduba_public_stg_comparison_20261102/io_guard.py",
+    "research/feduba_public_stg_comparison_20261102/launch_foreground.py",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_RECOVERY_FREEZE.json",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_RECOVERY_PROFILE.json",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_RECOVERY_PROTOCOL.txt",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_RECOVERY_PUBLICATION.json",
+    "research/feduba_public_stg_comparison_20261102/LAUNCH_REPORT_KO.txt",
+    "research/feduba_public_stg_comparison_20261102/native_memory.py",
+    "research/feduba_public_stg_comparison_20261102/native_processes.py",
+    "research/feduba_public_stg_comparison_20261102/PREPUBLICATION_COMMAND_OBSERVATION.json",
+    "research/feduba_public_stg_comparison_20261102/PROFILE.json",
+    "research/feduba_public_stg_comparison_20261102/PROTOCOL.txt",
+    "research/feduba_public_stg_comparison_20261102/PUBLICATION.json",
+    "research/feduba_public_stg_comparison_20261102/public_stage.py",
+    "research/feduba_public_stg_comparison_20261102/RUNNING_OBSERVATION.json",
+    "research/feduba_public_stg_comparison_20261102/run_comparison.py",
+    "research/feduba_public_stg_comparison_20261102/SOURCE_FREEZE.json",
+    "research/feduba_public_stg_comparison_20261102/source_review.py",
+    "research/feduba_public_stg_comparison_20261102/SOURCE_REVIEW_RESULT.json",
+    "research/feduba_public_stg_comparison_20261102/verify_comparison.py",
+    "research/feduba_public_stg_comparison_20261102/AUDIT_ONCE.json",
+    "research/feduba_public_stg_comparison_20261102/COMPARISON_SUMMARY.json",
+    "research/feduba_public_stg_comparison_20261102/COMPLETION.json",
+    "research/feduba_public_stg_comparison_20261102/COMPLETION_REPORT_KO.txt",
+    "research/feduba_public_stg_comparison_20261102/CONTROLLER_ONCE.json",
+    "research/feduba_public_stg_comparison_20261102/CONTROLLER_STATE.json",
+    "research/feduba_public_stg_comparison_20261102/MANIFEST.json",
+    "research/feduba_public_stg_comparison_20261102/NORMAL_CASE_SELECTION.json",
+    "research/feduba_public_stg_comparison_20261102/RELATED_HELPER_REFERENCE.json",
+    "research/feduba_public_stg_comparison_20261102/RESULT.json",
+    "research/feduba_public_stg_comparison_20261102/RUN_ONCE.json",
+    "research/feduba_public_stg_comparison_20261102/TERMINAL_OBSERVATION.json",
+    "research/feduba_public_stg_comparison_20261102/VERIFIED.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/controller.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/io_guard.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/launch_foreground.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/native_memory.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/native_processes.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/PROFILE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/PROTOCOL.txt",
+    "research/feduba_semantic_transfer_diagnosis_20261102/semantic_diagnosis.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/SOURCE_FREEZE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/source_review.py",
+    "research/feduba_semantic_transfer_diagnosis_20261102/SOURCE_REVIEW_RESULT.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/TRANSPORT_FREEZE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/AUDIT_ONCE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/CASE_SELECTION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/COMPLETION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/COMPLETION_REPORT_KO.txt",
+    "research/feduba_semantic_transfer_diagnosis_20261102/CONTROLLER_ONCE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/CONTROLLER_STATE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/METADATA_OUTPUT_TRUNCATION_OBSERVATION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/PUBLICATION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/RESULT.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/RUN_ONCE.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/TERMINAL_OBSERVATION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/TRANSPORT_PUBLICATION.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/VERIFIED.json",
+    "research/feduba_semantic_transfer_diagnosis_20261102/NEXT_STAGE_RATIONALE.txt",
+    "research/feduba_targetclass_pair_20261102/.gitignore",
+    "research/feduba_targetclass_pair_20261102/CLEAN_FL_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/CLEAN_FL_READY.json",
+    "research/feduba_targetclass_pair_20261102/CLEAN_FL_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/CLEAN_FL_VERIFIED.json",
+    "research/feduba_targetclass_pair_20261102/controller.py",
+    "research/feduba_targetclass_pair_20261102/CONTROLLER_FAILURE.json",
+    "research/feduba_targetclass_pair_20261102/CONTROLLER_ONCE.json",
+    "research/feduba_targetclass_pair_20261102/core.py",
+    "research/feduba_targetclass_pair_20261102/evaluate_pair.py",
+    "research/feduba_targetclass_pair_20261102/export_checkpoint_review.py",
+    "research/feduba_targetclass_pair_20261102/FOUNDATION_STATE.json",
+    "research/feduba_targetclass_pair_20261102/FU_benign_FAILURE.json",
+    "research/feduba_targetclass_pair_20261102/fu_core.py",
+    "research/feduba_targetclass_pair_20261102/FU_ENGINE_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/FU_LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/FU_POLICY_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/FU_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/fu_runner.py",
+    "research/feduba_targetclass_pair_20261102/FU_RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_20261102/fu_training.py",
+    "research/feduba_targetclass_pair_20261102/GPU_PREFLIGHT_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/launch_once.ps1",
+    "research/feduba_targetclass_pair_20261102/LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/model_reference.py",
+    "research/feduba_targetclass_pair_20261102/native_memory.py",
+    "research/feduba_targetclass_pair_20261102/native_processes.py",
+    "research/feduba_targetclass_pair_20261102/NORMAL_CASE_SELECTION.json",
+    "research/feduba_targetclass_pair_20261102/observe_status.py",
+    "research/feduba_targetclass_pair_20261102/pair_binding.py",
+    "research/feduba_targetclass_pair_20261102/pair_eval_core.py",
+    "research/feduba_targetclass_pair_20261102/PAIR_EVAL_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/PAIR_EVAL_LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/PAIR_EVAL_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/PAIR_EVAL_RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_20261102/PREPARATION_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/PREPARE_ONCE.json",
+    "research/feduba_targetclass_pair_20261102/prepare_target_selection.py",
+    "research/feduba_targetclass_pair_20261102/PROTOCOL.txt",
+    "research/feduba_targetclass_pair_20261102/runtime_common.py",
+    "research/feduba_targetclass_pair_20261102/RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_20261102/RUN_PUBLICATION.json",
+    "research/feduba_targetclass_pair_20261102/source_checks.py",
+    "research/feduba_targetclass_pair_20261102/SOURCE_CHECK_RESULT.json",
+    "research/feduba_targetclass_pair_20261102/SOURCE_FREEZE.json",
+    "research/feduba_targetclass_pair_20261102/SOURCE_PROFILE.json",
+    "research/feduba_targetclass_pair_20261102/SOURCE_PUBLICATION.json",
+    "research/feduba_targetclass_pair_20261102/trigger_binding.py",
+    "research/feduba_targetclass_pair_20261102/TRIGGER_SOURCE_BINDING.json",
+    "research/feduba_targetclass_pair_20261102/verify_fu.py",
+    "research/feduba_targetclass_pair_20261102/verify_pair_evaluation.py",
+    "research/feduba_targetclass_launch_recovery_20261102/INVOCATION_FAILURE.json",
+    "research/feduba_targetclass_launch_recovery_20261102/INVOCATION_ONCE.json",
+    "research/feduba_targetclass_launch_recovery_20261102/invoke_registered_launch_once.py",
+    "research/feduba_targetclass_launch_recovery_20261102/PREBODY_FAILURE_OBSERVATION.json",
+    "research/feduba_targetclass_launch_recovery_20261102/PROFILE.json",
+    "research/feduba_targetclass_launch_recovery_20261102/PROTOCOL.txt",
+    "research/feduba_targetclass_launch_recovery_20261102/PUBLICATION.json",
+    "research/feduba_targetclass_launch_recovery_20261102/SOURCE_FREEZE.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/INVOCATION_FAILURE.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/INVOCATION_ONCE.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/invoke_registered_launch_once.py",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/PRIOR_INVOCATION_FAILURE.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/PROFILE.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/PROTOCOL.txt",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/PUBLICATION.json",
+    "research/feduba_targetclass_launch_recovery_v2_20261102/SOURCE_FREEZE.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/INVOCATION_ONCE.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/INVOCATION_RESULT.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/invoke_registered_launch_once.py",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/PRIOR_INVOCATION_FAILURE.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/PROFILE.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/PROTOCOL.txt",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/PUBLICATION.json",
+    "research/feduba_targetclass_launch_recovery_v3_20261102/SOURCE_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/.gitignore",
+    "research/feduba_targetclass_pair_recovery_20261102/CLEAN_FL_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/CLEAN_FL_READY.json",
+    "research/feduba_targetclass_pair_recovery_20261102/CLEAN_FL_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/CLEAN_FL_VERIFIED.json",
+    "research/feduba_targetclass_pair_recovery_20261102/controller.py",
+    "research/feduba_targetclass_pair_recovery_20261102/core.py",
+    "research/feduba_targetclass_pair_recovery_20261102/evaluate_pair.py",
+    "research/feduba_targetclass_pair_recovery_20261102/export_checkpoint_review.py",
+    "research/feduba_targetclass_pair_recovery_20261102/FOUNDATION_STATE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/fu_core.py",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_ENGINE_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_POLICY_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/fu_runner.py",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/fu_training.py",
+    "research/feduba_targetclass_pair_recovery_20261102/GPU_PREFLIGHT_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/launch_once.ps1",
+    "research/feduba_targetclass_pair_recovery_20261102/LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/launch_via_ssh_once.py",
+    "research/feduba_targetclass_pair_recovery_20261102/model_reference.py",
+    "research/feduba_targetclass_pair_recovery_20261102/MONITOR_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/MONITOR_FREEZE_V2.json",
+    "research/feduba_targetclass_pair_recovery_20261102/MONITOR_PROTOCOL.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/native_memory.py",
+    "research/feduba_targetclass_pair_recovery_20261102/native_processes.py",
+    "research/feduba_targetclass_pair_recovery_20261102/NORMAL_CASE_SELECTION.json",
+    "research/feduba_targetclass_pair_recovery_20261102/observe_status.py",
+    "research/feduba_targetclass_pair_recovery_20261102/observe_status_v2.py",
+    "research/feduba_targetclass_pair_recovery_20261102/pair_binding.py",
+    "research/feduba_targetclass_pair_recovery_20261102/pair_eval_core.py",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_CPU_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_LAUNCH_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PREPARATION_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/prepare_from_fixed_selection.py",
+    "research/feduba_targetclass_pair_recovery_20261102/PREPARE_ONCE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PROTOCOL.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/REPORT_KO.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/runtime_common.py",
+    "research/feduba_targetclass_pair_recovery_20261102/RUN_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/RUN_PUBLICATION.json",
+    "research/feduba_targetclass_pair_recovery_20261102/source_checks.py",
+    "research/feduba_targetclass_pair_recovery_20261102/SOURCE_CHECK_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/SOURCE_FREEZE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/SOURCE_PROFILE.json",
+    "research/feduba_targetclass_pair_recovery_20261102/SOURCE_PUBLICATION.json",
+    "research/feduba_targetclass_pair_recovery_20261102/trigger_binding.py",
+    "research/feduba_targetclass_pair_recovery_20261102/TRIGGER_SOURCE_BINDING.json",
+    "research/feduba_targetclass_pair_recovery_20261102/verify_fu.py",
+    "research/feduba_targetclass_pair_recovery_20261102/verify_pair_evaluation.py",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_benign_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/BENIGN_TRAINING_COMPLETION_REPORT_KO.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_benign_VERIFIED.json",
+    "research/feduba_targetclass_pair_recovery_20261102/BENIGN_AUDIT_COMPLETION_REPORT_KO.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_attack_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/ATTACK_TRAINING_COMPLETION_REPORT_KO.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/FU_attack_VERIFIED.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_RESULT.json",
+    "research/feduba_targetclass_pair_recovery_20261102/PAIR_EVAL_VERIFIED.json",
+    "research/feduba_targetclass_pair_recovery_20261102/COMPLETION.json",
+    "research/feduba_targetclass_pair_recovery_20261102/REMOTE_CHECKPOINT_REVIEW.json",
+    "research/feduba_targetclass_pair_recovery_20261102/FINAL_REPORT_KO.txt",
+    "research/feduba_targetclass_pair_recovery_20261102/PAPER_COMPARISON.txt",
+    "research/feduba_fixed_cohort_review_20261103/REPORT_KO.txt",
+    "research/feduba_fixed_cohort_review_20261103/REVIEW_FREEZE.json",
+    "research/feduba_fixed_cohort_review_20261103/REVIEW_PROFILE.json",
+    "research/feduba_fixed10_foundation_20261103/.gitignore",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_FREEZE.json",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_PROFILE.json",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_READY.json",
+    "research/feduba_fixed10_foundation_20261103/clean_fl_runner.py",
+    "research/feduba_fixed10_foundation_20261103/core.py",
+    "research/feduba_fixed10_foundation_20261103/foundation_binding.py",
+    "research/feduba_fixed10_foundation_20261103/foundation_controller.py",
+    "research/feduba_fixed10_foundation_20261103/GPU_PREFLIGHT_RESULT.json",
+    "research/feduba_fixed10_foundation_20261103/launch_once.ps1",
+    "research/feduba_fixed10_foundation_20261103/LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_foundation_20261103/launch_via_ssh_once.py",
+    "research/feduba_fixed10_foundation_20261103/model_reference.py",
+    "research/feduba_fixed10_foundation_20261103/MONITOR_FREEZE.json",
+    "research/feduba_fixed10_foundation_20261103/MONITOR_PROTOCOL.txt",
+    "research/feduba_fixed10_foundation_20261103/native_memory.py",
+    "research/feduba_fixed10_foundation_20261103/native_processes.py",
+    "research/feduba_fixed10_foundation_20261103/observe_status.py",
+    "research/feduba_fixed10_foundation_20261103/PREPARATION_RESULT.json",
+    "research/feduba_fixed10_foundation_20261103/prepare_foundation.py",
+    "research/feduba_fixed10_foundation_20261103/PREPARE_ONCE.json",
+    "research/feduba_fixed10_foundation_20261103/PROTOCOL.txt",
+    "research/feduba_fixed10_foundation_20261103/PUBLICATION_BYTE_CHECKS.json",
+    "research/feduba_fixed10_foundation_20261103/REPORT_KO.txt",
+    "research/feduba_fixed10_foundation_20261103/runtime_common.py",
+    "research/feduba_fixed10_foundation_20261103/RUN_FREEZE.json",
+    "research/feduba_fixed10_foundation_20261103/RUN_PUBLICATION.json",
+    "research/feduba_fixed10_foundation_20261103/source_checks.py",
+    "research/feduba_fixed10_foundation_20261103/SOURCE_FREEZE.json",
+    "research/feduba_fixed10_foundation_20261103/SOURCE_PROFILE.json",
+    "research/feduba_fixed10_foundation_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_fixed10_foundation_20261103/verify_clean_fl.py",
+    "research/feduba_fixed10_clean_delivery_20261103/PROTOCOL.txt",
+    "research/feduba_fixed10_clean_delivery_20261103/REPORT_KO.txt",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_FREEZE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_PROFILE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_fixed10_clean_delivery_20261103/clean_delivery_binding.py",
+    "research/feduba_fixed10_clean_delivery_20261103/export_clean_review.py",
+    "research/feduba_fixed10_clean_delivery_20261103/launch_once.ps1",
+    "research/feduba_fixed10_clean_delivery_20261103/launch_via_ssh_once.py",
+    "research/feduba_fixed10_clean_delivery_20261103/model_reference.py",
+    "research/feduba_fixed10_clean_delivery_20261103/native_memory.py",
+    "research/feduba_fixed10_clean_delivery_20261103/native_processes.py",
+    "research/feduba_fixed10_clean_delivery_20261103/prepare_actual.py",
+    "research/feduba_fixed10_clean_delivery_20261103/prepare_via_ssh_once.py",
+    "research/feduba_fixed10_clean_delivery_20261103/register_clean_case.py",
+    "research/feduba_fixed10_clean_delivery_20261103/review_loader.py",
+    "research/feduba_fixed10_clean_delivery_20261103/runtime_common.py",
+    "research/feduba_fixed10_clean_delivery_20261103/source_review.py",
+    "research/feduba_fixed10_sss_20261103/COPY_PROVENANCE.json",
+    "research/feduba_fixed10_sss_20261103/MONITOR_PROTOCOL.txt",
+    "research/feduba_fixed10_sss_20261103/PROTOCOL.txt",
+    "research/feduba_fixed10_sss_20261103/REPORT_KO.txt",
+    "research/feduba_fixed10_sss_20261103/SOURCE_FREEZE.json",
+    "research/feduba_fixed10_sss_20261103/SOURCE_PROFILE.json",
+    "research/feduba_fixed10_sss_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_fixed10_sss_20261103/SOURCE_REVIEW_REPORT_KO.txt",
+    "research/feduba_fixed10_sss_20261103/SSS_LOGGER_CPU2_RESULT.json",
+    "research/feduba_fixed10_sss_20261103/SSS_NUMERIC_POLICY.json",
+    "research/feduba_fixed10_sss_20261103/SSS_PROFILE.json",
+    "research/feduba_fixed10_sss_20261103/TRIGGER_SOURCE_BINDING.json",
+    "research/feduba_fixed10_sss_20261103/core.py",
+    "research/feduba_fixed10_sss_20261103/launch_once.ps1",
+    "research/feduba_fixed10_sss_20261103/launch_via_ssh_once.py",
+    "research/feduba_fixed10_sss_20261103/model_reference.py",
+    "research/feduba_fixed10_sss_20261103/native_memory.py",
+    "research/feduba_fixed10_sss_20261103/native_processes.py",
+    "research/feduba_fixed10_sss_20261103/observe_status.py",
+    "research/feduba_fixed10_sss_20261103/pair_binding.py",
+    "research/feduba_fixed10_sss_20261103/prepare_sss.py",
+    "research/feduba_fixed10_sss_20261103/prepare_via_ssh_once.py",
+    "research/feduba_fixed10_sss_20261103/runtime_common.py",
+    "research/feduba_fixed10_sss_20261103/source_review.py",
+    "research/feduba_fixed10_sss_20261103/sss_controller.py",
+    "research/feduba_fixed10_sss_20261103/sss_logging.py",
+    "research/feduba_fixed10_sss_20261103/sss_runner.py",
+    "research/feduba_fixed10_sss_20261103/trigger_binding.py",
+    "research/feduba_fixed10_sss_20261103/verify_sss.py",
+    "research/feduba_fixed10_pair_20261103/COPY_PROVENANCE.json",
+    "research/feduba_fixed10_pair_20261103/FU_ENGINE_CPU_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/FU_POLICY_CPU_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/FU_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/GPU_PREFLIGHT_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/MONITOR_PROTOCOL.txt",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_CPU_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/PROTOCOL.txt",
+    "research/feduba_fixed10_pair_20261103/REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/SOURCE_FREEZE.json",
+    "research/feduba_fixed10_pair_20261103/SOURCE_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_fixed10_pair_20261103/SOURCE_REVIEW_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/TRIGGER_SOURCE_BINDING.json",
+    "research/feduba_fixed10_pair_20261103/controller.py",
+    "research/feduba_fixed10_pair_20261103/core.py",
+    "research/feduba_fixed10_pair_20261103/evaluate_pair.py",
+    "research/feduba_fixed10_pair_20261103/export_checkpoint_review.py",
+    "research/feduba_fixed10_pair_20261103/fu_core.py",
+    "research/feduba_fixed10_pair_20261103/fu_runner.py",
+    "research/feduba_fixed10_pair_20261103/fu_training.py",
+    "research/feduba_fixed10_pair_20261103/launch_once.ps1",
+    "research/feduba_fixed10_pair_20261103/launch_via_ssh_once.py",
+    "research/feduba_fixed10_pair_20261103/model_reference.py",
+    "research/feduba_fixed10_pair_20261103/native_memory.py",
+    "research/feduba_fixed10_pair_20261103/native_processes.py",
+    "research/feduba_fixed10_pair_20261103/observe_status.py",
+    "research/feduba_fixed10_pair_20261103/pair_binding.py",
+    "research/feduba_fixed10_pair_20261103/pair_eval_core.py",
+    "research/feduba_fixed10_pair_20261103/prepare_pair.py",
+    "research/feduba_fixed10_pair_20261103/prepare_via_ssh_once.py",
+    "research/feduba_fixed10_pair_20261103/runtime_common.py",
+    "research/feduba_fixed10_pair_20261103/source_review.py",
+    "research/feduba_fixed10_pair_20261103/trigger_binding.py",
+    "research/feduba_fixed10_pair_20261103/verify_fu.py",
+    "research/feduba_fixed10_pair_20261103/verify_pair_evaluation.py",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_RESULT.json",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_STATE.json",
+    "research/feduba_fixed10_foundation_20261103/CLEAN_FL_VERIFIED.json",
+    "research/feduba_fixed10_foundation_20261103/COMPLETION.json",
+    "research/feduba_fixed10_foundation_20261103/FOUNDATION_CONTROLLER_STATE.json",
+    "research/feduba_fixed10_foundation_20261103/TRAINING_COMPLETION_OBSERVATION.json",
+    "research/feduba_fixed10_foundation_20261103/TRAINING_COMPLETION_SUMMARY.json",
+    "research/feduba_fixed10_foundation_20261103/FINAL_FOUNDATION_OBSERVATION.json",
+    "research/feduba_fixed10_foundation_20261103/FINAL_FOUNDATION_SUMMARY.json",
+    "research/feduba_fixed10_foundation_20261103/FINAL_FOUNDATION_REPORT_KO.txt",
+    "research/feduba_fixed10_clean_delivery_20261103/FOUNDATION_TERMINAL_CHECK.json",
+    "research/feduba_fixed10_clean_delivery_20261103/PREPARE_ONCE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/FOUNDATION_INPUT_BINDING.json",
+    "research/feduba_fixed10_clean_delivery_20261103/LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/RUN_FREEZE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/CLEAN_EXPORT_FREEZE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/CLEAN_REGISTRATION_FREEZE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/observe_status.py",
+    "research/feduba_fixed10_clean_delivery_20261103/MONITOR_PROTOCOL.txt",
+    "research/feduba_fixed10_clean_delivery_20261103/MONITOR_FREEZE.json",
+    "research/feduba_fixed10_sss_20261103/LOCAL_PREPARE_ONCE.json",
+    "research/feduba_fixed10_sss_20261103/FOUNDATION_TERMINAL_CHECK.json",
+    "research/feduba_fixed10_sss_20261103/PREPARE_ONCE.json",
+    "research/feduba_fixed10_sss_20261103/FOUNDATION_INPUT_BINDING.json",
+    "research/feduba_fixed10_sss_20261103/SSS_LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_sss_20261103/LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_sss_20261103/RUN_FREEZE.json",
+    "research/feduba_fixed10_sss_20261103/SSS_FREEZE.json",
+    "research/feduba_fixed10_sss_20261103/CLEAN_FL_RESULT.json",
+    "research/feduba_fixed10_sss_20261103/CLEAN_FL_VERIFIED.json",
+    "research/feduba_fixed10_sss_20261103/CLEAN_FL_READY.json",
+    "research/feduba_fixed10_sss_20261103/CLEAN_FL_PROFILE.json",
+    "research/feduba_fixed10_sss_20261103/GPU_PREFLIGHT_RESULT.json",
+    "research/feduba_fixed10_clean_delivery_20261103/RUN_PUBLICATION.json",
+    "research/feduba_fixed10_clean_delivery_20261103/CLEAN_REVIEW_DELIVERY_REMOTE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/DISLAB_REGISTRATION_CALL_ONCE.json",
+    "research/feduba_fixed10_clean_delivery_20261103/READBACK_RECOVERY_PROTOCOL.txt",
+    "research/feduba_fixed10_clean_delivery_20261103/LOCAL_READBACK_FAILURE_OBSERVATION.json",
+    "research/feduba_fixed10_clean_delivery_20261103/READBACK_RECOVERY_RESULT.json",
+    "research/feduba_fixed10_clean_delivery_20261103/EXPORT_COMPLETION_OBSERVATION.json",
+    "research/feduba_fixed10_clean_delivery_20261103/REMOTE_NORMAL_COMPLETION_SUMMARY.json",
+    "research/feduba_fixed10_clean_delivery_20261103/REMOTE_NORMAL_COMPLETION_REPORT_KO.txt",
+    "research/feduba_fixed10_sss_20261103/RUN_PUBLICATION.json",
+    "research/feduba_fixed10_sss_20261103/SSS_STATE.json",
+    "research/feduba_fixed10_sss_20261103/SSS_CONTROLLER_STATE.json",
+    "research/feduba_fixed10_sss_20261103/COMPLETION.json",
+    "research/feduba_fixed10_sss_20261103/SSS_COMPLETION_OBSERVATION.json",
+    "research/feduba_fixed10_sss_20261103/SSS_COMPLETION_SUMMARY.json",
+    "research/feduba_fixed10_sss_20261103/SSS_COMPLETION_REPORT_KO.txt",
+    "research/feduba_fixed10_sss_20261103/CPU_REPLAY_COUNT_DISCREPANCY.json",
+    "research/feduba_fixed10_sss_20261103/CPU_REPLAY_COUNT_AMENDMENT_PROTOCOL.txt",
+    "research/feduba_fixed10_sss_20261103/CPU_REPLAY_COUNT_RECONCILIATION.json",
+    "research/feduba_fixed10_pair_20261103/LOCAL_PREPARE_ONCE.json",
+    "research/feduba_fixed10_pair_20261103/UPSTREAM_TERMINAL_CHECK.json",
+    "research/feduba_fixed10_pair_20261103/PREPARE_ONCE.json",
+    "research/feduba_fixed10_pair_20261103/FOUNDATION_INPUT_BINDING.json",
+    "research/feduba_fixed10_pair_20261103/FU_LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/LAUNCH_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/PREPARATION_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/RUN_FREEZE.json",
+    "research/feduba_fixed10_pair_20261103/FU_RUN_FREEZE.json",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_RUN_FREEZE.json",
+    "research/feduba_fixed10_pair_20261103/CLEAN_FL_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/CLEAN_FL_VERIFIED.json",
+    "research/feduba_fixed10_pair_20261103/CLEAN_FL_READY.json",
+    "research/feduba_fixed10_pair_20261103/CLEAN_FL_PROFILE.json",
+    "research/feduba_fixed10_pair_20261103/SSS_REPLAY_COUNT_BINDING.json",
+    "research/feduba_fixed10_pair_20261103/ACTUAL_RUN_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/RUN_PUBLICATION.json",
+    "research/feduba_fixed10_pair_20261103/RUNNING_OBSERVATION.json",
+    "research/feduba_fixed10_pair_20261103/RUNNING_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/observe_status_v2.py",
+    "research/feduba_fixed10_pair_20261103/MONITOR_PROTOCOL_V2.txt",
+    "research/feduba_fixed10_pair_20261103/MONITOR_FREEZE_V2.json",
+    "research/feduba_fixed10_pair_20261103/MONITOR_TRANSPORT_FAILURE_OBSERVATION.json",
+    "research/feduba_fixed10_pair_20261103/FU_benign_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/FU_benign_STATE.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_SUMMARY.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_OBSERVATION.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_TRAINING_COMPLETION_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/FU_benign_VERIFIED.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_SUMMARY.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_OBSERVATION.json",
+    "research/feduba_fixed10_pair_20261103/BENIGN_AUDIT_COMPLETION_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/FU_attack_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/FU_attack_STATE.json",
+    "research/feduba_fixed10_pair_20261103/FU_attack_VERIFIED.json",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_RESULT.json",
+    "research/feduba_fixed10_pair_20261103/PAIR_EVAL_VERIFIED.json",
+    "research/feduba_fixed10_pair_20261103/COMPLETION.json",
+    "research/feduba_fixed10_pair_20261103/REMOTE_CHECKPOINT_REVIEW.json",
+    "research/feduba_fixed10_pair_20261103/CONTROLLER_STATE.json",
+    "research/feduba_fixed10_pair_20261103/FINAL_TERMINAL_OBSERVATION.json",
+    "research/feduba_fixed10_pair_20261103/FINAL_RESULT_SUMMARY.json",
+    "research/feduba_fixed10_pair_20261103/FINAL_REPORT_KO.txt",
+    "research/feduba_fixed10_pair_20261103/PAPER_COMPARISON.txt",
+    "research/feduba_fixed10_pair_20261103/NEXT_STAGE_RATIONALE.txt",
+    "research/feduba_fixed10_pair_20261103/EVALUATOR_ROUTE_DIFFERENCE.json",
+    "research/feduba_author_archive_review_20261103/PROTOCOL.txt",
+    "research/feduba_author_archive_review_20261103/REVIEW_PROFILE.json",
+    "research/feduba_author_archive_review_20261103/SOURCE_DISCOVERY.json",
+    "research/feduba_author_archive_review_20261103/inspect_archive.py",
+    "research/feduba_author_archive_review_20261103/SOURCE_FREEZE.json",
+    "research/feduba_author_archive_review_20261103/PACKAGING_RECOVERY_PROTOCOL.txt",
+    "research/feduba_author_archive_review_20261103/RECOVERY_PROFILE.json",
+    "research/feduba_author_archive_review_20261103/inspect_archive_v2.py",
+    "research/feduba_author_archive_review_20261103/REVIEW_FAILURE.json",
+    "research/feduba_author_archive_review_20261103/REVIEW_ONCE.json",
+    "research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_author_archive_review_20261103/SOURCE_FREEZE_V2.json",
+    "research/feduba_author_archive_review_20261103/SOURCE_PUBLICATION_V2.json",
+    "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_ONCE.json",
+    "research/feduba_author_archive_review_20261103/REVIEW_RECOVERY_RESULT.json",
+    "research/feduba_author_archive_review_20261103/REPORT_KO.txt",
+    "research/feduba_author_archive_review_20261103/COMPLETION_SUMMARY.json",
+    "research/feduba_author_archive_review_20261103/LOCAL_READBACK_FAILURE_OBSERVATION.json",
+    "research/feduba_author_archive_review_20261103/METADATA_READBACK_PROTOCOL.txt",
+    "research/feduba_author_archive_review_20261103/FINAL_METADATA_CHECK.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/PROFILE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/INPUT_BINDING.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/PROTOCOL.txt",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/native_memory.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/native_processes.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/common.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/derive_direction.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/verify_direction.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/controller.py",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_FREEZE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/SOURCE_PUBLICATION.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_FOREGROUND_ONCE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/LOCAL_READBACK.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/CONTROLLER_ONCE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/PRIMARY_ONCE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFY_ONCE.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/RESULT.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/VERIFIED.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/COMPLETION.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/TERMINAL_OBSERVATION.json",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/REPORT_KO.txt",
+    "research/feduba_fixed10_sss_direction_diagnosis_20261103/NEXT_STAGE_RATIONALE.txt",
+    "research/03_detection/parked/history/README.md",
+    "research/DETECTION_REVIEW_20261021/RESULTS.md",
+    "research/two_stage_detection_20261021/PATCH_COMPARISON_AUDIT.md",
+    "research/active_unlearning_audit_20261022/REPORT_KO.md",
+    "research/fuba_observation_20261023/README_KO.txt",
+    "research/fuba_observation_20261023/cost_counterexample.py",
+    "research/cross_attack_search_20261022/SHORT_REPORT_KO.md",
+    "research/differential_audit_proposal_20261023/PROPOSAL_KO.txt",
+    "research/paired_probe_validation_20261023/DIRECTION_STATUS_20261023.txt",
+    "research/detection_decision_20261023/FOLLOWUP_COMPLETED_20261023.txt",
+    "research/mechanism_first_20261022/REPORT_KO.md",
+    "research/02_purification/derived/response_transfer/README.md",
+    "research/02_purification/derived/classifier_repair/README.md",
+    "research/ac_feasibility_20261023/README.md",
+    "research/manifold_projection_check_20261025/PROTOCOL.txt",
+    "research/manifold_projection_check_20261025/EVALUATION_INCIDENT.txt",
+    "research/manifold_projection_check_20261025/EVALUATION_DIAGNOSIS_ADDENDUM.txt",
+    "research/fuba_projection_check_20261025/PROTOCOL.txt",
+    "research/fuba_projection_check_20261025/LOAD_CHECK_AMENDMENT.txt"
+  ]
+}

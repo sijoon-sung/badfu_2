@@ -1,0 +1,57 @@
+{
+  "source_commit": "9e4327d3baa5cad8c33c39f4daa2423575696138",
+  "files": [
+    {
+      "name": "FREEZE.json",
+      "published_blob": "2d1e0b7e51d48fa7424ad5cbbea7859ad7f93b64",
+      "published_size": 633,
+      "local_raw_blob": "0c3598d84e80b953183460daf14980a1ff6472b7",
+      "local_lf_blob": "2d1e0b7e51d48fa7424ad5cbbea7859ad7f93b64",
+      "local_raw_sha256": "f6738f94789848db7a1dfe1a0e275393a89755dc520d21462439b69f5f005b06",
+      "raw_exact": false,
+      "lf_exact": true
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "published_blob": "e46b474fd264052592d0d7c36fbdc640924c6b06",
+      "published_size": 7901,
+      "local_raw_blob": "0552268a1d4c1e539ade66d8c0cbec9bac278290",
+      "local_lf_blob": "0552268a1d4c1e539ade66d8c0cbec9bac278290",
+      "local_raw_sha256": "583d3116880d0ca5a362af144c566153152c79c7d75af3a88873d807c495cf4c",
+      "raw_exact": false,
+      "lf_exact": false
+    },
+    {
+      "name": "REMOTE_CACHE_METADATA.json",
+      "published_blob": "385a09aa28899467b24becbdd203d40c17597669",
+      "published_size": 727,
+      "local_raw_blob": "7237610e6de2daf78dc150d003dc5d8880c729f4",
+      "local_lf_blob": "385a09aa28899467b24becbdd203d40c17597669",
+      "local_raw_sha256": "2a216bc16687bcb6de753952673474545346855b5b2c86a7732694482276d8ed",
+      "raw_exact": false,
+      "lf_exact": true
+    },
+    {
+      "name": "analyze_topdown.py",
+      "published_blob": "d28e79c388a33457fde9526ea9e39e83e96ea795",
+      "published_size": 9269,
+      "local_raw_blob": "d28e79c388a33457fde9526ea9e39e83e96ea795",
+      "local_lf_blob": "d28e79c388a33457fde9526ea9e39e83e96ea795",
+      "local_raw_sha256": "b8b90ae348e435e2f5f82a13efc66316a6336f208bcfbd28721943f6a027cf20",
+      "raw_exact": true,
+      "lf_exact": true
+    },
+    {
+      "name": "check_topdown.py",
+      "published_blob": "a120185bac81b3cfa6c5bdf1051a929dffc9a919",
+      "published_size": 5686,
+      "local_raw_blob": "a120185bac81b3cfa6c5bdf1051a929dffc9a919",
+      "local_lf_blob": "a120185bac81b3cfa6c5bdf1051a929dffc9a919",
+      "local_raw_sha256": "643a057bd6e591d0eb4b070c7a62312fdb0891e11483650a1a2d0c4639982524",
+      "raw_exact": true,
+      "lf_exact": true
+    }
+  ],
+  "cause": "Text passed through default Windows Python console encoding and newline conversion before push_files; code ASCII and precommitted hash field values must be distinguished from readable Korean protocol bytes.",
+  "repair": "Publish original UTF-8 bytes through ensure_ascii=True transport; retain original commit and this discrepancy receipt; do not rerun completed computations."
+}

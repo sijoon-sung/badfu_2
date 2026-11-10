@@ -1,0 +1,67 @@
+{
+  "source_commit": "55e113be552c87c823f4646241c91c401ab0d976",
+  "files": [
+    {
+      "name": "FREEZE.json",
+      "published_blob": "4e3e883d761c54a37e0e84718069a92c7b34041c",
+      "published_size": 717,
+      "local_raw_blob": "eff8487fdb1cd5463a6577c7319af4d6b64e3a9d",
+      "local_lf_blob": "4e3e883d761c54a37e0e84718069a92c7b34041c",
+      "local_raw_sha256": "6b0e5387133fe71498e07b538aebefea6c7100001a864401f616ef5730df3dd8",
+      "raw_exact": false,
+      "lf_exact": true
+    },
+    {
+      "name": "PAPER_MATRIX.txt",
+      "published_blob": "d484407747d3b76b1d381e10101b3fe182f3c124",
+      "published_size": 6769,
+      "local_raw_blob": "5d4229a7bb5bf1617e7a41e22d8984086b4354d5",
+      "local_lf_blob": "5d4229a7bb5bf1617e7a41e22d8984086b4354d5",
+      "local_raw_sha256": "48310893f61f42a13c3d2ee62fecd668da1d8d25ed080bad9b44a44caff36b5d",
+      "raw_exact": false,
+      "lf_exact": false
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "published_blob": "81f42719716c64347dfb4de267694e67831616ea",
+      "published_size": 6098,
+      "local_raw_blob": "72be3ed33acc2ccd63edc91e249a6fe4b2b94ea3",
+      "local_lf_blob": "72be3ed33acc2ccd63edc91e249a6fe4b2b94ea3",
+      "local_raw_sha256": "79929262619899d8ad49f07f8abe618b5929954ee2806d1e0b08ce7dad8060de",
+      "raw_exact": false,
+      "lf_exact": false
+    },
+    {
+      "name": "THEORY.txt",
+      "published_blob": "ff46e6cadaafa3364472fbe016be52cd417c6a46",
+      "published_size": 9998,
+      "local_raw_blob": "a404fdebfe5f8d8a9fc5b0e136a910de3471ab2b",
+      "local_lf_blob": "a404fdebfe5f8d8a9fc5b0e136a910de3471ab2b",
+      "local_raw_sha256": "72f2b351d80add43f67fe3c9b3c914b7f81aa74cf2c045b23ae978270df43996",
+      "raw_exact": false,
+      "lf_exact": false
+    },
+    {
+      "name": "check_exact.py",
+      "published_blob": "6703ab7c9143bf30190a6c3bbfee86475fa63166",
+      "published_size": 4032,
+      "local_raw_blob": "6703ab7c9143bf30190a6c3bbfee86475fa63166",
+      "local_lf_blob": "6703ab7c9143bf30190a6c3bbfee86475fa63166",
+      "local_raw_sha256": "67678e4fdfe48d55d7a181b0404da0e2c6deedf25cdb151d69d15291f2634a10",
+      "raw_exact": true,
+      "lf_exact": true
+    },
+    {
+      "name": "derive_exact.py",
+      "published_blob": "4a25c46793d3d02c1b5a9fd8aa7bd07200178962",
+      "published_size": 7213,
+      "local_raw_blob": "4a25c46793d3d02c1b5a9fd8aa7bd07200178962",
+      "local_lf_blob": "4a25c46793d3d02c1b5a9fd8aa7bd07200178962",
+      "local_raw_sha256": "e8df7b9cba0073a9e1bd9189505bdc7ab96f893fb7fddd341618f63595994935",
+      "raw_exact": true,
+      "lf_exact": true
+    }
+  ],
+  "cause": "Text passed through default Windows Python console encoding and newline conversion before push_files; code ASCII and precommitted hash field values must be distinguished from readable Korean protocol bytes.",
+  "repair": "Publish original UTF-8 bytes through ensure_ascii=True transport; retain original commit and this discrepancy receipt; do not rerun completed computations."
+}
