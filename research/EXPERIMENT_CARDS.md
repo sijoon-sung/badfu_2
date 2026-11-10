@@ -2696,3 +2696,36 @@
 
 **묶은 폴더:** [blind_route_detector_20261110](blind_route_detector_20261110) · [blind_route_detector_v2_20261110](blind_route_detector_v2_20261110)
 
+<a id="d21"></a>
+
+## D21 · 고정 D20 탐색의 같은 FedUBA 구현 대규모 정상 FU20 반증 시험
+
+**가설 한 줄: 고정 D20 네경로 탐색은 같은 FedUBA/FedEraser 구현의 큰 정상 균형 삭제와 한 클래스 전체 정상 삭제에서 기존 두 공격요청 diagnostic보다 낮은 전환 점수를 보인다.**
+
+**판정: 원20R이력·삭제량 CPU준비 통과 / 새정상FU20·탐색 결과 미측정**
+
+[실험 시작 이유와 실제 실행 과정 읽기](feduba_large_benign_validation_20261110/PROTOCOL.txt)
+
+- **조건:** ity207/FedUBA fixed10 cleanFL20 seed42의 원완료20R/200role/freshG0를 해시핀하고 새 full-history diagnostic ID로 client_history 선택. 원FL/STG/SSS/공격FU·D20완료탐색 재실행0. 실제새정상branch만20R/200role/5localepoch/B128/원SGD·seed·보정·집계. D20공개분할/3family/10목표/400step/epsilon.05/mass16 고정, 새정상조건은opaque입력으로탐색. 새FL시드나새test분할이아님.
+- **정상 대조·비교:** balanced5000=실제참여25k에서class당500 진짜삭제(20%,전체50k의10%); class2_all=같은참여자의class2전부2486진짜삭제(9.944%,전체의4.972%). 10owner모두정상·변조/trigger/SSS없고 모든retained N>0. 목표class2는evaluator설계이며method선택입력아님. 순서balanced→class2, 원D20 FedUBA benign/minus/plus는SHA봉인값재사용.
+- **결과:** source26 Gitblob 원바이트확인 후 DISLAB 새CPU metadata준비 통과. 원221 history checkpoint reference와 원audit/manifest/split/공식CIFAR SHA, case/dataset 소유권/분모를확인했다. expected actual FU batch는16000/18000(각1000epochs)이다. tensor load/forward/GPU training0. remote catalogue29→30에full-history diagnostic metadata만추가,기존case/default보존. 새학습·검산·탐색·성능수치는아직없다.
+- **non-IID에 대해 남길 교훈:** D20은FedUBA의작은125ID 정상만있었으므로큰정상반례가빈칸이었다. 새관측은새점수의이름이아니라같은FU수식으로생성한정당한큰삭제후함수와동일blind탐색응답이다. 정상도악성처럼전환을만들수있어직접반증한다. 클래스집중삭제검사도클래스내도메인차이/대표정상요청보정을대신하지않는다. D02/D06/D07/D08/D15/T02반례를해결했다고가정하지않는다.
+- **반복하지 않을 주장:** 원완료cleanFL/FU/SSS/STG/D20/원검산/export/oldqueue를재실행하지않는다. 원모델/기본case/실패불변. 새정상utility저하를이유로반례를버리지않고,점수가겹치면threshold/예산/손실retune으로구하지않는다. 원norm은FU수학이지새탐지점수가아니다.
+- **재검토 조건:** 각정상선택봉인후test route>=299/900이면이확대범위필요구별조건기각·미시작후속branch중단. 낮아도이두조건/한시드/고정분할에한정하고FUBA성공잠복쌍/운영FPR/trigger-family독립탐지로승격하지않는다. 무결성/finite/ID/source/실행결함은prefix보존후정당한별도복구만가능하며자동retry없다.
+- **출처 구분:** 2026-11-10 사용자다시시작:미지트리거탐지·DISLAB큰정상/FUBA류검증계속. D20제한된양성을보존하고같은구현큰정상필요조건부터검사한다. FUBA와FedUBA정체/원성능실패를분리한다.
+
+**원문·증거:**
+
+- [research/feduba_large_benign_validation_20261110/PROTOCOL.txt](feduba_large_benign_validation_20261110/PROTOCOL.txt)
+- [research/feduba_large_benign_validation_20261110/SOURCE_FREEZE.json](feduba_large_benign_validation_20261110/SOURCE_FREEZE.json)
+- [research/feduba_large_benign_validation_20261110/SOURCE_PUBLICATION.json](feduba_large_benign_validation_20261110/SOURCE_PUBLICATION.json)
+- [research/feduba_large_benign_validation_20261110/COPIED_SOURCES.json](feduba_large_benign_validation_20261110/COPIED_SOURCES.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/PROFILE.json](feduba_large_benign_validation_20261110/remote_results/PROFILE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/RUN_FREEZE.json](feduba_large_benign_validation_20261110/remote_results/RUN_FREEZE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/PREPARED.json](feduba_large_benign_validation_20261110/remote_results/PREPARED.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/HISTORY_CASE_SELECTION.json](feduba_large_benign_validation_20261110/remote_results/HISTORY_CASE_SELECTION.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/CATALOG_history.json](feduba_large_benign_validation_20261110/remote_results/CATALOG_history.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/PRE_ENDPOINT_HASH_CHECK.json](feduba_large_benign_validation_20261110/remote_results/PRE_ENDPOINT_HASH_CHECK.json)
+
+**묶은 폴더:** [feduba_large_benign_validation_20261110](feduba_large_benign_validation_20261110)
+
