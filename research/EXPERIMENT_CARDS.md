@@ -2702,16 +2702,16 @@
 
 **가설 한 줄: 고정 D20 네경로 탐색은 같은 FedUBA/FedEraser 구현의 큰 정상 균형 삭제와 한 클래스 전체 정상 삭제에서 기존 두 공격요청 diagnostic보다 낮은 전환 점수를 보인다.**
 
-**판정: 큰균형정상14.00%·독립검산통과 / 클래스집중정상FU20 진행·범용미검증**
+**판정: 큰정상2조건14.00/12.78%·검산/실모델전달완료 / 고정필요조건통과·범용미검증**
 
-[실험 시작 이유와 실제 실행 과정 읽기](feduba_large_benign_validation_20261110/INTERIM_REPORT_KO.txt)
+[실험 시작 이유와 실제 실행 과정 읽기](feduba_large_benign_validation_20261110/FINAL_REPORT_KO.txt)
 
 - **조건:** ity207/FedUBA fixed10 cleanFL20 seed42의 원완료20R/200role/freshG0를 해시핀하고 새 full-history diagnostic ID로 client_history 선택. 원FL/STG/SSS/공격FU·D20완료탐색 재실행0. 실제새정상branch만20R/200role/5localepoch/B128/원SGD·seed·보정·집계. D20공개분할/3family/10목표/400step/epsilon.05/mass16 고정, 새정상조건은opaque입력으로탐색. 새FL시드나새test분할이아님.
 - **정상 대조·비교:** balanced5000=실제참여25k에서class당500 진짜삭제(20%,전체50k의10%); class2_all=같은참여자의class2전부2486진짜삭제(9.944%,전체의4.972%). 10owner모두정상·변조/trigger/SSS없고 모든retained N>0. 목표class2는evaluator설계이며method선택입력아님. 순서balanced→class2, 원D20 FedUBA benign/minus/plus는SHA봉인값재사용.
-- **결과:** balanced5000 실제20R/200role/1000epoch/16000batch·독립CPU보정/집계/원ID/optimizer/RNG/hash통과. after7e5f9117.../44770315bytes,1280.34초. 같은고정D20 blindtest:baseline124/900=13.7778%,route126/900=14.00%,원class별정수count도독립native와정확일치. postclean8277/10000=82.77%. 동결FedUBA공격요청diagnostic각299/900과미겹침으로원선언class2_all2486삭제FU20진행중. 새시드/새test분할아님. 원source및admission/7200s게시timeout/Path누락실패보존. 완료FU/감사재실행0, pending-only수정본으로n00탐색만완료. 클래스집중최종수치·전체전달아직없음.
-- **non-IID에 대해 남길 교훈:** D20은FedUBA의작은125ID 정상만있었으므로큰정상반례가빈칸이었다. 새관측은새점수의이름이아니라같은FU수식으로생성한정당한큰삭제후함수와동일blind탐색응답이다. 정상도악성처럼전환을만들수있어직접반증한다. 클래스집중삭제검사도클래스내도메인차이/대표정상요청보정을대신하지않는다. D02/D06/D07/D08/D15/T02반례를해결했다고가정하지않는다.
-- **반복하지 않을 주장:** 원완료cleanFL/FU/SSS/STG/D20/원검산/export/oldqueue를재실행하지않는다. 원모델/기본case/실패불변. 새정상utility저하를이유로반례를버리지않고,점수가겹치면threshold/예산/손실retune으로구하지않는다. 원norm은FU수학이지새탐지점수가아니다.
-- **재검토 조건:** 각정상선택봉인후test route>=299/900이면이확대범위필요구별조건기각·미시작후속branch중단. 낮아도이두조건/한시드/고정분할에한정하고FUBA성공잠복쌍/운영FPR/trigger-family독립탐지로승격하지않는다. 무결성/finite/ID/source/실행결함은prefix보존후정당한별도복구만가능하며자동retry없다.
+- **결과:** 실제정상2branch 각20R/200role/1000epoch,합34000batch. 독립CPU 전체ID/epoch/optimizer/RNG/finite/hash·모든보정/집계통과. 균형5000 baseline124/900=13.78%,route126/900=14%;class2전부2486 baseline111/900=12.33%,route115/900=12.78%. 각선택cal봉인후native정수count/원class별독립정확일치. 동결FedUBA diagnostic각299/900=33.22%보다낮아선언필요조건통과. baseline도분리하므로D21자체의추가가치입증은아님. CA82.77/77.57%;class2삭제후해당class정확도0으로strict사건에서제외되는한계. 206파일/296769987bytes·17typedpayload strictCPU/finite packet전달·로컬전byte검증/torch0. 원15endpoint/29case/default보존,새history+정상2case diagnostic만추가32. 최종작업exit0/owned0/oldqueue disabled. admission/게시timeout/Path누락실패보존·완료FU/감사반복0. 원203-file export와실패보존;무관renderer raw명령6관측은해시화한별도byte포맷사본이며17tensor동일·모델재검사0.
+- **non-IID에 대해 남길 교훈:** D20은FedUBA의작은125ID 정상만있었으므로큰정상반례가빈칸이었다. 새관측은새점수의이름이아니라같은FU수식으로생성한정당한큰삭제후함수와동일blind탐색응답이다. 정상도악성처럼전환을만들수있어직접반증한다. 클래스집중삭제검사도클래스내도메인차이/대표정상요청보정을대신하지않는다. D02/D06/D07/D08/D15/T02반례를해결했다고가정하지않는다. 두새정상조건은낮았지만pairedbaseline도구분했다. class2전부삭제의post해당class CA0은strict원입력정답조건으로제외되며일반망각기능을보존/구별했다는증거가아니다. 큰정상2조건/같은한FLseed/기존공개분할이며클래스내도메인반례·운영보정·성공잠복쌍검증을대체하지않는다.
+- **반복하지 않을 주장:** 완료원cleanFL/STG/SSS/공격FU/D20/새정상FU20두branch/검색/독립검산/CPUpacket을재실행·retune하지않는다. 원모델/기본case/실패/oldqueue보존. 본정상2조건을새seed나성공공격으로바꾸어부르지않고strict eligibility와좌표가정을명시한다. 원norm은FU수학이며탐지점수가아니다.
+- **재검토 조건:** 사전route>=299/900 반증기준은두조건모두미발생했다. 제한된양성만보존한다. 독립정상요청보정·다른실제FLseed/within-class도메인·성공잠복계열/다른FU에서같은방법의고정반증시험이필요하다. 더넓은보편필요조건은head-only/좌표반례로성립하지않으며보편기제라고승격하지않는다.
 - **출처 구분:** 2026-11-10 사용자다시시작:미지트리거탐지·DISLAB큰정상/FUBA류검증계속. D20제한된양성을보존하고같은구현큰정상필요조건부터검사한다. FUBA와FedUBA정체/원성능실패를분리한다.
 
 **원문·증거:**
@@ -2747,6 +2747,44 @@
 - [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/RESULT.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/RESULT.json)
 - [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/VERIFIED.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/VERIFIED.json)
 - [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/SELECTION_SEAL.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/SELECTION_SEAL.json)
+- [research/feduba_large_benign_validation_20261110/FINAL_REPORT_KO.txt](feduba_large_benign_validation_20261110/FINAL_REPORT_KO.txt)
+- [research/feduba_large_benign_validation_20261110/METHOD_STATUS_KO.txt](feduba_large_benign_validation_20261110/METHOD_STATUS_KO.txt)
+- [research/feduba_large_benign_validation_20261110/DELIVERY_PROTOCOL.txt](feduba_large_benign_validation_20261110/DELIVERY_PROTOCOL.txt)
+- [research/feduba_large_benign_validation_20261110/DELIVERY_FREEZE.json](feduba_large_benign_validation_20261110/DELIVERY_FREEZE.json)
+- [research/feduba_large_benign_validation_20261110/DELIVERY_PUBLICATION.json](feduba_large_benign_validation_20261110/DELIVERY_PUBLICATION.json)
+- [research/feduba_large_benign_validation_20261110/LOCAL_DELIVERY_VERIFIED.json](feduba_large_benign_validation_20261110/LOCAL_DELIVERY_VERIFIED.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/FU_class2_all_RESULT.json](feduba_large_benign_validation_20261110/remote_results/FU_class2_all_RESULT.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/FU_class2_all_VERIFIED.json](feduba_large_benign_validation_20261110/remote_results/FU_class2_all_VERIFIED.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/CASE_class2_all.json](feduba_large_benign_validation_20261110/remote_results/CASE_class2_all.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/CATALOG_balanced5000.json](feduba_large_benign_validation_20261110/remote_results/CATALOG_balanced5000.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/CATALOG_class2_all.json](feduba_large_benign_validation_20261110/remote_results/CATALOG_class2_all.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/VERDICT_class2_all.json](feduba_large_benign_validation_20261110/remote_results/VERDICT_class2_all.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/CLEAN_class2_all.json](feduba_large_benign_validation_20261110/remote_results/CLEAN_class2_all.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/COMPLETION.json](feduba_large_benign_validation_20261110/remote_results/COMPLETION.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/FINAL_TERMINAL.json](feduba_large_benign_validation_20261110/remote_results/FINAL_TERMINAL.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/REVIEW_MANIFEST.json](feduba_large_benign_validation_20261110/remote_results/REVIEW_MANIFEST.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/REVIEW_SEAL.json](feduba_large_benign_validation_20261110/remote_results/REVIEW_SEAL.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/ADMISSION_INCIDENT.json](feduba_large_benign_validation_20261110/remote_results/ADMISSION_INCIDENT.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/PROFILE.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/PROFILE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/INPUTS.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/INPUTS.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/FREEZE.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/FREEZE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/PUBLICATION.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/PUBLICATION.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/SELECTIONS.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/SELECTIONS.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n00/FIXTURES.json](feduba_large_benign_validation_20261110/remote_results/detector_n00/FIXTURES.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/PROFILE.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/PROFILE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/INPUTS.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/INPUTS.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/FREEZE.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/FREEZE.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/PUBLICATION.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/PUBLICATION.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/RESULT.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/RESULT.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/VERIFIED.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/VERIFIED.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/SELECTIONS.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/SELECTIONS.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/SELECTION_SEAL.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/SELECTION_SEAL.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/detector_n01/FIXTURES.json](feduba_large_benign_validation_20261110/remote_results/detector_n01/FIXTURES.json)
+- [research/feduba_large_benign_validation_20261110/PACKET_FORMATTING_PROTOCOL.txt](feduba_large_benign_validation_20261110/PACKET_FORMATTING_PROTOCOL.txt)
+- [research/feduba_large_benign_validation_20261110/FORMATTING_RECEIPT.json](feduba_large_benign_validation_20261110/FORMATTING_RECEIPT.json)
+- [research/feduba_large_benign_validation_20261110/LOCAL_SANITIZED_DELIVERY_VERIFIED.json](feduba_large_benign_validation_20261110/LOCAL_SANITIZED_DELIVERY_VERIFIED.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/REVIEW_SANITIZED_MANIFEST.json](feduba_large_benign_validation_20261110/remote_results/REVIEW_SANITIZED_MANIFEST.json)
+- [research/feduba_large_benign_validation_20261110/remote_results/REVIEW_SANITIZED_SEAL.json](feduba_large_benign_validation_20261110/remote_results/REVIEW_SANITIZED_SEAL.json)
 
 **묶은 폴더:** [feduba_large_benign_validation_20261110](feduba_large_benign_validation_20261110)
 

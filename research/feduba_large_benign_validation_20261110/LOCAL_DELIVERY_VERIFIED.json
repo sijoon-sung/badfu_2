@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "archive": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU-mechanism-20261110\\research\\feduba_large_benign_validation_20261110\\remote_results\\D21_REVIEW_PACKET.zip",
+  "sha256": "11aa88db5dd1c729d5aee724b48798377a820a512e8856101b0db205d2294e2f",
+  "bytes": 296766380,
+  "files": 203,
+  "all_manifest_bytes_verified": true,
+  "typed_payloads": 17,
+  "DISLAB_strict_CPU_finite_checks_bound": true,
+  "local_torch_loads": 0,
+  "local_model_forward_calls": 0,
+  "packet_scope": {
+    "completed_branches": [
+      "balanced5000",
+      "class2_all"
+    ],
+    "unstarted_branches": [],
+    "includes": "actual pre/after, one last-role model/SGD/RNG per completed branch, all1000 epoch event logs, full history hashes, all derived transforms/optimizers/RNG/schedules/calibration/native evidence/source",
+    "excludes": "bulk all-role/all-round tensor payloads remain on DISLAB; raw CIFAR data and unrelated external-service raw arguments excluded",
+    "private_request_IDs": "evaluator-only; excluded from git and server discovery",
+    "allowed_purpose": "diagnostic only; no default or attack-reproduction approval",
+    "universal_detection_validated": false
+  }
+}

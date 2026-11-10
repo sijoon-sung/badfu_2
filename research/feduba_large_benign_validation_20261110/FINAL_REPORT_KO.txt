@@ -1,0 +1,50 @@
+2026-11-11 KST · D21: 같은 FedUBA 구현의 큰 정상 삭제 검증 완료
+
+실제 트리거를 주지 않는 D20 탐색기를 고정한 채, 기존 ity207/FedUBA와 같은 원 cleanFL20 이력·명시 FedEraser 구현으로 두 큰 정상 삭제를 실제 수행했다. 균형5000 삭제의 native 전환율은126/900=14.00%, 클래스2 전체2486 삭제는115/900=12.7778%였다. 기존 두 FedUBA 공격요청 diagnostic의299/900=33.2222%보다 낮아, 사전 선언한 이 두 대조의 필요 구별조건은 통과했다. 범용 공격 판정·논문급 신규성·성공 잠복공격 재현을 입증한 결과는 아니다.
+
+관련 카드 D20/D21/D02/D06/D07/D08/D15/D17/D19/T02/T03/R02/R03. INDEX/카드/원보고서·정정과 trajectory catalogue를 읽고 가설·비교·중단기준·소스·실제 PROFILE/입력을 먼저 고정·PR source branch 게시·Git 원바이트 대조한 뒤 DISLAB에서 계산했다. INTERIM_REPORT는 첫 조건 완료 당시 기록이며 이 파일과 COMPLETION/FINAL_TERMINAL이 최종 판정이다.
+
+큰 현상에서 기능 관측으로 내려간 방법
+출발 현상은 원본 x에 대한 정상 기능은 유지하면서, 어떤 입력조건 T에서만 삭제 전 y가 삭제 후 t로 바뀌는 것이다. 실제 trigger/생성기/실제 목표/역할정답/삭제ID는 방법에 주지 않는다. 공개 정상라벨 이미지와 해시 선택한 native pre/post만 받는다. f_ij(x)=head_j(body_i(x)), 0=pre/1=post라 두고, paired baseline은 CE(f11(Tx),t)+CE(f00(Tx),y), route는 .5*[CE(f11,t)+CE(f10,t)+CE(f00,y)+CE(f01,y)]를 최소화한다. 분류기는 eval/frozen이고 T만 최적화한다. 영공간/PCA잔차/norm/CKA의 임계값을 새 기제로 이름 바꾼 방법이 아니다.
+모든10목표와 mask/additive/conditional을 동일400step·표본열·초기값으로 탐색하고 calibration에서 native 사건 수로 조건/목표를 선택·봉인한 뒤 test한다. 최종 사건은 원 x가 untouched pre/post 모두 y이고, Tx가 원 pre에서 y·원 post에서 t!=y인 경우다. cross 함수는 발견 제약이며 실제 판정 증거는 원본 모델에서 재확인한다. 현재 구현의 출력은 조건 T·선택 목표·재현 가능한 전환 사건과 calibration_required이며 운영 공격 여부는 null이다.
+
+가설·새 관측·반증 기준
+가설: 고정 D20 방법은 같은 FedUBA/FedEraser 구현의 큰 정상 균형 삭제와 한 클래스 전체 정상 삭제에서도 기존 공격요청 diagnostic보다 낮은 전환율을 보인다. 새 점수나 학습 관측을 추가한 것이 아니라, 빠져 있던 실제 큰 정상 FU endpoint에 같은 방법을 적용했다. 정상 기여손실도 조건부 오류를 만들 수 있으므로 실제로 반증한다. 각 새 정상 route>=299/900이면 확대범위의 필요 구별조건을 기각하고 미시작 후속 branch를 중단하기로 했다. 이는 연구 중단기준이며 배포 임계값이 아니다. 두 조건 모두 낮아 사전 선언 두 branch를 완료했으며 추가 retune·예산 변경·삭제조건 변경은 없었다.
+
+공격 정체와 입력 출처
+대상은 ity207/FedUBA의 pinned 공개 배포본 및 기존에 선언한 STG/SSS/BEA/FedEraser 해석에서 이어진 fixed10 기반이다. stcebra/FUBA의 Adv-attacker/Adv-defender/G/KD를 섞지 않았다. 원문·공개 source의 누락 dependency를 회복한 Narcissus ResNet18 및 원래의 명시적 보정/BN 정책을 유지했다. 저자의 누락 model 파일과 유일하게 동일하다고 인증하지 않는다. benign 실행에서는 delta=None, 원 label/image를 유지하며 STG/SSS/BEA 변조를 호출하지 않았다. plus-sign helper의 source 계보는 COPIED_SOURCES에 명시돼 있으나 이 정상 삭제에 그 부호/trigger가 입력되지는 않았다.
+원 fixed10 cleanFL20 seed42의 실제20R/200role과 freshG0를 해시 고정하고 새 full-history diagnostic ID feduba.public_fixed10.cifar10.s42.full20.history.diagnostic.20261110을 client_history 목적으로 선택했다. endpoint 사본에서 client update를 추정한 것이 아니다. 원 cleanFL/공격FU/STG/SSS/D20 완료 작업과 old FUBA queue는 재실행하지 않았다.
+
+실제 정상 삭제와 학습
+balanced5000: 실제 참여한10client의25000ID에서 class당500개를 원라벨 그대로 삭제했다. 참여 학습자료의20%, 전체50000의10%다. retained N/client1978~2028,20R/200role/1000epoch/16000batch,1280.34초. after SHA7e5f9117ff3bfaaed9d41e2e6a9774cec445dcb5a97896ae3d06c0f1992a09d8.
+class2_all: 같은 실제 참여자의 class2 전부2486개를 삭제했다. 참여자료의9.944%, 전체의4.972%다. retained N/client2226~2287,20R/200role/1000epoch/18000batch,1379.45초. after SHA4ac2ee40ff646c5b1fa3fac39ba1ae236c3ca5768894c37ff2b45d48803c3ff7.
+두 branch 모두10owner 정상 요청,5 localepochs/SGD .01/momentum .9/weightdecay0/cos20/B128 및 원role seed·실제 전체batch를 유지했다. oldnorm/newdirection 보정과 equal FedAvg/last BN counter는 기존 FU 알고리즘 수학이며 탐지 점수가 아니다. 새40R/400role/2000epoch/34000batch를 완료했다. 한 원FL seed의 두 삭제조건이며 두 독립 FL seed가 아니다.
+
+고정 시험 결과 — 각 arm/행 n=900
+조건                         paired baseline        네경로 route          route 선택
+정상 균형5000                124 (13.7778%)          126 (14.0000%)        additive,target0
+정상 class2 전체2486         111 (12.3333%)          115 (12.7778%)        additive,target7
+기존 정상125 [D20 재사용]    123 (13.6667%)          131 (14.5556%)        additive,target2
+기존 minus 진단 [D20]       291 (32.3333%)          299 (33.2222%)        additive,target2
+기존 plus 진단 [D20]        307 (34.1111%)          299 (33.2222%)        additive,target2
+새 두 큰 정상만의 최소 공격-최대 정상 간격은 baseline167/900=18.5556%p, route173/900=19.2222%p다. 이 .6667%p 차이에 대한 개선 가설/통계 기준은 사전 선언하지 않았다. baseline도 구분했으므로 D21 자체가 네경로의 신규성/추가가치를 검증했다고 하지 않는다. D20 BadFU2시드·정상4쌍에서의 사전 추가가치9.8889%p는 해당 조건의 별도 양성으로 보존한다.
+seed20261110,400Adam/3family/10목표/epsilon raw .05/maskmass16 및 원 D20 공개 CIFAR10 fit32-cal20-test100/class를 바꾸지 않았다. 새 test 분할·독립 탐색 초기화가 아니며, 모든 선택은 cal 봉인 뒤 test했다. 새 탐색은 n00 54.935초/n01 54.676초다. 실제 trigger/목표/정상 삭제ID는 opaque 탐색 입력에 들어가지 않았다. calibration 선택 산술과 native 전환/stable/원클래스별 정수 count가 독립 구현에서 모두 정확히 일치했다. 모든 cal 후보·전체 gradient를 별도로 재생한 검사는 아니다.
+
+효용과 정상 반례 해석
+contiguous_FP32 평가 D21.clean_utility.contiguous_FP32.v1의 post CA는 균형8277/10000=82.77%, 클래스집중7757/10000=77.57%다. 각 clean 평가의 두 번째 독립 full inference는 하지 않았다. 클래스집중 후 class2 정확도는0/1000이며 route test의 class2 전환 사건도0/100이다. 따라서 class2의 일반 망각은 '원본 입력 전후 모두 정답'인 strict 사건의 eligibility에서 제외된다. 분모는 그대로900이다. 이 정상 점수가 낮다는 사실을 삭제 클래스의 기능 보존이나 모든 유형의 정상 망각 구별로 해석하지 않는다. 정상 효용하락을 이유로 해당 대조를 버리지 않았다.
+D08 공격.75848이 정상.75525/.76188 사이에 있던 반례, D15 공격7%/정상8%, T02의 정당한 희귀 도메인 삭제 반례는 해결되지 않았다. 클래스 전체 삭제는 클래스 내부 도메인 non-IID와 같지 않고 두 요청은 대표 정상 요청분포가 아니다. 독립 정상 요청 보정/시드/FU방법/architecture/성공 공격계열에 대한 검증 전에는 FPR/TPR/공격확률이나 trigger-family 독립성을 주장하지 않는다.
+
+기제·신규성 범위
+공유 채널 좌표의 white-box 가정이 있다. 독립적인 함수보존 좌표변환은 native 함수를 유지하면서 cross 함수를 바꿀 수 있다. body가 동일하고 head만 변하면 f10=f00/f01=f11이므로, native 전환이 있어도 강한 'prebody 두head y/postbody 두head t' 관계는 동시에 성립하지 않는다. 이 관계는 임의 공격 활성화의 보편 필요조건이 아니다. 이는 이번 고정 FedUBA에서 head-only 활성화를 관측했거나 soft loss 탐색이 반드시 실패한다는 증명은 아니다.
+Neural Cleanse/UNICORN/FeatureRE/EX-RAY 등 기존 입력 역산·특징 제약·교환과의 차이는 D20 문헌/범위 감사와 METHOD_STATUS를 따른다. 이번 비교는 고정한 삭제 전후 네경로 제약의 한정 시험이며 선행 scanner 전체보다 우수하거나 최초라고 하지 않는다.
+stcebra/FUBA v7 diagnostic의 D20 전환49/900=5.44%와 원 성능 실패는 유지한다. ity207/FedUBA minus/plus의 알려진 원조건 ASR13.82%/58.74%가 다르지만 blind 점수는 같았다. 입력조건 탐색 점수를 실제 trigger ASR과 동일시하지 않는다. 두 계열 모두 적격 성공 잠복쌍의 검증을 이 정상 대조가 대신하지 않는다.
+
+무결성·실패 보존·최종 상태
+두 FU의 독립 CPU 감사가 전체 원ID/모든 epoch·실batch/optimizer·RNG finite/파일hash/모든 보정·집계를 검사했다. 모든 SGD gradient와 원augmentation을 bit replay한 것은 아니다. 원15 endpoint SHA, 기존29 catalogue case/default/audit를 최종에도 그대로 보존했다. 새 history와 정상2 endpoint만 diagnostic으로 추가해 DISLAB catalogue32개이며 default 승격은 없다. 원/새 checkpoint payload는 bare state와 role bundle을 구분해 검사했다.
+첫 외부 작업 admission 중단, 해당 작업을 CPU-only로 추정했다가 실제 GPU 점유 관측으로 기각한 기록, 명시 command SHA 기반 공유 정책을 보존했다. 숫자 RAM/disk/GPU 여유·allocator guard와 학습조건을 약화하지 않았고 다른 앱/서비스를 종료하지 않았다. 균형 FU/감사 뒤7200초 publication timeout, pending-only 첫 helper의 Path 누락도 source/once/trace 그대로 보존했다. 수정 helper는 미완료 탐색/후속 branch만 실행했다. 완료 학습/감사를 재실행하지 않았다. 최종 finish-v2와 review task exit0, 이 실험의 활성 Python0, old FUBA queue disabled를 FINAL_TERMINAL에서 확인했다. 원 실패 task exit1은 성공으로 덮어쓰지 않았다.
+
+실제 전달
+DISLAB D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110에 전체 새 role/global/calibrated tensor·optimizer/RNG/ID순열·전체 로그·native 증거·실패를 보존했다. 최종 로컬 remote_results/D21_REVIEW_PACKET_SANITIZED.zip은206파일/296769987bytes, SHA5f9014cc18c3fec7ad5e9d2cae81975a3e361ea3d1193ef474c7ffa0b350202c다. 원203파일/296766380bytes/SHA11aa88db... CPU export와 원전달 receipt도 두 host에 보존했다. resource JSON의 무관 영상렌더 명령 원문6관측을 해시/길이로 바꾼 별도 byte-only 포맷 사본이며17개 tensor payload는 원본과 모두 동일하다. 원source/export/모델검사를 재실행하지 않았다. PACKET_FORMATTING_PROTOCOL/FORMATTING_RECEIPT가 원·새 archive를 연결한다. 실제 pre/두after, 각 branch 마지막 role의 model/SGD/RNG, 각1000epoch 전체 이벤트로그/full history manifest,12개 변환/Adam/RNG/표본열/선택/test/source를 포함한다. 모든 중간 tensor 이력은 DISLAB에 남으며 전체 tensor를 로컬 전달했다고 하지 않는다. 원 CIFAR와 무관 외부 서비스 raw 인자는 제외했다. evaluator 삭제ID는 private packet에만 있고 git/server 입력에는 없다.
+17 typed payload를 DISLAB에서 strict CPU load/finite·BN·400step/schedule 검사했으며 export model forward/GPU 호출0이다. 로컬에서 zip과 모든 manifest 항목의 SHA/bytes를 streaming으로 검증했고 로컬 torch.load/inference0이다. REVIEW_SANITIZED_SEAL/LOCAL_SANITIZED_DELIVERY_VERIFIED와 원REVIEW_SEAL/LOCAL_DELIVERY_VERIFIED/FINAL_TERMINAL이 이를 연결한다. 기존 PR1의 source branch에 코드·실제 출력·실패·새 판정을 추가하며 default branch 직접 push/자동 merge는 하지 않는다.
+
+명시 정상 case IDs: feduba.public_fixed10.cifar10.s42.large_normal.balanced5000.fu20.20261110 및 feduba.public_fixed10.cifar10.s42.large_normal.class2_all.fu20.20261110. 허용목적 diagnostic, native endpoint bare payload_key=null이다. 로컬 packet 사본은 해시검증된 전달자료이며 기존 catalogue default나 full-history 로컬 저장승인이 아니다.

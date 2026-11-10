@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\controller.py\", line 55, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\controller.py\", line 31, in main\n    assert time.monotonic()-started<7200,'Bounded publication wait expired'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Bounded publication wait expired\n",
+  "time": 1794319434.958484
+}
