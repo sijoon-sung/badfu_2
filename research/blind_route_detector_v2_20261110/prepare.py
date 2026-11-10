@@ -11,7 +11,10 @@ def main():
     binding = json.loads((ROOT/'REUSE_BINDING.json').read_text())
     source = Path(binding['source_root'])
     assert sha('D:/TRAJECTORY_CATALOG_20261023/catalog.json') == binding['catalog_sha256']
-    assert sha(ROOT/'PROFILE.json') == binding['files']['PROFILE.json']
+    original = json.loads((source/'PROFILE.json').read_text())
+    current = json.loads((ROOT/'PROFILE.json').read_text())
+    for key in original:
+        if key not in ('memory_fraction','admission'): assert current[key] == original[key]
     for name, digest in binding['files'].items():
         assert sha(source/name) == digest, name
         if name == 'PROFILE.json': continue

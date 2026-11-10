@@ -167,7 +167,9 @@ def train(pre, post, transform, cfg, arm, family, x, y, out):
         assert all(p.grad is not None and torch.isfinite(p.grad).all() for p in transform.parameters())
         optimizer.step(); transform.project()
         if step % 50 == 0:
-            item = dict(step=step, loss=float(loss.detach()), seconds=time.time()-started)
+            item = dict(step=step, loss=float(loss.detach()), seconds=time.time()-started,
+                        peak_allocated_mib=torch.cuda.max_memory_allocated()/2**20,
+                        peak_reserved_mib=torch.cuda.max_memory_reserved()/2**20)
             trace.append(item)
             write(ROOT/'STATE.json', dict(state='search', pid=__import__('os').getpid(),
                                          case=out.parent.name, arm=arm, family=family, **item))
