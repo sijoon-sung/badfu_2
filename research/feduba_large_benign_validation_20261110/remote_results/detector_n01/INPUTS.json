@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "id": "n01",
+      "architecture": "feduba",
+      "pre": {
+        "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+        "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+        "bytes": 44770315,
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\after.pt",
+        "sha256": "4ac2ee40ff646c5b1fa3fac39ba1ae236c3ca5768894c37ff2b45d48803c3ff7",
+        "bytes": 44770315,
+        "payload_key": null
+      }
+    }
+  ]
+}

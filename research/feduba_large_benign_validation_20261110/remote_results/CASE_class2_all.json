@@ -1,0 +1,29 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.s42.large_normal.class2_all.fu20.20261110",
+  "purpose": "diagnostic",
+  "post_type": "actual_normal_FedEraser20_diagnostic",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "post": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\after.pt",
+      "sha256": "4ac2ee40ff646c5b1fa3fac39ba1ae236c3ca5768894c37ff2b45d48803c3ff7",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "source_root": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\guards\\class2_all\\GUARD_MANIFEST.json",
+    "manifest_sha256": "108b5e29410a968ea23960e0453c7eed0233280ea57d40b698f29527061dd86a",
+    "seal_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\guards\\class2_all\\GUARD_SEAL.json",
+    "seal_sha256": "5f65ee301a5fb4b4a687fc52bf1939af3c29f15d85a4a7a01a6c09ab2c10408c",
+    "loader_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\checkpoint_guard.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

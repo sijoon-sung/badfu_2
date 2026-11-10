@@ -1,0 +1,23 @@
+{
+  "state": "completed_legitimate_FU20",
+  "branch": "class2_all",
+  "rounds": 20,
+  "roles": 200,
+  "epochs": 1000,
+  "batches": 18000,
+  "after": {
+    "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\after.pt",
+    "sha256": "4ac2ee40ff646c5b1fa3fac39ba1ae236c3ca5768894c37ff2b45d48803c3ff7",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "manifest_sha256": "a60ad793cc6b807acb5001d8acd58f982521dad3cb90ad7f1b9ea57e5fce6c25",
+  "seconds": 1379.451430797577,
+  "peak_allocated_mib": 711.4921875,
+  "peak_reserved_mib": 1010.0,
+  "cudnn_deterministic": false,
+  "cudnn_TF32": true,
+  "matmul_TF32": false,
+  "trigger_inputs": 0,
+  "old_training_repeated": false
+}
