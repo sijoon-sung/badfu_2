@@ -63,7 +63,7 @@ def main():
     else:
         write(ROOT/'COMPLETION.json',dict(state='bounded_controls_below_frozen_reference',results=results,
                  unstarted_branches=[],calibration_required=True,universal_detection_validated=False))
-    write(ROOT/'CONTROLLER_STATE.json',dict(state='complete',pid=os.getpid(),time=time.time(),continuation='finish_remaining.py'))
+    write(ROOT/'CONTROLLER_STATE.json',dict(state='complete',pid=os.getpid(),time=time.time(),continuation='finish_remaining_v2.py'))
 
 
 if __name__=='__main__':
