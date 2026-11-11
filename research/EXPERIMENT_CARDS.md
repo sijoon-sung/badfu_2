@@ -2981,3 +2981,34 @@
 
 **묶은 폴더:** [badfu_fc_pca_matched_control_20261112](badfu_fc_pca_matched_control_20261112)
 
+<a id="d25"></a>
+
+## D25 · 같은 이미지의 약한 변환에서 삭제 후 목표 전환 일관성
+
+**가설 한 줄: 삭제 후 같은 목표로 전환된 이미지 중 약한 두 변환에서 분류 전제가 유지되는 경우의 공통 목표 전환 비율이 큰 정상 삭제보다 높다.**
+
+**판정: FedUBA 사전조건 미달 / BadFU 사전조건 미달**
+
+[실험 시작 이유와 실제 실행 과정 읽기](cross_view_transition_20261112/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D20–D24/T02–T04/R03. DISLAB D23 승인 48쌍, D23 정상 출처 공통6탐침 및 D24 BadFU 쌍별2탐침·공개 원/A/B 분할. 좌우반전과 0.9밝기를 원본과 탐침 입력에 같이 적용. 원 전환 중 공통 적격 20 이상, 두 뷰의 목표 전환 비율, 탐침 최대. 새 학습/탐침 최적화0.
+- **정상 대조·비교:** FedUBA 원 정상3요청 보정, 큰 정상3요청 보류, 진단10/15/20R 비교. BadFU 큰 정상 두 번 보류, 원 정상 보정과 A/B 적용. 실제 트리거·목표·역할·삭제ID는 추론에서 사용하지 않음.
+- **결과:** DISLAB48비교/288조합 372.8초, 기존 n/stable/native/원클래스 정확일치. FedUBA 보류 정상 0/3 경보, 전 라운드 미판정 0/3. 후기 진단 경보 0/6, 미판정 0/6. BadFU 보류 큰 정상 2/4 경보, 미판정 0/4. 공격은 두 보정 분할에서 각각 2/4, 4/4 경보.
+- **non-IID에 대해 남길 교훈:** 같은 이미지에서 다른 뷰에도 유지되는지를 직접 확인했다. 보류 조건과 진단 양성의 경보·미판정 범위만 해석한다. 같은 시드의 라운드와 이미지 뷰 반복은 독립 FL 시드가 아니며 D08/D15/T02의 non-IID 반례를 해소하지 못했다.
+- **반복하지 않을 주장:** 결과에 맞춰 뷰, 적격 하한, 기준을 재조정하지 않는다. 기존 완료 source/모델/finite 실험 반복 금지. 이미지·저장 라운드를 독립 학습 반복으로 세지 않는다.
+- **재검토 조건:** 독립 학습 시드와 새 큰 정상 요청, 다른 공격 계열의 검증된 활성화 쌍에서 사전 정의한 동일 정상 경보 조건으로 비교하기 전 운영 공격 판정은 미검증이다.
+- **출처 구분:** 2026-11-12 사용자가 심한 non-IID의 여러 반복·다양한 조건에서 탐지 검증을 요청하여 사전 게시 뒤 DISLAB에서 수행.
+
+**원문·증거:**
+
+- [research/cross_view_transition_20261112/PROTOCOL.txt](cross_view_transition_20261112/PROTOCOL.txt)
+- [research/cross_view_transition_20261112/FREEZE.json](cross_view_transition_20261112/FREEZE.json)
+- [research/cross_view_transition_20261112/PUBLICATION.json](cross_view_transition_20261112/PUBLICATION.json)
+- [research/cross_view_transition_20261112/validate.py](cross_view_transition_20261112/validate.py)
+- [research/cross_view_transition_20261112/ADMISSION.json](cross_view_transition_20261112/ADMISSION.json)
+- [research/cross_view_transition_20261112/RESULT.json](cross_view_transition_20261112/RESULT.json)
+- [research/cross_view_transition_20261112/TERMINAL.json](cross_view_transition_20261112/TERMINAL.json)
+- [research/cross_view_transition_20261112/REPORT_KO.txt](cross_view_transition_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [cross_view_transition_20261112](cross_view_transition_20261112)
+

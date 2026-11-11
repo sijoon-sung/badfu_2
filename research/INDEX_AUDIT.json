@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "c2240f49cb9863229e8d415a27da25eb9b99a0e3b835d0f348b3f723ac18a277",
-  "cards": 36,
-  "unique_source_documents": 2151,
-  "top_level_folders": 162,
-  "folders_linked_to_cards": 114,
+  "registry_sha256": "0821d43280f5f6ce063377e3ed9c4f802f6124bd9773ed06780370a9b78f68e2",
+  "cards": 37,
+  "unique_source_documents": 2159,
+  "top_level_folders": 163,
+  "folders_linked_to_cards": 115,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2158,7 +2158,15 @@
     "research/badfu_fc_pca_matched_control_20261112/DECISION.json": "3b80d90c3d1ff1033e649a9170fe053ac05ffee027e8cb55883ec593968b3a53",
     "research/badfu_fc_pca_matched_control_20261112/TERMINAL.json": "c5057ca555f425808d380a8c1461627d120c4a88fe5d3aaa5ef0b62c1760a718",
     "research/badfu_fc_pca_matched_control_20261112/evaluate.py": "d6a519aa6db4d43c422166bd9e4a923bbbc6a945b43becace0dfdb60b5d169c7",
-    "research/badfu_fc_pca_matched_control_20261112/decide.py": "76bbd62596f192f7bcc29199eedccb1e05b5d3976793e960ba0bafc4a79186a4"
+    "research/badfu_fc_pca_matched_control_20261112/decide.py": "76bbd62596f192f7bcc29199eedccb1e05b5d3976793e960ba0bafc4a79186a4",
+    "research/cross_view_transition_20261112/PROTOCOL.txt": "69263d281c1e399427ed5a0f1c9e2cb3104d29ebf6f4264d43bdb639df89d133",
+    "research/cross_view_transition_20261112/FREEZE.json": "7b982767a393cc72367bc06e21d3dd97afc2070a4a78041e3ece5dcdcffa95a4",
+    "research/cross_view_transition_20261112/PUBLICATION.json": "bc8158582cf9edf7e776bbfc81709dc989f4515bc7d7fdc3bf14bb1fb5cb23e8",
+    "research/cross_view_transition_20261112/validate.py": "efa7f842ade2daead9b85071799ba14315350442b93cb7fc0d74534d3765cbc5",
+    "research/cross_view_transition_20261112/ADMISSION.json": "e9c20898e02c35788f06b171ca59261be5a04b34f2b29bd4941ea662cb1795a3",
+    "research/cross_view_transition_20261112/RESULT.json": "00f0f3778ebbea3746427b47c603c617213369131690514f7e9f0dcfa767c71f",
+    "research/cross_view_transition_20261112/TERMINAL.json": "50325e26befff8c6a283d97278bf23f2e646fda041f635d37c95c94b93c9c9f6",
+    "research/cross_view_transition_20261112/REPORT_KO.txt": "c5477cb2654b94e3fc6320ae4e9d5b1558131b4fe45f50bd339915b775e0d6a9"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -2424,6 +2432,18 @@
         "research/cross_attack_search_20261022/OBSERVER_COMPLETE.json",
         "research/cross_attack_search_20261022/SHORT_REPORT_KO.md",
         "research/cross_attack_search_20261022/status.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/cross_view_transition_20261112",
+      "related_cards": [
+        "D25"
+      ],
+      "top_level_documents": [
+        "research/cross_view_transition_20261112/PROTOCOL.txt",
+        "research/cross_view_transition_20261112/REPORT_KO.txt",
+        "research/cross_view_transition_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
