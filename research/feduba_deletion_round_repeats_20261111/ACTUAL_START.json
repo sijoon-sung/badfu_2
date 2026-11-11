@@ -1,0 +1,40 @@
+{
+  "state": "actual_training_observed",
+  "snapshot": {
+    "PENDING_STATE.json": {
+      "state": "running",
+      "pid": 43508,
+      "child_pid": 7348,
+      "script": "train_fu_pending.py",
+      "args": [
+        "balanced_b"
+      ],
+      "time": 1794380181.9983895
+    },
+    "STATE.json": {
+      "state": "FU_training",
+      "pid": 7348,
+      "time": 1794380375.1781018,
+      "branch": "balanced_b",
+      "round": 3,
+      "client": 19,
+      "epoch": 5,
+      "examples": 2044,
+      "batches": 16,
+      "cumulative_role_batches": 80,
+      "loss": 1.036065319046349
+    },
+    "active_owned": [
+      {
+        "ProcessId": 43508,
+        "ParentProcessId": 2756
+      },
+      {
+        "ProcessId": 7348,
+        "ParentProcessId": 43508
+      }
+    ]
+  },
+  "stored_panel_completed": true,
+  "earlier_completed_panel_repeated": false
+}
