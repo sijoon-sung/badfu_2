@@ -1,0 +1,147 @@
+{
+  "stored": [
+    {
+      "opaque": "p00",
+      "source_case": "n00",
+      "root": "D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110",
+      "branch": "balanced5000",
+      "case_id": "feduba.public_fixed10.cifar10.s42.large_normal.balanced5000.fu20.20261110",
+      "manifest_sha256": "67033a15fe4f867a45816d34abcf9bccb465c5686ccaf3828ed7b6d912702af1",
+      "audit_sha256": "f441b54fb42838797e335996cda1238b7c6be2df4fb84d16723ef84bf4abafa6"
+    },
+    {
+      "opaque": "p01",
+      "source_case": "n01",
+      "root": "D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110",
+      "branch": "class2_all",
+      "case_id": "feduba.public_fixed10.cifar10.s42.large_normal.class2_all.fu20.20261110",
+      "manifest_sha256": "a60ad793cc6b807acb5001d8acd58f982521dad3cb90ad7f1b9ea57e5fce6c25",
+      "audit_sha256": "478258798abb9e0aa48a3d8e4a45a4b6b7f1629ff67a420fa364a2011a95bdc2"
+    },
+    {
+      "opaque": "p02",
+      "source_case": "c07",
+      "root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+      "branch": "benign",
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+      "manifest_sha256": "1ca351281d5bf7f95e1856c75bc0d91e3f7968185da1fa28d1d4e08a2713982d",
+      "audit_sha256": "f74afc84d93c9c727af9a90ed51df6e6d7cb9a59889f01c562a45f0af9e75e97"
+    },
+    {
+      "opaque": "p03",
+      "source_case": "c08",
+      "root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+      "branch": "attack",
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+      "manifest_sha256": "85606ced2ce1c166d429835171c5739d5e0f624e3b57eb26c1aeac527dde11cc",
+      "audit_sha256": "39a847b7bdb37767a14eff54d3ed707ca49b1fac06cad8c5cd62c0d894a7c881"
+    },
+    {
+      "opaque": "p04",
+      "source_case": "c09",
+      "root": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103",
+      "branch": "attack",
+      "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+      "manifest_sha256": "58389fd727407200443f285aaa08708e63a42b8b9936d037cebda1aa4dba3ae4",
+      "audit_sha256": "b0c2ec99aab73d444cea8d02f22b773f3eed7bb66fcf99288150b17c9c02d2ca"
+    }
+  ],
+  "probes": [
+    {
+      "id": "c07",
+      "root": "D:/BLIND_ROUTE_DETECTOR_V2_20261110",
+      "hashes": {
+        "PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+        "INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+        "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+        "RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+        "VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5",
+        "SELECTIONS.json": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+        "SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52"
+      }
+    },
+    {
+      "id": "c08",
+      "root": "D:/BLIND_ROUTE_DETECTOR_V2_20261110",
+      "hashes": {
+        "PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+        "INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+        "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+        "RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+        "VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5",
+        "SELECTIONS.json": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+        "SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52"
+      }
+    },
+    {
+      "id": "c09",
+      "root": "D:/BLIND_ROUTE_DETECTOR_V2_20261110",
+      "hashes": {
+        "PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+        "INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+        "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+        "RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+        "VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5",
+        "SELECTIONS.json": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+        "SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52"
+      }
+    },
+    {
+      "id": "n00",
+      "root": "D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110/detector/n00",
+      "hashes": {
+        "PROFILE.json": "61199e50d8d0259c99c4407f7e7699980b0d77de30bcfd43ed326e5a52ca1c24",
+        "INPUTS.json": "3084c07e333383aa63fcf91745fc6ec7c7e295e0a7d1a2583b491723b422499a",
+        "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+        "RESULT.json": "3caa8e4ea205abf52c8f262f0080836b3cd17b94cb95b9d8320c5630e32ea962",
+        "VERIFIED.json": "01cf2a7b65f00ab90fefd252ea9ac71fa5339c762c1bf97c03f04f15cdef1f33",
+        "SELECTIONS.json": "e6471da508b0a8ced9b0e4ebedacc736cf123b792220fd9f0fb5c2de6ba90730",
+        "SELECTION_SEAL.json": "19203f7f43e28be7988b1d265ffcd831be38a99cf7bab68a3a65643d79e0bce5"
+      }
+    },
+    {
+      "id": "n01",
+      "root": "D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110/detector/n01",
+      "hashes": {
+        "PROFILE.json": "a4d2902dc6a3eb949ca77aeaa845c2e78f1a79f6088e4315302633fc5c63eec5",
+        "INPUTS.json": "79ed43c644a12bdb40a6802f3111b8ef1143b27590e9c8b1a9b0f0db2e5aaaad",
+        "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+        "RESULT.json": "1ddeff195cc91e8db1f7e9120aa300167be2314211e93ffc5d387680cb40a298",
+        "VERIFIED.json": "5efd180a3c9cd8e36035d9260b609ae150fb57dd1bd7a9f28ffb5d6e3ff2c5f5",
+        "SELECTIONS.json": "9f763f17e9dfdc48341799663579be1887d39aae4754df3724e0cd141f786dec",
+        "SELECTION_SEAL.json": "9a398334f8ab1a96e57371878828ff0dfd3e5c037daaf54794cafb3d5439ca45"
+      }
+    }
+  ],
+  "stored_rounds": [
+    1,
+    3,
+    5,
+    10,
+    15,
+    20
+  ],
+  "new_rounds": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "new": {
+    "balanced_b": {
+      "seed": 2026111201,
+      "distribution": "uniform"
+    },
+    "dark_a": {
+      "seed": 2026111202,
+      "distribution": "dark40"
+    },
+    "dark_b": {
+      "seed": 2026111203,
+      "distribution": "dark40"
+    }
+  },
+  "history_binding_sha256": "3bcd26de979014bd9e849c6c8ffc3a69a48d74d6e9d24fb1cbc054788658f7a7",
+  "training_template_sha256": "bcc9586730ae58e5fd96ab97a169edf422edfa8577ddd8b7190fcfc9c332db2e",
+  "clean_split_sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee"
+}
