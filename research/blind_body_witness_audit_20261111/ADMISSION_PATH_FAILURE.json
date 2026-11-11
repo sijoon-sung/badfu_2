@@ -1,0 +1,3 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\BLIND_BODY_WITNESS_AUDIT_20261111\\audit.py\", line 147, in <module>\n    main()\n  File \"D:\\BLIND_BODY_WITNESS_AUDIT_20261111\\audit.py\", line 85, in main\n    obs = admit(admission)\n          ^^^^^^^^^^^^^^^^\n  File \"D:\\BLIND_BODY_WITNESS_AUDIT_20261111\\resource_guard.py\", line 52, in admit\n    row = inspect(); observations.append(row)\n          ^^^^^^^^^\n  File \"D:\\BLIND_BODY_WITNESS_AUDIT_20261111\\resource_guard.py\", line 25, in inspect\n    assert Path(__file__).resolve().is_relative_to(study_root)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError"
+}

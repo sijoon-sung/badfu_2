@@ -1,0 +1,51 @@
+{
+  "files": {
+    "audit.py": "5b0ee0853cdaec5bec9dab41c80b399a104f3c2ef954b951a2fa8656c56674f3",
+    "PROTOCOL.txt": "c8776f59ff6345261807b9e4ec60467d328df08493b9b95d3f6eca7ba54a31a9",
+    "CATALOG_SELECTIONS.json": "9e3a1d3516c1be8aed6b74ccd2545b533051583431ece22c03cc6bdb9e69af87",
+    "probe_reference.py": "366e4b13ca0729a53bb8b991546fe42a8660aac85dba1c3b5e7d5b409abe7c63",
+    "route_core.py": "b3c1c5c0f1b161fc6399edb5c13c2bca8c949884b84f9ad291b8a487b7574177",
+    "fuba_model.py": "91b825f748fd907366670d04cd113f809cddbe6af402225341b424b58a46a179",
+    "feduba_model.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "resource_guard.py": "6aa162899f002486b1ef9346c97dfe0fd314193784ede9ce457460b3bd289446",
+    "SHARED_SERVICE_IDENTITIES.json": "79e6c8f91096f510e350320d949fb47629efeab8a2ce73f1b63cc6a38be1b297",
+    "RECOVERY_PROTOCOL.txt": "5923788beb812453e4c2a8373d8f17d72a9cf5bef4a583aa9ca2a3242258e4d0"
+  },
+  "references": {
+    "d20": {
+      "PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+      "INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+      "SELECTIONS.json": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+      "SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52",
+      "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+      "RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+      "VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5"
+    },
+    "n00": {
+      "PROFILE.json": "61199e50d8d0259c99c4407f7e7699980b0d77de30bcfd43ed326e5a52ca1c24",
+      "INPUTS.json": "3084c07e333383aa63fcf91745fc6ec7c7e295e0a7d1a2583b491723b422499a",
+      "SELECTIONS.json": "e6471da508b0a8ced9b0e4ebedacc736cf123b792220fd9f0fb5c2de6ba90730",
+      "SELECTION_SEAL.json": "19203f7f43e28be7988b1d265ffcd831be38a99cf7bab68a3a65643d79e0bce5",
+      "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+      "RESULT.json": "3caa8e4ea205abf52c8f262f0080836b3cd17b94cb95b9d8320c5630e32ea962",
+      "VERIFIED.json": "01cf2a7b65f00ab90fefd252ea9ac71fa5339c762c1bf97c03f04f15cdef1f33"
+    },
+    "n01": {
+      "PROFILE.json": "a4d2902dc6a3eb949ca77aeaa845c2e78f1a79f6088e4315302633fc5c63eec5",
+      "INPUTS.json": "79ed43c644a12bdb40a6802f3111b8ef1143b27590e9c8b1a9b0f0db2e5aaaad",
+      "SELECTIONS.json": "9f763f17e9dfdc48341799663579be1887d39aae4754df3724e0cd141f786dec",
+      "SELECTION_SEAL.json": "9a398334f8ab1a96e57371878828ff0dfd3e5c037daaf54794cafb3d5439ca45",
+      "PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+      "RESULT.json": "1ddeff195cc91e8db1f7e9120aa300167be2314211e93ffc5d387680cb40a298",
+      "VERIFIED.json": "5efd180a3c9cd8e36035d9260b609ae150fb57dd1bd7a9f28ffb5d6e3ff2c5f5"
+    }
+  },
+  "reused_source": {
+    "probe_reference.py": "research/blind_route_detector_v2_20261110/probe_reference.py",
+    "route_core.py": "research/blind_route_detector_v2_20261110/route_core.py",
+    "fuba_model.py": "research/blind_route_detector_v2_20261110/fuba_model.py",
+    "feduba_model.py": "research/blind_route_detector_v2_20261110/feduba_model.py",
+    "resource_guard.py": "research/blind_body_witness_audit_20261111/resource_guard_v2.py",
+    "SHARED_SERVICE_IDENTITIES.json": "research/feduba_large_benign_validation_20261110/SHARED_SERVICE_IDENTITIES.json"
+  }
+}
