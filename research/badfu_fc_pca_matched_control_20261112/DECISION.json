@@ -1,0 +1,1145 @@
+{
+  "fixed_threshold_strictly_greater_than": 5,
+  "n": 900,
+  "by_fixed_threshold": {
+    "native": {
+      "A": {
+        "counts": {
+          "c00": 119,
+          "c01": 120,
+          "c02": 86,
+          "c03": 98,
+          "c04": 357,
+          "c05": 564
+        },
+        "normal_alerts": [
+          "c00",
+          "c01",
+          "c02",
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 125,
+          "c01": 126,
+          "c02": 91,
+          "c03": 100,
+          "c04": 338,
+          "c05": 516
+        },
+        "normal_alerts": [
+          "c00",
+          "c01",
+          "c02",
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      }
+    },
+    "pca": {
+      "A": {
+        "counts": {
+          "c00": 3,
+          "c01": 5,
+          "c02": 3,
+          "c03": 7,
+          "c04": 16,
+          "c05": 12
+        },
+        "normal_alerts": [
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 7,
+          "c01": 3,
+          "c02": 2,
+          "c03": 4,
+          "c04": 11,
+          "c05": 10
+        },
+        "normal_alerts": [
+          "c00"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      }
+    },
+    "random_1": {
+      "A": {
+        "counts": {
+          "c00": 2,
+          "c01": 3,
+          "c02": 3,
+          "c03": 3,
+          "c04": 11,
+          "c05": 5
+        },
+        "normal_alerts": [],
+        "attack_alerts": [
+          "c04"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 4,
+          "c01": 4,
+          "c02": 1,
+          "c03": 5,
+          "c04": 3,
+          "c05": 10
+        },
+        "normal_alerts": [],
+        "attack_alerts": [
+          "c05"
+        ]
+      }
+    },
+    "random_2": {
+      "A": {
+        "counts": {
+          "c00": 4,
+          "c01": 5,
+          "c02": 2,
+          "c03": 4,
+          "c04": 8,
+          "c05": 16
+        },
+        "normal_alerts": [],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 4,
+          "c01": 4,
+          "c02": 2,
+          "c03": 6,
+          "c04": 7,
+          "c05": 17
+        },
+        "normal_alerts": [
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      }
+    },
+    "random_3": {
+      "A": {
+        "counts": {
+          "c00": 2,
+          "c01": 3,
+          "c02": 4,
+          "c03": 3,
+          "c04": 10,
+          "c05": 14
+        },
+        "normal_alerts": [],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 5,
+          "c01": 4,
+          "c02": 4,
+          "c03": 4,
+          "c04": 6,
+          "c05": 16
+        },
+        "normal_alerts": [],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      }
+    },
+    "full_head": {
+      "A": {
+        "counts": {
+          "c00": 8,
+          "c01": 10,
+          "c02": 4,
+          "c03": 8,
+          "c04": 15,
+          "c05": 35
+        },
+        "normal_alerts": [
+          "c00",
+          "c01",
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      },
+      "B": {
+        "counts": {
+          "c00": 7,
+          "c01": 9,
+          "c02": 3,
+          "c03": 8,
+          "c04": 10,
+          "c05": 32
+        },
+        "normal_alerts": [
+          "c00",
+          "c01",
+          "c03"
+        ],
+        "attack_alerts": [
+          "c04",
+          "c05"
+        ]
+      }
+    }
+  },
+  "calibrated_on_original_test": {
+    "native": [
+      {
+        "holdout": "c00",
+        "threshold": 98,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 111,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      }
+    ],
+    "pca": [
+      {
+        "holdout": "c00",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      }
+    ],
+    "random_1": [
+      {
+        "holdout": "c00",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c05"
+            ]
+          }
+        }
+      }
+    ],
+    "random_2": [
+      {
+        "holdout": "c00",
+        "threshold": 6,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 6,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      }
+    ],
+    "random_3": [
+      {
+        "holdout": "c00",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 5,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      }
+    ],
+    "full_head": [
+      {
+        "holdout": "c00",
+        "threshold": 9,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      },
+      {
+        "holdout": "c01",
+        "threshold": 9,
+        "panels": {
+          "A": {
+            "held_out_normal_alert": true,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          },
+          "B": {
+            "held_out_normal_alert": false,
+            "attack_alerts": [
+              "c04",
+              "c05"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "checkpoint_scores": [
+    {
+      "case": "c00",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 111,
+        "pca": 2,
+        "random_1": 4,
+        "random_2": 3,
+        "random_3": 3,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 119,
+        "pca": 3,
+        "random_1": 2,
+        "random_2": 4,
+        "random_3": 2,
+        "full_head": 8
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 125,
+        "pca": 7,
+        "random_1": 4,
+        "random_2": 4,
+        "random_3": 5,
+        "full_head": 7
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c00",
+      "round": 10,
+      "split": "A",
+      "scores": {
+        "native": 93,
+        "pca": 1,
+        "random_1": 1,
+        "random_2": 2,
+        "random_3": 1,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 10,
+      "split": "B",
+      "scores": {
+        "native": 100,
+        "pca": 6,
+        "random_1": 4,
+        "random_2": 2,
+        "random_3": 0,
+        "full_head": 6
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c00",
+      "round": 20,
+      "split": "A",
+      "scores": {
+        "native": 137,
+        "pca": 3,
+        "random_1": 3,
+        "random_2": 2,
+        "random_3": 1,
+        "full_head": 7
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 20,
+      "split": "B",
+      "scores": {
+        "native": 155,
+        "pca": 5,
+        "random_1": 1,
+        "random_2": 1,
+        "random_3": 1,
+        "full_head": 2
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 30,
+      "split": "A",
+      "scores": {
+        "native": 163,
+        "pca": 3,
+        "random_1": 3,
+        "random_2": 3,
+        "random_3": 2,
+        "full_head": 5
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c00",
+      "round": 30,
+      "split": "B",
+      "scores": {
+        "native": 179,
+        "pca": 4,
+        "random_1": 4,
+        "random_2": 5,
+        "random_3": 2,
+        "full_head": 4
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c01",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 87,
+        "pca": 2,
+        "random_1": 4,
+        "random_2": 4,
+        "random_3": 3,
+        "full_head": 8
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c01",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 120,
+        "pca": 5,
+        "random_1": 3,
+        "random_2": 5,
+        "random_3": 3,
+        "full_head": 10
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c01",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 126,
+        "pca": 3,
+        "random_1": 4,
+        "random_2": 4,
+        "random_3": 4,
+        "full_head": 9
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 95,
+        "pca": 3,
+        "random_1": 2,
+        "random_2": 2,
+        "random_3": 3,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 86,
+        "pca": 3,
+        "random_1": 3,
+        "random_2": 2,
+        "random_3": 4,
+        "full_head": 4
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 91,
+        "pca": 2,
+        "random_1": 1,
+        "random_2": 2,
+        "random_3": 4,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 10,
+      "split": "A",
+      "scores": {
+        "native": 64,
+        "pca": 0,
+        "random_1": 2,
+        "random_2": 2,
+        "random_3": 1,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 10,
+      "split": "B",
+      "scores": {
+        "native": 64,
+        "pca": 1,
+        "random_1": 2,
+        "random_2": 1,
+        "random_3": 1,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 20,
+      "split": "A",
+      "scores": {
+        "native": 80,
+        "pca": 1,
+        "random_1": 1,
+        "random_2": 1,
+        "random_3": 1,
+        "full_head": 2
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 20,
+      "split": "B",
+      "scores": {
+        "native": 75,
+        "pca": 2,
+        "random_1": 2,
+        "random_2": 1,
+        "random_3": 1,
+        "full_head": 2
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 30,
+      "split": "A",
+      "scores": {
+        "native": 57,
+        "pca": 0,
+        "random_1": 2,
+        "random_2": 1,
+        "random_3": 1,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c02",
+      "round": 30,
+      "split": "B",
+      "scores": {
+        "native": 46,
+        "pca": 1,
+        "random_1": 1,
+        "random_2": 1,
+        "random_3": 2,
+        "full_head": 1
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 98,
+        "pca": 5,
+        "random_1": 5,
+        "random_2": 6,
+        "random_3": 5,
+        "full_head": 9
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 98,
+        "pca": 7,
+        "random_1": 3,
+        "random_2": 4,
+        "random_3": 3,
+        "full_head": 8
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c03",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 100,
+        "pca": 4,
+        "random_1": 5,
+        "random_2": 6,
+        "random_3": 4,
+        "full_head": 8
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 10,
+      "split": "A",
+      "scores": {
+        "native": 30,
+        "pca": 2,
+        "random_1": 1,
+        "random_2": 0,
+        "random_3": 1,
+        "full_head": 3
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 10,
+      "split": "B",
+      "scores": {
+        "native": 31,
+        "pca": 1,
+        "random_1": 2,
+        "random_2": 1,
+        "random_3": 2,
+        "full_head": 5
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 20,
+      "split": "A",
+      "scores": {
+        "native": 39,
+        "pca": 3,
+        "random_1": 2,
+        "random_2": 4,
+        "random_3": 1,
+        "full_head": 4
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 20,
+      "split": "B",
+      "scores": {
+        "native": 33,
+        "pca": 2,
+        "random_1": 3,
+        "random_2": 3,
+        "random_3": 2,
+        "full_head": 5
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 30,
+      "split": "A",
+      "scores": {
+        "native": 71,
+        "pca": 0,
+        "random_1": 5,
+        "random_2": 6,
+        "random_3": 4,
+        "full_head": 7
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c03",
+      "round": 30,
+      "split": "B",
+      "scores": {
+        "native": 75,
+        "pca": 1,
+        "random_1": 3,
+        "random_2": 4,
+        "random_3": 2,
+        "full_head": 5
+      },
+      "pca_alarm": false
+    },
+    {
+      "case": "c04",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 372,
+        "pca": 17,
+        "random_1": 4,
+        "random_2": 10,
+        "random_3": 7,
+        "full_head": 12
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 357,
+        "pca": 16,
+        "random_1": 11,
+        "random_2": 8,
+        "random_3": 10,
+        "full_head": 15
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 338,
+        "pca": 11,
+        "random_1": 3,
+        "random_2": 7,
+        "random_3": 6,
+        "full_head": 10
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 10,
+      "split": "A",
+      "scores": {
+        "native": 191,
+        "pca": 10,
+        "random_1": 6,
+        "random_2": 7,
+        "random_3": 3,
+        "full_head": 15
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 10,
+      "split": "B",
+      "scores": {
+        "native": 159,
+        "pca": 6,
+        "random_1": 2,
+        "random_2": 4,
+        "random_3": 3,
+        "full_head": 9
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 20,
+      "split": "A",
+      "scores": {
+        "native": 225,
+        "pca": 8,
+        "random_1": 4,
+        "random_2": 4,
+        "random_3": 4,
+        "full_head": 11
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 20,
+      "split": "B",
+      "scores": {
+        "native": 209,
+        "pca": 11,
+        "random_1": 2,
+        "random_2": 4,
+        "random_3": 3,
+        "full_head": 10
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 30,
+      "split": "A",
+      "scores": {
+        "native": 263,
+        "pca": 14,
+        "random_1": 4,
+        "random_2": 6,
+        "random_3": 6,
+        "full_head": 11
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c04",
+      "round": 30,
+      "split": "B",
+      "scores": {
+        "native": 237,
+        "pca": 6,
+        "random_1": 6,
+        "random_2": 7,
+        "random_3": 5,
+        "full_head": 9
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 40,
+      "split": "original",
+      "scores": {
+        "native": 530,
+        "pca": 11,
+        "random_1": 8,
+        "random_2": 14,
+        "random_3": 13,
+        "full_head": 31
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 40,
+      "split": "A",
+      "scores": {
+        "native": 564,
+        "pca": 12,
+        "random_1": 5,
+        "random_2": 16,
+        "random_3": 14,
+        "full_head": 35
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 40,
+      "split": "B",
+      "scores": {
+        "native": 516,
+        "pca": 10,
+        "random_1": 10,
+        "random_2": 17,
+        "random_3": 16,
+        "full_head": 32
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 10,
+      "split": "A",
+      "scores": {
+        "native": 274,
+        "pca": 10,
+        "random_1": 4,
+        "random_2": 7,
+        "random_3": 10,
+        "full_head": 20
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 10,
+      "split": "B",
+      "scores": {
+        "native": 279,
+        "pca": 11,
+        "random_1": 4,
+        "random_2": 7,
+        "random_3": 13,
+        "full_head": 18
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 20,
+      "split": "A",
+      "scores": {
+        "native": 408,
+        "pca": 15,
+        "random_1": 6,
+        "random_2": 18,
+        "random_3": 19,
+        "full_head": 30
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 20,
+      "split": "B",
+      "scores": {
+        "native": 397,
+        "pca": 10,
+        "random_1": 3,
+        "random_2": 9,
+        "random_3": 14,
+        "full_head": 17
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 30,
+      "split": "A",
+      "scores": {
+        "native": 499,
+        "pca": 14,
+        "random_1": 10,
+        "random_2": 26,
+        "random_3": 21,
+        "full_head": 38
+      },
+      "pca_alarm": true
+    },
+    {
+      "case": "c05",
+      "round": 30,
+      "split": "B",
+      "scores": {
+        "native": 460,
+        "pca": 12,
+        "random_1": 7,
+        "random_2": 11,
+        "random_3": 11,
+        "full_head": 31
+      },
+      "pca_alarm": true
+    }
+  ],
+  "fixed_pca_passed": false
+}

@@ -2943,3 +2943,41 @@
 
 **묶은 폴더:** [four_routes_pca_decision_20261112](four_routes_pca_decision_20261112)
 
+<a id="d24"></a>
+
+## D24 · BadFU FC PCA 기준의 보류 이미지·재학습 시점·같은 층 대조
+
+**가설 한 줄: D23의 FC PCA 복귀 건수 기준은 두 보류 이미지 묶음에서 큰 정상 삭제와 두 BadFU 공격 말단을 구분하고 같은 층 무작위 대조보다 일관된 순서를 보인다.**
+
+**판정: BadFU 말단 순위 분리 재현 / 고정 5건 기준과 PCA 고유 효과 미확보**
+
+[실험 시작 이유와 실제 실행 과정 읽기](badfu_fc_pca_matched_control_20261112/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D18/D20/D22/D23/T02/T03/T04. D20 실제 BadFU 말단6쌍과 봉인 탐침 각2개, 승인된 두 원 FL 이력의 5개 10/20/30/40R 궤적. 기존 D20 fit/cal/test와 비중복하는 이미지 A/B 각1000장, 탐침당 목표 클래스 제외900장. fit320 PCA95%, 판정 >5를 사전에 고정. DISLAB 21쌍/96조합 약46초, 새 학습·탐침 탐색0.
+- **정상 대조·비교:** 큰 정상 19.336%·22.790% 및 정상850 두 조건, 실제 BadFU 두 시드의 말단. 같은 FC 층에서 차원수·제거 Frobenius norm·평균 기준 로짓을 맞춘 무작위 축 3회, FC 변경 전체 제외, 원 모델 전후 전환. 방법별 D23 원 이미지 정상 보정 두 분할도 비교. 22.790%는 말단만 승인. 중간 라운드는 고정 pre와 말단 탐침의 회고 분석.
+- **결과:** 기존 분할의 12개 탐침 native·원클래스·PCA 건수 정확 재현. A 정상3/5/3/7·공격16/12, B 정상7/3/2/4·공격11/10(/900). 순위는 분리됐으나 고정 >5에서 각 묶음 정상1/4 경보, 공격2/2. 같은 층 무작위 축 3은 두 묶음 모두 정상0/4·공격2/2. 원 이미지 방법별 보정에서 무작위 축 2·3 보류 큰 정상0/4 대 PCA1/4, 공격은 모두 검출. 10R B 큰 정상·공격 이력 각6건. 40R 원텐서 동일, 제거량 일치, 원텐서 보존, exit0/owned0 및 파일 해시 검증.
+- **non-IID에 대해 남길 교훈:** BadFU 말단에서 복귀 건수의 순위가 유지됐지만 큰 정상과 감염 모델의 정상 삭제가 각 새 묶음에서 사전선을 넘었다. 같은 층 대조에서 PCA 축 선택의 고유 효과는 입증되지 않았다. D08/D15/T02 반례와 T03의 제한, D23 별개 FedUBA 진단의 범위가 남는다.
+- **반복하지 않을 주장:** 기준·PCA 분산·탐침 또는 가장 좋은 무작위 축을 A/B에 맞춰 다시 선택하지 않는다. 승인 말단과 실제 중간 활성화, 새 이미지와 새 독립 학습, stcebra/FUBA와 ity207/FedUBA를 혼용하지 않는다. 완료 계산 및 기존 훈련을 재시작하지 않는다.
+- **재검토 조건:** 학습 시드와 큰 정상 삭제 요청을 독립 보류한 상태에서 사전선과 같은 층 대조를 통과하고, 별개 공격 계열의 검증된 잠복 양성까지 확인해야 범용 판정과 신규성 주장을 재검토한다.
+- **출처 구분:** 2026-11-12 사용자가 교수 미팅에서 보고할 수 있는 검증을 요청. D23 판정선을 고정해 DISLAB에서 보류 이미지·저장 재학습 라운드·같은 FC 층 대조를 계산.
+
+**원문·증거:**
+
+- [research/badfu_fc_pca_matched_control_20261112/PROTOCOL.txt](badfu_fc_pca_matched_control_20261112/PROTOCOL.txt)
+- [research/badfu_fc_pca_matched_control_20261112/REPORT_KO.txt](badfu_fc_pca_matched_control_20261112/REPORT_KO.txt)
+- [research/badfu_fc_pca_matched_control_20261112/PLAN.json](badfu_fc_pca_matched_control_20261112/PLAN.json)
+- [research/badfu_fc_pca_matched_control_20261112/FREEZE.json](badfu_fc_pca_matched_control_20261112/FREEZE.json)
+- [research/badfu_fc_pca_matched_control_20261112/PUBLICATION.json](badfu_fc_pca_matched_control_20261112/PUBLICATION.json)
+- [research/badfu_fc_pca_matched_control_20261112/SOURCE_LINEAGE.json](badfu_fc_pca_matched_control_20261112/SOURCE_LINEAGE.json)
+- [research/badfu_fc_pca_matched_control_20261112/BADFU_SELECTION.json](badfu_fc_pca_matched_control_20261112/BADFU_SELECTION.json)
+- [research/badfu_fc_pca_matched_control_20261112/HOLDOUT_SPLITS.json](badfu_fc_pca_matched_control_20261112/HOLDOUT_SPLITS.json)
+- [research/badfu_fc_pca_matched_control_20261112/PREFLIGHT.json](badfu_fc_pca_matched_control_20261112/PREFLIGHT.json)
+- [research/badfu_fc_pca_matched_control_20261112/ADMISSION.json](badfu_fc_pca_matched_control_20261112/ADMISSION.json)
+- [research/badfu_fc_pca_matched_control_20261112/RESULT.json](badfu_fc_pca_matched_control_20261112/RESULT.json)
+- [research/badfu_fc_pca_matched_control_20261112/DECISION.json](badfu_fc_pca_matched_control_20261112/DECISION.json)
+- [research/badfu_fc_pca_matched_control_20261112/TERMINAL.json](badfu_fc_pca_matched_control_20261112/TERMINAL.json)
+- [research/badfu_fc_pca_matched_control_20261112/evaluate.py](badfu_fc_pca_matched_control_20261112/evaluate.py)
+- [research/badfu_fc_pca_matched_control_20261112/decide.py](badfu_fc_pca_matched_control_20261112/decide.py)
+
+**묶은 폴더:** [badfu_fc_pca_matched_control_20261112](badfu_fc_pca_matched_control_20261112)
+
