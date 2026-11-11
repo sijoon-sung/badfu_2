@@ -2904,3 +2904,42 @@
 
 **묶은 폴더:** [feduba_deletion_round_repeats_20261111](feduba_deletion_round_repeats_20261111)
 
+<a id="d23"></a>
+
+## D23 · 네 경로와 PCA 직교 성분 제외를 정상 요청으로 보정한 판정 비교
+
+**가설 한 줄: 공개 정상 이미지의 전후 특징 변화로 만든 PCA 부분공간에서 직교 성분을 제외하면 원래 클래스로 돌아오는 사건이 큰 정상 삭제보다 공격성 삭제에서 더 많다.**
+
+**판정: BadFU FC 기준 두 보류 분할 통과 / FedUBA 후기6개 공통 기준 미충족**
+
+[실험 시작 이유와 실제 실행 과정 읽기](four_routes_pca_decision_20261112/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D18/D19/D20/D21/D22/T02/T03/T04/R03. D22 실제 42개 라운드 모델과 D20 BadFU 실제6쌍. 정상 fit320 중심 PCA95%, D20/D22 봉인 탐침/test 고정. feature PCA/동일 차원 무작위/FC PCA 및 native/네 경로. 실제 trigger·원목표·역할·삭제ID 미사용. DISLAB 225초, 새 학습·탐침탐색0.
+- **정상 대조·비교:** FedUBA 정상 출처6개 공통탐침, 정상3요청 각6R에서 방법별 최대 경보선 봉인, 보류 정상3요청 각4R, 후기진단2요청 각3R. 전체10개 감도 분석은 진단에서 얻은 말단 탐침도 포함. BadFU 큰 정상2개를 각각 보류, 다른 큰 정상+나머지 정상2로 보정. 양성2 동일.
+- **결과:** 48모델쌍/432조합 n·stable·native·원클래스 정확일치. FedUBA 주 패널 모든 보류 정상0/3, 후기 진단 native/네경로/무작위/FC0/6, 특징PCA2/6(minus20R3건/plus15R2건, 보정최대1). 진단출처 포함 감도 native/네경로/무작위6/6. BadFU native·네경로 양성2/2이지만 보류정상1/2 경보. 특징PCA 정상0/2·양성1/2. FC PCA 및 무작위 특징은 정상0/2·양성2/2. FC 정상2/2/3/5 대 공격17/11(/900), 두 기준>5. 원텐서해시·GPU 실행 exit0/owned0·결과 원바이트 검증.
+- **non-IID에 대해 남길 교훈:** BadFU 지정 두 보류에서는 원 전환 규모가 아닌 FC 수정 후 예측 복귀가 도움이 됐지만, 두 큰 정상은 같은 시드이고 진단 FedUBA와 범용 기준은 미충족. 같은 차원 무작위 특징 검사도 BadFU 통과; FC 자체에 대한 무작위 축 대조는 없음. D08/D15/T02 반례 및 R03 진단 한계를 유지한다.
+- **반복하지 않을 주장:** 완료 원모델 학습·탐침 최적화·D23 유한 실행 반복 없이 보존. 보정 기준·PCA 분산·탐침을 사후 변경하지 않는다. 진단 말단 탐침이 들어간 감도 분석을 독립 공격 일반화로 바꾸지 않는다.
+- **재검토 조건:** BadFU FC 기준은 독립 정상/공격 학습 및 라운드·동일차원 FC 대조를 갖춘 다음 검증 후보. 더 큰 정상/적격 성공 잠복쌍에서 보류 오경보0과 요구 양성 검출을 확인하기 전 공통 판정 채택 보류.
+- **출처 구분:** 2026-11-12 사용자가 네 경로와 PCA 영공간을 우선 검증 요청. 먼저 사전 보정·보류 조건을 고정해 DISLAB에서 판정 비교.
+
+**원문·증거:**
+
+- [research/four_routes_pca_decision_20261112/PROTOCOL.txt](four_routes_pca_decision_20261112/PROTOCOL.txt)
+- [research/four_routes_pca_decision_20261112/REPORT_KO.txt](four_routes_pca_decision_20261112/REPORT_KO.txt)
+- [research/four_routes_pca_decision_20261112/PLAN.json](four_routes_pca_decision_20261112/PLAN.json)
+- [research/four_routes_pca_decision_20261112/FREEZE.json](four_routes_pca_decision_20261112/FREEZE.json)
+- [research/four_routes_pca_decision_20261112/PUBLICATION.json](four_routes_pca_decision_20261112/PUBLICATION.json)
+- [research/four_routes_pca_decision_20261112/SOURCE_LINEAGE.json](four_routes_pca_decision_20261112/SOURCE_LINEAGE.json)
+- [research/four_routes_pca_decision_20261112/BADFU_SELECTION.json](four_routes_pca_decision_20261112/BADFU_SELECTION.json)
+- [research/four_routes_pca_decision_20261112/PREFLIGHT.json](four_routes_pca_decision_20261112/PREFLIGHT.json)
+- [research/four_routes_pca_decision_20261112/ADMISSION.json](four_routes_pca_decision_20261112/ADMISSION.json)
+- [research/four_routes_pca_decision_20261112/NORMAL_THRESHOLDS.json](four_routes_pca_decision_20261112/NORMAL_THRESHOLDS.json)
+- [research/four_routes_pca_decision_20261112/BADFU_NORMAL_COUNTS.json](four_routes_pca_decision_20261112/BADFU_NORMAL_COUNTS.json)
+- [research/four_routes_pca_decision_20261112/RESULT.json](four_routes_pca_decision_20261112/RESULT.json)
+- [research/four_routes_pca_decision_20261112/DECISION.json](four_routes_pca_decision_20261112/DECISION.json)
+- [research/four_routes_pca_decision_20261112/TERMINAL.json](four_routes_pca_decision_20261112/TERMINAL.json)
+- [research/four_routes_pca_decision_20261112/evaluate.py](four_routes_pca_decision_20261112/evaluate.py)
+- [research/four_routes_pca_decision_20261112/decide.py](four_routes_pca_decision_20261112/decide.py)
+
+**묶은 폴더:** [four_routes_pca_decision_20261112](four_routes_pca_decision_20261112)
+

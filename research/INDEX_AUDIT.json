@@ -1,12 +1,12 @@
 {
   "schema": "research-index-audit-v1",
-  "as_of": "2026-11-11",
+  "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a05b18192acfbb32399078f28e2624c6ab797e471d7cca496d777ba879071ac2",
-  "cards": 34,
-  "unique_source_documents": 2120,
-  "top_level_folders": 160,
-  "folders_linked_to_cards": 112,
+  "registry_sha256": "c5277aa1f7763e0176c79fec666ba3f8080165f8e1b5cdf7b0bdb5e97bb41a18",
+  "cards": 35,
+  "unique_source_documents": 2136,
+  "top_level_folders": 161,
+  "folders_linked_to_cards": 113,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2127,7 +2127,23 @@
     "research/feduba_deletion_round_repeats_20261111/FU_dark_a_RESULT.json": "17aae0772a5cecfd1c724bbf6e6a73c2d670ce3a695c5a712208b8747c9396e0",
     "research/feduba_deletion_round_repeats_20261111/FU_dark_a_VERIFIED.json": "7a81f2190690aa3f95c3391204531c6229c9384f9723da7b7723194d3e038981",
     "research/feduba_deletion_round_repeats_20261111/FU_dark_b_RESULT.json": "ed6da7510ff0002868605a8b812a592bea8f606e5e4a46b33c984d66fd7f55e2",
-    "research/feduba_deletion_round_repeats_20261111/FU_dark_b_VERIFIED.json": "afddc16b58e0e6a61b587587f4f08068b25c705efc1e87906b34bda2381a276f"
+    "research/feduba_deletion_round_repeats_20261111/FU_dark_b_VERIFIED.json": "afddc16b58e0e6a61b587587f4f08068b25c705efc1e87906b34bda2381a276f",
+    "research/four_routes_pca_decision_20261112/PROTOCOL.txt": "becfa13316c68ffccaf399ef411b9939061f07874e37de8e9bb78a28d7f8b070",
+    "research/four_routes_pca_decision_20261112/REPORT_KO.txt": "51dbe713e0af789d54349b734ea74409453ae8cafed468f636747ccd6837570e",
+    "research/four_routes_pca_decision_20261112/PLAN.json": "f51e33d0fce21e413d7ba36335cb8abce097345d11f8e03a76bb9fbdb0d9ac29",
+    "research/four_routes_pca_decision_20261112/FREEZE.json": "82c683187081800494d7e0c695abe9e44463394a3be1bf144ed0bfbf6e0fe2db",
+    "research/four_routes_pca_decision_20261112/PUBLICATION.json": "348f451685a58fcb0baae73ef973bc90f0d7708f7e211b9770873a2e4659cfef",
+    "research/four_routes_pca_decision_20261112/SOURCE_LINEAGE.json": "de65c6cf8661a5e9b4ab4843a514e8684cbd0f1373ce84c65dbee7a0ccd771fb",
+    "research/four_routes_pca_decision_20261112/BADFU_SELECTION.json": "5e6696d28c9ffda8c4ef3922973e292c4bf8ae9497696e77d72d764e7655ba77",
+    "research/four_routes_pca_decision_20261112/PREFLIGHT.json": "34e3538e94ce9ec4883089e8cafba510e2a504bd55beb32f17c8c80f99c1953a",
+    "research/four_routes_pca_decision_20261112/ADMISSION.json": "9df3f756b19fd9512dc4c454f0fdb355311c380a1b2389dc5a4c25ac538e9315",
+    "research/four_routes_pca_decision_20261112/NORMAL_THRESHOLDS.json": "a5c4bf85b4b1d8f09c2e02dc3045e6f0c3862238592e862f45e035d6d6ad0256",
+    "research/four_routes_pca_decision_20261112/BADFU_NORMAL_COUNTS.json": "5d5b8198462f3af193ccb3fb2eec6732314266f10f26ebdb58328de52d804bc9",
+    "research/four_routes_pca_decision_20261112/RESULT.json": "f3059749668cd7e51aaae851ed27bc2ac4fc568f9b2cbcc4c5dbe455965f0ac5",
+    "research/four_routes_pca_decision_20261112/DECISION.json": "aeee2a7cf1a2b76c894f6365e5478ff5aeefae3ae9fa4f9d0968eafc4309601d",
+    "research/four_routes_pca_decision_20261112/TERMINAL.json": "19d1f3565ad3fec2b30e5db8feea76b220e3a14a5a0a427b11f89fdb1dccf3bc",
+    "research/four_routes_pca_decision_20261112/evaluate.py": "055f6be620e00c1d118aa788898158e12d0c5c05a86deccda77bd19815dc2f75",
+    "research/four_routes_pca_decision_20261112/decide.py": "c7585b58262e1d11b20b083a00d71a6fb26032c8b9ee75f9a11189eaa693cc68"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -3318,6 +3334,19 @@
         "research/feduba_targetclass_pair_recovery_20261102/PROTOCOL.txt",
         "research/feduba_targetclass_pair_recovery_20261102/REPORT_KO.txt",
         "research/feduba_targetclass_pair_recovery_20261102/SOURCE_CHECK_RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/four_routes_pca_decision_20261112",
+      "related_cards": [
+        "D23"
+      ],
+      "top_level_documents": [
+        "research/four_routes_pca_decision_20261112/DECISION.json",
+        "research/four_routes_pca_decision_20261112/PROTOCOL.txt",
+        "research/four_routes_pca_decision_20261112/REPORT_KO.txt",
+        "research/four_routes_pca_decision_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

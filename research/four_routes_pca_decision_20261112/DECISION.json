@@ -1,0 +1,2477 @@
+{
+  "denominator": 900,
+  "feduba_normal_probe_panel": {
+    "native": {
+      "threshold_count": 131,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 0,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [],
+        "p04": []
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 12
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 46
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 111
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 120
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 126
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 7
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 48
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 89
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 96
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 122
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 115
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 21
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 57
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 98
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 100
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 131
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 43
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 85
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 93
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 107
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 129
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 3
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 27
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 69
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 92
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 79
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 96
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 18
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 43
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 76
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 3
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 18
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 46
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 78
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 16
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 56
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 103
+        }
+      ]
+    },
+    "four_routes": {
+      "threshold_count": 120,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 0,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [],
+        "p04": []
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 4
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 35
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 102
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 109
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 116
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 36
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 71
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 82
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 108
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 113
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 14
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 49
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 93
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 90
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 120
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 32
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 78
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 86
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 95
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 115
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 17
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 60
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 88
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 69
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 84
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 10
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 35
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 67
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 14
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 28
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 68
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 12
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 47
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 85
+        }
+      ]
+    },
+    "feature_pca": {
+      "threshold_count": 1,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 2,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [
+          20
+        ],
+        "p04": [
+          15
+        ]
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 3
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 2
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 0
+        }
+      ]
+    },
+    "feature_random": {
+      "threshold_count": 81,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 0,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [],
+        "p04": []
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 4
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 29
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 61
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 81
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 74
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 23
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 51
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 52
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 65
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 73
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 14
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 40
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 50
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 66
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 77
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 30
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 52
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 49
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 70
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 80
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 14
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 46
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 61
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 51
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 60
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 5
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 29
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 36
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 12
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 22
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 53
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 11
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 31
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 55
+        }
+      ]
+    },
+    "fc_pca": {
+      "threshold_count": 10,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 0,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [],
+        "p04": []
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 4
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 5
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 5
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 7
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 6
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 10
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 9
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 7
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 3
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 4
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 3
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 2
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 2
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 5
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 3
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 4
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 3
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 2
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 7
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 5
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 6
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 7
+        }
+      ]
+    }
+  },
+  "feduba_all_probe_sensitivity": {
+    "native": {
+      "threshold_count": 131,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 6,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": true,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [
+          10,
+          15,
+          20
+        ],
+        "p04": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 13
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 46
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 111
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 120
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 126
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 7
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 48
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 89
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 96
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 122
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 115
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 26
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 57
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 98
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 100
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 131
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 48
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 85
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 176
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 258
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 299
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 3
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 67
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 166
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 196
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 272
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 307
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 28
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 43
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 76
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 18
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 46
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 78
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 4
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 19
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 56
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 103
+        }
+      ]
+    },
+    "four_routes": {
+      "threshold_count": 120,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 6,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": true,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [
+          10,
+          15,
+          20
+        ],
+        "p04": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 5
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 35
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 102
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 109
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 116
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 36
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 71
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 82
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 108
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 113
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 18
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 49
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 93
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 90
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 120
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 41
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 78
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 161
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 250
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 285
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 54
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 142
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 169
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 252
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 290
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 10
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 35
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 67
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 15
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 32
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 68
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 12
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 47
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 85
+        }
+      ]
+    },
+    "feature_pca": {
+      "threshold_count": 1,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 2,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [
+          20
+        ],
+        "p04": [
+          15
+        ]
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 3
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 2
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 1
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 1
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 0
+        }
+      ]
+    },
+    "feature_random": {
+      "threshold_count": 81,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 6,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": true,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [
+          10,
+          15,
+          20
+        ],
+        "p04": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 4
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 29
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 61
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 81
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 74
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 23
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 51
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 52
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 65
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 73
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 14
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 40
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 50
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 66
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 77
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 30
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 58
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 128
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 170
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 193
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 40
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 112
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 138
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 175
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 207
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 8
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 29
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 36
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 12
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 25
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 53
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 11
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 31
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 55
+        }
+      ]
+    },
+    "fc_pca": {
+      "threshold_count": 10,
+      "normal_request_false_alarms": 0,
+      "normal_requests": 3,
+      "late_diagnostic_hits": 0,
+      "late_diagnostic_checks": 6,
+      "criterion_passed": false,
+      "flags_by_request": {
+        "u00": [],
+        "u01": [],
+        "u02": [],
+        "p03": [],
+        "p04": []
+      },
+      "score_rows": [
+        {
+          "track": "p00",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p00",
+          "round": 3,
+          "count": 3
+        },
+        {
+          "track": "p00",
+          "round": 5,
+          "count": 4
+        },
+        {
+          "track": "p00",
+          "round": 10,
+          "count": 5
+        },
+        {
+          "track": "p00",
+          "round": 15,
+          "count": 5
+        },
+        {
+          "track": "p00",
+          "round": 20,
+          "count": 7
+        },
+        {
+          "track": "p01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 3,
+          "count": 1
+        },
+        {
+          "track": "p01",
+          "round": 5,
+          "count": 6
+        },
+        {
+          "track": "p01",
+          "round": 10,
+          "count": 10
+        },
+        {
+          "track": "p01",
+          "round": 15,
+          "count": 9
+        },
+        {
+          "track": "p01",
+          "round": 20,
+          "count": 7
+        },
+        {
+          "track": "p02",
+          "round": 1,
+          "count": 2
+        },
+        {
+          "track": "p02",
+          "round": 3,
+          "count": 3
+        },
+        {
+          "track": "p02",
+          "round": 5,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "p02",
+          "round": 15,
+          "count": 3
+        },
+        {
+          "track": "p02",
+          "round": 20,
+          "count": 4
+        },
+        {
+          "track": "p03",
+          "round": 1,
+          "count": 3
+        },
+        {
+          "track": "p03",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "p03",
+          "round": 5,
+          "count": 7
+        },
+        {
+          "track": "p03",
+          "round": 10,
+          "count": 5
+        },
+        {
+          "track": "p03",
+          "round": 15,
+          "count": 5
+        },
+        {
+          "track": "p03",
+          "round": 20,
+          "count": 5
+        },
+        {
+          "track": "p04",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "p04",
+          "round": 3,
+          "count": 5
+        },
+        {
+          "track": "p04",
+          "round": 5,
+          "count": 7
+        },
+        {
+          "track": "p04",
+          "round": 10,
+          "count": 7
+        },
+        {
+          "track": "p04",
+          "round": 15,
+          "count": 5
+        },
+        {
+          "track": "p04",
+          "round": 20,
+          "count": 3
+        },
+        {
+          "track": "u00",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u00",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "u00",
+          "round": 5,
+          "count": 2
+        },
+        {
+          "track": "u00",
+          "round": 10,
+          "count": 7
+        },
+        {
+          "track": "u01",
+          "round": 1,
+          "count": 1
+        },
+        {
+          "track": "u01",
+          "round": 3,
+          "count": 2
+        },
+        {
+          "track": "u01",
+          "round": 5,
+          "count": 5
+        },
+        {
+          "track": "u01",
+          "round": 10,
+          "count": 4
+        },
+        {
+          "track": "u02",
+          "round": 1,
+          "count": 0
+        },
+        {
+          "track": "u02",
+          "round": 3,
+          "count": 4
+        },
+        {
+          "track": "u02",
+          "round": 5,
+          "count": 6
+        },
+        {
+          "track": "u02",
+          "round": 10,
+          "count": 7
+        }
+      ]
+    }
+  },
+  "badfu_large_normal_holdout": {
+    "native": {
+      "score_counts": {
+        "c00": 111,
+        "c01": 87,
+        "c02": 95,
+        "c03": 98,
+        "c04": 372,
+        "c05": 530
+      },
+      "splits": [
+        {
+          "holdout": "c00",
+          "calibration_large": "c01",
+          "threshold_count": 98,
+          "normal_alert": true,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        },
+        {
+          "holdout": "c01",
+          "calibration_large": "c00",
+          "threshold_count": 111,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        }
+      ],
+      "both_splits_passed": false
+    },
+    "four_routes": {
+      "score_counts": {
+        "c00": 98,
+        "c01": 55,
+        "c02": 75,
+        "c03": 72,
+        "c04": 368,
+        "c05": 490
+      },
+      "splits": [
+        {
+          "holdout": "c00",
+          "calibration_large": "c01",
+          "threshold_count": 75,
+          "normal_alert": true,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        },
+        {
+          "holdout": "c01",
+          "calibration_large": "c00",
+          "threshold_count": 98,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        }
+      ],
+      "both_splits_passed": false
+    },
+    "feature_pca": {
+      "score_counts": {
+        "c00": 6,
+        "c01": 8,
+        "c02": 8,
+        "c03": 16,
+        "c04": 5,
+        "c05": 37
+      },
+      "splits": [
+        {
+          "holdout": "c00",
+          "calibration_large": "c01",
+          "threshold_count": 16,
+          "normal_alert": false,
+          "attack_hits": [
+            "c05"
+          ]
+        },
+        {
+          "holdout": "c01",
+          "calibration_large": "c00",
+          "threshold_count": 16,
+          "normal_alert": false,
+          "attack_hits": [
+            "c05"
+          ]
+        }
+      ],
+      "both_splits_passed": false
+    },
+    "feature_random": {
+      "score_counts": {
+        "c00": 38,
+        "c01": 34,
+        "c02": 43,
+        "c03": 49,
+        "c04": 191,
+        "c05": 385
+      },
+      "splits": [
+        {
+          "holdout": "c00",
+          "calibration_large": "c01",
+          "threshold_count": 49,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        },
+        {
+          "holdout": "c01",
+          "calibration_large": "c00",
+          "threshold_count": 49,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        }
+      ],
+      "both_splits_passed": true
+    },
+    "fc_pca": {
+      "score_counts": {
+        "c00": 2,
+        "c01": 2,
+        "c02": 3,
+        "c03": 5,
+        "c04": 17,
+        "c05": 11
+      },
+      "splits": [
+        {
+          "holdout": "c00",
+          "calibration_large": "c01",
+          "threshold_count": 5,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        },
+        {
+          "holdout": "c01",
+          "calibration_large": "c00",
+          "threshold_count": 5,
+          "normal_alert": false,
+          "attack_hits": [
+            "c04",
+            "c05"
+          ]
+        }
+      ],
+      "both_splits_passed": true
+    }
+  }
+}

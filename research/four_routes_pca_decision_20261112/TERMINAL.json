@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "task": {
+    "state": 3,
+    "exit": 0,
+    "active_owned": 0
+  },
+  "verified_raw_hashes": {
+    "RESULT.json": "f3059749668cd7e51aaae851ed27bc2ac4fc568f9b2cbcc4c5dbe455965f0ac5",
+    "DECISION.json": "aeee2a7cf1a2b76c894f6365e5478ff5aeefae3ae9fa4f9d0968eafc4309601d",
+    "NORMAL_THRESHOLDS.json": "a5c4bf85b4b1d8f09c2e02dc3045e6f0c3862238592e862f45e035d6d6ad0256",
+    "BADFU_NORMAL_COUNTS.json": "5d5b8198462f3af193ccb3fb2eec6732314266f10f26ebdb58328de52d804bc9",
+    "PREFLIGHT.json": "34e3538e94ce9ec4883089e8cafba510e2a504bd55beb32f17c8c80f99c1953a",
+    "ADMISSION.json": "9df3f756b19fd9512dc4c454f0fdb355311c380a1b2389dc5a4c25ac538e9315",
+    "FREEZE.json": "82c683187081800494d7e0c695abe9e44463394a3be1bf144ed0bfbf6e0fe2db"
+  },
+  "case_count": 48,
+  "probe_checks": 432
+}
