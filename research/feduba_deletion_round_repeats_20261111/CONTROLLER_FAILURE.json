@@ -1,0 +1,3 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\controller.py\", line 43, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\controller.py\", line 27, in main\n    run('train_fu.py',branch)\n  File \"D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\controller.py\", line 18, in run\n    raise RuntimeError(f'{label} stopped with exit {rc}; preserve the phase outputs')\nRuntimeError: train_fu_balanced_b stopped with exit 1; preserve the phase outputs\n"
+}
