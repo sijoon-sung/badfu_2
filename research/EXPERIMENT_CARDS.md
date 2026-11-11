@@ -2644,6 +2644,48 @@
 
 **묶은 폴더:** [topdown_mechanism_20261110](topdown_mechanism_20261110)
 
+<a id="t04"></a>
+
+## T04 · 기본 탐색의 봉인 전환에서 body/head 귀속을 검사
+
+**가설 한 줄: 기본 탐색의 native 전환 중 깨끗한 두 교차 경로가 정답이고 전환이 post body를 따르는 비율은 같은 연구군의 큰 정상 삭제보다 공격에서 높다.**
+
+**판정: DISLAB 12쌍 완료 / 공격 전용 패턴 기각·두 연구군 고정 순서만 분리**
+
+[실험 시작 이유와 실제 실행 과정 읽기](blind_body_witness_audit_20261111/REPORT_KO.txt)
+
+- **조건:** D20/D21 기존 baseline 선택과 public test/12쌍 고정. 실제 trigger·목표·역할·삭제 ID는 새 검사 입력0. 원 모델과 학습된 변환은 그대로, D20의 검증된 교차 linear로만 검사. catalogue 허용목적/해시/봉인/로드상태 검사. DISLAB 17.34초, 학습·새선택0.
+- **정상 대조·비교:** BadFU 정상4(큰 참여자2 포함) 대 공격2시드; 같은 FedUBA 구현 정상125/균형5000/class2 전체2486 대 minus/plus 진단2. FUBA v7 진단은 같은 적격 정상/성공쌍 부재로 기술만. T03의 알려진 트리거와 달리 baseline이 발견한 입력을 고정하고 route loss로 만들지 않는다.
+- **결과:** 12쌍 n/witness/stable/원클래스 정수 모두 기존과 일치. 엄격 body 비율 BadFU 공격93.83–97.97%, 정상63.22–88.29%(최소 간격+5.55%p). FedUBA 진단 최저274/291=94.16%, 정상 균형116/124=93.55%(+0.61%p); FUBA 40/47=85.11% 기술. 동등예산 기존 탐색 간격 재집계 BadFU20.56→30.44, FedUBA 큰정상18.56→19.22%p. 최초 guard 소유경로 assertion으로 CUDA 전 exit1 보존, 그 한 줄만 고친 V2 exit0/owned0; 원 model·목록/default·old queue 보존.
+- **non-IID에 대해 남길 교훈:** D08/D15의 겹침과 T02 희귀 정상 도메인 반례를 해소하지 않았다. 정상도 거의 같은 조건부 body 패턴을 보인다. fixed 12쌍의 순서와 운영 분류·인과 메커니즘은 다르다. class2 일반망각은 strict 전환 밖. 같은 분할·공유 채널 좌표를 가정한다.
+- **반복하지 않을 주장:** 원 학습·탐색·독립검산·V1/V2를 재실행하지 않는다. 정상에서도 나타나는 패턴을 공격 특이 지표/배포 임계값으로 쓰지 않는다. 진단 FUBA/FedUBA를 성공 잠복 재현으로 바꾸지 않는다.
+- **재검토 조건:** 같은 FU의 클래스 내 큰 정상 도메인 삭제·독립 시드·유효한 다른 공격 조건에서 같은 정상 경보율로 추가 공격 발견을 사전 고정 비교한다. 정상 최대가 공격 최저와 같거나 크면 해당 고정 분리 가설을 버리고, 추가 이득 없으면 신규 탐지 개선을 주장하지 않는다. 조건 부재는 미검증/보류.
+- **출처 구분:** 2026-11-11 사용자가 넓은 주장부터 확인해 11월12일 미팅 준비 요청. 현재 기본 탐색의 고정 사례에서만 기능 귀속 진단을 실행.
+
+**원문·증거:**
+
+- [research/blind_body_witness_audit_20261111/PROTOCOL.txt](blind_body_witness_audit_20261111/PROTOCOL.txt)
+- [research/blind_body_witness_audit_20261111/REPORT_KO.txt](blind_body_witness_audit_20261111/REPORT_KO.txt)
+- [research/blind_body_witness_audit_20261111/MEETING_KO.txt](blind_body_witness_audit_20261111/MEETING_KO.txt)
+- [research/blind_body_witness_audit_20261111/CATALOG_SELECTIONS.json](blind_body_witness_audit_20261111/CATALOG_SELECTIONS.json)
+- [research/blind_body_witness_audit_20261111/FREEZE.json](blind_body_witness_audit_20261111/FREEZE.json)
+- [research/blind_body_witness_audit_20261111/PUBLICATION.json](blind_body_witness_audit_20261111/PUBLICATION.json)
+- [research/blind_body_witness_audit_20261111/ADMISSION_PATH_FAILURE.json](blind_body_witness_audit_20261111/ADMISSION_PATH_FAILURE.json)
+- [research/blind_body_witness_audit_20261111/RECOVERY_PROTOCOL.txt](blind_body_witness_audit_20261111/RECOVERY_PROTOCOL.txt)
+- [research/blind_body_witness_audit_20261111/FREEZE_V2.json](blind_body_witness_audit_20261111/FREEZE_V2.json)
+- [research/blind_body_witness_audit_20261111/PUBLICATION_V2.json](blind_body_witness_audit_20261111/PUBLICATION_V2.json)
+- [research/blind_body_witness_audit_20261111/PREFLIGHT.json](blind_body_witness_audit_20261111/PREFLIGHT.json)
+- [research/blind_body_witness_audit_20261111/ADMISSION.json](blind_body_witness_audit_20261111/ADMISSION.json)
+- [research/blind_body_witness_audit_20261111/RESULT.json](blind_body_witness_audit_20261111/RESULT.json)
+- [research/blind_body_witness_audit_20261111/SUMMARY.json](blind_body_witness_audit_20261111/SUMMARY.json)
+- [research/blind_body_witness_audit_20261111/TERMINAL.json](blind_body_witness_audit_20261111/TERMINAL.json)
+- [research/blind_body_witness_audit_20261111/audit.py](blind_body_witness_audit_20261111/audit.py)
+- [research/blind_body_witness_audit_20261111/resource_guard_v2.py](blind_body_witness_audit_20261111/resource_guard_v2.py)
+- [research/blind_body_witness_audit_20261111/summarize.py](blind_body_witness_audit_20261111/summarize.py)
+- [research/blind_body_witness_audit_20261111/plot_meeting.py](blind_body_witness_audit_20261111/plot_meeting.py)
+
+**묶은 폴더:** [blind_body_witness_audit_20261111](blind_body_witness_audit_20261111)
+
 <a id="d20"></a>
 
 ## D20 · 미지 조건의 전후 body/head 네 경로 역산과 큰 정상 삭제 고정 비교
