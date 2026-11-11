@@ -1,0 +1,362 @@
+{
+  "state": "passed",
+  "initial_low": 9996,
+  "initial_total": 25000,
+  "request_hash_verified": true,
+  "all_real_owner_and_class_counts_exact": true,
+  "no_model_calls": true,
+  "requests": {
+    "balanced_original": {
+      "removed_low": 2007,
+      "retained_low": 7989,
+      "retained_total": 20000,
+      "retained_low_fraction": 0.39945,
+      "per_class": [
+        {
+          "label": 0,
+          "before": 2495,
+          "before_low": 998,
+          "after": 1995,
+          "after_low": 812,
+          "removed_low": 186
+        },
+        {
+          "label": 1,
+          "before": 2489,
+          "before_low": 995,
+          "after": 1989,
+          "after_low": 781,
+          "removed_low": 214
+        },
+        {
+          "label": 2,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 787,
+          "removed_low": 207
+        },
+        {
+          "label": 3,
+          "before": 2512,
+          "before_low": 1004,
+          "after": 2012,
+          "after_low": 807,
+          "removed_low": 197
+        },
+        {
+          "label": 4,
+          "before": 2502,
+          "before_low": 1000,
+          "after": 2002,
+          "after_low": 799,
+          "removed_low": 201
+        },
+        {
+          "label": 5,
+          "before": 2499,
+          "before_low": 999,
+          "after": 1999,
+          "after_low": 794,
+          "removed_low": 205
+        },
+        {
+          "label": 6,
+          "before": 2540,
+          "before_low": 1016,
+          "after": 2040,
+          "after_low": 820,
+          "removed_low": 196
+        },
+        {
+          "label": 7,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 780,
+          "removed_low": 214
+        },
+        {
+          "label": 8,
+          "before": 2465,
+          "before_low": 986,
+          "after": 1965,
+          "after_low": 797,
+          "removed_low": 189
+        },
+        {
+          "label": 9,
+          "before": 2526,
+          "before_low": 1010,
+          "after": 2026,
+          "after_low": 812,
+          "removed_low": 198
+        }
+      ]
+    },
+    "balanced_b": {
+      "removed_low": 1975,
+      "retained_low": 8021,
+      "retained_total": 20000,
+      "retained_low_fraction": 0.40105,
+      "per_class": [
+        {
+          "label": 0,
+          "before": 2495,
+          "before_low": 998,
+          "after": 1995,
+          "after_low": 813,
+          "removed_low": 185
+        },
+        {
+          "label": 1,
+          "before": 2489,
+          "before_low": 995,
+          "after": 1989,
+          "after_low": 796,
+          "removed_low": 199
+        },
+        {
+          "label": 2,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 800,
+          "removed_low": 194
+        },
+        {
+          "label": 3,
+          "before": 2512,
+          "before_low": 1004,
+          "after": 2012,
+          "after_low": 796,
+          "removed_low": 208
+        },
+        {
+          "label": 4,
+          "before": 2502,
+          "before_low": 1000,
+          "after": 2002,
+          "after_low": 805,
+          "removed_low": 195
+        },
+        {
+          "label": 5,
+          "before": 2499,
+          "before_low": 999,
+          "after": 1999,
+          "after_low": 790,
+          "removed_low": 209
+        },
+        {
+          "label": 6,
+          "before": 2540,
+          "before_low": 1016,
+          "after": 2040,
+          "after_low": 825,
+          "removed_low": 191
+        },
+        {
+          "label": 7,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 792,
+          "removed_low": 202
+        },
+        {
+          "label": 8,
+          "before": 2465,
+          "before_low": 986,
+          "after": 1965,
+          "after_low": 791,
+          "removed_low": 195
+        },
+        {
+          "label": 9,
+          "before": 2526,
+          "before_low": 1010,
+          "after": 2026,
+          "after_low": 813,
+          "removed_low": 197
+        }
+      ]
+    },
+    "dark_a": {
+      "removed_low": 5000,
+      "retained_low": 4996,
+      "retained_total": 20000,
+      "retained_low_fraction": 0.2498,
+      "per_class": [
+        {
+          "label": 0,
+          "before": 2495,
+          "before_low": 998,
+          "after": 1995,
+          "after_low": 498,
+          "removed_low": 500
+        },
+        {
+          "label": 1,
+          "before": 2489,
+          "before_low": 995,
+          "after": 1989,
+          "after_low": 495,
+          "removed_low": 500
+        },
+        {
+          "label": 2,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 494,
+          "removed_low": 500
+        },
+        {
+          "label": 3,
+          "before": 2512,
+          "before_low": 1004,
+          "after": 2012,
+          "after_low": 504,
+          "removed_low": 500
+        },
+        {
+          "label": 4,
+          "before": 2502,
+          "before_low": 1000,
+          "after": 2002,
+          "after_low": 500,
+          "removed_low": 500
+        },
+        {
+          "label": 5,
+          "before": 2499,
+          "before_low": 999,
+          "after": 1999,
+          "after_low": 499,
+          "removed_low": 500
+        },
+        {
+          "label": 6,
+          "before": 2540,
+          "before_low": 1016,
+          "after": 2040,
+          "after_low": 516,
+          "removed_low": 500
+        },
+        {
+          "label": 7,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 494,
+          "removed_low": 500
+        },
+        {
+          "label": 8,
+          "before": 2465,
+          "before_low": 986,
+          "after": 1965,
+          "after_low": 486,
+          "removed_low": 500
+        },
+        {
+          "label": 9,
+          "before": 2526,
+          "before_low": 1010,
+          "after": 2026,
+          "after_low": 510,
+          "removed_low": 500
+        }
+      ]
+    },
+    "dark_b": {
+      "removed_low": 5000,
+      "retained_low": 4996,
+      "retained_total": 20000,
+      "retained_low_fraction": 0.2498,
+      "per_class": [
+        {
+          "label": 0,
+          "before": 2495,
+          "before_low": 998,
+          "after": 1995,
+          "after_low": 498,
+          "removed_low": 500
+        },
+        {
+          "label": 1,
+          "before": 2489,
+          "before_low": 995,
+          "after": 1989,
+          "after_low": 495,
+          "removed_low": 500
+        },
+        {
+          "label": 2,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 494,
+          "removed_low": 500
+        },
+        {
+          "label": 3,
+          "before": 2512,
+          "before_low": 1004,
+          "after": 2012,
+          "after_low": 504,
+          "removed_low": 500
+        },
+        {
+          "label": 4,
+          "before": 2502,
+          "before_low": 1000,
+          "after": 2002,
+          "after_low": 500,
+          "removed_low": 500
+        },
+        {
+          "label": 5,
+          "before": 2499,
+          "before_low": 999,
+          "after": 1999,
+          "after_low": 499,
+          "removed_low": 500
+        },
+        {
+          "label": 6,
+          "before": 2540,
+          "before_low": 1016,
+          "after": 2040,
+          "after_low": 516,
+          "removed_low": 500
+        },
+        {
+          "label": 7,
+          "before": 2486,
+          "before_low": 994,
+          "after": 1986,
+          "after_low": 494,
+          "removed_low": 500
+        },
+        {
+          "label": 8,
+          "before": 2465,
+          "before_low": 986,
+          "after": 1965,
+          "after_low": 486,
+          "removed_low": 500
+        },
+        {
+          "label": 9,
+          "before": 2526,
+          "before_low": 1010,
+          "after": 2026,
+          "after_low": 510,
+          "removed_low": 500
+        }
+      ]
+    }
+  }
+}
