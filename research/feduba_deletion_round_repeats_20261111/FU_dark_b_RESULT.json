@@ -1,0 +1,23 @@
+{
+  "state": "completed_legitimate_FU_prefix",
+  "branch": "dark_b",
+  "rounds": 10,
+  "roles": 100,
+  "epochs": 500,
+  "batches": 8000,
+  "after": {
+    "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_b\\after.pt",
+    "sha256": "db22c0e32a5b754b81f82a3a413afd7df6b026b489e0178ca5b4c47c55ab9613",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "manifest_sha256": "cc3fcf248c610cba4d6560cd9ba22c8593f3b5d9d8dbba2c7a96dbee70f72ae6",
+  "seconds": 642.3787868022919,
+  "peak_allocated_mib": 711.4921875,
+  "peak_reserved_mib": 1010.0,
+  "cudnn_deterministic": false,
+  "cudnn_TF32": true,
+  "matmul_TF32": false,
+  "trigger_inputs": 0,
+  "old_training_repeated": false
+}

@@ -2836,16 +2836,16 @@
 
 **가설 한 줄: 같은 라운드와 같은 탐침에서는 정상 대규모 삭제의 전환이 진단 공격보다 작으며 그 순서가 반복 요청에서도 유지된다.**
 
-**판정: 저장30상태 검산완료·동일탐침 순서겹침 / 새 정상 10R×3 진행**
+**판정: 실제 반복3×10R·42체크포인트 완료 / 동결탐침의 반복·라운드 순서반증**
 
-[실험 시작 이유와 실제 실행 과정 읽기](feduba_deletion_round_repeats_20261111/INTERIM_REPORT_KO.txt)
+[실험 시작 이유와 실제 실행 과정 읽기](feduba_deletion_round_repeats_20261111/FINAL_REPORT_KO.txt)
 
 - **조건:** D20/D21/T04/R03 및 D02/D06/D07/D08/D15/T02. 같은 fixed10 seed42 cleanFL20과 실제 FU1/3/5/10/15/20. 두 arm의 종말 선택 탐침10개를 모든 모델에 그대로 적용. 독립학습/early blind가 아닌 공통 탐침 회고 분석. 새 세 정상 요청은 같은 원 history/cosine20의 prefix10.
 - **정상 대조·비교:** 저장 균형5000/class2 전체2486/정상125 및 minus/plus 진단2. 새 5000 요청3개는 균형 재추출과 클래스 내 저밝기40%에서의 2회 추출로 클래스당500 고정. 기존 균형과 새 반복 교집합1015, 저밝기 두 반복2449. 정상 원 라벨/이미지, 새 공격 훈련0.
-- **결과:** 저장30모델·300탐침 조합 완료, 자기 endpoint10건의 n/stable/witness/원클래스 정확일치. 각1/3/5/10/15/20R에 큰정상>=진단 최소인 탐침 10/2/4/5/6/6개(10개 중), 진단기원 4개 중 4/0/1/2/2/2개. 20R plus 기원route: plus299, minus16, 큰 균형정상30/900. 5→10R에서 같은 큰 정상과 c08 route 전환18→14(유지4/신규10/소멸14). 첫 trainer core.py 누락 학습전 실패 보존; pending-only 실제 import preflight 및 새 정상학습 시작. 새3개 결과 미완료.
-- **non-IID에 대해 남길 교훈:** D21 쌍마다 따로 선택한 종말 탐침의 제한된 분리를 유지한다. 동일 탐침의 라운드 전이·조건 전이는 공격 특이성을 보장하지 않는다. 초기 clean 저하와 owner 재사용 차이, 하나의 FL seed, 동결 테스트 및 진단 쌍 성능 한계가 있다. D08/D15/T02 대체 아님.
+- **결과:** 새 정상3분기 실제30R/300역할/1500epoch/24000batch와 전체 독립CPU 저장·원ID·보정/집계검산 완료. 기존30+새12 모델×10탐침=420조합, 원 말단10정수 정확. 큰정상>=진단최저 탐침 1/3/5/10R에 10/5/7/7개(기존10/2/4/5), 15/20R은 저장만6/6. 10R 진단기원4/4도 겹침. 같은5k 균형반복의 같은탐침 최대차6.00%p, 어두운2.78%p. R10 공통패널 최대건수 균형111/76, 어두운78/103(각900), 분포간10탐침 모두 관측범위겹침. 원본 정확도79.8/79.5/82.0/80.2%. 안정분모10R7/10, 유지율정의가능4/4 겹침. 원 누락의존 pre-training 실패 보존, pending 독립import/미실행학습만 실행. 13실모델/1500epoch/43해시파일 양쪽 전달, 로컬 byte검산, owned0/exit0/default보존.
+- **non-IID에 대해 남길 교훈:** D21 쌍마다 따로 선택한 종말 탐침의 제한된 분리를 유지한다. 동일 탐침의 라운드 전이·조건 전이는 공격 특이성을 보장하지 않는다. 초기 clean 저하와 owner 재사용 차이, 하나의 FL seed, 동결 테스트 및 진단 쌍 성능 한계가 있다. D08/D15/T02 대체 아님. 클래스 비중이 같은 어두운 두 요청은 남은 도메인 비중40%→24.98%를 만들었으나, 균형 대 어두운 전환/정확도에 일관된 순서는 미관측이다. 동일 정상조건의 표본 반복과 동일 요청의 여러 중간 모델을 구별한다.
 - **반복하지 않을 주장:** 완료한 저장 panel과 과거 학습/감사를 재실행하거나 실패·기본 목록을 덮어쓰지 않는다. 정상과 진단의 겹침을 고정 판별의 반례로 보존하고 이 값으로 운영 임계값을 맞추지 않는다.
-- **재검토 조건:** 정상>=진단 최소인 라운드/탐침에서 넓은 순서 가설을 좁힌다. 고정한 새 정상 반복은 증거 특성화를 위해 예정대로 끝까지 실행하되 무결성/자원 실패는 해당 단계 중단. 실제 다른 FL 시드·유효 잠복 공격 및 독립 경보율 보정 전 범용 탐지 주장은 보류.
+- **재검토 조건:** 넓은 동일탐침 순서 가설을 기각하고 고정말단 쌍별 탐색의 제한된 결과를 보존한다. 더 넓은 FL시드·정상 요청/도메인과 유효 잠복 공격에서 라운드마다 독립 선택/보정한 탐색을 검증하기 전 운영 탐지/트리거 계열 독립/다른 FU 일반화는 보류한다. 이 완료 작업을 재실행하지 않는다.
 - **출처 구분:** 2026-11-11 사용자가 큰 삭제의 다양한 라운드와 복수 반복을 실제 계산 요청. 새 비교를 고정하고 DISLAB에서 계산.
 
 **원문·증거:**
@@ -2873,6 +2873,34 @@
 - [research/feduba_deletion_round_repeats_20261111/PENDING_PUBLICATION.json](feduba_deletion_round_repeats_20261111/PENDING_PUBLICATION.json)
 - [research/feduba_deletion_round_repeats_20261111/DEPENDENCY_CHECK.json](feduba_deletion_round_repeats_20261111/DEPENDENCY_CHECK.json)
 - [research/feduba_deletion_round_repeats_20261111/ACTUAL_START.json](feduba_deletion_round_repeats_20261111/ACTUAL_START.json)
+- [research/feduba_deletion_round_repeats_20261111/FINAL_REPORT_KO.txt](feduba_deletion_round_repeats_20261111/FINAL_REPORT_KO.txt)
+- [research/feduba_deletion_round_repeats_20261111/COMPLETION.json](feduba_deletion_round_repeats_20261111/COMPLETION.json)
+- [research/feduba_deletion_round_repeats_20261111/PANEL_new_RESULT.json](feduba_deletion_round_repeats_20261111/PANEL_new_RESULT.json)
+- [research/feduba_deletion_round_repeats_20261111/PANEL_new_BINDING.json](feduba_deletion_round_repeats_20261111/PANEL_new_BINDING.json)
+- [research/feduba_deletion_round_repeats_20261111/PANEL_new_ADMISSION.json](feduba_deletion_round_repeats_20261111/PANEL_new_ADMISSION.json)
+- [research/feduba_deletion_round_repeats_20261111/CATALOG_d22_new.json](feduba_deletion_round_repeats_20261111/CATALOG_d22_new.json)
+- [research/feduba_deletion_round_repeats_20261111/PENDING_STATE.json](feduba_deletion_round_repeats_20261111/PENDING_STATE.json)
+- [research/feduba_deletion_round_repeats_20261111/TERMINAL_AUDIT.json](feduba_deletion_round_repeats_20261111/TERMINAL_AUDIT.json)
+- [research/feduba_deletion_round_repeats_20261111/DOMAIN_AUDIT.json](feduba_deletion_round_repeats_20261111/DOMAIN_AUDIT.json)
+- [research/feduba_deletion_round_repeats_20261111/DOMAIN_AUDIT_PUBLICATION.json](feduba_deletion_round_repeats_20261111/DOMAIN_AUDIT_PUBLICATION.json)
+- [research/feduba_deletion_round_repeats_20261111/INTERIM_PUBLICATION.json](feduba_deletion_round_repeats_20261111/INTERIM_PUBLICATION.json)
+- [research/feduba_deletion_round_repeats_20261111/SENSITIVITY_NOTE.txt](feduba_deletion_round_repeats_20261111/SENSITIVITY_NOTE.txt)
+- [research/feduba_deletion_round_repeats_20261111/DIAGNOSTIC_ARITHMETIC.json](feduba_deletion_round_repeats_20261111/DIAGNOSTIC_ARITHMETIC.json)
+- [research/feduba_deletion_round_repeats_20261111/STORED_DIAGNOSTIC_ARITHMETIC.json](feduba_deletion_round_repeats_20261111/STORED_DIAGNOSTIC_ARITHMETIC.json)
+- [research/feduba_deletion_round_repeats_20261111/STORED_SUMMARY.json](feduba_deletion_round_repeats_20261111/STORED_SUMMARY.json)
+- [research/feduba_deletion_round_repeats_20261111/REPEAT_CONTRASTS.json](feduba_deletion_round_repeats_20261111/REPEAT_CONTRASTS.json)
+- [research/feduba_deletion_round_repeats_20261111/DELIVERY_PROTOCOL.txt](feduba_deletion_round_repeats_20261111/DELIVERY_PROTOCOL.txt)
+- [research/feduba_deletion_round_repeats_20261111/DELIVERY_FREEZE.json](feduba_deletion_round_repeats_20261111/DELIVERY_FREEZE.json)
+- [research/feduba_deletion_round_repeats_20261111/DELIVERY_PUBLICATION.json](feduba_deletion_round_repeats_20261111/DELIVERY_PUBLICATION.json)
+- [research/feduba_deletion_round_repeats_20261111/ROUND_REVIEW_MANIFEST.json](feduba_deletion_round_repeats_20261111/ROUND_REVIEW_MANIFEST.json)
+- [research/feduba_deletion_round_repeats_20261111/ROUND_REVIEW_SEAL.json](feduba_deletion_round_repeats_20261111/ROUND_REVIEW_SEAL.json)
+- [research/feduba_deletion_round_repeats_20261111/LOCAL_ROUND_REVIEW_VERIFIED.json](feduba_deletion_round_repeats_20261111/LOCAL_ROUND_REVIEW_VERIFIED.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_balanced_b_RESULT.json](feduba_deletion_round_repeats_20261111/FU_balanced_b_RESULT.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_balanced_b_VERIFIED.json](feduba_deletion_round_repeats_20261111/FU_balanced_b_VERIFIED.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_dark_a_RESULT.json](feduba_deletion_round_repeats_20261111/FU_dark_a_RESULT.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_dark_a_VERIFIED.json](feduba_deletion_round_repeats_20261111/FU_dark_a_VERIFIED.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_dark_b_RESULT.json](feduba_deletion_round_repeats_20261111/FU_dark_b_RESULT.json)
+- [research/feduba_deletion_round_repeats_20261111/FU_dark_b_VERIFIED.json](feduba_deletion_round_repeats_20261111/FU_dark_b_VERIFIED.json)
 
 **묶은 폴더:** [feduba_deletion_round_repeats_20261111](feduba_deletion_round_repeats_20261111)
 
