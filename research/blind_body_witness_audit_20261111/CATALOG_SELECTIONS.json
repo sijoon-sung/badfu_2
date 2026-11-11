@@ -1,0 +1,74 @@
+{
+  "c00": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "clean_pre",
+    "post": "clean_big_post"
+  },
+  "c01": {
+    "case_id": "badfu.s20261023.normal_largest0.dislab.endpoint_20261110",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c02": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "clean_pre",
+    "post": "clean_post"
+  },
+  "c03": {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "infected_benign_post"
+  },
+  "c04": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c05": {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c06": {
+    "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c07": {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c08": {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c09": {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "n00": {
+    "case_id": "feduba.public_fixed10.cifar10.s42.large_normal.balanced5000.fu20.20261110",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "n01": {
+    "case_id": "feduba.public_fixed10.cifar10.s42.large_normal.class2_all.fu20.20261110",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  }
+}
