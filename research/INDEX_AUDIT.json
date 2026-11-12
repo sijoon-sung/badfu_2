@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "2668848b49532f8d0bc8540c090c5eaea9b2c05ca73045a48b41e27df52915da",
-  "cards": 41,
-  "unique_source_documents": 2203,
-  "top_level_folders": 167,
-  "folders_linked_to_cards": 119,
+  "registry_sha256": "51046b47d4176f811e6818cc475ce1fc058c63fefd00f2f833168fc0a837b966",
+  "cards": 42,
+  "unique_source_documents": 2214,
+  "top_level_folders": 168,
+  "folders_linked_to_cards": 120,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2210,7 +2210,18 @@
     "research/pca_support_expansion_20261112/recovery/RECOVERY.txt": "e150e707f31453847dcb33719acf17ab1f4b714ed1de46082a334591cc284876",
     "research/pca_support_expansion_20261112/recovery/FREEZE.json": "8ede559f82ce9cfbe8879e85af09d8c92a7c84eb464b419666644f944d2f8844",
     "research/pca_support_expansion_20261112/recovery/PUBLICATION.json": "b7ff5f3f7604ae7c7d30520fe0bc1ee91645d3fa2007ad62b3a56e7922789b70",
-    "research/pca_support_expansion_20261112/recovery/evaluate.py": "258a3bf48c8474b131650a530857507b8d2f782e728ddbd5e38b3fdd8cee14f9"
+    "research/pca_support_expansion_20261112/recovery/evaluate.py": "258a3bf48c8474b131650a530857507b8d2f782e728ddbd5e38b3fdd8cee14f9",
+    "research/archived_transition_recurrence_20261112/PROTOCOL.txt": "b1c8e2688ed9280b1d5731a8c60e216a7a0ae0c404d39afd848f14ebd321fdb4",
+    "research/archived_transition_recurrence_20261112/PRE_HISTORIES.json": "cd81d4d9f53178cd1e6e0c0b31677119e4c09f3868e3d0cf8c223301df9f126a",
+    "research/archived_transition_recurrence_20261112/FREEZE.json": "40b3b8a6d74fd9430dd2bbb7e4a6ea16ab1c16abf00a3da33f9653c3d6ad5ef6",
+    "research/archived_transition_recurrence_20261112/PUBLICATION.json": "eedaa89d5a3a113d5fd4efe8dce188268676d0a30fb045fb291a7f3c0069284e",
+    "research/archived_transition_recurrence_20261112/evaluate.py": "28d25b7e7863b14e3d359d6d61aea0b3db5386477f4888aaa440042fb6dd6373",
+    "research/archived_transition_recurrence_20261112/decide.py": "0102ebc78e15ebbba7102e3a0f30a7ec8ff0164b4d15477d9396d9cb24fb142c",
+    "research/archived_transition_recurrence_20261112/ADMISSION.json": "471d180aabbc676b1c3ed3e98b826f6d030fe5340bf147205560ca51bbe2a8df",
+    "research/archived_transition_recurrence_20261112/RESULT.json": "b0413c3b3ceee9baaf8fc1c4c3ff542b5c4391eb4520d20342b6fed5f575bd9a",
+    "research/archived_transition_recurrence_20261112/DECISION.json": "ab1a9a825a16188a590f4e9f5459a0e6dc612faf75444fdb0f6a201dbcbbfaba",
+    "research/archived_transition_recurrence_20261112/TERMINAL.json": "62bc9ebb053246d2aecf6660402dfde4f0f4308db68a8abcf9dd6eb0ae54533b",
+    "research/archived_transition_recurrence_20261112/REPORT_KO.txt": "460cdc455eac3d71f5e1d38f860558d77b64aa71f2af0d09213d08f0dd361d64"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -2323,6 +2334,19 @@
         "research/active_unlearning_audit_20261022/PROTOCOL.json",
         "research/active_unlearning_audit_20261022/REPORT_KO.md",
         "research/active_unlearning_audit_20261022/SUMMARY.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/archived_transition_recurrence_20261112",
+      "related_cards": [
+        "D28"
+      ],
+      "top_level_documents": [
+        "research/archived_transition_recurrence_20261112/DECISION.json",
+        "research/archived_transition_recurrence_20261112/PROTOCOL.txt",
+        "research/archived_transition_recurrence_20261112/REPORT_KO.txt",
+        "research/archived_transition_recurrence_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

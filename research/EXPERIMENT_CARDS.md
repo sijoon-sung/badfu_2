@@ -3148,3 +3148,37 @@
 
 **묶은 폴더:** [pca_support_expansion_20261112](pca_support_expansion_20261112)
 
+<a id="d28"></a>
+
+## D28 · 같은 목표 오분류의 삭제 전 연속 라운드 재등장
+
+**가설 한 줄: 삭제 전 원 학습의 연속 두 라운드에서 나타났다가 최종 pre에서 사라지고 삭제 후 같은 입력·목표에 돌아온 오분류는 큰 정상보다 BadFU 두 시드에서 더 자주 나타난다.**
+
+**판정: 사전 방향 기각 / 낮은 과거 재등장 비율은 사후 후보**
+
+[실험 시작 이유와 실제 실행 과정 읽기](archived_transition_recurrence_20261112/REPORT_KO.txt)
+
+- **조건:** D01/D02/D06/D07/D08/D15/D18/D20/D23/D24/D26/D27/T02/T03/T04/R04/R05. 6개 말단·원 FL 이력3개 10/11·20/21·30/31·40R, post 이력5개 10/20/30/40R, 두 봉인 탐침, A–D. 실제 트리거/목표/역할 미사용.
+- **정상 대조·비교:** 정상19.336%·22.790% 및 정상850 두 조건, 공격 두 시드, 같은 출발 모델 c03/c05의 양쪽 동일 탐침 교차. 정상 c02/c03 원 분할 보정, native/PCA 복귀/재등장·PCA 교집합 비교.
+- **결과:** DISLAB exit0 248행/232.64초, D27 180행 재현. 사전 방향 큰정상0/8·공격0/8. 재등장 비율 공격2.24–5.91%·큰정상19.05–34.40%; 같은 pre·같은 c05 탐침 감염 정상13.79–18.68%로 순서 유지. PCA 교집합 말단 전부0.
+- **non-IID에 대해 남길 교훈:** 같은 이미지의 반복 목표 오분류는 정상에서도 생겼다. 반대 방향은 사후 발견이며 기존 패널을 독립 검증으로 다시 세지 않는다. D08/D15/T02 및 적격 FUBA 부재는 남는다.
+- **반복하지 않을 주장:** 기존 실험에서 결과에 맞춰 경보 방향·창·임계값을 바꾸지 않고 완료 유한 추론을 반복하지 않는다.
+- **재검토 조건:** 반대 방향을 사전에 고정해 비중복 이미지와 원본을 공유하는 정상 대조에서 별도 확인한다. 새로운 독립 삭제 요청·시드 또는 다른 적격 공격으로 확대해야 일반화 가능성을 평가할 수 있다.
+- **출처 구분:** 사용자 /goal에 따라 전후의 기능 신호를 원 학습 시간 순서에 연결해 DISLAB에서 검증.
+
+**원문·증거:**
+
+- [research/archived_transition_recurrence_20261112/PROTOCOL.txt](archived_transition_recurrence_20261112/PROTOCOL.txt)
+- [research/archived_transition_recurrence_20261112/PRE_HISTORIES.json](archived_transition_recurrence_20261112/PRE_HISTORIES.json)
+- [research/archived_transition_recurrence_20261112/FREEZE.json](archived_transition_recurrence_20261112/FREEZE.json)
+- [research/archived_transition_recurrence_20261112/PUBLICATION.json](archived_transition_recurrence_20261112/PUBLICATION.json)
+- [research/archived_transition_recurrence_20261112/evaluate.py](archived_transition_recurrence_20261112/evaluate.py)
+- [research/archived_transition_recurrence_20261112/decide.py](archived_transition_recurrence_20261112/decide.py)
+- [research/archived_transition_recurrence_20261112/ADMISSION.json](archived_transition_recurrence_20261112/ADMISSION.json)
+- [research/archived_transition_recurrence_20261112/RESULT.json](archived_transition_recurrence_20261112/RESULT.json)
+- [research/archived_transition_recurrence_20261112/DECISION.json](archived_transition_recurrence_20261112/DECISION.json)
+- [research/archived_transition_recurrence_20261112/TERMINAL.json](archived_transition_recurrence_20261112/TERMINAL.json)
+- [research/archived_transition_recurrence_20261112/REPORT_KO.txt](archived_transition_recurrence_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [archived_transition_recurrence_20261112](archived_transition_recurrence_20261112)
+
