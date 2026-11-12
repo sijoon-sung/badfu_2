@@ -1,0 +1,32 @@
+[
+  {
+    "memory_gib": 4.998680114746094,
+    "disk_gib": 541.9661560058594,
+    "gpu_free_mib": 4546,
+    "gpu_util": 0,
+    "competitors": [],
+    "ignored_services": [
+      {
+        "pid": 21320,
+        "identity": "observed hermes CPU gateway",
+        "nvidia_compute": false
+      },
+      {
+        "pid": 36324,
+        "identity": "explicitly admitted shared external workload",
+        "created": "2026-11-10T09:02:48.5156340Z",
+        "command_sha256": "ab03d901d52f1c4faf23368fa0820cd92723523e7704f15878aa46b54aa15553",
+        "nvidia_compute": false,
+        "shared_gpu": true
+      },
+      {
+        "pid": 21368,
+        "identity": "explicitly admitted shared external workload",
+        "created": "2026-11-10T09:02:48.5208830Z",
+        "command_sha256": "6b5857def0def9203ebbb4878e02ba3b3a09448cbdcc627fa5e210ab3d0fc70c",
+        "nvidia_compute": true,
+        "shared_gpu": true
+      }
+    ]
+  }
+]

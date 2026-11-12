@@ -3182,3 +3182,39 @@
 
 **묶은 폴더:** [archived_transition_recurrence_20261112](archived_transition_recurrence_20261112)
 
+<a id="d29"></a>
+
+## D29 · 삭제 후 새 목표 오분류의 낮은 과거 재등장 비율
+
+**가설 한 줄: 삭제 후 목표로 전환된 이미지 중 같은 과거 오분류의 재등장 비율이 낮으면 새 이미지에서 큰 정상 삭제와 BadFU를 고정 규칙으로 구별한다.**
+
+**판정: BadFU 두 시드 말단·새 E/F 고정 판정 통과 / 다른 계열 및 독립 요청 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](low_recurrence_confirmation_20261112/REPORT_KO.txt)
+
+- **조건:** D01/D02/D06/D07/D08/D15/D18/D20/D23/D24/D27/D28/T02/T03/T04/R04/R05. 승인 BadFU6말단과 원 학습 20/21·30/31R; 비중복 E/F 각1000장; post10/20/30/40R. 실제 트리거/목표/ASR/역할 미사용.
+- **정상 대조·비교:** D28의 정상850 두 요청과 과거 이미지5묶음의 10개 평가만 사용, 낮은 경보선1/13 동결. 큰 정상19.336%·22.790% 및 공격 두 시드 보류. 같은 pre·같은 c05 탐침의 c03 정상 및 native/PCA 복귀 비교.
+- **결과:** DISLAB exit0, 21모델 비교/116행, 새 학습·탐침 최적화0. E/F 정상0/8 경보·공격4/4, 큰정상13.95–23.58% 대 공격3.38–6.99%, 공유 c03 정상16.00–23.08%. native 정상6/8·공격4/4, PCA복귀/W 정상0/8·공격0/4. 10/20/30R 공격 이력3/4·3/4·4/4, 정상 적격0/4·0/6·0/6 경보,10R 정상2보류. 정수 비교 독립 검산.
+- **non-IID에 대해 남길 교훈:** 선정·보정에서 제외한 큰 정상 두 요청과 BadFU 두 시드를 새 E/F 이미지에서 가른 신호. 동일 출발/탐침의 감염 정상에서도 검증. 기존 정상 도메인 반례·저장 이력과 탐침에 대한 의존 및 새 독립 FL·FU 요청·공격계열 미검증 유지.
+- **반복하지 않을 주장:** E/F로 경보선·창·탐침을 재선정하거나 이력을 새 시드로 세지 않는다. 완료 유한 추론이나 기존 공격 훈련을 반복하지 않는다.
+- **재검토 조건:** 독립적인 새 정상 삭제와 공격의 승인 전후쌍, 원 이력, 별개 계열과 트리거 조건에서 같은 고정 규칙의 일반화를 평가한다.
+- **출처 구분:** 사용자 /goal에 따라 D28의 사후 신호 방향을 새 이미지에서 사전 고정하여 DISLAB 확인.
+
+**원문·증거:**
+
+- [research/low_recurrence_confirmation_20261112/PROTOCOL.txt](low_recurrence_confirmation_20261112/PROTOCOL.txt)
+- [research/low_recurrence_confirmation_20261112/PRE_HISTORIES.json](low_recurrence_confirmation_20261112/PRE_HISTORIES.json)
+- [research/low_recurrence_confirmation_20261112/CALIBRATION.json](low_recurrence_confirmation_20261112/CALIBRATION.json)
+- [research/low_recurrence_confirmation_20261112/FREEZE.json](low_recurrence_confirmation_20261112/FREEZE.json)
+- [research/low_recurrence_confirmation_20261112/PUBLICATION.json](low_recurrence_confirmation_20261112/PUBLICATION.json)
+- [research/low_recurrence_confirmation_20261112/evaluate.py](low_recurrence_confirmation_20261112/evaluate.py)
+- [research/low_recurrence_confirmation_20261112/decide.py](low_recurrence_confirmation_20261112/decide.py)
+- [research/low_recurrence_confirmation_20261112/NEW_SPLITS.json](low_recurrence_confirmation_20261112/NEW_SPLITS.json)
+- [research/low_recurrence_confirmation_20261112/ADMISSION.json](low_recurrence_confirmation_20261112/ADMISSION.json)
+- [research/low_recurrence_confirmation_20261112/RESULT.json](low_recurrence_confirmation_20261112/RESULT.json)
+- [research/low_recurrence_confirmation_20261112/DECISION.json](low_recurrence_confirmation_20261112/DECISION.json)
+- [research/low_recurrence_confirmation_20261112/TERMINAL.json](low_recurrence_confirmation_20261112/TERMINAL.json)
+- [research/low_recurrence_confirmation_20261112/REPORT_KO.txt](low_recurrence_confirmation_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [low_recurrence_confirmation_20261112](low_recurrence_confirmation_20261112)
+
