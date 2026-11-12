@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "c54fb1460c8860b4acadd3e8dcf3803148c27af8c880414f04508c7a09b3a3f5",
-  "cards": 38,
-  "unique_source_documents": 2171,
-  "top_level_folders": 164,
-  "folders_linked_to_cards": 116,
+  "registry_sha256": "61bcd09e1bb3621e2145a15b2d2ac837dbb2a07e007d970545de2edb0f7ba0c3",
+  "cards": 39,
+  "unique_source_documents": 2179,
+  "top_level_folders": 165,
+  "folders_linked_to_cards": 117,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2178,7 +2178,15 @@
     "research/fuba_pair_admission_audit_20261112/RESULT.json": "a624bd36faa5ec98c6fa6e2585ce37464aa29ea5274429562f241e04701c79ea",
     "research/fuba_pair_admission_audit_20261112/TERMINAL.json": "b85397593de0fb1f5bb1f60a16a5d300eaa550b7bae3de68b36121fc135920dd",
     "research/fuba_pair_admission_audit_20261112/SEED_INITIALIZATION_CHECK.json": "db71097e2dd837a2892cdcea153a06d36f070bb98bc9ebd2e17dafe792915bb5",
-    "research/fuba_pair_admission_audit_20261112/REPORT_KO.txt": "1a17d0e4e1a446bd1450d66eada83ab460f3c413d1f83a825c306a552cac6458"
+    "research/fuba_pair_admission_audit_20261112/REPORT_KO.txt": "1a17d0e4e1a446bd1450d66eada83ab460f3c413d1f83a825c306a552cac6458",
+    "research/fuba_mnist_suppression_timeline_20261112/PROTOCOL.txt": "2dc592cdc6453e5b4e3b25c08dcbadad7f1b0de51a016472aa58022ef53b6bc2",
+    "research/fuba_mnist_suppression_timeline_20261112/PLAN.json": "a6f44acd799a28d28eb1378e362674eb46a7ed6f2a9a966c73a1471343d195f2",
+    "research/fuba_mnist_suppression_timeline_20261112/FREEZE.json": "aa2af034a4f9861c5db526cfa5357f514eaf70d1263e66481ce02daf35de52fe",
+    "research/fuba_mnist_suppression_timeline_20261112/PUBLICATION.json": "b1b1f2711ada45548c0ef2f0e7a70b64a1b4a4184dc32af5e8aeffad586d2465",
+    "research/fuba_mnist_suppression_timeline_20261112/audit.py": "fa317dfe15073669507a5549fd37ad383f12a655a24b88798c24ced5750da5b6",
+    "research/fuba_mnist_suppression_timeline_20261112/RESULT.json": "b059175b846de935f4cb22955d8da603511d34229c5f03c3259d62af9f8e03ef",
+    "research/fuba_mnist_suppression_timeline_20261112/TERMINAL.json": "d59c13370acfc699e23c7c47395896190cde23cb40125e9fc66096c64b3bd24f",
+    "research/fuba_mnist_suppression_timeline_20261112/REPORT_KO.txt": "68874d12b28f07885380faeb00da3ad1ab0213629643bae777c7e6b7f4b249fb"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -3497,6 +3505,18 @@
       "top_level_documents": [
         "research/fuba_execution_audit_20261025/PROTOCOL.txt",
         "research/fuba_execution_audit_20261025/SOURCE_AUDIT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_mnist_suppression_timeline_20261112",
+      "related_cards": [
+        "R05"
+      ],
+      "top_level_documents": [
+        "research/fuba_mnist_suppression_timeline_20261112/PROTOCOL.txt",
+        "research/fuba_mnist_suppression_timeline_20261112/REPORT_KO.txt",
+        "research/fuba_mnist_suppression_timeline_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

@@ -3047,3 +3047,34 @@
 
 **묶은 폴더:** [fuba_pair_admission_audit_20261112](fuba_pair_admission_audit_20261112)
 
+<a id="r05"></a>
+
+## R05 · FUBA MNIST의 마지막 억제 통과점과 실제 FU 단계
+
+**가설 한 줄: 두 고정 MNIST 시드의 마지막 통과 이후 ASR 상승은 정상 정확도 붕괴나 깨끗한 입력 전반의 목표 쏠림으로 설명되지 않는다.**
+
+**판정: 두 시드 모두 FL 중 억제 상실 / 차감·KD10 분리 / 적격 0**
+
+[실험 시작 이유와 실제 실행 과정 읽기](fuba_mnist_suppression_timeline_20261112/REPORT_KO.txt)
+
+- **조건:** R02/R04/D08/D15/T02. DISLAB 읽기 전용, 봉인된 MNIST/DBA 진단 두 시드와 100R×2, 고정 분모 10000/9026, 원 독립 pre/KD10 정수 결과 및 사건로그 해시. 신규 모델 로드/추론/학습0.
+- **정상 대조·비교:** 마지막 공동 통과 및 다음·99·100R의 같은 시험에서 CA·ASR·clean 목표 건수 대조. 실제 pre/기여 차감/KD10 분리. 사전 CA≥97%, pre ASR≤10%, KD10 후 ASR≥60% 유지.
+- **결과:** 20261023 47R 6.15→48R20.98→99R37.00→100R30.60%, 5129832 85R9.15→86R10.38→99R16.74→100R23.00%. 이후 53/53 및15/15 라운드 위반, clean CA 약99%. 20261023 차감68.37→KD10 32.35%, 5129832 차감 모델만·점수 미기록/KD10 29.02%. 두 실제 KD10 각470batch 확인, 적격0.
+- **non-IID에 대해 남길 교훈:** 시점과 조건부 실패 양상은 확인됐고 특정 업데이트의 인과는 미식별이다. D08/D15/T02의 큰 정상 반례를 해결하거나 새 탐지 성능을 평가한 결과는 아니다.
+- **반복하지 않을 주장:** 초기 통과점과 나중 차감 또는 KD 점수를 결합해 적격쌍을 만들거나 없는 차감 수치를 보간하지 않는다. 원 finite 작업 재실행0.
+- **재검토 조건:** 사전 조건과 카탈로그 허용 목적을 충족하는 실제 전후쌍 및 같은 FU의 큰 정상 non-IID 대조가 확보될 때만 공통 비교에 진입한다.
+- **출처 구분:** 사용자가 두 MNIST 시드의 마지막 억제 통과점과 100R, 기여 차감과 KD10을 DISLAB 저장 로그로 비교해 달라고 요청.
+
+**원문·증거:**
+
+- [research/fuba_mnist_suppression_timeline_20261112/PROTOCOL.txt](fuba_mnist_suppression_timeline_20261112/PROTOCOL.txt)
+- [research/fuba_mnist_suppression_timeline_20261112/PLAN.json](fuba_mnist_suppression_timeline_20261112/PLAN.json)
+- [research/fuba_mnist_suppression_timeline_20261112/FREEZE.json](fuba_mnist_suppression_timeline_20261112/FREEZE.json)
+- [research/fuba_mnist_suppression_timeline_20261112/PUBLICATION.json](fuba_mnist_suppression_timeline_20261112/PUBLICATION.json)
+- [research/fuba_mnist_suppression_timeline_20261112/audit.py](fuba_mnist_suppression_timeline_20261112/audit.py)
+- [research/fuba_mnist_suppression_timeline_20261112/RESULT.json](fuba_mnist_suppression_timeline_20261112/RESULT.json)
+- [research/fuba_mnist_suppression_timeline_20261112/TERMINAL.json](fuba_mnist_suppression_timeline_20261112/TERMINAL.json)
+- [research/fuba_mnist_suppression_timeline_20261112/REPORT_KO.txt](fuba_mnist_suppression_timeline_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [fuba_mnist_suppression_timeline_20261112](fuba_mnist_suppression_timeline_20261112)
+
