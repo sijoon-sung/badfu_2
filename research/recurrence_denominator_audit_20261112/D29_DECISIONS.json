@@ -1,0 +1,314 @@
+{
+  "sha256": "46311319f8939232f3c6173e502c5aa7b8f3954496e5e59798703847a04c241a",
+  "cutoffs": {
+    "recur": "1/13",
+    "native": "1/9",
+    "pca": "1/14"
+  },
+  "rows": [
+    {
+      "case": "c00",
+      "owner": "c00",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "29/123",
+        "native": "41/300",
+        "pca": "2/41",
+        "opportunity": "29/123",
+        "min_native": "66",
+        "min_opportunity": "64"
+      }
+    },
+    {
+      "case": "c00",
+      "owner": "c00",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "13/57",
+        "native": "19/150",
+        "pca": "5/114",
+        "opportunity": "26/111",
+        "min_native": "74",
+        "min_opportunity": "72"
+      }
+    },
+    {
+      "case": "c01",
+      "owner": "c01",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "19/101",
+        "native": "101/900",
+        "pca": "1/88",
+        "opportunity": "19/100",
+        "min_native": "88",
+        "min_opportunity": "88"
+      }
+    },
+    {
+      "case": "c01",
+      "owner": "c01",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "6/43",
+        "native": "23/180",
+        "pca": "1/86",
+        "opportunity": "1/7",
+        "min_native": "86",
+        "min_opportunity": "84"
+      }
+    },
+    {
+      "case": "c02",
+      "owner": "c02",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "29/103",
+        "native": "103/900",
+        "pca": "1/103",
+        "opportunity": "24/85",
+        "min_native": "86",
+        "min_opportunity": "85"
+      }
+    },
+    {
+      "case": "c02",
+      "owner": "c02",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": false,
+        "native": false,
+        "pca": false
+      },
+      "scores": {
+        "recur": "7/22",
+        "native": "49/450",
+        "pca": "3/88",
+        "opportunity": "9/28",
+        "min_native": "88",
+        "min_opportunity": "84"
+      }
+    },
+    {
+      "case": "c03",
+      "owner": "c03",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": false,
+        "native": false,
+        "pca": false
+      },
+      "scores": {
+        "recur": "1/10",
+        "native": "91/900",
+        "pca": "0",
+        "opportunity": "3/29",
+        "min_native": "90",
+        "min_opportunity": "87"
+      }
+    },
+    {
+      "case": "c03",
+      "owner": "c03",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": false,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "13/86",
+        "native": "26/225",
+        "pca": "3/104",
+        "opportunity": "13/85",
+        "min_native": "86",
+        "min_opportunity": "85"
+      }
+    },
+    {
+      "case": "c03",
+      "owner": "c05",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": false,
+        "native": false,
+        "pca": false
+      },
+      "scores": {
+        "recur": "3/13",
+        "native": "13/150",
+        "pca": "2/39",
+        "opportunity": "17/75",
+        "min_native": "25",
+        "min_opportunity": "25"
+      }
+    },
+    {
+      "case": "c03",
+      "owner": "c05",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": false,
+        "native": false,
+        "pca": true
+      },
+      "scores": {
+        "recur": "4/25",
+        "native": "1/12",
+        "pca": "2/25",
+        "opportunity": "4/25",
+        "min_native": "25",
+        "min_opportunity": "25"
+      }
+    },
+    {
+      "case": "c04",
+      "owner": "c04",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "12/355",
+        "native": "71/180",
+        "pca": "6/149",
+        "opportunity": "1/29",
+        "min_native": "298",
+        "min_opportunity": "293"
+      }
+    },
+    {
+      "case": "c04",
+      "owner": "c04",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "11/269",
+        "native": "337/900",
+        "pca": "15/269",
+        "opportunity": "11/262",
+        "min_native": "269",
+        "min_opportunity": "262"
+      }
+    },
+    {
+      "case": "c05",
+      "owner": "c03",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "17/295",
+        "native": "59/180",
+        "pca": "10/261",
+        "opportunity": "4/71",
+        "min_native": "261",
+        "min_opportunity": "255"
+      }
+    },
+    {
+      "case": "c05",
+      "owner": "c03",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "15/313",
+        "native": "313/900",
+        "pca": "11/313",
+        "opportunity": "15/304",
+        "min_native": "274",
+        "min_opportunity": "266"
+      }
+    },
+    {
+      "case": "c05",
+      "owner": "c05",
+      "round": 40,
+      "split": "E",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "29/415",
+        "native": "553/900",
+        "pca": "9/553",
+        "opportunity": "7/102",
+        "min_native": "415",
+        "min_opportunity": "408"
+      }
+    },
+    {
+      "case": "c05",
+      "owner": "c05",
+      "round": 40,
+      "split": "F",
+      "alert": {
+        "recur": true,
+        "native": true,
+        "pca": false
+      },
+      "scores": {
+        "recur": "1/29",
+        "native": "3/5",
+        "pca": "4/203",
+        "opportunity": "13/396",
+        "min_native": "406",
+        "min_opportunity": "396"
+      }
+    }
+  ]
+}
