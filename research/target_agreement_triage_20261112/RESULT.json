@@ -1,0 +1,203 @@
+{
+  "state": "classified_stored_requests",
+  "thresholds": {
+    "baseline": "1/66",
+    "route": "3/80"
+  },
+  "decisions": {
+    "c00": {
+      "targets": [
+        9,
+        7
+      ],
+      "target_agrees": false,
+      "evidence": {
+        "baseline": {
+          "A": {
+            "joint": 5,
+            "eligible": 95,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 4,
+            "eligible": 105,
+            "exceeds": true
+          }
+        },
+        "route": {
+          "A": {
+            "joint": 1,
+            "eligible": 57,
+            "exceeds": false
+          },
+          "B": {
+            "joint": 4,
+            "eligible": 56,
+            "exceeds": true
+          }
+        }
+      },
+      "decision": {
+        "single_confirmed": "alert",
+        "both_confirmed": "abstain",
+        "joint": "abstain"
+      }
+    },
+    "c01": {
+      "targets": [
+        9,
+        4
+      ],
+      "target_agrees": false,
+      "evidence": {
+        "baseline": {
+          "A": {
+            "joint": 0,
+            "eligible": 101,
+            "exceeds": false
+          },
+          "B": {
+            "joint": 4,
+            "eligible": 100,
+            "exceeds": true
+          }
+        },
+        "route": {
+          "A": {
+            "joint": 10,
+            "eligible": 76,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 8,
+            "eligible": 78,
+            "exceeds": true
+          }
+        }
+      },
+      "decision": {
+        "single_confirmed": "alert",
+        "both_confirmed": "abstain",
+        "joint": "abstain"
+      }
+    },
+    "c04": {
+      "targets": [
+        0,
+        0
+      ],
+      "target_agrees": true,
+      "evidence": {
+        "baseline": {
+          "A": {
+            "joint": 13,
+            "eligible": 254,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 15,
+            "eligible": 223,
+            "exceeds": true
+          }
+        },
+        "route": {
+          "A": {
+            "joint": 12,
+            "eligible": 304,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 7,
+            "eligible": 307,
+            "exceeds": false
+          }
+        }
+      },
+      "decision": {
+        "single_confirmed": "alert",
+        "both_confirmed": "abstain",
+        "joint": "abstain"
+      }
+    },
+    "c05": {
+      "targets": [
+        0,
+        0
+      ],
+      "target_agrees": true,
+      "evidence": {
+        "baseline": {
+          "A": {
+            "joint": 28,
+            "eligible": 352,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 40,
+            "eligible": 353,
+            "exceeds": true
+          }
+        },
+        "route": {
+          "A": {
+            "joint": 140,
+            "eligible": 477,
+            "exceeds": true
+          },
+          "B": {
+            "joint": 133,
+            "eligible": 439,
+            "exceeds": true
+          }
+        }
+      },
+      "decision": {
+        "single_confirmed": "alert",
+        "both_confirmed": "alert",
+        "joint": "alert"
+      }
+    }
+  },
+  "evaluation": {
+    "single_confirmed": {
+      "large_normal": {
+        "alert": 2,
+        "pass": 0,
+        "abstain": 0
+      },
+      "attack": {
+        "alert": 2,
+        "pass": 0,
+        "abstain": 0
+      }
+    },
+    "both_confirmed": {
+      "large_normal": {
+        "alert": 0,
+        "pass": 0,
+        "abstain": 2
+      },
+      "attack": {
+        "alert": 1,
+        "pass": 0,
+        "abstain": 1
+      }
+    },
+    "joint": {
+      "large_normal": {
+        "alert": 0,
+        "pass": 0,
+        "abstain": 2
+      },
+      "attack": {
+        "alert": 1,
+        "pass": 0,
+        "abstain": 1
+      }
+    }
+  },
+  "predeclared_acceptance_passed": false,
+  "model_loads": 0,
+  "new_inferences": 0,
+  "new_training": 0
+}

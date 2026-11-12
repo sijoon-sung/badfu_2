@@ -3078,3 +3078,34 @@
 
 **묶은 폴더:** [fuba_mnist_suppression_timeline_20261112](fuba_mnist_suppression_timeline_20261112)
 
+<a id="d26"></a>
+
+## D26 · 두 탐색과 두 묶음의 후보 목표 확인으로 요청 단위 판정
+
+**가설 한 줄: 같은 후보 목표에 대해 두 탐색과 두 이미지 묶음에서 재현을 요구하면 공격 경보를 유지하며 큰 정상의 오경보를 줄인다.**
+
+**판정: 사전 채택조건 실패 / 큰 정상 2건 모두 보류·공격 1/2 경보**
+
+[실험 시작 이유와 실제 실행 과정 읽기](target_agreement_triage_20261112/REPORT_KO.txt)
+
+- **조건:** R04/R05/D02/D06/D08/D15/D20/D23/D24/D25/T02/T04. D20/D25의 봉인된 후보와 집계, DISLAB CPU 일회 실행. 요청 단위 경보·통과·판정보류. 정상 c02/c03 원본 묶음 보정, A/B 시험, 새 학습/추론/탐침0.
+- **정상 대조·비교:** 큰 정상 c00/c01 보정에서 제외. 동일 기준에서 한쪽 A/B 재현, 두 절차 A/B 재현, 두 절차 A/B 재현과 목표 일치. 양성 두 시드. 실제 트리거·목표·역할은 판정 입력0.
+- **결과:** 한쪽 재현 정상2/2·공격2/2 경보. 동시 재현과 목표 일치 정상0/2 경보·통과0/2·보류2/2, 공격1/2 경보·보류1/2. 목표 일치 추가 시 판정 변화0. 정상 통과≥1 및 공격 경보2/2 미달. DISLAB exit0/원바이트 해시 일치.
+- **non-IID에 대해 남길 교훈:** 판정보류로 옮긴 정상 경보는 정상 구별 성과가 아니다. D08/D15/T02의 정상 반례와 D25의 교환관계는 남는다. 이전 분석 묶음의 회고 비교이며 적격 FUBA 0.
+- **반복하지 않을 주장:** 평가 묶음에 맞춰 조합·경보선을 바꾸거나 목표 일치만을 기준으로 재선정하지 않는다. 새 독립 삭제 요청 성능 또는 공통 공격 판정으로 확대하지 않는다.
+- **재검토 조건:** 공격 경보를 보존하면서 정상 판정보류를 낮출 추가 관측과 수집 가정이 확보돼야 별도 보류 검증에 진입한다.
+- **출처 구분:** 사용자가 전환율 간격 이상의 실질 판별을 요청. DISLAB에서 사전 고정한 요청 단위 판정과 대조를 동일 집계에 적용.
+
+**원문·증거:**
+
+- [research/target_agreement_triage_20261112/PROTOCOL.txt](target_agreement_triage_20261112/PROTOCOL.txt)
+- [research/target_agreement_triage_20261112/PLAN.json](target_agreement_triage_20261112/PLAN.json)
+- [research/target_agreement_triage_20261112/FREEZE.json](target_agreement_triage_20261112/FREEZE.json)
+- [research/target_agreement_triage_20261112/PUBLICATION.json](target_agreement_triage_20261112/PUBLICATION.json)
+- [research/target_agreement_triage_20261112/triage.py](target_agreement_triage_20261112/triage.py)
+- [research/target_agreement_triage_20261112/RESULT.json](target_agreement_triage_20261112/RESULT.json)
+- [research/target_agreement_triage_20261112/TERMINAL.json](target_agreement_triage_20261112/TERMINAL.json)
+- [research/target_agreement_triage_20261112/REPORT_KO.txt](target_agreement_triage_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [target_agreement_triage_20261112](target_agreement_triage_20261112)
+
