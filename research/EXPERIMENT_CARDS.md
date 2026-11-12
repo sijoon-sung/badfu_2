@@ -3012,3 +3012,38 @@
 
 **묶은 폴더:** [cross_view_transition_20261112](cross_view_transition_20261112)
 
+<a id="r04"></a>
+
+## R04 · stcebra/FUBA 시드·라운드와 공통 탐지 적격성
+
+**가설 한 줄: 보존된 완료 FUBA 전후쌍 중 적어도 하나가 원 사전 성능 기준과 카탈로그 용도를 함께 만족한다.**
+
+**판정: 저장 무결성 통과 / 완료 5쌍 중 공통 검증 적격 0**
+
+[실험 시작 이유와 실제 실행 과정 읽기](fuba_pair_admission_audit_20261112/REPORT_KO.txt)
+
+- **조건:** R01/R02/D08/D15/D19/D20/D24/D25/T02/T03. DISLAB 읽기전용. CIFAR-10 IBA v5/v6/v7과 MNIST DBA 두 시드의 완료 KD10. 원 CA/ASR 정수 산술과 독립 영수증, 10개 끝점 파일 SHA/길이, 저장 profile·분할 seed, 4개 프로필×100 FL 평가 메타데이터 hash 검증. 모델 load/새추론/훈련0.
+- **정상 대조·비교:** MNIST 두 독립 학습·분할 seed 및 초기 모델의 봉인 SHA 비교. 원 CA CIFAR80/MNIST97, pre ASR≤10/post ASR≥60 고정. BadFU D24 기존 두 시드 10/20/30/40R A/B 큰 정상 대비 재집계. 실제 트리거 자료는 기존 적격성 영수증에만 사용.
+- **결과:** 완료5쌍 모두 게이트 및 카탈로그 적격 미달. MNIST 20261023/5129832의 pre→KD10 ASR30.60→32.35/23.00→29.02%, 두 초기상태 다름. 두 MNIST 공동 pre 기준은 각32/100이지만 100R 둘 다 실패, CIFAR v6/v7은 각0/100. D24 10R B 최저공격=최고정상 6건. 원 실행 경로 형식 오류 보존 및 새 read-only exit0.
+- **non-IID에 대해 남길 교훈:** R02 저장 무결성과 재현 성능을 구분한다. D08/D15와 D24/D25의 큰 정상 반례가 남고, 성능 미달 FUBA 진단과 별개 FedUBA를 성공 양성으로 대체할 수 없다. UBA-Inf 전후 스캔, MASA·CSO·FeatureRE 및 active FU 방향 검사와 유사성을 원문으로 확인했다.
+- **반복하지 않을 주장:** 완료/중단 trainer·evaluator·queue를 자동 재실행하지 않는다. 같은 시드의 프로필과 라운드를 독립 시드로 계산하거나 초기 저 ASR·다른 단계의 높은 ASR을 실제 전후쌍으로 결합하지 않는다.
+- **재검토 조건:** 동일 조건의 적격 FUBA와 같은 FU의 큰 정상 삭제·독립 시드가 확보된 경우에만 공통 행동 판별을 별도 사전 고정 검증한다.
+- **출처 구분:** 사용자가 stcebra/FUBA 재현 적격성·저장 시드 및 유사 선행을 먼저 확인해 달라고 요청. 사전 고정 및 PR 원바이트 검사 후 DISLAB에서 수행.
+
+**원문·증거:**
+
+- [research/fuba_pair_admission_audit_20261112/PROTOCOL.txt](fuba_pair_admission_audit_20261112/PROTOCOL.txt)
+- [research/fuba_pair_admission_audit_20261112/PLAN.json](fuba_pair_admission_audit_20261112/PLAN.json)
+- [research/fuba_pair_admission_audit_20261112/FREEZE.json](fuba_pair_admission_audit_20261112/FREEZE.json)
+- [research/fuba_pair_admission_audit_20261112/PUBLICATION.json](fuba_pair_admission_audit_20261112/PUBLICATION.json)
+- [research/fuba_pair_admission_audit_20261112/audit.py](fuba_pair_admission_audit_20261112/audit.py)
+- [research/fuba_pair_admission_audit_20261112/FIRST_AUDIT_FAILURE.txt](fuba_pair_admission_audit_20261112/FIRST_AUDIT_FAILURE.txt)
+- [research/fuba_pair_admission_audit_20261112/FIRST_FREEZE.json](fuba_pair_admission_audit_20261112/FIRST_FREEZE.json)
+- [research/fuba_pair_admission_audit_20261112/FIRST_PUBLICATION.json](fuba_pair_admission_audit_20261112/FIRST_PUBLICATION.json)
+- [research/fuba_pair_admission_audit_20261112/RESULT.json](fuba_pair_admission_audit_20261112/RESULT.json)
+- [research/fuba_pair_admission_audit_20261112/TERMINAL.json](fuba_pair_admission_audit_20261112/TERMINAL.json)
+- [research/fuba_pair_admission_audit_20261112/SEED_INITIALIZATION_CHECK.json](fuba_pair_admission_audit_20261112/SEED_INITIALIZATION_CHECK.json)
+- [research/fuba_pair_admission_audit_20261112/REPORT_KO.txt](fuba_pair_admission_audit_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [fuba_pair_admission_audit_20261112](fuba_pair_admission_audit_20261112)
+
