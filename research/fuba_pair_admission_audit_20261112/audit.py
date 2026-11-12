@@ -14,7 +14,7 @@ def digest(path):
 
 
 def read(path):
-    return json.loads(path.read_bytes())
+    return json.loads(Path(path).read_bytes())
 
 
 def counts(row, n):

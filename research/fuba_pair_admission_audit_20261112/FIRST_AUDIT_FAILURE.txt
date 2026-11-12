@@ -1,0 +1,6 @@
+DISLAB 첫 일회성 메타데이터 감사 종료 코드 1.
+동결 source/plan 및 모든 고정 참조 파일의 해시 검사 직후, 카탈로그 경로 문자열을 read()에 전달했다.
+Traceback audit.py line 118 main → line 17 read. AttributeError: 'str' object has no attribute 'read_bytes'.
+모델 로드, 모델 파일 검사, 라운드 판정, RESULT.json 작성 전이었다.
+원 실행 및 파일은 D:/FUBA_PAIR_ADMISSION_AUDIT_20261112에 남긴다.
+복구는 read()의 Path 변환 한 줄과 별도 출력 디렉터리만 바꾼다.
