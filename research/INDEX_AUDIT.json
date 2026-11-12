@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "5b335aa3bd35f6ec7050822a657d9bd7a94fb67b5311aeb55f830eb83645f4b2",
-  "cards": 40,
-  "unique_source_documents": 2187,
-  "top_level_folders": 166,
-  "folders_linked_to_cards": 118,
+  "registry_sha256": "2668848b49532f8d0bc8540c090c5eaea9b2c05ca73045a48b41e27df52915da",
+  "cards": 41,
+  "unique_source_documents": 2203,
+  "top_level_folders": 167,
+  "folders_linked_to_cards": 119,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2194,7 +2194,23 @@
     "research/target_agreement_triage_20261112/triage.py": "950fcaea5630b3671a0547c37927fcf0ddcd5557121a2b0c8302a44ef316d76c",
     "research/target_agreement_triage_20261112/RESULT.json": "1ce5f0c4b4c66ab4b144cd7c4a9f302ca29628da4eaa38a2852b3ea50cd4f59c",
     "research/target_agreement_triage_20261112/TERMINAL.json": "4978ed1d8ddf7af5c5a8e642f0d76f27426c7e07c9aaa5d42164cf749625d37f",
-    "research/target_agreement_triage_20261112/REPORT_KO.txt": "c1ae45276a5fecaab546a0f869eccd6e1fa0c3ce20d2bbb2fd210b3a9cf946f6"
+    "research/target_agreement_triage_20261112/REPORT_KO.txt": "c1ae45276a5fecaab546a0f869eccd6e1fa0c3ce20d2bbb2fd210b3a9cf946f6",
+    "research/pca_support_expansion_20261112/PROTOCOL.txt": "be6b795282cd6d6863383ab0c7b3886c882e04f7b40bfff53e77a26f4b0f2d09",
+    "research/pca_support_expansion_20261112/FREEZE.json": "b7a9e09d2234d494aff8434e1ff4c92e41f855456e7651daf6e00d39e6e44f71",
+    "research/pca_support_expansion_20261112/PUBLICATION.json": "a0109132ae3a75236dc46db5aa60c0598a8b1bdaf6c2273fcf04f3e7c294d6a5",
+    "research/pca_support_expansion_20261112/FIRST_FAILURE.json": "82ce38aa2c8e559b885ae22f4465e29d762093082decf954b7d176b3cfeffa39",
+    "research/pca_support_expansion_20261112/FIRST_PROCESS.json": "858c450c01b00e679d20327d5ea0b46765fec8029b0f0dc623beac467b4eb9f3",
+    "research/pca_support_expansion_20261112/evaluate.py": "92a69ad293a25d1380034b4d314abf9072963c584a79b374f338f1be02157840",
+    "research/pca_support_expansion_20261112/decide.py": "03f32ffe9954f2dcdc16124da49cef0950446dfc207b7aafb2b1973507be779d",
+    "research/pca_support_expansion_20261112/NEW_SPLITS.json": "281214ac391307abe3a1436d23e1732f26a90f4878165eaa71f057fb94a662da",
+    "research/pca_support_expansion_20261112/RESULT.json": "1c6043bb2af743ee8013ba7726e78f0c8daffd6870d27dc0741275479d84b587",
+    "research/pca_support_expansion_20261112/DECISION.json": "0a5e08e67dddb3ee3d52fcbdc477120918ff0ed87aba7b82b8dc084b7c4277f7",
+    "research/pca_support_expansion_20261112/TERMINAL.json": "bd480d4ecb4ed8794778720c1568504be57ff4bc7fc76973c6dff784ed09fb8c",
+    "research/pca_support_expansion_20261112/REPORT_KO.txt": "17bd759aacd95dc2dac4c7579567cc914077dbbf843f9c5a9a85b0870afbd5b6",
+    "research/pca_support_expansion_20261112/recovery/RECOVERY.txt": "e150e707f31453847dcb33719acf17ab1f4b714ed1de46082a334591cc284876",
+    "research/pca_support_expansion_20261112/recovery/FREEZE.json": "8ede559f82ce9cfbe8879e85af09d8c92a7c84eb464b419666644f944d2f8844",
+    "research/pca_support_expansion_20261112/recovery/PUBLICATION.json": "b7ff5f3f7604ae7c7d30520fe0bc1ee91645d3fa2007ad62b3a56e7922789b70",
+    "research/pca_support_expansion_20261112/recovery/evaluate.py": "258a3bf48c8474b131650a530857507b8d2f782e728ddbd5e38b3fdd8cee14f9"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -3845,6 +3861,19 @@
         "research/paired_probe_validation_20261023/REPORT_KO.txt",
         "research/paired_probe_validation_20261023/RESULT_SCALARS.json",
         "research/paired_probe_validation_20261023/SUMMARY.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/pca_support_expansion_20261112",
+      "related_cards": [
+        "D27"
+      ],
+      "top_level_documents": [
+        "research/pca_support_expansion_20261112/DECISION.json",
+        "research/pca_support_expansion_20261112/PROTOCOL.txt",
+        "research/pca_support_expansion_20261112/REPORT_KO.txt",
+        "research/pca_support_expansion_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

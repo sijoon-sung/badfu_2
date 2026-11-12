@@ -3109,3 +3109,42 @@
 
 **묶은 폴더:** [target_agreement_triage_20261112](target_agreement_triage_20261112)
 
+<a id="d27"></a>
+
+## D27 · 정상 참조 확장 전후 FC PCA 복귀의 같은 이미지 교집합
+
+**가설 한 줄: 정상 참조를 320장에서 640장으로 확장해 다시 적합한 PCA에서도 같은 이미지의 정답 복귀가 남으면 큰 정상 삭제의 오경보를 줄이며 BadFU 두 시드의 검출을 유지한다.**
+
+**판정: C/D 보류 이미지 통과 / A/B 공격 누락으로 사전 조건 미달**
+
+[실험 시작 이유와 실제 실행 과정 읽기](pca_support_expansion_20261112/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D18/D20/D23/D24/D26/T02/T03. BadFU 말단6쌍 및 승인 이력5개10/20/30/40R, D24 A/B와 비중복 C/D. PCA95% 및 >5(/900) 고정, 실제 트리거/목표/역할 미사용.
+- **정상 대조·비교:** 정상 큰 삭제19.336%·22.790% 및 정상850 두 조건, 공격 두 시드. 320·640 단독, 동일 이미지 교집합, 같은 층·차원·제거량을 맞춘 무작위 교집합3회.
+- **결과:** DISLAB exit0, 21모델 비교/180행, 기존 D24 96행 정확 재현, 새 학습/탐침 최적화0. 말단 정상 경보 3/16→0/16, 공격 8/8→5/8. 새 C/D 공격 4/4·정상0/8, A/B 공격1/4·정상0/8. PCA640 단독과 말단 판정 동일. 10R B 6/6→3/4로 둘 다 경보 미달.
+- **non-IID에 대해 남길 교훈:** 정상 자료 보강으로 고정 패널의 오경보는 줄었지만 공격 신호도 감소했다. PCA rank가 163–166에서 217–221로 바뀌어 범위와 차원 효과는 분리하지 않았다. D08/T02와 FUBA 적격성 한계는 그대로다.
+- **반복하지 않을 주장:** A/B/C/D에서 경보선·분산·탐침을 재선택하거나 완료 유한 추론을 반복하지 않는다. 보류 이미지를 독립 FL 시드·삭제 요청으로 세지 않는다.
+- **재검토 조건:** 추가 독립 정상 삭제와 양성 시드에서 정상 오경보 감소 및 양성 경보 보존을 함께 확인할 사전 고정 관측이 필요하다.
+- **출처 구분:** 사용자 요청으로 FC PCA를 우선해 정상 참조 확대의 행동 판별을 DISLAB에서 검증.
+
+**원문·증거:**
+
+- [research/pca_support_expansion_20261112/PROTOCOL.txt](pca_support_expansion_20261112/PROTOCOL.txt)
+- [research/pca_support_expansion_20261112/FREEZE.json](pca_support_expansion_20261112/FREEZE.json)
+- [research/pca_support_expansion_20261112/PUBLICATION.json](pca_support_expansion_20261112/PUBLICATION.json)
+- [research/pca_support_expansion_20261112/FIRST_FAILURE.json](pca_support_expansion_20261112/FIRST_FAILURE.json)
+- [research/pca_support_expansion_20261112/FIRST_PROCESS.json](pca_support_expansion_20261112/FIRST_PROCESS.json)
+- [research/pca_support_expansion_20261112/evaluate.py](pca_support_expansion_20261112/evaluate.py)
+- [research/pca_support_expansion_20261112/decide.py](pca_support_expansion_20261112/decide.py)
+- [research/pca_support_expansion_20261112/NEW_SPLITS.json](pca_support_expansion_20261112/NEW_SPLITS.json)
+- [research/pca_support_expansion_20261112/RESULT.json](pca_support_expansion_20261112/RESULT.json)
+- [research/pca_support_expansion_20261112/DECISION.json](pca_support_expansion_20261112/DECISION.json)
+- [research/pca_support_expansion_20261112/TERMINAL.json](pca_support_expansion_20261112/TERMINAL.json)
+- [research/pca_support_expansion_20261112/REPORT_KO.txt](pca_support_expansion_20261112/REPORT_KO.txt)
+- [research/pca_support_expansion_20261112/recovery/RECOVERY.txt](pca_support_expansion_20261112/recovery/RECOVERY.txt)
+- [research/pca_support_expansion_20261112/recovery/FREEZE.json](pca_support_expansion_20261112/recovery/FREEZE.json)
+- [research/pca_support_expansion_20261112/recovery/PUBLICATION.json](pca_support_expansion_20261112/recovery/PUBLICATION.json)
+- [research/pca_support_expansion_20261112/recovery/evaluate.py](pca_support_expansion_20261112/recovery/evaluate.py)
+
+**묶은 폴더:** [pca_support_expansion_20261112](pca_support_expansion_20261112)
+
