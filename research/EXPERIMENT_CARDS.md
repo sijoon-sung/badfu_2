@@ -3188,7 +3188,7 @@
 
 **가설 한 줄: 삭제 후 목표로 전환된 이미지 중 같은 과거 오분류의 재등장 비율이 낮으면 새 이미지에서 큰 정상 삭제와 BadFU를 고정 규칙으로 구별한다.**
 
-**판정: BadFU 두 시드 말단·새 E/F 고정 판정 통과 / 다른 계열 및 독립 요청 미검증**
+**판정: BadFU 두 시드 말단·새 E/F 고정 판정 통과 / D30 이력 추가 가치 미확보**
 
 [실험 시작 이유와 실제 실행 과정 읽기](low_recurrence_confirmation_20261112/REPORT_KO.txt)
 
@@ -3217,4 +3217,35 @@
 - [research/low_recurrence_confirmation_20261112/REPORT_KO.txt](low_recurrence_confirmation_20261112/REPORT_KO.txt)
 
 **묶은 폴더:** [low_recurrence_confirmation_20261112](low_recurrence_confirmation_20261112)
+
+<a id="d30"></a>
+
+## D30 · D29 과거 재등장 비율의 분모 감사
+
+**가설 한 줄: D29 E/F 말단의 판정을 과거 반복 오류 건수를 고정 정상 참조 건수로 대체해도 재현할 수 있다.**
+
+**판정: 분모만으로 말단 판정 재현 / 이력의 독립 추가 가치 미확보**
+
+[실험 시작 이유와 실제 실행 과정 읽기](recurrence_denominator_audit_20261112/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D20/D27/D28/D29/T02. D28/D29 봉인 집계, DISLAB CPU 일회, 정상 D28 20개 탐침 R 하위 중앙값13, D29 경보선1/13 유지, 새 모델 로드·학습·추론0.
+- **정상 대조·비교:** E/F 말단의 자체 탐침12평가·공유 탐침4평가. 실제 R/W와 정상 참조 13/W를 대조하고 절대 R 및 W의 범위를 별도 확인.
+- **결과:** 16/16 판정 동일, DISLAB exit0/owned0/해시 일치. W 정상66–123·공격269–553, R 큰 정상·공격 모두9–29. 같은 pre/같은 baseline 탐침 정상18/78·공격29/415. 고정 대조는 두 탐침 W>169와 동일.
+- **non-IID에 대해 남길 교훈:** D29의 고정 말단 성능은 보존되나 이 패널에서는 전체 전환 건수만으로 같은 결정을 얻었다. 전환 규모가 겹치는 승인 요청에서의 조건부 추가 가치는 미검증.
+- **반복하지 않을 주장:** 고정 대조의 169를 운영 기준으로 채택하거나 같은 E/F에 사후 기준을 맞추지 않는다. 기존 원문·실패를 그대로 보존한다.
+- **재검토 조건:** 비슷한 전환 규모의 큰 정상 삭제와 공격을 사전 고정하여 별도 조건에서 이력의 추가 가치 검증.
+- **출처 구분:** 사용자 지적으로 D29 해석에서 분자와 분모의 기여를 분리 감사.
+
+**원문·증거:**
+
+- [research/recurrence_denominator_audit_20261112/PROTOCOL.txt](recurrence_denominator_audit_20261112/PROTOCOL.txt)
+- [research/recurrence_denominator_audit_20261112/D29_DECISIONS.json](recurrence_denominator_audit_20261112/D29_DECISIONS.json)
+- [research/recurrence_denominator_audit_20261112/FREEZE.json](recurrence_denominator_audit_20261112/FREEZE.json)
+- [research/recurrence_denominator_audit_20261112/PUBLICATION.json](recurrence_denominator_audit_20261112/PUBLICATION.json)
+- [research/recurrence_denominator_audit_20261112/audit.py](recurrence_denominator_audit_20261112/audit.py)
+- [research/recurrence_denominator_audit_20261112/RESULT.json](recurrence_denominator_audit_20261112/RESULT.json)
+- [research/recurrence_denominator_audit_20261112/TERMINAL.json](recurrence_denominator_audit_20261112/TERMINAL.json)
+- [research/recurrence_denominator_audit_20261112/REPORT_KO.txt](recurrence_denominator_audit_20261112/REPORT_KO.txt)
+
+**묶은 폴더:** [recurrence_denominator_audit_20261112](recurrence_denominator_audit_20261112)
 

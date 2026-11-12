@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "9254c855da510999c47a64e80ce1fc99c1aa6d993f5f06300ef3edf09724f128",
-  "cards": 43,
-  "unique_source_documents": 2227,
-  "top_level_folders": 169,
-  "folders_linked_to_cards": 121,
+  "registry_sha256": "71dd3d50d52ee44fccb7f0ee6ba37b19c8d4982b981725053d6790cba2d9d386",
+  "cards": 44,
+  "unique_source_documents": 2235,
+  "top_level_folders": 170,
+  "folders_linked_to_cards": 122,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2234,7 +2234,15 @@
     "research/low_recurrence_confirmation_20261112/RESULT.json": "017a000309fc8ce31b96ec0779854215b88756435ee78c66529b277279fe2114",
     "research/low_recurrence_confirmation_20261112/DECISION.json": "46311319f8939232f3c6173e502c5aa7b8f3954496e5e59798703847a04c241a",
     "research/low_recurrence_confirmation_20261112/TERMINAL.json": "a0d7c4fd58f8f3e13eb689a5dfb6fc22d7b5cb45f665dc8647b1b3d928908181",
-    "research/low_recurrence_confirmation_20261112/REPORT_KO.txt": "f81519cdb2cd8b6458f616425bff9ca078bfee188b361ffeef3a5edb7beed5e5"
+    "research/low_recurrence_confirmation_20261112/REPORT_KO.txt": "f81519cdb2cd8b6458f616425bff9ca078bfee188b361ffeef3a5edb7beed5e5",
+    "research/recurrence_denominator_audit_20261112/PROTOCOL.txt": "f9f6c5d94646e326cc94eac0197ae16c8895ad76ea9edc797a0c3c1da6910bbe",
+    "research/recurrence_denominator_audit_20261112/D29_DECISIONS.json": "3037f679b7ea076ad577dfdf2b451bdfd1dc2e65a59fcd43d77728c3f1de8c83",
+    "research/recurrence_denominator_audit_20261112/FREEZE.json": "584704f0ac14769b31a8ca2ab2e44b699b6de1b55339196978198b91cbb8e60d",
+    "research/recurrence_denominator_audit_20261112/PUBLICATION.json": "0c1008e8b1d8faac9df5c40300e122f101629939c808f82b1be75ada691efad9",
+    "research/recurrence_denominator_audit_20261112/audit.py": "5f83a41b56af6e765c2f419d0200f545d93db63790a184748fce783341f1e282",
+    "research/recurrence_denominator_audit_20261112/RESULT.json": "78f0b5527b499ca97587916956a15afc92403f114bb8ac9af609b7e32573aa6b",
+    "research/recurrence_denominator_audit_20261112/TERMINAL.json": "9e49a4e7453eecbe87d4e5d875a3ac7983fb20d8e2de15d7f975bdbeb68c6306",
+    "research/recurrence_denominator_audit_20261112/REPORT_KO.txt": "3a4de668ab4c91939fd70feca34a31cf6d1011886031fe0234b91e731340e5c1"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -3938,6 +3946,19 @@
         "research/rapid_checkpoint_validation_20261023/REMOTE_EARLY_GATE_PROTOCOL.json",
         "research/rapid_checkpoint_validation_20261023/REMOTE_FUBA_RUNTIME_AUDIT.json",
         "research/rapid_checkpoint_validation_20261023/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/recurrence_denominator_audit_20261112",
+      "related_cards": [
+        "D30"
+      ],
+      "top_level_documents": [
+        "research/recurrence_denominator_audit_20261112/D29_DECISIONS.json",
+        "research/recurrence_denominator_audit_20261112/PROTOCOL.txt",
+        "research/recurrence_denominator_audit_20261112/REPORT_KO.txt",
+        "research/recurrence_denominator_audit_20261112/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

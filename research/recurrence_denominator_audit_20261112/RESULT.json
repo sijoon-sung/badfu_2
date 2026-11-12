@@ -1,0 +1,422 @@
+{
+  "calibration": [
+    4,
+    7,
+    7,
+    9,
+    9,
+    10,
+    11,
+    11,
+    12,
+    13,
+    13,
+    17,
+    20,
+    25,
+    26,
+    26,
+    27,
+    27,
+    33,
+    35
+  ],
+  "median_low": 13,
+  "implied_min_w_strict": 169,
+  "all_endpoint_decisions_reproduced": true,
+  "fixed_numerator_changes": 0,
+  "ranges": {
+    "normal": {
+      "w": [
+        66,
+        123
+      ],
+      "r": [
+        4,
+        29
+      ],
+      "max_w": [
+        91,
+        123
+      ],
+      "min_w": [
+        66,
+        90
+      ]
+    },
+    "attack": {
+      "w": [
+        269,
+        553
+      ],
+      "r": [
+        9,
+        29
+      ],
+      "max_w": [
+        337,
+        553
+      ],
+      "min_w": [
+        269,
+        415
+      ]
+    },
+    "large_normal": {
+      "w": [
+        66,
+        123
+      ],
+      "r": [
+        9,
+        29
+      ],
+      "max_w": [
+        101,
+        123
+      ],
+      "min_w": [
+        66,
+        88
+      ]
+    }
+  },
+  "endpoints": [
+    {
+      "case": "c00",
+      "probe_owner": "c00",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 123,
+          "r": 29
+        },
+        {
+          "arm": "route",
+          "w": 66,
+          "r": 9
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 66,
+      "max_w": 123
+    },
+    {
+      "case": "c00",
+      "probe_owner": "c00",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 114,
+          "r": 26
+        },
+        {
+          "arm": "route",
+          "w": 74,
+          "r": 16
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 74,
+      "max_w": 114
+    },
+    {
+      "case": "c01",
+      "probe_owner": "c01",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 101,
+          "r": 19
+        },
+        {
+          "arm": "route",
+          "w": 88,
+          "r": 16
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 88,
+      "max_w": 101
+    },
+    {
+      "case": "c01",
+      "probe_owner": "c01",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 115,
+          "r": 14
+        },
+        {
+          "arm": "route",
+          "w": 86,
+          "r": 12
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 86,
+      "max_w": 115
+    },
+    {
+      "case": "c02",
+      "probe_owner": "c02",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 86,
+          "r": 24
+        },
+        {
+          "arm": "route",
+          "w": 103,
+          "r": 29
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 86,
+      "max_w": 103
+    },
+    {
+      "case": "c02",
+      "probe_owner": "c02",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 98,
+          "r": 25
+        },
+        {
+          "arm": "route",
+          "w": 88,
+          "r": 28
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 88,
+      "max_w": 98
+    },
+    {
+      "case": "c03",
+      "probe_owner": "c03",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 91,
+          "r": 4
+        },
+        {
+          "arm": "route",
+          "w": 90,
+          "r": 9
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 90,
+      "max_w": 91
+    },
+    {
+      "case": "c03",
+      "probe_owner": "c03",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 104,
+          "r": 8
+        },
+        {
+          "arm": "route",
+          "w": 86,
+          "r": 13
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 86,
+      "max_w": 104
+    },
+    {
+      "case": "c03",
+      "probe_owner": "c05",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 78,
+          "r": 18
+        },
+        {
+          "arm": "route",
+          "w": 25,
+          "r": 3
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 25,
+      "max_w": 78
+    },
+    {
+      "case": "c03",
+      "probe_owner": "c05",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 75,
+          "r": 8
+        },
+        {
+          "arm": "route",
+          "w": 25,
+          "r": 4
+        }
+      ],
+      "actual": false,
+      "fixed_numerator": false,
+      "min_w": 25,
+      "max_w": 75
+    },
+    {
+      "case": "c04",
+      "probe_owner": "c04",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 298,
+          "r": 9
+        },
+        {
+          "arm": "route",
+          "w": 355,
+          "r": 12
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 298,
+      "max_w": 355
+    },
+    {
+      "case": "c04",
+      "probe_owner": "c04",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 269,
+          "r": 11
+        },
+        {
+          "arm": "route",
+          "w": 337,
+          "r": 10
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 269,
+      "max_w": 337
+    },
+    {
+      "case": "c05",
+      "probe_owner": "c03",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 261,
+          "r": 4
+        },
+        {
+          "arm": "route",
+          "w": 295,
+          "r": 17
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 261,
+      "max_w": 295
+    },
+    {
+      "case": "c05",
+      "probe_owner": "c03",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 274,
+          "r": 11
+        },
+        {
+          "arm": "route",
+          "w": 313,
+          "r": 15
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 274,
+      "max_w": 313
+    },
+    {
+      "case": "c05",
+      "probe_owner": "c05",
+      "split": "E",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 415,
+          "r": 29
+        },
+        {
+          "arm": "route",
+          "w": 553,
+          "r": 12
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 415,
+      "max_w": 553
+    },
+    {
+      "case": "c05",
+      "probe_owner": "c05",
+      "split": "F",
+      "probes": [
+        {
+          "arm": "baseline",
+          "w": 406,
+          "r": 14
+        },
+        {
+          "arm": "route",
+          "w": 540,
+          "r": 12
+        }
+      ],
+      "actual": true,
+      "fixed_numerator": true,
+      "min_w": 406,
+      "max_w": 540
+    }
+  ]
+}
