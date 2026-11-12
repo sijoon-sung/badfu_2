@@ -1,0 +1,80 @@
+{
+  "source_sha256": "b0413c3b3ceee9baaf8fc1c4c3ff542b5c4391eb4520d20342b6fed5f575bd9a",
+  "cutoffs": {
+    "recur": "1/13",
+    "native": "1/9",
+    "pca": "1/14"
+  },
+  "normal_requests": [
+    {
+      "case": "c02",
+      "split": "A",
+      "recur": "25/79",
+      "native": "43/450",
+      "pca": "3/86"
+    },
+    {
+      "case": "c02",
+      "split": "B",
+      "recur": "9/28",
+      "native": "91/900",
+      "pca": "1/42"
+    },
+    {
+      "case": "c02",
+      "split": "C",
+      "recur": "17/80",
+      "native": "4/45",
+      "pca": "1/80"
+    },
+    {
+      "case": "c02",
+      "split": "D",
+      "recur": "35/97",
+      "native": "97/900",
+      "pca": "1/93"
+    },
+    {
+      "case": "c02",
+      "split": "original",
+      "recur": "33/95",
+      "native": "19/180",
+      "pca": "3/95"
+    },
+    {
+      "case": "c03",
+      "split": "A",
+      "recur": "11/98",
+      "native": "49/450",
+      "pca": "1/14"
+    },
+    {
+      "case": "c03",
+      "split": "B",
+      "recur": "1/13",
+      "native": "1/9",
+      "pca": "1/25"
+    },
+    {
+      "case": "c03",
+      "split": "C",
+      "recur": "13/94",
+      "native": "47/450",
+      "pca": "2/31"
+    },
+    {
+      "case": "c03",
+      "split": "D",
+      "recur": "3/28",
+      "native": "43/450",
+      "pca": "5/84"
+    },
+    {
+      "case": "c03",
+      "split": "original",
+      "recur": "13/98",
+      "native": "49/450",
+      "pca": "5/98"
+    }
+  ]
+}
