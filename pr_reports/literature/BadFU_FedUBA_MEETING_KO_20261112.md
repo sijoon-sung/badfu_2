@@ -1,5 +1,7 @@
 # BadFU와 FedUBA 공격 메커니즘과 DISLAB 검증
 
+> 교수 미팅의 비교 대상은 Adv-attacker와 Adv-defender를 사용하는 stcebra/FUBA로 정정했다. [BadFU와 FUBA 공통 기제 및 미팅 자료 정정](BadFU_FUBA_MEETING_KO_20261112.md). 아래 자료는 별개 논문인 ity207/FedUBA의 검토 기록이다.
+
 교수 미팅 자료 · 2026-11-12 · 관련 실험 R01/R03, D08/D15/D20–D24, T02–T04
 
 ## 5분 발표 요약
