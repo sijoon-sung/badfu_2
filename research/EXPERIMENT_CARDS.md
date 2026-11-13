@@ -3306,3 +3306,32 @@
 
 **묶은 폴더:** [badfu_oracle_blind_pca_20261113](badfu_oracle_blind_pca_20261113)
 
+<a id="d33"></a>
+
+## D33 · BadFU 4-Route 탐색 증가의 특징 추출부 기능 귀속
+
+**가설 한 줄: 4-Route가 BadFU에서 찾는 추가 전환은 주로 두 분류기를 교차해도 특징 추출부를 따라가는 전환이다.**
+
+**판정: 두 시드 8/8 기능 분해 지지 / 같은 패널 큰 정상 경보 2→0**
+
+[실험 시작 이유와 실제 실행 과정 읽기](four_route_gain_attribution_20261113/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D20/D21/D22/D24/D32/T02/T03/T04. 승인 BadFU 말단6쌍·봉인 두 탐침·원본/A/B/E/F. W=B+(W-B) 정확 분해, 실제 트리거/목표/역할 미사용, 새 학습/탐침0.
+- **정상 대조·비교:** 큰 정상19.336%·22.790%, 정상850, 감염모델 정상850, BadFU2시드. 각 arm의 W와 엄격 교차 B. 원본 정상850 두 요청만 고정 보정.
+- **결과:** DISLAB exit0·원바이트 해시. D27/D29 native 60/60 및 T04 baseline B 6/6 정확 일치. 공격 8/8 사전 기제 지지, ΔB 704/ΔW774. 4-Route W→B 정상3/16→1/16, 큰정상2/8→0/8, 공격8/8 유지. 작은 정상에도 양의 기제 조건 두 평가.
+- **non-IID에 대해 남길 교훈:** 특징 귀속은 정상에도 나타난다. 같은 패널에서의 정상 경보 감소와 다른 정상 요청·라운드 전이는 구분한다. D22/T02 반례를 보존한다.
+- **반복하지 않을 주장:** 사후 기준선을 새 판정으로 채택하거나 서로 다른 탐침의 증가량을 이미지별 추가 사건으로 해석하지 않는다.
+- **재검토 조건:** 같은 FU·라운드의 독립 큰 정상 삭제와 적격 새 양성에서 고정 경보 및 동일 오경보 비교가 필요하다.
+- **출처 구분:** 사용자가 4-Route의 신뢰성과 작동 원리를 확인해 달라고 요청하여 DISLAB에서 봉인 탐침을 비교.
+
+**원문·증거:**
+
+- [research/four_route_gain_attribution_20261113/PROTOCOL.txt](four_route_gain_attribution_20261113/PROTOCOL.txt)
+- [research/four_route_gain_attribution_20261113/audit.py](four_route_gain_attribution_20261113/audit.py)
+- [research/four_route_gain_attribution_20261113/FREEZE.json](four_route_gain_attribution_20261113/FREEZE.json)
+- [research/four_route_gain_attribution_20261113/RESULT.json](four_route_gain_attribution_20261113/RESULT.json)
+- [research/four_route_gain_attribution_20261113/TERMINAL.json](four_route_gain_attribution_20261113/TERMINAL.json)
+- [research/four_route_gain_attribution_20261113/REPORT_KO.txt](four_route_gain_attribution_20261113/REPORT_KO.txt)
+
+**묶은 폴더:** [four_route_gain_attribution_20261113](four_route_gain_attribution_20261113)
+
