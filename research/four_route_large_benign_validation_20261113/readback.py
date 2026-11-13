@@ -1,6 +1,7 @@
 """Read the finite DISLAB run and verify a consistent result snapshot."""
 import hashlib
 import json
+import shutil
 import sys
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -35,7 +36,7 @@ foreach($name in @('STATE.json','SCORES.json','COMPARISON.json','DATA_AUDIT.json
 """))
     print(json.dumps(state, ensure_ascii=False))
     done = state['task'] == 'Ready' and state['exit'] == 0 and not state['owned']
-    with TemporaryDirectory() as folder:
+    with TemporaryDirectory(dir=ROOT) as folder:
         staged = Path(folder)
         for name, expected in state['files'].items():
             file = staged / name
@@ -50,7 +51,7 @@ foreach($name in @('STATE.json','SCORES.json','COMPARISON.json','DATA_AUDIT.json
         if done:
             assert state['commits'] == 160
             for name in state['files']:
-                (ROOT / name).write_bytes((staged / name).read_bytes())
+                shutil.copyfile(staged / name, ROOT / name)
             (ROOT / 'TERMINAL.json').write_text(json.dumps(state, indent=2) + '\n', encoding='utf-8')
 
 
