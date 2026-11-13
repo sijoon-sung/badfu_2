@@ -1,0 +1,5 @@
+{
+  "utc": "2026-11-02T04:10:48.796430+00:00",
+  "state": "failed_preserved_no_retry",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_receive_recovery_20261102\\launch_receive_once.py\", line 29, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_mixed_pair_receive_recovery_20261102\\launch_receive_once.py\", line 16, in main\n    assert created['returncode']==0,'Task create failed; no retry'\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Task create failed; no retry\n"
+}

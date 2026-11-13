@@ -1,0 +1,17 @@
+{
+  "id": "feduba.targetclass125.pairedFU20.payload_binding_recovery.20261102",
+  "launch_enabled": true,
+  "execution_root": "D:\\FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102",
+  "selected_IDs": 125,
+  "selection_sha256": "9fcea5fc32c3abd498407df824f8c1068406e0cde5979aa66b2c17e3994dc511",
+  "selection_audit_sha256": "4001e1c822889305c4c58a1683d0d1e8174518eb6fcca666aba244962ef175bd",
+  "preparation_sha256": "f576782e6b9d51ef7683c3da51bc043cb4ad7ac864b1e4e0dbf9ffc1fa2f286d",
+  "FU_benign_batches": 20000,
+  "FU_attack_batches": 20000,
+  "each_FU_rounds": 20,
+  "each_FU_epochs": 1000,
+  "primary_and_independent_each_calls": 474,
+  "primary_and_independent_each_sample_forwards": 60000,
+  "reuse_old_FU_after_models": false,
+  "recovery_only_payload_binding": true
+}

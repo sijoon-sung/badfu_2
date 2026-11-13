@@ -1,0 +1,21 @@
+{
+  "state": "literal_verified_directory_binding_launch_invocation",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "original_launcher_sha256": "0973e62e7d12accce3413c138e4b3bf2fe5f39e807ad4e34f6620396660406bd",
+  "original_run_freeze_sha256": "9cceea1ddde969daf144b900722b51fcbc6baf7f9007fc32f9c7a915d68124ca",
+  "scientific_source_changes": 0,
+  "task_creation_before": 0,
+  "controller_starts_before": 0,
+  "model_execution_before": 0,
+  "policy_or_privilege_changes": false,
+  "stop_rule": "Invoke frozen body once by existing SSH encoded command with only PSScriptRoot bound to its exact original directory. Any body/runtime error is preserved without retry. All original guards, profiles, source and numeric conditions remain unchanged.",
+  "previous_invocation_failure_sha256": "4f53f966228f36f211b135f01fc1075d240e64e2fea5993618ddad4fda8972d8",
+  "change": "Use literal base64-decoded directory binding and check exact transformed body SHA before invocation; previous double-quoted PowerShell replacement expanded $r and failed before launcher guards.",
+  "expected_invocation_body_sha256": "e1168f20759f30aa5d8347dc0f23b6ea7a1557daf80c3ce039a97f7c7c1f6a1a"
+}

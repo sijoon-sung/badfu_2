@@ -1,0 +1,18 @@
+論文/実装指標比較 — R03/R02/N02/D08/D15, 2026-11-01 KST
+원문은동일SHA PDF5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98의식16–18/TableII/그림caption3·4이며 a08f2bf의metric_conformance_review REPORT_KO/EVIDENCE를참조한다. 아래는새δ91998234의최초완료평가다. 이전oldδ6.97/6.32/6.33을대체하지않는다.
+
+항목 | 논문보고 | 현재고정seed42 IID/FedEraser/FedAvg
+CA before | 85.82±.74% | 87.94%=8794/10000
+CA attack-after | 85.16±.45% | 86.82%=8682/10000
+CA benign-after | 이표의동일paired정확값으로대응인증안됨 | 86.77%=8677/10000
+CA attack drop | .66pp (두보고평균차) | 1.12pp
+ASR-B | 본문약15% | 정상FU후24.644444444444446%=2218/9000
+ASR attack | 본문최대약89%,정확동일조건그림끝점소수점으로주장안함 | 19.333333333333332%=1740/9000
+ASR pre | ASR-B와별개 | 29.466666666666665%=2652/9000
+attack-pre | 잠복후활성화목표 | -10.133333333333333pp
+attack-benign | 정상FU와공격구별목표 | -5.311111111111111pp
+
+원운영gate6중pre억제/attack80/attack-pre50pp/attack-benign50pp의4개가실패했고세CA80/양후CA하락5pp는통과했다. 5pp는논문약1pp보다느슨하고논문정확평균재현기준이아니다. 이기준은실행중수정하지않았다. 공격ASR이pre·정상후보다낮아latentactivation재현성공으로부를수없다. 통계±나여러seed추정을단일seed에서만들지않는다.
+원공식train50000/각2500 대논문60000/각3000,125요청=.5%nominal25000/.25%전체50000, epsilon좌표/1.5배·누락concocthelper/mixed교사·selection명시해석·단일seed·한unlearning/aggregation조건차이가있다. CA가높다는것은공격활성화재현성공을뜻하지않는다.
+primary와같은GPU새프로세스독립평가가각60000sample-forward/474calls를완료했고전체raw입력·모든argmax/count가정확일치,logitmaxabs0이다. 따라서이평가에서측정값불일치나분모실수가실패를설명하지않는다. 감사는구현의declaredmath/storage를검사한것이며저자missinghelper유일해석/전이성능/모든학습gradient재생을인증하지않는다. mixedteacher endpoint65/200필요조건통과와이최종실패를함께보존하며단일교정의유일원인은주장하지않는다.
+D08/D15 큰정상nonIID 반례·triggerfamily독립탐지는미해결이며새탐지법을제안하지않는다. 완료수치실행을반복하거나성능에맞춰seed/δ/epsilon/배수/lr/epochs/분모/허용치를바꾸지않는다. 다음은같은실모델·자료의readonly양쪽전달/호스트별새diagnostic catalogue다.

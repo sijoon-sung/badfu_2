@@ -1,0 +1,25 @@
+{
+  "state": "positive_sign_FU20_and_independent_CPU_completed_not_performance",
+  "result_sha256": "d6d77e03d96b7d3476a3a7f26e745a43af8a63a1499ee4461680baba84be1e98",
+  "verified_sha256": "b0c2ec99aab73d444cea8d02f22b773f3eed7bb66fcf99288150b17c9c02d2ca",
+  "completion_sha256": "36a54ccf290204fd3df0389a4e8add4f6c2e456edf52f0d773931f13e39e2ea0",
+  "after": {
+    "path": "fu/attack/after.pt",
+    "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "rounds": 20,
+  "trained_roles": 200,
+  "calibrated_roles": 200,
+  "epochs": 1000,
+  "batches": 20000,
+  "history_hashes": 420,
+  "terminal_task_Ready_exit0_native0": true,
+  "all_local_SGD_gradients_or_raw_augmentations_replayed": false,
+  "new_performance_evaluated": false,
+  "after_sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+  "run_freeze_sha256": "1eefd2e292865e5adad041ca2ab4674a8dccc4305857281d3becee4f758a05b7",
+  "after_bytes": 44770315,
+  "source_freeze_sha256": "1691ff30388b1444851d5a73bd566dbf893dc3a315464e6a1af63977541c0936"
+}

@@ -1,0 +1,17 @@
+{
+  "state": "passed_source_only_unchanged_evaluation_loop_AST",
+  "entrypoints": {
+    "evaluate_pair.py": {
+      "original_sha256": "24c4ee436602930f39583b58bcbcafbdb1d0a82691dc77d1c21844b3f319135a",
+      "adapted_sha256": "2507bb74e859a82112220cf5213431d4495f4d375491ab0ee5b5188deb2dc03e",
+      "all_top_level_numerical_loops_AST_exact": true
+    },
+    "verify_pair_evaluation.py": {
+      "original_sha256": "fc4d57889eebd88e734d5926c1c853f74dc30ec489af804862b609eac8e694db",
+      "adapted_sha256": "536998e6641fd1808ecd51001dee3ef7ca496c9a3dd9fabd675e4f1dd67f8827",
+      "all_top_level_numerical_loops_AST_exact": true
+    }
+  },
+  "model_loads": 0,
+  "model_forwards": 0
+}

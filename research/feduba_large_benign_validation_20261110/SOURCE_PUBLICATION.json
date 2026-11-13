@@ -1,0 +1,137 @@
+{
+  "commit": "fb9532089c3390cc9ee1cd9e1fc542b4ac5be7d9",
+  "all_raw_blob_bytes_verified": true,
+  "files_verified": 26,
+  "rows": [
+    {
+      "name": ".gitignore",
+      "sha": "ac3e92f9971d1f0e5ff5dc6c9ff16faf0e83708a",
+      "size": 87
+    },
+    {
+      "name": "COPIED_SOURCES.json",
+      "sha": "f8a6bce4b15e652fa2d2841870316b1f42d98b06",
+      "size": 3177
+    },
+    {
+      "name": "DETECTOR_PROFILE.json",
+      "sha": "7e2ca586fe3d54fbb28df4dad5ba91d676627723",
+      "size": 907
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "sha": "4a4e0e91286fe6237e218aff5cd914651fb306c4",
+      "size": 5890
+    },
+    {
+      "name": "SHARED_SERVICE_IDENTITIES.json",
+      "sha": "d070c1abcdcee6c6c655a7bb8724d50b43766c80",
+      "size": 554
+    },
+    {
+      "name": "SOURCE_FREEZE.json",
+      "sha": "6c6447105df95bddd457718bd287b103a585a101",
+      "size": 2464
+    },
+    {
+      "name": "bindings.py",
+      "sha": "2d05881f8cf851cbbf6d0b583481430cfd07c86f",
+      "size": 3682
+    },
+    {
+      "name": "checkpoint_guard.py",
+      "sha": "cc8badca4aa47c43b673f578546a7d233bb134ce",
+      "size": 852
+    },
+    {
+      "name": "clean_evaluate.py",
+      "sha": "9bf8733bb9b6040dedf60ede6bdc78b500073fde",
+      "size": 1986
+    },
+    {
+      "name": "controller.py",
+      "sha": "953d6d4fa43bdeb4f428739120cf5c11db652e08",
+      "size": 3235
+    },
+    {
+      "name": "core.py",
+      "sha": "42e24e15a7c4505bebbc5bf63ec7feab7aff8b0d",
+      "size": 6174
+    },
+    {
+      "name": "feduba_model.py",
+      "sha": "63c50f75283f2e32e2b6199a9db2836c91b9d18c",
+      "size": 4379
+    },
+    {
+      "name": "fu_core.py",
+      "sha": "190db2f805277328c5c32b6e76a5fdab5c623bd4",
+      "size": 2122
+    },
+    {
+      "name": "fu_training.py",
+      "sha": "9a26ac4eda4b9ee7c80db63c8412efd1ca31443c",
+      "size": 3361
+    },
+    {
+      "name": "model_reference.py",
+      "sha": "63c50f75283f2e32e2b6199a9db2836c91b9d18c",
+      "size": 4379
+    },
+    {
+      "name": "ops.py",
+      "sha": "d45a5c093340b9c6daa5efe8de1425b27c4b346e",
+      "size": 3190
+    },
+    {
+      "name": "prepare.py",
+      "sha": "3543526a3f0743c699b1f77adfe8439ef8b18352",
+      "size": 7626
+    },
+    {
+      "name": "probe_reference.py",
+      "sha": "e5a67c0769f42a17eb8d2341218b8d00d8c104c6",
+      "size": 7965
+    },
+    {
+      "name": "resource_guard.py",
+      "sha": "babbaab64196a66f4c63541fb7d20e023ead8167",
+      "size": 3898
+    },
+    {
+      "name": "route_core.py",
+      "sha": "6631e2e4a6cb3e0f535a80e4abe920d9584ec391",
+      "size": 8122
+    },
+    {
+      "name": "run_search.py",
+      "sha": "d4316fe2d61fdeb70e6f7586fae0af13c51c28fc",
+      "size": 8479
+    },
+    {
+      "name": "runtime_common.py",
+      "sha": "71d14f0a8b883ce7e906650e29d615b7d0cc728d",
+      "size": 3348
+    },
+    {
+      "name": "setup_detector.py",
+      "sha": "75b4cfa53ee3195900e8e62adc9977871316739e",
+      "size": 3041
+    },
+    {
+      "name": "train_fu.py",
+      "sha": "03d6d2024afb48978d46ee9dde74c605298ca2e4",
+      "size": 6278
+    },
+    {
+      "name": "verify_fu.py",
+      "sha": "df41aa2f9a0027bbff887f4f8029867cb71d6242",
+      "size": 6225
+    },
+    {
+      "name": "verify_nonempty.py",
+      "sha": "7160e2840ad1570465b2f2140a3a2a39de637692",
+      "size": 4737
+    }
+  ]
+}

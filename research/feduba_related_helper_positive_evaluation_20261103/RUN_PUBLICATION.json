@@ -1,0 +1,18 @@
+{
+  "state": "published_actual_positive_new_attack_eval_review_before_queries",
+  "commit": "344b7afffef14b78f7e9a6b9bd3749880dff5a89",
+  "pull_request": "https://github.com/sijoon-sung/badfu_2/pull/1",
+  "source_freeze_sha256": "031d84db35347dc79878edc260649b63e6617d399016920f144456bda0f62e87",
+  "run_freeze_sha256": "a98811b9a598e74813a02a9f0451e98cd36f136d798a71449a5a304af6f27457",
+  "input_binding_sha256": "2e7ee199cde8ff4177889acde0f6ee6b2f54c71ccc67a2f1c3c0b05ecebf7fc1",
+  "public_actual_PR_Gitblob_files_exact": 43,
+  "new_attack_sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+  "baseline_evaluation_sha256": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac",
+  "each_new_primary_independent_sample_forwards": 20000,
+  "each_new_primary_independent_calls": 158,
+  "old_model_reinference_calls": 0,
+  "all_six_gates_unchanged": true,
+  "new_strict_CPU_models": 3,
+  "new_CPU_zero1_calls": 3,
+  "overall_goal_complete": false
+}

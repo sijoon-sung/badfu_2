@@ -1,0 +1,18 @@
+fresh fixed10 SSS 저장logit target방향 진단 완료 — 새모델추론0
+관련 R03/R02/N02/D08/D15. 7dfaff2의실source/profile/inputbinding을계산전에같은PR게시한뒤DISLAB단일foregroundcontroller에서기존40packet/5000행만CPU역직렬화했다. pre/teacher/delta/modelstate load0,forward/backward/query/optimizer0,기존trainer/SSS/FU/검증/export재호출0이다. nativeRAM8GiB/commit16GiB/경쟁trainer0/disk80GiB guard통과. torchCUDA미초기화/CPU1thread,원source/선택/예산/6gate·허용치변경0이다.
+
+사전가설: 선택target125의과반에서positive-delta에대한target-vs-best-other logitmargin이감소한다. 정수조건2*감소수>125를source에사전고정했고 실제76감소/49증가/0동일,2*76>125로이조건을충족했다. 이것은이집합의기술적관측이지모든트리거/독립seed의수학적필요조건이나유일FU실패원인증명이아니다.
+
+같은저장clean→positive-delta 관측(SSS x+delta/배수1/noClip):
+선택target125: target예측118→96. 양쪽target95,clean만23,perturbed만1,둘다아님6. margin감소76/증가49,평균변화-1.7066964406967162,평균targetCE0.12438185273515272→0.9208088692747077.
+비선택target343: target예측332→315. margin감소202/증가141,평균변화-0.7599707529513551,targetCE0.09831081467277591→0.2558786422050362.
+비target4532: target예측22→334. margin감소674/증가3858,평균변화+5.130708710353785,targetCE16.246197164098135→11.430780939917874.
+owner5선택63은margin34감소/29증가·target59→49,owner7선택62는42감소/20증가·target59→47이다. 모든그룹/owner를사전정한대로남겼고유리한그룹만선택하지않았다.
+
+해석범위: 큰L2변화가target방향향상을보장하지않는다는관측을확보했다. 그러나비선택target도202/343에서감소했으므로선택top125만의고유결함이나선택교체해결을지지하지않는다. 비target의대부분에서margin이증가한결과도함께남기며트리거효과/전이가전혀없다고하지않는다. 이데이터는원피해모델학습자료·기존SSSquery이며heldout/공식test10000/표준ASR비target9000평가가아니다. 최종평가x+1.5delta/clip 및실BEA x-delta/clip/augmentation과도입력조건이다르다. 이수치를최종CA/ASR이나새실험성공률로대체하지않는다.
+
+독립검사: 새process는torchimport없이원private_result/rows.jsonl의5000행으로Pythonfirst-maxargmax/scalar max·logsumexp·math.fsum을계산했다. 모든정수·margin부호집계/사전과반판정이정확일치,FP64평균/CE집계최대절대오차3.552713678800501e-15가새산술허용치1e-10+rtol1e-12내다. 원PT40을다시역직렬화하거나원5000modelquery를재추론한것이아니며개별원tensor→JSON복사의독립재열람인증으로확대하지않는다. 원SSS FP32/FP64 L2·rank·125집합검증과2CPUquery감사를재실행하지않았다. 원400count계약미충족/실392정정은그대로다.
+
+실제parent37592/primary57060/독립53572는종료했고foregroundexit0/STATEcompleted0,2026-11-03T03:56:54.6656290Z 실제rootprocess0/failure0을확인했다. 새Windows예약작업은만들지않은명시foregroundCPU진단이다. 이번진단의rawquery·ID별private5000logitrows는DISLAB에만남기고local/PR은요약JSON·receipt·source만받았다. RESULT SHAabf2519719e66873d5be4a8dc2e12f46d70067d4cfdf962fc27307b75fc3bbc6,VERIFIED SHA2ccacb36deda7384101dbf11859a8b11df2479e541ac179d1e21aa911b90be20,COMPLETION SHA13e548cfd55e57177e3e7c1267fdfa12cbc7604fb783ad34ec670f816ecb03ec.
+
+새가설지지는source버그인증/selector채택/새전체학습을허용하지않는다. 다음단계는원문Eq8·공개unlearning호출과현재declared BEA의연결을다시읽고,필요하면실제변환조건의별도고정진단을먼저설계하는것이다. 관측에맞춘trigger부호/clip/augmentation/selection/seed/lr/epoch/delta/target/budget/분모/tolerance변경0. D08공격.75848이큰정상.75525/.76188사이/D15공격7·정상8/unknowntriggerfamily미검증·전체성능/local전달미완료와모든oldcheckpoint/source/default/case불변이다.

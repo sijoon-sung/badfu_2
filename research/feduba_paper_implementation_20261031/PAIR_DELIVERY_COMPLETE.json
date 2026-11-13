@@ -1,0 +1,91 @@
+{
+  "state": "readonly_diagnostic_pair_delivered_and_registered_performance_failed",
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+    "benign": "feduba.paper.cifar10.s42.cpu_trigger.sss125.benignfu20.20261031"
+  },
+  "remote_packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031",
+  "local_packet_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031",
+  "archive_sha256": "6868408d87a5948e13b59307605d9d35c92b26aabee1ab97e15f79b1d32582a0",
+  "archive_bytes": 1526179522,
+  "manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+  "seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+  "packet_total_files": 967,
+  "hashed_files": 965,
+  "tensor_payload_count": 672,
+  "tensor_kind_counts": {
+    "model": 15,
+    "delta": 1,
+    "tensor_evidence": 656
+  },
+  "both_packets_readonly_and_all_hashes_checked": true,
+  "remote_and_local_storage_CPU_checks_passed": true,
+  "representative_actual_roles": {
+    "5": {
+      "round": 20,
+      "client": 5,
+      "original": {
+        "path": "clean_fl/roles/round20_client05.pt",
+        "sha256": "cff6ec8935d198af2d1085132b2c52845dafe270d164fa0e4e0e562e34ef7bc4",
+        "bytes": 89510537
+      }
+    },
+    "7": {
+      "round": 18,
+      "client": 7,
+      "original": {
+        "path": "clean_fl/roles/round18_client07.pt",
+        "sha256": "315a008ab07409b5d77f315b93130279b383bfdc6fd2811713345a896afb624e",
+        "bytes": 89510473
+      }
+    }
+  },
+  "all_original_history_tensors_retained_on_DISLAB": true,
+  "local_full_history_use_approved": false,
+  "all_original400_trained_tensors_locally_delivered": false,
+  "all_full_FU_epoch_logs_and_private_SSS_and_pair_evaluation_records_in_packet": true,
+  "original_export_callback_failure_preserved": true,
+  "preserved_copied_prefix_files_reused": 928,
+  "preserved_copied_prefix_bytes": 1524947559,
+  "original_export_task_restarted": false,
+  "new_CPU_finish_recovery_passed": true,
+  "original_export_receipt_and_parent_memory_modified": false,
+  "remote_export_receipt_sha256": "128d7ab76f5e21b5735738cd86a06582e13ce56291b135402eba0d04366a6b34",
+  "local_completion_receipt_sha256": "034c222e6bbe0dbc9c45f01c046bde4e3e7f1d1aa41540fc4e5bcab6bf99cde6",
+  "registrations": {
+    "main": {
+      "old_case_count": 24,
+      "new_case_count": 26,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "2798c69cbe32b91584ea8fe18ca6f3a8557063c2eb0f06b0d1d04be7fe2ac866"
+    },
+    "pr": {
+      "old_case_count": 21,
+      "new_case_count": 23,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "833e89f378c492ecfe2ec0348bfbd7f95cc30ceece5c2c5ad4fd76ed91275061"
+    },
+    "dislab": {
+      "old_case_count": 22,
+      "new_case_count": 24,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "31575ba7cfe824120dceb965a890d919a0c1dd582330cee076751f968cf692b9"
+    }
+  },
+  "local_catalogue_format_checks": {
+    "main": {
+      "UTF8_display_and_newline_convention_preserved": true,
+      "all_old_case_values_equal": true
+    },
+    "pr": {
+      "UTF8_display_and_newline_convention_preserved": true,
+      "all_old_case_values_equal": true
+    }
+  },
+  "minimum_latent_pair_performance_passed": false,
+  "detection_success_implied": false,
+  "readonly_delivery_complete": true,
+  "catalogues_registered": true,
+  "overall_goal_complete": false,
+  "next_required": "source-grounded explicit bounded failure diagnosis/correction; no automatic retraining or tuning"
+}

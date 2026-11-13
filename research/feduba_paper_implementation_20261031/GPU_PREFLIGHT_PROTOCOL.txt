@@ -1,0 +1,5 @@
+가설: 명시회복ResNet18(10/201)와공개batch128의실제forward/backward/SGD는현재DISLAB의공유GPU에서고정메모리한도내에정상실행된다. R03/R02/N02/D08/D15. 새로운관측은각한번의합성128장optimizer step/유한tensor·optimizer/RNG·CUDA peak allocated/reserved·출력shape다. 공격성능/실자료학습/탐지결과가아니다. 이전CPU6계약은완료했으므로재실행하지않는다.
+새FedUBA전용guard: util<=5%,free>=4000MiB,used<=6000MiB,경쟁trainer/evaluator부재와이전FUBA task disabled를검사한뒤진입한다. 이는중지된구FUBA의7GB guard를바꾸는것이아니라새명시회복ResNet18/batch128의실측preflight를위한새조건이다. 다른앱을종료하지않는다.
+CPU계약이통과하고새sourcefreeze/hash가맞아야실행한다. 10-class/201-class모델각한step을순차로수행하고모델·optimizer·RNG·전체로그를DISLAB에보존한다. peak reserved<=2560MiB를넘거나shape/nonfinite/저장/runtime실패하면보존후새실자료훈련을시작하지않는다. 실패를이유로batch를몰래줄이거나메모리guard를더낮추지않는다.
+통과시후속cleanFL20의진입free최솟값은max(4000,ceil(measured peak reserved MiB)+1536)이고used<=6000/util<=5/경쟁trainer부재를유지한다. 계산공식은결과전고정했으며성능튜닝에쓰지않는다. 실제cleanFL20R/local10/B128/SGD.01momentum.9/cosine/20clients·round별10random/seed42는별도foundation profile/전체저장·검증계약으로연다. 이것만끝나도FedUBA전체구현·STG/SSS/BEA/FU/전달목표는끝나지않는다.
+D08/D15반례와모델회복의저자고유동일성미확정은유지한다. 이preflight를논문성능재현이나유효공격전후쌍으로카탈로그승격하지않는다.

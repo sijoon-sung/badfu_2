@@ -1,0 +1,27 @@
+{
+  "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+  "purpose": "diagnostic",
+  "post_type": "actual_historical_client4_update_subtraction_then_KD10",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\before_classifier.pt",
+      "sha256": "bdd8f962de7743a2679054b1155eeee83871b1aed67d6932096f576df7f8b7a9",
+      "payload_key": null
+    },
+    "post": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\after_unlearning.pt",
+      "sha256": "1f577d504b632bb1170909329ea8b3499bffe5b2913988bfef37ce7377ebe96d",
+      "payload_key": null
+    }
+  },
+  "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\DELIVERY_MANIFEST.json",
+    "manifest_sha256": "83f8ecae537c212879f9a27ccaede48cf82ba0c5d0fae4de59e0eac07178fcdc",
+    "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\DELIVERY_SEAL.json",
+    "seal_sha256": "436dc421e12f5e4e694bc93fa0850f4d9d9c8f63a8176d11a581c35d701bdf0b",
+    "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\load_checkpoint.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

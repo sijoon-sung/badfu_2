@@ -1,0 +1,26 @@
+$env:PYTHONIOENCODING='utf-8'
+$env:PYTHONDONTWRITEBYTECODE='1'
+$env:CUDA_VISIBLE_DEVICES='-1'
+$env:OMP_NUM_THREADS='2'
+$env:MKL_NUM_THREADS='2'
+$env:OPENBLAS_NUM_THREADS='2'
+$root='D:/TOPDOWN_MECHANISM_20261110'
+$py='C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe'
+$avail=[double](Get-CimInstance Win32_OperatingSystem).FreePhysicalMemory*1024
+$disk=[double](Get-PSDrive D).Free
+if($avail -lt 2147483648 -or $disk -lt 1073741824) {throw 'CPU cache-analysis memory/disk guard failed'}
+$freeze=Get-Content -LiteralPath ($root+'/FREEZE.json') -Raw | ConvertFrom-Json
+foreach($p in $freeze.files.PSObject.Properties) {if((Get-FileHash -LiteralPath ($root+'/'+$p.Name) -Algorithm SHA256).Hash.ToLower() -ne $p.Value) {throw ('Source/input hash mismatch '+$p.Name)}}
+$started=(Get-Date).ToUniversalTime().ToString('o')
+& $py -u ($root+'/analyze_topdown.py') --output ($root+'/results') 1>($root+'/primary.stdout.txt') 2>($root+'/primary.stderr.txt')
+$pc=$LASTEXITCODE
+[pscustomobject]@{exit_code=$pc;utc=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/PRIMARY_EXIT.json') -Encoding UTF8
+if($pc -ne 0) {Get-Content -LiteralPath ($root+'/primary.stderr.txt'); throw 'New primary failed; preserve without rerun'}
+& $py -u ($root+'/check_topdown.py') --results ($root+'/results') 1>($root+'/checker.stdout.txt') 2>($root+'/checker.stderr.txt')
+$cc=$LASTEXITCODE
+[pscustomobject]@{exit_code=$cc;utc=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/CHECKER_EXIT.json') -Encoding UTF8
+if($cc -ne 0) {Get-Content -LiteralPath ($root+'/checker.stderr.txt'); throw 'New checker failed; preserve without rerun'}
+[pscustomobject]@{status='passed';host=$env:COMPUTERNAME;start_utc=$started;finish_utc=(Get-Date).ToUniversalTime().ToString('o');available_memory_before=$avail;disk_free_before=$disk;primary_exit=$pc;checker_exit=$cc;source_freeze_sha256=(Get-FileHash -LiteralPath ($root+'/FREEZE.json') -Algorithm SHA256).Hash.ToLower();result_sha256=(Get-FileHash -LiteralPath ($root+'/results/RESULT.json') -Algorithm SHA256).Hash.ToLower();checked_sha256=(Get-FileHash -LiteralPath ($root+'/results/CHECKED.json') -Algorithm SHA256).Hash.ToLower();model_forwards=0;training=0;gpu_jobs=0} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/EXECUTION.json') -Encoding UTF8
+Get-Content -LiteralPath ($root+'/primary.stdout.txt')
+Get-Content -LiteralPath ($root+'/checker.stdout.txt')
+Get-Content -LiteralPath ($root+'/EXECUTION.json')

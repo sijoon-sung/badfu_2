@@ -1,0 +1,46 @@
+{
+  "state": "both_host_delivery_and_all_three_catalogue_guards_complete",
+  "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+  "actual100R_KD10": true,
+  "local_files_verified": 982,
+  "local_strict_CPU_payloads": 74,
+  "remote_CPU_payloads": 74,
+  "local_models_and_logs_delivered": true,
+  "catalogue_guards": [
+    "main-local",
+    "pr-local",
+    "dislab"
+  ],
+  "previous_cases_audits_defaults_preserved": true,
+  "before_gate": false,
+  "after_gate": false,
+  "first_new_seed_completed": 5129832,
+  "completed_seed_rows_including_baseline": 2,
+  "ten_seed_study_complete": false,
+  "overall_user_goal_complete": false,
+  "next_seed": 4059094,
+  "next_state": "waiting_for_resources",
+  "next_resources": {
+    "utilization_pct": 0,
+    "free_MiB": 5045,
+    "used_MiB": 5009,
+    "competing_PIDs": []
+  },
+  "evidence_hashes": {
+    "CATALOG_AUDIT.json": "297ec0cb648fe460cea89551ae71ba00f9db2f58f785e05a012a4a4e4482cbd3",
+    "CATALOG_ENTRY.json": "ee6bf2f93666a3453d5f4b54dfb6a484ba9cafa0b92f582c70962e5948ddbdfe",
+    "CATALOG_GUARD_dislab.json": "3a14f2ade842f17014cfd4546512a8d23e03a95e01b4aeb13d52fc437f64f567",
+    "CATALOG_GUARD_main.json": "f70a77df18a21edeaa012bd531895e11c84a04289cd052197565e07480dad2a0",
+    "CATALOG_GUARD_pr.json": "f70a77df18a21edeaa012bd531895e11c84a04289cd052197565e07480dad2a0",
+    "CPU_AUDIT_through0100.json": "ae80423ed189d314fc1c6b528d25ceae5ff95941b200b88bd1333d8996f05fc5",
+    "DELIVERY_seed_5129832.json": "385ccf56ce1aad0d6ef024ee13dd1a2546f542945cf512ac70c1d828d06dc993",
+    "LOCAL_DELIVERY.json": "3b1e67d6b87824ada0d6183b25d550003265eecb77c47182820ade920476ceca",
+    "NEXT_SEED_STATE.json": "526318adbf273b5b447a9e529a42aaf2c87f24024870eef710067d5853153eba",
+    "REGISTRATION_dislab.json": "2d1e8ddbe314d2e1be8828b016bda46b1fdcef21a9686c816eb99831297e244d",
+    "REGISTRATION_main.json": "d9527672cc7d2ddf06ebfe2e4145cc52e77bdfa113d35e5df3ef521c535fcb64",
+    "REGISTRATION_pr.json": "22ccaddfed3c2ffb0c044559efa14874db77b14c094c8b812546e4c1d55eb5a5",
+    "REMOTE_DELIVERY.json": "eb0a06095526aac47103748bbf06ef1cd3b545b2031d3c801475cfed0a5cc5c9",
+    "RESULT.json": "4ed519b158766170f16e92b8aa8ec17aeb6db796624a1e4b7bf253ee33edee3d",
+    "VERIFIED.json": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615"
+  }
+}

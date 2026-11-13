@@ -1,0 +1,6 @@
+가설: 완료한각새시드의외부봉인manifest/archive와동일한파일을양쪽검토폴더에전달하고고정case를따로등록하면실패한전후모델도재선택가능하게보존된다. R02/D08/D15/N02.
+새관측은새seed별실제100R/KD10의archive SHA/bytes·전체파일목록/hash·CPU strict/finite 모델payload·독립평가정수수·양쪽catalogue guard다. 재학습/재평가/성능변경은없다. 이미완료된trainer/controller/verify/CPU감사/export는다시하지않는다. DISLAB의CPU검사receipt와동일파일hash를사용하고로컬에서는새사본의CPU load/유한출력만검사한다.
+PROFILE의고정9개seed와case ID만허용한다. receipt의archive hash/bytes를확인한후zip의중복·절대경로·부모탈출·ADS·symlink를거부한다. 새검토폴더는CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s{seed}_pre100_post_KD10이다. 이미있으면덮어쓰지않고외부봉인으로확인한다. hash/수량/CPU검사하나라도실패하면승인하지않고현재실패자료를보존한다.
+DISLAB 원packet/전체raw는그대로두고별도readonly검토복사본을만든다. 로컬사본에도같은manifest/seal을유지하고파일을추가/편집하지않는다. 무거운full raw/all phase는로컬전달범위가아니며선택tensor와전체epoch/800role/KD로그가범위다. 각기록은파일개수/model payload수를실제packet에서읽는다.
+main/PR/DISLAB catalogue는각자의원본을읽고해당case와외부audit만append한다. 원case/default/audit의보존을검사하며기존catalogue를다른호스트것으로대체하지않는다. 새case는diagnostic만허용하고성능gate통과여부는evaluator_only에따로기록한다. 실제case를각호스트select_case.py로확인한뒤전달완료를기록한다. 미완료시드/실패행도숨기지않는다.
+이전후쌍의저장승인이나좁은MNIST/DBA시드양성은논문10행평균성공/본문Adam프로필정확재현/CIFAR·IBA성공/trigger독립탐지/D08·D15큰정상nonIID구별의증거가아니다. 전체연구와heartbeat는전달하나가끝났다고종료하지않는다.

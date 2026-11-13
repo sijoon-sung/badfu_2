@@ -1,0 +1,19 @@
+{
+  "state": "newly_bound_paper_input_sign_ambiguity_not_author_erratum",
+  "paper": {
+    "url": "https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf",
+    "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+    "p4_PNG": {
+      "sha256": "a997364951a312fad8bb5020ad67a53164d56165b337eaba8cb7434ac99aa5ae",
+      "bytes": 317461
+    },
+    "Eq1_input": "x+delta",
+    "Eq2_post_unlearning_input": "x_i-delta_star",
+    "Eq8_request_update": "x_j-delta_star",
+    "SectionVI_backdoored_input": "x+delta",
+    "Eq2_direct_PNG_visual_review": true
+  },
+  "declared_standard_evaluation": "clip(x+1.5delta,-1,1)",
+  "proposed_single_fixed_diagnostic": "clip(x-1.5delta,-1,1)",
+  "scope": "Only input direction differs from the declared standard route. Keeping1.5 isolates sign; it is not a claim of literal unit-scale Eq2 evaluation or author-certified intent. All positive-route failures remain. No new trigger, training sign or checkpoint is selected."
+}

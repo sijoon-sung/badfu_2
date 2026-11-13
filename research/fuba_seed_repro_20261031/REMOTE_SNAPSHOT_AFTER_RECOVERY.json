@@ -1,0 +1,86 @@
+{
+  "study": {
+    "state": "running",
+    "pid": 48688,
+    "updated_unix": 1793423688.4952497,
+    "completed_rows": [
+      {
+        "seed": 20261023,
+        "before_CA": 99.11,
+        "before_ASR": 30.600487480611566,
+        "after_CA": 99.08,
+        "after_ASR": 32.35098604032794,
+        "qualified_pair": false,
+        "source": "already delivered baseline, not rerun",
+        "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10"
+      }
+    ],
+    "seed": 5129832,
+    "step": "controller.py",
+    "child_pid": 38280,
+    "root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1"
+  },
+  "prepared": true,
+  "active": {
+    "STATE.json": {
+      "pid": 32704,
+      "profile": "fuba.algorithm_sgd.mnist.dba.s5129832.fl100.kd10.seed_repro20261031",
+      "state": "training",
+      "rounds": 1,
+      "round": 2,
+      "client": 14,
+      "role": "benign",
+      "phase": "benign",
+      "epoch": 14,
+      "epochs": 50,
+      "batches": 658,
+      "examples": 3000,
+      "loss": 0.011305760701497396,
+      "optimizer": "Adam",
+      "updated_unix": 1793423777.7499704,
+      "last_evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9576,
+        "target_successes": 18,
+        "clean_non_target_target_count": 30,
+        "CA_pct": 95.76,
+        "ASR_pct": 0.19942388654996676,
+        "clean_target_bias_pct": 0.33237314424994463,
+        "trigger_role": 4,
+        "both_eval": true
+      }
+    },
+    "CONTROLLER_STATE.json": {
+      "state": "running",
+      "pid": 38280,
+      "child_pid": 32704,
+      "step": "runner.py"
+    },
+    "RESULT.json": null
+  },
+  "committed_rounds": 1,
+  "actual_processes": [
+    {
+      "ProcessId": 48688,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -u D:/FUBA_SEED_REPRO_20261031/background_recovery.py"
+    },
+    {
+      "ProcessId": 38280,
+      "ParentProcessId": 48688,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1\\controller.py"
+    },
+    {
+      "ProcessId": 32704,
+      "ParentProcessId": 38280,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832_recovery1\\runner.py"
+    },
+    {
+      "ProcessId": 48404,
+      "ParentProcessId": 53088,
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" D:/FUBA_SEED_REPRO_20261031/ops.py"
+    }
+  ],
+  "GPU": "27, 7694, 2360"
+}

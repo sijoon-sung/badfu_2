@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 15944,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\recovery_controller.py\", line 72, in <module>\n    main()\n  File \"D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\recovery_controller.py\", line 59, in main\n    run('evaluate_pair.py', log, profile, True)\n  File \"D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\recovery_controller.py\", line 45, in run\n    if child.wait(): raise RuntimeError(name + ' failed; preserved; no automatic repeat')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: evaluate_pair.py failed; preserved; no automatic repeat\n"
+}

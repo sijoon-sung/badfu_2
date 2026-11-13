@@ -1,0 +1,10 @@
+기존 미실행V2 task 시작만 하는 별도 단계 / 선게시
+R03/R02/N02/D08/D15. V1 XMLencoding/create실패·monitorimport실패는보존했다. V2 UTF16 create0/query0 뒤 scheduler가 기본RunLevel필드를생략해검증이멈췄으며/Run0·실receiver0·ONCE0·localpacket0이다. 원 Nov1 receiver 소실원인은미확정이다. 새read-only COM에서실제RunLevel0/State3/LastTaskResult267011(neverrun)을확인했다. XMLcanonicalSHA가보존된실등록정의와같고원/V1/V2 source/profile/실패·원13storage·17JSON·monitor3·guard는불변이다.
+
+새4Python/1read-onlyJScript·실START_PROFILE·freeze/모델0검사를PR선게시한뒤이미있는V2 task에첫/Run만1회요청한다. 새exclusiveSTART_ONCE/terminal이권위시작ledger이고원V2 LAUNCH_FAILURE는과거검증단계기록으로남긴다. task생성/수정/삭제/원V1V2launcher재호출0이다. 실제수신/대기/추출/CPU완료는V2실제process+별도ONCE/STATE/FAILURE/terminal로판단하며요청수락을실행완료로보지않는다.
+
+원available8GiB/commit16GiB/CPU1/-1/15초24h·원672strictCPU/finite/zero1검사·동일archive를유지하며완료export/scp/훈련/FU감사/성능평가를반복하지않는다. actuallocal완료전각host등록0이고새V2private_run localledger경로를등록caller첫실행전에명시한다. 모든source/hash/task/runtime/storage/finite/count오류는partial·trace보존후중단/자동retry0이다. mixed4성능gate실패·CA2통과와D08/D15/unknowntrigger미검증은불변이다. 전체성능/탐지목표와heartbeat를유지한다.
+
+실제시작관측: 별도선게시8b007fa 뒤기존V2task첫/Run1회exit0. 실제native PID30052/parent3508와정확commandline·taskCOM RunLevel0/Running4/267009·대기전RECEIVE_ONCE·ACTUAL_PROCESS·RESOURCE_WAIT_BEGIN·fsync STATE/guard event가일치했다. 최소2개15초guard sample을관측했고현재fixed8GiB/commit16GiB 대기다. deadline2026-11-03T04:16:51.108230Z이며가용RAM은관측시점값이다. 추출/CPU payload/로컬완료/등록0·완료export/scp/훈련/감사/성능평가재실행0이다. 이PID와STATE는관측시점자료이며다음조회는observe_start.py로currenttask/actualcommand/FAILURE/terminal을함께읽는다. 원수신소실·V1 XML실패·V2생성후검증실패는보존되며새start ledger가그뒤첫실행을설명한다. 전체성능/탐지목표는미완료다.
+
+2026-11-02 최신중단정정: 새receiver30052는04:35 native조회에서없고taskReady3/result1073807364(0x40010004)이다. 마지막STATE/event04:28:21 sample46/690.766초·47fsync guardprefix를보존했다. 같은시간대System shutdown/newstart 로그와새OSuptime을확인했지만개별process 종료주체·기제·RAM원인·24h timeout은입증하지않았다. TaskScheduler history는disabled이며변경0이다. 새EXTRACTION/CPU/producerFAILURE/TERMINAL/local완료/packet/등록0·재호출0이다. RECEIVER_INTERRUPTION_OBSERVATION/REPORT/RESTART_WINDOW_EVIDENCE가현재근거이고이전RUNNING관측은역사다. 원소실·V1/V2실행전실패와모든sourcefreeze/원archive·영수증은불변이다. 다음수신은fixed8GiB/commit16GiB충족확인및새해당단계계약/source·실profile선게시없이는시작하지않는다. 전체성능·탐지목표미완료를유지한다.

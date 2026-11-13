@@ -1,0 +1,19 @@
+{
+  "scope": "local navigation formatting only; no scientific computation",
+  "cause": "An exec_command returned a live session during baseline metadata restoration; index generation was started before that session was awaited.",
+  "observed_first_generation": {
+    "cards": 28,
+    "sources": 1926,
+    "folders": 155
+  },
+  "first_check_failure": "Stale generated index: research/INDEX_AUDIT.json",
+  "metadata_restoration_finished_before_recovery": true,
+  "preserved_generated_file_sha256": {
+    "INDEX.md": "ae481ab26720c6cd95bcd736e7eb95c4cb89c916534e138454593324e4f2501f",
+    "EXPERIMENT_CARDS.md": "61ec20bb0555abd02dd63d320131b36cf232b569d60d50f9ada35ead16bece94",
+    "EXPERIMENT_FOLDERS.md": "b2a634fb9a82e5a941a8e67a24f51f004d1c43ce3a9ce16fb9180a17be2ed67c",
+    "INDEX_AUDIT.json": "30b530b096910cd537aa0adc4995700132306a119ef87af33ec3f1da5c09dbd9"
+  },
+  "original_full_stderr_saved": false,
+  "recovery": "Regenerate once after dependent metadata preparation actually finishes, then run --check sequentially. Do not rerun DISLAB science."
+}

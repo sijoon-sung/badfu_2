@@ -1,0 +1,79 @@
+{
+  "state": "completed_DISLAB_local_metadata_bytes_exact",
+  "files": [
+    {
+      "name": "FINAL_RESULT_SUMMARY.json",
+      "sha256": "f324b0eee2da510ac900deac1d8e974ea40833047f1e0c8027034635bd8d010b",
+      "bytes": 2671
+    },
+    {
+      "name": "COMPLETION_REPORT_KO.txt",
+      "sha256": "5e211dcbea0463ddbf9dc8d8d1d4b2ae1e0355bfbd0fa7c3dab5a0114e5e9fdb",
+      "bytes": 2938
+    },
+    {
+      "name": "NEXT_STAGE_RATIONALE.txt",
+      "sha256": "0ea4d1b47e593fd02087bb61c41bd388291d44465563ebd6f53b7dfcd44c94df",
+      "bytes": 1609
+    },
+    {
+      "name": "RUN_PUBLICATION.json",
+      "sha256": "c5865f89a87eb673e2b022acd4a22755cd200d966626d57db5e943aa10621e80",
+      "bytes": 1887
+    },
+    {
+      "name": "SOURCE_REVIEW_ONCE.json",
+      "sha256": "b60a62c14aa636d8a298b686864185ef3ccaf0b92f13dda4269cb7bdee2b07e6",
+      "bytes": 42
+    },
+    {
+      "name": "RECOVERY_VERIFIED.json",
+      "sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+      "bytes": 3297
+    },
+    {
+      "name": "COMPLETION.json",
+      "sha256": "93b82036bad2d99c6cc87a11b561531ef95a561164159455f329a7d28c6f125d",
+      "bytes": 1903
+    },
+    {
+      "name": "RECOVERY_STATE.json",
+      "sha256": "17b86e4b5123139f87df3f2f2da7b45866629a4b5fbd972fb101944e65429c38",
+      "bytes": 78
+    },
+    {
+      "name": "CONTROLLER_STATE.json",
+      "sha256": "b3b2c1a46096d3c280228c7b21ea29053b5ce9905b2e7eebf00c55e36dd6afbb",
+      "bytes": 61
+    },
+    {
+      "name": "RECOVERY_ONCE.json",
+      "sha256": "ae072a4464b3935fb0a70d0fe64d356f689b5e3caa2df219760ec562285b1327",
+      "bytes": 330
+    },
+    {
+      "name": "CONTROLLER_ONCE.json",
+      "sha256": "d224f9150c9efb329cbae6a17d45c775c1d71d893b9f230237180c282c9372e1",
+      "bytes": 49
+    },
+    {
+      "name": "GUARD_STATE.json",
+      "sha256": "01174d389ffc8afb45a18dd14dbdaf995590c9f4813ba645c33c04efa10a21a2",
+      "bytes": 432
+    },
+    {
+      "name": "CHILD_EXIT.json",
+      "sha256": "018c8d44efcb2b9f758f1fc47ce5ec03aaecaefc83426343848f567721e830e0",
+      "bytes": 73
+    },
+    {
+      "name": "TERMINAL_OBSERVATION.json",
+      "sha256": "8d1b1ddad204c98306591217d95f1a80a09904f7a4e1b505c00a4a9171c993b6",
+      "bytes": 321
+    }
+  ],
+  "source_freeze_unchanged": true,
+  "model_reads": 0,
+  "forward_calls": 0,
+  "old_models_packets_defaults_modified": false
+}

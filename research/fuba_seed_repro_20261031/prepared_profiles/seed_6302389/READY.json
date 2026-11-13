@@ -1,0 +1,33 @@
+{
+  "state": "passed",
+  "source_hashes": {
+    "common.py": "1f3baa3f04a83c091dd71315c79337b0d5fc2ad525bb13e13b7300a1636dc717",
+    "reference_core.py": "158d7b80b114c7c2a0a11d425066959930a03382bcbb680bc9f3d65e3a37b812",
+    "runner.py": "4cfe9c9192be4e0ed7344802bb40f704ef82f7b890ec35986d5f3609b6eaa746",
+    "test_contracts.py": "c3645a1bbc818030244b8804f5e47ce2bf879ce761eadd4ea0848cbb4a4438c1",
+    "prepare.py": "f766ae9e6787080e11c8a70c63c8fbc2304de8aa6348bc9f6ae5fe12671d97d0",
+    "controller.py": "d464e454430b81b8bedce10abab8ebf19aca96a0648be4c5d9c15b8e365db7dd",
+    "verify.py": "c17a4760c0b291da9aacba0fca688653c1e9084e6dd2fbfe1758d6769262ea92",
+    "audit_committed.py": "e66432e22ca16f4a392aa75c18bc9fc930a8b87214151c593ee75a428ad3e5c0",
+    "package_delivery.py": "45beb7d559bb3d69902b627d6b767bb3f71a863dda8b1799ece2190150d653b0",
+    "CPU_CONTRACTS.json": "3393fc3fdc9021908d53c5bc1cb00a5d377f2c1fb2f64e53d021de29d2ff2302",
+    "storage_retry.py": "f376e38f4f0156635f55fe48ae9825ca7231d8670e52a8eb3512359151210f68",
+    "load_checkpoint.py": "1d741ae9794d6c5c28e7f8a0974d3793c272ff96ee3414c64359af34b90e0f78",
+    "PROFILE.json": "ad09e9e64096232f41308a9839d6e4b7b12e8da32989b8cb2470ed755d4abd6d",
+    "PROTOCOL.txt": "7ae5af5f76519e9e2f233afa5e8439a551ae14e00bc175332302609ffb344ca3",
+    "CONTRACT_REUSE.json": "cf669758959b71685ae7ae41a339897e071f8eeb61a24af1590788219ebe8260",
+    "SOURCE_PROVENANCE.json": "5a068244d0e53c3aca3fe1f164a0da60399157291dc36a835a599a93f7b41ed4",
+    "DELIVERY_PROTOCOL.txt": "0f4998049b7aac2a6ee9d452a151c2565cd46d24901f9946184510e5440e2782",
+    "DELIVERY_SOURCE_FREEZE.json": "475b46bcd309819b0a47ce74d77a4039ae772e96c1b821e4986cf2403f725ecd",
+    "author_model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "initial.pt": "0b7da2109fa143317ff0724e4279393db1da297054c60b310c765243316f4dc1",
+    "SPLIT.json": "7c046ee915f7defaf731ce0914dbbdcceeb0a8401d4a509b09e9662b62612aed"
+  },
+  "architecture_commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "fresh_random_initialization": true,
+  "dataset_sizes": [
+    60000,
+    10000
+  ],
+  "model_has_BN_or_buffers": false
+}

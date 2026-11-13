@@ -1,0 +1,71 @@
+{
+  "state": "completed_single_public_STG_package_comparison",
+  "numeric": {
+    "threads": 2,
+    "MKLDNN": true,
+    "torch": "2.7.1+cu118",
+    "CUDA_initialized": false,
+    "dtype": "FP32"
+  },
+  "epochs": 100,
+  "steps": 200,
+  "training_sample_forwards": 20000,
+  "teacher_endpoint_forward_calls": 6,
+  "teacher_endpoint_sample_forwards": 600,
+  "endpoint": [
+    {
+      "batch": 1,
+      "perturbation": "zero",
+      "N": 128,
+      "hits": 42,
+      "CE": 2.531937599182129
+    },
+    {
+      "batch": 1,
+      "perturbation": "previous_SGD_delta",
+      "N": 128,
+      "hits": 115,
+      "CE": 0.4009115397930145
+    },
+    {
+      "batch": 1,
+      "perturbation": "public_stage_delta",
+      "N": 128,
+      "hits": 0,
+      "CE": 9.554771423339844
+    },
+    {
+      "batch": 2,
+      "perturbation": "zero",
+      "N": 72,
+      "hits": 23,
+      "CE": 2.471857786178589
+    },
+    {
+      "batch": 2,
+      "perturbation": "previous_SGD_delta",
+      "N": 72,
+      "hits": 69,
+      "CE": 0.23868925869464874
+    },
+    {
+      "batch": 2,
+      "perturbation": "public_stage_delta",
+      "N": 72,
+      "hits": 0,
+      "CE": 9.549881935119629
+    }
+  ],
+  "delta": {
+    "path": "D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\private_run\\delta.pt",
+    "sha256": "89c26f310460ea5e7bcabffbbf80c18023520edf7255ed7965a103d1df245e96",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "original_model_parameters_unchanged": true,
+  "original_buffers_restored_for_endpoint": true,
+  "causal_effects_of_individual_changes_isolated": false,
+  "victim_ASR_evaluated": false,
+  "new_SSS_FU_run": false,
+  "overall_goal_complete": false
+}

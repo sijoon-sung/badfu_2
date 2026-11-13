@@ -1,0 +1,54 @@
+{
+  "state": "passed_fixed10_benign_FU20_full_CPU_audit",
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "verified_sha256": "f74afc84d93c9c727af9a90ed51df6e6d7cb9a59889f01c562a45f0af9e75e97",
+  "rounds": 20,
+  "trained_roles": 200,
+  "calibrated_roles": 200,
+  "epochs": 1000,
+  "batches": 20000,
+  "history_hashes_count": 420,
+  "all_ID_permutations_optimizer_RNG_checked": true,
+  "all_effective_sources_calibration_aggregation_exact": true,
+  "all_SGD_gradients_recomputed": false,
+  "observed_utc": "2026-11-02T17:35:18.2088847Z",
+  "current_task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 267009,
+    "action": "-B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py",
+    "state": "Running"
+  },
+  "current_processes": [
+    {
+      "ProcessId": 32316,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py"
+    },
+    {
+      "ProcessId": 22700,
+      "ParentProcessId": 32316,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_FIXED10_PAIR_20261103\\fu_runner.py --branch attack --catalog-root D:/TRAJECTORY_CATALOG_20261023 --case-id feduba.public_fixed10.cifar10.cleanfl20.s42.20261103"
+    }
+  ],
+  "current_attack_STATE": {
+    "state": "training",
+    "pid": 22700,
+    "round": 1,
+    "rounds": 0,
+    "client": 13,
+    "epoch": 2,
+    "cumulative_role_batches": 40,
+    "examples": 2500,
+    "updated_unix": 1793640916.9842472
+  },
+  "CA_ASR_not_yet_evaluated": true,
+  "collector_model_loads": 0,
+  "collector_forwards": 0,
+  "overall_goal_complete": false
+}

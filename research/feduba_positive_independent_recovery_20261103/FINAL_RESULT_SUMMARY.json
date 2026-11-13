@@ -1,0 +1,97 @@
+{
+  "state": "separate_independent_recovery_complete_performance_still_failed",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "new_independent_verification": {
+    "receipt": {
+      "sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+      "bytes": 3297
+    },
+    "completion": {
+      "sha256": "93b82036bad2d99c6cc87a11b561531ef95a561164159455f329a7d28c6f125d",
+      "bytes": 1903
+    },
+    "sample_forwards": 20000,
+    "forward_calls": 158,
+    "input_argmax_counts_exact": true,
+    "max_logit_abs_error": 0
+  },
+  "source_commit": "a16bed4737d28f7aeb088125dd0446b6f6928f00",
+  "actual_commit": "5e75844258b119432bf534b7c6e3c191377f0887",
+  "source_freeze": {
+    "sha256": "7215e413a50948249857be33f0b1f970991ae9c013b2ed9d6ba02001292d049d",
+    "bytes": 1003
+  },
+  "run_freeze": {
+    "sha256": "28b86d1816144200000172b9fa3b6cd0a32024150a4948ea83d09bb2c3df3ad2",
+    "bytes": 770
+  },
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "performance_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "original_verifier_still_failed_exit1": true,
+  "original_VERIFIED_still_absent": true,
+  "original_failure_bytes_preserved": true,
+  "original_models_sealed_packets_catalogue_defaults_unchanged": true,
+  "DISLAB_admission": {
+    "available_GiB": 17.145606994628906,
+    "commit_free_GiB": 42.64631271362305,
+    "GPU_util": 0,
+    "GPU_free_MiB": 5045,
+    "GPU_used_MiB": 5009
+  },
+  "deletions": 0,
+  "local_memory_is_not_DISLAB_prerequisite": true,
+  "new_training_runs": 0,
+  "new_primary_runs": 0,
+  "new_export_runs": 0,
+  "local_model_delivery_complete": false,
+  "overall_goal_complete": false
+}

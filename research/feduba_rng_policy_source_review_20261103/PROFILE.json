@@ -1,0 +1,38 @@
+{
+  "id": "feduba.rng_policy_source_review.20261103",
+  "launch_enabled": true,
+  "execution_kind": "stdlib_AST_text_metadata_only",
+  "execution_root": "D:/FEDUBA_RNG_POLICY_SOURCE_REVIEW_20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The completed declared per-role seed plus explicit loader-generator boundary differs structurally from the pinned public entry/import/cache path, even though both are labelled seed42; static source evidence can distinguish these policies without replaying RNG or models.",
+  "new_observable": "AST inventory of seed call scope, explicit DataLoader generator keywords, cache-branch/model-constructor order, and a purely integer source-derived200-role seed schedule; common helper hashes across minus/plus.",
+  "non_IID_scope": "No separation from D08/D15 large benign deletions; implementation provenance only, not detection.",
+  "seed_policy_change_authorized": false,
+  "new_training_authorized": false,
+  "new_model_loads": 0,
+  "new_tensor_payload_reads": 0,
+  "new_forwards": 0,
+  "new_RNG_operations": 0,
+  "new_optimizer_steps": 0,
+  "fixed_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "rounds": 20,
+  "input_binding_sha256": "c0b3b3018164f9cbe47bbb3d7114e1f44b7bb4c9200437629380075e3f204182",
+  "stop_rule": "Stop/preserve unexpected source/hash/scope/AST/runtime mismatch; no retry before new contract. No parameter or seed tuning, no causal/performance claim, no author-stream reconstruction; further training remains unvalidated/parked."
+}

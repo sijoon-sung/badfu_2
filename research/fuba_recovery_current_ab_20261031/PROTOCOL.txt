@@ -1,0 +1,12 @@
+가설: 같은자료/phase3/RNG와일치하는현재runtime SGD A를대조로삼을때,미실행Adam B recovery가정상효용을유지하며백도어제거를20%p이상강화한다.
+관련R02/D08/D15/N02. 이전비교의원래tensor bit재현gate는실패했다. A50epoch/2150batch와실패/모델을그대로보존했고B는전혀실행되지않았다. 그실패판정을통과로바꾸거나A를다시학습하지않는다.
+
+새근거: 같은optimizer/loader RNG/CPU·CUDA RNG가일치하지만원본phase4와새A의최대원소차이는8.940696716308594e-08이었다. 이는수치무결성진단이며공격점수가아니다. 원인을특정CUDAkernel로확정하지않는다. 새질문은original-bit-reproduction이아니라조건을확인한current-runtime A/B다.
+입력case fuba.reference.mnist.dba.s20261023.pre100.post.kd10 diagnostic,동일외부봉인0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c와fullrawSHA를검사한다. 기존A는D:/FUBA_DEFENDER_RECOVERY_20261031/SGD_recovery.pt,SHA3f13e280b00fe5fe74849c9c352d6ba88f38539c7328dc16f4677e53096e576d,payload_key=model. 최초선택마지막억제자99/client4와같은phase3/clean2700/λ2/E50/B64/lr.001/phase_seed21251427을유지한다.
+
+B실행전gate: 원래GPU-resident 전체MNIST→client→train_position 경로와새직접선택경로의모든입력/라벨이bit일치해야한다. 기존A와원phase4의loader RNG도일치해야한다. 원phase4와새A를각전체10000/9026장으로처음평가하여CA/ASR/정상타깃쏠림의각차이가1%p이하여야한다. 이gate를못넘으면새B도실행하지않는다. 수치차이의원인은미확정으로남긴다.
+이를통과하면oldA50epoch를재사용하고Adam B50epoch/2150batch를최초한번만학습한다. 코드의B objective/데이터순서/Adam설정은이전미실행B와동일하고,phase3의CPU/CUDA/numpy/python RNG를다시복원한다. 같은최종loader RNG가필수다. 새B50epoch/새2150batch와재사용A50epoch/2150batch를구분한다. A원본과Bmodel/optimizer/RNG/로그/진단upload/99R실제나머지7제출고정집계를새폴더에보존한다.
+
+판정: 동일하게B recovered ASR이현재A보다20%p이상낮고CA>=97/A대비1%p이내, B해당round대체집계도CA>=97/ASR<=10이어야이한정가설을지지한다. 붕괴나정상타깃쏠림을별도로기록한다. 양성이어도Adam=literalSGD/저자공인유일구현을뜻하지않으며새전체실험은별도명시프로필/기존실패/수식SGD대조를보존해야한다. 음성이면이선택으로전체학습을열지않는다.
+최대preflight와B50epoch후종료한다. 기존A/완료학습/이전finite진단/evaluator/export를다시실행하지않는다. source/hash/data/RNG/비유한/runtime실패는증거보존·중단하고같은유한비교를반복하지않는다.
+새D:/FUBA_RECOVERY_CURRENT_AB_20261031,DISLAB util<=5/free>=7000/used<=2048MiB/경쟁PID부재guard를확인한다. 다른앱종료는없다. D08/D15의큰정상nonIID반례는미해결이며server탐지자료선택에evaluator-only패턴/role을주지않는다.

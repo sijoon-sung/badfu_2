@@ -1,0 +1,87 @@
+{
+    "state":  "actual_DISLAB_local_PR_GitHub_source_bytes_exact",
+    "source_commit":  "a16bed4737d28f7aeb088125dd0446b6f6928f00",
+    "file_count":  13,
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "fadde2674f46875140b6831bb4656ec4f6c32eba1a767e99b4f73860f515322e",
+                      "bytes":  34,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "controller.py",
+                      "sha256":  "f8135e3d0cb7892ae0721f35fafcce02cf05128eb64d79ed9b345d4922d6c04b",
+                      "bytes":  4251,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "COPY_PROVENANCE.json",
+                      "sha256":  "b197fdefb869ca6141fce4a0df333d6ee8076b49e4525319b496ef374c26febb",
+                      "bytes":  780,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "991d5b25c9c8725e46930aa2022c13bec54838ab1cfc8e393f1fba8016c3b0d7",
+                      "bytes":  7694,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "c3622001a96a63e73341b37b6ec0329a4e458eb2ccdb0c759bc63d197fbeea64",
+                      "bytes":  3381,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "4d6300d465f1388847ee29e907879b5f5133022dfc4f19322c946a01361d0c7e",
+                      "bytes":  2347,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "recovery_contract.py",
+                      "sha256":  "56e04d21a701d64c61b0fcb7dbb18642af57154b264fa3be23cd62018f02b2ea",
+                      "bytes":  1679,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "review_recovery.py",
+                      "sha256":  "737b0cc196cc3d0a0b16c2d052cac7754032dd09ab896da4199fc6baf33c836f",
+                      "bytes":  3386,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "7215e413a50948249857be33f0b1f970991ae9c013b2ed9d6ba02001292d049d",
+                      "bytes":  1003,
+                      "matches_published_GitHub_blob":  true
+                  },
+                  {
+                      "name":  "verify_recovery.py",
+                      "sha256":  "9829046eda62d86f8c77b2abdca5bd3832c925369aecbfa122091b26e0073de9",
+                      "bytes":  12480,
+                      "matches_published_GitHub_blob":  true
+                  }
+              ],
+    "model_reads":  0,
+    "queries":  0
+}

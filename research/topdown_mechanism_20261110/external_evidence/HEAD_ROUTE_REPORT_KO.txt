@@ -1,0 +1,8 @@
+Head-route 공개기능 진단 완료: 단순 FC 복원은 정상필요조건 실패. R01/P02/P04/D08/D15, 2026-10-31.
+고정 H11 joint raw학생과nativePost의body/head 네조합을큰정상public500에서실제로계산했다. 이전에저장하지않았던512특징을새관측으로얻었고새학습/실제trigger/전체10000·9000추론은없다. 직접native/raw logit은기존H11공개proxy와차이0, 각head재구성도정확일치했다.
+nativebody/nativehead: KL0/일치100%.
+nativebody/studenthead: KL.0002578598/일치99.8%, 공개gate통과.
+studentbody/nativehead: KL.1224206191/일치94.2%, 공개gate실패.
+studentbody/studenthead: KL.1225562155/일치94.2%, 공개gate실패.
+이원인분해에서큰정상공개기능손상의대부분은변경된body를쓸때남았다. 단순출구복원으로정상기능을회복한다는현재가설은실패했고, 사전stop으로attack모델의route계산은하지않았다. 이것이head를고정한재학습이나모든표상정화의불가능성을증명하지는않는다. 그후보를자동실행할근거로도삼지않는다.
+v1은CPU LoadPercentage=null로STARTED전중단됐고모델추론은0회였다. 원source/freeze/FAILURE/exit를보존했다. v2는원래60%guard를유지하고null때실제PerfOS total측정을쓰도록별도source/output으로회복했다. v2만정상완료했고원본모델seal은보존됐다. 모든public진단은정답과member자료없이이뤄졌다.

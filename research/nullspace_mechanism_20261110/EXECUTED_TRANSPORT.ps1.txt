@@ -1,0 +1,23 @@
+$env:PYTHONIOENCODING='utf-8'
+$env:PYTHONDONTWRITEBYTECODE='1'
+$env:OMP_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+$root='D:/NULLSPACE_MECHANISM_20261110'
+$python='C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe'
+$freeze=Get-Content -LiteralPath ($root+'/FREEZE.json') -Raw | ConvertFrom-Json
+foreach($p in $freeze.files.PSObject.Properties) {
+  if((Get-FileHash -LiteralPath ($root+'/'+$p.Name) -Algorithm SHA256).Hash.ToLower() -ne $p.Value) {throw ('Source mismatch: '+$p.Name)}
+}
+$started=(Get-Date).ToUniversalTime().ToString('o')
+& $python -u ($root+'/derive_exact.py') --output ($root+'/results') 1>($root+'/derive.stdout.txt') 2>($root+'/derive.stderr.txt')
+$deriveCode=$LASTEXITCODE
+[pscustomobject]@{exit_code=$deriveCode;utc=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/DERIVE_EXIT.json') -Encoding UTF8
+if($deriveCode -ne 0) {Get-Content -LiteralPath ($root+'/derive.stderr.txt'); throw 'Producer failed; preserved, do not rerun'}
+& $python -u ($root+'/check_exact.py') --result ($root+'/results/RESULT.json') --output ($root+'/results/CHECKED.json') 1>($root+'/checker.stdout.txt') 2>($root+'/checker.stderr.txt')
+$checkCode=$LASTEXITCODE
+[pscustomobject]@{exit_code=$checkCode;utc=(Get-Date).ToUniversalTime().ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/CHECKER_EXIT.json') -Encoding UTF8
+if($checkCode -ne 0) {Get-Content -LiteralPath ($root+'/checker.stderr.txt'); throw 'Independent checker failed; preserved, do not rerun'}
+[pscustomobject]@{status='passed';host=$env:COMPUTERNAME;start_utc=$started;finish_utc=(Get-Date).ToUniversalTime().ToString('o');producer_exit=$deriveCode;checker_exit=$checkCode;result_sha256=(Get-FileHash -LiteralPath ($root+'/results/RESULT.json') -Algorithm SHA256).Hash.ToLower();checked_sha256=(Get-FileHash -LiteralPath ($root+'/results/CHECKED.json') -Algorithm SHA256).Hash.ToLower();source_freeze_sha256=(Get-FileHash -LiteralPath ($root+'/FREEZE.json') -Algorithm SHA256).Hash.ToLower();real_models=0;gpu_jobs=0} | ConvertTo-Json | Set-Content -LiteralPath ($root+'/EXECUTION.json') -Encoding UTF8
+Get-Content -LiteralPath ($root+'/derive.stdout.txt')
+Get-Content -LiteralPath ($root+'/checker.stdout.txt')
+Get-Content -LiteralPath ($root+'/EXECUTION.json')

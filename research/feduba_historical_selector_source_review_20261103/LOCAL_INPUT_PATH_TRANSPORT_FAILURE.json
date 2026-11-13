@@ -1,0 +1,11 @@
+{
+  "state": "prepublication_readonly_location_query_transport_failed",
+  "caller_sha256": "868537a0139da522f5b3a2f28d20315e3b7ba60033bb3fd041ab7e8b2ea440bd",
+  "transport_context": "node child_process execFile Python then dislab_audit.remote",
+  "observed_exception": "RuntimeError with empty captured stdout/stderr from dislab_audit.run",
+  "remote_receipt_observed": false,
+  "remote_execution_confirmed": false,
+  "source_or_model_stage_started": false,
+  "models_or_tensors_read": 0,
+  "original_caller_reinvoked": false
+}

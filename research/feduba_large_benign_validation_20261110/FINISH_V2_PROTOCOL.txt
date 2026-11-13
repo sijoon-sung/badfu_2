@@ -1,0 +1,7 @@
+2026-11-11 KST. D21/D20/D08/D15/R03. Hypothesis, actual normal models, fixed discovery, large benign counterexample comparison and stopping rule remain identical to PROTOCOL/FINISH_PROTOCOL.
+
+The first pending-phase continuation failed before search because pathlib.Path was not imported. It had already moved the expired parent's two metadata files to incidents/publication_timeout, but had not created SEARCH_ONCE or called any native model/search/audit/clean evaluation. The completed balanced5000 FU20/CPU audit and registered n00 inputs are unchanged. Preserve the failed helper/source/ONCE and its actual traceback.
+
+New finish_remaining_v2.py adds only the missing import and a fresh once/publication/freeze boundary, reads the already archived parent metadata, and moves the helper NameError trace into its own incident. The pending workflow is otherwise unchanged. Static symtable scope checking reproduced ['Path'] on v1 and [] on v2, with no torch import/model computation. This does not replace runtime or native checks.
+
+Bind source and completed FU/result/audit/ready plus archived parent bytes before execution. Require no owned live peer and no n00 SEARCH_ONCE. Do not rerun FU20, its independent audit, setup, case append or original controller. Per-case publication markers remain raw-byte verified before native search. Stop on actual mismatch/runtime failure and preserve; no scientific retuning or automatic training retry.

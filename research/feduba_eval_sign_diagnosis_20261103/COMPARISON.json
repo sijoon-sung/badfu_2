@@ -1,0 +1,148 @@
+{
+  "state": "completed_fixed_endpoint_sign_interaction_diagnostic",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "positive_route": "clip(x+1.5delta,-1,1)",
+  "positive_route_source": "completed_standard_receipts_reused_not_reinferred",
+  "negative_route": "clip(x-1.5delta,-1,1)",
+  "negative_route_source": "new_primary_and_fresh_same_GPU_independent",
+  "rows": {
+    "pre": {
+      "checkpoint_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "clean_correct_reused": 8553,
+      "CA_pct_reused": 85.53,
+      "positive_hits_reused": 1813,
+      "positive_ASR_reused": 20.144444444444446,
+      "negative_hits": 1016,
+      "negative_ASR": 11.28888888888889
+    },
+    "benign": {
+      "checkpoint_sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "clean_correct_reused": 8474,
+      "CA_pct_reused": 84.74,
+      "positive_hits_reused": 1500,
+      "positive_ASR_reused": 16.666666666666668,
+      "negative_hits": 858,
+      "negative_ASR": 9.533333333333333
+    },
+    "minus_attack": {
+      "checkpoint_sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "clean_correct_reused": 8469,
+      "CA_pct_reused": 84.69,
+      "positive_hits_reused": 1244,
+      "positive_ASR_reused": 13.822222222222223,
+      "negative_hits": 5241,
+      "negative_ASR": 58.233333333333334
+    },
+    "plus_attack": {
+      "checkpoint_sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "clean_correct_reused": 8445,
+      "CA_pct_reused": 84.45,
+      "positive_hits_reused": 5287,
+      "positive_ASR_reused": 58.74444444444445,
+      "negative_hits": 677,
+      "negative_ASR": 7.522222222222222
+    }
+  },
+  "denominator": 9000,
+  "alignment_rule_passed": true,
+  "negative_minus_minus_positive_for_minus_request_pp": 44.41111111111111,
+  "positive_minus_negative_for_plus_request_pp": 51.22222222222223,
+  "matched_request_sign_plus_minus_gap_pp": 0.5111111111111128,
+  "minus_negative_minus_pre_pp": 46.94444444444444,
+  "minus_negative_minus_benign_pp": 48.7,
+  "negative_diagnostic_gates": {
+    "minus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    },
+    "plus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    }
+  },
+  "standard_positive_minus_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -6.322222222222222,
+    "attack_minus_benign_ASR_pp": -2.8444444444444446,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 0.84
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "standard_positive_plus_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "standard_positive_failure_replaced": false,
+  "author_intent_or_exact_paper_reproduction_proved": false,
+  "model_weights_changed": false,
+  "new_training_steps": 0,
+  "new_checkpoint_selected": false,
+  "primary": {
+    "sha256": "0a70f50c3fcc6e7cea0486a2c32681f606fcf4cc53e1b9dd50b746000ef7ac0f",
+    "bytes": 87984
+  },
+  "independent": {
+    "sha256": "1089e0a186d3ad4f532a601572c8883bb24a441b5ed4099dcffe247cf5f5d1b2",
+    "bytes": 3130
+  },
+  "completion": {
+    "sha256": "9f5428f4a434b0fb155a6a62ab9a2319d89109b1adbcfcc26d1d4e4862d817fd",
+    "bytes": 3695
+  },
+  "private_payload_scope": {
+    "negative_input_packets": 79,
+    "negative_logit_packets": 316,
+    "raw_inputs_ids_logits_DISLAB_only": true
+  },
+  "overall_goal_complete": false
+}

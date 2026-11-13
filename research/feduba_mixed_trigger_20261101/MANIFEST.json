@@ -1,0 +1,1221 @@
+{
+  "profile": "feduba.mixed_teacher.CPU_trigger100.source_only.20261101",
+  "source_freeze_sha256": "5f5146b6a266754f7e3a9ffbcd341c838c704d7d7a16786277301dfe01731a86",
+  "run_freeze_sha256": "d9a214d747b6aac897fd8e74d2ba0e74434d576d07c1ae53b50c6cf973528eb2",
+  "launch_profile_sha256": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+  "teacher": {
+    "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+    "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+    "bytes": 45162251,
+    "payload_key": null,
+    "classes": 201
+  },
+  "source_target": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/target_external.pt",
+    "sha256": "8a40deeb76740157aaeecb259d013740ff83b3f54c155ccf6c3802a7bba2ab4a",
+    "bytes": 618597,
+    "payload_key": null
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "examples": 200,
+      "batches": 2,
+      "loss": 2.826232032775879,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch001.pt",
+        "sha256": "6eb26afdf56c877cc46e0ffe84491c2ecb5df3678f7655d6db58832a8e06b25a",
+        "bytes": 52693,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 2,
+      "examples": 200,
+      "batches": 2,
+      "loss": 7.263700485229492,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch002.pt",
+        "sha256": "028bfb6c7198eb5f429dac420051f249cde5cd05703e456c539e2c2cf1c6fb2d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 3,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.337439823150635,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch003.pt",
+        "sha256": "700ee2716c3c75502f62cb4133893b660e31353b24f09dcc78e8f5d4ab6cb2ba",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 4,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.45316801071167,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch004.pt",
+        "sha256": "c8eb183eb5b99bbd282708ccd79d18f48d9399704779564a1c55ba80d7d72b39",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 5,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.874873886108398,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch005.pt",
+        "sha256": "cde67ac13e8dd6a685911980e9693cc6be5b6860b8c9ec3d5024bc90d357a244",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 6,
+      "examples": 200,
+      "batches": 2,
+      "loss": 7.450585632324219,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch006.pt",
+        "sha256": "4e49ebfd2a9c3a17f22838e27330088fa96689a998fe6bef62748503b7b8155c",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 7,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.939594745635986,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch007.pt",
+        "sha256": "f8b4d2e4c1bfe87cfef4fbae32dc8a02a97c19b4ac4649402d3288f9b1cd6b49",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 8,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.290510520935059,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch008.pt",
+        "sha256": "e17d80e1e5b26359148709d86a4a9addd0ff5eef4ed0767174d8532aea7a7f71",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 9,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.0101291847229,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch009.pt",
+        "sha256": "e50e27a07be6a8ddad10bea8b083498b4de595da0b515b671225e07f4e744de1",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 10,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.376688785552979,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch010.pt",
+        "sha256": "2dc33aad94095025539af55a739e9c11bba4414f6f6c5b3855f5f22dd12377ad",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 11,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.903836898803711,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch011.pt",
+        "sha256": "335f994c01ba6e2e1460fa242fdae333c00b695ce1258f87c9c44b4776df82d2",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 12,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.37481803894043,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch012.pt",
+        "sha256": "4d6f00ac952c1d71995f9ebda271d5588840a41acf9a06deeb2680dfa610dd96",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 13,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.751685466766357,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch013.pt",
+        "sha256": "b7d2fa70adbb29ba396cdab8f96298cdf1900c373ecb6924741c6fd7b6ac0c65",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 14,
+      "examples": 200,
+      "batches": 2,
+      "loss": 6.402722644805908,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch014.pt",
+        "sha256": "a1a4bcd580771d636d604c05888bf8cdf9b331530c29e33496d67b6c6a21d51a",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 15,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.872451705932617,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch015.pt",
+        "sha256": "c444471ddf13a18d66ca27dade1088d0b458b0d5306a46b83eb3c09b94428bad",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 16,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.901534748077393,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch016.pt",
+        "sha256": "e7edc8d46c4a9459f9bed8bd3001b3bd9313b087262812ea706320c672497b86",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 17,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.0491838455200195,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch017.pt",
+        "sha256": "e815eb7c8b1d99290490051ae030ea39d1c9f58b75ed62894c9cbf1d7f5ae469",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 18,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.413811473846436,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch018.pt",
+        "sha256": "c546caafc8b7c8f62b98a4169724df38f0cadd21d83a4c55ddd12ec6a88c5b7d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 19,
+      "examples": 200,
+      "batches": 2,
+      "loss": 5.276684951782227,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch019.pt",
+        "sha256": "b048f8330578b0e2a9223b5e6c53691ecd723f110c96967a0fe948fca3eb96a1",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 20,
+      "examples": 200,
+      "batches": 2,
+      "loss": 4.2571287441253665,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch020.pt",
+        "sha256": "b9038cbf02736d121d352401b3bbe37f5b9ed216bda3af112ce4f4f034dc6ebd",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 21,
+      "examples": 200,
+      "batches": 2,
+      "loss": 3.274846019744873,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch021.pt",
+        "sha256": "eed6c8eec14374b68093d615c93826b5b534d6636cf04c8c9f1c0e26893b18e6",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 22,
+      "examples": 200,
+      "batches": 2,
+      "loss": 3.283882083892822,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch022.pt",
+        "sha256": "163082ed8823e128c49b7fee34a1e3aedec5ed1de5cb72453b2398f113f873d3",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 23,
+      "examples": 200,
+      "batches": 2,
+      "loss": 4.1867916297912595,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch023.pt",
+        "sha256": "06e4839ff85a6c6771d2ede00575b295efc0632ffbd1c85be4aa16e1f3bb3fb1",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 24,
+      "examples": 200,
+      "batches": 2,
+      "loss": 2.780604009628296,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch024.pt",
+        "sha256": "fb8a8d593fe1b854c4a7fa63993d4f99dad6e87314563f8a593a428b4779bd03",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 25,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.8879190111160278,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch025.pt",
+        "sha256": "6bb11352c07049e8108568d95cd38e94be1e33280246190299bf5d72bf4afc3d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 26,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.683668384552002,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch026.pt",
+        "sha256": "cc9706e7508dea6007a62316f75fc904406e0b795efb6ce13d508161100c5682",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 27,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.4830911588668823,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch027.pt",
+        "sha256": "9c471b57a8dcfc9cacaaca9e5edf73af544863fd95b96536fe183a6c7bf2f676",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 28,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.2192464447021485,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch028.pt",
+        "sha256": "e0d040f3ffece9b2b0d79b01bda0e62488281bd6ad51eccaae6c576cf5ddc65f",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 29,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.1584820747375488,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch029.pt",
+        "sha256": "bfe3202b9d851837581c480683f84f70764b29142a00a08289bd2c3c3c950ad7",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 30,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.2322330904006957,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch030.pt",
+        "sha256": "9a9d021c421c9bda0180f2bdeb165f4fff0d90a76bb8ca210104a5c8ae67ed84",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 31,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.286008234024048,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch031.pt",
+        "sha256": "7c15a6a3f324dc492c3f16f035595e4aef48ee268a92faba19b380627f83f2bc",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 32,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.1796298789978028,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch032.pt",
+        "sha256": "9dd1b22ed43cc370e95c9b39de85bbecf3288205b0d145b631dd42a388a44a03",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 33,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.4699838638305665,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch033.pt",
+        "sha256": "ebec0f9152f664658b596014bf5ebaf3a726caf866dad8cb96f6b14d058cbbf6",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 34,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.1108995056152344,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch034.pt",
+        "sha256": "34dc961249631eb4c88769d15d926675ea43597573659724de5c4622dc773499",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 35,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.2685026359558105,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch035.pt",
+        "sha256": "15aadf1b3121d6609f933cf216b282ae0e56011395b729262a1e80a155db2426",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 36,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.4964025020599365,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch036.pt",
+        "sha256": "9f9a4481772cd17c06750f8c0f96a823f3d76a57629412927e3a4d3c330bb02e",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 37,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.5079850816726685,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch037.pt",
+        "sha256": "78b5eb3652b7f9f7541f36f926d05f4435e71d99efe7bd1e8dea0816a6632e71",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 38,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.3668155574798584,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch038.pt",
+        "sha256": "fb5d1f2ba6f29d9ee620d046adb7575520f7575736a222bf426a848ddfe7bd7e",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 39,
+      "examples": 200,
+      "batches": 2,
+      "loss": 1.3611852979660035,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch039.pt",
+        "sha256": "c297483253bab5a9faee287bf4d409bd4e8fce0ca16edae6e2aebb5cabcdaca8",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 40,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.879030351638794,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch040.pt",
+        "sha256": "992ff22fa9aaf64cf706d7bae0c3d3da1b83f487f991558b8bbaeecf97e2391f",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 41,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.8029385662078857,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch041.pt",
+        "sha256": "df9fab3dfce03b2f3fea33063bfc9f8c3f747a0e0601523f44f5e6f5f9cd6985",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 42,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.8385016775131225,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch042.pt",
+        "sha256": "2eee99410aed7d93b8b21d1ed35f7369b025118dce152759d50dbbbc5bebfbfd",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 43,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6775718760490418,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch043.pt",
+        "sha256": "52af726a1da03b84a710ccbf48ae2099c0c73380f9b6ce7b06937b730656984d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 44,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6522274708747864,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch044.pt",
+        "sha256": "65f75441aefc4d1990f3156fce45fdc675b5f65b3252c32dac13226619067384",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 45,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7716695713996887,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch045.pt",
+        "sha256": "70dbe81d0e591d0ef9203deceb2f983c9265ec2119d169e33b0ffda741b24761",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 46,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.8483348608016967,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch046.pt",
+        "sha256": "07686c19c8d716b79971a3c3a6410ccadaded811ec428b4218bf8f2397395b9e",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 47,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.83825758934021,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch047.pt",
+        "sha256": "ea66d0ceeb48075447939f27283d3926aac21b749cb64452095dde703362fffd",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 48,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7953417778015137,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch048.pt",
+        "sha256": "72aa0dfcefe0bc457af055e45422d6d2d92f9ea7108184e1279301aee7b86b9e",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 49,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7936671352386475,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch049.pt",
+        "sha256": "4250c8d29656347a039d8b403a98994b994bb41c65f4ac5ae2ba2d7ce5cd222f",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 50,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7378335261344909,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch050.pt",
+        "sha256": "0cd9229390211f1ea26ab20adcad117a9120768dff764a06b2af11998d873365",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 51,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.9032339406013489,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch051.pt",
+        "sha256": "a5a0d0079bd9d8daf731e5c16589140bdba21e38309b7a90a439f2d3a6dfeb89",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 52,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7769494462013244,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch052.pt",
+        "sha256": "a1f3c244d2caee3bb56b2f47df354df5d29680ec2b2883509f3cc1b566b01002",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 53,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7187544679641724,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch053.pt",
+        "sha256": "dec34fc8da729f6f2bcf9480f599ea12fd097e5c182ab9b1ee7631d0bc74d3cc",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 54,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7239984798431397,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch054.pt",
+        "sha256": "0fd8961dd61456188068fe69bd004d39ed72fa8160a94a821b389d813643ad40",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 55,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6042968797683715,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch055.pt",
+        "sha256": "6fa1f09b169a8fbf486e914e88a1153d32972b030926c1c386af43d4580985e1",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 56,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7270975732803344,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch056.pt",
+        "sha256": "2001cb6e20290d8ab97d3406c0b455db4b9310bcf317757caf9deb54c5516eda",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 57,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6032605481147766,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch057.pt",
+        "sha256": "f8d7dded42b36dae39483e10419f0f9fb41db2c1da43cf108c10589cca4f735f",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 58,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.7800654315948486,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch058.pt",
+        "sha256": "10c2118cb51ddd3bce15d870b265c890c1f9538698397029610f7b2df5da36ad",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 59,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.619234561920166,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch059.pt",
+        "sha256": "a7f4f6dbe7ce3ed05fad06228a6f8d79dee04037a0f6b5d99e063c188868de19",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 60,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6544908094406128,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch060.pt",
+        "sha256": "0d345f9fd20ec9721226d918a02c8987b1eaa7085e9f1a12b20c69d07c6e6da3",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 61,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6636406588554382,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch061.pt",
+        "sha256": "caf2ea7943a6e6a54477bf4c000cbbda26d3546c186678e278de7b884bb32813",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 62,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5935189580917358,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch062.pt",
+        "sha256": "7ff4381f4805a3a7d1cfae6c77a8e77ed67f920d1c4cd0f1321a650c1e7c71e3",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 63,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5776599335670471,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch063.pt",
+        "sha256": "666b94430cac284d94f7d352333dea156a5b7aafe4a0d81913f0bb6c192b6a85",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 64,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5994769382476807,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch064.pt",
+        "sha256": "4fddae2439307dd7b4ebc307dca646a9fa76acb470545cf7eb1648e135f54669",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 65,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6566575336456298,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch065.pt",
+        "sha256": "0d24f5a0d9b484b00a5aa653b0ca9668b2e961cea7d55d0f494a27c55a3ae071",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 66,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5234577083587646,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch066.pt",
+        "sha256": "413005c8778658f9bdc1036c93389bc152b754796765fa43dcdada83bf734f43",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 67,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5018438482284546,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch067.pt",
+        "sha256": "5ea51098ceac827b65f58eb52ecb93977ef09f443834d68f85ef7f9ee339db2c",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 68,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6713045704364776,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch068.pt",
+        "sha256": "cd0b54613dd53b459f117229f5a0e3bb7860907495bf40851d2fab9c3f9a4f94",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 69,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5464193677902222,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch069.pt",
+        "sha256": "9df0a7c74729931aa2df0dd590a8db6b45d170c4a85d46a2661a3a9db0594135",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 70,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5850839781761169,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch070.pt",
+        "sha256": "b5e0804df468313974022465e13caddf38b32321351b21e627d506e05d657282",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 71,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5648657274246216,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch071.pt",
+        "sha256": "80ed5e34acc3a43590e09fad12765a30283ee0b53287c6c8bec8f4e3ca36e8c0",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 72,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.543323392868042,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch072.pt",
+        "sha256": "c84d19764566c6c9b0c9249f363a1cd2615fef92bae48b432605d3ed04fa21ac",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 73,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5439034533500672,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch073.pt",
+        "sha256": "0a7fed830f9c28a96817ac2560f0dde9f18210a28c3ef7a8e9d32c5b66e0d291",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 74,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5369849443435669,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch074.pt",
+        "sha256": "faca3e97f4fca404d31d4a39e27a7f4360849265773fbe8055bb6e96859d082d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 75,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5380788445472717,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch075.pt",
+        "sha256": "3680ede0d8cc25667f1a669924055596e1e0ce9d50f462dd1d4515e196ed5f52",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 76,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6159446120262146,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch076.pt",
+        "sha256": "849a81feccc6bf6ee6c5c864b113cc4bb496d21080ade698df86ec5c660c9423",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 77,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6445506882667541,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch077.pt",
+        "sha256": "3d49383d802d51ca3c67fb507a111c3fed3a92b4430af90bc450bce3b6cd53d7",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 78,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6283897018432617,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch078.pt",
+        "sha256": "8ed0eb0de10e5cfe6693da98bf2a6f9e7f3130ee51fcfa6c770d092aa044537b",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 79,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.633857183456421,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch079.pt",
+        "sha256": "208b1281577652ce02b3efc931cf4a8e62d8279343b6672b99321b86efcca5fc",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 80,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5397658574581147,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch080.pt",
+        "sha256": "11a01492a0d6efbcf9404c42290a8d68b163fb59ee0faddc4ae1ca5cdd201b59",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 81,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5824716424942017,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch081.pt",
+        "sha256": "3c3d48565bbe7ceff29bfcd0898cbd4741d59e7cdaeaa04460252c2a987b530a",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 82,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5356084728240966,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch082.pt",
+        "sha256": "dcb2690063f706fa4aee1665a7eee9ebb79998b789520c9d2e94a3048ffd612c",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 83,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.53797776222229,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch083.pt",
+        "sha256": "c20cfd63317e53fdb525e66df42ebd802e9c63d2d2b1f0f2934c30ee5068ebbe",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 84,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6334994387626648,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch084.pt",
+        "sha256": "9729712fe70be2fce82e055b484253ed7a323c7409e3c891b945ef4f4784b656",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 85,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6388084912300109,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch085.pt",
+        "sha256": "5f964bb540391f42de055afde6fce907227f92bf82547c3b022e9bfe1cde52a6",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 86,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5568221020698547,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch086.pt",
+        "sha256": "117a850955c6401309051a76ad8b63d18d012b805cf6901ed9c36c8a2f524d57",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 87,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6063832020759583,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch087.pt",
+        "sha256": "3f0730d9a7501813459909931ade0e9c00817b3a90ca3d0fd92752f22e6d11f5",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 88,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5087922930717468,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch088.pt",
+        "sha256": "9e8003c1cb61b9176b50b9c26f649fd48a7e48a4d07d19e5a46cb1cbf17ae0fe",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 89,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5651268625259399,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch089.pt",
+        "sha256": "67659efa5453f450ab1cb48323d98ec3da4b0d505928fce77a78d560e355fb2e",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 90,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5988696908950806,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch090.pt",
+        "sha256": "db267b8b374d8904cc2fa57b050584ffe5d7516c78d447d018c7ef7f4397ca5d",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 91,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.6007463407516479,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch091.pt",
+        "sha256": "a724f76bffff50294c41c74d3f936f2440ac6b52b16485adec740beab99e72db",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 92,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5142338418960571,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch092.pt",
+        "sha256": "aed90dfa49deae83728495566a54e6d54b1e183dc0f6706d91f6a60c2f5d2904",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 93,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.475305255651474,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch093.pt",
+        "sha256": "778004f38324603b40a8d41fb9fe127b8aa1be453ecf544b7163e299d2e0bdb1",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 94,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5107510280609131,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch094.pt",
+        "sha256": "44dc36c28225e8b569734b8c339de6086bd307ac00eac19c4e7da9ac4558e685",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 95,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5598295450210571,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch095.pt",
+        "sha256": "3981164cb198da9996ea0a84352221721102b010929238d141af0cfb763f0a9c",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 96,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5399644339084625,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch096.pt",
+        "sha256": "2a1101e80108b521035a83a6cf1cafcdf1c3b1a2ceb1cef48edcaf60718036f7",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 97,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.5507096147537232,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch097.pt",
+        "sha256": "90e0df5ad001e63dffafd26903906c16e3a189c7e787c1fb31f9b6acaf12feae",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 98,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.578123791217804,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch098.pt",
+        "sha256": "68eee7501db73522e859ad40e76a52e6169db5594a989fe9dfc8e665270656fe",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 99,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.40191831707954406,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch099.pt",
+        "sha256": "75a6a79666a347c4e53a96a780ff140d6c2bff0895e14910673f51fa5c219ccb",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    },
+    {
+      "epoch": 100,
+      "examples": 200,
+      "batches": 2,
+      "loss": 0.4310444688796997,
+      "checkpoint": {
+        "path": "private_run/epochs/epoch100.pt",
+        "sha256": "92147cde8577da4e1fa4ae12f5dae76f51aaa683beb217f0f92f26d00ded5442",
+        "bytes": 52821,
+        "payload_key": "delta"
+      }
+    }
+  ]
+}

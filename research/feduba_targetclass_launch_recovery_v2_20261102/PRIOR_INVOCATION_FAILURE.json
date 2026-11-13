@@ -1,0 +1,4 @@
+{
+  "state": "failed_preserved",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_targetclass_launch_recovery_20261102\\invoke_registered_launch_once.py\", line 44, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\feduba_targetclass_launch_recovery_20261102\\invoke_registered_launch_once.py\", line 39, in main\n    result=t.remote(body)\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\00_trajectories\\dislab_audit.py\", line 29, in remote\n    return run(args)\n  File \"C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\research\\00_trajectories\\dislab_audit.py\", line 19, in run\n    raise RuntimeError(p.stdout + '\\n' + p.stderr)\nRuntimeError: \n\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\u02b9\ufffd \ufffd\ufffd\u03f4\ufffd.\n\n"
+}

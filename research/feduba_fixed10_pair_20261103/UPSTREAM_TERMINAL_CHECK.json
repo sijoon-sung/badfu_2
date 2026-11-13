@@ -1,0 +1,29 @@
+{
+  "observed_utc": "2026-11-02T16:53:16.8299070Z",
+  "tasks": [
+    {
+      "task_name": "Codex-FedUBA-public-fixed10-cleanFL20-20261103",
+      "state": "Ready",
+      "last_result": 0,
+      "native_process_count": 0,
+      "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+      "arguments": "-B -u D:/FEDUBA_FIXED10_FOUNDATION_20261103/foundation_controller.py"
+    },
+    {
+      "task_name": "Codex-FedUBA-public-fixed10-clean-review-export-CPU-20261103",
+      "state": "Ready",
+      "last_result": 0,
+      "native_process_count": 0,
+      "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+      "arguments": "-B -u D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103/export_clean_review.py"
+    },
+    {
+      "task_name": "Codex-FedUBA-public-fixed10-newSSS5000-20261103",
+      "state": "Ready",
+      "last_result": 0,
+      "native_process_count": 0,
+      "execute": "C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe",
+      "arguments": "-B -u D:/FEDUBA_FIXED10_SSS_20261103/sss_controller.py"
+    }
+  ]
+}

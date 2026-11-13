@@ -1,0 +1,85 @@
+{
+  "state": "passed_new_native_metadata_source_probe",
+  "Python_AST_files": 14,
+  "unchanged_helpers": 5,
+  "read_only_write_rejections": 3,
+  "native_process_rows": [
+    {
+      "ProcessId": 2120,
+      "ParentProcessId": 30752,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 29736,
+      "ParentProcessId": 56200,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 29032,
+      "ParentProcessId": 44984,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 51588,
+      "ParentProcessId": 56364,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 4400,
+      "ParentProcessId": 40524,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 31756,
+      "ParentProcessId": 4400,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 37176,
+      "ParentProcessId": 41892,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 37492,
+      "ParentProcessId": 53772,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 9376,
+      "ParentProcessId": 29836,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 49740,
+      "ParentProcessId": 42136,
+      "Name": "python.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 37304,
+      "ParentProcessId": 7496,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVALUATION_RECOVERY_20261101/source_probe.py"
+    }
+  ],
+  "own_native_row": {
+    "ProcessId": 37304,
+    "ParentProcessId": 7496,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVALUATION_RECOVERY_20261101/source_probe.py"
+  },
+  "model_loads": 0,
+  "model_forwards": 0,
+  "torch_imported": false,
+  "scientific_fixture_reexecuted": false,
+  "probe_hold_seconds_for_external_CIM": 25
+}

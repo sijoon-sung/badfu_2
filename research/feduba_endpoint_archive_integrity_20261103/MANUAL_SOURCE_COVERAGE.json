@@ -1,0 +1,41 @@
+{
+  "state": "manual_call_scope_source_read_only_not_an_independent_AST_or_model_experiment",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "upstream_commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "sources": [
+    {
+      "file": "Fed_Unlearn_attack.py",
+      "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_Unlearn_attack.py",
+      "bytes": 18334,
+      "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d"
+    },
+    {
+      "file": "Fed_train.py",
+      "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_train.py",
+      "bytes": 10658,
+      "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e"
+    },
+    {
+      "file": "Fed_Unlearn_main.py",
+      "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_Unlearn_main.py",
+      "bytes": 7310,
+      "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d"
+    }
+  ],
+  "observations": [
+    "Fed_Unlearn_attack imports global_train_once atline12 and unlearning_attack calls it at237; Fed_train FL_Train also calls global_train_once at52. The separate global_train_once_multi definition164 with explicitweight_decay5e-4 at177 is not selected by those pinned callers.",
+    "The called sequentialSGD atFed_train103 haslr=FL_params.local_lr/momentum0.9 and no explicitweight_decay keyword. Actual foundation andFU use the declaredwd0 path; do not adopt the uncalled multi helper as a new correction.",
+    "Both caller loops use zero-basedtqdm.trange(global_epoch) and setcosine usingepoch atFed_train44-52/Fed_Unlearn_attack227-237. The actual r=1..20 schedule uses(r-1)/20. No off-by-one schedule mismatch found.",
+    "PublicFU mainlocal_epoch10/ratio.5/interval1/20global rounds and unlearning_attack208-212 retain the declared5local/20round condition.",
+    "This is limited manual source text reading, no standalone AST/numeric comparison, realruntime import, RNG/gradient/model replay or performance-causal proof. No new lr/wd/epoch correction or wholetraining follows."
+  ],
+  "closed_candidate": "Do not repeat this same lr/caller/multiprocessing/weight-decay explanation every heartbeat.",
+  "new_model_correction": false,
+  "old_source_or_profile_changed": false
+}

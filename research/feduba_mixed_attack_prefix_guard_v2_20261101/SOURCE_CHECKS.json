@@ -1,0 +1,27 @@
+{
+  "state": "passed_v2_source_AST_SHA_and_one_native_memory_metadata_probe",
+  "remote_Python_AST": 4,
+  "remote_PowerShell_AST": 2,
+  "remote_source_SHA_files": 10,
+  "native_OS_memory_queries": 1,
+  "native_probe": {
+    "Python_AST": 4,
+    "native_memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 23579312128,
+      "committedBytes": 44073873408,
+      "commitLimit": 90460561408
+    },
+    "torch_imported": false,
+    "model_loads": 0,
+    "finite_audit_executed": false
+  },
+  "numerical_auditor_SHA_unchanged": "371db7c8efdfb5d1e2f605a2f43a8a11592e87f0881aa4bed461525246035e36",
+  "model_loads": 0,
+  "model_forwards": 0,
+  "new_finite_audit_executed": false,
+  "old_audit_or_fixture_reexecuted": false,
+  "freeze_sha256": "741ac26f4430d76fedcb8dc9be91eb2b41d0b1e10fae7f9a27696e5d80c63836"
+}

@@ -1,0 +1,122 @@
+{
+  "commit": "60454a56f025843d6bcc540f99d1d4c6888f3873",
+  "all_raw_blob_bytes_verified": true,
+  "files_verified": 23,
+  "rows": [
+    {
+      "name": "BENCHMARK_LABELS.json",
+      "sha": "9fbc427c55be1de4944252711e81c70a394832e6",
+      "size": 435
+    },
+    {
+      "name": "COPIED_SOURCE.json",
+      "sha": "af7298148ed44d088512a1cd96fc382c5256c3e1",
+      "size": 685
+    },
+    {
+      "name": "FREEZE.json",
+      "sha": "991a1d68e8b5499950eec00ded7b37382df7d75e",
+      "size": 2333
+    },
+    {
+      "name": "FREEZE_INITIAL.json",
+      "sha": "a1cf83ab42b7367f3539366c1767b30cd43b6044",
+      "size": 1878
+    },
+    {
+      "name": "INITIAL_READ_FAILURE.json",
+      "sha": "d3dc2bcfcce49f87c6281f16936f75eeb13d361e",
+      "size": 411
+    },
+    {
+      "name": "PRELAUNCH_CORRECTION.txt",
+      "sha": "55807906f90d7d1ffd7e4a0eaeaf8b678b91547b",
+      "size": 1509
+    },
+    {
+      "name": "PRIOR_WORK.txt",
+      "sha": "36c215975b1473138839e6e1d94a449609b83c6a",
+      "size": 1843
+    },
+    {
+      "name": "PROFILE.json",
+      "sha": "5072ee24afa5671cc0b5402e4b3cb912ed47ca22",
+      "size": 742
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "sha": "0b5fd8f5bf1034090f0db1f32363d3c19dd8132a",
+      "size": 7911
+    },
+    {
+      "name": "bootstrap.py",
+      "sha": "f3b5f892eb28da748328b7bb4a52744ae7734ced",
+      "size": 1544
+    },
+    {
+      "name": "checkpoint_guard.py",
+      "sha": "280af60e89c9798aaef9dafe7c75f99e4735705d",
+      "size": 708
+    },
+    {
+      "name": "controller.py",
+      "sha": "aa6fe3a36e5f968fcd30d499bf614f63fbc5368f",
+      "size": 1902
+    },
+    {
+      "name": "feduba_model.py",
+      "sha": "63c50f75283f2e32e2b6199a9db2836c91b9d18c",
+      "size": 4379
+    },
+    {
+      "name": "fuba_model.py",
+      "sha": "c97af861b6cc081d6d8847d96d38614dc2e9c97c",
+      "size": 3783
+    },
+    {
+      "name": "inspect_inventory.py",
+      "sha": "022719a39716421c4183c1652e802515dd54638f",
+      "size": 2062
+    },
+    {
+      "name": "ops.py",
+      "sha": "4874f17819e90fa07a9aee0f03b2d7e457c93592",
+      "size": 3193
+    },
+    {
+      "name": "prepare.py",
+      "sha": "99cf7e7b74ccc61c4ffdad171b0c56fb4d78044f",
+      "size": 5102
+    },
+    {
+      "name": "probe_reference.py",
+      "sha": "e5a67c0769f42a17eb8d2341218b8d00d8c104c6",
+      "size": 7965
+    },
+    {
+      "name": "resource_guard.py",
+      "sha": "abade0f4cbb0f56419567ea8cb5626dd0b6faa64",
+      "size": 3012
+    },
+    {
+      "name": "resource_guard_prelaunch.py",
+      "sha": "7312c62ea16919979c54df6d59e76c7ebd60de32",
+      "size": 2148
+    },
+    {
+      "name": "route_core.py",
+      "sha": "f7d0568e19f76deca2602762fcb4ecb99bfaf330",
+      "size": 7634
+    },
+    {
+      "name": "run_search.py",
+      "sha": "ea01d6170a2d11b221dab1d17d3fd94a1c489710",
+      "size": 6524
+    },
+    {
+      "name": "verify_results.py",
+      "sha": "9323deffdb31f69cb07dc04d65f732647e3d8732",
+      "size": 4594
+    }
+  ]
+}

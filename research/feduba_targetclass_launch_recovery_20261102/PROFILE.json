@@ -1,0 +1,18 @@
+{
+  "state": "launch_invocation_only_recovery",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "original_launcher_sha256": "0973e62e7d12accce3413c138e4b3bf2fe5f39e807ad4e34f6620396660406bd",
+  "original_run_freeze_sha256": "9cceea1ddde969daf144b900722b51fcbc6baf7f9007fc32f9c7a915d68124ca",
+  "scientific_source_changes": 0,
+  "task_creation_before": 0,
+  "controller_starts_before": 0,
+  "model_execution_before": 0,
+  "policy_or_privilege_changes": false,
+  "stop_rule": "Invoke frozen body once by existing SSH encoded command with only PSScriptRoot bound to its exact original directory. Any body/runtime error is preserved without retry. All original guards, profiles, source and numeric conditions remain unchanged."
+}

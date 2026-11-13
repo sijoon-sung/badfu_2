@@ -1,0 +1,43 @@
+{
+  "state": "completed_recovered_attack_training_independent_full_CPU_audit_pending",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "result_receipt": {
+    "path": "D:/FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101/FU_attack_RESULT.json",
+    "sha256": "f62f63662510da96983047fe46b3d0de7dae221d68fb4e35314de41f5e642e7a",
+    "bytes": 1720
+  },
+  "after": {
+    "path": "D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\fu\\attack\\after.pt",
+    "sha256": "7ada5a25c181e3d5d16d17c97b9de06286d619f3176c0735ccc5c1fa984d86b7",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "effective_rounds": 20,
+  "effective_saved_trained_roles": 200,
+  "effective_saved_calibrated_roles": 200,
+  "effective_saved_globals": 20,
+  "effective_saved_epochs": 1000,
+  "effective_batches": 20000,
+  "reused_original_roles": 46,
+  "executed_here_roles": 154,
+  "executed_here_epochs": 770,
+  "executed_here_batches": 15400,
+  "failed_original_unsaved_epochs": 5,
+  "failed_original_unsaved_batches": 100,
+  "total_physical_epochs_including_failure": 1005,
+  "total_physical_batches_including_failure": 20100,
+  "current_controller_pid": 15944,
+  "current_CPU_auditor_pid": 49744,
+  "completed_trainer_pid_no_longer_alive": 30812,
+  "independent_full_CPU_audit_completed": false,
+  "new_ASR_CA_available": false,
+  "readonly_delivery_completed": false,
+  "original_failures_preserved": true,
+  "all_local_SGD_gradients_independently_replayed": false
+}

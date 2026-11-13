@@ -1,0 +1,5 @@
+운영관측기v2 명시교정 — R03/R02/N02/D08/D15
+v1첫bounded관측은embeddedQUERY의첫+$r가InvalidLeftHandSide로해석돼원격본문전에실패했다. Python AST만검사하고embeddedPS를검사하지못한관측코드오류다. 원v1 source/FREEZE/INCIDENT·사전게시1bea3c0은불변이며FIRST_PROBE_FAILURE에trace·미실행범위를보존한다. v1을수정/재호출하지않는다. 모델/훈련/감사/37source/profile/default/원receipt실패가아니고재시작0이다.
+별도observe_status_v2.py/QUERY_V2.ps1/FREEZE_V2를쓴다. 유일query변경은첫불필요한+제거이고v1의ETS방지JSON파싱/명시필드/50000문자bound는보존한다. explicitPS파일을먼저AST검사하고수정source/실패/새동결을기존PR선게시뒤새read-only관측을검증한다. 결과만새배타파일로저장하며모델query/fixture/학습·감사/prepare/task등록/중지0이다.
+로컬v2구성첫script는문자열앞newline을잘못가정한assert에서파일작성전에중단됐고따른AST호출은파일없음으로실패했다. 원보존문자열에맞춰구성만고쳤으며실관측을반복한것은아니다. 원연구작업은계속정상진행중이다.
+이것은반복사용가능한metadata monitor의새운영수정이다. 원유한연구작업재실행·과학적허용치완화/새탐지제안이아니다. D08/D15 반례와unknowntrigger·잠복성능미검증은그대로이며v2문제가있으면범위/trace보존후새수정근거없이자동재호출하지않는다.

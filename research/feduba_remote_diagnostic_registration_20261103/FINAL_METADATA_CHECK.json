@@ -1,0 +1,207 @@
+{
+    "state":  "final_source_and_registration_metadata_readback",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "59be94e3bb85f1a746cf121869d37deccf05d320c2324f4d4331e5eb585aae33",
+                      "bytes":  50
+                  },
+                  {
+                      "name":  "PACKET_BINDING.json",
+                      "sha256":  "b2fbf8fb35bebab5771848704fb1135af6a17dac5a289eb26cd643765ee21600",
+                      "bytes":  997
+                  },
+                  {
+                      "name":  "METADATA_PROFILE.json",
+                      "sha256":  "c210f851e4a22832b65d870f14415d8d95122f5d1b6ce01a26b81880714756fc",
+                      "bytes":  3101
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "2ca903820ae6f6865660e19287b88afb5136b2b18ef6bb0ace548b632a447d93",
+                      "bytes":  2661
+                  },
+                  {
+                      "name":  "FAILED_PREPARATION_METADATA_CALLER.py",
+                      "sha256":  "7decd5ee49c88e5034e4011278b1b5e869082b2fa83e5a94c53329bd389bcedd",
+                      "bytes":  1758
+                  },
+                  {
+                      "name":  "PREPARATION_METADATA_FAILURE.json",
+                      "sha256":  "e97c0b1f0e29207b2bd8e33ad96128ca492e8f136ebc3047dca87bf6199bd111",
+                      "bytes":  739
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "metadata_reader.py",
+                      "sha256":  "086383c9af806eb243a127ddf13c1254a54c417cb9eec780e07de5c412bd68af",
+                      "bytes":  4484
+                  },
+                  {
+                      "name":  "METADATA_SOURCE_FREEZE.json",
+                      "sha256":  "63b885c7560594d6fb6115728e61e92c5da7a7fbb077a22c5f7ef6fb182984ef",
+                      "bytes":  870
+                  },
+                  {
+                      "name":  "METADATA_SOURCE_PUBLICATION.json",
+                      "sha256":  "ffacf91bcda75211ba4faf8493e5e42976ea9915610d1676f94cfff05e0150b3",
+                      "bytes":  3152
+                  },
+                  {
+                      "name":  "METADATA_RUN_PUBLICATION.json",
+                      "sha256":  "ffacf91bcda75211ba4faf8493e5e42976ea9915610d1676f94cfff05e0150b3",
+                      "bytes":  3152
+                  },
+                  {
+                      "name":  "REGISTRATION_PROFILE.json",
+                      "sha256":  "f0350c4f6de885393277c2ee5694e59bddbd4771017379322ab4b401fe4ec16a",
+                      "bytes":  5356
+                  },
+                  {
+                      "name":  "REGISTRATION_INPUT_BINDING.json",
+                      "sha256":  "82645e608cc69f2f7a96e1464fc4c05113015893dc9d053ca6fdce492a3d3802",
+                      "bytes":  1285
+                  },
+                  {
+                      "name":  "REGISTRATION_PROTOCOL.txt",
+                      "sha256":  "a187902aff0bbdad0041039ba5c9016635007acee30df5242746a627b0173453",
+                      "bytes":  3123
+                  },
+                  {
+                      "name":  "checkpoint_guard.py",
+                      "sha256":  "705cd0b3489cd2d632be509398b8082e4481cef62f874caa27c52d07373486c7",
+                      "bytes":  2177
+                  },
+                  {
+                      "name":  "register_remote_cases.py",
+                      "sha256":  "532b0c343c8aad9779ef183c3656d2e72bb1ec3a4eb057f9c2de6c15dc6a8793",
+                      "bytes":  12317
+                  },
+                  {
+                      "name":  "METADATA_COMPLETION.json",
+                      "sha256":  "e1f2e661a3e018aabdd4fa68b281683b3158fb263861500de207e338f60cab4e",
+                      "bytes":  244
+                  },
+                  {
+                      "name":  "PREPARATION_METADATA_OBSERVATION.json",
+                      "sha256":  "072f858cc0d8869c46cb174fe5ee85b9de73f874d17d85ed1de10040d98cbbef",
+                      "bytes":  5062
+                  },
+                  {
+                      "name":  "REGISTRATION_SOURCE_FREEZE.json",
+                      "sha256":  "f0ca4c2bb87e939275fcb0fd0ee53b92ea8a4a2021cedbaefe2d2bdfc75c5b48",
+                      "bytes":  1088
+                  },
+                  {
+                      "name":  "METADATA_ONCE.json",
+                      "sha256":  "68d20b31e905c73c2cd82c59912bb5f1c132bbaca3792eb1129d84ae2d1a8ee4",
+                      "bytes":  49
+                  },
+                  {
+                      "name":  "METADATA_ADMISSION.json",
+                      "sha256":  "8c8d7923439e42b3116c14e48b5eb2847da9b0c47ff9ba750eb1107ed42b5dac",
+                      "bytes":  340
+                  },
+                  {
+                      "name":  "METADATA_PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "1086ebfbcf9632e89c56557cbd3c77eaf84b5d9f4b694ab424926d0b6a409b6f",
+                      "bytes":  2724
+                  },
+                  {
+                      "name":  "METADATA_TERMINAL_OBSERVATION.json",
+                      "sha256":  "c553e8b4b02e301bd01cc72e830b4a69c8b2002cdc3b88b2bab33a9ab055fe7d",
+                      "bytes":  301
+                  },
+                  {
+                      "name":  "REGISTRATION_SOURCE_PUBLICATION.json",
+                      "sha256":  "8ccdbdd33d23fc038da57d617430a1a175a7819e4dfc11d156d1ef4488ab1b14",
+                      "bytes":  4286
+                  },
+                  {
+                      "name":  "REGISTRATION_RUN_PUBLICATION.json",
+                      "sha256":  "8ccdbdd33d23fc038da57d617430a1a175a7819e4dfc11d156d1ef4488ab1b14",
+                      "bytes":  4286
+                  },
+                  {
+                      "name":  "REGISTERED.json",
+                      "sha256":  "3fa9732ff3a82f7f10588f7fea4ec79c6f554c1d3d8a5e6ba180ff027855c16f",
+                      "bytes":  9074
+                  },
+                  {
+                      "name":  "REGISTRATION_COMPLETION.json",
+                      "sha256":  "2639b331871f284210f1e4b1ee7da092605d3adc5fe886f3d6976af0d31daa36",
+                      "bytes":  346
+                  },
+                  {
+                      "name":  "REGISTRATION_ONCE.json",
+                      "sha256":  "9c7b9a976e86f39662e4ffca946cd8da086627d269cf7caacfd766058db621e2",
+                      "bytes":  145
+                  },
+                  {
+                      "name":  "REGISTRATION_ADMISSION.json",
+                      "sha256":  "5355f05c257e77b3070d96eae53d2773dd2259605807c492786ffc8b3784af4b",
+                      "bytes":  339
+                  },
+                  {
+                      "name":  "REGISTRATION_PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "77812d288ca423f0a83a391d0adc2e77397eefe19c29d0f3794ccb4bc05b281f",
+                      "bytes":  3759
+                  },
+                  {
+                      "name":  "REGISTRATION_TERMINAL_OBSERVATION.json",
+                      "sha256":  "f783d91aa59ea4eaea756a72490600625582ffef0297feb798821d0ddcde30a8",
+                      "bytes":  309
+                  },
+                  {
+                      "name":  "REGISTERED_EXTERNAL_AUDIT.json",
+                      "sha256":  "95b42f5bbc540983d451d48178271e885556e63859d3a2aa5a31e9b8fc93c209",
+                      "bytes":  4841
+                  },
+                  {
+                      "name":  "GUARD_DESCRIPTOR.json",
+                      "sha256":  "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+                      "bytes":  2305
+                  },
+                  {
+                      "name":  "GUARD_DESCRIPTOR_SEAL.json",
+                      "sha256":  "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+                      "bytes":  152
+                  },
+                  {
+                      "name":  "REPORT_KO.txt",
+                      "sha256":  "fb7fd3e259323fd8664cea6b982cc35b034d67fd65192fa5bd5df858a98ce2f2",
+                      "bytes":  4413
+                  },
+                  {
+                      "name":  "FINAL_RESULT_SUMMARY.json",
+                      "sha256":  "56f184cebaa69e5ea443db193d3b0016aa782e738bcae8b158d6b0545b969dae",
+                      "bytes":  2186
+                  },
+                  {
+                      "name":  "SOURCE_COVERAGE_NOTE.txt",
+                      "sha256":  "3ea25fac39125bb123efdfeeff594736469e244dcca330e62b18a026b6e6972a",
+                      "bytes":  2118
+                  },
+                  {
+                      "name":  "NEXT_STAGE_RATIONALE.txt",
+                      "sha256":  "a6e4a67111edab420427265ab2ee3c8e68168d2944b7f4a5351ba8d03b273878",
+                      "bytes":  2039
+                  }
+              ],
+    "model_loads":  0,
+    "whole_catalogue_copied_to_local":  false
+}

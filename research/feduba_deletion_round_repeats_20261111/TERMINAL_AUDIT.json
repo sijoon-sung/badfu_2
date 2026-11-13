@@ -1,0 +1,55 @@
+{
+  "state": "passed",
+  "totals": {
+    "rounds": 30,
+    "roles": 300,
+    "epochs": 1500,
+    "batches": 24000
+  },
+  "stored_checkpoints": 30,
+  "new_checkpoints": 12,
+  "previous_cases": 32,
+  "current_cases": 34,
+  "prior_catalogue_cases_and_defaults_unchanged": true,
+  "active_owned": [],
+  "tasks": [
+    {
+      "name": "Codex-FedUBA-deletion-round-repeats-prepare-20261111",
+      "state": 3,
+      "exit": 0
+    },
+    {
+      "name": "Codex-FedUBA-deletion-round-repeats-20261111",
+      "state": 3,
+      "exit": 1
+    },
+    {
+      "name": "Codex-FedUBA-deletion-round-repeats-pending-20261111",
+      "state": 3,
+      "exit": 0
+    },
+    {
+      "name": "Codex-FedUBA-deletion-round-review-20261111",
+      "state": 3,
+      "exit": 0
+    },
+    {
+      "name": "Codex-FUBA-ten-seed-repro-recovery-20261031",
+      "state": 1,
+      "exit": 267014
+    }
+  ],
+  "stored_panel_sha256": "5723a806b027e03fbdc8c6d520d0a2e5efbd8a3e898d095cb6b01c7ae425ad4c",
+  "new_panel_sha256": "0dde1ab6a0d3a3e8393454aa8ec1201d8382b044c29e41047516c73865fea1d0",
+  "original_failure_preserved": true,
+  "review": {
+    "file": "D22_ROUND_REVIEW.zip",
+    "sha256": "e7823e4542e979ab1d8aa1e993acff843b35801ec26c5017d7f0042199057c1a",
+    "bytes": 582881512,
+    "manifest_sha256": "45d57e6a9ed7843e0919eb391d5e69a45cae769dab79946cdfb1ea225916f5e7",
+    "files": 43,
+    "model_payloads": 13,
+    "model_loads": 0,
+    "model_forwards": 0
+  }
+}

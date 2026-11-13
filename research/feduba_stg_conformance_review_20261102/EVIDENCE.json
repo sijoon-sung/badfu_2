@@ -1,0 +1,177 @@
+{
+  "state": "completed_readonly_source_and_saved_log_review_no_model_queries",
+  "utc": "2026-11-02T05:10:12.030964+00:00",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "public_upstream": {
+    "repo": "ity207/FedUBA",
+    "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+    "file": "trigger_generate_function.py",
+    "Git_blob_sha1": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+    "bytes": 8763,
+    "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+    "URL": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/trigger_generate_function.py",
+    "trigger_optimizer": {
+      "function": "torch.optim.RAdam",
+      "line": 181
+    },
+    "trigger_scheduler": {
+      "function": "CosineAnnealingLR",
+      "line": 182
+    },
+    "warmup_train_call_lines": [
+      151,
+      157
+    ],
+    "poi_model_eval_calls": [],
+    "loop_stops_on_zero_gradient": true
+  },
+  "executed_path": [
+    {
+      "file": "mixed_cpu_trigger.py",
+      "function": "main",
+      "optimizer": "torch.optim.SGD",
+      "optimizer_line": 29,
+      "callee": "projected_sgd_batch",
+      "call_lines": [
+        46
+      ]
+    },
+    {
+      "file": "stg_training.py",
+      "function": "projected_sgd_batch",
+      "callee": "core.trigger_step",
+      "call_lines": [
+        39
+      ]
+    },
+    {
+      "file": "core.py",
+      "function": "trigger_step",
+      "optimizer_step_lines": [
+        149
+      ],
+      "in_place_projection_lines": [
+        151
+      ]
+    },
+    {
+      "file": "trigger_common.py",
+      "function": "model_and_target",
+      "model_eval_lines": [
+        42
+      ]
+    }
+  ],
+  "actual_source_and_profile": {
+    "source_freeze_sha256": "5f5146b6a266754f7e3a9ffbcd341c838c704d7d7a16786277301dfe01731a86",
+    "source_files_checked": 15,
+    "source_profile_sha256": "f03d0e50d4df8c65094c8655dd53990b0efc97a0caa0f4aef52036c0481de477",
+    "launch_profile_sha256": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+    "constants": {
+      "epochs": 100,
+      "batches": 200,
+      "optimizer": "SGD",
+      "alpha": 0.1,
+      "momentum": 0,
+      "weight_decay": 0,
+      "projection_every_batch": true,
+      "theta_and_BN_mode": "eval_frozen",
+      "epsilon_model": 0.12549019607843137,
+      "epsilon_raw": 0.06274509803921569,
+      "seed": 3000
+    }
+  },
+  "teacher_endpoint": {
+    "source_SHA256": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+    "teacher_sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+    "summary": {
+      "target": {
+        "N": 200,
+        "correct": 65,
+        "mean_CE": 2.5103088665008544
+      },
+      "Tiny_training_representatives": {
+        "N": 200,
+        "correct": 199,
+        "mean_CE": 0.04442990213632583
+      }
+    },
+    "minimal_condition": "target correct > original0/200 AND at least two distinct Tiny classes correctly recognized; minimal noncollapse/recognition prerequisite only, not sufficient for trigger transfer, latent activation or attack success.",
+    "condition_passed": true,
+    "does_not_prove_transfer_or_attack": true
+  },
+  "completed_trigger_saved_training_log": {
+    "manifest_SHA256": "7a24c1aad699ba6f65101bc63909937e8d15e6cabdb205f1da27f55b62b20f89",
+    "epochs": 100,
+    "first3": [
+      {
+        "epoch": 1,
+        "loss": 2.826232032775879
+      },
+      {
+        "epoch": 2,
+        "loss": 7.263700485229492
+      },
+      {
+        "epoch": 3,
+        "loss": 6.337439823150635
+      }
+    ],
+    "last3": [
+      {
+        "epoch": 98,
+        "loss": 0.578123791217804
+      },
+      {
+        "epoch": 99,
+        "loss": 0.40191831707954406
+      },
+      {
+        "epoch": 100,
+        "loss": 0.4310444688796997
+      }
+    ],
+    "minimum_logged_loss": 0.40191831707954406,
+    "counts_derived_from_CE": false,
+    "matched_fixed_input_improvement_claimed": false,
+    "same_metric_as_victim_ASR": false,
+    "new_model_queries": 0
+  },
+  "causality_limits": {
+    "known_declared_source_differences_confirmed": true,
+    "single_cause_identified": false,
+    "RAdam_or_BN_change_adopted": false,
+    "old_teacher_BN_CPU8_rejection_preserved": true,
+    "old_BN_report_sha256": "cfc63ef19bece2d82668f6eb91121caa9ebae6629c646dd5b394a872107372c0",
+    "new_teacher_BN_comparison_performed": false,
+    "missing_author_models_utils_concoct_body_recovered": false,
+    "paper_Algorithm1_unique_implementation_resolved": false,
+    "D08_D15_unknowntrigger_independent_detection_resolved": false
+  },
+  "model_loads": 0,
+  "forward_calls": 0,
+  "gradient_calls": 0,
+  "optimizer_steps": 0,
+  "completed_job_reexecution": false,
+  "local_storage_or_registration_called": false,
+  "input_file_sha256": {
+    "research/feduba_mixed_trigger_20261101/mixed_cpu_trigger.py": "b4c01affdc2665f047d502e2107b9c853bc3341f7f4f17469280cfcb1db63c05",
+    "research/feduba_mixed_trigger_20261101/stg_training.py": "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76",
+    "research/feduba_mixed_trigger_20261101/core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "research/feduba_mixed_trigger_20261101/trigger_common.py": "fcf81306221e4d1f6e00dc9c7b93cef5e4bd1d67f291653f4c0f29bd63cd073c",
+    "research/feduba_mixed_trigger_20261101/SOURCE_PROFILE.json": "f03d0e50d4df8c65094c8655dd53990b0efc97a0caa0f4aef52036c0481de477",
+    "research/feduba_mixed_trigger_20261101/LAUNCH_PROFILE.json": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+    "research/feduba_mixed_trigger_20261101/MANIFEST.json": "7a24c1aad699ba6f65101bc63909937e8d15e6cabdb205f1da27f55b62b20f89",
+    "research/feduba_mixed_surrogate_20261101/PROFILE.json": "47c14d13bab0e359066330b652fbbe8ca4d1801ea275d3d8bc862f00454b7ef9",
+    "research/feduba_mixed_surrogate_20261101/ENDPOINT_RESULT.json": "8c6679e9eb63e4751e7afc45663632f97bbcabd181dadc182dd3260fdb435067",
+    "research/feduba_mixed_pair_eval_native_v2_20261101/PAPER_COMPARISON.txt": "c159c5928f603541588617eddf88437462609b120bda81cae6283d9dae42f5fd",
+    "research/feduba_reproduction_audit_20261031/CODE_PAPER_MATRIX.txt": "8df60d0f6a42b64b1bf440822e9272181788ca4eba7fbc072f4aebbaee1f87be",
+    "research/feduba_paper_implementation_20261031/CORE_CONTRACT.txt": "be167ae76cd34c873a4402a539e5f57da1145ad8dcb7bc7e1fb9aa717d1b7fa3"
+  }
+}

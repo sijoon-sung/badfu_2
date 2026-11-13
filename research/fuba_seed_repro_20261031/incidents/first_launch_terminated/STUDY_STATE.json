@@ -1,0 +1,21 @@
+{
+  "state": "running",
+  "pid": 11688,
+  "updated_unix": 1793423388.285671,
+  "completed_rows": [
+    {
+      "seed": 20261023,
+      "before_CA": 99.11,
+      "before_ASR": 30.600487480611566,
+      "after_CA": 99.08,
+      "after_ASR": 32.35098604032794,
+      "qualified_pair": false,
+      "source": "already delivered baseline, not rerun",
+      "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10"
+    }
+  ],
+  "seed": 5129832,
+  "step": "controller.py",
+  "child_pid": 8400,
+  "root": "D:\\FUBA_SEED_REPRO_20261031\\seeds\\seed_5129832"
+}

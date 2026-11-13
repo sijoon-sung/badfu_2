@@ -1,0 +1,23 @@
+{
+  "stage": "finite_fixture_and_clean_FL_foundation",
+  "files": {
+    "CLEAN_FL_PROFILE.json": "91f91b4ade27fc0b210f887fa24a0a923b25df3720850790c155d3d03c0fe96a",
+    "CLEAN_FL_PROTOCOL.txt": "572c6f5b16f263aba84d70300f7f948599ce24a29e735a63632fc7aef1880a9c",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "prepare_clean_fl.py": "a5345d8638c82745b0a736b664918cec12f19fcd6106ad52c0be7da2cde77922",
+    "clean_fl_runner.py": "b230c85ce40a11ef461faa3bf19a3a8f18ac371e0240c88bc95dddc27dd955f7",
+    "verify_clean_fl.py": "c05f2f6f5830cee7d1d795d1b09b1acdbba51ef1f628b3508cd44dd9152b1f9f",
+    "clean_fl_controller.py": "523b1f41f5aac622b01fdaa8bbcf4b4e3bf1c334708279975109c3e61d18696e",
+    "CORE_CPU_RESULT.json": "09d63773522c94dae3883422a5b3597c2d7629b3443a013727b91d1898293ed7",
+    "SOURCE_PROVENANCE.json": "640a3d57689f350f357d545c795abe0c870876d8e67c63975ec2a5894420192b",
+    "GPU_PREFLIGHT_FREEZE.json": "f9e12d0b5334e4229d4257e67abaabd5262aa9558c71442fc2d4afb3c0e64aee",
+    "CLEAN_FL_FREEZE.json": "2cef58625125bc3b3e27d2089ac12045d75a6773b95cfebf7ed2e5162e34f4ec",
+    "foundation_controller.py": "70bbfda6bb5852331587f17980374236be4579d278b291242b58db5751d96893",
+    "launch_foundation.ps1": "d746654a940be39024c8bbdaaa326805b5dc9993968e74428d09c599f77bb423",
+    "gpu_probe.py": "2761cf79a5d39ae7aee33047015ab8109809ab932f0db249e4971dde507bed9e",
+    "GPU_PREFLIGHT_PROTOCOL.txt": "066b8ed676fbc083a91ad2cf59ab53ac6d741d24eb86a9db6bbf838a9bce71c7",
+    "PREVIOUS_QUEUE_STOPPED.json": "99bb2f5ca0935cfe12e7eba770fbb11fddbd16285d254f9fcac93130063af71f"
+  }
+}

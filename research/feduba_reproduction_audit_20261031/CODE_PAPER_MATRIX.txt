@@ -1,0 +1,37 @@
+가설: 논문 단계와 공개 구현의 대응을 고정할 수 있다. 관련 R03/R02/N02/D08/D15.
+
+원문: https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf
+DOI 10.1109/TDSC.2026.3703139. 17쪽. SHA256은 FREEZE.json.
+저자 배포: https://www.chenwang.net.cn/code/FedUBA-Code.zip
+고정 코드: https://github.com/ity207/FedUBA/tree/005959ab8a955f4dcf094930ce6953af8fee827b
+DISLAB에서 원문 6쪽(10499, Algorithm1/식6~8)과 9쪽(10502, TableII/설정)을 렌더링하여 육안 확인했다. 원문 그림/전체 PDF/ZIP은 공개 PR에 재배포하지 않는다.
+
+1. 출처
+논문 2쪽 각주1은 ity207/FedUBA를 가리킨다. 저자 홈페이지는 같은 제목의 PDF와 FedUBA-Code.zip을 직접 연결한다. 저자 ZIP의 9파일 모두 고정 GitHub blob과 정확히 일치했다. 다른 stcebra/FUBA의 UNet 기반 구현이나 기존 v7 모델이 아니다.
+
+2. 모델 정의/실행
+모델 선택 파일은 CIFAR10에 models.resnet.ResNet18/ResNet18_201을 요구한다. ZIP/GitHub에는 models와 utils.py가 없다. main import는 utils, trigger_generate_function import는 models 부재로 각각 실패했다. README의 Python3.8/PyTorch1.6과 현재 DISLAB Python3.12.10/PyTorch2.7.1의 차이를 명시한다. 누락 파일 자체는 버전 변경으로 생긴 것이 아니다. ResNet18의 이름만 같다고 다른 프로젝트의 정의를 조용히 대체할 수 없다.
+
+3. STG — 논문 5~6쪽 식5/Algorithm1
+trigger_generate_function.py는 공통 가산 노이즈를 최적화하고 target-class 보조모델을 사용한다. 입력별 생성기 G(x)와 구별한다. 원본은 surrogate100epoch/SGD, warmup5/RAdam, trigger100/RAdam을 선언한다. 이름과 큰 절차 대응을 확인한 것이며 실제 학습/수식 전체 동등성을 검증한 것은 아니다.
+입력은 Normalize(.5,.5)로 [-1,1]. trigger_limit=16/255이나 함수에서 두 배를 적용해 저장 노이즈를 32/255로 제한하고, 평가는 다시1.5배 한다. 논문 기본 epsilon32/255와 비교할 때 raw [0,1]/정규화 좌표·최종 clipping·평가 배수를 분리해야 한다. 16 대32만으로 불일치라고 단정하지 않는다. 누락 apply_noise_patch/poison_image_label 없이는 실제 픽셀 의미를 확정할 수 없다.
+
+4. SSS — 논문 6쪽 식6/7
+Fed_data_change.py의 high_sensitivity_sort는 두 순전파의 logit L2차이로 내림차순 정렬한다. 하지만 호출부는 batch1/shuffle=True이며 함수는 batch1에서 로더를 고치지 않고 enumerate 위치를 원 데이터셋 ID로 반환한다. DISLAB의 원본 AST 함수 실행에서 섞인32개 순위 위치와 참 ID는0/32 일치, 순차 대조32/32 일치였다. 고정 합성 입력의 원인 재현이며 실자료 오류율0%라는 뜻이 아니다.
+feature 분기는 순위를 원본 dataset[idx]에 다시 대입하고 target-class만 골라 변형한다. 따라서 이 인덱스 문제는 단순 표시 문제가 아니라 선택 경로와 연결된다. 논문 전체의 SSS 유효성이나 실제 ASR 손실 크기를 이 합성 사례만으로 확정하지 않는다.
+
+5. 보조자료의 소유권 — 논문 4쪽 위협 가정 대 helper
+Arguments.attack_clients_idx=[2,3]은 selected_clients 내 위치다. FL/FU에서 실제 ID는5/7이다. data_set_for_attack은 전체20개 client_dataset에 위치2/3을 직접 적용한다. 원래 merge_client_subsets와 Arguments를 합성 subset ID로 실행해5/7 대2/3을 확인했다. 기본 경로의 자료 소유권 불일치이며, 실제 개인 자료를 읽거나 유출을 관측한 것은 아니다. 외부 보조자료와 피해자 학습자료의 분리도 고정되지 않았다.
+
+6. BEA/FU — 논문 6쪽 식8 대 변경·보정 경로
+식8은 선택 입력에서 delta를 빼도록 쓴다. 공개 코드는 CustomDatasetWithNarcissus에서 누락된 poison_image로 넘긴다. 부호·레이블 유지·clip·선택 샘플 제거 여부를 확인할 핵심 정의가 없으므로 같다고 판정할 수 없다. unlearning_attack은 바뀐 클라이언트 자료로 재보정 학습 후 unlearning_step_once의 FedEraser형 갱신을 사용한다. 이를 BadFU의 유지자료 전체 재학습과 동일하게 부르지 않는다.
+
+7. 데이터/참여 조건
+논문 7쪽은 CIFAR10 총60000/20개·각3000과 라운드마다10개 무작위 참여를 기술한다. 공개 기본 경로는 torchvision train=True 50000을20개·각2500으로 나누고, main에서 선택한 같은10개를 FL_Train 내내 전달한다. 표준 CIFAR10 50000장 기준 기본 경로의 예상 학습 참여자료는25000이고0.5% 요청은 int(25000*.005)=125다. 이번에는 실제 자료를 로드하지 않았다. 이 차이를 원문 그대로 재현이라고 숨기지 않는다. 학습/평가 분할의 논문 서술도 별도 확인이 필요하다.
+
+8. 성능 비교의 분모와 정상 대조
+논문 8쪽 식16의 ASR-B 정의는 FedUBA 없는 FU 대조다. 공개 main의 result는 old FL 모델과 공격 FU 모델을 비교하며 별도 benign-FU 가지가 없다. 따라서 pre-ASR을 ASR-B로 조용히 대체하지 않는다. test_backdoor는 원래 target class를 제외하고 누락 poison_image_label을 통해 평가한다. 같은 trigger/배수/전처리로 pre, attack-FU, benign-FU를 모두 남겨야 한다.
+논문 9쪽 TableII의 CIFAR10/FedEraser/FedAvg CA는 전85.82±.74/후85.16±.45다. 이는 논문 값이고 우리 실측이 아니다. 그림의 선을 정확한 원시 ASR 수치로 읽어 만들지 않았다. 공개 스크립트의20R/10local/batch128/lr.01/seed42는 코드 기본값이지 논문이 모든 조합의 유일 설정을 인증한 근거가 아니다.
+
+판정
+출처는 확인했지만 untouched 배포본의 실행 완결성과 표본/소유권 계약은 실패했다. 논문 공격 성능 재현·탐지 사용 적격성은 미확보다. 특정 구현 결함은 논문 공격 자체의 불가능성 증명이 아니다. 원본/수정 구현을 분리하고 누락 정의의 출처와 위 불일치를 먼저 해소해야 한다.

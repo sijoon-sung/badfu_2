@@ -1,0 +1,75 @@
+{
+  "state": "complete",
+  "hypothesis": "not_supported_in_this_role",
+  "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+  "control_RESULT_sha256": "536ed7f8254fbf87275714110f7fcd185a931b44d315d6bf540bc573f9c40c3e",
+  "full_test": {
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 5606,
+    "triggered_target_count": 7625,
+    "clean_non_target_target_count": 3383,
+    "CA_pct": 56.06,
+    "ASR_pct": 84.72222222222223,
+    "clean_target_bias_pct": 37.58888888888889,
+    "epsilon": 0.05,
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "local250": {
+    "N": 250,
+    "non_target_N": 224,
+    "clean_correct": 145,
+    "triggered_target_count": 190,
+    "clean_non_target_target_count": 90,
+    "CA_pct": 58.0,
+    "ASR_pct": 84.82142857142857,
+    "clean_target_bias_pct": 40.17857142857143,
+    "epsilon": 0.05,
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "control": {
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7297,
+    "triggered_target_count": 61,
+    "clean_non_target_target_count": 8,
+    "CA_pct": 72.97,
+    "ASR_pct": 0.6777777777777778,
+    "clean_target_bias_pct": 0.08888888888888889,
+    "epsilon": 0.05,
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "incoming": {
+    "N": 10000,
+    "non_target_N": 9000,
+    "clean_correct": 7708,
+    "triggered_target_count": 562,
+    "clean_non_target_target_count": 67,
+    "CA_pct": 77.08,
+    "ASR_pct": 6.2444444444444445,
+    "clean_target_bias_pct": 0.7444444444444445,
+    "epsilon": 0.05,
+    "layout": "contiguous_NCHW",
+    "both_eval": true
+  },
+  "comparison": {
+    "ASR_gain_pct_points": 84.04444444444445,
+    "CA_change_vs_control": -16.909999999999997,
+    "CA_change_vs_incoming": -21.019999999999996,
+    "clean_bias_change_vs_control": 37.5,
+    "clean_bias_change_vs_incoming": 36.84444444444444
+  },
+  "same_50_epoch_orders": true,
+  "checkpoint": {
+    "path": "radius005_embedding.pt",
+    "sha256": "302a4f566b44c7386d67bfde7f4b53eb272d71ae56ab3ad5f48fe08206db07f9",
+    "bytes": 44784135
+  },
+  "epochs": 50,
+  "batches": 1800,
+  "actual_FL_or_FU_run": false,
+  "scope": "Necessary local learnability check; not a successful latent FL/FU pair or detector."
+}

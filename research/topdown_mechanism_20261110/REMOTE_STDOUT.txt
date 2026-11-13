@@ -1,0 +1,20 @@
+{"pair": "attack_cover850", "new_semantic_witness_n": 6754, "witness_without_perp_still_target_n": 6754, "perp_only_target_n": 916, "body_only_target_n": 9000, "channel_interaction_means": [-0.26608963030941485, -0.7280360325618677, 18.90175718759643, 0.0]}
+{"pair": "benign_same850", "new_semantic_witness_n": 8, "witness_without_perp_still_target_n": 7, "perp_only_target_n": 125, "body_only_target_n": 141, "channel_interaction_means": [0.006795708542472533, -0.0008497940580446431, 0.07072564165544153, 0.0]}
+{"pair": "benign_big19336", "new_semantic_witness_n": 9, "witness_without_perp_still_target_n": 6, "perp_only_target_n": 126, "body_only_target_n": 97, "channel_interaction_means": [-0.0009811335756898477, 0.002829864341842973, 0.08685671581160502, 0.0]}
+{"state": "passed", "result_sha256": "4efaf2d5d27f635757438ea5bfc0d8fd956f6fa4af4789c511391b5b27b8d410", "checks": [{"pair": "attack_cover850", "separate_SVD_scalar_inner_product_maxabs": [4.385380947269368e-15, 4.884981308350689e-15, 4.263256414560601e-14, 4.263256414560601e-14], "all_input_rows_checked": 9000, "class_rows_checked": 9}, {"pair": "benign_same850", "separate_SVD_scalar_inner_product_maxabs": [1.394717674685353e-15, 1.3877787807814457e-15, 4.163336342344337e-15, 2.2370993946196904e-14], "all_input_rows_checked": 9000, "class_rows_checked": 9}, {"pair": "benign_big19336", "separate_SVD_scalar_inner_product_maxabs": [1.6653345369377348e-15, 1.2212453270876722e-15, 8.104628079763643e-15, 2.19824158875781e-14], "all_input_rows_checked": 9000, "class_rows_checked": 9}], "new_model_forward": 0, "independent_training_seeds": 0}
+{
+    "status":  "passed",
+    "host":  "DESKTOP-QUB35TD",
+    "start_utc":  "2026-11-10T07:53:45.2025254Z",
+    "finish_utc":  "2026-11-10T07:53:54.6012509Z",
+    "available_memory_before":  11905851392,
+    "disk_free_before":  683069014016,
+    "primary_exit":  0,
+    "checker_exit":  0,
+    "source_freeze_sha256":  "f6738f94789848db7a1dfe1a0e275393a89755dc520d21462439b69f5f005b06",
+    "result_sha256":  "4efaf2d5d27f635757438ea5bfc0d8fd956f6fa4af4789c511391b5b27b8d410",
+    "checked_sha256":  "458a17c47aa428a95817bbd9a9164d059ba73cd6b42c487dcbc96f75d9fad065",
+    "model_forwards":  0,
+    "training":  0,
+    "gpu_jobs":  0
+}

@@ -1,0 +1,38 @@
+{
+  "state": "passed_metadata_only",
+  "local_checks": {
+    "main": {
+      "UTF8_display_and_newline_convention_preserved": true,
+      "all_old_case_values_equal": true
+    },
+    "pr": {
+      "UTF8_display_and_newline_convention_preserved": true,
+      "all_old_case_values_equal": true
+    }
+  },
+  "remote_check": {
+    "host": "dislab",
+    "all_old_case_and_default_values_equal": true,
+    "UTF8_display_and_newline_convention_preserved": true
+  },
+  "case_default_and_external_audit_preservation_reports": {
+    "main": {
+      "old_case_count": 24,
+      "new_case_count": 26,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "2798c69cbe32b91584ea8fe18ca6f3a8557063c2eb0f06b0d1d04be7fe2ac866"
+    },
+    "pr": {
+      "old_case_count": 21,
+      "new_case_count": 23,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "833e89f378c492ecfe2ec0348bfbd7f95cc30ceece5c2c5ad4fd76ed91275061"
+    },
+    "dislab": {
+      "old_case_count": 22,
+      "new_case_count": 24,
+      "all_old_cases_defaults_and_audits_preserved": true,
+      "receipt_sha256": "31575ba7cfe824120dceb965a890d919a0c1dd582330cee076751f968cf692b9"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "state": "new_native_local_delivery_readiness_metadata_only",
+  "utc": "2026-11-03T13:31:49.094644+00:00",
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 2635935744,
+    "committedBytes": 27853967360,
+    "commitLimit": 50775060480
+  },
+  "disk_free_bytes": 3043179552768,
+  "available_GiB": 2.454906463623047,
+  "commit_free_GiB": 21.34693145751953,
+  "readiness_8GiB_available_16GiB_commit_80GiB_disk": false,
+  "python": [
+    3,
+    14,
+    7
+  ],
+  "torch_distribution_metadata_only": null,
+  "torch_imported": false,
+  "model_tensor_loads": 0,
+  "receiver_or_transfer_launched": false,
+  "DISLAB_prerequisite": false,
+  "native_helper_sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+  "oneoff_source_sha256": "7b096306aeae3519cfa26a18817ce821d342d9713e70d7d8288921068608789f"
+}

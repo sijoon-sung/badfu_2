@@ -1,0 +1,23 @@
+{
+  "utc_unix": 1793719236.0750148,
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 3746246656,
+    "committedBytes": 28389285888,
+    "commitLimit": 50775060480
+  },
+  "disk_free_bytes": 3043110170624,
+  "native_ready": false,
+  "waiter_started": false,
+  "state": "completed_native_readiness_observation_only",
+  "source_freeze_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "native_attempt_source_freeze_sha256": "3d4f99fab287609177a4d2aa6cb5467e88ee76723ea0b8bb64f69156bc95e36f",
+  "native_attempt_profile_sha256": "99a52f574a0558a34ceddafda06dd9d881e8b166647f95fed46044bc0501f209",
+  "actual_native_getter": true,
+  "synthetic": false,
+  "receiver_started": false,
+  "runtime_probe_started": false,
+  "model_transfer_started": false
+}

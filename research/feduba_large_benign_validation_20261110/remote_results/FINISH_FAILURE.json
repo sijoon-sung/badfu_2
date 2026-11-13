@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\finish_remaining.py\", line 69, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\finish_remaining.py\", line 37, in main\n    ready=read(ROOT/'DETECTOR_READY_n00.json');out=Path(ready['root'])\n                                                   ^^^^\nNameError: name 'Path' is not defined\n",
+  "time": 1794322814.1326716
+}

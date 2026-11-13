@@ -1,0 +1,18 @@
+{
+  "state": "passed_native_self_PID_parent_commandline_match_external_CIM",
+  "own_native_row": {
+    "ProcessId": 37304,
+    "ParentProcessId": 7496,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVALUATION_RECOVERY_20261101/source_probe.py"
+  },
+  "CIM": {
+    "ProcessId": 37304,
+    "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVALUATION_RECOVERY_20261101/source_probe.py",
+    "ParentProcessId": 7496
+  },
+  "all_Python_mpiexec_rows_matched": true,
+  "process_count": 11,
+  "model_forwards": 0,
+  "utc": "2026-11-01T06:42:20.2740547Z"
+}

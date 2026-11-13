@@ -1,0 +1,46 @@
+{
+  "state": "passed_independent_logit_counts_and_CE",
+  "result_sha256": "ca708caba26653f31a1701792041bcf2ba8ec2906f7b755ab79317542e3455ef",
+  "private_logits_sha256": "917f8bdf4ab831d430833d275977391565b7f5f52f4224454bb075052336250e",
+  "max_CE_abs_error": 5.768701534236698e-07,
+  "independent_summary": {
+    "eval_frozen/zero": {
+      "N": 200,
+      "target_hits": 0,
+      "target_hit_pct": 0.0,
+      "mean_CE": 9.027816404173278
+    },
+    "eval_frozen/final_delta": {
+      "N": 200,
+      "target_hits": 0,
+      "target_hit_pct": 0.0,
+      "mean_CE": 6.603472947434239
+    },
+    "train_BN_copy/zero": {
+      "N": 200,
+      "target_hits": 0,
+      "target_hit_pct": 0.0,
+      "mean_CE": 9.027883530132623
+    },
+    "train_BN_copy/final_delta": {
+      "N": 200,
+      "target_hits": 0,
+      "target_hit_pct": 0.0,
+      "mean_CE": 9.154375037595484
+    }
+  },
+  "diagnostic_rule": {
+    "checks": {
+      "pooled_hit_gain_at_least_fixed40": false,
+      "pooled_CE_drop_at_least_fixed1": false,
+      "target_hits_improve_in_both_recorded_batches": false
+    },
+    "BN_mode_gap_consistent_with_fixed_diagnostic_rule": false,
+    "causal_explanation_of_final_FU_ASR_proved": false,
+    "new_training_profile_automatically_adopted": false,
+    "server_detector_or_FPR_validated": false
+  },
+  "new_model_forwards": 0,
+  "all_model_forwards_independently_replayed": false,
+  "overall_goal_complete": false
+}

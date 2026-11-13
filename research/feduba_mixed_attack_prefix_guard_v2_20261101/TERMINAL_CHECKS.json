@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-01T05:28:49.3362765Z",
+  "processes": [],
+  "task": {
+    "state": "Ready",
+    "lastResult": 0
+  },
+  "files": [
+    {
+      "sha256": "301b4b2050fffeefc8d74a58d3b940cb8b8153cd8fd62f008278c8cf2d3e15b0",
+      "name": "AUDIT_RESULT.json",
+      "bytes": 23531
+    },
+    {
+      "sha256": "fb27637c6bd2e078736beded8d82e79cf7ec5191a052edcb3a4647d18edc1591",
+      "name": "AUDIT_ONCE.json",
+      "bytes": 54
+    },
+    {
+      "sha256": "0dae245ebd78dfd8d3cbb575fb9ee63121d547e7f9f060d6ae42748d0c2a8215",
+      "name": "TASK_LAUNCH_ONCE.json",
+      "bytes": 48
+    },
+    {
+      "sha256": "741ac26f4430d76fedcb8dc9be91eb2b41d0b1e10fae7f9a27696e5d80c63836",
+      "name": "CPU_AUDIT_FREEZE.json",
+      "bytes": 1135
+    },
+    {
+      "sha256": "2c0e4727aad9429bea4b1377acb49cbd438d82c06129625d5c92331b8a6c09bc",
+      "name": "CPU_AUDIT_PUBLICATION.json",
+      "bytes": 535
+    }
+  ],
+  "failure_present": false
+}

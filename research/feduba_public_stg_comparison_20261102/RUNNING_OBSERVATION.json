@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-02T12:13:32.3814713Z",
+  "processes": [
+    {
+      "ProcessId": 26988,
+      "ParentProcessId": 23092,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -B -u D:/FEDUBA_PUBLIC_STG_COMPARISON_20261102/comparison_controller.py"
+    },
+    {
+      "ProcessId": 27516,
+      "ParentProcessId": 26988,
+      "Name": "python.exe",
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_PUBLIC_STG_COMPARISON_20261102\\run_comparison.py"
+    }
+  ],
+  "receipts": {
+    "CONTROLLER_ONCE.json": {
+      "pid": 26988,
+      "parent": 23092,
+      "utc_unix": 1793621419.812313,
+      "publication_sha256": "08fcb0635ea82e721654128a59697655ee68cfd3d0e7756492105af0f32f5b70"
+    },
+    "STATE.json": {
+      "state": "running_public_STG_CPU_on_DISLAB",
+      "pid": 27516,
+      "epoch": 31,
+      "batch": 1,
+      "actual_steps": 61
+    },
+    "CONTROLLER_STATE.json": {
+      "state": "running",
+      "pid": 26988,
+      "child": 27516,
+      "step": "run_comparison.py"
+    },
+    "RUN_ONCE.json": {
+      "pid": 27516,
+      "parent": 26988,
+      "time": 1793621420.361864,
+      "guard": {
+        "utc": 1793621420.361864,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18864939008,
+          "committedBytes": 44254658560,
+          "commitLimit": 90276544512
+        },
+        "GPU": {
+          "util": 0,
+          "free": 5045,
+          "used": 5009
+        },
+        "competing_trainers": 0,
+        "CPU_threads": 2,
+        "CUDA_VISIBLE_DEVICES": "-1"
+      }
+    }
+  }
+}

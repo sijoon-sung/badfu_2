@@ -1,0 +1,30 @@
+{
+  "state": "terminal_after_primary_pre_ONCE_process_metadata_failure",
+  "task_state": "Ready",
+  "lastResult": 1,
+  "processes": [],
+  "evaluation_artifacts": {
+    "pair_evaluation": false,
+    "PAIR_EVAL_ONCE.json": false,
+    "PAIR_EVAL_AUDIT_ONCE.json": false,
+    "PAIR_EVAL_STATE.json": false,
+    "PAIR_EVAL_VERIFIED.json": false,
+    "PAIR_EVAL_RESULT.json": false
+  },
+  "receipts": {
+    "RECOVERY_CONTROLLER_FAILURE.json": {
+      "bytes": 722,
+      "sha256": "0b54ce733a3f5a0bdc8c5b7b270cf6b4878e1b68e8e081e375ca00579edf05fd"
+    },
+    "FU_attack_VERIFIED.json": {
+      "bytes": 65547,
+      "sha256": "c5a9c3f245b12255f2ce1cfbf3b866bb8b7b933db7173fe1678b25a69c2e8705"
+    },
+    "PAIR_EVAL_FAILURE.json": {
+      "bytes": 2220,
+      "sha256": "abde975709fc7832e1305bbfeacc0042200812a25b67b661f9eba49dc748e942"
+    }
+  },
+  "nvidia_smi": "C:\\Windows\\system32\\nvidia-smi.exe",
+  "utc": "2026-11-01T06:32:26.2671548Z"
+}

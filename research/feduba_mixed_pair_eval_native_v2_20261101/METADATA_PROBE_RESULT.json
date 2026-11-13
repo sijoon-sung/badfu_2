@@ -1,0 +1,22 @@
+{
+  "state": "passed_new_native_metadata_source_probe",
+  "Python_AST_files": 14,
+  "unchanged_helpers": 5,
+  "read_only_write_rejections": 3,
+  "process_count": 13,
+  "own_native_row": {
+    "ProcessId": 14524,
+    "ParentProcessId": 2428,
+    "Name": "python.exe",
+    "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/source_probe.py"
+  },
+  "model_loads": 0,
+  "model_forwards": 0,
+  "torch_imported": false,
+  "scientific_fixture_reexecuted": false,
+  "probe_hold_seconds_for_external_CIM": 25,
+  "raw_private_metadata_sha256": "ddcdbd0672a852877c835ed3b2fcc7f495c3d55c683d51a369a8ad898941ae10",
+  "all_actual_commandlines_available": true,
+  "original_fixed_competing_trainer_count": 0,
+  "other_projects_commandlines_published": false
+}

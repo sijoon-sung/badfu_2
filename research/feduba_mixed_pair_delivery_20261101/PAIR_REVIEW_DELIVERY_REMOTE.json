@@ -1,0 +1,52 @@
+{
+  "state": "exported_verified_diagnostic_pair_review",
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.attackfu20.20261101",
+    "benign": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.benignfu20.20261101"
+  },
+  "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_mixed105_CPUtrigger_SSS125_FU20_pair_20261101",
+  "archive_path": "D:\\FEDUBA_MIXED_PAIR_DELIVERY_20261101\\PAIR_REVIEW_DELIVERY.zip",
+  "archive_sha256": "9837cb4f4e2e8f86f08eace0558c3ebb384b1279caa4bfecf1ea070c107749f1",
+  "archive_bytes": 1530790988,
+  "manifest_sha256": "058f91b3e85c9e95637a526f6450e94ed3789ec04e24ebed538da076456b8754",
+  "seal_sha256": "61c3c7aa0f1a0f593429f43a94001ec617fde82eca068648862bf5bd49e7116e",
+  "hashed_files": 1343,
+  "packet_total_files": 1345,
+  "tensor_payload_count": 672,
+  "guard": {
+    "state": "passed",
+    "all_readonly": true,
+    "hashed_files": 1343,
+    "total_files": 1345
+  },
+  "models": {
+    "pre": {
+      "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_cleanFL20_s42_20261031\\run\\before.pt",
+      "sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "fu/benign/after.pt",
+      "sha256": "cd0e6e544a6993e7672e75fff56488141de09d4b12c6e58317cc28bc25793d16",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "attack": {
+      "path": "D:\\FEDUBA_MIXED_ATTACK_RECOVERY_RUN_20261101\\fu\\attack\\after.pt",
+      "sha256": "7ada5a25c181e3d5d16d17c97b9de06286d619f3176c0735ccc5c1fa984d86b7",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "local_delivery_complete": false,
+  "catalogue_registered": false,
+  "minimum_latent_pair_performance_passed": false,
+  "overall_goal_complete": false
+}

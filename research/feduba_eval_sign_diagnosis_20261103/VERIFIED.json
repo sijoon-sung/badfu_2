@@ -1,0 +1,117 @@
+{
+  "state": "passed_new_negative_sign_independent_evaluation",
+  "primary_result_sha256": "0a70f50c3fcc6e7cea0486a2c32681f606fcf4cc53e1b9dd50b746000ef7ac0f",
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "CA_pct": 85.53,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1016,
+      "ASR_pct": 11.28888888888889
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "CA_pct": 84.74,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 858,
+      "ASR_pct": 9.533333333333333
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "CA_pct": 84.69,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5241,
+      "ASR_pct": 58.233333333333334
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "CA_pct": 84.45,
+      "CA_reused_not_reinferred": true,
+      "non_target_N": 9000,
+      "triggered_target_hits": 677,
+      "ASR_pct": 7.522222222222222
+    }
+  },
+  "positive_models_reused": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1244,
+      "CA_pct": 84.69,
+      "ASR_pct": 13.822222222222223
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "all10000_negative_inputs_exact": true,
+  "all_negative_argmax_and_counts_exact": true,
+  "max_logit_abs_error": 0.0,
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "actual_forward_calls": 316,
+  "actual_sample_forwards": 40000,
+  "clean_forward_calls": 0,
+  "positive_forward_calls": 0,
+  "diagnostic_negative_gates": {
+    "minus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    },
+    "plus_attack": {
+      "checks": {
+        "pre_ASR": true,
+        "attack_ASR": false,
+        "attack_minus_pre": false,
+        "attack_minus_benign": false,
+        "all_three_CA": true,
+        "both_post_CA_drop": true
+      },
+      "passed": false,
+      "diagnostic_negative_route_only": true,
+      "standard_positive_failure_replaced": false
+    }
+  },
+  "alignment_rule_passed": true,
+  "standard_positive_failure_replaced": false,
+  "author_intent_resolved": false,
+  "overall_goal_complete": false
+}

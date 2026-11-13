@@ -1,0 +1,8 @@
+{
+  "scope": "Evaluator only. Search and selection never read this file.",
+  "badfu_benign": ["c00", "c01", "c02", "c03"],
+  "badfu_attack": ["c04", "c05"],
+  "diagnostic": {"c06": "stcebra/FUBA v7 performance-failed", "c07": "ity207/FedUBA matched benign", "c08": "ity207/FedUBA minus failed", "c09": "ity207/FedUBA plus failed paper gates"},
+  "independent_training_seeds_badfu": 2,
+  "fuba_approved_successful_latent_pair": false
+}

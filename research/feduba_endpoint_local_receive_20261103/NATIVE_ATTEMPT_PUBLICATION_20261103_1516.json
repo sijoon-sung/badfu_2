@@ -1,0 +1,27 @@
+{
+  "state": "published_new_native_receive_attempt_before_observation",
+  "commit": "19d4a8a6451df8a4feb9a48264919d75cfc3b0ba",
+  "native_source_freeze_sha256": "3d4f99fab287609177a4d2aa6cb5467e88ee76723ea0b8bb64f69156bc95e36f",
+  "source_freeze_v2_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "files": [
+    {
+      "name": "NATIVE_ATTEMPT_PROFILE_20261103_1516.json",
+      "git_blob": "471196d466b47ab8d8e9a5b1502c764da06a7d1d",
+      "sha256": "99a52f574a0558a34ceddafda06dd9d881e8b166647f95fed46044bc0501f209",
+      "bytes": 1435
+    },
+    {
+      "name": "observe_receive_attempt_20261103_1516.py",
+      "git_blob": "b7d19bfa337ccc15bbbfd355f6410056ea2e3ba4",
+      "sha256": "9bd189d1d6d36bb422c58be96ea60eabf2844045e1b1cc132df45daddc8b142c",
+      "bytes": 2846
+    },
+    {
+      "name": "NATIVE_ATTEMPT_SOURCE_FREEZE_20261103_1516.json",
+      "git_blob": "cfc23a1bd314ee9fcba4a4d2b626c0cf45f2249b",
+      "sha256": "3d4f99fab287609177a4d2aa6cb5467e88ee76723ea0b8bb64f69156bc95e36f",
+      "bytes": 739
+    }
+  ],
+  "actual_receiver_enabled": false
+}

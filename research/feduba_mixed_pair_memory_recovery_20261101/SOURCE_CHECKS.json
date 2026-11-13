@@ -1,0 +1,11 @@
+{
+  "state": "passed_metadata_only_source_AST_review_before_publication",
+  "python_AST": 1,
+  "PowerShell_AST": "passed",
+  "torch_imports": 0,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "processes_stopped": 0,
+  "source_freeze_sha256": "05a3cababc7666d980d0b958803830223448a51f04d4e574d74223522cb70dbd",
+  "remote_PS_result": "passed_PS_AST_no_execution"
+}

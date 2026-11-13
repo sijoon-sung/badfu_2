@@ -1,0 +1,4 @@
+현재runtime recovery 비교 결과 — R02/D08/D15/N02, 2026-10-31
+기존strict-bit gate실패를보존하고A를재훈련하지않았다. A50epoch/2150batch를재사용했다. GPU-resident 입력/라벨이bit일치했고loader RNG가같았으며, 원phase4와새A의전체10000/9026장 CA/ASR/정상타깃쏠림은모두같았다. 원tensor8.94e-08차이의원인은미확정이다.
+B Adam만최초50epoch/2150batch학습했고마지막loader RNG가같았다. A recovered CA98.65/ASR98.26058055, B CA98.68/ASR98.00576113으로20%p개선gate를실패했다. 실제다른7제출고정99R집계도A ASR37.00421006/B36.58320408로10에못미쳤다. 정상CA는99.07/99.08이다.
+optimizer만으로억제부족을해결하지못했다. 이결과로Adam을정식채택/100R자동시작하지않는다. 새B와기존A·optimizer/RNG·새50epoch로그를양쪽보존/전달했고원래모델·실패는불변이다. 단일phase의현재runtime비교이며literalSGD=Adam/논문전체재현/unknowntrigger탐지증거가아니다. D08/D15반례는미해결이다.

@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "tasks": [
+    {
+      "name": "Codex-Blind-body-witness-audit-20261111",
+      "state": 3,
+      "exit": 1
+    },
+    {
+      "name": "Codex-Blind-body-witness-audit-v2-20261111",
+      "state": 3,
+      "exit": 0
+    },
+    {
+      "name": "Codex-FUBA-ten-seed-repro-recovery-20261031",
+      "state": 1,
+      "exit": 267014
+    }
+  ],
+  "owned_python_processes": 0,
+  "raw_bytes_verified": {
+    "RESULT.json": "d5eda5530c57cba060f1bdc15b14947fa5b8c6389e82e30707c24fa005f54477",
+    "PREFLIGHT.json": "2b6b8c8daebd331a1c5725fd275eff4f549786b1a6a1c96dbe01acbaa00fe644",
+    "ADMISSION.json": "f013f23b05d3415a023307250a71c7d73f2f5284a243dca67e6d0b49af73b390",
+    "FREEZE.json": "ba186e264f1365977bc6dfd1f7356c01bff16fe6b071ea997fefbfa5f7ae7d99"
+  },
+  "prior_stop_preserved": true
+}

@@ -1,0 +1,25 @@
+{
+  "state": "passed",
+  "original_archive_seal": {
+    "file": "D21_REVIEW_PACKET.zip",
+    "sha256": "11aa88db5dd1c729d5aee724b48798377a820a512e8856101b0db205d2294e2f",
+    "bytes": 296766380,
+    "files": 203,
+    "typed_payloads": 17,
+    "model_forward_calls": 0
+  },
+  "original_manifest_sha256": "efc453e5d0431bcc8f4e55eb3a691f1aebc78d8d32151507edaf65f0c5cb2ed8",
+  "changes": [
+    {
+      "path": "detectors/n00/ADMISSION_VERIFY.json",
+      "original_sha256": "af3e58de2a4faf8cefe8daaf9a85a31a8196498e7774e8348e8877ef4bdb5ebb",
+      "sanitized_sha256": "0ac36c20f425df8cad598320d54a6ed6d1f0d98b7447117bd4aa97dcdcfbd153",
+      "removed_observations": 6
+    }
+  ],
+  "removed_observations": 6,
+  "all17_typed_payloads_byte_identical": true,
+  "model_loads": 0,
+  "model_forward_calls": 0,
+  "original_archive_preserved": true
+}

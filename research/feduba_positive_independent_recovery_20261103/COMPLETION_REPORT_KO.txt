@@ -1,0 +1,13 @@
+별도 독립평가 확인서 복구 완료 — 공격 성능 미달 유지
+
+R03/R02/N02/D08/D15. 2026-11-03 사용자 '그냥 해…dislab에서 해' 지시에 따라 로컬 RAM대기에서 벗어나 DISLAB에서 새운영복구를 실제실행했다. DISLAB admission 가용RAM 17.146GiB/commitfree 42.646GiB, GPUutil0/free5045MiB/used5009MiB·competitor0/disk80GiB이상을통과했다. 삭제·다른앱종료·guard완화0이며로컬메모리는DISLAB선행조건이아니다.
+
+확인된 원독립평가의확인서작성KeyError(inputs변수가배치자료에shadow됨)를 metadata변수명input_binding과새출력경계만교정했다. 소스a16bed4737d28f7aeb088125dd0446b6f6928f00·실profile/입력/실runfreeze5e75844258b119432bf534b7c6e3c191377f0887를같은PR先게시했다. DISLAB stdlib6AST검토에서metadata binding/ONCE경계만정규화한main전체AST정확일치를확인했고13publicsource및6actualmetadata의GitHubbytes를검사한뒤RUN_PUBLICATION에핀했다.
+
+새foregroundcontroller/새GPUchild각1회로동일after1910705b...·delta91998234...를사용해official10000rawinput을독립재구성하고20000sample-forward/158calls을수행했다. 모든raw입력·argmax·정수count가원primary와정확일치했고logitmaxabs0였다(원atol1e-6/rtol1e-5). pre/정상 counts와원독립evidence는완료baseline명시SHA재사용/재추론0이다. 원훈련/SSS/primary/원실패verifier/CPUarchive/export재호출0,새학습·optimizer0이다.
+
+표준결과: preCA85.53/ASR20.144444444444446(1813/9000), 정상CA84.74/ASR-B16.666666666666668(1500), plus공격CA84.45/ASR58.74444444444445(5287). 기존minusASR13.822222222222223은완료receipt재사용이다. 새독립검증은기존plus수치를확인했으며성능을높이지않았다. 원4성능gate실패/2CA통과·단일seed범위를유지하며논문성공재현이나탐지성공으로승격하지않는다.
+
+새RECOVERY_VERIFIED SHA6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f /COMPLETION SHA93b82036bad2d99c6cc87a11b561531ef95a561164159455f329a7d28c6f125d. 2026-11-03T11:14:56Z 새foregroundexit0/native0/failure0. 원taskReadyexit1, 원PAIR_EVAL_VERIFIED/COMPLETION부재와실패trace/낡은STATE는불변이며새완료를원verifier성공이라고쓰지않는다. 새결과는별도root에만보존하고기존readonlypacket/외부seal/catalogue/default는변경하지않았다.
+
+사용자전체목표(공격성능/unknown-trigger-family탐지/local전달)는미완료다. D08공격.75848이큰정상.75525/.76188사이/D15공격7·정상8은그대로이며평가자target/delta/label/ASR를server선택에넣지않는다. 로컬RAMpoll만으로구현작업을대체하지않고DISLAB에서후속paper/source/provenance차이를찾는다. 추가모델교정은새근거·고정비교/예산/중단규칙·source/실profile先게시후필요단계만1회하며성능에맞춘튜닝이나완료작업반복은없다.

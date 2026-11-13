@@ -1,0 +1,15 @@
+{
+  "state": "original_local_call_failed_before_SSH_or_once_marker",
+  "cause": "Dependent launch attempted while publication pin exec session was still running; missing local RUN_PUBLICATION.json at read, then pin completed successfully.",
+  "original_failure_sha256": "b9031554f3a18d5b3d90d93f03b74d1ec0b4c9e590eb2dbefbfb71599ef9d9e9",
+  "original_launcher_sha256": "aa6da75d50fb7b871391cc175a086c6a609a5774722c818cebfead0411be7d61",
+  "original_LOCAL_LAUNCH_ONCE_exists": false,
+  "observed_remote_task": null,
+  "observed_remote_root_processes": 0,
+  "observed_utc": "2026-11-03T08:27:48.4954212Z",
+  "publication_now_completed": true,
+  "producer_failure": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "original_caller_reinvoked": false
+}

@@ -1,0 +1,253 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.s42.large_normal_rounds.20261111.stored",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r01": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round01.pt",
+      "sha256": "6beebaf0318c333533693602aa038363df01ae136a887bc695deba0399b79f00",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r03": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round03.pt",
+      "sha256": "ece5024cdde531b2484cb9b77acebc93388d44514aeb4a04e7bafeba9ad124b1",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r05": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round05.pt",
+      "sha256": "eb21f46716fe1fb93fa4f5e8b5c3e172b1096d6ee8c1e81c8027f63fa03fa7be",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r10": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round10.pt",
+      "sha256": "1c69270d963bfa165f9ea7207ea83da21010f7679479ec9630b52ec9d4954554",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r15": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round15.pt",
+      "sha256": "b4d765179f90895d79b1df88f3b134b676b5e350fa70a003945ef6a9f9f177f3",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p00_r20": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\balanced5000\\rounds\\round20.pt",
+      "sha256": "7e5f9117ff3bfaaed9d41e2e6a9774cec445dcb5a97896ae3d06c0f1992a09d8",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r01": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round01.pt",
+      "sha256": "b4c59d1ce26ea63f0baf3e657192a3917bb74ded6055ad1d257423882d60d6fd",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r03": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round03.pt",
+      "sha256": "a1803a94b071c004b9ec6c56fa6824879a32f20e1f541f93318a2d32269958bb",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r05": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round05.pt",
+      "sha256": "ed08e87c5c9856d4e9addb8594d12ce3f434f55e3a983e465c0a3a0e25c57eb2",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r10": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round10.pt",
+      "sha256": "8f3409fd0f24b5325b008e3cdbc29d9b2ae91ec4d36b1985cb483bf3039d0245",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r15": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round15.pt",
+      "sha256": "380148b2719f1e5cfc3e12218526bc7a51f80be0c22f502eab4ecdb7b45d9a3c",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p01_r20": {
+      "path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\fu\\class2_all\\rounds\\round20.pt",
+      "sha256": "4ac2ee40ff646c5b1fa3fac39ba1ae236c3ca5768894c37ff2b45d48803c3ff7",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r01": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round01.pt",
+      "sha256": "a31e9d9e6befaf6abb92d7df7a7232e4b92a8adca4ef0ab5d00d96cc26057a5d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r03": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round03.pt",
+      "sha256": "89effba83688c1b35fae6eab0b91da853f1346a2833d3cb45880991c6d61538a",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r05": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round05.pt",
+      "sha256": "9e955f401428084fd4fb4c296242d9dffa332080c541a6ef29f4e20895f1eb6f",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r10": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round10.pt",
+      "sha256": "45893063f0868f7b8241ac4cfa06f42673ebeed9c6a2eb4daefd613493c9ec71",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r15": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round15.pt",
+      "sha256": "7e2d8bc68a14a0fc4b31430775f894fdeb771883c53cfbe21eac921cd56d0c8b",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p02_r20": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\benign\\rounds\\round20.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r01": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round01.pt",
+      "sha256": "3394bd713925f3fda2a8d2f4d5db3fc8f1f28cc74c03c80d31adbf464447c7ea",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r03": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round03.pt",
+      "sha256": "a059697b0fd354ae0578f91afdf024ded7cd89c0d1ac4912374f491c52b08972",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r05": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round05.pt",
+      "sha256": "507bcc1bef63813d9fcc538db7da605b6f26960fa0bad29fa092e4eea8ee73fa",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r10": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round10.pt",
+      "sha256": "3f3f1648bca9247d228327ad14994663117ad5c0589ab00e5f874071780358fd",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r15": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round15.pt",
+      "sha256": "8ef74c5c10f48ab944147a7bebb7e8af1785822a6d50094ce2eab4ff20effe74",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p03_r20": {
+      "path": "D:\\FEDUBA_FIXED10_PAIR_20261103\\fu\\attack\\rounds\\round20.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r01": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round01.pt",
+      "sha256": "d050650c8c716ddfddd6651d02ddd4ba61cc50d4d7bd721ab63054c053b8c060",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r03": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round03.pt",
+      "sha256": "b512cd98007aee05a519c45161054261028ecc56d90a734cf945730d52f6e83a",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r05": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round05.pt",
+      "sha256": "2f2421c0c07d05d81687b3dc2a4c852f84b9772d18d537746207d76e1e88e190",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r10": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round10.pt",
+      "sha256": "0dde0ceedf8470da68279003677ef4a81791c78ed12ccc355981f67012c92ee5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r15": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round15.pt",
+      "sha256": "6d738d44cd234a3495b35d33b8164bd528b07e7fdca8d2e71eaa28fe155bdfd6",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "p04_r20": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\fu\\attack\\rounds\\round20.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "tracks": [
+    {
+      "opaque": "p00",
+      "source_case": "n00",
+      "rounds": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "opaque": "p01",
+      "source_case": "n01",
+      "rounds": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "opaque": "p02",
+      "source_case": "c07",
+      "rounds": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "opaque": "p03",
+      "source_case": "c08",
+      "rounds": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "opaque": "p04",
+      "source_case": "c09",
+      "rounds": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "state": "local_metadata_monitor_failed_evaluator_unaffected",
+  "caller": {
+    "path": "tmp/feduba_eval_sign_running_observation_once_20261103.py",
+    "sha256": "8d693a3e607974dca7865607799947ced5bd402bedb83413ad8560f1434b5291",
+    "bytes": 1224
+  },
+  "observed_exit": 1,
+  "reason": "PowerShell Test-Path path concatenation lacked expression parentheses and was parsed as an additional positional argument",
+  "observation_file_written": false,
+  "model_reads": 0,
+  "producer_restarted": false,
+  "producer_source_profile_changed": false,
+  "scientific_failure": false,
+  "original_caller_rerun": false,
+  "new_reader_scope": "literal existing completion metadata only after actual foreground exit0"
+}

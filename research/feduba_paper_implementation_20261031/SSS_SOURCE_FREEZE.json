@@ -1,0 +1,36 @@
+{
+  "stage": "reviewable_SSS_source_only_not_a_live_launch_freeze",
+  "real_SSS_launch_enabled": false,
+  "missing_launch_inputs": [
+    "SSS_LAUNCH_PROFILE.json",
+    "SSS_FREEZE.json",
+    "completed_STG_audit"
+  ],
+  "files": {
+    "SSS_PROTOCOL.txt": "72eede99862cd366fcb868f67bbc1c6320b89877a059f2517a58828bed4a8ca4",
+    "SSS_LOGGER_CPU_RECOVERY_PROTOCOL.txt": "c212d297cf3c78cea03ffabe91f5c7b599b4ec00ec6f33dde832e15f245f2f32",
+    "SSS_LOGGER_CPU2_FREEZE.json": "d5985892c987f3372f2524afb8472b56ae9ac37c2a2496a2cb411def69330549",
+    "SSS_LOGGER_CPU2_RESULT.json": "e653b408bbeaf0e5e9fbcd052dc7d0d4b6071231ca74c58ed6486cd305fb69a3",
+    "sss_logging.py": "1edd3927efb6c02ae9aca2026fad4f3c15352c13ce84de0344a128443face0d7",
+    "sss_runner.py": "22b3a277c3cb7fd233f48323ce6086cc686cd4ffe709eaa18acd6c39b429cda4",
+    "verify_sss.py": "850e28abd33f5d08e2bce90b58ca6a45e532880a68f080b7e532938782ce9aba",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "FU_PROFILE.json": "85942e1cb82640150d4939c2ac1dec95406472dbe5be321bff2784c1f9fb5318",
+    "SSS_NUMERIC_POLICY.json": "cff7a9eff7b9c4e1288e3df27540dd1248e76501a1b6bc3d38c5c222401ece74",
+    "SSS_NUMERIC_PROTOCOL.txt": "45f9bc56ba1a54c41b6409509cb85b81ac0580c49afaafedf4716f7f77c829ee",
+    "trigger_binding.py": "8e7a9e3d510b27cc70264e64f03b087887067e2850a87f7702ba53053463e492",
+    "STG_CPU_SOURCE_BINDING.json": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5",
+    "STG_CPU_TRIGGER_RESULT.json": "e60cc5d1454f9138b85c8afea4b2898e2651508550f844a150b033eaa5ed1c2d",
+    "STG_CPU_TRIGGER_VERIFIED.json": "817e92a78fa2f498d2e2dc1a1805d782c1e6932cafaa60a0a86de67eee38aff2",
+    "STG_CPU_TRIGGER_CONTROLLER_STATE.json": "b1af65a1cf080e80522128fc5197a1fa8475a9130e4d65b2ceacd284dfd34401",
+    "STG_CPU_TRIGGER_FREEZE.json": "4fbbd1c982c4906ace94c76f067f9b67e7490cfc8ed859408e02ace7159aae52",
+    "CPU_BINDING_LAUNCH_PROTOCOL.txt": "c4f9405ef55a84d067a6194d79477edfbced6875cef6cfc9dc1670f6c253be99"
+  },
+  "code_review_revision": 3,
+  "previous_code_commit": "a6aa798",
+  "previous_source_only_freeze_sha256": "7840e5cd2da7434c468e55a5df3aff80021750733a85b3910f3f9e43af5b92e3",
+  "review_change": "Unexecuted pipeline explicitly binds separately verified CPU trigger100; original failed GPU STG remains unchanged.",
+  "required_registered_clean_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031"
+}

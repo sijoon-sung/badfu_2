@@ -1,0 +1,34 @@
+{
+  "id": "feduba.endpoint_receive.fresh_native_attempt.20261103_1516",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_root": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_endpoint_local_receive_20261103",
+  "stage": "native_metadata_only_before_any_actual_receiver",
+  "actual_receiver_enabled": false,
+  "source_freeze_v2_sha256": "ce9ed57d03ae1a5a6d5c7c630fb616f07413b0771b2c87006668e3d8a56d87ca",
+  "source_profile_v2_sha256": "07dba79f2653e9e08897eedf831526703d5892555978674daabc84401cc9248d",
+  "observation_name": "NATIVE_RECEIVE_READINESS_20261103_1516.json",
+  "result_name": "NATIVE_ATTEMPT_RESULT_20261103_1516.json",
+  "resource_thresholds": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "observations_budget": 1,
+  "waiter_enabled": false,
+  "runtime_or_torch_probe_enabled": false,
+  "transfer_enabled": false,
+  "catalogue_registration_enabled": false,
+  "purpose": "After completed inactiveV2source preparation and several quiet heartbeats, make one distinct actual-receive-attempt readiness observation; do not reuse or overwrite the priorfalse receipt. Nativefalse stops without receiver; true still requires separate actual launch/profile/publication."
+}

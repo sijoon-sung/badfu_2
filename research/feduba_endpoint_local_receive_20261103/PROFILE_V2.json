@@ -1,0 +1,166 @@
+{
+  "id": "feduba.fixed10.four_endpoint_local_receive.s42.20261103.fresh_readiness_binding_v2",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_root": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_endpoint_local_receive_20261103",
+  "receive_enabled": false,
+  "readiness_observation_enabled": false,
+  "case_purpose": "diagnostic",
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "archive": {
+    "path": "D:\\FEDUBA_ENDPOINT_REVIEW_DELIVERY_20261103\\ENDPOINT_REVIEW.zip",
+    "bytes": 165494920,
+    "sha256": "f74d8f1cd2df54622965606e9614bb73927ed7aef55ccd68761bb6d497a0b58d"
+  },
+  "packet_name": "FedUBA_fixed10_s42_four_endpoints_review_20261103",
+  "local_review_parent": "C:/Users/sijoo/Documents/ChatGPT/badFU/CHECKPOINTS_FOR_REVIEW",
+  "local_archive_path": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/feduba_endpoint_local_receive_20261103/incoming/ENDPOINT_REVIEW.zip",
+  "manifest_sha256": "10cb99c38fbd72aed399e1e1ec258342544ac63520727f03b1f617ccc85c1b1c",
+  "seal_sha256": "69986537c105ee6ee77e1e2db37deb007ee5c4ead0ce22f855521eda7ca0136a",
+  "model_order": [
+    "pre",
+    "benign",
+    "minus",
+    "plus"
+  ],
+  "models": {
+    "pre": {
+      "file": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "benign": {
+      "file": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "minus": {
+      "file": "models/minus.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    },
+    "plus": {
+      "file": "models/plus.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null,
+      "prior_DISLAB_strict_CPU_receipt_reused": true,
+      "new_model_check": false
+    }
+  },
+  "maximum_entries": 16,
+  "maximum_uncompressed_bytes": 268435456,
+  "maximum_member_bytes": 67108864,
+  "resource_guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py",
+    "sign_eval.py"
+  ],
+  "readiness_wait_policy": "single_native_snapshot_no_waiter_no_app_closure",
+  "runtime": {
+    "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe",
+    "python_version": [
+      3,
+      11,
+      17
+    ],
+    "torch_version": "2.4.1+cu118",
+    "metadata_candidate_only": true,
+    "expected_files": [
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/python.exe",
+        "sha256": "622a78be23baa163b26889c8e0d21ccb79752dd9a8149e7ffd776c7812175d22",
+        "bytes": 93184
+      },
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/conda-meta/python-3.11.17-hb12b558_1_cpython.json",
+        "sha256": "4186ac00ba25fdc58a753b900161673f3304929c9b67a449730ef9b91ecc2d46",
+        "bytes": 900083
+      },
+      {
+        "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/envs/badfu-original/Lib/site-packages/torch-2.4.1+cu118.dist-info/METADATA",
+        "sha256": "627845ebf00608d38d52bd475e7269df97111b11dcf928293de252b18c1c0763",
+        "bytes": 27167
+      }
+    ]
+  },
+  "transfer_remote": "DISLAB@100.75.90.126",
+  "transport_library": {
+    "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/00_trajectories/dislab_audit.py",
+    "sha256": "487fc7147295fa7159893ae805fdb21796086787ac18185cea528ac5cfa1c87f"
+  },
+  "CPU_zero_input_shape": [
+    1,
+    3,
+    32,
+    32
+  ],
+  "CPU_output_shape": [
+    1,
+    10
+  ],
+  "CPU_model_checks": 4,
+  "CPU_model_load_map_location": "cpu",
+  "CPU_weights_only": true,
+  "CPU_num_threads": 1,
+  "new_training_or_performance_evaluation": false,
+  "raw_role_RNG_queries_or_ID_payload_transfer": false,
+  "catalogue_registration_enabled": false,
+  "source_catalogues": {
+    "main": {
+      "path": "C:/Users/sijoo/Documents/ChatGPT/badFU/research/00_trajectories/catalog.json",
+      "sha256": "557425237090c464173f332e1ef0da01eb6eb9b0dec287023278044526590f2b",
+      "case_count": 26
+    },
+    "PR": {
+      "path": "C:/Users/sijoo/Documents/ChatGPT/badFU-pr-detection-20261031/research/00_trajectories/catalog.json",
+      "sha256": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
+      "case_count": 23
+    }
+  },
+  "overall_goal_complete": false,
+  "readiness_max_age_seconds": 300
+}

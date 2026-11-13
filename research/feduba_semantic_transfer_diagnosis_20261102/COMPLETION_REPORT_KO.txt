@@ -1,0 +1,23 @@
+FedUBA 고정 교사 의미 구분·피해모델 전이 진단 완료 — 2026-11-02
+R03/R02/N02/D08/D15.
+
+실제DISLAB에서사전고정한2models×2perturbations×2000=8000sample-forward/64calls를1회완료했다. 교사201과승인된cleanfl20진단case의피해모델10은모두원weights/BN/eval그대로이고gradient/optimizer/model편집0이다. source/profile/freeze는b15eff7에계산전에게시했다. SOURCE_FREEZE SHAd732cd277bf18adb0101dc8ae7c4dbcbf752cc22ed15ab354c81ceb8c4ba4385,PROFILE SHA0d3f035c9c43fdde8c9ca3b4f03512cfd73244017b200e5ca15743d830cfbfe9. 기존외부두npy의Gitblob/SHA,teacher/원SGDδ/victim/완료STG비교receipts/diagnostic catalogue guard와고정자원조건을검사했다. 로컬모델계산0이며로컬에는JSON만수신했다.
+
+새관측은원CIFAR10.1 v6의고정2000/10x200장,동일Normalize0.5/NCHW/δ×1.5/clip±1의교사·피해모델class별예측과같은입력교차표다. targetclass2의200장은교사학습에들어간자료이며heldout으로부르지않는다. 다른1800원ID는그target자료에포함되지않았다. 원assets는전체2000장의victimtrain/test exact중복0을검사했으나near/semantic독립을인증하지않는다. 표준CIFAR10 test10000/비target9000 ASR평가를다시한것이아니다.
+
+정확한새counts:
+교사zero:class2 target200예측74/200,다른9class전체1/1800.
+교사δ×1.5:class2 target200예측191/200,비target전체1290/1800(71.6666667%).
+피해모델zero:비target의target2예측46/1800(2.5555556%).
+피해모델δ×1.5:비target의target2예측588/1800(32.6666667%).
+동일1800입력의δ조건teacher/victim(target예측여부)교차표: 둘다아님442,피해모델만68,교사만770,양쪽520.
+
+사전정수조건둘다통과:9×교사targetclass cleanhit74 > 비target cleanhit1; 피해모델비targettargethit46→588의증가. 따라서이외부집합에서'교사는단지CIFAR영역이면전부200으로보았다'거나'트리거전이가전혀없었다'는강한설명은지지되지않는다. 그러나교사와피해모델반응은달랐고불완전한전이는남는다. 학습target자료를포함한교사선택성/부분전이를성공한잠복FU·일반화전체또는유일성능실패원인으로승격하지않는다.
+
+독립새process는모델forward0으로저장logit의Python argmax/모든class count/전체교차표를정확히일치시켰다. NumPy로독립재구성한64개모델입력SHA도모두정확일치했다. 입력원ID0..1999/클래스분모/원modelweight+BN불변/finite를검사했다. 기존완료endpoint/전수ASR/SGD/RAdam/SSS/FU를재실행하지않았다. parent57304→runner39128→독립감사process는종료했고foregroundexit0/currentrootPython0/CONTROLLER_STATE completed·exit0/failure0이다.
+
+RESULT SHA6e426b8db77f701ebf7093a51fb782274a0d39c8b4589967c949b2ca8ac0d370. VERIFIED SHA8f430688511241b9b3b223be1ae5ce7849555b92603482f730be8c2c37805ace. 원logit3,432,413bytes SHA b09ad60ceb4f3881c06f4a33eb19240dd1a29f1f2c557b9577e0e77320b2a5d0은DISLABprivate_run만보존한다. metadata observer의큰prettyJSON출력잘림/파싱실패는별도관측으로보존했고원RESULT/VERIFIED를직접수신해읽었다. 수치source/실profile/허용치수정이나추론retry는없다.
+
+남은문제: 기존표준시험의preASR29.4667/정상FU24.6444/공격FU19.3333과독립전수정확일치/4성능gate실패는불변이다. 이번에는교사학습과부분전이가있음을구분했지만전이강도와SSS·BEA·FU활성화연결중어느요소가최종실패를만들었는지는아직분리하지못했다. 결과에맞춰새RAdamδ/seed/lr/epoch/epsilon/budget을선택하지않고이프로토콜은종료한다. 다음실계산은관련source/profile/새관측/고정비교/중단규칙을별도선게시해야한다.
+
+이진단은정상모델에서도가능한특정트리거반응이며공격탐지가아니다. D08공격.75848이큰정상.75525/.76188사이·D15공격7/정상8·unknowntriggerfamily미검증과단순변화량탐지금지를보존한다. 원source/profile/모든실패와cases/defaults/로컬전달조건은불변이고localRAM부족을DISLAB교정의선행조건으로두지않는다. 전체재현·탐지목표는미완료다.

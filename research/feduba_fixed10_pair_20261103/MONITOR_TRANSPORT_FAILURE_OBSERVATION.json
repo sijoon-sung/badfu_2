@@ -1,0 +1,12 @@
+{
+  "state": "failed_old_metadata_observer_transport_preserved_model0",
+  "source": "observe_status.py",
+  "sha256": "009c3d7bf1da94f7c931d103ca4ef86941b915fbab2e81bf4068c74c93d8d565",
+  "PS_script_chars": 3143,
+  "estimated_encoded_remote_command_chars": 8630,
+  "error": "RuntimeError after dislab_audit.remote: garbled stderr replacement characters; exit1 in0.42s",
+  "training_restarted": false,
+  "model_queries_from_observer": 0,
+  "compact_new_observer_succeeded": true,
+  "cause_scope": "Oversized encoded command is supported by size and compact-success comparison; exact failing shell/limit not independently isolated."
+}

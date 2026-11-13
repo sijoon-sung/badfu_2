@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 52668,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\controller.py\", line 62, in <module>\n    try: main()\n         ^^^^^^\n  File \"D:\\FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103\\controller.py\", line 51, in main\n    assert code == 0, name + ' exit=' + str(code)\n           ^^^^^^^^^\nAssertionError: verify_pair_evaluation.py exit=1\n"
+}

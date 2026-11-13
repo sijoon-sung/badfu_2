@@ -1,0 +1,26 @@
+{
+  "state": "completed_FU20",
+  "branch": "benign",
+  "profile": "feduba.public_fixed10.targetclass125.pairedFU20.s42.20261103",
+  "rounds": 20,
+  "new_trained_roles": 200,
+  "actual_local_epochs": 1000,
+  "actual_batches": 20000,
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "delta": {
+    "path": "D:\\FEDUBA_MIXED_TRIGGER_20261101\\private_run\\delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "SSS_result_sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28",
+  "history_manifest_sha256": "1ca351281d5bf7f95e1856c75bc0d91e3f7968185da1fa28d1d4e08a2713982d",
+  "performance_not_yet_evaluated": true,
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "FedUBA_attack_completed": false
+}

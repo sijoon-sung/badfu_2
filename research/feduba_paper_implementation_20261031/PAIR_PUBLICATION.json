@@ -1,0 +1,17 @@
+{
+  "state": "published_to_existing_draft_PR",
+  "commit": "22fa9efb93902b1795a0717bd923d267c63d2752",
+  "PR_url": "https://github.com/sijoon-sung/badfu_2/pull/1",
+  "preparation_code_commit": "0a0287a",
+  "profiles_and_freezes_sha256": {
+    "SSS_LAUNCH_PROFILE.json": "b09b873a49a9beb8c0d43026fbafa8ae91151fb057176d826c1cb851f7e3d564",
+    "FU_LAUNCH_PROFILE.json": "18f5e065ccc6d53fcf2c1b42b17932abae61e22ca4d0073fefe2757dcfb66e00",
+    "PAIR_EVAL_LAUNCH_PROFILE.json": "b246121648664e18999ef7bd2c68f92322593cecba4882d65146aeaffde3f049",
+    "PAIR_LAUNCH_PROFILE.json": "111df49da93a944091f10def0b046113dd07543f1a5985c0cee1abc8768794a0",
+    "SSS_FREEZE.json": "3ae0c3ff2f87d849678b2008f09f10b5a73ecb20d9ba1c24f3fa67f831682787",
+    "FU_RUN_FREEZE.json": "5b51242deaf4051b5445f80d2217e880581b73eb6b349664a9f58ccd85c6274a",
+    "PAIR_EVAL_RUN_FREEZE.json": "627758a404b44da9681b2eed8860b1e2cb40dd0a56f3109cdbffc6c80e665612",
+    "PAIR_RUN_FREEZE.json": "1d93420c1bb273cc7c93754ab59ef29fdca41a6fe2c769fddfa77d38a152b3d1"
+  },
+  "trigger_binding_sha256": "ef36b5f6df907e2c68bbbc1d5e782bdee8301f5d4ab5f4a0804134fbd5c8baa5"
+}

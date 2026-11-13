@@ -1,0 +1,213 @@
+{
+  "state": "completed_pinned_dependency_semantics_source_comparison",
+  "helper_comparisons_to_related_Narcissus": {
+    "apply_noise_patch": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "poison_image": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__getitem__": true,
+        "__init__": true,
+        "__len__": true
+      }
+    },
+    "poison_image_label": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__getitem__": true,
+        "__init__": true,
+        "__len__": true
+      }
+    },
+    "concoct_dataset": {
+      "both_present": true,
+      "canonical_AST_exact": false,
+      "common_methods": {
+        "__getitem__": false,
+        "__init__": false,
+        "__len__": true
+      }
+    },
+    "sur_target_dataset": {
+      "both_present": false
+    }
+  },
+  "new_helper_source_details": {
+    "apply_noise_patch": {
+      "line": 214,
+      "end_line": 250,
+      "arguments": "noise, images, offset_x=0, offset_y=0, mode='change', padding=20, position='fixed'",
+      "getitem_binary_operators": [
+        "Sub",
+        "Sub",
+        "Sub",
+        "Sub",
+        "Sub",
+        "Sub",
+        "Sub",
+        "Add",
+        "Add",
+        "Add",
+        "Add",
+        "Add",
+        "Add",
+        "Add"
+      ],
+      "if_tests": [
+        "position == 'fixed'",
+        "images.dim() == 3",
+        "mode == 'change'",
+        "mode == 'change'"
+      ]
+    },
+    "poison_image": {
+      "line": 265,
+      "end_line": 282,
+      "arguments": "self, dataset, indices, noise, transform",
+      "getitem_binary_operators": [],
+      "if_tests": [
+        "idx in self.indices",
+        "self.transform is not None"
+      ]
+    },
+    "poison_image_label": {
+      "line": 284,
+      "end_line": 300,
+      "arguments": "self, dataset, indices, noise, target, transform",
+      "getitem_binary_operators": [],
+      "if_tests": [
+        "self.transform is not None"
+      ]
+    },
+    "concoct_dataset": {
+      "line": 328,
+      "end_line": 353,
+      "arguments": "self, target_dataset, outter_dataset, cifar10=False",
+      "getitem_binary_operators": [
+        "Sub"
+      ],
+      "if_tests": [
+        "idx < len(self.odataset)",
+        "self.cifar10"
+      ]
+    },
+    "sur_target_dataset": {
+      "line": 356,
+      "end_line": 370,
+      "arguments": "self, target_dataset, label",
+      "getitem_binary_operators": [],
+      "if_tests": []
+    }
+  },
+  "architecture_comparisons_to_actual_declared_model": {
+    "BasicBlock": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "forward": true
+      }
+    },
+    "Bottleneck": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "forward": true
+      }
+    },
+    "ResNet": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "_make_layer": true,
+        "forward": true
+      }
+    },
+    "ResNet18": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet18_201": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    }
+  },
+  "all_common_model_top_level_definitions": {
+    "BasicBlock": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "forward": true
+      }
+    },
+    "Bottleneck": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "forward": true
+      }
+    },
+    "ResNet": {
+      "both_present": true,
+      "canonical_AST_exact": true,
+      "common_methods": {
+        "__init__": true,
+        "_make_layer": true,
+        "forward": true
+      }
+    },
+    "ResNet101": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet152": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet18": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet18_201": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet34": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "ResNet50": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    },
+    "test": {
+      "both_present": true,
+      "canonical_AST_exact": true
+    }
+  },
+  "whole_model_module_canonical_AST_exact": false,
+  "body_review_sha256": "29a5f1f7d31c3007bb6b5e1e306e0f1f3bd3eaf2ca30173c9568761bd1e94802",
+  "body_review_publication": "DISLAB and local permitted source review only; not public-staged",
+  "Fed_data_change_diff_lines": 80,
+  "README_diff_lines": 18,
+  "owner_identity_certified": false,
+  "new_code_adopted": false,
+  "source_member_reads": 4,
+  "download_calls": 0,
+  "upstream_code_executions": 0,
+  "RNG_executions": 0,
+  "torch_imports": 0,
+  "model_tensor_real_data_loads": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0,
+  "old_finite_jobs_rerun": 0,
+  "overall_goal_complete": false
+}

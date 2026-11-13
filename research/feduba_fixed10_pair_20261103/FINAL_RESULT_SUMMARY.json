@@ -1,0 +1,79 @@
+{
+  "state": "completed_fixed10_pair_performance_gates_failed_preserved",
+  "observed_utc": "2026-11-03T03:20:34.8863626Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 0,
+    "action": "-B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py",
+    "state": "Ready"
+  },
+  "native_processes": [],
+  "receipt_sha256": {
+    "FU_attack_RESULT.json": "1c83e1e5a4f7728da65a5ca6c150fe7842d1fae4f723b87a2496c0a165126587",
+    "FU_attack_STATE.json": "507eff05e6cee360a8a3bb1046278fe92cdeb6ebfb0a4343f500c42ab31c28c0",
+    "FU_attack_VERIFIED.json": "39a847b7bdb37767a14eff54d3ed707ca49b1fac06cad8c5cd62c0d894a7c881",
+    "PAIR_EVAL_RESULT.json": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac",
+    "PAIR_EVAL_VERIFIED.json": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe",
+    "COMPLETION.json": "1ac3223ada7c52f12b7176d7c85a5129f67bfa9dc8360aadb81ecc0083e1be76",
+    "REMOTE_CHECKPOINT_REVIEW.json": "5921bc27a45f331ee25644cd9378bb39596041d7ce7249e1d27ee18d6b7b6153",
+    "CONTROLLER_STATE.json": "21f507224604e93b29e45f6e05f5d8c24b5239ed5cef543af2145e4f54cbc638"
+  },
+  "remote_metadata_bytes_and_SHA_exact": true,
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1244,
+      "CA_pct": 84.69,
+      "ASR_pct": 13.822222222222223
+    }
+  },
+  "operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -6.322222222222222,
+    "attack_minus_benign_ASR_pp": -2.8444444444444446,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 0.84
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "max_logit_abs_error": 0.0,
+  "each_primary_and_independent_sample_forwards": 60000,
+  "each_primary_and_independent_calls": 474,
+  "both_FU_CPU_audits_passed": true,
+  "each_CPU_historyhashes": 420,
+  "all_SGD_gradients_replayed": false,
+  "collector_model_loads": 0,
+  "collector_model_forwards": 0,
+  "finite_job_rerun": false,
+  "local_delivery_complete": false,
+  "overall_goal_complete": false
+}

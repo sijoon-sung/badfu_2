@@ -1,0 +1,35 @@
+{
+  "state": "historical_source_archive_contains_previously_missing_dependency_candidates",
+  "source_commit": "efe6da9b5c7b580f80a86d1431d1dd12ebba4458",
+  "publication_binding_commit": "64d9476d32ba583f8b5cd427a7f10d6038d67301",
+  "source_freeze_sha256": "e56cdf056be88b0d552d73ec8e7bca9a35725d2fce369242360a98becf3f6297",
+  "result": {
+    "name": "RESULT.json",
+    "bytes": 5393,
+    "sha256": "f17a9c78dfaf07c129c45dc0ff4edc67186eaae382e3798f6571013194201ca2"
+  },
+  "completion": {
+    "name": "COMPLETION.json",
+    "bytes": 424,
+    "sha256": "b7cf6d00c321e47864ac92e4d72f7d7ad1fc1d81bdfc6c2d2ad8a8aec9af61ac"
+  },
+  "archive": {
+    "bytes": 203237,
+    "sha256": "ac9408f9bec5ff55f980d179a32d28f5ba33b574cb377ff94145402a91a065f5",
+    "git_blob": "9bc5829c8e67641c83a4fc856d50feff62da1796"
+  },
+  "Python_sources": 29,
+  "matching_original_nine_bodies": 7,
+  "different_original_bodies": [
+    "Fed_data_change.py",
+    "README.md"
+  ],
+  "all_seven_target_definitions_present_once": true,
+  "owner_identity_certified": false,
+  "code_adopted": false,
+  "performance_changed": false,
+  "new_models": 0,
+  "old_jobs_rerun": 0,
+  "local_model_delivery_complete": false,
+  "overall_goal_complete": false
+}

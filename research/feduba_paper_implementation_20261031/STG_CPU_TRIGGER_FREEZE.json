@@ -1,0 +1,20 @@
+{
+  "stage": "new_CPU_only_literal_SGD_trigger100_from_preserved_original_frozen_surrogate",
+  "files": {
+    "cpu_trigger_recovery.py": "d16bd8f65c9d0827595b3515ac08a48c92f8b0bd9c13e692b70a6c3de3f0ffc2",
+    "verify_cpu_trigger_recovery.py": "7e501c36595a21b11dcb11442e03892875f8c365e5565121a4e7835ecc4f948a",
+    "cpu_trigger_controller.py": "c1db774b509db7d0fc7249edca2e52e9bfe44dba44b3e594c06f5c641b22dde5",
+    "launch_cpu_trigger.ps1": "a5ef4a366eae467d26ef5b26e45ad7277f1db48ca5dbc9fd0464e6ff82977eb2",
+    "STG_CPU_TRIGGER_PROTOCOL.txt": "d7c5aed8216b539f7f042c234f7d8f18d9d566e89fea33440dc8a5e474441912",
+    "STG_CPU_TRIGGER_PROFILE.json": "a970e48c63d6e68685afd953a6c95debd5547846f7842d6e58f91787e7d7227f",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "stg_training.py": "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "STG_FREEZE.json": "cc9e8cfa5cffcce14e0def44f1f2558b847c1c1dbdbca6a4b3e23ddbcf093af3",
+    "STG_RESULT.json": "5b0b7b1a7d53aa8338d4cca48e38a012196f4b5c0a8bddc5174ffd6d619367ae",
+    "STG_AUDIT_FAILURE.json": "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce",
+    "STG_GRAD_DIAG_RESULT.json": "e17d730ea83b37da8c2d3a280a3886c3945a2b74cbfb6972e6f23d96d24d891f",
+    "ASSET_CPU2_RESULT.json": "97b037b15a9f826a93c9495fefeb2c3ccf79357fdec73fba0bba93c74f2797ae"
+  }
+}

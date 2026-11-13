@@ -1,0 +1,2502 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.s42.full20.history.diagnostic.20261110",
+  "pre": {
+    "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+    "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+    "bytes": 44770315,
+    "payload_key": null
+  },
+  "history": {
+    "profile": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+    "rounds": [
+      {
+        "round": 1,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\private_assets\\clean_initial.pt",
+          "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client02.pt",
+              "sha256": "0be5d6074b865f5a3e2b77c5a00204d4ba95d910ec67454e220f2012d0791132",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client03.pt",
+              "sha256": "db741e4134f0ad0d1ef97bc67ae7fcd4efb81b48df532ed0571273b5244866d2",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client05.pt",
+              "sha256": "7d9c824cbc54948b3bffa51075cf6186e5afaddaa3c1db19734ad1a15152138f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client07.pt",
+              "sha256": "020fd3a58c8c0d9fdfaf90a038ce7662e80ef94b8159f78077cfa98dc95b901d",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client09.pt",
+              "sha256": "6c4b41cad8db9676a5243c3a7bf36f4040632d4f59482af9595b396f1192f1fa",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client12.pt",
+              "sha256": "9367720a6b7a87b63226cd6c337d2a2b7eeda74abeb46c446d7120c49585da1f",
+              "bytes": 89510601
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client13.pt",
+              "sha256": "b1a79568cc691dcb419ec2d1bf2e03cfc0b7f73c53cffa7647dea98374ad6253",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client16.pt",
+              "sha256": "19dde703e6c5fcbc693d3a3791fd374036b84c20b1ce1cdfdd0d8dc8fd1a0f75",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client18.pt",
+              "sha256": "78420b830d957b4ed3309262c50d4814464a61961ec1fa3df746fca94b975abf",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round01_client19.pt",
+              "sha256": "cdd809d738f1b11976a6055bf4e3833384b8a15acbc14d8829a6b82a23c2c64a",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round01.pt",
+          "sha256": "f773af873b1b0458c9a2b922dd11f27e7becc9608efe4e656151e8f9340435b8",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 1776,
+          "CA_pct": 17.76
+        }
+      },
+      {
+        "round": 2,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round01.pt",
+          "sha256": "f773af873b1b0458c9a2b922dd11f27e7becc9608efe4e656151e8f9340435b8",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client02.pt",
+              "sha256": "0f92258ccba122a087aeca5822366016dd5c49b1ce1cbe815c17b349ecf2b86d",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client03.pt",
+              "sha256": "3c07096e662d02f4dfad0559343c8813635458eedd0cccd21d04a4ffff78e8f7",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client05.pt",
+              "sha256": "74f6d036f72e851817aae69cb985e452374a593773abd537c90236c3f3b4e56e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client07.pt",
+              "sha256": "606eb12590f5c9004c91f901884f8c20f640bb07d3d1309966488ef5859eb129",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client09.pt",
+              "sha256": "e46f40b354256c825a81e5ec2800a9cf7758207ac2501bbf02d33135480a1dd3",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client12.pt",
+              "sha256": "5105a83a3a0553685862771a7a0e63031ff63baf4385febacb865ac336d1ba29",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client13.pt",
+              "sha256": "7bf9b37a3b50600ac7a5375bbbeddc69ac07b17a10d52b1487bef8a4891585f7",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client16.pt",
+              "sha256": "22a5d93d2ad1e1332b7edf68247aae32a88078e6f6b4d1bd672541023f6e3ed7",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client18.pt",
+              "sha256": "0c26daab07067c46942c6bd8bb1f023adf2295620ccf646a4e721d3dabcf853b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round02_client19.pt",
+              "sha256": "7473ed70fa5296817c53688cfb601faf5d02c07d68ca26efc644632b2198e7fb",
+              "bytes": 89510409
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round02.pt",
+          "sha256": "d634568e3fad072163eac5f2424d17f68becb8515cfc7de3d5d16a557649e89d",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 6170,
+          "CA_pct": 61.7
+        }
+      },
+      {
+        "round": 3,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round02.pt",
+          "sha256": "d634568e3fad072163eac5f2424d17f68becb8515cfc7de3d5d16a557649e89d",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client02.pt",
+              "sha256": "4b76de3b80c85b12e738e8a7f09daf752b0f7865e80c8a71d770fc6ca2e92c2d",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client03.pt",
+              "sha256": "01e4c271e220f6d4ec79889d008d91ed51717e40a29fbdbf5c24bc30ff68ef1c",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client05.pt",
+              "sha256": "ba17dd3a60d4669f7ec2cbb86276f2085f70a6c72ebaae987811082168e3215f",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client07.pt",
+              "sha256": "a645c15df628cc9501025346e58b21d6c97cf30ea0710d0f8aab234215eb5b08",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client09.pt",
+              "sha256": "cc05e4dd2b62c031a0f3a787d523f3b1b7e86d6e54fa618459894cd884cc393e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client12.pt",
+              "sha256": "5cc6e68faaf033e2d40c65064d0c2917c5e8133dca4fdc036c0c7bbe88b33cac",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client13.pt",
+              "sha256": "a6b755b7cbf41845db452a93506b0899d97fed580f83d14f5366e3e7329067ef",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client16.pt",
+              "sha256": "cefaa85d9af4ea1b9e26f42070b013d9cfbf9c8eaad7691f1af78b5384f4e397",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client18.pt",
+              "sha256": "4b771e6e14df4c3ae593aed186e4ed7cc296629036184c6affa4d50ecf7cd071",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round03_client19.pt",
+              "sha256": "fccdc96daea035a4cf10be7d129bb8382fb0c3e335713e3b2bb7d5b611449593",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round03.pt",
+          "sha256": "61381d659821e8c40f7e389893be11f7cbfafde428da68fa1f66a118d55f64ae",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 7060,
+          "CA_pct": 70.6
+        }
+      },
+      {
+        "round": 4,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round03.pt",
+          "sha256": "61381d659821e8c40f7e389893be11f7cbfafde428da68fa1f66a118d55f64ae",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client02.pt",
+              "sha256": "f5dcffee6ec0313666ae6fb76d80799c1375d2ed2ec83c751b0f1564c29ddf8e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client03.pt",
+              "sha256": "19a332908a4f56b21b9c12e84c48bc09c8e66c2b7ee9d5c0c816441a26002706",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client05.pt",
+              "sha256": "7283447362a793c9c5932e086065c8847bc6514ff9dfdd423bb3ed58dfcc5cb6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client07.pt",
+              "sha256": "3b0cd76bee9013817196d2bdecc34f9b89e677b6dbbdba196d2a3ed5513fa91a",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client09.pt",
+              "sha256": "8d36c703788a91f27f55b05384882087d4129d9804d3da91466d41050823c74b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client12.pt",
+              "sha256": "5b992d0e3d55706271be9ddeac19915d4dae2f8a92a158d661e21b8d0b6fef4e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client13.pt",
+              "sha256": "4db43733fe33f920daf5bdddeaae4a00cc57daf58a02bc2f01e30d3cd4b905a3",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client16.pt",
+              "sha256": "d96b6d40eaccc86f5b16754a19746d9f94e89d64c0ee8ca7dd3937e9f871c313",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client18.pt",
+              "sha256": "81607dfdc621c3831c53df1fccb602e1843dd52ceab1961e27c89ef9313e3100",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round04_client19.pt",
+              "sha256": "d9b8fc74a371b339a8988c30d3e02d2c421d2f55753acbe0001dd5e56f41186c",
+              "bytes": 89510601
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round04.pt",
+          "sha256": "c741ff9246143b149597759d004b6d38ff294c6bec7b88e3ca7a856c89bc727c",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 7574,
+          "CA_pct": 75.74
+        }
+      },
+      {
+        "round": 5,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round04.pt",
+          "sha256": "c741ff9246143b149597759d004b6d38ff294c6bec7b88e3ca7a856c89bc727c",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client02.pt",
+              "sha256": "465c5c6430b2b86e5c03fd5b1f80b64bda760a3296e6b50de9b708313aa286d9",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client03.pt",
+              "sha256": "fcaac90514e069ca147aff9ee534a91ab02c7f2a51cf9a14de6835e3d0c5e901",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client05.pt",
+              "sha256": "6e942e6b85c764e3c0fcb89975474d6f2c1885a5dddc646c51df2f8508c0264e",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client07.pt",
+              "sha256": "29047952f916d8a0d82ff4262e012593ae5d8ad4f1898508515a5b7db77fc3b2",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client09.pt",
+              "sha256": "9b4027031882dbde22d2da4457339d2e3f691af0ed1bc06f11cc9482b18d50b8",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client12.pt",
+              "sha256": "f58fe3c7cb0bfe6de3026bbad4460a78cdca02c78ffe910e58558ef8b2ac5b0a",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client13.pt",
+              "sha256": "cbb9b2a43c98bdb60699ba328085470e9af1ca248935e8879b1506b7fedc947f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client16.pt",
+              "sha256": "4c744ae8b1d9f83109bf7830331583fbc22821a238a456e30e82808a7ce97f88",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client18.pt",
+              "sha256": "85b3a2c4a4bdc7f646ca3b62a0ab3bc33e6635bac10cb781121a54e53caa7da0",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round05_client19.pt",
+              "sha256": "4b7f06fe5e86397fb404ca5483515f405a09ce899ec3a682db1293e232ddf90e",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round05.pt",
+          "sha256": "5f6d1fd68a1ed0de610d7a80632ffca3a4470dfe6dc628375c43f2143a21a60f",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 7896,
+          "CA_pct": 78.96
+        }
+      },
+      {
+        "round": 6,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round05.pt",
+          "sha256": "5f6d1fd68a1ed0de610d7a80632ffca3a4470dfe6dc628375c43f2143a21a60f",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client02.pt",
+              "sha256": "fc50ae6b4d0582031ff7807d2c2db77619d896964d54c5bd392655c8642669a2",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client03.pt",
+              "sha256": "5307f7d03b87c3b406a2ecce8f27e10e0b5eb6cf461074d4a210a59789f4e1ca",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client05.pt",
+              "sha256": "15de6064c3053db0f9772d167c9fe10ed7d333c51a49d1f9662ff46a17b7fb3d",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client07.pt",
+              "sha256": "b3c4da22896f499b26aed4f52f3691b87b61d57c40edbc00bbf1007a74315078",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client09.pt",
+              "sha256": "503d4d1b1f002a23f4aae919209210af4d2d025825538e7e838eeddf5226500f",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client12.pt",
+              "sha256": "934959efdcd67565f6be5c8390c5c95769f4a5dd2149f9386332d215fcd354e1",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client13.pt",
+              "sha256": "d40687b098d6ae132b25855842b048a2bb79433de19d42dc0792e6131c7c737a",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client16.pt",
+              "sha256": "bd8adf3f1b4be18e9dd38e885a1aab6c8279021cf61fdd185a99dddb3d92aca9",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client18.pt",
+              "sha256": "8ae22a50a98bfda18aad253134da7fc813674da3f1b686cf82dac8d7a082cd53",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round06_client19.pt",
+              "sha256": "b9bbca796c6f4cbc86eb9be799228fad4534aa01808c74759b60df79f79af288",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round06.pt",
+          "sha256": "e351e737d9f122c531613af0b846f49eac35a54dac4a3fe0cf01182b191318e7",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8148,
+          "CA_pct": 81.48
+        }
+      },
+      {
+        "round": 7,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round06.pt",
+          "sha256": "e351e737d9f122c531613af0b846f49eac35a54dac4a3fe0cf01182b191318e7",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client02.pt",
+              "sha256": "e9d4fceb2a167244ec690d397bd38265d7a7f2fe89b1173b1defc565d98bc1ee",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client03.pt",
+              "sha256": "aaf47579ca6b536af5802dabdb0ac744252ebe7bb227259b787dded720c760de",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client05.pt",
+              "sha256": "991b689e5e88ee4a8248913f0cadc6f97943ccc5c24b7839156494bfc489f691",
+              "bytes": 89510409
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client07.pt",
+              "sha256": "14fe2f5c1705d11cecb505fe853cef7c6c09cc52abd00efce14e1aa60c97750e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client09.pt",
+              "sha256": "c1b09ae5879b15691c42976802c67f26d0c43b999605d0cb215bb70a36623e72",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client12.pt",
+              "sha256": "af01144bc310abac310a9b78a7bc5dffd2c5b42bb9338a5bc3581c95f50e4587",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client13.pt",
+              "sha256": "9e7dbfc72ab61085f7f71952f1bc3f353f9f64a5054ef40c03dbefc776734943",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client16.pt",
+              "sha256": "ec808fecfc10e8ae41024edc8f20f340bee691d763a6ac4fab028850f657d172",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client18.pt",
+              "sha256": "baafbfa07f8e59dd6d92022040ac8d7994b36461687e9dcdbe03098b304e0eb8",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round07_client19.pt",
+              "sha256": "0a0e3fce683cee7f48b76a38e3c119cc8c5dd2c5eae29a3e02739648135db625",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round07.pt",
+          "sha256": "bcc31fd818e8bd99769d0aa10237ad260ea1ebc0f8b0fa8e36dc7cb4f72282a4",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8290,
+          "CA_pct": 82.9
+        }
+      },
+      {
+        "round": 8,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round07.pt",
+          "sha256": "bcc31fd818e8bd99769d0aa10237ad260ea1ebc0f8b0fa8e36dc7cb4f72282a4",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client02.pt",
+              "sha256": "3b25019a82f0997089a59aca03240f0fd725cbd321b12d5e0acf11627d8273d3",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client03.pt",
+              "sha256": "cb5fccd9a0ca8ea9aab702852e603de3549c035accf76a0bf8b42fe5078817cc",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client05.pt",
+              "sha256": "8b273f2d0174b4f9afac47579f830f67e42c0de59e9d11ddacda17dab2878b4c",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client07.pt",
+              "sha256": "88b78e6c4b654c785bb6905a1516bc4f88f831a244d4ce8cc10eb2342a6e70c8",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client09.pt",
+              "sha256": "341732958e74058232c0728fb0e56fc797279c5c4eb57c8d5d7fc0f9abf6341a",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client12.pt",
+              "sha256": "b2f79dc78226af994589d4565f5075dd74cce3583e5329f0cf78f36d9bf9d27e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client13.pt",
+              "sha256": "b6cfb313c33f8ee1db69683eb2462dbfaeac3dd7f4e25096b52721ff55b1d204",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client16.pt",
+              "sha256": "6a23e566c905729683fc62fa51b3eea3f73a1511fe609c9a86978693dab5bf6a",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client18.pt",
+              "sha256": "ef29179bbb93c866b5159ba5db2c67120ace2d6545f41c8ae0719fa831adcf6b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round08_client19.pt",
+              "sha256": "f1627f5a5f7fe1369f3935e7308c46dbe39e34841b7dcce4f0aa37955e5c3b0e",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round08.pt",
+          "sha256": "3fd881938e52940fd6b8eb1c8eb3d76f5e9bfe87c2ba38138281464d5c668658",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8352,
+          "CA_pct": 83.52
+        }
+      },
+      {
+        "round": 9,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round08.pt",
+          "sha256": "3fd881938e52940fd6b8eb1c8eb3d76f5e9bfe87c2ba38138281464d5c668658",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client02.pt",
+              "sha256": "d70404a4bcb829d8b0ee5654bee3b1ce935e7d9a3fd5dca6ecf79faff7b94d8a",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client03.pt",
+              "sha256": "16bcfe731ffa90a96a71e793fa9c279185511ed79cb739261e1391daf86d02f4",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client05.pt",
+              "sha256": "529100c7a95daf521d130fe801712e6a0b0766ae6c38fc07a9b29ae2295c1edb",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client07.pt",
+              "sha256": "c3188731052f3d17fd2189bbb9f33cf09364125092b08bbaeba136b85d595e34",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client09.pt",
+              "sha256": "79143af24c43f46f15e2bb21dad40cb8ff25549a6dfe229ef99f801ed7bfc932",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client12.pt",
+              "sha256": "6bf88bf3e198713263313ee07c53d5fcd1e560f750b40158f93790a8b45bba5b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client13.pt",
+              "sha256": "8ee2b77b022a1ffbca85ac062dd92997d847192465fa0cca08d73797e6459262",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client16.pt",
+              "sha256": "d7c4339913a12d2d75c2aa21565264a34cdc085ce66c9a190fe22a4e6520a2b6",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client18.pt",
+              "sha256": "737b8c6f924c5e151273f231ca24907cd886659069ff81e8f7efb834229cf877",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round09_client19.pt",
+              "sha256": "d144ff990288e6c9b7a994e8bb6d1ecf18348a5f141cd662c5f10c5ff80c6868",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round09.pt",
+          "sha256": "5b756f4dd3f892a5bff155ed8e1908b2eb8c9ae697d39074401b8ffa90130667",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8386,
+          "CA_pct": 83.86
+        }
+      },
+      {
+        "round": 10,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round09.pt",
+          "sha256": "5b756f4dd3f892a5bff155ed8e1908b2eb8c9ae697d39074401b8ffa90130667",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client02.pt",
+              "sha256": "f4c4a04832ade3f7c92a33adcf576f9c0fab70172f8bc13643ca14f3a266fa4b",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client03.pt",
+              "sha256": "36bac86a32cae98d90e3260b5ba3bafd7ae3e5612a06d47b3a52caa44263f721",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client05.pt",
+              "sha256": "4dcc13910447e624184f8a9fc77f5ab56c97a34989c8710fb85333c1d6931db6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client07.pt",
+              "sha256": "59cc265addebff305feaadeedd1b5523f6710de21972580bf3fe857a4112ac3e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client09.pt",
+              "sha256": "be8e7d87a55d46b81570b754b635b6f310ce21b8a378e0fa33666d16cba8fe36",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client12.pt",
+              "sha256": "3f78cc49146f07d7e8d570289262f0e94d56658ccc95c5f8417847eda144116b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client13.pt",
+              "sha256": "ad19b366dc2c37bed9754e5e29f6de1eddd8bcfcba59121bcba6a39d9a57b3a6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client16.pt",
+              "sha256": "d9bce905588ab027b232cc5b69176dfd4cc1c83413e911da85048ea6fea0b059",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client18.pt",
+              "sha256": "48191e773eca86740d54bd6eb84097b16c520426026588e55d5fb55e064145a8",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round10_client19.pt",
+              "sha256": "ae2f45c0183a8fe5579e6f3778c64fa633266992bbe47f9b7f0cea46c9a45edc",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round10.pt",
+          "sha256": "4f784ec3182ab8c4844391fe19f71baf54d43c322248db39fe5128e003ab798a",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8469,
+          "CA_pct": 84.69
+        }
+      },
+      {
+        "round": 11,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round10.pt",
+          "sha256": "4f784ec3182ab8c4844391fe19f71baf54d43c322248db39fe5128e003ab798a",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client02.pt",
+              "sha256": "d85fe4e57e21633bedba5a6fda3df4975530ce72334a80ef5986ba84832aff57",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client03.pt",
+              "sha256": "c303d634ca7fe979c72d87829f40c91cd747e1ce6ff99f5148652930fb906248",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client05.pt",
+              "sha256": "26c2dc0635cbc22b8e56ecddc0f38f854e1eba478094ed6e690a412ecf4ee187",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client07.pt",
+              "sha256": "cecadad7a779fe15d6e182233c00849d6e5e8ef9c6a42a74b4166090ed6f33ec",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client09.pt",
+              "sha256": "9b92d56245c67e2c1b49a6b5bcf89f7b2ad030fc844ee770f5904043703506a9",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client12.pt",
+              "sha256": "2fc8e9914e79dde5eaf3c4e61d907899d95bcc861147e7fb926fb7181037e9fc",
+              "bytes": 89510601
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client13.pt",
+              "sha256": "e8e954130e33f1ee3a449962add10d29fa19908e43e4973dba0a1c620750e03b",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client16.pt",
+              "sha256": "a32254868d2efa681de7cca52f79769e8c186561df762ddb47fbef670ef9ef93",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client18.pt",
+              "sha256": "851c40c708df74232a936fba98c220b5c35dad27bc7fc1ea569fd2ce4427bc80",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round11_client19.pt",
+              "sha256": "6fed39ad02001459addb489e40b6b0985055cf796e3a83ce064d705236824856",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round11.pt",
+          "sha256": "f082e9ec547c4f19befefbb8153e031e8489a62ae9c07c3e54fbe241caf72758",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8508,
+          "CA_pct": 85.08
+        }
+      },
+      {
+        "round": 12,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round11.pt",
+          "sha256": "f082e9ec547c4f19befefbb8153e031e8489a62ae9c07c3e54fbe241caf72758",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client02.pt",
+              "sha256": "ee6c385118942ab9e76168de5f0edaf16aeee6460e94558f82e99f094baf67c2",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client03.pt",
+              "sha256": "2afa3a501be35a0dccd1bca88d7eebb02e4e187c61e7b25bb8a4a1146c07a045",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client05.pt",
+              "sha256": "ded5361317c3a3e17eedd7aaab2a9980654a072ece1d7276a76804b0eae13778",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client07.pt",
+              "sha256": "cdd61af0f47f5b17a31264f78f150b2ec68f9bb20ff4c56475ab992583c978d8",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client09.pt",
+              "sha256": "e7366e8319f24f4be77a0becec1732b7033be3ebc0e7e90a78e97c1997ae7001",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client12.pt",
+              "sha256": "6620d0baabd0a85b255dfcee6c3233d56e3e8f95c0a74ca063973aa08b9d7f6c",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client13.pt",
+              "sha256": "7ddfba0f0b73e9a033a3777fe4c0a0cc1409311390547578a7c37fa8eb70b739",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client16.pt",
+              "sha256": "3dada952508a0cc46dcc140e235fa10513f7afce12cbd72910ed773c4879f35a",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client18.pt",
+              "sha256": "fed1295da70899cbcf6e32fd32ebb5a73b1d35708e8dda27b1210351b6f117f6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round12_client19.pt",
+              "sha256": "81dfb7cdf5fc1a59a29b46fcc898137233ad73e16cf90ba83c0882e24df4edf3",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round12.pt",
+          "sha256": "bf98f53ff3b48b007851a3f2903a3dbf3c7f0c851749332c20552c9a427317ac",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8547,
+          "CA_pct": 85.47
+        }
+      },
+      {
+        "round": 13,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round12.pt",
+          "sha256": "bf98f53ff3b48b007851a3f2903a3dbf3c7f0c851749332c20552c9a427317ac",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client02.pt",
+              "sha256": "72e001b2bf704f15b52866a4c8efbcac28abf2f1df0aa898627541d7f174e15d",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client03.pt",
+              "sha256": "d528796399cffb5011105e8dde27c2ca246d2a318f5d90e51d25979a98c70338",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client05.pt",
+              "sha256": "f32ef25282fae6e4c6f0d52cc34d89e6fd0a2e07a524f11b90acfa6c99aad9d4",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client07.pt",
+              "sha256": "214a63e488caf517fbc9e437202b55a92019335a5674de19c8504c28a4e0baea",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client09.pt",
+              "sha256": "23758169c11072d56ab474f1da56f235fc0e641749c69e088069cd83eb3efdcf",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client12.pt",
+              "sha256": "19bdbdf8005b0dff7a7a56ad13fb9d28fad245b1cec902f75602c9808f3ffdfe",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client13.pt",
+              "sha256": "e92662015d03ffcf9c3bffade6d8ae44808e5dbcc43a4477f7a88ebd85c17b2f",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client16.pt",
+              "sha256": "6aebb1931e1a992209ee59cc57f31a22a7032d1435b3750df55c3d8ac733ff78",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client18.pt",
+              "sha256": "272e7d7b60f9f127a0d22fde2a8eebc821e1bf08404b9f4ff39dda15e195e47f",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round13_client19.pt",
+              "sha256": "4b0c116449b7cfacbd3f2059c6c8bc120c2ec24bb6bbfdb69a1b6b10c89d5d5c",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round13.pt",
+          "sha256": "ac156e4631cd3e4b12f104144f5662931ea26414f5819d2bb5cb74ea3ef854e3",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8562,
+          "CA_pct": 85.62
+        }
+      },
+      {
+        "round": 14,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round13.pt",
+          "sha256": "ac156e4631cd3e4b12f104144f5662931ea26414f5819d2bb5cb74ea3ef854e3",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client02.pt",
+              "sha256": "e577329f33be9664d808de9472dab0eda2101b1a238ab2941eba649fdbddb890",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client03.pt",
+              "sha256": "5dca567c9ed37e2a60c021b395df1f990adb7ca64f9b26b5aa5b28611fcc0b9f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client05.pt",
+              "sha256": "400ad8c3c7ab478b111a7f43a54282e2a773b675c546bac15aa13df480d50503",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client07.pt",
+              "sha256": "095a01c659f0764be5ccb92d408f6df7c2f25cf60e9ad85f1b11a0ebcb8e2937",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client09.pt",
+              "sha256": "e4665e1f2ba77fdedb895e9e6f5ce4dc71c9b425f7755c63cf4209b0c43bd3fe",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client12.pt",
+              "sha256": "368d4335a296c03ed8a4d3da5cca5c7894cd36747612246a839d489c0114ec69",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client13.pt",
+              "sha256": "e174c76f771d2ecf2b26c37a1a254ce2541f6701ee56404bbc400e9bcf1bb98e",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client16.pt",
+              "sha256": "d8a837af73500f4d779d6fd487690c0439f57ee57fa555f6fc6241732501ea53",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client18.pt",
+              "sha256": "77da07944547da389095af45e609696d1be9c880d5d48615a05efdf0fe88224b",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round14_client19.pt",
+              "sha256": "9b249de7e567052f53e9e875111b9e13c979f34824d4a4d344f11003e6c7e8b1",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round14.pt",
+          "sha256": "7375afe902d845741625d8e9a99c33d980ebc540a28d7f9b95a36ff2403334c2",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8564,
+          "CA_pct": 85.64
+        }
+      },
+      {
+        "round": 15,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round14.pt",
+          "sha256": "7375afe902d845741625d8e9a99c33d980ebc540a28d7f9b95a36ff2403334c2",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client02.pt",
+              "sha256": "b70dde2fa90015e30c9bc8231f76bba8d8fe5cd7914a253ac28e10924c0b94f1",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client03.pt",
+              "sha256": "97d0c9e10faa23a2dcc5e52d72cd61e623b55aa5310c293045b07aaec94539b6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client05.pt",
+              "sha256": "d75c55194a1217cbb48c64d1d6f9e3aee18ee89f1c56b6b84bf6e601bb6d877d",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client07.pt",
+              "sha256": "4505ae60639b97a6a824f34ef10e6304378dd574475403c7e0b31e621fa01085",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client09.pt",
+              "sha256": "6620735b300601bef7581b719cc69585db3ccf2cb033a01707c97b5c1cf27d08",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client12.pt",
+              "sha256": "534e94131434655fa5becb2e40d1ef5447d9dee5cc2ef85922725914a13fd3cf",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client13.pt",
+              "sha256": "f97028c4e66e11abc8160fc7b9a9be13039e3389bf351e04e1bb4902c0ef291d",
+              "bytes": 89510601
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client16.pt",
+              "sha256": "3b39207a5dbe6ea90e8ca83687abdb243a84125903c4349baa3f91c415fd0eee",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client18.pt",
+              "sha256": "2a4e8b3dcae790551e8686c438b48cc73a1ee17b4d7d7575413bf7b6a9a1094f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round15_client19.pt",
+              "sha256": "2840e1f913f27109993e2f64a816c05f0efaaa8c63a4681139ffdcba3a3f73c1",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round15.pt",
+          "sha256": "055885642fc19805076021ebb4ef27dc8ac3b7bc46dcc3e28305b5c6f4b1bd0b",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8580,
+          "CA_pct": 85.8
+        }
+      },
+      {
+        "round": 16,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round15.pt",
+          "sha256": "055885642fc19805076021ebb4ef27dc8ac3b7bc46dcc3e28305b5c6f4b1bd0b",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client02.pt",
+              "sha256": "dd8b64f958c299bc4aaa587c7e69bab7ff2f99d994b88cbd5a2bc023b3eca817",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client03.pt",
+              "sha256": "16b6d0f5e2841281de41c673f2f870f1a63d2c7a6dd9b01a5e8458197d3b1330",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client05.pt",
+              "sha256": "3b439d27687975392f2324ea15d2eefee0ac39a0c54e63010f429f7198e0829f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client07.pt",
+              "sha256": "17aece11a389e45414b5d51bcc3dfc2c54b493e727a75a6a0bdc9595672dd1e3",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client09.pt",
+              "sha256": "757e491b61b33933eb73d2222ec7efdfa6a43dcf8ec051ecdbed41ffd5fc83f3",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client12.pt",
+              "sha256": "686d78597e9412c227f72f0704e478d15fb6f54c26f9093f5301ca11c28f93e3",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client13.pt",
+              "sha256": "d61be4c7f3212ac2d8471a76069d0f08e8657444c964a41a9fa1b6f8703e9179",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client16.pt",
+              "sha256": "28c364bcc9285a7117f6ce2c09fb983983f470f368f63d0ddb47a7a7ede61e56",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client18.pt",
+              "sha256": "325799ca23d9f5fad4503c180cdea9d413eb8d0883c8cb824bde0ae461c43fa5",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round16_client19.pt",
+              "sha256": "3151ee32aec15c5bf89bbff7745ca8b774776ca07ee7844ba6cfb093a9ea75f2",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round16.pt",
+          "sha256": "723f7bfd9d00d19dbf951defceb1e491b5a95c1f13923ddda01433d4960975c3",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8561,
+          "CA_pct": 85.61
+        }
+      },
+      {
+        "round": 17,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round16.pt",
+          "sha256": "723f7bfd9d00d19dbf951defceb1e491b5a95c1f13923ddda01433d4960975c3",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client02.pt",
+              "sha256": "012887ffc49f9cc37eb8e9ae077e7f0a05ab68fb9b2ac5f0deb3d6051b5999e7",
+              "bytes": 89510409
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client03.pt",
+              "sha256": "7dd6d66060138bb2a0c29f565a99cbc8857a2e5cad47d2a3e7f4b644982840cc",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client05.pt",
+              "sha256": "da1bb2813c878d42cb4ad15598fb035fa9d88decdfc0fe0bfb3bd3e0860d4c34",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client07.pt",
+              "sha256": "4f83f2355a408613c66edf862ba872dc9b78d2d03b6614b3405fbf08ffd913d1",
+              "bytes": 89510409
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client09.pt",
+              "sha256": "9c32efa5c818edc3a413b6ec42a9b45aec8274d0483591fa4b13776f179b54b5",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client12.pt",
+              "sha256": "5b430bf1b5477b0f9ec2510902598018ec03b9526d3423f4372b934e462039e9",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client13.pt",
+              "sha256": "1af999277aba38a98dbe9830d1facb665eb0b6fc91a8e1ceb31a0f32ad4883d2",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client16.pt",
+              "sha256": "a33efc5c8348de6037a7ed84d86b0921715e037d123e21375844a4355bb2e86f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client18.pt",
+              "sha256": "01a831932ee974878bdb8df1486f9d4236e222faf583f1b7c05d5a415378d10c",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round17_client19.pt",
+              "sha256": "2c177a4c92deacc89854d509d4619f4012d0a58fc36f1dc89ac2efd82d5219ba",
+              "bytes": 89510473
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round17.pt",
+          "sha256": "8e7df42ca708ff37975628ec36032c8b8e809ab5951b33b2563b75d45c84ef1a",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8570,
+          "CA_pct": 85.7
+        }
+      },
+      {
+        "round": 18,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round17.pt",
+          "sha256": "8e7df42ca708ff37975628ec36032c8b8e809ab5951b33b2563b75d45c84ef1a",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client02.pt",
+              "sha256": "063eabec1e6db487ac7ca53a79ebffbe02860a3e01eeff38fddd76b6faf02c9a",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client03.pt",
+              "sha256": "92413c5bfaa2a2ebc5c3ac4cf9159707ea21a737e770833b1d203654048f2002",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client05.pt",
+              "sha256": "e59004044fdbc867b25e73f5988f9d646c69b935dcd702c77c9d3e6702eeeabd",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client07.pt",
+              "sha256": "d52565738ee35328481e4894f9b106e10b068aa679a843ddc5adbefe22d676e0",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client09.pt",
+              "sha256": "99750a7168d599f09dffecba618157d79cedff537d63dc271352c826188182c7",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client12.pt",
+              "sha256": "4550e86a01c716a70f89b219d39c8b990c92236f6614a4d33dce48e7a1a7cb98",
+              "bytes": 89510601
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client13.pt",
+              "sha256": "1a723dd7695089d53117e3f641929c370d602d8bb2eb6262b476f96abd76f86e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client16.pt",
+              "sha256": "9c7d3a21a36c174033bfea4ba81db4ba38d19fb32a9c18e7fd5ae3d4872f4939",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client18.pt",
+              "sha256": "1e8a0d3ca92a5ec757f2eea58c89f593447095cf081a8f3f16ccf838113a6c2e",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round18_client19.pt",
+              "sha256": "31364c29aab15d4fc00276830d50eb384204304343c39ee9df9c26d7a5d33580",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round18.pt",
+          "sha256": "6ddfe0b4d930d92e78f7525feb29d62fabd005b97f5a853ad70d82237c3ca945",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8566,
+          "CA_pct": 85.66
+        }
+      },
+      {
+        "round": 19,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round18.pt",
+          "sha256": "6ddfe0b4d930d92e78f7525feb29d62fabd005b97f5a853ad70d82237c3ca945",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client02.pt",
+              "sha256": "4b764d95dac80d3477f7ed23de01de784fb5d30e64110c2d7997886a120aebe1",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client03.pt",
+              "sha256": "e9af32be37aa9370bc24a39b9dd8a7010e2a1038767c5d75c73dccaf1f9c4279",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client05.pt",
+              "sha256": "060fdf002ad867950b86cc8ddd37642498c11fe0286a8618b09b00ddd9595847",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client07.pt",
+              "sha256": "841a9d288140aadce9bc5d1fa071c1ebc51622ac7aaaf90e1c7bd90a2b04004e",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client09.pt",
+              "sha256": "a633423a1134b9f9c10482323af9c90bde546dc58f272871fff4afc2838b6a9c",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client12.pt",
+              "sha256": "fccb755aa0bf33077bc90cb998953737177992d15cfcee4ae649add183988ea6",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client13.pt",
+              "sha256": "445628cb6f40b14954f3ed928214e7ca3e181a4c7ccaf16f9706ce6fac6368c3",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client16.pt",
+              "sha256": "cc44f4b17133edccb701355e1d398f4d8d809c40bae2b54fe551567529f81312",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client18.pt",
+              "sha256": "48cc29c5c073c44c2b7e59b8b2e00b1d8ffa72799f4c3e27ea7d07e4e31e7a8d",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round19_client19.pt",
+              "sha256": "1defbe595fd19c3b6379e1a0784fe69e8376fe89d3965593ecad9082bcb98ddf",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round19.pt",
+          "sha256": "4fa6c1b2739e66c287316cd1b6aecca82cf1108a2ac1f167e74d5cdb2b80206e",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8569,
+          "CA_pct": 85.69
+        }
+      },
+      {
+        "round": 20,
+        "incoming": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round19.pt",
+          "sha256": "4fa6c1b2739e66c287316cd1b6aecca82cf1108a2ac1f167e74d5cdb2b80206e",
+          "bytes": 44770315
+        },
+        "clients": [
+          2,
+          3,
+          5,
+          7,
+          9,
+          12,
+          13,
+          16,
+          18,
+          19
+        ],
+        "weights": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "roles": [
+          {
+            "client": 2,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client02.pt",
+              "sha256": "b4e6232f2b63dab2643f83eb72519a34bd8d8d8bd2a8ea523e3a4e5dbdb225f4",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 3,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client03.pt",
+              "sha256": "3fdb517eac9cdad20e7d7dc0a0109b73e69c09f2dbb58d3818e92b7245c6b503",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 5,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client05.pt",
+              "sha256": "85d6dd520b312b6c2e1d839dc4904286a52294219904246a2a7de4f150638b38",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 7,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client07.pt",
+              "sha256": "51fa861c86d74fa4c1c1582deda9e85ac0600248c769b3512664ebc6f8a27c5f",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 9,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client09.pt",
+              "sha256": "965395596d4783fcbcb69ff483168c4efc6ba79cc076c6fa3d3ed0af2f444b2c",
+              "bytes": 89510473
+            }
+          },
+          {
+            "client": 12,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client12.pt",
+              "sha256": "6792389a9ef4debb42cf869ffba66663f741af95f023ffa4d35c2e74d19807fe",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 13,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client13.pt",
+              "sha256": "42888b2008b673a4fac8b1fdf724097c8ee4854de5866c881751b5a798d03e24",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 16,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client16.pt",
+              "sha256": "b612c5cbd8df931f64f7a31866b08faeb64b95f5842a9aeebd86cd9ff6e44f6e",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 18,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client18.pt",
+              "sha256": "6c13ffa428dfb52c025032856e350d33165f3bb57f65635da460b73452ccf05d",
+              "bytes": 89510537
+            }
+          },
+          {
+            "client": 19,
+            "checkpoint": {
+              "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\roles\\round20_client19.pt",
+              "sha256": "eb44fc37bcf019eb6494736d4da55b2b5a08f901438e78e87545cc5564f6346a",
+              "bytes": 89510537
+            }
+          }
+        ],
+        "after": {
+          "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\rounds\\round20.pt",
+          "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+          "bytes": 44770315
+        },
+        "evaluation": {
+          "N": 10000,
+          "clean_correct": 8552,
+          "CA_pct": 85.52
+        }
+      }
+    ],
+    "fresh_initial": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\private_assets\\clean_initial.pt",
+      "sha256": "d9be98a6eadaf67bcca7febe89ccf65da9b8cac9b75e72ba691674d3c7205787",
+      "bytes": 44770315
+    }
+  },
+  "foundation_root": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103",
+  "original_audit_sha256": "c18d7af6b0800cc8ff8810d4440f337239d04839ea320b46ff8251baa37485a2",
+  "files_verified": 227
+}

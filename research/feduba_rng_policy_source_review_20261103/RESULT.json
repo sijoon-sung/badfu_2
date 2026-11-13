@@ -1,0 +1,1370 @@
+{
+  "state": "completed_readonly_rng_policy_source_review",
+  "source_freeze_sha256": "8f10aa235afc7ec95abb678723a75015df3ed46a619c142596453ffdaad8c30f",
+  "public_seed_calls": [
+    {
+      "file": "public/Fed_Unlearn_main.py",
+      "line": 118,
+      "scope": "Federated_Unlearning",
+      "call": "torch.manual_seed",
+      "arguments": [
+        "FL_params.seed"
+      ]
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 21,
+      "scope": "<module>",
+      "call": "np.random.seed",
+      "arguments": [
+        "random_seed"
+      ]
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 22,
+      "scope": "<module>",
+      "call": "random.seed",
+      "arguments": [
+        "random_seed"
+      ]
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 23,
+      "scope": "<module>",
+      "call": "torch.manual_seed",
+      "arguments": [
+        "random_seed"
+      ]
+    }
+  ],
+  "public_DataLoader_calls": [
+    {
+      "file": "public/Fed_data_change.py",
+      "line": 42,
+      "scope": "trigger_data_change",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/Fed_data_change.py",
+      "line": 91,
+      "scope": "trigger_data_change",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": true
+    },
+    {
+      "file": "public/Fed_data_change.py",
+      "line": 134,
+      "scope": "high_sensitivity_sort",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/Fed_data_preprocess.py",
+      "line": 25,
+      "scope": "data_init",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": true
+    },
+    {
+      "file": "public/Fed_data_preprocess.py",
+      "line": 42,
+      "scope": "data_init",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": true
+    },
+    {
+      "file": "public/Fed_data_preprocess.py",
+      "line": 67,
+      "scope": "data_init_non_iid",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": true
+    },
+    {
+      "file": "public/Fed_data_preprocess.py",
+      "line": 117,
+      "scope": "data_init_non_iid",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": true
+    },
+    {
+      "file": "public/Fed_test.py",
+      "line": 87,
+      "scope": "test_backdoor",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/Fed_test.py",
+      "line": 89,
+      "scope": "test_backdoor",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/Fed_test.py",
+      "line": 93,
+      "scope": "test_backdoor",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 89,
+      "scope": "trigger_generate",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 91,
+      "scope": "trigger_generate",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    },
+    {
+      "file": "public/trigger_generate_function.py",
+      "line": 93,
+      "scope": "trigger_generate",
+      "explicit_generator_keyword": false,
+      "double_star_kwargs_present": false
+    }
+  ],
+  "public_module_seed_literal": 0,
+  "public_main_torch_seed_default": 42,
+  "missing_imports_precede_module_seed_lines": [
+    6,
+    14
+  ],
+  "module_seed_execution_claim": "conditional source intent only; unresolved imports/helpers prevent untouched execution certification",
+  "trigger_model_constructor_lines": [
+    37,
+    38
+  ],
+  "trigger_noise_cache_if_line": 68,
+  "trigger_noise_cache_condition": "os.path.exists(noise_path) and (not FL_params.if_train)",
+  "actual_call_census": {
+    "positive/fu_core.py": {
+      "seed_calls": [],
+      "DataLoader_calls": []
+    },
+    "positive/fu_training.py": {
+      "seed_calls": [
+        {
+          "file": "positive/fu_training.py",
+          "line": 25,
+          "scope": "train_role",
+          "call": "seed",
+          "arguments": [
+            "schedule['seed']"
+          ]
+        },
+        {
+          "file": "positive/fu_training.py",
+          "line": 29,
+          "scope": "train_role",
+          "call": "torch.Generator().manual_seed",
+          "arguments": [
+            "schedule['seed']"
+          ]
+        }
+      ],
+      "DataLoader_calls": [
+        {
+          "file": "positive/fu_training.py",
+          "line": 30,
+          "scope": "train_role",
+          "explicit_generator_keyword": true,
+          "double_star_kwargs_present": false
+        }
+      ]
+    },
+    "positive/runtime_common.py": {
+      "seed_calls": [
+        {
+          "file": "positive/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "random.seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "positive/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "np.random.seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "positive/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "torch.manual_seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "positive/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "torch.cuda.manual_seed_all",
+          "arguments": [
+            "value"
+          ]
+        }
+      ],
+      "DataLoader_calls": []
+    },
+    "positive/fu_runner.py": {
+      "seed_calls": [],
+      "DataLoader_calls": []
+    },
+    "minus/fu_core.py": {
+      "seed_calls": [],
+      "DataLoader_calls": []
+    },
+    "minus/fu_training.py": {
+      "seed_calls": [
+        {
+          "file": "minus/fu_training.py",
+          "line": 25,
+          "scope": "train_role",
+          "call": "seed",
+          "arguments": [
+            "schedule['seed']"
+          ]
+        },
+        {
+          "file": "minus/fu_training.py",
+          "line": 29,
+          "scope": "train_role",
+          "call": "torch.Generator().manual_seed",
+          "arguments": [
+            "schedule['seed']"
+          ]
+        }
+      ],
+      "DataLoader_calls": [
+        {
+          "file": "minus/fu_training.py",
+          "line": 30,
+          "scope": "train_role",
+          "explicit_generator_keyword": true,
+          "double_star_kwargs_present": false
+        }
+      ]
+    },
+    "minus/runtime_common.py": {
+      "seed_calls": [
+        {
+          "file": "minus/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "random.seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "minus/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "np.random.seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "minus/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "torch.manual_seed",
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "file": "minus/runtime_common.py",
+          "line": 62,
+          "scope": "seed",
+          "call": "torch.cuda.manual_seed_all",
+          "arguments": [
+            "value"
+          ]
+        }
+      ],
+      "DataLoader_calls": []
+    },
+    "foundation/clean_fl_runner.py": {
+      "seed_calls": [
+        {
+          "file": "foundation/clean_fl_runner.py",
+          "line": 54,
+          "scope": "main",
+          "call": "seed",
+          "arguments": [
+            "p['seed']"
+          ]
+        },
+        {
+          "file": "foundation/clean_fl_runner.py",
+          "line": 73,
+          "scope": "main",
+          "call": "seed",
+          "arguments": [
+            "role_seed"
+          ]
+        },
+        {
+          "file": "foundation/clean_fl_runner.py",
+          "line": 76,
+          "scope": "main",
+          "call": "torch.Generator().manual_seed",
+          "arguments": [
+            "role_seed"
+          ]
+        }
+      ],
+      "DataLoader_calls": [
+        {
+          "file": "foundation/clean_fl_runner.py",
+          "line": 60,
+          "scope": "main",
+          "explicit_generator_keyword": false,
+          "double_star_kwargs_present": false
+        },
+        {
+          "file": "foundation/clean_fl_runner.py",
+          "line": 77,
+          "scope": "main",
+          "explicit_generator_keyword": true,
+          "double_star_kwargs_present": false
+        }
+      ]
+    }
+  },
+  "common_minus_plus_helper_hashes": {
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d"
+  },
+  "source_derived_FU_schedule": [
+    {
+      "round": 1,
+      "client": 2,
+      "seed": 510242
+    },
+    {
+      "round": 1,
+      "client": 3,
+      "seed": 510342
+    },
+    {
+      "round": 1,
+      "client": 5,
+      "seed": 510542
+    },
+    {
+      "round": 1,
+      "client": 7,
+      "seed": 510742
+    },
+    {
+      "round": 1,
+      "client": 9,
+      "seed": 510942
+    },
+    {
+      "round": 1,
+      "client": 12,
+      "seed": 511242
+    },
+    {
+      "round": 1,
+      "client": 13,
+      "seed": 511342
+    },
+    {
+      "round": 1,
+      "client": 16,
+      "seed": 511642
+    },
+    {
+      "round": 1,
+      "client": 18,
+      "seed": 511842
+    },
+    {
+      "round": 1,
+      "client": 19,
+      "seed": 511942
+    },
+    {
+      "round": 2,
+      "client": 2,
+      "seed": 520242
+    },
+    {
+      "round": 2,
+      "client": 3,
+      "seed": 520342
+    },
+    {
+      "round": 2,
+      "client": 5,
+      "seed": 520542
+    },
+    {
+      "round": 2,
+      "client": 7,
+      "seed": 520742
+    },
+    {
+      "round": 2,
+      "client": 9,
+      "seed": 520942
+    },
+    {
+      "round": 2,
+      "client": 12,
+      "seed": 521242
+    },
+    {
+      "round": 2,
+      "client": 13,
+      "seed": 521342
+    },
+    {
+      "round": 2,
+      "client": 16,
+      "seed": 521642
+    },
+    {
+      "round": 2,
+      "client": 18,
+      "seed": 521842
+    },
+    {
+      "round": 2,
+      "client": 19,
+      "seed": 521942
+    },
+    {
+      "round": 3,
+      "client": 2,
+      "seed": 530242
+    },
+    {
+      "round": 3,
+      "client": 3,
+      "seed": 530342
+    },
+    {
+      "round": 3,
+      "client": 5,
+      "seed": 530542
+    },
+    {
+      "round": 3,
+      "client": 7,
+      "seed": 530742
+    },
+    {
+      "round": 3,
+      "client": 9,
+      "seed": 530942
+    },
+    {
+      "round": 3,
+      "client": 12,
+      "seed": 531242
+    },
+    {
+      "round": 3,
+      "client": 13,
+      "seed": 531342
+    },
+    {
+      "round": 3,
+      "client": 16,
+      "seed": 531642
+    },
+    {
+      "round": 3,
+      "client": 18,
+      "seed": 531842
+    },
+    {
+      "round": 3,
+      "client": 19,
+      "seed": 531942
+    },
+    {
+      "round": 4,
+      "client": 2,
+      "seed": 540242
+    },
+    {
+      "round": 4,
+      "client": 3,
+      "seed": 540342
+    },
+    {
+      "round": 4,
+      "client": 5,
+      "seed": 540542
+    },
+    {
+      "round": 4,
+      "client": 7,
+      "seed": 540742
+    },
+    {
+      "round": 4,
+      "client": 9,
+      "seed": 540942
+    },
+    {
+      "round": 4,
+      "client": 12,
+      "seed": 541242
+    },
+    {
+      "round": 4,
+      "client": 13,
+      "seed": 541342
+    },
+    {
+      "round": 4,
+      "client": 16,
+      "seed": 541642
+    },
+    {
+      "round": 4,
+      "client": 18,
+      "seed": 541842
+    },
+    {
+      "round": 4,
+      "client": 19,
+      "seed": 541942
+    },
+    {
+      "round": 5,
+      "client": 2,
+      "seed": 550242
+    },
+    {
+      "round": 5,
+      "client": 3,
+      "seed": 550342
+    },
+    {
+      "round": 5,
+      "client": 5,
+      "seed": 550542
+    },
+    {
+      "round": 5,
+      "client": 7,
+      "seed": 550742
+    },
+    {
+      "round": 5,
+      "client": 9,
+      "seed": 550942
+    },
+    {
+      "round": 5,
+      "client": 12,
+      "seed": 551242
+    },
+    {
+      "round": 5,
+      "client": 13,
+      "seed": 551342
+    },
+    {
+      "round": 5,
+      "client": 16,
+      "seed": 551642
+    },
+    {
+      "round": 5,
+      "client": 18,
+      "seed": 551842
+    },
+    {
+      "round": 5,
+      "client": 19,
+      "seed": 551942
+    },
+    {
+      "round": 6,
+      "client": 2,
+      "seed": 560242
+    },
+    {
+      "round": 6,
+      "client": 3,
+      "seed": 560342
+    },
+    {
+      "round": 6,
+      "client": 5,
+      "seed": 560542
+    },
+    {
+      "round": 6,
+      "client": 7,
+      "seed": 560742
+    },
+    {
+      "round": 6,
+      "client": 9,
+      "seed": 560942
+    },
+    {
+      "round": 6,
+      "client": 12,
+      "seed": 561242
+    },
+    {
+      "round": 6,
+      "client": 13,
+      "seed": 561342
+    },
+    {
+      "round": 6,
+      "client": 16,
+      "seed": 561642
+    },
+    {
+      "round": 6,
+      "client": 18,
+      "seed": 561842
+    },
+    {
+      "round": 6,
+      "client": 19,
+      "seed": 561942
+    },
+    {
+      "round": 7,
+      "client": 2,
+      "seed": 570242
+    },
+    {
+      "round": 7,
+      "client": 3,
+      "seed": 570342
+    },
+    {
+      "round": 7,
+      "client": 5,
+      "seed": 570542
+    },
+    {
+      "round": 7,
+      "client": 7,
+      "seed": 570742
+    },
+    {
+      "round": 7,
+      "client": 9,
+      "seed": 570942
+    },
+    {
+      "round": 7,
+      "client": 12,
+      "seed": 571242
+    },
+    {
+      "round": 7,
+      "client": 13,
+      "seed": 571342
+    },
+    {
+      "round": 7,
+      "client": 16,
+      "seed": 571642
+    },
+    {
+      "round": 7,
+      "client": 18,
+      "seed": 571842
+    },
+    {
+      "round": 7,
+      "client": 19,
+      "seed": 571942
+    },
+    {
+      "round": 8,
+      "client": 2,
+      "seed": 580242
+    },
+    {
+      "round": 8,
+      "client": 3,
+      "seed": 580342
+    },
+    {
+      "round": 8,
+      "client": 5,
+      "seed": 580542
+    },
+    {
+      "round": 8,
+      "client": 7,
+      "seed": 580742
+    },
+    {
+      "round": 8,
+      "client": 9,
+      "seed": 580942
+    },
+    {
+      "round": 8,
+      "client": 12,
+      "seed": 581242
+    },
+    {
+      "round": 8,
+      "client": 13,
+      "seed": 581342
+    },
+    {
+      "round": 8,
+      "client": 16,
+      "seed": 581642
+    },
+    {
+      "round": 8,
+      "client": 18,
+      "seed": 581842
+    },
+    {
+      "round": 8,
+      "client": 19,
+      "seed": 581942
+    },
+    {
+      "round": 9,
+      "client": 2,
+      "seed": 590242
+    },
+    {
+      "round": 9,
+      "client": 3,
+      "seed": 590342
+    },
+    {
+      "round": 9,
+      "client": 5,
+      "seed": 590542
+    },
+    {
+      "round": 9,
+      "client": 7,
+      "seed": 590742
+    },
+    {
+      "round": 9,
+      "client": 9,
+      "seed": 590942
+    },
+    {
+      "round": 9,
+      "client": 12,
+      "seed": 591242
+    },
+    {
+      "round": 9,
+      "client": 13,
+      "seed": 591342
+    },
+    {
+      "round": 9,
+      "client": 16,
+      "seed": 591642
+    },
+    {
+      "round": 9,
+      "client": 18,
+      "seed": 591842
+    },
+    {
+      "round": 9,
+      "client": 19,
+      "seed": 591942
+    },
+    {
+      "round": 10,
+      "client": 2,
+      "seed": 600242
+    },
+    {
+      "round": 10,
+      "client": 3,
+      "seed": 600342
+    },
+    {
+      "round": 10,
+      "client": 5,
+      "seed": 600542
+    },
+    {
+      "round": 10,
+      "client": 7,
+      "seed": 600742
+    },
+    {
+      "round": 10,
+      "client": 9,
+      "seed": 600942
+    },
+    {
+      "round": 10,
+      "client": 12,
+      "seed": 601242
+    },
+    {
+      "round": 10,
+      "client": 13,
+      "seed": 601342
+    },
+    {
+      "round": 10,
+      "client": 16,
+      "seed": 601642
+    },
+    {
+      "round": 10,
+      "client": 18,
+      "seed": 601842
+    },
+    {
+      "round": 10,
+      "client": 19,
+      "seed": 601942
+    },
+    {
+      "round": 11,
+      "client": 2,
+      "seed": 610242
+    },
+    {
+      "round": 11,
+      "client": 3,
+      "seed": 610342
+    },
+    {
+      "round": 11,
+      "client": 5,
+      "seed": 610542
+    },
+    {
+      "round": 11,
+      "client": 7,
+      "seed": 610742
+    },
+    {
+      "round": 11,
+      "client": 9,
+      "seed": 610942
+    },
+    {
+      "round": 11,
+      "client": 12,
+      "seed": 611242
+    },
+    {
+      "round": 11,
+      "client": 13,
+      "seed": 611342
+    },
+    {
+      "round": 11,
+      "client": 16,
+      "seed": 611642
+    },
+    {
+      "round": 11,
+      "client": 18,
+      "seed": 611842
+    },
+    {
+      "round": 11,
+      "client": 19,
+      "seed": 611942
+    },
+    {
+      "round": 12,
+      "client": 2,
+      "seed": 620242
+    },
+    {
+      "round": 12,
+      "client": 3,
+      "seed": 620342
+    },
+    {
+      "round": 12,
+      "client": 5,
+      "seed": 620542
+    },
+    {
+      "round": 12,
+      "client": 7,
+      "seed": 620742
+    },
+    {
+      "round": 12,
+      "client": 9,
+      "seed": 620942
+    },
+    {
+      "round": 12,
+      "client": 12,
+      "seed": 621242
+    },
+    {
+      "round": 12,
+      "client": 13,
+      "seed": 621342
+    },
+    {
+      "round": 12,
+      "client": 16,
+      "seed": 621642
+    },
+    {
+      "round": 12,
+      "client": 18,
+      "seed": 621842
+    },
+    {
+      "round": 12,
+      "client": 19,
+      "seed": 621942
+    },
+    {
+      "round": 13,
+      "client": 2,
+      "seed": 630242
+    },
+    {
+      "round": 13,
+      "client": 3,
+      "seed": 630342
+    },
+    {
+      "round": 13,
+      "client": 5,
+      "seed": 630542
+    },
+    {
+      "round": 13,
+      "client": 7,
+      "seed": 630742
+    },
+    {
+      "round": 13,
+      "client": 9,
+      "seed": 630942
+    },
+    {
+      "round": 13,
+      "client": 12,
+      "seed": 631242
+    },
+    {
+      "round": 13,
+      "client": 13,
+      "seed": 631342
+    },
+    {
+      "round": 13,
+      "client": 16,
+      "seed": 631642
+    },
+    {
+      "round": 13,
+      "client": 18,
+      "seed": 631842
+    },
+    {
+      "round": 13,
+      "client": 19,
+      "seed": 631942
+    },
+    {
+      "round": 14,
+      "client": 2,
+      "seed": 640242
+    },
+    {
+      "round": 14,
+      "client": 3,
+      "seed": 640342
+    },
+    {
+      "round": 14,
+      "client": 5,
+      "seed": 640542
+    },
+    {
+      "round": 14,
+      "client": 7,
+      "seed": 640742
+    },
+    {
+      "round": 14,
+      "client": 9,
+      "seed": 640942
+    },
+    {
+      "round": 14,
+      "client": 12,
+      "seed": 641242
+    },
+    {
+      "round": 14,
+      "client": 13,
+      "seed": 641342
+    },
+    {
+      "round": 14,
+      "client": 16,
+      "seed": 641642
+    },
+    {
+      "round": 14,
+      "client": 18,
+      "seed": 641842
+    },
+    {
+      "round": 14,
+      "client": 19,
+      "seed": 641942
+    },
+    {
+      "round": 15,
+      "client": 2,
+      "seed": 650242
+    },
+    {
+      "round": 15,
+      "client": 3,
+      "seed": 650342
+    },
+    {
+      "round": 15,
+      "client": 5,
+      "seed": 650542
+    },
+    {
+      "round": 15,
+      "client": 7,
+      "seed": 650742
+    },
+    {
+      "round": 15,
+      "client": 9,
+      "seed": 650942
+    },
+    {
+      "round": 15,
+      "client": 12,
+      "seed": 651242
+    },
+    {
+      "round": 15,
+      "client": 13,
+      "seed": 651342
+    },
+    {
+      "round": 15,
+      "client": 16,
+      "seed": 651642
+    },
+    {
+      "round": 15,
+      "client": 18,
+      "seed": 651842
+    },
+    {
+      "round": 15,
+      "client": 19,
+      "seed": 651942
+    },
+    {
+      "round": 16,
+      "client": 2,
+      "seed": 660242
+    },
+    {
+      "round": 16,
+      "client": 3,
+      "seed": 660342
+    },
+    {
+      "round": 16,
+      "client": 5,
+      "seed": 660542
+    },
+    {
+      "round": 16,
+      "client": 7,
+      "seed": 660742
+    },
+    {
+      "round": 16,
+      "client": 9,
+      "seed": 660942
+    },
+    {
+      "round": 16,
+      "client": 12,
+      "seed": 661242
+    },
+    {
+      "round": 16,
+      "client": 13,
+      "seed": 661342
+    },
+    {
+      "round": 16,
+      "client": 16,
+      "seed": 661642
+    },
+    {
+      "round": 16,
+      "client": 18,
+      "seed": 661842
+    },
+    {
+      "round": 16,
+      "client": 19,
+      "seed": 661942
+    },
+    {
+      "round": 17,
+      "client": 2,
+      "seed": 670242
+    },
+    {
+      "round": 17,
+      "client": 3,
+      "seed": 670342
+    },
+    {
+      "round": 17,
+      "client": 5,
+      "seed": 670542
+    },
+    {
+      "round": 17,
+      "client": 7,
+      "seed": 670742
+    },
+    {
+      "round": 17,
+      "client": 9,
+      "seed": 670942
+    },
+    {
+      "round": 17,
+      "client": 12,
+      "seed": 671242
+    },
+    {
+      "round": 17,
+      "client": 13,
+      "seed": 671342
+    },
+    {
+      "round": 17,
+      "client": 16,
+      "seed": 671642
+    },
+    {
+      "round": 17,
+      "client": 18,
+      "seed": 671842
+    },
+    {
+      "round": 17,
+      "client": 19,
+      "seed": 671942
+    },
+    {
+      "round": 18,
+      "client": 2,
+      "seed": 680242
+    },
+    {
+      "round": 18,
+      "client": 3,
+      "seed": 680342
+    },
+    {
+      "round": 18,
+      "client": 5,
+      "seed": 680542
+    },
+    {
+      "round": 18,
+      "client": 7,
+      "seed": 680742
+    },
+    {
+      "round": 18,
+      "client": 9,
+      "seed": 680942
+    },
+    {
+      "round": 18,
+      "client": 12,
+      "seed": 681242
+    },
+    {
+      "round": 18,
+      "client": 13,
+      "seed": 681342
+    },
+    {
+      "round": 18,
+      "client": 16,
+      "seed": 681642
+    },
+    {
+      "round": 18,
+      "client": 18,
+      "seed": 681842
+    },
+    {
+      "round": 18,
+      "client": 19,
+      "seed": 681942
+    },
+    {
+      "round": 19,
+      "client": 2,
+      "seed": 690242
+    },
+    {
+      "round": 19,
+      "client": 3,
+      "seed": 690342
+    },
+    {
+      "round": 19,
+      "client": 5,
+      "seed": 690542
+    },
+    {
+      "round": 19,
+      "client": 7,
+      "seed": 690742
+    },
+    {
+      "round": 19,
+      "client": 9,
+      "seed": 690942
+    },
+    {
+      "round": 19,
+      "client": 12,
+      "seed": 691242
+    },
+    {
+      "round": 19,
+      "client": 13,
+      "seed": 691342
+    },
+    {
+      "round": 19,
+      "client": 16,
+      "seed": 691642
+    },
+    {
+      "round": 19,
+      "client": 18,
+      "seed": 691842
+    },
+    {
+      "round": 19,
+      "client": 19,
+      "seed": 691942
+    },
+    {
+      "round": 20,
+      "client": 2,
+      "seed": 700242
+    },
+    {
+      "round": 20,
+      "client": 3,
+      "seed": 700342
+    },
+    {
+      "round": 20,
+      "client": 5,
+      "seed": 700542
+    },
+    {
+      "round": 20,
+      "client": 7,
+      "seed": 700742
+    },
+    {
+      "round": 20,
+      "client": 9,
+      "seed": 700942
+    },
+    {
+      "round": 20,
+      "client": 12,
+      "seed": 701242
+    },
+    {
+      "round": 20,
+      "client": 13,
+      "seed": 701342
+    },
+    {
+      "round": 20,
+      "client": 16,
+      "seed": 701642
+    },
+    {
+      "round": 20,
+      "client": 18,
+      "seed": 701842
+    },
+    {
+      "round": 20,
+      "client": 19,
+      "seed": 701942
+    }
+  ],
+  "schedule_is_new_RNG_state_replay": false,
+  "common_policy_cannot_by_itself_explain_minus_plus_difference": true,
+  "new_training_authorized": false,
+  "verdict": "declared RNG boundary is structurally different; causal effect and unique author stream unvalidated/parked",
+  "model_loads": 0,
+  "tensor_payload_reads": 0,
+  "model_forwards": 0,
+  "RNG_operations": 0,
+  "optimizer_steps": 0,
+  "torch_imported": false
+}

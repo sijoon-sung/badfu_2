@@ -1,0 +1,18 @@
+{
+    "state":  "passed_native_self_PID_parent_commandline_match_external_CIM",
+    "all_process_commandlines_exact_CIM":  true,
+    "native_process_count":  13,
+    "CIM_process_count":  13,
+    "mismatched_PID_count":  0,
+    "own_native_row":  {
+                           "ProcessId":  14524,
+                           "ParentProcessId":  2428,
+                           "Name":  "python.exe",
+                           "CommandLine":  "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_MIXED_PAIR_EVAL_NATIVE_V2_20261101/source_probe.py"
+                       },
+    "self_alive":  true,
+    "model_forwards":  0,
+    "other_projects_commandlines_published":  false,
+    "raw_private_metadata_sha256":  "ddcdbd0672a852877c835ed3b2fcc7f495c3d55c683d51a369a8ad898941ae10",
+    "utc":  "2026-11-01T06:57:31.7245605Z"
+}

@@ -1,0 +1,23 @@
+{
+  "state": "passed_source_only_numerical_loop_AST_identity",
+  "entrypoints": {
+    "verify_fu.py": {
+      "original_sha256": "80b64586664a1e0dd12cccfbcfad258b15ff7a312e8e3d068a85e8d0460f1336",
+      "adapted_sha256": "4578e1c5ad19dca0aaf4adcb503e54e097188532053bfa325ac894e5a7e20939",
+      "all_top_level_numerical_loop_ASTs_exact": true
+    },
+    "evaluate_pair.py": {
+      "original_sha256": "7cb44ea4b7f822a9ecfd1a908bd4e8a5f2b291eb2fc9046590a279e3ef3ff4e8",
+      "adapted_sha256": "24c4ee436602930f39583b58bcbcafbdb1d0a82691dc77d1c21844b3f319135a",
+      "all_top_level_numerical_loop_ASTs_exact": true
+    },
+    "verify_pair_evaluation.py": {
+      "original_sha256": "6d415464176c1f7616807806138057a3264e074b1d1d875fc6d856f71f0a9491",
+      "adapted_sha256": "fc4d57889eebd88e734d5926c1c853f74dc30ec489af804862b609eac8e694db",
+      "all_top_level_numerical_loop_ASTs_exact": true
+    }
+  },
+  "model_loads": 0,
+  "model_forwards": 0,
+  "new_fixture_executed": false
+}

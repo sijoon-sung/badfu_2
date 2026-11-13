@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "case": "n00",
+      "arm": "baseline",
+      "n": 900,
+      "witness": 124,
+      "counts_exact": true
+    },
+    {
+      "case": "n00",
+      "arm": "route",
+      "n": 900,
+      "witness": 126,
+      "counts_exact": true
+    }
+  ],
+  "all_counts_exact": true,
+  "calibration_choice_arithmetic_exact": true,
+  "native_models_without_hooks": true,
+  "primary_sha256": "3caa8e4ea205abf52c8f262f0080836b3cd17b94cb95b9d8320c5630e32ea962",
+  "gradients_independently_replayed": false,
+  "verifier": "verify_nonempty.py",
+  "inherited_D20_nonempty_fix": true
+}

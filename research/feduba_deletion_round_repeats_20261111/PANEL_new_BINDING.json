@@ -1,0 +1,115 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.s42.large_normal_rounds.20261111.new",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u00_r01": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\balanced_b\\rounds\\round01.pt",
+      "sha256": "2da002b63755173b4d581cac45ff920d7aa1f3d601d9dcbd4efa07db6c49f8e0",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u00_r03": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\balanced_b\\rounds\\round03.pt",
+      "sha256": "f8b6ea2e1b2c6290672fabeef32a1a98e9da7a96bebd731322ff29b376f4e70c",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u00_r05": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\balanced_b\\rounds\\round05.pt",
+      "sha256": "f7baf1ca2c198df5421a1e06f6e6d9a4af12115f7e36f8df1563656ea232f501",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u00_r10": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\balanced_b\\rounds\\round10.pt",
+      "sha256": "c21fde383833ed08459dc1d69d80c2af5463b2556c187f61ebd676a843f8a522",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u01_r01": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_a\\rounds\\round01.pt",
+      "sha256": "c795406ce8cc8d9734a76166f020a436a78820e5e01004297506e0e79847e209",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u01_r03": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_a\\rounds\\round03.pt",
+      "sha256": "345bdcb69e0cf978c11fd86b756bd8414d9d3bcd79e98aa8dbf45a0ebc76d6c7",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u01_r05": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_a\\rounds\\round05.pt",
+      "sha256": "3af567ff34dfd6e901c72c522f010ddb4de6269424f25554c672256f63c812cd",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u01_r10": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_a\\rounds\\round10.pt",
+      "sha256": "23ce4c0fc3cee16dc2b090d7027d5459766edcc13818bafd97a05e49b50c33e2",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u02_r01": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_b\\rounds\\round01.pt",
+      "sha256": "39331e1743936273107702548ebdd5cbdcaac8e456a2eac653d48e107c7d18d6",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u02_r03": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_b\\rounds\\round03.pt",
+      "sha256": "3bd1d219ef1cf0085571575e4a4c3aa6c36487645d0d6ae22774b801b228f6cf",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u02_r05": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_b\\rounds\\round05.pt",
+      "sha256": "57fa27680318748879e5e03745f3f17fc271927daf6aeb2a06dc8e2db47e16fd",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "u02_r10": {
+      "path": "D:\\FEDUBA_DELETION_ROUND_REPEATS_20261111\\fu\\dark_b\\rounds\\round10.pt",
+      "sha256": "db22c0e32a5b754b81f82a3a413afd7df6b026b489e0178ca5b4c47c55ab9613",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "tracks": [
+    {
+      "opaque": "u00",
+      "source_case": null,
+      "rounds": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "opaque": "u01",
+      "source_case": null,
+      "rounds": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "opaque": "u02",
+      "source_case": null,
+      "rounds": [
+        1,
+        3,
+        5,
+        10
+      ]
+    }
+  ]
+}

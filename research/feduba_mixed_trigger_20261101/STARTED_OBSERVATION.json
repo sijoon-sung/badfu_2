@@ -1,0 +1,58 @@
+{
+  "state": "observed_first_actual_bound_CPU_trigger_running",
+  "utc": "2026-11-01T03:01:59.2547264Z",
+  "processes": [
+    {
+      "ProcessId": 13940,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_MIXED_TRIGGER_20261101/trigger_controller.py"
+    },
+    {
+      "ProcessId": 55504,
+      "ParentProcessId": 13940,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_MIXED_TRIGGER_20261101\\mixed_cpu_trigger.py"
+    }
+  ],
+  "files": {
+    "CONTROLLER_STATE.json": {
+      "state": "running",
+      "phase": "trigger",
+      "pid": 13940,
+      "child_pid": 55504,
+      "command": [
+        "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-u",
+        "D:\\FEDUBA_MIXED_TRIGGER_20261101\\mixed_cpu_trigger.py"
+      ]
+    },
+    "TRIGGER_STATE.json": {
+      "state": "running_CPU_mixed_teacher_trigger",
+      "pid": 55504,
+      "epoch": 13,
+      "batches": 26,
+      "sample_exposures": 2600
+    }
+  },
+  "committed_epochs": 13,
+  "last_epoch": 13,
+  "hashes": {
+    "LAUNCH_PROFILE.json": "43bd1d82ac85eb5909d89160c860da82faa79ec5fb4fa23aeb920f297dbed13a",
+    "RUN_PUBLICATION.json": "49fad7d44a02f7cdb1523bf11068fb9d5f1bbfd4a5ca0dd6d31f8f6ca638ac6f",
+    "TRIGGER_ONCE.json": "1b019209d29c5eb97dd9da94f3e4ad47947ecc114f07ce9d7d8746171a112cb1",
+    "SOURCE_FREEZE.json": "5f5146b6a266754f7e3a9ffbcd341c838c704d7d7a16786277301dfe01731a86",
+    "RUN_FREEZE.json": "d9a214d747b6aac897fd8e74d2ba0e74434d576d07c1ae53b50c6cf973528eb2",
+    "CONTROLLER_ONCE.json": "5bb53e183e63e079d3342774bdf06aed1e8ac7464d8ff00800c0d14a17b5c658"
+  },
+  "frozen15_unchanged": true,
+  "machine_policy": "Undefined",
+  "user_policy": "Undefined",
+  "observer_query_timeout_preserved": {
+    "operation": "combined running-state/CIM/task-info query",
+    "exception": "TimeoutExpired after60seconds",
+    "research_error": false,
+    "training_retry_or_process_restart": false,
+    "bounded_actual_PID_CIM_and_file_reads_succeeded": true
+  },
+  "overall_goal_complete": false
+}

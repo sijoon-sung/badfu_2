@@ -1,0 +1,5 @@
+{
+  "state": "failed_preserved",
+  "pid": 37112,
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\fu_runner.py\", line 145, in <module>\n    main()\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\fu_runner.py\", line 102, in main\n    SSS_result_sha256=sha(ROOT / 'SSS_RESULT.json'))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\runtime_common.py\", line 23, in sha\n    for block in iter(lambda: stream.read(4 << 20), b''):\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\FEDUBA_MIXED_PAIR_20261101\\runtime_common.py\", line 23, in <lambda>\n    for block in iter(lambda: stream.read(4 << 20), b''):\n                              ^^^^^^^^^^^^^^^^^^^^\nMemoryError\n"
+}

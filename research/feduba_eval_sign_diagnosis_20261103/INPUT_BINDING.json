@@ -1,0 +1,137 @@
+{
+  "state": "four_fixed_existing_endpoints_with_positive_evidence_reused_and_new_negative_route_only",
+  "receipts": {
+    "baseline_primary": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_RESULT.json",
+      "sha256": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac",
+      "bytes": 68732
+    },
+    "baseline_independent": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_VERIFIED.json",
+      "sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe",
+      "bytes": 2818
+    },
+    "plus_primary": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103/PAIR_EVAL_RESULT.json",
+      "sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+      "bytes": 35842
+    },
+    "plus_recovery": {
+      "path": "D:/FEDUBA_POSITIVE_INDEPENDENT_RECOVERY_20261103/RECOVERY_VERIFIED.json",
+      "sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+      "bytes": 3297
+    },
+    "baseline_fu_profile": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_PROFILE.json",
+      "sha256": "c1d9cfc545accc78db836408290c462e2c34947d7fd04c82f30b92d3740d753d",
+      "bytes": 2625
+    }
+  },
+  "models": {
+    "pre": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_public_fixed10_cleanFL20_s42_20261103/run/before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "payload_key": null,
+      "bytes": 44770315
+    },
+    "benign": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu/benign/after.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "minus_attack": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/fu/attack/after.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "plus_attack": {
+      "path": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103/fu/attack/after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "delta": {
+    "path": "D:/FEDUBA_MIXED_TRIGGER_20261101/private_run/delta.pt",
+    "sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+    "bytes": 13865,
+    "payload_key": null
+  },
+  "baseline_input_root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "test_file_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "positive_rows": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "minus_attack": {
+      "N": 10000,
+      "clean_correct": 8469,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1244,
+      "CA_pct": 84.69,
+      "ASR_pct": 13.822222222222223
+    },
+    "plus_attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "original_standard_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -6.322222222222222,
+    "attack_minus_benign_ASR_pp": -2.8444444444444446,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 0.84
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "plus_standard_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  }
+}

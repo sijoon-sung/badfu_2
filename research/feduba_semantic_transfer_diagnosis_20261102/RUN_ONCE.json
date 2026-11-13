@@ -1,0 +1,23 @@
+{
+  "pid": 39128,
+  "parent": 57304,
+  "guard": {
+    "utc": 1793622565.5181186,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18930614272,
+      "committedBytes": 44268425216,
+      "commitLimit": 90276544512
+    },
+    "GPU": {
+      "util": 0,
+      "free": 5045,
+      "used": 5009
+    },
+    "competing_trainers": 0,
+    "CPU_threads": 2,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "state": "confirmed_completed_numeric_comparison_prefix_original_writer_failure_preserved",
+  "original_primary_result_sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+  "original_independent_failure_sha256": "36da220f7c1cfa990ee6215fadbbfd884ba8c32b60c97c09779137d6e8076b41",
+  "original_independent_source_sha256": "52a208e6e65ebd4716d14dddd430ee9593293b5b193a3b6b614f0f11ca2bf9f1",
+  "last_saved_batch": 79,
+  "original_independent_actual_calls": 158,
+  "original_independent_actual_sample_forwards_from_frozen_source": 20000,
+  "max_logit_abs_error_in_saved_running_max": 0.0,
+  "traceback_reached_receipt_construction_after_all_comparisons_counts_and_gate_assertions": true,
+  "original_VERIFIED_exists": false,
+  "original_verifier_completed_successfully": false,
+  "original_task_exit": 1,
+  "models_from_primary_result_with_original_asserted_independent_equality": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "minimum_operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "new_inference_calls": 0,
+  "new_tensor_payload_reads": 0,
+  "new_counts_inference": false,
+  "not_a_new_independent_model_replay": true,
+  "overall_goal_complete": false
+}

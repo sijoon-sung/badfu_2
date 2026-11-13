@@ -1,0 +1,367 @@
+[
+  {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+        "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+        "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+        "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+        "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_big_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+        "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+        "payload_key": null,
+        "committed_rounds": 40
+      }
+    },
+    "source_root": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+      "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+      "seal_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+      "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+      "loader_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "badfu.s20261023.normal_largest0.dislab.endpoint_20261110",
+    "purpose": "diagnostic",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+        "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "D:/MULTISEED_ACTUAL_FU_20261022/badfu/seed_20261023/normal_largest0_FU/final.pt",
+        "sha256": "f6ec46894135725df8fa2da260d9325d1dbdde397de88421cfcc7d965b1f5ba2",
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_largest0_FU",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\BLIND_ROUTE_DETECTOR_20261110\\GUARD_MANIFEST.json",
+      "manifest_sha256": "c24f6b6975e54861062bbe90d2fac1ede244f1db754598a5cfb81ab5b00ab1db",
+      "seal_path": "D:\\BLIND_ROUTE_DETECTOR_20261110\\GUARD_SEAL.json",
+      "seal_sha256": "bd2afe024004b86435bd41069f8b15288e7294fdb234e64013d5564412ea193d",
+      "loader_path": "D:\\BLIND_ROUTE_DETECTOR_20261110\\checkpoint_guard.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+        "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+        "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+        "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+        "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_big_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+        "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+        "payload_key": null,
+        "committed_rounds": 40
+      }
+    },
+    "source_root": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+      "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+      "seal_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+      "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+      "loader_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\round_0040.pt",
+        "sha256": "4416c40d967db37603d943356a0d647ad0b580f4b7d4949434a6e2ff114a789f",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\round_0040.pt",
+        "sha256": "fe6fc2fbac7383bafac93a9564f50e9ef2c9c006057ffc6a6f0e273a9714b9bb",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "infected_benign_post": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\round_0040.pt",
+        "sha256": "84b0a9cd73c65835d31ac38453a97813b685a86d22d7b4abd206f1b08539296f",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "clean_model": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\round_0040.pt",
+        "sha256": "7ffbad660ed295f06acaca9c49491308aecede65e18447f18a1fac2f19b26c69",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      }
+    },
+    "source_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods."
+  },
+  {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\01_before_unlearning.pt",
+        "sha256": "6c583d3178cc276e30a16ed983444439eb21f30724487dc59fd21fc20db9c604",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\02_after_cover_removal_retrain.pt",
+        "sha256": "a84dc86d4cffd4ad1d12ceaa4235cfdf47a17aedfdc2c0bd262705b7ff897360",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_pre": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\03_clean_reference.pt",
+        "sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\04_clean_same850_removed.pt",
+        "sha256": "1f64e35d5a37cd946b82d03bf5c11caa733ffb37204117c18feba385d9313dde",
+        "payload_key": null,
+        "committed_rounds": 40
+      },
+      "clean_big_post": {
+        "path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\models\\05_clean_big_client_removed.pt",
+        "sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+        "payload_key": null,
+        "committed_rounds": 40
+      }
+    },
+    "source_root": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\MANIFEST.json",
+      "manifest_sha256": "52adb46e6fd056125acf07e2baa244605f56f09f4db927d068f1e37082e3374e",
+      "seal_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\SEAL.json",
+      "seal_sha256": "ed5f75d57a4526191f9ee1c201a8147d285d3beea940fbaf267b5e4507ec88fd",
+      "loader_path": "D:\\CONFIRMED_CHECKPOINTS\\BadFU_s20261023_v1\\load_confirmed.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "post_type": "retained_data_retraining",
+    "server_inputs": {
+      "pre": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\round_0040.pt",
+        "sha256": "4416c40d967db37603d943356a0d647ad0b580f4b7d4949434a6e2ff114a789f",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\attack_pre\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "post": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\round_0040.pt",
+        "sha256": "fe6fc2fbac7383bafac93a9564f50e9ef2c9c006057ffc6a6f0e273a9714b9bb",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\poison_only\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "infected_benign_post": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\round_0040.pt",
+        "sha256": "84b0a9cd73c65835d31ac38453a97813b685a86d22d7b4abd206f1b08539296f",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign_deletion\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      },
+      "clean_model": {
+        "path": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\round_0040.pt",
+        "sha256": "7ffbad660ed295f06acaca9c49491308aecede65e18447f18a1fac2f19b26c69",
+        "payload_key": "gm_after",
+        "history_manifest": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020\\benign\\trajectory\\manifest.json",
+        "history_schema": "full-trajectory-v1",
+        "committed_rounds": 40
+      }
+    },
+    "source_root": "C:\\Users\\DISLAB\\Documents\\antigravity\\dazzling-lovelace\\research_20261020\\stage1_migrated_20261020\\research\\stage1_fresh_20261020\\runs\\badfu_paper32_plain_s20261020",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods."
+  },
+  {
+    "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+    "purpose": "diagnostic",
+    "post_type": "actual_historical_client4_update_subtraction_then_KD10",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\before_classifier.pt",
+        "sha256": "bdd8f962de7743a2679054b1155eeee83871b1aed67d6932096f576df7f8b7a9",
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\after_unlearning.pt",
+        "sha256": "1f577d504b632bb1170909329ea8b3499bffe5b2913988bfef37ce7377ebe96d",
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\DELIVERY_MANIFEST.json",
+      "manifest_sha256": "83f8ecae537c212879f9a27ccaede48cf82ba0c5d0fae4de59e0eac07178fcdc",
+      "seal_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\DELIVERY_SEAL.json",
+      "seal_sha256": "436dc421e12f5e4e694bc93fa0850f4d9d9c8f63a8176d11a581c35d701bdf0b",
+      "loader_path": "D:\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10\\load_checkpoint.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "purpose": "diagnostic",
+    "post_type": "actual_FedEraser20_endpoint",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+        "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+        "bytes": 44770315,
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\benign.pt",
+        "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+        "bytes": 44770315,
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+      "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+      "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+      "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+      "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "purpose": "diagnostic",
+    "post_type": "actual_FedEraser20_endpoint",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+        "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+        "bytes": 44770315,
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\attack.pt",
+        "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+        "bytes": 44770315,
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+      "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+      "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+      "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+      "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  {
+    "case_id": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103",
+    "purpose": "diagnostic",
+    "post_type": "actual_FedEraser20_endpoint",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103\\models\\pre.pt",
+        "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+        "bytes": 44770315,
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_positive_failed_eval_prefix_s42_20261103\\models\\attack_after.pt",
+        "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+        "bytes": 44770315,
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+      "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+      "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+      "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+      "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  }
+]

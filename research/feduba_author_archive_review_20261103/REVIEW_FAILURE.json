@@ -1,0 +1,4 @@
+{
+  "state": "failed_preserved_no_retry",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FEDUBA_AUTHOR_ARCHIVE_REVIEW_20261103\\inspect_archive.py\", line 48, in <module>\n    try:main()\n        ^^^^^^\n  File \"D:\\FEDUBA_AUTHOR_ARCHIVE_REVIEW_20261103\\inspect_archive.py\", line 35, in main\n    tree=ast.parse(b,filename=info.filename);source_count+=1\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\ast.py\", line 52, in parse\n    return compile(source, filename, mode, flags,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: source code string cannot contain null bytes\n"
+}

@@ -1,0 +1,91 @@
+{
+  "state": "complete",
+  "profile": "fuba.recovery.current_runtime_AB.mnist.dba.20261031",
+  "hypothesis_supported": false,
+  "control_original_tensor_equality": false,
+  "control_behavior_gate": true,
+  "exact_input_and_loader_verified": true,
+  "same_loader_RNG": true,
+  "actual_phase_epochs_new": 50,
+  "reused_A_phase_epochs": 50,
+  "actual_batches_new": 2150,
+  "reused_A_batches": 2150,
+  "metrics": {
+    "reference": {
+      "N": 10000,
+      "non_target_N": 9026,
+      "clean_correct": 9841,
+      "target_successes": 8940,
+      "CA_pct": 98.41,
+      "ASR_pct": 99.0471969864835,
+      "clean_target_bias_pct": 0.5871925548415688
+    },
+    "SGD": {
+      "recovered": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9865,
+        "target_successes": 8869,
+        "CA_pct": 98.65,
+        "ASR_pct": 98.26058054509195,
+        "clean_target_bias_pct": 0.35453135386660756
+      },
+      "upload": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9910,
+        "target_successes": 2577,
+        "CA_pct": 99.1,
+        "ASR_pct": 28.55085309107024,
+        "clean_target_bias_pct": 0.12187015289164635
+      },
+      "round": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 3340,
+        "CA_pct": 99.07,
+        "ASR_pct": 37.004210059827166,
+        "clean_target_bias_pct": 0.13294925769997784
+      }
+    },
+    "Adam": {
+      "recovered": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9868,
+        "target_successes": 8846,
+        "CA_pct": 98.68,
+        "ASR_pct": 98.00576113450033,
+        "clean_target_bias_pct": 0.33237314424994463
+      },
+      "upload": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9901,
+        "target_successes": 2222,
+        "CA_pct": 99.01,
+        "ASR_pct": 24.617770884112563,
+        "clean_target_bias_pct": 0.13294925769997784
+      },
+      "round": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9908,
+        "target_successes": 3302,
+        "CA_pct": 99.08,
+        "ASR_pct": 36.58320407711057,
+        "clean_target_bias_pct": 0.13294925769997784
+      }
+    }
+  },
+  "full_FL_or_FU_run": false,
+  "original_models_modified": false,
+  "literal_SGD_and_Adam_equivalent": false,
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "resource_guard": {
+    "utilization_pct": 0,
+    "free_MiB": 8223,
+    "used_MiB": 1830
+  }
+}

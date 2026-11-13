@@ -1,0 +1,7 @@
+가설/판정 변경 없음. 관련 R03/N02. 공개 텍스트와 원격 원본의 해시 구분.
+
+DISLAB의 RESULTS/STARTED/ASSET_SUMMARY/DISLAB_VERIFICATION JSON은 Windows 기본 CRLF로 저장됐다. 전송 직후 11파일의 로컬 원시 SHA256이 원격 영수증과 정확히 같음을 확인했다. 공개 PR의 eol=lf 규칙에 맞추어 별도 PR worktree의 텍스트만 LF로 정규화했다. 원격 원본과 주 작업공간의 수신 원본은 보존했다.
+
+PUBLICATION_MANIFEST.json은 원격 원본 SHA256과 공개 LF SHA256을 각각 기록한다. 내용 변경 없이 CRLF만 LF로 바뀌었으며 수치/순위/소스 동작은 동일하다. DISLAB_VERIFICATION.json의 files_sha256은 원격 원본 바이트를 가리키고, PR의 INDEX_AUDIT.json은 공개 LF 파일 바이트를 가리킨다. 두 종류의 해시를 같다고 주장하지 않는다. FINAL_CHECKS의 원시 일치 항목은 정규화 전 전송 검사를 뜻한다.
+
+감사 코드/PROTOCOL/FREEZE는 실행 전부터 LF였고 동결 해시가 유지된다. 원본 함수 검사나 완료된 trainer/evaluator를 다시 실행하지 않았다. 이 주석과 공개 매핑/최종 검사 기록을 원격에도 별도 보관한다.

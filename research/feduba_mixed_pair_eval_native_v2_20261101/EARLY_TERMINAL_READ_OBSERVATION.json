@@ -1,0 +1,8 @@
+{
+  "state": "read_before_25_second_metadata_probe_hold_completed",
+  "observation": "First terminal-only read requested METADATA_PROBE_DONE before it existed; failed before preparation. Later conditional status showed Ready/exit0, DONE present, failure absent. Probe not restarted.",
+  "finite_prepare_started_by_failed_read": false,
+  "model_forwards": 0,
+  "probe_reexecuted": false,
+  "original_helper_preserved": "tmp/feduba_eval_v2_prepare_once.py"
+}

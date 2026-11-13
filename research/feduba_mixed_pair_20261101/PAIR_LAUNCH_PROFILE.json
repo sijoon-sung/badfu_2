@@ -1,0 +1,24 @@
+{
+  "launch_enabled": true,
+  "trigger_binding_sha256": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3",
+  "id": "feduba.mixed_teacher.SSS125.pairedFU20.s42.20261101",
+  "required_clean_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "case_purpose": "diagnostic",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "source_profile_sha256": "28d16da0ffc7b70af99d046cb7c806879be3e7e529a21144cf2746789f87b275",
+  "history_manifest_sha256": "cef7d32f6684096887b03c791b09ee32c22e1ac9c871b4a545e119e346bd4e28",
+  "branch_order": [
+    "SSS",
+    "SSS_CPU_audit",
+    "benignFU20",
+    "benign_CPU_audit",
+    "attackFU20",
+    "attack_CPU_audit",
+    "primary_full_eval",
+    "independent_full_eval"
+  ],
+  "automatic_retries": 0,
+  "performance_gate_does_not_skip_a_branch": true,
+  "delivery_required": true,
+  "overall_goal_complete": false
+}

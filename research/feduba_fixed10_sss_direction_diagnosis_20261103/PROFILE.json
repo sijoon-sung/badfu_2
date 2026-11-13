@@ -1,0 +1,49 @@
+{
+  "id": "feduba.fixed10.SSS_saved_logit_target_direction.s42.20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_enabled": true,
+  "model_load_enabled": false,
+  "forward_calls": 0,
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "new_model_queries": 0,
+  "old_finite_job_reruns": 0,
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "query_condition": "saved_original_SSS_f_x_plus_delta_multiplier1_noClip_deterministic_ToTensor_Normalize0.5",
+  "target": 2,
+  "groups": [
+    "selected_target",
+    "nonselected_target",
+    "nontarget"
+  ],
+  "primary_hypothesis": "More than half of the fixed selected125 targetclass samples have decreased target-vs-best-other logit margin under the already saved positive-delta query.",
+  "primary_integer_condition": "2*selected_target.margin_decreased > 125",
+  "margin_definition": "z[2]-max(z[j] for j!=2)",
+  "change_comparison": "exact sign of FP64 subtraction of stored FP32 logit margins; no fitted tolerance",
+  "other_observables": [
+    "clean/perturbed target argmax counts and four transition counts",
+    "margin increased/decreased/unchanged counts and mean shift",
+    "stable target-class CE means under saved clean/perturbed logits",
+    "all groups and each owner; no subgroup selected after results"
+  ],
+  "independent_check": "separate process without torch; Python first-maximum argmax and scalar max/math.log/math.fsum from private JSON rows serialized once by primary; not a second reading of all original PT packets",
+  "ce_and_mean_check_atol": 1e-10,
+  "ce_and_mean_check_rtol": 1e-12,
+  "all_source_IDs_private": true,
+  "adoption_or_new_training_allowed": false,
+  "resources": {
+    "native_available_bytes": 8589934592,
+    "native_commit_free_bytes": 17179869184,
+    "disk_free_bytes": 85899345920,
+    "competing_trainer_count": 0,
+    "wait_seconds": 15,
+    "max_wait_seconds": 86400
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feduba.positive.newmodel.eval.transport_only_recovery.20261103",
+  "launch_enabled": true,
+  "execution_kind": "local_metadata_to_existing_frozen_PS_only",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "original_failure_sha256": "b9031554f3a18d5b3d90d93f03b74d1ec0b4c9e590eb2dbefbfb71599ef9d9e9",
+  "existing_launcher_sha256": "b3607acb54b38e2236c105c618b2400ca044cb97c8bab5269f26a52e02dffdc1",
+  "source_freeze_sha256": "031d84db35347dc79878edc260649b63e6617d399016920f144456bda0f62e87",
+  "eval_run_freeze_sha256": "a98811b9a598e74813a02a9f0451e98cd36f136d798a71449a5a304af6f27457",
+  "run_publication_sha256": "ecac1e2906caf9f4a3ffd81e4be6fc36ae93db86ce37ca01a0f4728d5e465533",
+  "task_name": "Codex-FedUBA-related-helper-positive-newmodel-eval-review-20261103",
+  "execution_root": "D:/FEDUBA_RELATED_HELPER_POSITIVE_EVALUATION_20261103",
+  "existing_task_invocations": 0,
+  "authorized_new_existing_PS_invocations": 1,
+  "new_model_budget_or_conditions_changed": false
+}

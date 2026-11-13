@@ -1,0 +1,3 @@
+D22 · 2026-11-11 KST. 기존 실제 30라운드 모델·300개 탐침 조합은 모두 계산했고 terminal 자기탐침 원건수 10개가 정확히 일치했다. 다음 balanced_b trainer가 정상 자원검사 뒤 fu_core의 원 core.py 의존 파일 누락으로 중단했다. STATE/branch 폴더·자료/체크포인트 load/학습은 없었다. 원 source·once·실패·30모델 결과·task는 보존한다.
+
+미실행 정상 반복만 재개한다. 원 D21 core.py를 그대로 보충, 새 pending trainer는 once/admission/failure 파일명만 분리한다. 완료된 panel_stored를 재실행하지 않는다. 실제 DISLAB child import preflight에서 package/함수 및 CUDA 초기화 없음 확인 뒤 원 10R ×3, 독립 감사, 새 panel을 한 번 수행한다. 삭제 표본·seed·스케줄·모델·자료·자원 기준·모든 비교/반증 기준을 유지한다. 새 pending source/원실패 및 완료 결과를 선게시·원바이트 확인한다.

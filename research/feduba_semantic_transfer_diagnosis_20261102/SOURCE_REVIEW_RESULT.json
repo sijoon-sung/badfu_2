@@ -1,0 +1,27 @@
+{
+  "state": "passed_new_semantic_probe_source_input_metadata",
+  "AST_files": 6,
+  "source_freeze_sha256": "d732cd277bf18adb0101dc8ae7c4dbcbf752cc22ed15ab354c81ceb8c4ba4385",
+  "profile_sha256": "0d3f035c9c43fdde8c9ca3b4f03512cfd73244017b200e5ca15743d830cfbfe9",
+  "guard": {
+    "utc": 1793622461.491633,
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18985943040,
+      "committedBytes": 44228489216,
+      "commitLimit": 90276544512
+    },
+    "GPU": {
+      "util": 0,
+      "free": 5045,
+      "used": 5009
+    },
+    "competing_trainers": 0,
+    "CPU_threads": 2,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "model_loads": 0,
+  "forward_calls": 0
+}

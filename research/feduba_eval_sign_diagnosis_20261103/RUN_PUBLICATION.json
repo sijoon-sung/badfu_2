@@ -1,0 +1,55 @@
+{
+  "state": "published_actual_fixed_endpoint_negative_sign_diagnosis_before_queries",
+  "commit": "70cfd57203170f9e6f2dbac7cbb28db23afe1474",
+  "source_commit": "8cbbdc25a37a17b005290e346713a49c04e374d6",
+  "source_freeze_sha256": "87339364a803d0691819c72f08a438ee5e207f7d812aa9464a43995ac2572df2",
+  "run_freeze_sha256": "3b4ca5f66b42a30d27cfb00ccfeb26c8cd877b6fea23e0249d9e2354f5e780df",
+  "actual_metadata_GitHub_bytes_exact": [
+    {
+      "name": "SOURCE_PUBLICATION.json",
+      "blob": "3171e5142585f0d1c98a7b04b4a3362709686958",
+      "sha256": "fcbb7df4532a6563dbc10e1381ac5affa9775555850d72f8c9505915e632c96a",
+      "bytes": 3202
+    },
+    {
+      "name": "SOURCE_REVIEW_RESULT.json",
+      "blob": "a59eb2eb6eb3833d58d83c65e4e9c3e07b091223",
+      "sha256": "2973b0c6a918fb19e8c8320bd37349aeb32de0fc3756c0cd6dff9213ec6ff360",
+      "bytes": 772
+    },
+    {
+      "name": "SOURCE_REVIEW_ONCE.json",
+      "blob": "29d5590f33120e20cb8989a2346ab01e0ac7f367",
+      "sha256": "8d922dce155d075a13dd3b5bed54f8ab14fa59f2249e414ec86031ceb54787b5",
+      "bytes": 51
+    },
+    {
+      "name": "PUBLICATION_BYTE_CHECKS.json",
+      "blob": "b0ca4a9252a6b6a2688fddca742f65e13237887f",
+      "sha256": "4a3d469dd8701eedd5661a2e4b1ccfe607378d0efe65a043792c84bec3da0c7e",
+      "bytes": 3452
+    },
+    {
+      "name": "UPSTREAM_TERMINAL_CHECK.json",
+      "blob": "b9386679e044ee156a7796e735d00cb2738a8ca2",
+      "sha256": "9cf625cddca520fb30c6531a6d3f686e57f41a645baf121486889f30fed27aca",
+      "bytes": 954
+    },
+    {
+      "name": "RUN_FREEZE.json",
+      "blob": "78677e088c53b5444b0d2f1666e3d793f13275fd",
+      "sha256": "3b4ca5f66b42a30d27cfb00ccfeb26c8cd877b6fea23e0249d9e2354f5e780df",
+      "bytes": 861
+    },
+    {
+      "name": "ACTUAL_RUN_REPORT_KO.txt",
+      "blob": "13e8f6d52b58554ee3983db64b4171d33fc81395",
+      "sha256": "a2074fb9c8b9046953de27c9084ee66e6be67ec238093d05e8234f77fbc09e98",
+      "bytes": 1264
+    }
+  ],
+  "new_negative_only": true,
+  "each_sample_forwards": 40000,
+  "each_forward_calls": 316,
+  "standard_positive_failure_unchanged": true
+}

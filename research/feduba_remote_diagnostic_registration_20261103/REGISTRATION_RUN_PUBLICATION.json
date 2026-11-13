@@ -1,0 +1,112 @@
+{
+  "state": "published_actual_remote_diagnostic_registration_before_execution",
+  "commit": "44fd55e7ccdd084739f805b858ffb5271734376d",
+  "source_freeze_sha256": "f0ca4c2bb87e939275fcb0fd0ee53b92ea8a4a2021cedbaefe2d2bdfc75c5b48",
+  "files": [
+    {
+      "name": "REGISTRATION_PROFILE.json",
+      "sha256": "f0350c4f6de885393277c2ee5694e59bddbd4771017379322ab4b401fe4ec16a",
+      "bytes": 5356,
+      "git_blob": "77870394212446a9af45dded0534c463dc86e5b1",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "REGISTRATION_INPUT_BINDING.json",
+      "sha256": "82645e608cc69f2f7a96e1464fc4c05113015893dc9d053ca6fdce492a3d3802",
+      "bytes": 1285,
+      "git_blob": "407b8dc46a5198d114702fc28d8c57ddf8f14de8",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "REGISTRATION_PROTOCOL.txt",
+      "sha256": "a187902aff0bbdad0041039ba5c9016635007acee30df5242746a627b0173453",
+      "bytes": 3123,
+      "git_blob": "1892126cf7882089b8307edca1bdfeff8ade36d5",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "PACKET_BINDING.json",
+      "sha256": "b2fbf8fb35bebab5771848704fb1135af6a17dac5a289eb26cd643765ee21600",
+      "bytes": 997,
+      "git_blob": "f255326aa3d57b6de62d3d0a7bb1917898bcabb0",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "checkpoint_guard.py",
+      "sha256": "705cd0b3489cd2d632be509398b8082e4481cef62f874caa27c52d07373486c7",
+      "bytes": 2177,
+      "git_blob": "12650ae88e977d4c6b83abb5ea45b8287f9cb38e",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "register_remote_cases.py",
+      "sha256": "532b0c343c8aad9779ef183c3656d2e72bb1ec3a4eb057f9c2de6c15dc6a8793",
+      "bytes": 12317,
+      "git_blob": "84f187af67f537fdfcc888cf3ae9d459f836aa03",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "native_memory.py",
+      "sha256": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+      "bytes": 1471,
+      "git_blob": "ba7f906cc6514b2dfe00256357038c1b2fa89604",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "native_processes.py",
+      "sha256": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+      "bytes": 3972,
+      "git_blob": "4289b9c718234c79c5970865f5c96dfe895ec024",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "METADATA_COMPLETION.json",
+      "sha256": "e1f2e661a3e018aabdd4fa68b281683b3158fb263861500de207e338f60cab4e",
+      "bytes": 244,
+      "git_blob": "2dab82f35ec4017be8093bcd9014bf27f3d4efc3",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "PREPARATION_METADATA_OBSERVATION.json",
+      "sha256": "072f858cc0d8869c46cb174fe5ee85b9de73f874d17d85ed1de10040d98cbbef",
+      "bytes": 5062,
+      "git_blob": "7b8d01af6992c844da3c0bbdd0437e1418eb791a",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "REGISTRATION_SOURCE_FREEZE.json",
+      "sha256": "f0ca4c2bb87e939275fcb0fd0ee53b92ea8a4a2021cedbaefe2d2bdfc75c5b48",
+      "bytes": 1088,
+      "git_blob": "4e4a372ee0a44907afe0a224584b172310c1342b",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "METADATA_ONCE.json",
+      "sha256": "68d20b31e905c73c2cd82c59912bb5f1c132bbaca3792eb1129d84ae2d1a8ee4",
+      "bytes": 49,
+      "git_blob": "498cb3852e396e7972c58ec257ed6d8b030e6051",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "METADATA_ADMISSION.json",
+      "sha256": "8c8d7923439e42b3116c14e48b5eb2847da9b0c47ff9ba750eb1107ed42b5dac",
+      "bytes": 340,
+      "git_blob": "29d0e6237c7f2d1f732cfaefae2195cfa3ec3de7",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "METADATA_PUBLICATION_BYTE_CHECKS.json",
+      "sha256": "1086ebfbcf9632e89c56557cbd3c77eaf84b5d9f4b694ab424926d0b6a409b6f",
+      "bytes": 2724,
+      "git_blob": "73b2d8589993e9c3fcd191bc7e6b7f481f0a64a5",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    },
+    {
+      "name": "METADATA_TERMINAL_OBSERVATION.json",
+      "sha256": "c553e8b4b02e301bd01cc72e830b4a69c8b2002cdc3b88b2bab33a9ab055fe7d",
+      "bytes": 301,
+      "git_blob": "5f8918f250b78c6e017129622e1e4bf5d8dec924",
+      "GitHub_decoded_UTF8_bytes_exact": true
+    }
+  ]
+}

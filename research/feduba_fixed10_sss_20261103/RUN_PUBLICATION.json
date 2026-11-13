@@ -1,0 +1,16 @@
+{
+  "state": "published_actual_fixed10_newSSS_before_queries",
+  "commit": "c8bc7cd5c4167354f91278415479c2423ffaf2d2",
+  "pull_request": "https://github.com/sijoon-sung/badfu_2/pull/1",
+  "source_freeze_sha256": "8738a84c3854d70ce5f23c5d4e659fbd3525fe3bd6e2e36d9142a6aa12672197",
+  "run_freeze_sha256": "ba4765e55f69aee4e93f563a859f7a56f18c364f35a8b892af461d93cc3a3ca6",
+  "input_binding_sha256": "102e7e3d16fcbce94d8cfe6c535be1cfeb64d0343a99a2788d2c4ff280ebe91e",
+  "public_actual_PR_Gitblob_files_exact": 39,
+  "private_hash_bound_inputs_not_public": {
+    "NORMAL_CASE_SELECTION.json": "9729e2ab60690f366c2e5db70940b87fa5389750e75818dda8eb3a60c6cd736b"
+  },
+  "new_GPU_calls": 80,
+  "new_GPU_sample_forwards": 10000,
+  "CPU_fixed_batch_replay_calls": 4,
+  "overall_goal_complete": false
+}

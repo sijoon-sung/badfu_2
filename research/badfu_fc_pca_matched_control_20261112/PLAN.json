@@ -1,0 +1,49 @@
+{
+  "d20": "D:/BLIND_ROUTE_DETECTOR_V2_20261110",
+  "d23_result": "D:/FOUR_ROUTES_PCA_DECISION_20261112/RESULT.json",
+  "references": {
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/INPUTS.json": "cf6504ee79067ad344e593d2ab472f7db19d93393b6a374372f2a10ee97fb38f",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/PROFILE.json": "937e7d167a00c8483c0eb31693739d2903a5e0be5ff2847598057586fd746029",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/SELECTIONS.json": "6f3e3af1793a7a38cdd763ecb56939dc18417c0ac5ebe375b5c28d9883917a7b",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/SELECTION_SEAL.json": "42cb5e9b05d26c4ac458d9ca965bf400d2b8feb8d93e04740226652f55fa0e52",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/PUBLIC_SPLIT.json": "a0c1ea3d2d4c2e0b96848f864b5787f8a6bccc22d53e44c116fe8ef6868b1c20",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/RESULT.json": "6ffe42cbc3ab05b8cbfc18ec0c1eaf6c1057d9356bf441cc513f5df2e1a4406b",
+    "D:/BLIND_ROUTE_DETECTOR_V2_20261110/VERIFIED.json": "8654ce3b4bd2a4f7d985ff76ba397f85408de4c455ab908acff60169d472eec5",
+    "D:/FOUR_ROUTES_PCA_DECISION_20261112/RESULT.json": "f3059749668cd7e51aaae851ed27bc2ac4fc568f9b2cbcc4c5dbe455965f0ac5"
+  },
+  "histories": {
+    "c00": {
+      "case": "badfu.multiseed.s20261023",
+      "post": "clean_big_post",
+      "manifest_sha256": "dd06921597f521352d2029c2052542f5e4faa3e9dcf6f84fa066dfe35dc475e8"
+    },
+    "c02": {
+      "case": "badfu.multiseed.s20261023",
+      "post": "clean_post",
+      "manifest_sha256": "273560670aeabd15c2d4e221ae0f10eb878c3ada3472865bf2c9172c1ed8bfa2"
+    },
+    "c03": {
+      "case": "badfu.paper32.s20261020",
+      "post": "infected_benign_post",
+      "manifest_sha256": "45cf8e73947c1607ce8a7dd900eb65dec2f54d1f9f9b16353620af2e2fe0a437"
+    },
+    "c04": {
+      "case": "badfu.multiseed.s20261023",
+      "post": "post",
+      "manifest_sha256": "9b2837fe49c74f3aa65f76c0ff1f098f15be26391f2cccae35df08433f6b35fb"
+    },
+    "c05": {
+      "case": "badfu.paper32.s20261020",
+      "post": "post",
+      "manifest_sha256": "a8dd29c3a972cdd1c8bb9914e8cdbbdcb09537217f639abab283980a7e3e1ef2"
+    }
+  },
+  "admission": {
+    "memory_gib": 6,
+    "disk_gib": 80,
+    "gpu_free_mib": 3584,
+    "gpu_util_max": 10,
+    "wait_seconds": 120
+  },
+  "memory_fraction": 0.25
+}

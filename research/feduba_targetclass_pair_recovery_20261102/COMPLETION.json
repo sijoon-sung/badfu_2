@@ -1,0 +1,27 @@
+{
+  "state": "completed_targetclass_pair_with_actual_checkpoints_independent_evaluation_and_remote_review",
+  "evaluation_sha256": "3a45792276c6369f79b50d72c82ad07937c2a3c9862dbb3263226130febfb341",
+  "independent_evaluation_sha256": "a6cf3cfe81fab83a1cadd4e01867777329357651f24787aaf30d1788be29a2e4",
+  "remote_review_sha256": "4c96e9da4d78f4efbee15b7782231b571dc4e1ac76093c67986ea9ee719658a6",
+  "operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -3.311111111111111,
+    "attack_minus_benign_ASR_pp": 3.8666666666666667,
+    "post_CA_drop_pp": {
+      "benign": 1.36,
+      "attack": 1.06
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "local_delivery_complete": false,
+  "overall_goal_complete": false
+}

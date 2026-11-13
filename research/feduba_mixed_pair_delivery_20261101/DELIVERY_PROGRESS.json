@@ -1,0 +1,37 @@
+{
+  "state": "remote_readonly_packet_complete_archive_local_bytes_verified_local_CPU_waiting_fixed_RAM",
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.attackfu20.20261101",
+    "benign": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.benignfu20.20261101"
+  },
+  "remote_packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_mixed105_CPUtrigger_SSS125_FU20_pair_20261101",
+  "packet_total_files": 1345,
+  "hashed_files": 1343,
+  "typed_payload_count": 672,
+  "models": 15,
+  "delta": 1,
+  "tensor_evidence": 656,
+  "manifest_sha256": "058f91b3e85c9e95637a526f6450e94ed3789ec04e24ebed538da076456b8754",
+  "seal_sha256": "61c3c7aa0f1a0f593429f43a94001ec617fde82eca068648862bf5bd49e7116e",
+  "archive_sha256": "9837cb4f4e2e8f86f08eace0558c3ebb384b1279caa4bfecf1ea070c107749f1",
+  "archive_bytes": 1530790988,
+  "archive_local_transfer_SHA_bytes_passed": true,
+  "local_memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 5270446080,
+    "committedBytes": 21865365504,
+    "commitLimit": 50775060480
+  },
+  "local_available_guard_bytes": 8589934592,
+  "live_local_receiver_PID": 30540,
+  "local_extraction_or_CPU_started": false,
+  "local_delivery_complete": false,
+  "catalogues_registered": false,
+  "other_apps_closed": false,
+  "guard_bypassed": false,
+  "completed_scientific_jobs_reexecuted": false,
+  "performance_reproduction_succeeded": false,
+  "overall_goal_complete": false
+}

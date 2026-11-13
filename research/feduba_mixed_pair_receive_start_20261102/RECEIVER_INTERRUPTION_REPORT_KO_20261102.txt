@@ -1,0 +1,14 @@
+새 로컬 receiver 중단 / 시스템 종료·새시작 시간대 기록 / 재호출 없음
+R03/R02/N02/D08/D15. 저장 전달 운영 관측이며 새로운 연구 실험이나 탐지 제안이 아니다.
+
+04:21 heartbeat에서 실제생존하던 receiver30052/parent3508은04:35 heartbeat의native조회에서없었다. task는COM Ready3/LastTaskResult1073807364(0x40010004)이고실등록XMLcanonicalSHA는기존과같다. 마지막STATE/event는2026-11-02T04:28:21.87Z, sample46/elapsed690.766초의fixed memory guardwait다. 전체47개(0..46)fsync guardevent28550bytes/SHAa614b73207303f9e211f7bf4b8de6774e311dc947a31622c0a1049ee4b8d2a6e와원STATE를privateincident에동일바이트보존했다. 추출·CPU payload0이고EXTRACTION_ONCE/RECEIVE_FAILURE/RECEIVE_TERMINAL/local완료/새packet은없다. producer가쓰지않은FAILURE/terminal을소급만들지않고별도operator관측을권위중단근거로쓴다.
+
+bounded System조회에는 User321074 04:28:26.216Z, EventLog6006 04:28:33.834Z, Kernel-General13 04:28:37.742Z 뒤 Kernel-General12 04:32:39.871Z/EventLog6005 04:32:58.605Z가있었다. native OS uptime으로새부팅시각도별도기록했다. 시스템종료/새시작이같은시간대에있음은확인했으나개별receiver를누가어떤기제로종료했는지는확정하지않는다. TaskScheduler/Operational channel은원래disabled이고own-task event가없었다; 이를켜거나설정을바꾸지않았다. boundedResourceExhaustionDetector2004 조회는0건이며RAM부족이종료원인이라는증거가아니다.
+
+Microsoft MS-ERREF는0x40010004를DBG_TERMINATE_PROCESS로이름붙인다(https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). 이코드명만으로debugger첨부나종료주체를입증하지않는다. 24h deadline은11월3일04:16:51Z였고이번종료를정상적인24h timeout으로보지않는다. 원 Nov1 receiver의과거소실원인은여전히미확정이며이번시스템기록을과거원인으로소급하지않는다.
+
+원archive1530790988bytes/.part없음·원13source/실profile/17JSON·중단보고·원monitor3와V1source10/V2source11/startsource8 main·PR바이트를보존했다. SHA재전송/모델load/성능재평가/gradient재생/완료훈련·감사·export/scp/receiver·taskRun재호출0이다. DISLAB export는현재도Ready/exit0/관련process0이다. main/PRcatalogue는사전hash와같고새case없음/등록0이다. 전체원tensor/fullhistory는DISLAB/localpacket은아직없으며원대표scope를전체이력으로승격하지않는다.
+
+후속은기존source/launcher/start/taskRun을다시부르지않는다. 먼저현재RAM/commit·receipt/partial/process/task/이중등록부재를metadata만읽는다. available8GiB와commit16GiB를그대로유지하며다른앱종료/권한·정책변경/guard우회는없다. 다음수신은원전달검사·동일archive·first local extraction/672storage검사범위만의새명시계약/source·실profile를같은PR에선게시한뒤에만가능하다. 자원이충족되지않은동안새장기대기receiver나자동재시작을만들지않는다. 실제새local완료/receiverterminal exit0/process0/taskReady0/ledgerSHA·FAILURE0 전등록금지다.
+
+mixed pre CA87.94/ASR29.466666666666665, 정상86.77/24.644444444444446, 공격86.82/19.333333333333332의4성능gate실패·CA2통과는불변이다. D08공격.75848이정상.75525/.76188사이·D15공격7/정상8/unknowntriggerfamily미검증은해결하지않았다. 새탐지제안·단순변화량제안·성능성공주장은없다. 전체FedUBA성능/탐지목표와heartbeat는유지한다.

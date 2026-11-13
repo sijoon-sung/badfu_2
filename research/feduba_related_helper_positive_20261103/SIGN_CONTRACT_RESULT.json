@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "source_freeze_sha256": "1691ff30388b1444851d5a73bd566dbf893dc3a315464e6a1af63977541c0936",
+  "profile_sha256": "0666caae69ae4b52bf449f3bee658fdb2f6c4e26822eb708a7205da1dc48b36c",
+  "related_helper_sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+  "comparisons": [
+    {
+      "position": 0,
+      "selected": false,
+      "source_helper_exact": true,
+      "label_preserved": true,
+      "clip_exact": true
+    },
+    {
+      "position": 1,
+      "selected": true,
+      "source_helper_exact": true,
+      "label_preserved": true,
+      "clip_exact": true
+    },
+    {
+      "position": 2,
+      "selected": true,
+      "source_helper_exact": true,
+      "label_preserved": true,
+      "clip_exact": true
+    },
+    {
+      "position": 3,
+      "selected": true,
+      "source_helper_exact": true,
+      "label_preserved": true,
+      "clip_exact": true
+    }
+  ],
+  "related_dataset_getitems": 8,
+  "new_dataset_getitems": 4,
+  "full_helper_RNG_port": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "real_data_reads": 0,
+  "CUDA_initialized": false,
+  "threads": 1
+}

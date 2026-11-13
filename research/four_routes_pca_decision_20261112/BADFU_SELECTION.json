@@ -1,0 +1,38 @@
+{
+  "c00": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "clean_pre",
+    "post": "clean_big_post"
+  },
+  "c01": {
+    "case_id": "badfu.s20261023.normal_largest0.dislab.endpoint_20261110",
+    "purpose": "diagnostic",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c02": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "clean_pre",
+    "post": "clean_post"
+  },
+  "c03": {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "infected_benign_post"
+  },
+  "c04": {
+    "case_id": "badfu.confirmed.s20261023.v1",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "post"
+  },
+  "c05": {
+    "case_id": "badfu.paper32.s20261020",
+    "purpose": "retrain_activation",
+    "pre": "pre",
+    "post": "post"
+  }
+}

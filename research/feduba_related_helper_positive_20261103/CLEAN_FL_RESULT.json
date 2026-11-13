@@ -1,0 +1,28 @@
+{
+  "state": "completed_clean_FL20",
+  "profile": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "rounds": 20,
+  "roles": 200,
+  "local_epochs": 2000,
+  "batches": 40000,
+  "before": {
+    "path": "clean_fl/before.pt",
+    "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+    "bytes": 44770315
+  },
+  "evaluation": {
+    "N": 10000,
+    "clean_correct": 8552,
+    "CA_pct": 85.52
+  },
+  "utility_gate": true,
+  "FedUBA_attack_completed": false,
+  "remaining": [
+    "STG",
+    "SSS",
+    "BEA_attack_FU",
+    "same_ID_benign_FU",
+    "independent_full_evaluation",
+    "delivery"
+  ]
+}

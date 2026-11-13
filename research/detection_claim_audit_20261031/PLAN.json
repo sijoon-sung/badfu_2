@@ -1,0 +1,32 @@
+{
+  "id": "N02-20261031",
+  "related_cards": [
+    "R01",
+    "R02",
+    "D02",
+    "D06",
+    "D07",
+    "D08",
+    "D15",
+    "D16",
+    "D17",
+    "D18",
+    "D19",
+    "T01"
+  ],
+  "created_utc": "2026-10-30T17:19:48.706796+00:00",
+  "status": "local_frozen_before_finite_math_check",
+  "common_detector": "unvalidated_parked",
+  "cases": 2,
+  "new_training": false,
+  "frozen_files": {
+    "PROTOCOL.txt": "944b7a4e77cd4a06c5965e775bf236bb3e86929882c451ebe9712fe340003a52",
+    "verify_claims.py": "d67804d65237a76ed78c9e60aee7d83232eac195121249d8b8ffd767e5bee885",
+    "audit_sources.py": "1521f44dd0ec3bee8300e8357e95ac358f0f837e1344381d4d43822e314f9985",
+    "SOURCE_MANIFEST.json": "e3792df64d79c464bd9e4a5a427e0cbd210588e90cfa05017f14ca7249922d03",
+    "CLAIMS_AND_GATES.txt": "8ff762df41f80abdfcc4f472532abf569b2a714827d95091c1810d49ba96efa0",
+    "CODE_REVIEW.txt": "5cd6f0ffdad0cbb2c6d64cbbbb57e063dae69eef96091119f8895b7a0cc332d4",
+    "EVIDENCE.json": "b9e0ed39cded1ef90dcd20d1f3ff5b96b3378154b2251548726c15adc7721b7b"
+  },
+  "math_result": null
+}

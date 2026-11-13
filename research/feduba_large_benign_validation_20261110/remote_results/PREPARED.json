@@ -1,0 +1,94 @@
+{
+  "state": "prepared",
+  "requests": {
+    "balanced5000": {
+      "removed": 5000,
+      "fraction_of_participating25000": 0.2,
+      "fraction_of_all50000": 0.1,
+      "class_counts": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ],
+      "removed_by_owner": {
+        "2": 499,
+        "3": 522,
+        "5": 479,
+        "7": 472,
+        "9": 503,
+        "12": 500,
+        "13": 499,
+        "16": 505,
+        "18": 522,
+        "19": 499
+      },
+      "retained_by_owner": {
+        "2": 2001,
+        "3": 1978,
+        "5": 2021,
+        "7": 2028,
+        "9": 1997,
+        "12": 2000,
+        "13": 2001,
+        "16": 1995,
+        "18": 1978,
+        "19": 2001
+      },
+      "expected_batches": 16000
+    },
+    "class2_all": {
+      "removed": 2486,
+      "fraction_of_participating25000": 0.09944,
+      "fraction_of_all50000": 0.04972,
+      "class_counts": [
+        0,
+        0,
+        2486,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "removed_by_owner": {
+        "2": 263,
+        "3": 242,
+        "5": 242,
+        "7": 226,
+        "9": 266,
+        "12": 235,
+        "13": 267,
+        "16": 213,
+        "18": 274,
+        "19": 258
+      },
+      "retained_by_owner": {
+        "2": 2237,
+        "3": 2258,
+        "5": 2258,
+        "7": 2274,
+        "9": 2234,
+        "12": 2265,
+        "13": 2233,
+        "16": 2287,
+        "18": 2226,
+        "19": 2242
+      },
+      "expected_batches": 18000
+    }
+  },
+  "history_case_id": "feduba.public_fixed10.cifar10.s42.full20.history.diagnostic.20261110",
+  "checkpoint_tensor_loads": 0,
+  "image_inference": 0,
+  "GPU_training": 0,
+  "run_freeze_sha256": "ccdec50ba1a51f76410143d7042438eb4653caffe3a30e74e42369bcffc8db2f"
+}

@@ -1,0 +1,43 @@
+{
+  "state": "passed_actual_evaluation_preparation_receipt_bytes_match",
+  "files": [
+    {
+      "name": "PREPARE_ONCE.json",
+      "sha256": "77ae242313e2d9f6a2b97405856a86029251f157610f9765f1feaef0f268ed45",
+      "bytes": 62
+    },
+    {
+      "name": "PREPARE_RESULT.json",
+      "sha256": "6725796911643ebf0996ed54fc80cb7a031283cbdb12659c99c82ef4e6dd31a7",
+      "bytes": 296
+    },
+    {
+      "name": "CASE_GUARD.json",
+      "sha256": "5948431299313437ae62f3e2477b7a634bd7291b061bb9bde5a4ff969b646d90",
+      "bytes": 379
+    },
+    {
+      "name": "EVALUATION_INPUT_BINDING.json",
+      "sha256": "c2a1ceadec0017036637c886f2a4daeecf6c58f4bf54bbe7493eba2310d0d2d0",
+      "bytes": 9875
+    },
+    {
+      "name": "LAUNCH_PROFILE.json",
+      "sha256": "e7442286a06814c2e873740d257dbc6289b4038f81748de9f544991f884400a0",
+      "bytes": 619
+    },
+    {
+      "name": "RUN_FREEZE.json",
+      "sha256": "5133dd21d94929de1ab1f4ad99fa0a64d2667df4db5aa763c9c75c4b7f54ddf5",
+      "bytes": 4124
+    }
+  ],
+  "source_freeze_sha256": "8b4f33f947b68d58eba7415aaee2cbd3ba924e2d83a4930fda7a188efe00fc64",
+  "run_freeze_sha256": "5133dd21d94929de1ab1f4ad99fa0a64d2667df4db5aa763c9c75c4b7f54ddf5",
+  "evaluation_input_binding_sha256": "c2a1ceadec0017036637c886f2a4daeecf6c58f4bf54bbe7493eba2310d0d2d0",
+  "related_current_PID_count": 0,
+  "new_prepare_failure": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "actual_GPU_task_created": false
+}

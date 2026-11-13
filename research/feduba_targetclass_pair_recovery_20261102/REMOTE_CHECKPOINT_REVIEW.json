@@ -1,0 +1,35 @@
+{
+  "state": "completed_remote_actual_checkpoint_review",
+  "packet_root": "D:\\CHECKPOINTS_FOR_REVIEW\\FedUBA_s42_targetclass2_SSS125_FU20_pair_recovery_20261102",
+  "manifest_sha256": "62f30b7169c12a15aba840b11817a434231d8a2dfc3aea789920cf538371e451",
+  "manifest_bytes": 193279,
+  "hashed_files": 459,
+  "typed_payloads": 365,
+  "seal_sha256": "d371215a2ed191e1865742bac4b4614c3e93a95a8f5c4957cdc82df04bf1e179",
+  "archive": {
+    "path": "D:\\FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102\\CHECKPOINT_REVIEW.zip",
+    "bytes": 677129078,
+    "sha256": "f6438638e95b32f82e5295f17b3844849d5bd99e96d37ad51fc53aa5c750167c"
+  },
+  "local_delivery_complete": false,
+  "operational_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": -3.311111111111111,
+    "attack_minus_benign_ASR_pp": 3.8666666666666667,
+    "post_CA_drop_pp": {
+      "benign": 1.36,
+      "attack": 1.06
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "overall_goal_complete": false
+}

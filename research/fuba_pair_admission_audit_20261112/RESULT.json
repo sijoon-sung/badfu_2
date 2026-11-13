@@ -1,0 +1,2279 @@
+{
+  "state": "passed_metadata_audit",
+  "fuba": [
+    {
+      "key": "v5",
+      "case_id": "fuba.v5.s20261023.post.kd10",
+      "seed": 20261023,
+      "condition": "CIFAR-10 IBA",
+      "n": 10000,
+      "non_target": 9000,
+      "clean_floor": 80.0,
+      "before": [
+        7858,
+        2582
+      ],
+      "after_subtraction": [
+        7859,
+        2535
+      ],
+      "after": [
+        7895,
+        2558
+      ],
+      "partition_seed": null,
+      "endpoint_hashes_verified": 2,
+      "before_pass": false,
+      "after_pass": false,
+      "allowed_for_activation": false,
+      "round_count": 0,
+      "rounds_clean_ok": null,
+      "rounds_suppressed": null,
+      "rounds_both": null,
+      "rounds": []
+    },
+    {
+      "key": "v6",
+      "case_id": "fuba.v6.s20261023.pre100.post.kd10",
+      "seed": 20261023,
+      "condition": "CIFAR-10 IBA",
+      "n": 10000,
+      "non_target": 9000,
+      "clean_floor": 80.0,
+      "before": [
+        7780,
+        1153
+      ],
+      "after_subtraction": [
+        7758,
+        1469
+      ],
+      "after": [
+        7803,
+        1309
+      ],
+      "partition_seed": 20261020,
+      "endpoint_hashes_verified": 2,
+      "before_pass": false,
+      "after_pass": false,
+      "allowed_for_activation": false,
+      "round_count": 100,
+      "rounds_clean_ok": 0,
+      "rounds_suppressed": 17,
+      "rounds_both": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "clean_correct": 1002,
+          "target_successes": 0
+        },
+        {
+          "round": 2,
+          "clean_correct": 2489,
+          "target_successes": 174
+        },
+        {
+          "round": 3,
+          "clean_correct": 5340,
+          "target_successes": 373
+        },
+        {
+          "round": 4,
+          "clean_correct": 6370,
+          "target_successes": 274
+        },
+        {
+          "round": 5,
+          "clean_correct": 6649,
+          "target_successes": 192
+        },
+        {
+          "round": 6,
+          "clean_correct": 6892,
+          "target_successes": 437
+        },
+        {
+          "round": 7,
+          "clean_correct": 7069,
+          "target_successes": 380
+        },
+        {
+          "round": 8,
+          "clean_correct": 7282,
+          "target_successes": 446
+        },
+        {
+          "round": 9,
+          "clean_correct": 7298,
+          "target_successes": 822
+        },
+        {
+          "round": 10,
+          "clean_correct": 7402,
+          "target_successes": 620
+        },
+        {
+          "round": 11,
+          "clean_correct": 7386,
+          "target_successes": 422
+        },
+        {
+          "round": 12,
+          "clean_correct": 7394,
+          "target_successes": 595
+        },
+        {
+          "round": 13,
+          "clean_correct": 7448,
+          "target_successes": 1089
+        },
+        {
+          "round": 14,
+          "clean_correct": 7446,
+          "target_successes": 796
+        },
+        {
+          "round": 15,
+          "clean_correct": 7482,
+          "target_successes": 937
+        },
+        {
+          "round": 16,
+          "clean_correct": 7518,
+          "target_successes": 916
+        },
+        {
+          "round": 17,
+          "clean_correct": 7545,
+          "target_successes": 975
+        },
+        {
+          "round": 18,
+          "clean_correct": 7499,
+          "target_successes": 798
+        },
+        {
+          "round": 19,
+          "clean_correct": 7578,
+          "target_successes": 1098
+        },
+        {
+          "round": 20,
+          "clean_correct": 7584,
+          "target_successes": 1027
+        },
+        {
+          "round": 21,
+          "clean_correct": 7586,
+          "target_successes": 1035
+        },
+        {
+          "round": 22,
+          "clean_correct": 7541,
+          "target_successes": 1067
+        },
+        {
+          "round": 23,
+          "clean_correct": 7626,
+          "target_successes": 922
+        },
+        {
+          "round": 24,
+          "clean_correct": 7636,
+          "target_successes": 1035
+        },
+        {
+          "round": 25,
+          "clean_correct": 7624,
+          "target_successes": 959
+        },
+        {
+          "round": 26,
+          "clean_correct": 7596,
+          "target_successes": 1069
+        },
+        {
+          "round": 27,
+          "clean_correct": 7562,
+          "target_successes": 1078
+        },
+        {
+          "round": 28,
+          "clean_correct": 7644,
+          "target_successes": 1016
+        },
+        {
+          "round": 29,
+          "clean_correct": 7587,
+          "target_successes": 1016
+        },
+        {
+          "round": 30,
+          "clean_correct": 7619,
+          "target_successes": 1155
+        },
+        {
+          "round": 31,
+          "clean_correct": 7603,
+          "target_successes": 1007
+        },
+        {
+          "round": 32,
+          "clean_correct": 7605,
+          "target_successes": 1148
+        },
+        {
+          "round": 33,
+          "clean_correct": 7644,
+          "target_successes": 1034
+        },
+        {
+          "round": 34,
+          "clean_correct": 7565,
+          "target_successes": 1278
+        },
+        {
+          "round": 35,
+          "clean_correct": 7600,
+          "target_successes": 1184
+        },
+        {
+          "round": 36,
+          "clean_correct": 7656,
+          "target_successes": 1025
+        },
+        {
+          "round": 37,
+          "clean_correct": 7631,
+          "target_successes": 1010
+        },
+        {
+          "round": 38,
+          "clean_correct": 7678,
+          "target_successes": 1042
+        },
+        {
+          "round": 39,
+          "clean_correct": 7682,
+          "target_successes": 1045
+        },
+        {
+          "round": 40,
+          "clean_correct": 7630,
+          "target_successes": 921
+        },
+        {
+          "round": 41,
+          "clean_correct": 7682,
+          "target_successes": 1032
+        },
+        {
+          "round": 42,
+          "clean_correct": 7670,
+          "target_successes": 1093
+        },
+        {
+          "round": 43,
+          "clean_correct": 7663,
+          "target_successes": 1503
+        },
+        {
+          "round": 44,
+          "clean_correct": 7639,
+          "target_successes": 1257
+        },
+        {
+          "round": 45,
+          "clean_correct": 7668,
+          "target_successes": 989
+        },
+        {
+          "round": 46,
+          "clean_correct": 7668,
+          "target_successes": 950
+        },
+        {
+          "round": 47,
+          "clean_correct": 7709,
+          "target_successes": 1065
+        },
+        {
+          "round": 48,
+          "clean_correct": 7686,
+          "target_successes": 1289
+        },
+        {
+          "round": 49,
+          "clean_correct": 7704,
+          "target_successes": 870
+        },
+        {
+          "round": 50,
+          "clean_correct": 7668,
+          "target_successes": 1006
+        },
+        {
+          "round": 51,
+          "clean_correct": 7708,
+          "target_successes": 1023
+        },
+        {
+          "round": 52,
+          "clean_correct": 7683,
+          "target_successes": 1148
+        },
+        {
+          "round": 53,
+          "clean_correct": 7660,
+          "target_successes": 1181
+        },
+        {
+          "round": 54,
+          "clean_correct": 7709,
+          "target_successes": 1174
+        },
+        {
+          "round": 55,
+          "clean_correct": 7717,
+          "target_successes": 1230
+        },
+        {
+          "round": 56,
+          "clean_correct": 7729,
+          "target_successes": 1135
+        },
+        {
+          "round": 57,
+          "clean_correct": 7687,
+          "target_successes": 1103
+        },
+        {
+          "round": 58,
+          "clean_correct": 7721,
+          "target_successes": 1215
+        },
+        {
+          "round": 59,
+          "clean_correct": 7702,
+          "target_successes": 1036
+        },
+        {
+          "round": 60,
+          "clean_correct": 7697,
+          "target_successes": 1084
+        },
+        {
+          "round": 61,
+          "clean_correct": 7688,
+          "target_successes": 1051
+        },
+        {
+          "round": 62,
+          "clean_correct": 7681,
+          "target_successes": 1063
+        },
+        {
+          "round": 63,
+          "clean_correct": 7717,
+          "target_successes": 928
+        },
+        {
+          "round": 64,
+          "clean_correct": 7700,
+          "target_successes": 1021
+        },
+        {
+          "round": 65,
+          "clean_correct": 7688,
+          "target_successes": 1276
+        },
+        {
+          "round": 66,
+          "clean_correct": 7697,
+          "target_successes": 1120
+        },
+        {
+          "round": 67,
+          "clean_correct": 7701,
+          "target_successes": 1106
+        },
+        {
+          "round": 68,
+          "clean_correct": 7711,
+          "target_successes": 1051
+        },
+        {
+          "round": 69,
+          "clean_correct": 7664,
+          "target_successes": 953
+        },
+        {
+          "round": 70,
+          "clean_correct": 7686,
+          "target_successes": 805
+        },
+        {
+          "round": 71,
+          "clean_correct": 7708,
+          "target_successes": 1037
+        },
+        {
+          "round": 72,
+          "clean_correct": 7737,
+          "target_successes": 1176
+        },
+        {
+          "round": 73,
+          "clean_correct": 7734,
+          "target_successes": 954
+        },
+        {
+          "round": 74,
+          "clean_correct": 7703,
+          "target_successes": 1038
+        },
+        {
+          "round": 75,
+          "clean_correct": 7768,
+          "target_successes": 1001
+        },
+        {
+          "round": 76,
+          "clean_correct": 7768,
+          "target_successes": 989
+        },
+        {
+          "round": 77,
+          "clean_correct": 7740,
+          "target_successes": 1095
+        },
+        {
+          "round": 78,
+          "clean_correct": 7722,
+          "target_successes": 1363
+        },
+        {
+          "round": 79,
+          "clean_correct": 7700,
+          "target_successes": 1150
+        },
+        {
+          "round": 80,
+          "clean_correct": 7735,
+          "target_successes": 1086
+        },
+        {
+          "round": 81,
+          "clean_correct": 7713,
+          "target_successes": 1054
+        },
+        {
+          "round": 82,
+          "clean_correct": 7684,
+          "target_successes": 1122
+        },
+        {
+          "round": 83,
+          "clean_correct": 7665,
+          "target_successes": 1061
+        },
+        {
+          "round": 84,
+          "clean_correct": 7673,
+          "target_successes": 1117
+        },
+        {
+          "round": 85,
+          "clean_correct": 7696,
+          "target_successes": 1143
+        },
+        {
+          "round": 86,
+          "clean_correct": 7725,
+          "target_successes": 1128
+        },
+        {
+          "round": 87,
+          "clean_correct": 7781,
+          "target_successes": 1164
+        },
+        {
+          "round": 88,
+          "clean_correct": 7784,
+          "target_successes": 933
+        },
+        {
+          "round": 89,
+          "clean_correct": 7734,
+          "target_successes": 1139
+        },
+        {
+          "round": 90,
+          "clean_correct": 7761,
+          "target_successes": 1230
+        },
+        {
+          "round": 91,
+          "clean_correct": 7764,
+          "target_successes": 1078
+        },
+        {
+          "round": 92,
+          "clean_correct": 7726,
+          "target_successes": 1085
+        },
+        {
+          "round": 93,
+          "clean_correct": 7730,
+          "target_successes": 675
+        },
+        {
+          "round": 94,
+          "clean_correct": 7767,
+          "target_successes": 916
+        },
+        {
+          "round": 95,
+          "clean_correct": 7713,
+          "target_successes": 1177
+        },
+        {
+          "round": 96,
+          "clean_correct": 7716,
+          "target_successes": 1127
+        },
+        {
+          "round": 97,
+          "clean_correct": 7756,
+          "target_successes": 949
+        },
+        {
+          "round": 98,
+          "clean_correct": 7777,
+          "target_successes": 1034
+        },
+        {
+          "round": 99,
+          "clean_correct": 7782,
+          "target_successes": 1003
+        },
+        {
+          "round": 100,
+          "clean_correct": 7780,
+          "target_successes": 1153
+        }
+      ]
+    },
+    {
+      "key": "v7",
+      "case_id": "fuba.v7.s20261023.pre100.post.kd10",
+      "seed": 20261023,
+      "condition": "CIFAR-10 IBA",
+      "n": 10000,
+      "non_target": 9000,
+      "clean_floor": 80.0,
+      "before": [
+        7776,
+        950
+      ],
+      "after_subtraction": [
+        7752,
+        1302
+      ],
+      "after": [
+        7776,
+        1507
+      ],
+      "partition_seed": 20261020,
+      "endpoint_hashes_verified": 2,
+      "before_pass": false,
+      "after_pass": false,
+      "allowed_for_activation": false,
+      "round_count": 100,
+      "rounds_clean_ok": 0,
+      "rounds_suppressed": 81,
+      "rounds_both": 0,
+      "rounds": [
+        {
+          "round": 1,
+          "clean_correct": 1001,
+          "target_successes": 0
+        },
+        {
+          "round": 2,
+          "clean_correct": 2833,
+          "target_successes": 346
+        },
+        {
+          "round": 3,
+          "clean_correct": 5314,
+          "target_successes": 396
+        },
+        {
+          "round": 4,
+          "clean_correct": 6479,
+          "target_successes": 305
+        },
+        {
+          "round": 5,
+          "clean_correct": 6598,
+          "target_successes": 206
+        },
+        {
+          "round": 6,
+          "clean_correct": 6911,
+          "target_successes": 583
+        },
+        {
+          "round": 7,
+          "clean_correct": 7197,
+          "target_successes": 753
+        },
+        {
+          "round": 8,
+          "clean_correct": 7242,
+          "target_successes": 650
+        },
+        {
+          "round": 9,
+          "clean_correct": 7338,
+          "target_successes": 504
+        },
+        {
+          "round": 10,
+          "clean_correct": 7419,
+          "target_successes": 565
+        },
+        {
+          "round": 11,
+          "clean_correct": 7344,
+          "target_successes": 686
+        },
+        {
+          "round": 12,
+          "clean_correct": 7432,
+          "target_successes": 703
+        },
+        {
+          "round": 13,
+          "clean_correct": 7455,
+          "target_successes": 693
+        },
+        {
+          "round": 14,
+          "clean_correct": 7459,
+          "target_successes": 649
+        },
+        {
+          "round": 15,
+          "clean_correct": 7528,
+          "target_successes": 734
+        },
+        {
+          "round": 16,
+          "clean_correct": 7569,
+          "target_successes": 728
+        },
+        {
+          "round": 17,
+          "clean_correct": 7620,
+          "target_successes": 624
+        },
+        {
+          "round": 18,
+          "clean_correct": 7476,
+          "target_successes": 980
+        },
+        {
+          "round": 19,
+          "clean_correct": 7571,
+          "target_successes": 278
+        },
+        {
+          "round": 20,
+          "clean_correct": 7623,
+          "target_successes": 514
+        },
+        {
+          "round": 21,
+          "clean_correct": 7675,
+          "target_successes": 1027
+        },
+        {
+          "round": 22,
+          "clean_correct": 7654,
+          "target_successes": 1217
+        },
+        {
+          "round": 23,
+          "clean_correct": 7552,
+          "target_successes": 329
+        },
+        {
+          "round": 24,
+          "clean_correct": 7712,
+          "target_successes": 932
+        },
+        {
+          "round": 25,
+          "clean_correct": 7692,
+          "target_successes": 562
+        },
+        {
+          "round": 26,
+          "clean_correct": 7678,
+          "target_successes": 857
+        },
+        {
+          "round": 27,
+          "clean_correct": 7661,
+          "target_successes": 688
+        },
+        {
+          "round": 28,
+          "clean_correct": 7716,
+          "target_successes": 452
+        },
+        {
+          "round": 29,
+          "clean_correct": 7698,
+          "target_successes": 426
+        },
+        {
+          "round": 30,
+          "clean_correct": 7651,
+          "target_successes": 822
+        },
+        {
+          "round": 31,
+          "clean_correct": 7684,
+          "target_successes": 1045
+        },
+        {
+          "round": 32,
+          "clean_correct": 7681,
+          "target_successes": 730
+        },
+        {
+          "round": 33,
+          "clean_correct": 7706,
+          "target_successes": 864
+        },
+        {
+          "round": 34,
+          "clean_correct": 7714,
+          "target_successes": 979
+        },
+        {
+          "round": 35,
+          "clean_correct": 7710,
+          "target_successes": 668
+        },
+        {
+          "round": 36,
+          "clean_correct": 7760,
+          "target_successes": 1047
+        },
+        {
+          "round": 37,
+          "clean_correct": 7690,
+          "target_successes": 545
+        },
+        {
+          "round": 38,
+          "clean_correct": 7731,
+          "target_successes": 574
+        },
+        {
+          "round": 39,
+          "clean_correct": 7738,
+          "target_successes": 696
+        },
+        {
+          "round": 40,
+          "clean_correct": 7736,
+          "target_successes": 904
+        },
+        {
+          "round": 41,
+          "clean_correct": 7775,
+          "target_successes": 902
+        },
+        {
+          "round": 42,
+          "clean_correct": 7699,
+          "target_successes": 535
+        },
+        {
+          "round": 43,
+          "clean_correct": 7646,
+          "target_successes": 410
+        },
+        {
+          "round": 44,
+          "clean_correct": 7668,
+          "target_successes": 541
+        },
+        {
+          "round": 45,
+          "clean_correct": 7689,
+          "target_successes": 568
+        },
+        {
+          "round": 46,
+          "clean_correct": 7691,
+          "target_successes": 543
+        },
+        {
+          "round": 47,
+          "clean_correct": 7736,
+          "target_successes": 1538
+        },
+        {
+          "round": 48,
+          "clean_correct": 7740,
+          "target_successes": 696
+        },
+        {
+          "round": 49,
+          "clean_correct": 7751,
+          "target_successes": 573
+        },
+        {
+          "round": 50,
+          "clean_correct": 7759,
+          "target_successes": 884
+        },
+        {
+          "round": 51,
+          "clean_correct": 7750,
+          "target_successes": 886
+        },
+        {
+          "round": 52,
+          "clean_correct": 7700,
+          "target_successes": 860
+        },
+        {
+          "round": 53,
+          "clean_correct": 7708,
+          "target_successes": 724
+        },
+        {
+          "round": 54,
+          "clean_correct": 7757,
+          "target_successes": 820
+        },
+        {
+          "round": 55,
+          "clean_correct": 7683,
+          "target_successes": 348
+        },
+        {
+          "round": 56,
+          "clean_correct": 7761,
+          "target_successes": 607
+        },
+        {
+          "round": 57,
+          "clean_correct": 7707,
+          "target_successes": 1170
+        },
+        {
+          "round": 58,
+          "clean_correct": 7694,
+          "target_successes": 801
+        },
+        {
+          "round": 59,
+          "clean_correct": 7729,
+          "target_successes": 638
+        },
+        {
+          "round": 60,
+          "clean_correct": 7777,
+          "target_successes": 959
+        },
+        {
+          "round": 61,
+          "clean_correct": 7756,
+          "target_successes": 841
+        },
+        {
+          "round": 62,
+          "clean_correct": 7747,
+          "target_successes": 687
+        },
+        {
+          "round": 63,
+          "clean_correct": 7729,
+          "target_successes": 734
+        },
+        {
+          "round": 64,
+          "clean_correct": 7660,
+          "target_successes": 345
+        },
+        {
+          "round": 65,
+          "clean_correct": 7675,
+          "target_successes": 577
+        },
+        {
+          "round": 66,
+          "clean_correct": 7752,
+          "target_successes": 868
+        },
+        {
+          "round": 67,
+          "clean_correct": 7732,
+          "target_successes": 1409
+        },
+        {
+          "round": 68,
+          "clean_correct": 7734,
+          "target_successes": 859
+        },
+        {
+          "round": 69,
+          "clean_correct": 7712,
+          "target_successes": 591
+        },
+        {
+          "round": 70,
+          "clean_correct": 7647,
+          "target_successes": 439
+        },
+        {
+          "round": 71,
+          "clean_correct": 7661,
+          "target_successes": 370
+        },
+        {
+          "round": 72,
+          "clean_correct": 7741,
+          "target_successes": 819
+        },
+        {
+          "round": 73,
+          "clean_correct": 7731,
+          "target_successes": 654
+        },
+        {
+          "round": 74,
+          "clean_correct": 7749,
+          "target_successes": 1197
+        },
+        {
+          "round": 75,
+          "clean_correct": 7675,
+          "target_successes": 380
+        },
+        {
+          "round": 76,
+          "clean_correct": 7736,
+          "target_successes": 623
+        },
+        {
+          "round": 77,
+          "clean_correct": 7760,
+          "target_successes": 906
+        },
+        {
+          "round": 78,
+          "clean_correct": 7708,
+          "target_successes": 603
+        },
+        {
+          "round": 79,
+          "clean_correct": 7784,
+          "target_successes": 975
+        },
+        {
+          "round": 80,
+          "clean_correct": 7714,
+          "target_successes": 404
+        },
+        {
+          "round": 81,
+          "clean_correct": 7755,
+          "target_successes": 702
+        },
+        {
+          "round": 82,
+          "clean_correct": 7758,
+          "target_successes": 850
+        },
+        {
+          "round": 83,
+          "clean_correct": 7727,
+          "target_successes": 856
+        },
+        {
+          "round": 84,
+          "clean_correct": 7697,
+          "target_successes": 703
+        },
+        {
+          "round": 85,
+          "clean_correct": 7723,
+          "target_successes": 816
+        },
+        {
+          "round": 86,
+          "clean_correct": 7723,
+          "target_successes": 458
+        },
+        {
+          "round": 87,
+          "clean_correct": 7757,
+          "target_successes": 569
+        },
+        {
+          "round": 88,
+          "clean_correct": 7745,
+          "target_successes": 693
+        },
+        {
+          "round": 89,
+          "clean_correct": 7809,
+          "target_successes": 840
+        },
+        {
+          "round": 90,
+          "clean_correct": 7740,
+          "target_successes": 877
+        },
+        {
+          "round": 91,
+          "clean_correct": 7750,
+          "target_successes": 600
+        },
+        {
+          "round": 92,
+          "clean_correct": 7706,
+          "target_successes": 451
+        },
+        {
+          "round": 93,
+          "clean_correct": 7711,
+          "target_successes": 676
+        },
+        {
+          "round": 94,
+          "clean_correct": 7735,
+          "target_successes": 981
+        },
+        {
+          "round": 95,
+          "clean_correct": 7763,
+          "target_successes": 650
+        },
+        {
+          "round": 96,
+          "clean_correct": 7755,
+          "target_successes": 1164
+        },
+        {
+          "round": 97,
+          "clean_correct": 7701,
+          "target_successes": 402
+        },
+        {
+          "round": 98,
+          "clean_correct": 7748,
+          "target_successes": 853
+        },
+        {
+          "round": 99,
+          "clean_correct": 7708,
+          "target_successes": 562
+        },
+        {
+          "round": 100,
+          "clean_correct": 7776,
+          "target_successes": 950
+        }
+      ]
+    },
+    {
+      "key": "mnist_original",
+      "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+      "seed": 20261023,
+      "condition": "MNIST DBA",
+      "n": 10000,
+      "non_target": 9026,
+      "clean_floor": 97.0,
+      "before": [
+        9911,
+        2762
+      ],
+      "after_subtraction": null,
+      "after": [
+        9908,
+        2920
+      ],
+      "partition_seed": 20261020,
+      "endpoint_hashes_verified": 2,
+      "before_pass": false,
+      "after_pass": false,
+      "allowed_for_activation": false,
+      "round_count": 100,
+      "rounds_clean_ok": 99,
+      "rounds_suppressed": 33,
+      "rounds_both": 32,
+      "rounds": [
+        {
+          "round": 1,
+          "clean_correct": 9474,
+          "target_successes": 11
+        },
+        {
+          "round": 2,
+          "clean_correct": 9800,
+          "target_successes": 16
+        },
+        {
+          "round": 3,
+          "clean_correct": 9824,
+          "target_successes": 12
+        },
+        {
+          "round": 4,
+          "clean_correct": 9848,
+          "target_successes": 12
+        },
+        {
+          "round": 5,
+          "clean_correct": 9853,
+          "target_successes": 13
+        },
+        {
+          "round": 6,
+          "clean_correct": 9867,
+          "target_successes": 10
+        },
+        {
+          "round": 7,
+          "clean_correct": 9869,
+          "target_successes": 11
+        },
+        {
+          "round": 8,
+          "clean_correct": 9872,
+          "target_successes": 10
+        },
+        {
+          "round": 9,
+          "clean_correct": 9865,
+          "target_successes": 10
+        },
+        {
+          "round": 10,
+          "clean_correct": 9874,
+          "target_successes": 15
+        },
+        {
+          "round": 11,
+          "clean_correct": 9878,
+          "target_successes": 11
+        },
+        {
+          "round": 12,
+          "clean_correct": 9872,
+          "target_successes": 12
+        },
+        {
+          "round": 13,
+          "clean_correct": 9873,
+          "target_successes": 33
+        },
+        {
+          "round": 14,
+          "clean_correct": 9887,
+          "target_successes": 28
+        },
+        {
+          "round": 15,
+          "clean_correct": 9889,
+          "target_successes": 32
+        },
+        {
+          "round": 16,
+          "clean_correct": 9888,
+          "target_successes": 34
+        },
+        {
+          "round": 17,
+          "clean_correct": 9891,
+          "target_successes": 38
+        },
+        {
+          "round": 18,
+          "clean_correct": 9886,
+          "target_successes": 25
+        },
+        {
+          "round": 19,
+          "clean_correct": 9883,
+          "target_successes": 145
+        },
+        {
+          "round": 20,
+          "clean_correct": 9893,
+          "target_successes": 395
+        },
+        {
+          "round": 21,
+          "clean_correct": 9893,
+          "target_successes": 127
+        },
+        {
+          "round": 22,
+          "clean_correct": 9890,
+          "target_successes": 35
+        },
+        {
+          "round": 23,
+          "clean_correct": 9888,
+          "target_successes": 958
+        },
+        {
+          "round": 24,
+          "clean_correct": 9887,
+          "target_successes": 260
+        },
+        {
+          "round": 25,
+          "clean_correct": 9893,
+          "target_successes": 428
+        },
+        {
+          "round": 26,
+          "clean_correct": 9890,
+          "target_successes": 257
+        },
+        {
+          "round": 27,
+          "clean_correct": 9888,
+          "target_successes": 359
+        },
+        {
+          "round": 28,
+          "clean_correct": 9894,
+          "target_successes": 1626
+        },
+        {
+          "round": 29,
+          "clean_correct": 9895,
+          "target_successes": 2069
+        },
+        {
+          "round": 30,
+          "clean_correct": 9901,
+          "target_successes": 671
+        },
+        {
+          "round": 31,
+          "clean_correct": 9896,
+          "target_successes": 576
+        },
+        {
+          "round": 32,
+          "clean_correct": 9898,
+          "target_successes": 1008
+        },
+        {
+          "round": 33,
+          "clean_correct": 9897,
+          "target_successes": 657
+        },
+        {
+          "round": 34,
+          "clean_correct": 9895,
+          "target_successes": 681
+        },
+        {
+          "round": 35,
+          "clean_correct": 9900,
+          "target_successes": 1377
+        },
+        {
+          "round": 36,
+          "clean_correct": 9903,
+          "target_successes": 631
+        },
+        {
+          "round": 37,
+          "clean_correct": 9905,
+          "target_successes": 1463
+        },
+        {
+          "round": 38,
+          "clean_correct": 9903,
+          "target_successes": 1495
+        },
+        {
+          "round": 39,
+          "clean_correct": 9908,
+          "target_successes": 1791
+        },
+        {
+          "round": 40,
+          "clean_correct": 9911,
+          "target_successes": 921
+        },
+        {
+          "round": 41,
+          "clean_correct": 9912,
+          "target_successes": 891
+        },
+        {
+          "round": 42,
+          "clean_correct": 9903,
+          "target_successes": 1594
+        },
+        {
+          "round": 43,
+          "clean_correct": 9897,
+          "target_successes": 4348
+        },
+        {
+          "round": 44,
+          "clean_correct": 9904,
+          "target_successes": 2787
+        },
+        {
+          "round": 45,
+          "clean_correct": 9905,
+          "target_successes": 2414
+        },
+        {
+          "round": 46,
+          "clean_correct": 9906,
+          "target_successes": 1909
+        },
+        {
+          "round": 47,
+          "clean_correct": 9905,
+          "target_successes": 555
+        },
+        {
+          "round": 48,
+          "clean_correct": 9907,
+          "target_successes": 1894
+        },
+        {
+          "round": 49,
+          "clean_correct": 9902,
+          "target_successes": 4537
+        },
+        {
+          "round": 50,
+          "clean_correct": 9905,
+          "target_successes": 2269
+        },
+        {
+          "round": 51,
+          "clean_correct": 9913,
+          "target_successes": 1346
+        },
+        {
+          "round": 52,
+          "clean_correct": 9901,
+          "target_successes": 1016
+        },
+        {
+          "round": 53,
+          "clean_correct": 9903,
+          "target_successes": 920
+        },
+        {
+          "round": 54,
+          "clean_correct": 9900,
+          "target_successes": 1373
+        },
+        {
+          "round": 55,
+          "clean_correct": 9901,
+          "target_successes": 4302
+        },
+        {
+          "round": 56,
+          "clean_correct": 9905,
+          "target_successes": 3026
+        },
+        {
+          "round": 57,
+          "clean_correct": 9902,
+          "target_successes": 1285
+        },
+        {
+          "round": 58,
+          "clean_correct": 9906,
+          "target_successes": 1659
+        },
+        {
+          "round": 59,
+          "clean_correct": 9901,
+          "target_successes": 2056
+        },
+        {
+          "round": 60,
+          "clean_correct": 9905,
+          "target_successes": 1390
+        },
+        {
+          "round": 61,
+          "clean_correct": 9908,
+          "target_successes": 914
+        },
+        {
+          "round": 62,
+          "clean_correct": 9910,
+          "target_successes": 1231
+        },
+        {
+          "round": 63,
+          "clean_correct": 9906,
+          "target_successes": 1127
+        },
+        {
+          "round": 64,
+          "clean_correct": 9900,
+          "target_successes": 3502
+        },
+        {
+          "round": 65,
+          "clean_correct": 9905,
+          "target_successes": 2898
+        },
+        {
+          "round": 66,
+          "clean_correct": 9906,
+          "target_successes": 1904
+        },
+        {
+          "round": 67,
+          "clean_correct": 9907,
+          "target_successes": 1129
+        },
+        {
+          "round": 68,
+          "clean_correct": 9914,
+          "target_successes": 2412
+        },
+        {
+          "round": 69,
+          "clean_correct": 9910,
+          "target_successes": 2313
+        },
+        {
+          "round": 70,
+          "clean_correct": 9896,
+          "target_successes": 4557
+        },
+        {
+          "round": 71,
+          "clean_correct": 9898,
+          "target_successes": 4587
+        },
+        {
+          "round": 72,
+          "clean_correct": 9905,
+          "target_successes": 2647
+        },
+        {
+          "round": 73,
+          "clean_correct": 9904,
+          "target_successes": 3806
+        },
+        {
+          "round": 74,
+          "clean_correct": 9911,
+          "target_successes": 1982
+        },
+        {
+          "round": 75,
+          "clean_correct": 9900,
+          "target_successes": 4558
+        },
+        {
+          "round": 76,
+          "clean_correct": 9902,
+          "target_successes": 4629
+        },
+        {
+          "round": 77,
+          "clean_correct": 9906,
+          "target_successes": 2025
+        },
+        {
+          "round": 78,
+          "clean_correct": 9901,
+          "target_successes": 4074
+        },
+        {
+          "round": 79,
+          "clean_correct": 9910,
+          "target_successes": 2528
+        },
+        {
+          "round": 80,
+          "clean_correct": 9904,
+          "target_successes": 4816
+        },
+        {
+          "round": 81,
+          "clean_correct": 9908,
+          "target_successes": 3354
+        },
+        {
+          "round": 82,
+          "clean_correct": 9905,
+          "target_successes": 1897
+        },
+        {
+          "round": 83,
+          "clean_correct": 9910,
+          "target_successes": 2995
+        },
+        {
+          "round": 84,
+          "clean_correct": 9908,
+          "target_successes": 3101
+        },
+        {
+          "round": 85,
+          "clean_correct": 9910,
+          "target_successes": 1725
+        },
+        {
+          "round": 86,
+          "clean_correct": 9903,
+          "target_successes": 4854
+        },
+        {
+          "round": 87,
+          "clean_correct": 9913,
+          "target_successes": 3129
+        },
+        {
+          "round": 88,
+          "clean_correct": 9913,
+          "target_successes": 2361
+        },
+        {
+          "round": 89,
+          "clean_correct": 9907,
+          "target_successes": 2431
+        },
+        {
+          "round": 90,
+          "clean_correct": 9905,
+          "target_successes": 2174
+        },
+        {
+          "round": 91,
+          "clean_correct": 9914,
+          "target_successes": 3800
+        },
+        {
+          "round": 92,
+          "clean_correct": 9906,
+          "target_successes": 4986
+        },
+        {
+          "round": 93,
+          "clean_correct": 9909,
+          "target_successes": 3150
+        },
+        {
+          "round": 94,
+          "clean_correct": 9914,
+          "target_successes": 3043
+        },
+        {
+          "round": 95,
+          "clean_correct": 9906,
+          "target_successes": 3578
+        },
+        {
+          "round": 96,
+          "clean_correct": 9901,
+          "target_successes": 1938
+        },
+        {
+          "round": 97,
+          "clean_correct": 9903,
+          "target_successes": 4949
+        },
+        {
+          "round": 98,
+          "clean_correct": 9901,
+          "target_successes": 3189
+        },
+        {
+          "round": 99,
+          "clean_correct": 9907,
+          "target_successes": 3340
+        },
+        {
+          "round": 100,
+          "clean_correct": 9911,
+          "target_successes": 2762
+        }
+      ]
+    },
+    {
+      "key": "mnist_second",
+      "case_id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+      "seed": 5129832,
+      "condition": "MNIST DBA",
+      "n": 10000,
+      "non_target": 9026,
+      "clean_floor": 97.0,
+      "before": [
+        9912,
+        2076
+      ],
+      "after_subtraction": null,
+      "after": [
+        9915,
+        2619
+      ],
+      "partition_seed": 5129829,
+      "endpoint_hashes_verified": 2,
+      "before_pass": false,
+      "after_pass": false,
+      "allowed_for_activation": false,
+      "round_count": 100,
+      "rounds_clean_ok": 99,
+      "rounds_suppressed": 33,
+      "rounds_both": 32,
+      "rounds": [
+        {
+          "round": 1,
+          "clean_correct": 9576,
+          "target_successes": 18
+        },
+        {
+          "round": 2,
+          "clean_correct": 9802,
+          "target_successes": 17
+        },
+        {
+          "round": 3,
+          "clean_correct": 9832,
+          "target_successes": 16
+        },
+        {
+          "round": 4,
+          "clean_correct": 9853,
+          "target_successes": 12
+        },
+        {
+          "round": 5,
+          "clean_correct": 9859,
+          "target_successes": 17
+        },
+        {
+          "round": 6,
+          "clean_correct": 9873,
+          "target_successes": 19
+        },
+        {
+          "round": 7,
+          "clean_correct": 9874,
+          "target_successes": 55
+        },
+        {
+          "round": 8,
+          "clean_correct": 9852,
+          "target_successes": 709
+        },
+        {
+          "round": 9,
+          "clean_correct": 9879,
+          "target_successes": 226
+        },
+        {
+          "round": 10,
+          "clean_correct": 9881,
+          "target_successes": 324
+        },
+        {
+          "round": 11,
+          "clean_correct": 9882,
+          "target_successes": 473
+        },
+        {
+          "round": 12,
+          "clean_correct": 9886,
+          "target_successes": 52
+        },
+        {
+          "round": 13,
+          "clean_correct": 9877,
+          "target_successes": 1341
+        },
+        {
+          "round": 14,
+          "clean_correct": 9881,
+          "target_successes": 566
+        },
+        {
+          "round": 15,
+          "clean_correct": 9889,
+          "target_successes": 618
+        },
+        {
+          "round": 16,
+          "clean_correct": 9894,
+          "target_successes": 292
+        },
+        {
+          "round": 17,
+          "clean_correct": 9892,
+          "target_successes": 760
+        },
+        {
+          "round": 18,
+          "clean_correct": 9895,
+          "target_successes": 208
+        },
+        {
+          "round": 19,
+          "clean_correct": 9893,
+          "target_successes": 604
+        },
+        {
+          "round": 20,
+          "clean_correct": 9892,
+          "target_successes": 347
+        },
+        {
+          "round": 21,
+          "clean_correct": 9890,
+          "target_successes": 668
+        },
+        {
+          "round": 22,
+          "clean_correct": 9893,
+          "target_successes": 394
+        },
+        {
+          "round": 23,
+          "clean_correct": 9900,
+          "target_successes": 451
+        },
+        {
+          "round": 24,
+          "clean_correct": 9895,
+          "target_successes": 671
+        },
+        {
+          "round": 25,
+          "clean_correct": 9907,
+          "target_successes": 497
+        },
+        {
+          "round": 26,
+          "clean_correct": 9904,
+          "target_successes": 689
+        },
+        {
+          "round": 27,
+          "clean_correct": 9891,
+          "target_successes": 2285
+        },
+        {
+          "round": 28,
+          "clean_correct": 9903,
+          "target_successes": 591
+        },
+        {
+          "round": 29,
+          "clean_correct": 9898,
+          "target_successes": 2597
+        },
+        {
+          "round": 30,
+          "clean_correct": 9909,
+          "target_successes": 855
+        },
+        {
+          "round": 31,
+          "clean_correct": 9905,
+          "target_successes": 2769
+        },
+        {
+          "round": 32,
+          "clean_correct": 9898,
+          "target_successes": 2493
+        },
+        {
+          "round": 33,
+          "clean_correct": 9902,
+          "target_successes": 2700
+        },
+        {
+          "round": 34,
+          "clean_correct": 9913,
+          "target_successes": 894
+        },
+        {
+          "round": 35,
+          "clean_correct": 9907,
+          "target_successes": 1464
+        },
+        {
+          "round": 36,
+          "clean_correct": 9913,
+          "target_successes": 1352
+        },
+        {
+          "round": 37,
+          "clean_correct": 9912,
+          "target_successes": 1499
+        },
+        {
+          "round": 38,
+          "clean_correct": 9914,
+          "target_successes": 874
+        },
+        {
+          "round": 39,
+          "clean_correct": 9912,
+          "target_successes": 734
+        },
+        {
+          "round": 40,
+          "clean_correct": 9910,
+          "target_successes": 1550
+        },
+        {
+          "round": 41,
+          "clean_correct": 9907,
+          "target_successes": 1698
+        },
+        {
+          "round": 42,
+          "clean_correct": 9899,
+          "target_successes": 3265
+        },
+        {
+          "round": 43,
+          "clean_correct": 9910,
+          "target_successes": 2207
+        },
+        {
+          "round": 44,
+          "clean_correct": 9908,
+          "target_successes": 2586
+        },
+        {
+          "round": 45,
+          "clean_correct": 9896,
+          "target_successes": 2366
+        },
+        {
+          "round": 46,
+          "clean_correct": 9906,
+          "target_successes": 1363
+        },
+        {
+          "round": 47,
+          "clean_correct": 9903,
+          "target_successes": 1649
+        },
+        {
+          "round": 48,
+          "clean_correct": 9912,
+          "target_successes": 1908
+        },
+        {
+          "round": 49,
+          "clean_correct": 9908,
+          "target_successes": 1924
+        },
+        {
+          "round": 50,
+          "clean_correct": 9909,
+          "target_successes": 2546
+        },
+        {
+          "round": 51,
+          "clean_correct": 9905,
+          "target_successes": 1093
+        },
+        {
+          "round": 52,
+          "clean_correct": 9914,
+          "target_successes": 1161
+        },
+        {
+          "round": 53,
+          "clean_correct": 9910,
+          "target_successes": 1745
+        },
+        {
+          "round": 54,
+          "clean_correct": 9914,
+          "target_successes": 1860
+        },
+        {
+          "round": 55,
+          "clean_correct": 9915,
+          "target_successes": 1508
+        },
+        {
+          "round": 56,
+          "clean_correct": 9912,
+          "target_successes": 832
+        },
+        {
+          "round": 57,
+          "clean_correct": 9915,
+          "target_successes": 896
+        },
+        {
+          "round": 58,
+          "clean_correct": 9916,
+          "target_successes": 1882
+        },
+        {
+          "round": 59,
+          "clean_correct": 9915,
+          "target_successes": 2542
+        },
+        {
+          "round": 60,
+          "clean_correct": 9921,
+          "target_successes": 1083
+        },
+        {
+          "round": 61,
+          "clean_correct": 9920,
+          "target_successes": 4052
+        },
+        {
+          "round": 62,
+          "clean_correct": 9915,
+          "target_successes": 1264
+        },
+        {
+          "round": 63,
+          "clean_correct": 9918,
+          "target_successes": 2924
+        },
+        {
+          "round": 64,
+          "clean_correct": 9914,
+          "target_successes": 2421
+        },
+        {
+          "round": 65,
+          "clean_correct": 9916,
+          "target_successes": 1865
+        },
+        {
+          "round": 66,
+          "clean_correct": 9916,
+          "target_successes": 2084
+        },
+        {
+          "round": 67,
+          "clean_correct": 9917,
+          "target_successes": 1867
+        },
+        {
+          "round": 68,
+          "clean_correct": 9911,
+          "target_successes": 4901
+        },
+        {
+          "round": 69,
+          "clean_correct": 9909,
+          "target_successes": 4440
+        },
+        {
+          "round": 70,
+          "clean_correct": 9916,
+          "target_successes": 2214
+        },
+        {
+          "round": 71,
+          "clean_correct": 9914,
+          "target_successes": 3580
+        },
+        {
+          "round": 72,
+          "clean_correct": 9912,
+          "target_successes": 2615
+        },
+        {
+          "round": 73,
+          "clean_correct": 9906,
+          "target_successes": 1326
+        },
+        {
+          "round": 74,
+          "clean_correct": 9913,
+          "target_successes": 969
+        },
+        {
+          "round": 75,
+          "clean_correct": 9916,
+          "target_successes": 2118
+        },
+        {
+          "round": 76,
+          "clean_correct": 9917,
+          "target_successes": 1094
+        },
+        {
+          "round": 77,
+          "clean_correct": 9912,
+          "target_successes": 3796
+        },
+        {
+          "round": 78,
+          "clean_correct": 9915,
+          "target_successes": 1951
+        },
+        {
+          "round": 79,
+          "clean_correct": 9915,
+          "target_successes": 2806
+        },
+        {
+          "round": 80,
+          "clean_correct": 9914,
+          "target_successes": 1558
+        },
+        {
+          "round": 81,
+          "clean_correct": 9914,
+          "target_successes": 3133
+        },
+        {
+          "round": 82,
+          "clean_correct": 9918,
+          "target_successes": 2091
+        },
+        {
+          "round": 83,
+          "clean_correct": 9915,
+          "target_successes": 2004
+        },
+        {
+          "round": 84,
+          "clean_correct": 9909,
+          "target_successes": 1164
+        },
+        {
+          "round": 85,
+          "clean_correct": 9911,
+          "target_successes": 826
+        },
+        {
+          "round": 86,
+          "clean_correct": 9918,
+          "target_successes": 937
+        },
+        {
+          "round": 87,
+          "clean_correct": 9913,
+          "target_successes": 1505
+        },
+        {
+          "round": 88,
+          "clean_correct": 9911,
+          "target_successes": 3777
+        },
+        {
+          "round": 89,
+          "clean_correct": 9924,
+          "target_successes": 3816
+        },
+        {
+          "round": 90,
+          "clean_correct": 9913,
+          "target_successes": 3335
+        },
+        {
+          "round": 91,
+          "clean_correct": 9911,
+          "target_successes": 2566
+        },
+        {
+          "round": 92,
+          "clean_correct": 9917,
+          "target_successes": 2781
+        },
+        {
+          "round": 93,
+          "clean_correct": 9919,
+          "target_successes": 3751
+        },
+        {
+          "round": 94,
+          "clean_correct": 9917,
+          "target_successes": 2381
+        },
+        {
+          "round": 95,
+          "clean_correct": 9906,
+          "target_successes": 4087
+        },
+        {
+          "round": 96,
+          "clean_correct": 9905,
+          "target_successes": 2765
+        },
+        {
+          "round": 97,
+          "clean_correct": 9898,
+          "target_successes": 4140
+        },
+        {
+          "round": 98,
+          "clean_correct": 9913,
+          "target_successes": 2735
+        },
+        {
+          "round": 99,
+          "clean_correct": 9911,
+          "target_successes": 1511
+        },
+        {
+          "round": 100,
+          "clean_correct": 9912,
+          "target_successes": 2076
+        }
+      ]
+    }
+  ],
+  "admitted": [],
+  "catalogue_sha256": "c9deb0d0931c57bd0bcf763c7c02b7fa62ed78edae666d30452968c24c8ec38f",
+  "badfu_existing_detector": [
+    {
+      "round": 10,
+      "panel": "A",
+      "normal": {
+        "c00": 1,
+        "c02": 0,
+        "c03": 2
+      },
+      "attack": {
+        "c04": 10,
+        "c05": 10
+      },
+      "min_attack_minus_max_normal": 8
+    },
+    {
+      "round": 10,
+      "panel": "B",
+      "normal": {
+        "c00": 6,
+        "c02": 1,
+        "c03": 1
+      },
+      "attack": {
+        "c04": 6,
+        "c05": 11
+      },
+      "min_attack_minus_max_normal": 0
+    },
+    {
+      "round": 20,
+      "panel": "A",
+      "normal": {
+        "c00": 3,
+        "c02": 1,
+        "c03": 3
+      },
+      "attack": {
+        "c04": 8,
+        "c05": 15
+      },
+      "min_attack_minus_max_normal": 5
+    },
+    {
+      "round": 20,
+      "panel": "B",
+      "normal": {
+        "c00": 5,
+        "c02": 2,
+        "c03": 2
+      },
+      "attack": {
+        "c04": 11,
+        "c05": 10
+      },
+      "min_attack_minus_max_normal": 5
+    },
+    {
+      "round": 30,
+      "panel": "A",
+      "normal": {
+        "c00": 3,
+        "c02": 0,
+        "c03": 0
+      },
+      "attack": {
+        "c04": 14,
+        "c05": 14
+      },
+      "min_attack_minus_max_normal": 11
+    },
+    {
+      "round": 30,
+      "panel": "B",
+      "normal": {
+        "c00": 4,
+        "c02": 1,
+        "c03": 1
+      },
+      "attack": {
+        "c04": 6,
+        "c05": 12
+      },
+      "min_attack_minus_max_normal": 2
+    },
+    {
+      "round": 40,
+      "panel": "A",
+      "normal": {
+        "c00": 3,
+        "c01": 5,
+        "c02": 3,
+        "c03": 7
+      },
+      "attack": {
+        "c04": 16,
+        "c05": 12
+      },
+      "min_attack_minus_max_normal": 5
+    },
+    {
+      "round": 40,
+      "panel": "B",
+      "normal": {
+        "c00": 7,
+        "c01": 3,
+        "c02": 2,
+        "c03": 4
+      },
+      "attack": {
+        "c04": 11,
+        "c05": 10
+      },
+      "min_attack_minus_max_normal": 3
+    }
+  ],
+  "model_loads": 0,
+  "new_inferences": 0,
+  "new_training": 0
+}

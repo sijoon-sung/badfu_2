@@ -1,0 +1,30 @@
+{
+  "state": "predeclared_memory_failure_preservation_and_own_observer_cleanup",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "execution_root": "D:/FEDUBA_MIXED_PAIR_MEMORY_RECOVERY_20261101",
+  "failed_root": "D:/FEDUBA_MIXED_PAIR_20261101",
+  "own_observer": {
+    "pid": 39652,
+    "parent_pid": 13028,
+    "creation_unix_ms": 1793502042326,
+    "commandline_sha256": "f16fe2d5f46c84737ff30e6bc565001a2888c39b3b36066a29a2cf0ab1561f8f",
+    "decoded_query_sha256": "2a0964d44e63de8ada49afb387027e38d7a630b39d6f8c8d8cc3bd7d99b85545",
+    "decoded_query_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+    "decoded_query_ending": "ConvertTo-Json -Depth 9",
+    "observed_private_bytes": 45915860992,
+    "observed_working_set_bytes": 23386886144
+  },
+  "allowed_mutation": "Stop exactly the identified old failed read-only observer process once; preserve original study files unchanged.",
+  "new_training_launch_enabled": false,
+  "original_runner_relaunch_allowed": false,
+  "other_app_closure_allowed": false,
+  "source_or_numerical_policy_change_allowed": false,
+  "prefix_hash_chunk_bytes": 65536,
+  "model_loads_or_forwards": 0
+}

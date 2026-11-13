@@ -1,0 +1,20 @@
+{
+  "time": 1794310528.5647051,
+  "stage": "before_torch_import_and_checkpoint_tensor_load",
+  "preserved_raw_files": {
+    "CONTROLLER_ONCE": "733f3fda0606d37a0e3b1b5f2d664935444c36b6e4c33d60108e91c3d530aaf9",
+    "CONTROLLER_STATE.json": "d0609e4da1e51efd160294f1d6c1a2b7cc7da71bdca86191e2e517efc8f3759a",
+    "CONTROLLER_FAILURE.json": "41f20fa74d644f0fed9e22228d6ec2cba77f747bc1d5f46f9ad2a0e7651f27aa",
+    "FU_balanced5000_ONCE": "600d7e7282dfa2dc4848347b7247737d5a7fd480fbe8fd6e9d4146f0581f9f36",
+    "FU_balanced5000_FAILURE.json": "7c498039b49f19a855235f3b493975a6241e0320175463297bedfda5b74de283",
+    "train_fu_balanced5000.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "train_fu_balanced5000.stderr.txt": "c46ab939a3e9e2086a41c5d2f46d497828197d6d3cffb8fe073cb07fadeda8ae"
+  },
+  "raw_arguments_not_public": true,
+  "CPU_only_hypothesis_rejected": true,
+  "scientific_profile_fields_unchanged": true,
+  "numerical_resource_limits_unchanged": true,
+  "exact_external_commands_added": 2,
+  "old_training_repeated": false,
+  "original_models_changed": false
+}

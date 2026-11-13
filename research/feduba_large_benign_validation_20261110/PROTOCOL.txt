@@ -1,0 +1,25 @@
+가설: D20의 고정 네경로 탐색은 같은 FedUBA/FedEraser 구현에서 큰 정상 균형 삭제와 한 클래스 전체 정상 삭제에도 기존 두 공격요청 diagnostic보다 낮은 native 전환 점수를 보인다.
+
+사용자 2026-11-10 '다시 시작': 미지트리거 탐지방법 개발과 DISLAB 큰정상/FUBA류 검증을 계속한다. 관련 D20/D02/D06/D07/D08/D15/D17/D19/T02/T03/R02/R03. INDEX/카드/원보고서/정정과 trajectory catalogue를 읽었다. PR본문 수정 form은 아직미제출이며 코드/결과 branch는9410993에실제게시됐다. 이form은 새계산의승인요건이아니다. 과거완료실험/실패/queue/default를재개하지않는다.
+
+새 관측과 반례
+새 탐지 지표를 추가하지 않는다. D20 body/head 네함수 제약의 동일 알고리즘을, 지금까지 없던 같은 구현의 큰 정상 FU20 endpoint에서 측정한다. D08 공격.75848 대정상.75525/.76188, D15 공격7/정상8 및 T02 정당희귀도메인 반례는유지한다. 큰 정상 기여손실도 전환을 만들 수 있으므로 실제 모델을 만들어 반증한다. 정상요청의량/클래스구성을고정한 evaluator-only 대조이며 그삭제ID/클래스/역할을 탐색기에주지않는다.
+
+고정 두 정상 대조
+기존 ity207/FedUBA fixed10 cleanFL20 seed42의 실제20R/200role 이력과 같은 freshG0를 쓴다. stcebra/FUBA의 Adv역할/G/KD를 섞지않는다. 원공개commit005959ab.../명시회복Narcissus model과 기존선언FedEraser 정책을유지하며 저자누락파일의유일정답인증이아니다. cleanFL20/공격FU/SSS/STG는 재실행하지않는다.
+1. balanced5000: 실제 FL에20R고정참여한10client의25000ID중 클래스마다500개씩 seed20261110로 선택해진짜삭제. 실제 학습노출자료의20%,전체50000의10%이며두분모를구별한다.
+2. class2_all: 같은10client가 가진 정상 class2자료전부 진짜삭제. 실제 수량/분율은 새 metadata준비에서계산해 PROFILE에핀한다. 클래스2는 공격목표와맞춘 엄격대조의 evaluator 설계이며 server method입력이아니다. 모든class leave-out를시험한것이아니다.
+원label/나머지image는정상이며 SSS/δ/trigger/BEA변조가없다. 모든request owner는삭제ID를가진원client이고 sourceID와소유권을검사한다. 기존20client전체자료분할·20R참여자순서·fresh초기화·정규화/augmentation을보존한다.
+
+실제 FU20
+각branch20R/10client/5localepochs/SGD.01momentum.9weightdecay0/cos20/B128, 기존role seed42+500000+r*10000+c*100. 삭제후 실제client N에따른ceil(N/128)*5를사용하고 임의batch단축0. 원trained local과oldG에서oldnorm/newdirection 보정·zero방향·dtype/lastBNcounter·equalFedAvg를원명시정책대로쓴다. 이norm은FU수학이며탐지점수가아니다.
+이두정상요청은10참여자모두owner이므로첫roundnonowner 재사용대상은없다. 따라서원normals125의owner5/7과동일한삭제량/owner정책이라고하지않는다. 요청기여손실을의도한조건이다. client N이0이면시작전중단(이번정의는정상적으로양수여야한다). 원20R/200role/모든SHA/chain/verified receipt를읽기전용으로핀하고 catalogue의명시history diagnostic case/목적으로선택한다. endpoint사본만으로history를추정하지않는다.
+매역할model/SGD/RNG/5epoch전체ID순열·edge실입력/매roundtrained·calibrated·global을새경로에저장한다. 독립CPU검산은원ID·실batch·optimizer/finite/hash·보정/집계를확인한다. 모든SGD gradient/augmentation의비트재생은아니다. CA는삭제효용진단으로측정하되 정당한큰삭제의효용하락을이유로정상반례를버리거나FU를중단하지않는다.
+
+고정 탐색과 판정
+D20의동일400step/seed/3family/10target/Adam/epsilon.05/mass16/공개fit32-cal20-test100/class를그대로쓴다. 원D20실제공격·작은정상 점수와독립receipt를SHA재사용하고 재추론/재탐색하지않는다. 각 새정상case의조건/목표를cal만으로고정·봉인한뒤test한다. 새test데이터나독립FL시드가아닌, 같은고정발견법의새삭제조건시험이다.
+성공필요조건은새 route정상점수가D20의FedUBA minus/plus 각299/900=33.2222%보다엄격히낮음. 같거나크면이번확대범위의구별주장을기각하고미시작후속branch를중단한다. 이값은연구반증기준이며배포임계값이아니다. 낮더라도두정상조건/한FLseed/같은분할에한정하며 FPR/TPR/범용/실제성공잠복공격검증으로확대하지않는다. baseline도동일예산으로계산한다. FUBA성공잠복쌍 부재와FedUBA 원성능gate실패는그대로다.
+
+자원·무결성·전달
+새별도 D:/FEDUBA_LARGE_BENIGN_VALIDATION_20261110, once/no retry/manual task, 새로운2branch최대20R씩. CPU2/RAM>=6GiB/disk>=80GiB/GPUutil<=10/free>=3584MiB/PyTorch fraction.25. 10GiB GPU에서최대2.5GiBallocator+context에약1GiB입장여유를두는 새학습profile이며 D20의4GiBguard를통과했다고하지않는다. 외부residentinference command의기존명시SHA만허용하고그외경쟁Python/MPI는차단한다. 다른앱종료/정책변경0. OOM/finite/hash/source/ID/owner/저장/runtime결함은즉시prefix보존·중단하며batch/epoch/tolerance를자동변경하지않는다.
+source/실PROFILE/actual입력/metadata검사를PR1 sourcebranch에먼저게시·원바이트대조후GPU시작. 새파생case만diagnostic등록,기존case/default/audit보존. 실제after/optimizer/RNG/전체로그/독립검산을DISLAB보존하고로컬에는명시모델·전체로그/해시packet을전달한다. 원fullhistory와bulk모든중간payload는DISLAB에두며packet범위를명시한다. 사용자확인질문으로반복중단하지않고마지막PR본문form은과학작업과별개로다룬다.

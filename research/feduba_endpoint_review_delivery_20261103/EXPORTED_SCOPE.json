@@ -1,0 +1,86 @@
+{
+  "models": [
+    "pre",
+    "benign",
+    "minus",
+    "plus"
+  ],
+  "model_count": 4,
+  "new_model_or_tensor_loads": 0,
+  "new_CPU_forwards": 0,
+  "epoch_log_projection": {
+    "benign": {
+      "file": "epoch_logs/benign.jsonl",
+      "rows": 1000,
+      "source_packet": "baseline",
+      "source_member": "logs/benign/events.jsonl",
+      "source_sha256": "d895dbc10782cf47d91b1010850e9e9ae146fb742f7e443f649436a92bf9be36",
+      "columns": [
+        "round",
+        "client",
+        "epoch",
+        "examples",
+        "batches",
+        "cumulative_role_batches",
+        "loss"
+      ],
+      "all_scalar_epoch_values_copied_unchanged": true,
+      "raw_per_sample_fields_copied": false
+    },
+    "minus": {
+      "file": "epoch_logs/minus.jsonl",
+      "rows": 1000,
+      "source_packet": "baseline",
+      "source_member": "logs/attack/events.jsonl",
+      "source_sha256": "212b892133c5e2ec33c9debfe092f87f01c554059f91675d61f9b897e7015549",
+      "columns": [
+        "round",
+        "client",
+        "epoch",
+        "examples",
+        "batches",
+        "cumulative_role_batches",
+        "loss"
+      ],
+      "all_scalar_epoch_values_copied_unchanged": true,
+      "raw_per_sample_fields_copied": false
+    },
+    "plus": {
+      "file": "epoch_logs/plus.jsonl",
+      "rows": 1000,
+      "source_packet": "positive",
+      "source_member": "new_training/fu/attack/events.jsonl",
+      "source_sha256": "7e2fa2c663541d5c7de37af3fdc7b6f384cc0e92b66e9cdd3af4165d92cd4e20",
+      "columns": [
+        "round",
+        "client",
+        "epoch",
+        "examples",
+        "batches",
+        "cumulative_role_batches",
+        "loss"
+      ],
+      "all_scalar_epoch_values_copied_unchanged": true,
+      "raw_per_sample_fields_copied": false
+    }
+  },
+  "excluded": [
+    "role model states",
+    "optimizer/RNG",
+    "per-sample IDs",
+    "query inputs",
+    "per-ID logits",
+    "raw datasets",
+    "trigger delta",
+    "full raw history"
+  ],
+  "raw_pretraining_and_full_role_history_optimizer_RNG_and_queries_remain_on_DISLAB": true,
+  "full_original_epoch_logs_remain_on_DISLAB": true,
+  "diagnostic_only": true,
+  "local_receiver_launched": false,
+  "local_CPU_verification_completed": false,
+  "local_delivery_complete": false,
+  "whole_prior_packet_delivered": false,
+  "performance_success": false,
+  "overall_goal_complete": false
+}

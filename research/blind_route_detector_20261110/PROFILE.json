@@ -1,0 +1,14 @@
+{
+  "id": "blind_route_detector.fixed_20261110.v1",
+  "seed": 20261110,
+  "steps": 400,
+  "epsilon": 0.05,
+  "mask_mass": 16,
+  "memory_fraction": 0.3,
+  "public": {"fit_per_class": 32, "calibration_per_class": 20, "test_per_class": 100},
+  "raw_data": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/research_20261020/stage1_migrated_20261020/research/stage1_20261020/assets/cifar_raw.pt",
+  "raw_sha256": "f6ba981b98087d3f8bc6507a45371c1a534cd85d8286a6c1120729b9fa61b820",
+  "admission": {"memory_gib": 6, "disk_gib": 2, "gpu_free_mib": 6144, "gpu_util_max": 10, "wait_seconds": 120},
+  "classification": "calibration_required",
+  "success_rule": "BadFU route gap > 0 and route gap - baseline gap >= .05; no retuning on failure"
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "feduba.public_fixed10.cifar10.s42.full20.history.diagnostic.20261110",
+  "purpose": "client_history",
+  "post_type": "clean_full20_history_diagnostic",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103\\clean_fl\\before.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "source_root": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\guards\\history\\GUARD_MANIFEST.json",
+    "manifest_sha256": "7d4539b28a928166587443353d50196609166b848ee93957f9c499907d21b525",
+    "seal_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\guards\\history\\GUARD_SEAL.json",
+    "seal_sha256": "4c2676fb26c469e5fae90ab296325ea759191305104a082df04379ed0f7aa579",
+    "loader_path": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\checkpoint_guard.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

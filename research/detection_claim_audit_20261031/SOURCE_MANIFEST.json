@@ -1,0 +1,92 @@
+{
+  "ity207/FedUBA": {
+    "commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+    "root_inventory": [
+      "Fed_Unlearn_main.py",
+      "Fed_Unlearn_attack.py",
+      "trigger_generate_function.py",
+      "Fed_data_change.py",
+      "Fed_model_initiation.py",
+      "Fed_train.py",
+      "Fed_test.py",
+      "Fed_data_preprocess.py",
+      "README.md"
+    ],
+    "files": [
+      {
+        "path": "Fed_Unlearn_main.py",
+        "git_blob_sha": "97b806ee736db9dccec13cc0a56684dc40fdd60d",
+        "sha256": "f6aba9fc8822c36ad2a4a63b719f2dc0738920cae2ad3d8008221e455e2b373d",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_Unlearn_main.py"
+      },
+      {
+        "path": "Fed_Unlearn_attack.py",
+        "git_blob_sha": "4baeb0931f39c139c325bcee9b4298e95f64c50a",
+        "sha256": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_Unlearn_attack.py"
+      },
+      {
+        "path": "trigger_generate_function.py",
+        "git_blob_sha": "bb5096dbb192fa8d5cffa7fc9d97559d15157127",
+        "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/trigger_generate_function.py"
+      },
+      {
+        "path": "Fed_data_change.py",
+        "git_blob_sha": "b2f9931489c07c8e5c1e7fa696fac87eeefd7cb9",
+        "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_data_change.py"
+      },
+      {
+        "path": "Fed_model_initiation.py",
+        "git_blob_sha": "97785086ce548af4799c05e015cf9865b85aaf28",
+        "sha256": "f04a302584bf32a05c81afc9a0053df76cbcccffec162f314364158185ad98a6",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_model_initiation.py"
+      },
+      {
+        "path": "Fed_train.py",
+        "git_blob_sha": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+        "sha256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_train.py"
+      },
+      {
+        "path": "Fed_test.py",
+        "git_blob_sha": "49f3866a7aae53e989c34cf283681f7378b423fb",
+        "sha256": "a29fd7d936045e998f73fb91d6dcf724bf1403018d3b04481bbf251f9636e421",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_test.py"
+      },
+      {
+        "path": "Fed_data_preprocess.py",
+        "git_blob_sha": "4eb1850b993b4fae675da99c8cbc45cbd34b2150",
+        "sha256": "212e99b831bec15f39533aef7abc2867acd16d5b0516f13c2ffbf4901be5eaeb",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/Fed_data_preprocess.py"
+      },
+      {
+        "path": "README.md",
+        "git_blob_sha": "828c165dab43a2b36e5fc7b8fb5cab04e9d1148e",
+        "sha256": "ca56265247744c325bb833d4dd910c9f65d7488054c1456851e0c1d5c4bdb262",
+        "url": "https://github.com/ity207/FedUBA/blob/005959ab8a955f4dcf094930ce6953af8fee827b/README.md"
+      }
+    ]
+  },
+  "BingguangLu/BadFU": {
+    "commit": "0a2117feab58faf5b7e2a1e5e1759112087d6049",
+    "evidence": "research/badfu_algorithm_audit_20261023/README.md",
+    "trained_case_ids": [
+      "badfu.paper32.s20261020",
+      "badfu.confirmed.s20261023.v1"
+    ]
+  },
+  "stcebra/FUBA": {
+    "commit": "bc233610aca36e1647d0c815597cc7148292139d",
+    "executed_profile": "fuba.paper_grid.s20261023.fresh100.kd10.v7",
+    "executed_manifest_sha256": "6e268bbce517fa37161616a3564c819edcc4f412cb22a6701c8a4572bb60de2b",
+    "manifest_files_checked_now": 29,
+    "upstream_is_not_identical_to_declared_executed_profile": true,
+    "checked_executed_files": {
+      "runner.py": "299dd9709d382bb3fe3002297ee333a72238aeeb0039f98cb8c7cb9e2b76d554",
+      "paper_core.py": "a4501c3fa7437cbc97ff93228167cc7837d8055677511e3a39f884ab90e3874c",
+      "PROFILE.json": "35d99a89b1bee1ecdf1518e07309d2ded5051ec8aa2379fc20a40428763cd94b"
+    }
+  }
+}

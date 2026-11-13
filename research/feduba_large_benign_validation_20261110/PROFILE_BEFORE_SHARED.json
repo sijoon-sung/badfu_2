@@ -1,0 +1,157 @@
+{
+  "id": "feduba.large_benign.fixed20.s42.20261110",
+  "related_cards": [
+    "D20",
+    "D02",
+    "D06",
+    "D07",
+    "D08",
+    "D15",
+    "R03"
+  ],
+  "foundation_root": "D:\\FEDUBA_FIXED10_FOUNDATION_20261103",
+  "history_case_id": "feduba.public_fixed10.cifar10.s42.full20.history.diagnostic.20261110",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "fixed_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "branch_order": [
+    "balanced5000",
+    "class2_all"
+  ],
+  "requests": {
+    "balanced5000": {
+      "removed": 5000,
+      "fraction_of_participating25000": 0.2,
+      "fraction_of_all50000": 0.1,
+      "class_counts": [
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500,
+        500
+      ],
+      "removed_by_owner": {
+        "2": 499,
+        "3": 522,
+        "5": 479,
+        "7": 472,
+        "9": 503,
+        "12": 500,
+        "13": 499,
+        "16": 505,
+        "18": 522,
+        "19": 499
+      },
+      "retained_by_owner": {
+        "2": 2001,
+        "3": 1978,
+        "5": 2021,
+        "7": 2028,
+        "9": 1997,
+        "12": 2000,
+        "13": 2001,
+        "16": 1995,
+        "18": 1978,
+        "19": 2001
+      },
+      "expected_batches": 16000
+    },
+    "class2_all": {
+      "removed": 2486,
+      "fraction_of_participating25000": 0.09944,
+      "fraction_of_all50000": 0.04972,
+      "class_counts": [
+        0,
+        0,
+        2486,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "removed_by_owner": {
+        "2": 263,
+        "3": 242,
+        "5": 242,
+        "7": 226,
+        "9": 266,
+        "12": 235,
+        "13": 267,
+        "16": 213,
+        "18": 274,
+        "19": 258
+      },
+      "retained_by_owner": {
+        "2": 2237,
+        "3": 2258,
+        "5": 2258,
+        "7": 2274,
+        "9": 2234,
+        "12": 2265,
+        "13": 2233,
+        "16": 2287,
+        "18": 2226,
+        "19": 2242
+      },
+      "expected_batches": 18000
+    }
+  },
+  "rounds": 20,
+  "local_epochs": 5,
+  "batch_size": 128,
+  "optimizer": "SGD .01 cosine20 momentum.9 weight_decay0",
+  "role_seed": "42+500000+round*10000+client*100",
+  "private_requests_sha256": "8f3d327f186d15cf68572b1d955f05647d7886858a61932cdda53b0a3c50732c",
+  "history_binding_sha256": "3bcd26de979014bd9e849c6c8ffc3a69a48d74d6e9d24fb1cbc054788658f7a7",
+  "admission": {
+    "memory_gib": 6,
+    "disk_gib": 80,
+    "gpu_free_mib": 3584,
+    "gpu_util_max": 10,
+    "wait_seconds": 120
+  },
+  "memory_fraction": 0.25,
+  "expected_original_catalog_sha256": "b4da557f61a8e9f8afad4b5dbd87202126e88b37bfb74393e02cbf17f9144e6b",
+  "baseline_detector_root": "D:/BLIND_ROUTE_DETECTOR_V2_20261110",
+  "stopping_route_witness": 299,
+  "stopping_n": 900,
+  "old_jobs_repeated": false,
+  "original_models_modified": false,
+  "data_files_sha256": {
+    "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+    "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+    "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+    "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+    "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154",
+    "test_batch": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+    "batches.meta": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"
+  },
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "packages": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4"
+  }
+}

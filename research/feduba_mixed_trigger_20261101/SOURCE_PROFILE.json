@@ -1,0 +1,152 @@
+{
+  "id": "feduba.mixed_teacher.CPU_trigger100.source_only.20261101",
+  "state": "source_only_no_teacher_binding_or_execution_profile",
+  "launch_enabled": false,
+  "teacher_binding": null,
+  "execution_root": "D:/FEDUBA_MIXED_TRIGGER_20261101",
+  "teacher_root": "D:/FEDUBA_MIXED_SURROGATE_20261101",
+  "original_root": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031",
+  "teacher_source_freeze_sha256": "3ab036a02e1e6a418fbe9e1a3f90e72e98f561aa264f80747af96842bcea7ab3",
+  "teacher_publication_sha256": "f509ad61e4ed9b0684c16841c43248bc6b3912ff9c98fcc0b21c742c29161f38",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "If the single mixed curriculum completes and passes its predeclared minimal teacher-recognition prerequisite, the unchanged literal Algorithm1 CPU SGD/project trajectory can be executed and independently audited against that newly frozen teacher rather than the failed Tiny-only teacher.",
+  "new_observable": "A separately bound final100-epoch delta, all200 real input/gradient/delta before-after traces, and fixed first/last augmentation/independent-gradient replays for the newly verified teacher.",
+  "scope": "Implementation stage only; teacher prerequisite, delta algebra and stored integrity do not prove transfer, latent activation, a server detector or D08/D15 separation.",
+  "constants": {
+    "epochs": 100,
+    "batches": 200,
+    "target_N": 200,
+    "target_label": 200,
+    "sample_exposures": 20000,
+    "batch_size": 128,
+    "tail": 72,
+    "seed": 3000,
+    "loader_seed": 3000,
+    "optimizer": "SGD",
+    "alpha": 0.1,
+    "momentum": 0,
+    "weight_decay": 0,
+    "foreach": false,
+    "fused": false,
+    "loss_reduction": "mean",
+    "initial_delta": "zeros_1x3x32x32",
+    "epsilon_model": 0.12549019607843137,
+    "epsilon_raw": 0.06274509803921569,
+    "input_clip": [
+      -1,
+      1
+    ],
+    "theta_and_BN_mode": "eval_frozen",
+    "workers": 0,
+    "CPU_threads": 2,
+    "MKLDNN": true,
+    "dtype": "FP32",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "CUDA_initialized": false,
+    "matmul_precision": "highest",
+    "projection_every_batch": true,
+    "algebra_atol": 1e-07,
+    "gradient_atol": 2e-05,
+    "gradient_rtol": 0.001,
+    "independent_gradient_steps": [
+      [
+        1,
+        1
+      ],
+      [
+        100,
+        2
+      ]
+    ],
+    "audit_gradient_examples": 200,
+    "all200_gradients_independently_recomputed": false,
+    "minimum_free_storage_bytes": 2147483648
+  },
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "inputs": {
+    "architecture": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+      "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+    },
+    "target": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/private_assets/external/target_external.pt",
+      "sha256": "8a40deeb76740157aaeecb259d013740ff83b3f54c155ccf6c3802a7bba2ab4a",
+      "bytes": 618597,
+      "payload_key": null
+    },
+    "SGD_CPU_receipt": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/STG_SGD_CPU_RESULT.json",
+      "sha256": "035d8d38511559371a768dd8d004c9b4970e49c779268817f4691943bbebd40a"
+    },
+    "original_GPU_failure": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/STG_AUDIT_FAILURE.json",
+      "sha256": "3b6ea5fce75ccd781ccb22f2d3fe80dec84bae2b90122aa18610f40d5761c3ce"
+    }
+  },
+  "copied_sources": {
+    "runtime_common.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/runtime_common.py",
+      "sha256": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e"
+    },
+    "core.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/core.py",
+      "sha256": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5"
+    },
+    "stg_training.py": {
+      "original_path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/stg_training.py",
+      "sha256": "8697141a5406ce98cbe0a7ca1769d9a2c5439464c486037da14058851b49ef76"
+    }
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "normal_case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "normal_manifest_sha256": "85b83c04efa29406576232e39080e08adfa0abfb2d4550241517991110fcd99b",
+  "normal_seal_sha256": "f316861aa56313a821d50d551658d0d8235f0f37970f97e25a58446e11a4ddd6",
+  "normal_pre_sha256": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+  "actual_launch_prerequisites": [
+    "teacher105 result and fullCPU audit passed",
+    "CPU endpoint and independent saved-logit check passed",
+    "predeclared minimal functional condition true",
+    "teacher actual controller/children exited and exact task exit0",
+    "same normal case fresh diagnostic select_case/seal/hash/payload guard",
+    "metadata-only prepare_launch once creates real teacher SHA binding/LAUNCH_PROFILE/RUN_FREEZE",
+    "actual profiles and freezes published to existing draft PR before execution"
+  ],
+  "source_only_review_budget": {
+    "model_queries": 0,
+    "teacher_model_hash_reads": 0,
+    "new_fixtures": 0,
+    "SGD_steps": 0,
+    "prepare_calls": 0,
+    "actual_launch_profiles": 0
+  },
+  "eventual_execution_budget": {
+    "new_trigger_epochs": 100,
+    "new_trigger_steps": 200,
+    "new_target_exposures": 20000,
+    "independent_gradient_replays": 2,
+    "independent_gradient_examples": 200,
+    "new_teacher_training": 0,
+    "new_SSS_queries": 0,
+    "new_FU_rounds": 0
+  },
+  "stop_rule": "Code-only review cannot launch. A future actual bound run completes fixed100/200 even if loss or gradients vanish; no early stop, best-epoch selection or retuning. Source/hash/ID/count/finite/RNG/storage/runtime/algebra/gradient failure preserves prefix and exits with no retry/tolerance widening. New SSS/FU/evaluation/delivery need separate prepublished binding/launch contracts.",
+  "private_outputs": "private_run contains all input tensors/IDs/gradients/delta/RNG; never stage these to public Git.",
+  "paper_and_source_limit": "Original recovered models and mixed helper remain declared candidates without author certification. This preserves literal SGD/frozen-eval interpretation, not public RAdam/cos/BNtrain equivalence.",
+  "overall_goal_complete": false
+}

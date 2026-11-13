@@ -1,0 +1,16 @@
+DISLAB target-class125 paired FU20 — 실제 실행 중
+관련 R03/R02/N02/D08/D15. 사용자 실제 체크포인트 생성 지시에 따른 source-grounded 교정이다.
+
+완료 all-class125는 class2 선택0개였다(기존 class분포17/18/0/5/7/2/2/6/47/21). 공식 feature분기의 target-class 제한을 채택한 새 정확global125는 owner5=58/7=67, 모두class2다. 기존δ919982...·source scores·seed42·5epoch/B128/SGD/cos20·BEA x-delta/라벨·예산·평가조건을 고정했다. 표본별 변경 원인과 최종성능은 아직 미측정이며, 공개ceil126은 채택하지 않았다.
+
+222e2f1 source / ca09522 actualprofiles 게시 뒤 원launch파일은 실행정책으로 본문전 거부됐다. encoded V1의 전달 실패 및 V2의 $r 확장 오류도 모두 task/model본문전0으로 보존했다. V3 d4a3b95는 literal binding/bodySHA를 검증해 첫 task를 시작했다. 원target-only pair27160→9396은 실제profile의 history_global_payload_key/role key 누락 중 첫 key에서 초기모델 로드·초기화/학습 전 종료했다. δ CPU텐서1회읽기와 CASE_SELECTION만 있었고 .pt/epoch0; source·profile·failure·Ready/exit1/process0는 원위치 불변이다. 이 설정 작성 오류를 성능실패로 해석하지 않는다.
+
+별도 recovery source a87ccb2 / actualprofiles099a095를 선게시했다. 원완료mixed 실제profile에서 global null/role model 두키만 회복했고 AST로 runner/auditor가 참조하는 모든FU키 존재를 먼저 검증했다. 새 root D:/FEDUBA_TARGETCLASS_PAIR_RECOVERY_20261102, 정확기존선택SHA9fcea5fc.../audit4001e1c... 재사용이며 새query/seed/조건탐색0이다. 소스19AST·9helper SHA·seed/rng/cpu AST·독립평가 모든For AST와 원입력SHA/자원검사passed/model0.
+
+새 유일 task Codex-FedUBA-targetclass125-pairedFU20-recovery-20261102/S4U Limited/directPython controller33084→실benign trainer41032가2026-11-02T14:06:34Z(KST23:06:34)에 시작했다. RUNNING_OBSERVATION에서 실제명령줄/parent/ONCE/첫round client8 epoch2와앞선4개trained-role 파일을 확인했다. 현재 정상20R→독립CPU→공격20R→독립CPU→primary/독립각60000표본474calls→readonly checkpoint review/archive 순서다. 완료훈련·ASR/CA·공격성공·로컬전달·catalogue등록은 아직 주장하지 않는다.
+
+sourcefreeze c002ae886e247fd369c743c3067cff7c1a12e59ab23727337057166269e25884. 원source는 수정하지 않는다. observe_status_v2.py는 slash/backslash를 정규화하여 실제 자식PID까지 읽는 metadata-only별도monitor다. 원monitor와freeze도 보존했다. 실제FAILURE가 과거running STATE보다 우선한다.
+
+두branch 모두20000batch/1000epoch/200role/20R이며 성능불리해도branch를생략하지 않는다. 원6gate/분모/허용치/자원guard는 불변. source/hash/finite/storage/runtime 오류는 prefix·trace를 보존한 새명시복구만 허용한다. 모든raw400role/optimizer/RNG는DISLAB. 원격review는끝점/대표실기여/전체로그/private선택·SSS/평가범위이고 로컬RAM대기는DISLAB작업선행조건이아니다.
+
+D08 .75848 공격이 큰정상 .75525/.76188 사이, D15 공격7/정상8 및 unknown-trigger-family 탐지미검증은 그대로다. 이작업은공격구현전제이며탐지법제안이아니다. 전체목표미완료.

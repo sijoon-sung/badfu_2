@@ -1,0 +1,60 @@
+{
+  "state": "DISLAB_diagnostic_endpoint_guard_only",
+  "files": {
+    "checkpoint_guard.py": {
+      "sha256": "705cd0b3489cd2d632be509398b8082e4481cef62f874caa27c52d07373486c7",
+      "bytes": 2177
+    }
+  },
+  "packets": {
+    "baseline": {
+      "root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103",
+      "manifest": "DELIVERY_MANIFEST.json",
+      "manifest_sha256": "add45765c7903c3a1ae2c18534dae848a38b06a656d902fecf4ca431fc6f39c0",
+      "seal": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_public_fixed10_s42_targetclass2_SSS125_FU20_pair_20261103/DELIVERY_SEAL.json",
+      "seal_sha256": "f36180d9d5eafcfebe31931ae347ae4992cfdcbeebe2d6c34ba37f278c7c3828",
+      "hashed_files": 523,
+      "typed_payloads": 365
+    },
+    "positive": {
+      "root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_positive_failed_eval_prefix_s42_20261103",
+      "manifest": "MANIFEST.json",
+      "manifest_sha256": "629c24648b7052ce4377dd2efef029119afa325447c43171162ebb6f5b9edeee",
+      "seal": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_positive_failed_eval_prefix_s42_20261103_SEAL.json",
+      "seal_sha256": "89cc325c776f878c583a0a10ea35d94809fff99575d2c82dda2730a9fb94fece",
+      "hashed_files": 286,
+      "typed_payloads": 161
+    }
+  },
+  "endpoints": {
+    "pre": {
+      "packet": "baseline",
+      "member": "models/pre.pt",
+      "sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "benign": {
+      "packet": "baseline",
+      "member": "models/benign.pt",
+      "sha256": "85030dfc152418b015e1f4f167a181cc7f6fd2516f16389ea84f25e9eb07040d",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "minus": {
+      "packet": "baseline",
+      "member": "models/attack.pt",
+      "sha256": "3deabcbe207365706725ba7b2ed994e61a6d8d89ce7ee3bf571a7de2fa228355",
+      "bytes": 44770315,
+      "payload_key": null
+    },
+    "plus": {
+      "packet": "positive",
+      "member": "models/attack_after.pt",
+      "sha256": "1910705b3f267c23922d4052897a6d87c66947e04a7b658185072a44f2c0ed14",
+      "bytes": 44770315,
+      "payload_key": null
+    }
+  },
+  "scope": "Hash and existing stored CPU receipt guard only; no new tensors/forwards/performance validation. Local delivery incomplete."
+}

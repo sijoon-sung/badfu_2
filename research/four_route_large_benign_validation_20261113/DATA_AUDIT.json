@@ -1,0 +1,114 @@
+{
+  "20261020_whole_client1": {
+    "seed": 20261020,
+    "condition": "whole_client1",
+    "removed": 9647,
+    "retained": 40353,
+    "counts": [
+      11395,
+      0,
+      9641,
+      9649,
+      9668
+    ],
+    "removed_classes": [
+      368,
+      360,
+      3382,
+      3368,
+      361,
+      361,
+      362,
+      361,
+      362,
+      362
+    ],
+    "retained_dark": 16141,
+    "removed_sha256": "b693ac5914372f5b2f4f4cd3fced1bfd954cddeedf9d3719c969ccf19c2c05ba",
+    "retained_sha256": "c6e24d8a05d8b3a4a25669feb6896de90693253bce5cc9540c0abd419b0f79a6"
+  },
+  "20261020_dark_balanced": {
+    "seed": 20261020,
+    "condition": "dark_balanced",
+    "removed": 10000,
+    "retained": 40000,
+    "counts": [
+      9100,
+      7712,
+      7717,
+      7743,
+      7728
+    ],
+    "removed_classes": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "retained_dark": 10000,
+    "removed_sha256": "af1077eda318b60f67af04748122705cbcd3103b34728cedec3f5f4d52f9efc2",
+    "retained_sha256": "97180b042001cd14c278eb223cef16c82efc250dcbe4c4b70d4c63e9a73a580d"
+  },
+  "20261023_whole_client1": {
+    "seed": 20261023,
+    "condition": "whole_client1",
+    "removed": 9647,
+    "retained": 40353,
+    "counts": [
+      11395,
+      0,
+      9641,
+      9649,
+      9668
+    ],
+    "removed_classes": [
+      368,
+      360,
+      3382,
+      3368,
+      361,
+      361,
+      362,
+      361,
+      362,
+      362
+    ],
+    "retained_dark": 16141,
+    "removed_sha256": "b693ac5914372f5b2f4f4cd3fced1bfd954cddeedf9d3719c969ccf19c2c05ba",
+    "retained_sha256": "c6e24d8a05d8b3a4a25669feb6896de90693253bce5cc9540c0abd419b0f79a6"
+  },
+  "20261023_dark_balanced": {
+    "seed": 20261023,
+    "condition": "dark_balanced",
+    "removed": 10000,
+    "retained": 40000,
+    "counts": [
+      9126,
+      7719,
+      7676,
+      7741,
+      7738
+    ],
+    "removed_classes": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "retained_dark": 10000,
+    "removed_sha256": "4552d9455bac3bdca713a4c91a56cafadcf25f437812152da52efcfecd103834",
+    "retained_sha256": "be9f9638dce738651dd55be396cf7ea5044fe566173c16cad0eaebaaf85a266f"
+  }
+}

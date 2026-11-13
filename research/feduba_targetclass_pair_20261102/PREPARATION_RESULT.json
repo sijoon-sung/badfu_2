@@ -1,0 +1,43 @@
+{
+  "state": "prepared_actual_targetclass_selection_and_profiles",
+  "source_freeze_sha256": "a304b8214e8bb40058a14328eaf9e4eeed9aca91e9bb185c10d2ed1e07ee1ae9",
+  "model_queries": 0,
+  "old_selected_class_counts": [
+    17,
+    18,
+    0,
+    5,
+    7,
+    2,
+    2,
+    6,
+    47,
+    21
+  ],
+  "new_selected_class_counts": [
+    0,
+    0,
+    125,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "eligible_target_counts_by_owner": {
+    "5": 242,
+    "7": 226
+  },
+  "selected_counts_by_owner": {
+    "5": 58,
+    "7": 67
+  },
+  "expected_benign_batches": 20000,
+  "expected_attack_batches": 20000,
+  "CIFAR_MD5_checked": true,
+  "same_old_score_values_used": true,
+  "old_global_top125_preserved": true,
+  "whole_goal_complete": false
+}

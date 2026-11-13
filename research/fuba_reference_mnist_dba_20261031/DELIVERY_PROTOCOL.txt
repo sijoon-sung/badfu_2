@@ -1,0 +1,13 @@
+완료 후 전달 계약 — R02/D08/D15/N02, 2026-10-31
+
+가설과 과학적 게이트는 기존 PROTOCOL.txt 그대로다. 이 절차의 새 관측은 완료한 새 MNIST/DBA run의 실제 전후/KD/optimizer/RNG/로그가 양쪽 호스트에서 동일하며 독립 CPU strictload/finiteforward가 통과한다는 저장 증거다. 큰 정상nonIID 구별이나 CIFAR/IBA 재현을 주장하지 않는다.
+
+기존 trainer/controller/verify 소스를 바꾸지 않는다. package_delivery.py는 현재 run의 RESULT=completed100R_KD10, CONTROLLER_STATE=complete_verified, VERIFIED=passed, CPU_AUDIT_through0100=passed가 모두 있어야 한 번 실행한다. audit_committed.py --through-round100은 기존 prefix6/7을 재실행하는 것이 아닌 새 full100R 감사이며 새 경로의 결과를 남긴다. audit 실패시 원본 모델/소스/로그를 보존하고 검사 자체/실제학습의 오류를 구분한다. 실패한 전체검증을 건너뛰어 export하지 않는다.
+
+후속 packet은 delivery_packet이라는 새 경로에만 만든다. 경로가 이미 있으면 자동삭제·덮어쓰기·재실행하지 않는다. RESULT/VERIFIED 정수 수를 대조하고 현재 trainer/controller/verify 프로세스 부재를 확인한다. CPU-only로 실제 pre/post/subtraction/delta/KD10, round1/6/7/100, 첫 실제 공격자·억제자와 마지막 라운드 악성 역할의 단계 모델을 엄격 로드한다. delta는 학습된 modelstate가 아닌 float64 기여차이로 표시하여 모델처럼 소비하지 않는다. 모델 상태마다 strictload/finiteforward를 확인하고 optimizer/RNG 등 모든 tensor의 CPU/유한성을 확인한다.
+
+packet에는 전체 epoch/KD 로그·800역할 JSON·100개 평가·전체manifest, 모든 실행 소스·초기모델·분할, 전체CPU 감사·독립평가·운영 오류를 복사한다. 전체100R 모든중간phase 모델은 원래 DISLAB 경로에 남으며 전체원시파일 hash목록을 함께 전달한다. packet의 일부 모델 보관을 전체raw 모델 로컬전달로 부르지 않는다.
+
+파일별 SHA256/byte/payload_key/용도를 외부 DELIVERY_MANIFEST.json에 적고 그 manifest의 외부 DELIVERY_SEAL.json을 만든다. 생성과 동시에 로컬전달완료로 표시하지 않는다. 전송 뒤 로컬에서 모든sha/byte/파일수와 외부seal을 확인하고 local receipt를 별도로 만든다. 목적에 맞는 새 case 등록/외부seal·카탈로그 guard와 연구index --check, 같은 PR의 실제 결과 추가가 남는다. 기존 defaults/case/실패를 변경하지 않는다.
+
+성능게이트 미달도 모델/로그 전달은 완료하되 diagnostic으로 기록한다. 모든gamma 점수 독립재추론이나 논문10seed평균 성공을 주장하지 않는다. 불일치/비유한/저장오류는 즉시 증거를 보존하고 해당 전달을 중단한다. 같은 실패조건의 무근거 반복은 없다.

@@ -1,0 +1,25 @@
+{
+    "old_source_modified":  false,
+    "stopped_pid":  39652,
+    "memory_error_unique_cause_proved":  false,
+    "other_apps_closed":  0,
+    "new_training_launched":  0,
+    "state":  "completed_exact_own_historical_readonly_observer_stop",
+    "before":  {
+                   "commitLimit":  107451179008,
+                   "freeVirtualKiB":  15051528,
+                   "freePhysicalKiB":  1672200,
+                   "committedBytes":  92051693568,
+                   "availableBytes":  1682362368,
+                   "utc":  "2026-11-01T05:05:02.8204055Z"
+               },
+    "commandline_sha256":  "f16fe2d5f46c84737ff30e6bc565001a2888c39b3b36066a29a2cf0ab1561f8f",
+    "after":  {
+                  "commitLimit":  90460561408,
+                  "freeVirtualKiB":  44959848,
+                  "freePhysicalKiB":  23490732,
+                  "committedBytes":  44425588736,
+                  "availableBytes":  24054038528,
+                  "utc":  "2026-11-01T05:05:05.1587942Z"
+              }
+}

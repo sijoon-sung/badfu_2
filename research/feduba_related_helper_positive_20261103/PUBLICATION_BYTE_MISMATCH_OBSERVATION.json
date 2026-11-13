@@ -1,0 +1,13 @@
+{
+  "state": "local_publication_guard_stopped_before_commit_or_training",
+  "stage": "new_actual_metadata_Git_index_byte_check",
+  "first_affected_file": "SOURCE_REVIEW_RESULT.json",
+  "raw_sha256": "612239aceb9125b35907e1fefa65e6db1c13da4037dbde8a93662388ebe2ef31",
+  "raw_CRLF_pairs": 19,
+  "traceback": "AssertionError: SOURCE_REVIEW_RESULT.json in tmp/feduba_positive_commit_actual_20261103.py line11 before commit/push; raw DISLAB/local/PR producer receipt preserved.",
+  "original_caller_sha256": "2c8ab9af402e87edc692afc13293ff7e792ce2345e362c2a124151f6a73c6f65",
+  "producer_failure": false,
+  "model_loads": 0,
+  "actual_training_started": false,
+  "original_caller_reinvoke": false
+}

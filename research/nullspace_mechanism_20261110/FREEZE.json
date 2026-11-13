@@ -1,0 +1,12 @@
+{
+  "schema": "mechanism_source_freeze_v1",
+  "hypothesis": "D18 PCA-FC orthogonal residual is an intrinsic necessary signature across unlearning-activated attacks",
+  "files": {
+    "PROTOCOL.txt": "79929262619899d8ad49f07f8abe618b5929954ee2806d1e0b08ce7dad8060de",
+    "THEORY.txt": "72f2b351d80add43f67fe3c9b3c914b7f81aa74cf2c045b23ae978270df43996",
+    "PAPER_MATRIX.txt": "48310893f61f42a13c3d2ee62fecd668da1d8d25ed080bad9b44a44caff36b5d",
+    "derive_exact.py": "e8df7b9cba0073a9e1bd9189505bdc7ab96f893fb7fddd341618f63595994935",
+    "check_exact.py": "67678e4fdfe48d55d7a181b0404da0e2c6deedf25cdb151d69d15291f2634a10"
+  },
+  "compute": "DISLAB stdlib Fraction only; two new bounded commands; no real models"
+}

@@ -1,0 +1,9 @@
+읽기전용 RNG 경계 source 검토 완료 — R03/R02/N02/D08/D15
+
+440b0b8 source/실PROFILE 선게시·SOURCE_FREEZE8f10aa23...와8public actual/local/PR/Gitblob 일치뒤 DISLAB stdlib AST/text/JSON 검토1회를 완료했다. RESULT8108e602.../COMPLETION5caa0ca2...·실rootprocess0/failure0이며 torch/upstream import·RNG실행·model/tensor/query읽기·forward/backward/optimizer0이다.
+
+고정공개8Python본문의seed호출4개는trigger_generate_function module-scope NumPy/Python/Torch random_seed0 세개(21–23행)와Fed_Unlearn_main.Federated_Unlearning의Torch FL_params.seed 기본42 한개(118행)다. models/utils import(6/14행)가module seed보다앞서고실제누락상태이므로조건부source의도이며untouchedimport가해당seed를실행했다거나저자전체RNGstate를회복했다고쓰지않는다. missinghelper sideeffect/캐시내용·실runtime draw수는검사하지않았다.
+
+공개DataLoader호출13곳은explicit generator keyword가없고,kwargs유무도결과에남겼다. trigger_generate의model_init두호출37/38행은noise-cache조건68행보다앞에있다. 이는호출/분기순서의정적사실이며캐시별RNGdraw수를모델로계산한것이아니다. 실제declared train_role는매role seed(schedule.seed)와별도torch.Generator.manual_seed/DataLoadergenerator를명시한다. 고정10cohort/20R의source정수식으로만200unique seed(510242..701942)를나열했으며이는실RNGstate/augmentation재생이아니다.
+
+fu_core/fu_training/runtime_common의minus/plus hash가같아이RNG정책은양부호공통이다. role-reset 자체는이미선언된조건이며이번새bound evidence는public import/cache/call-scope와explicitgenerator의차이를명시한것이다. 이것만으로minus13.8222→plus58.7444의차이또는논문성능gap의유일원인을설명하거나seed정책변경/재훈련을채택하지않는다. 원수치/원verifier작성실패/한정prefix/3model CPU봉인과모든source/profile/default/catalogue를보존했다. 원6gate4성능실패/2CA통과·D08큰정상반례/D15/unknown-trigger-family탐지미검증은불변이다. 새훈련은미검증/보류다.

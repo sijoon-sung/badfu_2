@@ -1,0 +1,42 @@
+{
+  "state": "passed_new_diagnosis_publication_and_evidence_checks",
+  "frozen_6_source_files_unchanged": true,
+  "received_original_evidence_files_match_remote": [
+    "RESULT.json",
+    "VERIFIED.json",
+    "RUN_ONCE.json",
+    "VERIFY_ONCE.json",
+    "CONTROLLER_ONCE.json",
+    "STATE.json",
+    "CASE_SELECTION.json",
+    "TERMINAL_PROCESS.json",
+    "run.log",
+    "verify.log",
+    "FREEZE.json",
+    "PUBLICATION.json",
+    "SOURCE_CHECKS.json"
+  ],
+  "raw_terminal_BOM_CRLF_bytes_preserved": true,
+  "private_logits_and_original_IDs_not_staged": true,
+  "source_profiles_published_before_actual_forward_calls": true,
+  "main_index_check": {
+    "cards": 28,
+    "sources": 564,
+    "folders": 112,
+    "linked_folders": 64
+  },
+  "PR_index_check": {
+    "cards": 28,
+    "sources": 491,
+    "folders": 109,
+    "linked_folders": 61
+  },
+  "GitHub_links_checked": 1122,
+  "staged_whitespace_check": "passed_with_original_terminal_CR_at_EOL_attribute",
+  "completed_old_finite_experiment_repeated": false,
+  "new_forward_calls": 8,
+  "new_independent_model_forward_calls": 0,
+  "BN_gap_rule_rejected": true,
+  "performance_reproduction_or_detection_success": false,
+  "overall_goal_complete": false
+}

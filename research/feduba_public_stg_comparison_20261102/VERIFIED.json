@@ -1,0 +1,22 @@
+{
+  "state": "passed_new_public_STG_comparison_audit",
+  "all_optimizer_steps": 200,
+  "independent_gradient_calls": 2,
+  "independent_sample_forwards": 200,
+  "gradients": [
+    {
+      "epoch": 1,
+      "batch": 1,
+      "max_abs": 0.0
+    },
+    {
+      "epoch": 100,
+      "batch": 2,
+      "max_abs": 0.0
+    }
+  ],
+  "max_endpoint_CE_error": 6.660779003908601e-07,
+  "all_training_gradients_replayed": false,
+  "victim_ASR_or_FU_validated": false,
+  "overall_goal_complete": false
+}

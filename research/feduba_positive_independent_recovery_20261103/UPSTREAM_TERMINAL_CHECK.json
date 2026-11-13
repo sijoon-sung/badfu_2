@@ -1,0 +1,22 @@
+{
+    "state":  "old_tasks_terminal_expected_exits_and_native0",
+    "utc":  "2026-11-03T11:10:59.6368785Z",
+    "tasks":  [
+                  {
+                      "name":  "Codex-FedUBA-related-helper-positive-FU20-20261103",
+                      "state":  3,
+                      "exit":  0,
+                      "logon":  "S4U",
+                      "level":  "Limited"
+                  },
+                  {
+                      "name":  "Codex-FedUBA-related-helper-positive-newmodel-eval-review-20261103",
+                      "state":  3,
+                      "exit":  1,
+                      "logon":  "S4U",
+                      "level":  "Limited"
+                  }
+              ],
+    "original_native_processes":  0,
+    "source_review_model_reads":  0
+}

@@ -1,0 +1,159 @@
+{
+  "branch": "balanced5000",
+  "opaque": "n00",
+  "results": [
+    {
+      "case": "n00",
+      "arm": "baseline",
+      "family": "additive",
+      "target": 4,
+      "n": 900,
+      "witness": 124,
+      "score": 0.13777777777777778,
+      "stable": 698,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 14
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 17
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 15
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 7
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 17
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 23
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 16
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 8
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    },
+    {
+      "case": "n00",
+      "arm": "route",
+      "family": "additive",
+      "target": 0,
+      "n": 900,
+      "witness": 126,
+      "score": 0.14,
+      "stable": 685,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 100,
+          "witness": 13
+        },
+        {
+          "source": 2,
+          "n": 100,
+          "witness": 19
+        },
+        {
+          "source": 3,
+          "n": 100,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 100,
+          "witness": 12
+        },
+        {
+          "source": 5,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 6,
+          "n": 100,
+          "witness": 32
+        },
+        {
+          "source": 7,
+          "n": 100,
+          "witness": 3
+        },
+        {
+          "source": 8,
+          "n": 100,
+          "witness": 30
+        },
+        {
+          "source": 9,
+          "n": 100,
+          "witness": 14
+        }
+      ],
+      "attack_decision": null,
+      "status": "calibration_required"
+    }
+  ],
+  "route_overlap": false,
+  "clean_utility": {
+    "version": "D21.clean_utility.contiguous_FP32.v1",
+    "N": 10000,
+    "correct": 8277,
+    "CA_pct": 82.77,
+    "correct_by_class": [
+      841,
+      912,
+      764,
+      660,
+      814,
+      760,
+      874,
+      841,
+      905,
+      906
+    ],
+    "N_by_class": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "model_sha256": "7e5f9117ff3bfaaed9d41e2e6a9774cec445dcb5a97896ae3d06c0f1992a09d8",
+    "role_truth_or_trigger_inputs": 0,
+    "independent_second_clean_inference": false
+  },
+  "native_independent_counts_exact": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": "feduba.external_surrogate_and_target.assets.20261031",
+  "related_cards": ["R03", "R02", "N02", "D08", "D15"],
+  "target_class": 2,
+  "tiny_url": "https://cs231n.stanford.edu/tiny-imagenet-200.zip",
+  "tiny_expected_classes": 200,
+  "tiny_expected_train_per_class": 500,
+  "tiny_resize": [32, 32],
+  "tiny_resize_interpolation": "PIL_BILINEAR",
+  "cifar10_1_repository": "modestyachts/CIFAR-10.1",
+  "cifar10_1_commit": "d9982abb0bfc4846b8d13a11e66b887d946205d0",
+  "cifar10_1_files": {
+    "cifar10.1_v6_data.npy": {"git_blob": "24349cc5f3fb59648d75cd8015b5a184b1f5c250", "bytes": 6144128},
+    "cifar10.1_v6_labels.npy": {"git_blob": "e713b09cecf2ecd933970001909fcdec7c907ab0", "bytes": 8128}
+  },
+  "cifar10_1_expected_N": 2000,
+  "cifar10_1_expected_per_class": 200,
+  "target_external_N": 200,
+  "victim_data_access": "CPU byte-identity audit only; no victim data in surrogate training",
+  "exact_overlap_policy": "require zero of both full CIFAR10.1 and resized Tiny train against victim train/test",
+  "semantic_near_duplicate_certified": false,
+  "Tiny_upstream_pinned_digest_available": false,
+  "GPU_or_training_allowed_by_this_profile": false
+}

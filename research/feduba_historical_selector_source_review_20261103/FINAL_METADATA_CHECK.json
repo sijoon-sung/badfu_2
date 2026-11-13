@@ -1,0 +1,167 @@
+{
+    "state":  "final_source_and_metadata_readback",
+    "files":  [
+                  {
+                      "name":  ".gitattributes",
+                      "sha256":  "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+                      "bytes":  8
+                  },
+                  {
+                      "name":  ".gitignore",
+                      "sha256":  "f7c3ae93802efafaca44707c50b8c71ff98c042d49ec0c847827fc1b5e00f8fc",
+                      "bytes":  58
+                  },
+                  {
+                      "name":  "INPUT_BINDING.json",
+                      "sha256":  "44dcee2b96e22db92091766965857e2037687d00aa97a97f4d315c81b9b9a69d",
+                      "bytes":  2457
+                  },
+                  {
+                      "name":  "PROFILE.json",
+                      "sha256":  "90082e8b8bbc96a3499b739fbb574aa1d6ea97c116e18dbc5aa622fc72dbb9c9",
+                      "bytes":  2822
+                  },
+                  {
+                      "name":  "PROTOCOL.txt",
+                      "sha256":  "1b552637616e24652159333106a0aea7dab36a13bf336cd1c353d8428038f9ed",
+                      "bytes":  2563
+                  },
+                  {
+                      "name":  "PAPER_EVIDENCE.json",
+                      "sha256":  "43c22888388a6fe6f1cec3a43cbc1b982b54b0faa0cb09e2efc65aac7be8c7a8",
+                      "bytes":  815
+                  },
+                  {
+                      "name":  "native_memory.py",
+                      "sha256":  "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+                      "bytes":  1471
+                  },
+                  {
+                      "name":  "native_processes.py",
+                      "sha256":  "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+                      "bytes":  3972
+                  },
+                  {
+                      "name":  "review_selector.py",
+                      "sha256":  "15a1aa7adca9e301228d49e0c938773ac0823c3d2dd418dfe2ba60b740929e2e",
+                      "bytes":  10341
+                  },
+                  {
+                      "name":  "LOCAL_INPUT_PATH_TRANSPORT_FAILURE.json",
+                      "sha256":  "9e4c89bed4990fe093054abed10324b5d63a8e1a34b5a1daac38c72376ecf9ee",
+                      "bytes":  528
+                  },
+                  {
+                      "name":  "INPUT_PATH_TRANSPORT_READBACK_PROTOCOL.txt",
+                      "sha256":  "131cc23e229ae1e26ac902b28fb8faa48563b683c43ad3a9b974de26319d95b7",
+                      "bytes":  649
+                  },
+                  {
+                      "name":  "INPUT_PATH_READBACK.json",
+                      "sha256":  "de4a34adcb26e2d04975427533d42253f401add80e2fef0c6dfbedef8a9b8814",
+                      "bytes":  136
+                  },
+                  {
+                      "name":  "PREPUBLICATION_LOCATION_CORRECTION.json",
+                      "sha256":  "ce9ceff5ee3cf5a4c684323ce9a0d3362c42e37bbef4091059bf98553b709a0f",
+                      "bytes":  676
+                  },
+                  {
+                      "name":  "PREPUBLICATION_FAILED_LOCATION_CALLER.py",
+                      "sha256":  "868537a0139da522f5b3a2f28d20315e3b7ba60033bb3fd041ab7e8b2ea440bd",
+                      "bytes":  422
+                  },
+                  {
+                      "name":  "SOURCE_FREEZE.json",
+                      "sha256":  "b6cad4cd313325e3d785388af0e120b0b20b53a2edb1596c9b781e3a93a9c789",
+                      "bytes":  1294
+                  },
+                  {
+                      "name":  "SOURCE_PUBLICATION.json",
+                      "sha256":  "9c51171563b20e9ac391388dfa5f04a237255321ef2b634d7a93d0ab4433a3c0",
+                      "bytes":  4242
+                  },
+                  {
+                      "name":  "RUN_PUBLICATION.json",
+                      "sha256":  "9c51171563b20e9ac391388dfa5f04a237255321ef2b634d7a93d0ab4433a3c0",
+                      "bytes":  4242
+                  },
+                  {
+                      "name":  "FAILED_PIN_PUBLISH_CALLER.py",
+                      "sha256":  "fb5edd4a6ea02bd21b11492444a0ae1ba862301e734446a05d4794ddb46d70ce",
+                      "bytes":  2598
+                  },
+                  {
+                      "name":  "PIN_PUBLICATION_FAILURE.json",
+                      "sha256":  "6a4dfe4fdb3f4050811553373e8a4cf7724b20b5de6444eb960bc30afc7fa574",
+                      "bytes":  893
+                  },
+                  {
+                      "name":  "PIN_PATH_RECOVERY_PROTOCOL.txt",
+                      "sha256":  "259474af7165beba963fdd523f2c709dfd670438837026934d930685a8310f31",
+                      "bytes":  872
+                  },
+                  {
+                      "name":  "RESULT.json",
+                      "sha256":  "92b37a3a3b444f1ba3569481630b7c8e0653e0de5404e9e98d9d92dba7ec3246",
+                      "bytes":  16583
+                  },
+                  {
+                      "name":  "COMPLETION.json",
+                      "sha256":  "415638a12d5d2930456bedca96b1d9b28c07e1128439ef04dc1c18905b92a54e",
+                      "bytes":  341
+                  },
+                  {
+                      "name":  "ONCE.json",
+                      "sha256":  "506fa416521b41fef97570fe65191a27ae26bc07550ded80b930e52c6246a99a",
+                      "bytes":  143
+                  },
+                  {
+                      "name":  "ADMISSION.json",
+                      "sha256":  "7e57f112673c1f3df68f0d40075aa080604632296682adac88e07f15ec9e6495",
+                      "bytes":  339
+                  },
+                  {
+                      "name":  "PUBLICATION_BYTE_CHECKS.json",
+                      "sha256":  "0294ccb1ba5e9ff349eea97e9aefd3471ca713d843270ef7049850b8d142551c",
+                      "bytes":  3787
+                  },
+                  {
+                      "name":  "TERMINAL_OBSERVATION.json",
+                      "sha256":  "840fddc08addc9f36362c3340dc294eb95c1bfd82872e23a3d7cbc1e3091ed97",
+                      "bytes":  343
+                  },
+                  {
+                      "name":  "REPORT_KO.txt",
+                      "sha256":  "56112d7c1db1901fb38c3b7b26d87df395a7c76ebe8768328dc4a1b5c26b6e53",
+                      "bytes":  4252
+                  },
+                  {
+                      "name":  "COMPARISON.json",
+                      "sha256":  "a9c7abd1650a86aacaf1386e0223da49a95a7cfc2608bcafd1cb1cb3331bcad2",
+                      "bytes":  3926
+                  },
+                  {
+                      "name":  "NEXT_STAGE_RATIONALE.txt",
+                      "sha256":  "76ff86ed68eb735d71ea48b3681e69f6ef9ab7b1898229aadb8a6682ed94e75b",
+                      "bytes":  2112
+                  },
+                  {
+                      "name":  "PINNED_HISTORY_OBSERVATION.json",
+                      "sha256":  "f2c010113c94c916efd067aff1ed49ab5be783f3f080982a1f98329832a534fd",
+                      "bytes":  735
+                  },
+                  {
+                      "name":  "SOURCE_BODY_REVIEW.json",
+                      "sha256":  "6c383408bab849e466e350f876586e09d4e4e0d5e0e9f191b9e68831ee5feaf2",
+                      "bytes":  12871
+                  },
+                  {
+                      "name":  "private_inputs/page6.txt",
+                      "sha256":  "85f22599985fcc3fac1e6831d2e44b463e70b52478d7cae49c2e86a87e5b8f93",
+                      "bytes":  5815
+                  }
+              ],
+    "model_reads":  0,
+    "private_source_and_paper_text_public_staged":  false
+}

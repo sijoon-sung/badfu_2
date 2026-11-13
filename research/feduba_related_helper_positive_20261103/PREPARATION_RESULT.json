@@ -1,0 +1,14 @@
+{
+  "state": "positive_sign_attack_prepared_model0",
+  "source_freeze_sha256": "1691ff30388b1444851d5a73bd566dbf893dc3a315464e6a1af63977541c0936",
+  "selected_counts_by_owner": {
+    "5": 63,
+    "7": 62
+  },
+  "expected_attack_batches": 20000,
+  "selected_sample_epoch_exposures": 12500,
+  "reused_normal_training_batches": 20000,
+  "new_normal_training_batches": 0,
+  "new_SSS_queries": 0,
+  "new_model_loads": 0
+}

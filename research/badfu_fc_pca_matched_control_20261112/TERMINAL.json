@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "task": {
+    "exit": 0,
+    "active_owned": 0,
+    "state": 3
+  },
+  "verified_raw_hashes": {
+    "DECISION.json": "3b80d90c3d1ff1033e649a9170fe053ac05ffee027e8cb55883ec593968b3a53",
+    "HOLDOUT_SPLITS.json": "7c467dae6261337063d78ae4d69278cd7a8fb90d202cd5dfd6d74aa8cda4356f",
+    "PREFLIGHT.json": "fc24a1ad14e97b570320567b97d52e18e7ba6fd993dee99c2b1fd2e4b0908810",
+    "ADMISSION.json": "08e14c8b1e1de9f600b5b9654fb6ab3ea520ead3e70adf8069230e02bf03652f",
+    "FREEZE.json": "56faab97c083462a90c4f6ee66c563d59a0d229862c9cbcf92d4356942b3ec4e",
+    "RESULT.json": "8b83b59d9e24ca601e44ed3af2b92ba7d167a35673fc8fdcccb6cf012add1224"
+  },
+  "original_model_cases": 6,
+  "model_comparisons": 21,
+  "probe_panel_rows": 96
+}

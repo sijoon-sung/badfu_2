@@ -1,0 +1,61 @@
+{
+  "state": "original_normal_minus_and_eval_explicitly_reused_not_retrained",
+  "receipts": {
+    "FU_benign_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_benign_RESULT.json",
+      "sha256": "26c70d5fd9e871ad83f3fbcb75765becd56eb7b87310061105298a3fd2c67f99"
+    },
+    "FU_benign_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_benign_VERIFIED.json",
+      "sha256": "f74afc84d93c9c727af9a90ed51df6e6d7cb9a59889f01c562a45f0af9e75e97"
+    },
+    "FU_attack_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_attack_RESULT.json",
+      "sha256": "1c83e1e5a4f7728da65a5ca6c150fe7842d1fae4f723b87a2496c0a165126587"
+    },
+    "FU_attack_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_attack_VERIFIED.json",
+      "sha256": "39a847b7bdb37767a14eff54d3ed707ca49b1fac06cad8c5cd62c0d894a7c881"
+    },
+    "PAIR_EVAL_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_RESULT.json",
+      "sha256": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac"
+    },
+    "PAIR_EVAL_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_VERIFIED.json",
+      "sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe"
+    },
+    "COMPLETION.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/COMPLETION.json",
+      "sha256": "1ac3223ada7c52f12b7176d7c85a5129f67bfa9dc8360aadb81ecc0083e1be76"
+    },
+    "REMOTE_CHECKPOINT_REVIEW.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/REMOTE_CHECKPOINT_REVIEW.json",
+      "sha256": "5921bc27a45f331ee25644cd9378bb39596041d7ce7249e1d27ee18d6b7b6153"
+    },
+    "SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/SOURCE_FREEZE.json",
+      "sha256": "4c05dd98d3f6f83eb70649399d167b95de11c5b5d74724b9a27a46308a4f19f9"
+    },
+    "RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/RUN_FREEZE.json",
+      "sha256": "9343ca79e6946d3ad5caa848779231b285757e6c2a6b9630b46a676f73c193fa"
+    },
+    "FU_LAUNCH_PROFILE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_LAUNCH_PROFILE.json",
+      "sha256": "29a7f3f11c26ce33fa71e3bfd34aae6c5248e185acf29baa884d3a7bf8c326c6"
+    },
+    "source_review": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\SOURCE_REVIEW_RESULT.json",
+      "sha256": "612239aceb9125b35907e1fefa65e6db1c13da4037dbde8a93662388ebe2ef31",
+      "bytes": 596
+    },
+    "sign_contract": {
+      "path": "D:\\FEDUBA_RELATED_HELPER_POSITIVE_20261103\\SIGN_CONTRACT_RESULT.json",
+      "sha256": "939de6be1dc406e74c45819acdb76503811af689f83265645227797036d45eb9",
+      "bytes": 1170
+    }
+  },
+  "old_sealed_review_unchanged": true,
+  "source_helper_sign_only_alternative_not_Eq8_conformant": true
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fuba.algorithm_sgd.mnist.dba.ten_seed.20261031",
+  "related_cards": [
+    "R02",
+    "D08",
+    "D15",
+    "N02"
+  ],
+  "baseline_case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "baseline_seed": 20261023,
+  "baseline_partition_seed": 20261020,
+  "baseline_review_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+  "baseline_manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+  "remote_root": "D:/FUBA_SEED_REPRO_20261031",
+  "draw_seed": 20261031,
+  "new_seeds": [
+    5129832,
+    4059094,
+    6302389,
+    1221271,
+    8598638,
+    685659,
+    3502047,
+    4145799,
+    7983344
+  ],
+  "partition_rule": "training_seed - 3",
+  "total_training_seeds_including_baseline": 10,
+  "algorithm_change": "none; same literal Algorithm-SGD and local DBA gamma profile",
+  "storage_change": "bounded replace retry for Windows file-sharing contention only",
+  "optimizer_changes_adopted": false,
+  "global_gamma_change_adopted": false,
+  "numeric_conditions_fixed": true,
+  "compute": "DISLAB one GPU, sequential; before every new run require util<=5/free>=7000/used<=2048MiB and no competing trainer",
+  "stop_on_first_success": false,
+  "expand_seed_list_after_failure": false,
+  "unique_author_code_or_exact_Adam_experimental_reproduction_claim": false
+}

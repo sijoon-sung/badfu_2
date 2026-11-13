@@ -1,0 +1,19 @@
+{
+  "pid": 27080,
+  "case_ids": {
+    "attack": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.attackfu20.20261101",
+    "benign": "feduba.paper.cifar10.s42.mixed105.cputrigger.sss125.benignfu20.20261101"
+  },
+  "terminal": {
+    "all_completed_producer_root_processes": 0,
+    "getter": "same_verified_native_actual_commandline"
+  },
+  "memory": {
+    "getter": "Windows_GetPerformanceInfo",
+    "structure_bytes": 104,
+    "page_bytes": 4096,
+    "availableBytes": 21050519552,
+    "committedBytes": 46312755200,
+    "commitLimit": 90411380736
+  }
+}

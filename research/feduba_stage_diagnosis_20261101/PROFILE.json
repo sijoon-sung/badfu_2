@@ -1,0 +1,95 @@
+{
+  "id": "feduba.stage_diagnosis.s42.cpu8.surrogate_BN_mode.20261101",
+  "execution_root": "D:/FEDUBA_STAGE_DIAGNOSIS_20261101",
+  "launch_enabled": true,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The completed frozen-eval STG objective failure is consistent with a surrogate BatchNorm mode gap: the same frozen learned parameters can classify the fixed external target batches better using minibatch statistics than using frozen running statistics.",
+  "new_observable": "Paired target-class200 counts and CE of a fixed surrogate under eval versus disposable train-BN copies, for saved zero/final-delta inputs. Previous gradient algebra checks and victim evaluation did not measure this factorial comparison.",
+  "comparison_scope": "Implementation diagnosis only. BN gaps can occur in benign/non-IID models; this neither resolves D08/D15 nor validates a server detector or the final-FU causal explanation.",
+  "architecture": {
+    "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/model_reference.py",
+    "sha256": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3"
+  },
+  "upstream_trigger_source": {
+    "path": "D:/FEDUBA_REPRO_AUDIT_20261031/upstream_author/trigger_generate_function.py",
+    "sha256": "53e7743598665a9f36c11530b9381261f3c7ce6cc1d517eac9706822d944fd06"
+  },
+  "paper": {
+    "path": "D:/FEDUBA_REPRO_AUDIT_20261031/FedUBA-TDSC26.pdf",
+    "sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98"
+  },
+  "upstream_commit": "005959ab8a955f4dcf094930ce6953af8fee827b",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.paper.cifar10.s42.cpu_trigger.sss125.attackfu20.20261031",
+  "permitted_purpose": "diagnostic",
+  "packet_root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_s42_CPUtrigger_SSS125_FU20_pair_20261031",
+  "packet_manifest_sha256": "5c7b66a4453f0b2caca68610fda2752a7b794849589666a5843b8df0b62856eb",
+  "packet_seal_sha256": "1eeb3606cdab0488e7294c120651dc446617a27da9b900e92bef90caa3ad30f7",
+  "model_file": "run/fixed_surrogate201.pt",
+  "model_payload_key": null,
+  "model_sha256": "4768e90eb6efcb2b8f772a0ac41f535c967083dd3d6d6887ef443595e87c6765",
+  "delta_file": "run/delta.pt",
+  "delta_sha256": "1e070dc788e3f2e80cd71d1abf0bc74b8754cd93f15d60395adacbbd281d8bfe",
+  "step_files": [
+    "private_tensor_evidence/stg_cpu_trigger_recovery/steps/epoch100_batch1.pt",
+    "private_tensor_evidence/stg_cpu_trigger_recovery/steps/epoch100_batch2.pt"
+  ],
+  "modes": [
+    "eval_frozen",
+    "train_BN_copy"
+  ],
+  "perturbations": [
+    "zero",
+    "final_delta"
+  ],
+  "input_rule": "Use exact saved augmented x, no new augmentation. zero=x; final_delta=clip(x+final_delta,-1,1).",
+  "CPU_threads": 2,
+  "FP32": true,
+  "MKLDNN": true,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "fixed_budget": {
+    "batches": 2,
+    "batch_sizes": [
+      128,
+      72
+    ],
+    "external_target_images": 200,
+    "target_label": 200,
+    "forward_calls": 8,
+    "sample_forwards": 800,
+    "backward_calls": 0,
+    "optimizer_steps": 0,
+    "victim_model_forwards": 0,
+    "saved_learned_models": 0
+  },
+  "BN_copy_rule": "Each cell gets a fresh immutable-state copy. Learned parameters are frozen. train_BN_copy may update only running_mean/running_var/num_batches_tracked; discard immediately. Never substitute for or train into a source checkpoint.",
+  "min_target_hit_gain": 40,
+  "min_CE_drop": 1.0,
+  "additional_support_rule": "target hits must strictly improve in both stored batches",
+  "positive_rule_scope": "Consistent with a BN mode gap only; not proof of transfer/FU causality, automatic profile adoption, or performance reproduction.",
+  "independent_CE_atol": 5e-06,
+  "independent_CE_rtol": 1e-05,
+  "independent_check": "New process, CPU1, saved FP32 logits only. Python argmax and stable fsum/logsumexp CE. Exact counts/IDs/cells and same preregistered rule. Zero model forwards; not independent model replay.",
+  "stop_rule": "After exact 8 forwards and independent stored-logit arithmetic, stop. If fixed rule fails, reject this bounded BN-gap rule without expanded budget. Any source/hash/shape/ID/finite/runtime/storage/check failure preserves prefix and exits, no automatic retry or widened tolerance.",
+  "prohibited_changes": [
+    "delta",
+    "target",
+    "seed",
+    "lr",
+    "epochs",
+    "budget",
+    "ASR_denominator",
+    "old_tolerances",
+    "original_sources",
+    "original_results",
+    "catalogue_defaults"
+  ],
+  "privacy": "Raw external IDs and 8 logits remain private_outputs on DISLAB and are not staged to public Git.",
+  "overall_goal_complete": false
+}

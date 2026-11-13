@@ -1,0 +1,77 @@
+{
+  "utc": "2026-11-02T17:32:08.0130984Z",
+  "task": {
+    "level": "Limited",
+    "user": "DISLAB",
+    "last_result": 267009,
+    "action": "-B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py",
+    "state": "Running"
+  },
+  "processes": [
+    {
+      "ProcessId": 32316,
+      "ParentProcessId": 2428,
+      "CommandLine": "\"C:/Users/DISLAB/AppData/Local/Programs/Python/Python312/python.exe\" -B -u D:/FEDUBA_FIXED10_PAIR_20261103/controller.py"
+    },
+    {
+      "ProcessId": 29824,
+      "ParentProcessId": 32316,
+      "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -B -u D:\\FEDUBA_FIXED10_PAIR_20261103\\verify_fu.py --branch benign"
+    }
+  ],
+  "audits": {},
+  "receipts": {
+    "FU_benign_FAILURE": null,
+    "FU_attack_AUDIT_FAILURE": null,
+    "PAIR_EVAL_AUDIT_STATE": null,
+    "PAIR_EVAL_FAILURE": null,
+    "CONTROLLER_STATE": {
+      "state": "running",
+      "pid": 32316,
+      "child": 29824,
+      "step": "verify_fu.py",
+      "arguments": [
+        "--branch",
+        "benign"
+      ],
+      "guard": {
+        "utilization_pct": 3,
+        "free_MiB": 5045,
+        "used_MiB": 5009,
+        "memory": {
+          "getter": "Windows_GetPerformanceInfo",
+          "structure_bytes": 104,
+          "page_bytes": 4096,
+          "availableBytes": 18978832384,
+          "committedBytes": 44717375488,
+          "commitLimit": 90276544512
+        },
+        "competing_trainers": 0
+      },
+      "CUDA_VISIBLE_DEVICES": "-1"
+    },
+    "FU_attack_AUDIT_STATE": null,
+    "PAIR_EVAL_AUDIT_FAILURE": null,
+    "FU_benign_AUDIT_FAILURE": null,
+    "FU_benign_STATE": {
+      "state": "completed_FU20",
+      "pid": 17820,
+      "rounds": 20,
+      "updated_unix": 1793640449.383864
+    },
+    "EXPORT_FAILURE": null,
+    "FU_attack_FAILURE": null,
+    "PAIR_EVAL_STATE": null,
+    "FU_attack_STATE": null,
+    "CONTROLLER_FAILURE": null,
+    "COMPLETION": null,
+    "FU_benign_AUDIT_STATE": {
+      "state": "auditing",
+      "pid": 29824,
+      "rounds": 13,
+      "checked_roles": 130,
+      "actual_epochs": 650,
+      "actual_batches": 13000
+    }
+  }
+}

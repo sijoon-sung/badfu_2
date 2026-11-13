@@ -1,0 +1,16 @@
+{
+  "pid": 57060,
+  "source_freeze_sha256": "a240de55f1fb8c49a669889228860ac73679bd08fdc1c4f452ad82502a76f199",
+  "resources": {
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18656739328,
+      "committedBytes": 44436045824,
+      "commitLimit": 90276544512
+    },
+    "disk_free_bytes": 713015410688,
+    "competing_trainer_count": 0
+  }
+}

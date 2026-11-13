@@ -1,0 +1,73 @@
+{
+  "id": "feduba.recovered_dependency_semantics_source_comparison.20261103",
+  "launch_enabled": true,
+  "execution_root": "D:/FEDUBA_DEPENDENCY_SEMANTICS_REVIEW_20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The newly recovered dependency bodies may resolve specific declared replacements; inspect exact helper flag/sign/transform and architecture AST differences before any code adoption or new model computation.",
+  "new_observable": "Pinned source bodies and canonical AST equality/differences against existing related helpers/actual model, plus the two different original bodies; not another archive inventory or an RNG/model experiment.",
+  "owner_identity_certified": false,
+  "max_members": 500,
+  "max_total_uncompressed_bytes": 10485760,
+  "max_source_member_bytes": 1048576,
+  "archive_depth": 1,
+  "source_only_extensions": [
+    ".py"
+  ],
+  "readme_body_match": true,
+  "skip_binary_payload_contents": true,
+  "AppleDouble_skip_requires_path_and_magic": true,
+  "source_AST_only": true,
+  "upstream_code_execution": 0,
+  "torch_imports": 0,
+  "RNG_execution": 0,
+  "model_tensor_or_data_loads": 0,
+  "forward_calls": 0,
+  "optimizer_steps": 0,
+  "non_IID_scope": "Dependency provenance for attack implementation only. D08/D15 and unknown-trigger-family detection remain unresolved; no server-method receives evaluator-only metadata.",
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py",
+    "verify_recovery.py",
+    "sign_eval.py"
+  ],
+  "resource_guard": {
+    "native_available_GiB": 8,
+    "commit_free_GiB": 16,
+    "disk_free_GiB": 80,
+    "GPU_util_max": 5,
+    "GPU_free_MiB_min": 4000,
+    "GPU_used_MiB_max": 6000,
+    "competitors": 0,
+    "poll_seconds": 15,
+    "max_wait_seconds": 86400
+  },
+  "stop_rule": "One source comparison only; preserve traceback on bound source/hash/AST/runtime failure and stop without retry. Definitions, matches or differences do not automatically adopt a model correction or justify full retraining.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "overall_goal_complete": false,
+  "download_calls": 0,
+  "source_member_reads": 4,
+  "synthetic_code_execution": 0
+}

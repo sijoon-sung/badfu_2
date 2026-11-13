@@ -1,0 +1,8 @@
+{
+  "scope": "Read-only metadata before any new model calculation",
+  "failure": "Windows PowerShell 5 Get-Content without explicit UTF8 misdecoded the UTF8 catalogue before ConvertFrom-Json",
+  "remote_catalog_modified": false,
+  "tensor_or_model_load": 0,
+  "full_original_stderr_saved": false,
+  "recovery": "A separate stdlib Python UTF8 metadata reader; original selector and catalogue remain unchanged"
+}

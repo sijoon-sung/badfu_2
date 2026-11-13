@@ -1,0 +1,62 @@
+{
+  "state": "completed_separate_independent_writer_recovery",
+  "exit_code": 0,
+  "recovery_verified_sha256": "6294fcac2119bfb73d33c7de14fcf9d484798cb1fbf9c988e33b33089b97f93f",
+  "primary_result_sha256": "b6a320a863247f54c8b950057f622361dedea147572a1da71a9640cfc858c24e",
+  "source_freeze_sha256": "7215e413a50948249857be33f0b1f970991ae9c013b2ed9d6ba02001292d049d",
+  "run_freeze_sha256": "28b86d1816144200000172b9fa3b6cd0a32024150a4948ea83d09bb2c3df3ad2",
+  "original_task_exit": 1,
+  "original_VERIFIED_still_absent": true,
+  "original_failure_bytes_preserved": true,
+  "additional_recovery_sample_forwards": 20000,
+  "additional_recovery_calls": 158,
+  "models": {
+    "pre": {
+      "N": 10000,
+      "clean_correct": 8553,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1813,
+      "CA_pct": 85.53,
+      "ASR_pct": 20.144444444444446
+    },
+    "benign": {
+      "N": 10000,
+      "clean_correct": 8474,
+      "non_target_N": 9000,
+      "triggered_target_hits": 1500,
+      "CA_pct": 84.74,
+      "ASR_pct": 16.666666666666668
+    },
+    "attack": {
+      "N": 10000,
+      "clean_correct": 8445,
+      "non_target_N": 9000,
+      "triggered_target_hits": 5287,
+      "CA_pct": 84.45,
+      "ASR_pct": 58.74444444444445
+    }
+  },
+  "performance_gate": {
+    "passed": false,
+    "checks": {
+      "pre_ASR": false,
+      "attack_ASR": false,
+      "attack_minus_pre": false,
+      "attack_minus_benign": false,
+      "all_three_CA": true,
+      "both_post_CA_drop": true
+    },
+    "attack_minus_pre_ASR_pp": 38.6,
+    "attack_minus_benign_ASR_pp": 42.077777777777776,
+    "post_CA_drop_pp": {
+      "benign": 0.79,
+      "attack": 1.08
+    },
+    "is_server_detection_threshold": false,
+    "is_exact_paper_mean_reproduction": false
+  },
+  "performance_success": false,
+  "overall_goal_complete": false,
+  "local_delivery_complete": false,
+  "finished_unix": 1793704436.5867312
+}

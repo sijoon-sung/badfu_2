@@ -1,0 +1,40 @@
+{
+  "state": "DISLAB_three_existing_endpoint_pairs_registered_for_diagnostic_use_only",
+  "metadata_source_commit": "7e9e73516724a737a67de034d5d876d548019771",
+  "registration_source_commit": "44fd55e7ccdd084739f805b858ffb5271734376d",
+  "registration_publication_commit": "9798152057f85b899d6b2aa064aa774b378baca0",
+  "registration_source_freeze_sha256": "f0ca4c2bb87e939275fcb0fd0ee53b92ea8a4a2021cedbaefe2d2bdfc75c5b48",
+  "case_ids": {
+    "benign": "feduba.public_fixed10.cifar10.s42.sss125.benignfu20.20261103",
+    "minus": "feduba.public_fixed10.cifar10.s42.sss125.minusrequestfu20.20261103",
+    "plus": "feduba.public_fixed10.cifar10.s42.sss125.plusrequestfu20.20261103"
+  },
+  "old_DISLAB_case_count": 25,
+  "new_DISLAB_case_count": 28,
+  "old_DISLAB_catalogue_sha256": "f753cb516c9eeb4b91a2e352599f5dca7dbcf146ac7aad55328414bbdecbf649",
+  "new_DISLAB_catalogue_sha256": "8cbb86b98bf44cfa344daca6df1326f1b2fafe946c3eceb3cf75dd961a21ec38",
+  "main_catalogue_case_count": 26,
+  "PR_catalogue_case_count": 23,
+  "main_and_PR_catalogues_unchanged": true,
+  "guard": {
+    "manifest_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_MANIFEST.json",
+    "manifest_sha256": "a48fadd8e8f94a04ec34ec5a08e94bb04c3fb6197f6da061e70e53ed3144f58e",
+    "seal_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\GUARD_SEAL.json",
+    "seal_sha256": "b46c875e25b80d82c06b5316500c88ffe1e50fe0d8a12409281c63bfc711cdcb",
+    "loader_path": "D:\\FEDUBA_REMOTE_DIAGNOSTIC_REGISTRATION_20261103\\guard\\checkpoint_guard.py"
+  },
+  "guard_passes": 4,
+  "packet_file_hash_checks": 3236,
+  "forbidden_purposes_rejected": 15,
+  "registered_sha256": "3fa9732ff3a82f7f10588f7fea4ec79c6f554c1d3d8a5e6ba180ff027855c16f",
+  "registration_completion_sha256": "2639b331871f284210f1e4b1ee7da092605d3adc5fe886f3d6976af0d31daa36",
+  "old_cases_defaults_and_audit_bytes_preserved": true,
+  "strict_CPU_storage_receipts_reused_not_rerun": true,
+  "models_or_tensors_loaded": 0,
+  "model_forward_calls": 0,
+  "model_files_copied": 0,
+  "new_training_or_evaluation": false,
+  "performance_success": false,
+  "local_delivery_complete": false,
+  "overall_goal_complete": false
+}

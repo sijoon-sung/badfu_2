@@ -1,0 +1,173 @@
+{
+  "id": "feduba.related_helper_positive.FU20.s42.source.20261103",
+  "launch_enabled": false,
+  "execution_root": "D:/FEDUBA_RELATED_HELPER_POSITIVE_20261103",
+  "foundation_root": "D:/FEDUBA_FIXED10_FOUNDATION_20261103",
+  "sss_root": "D:/FEDUBA_FIXED10_SSS_20261103",
+  "prior_pair_root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "hypothesis": "The positive addition in the already pinned related Narcissus poison_image helper, whose four-argument call signature matches the public FedUBA wrapper, may explain a sign-interpretation difference relative to the completed paper-Eq8-minus branch; test that single source-grounded sign alternative at fixed conditions.",
+  "new_observable": "One new positive-sign attack FU20 checkpoint/all200trained200calibratedroles/fulloptimizerRNG/epochlogs and independent fullCPU, followed by separately published new-model-only standard evaluation and readonly review; original normal and minus baselines are explicitly reused, never retrained or renamed.",
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "normal_case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "fixed_selected_clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "required_mixed_teacher_sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+  "required_delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "foundation_source_freeze_sha256": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b",
+  "foundation_run_freeze_sha256": "fdfe32f75f351f9dcd25bc82bcfbe82134aee18b2202e20e8f396b331ba844bb",
+  "SSS_source_freeze_sha256": "8738a84c3854d70ce5f23c5d4e659fbd3525fe3bd6e2e36d9142a6aa12672197",
+  "inputs": {
+    "teacher": {
+      "path": "D:\\FEDUBA_MIXED_SURROGATE_20261101\\private_run\\fixed_teacher201.pt",
+      "sha256": "240a2af249a42cd18af4d11513392c94c4c64a279f332e3c27eb17eaf02c8a2f",
+      "bytes": 45162251,
+      "payload_key": null,
+      "classes": 201
+    },
+    "upstream_selection": {
+      "path": "D:/FEDUBA_PAPER_IMPLEMENTATION_20261031/upstream/Fed_data_change.py",
+      "sha256": "107f2428b33abf6da88fc654c09ffeaf23de25c022fc535050556115021b1db8"
+    },
+    "related_helper": {
+      "path": "private_inputs/related_util.py",
+      "sha256": "5693c2155e4e4cf8d48e021acae1ac572403ea698539b36bae7aead72a4cff2b",
+      "git_blob": "837564b738637378b8567ae3fc25ff32a5e599cf",
+      "upstream": "https://github.com/reds-lab/Narcissus/blob/de128d870d7ef0560a4804e413b1c57909883195/util.py"
+    }
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "reused_helpers": {
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "verify_fu.py": "80b64586664a1e0dd12cccfbcfad258b15ff7a312e8e3d068a85e8d0460f1336",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "trigger_binding.py": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "FU_ENGINE_CPU_RESULT.json": "85b0ab87c9a587a650ae64e6ae116a6bb1da59a83e8146deef573a7029641d79",
+    "FU_POLICY_CPU_RESULT.json": "e2f33cdf27018e70ffa0a452a7390cfd8f7f87cfd7d71ecccdf790cc165e689d",
+    "GPU_PREFLIGHT_RESULT.json": "7024b092c13dbfd6f705d4e6b41585bf1bd2d63f671aa74b24def69ad1033d6c",
+    "TRIGGER_SOURCE_BINDING.json": "4d2af124629c29eb1a212e3867756d723f7f66197e3effb2889a210b1d330cd3"
+  },
+  "fixed_future_budget": {
+    "new_SSS_queries": 0,
+    "selected_IDs": 125,
+    "new_FU_branches": 1,
+    "new_FU_rounds": 20,
+    "new_FU_trained_roles": 200,
+    "new_FU_calibrated_roles": 200,
+    "new_FU_epochs": 1000,
+    "new_FU_batches": 20000,
+    "selected_sample_epoch_exposures": 12500,
+    "reused_normal_and_minus_branches_not_new_training": true,
+    "future_new_attack_only_primary_and_independent_each_sample_forwards": 20000,
+    "future_new_attack_only_primary_and_independent_each_calls": 158
+  },
+  "review_packet_root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_related_helper_positive_FU20_s42_20261103",
+  "minimum_free_storage_bytes": 85899345920,
+  "resource_wait_max_seconds": 86400,
+  "resource_wait_poll_seconds": 15,
+  "task_name": "Codex-FedUBA-related-helper-positive-FU20-20261103",
+  "stop_rule": "Run one fixed positive-sign FU20 and fullCPU regardless of intermediate utility. Stop/preserve source/hash/ID/finite/RNG/storage/runtime faults; no retry without new explicit stage contract. Do not tune sign or any parameter by outcomes. New-model-only full evaluation and readonly review follow separate actual published stage; do not stop at training completion.",
+  "non_IID_scope": "Implementation and checkpoint generation only. D08 attack.75848 between benign.75525/.76188 and D15 attack7/benign8 remain; unknown trigger-family-independent detection is unvalidated. No norm/cosine/CKA/RMS or renamed sensitivity detector.",
+  "whole_raw_scope": "All200 new trained+200calibrated role tensors, optimizer/RNG and full1000epoch logs remain in this new DISLAB root. Original normal/minus model histories and audits remain in their original root and are explicitly reused. Local transfer separate.",
+  "overall_goal_complete": false,
+  "baseline_root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+  "paper_Eq8_sign": -1,
+  "related_helper_sign": 1,
+  "is_author_certified_missing_helper_recovery": false,
+  "sign_only_port_preserves_single_dataset_getitem_and_existing_augmentation_RNG": true,
+  "baseline_receipts": {
+    "FU_benign_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_benign_RESULT.json",
+      "sha256": "26c70d5fd9e871ad83f3fbcb75765becd56eb7b87310061105298a3fd2c67f99"
+    },
+    "FU_benign_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_benign_VERIFIED.json",
+      "sha256": "f74afc84d93c9c727af9a90ed51df6e6d7cb9a59889f01c562a45f0af9e75e97"
+    },
+    "FU_attack_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_attack_RESULT.json",
+      "sha256": "1c83e1e5a4f7728da65a5ca6c150fe7842d1fae4f723b87a2496c0a165126587"
+    },
+    "FU_attack_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_attack_VERIFIED.json",
+      "sha256": "39a847b7bdb37767a14eff54d3ed707ca49b1fac06cad8c5cd62c0d894a7c881"
+    },
+    "PAIR_EVAL_RESULT.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_RESULT.json",
+      "sha256": "07e63f6361da94ef4ddfa0f9c4cad2ca7a3ca377da3aa7aa3fdd7d442b1ea7ac"
+    },
+    "PAIR_EVAL_VERIFIED.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/PAIR_EVAL_VERIFIED.json",
+      "sha256": "b6e95cde8cab64afb645b565a87cb48865d7adf56bd1248a094e8bfb30bdaabe"
+    },
+    "COMPLETION.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/COMPLETION.json",
+      "sha256": "1ac3223ada7c52f12b7176d7c85a5129f67bfa9dc8360aadb81ecc0083e1be76"
+    },
+    "REMOTE_CHECKPOINT_REVIEW.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/REMOTE_CHECKPOINT_REVIEW.json",
+      "sha256": "5921bc27a45f331ee25644cd9378bb39596041d7ce7249e1d27ee18d6b7b6153"
+    },
+    "SOURCE_FREEZE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/SOURCE_FREEZE.json",
+      "sha256": "4c05dd98d3f6f83eb70649399d167b95de11c5b5d74724b9a27a46308a4f19f9"
+    },
+    "RUN_FREEZE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/RUN_FREEZE.json",
+      "sha256": "9343ca79e6946d3ad5caa848779231b285757e6c2a6b9630b46a676f73c193fa"
+    },
+    "FU_LAUNCH_PROFILE.json": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FU_LAUNCH_PROFILE.json",
+      "sha256": "29a7f3f11c26ce33fa71e3bfd34aae6c5248e185acf29baa884d3a7bf8c326c6"
+    }
+  },
+  "reused_SSS_result_sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28",
+  "reused_SSS_verified_sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46"
+}

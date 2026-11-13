@@ -1,0 +1,18 @@
+{
+  "id": "fuba.mnist.dba.stage_localization.20261031",
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "purpose": "diagnostic",
+  "catalog_selector": "D:/TRAJECTORY_CATALOG_20261023/select_case.py",
+  "review_root": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+  "manifest_sha256": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+  "related_cards": ["R02", "D08", "D15", "N02"],
+  "max_roles": 7,
+  "max_stage_states_per_role": 6,
+  "full_test_N": 10000,
+  "reuse_verified_endpoints": true,
+  "training_performed": false,
+  "model_edits": false,
+  "evaluator_batch": 512,
+  "layout": "contiguous_NCHW",
+  "KD_cause_gate": {"subtraction_CA_min": 97, "subtraction_ASR_min": 60, "post_CA_min": 97, "post_ASR_max_exclusive": 60}
+}

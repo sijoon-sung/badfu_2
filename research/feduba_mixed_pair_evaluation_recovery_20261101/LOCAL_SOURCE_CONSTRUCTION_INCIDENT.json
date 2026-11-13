@@ -1,0 +1,11 @@
+{
+  "state": "local_unexecuted_source_construction_corrections_before_freeze",
+  "builder_assertion": "Independent verifier uses variable verified, not result; failed textual marker assertion before writing that file",
+  "second_local_assertion": "Unnecessary newline-replacement assumption failed before mutation; AST confirmed both newline constants are length1/codepoint10 and source did not need correction",
+  "remote_source_written_at_incidents": false,
+  "source_freeze_existed": false,
+  "source_or_metadata_probe_executed": false,
+  "model_loads": 0,
+  "model_forwards": 0,
+  "numeric_runner_started": false
+}

@@ -1,0 +1,62 @@
+{
+  "state": "passed",
+  "case_id": "badfu.multiseed.s20261023",
+  "phase": "normal_big4_FU",
+  "source_root": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU",
+  "committed_rounds": 40,
+  "preserved_prefix_rounds": 31,
+  "new_rounds": 9,
+  "every_global_file_hash_and_tensor_chain_freshly_checked": true,
+  "original31_manifest_prefix_unchanged": true,
+  "source_initial_sha256": "de640db9f789f9934f7272bef126c4eb9686599b56eaca8bc5e3fc025591775a",
+  "final_tensor_sha256": "189b709182b33b5d41d1b07a1b4fa3133f9cd6ccf1444f63bcad0dd15b447800",
+  "final_path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU\\final.pt",
+  "final_sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+  "payload_key": null,
+  "history_manifest": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_big4_FU\\TRAJECTORY.json",
+  "history_manifest_sha256": "dd06921597f521352d2029c2052542f5e4faa3e9dcf6f84fa066dfe35dc475e8",
+  "clean_pre_path": "D:\\MULTISEED_ACTUAL_FU_20261022\\badfu\\seed_20261023\\normal_pre\\final.pt",
+  "clean_pre_sha256": "d07bf3db07b955c2b654b5184d1c08f5a11db101a712901372fab1bc1a862373",
+  "partition_audit_matches_preexisting_protocol": true,
+  "metrics": {
+    "training_seed": 20261023,
+    "phase": "normal_big4_FU",
+    "checkpoint_sha256": "8ff6676bad33d88a4ecb2b1f57745f5192a3e7e40beeb871ff436eb09b44f017",
+    "final_round": 40,
+    "CA": 89.75999999999999,
+    "N": 10000,
+    "per_class_CA": {
+      "0": 91.9,
+      "1": 96.3,
+      "2": 85.5,
+      "3": 80.10000000000001,
+      "4": 91.10000000000001,
+      "5": 81.10000000000001,
+      "6": 94.19999999999999,
+      "7": 92.9,
+      "8": 92.9,
+      "9": 91.60000000000001
+    },
+    "ASR_evaluator_only": 1.6555555555555557,
+    "ASR_n": 9000,
+    "audit": {
+      "counts": {
+        "0": 11395,
+        "1": 9647,
+        "2": 9641,
+        "3": 9649
+      },
+      "retained_n": 40332,
+      "removed_n": 9668,
+      "removed_fraction": 0.19336,
+      "retained_indices_sha256": "f3128a77b4a8e4a5514ec9e5c1e4b876ffe872ef3a4adbb4044a82cc71e1160c",
+      "removed_indices_sha256": "39afab9e6cd748e3f8fdfb4eb5926e1fb45626856a62f33c3800d6bd2c2e3667"
+    }
+  },
+  "metrics_origin": "Trainer full10k clean /9k trigger evaluation; linked by final checkpoint SHA. Not a second independent evaluator run.",
+  "source_code_sha256": "1a832f4763f26ac664aa9edd67dfd7fb0688bff8382832b533432fe5d7eb1df4",
+  "limits": [
+    "Global-only history; local update tensors not retained. Execution-time aggregation0 is not a fresh client-state reconstruction.",
+    "Retained-data retraining from shared initial state; not approximate FedEraser. Other phases and seeds remain in progress."
+  ]
+}

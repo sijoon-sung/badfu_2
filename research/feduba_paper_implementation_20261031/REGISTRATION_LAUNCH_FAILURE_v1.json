@@ -1,0 +1,10 @@
+{
+  "state": "import_failed_before_any_registration_logic",
+  "failed_invocation": "system python -B register_clean_case.py ... --host-label main",
+  "error": "ModuleNotFoundError: No module named torch, runtime_common.py line11",
+  "source_changed": false,
+  "catalogue_case_or_audit_created": false,
+  "catalogue_before_sha256": "0c0c7d2fb2fa540402d78db72a7eeec023037f929e97c24a37b70524d3e56902",
+  "case_count_before": 23,
+  "recovery": "Invoke unchanged pinned helper with envs/badfu-original/python.exe already used for successful local strict verification; no completed registration rerun"
+}

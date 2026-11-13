@@ -1,0 +1,258 @@
+{
+  "state": "passed_independent_all_input_hashes_and_logit_counts",
+  "result_sha256": "6e426b8db77f701ebf7093a51fb782274a0d39c8b4589967c949b2ca8ac0d370",
+  "forward_calls": 0,
+  "independent_exact_metrics": {
+    "teacher": {
+      "zero": {
+        "classes": [
+          {
+            "class": 0,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 1,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 2,
+            "N": 200,
+            "target_hits": 74
+          },
+          {
+            "class": 3,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 4,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 5,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 6,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 7,
+            "N": 200,
+            "target_hits": 1
+          },
+          {
+            "class": 8,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 9,
+            "N": 200,
+            "target_hits": 0
+          }
+        ],
+        "non_target_N": 1800,
+        "non_target_target_hits": 1
+      },
+      "delta": {
+        "classes": [
+          {
+            "class": 0,
+            "N": 200,
+            "target_hits": 157
+          },
+          {
+            "class": 1,
+            "N": 200,
+            "target_hits": 117
+          },
+          {
+            "class": 2,
+            "N": 200,
+            "target_hits": 191
+          },
+          {
+            "class": 3,
+            "N": 200,
+            "target_hits": 165
+          },
+          {
+            "class": 4,
+            "N": 200,
+            "target_hits": 164
+          },
+          {
+            "class": 5,
+            "N": 200,
+            "target_hits": 153
+          },
+          {
+            "class": 6,
+            "N": 200,
+            "target_hits": 156
+          },
+          {
+            "class": 7,
+            "N": 200,
+            "target_hits": 157
+          },
+          {
+            "class": 8,
+            "N": 200,
+            "target_hits": 132
+          },
+          {
+            "class": 9,
+            "N": 200,
+            "target_hits": 89
+          }
+        ],
+        "non_target_N": 1800,
+        "non_target_target_hits": 1290
+      }
+    },
+    "victim": {
+      "zero": {
+        "classes": [
+          {
+            "class": 0,
+            "N": 200,
+            "target_hits": 7
+          },
+          {
+            "class": 1,
+            "N": 200,
+            "target_hits": 0
+          },
+          {
+            "class": 2,
+            "N": 200,
+            "target_hits": 144
+          },
+          {
+            "class": 3,
+            "N": 200,
+            "target_hits": 7
+          },
+          {
+            "class": 4,
+            "N": 200,
+            "target_hits": 6
+          },
+          {
+            "class": 5,
+            "N": 200,
+            "target_hits": 9
+          },
+          {
+            "class": 6,
+            "N": 200,
+            "target_hits": 8
+          },
+          {
+            "class": 7,
+            "N": 200,
+            "target_hits": 5
+          },
+          {
+            "class": 8,
+            "N": 200,
+            "target_hits": 4
+          },
+          {
+            "class": 9,
+            "N": 200,
+            "target_hits": 0
+          }
+        ],
+        "non_target_N": 1800,
+        "non_target_target_hits": 46,
+        "clean_label_correct": 1563
+      },
+      "delta": {
+        "classes": [
+          {
+            "class": 0,
+            "N": 200,
+            "target_hits": 87
+          },
+          {
+            "class": 1,
+            "N": 200,
+            "target_hits": 44
+          },
+          {
+            "class": 2,
+            "N": 200,
+            "target_hits": 168
+          },
+          {
+            "class": 3,
+            "N": 200,
+            "target_hits": 72
+          },
+          {
+            "class": 4,
+            "N": 200,
+            "target_hits": 75
+          },
+          {
+            "class": 5,
+            "N": 200,
+            "target_hits": 65
+          },
+          {
+            "class": 6,
+            "N": 200,
+            "target_hits": 56
+          },
+          {
+            "class": 7,
+            "N": 200,
+            "target_hits": 66
+          },
+          {
+            "class": 8,
+            "N": 200,
+            "target_hits": 87
+          },
+          {
+            "class": 9,
+            "N": 200,
+            "target_hits": 36
+          }
+        ],
+        "non_target_N": 1800,
+        "non_target_target_hits": 588,
+        "clean_label_correct": 849
+      }
+    },
+    "contingency_non_target": {
+      "zero": [
+        1753,
+        46,
+        1,
+        0
+      ],
+      "delta": [
+        442,
+        68,
+        770,
+        520
+      ]
+    },
+    "checks": {
+      "teacher_clean_target_selective": true,
+      "victim_trigger_transfer_observed": true
+    }
+  },
+  "all64_input_hashes_exact": true,
+  "standard_CIFAR10_ASR_or_FU_validated": false,
+  "overall_goal_complete": false
+}

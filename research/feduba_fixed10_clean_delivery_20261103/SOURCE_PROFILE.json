@@ -1,0 +1,65 @@
+{
+  "id": "feduba.public_fixed10.clean_review.source.20261103",
+  "launch_enabled": false,
+  "execution_root": "D:/FEDUBA_FIXED10_CLEAN_DELIVERY_20261103",
+  "foundation_root": "D:/FEDUBA_FIXED10_FOUNDATION_20261103",
+  "foundation_source_freeze_sha256": "056220aa571507c5074e77193c812b7612ff8b58f2f9fae5f4f8c855f9304b3b",
+  "foundation_run_freeze_sha256": "fdfe32f75f351f9dcd25bc82bcfbe82134aee18b2202e20e8f396b331ba844bb",
+  "foundation_task": "Codex-FedUBA-public-fixed10-cleanFL20-20261103",
+  "normal_case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "packet_root": "D:/CHECKPOINTS_FOR_REVIEW/FedUBA_public_fixed10_cleanFL20_s42_20261103",
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "task_name": "Codex-FedUBA-public-fixed10-clean-review-export-CPU-20261103",
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "hypothesis": "A separately sealed normal-only fixed10 checkpoint with an external hash-bound diagnostic catalogue entry permits the new victim-bound SSS without substituting an old pre. Storage verification is not attack reproduction.",
+  "new_observable": "Actual newly trained pre/initial/last-role optimizer RNG and full epoch logs, strictCPU3 zero1 checks and explicit host-local diagnostic guard; no new standard performance evaluation.",
+  "CPU_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "model_zero1_calls": 3,
+  "performance_model_inference_calls": 0,
+  "registration_after": "Actual foundation taskReadyexit0/native0/failure0 + source/actual-profile publication + sealed export receipt",
+  "reused_helpers": {
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed",
+    "review_loader.py": "a157692f89b1877d0f9df43bfb7f3a9334e00c7af5b28103065a189c77b74c0b"
+  },
+  "stop_rule": "Each prepare/export/host registration once only. Source/hash/count/storage/strictCPU/finite/runtime fault preserves trace/partial, no retry without a new explicit stage contract. Do not alter old cases/defaults/audit bytes or copy a host catalogue wholesale. No new model computation before actual profile publication. Local receive/registration later uses a separate actual local completion ledger; local RAM does not block DISLAB.",
+  "non_IID_scope": "Diagnostic normal foundation prerequisite only. D08 attack.75848 between benign.75525/.76188, D15 attack7/benign8 and unknown-trigger-family detection remain unresolved.",
+  "overall_goal_complete": false
+}

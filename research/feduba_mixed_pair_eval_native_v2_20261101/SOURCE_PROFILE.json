@@ -1,0 +1,78 @@
+{
+  "id": "feduba.mixed_pair.evaluation_native_commandline_v2.s42.20261101",
+  "launch_enabled": false,
+  "actual_input_binding": null,
+  "related_cards": [
+    "R03",
+    "R02",
+    "N02",
+    "D08",
+    "D15"
+  ],
+  "python_version": [
+    3,
+    12,
+    10
+  ],
+  "package_versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "catalog_root": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.paper.cifar10.cleanfl20.s42.20261031",
+  "required_attack_verified_sha256": "c5a9c3f245b12255f2ce1cfbf3b866bb8b7b933db7173fe1678b25a69c2e8705",
+  "required_attack_result_sha256": "f62f63662510da96983047fe46b3d0de7dae221d68fb4e35314de41f5e642e7a",
+  "required_models": {
+    "pre": "886a987878c1125c24acdc3d829c31452d536318ea0990fabfb17b9eeb366214",
+    "benign": "cd0e6e544a6993e7672e75fff56488141de09d4b12c6e58317cc28bc25793d16",
+    "attack": "7ada5a25c181e3d5d16d17c97b9de06286d619f3176c0735ccc5c1fa984d86b7"
+  },
+  "required_delta_sha256": "91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b",
+  "helper_original_bytes": {
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "pair_eval_core.py": "285398903d29c547e01b56eb4e1c2d44db5ca156deb940087e750afcd044b7c8",
+    "runtime_common.py": "65a58d7a11f7a85244560725b99419be7153256ac7e68418cf27af85f080c96e",
+    "trigger_binding.py": "a223850ddf0ea5a67591093881d0cdd857b0585283fa7e1c4284fd762af1e9bd",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3"
+  },
+  "native_guard": "Windows Toolhelp32 PID/Parent/Name plus current actual command line through NtQueryInformationProcess(class60), read-only limited rights; exact original frozen named-trainer predicate; query errors fail closed",
+  "memory_guard": {
+    "available_min_bytes": 8589934592,
+    "commit_free_min_bytes": 17179869184
+  },
+  "GPU_guard": {
+    "utilization_max_pct": 5,
+    "free_min_MiB": 4000,
+    "used_max_MiB": 6000
+  },
+  "resource_wait_max_seconds": 86400,
+  "nvidia_smi_path": "C:/Windows/System32/nvidia-smi.exe",
+  "old_training_or_audit_rerun_permitted": false,
+  "model_query_before_actual_publication_permitted": false,
+  "same_fixed_primary_and_independent_each_sample_forwards": 60000,
+  "same_fixed_primary_and_independent_each_calls": 474,
+  "known_training_process_tokens": [
+    "mpiexec.exe",
+    "badfu_train.py",
+    "/runner.py",
+    "\\runner.py",
+    "train_method_iba.py",
+    "independent_evaluate.py",
+    "gpu_probe.py",
+    "clean_fl_runner.py",
+    "trigger_runner.py",
+    "fu_runner.py",
+    "resume_attack.py",
+    "verify_fu.py",
+    "verify_prefix.py",
+    "evaluate_pair.py",
+    "verify_pair_evaluation.py"
+  ],
+  "previous_native_v1_guard_launchable": false,
+  "previous_native_v1_numerical_execution": false,
+  "native_command_line_ABI_scope": "Current pinned Windows64 only; class60 UNICODE_STRING from primary System Informer phnt; not a portable future Windows guarantee",
+  "metadata_probe_task": "Codex-FedUBA-mixed-pair-eval-native-v2-metadata-probe-20261101",
+  "metadata_probe_principal": "S4U_Limited_same_as_actual_evaluation"
+}

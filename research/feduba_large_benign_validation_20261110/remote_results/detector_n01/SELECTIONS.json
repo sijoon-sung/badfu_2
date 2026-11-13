@@ -1,0 +1,124 @@
+[
+  {
+    "case": "n01",
+    "arm": "baseline",
+    "chosen": {
+      "family": "additive",
+      "target": 0,
+      "n": 180,
+      "witness": 33,
+      "score": 0.18333333333333332,
+      "stable": 131,
+      "source_counts": [
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 2
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 7,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 5
+        }
+      ],
+      "payload": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\detector\\n01\\artifacts\\n01\\additive_baseline.pt",
+      "payload_sha256": "d5e10cd29814207b43fccc901cdc2a9115bd3c604f373bd61dbabd7d65cfaafb"
+    }
+  },
+  {
+    "case": "n01",
+    "arm": "route",
+    "chosen": {
+      "family": "additive",
+      "target": 7,
+      "n": 180,
+      "witness": 36,
+      "score": 0.2,
+      "stable": 134,
+      "source_counts": [
+        {
+          "source": 0,
+          "n": 20,
+          "witness": 1
+        },
+        {
+          "source": 1,
+          "n": 20,
+          "witness": 3
+        },
+        {
+          "source": 2,
+          "n": 20,
+          "witness": 0
+        },
+        {
+          "source": 3,
+          "n": 20,
+          "witness": 4
+        },
+        {
+          "source": 4,
+          "n": 20,
+          "witness": 8
+        },
+        {
+          "source": 5,
+          "n": 20,
+          "witness": 7
+        },
+        {
+          "source": 6,
+          "n": 20,
+          "witness": 6
+        },
+        {
+          "source": 8,
+          "n": 20,
+          "witness": 5
+        },
+        {
+          "source": 9,
+          "n": 20,
+          "witness": 2
+        }
+      ],
+      "payload": "D:\\FEDUBA_LARGE_BENIGN_VALIDATION_20261110\\detector\\n01\\artifacts\\n01\\additive_route.pt",
+      "payload_sha256": "9f22ee0f23a3fbc99cb9cf5e348a4dfd8bf93f49b10aa9445325f913bd6209a9"
+    }
+  }
+]

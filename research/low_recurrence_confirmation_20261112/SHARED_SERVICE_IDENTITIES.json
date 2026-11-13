@@ -1,0 +1,28 @@
+[
+  {
+    "pid": 2656,
+    "created": "2026-11-10T08:52:56.9615180Z",
+    "command_sha256": "ab03d901d52f1c4faf23368fa0820cd92723523e7704f15878aa46b54aa15553",
+    "identity": "observed resident operator_assistant serve; shared GPU inference service, not training"
+  },
+  {
+    "pid": 33240,
+    "created": "2026-11-10T08:52:56.9664670Z",
+    "command_sha256": "6b5857def0def9203ebbb4878e02ba3b3a09448cbdcc627fa5e210ab3d0fc70c",
+    "identity": "observed resident operator_assistant serve; shared GPU inference service, not training"
+  },
+  {
+    "pid": 7008,
+    "created": "2026-11-10T10:46:59.1482790Z",
+    "command_sha256": "f8d5e2247a1cd695ff2373bf3835f125e365f6918d22043fe8e25f8ca069c8c8",
+    "nvidia_compute": false,
+    "identity": "Observed live API external workload; GPU sharing explicit, training status not certified"
+  },
+  {
+    "pid": 38764,
+    "created": "2026-11-10T10:46:59.1531600Z",
+    "command_sha256": "8fce3d503717532ad63ba10402de2d3c050a48aad4031f5f5ecb518987902ac4",
+    "nvidia_compute": true,
+    "identity": "Observed live API external workload; GPU sharing explicit, training status not certified"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "state": "passed_new_attack_only_eval_review_source",
+  "source_freeze_sha256": "031d84db35347dc79878edc260649b63e6617d399016920f144456bda0f62e87",
+  "python_AST_files": 17,
+  "exact_reused_helper_files": 11,
+  "primary_and_independent_model_loop_bodies_AST_exact": true,
+  "new_models_only": [
+    "attack"
+  ],
+  "each_sample_forwards": 20000,
+  "each_calls": 158,
+  "original_six_gate_integer_code_exact": true,
+  "new_strict_CPU_models": 3,
+  "new_zero1_calls": 3,
+  "model_loads": 0,
+  "forwards": 0,
+  "actual_prepare_started": false
+}

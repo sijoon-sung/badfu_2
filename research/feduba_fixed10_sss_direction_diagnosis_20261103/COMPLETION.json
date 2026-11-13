@@ -1,0 +1,21 @@
+{
+  "state": "completed_saved_SSS_direction_diagnosis_and_independent_scalar_check",
+  "result_sha256": "abf2519719e66873d5be4a8dc2e12f46d70067d4cfdf962fc27307b75fc3bbc6",
+  "verified_sha256": "2ccacb36deda7384101dbf11859a8b11df2479e541ac179d1e21aa911b90be20",
+  "resources": {
+    "memory": {
+      "getter": "Windows_GetPerformanceInfo",
+      "structure_bytes": 104,
+      "page_bytes": 4096,
+      "availableBytes": 18662465536,
+      "committedBytes": 44424118272,
+      "commitLimit": 90276544512
+    },
+    "disk_free_bytes": 713015410688,
+    "competing_trainer_count": 0
+  },
+  "model_loads": 0,
+  "forward_calls": 0,
+  "new_selection_or_training_allowed": false,
+  "overall_goal_complete": false
+}

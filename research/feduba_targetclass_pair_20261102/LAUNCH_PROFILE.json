@@ -1,0 +1,17 @@
+{
+  "id": "feduba.targetclass125.s42.pairedFU20.20261102",
+  "launch_enabled": true,
+  "execution_root": "D:\\FEDUBA_TARGETCLASS_PAIR_20261102",
+  "selected_IDs": 125,
+  "selection_sha256": "9fcea5fc32c3abd498407df824f8c1068406e0cde5979aa66b2c17e3994dc511",
+  "selection_audit_sha256": "4001e1c822889305c4c58a1683d0d1e8174518eb6fcca666aba244962ef175bd",
+  "preparation_sha256": "08ab4e82cecdb71f957dcb799bd5eb9be5283f4b44e77e8a19e7884e3faf02f3",
+  "FU_benign_batches": 20000,
+  "FU_attack_batches": 20000,
+  "each_FU_rounds": 20,
+  "each_FU_epochs": 1000,
+  "primary_and_independent_each_calls": 474,
+  "primary_and_independent_each_sample_forwards": 60000,
+  "retraining_original_foundation_or_STG": false,
+  "reuse_old_FU_after_models": false
+}

@@ -1,0 +1,27 @@
+{
+  "state": "passed",
+  "CPU_only": true,
+  "contracts": [
+    "64_shuffled_global_ID_ranks_and_analytic_logit_scores",
+    "exact_budget_and_foreign_ID_rejection",
+    "BEA_minus_eval_plus_label_preservation_clip_coordinates_benign_removal",
+    "original_FedEraser_AST_exact_and_independent_3_4_5_geometry_zero_direction_BN_cast",
+    "recovered_direct_source_ResNet10_201_strict_CPU_output_shapes",
+    "real_projected_STG_RAdam_step_finite_optimizer_and_frozen_surrogate"
+  ],
+  "count": 6,
+  "source_hashes": {
+    "CORE_CONTRACT.txt": "be167ae76cd34c873a4402a539e5f57da1145ad8dcb7bc7e1fb9aa717d1b7fa3",
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "test_core_contracts.py": "7ca7a4013693e6b9d6c8d3fb1f0a8c72018cc0952d72319c1dccc83ffd1f4c26",
+    "upstream/Fed_train.py": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+    "upstream/Fed_Unlearn_attack.py": "2805b6bf493efa8edd0f2a05b5fec6f7a6dee177e0d92bce6569dc615214725d"
+  },
+  "corrected_SSS_sample_N": 64,
+  "shuffled_rank_matches": 64,
+  "original_R03_audit_rerun": false,
+  "real_FL_FU_trained": false,
+  "FedUBA_performance_reproduced": false,
+  "D08_D15_unresolved": true
+}

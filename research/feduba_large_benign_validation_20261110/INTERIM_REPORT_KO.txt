@@ -1,0 +1,13 @@
+2026-11-11 KST · D21/D20/D02/D06/D07/D08/D15/R03
+
+첫 큰 정상 대조 balanced5000의 실제 FU20과 독립 CPU 검산, 고정 D20 탐색/독립 native 검산, clean10000 평가가 완료됐다. 클래스2 전체2486 삭제는 실제FU20 진행 중이며 아직 탐색/최종수치가 없다. 이 파일은 중간시점 기록이다.
+
+balanced5000: 실제 학습참여25000ID의20%(전체50000의10%)를class마다500개씩 정상삭제했다. δ/SSS/BEA변조0. 같은원fixed10 cleanFL20 history/freshG0와기존명시FedEraser 수식으로20R/200role/1000epoch/16000batch를완료했다. 새after7e5f9117ff3bfaaed9d41e2e6a9774cec445dcb5a97896ae3d06c0f1992a09d8 /44,770,315bytes/bare. 실제1280.34초, peak allocator709.99MiB/reserved1010MiB. 독립CPU 전체원ID/epoch/optimizer/RNG/파일·보정/집계검산통과. 모든SGDgradient/원augmentation 독립재생은아니다.
+
+원D20 동일400step/seed/공개fit32-cal20-test100/class/3family/10목표/epsilon.05/mass16을사용해새opaque n00을탐색했다. 실제trigger/목표/삭제ID·역할정답을선택기에주지않았다. 조건선택봉인후test900장: baseline124/900=13.7778%(additive,target4),route126/900=14.0000%(additive,target0). hook없는별도native아키텍처에서n/사건/stable/원클래스별정수count가정확일치했다. 원postclean정확도8277/10000=82.77%,버전D21.clean_utility.contiguous_FP32.v1이며이clean평가의독립두번째full추론은아니다.
+
+원D20 FedUBA 작은정상은131/900=14.5556%,minus/plus diagnostic은각299/900=33.2222%다. 새큰균형정상126은동결된299와겹치지않아다음사전선언class2_all을진행했다. 배포임계값/TPR/FPR/공격확률이아니다. 같은FLseed/공개분할·추가삭제조건이며원공격성능gate실패와FUBA성공잠복쌍부재는유지한다. 큰정상하나가낮다고D08/D15/클래스내도메인nonIID/trigger-family독립탐지를해결했다고하지않는다.
+
+운영실패도보존했다. 첫unknown외부GPU작업admission정지와CPU-only추정기각뒤정확commandSHA의명시GPU공유만추가했고수치자원/학습/삭제조건은유지했다. 균형FU/검산완료뒤publication대기7200s가만료됐다. 완료학습/검산을반복하지않고pending-only finish를작성했지만Path누락으로탐색전에실패했다. 원source/once/trace는보존하고static전역이름검사에서누락을확인한v2로새탐색만완료했다. 원expired parent/첫helper를성공이라고고쳐쓰지않는다. 후속opaque입력의게시/바이트검증은현재턴의도구monitor가준비즉시처리한다.
+
+원모델/기본case/정지oldqueue는보존했다. 새full-history diagnostic과새normal endpoint만근거/외부guard를갖춰등록했다. 원20RcleanFL/STG/SSS/공격FU/D20완료실험은재실행하지않았다. 전체원role/optimizer/RNG/로그는DISLAB에있고최종로컬packet전달은아직이다. 최신완료판정은향후FINAL_REPORT/COMPLETION을확인해야한다.

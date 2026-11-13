@@ -1,0 +1,23 @@
+{
+  "schema": "feduba-source-contract-freeze-v1",
+  "related_cards": [
+    "R01",
+    "R02",
+    "D02",
+    "D06",
+    "D07",
+    "D08",
+    "D15",
+    "D18",
+    "D19",
+    "N02",
+    "R03"
+  ],
+  "upstream": "ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b",
+  "files": {
+    "PROTOCOL.txt": "3c30e37bef111b5deeaa538ac014a9f95afea531539675fa6eba28318b6d4c10",
+    "audit_feduba.py": "3c923f885b2dacfacff723887e1260750830ed677f2ad83138eeb4a1e8d129ff",
+    "FedUBA-TDSC26.pdf": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+    "FedUBA-Code.zip": "dd883908a3d499f6dc4b7071685bc692b85caed1d3d63414e88ba4f2b2482e99"
+  }
+}

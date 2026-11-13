@@ -1,0 +1,167 @@
+{
+  "commit": "9815ba54d197f2cc7e6d8789dddb1cc3019d199b",
+  "all_raw_blob_bytes_verified": true,
+  "files_verified": 32,
+  "rows": [
+    {
+      "name": "BENCHMARK_LABELS.json",
+      "sha": "9fbc427c55be1de4944252711e81c70a394832e6",
+      "size": 435
+    },
+    {
+      "name": "COPIED_SOURCE.json",
+      "sha": "af7298148ed44d088512a1cd96fc382c5256c3e1",
+      "size": 685
+    },
+    {
+      "name": "CORRECTION_PROTOCOL.txt",
+      "sha": "4d2d2f9d57fc812bb8d8fb63e2a1bd0738b97ce3",
+      "size": 2219
+    },
+    {
+      "name": "FREEZE.json",
+      "sha": "85434d6d3d9a6b95f5564b5de978333333b28c60",
+      "size": 3261
+    },
+    {
+      "name": "FREEZE_BEFORE_RESOURCE.json",
+      "sha": "172e7391540c6df9bf7ef12ea02d216edea49771",
+      "size": 2085
+    },
+    {
+      "name": "FREEZE_PID_RESOURCE.json",
+      "sha": "f2f21673693540fe87f1c8fe247108e971d099f0",
+      "size": 2756
+    },
+    {
+      "name": "PRIOR_WORK.txt",
+      "sha": "36c215975b1473138839e6e1d94a449609b83c6a",
+      "size": 1843
+    },
+    {
+      "name": "PROFILE.json",
+      "sha": "7e2ca586fe3d54fbb28df4dad5ba91d676627723",
+      "size": 907
+    },
+    {
+      "name": "PROFILE_INITIAL.json",
+      "sha": "5072ee24afa5671cc0b5402e4b3cb912ed47ca22",
+      "size": 742
+    },
+    {
+      "name": "PROTOCOL.txt",
+      "sha": "0b5fd8f5bf1034090f0db1f32363d3c19dd8132a",
+      "size": 7911
+    },
+    {
+      "name": "PUBLICATION_PID_RESOURCE.json",
+      "sha": "4150d3bf436900d5880d0d8a14bb2717b8cc2fd7",
+      "size": 3620
+    },
+    {
+      "name": "RESOURCE_AMENDMENT.txt",
+      "sha": "019c3452f7f843e620c7a4faca6858f885cd978d",
+      "size": 3021
+    },
+    {
+      "name": "REUSE_BINDING.json",
+      "sha": "4ebd2144eac9f4a87e21f5ff95fa60a0f2c2b423",
+      "size": 2622
+    },
+    {
+      "name": "SHARED_SERVICE_IDENTITIES.json",
+      "sha": "d070c1abcdcee6c6c655a7bb8724d50b43766c80",
+      "size": 554
+    },
+    {
+      "name": "STOP_AUDIT_V1.json",
+      "sha": "ce6f957864d3279dd208c5dedb54c317990b3b58",
+      "size": 2133
+    },
+    {
+      "name": "bootstrap.py",
+      "sha": "ead609eae156d1c1ba9c2e1fa410675d7ef70e34",
+      "size": 1074
+    },
+    {
+      "name": "checkpoint_guard.py",
+      "sha": "280af60e89c9798aaef9dafe7c75f99e4735705d",
+      "size": 708
+    },
+    {
+      "name": "controller.py",
+      "sha": "aa6fe3a36e5f968fcd30d499bf614f63fbc5368f",
+      "size": 1902
+    },
+    {
+      "name": "feduba_model.py",
+      "sha": "63c50f75283f2e32e2b6199a9db2836c91b9d18c",
+      "size": 4379
+    },
+    {
+      "name": "fuba_model.py",
+      "sha": "c97af861b6cc081d6d8847d96d38614dc2e9c97c",
+      "size": 3783
+    },
+    {
+      "name": "ops.py",
+      "sha": "c522ee3164876b4f17cdbde9c202bce200aba872",
+      "size": 3243
+    },
+    {
+      "name": "prepare.py",
+      "sha": "cdc14b6937749ee05d412306140ea6685f3bd66b",
+      "size": 1337
+    },
+    {
+      "name": "probe_reference.py",
+      "sha": "e5a67c0769f42a17eb8d2341218b8d00d8c104c6",
+      "size": 7965
+    },
+    {
+      "name": "resource_guard.py",
+      "sha": "fac0f75adc538684370cfc1247f46a0c0dd7415c",
+      "size": 3697
+    },
+    {
+      "name": "resource_guard_initial.py",
+      "sha": "abade0f4cbb0f56419567ea8cb5626dd0b6faa64",
+      "size": 3012
+    },
+    {
+      "name": "resource_guard_pid.py",
+      "sha": "cd7b711e8dcf761cf2d2d7b584697ed07158c2bf",
+      "size": 3649
+    },
+    {
+      "name": "resource_recovery.py",
+      "sha": "7537e1d57dc5d12521c04163c6760afb4fec78bf",
+      "size": 2192
+    },
+    {
+      "name": "resource_recovery_pid.py",
+      "sha": "44f01300a995ade41f96d18e9ce381882d83e015",
+      "size": 2055
+    },
+    {
+      "name": "route_core.py",
+      "sha": "6631e2e4a6cb3e0f535a80e4abe920d9584ec391",
+      "size": 8122
+    },
+    {
+      "name": "run_search.py",
+      "sha": "d4316fe2d61fdeb70e6f7586fae0af13c51c28fc",
+      "size": 8479
+    },
+    {
+      "name": "summarize.py",
+      "sha": "d3ed5fbc58cbb6993bee883b48df75842ef32dd8",
+      "size": 2140
+    },
+    {
+      "name": "verify_results.py",
+      "sha": "9323deffdb31f69cb07dc04d65f732647e3d8732",
+      "size": 4594
+    }
+  ]
+}

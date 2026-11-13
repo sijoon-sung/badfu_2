@@ -1,0 +1,18 @@
+{
+  "state": "prefix_process_launch_disappeared_before_preservation_body",
+  "launch_method": "SSH Start-Process -WindowStyle Hidden direct Python",
+  "observed_pid": 19900,
+  "later_CIM_present": false,
+  "PREFIX_ONCE_present": false,
+  "PREFIX_STATE_present": false,
+  "PREFIX_FAILURE_present": false,
+  "PREFIX_PRESERVED_present": false,
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "python_body_started_proved": false,
+  "unique_cause_proved": false,
+  "possible_transport_process_lifetime_issue_only_inference": true,
+  "finite_preservation_body_retry": false,
+  "original_study_files_modified": false,
+  "next_contract": "one new no-trigger ScheduledTask direct Python invocation; same frozen source and publication"
+}

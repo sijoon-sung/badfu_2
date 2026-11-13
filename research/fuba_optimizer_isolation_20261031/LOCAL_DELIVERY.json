@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "remote_CPU_verified": true,
+  "local_received_hashes_match": true,
+  "files": {
+    "algorithm_sgd.pt": {
+      "sha256": "066866c2927f1830bcb9d130ed76f0c1cf1d53f4ddadf72e03f326ec7fc84d34",
+      "bytes": 44784519
+    },
+    "experimental_adam.pt": {
+      "sha256": "f6d2f9a1eea7f41703a4d68f93f4760441ddb0ed5fc06398946869cc2ebec0ca",
+      "bytes": 134226515
+    },
+    "fixed_generator.pt": {
+      "sha256": "e8194020e1b28718a8dccab6726c7e7177bacfa168baac0fdcab913a78dc41ee",
+      "bytes": 31208109
+    },
+    "incoming_classifier.pt": {
+      "sha256": "7f7620f58f769d0c23b59529fa3e0d1fd99ea71624e5dca09c007afcb0e2346b",
+      "bytes": 44770315
+    }
+  },
+  "model_scope": "New diagnostic embedding endpoints, incoming and fixed G; not an approved FL/FU latent pair or default case."
+}
