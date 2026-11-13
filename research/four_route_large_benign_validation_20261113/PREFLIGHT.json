@@ -1,0 +1,14 @@
+{
+  "state": "passed",
+  "seeds": [
+    20261020,
+    20261023
+  ],
+  "guard_profile": {
+    "memory_gib": 4,
+    "disk_gib": 80,
+    "gpu_free_mib": 3584,
+    "gpu_util_max": 10,
+    "wait_seconds": 120
+  }
+}
