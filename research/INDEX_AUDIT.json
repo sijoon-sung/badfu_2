@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "1421c34059fbe506b2504838d9c50a8c04cd0cdf09dac081389f6ad188622869",
-  "cards": 45,
-  "unique_source_documents": 2240,
-  "top_level_folders": 171,
-  "folders_linked_to_cards": 123,
+  "registry_sha256": "f300ae9dadac9b958ebab6bae29d7a3eed8a1076b1330c34747f330425ea68da",
+  "cards": 46,
+  "unique_source_documents": 2246,
+  "top_level_folders": 172,
+  "folders_linked_to_cards": 124,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2247,7 +2247,13 @@
     "research/class_coverage_matched_audit_20261113/audit.py": "19ba5219151b8cae0b31a62a16f0f35b8e45cb258723b9ebcacd453c04e97876",
     "research/class_coverage_matched_audit_20261113/REPORT_KO.txt": "2ad4157bf4ed9fdbc219be9efee4147a7697a229eff6da35e8303bde0e8226a4",
     "research/class_coverage_matched_audit_20261113/RESULT.json": "196e9fed30d243975ac386f22b49b097a814d6265aedc58a80530db824a87951",
-    "research/class_coverage_matched_audit_20261113/TERMINAL.json": "86447844a8aca1032bf88b8d61d73a2beda36e67fe2537d571018881ace4c45f"
+    "research/class_coverage_matched_audit_20261113/TERMINAL.json": "86447844a8aca1032bf88b8d61d73a2beda36e67fe2537d571018881ace4c45f",
+    "research/badfu_oracle_blind_pca_20261113/PROTOCOL.txt": "8842811dea93db9d36402a6f5bd1ffd7fc73f81f7378ebb291994c4860f2c552",
+    "research/badfu_oracle_blind_pca_20261113/evaluate.py": "6df0c941e00451bc0f709ff648b0db493cf4afbc66930a7f3a40c00c311d51ca",
+    "research/badfu_oracle_blind_pca_20261113/FREEZE.json": "080ba11de84b395891f738b3ea6529829637659a2881205806503655d85707d6",
+    "research/badfu_oracle_blind_pca_20261113/RESULT.json": "3b7669ec139df255088a471815b67804ab5438717675e0c5919e57b215135eaa",
+    "research/badfu_oracle_blind_pca_20261113/TERMINAL.json": "ec1776f50601d3e1ca2076195d89f32623fe17e701c233c951d421674c5f7764",
+    "research/badfu_oracle_blind_pca_20261113/REPORT_KO.txt": "ca83bd30ac331b1e95300237debb74f2ec0629ff73214cd47ad07071c17a6836"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -2412,6 +2418,18 @@
         "research/badfu_fc_pca_matched_control_20261112/PROTOCOL.txt",
         "research/badfu_fc_pca_matched_control_20261112/REPORT_KO.txt",
         "research/badfu_fc_pca_matched_control_20261112/RESULT.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/badfu_oracle_blind_pca_20261113",
+      "related_cards": [
+        "D32"
+      ],
+      "top_level_documents": [
+        "research/badfu_oracle_blind_pca_20261113/PROTOCOL.txt",
+        "research/badfu_oracle_blind_pca_20261113/REPORT_KO.txt",
+        "research/badfu_oracle_blind_pca_20261113/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

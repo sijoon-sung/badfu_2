@@ -3277,3 +3277,32 @@
 
 **묶은 폴더:** [class_coverage_matched_audit_20261113](class_coverage_matched_audit_20261113)
 
+<a id="d32"></a>
+
+## D32 · 같은 BadFU 모델의 실제 트리거·비공개 탐침·FC PCA 비교
+
+**가설 한 줄: 같은 BadFU 모델과 평가 이미지에서 실제 트리거 전환은 큰 정상과 두 공격을 가르며 FC PCA의 추가 검출은 같은 정상 오경보 수에서 검증할 수 있다.**
+
+**판정: 실제 트리거 두 시드 분리 / 동일 오경보에서 PCA 추가 검출 없음**
+
+[실험 시작 이유와 실제 실행 과정 읽기](badfu_oracle_blind_pca_20261113/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D20/D23/D24/D27/D30/D31/T02/T03. 승인 말단6개, 실제 입력9000개 및 원본10000개, 동일 A–D 패널과 D27 봉인 비공개 탐침. DISLAB 추론, 새 학습·탐침0.
+- **정상 대조·비교:** 큰 정상19.336%/22.790%, 정상850, 감염모델 정상850, 공격2시드. c02/c03 원본 보정, 원 전환/FC PCA/동일 층 무작위3축.
+- **결과:** 실제 전환 공격6754/6399, 큰 정상9/5, 정상850 8, 감염 정상356. 고정 원전환 정상9/16·공격8/8, PCA3/16·8/8. 같은 관측 오경보 0·1·2에서 양쪽8/8. T03 정확 재현, seed20261020 pre ASR1장 차이 보존. DISLAB exit0·원바이트 확인.
+- **non-IID에 대해 남길 교훈:** 실제 조건의 차이는 두 시드에서 재현됐으나 보정 밖 큰 정상 오경보와 D15/D31의 다른 조건 반례가 남는다. 이 패널의 순위 분리를 운영 FPR이나 PCA 고유 탐지로 확대하지 않는다.
+- **반복하지 않을 주장:** 이미 평가한 패널에 기준을 다시 맞추거나 별도 FUBA·FedUBA 진단을 실제 BadFU 결과로 합치지 않는다.
+- **재검토 조건:** 탐색·보정에서 원클래스를 보류하고, 독립 도메인 편중 정상 요청과 성공 양성에서 같은 정상 오경보로 추가 검출 확인.
+- **출처 구분:** 사용자가 DISLAB에서 두 BadFU 시드·두 큰 정상의 실제/비공개 조건 및 PCA 비교를 명시적으로 요청.
+
+**원문·증거:**
+
+- [research/badfu_oracle_blind_pca_20261113/PROTOCOL.txt](badfu_oracle_blind_pca_20261113/PROTOCOL.txt)
+- [research/badfu_oracle_blind_pca_20261113/evaluate.py](badfu_oracle_blind_pca_20261113/evaluate.py)
+- [research/badfu_oracle_blind_pca_20261113/FREEZE.json](badfu_oracle_blind_pca_20261113/FREEZE.json)
+- [research/badfu_oracle_blind_pca_20261113/RESULT.json](badfu_oracle_blind_pca_20261113/RESULT.json)
+- [research/badfu_oracle_blind_pca_20261113/TERMINAL.json](badfu_oracle_blind_pca_20261113/TERMINAL.json)
+- [research/badfu_oracle_blind_pca_20261113/REPORT_KO.txt](badfu_oracle_blind_pca_20261113/REPORT_KO.txt)
+
+**묶은 폴더:** [badfu_oracle_blind_pca_20261113](badfu_oracle_blind_pca_20261113)
+
