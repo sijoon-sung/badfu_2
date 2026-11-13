@@ -1,0 +1,25 @@
+{
+  "memory_fraction": 0.25,
+  "admission": {
+    "memory_gib": 4,
+    "disk_gib": 80,
+    "gpu_free_mib": 3584,
+    "gpu_util_max": 10,
+    "wait_seconds": 120
+  },
+  "inputs": {
+    "train": "9a0a8a58a74280c91fe4c729c410d5e1ec81a6fc6b8dc5fa992b0be28b237633",
+    "split": "1d83a25a93e946862f255a04ef623a223843da22127ec72fc7ab6842a08c9def",
+    "author": "37f7d9c0ad947e091c225cdaee29baa98dec5d549126b546d00753391f87de57",
+    "i20": "fe8acc9a0ac849c44da6dcb643532f5bfa21691e43f23132da6c9ee165b59963",
+    "i23": "de640db9f789f9934f7272bef126c4eb9686599b56eaca8bc5e3fc025591775a"
+  },
+  "probe_owners": [
+    "c00",
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05"
+  ]
+}
