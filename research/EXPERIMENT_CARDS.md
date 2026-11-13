@@ -3249,3 +3249,31 @@
 
 **묶은 폴더:** [recurrence_denominator_audit_20261112](recurrence_denominator_audit_20261112)
 
+<a id="d31"></a>
+
+## D31 · 전환 총량을 맞춘 원클래스 범위 감사
+
+**가설 한 줄: 같은 전환 수에서 공격의 목표 전환은 큰 정상 삭제보다 더 많은 원래 클래스로 퍼진다.**
+
+**판정: D15 및 D22 반례 확인 / 보류 원클래스 전이 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](class_coverage_matched_audit_20261113/REPORT_KO.txt)
+
+- **조건:** D02/D06/D07/D08/D15/D20/D22/D24/D29/D30/T02. DISLAB CPU 일회, 네 봉인 집계. 20건 비복원 추출 원클래스 수 정확 기대값. 새 학습/추론0.
+- **정상 대조·비교:** D15 paired 63/72 고정 앵커, D29 같은 묶음/라운드/탐색 방식, D22 같은 탐침·라운드 및 큰 정상. D22 진단은 성능 미달.
+- **결과:** D15 정상6.637602·공격5.993194. D29 적격쌍0. D22 23쌍 중 진단이 더 넓은 경우16, 반례7. 5R 24건 동률 저밝기 정상7.783832·진단7.658762. 원격 exit0 및 해시 확인.
+- **non-IID에 대해 남길 교훈:** 전환 총량을 같게 맞춰도 큰 정상 non-IID 삭제가 더 여러 원클래스에 영향을 줄 수 있다. 이 집계는 탐침을 본 적 없는 클래스의 전이 검사가 아니다.
+- **반복하지 않을 주장:** 원 보고서를 덮어쓰거나 후향 클래스 범위를 탐지 임계값으로 채택하지 않는다.
+- **재검토 조건:** 원클래스를 탐침 발견·보정에서 제외한 후, 독립 도메인 편중 정상 삭제와 승인 공격에서 같은 FU/라운드/전환량 조건으로 전이의 추가 가치를 고정 비교한다.
+- **출처 구분:** 사용자 요청에 따라 전환 총량을 통제한 빠른 DISLAB 재검증.
+
+**원문·증거:**
+
+- [research/class_coverage_matched_audit_20261113/PROTOCOL.txt](class_coverage_matched_audit_20261113/PROTOCOL.txt)
+- [research/class_coverage_matched_audit_20261113/audit.py](class_coverage_matched_audit_20261113/audit.py)
+- [research/class_coverage_matched_audit_20261113/REPORT_KO.txt](class_coverage_matched_audit_20261113/REPORT_KO.txt)
+- [research/class_coverage_matched_audit_20261113/RESULT.json](class_coverage_matched_audit_20261113/RESULT.json)
+- [research/class_coverage_matched_audit_20261113/TERMINAL.json](class_coverage_matched_audit_20261113/TERMINAL.json)
+
+**묶은 폴더:** [class_coverage_matched_audit_20261113](class_coverage_matched_audit_20261113)
+

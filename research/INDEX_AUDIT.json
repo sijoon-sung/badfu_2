@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-11-12",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "71dd3d50d52ee44fccb7f0ee6ba37b19c8d4982b981725053d6790cba2d9d386",
-  "cards": 44,
-  "unique_source_documents": 2235,
-  "top_level_folders": 170,
-  "folders_linked_to_cards": 122,
+  "registry_sha256": "1421c34059fbe506b2504838d9c50a8c04cd0cdf09dac081389f6ad188622869",
+  "cards": 45,
+  "unique_source_documents": 2240,
+  "top_level_folders": 171,
+  "folders_linked_to_cards": 123,
   "source_sha256": {
     "research/00_trajectories/README.md": "e9f9d26783930df082edd1212a18e2112bce5c6ba53b6549f11a82ba801bd832",
     "research/00_trajectories/catalog.json": "8f923189073d9ed56e6246ee51c921e4b7fc0c2dff9830868139ac645fe91c76",
@@ -2242,7 +2242,12 @@
     "research/recurrence_denominator_audit_20261112/audit.py": "5f83a41b56af6e765c2f419d0200f545d93db63790a184748fce783341f1e282",
     "research/recurrence_denominator_audit_20261112/RESULT.json": "78f0b5527b499ca97587916956a15afc92403f114bb8ac9af609b7e32573aa6b",
     "research/recurrence_denominator_audit_20261112/TERMINAL.json": "9e49a4e7453eecbe87d4e5d875a3ac7983fb20d8e2de15d7f975bdbeb68c6306",
-    "research/recurrence_denominator_audit_20261112/REPORT_KO.txt": "3a4de668ab4c91939fd70feca34a31cf6d1011886031fe0234b91e731340e5c1"
+    "research/recurrence_denominator_audit_20261112/REPORT_KO.txt": "3a4de668ab4c91939fd70feca34a31cf6d1011886031fe0234b91e731340e5c1",
+    "research/class_coverage_matched_audit_20261113/PROTOCOL.txt": "1a1788f53b8078c42c9ce17c5895a121ed105096d9cfb6c3f5610034e37c2ba4",
+    "research/class_coverage_matched_audit_20261113/audit.py": "19ba5219151b8cae0b31a62a16f0f35b8e45cb258723b9ebcacd453c04e97876",
+    "research/class_coverage_matched_audit_20261113/REPORT_KO.txt": "2ad4157bf4ed9fdbc219be9efee4147a7697a229eff6da35e8303bde0e8226a4",
+    "research/class_coverage_matched_audit_20261113/RESULT.json": "196e9fed30d243975ac386f22b49b097a814d6265aedc58a80530db824a87951",
+    "research/class_coverage_matched_audit_20261113/TERMINAL.json": "86447844a8aca1032bf88b8d61d73a2beda36e67fe2537d571018881ace4c45f"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -2474,6 +2479,18 @@
         "research/boundary_validation_20261022/PROTOCOL.json",
         "research/boundary_validation_20261022/REPORT_KO.txt",
         "research/boundary_validation_20261022/RESULTS.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/class_coverage_matched_audit_20261113",
+      "related_cards": [
+        "D31"
+      ],
+      "top_level_documents": [
+        "research/class_coverage_matched_audit_20261113/PROTOCOL.txt",
+        "research/class_coverage_matched_audit_20261113/REPORT_KO.txt",
+        "research/class_coverage_matched_audit_20261113/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
