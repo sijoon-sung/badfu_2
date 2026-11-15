@@ -884,7 +884,33 @@
 - [research/feduba_eq7_allclass_20261115/SOURCE_FREEZE.json](feduba_eq7_allclass_20261115/SOURCE_FREEZE.json)
 - [research/feduba_eq7_allclass_20261115/PREPARED.json](feduba_eq7_allclass_20261115/PREPARED.json)
 - [research/feduba_eq7_allclass_20261115/REPORT_KO.txt](feduba_eq7_allclass_20261115/REPORT_KO.txt)
-- `research/feduba_eq7_allclass_20261115/PAPER_TARGETS.json` (로컬 보관)
+- [research/feduba_eq7_allclass_20261115/PAPER_TARGETS.json](feduba_eq7_allclass_20261115/PAPER_TARGETS.json)
 
 **묶은 폴더:** [feduba_eq7_allclass_20261115](feduba_eq7_allclass_20261115)
+
+<a id="r07"></a>
+
+## R07 · FedUBA 세 집계 규칙의 공개 함수 계약
+
+**가설 한 줄: state adapter의 FedAvg/Median/Trimmed-mean이 기본10참여자·trim0.1에서 고정 공개 함수와 정확히 같다.**
+
+**판정: CPU 합성 집계 계약 통과·실제 공격 성능 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](feduba_aggregation_contracts_20261115/PROTOCOL.txt)
+
+- **조건:** ity207/FedUBA commit005959ab/Fed_train.py blobf08a8543, DISLAB CPU1thread,10개 합성float/BNlong 모델. R03/R06/R02/N02/D08/D15 관련.
+- **정상 대조·비교:** 공개 세 함수 AST 직접 실행과 손계산 lower median/trimmed mean oracle, 입력 불변 및 invalid6개 거절.
+- **결과:** 세 집계 모두 tensor exact. Median4/counter8, trim4.5/counter9, FedAvg13.60000038/counter200. 원본 k=0 공집합 NaN 경계는 새 adapter에서 전체평균2로 명시 교정. CUDA/실자료/FL/FU0.
+- **non-IID에 대해 남길 교훈:** 집계 구현 검사이며 큰 정상 non-IID 혼동 D08/D15를 구별하는 탐지 근거가 아니다.
+- **반복하지 않을 주장:** 코드 수치 일치를 CA/ASR 재현이나 원본 경계 동작까지 같은 실행으로 부르지 않는다.
+- **재검토 조건:** 실제 다른 집계의 FL/FU는 별도 고정 실험 프로필과 이력으로 수행한다.
+
+**원문·증거:**
+
+- [research/feduba_aggregation_contracts_20261115/PROTOCOL.txt](feduba_aggregation_contracts_20261115/PROTOCOL.txt)
+- [research/feduba_aggregation_contracts_20261115/aggregation.py](feduba_aggregation_contracts_20261115/aggregation.py)
+- [research/feduba_aggregation_contracts_20261115/check_contracts.py](feduba_aggregation_contracts_20261115/check_contracts.py)
+- `research/feduba_aggregation_contracts_20261115/RESULT.json` (로컬 보관)
+
+**묶은 폴더:** [feduba_aggregation_contracts_20261115](feduba_aggregation_contracts_20261115)
 

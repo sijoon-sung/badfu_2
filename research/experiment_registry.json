@@ -864,6 +864,30 @@
       ],
       "process_report": "research/feduba_eq7_allclass_20261115/REPORT_KO.txt",
       "github_group": "01-reproduction"
+    },
+    {
+      "id": "R07",
+      "group": "재현·출처",
+      "title": "FedUBA 세 집계 규칙의 공개 함수 계약",
+      "status": "CPU 합성 집계 계약 통과·실제 공격 성능 미검증",
+      "hypothesis": "state adapter의 FedAvg/Median/Trimmed-mean이 기본10참여자·trim0.1에서 고정 공개 함수와 정확히 같다.",
+      "conditions": "ity207/FedUBA commit005959ab/Fed_train.py blobf08a8543, DISLAB CPU1thread,10개 합성float/BNlong 모델. R03/R06/R02/N02/D08/D15 관련.",
+      "controls": "공개 세 함수 AST 직접 실행과 손계산 lower median/trimmed mean oracle, 입력 불변 및 invalid6개 거절.",
+      "result": "세 집계 모두 tensor exact. Median4/counter8, trim4.5/counter9, FedAvg13.60000038/counter200. 원본 k=0 공집합 NaN 경계는 새 adapter에서 전체평균2로 명시 교정. CUDA/실자료/FL/FU0.",
+      "non_iid_lesson": "집계 구현 검사이며 큰 정상 non-IID 혼동 D08/D15를 구별하는 탐지 근거가 아니다.",
+      "do_not_repeat": "코드 수치 일치를 CA/ASR 재현이나 원본 경계 동작까지 같은 실행으로 부르지 않는다.",
+      "revisit_condition": "실제 다른 집계의 FL/FU는 별도 고정 실험 프로필과 이력으로 수행한다.",
+      "folders": [
+        "research/feduba_aggregation_contracts_20261115"
+      ],
+      "sources": [
+        "research/feduba_aggregation_contracts_20261115/PROTOCOL.txt",
+        "research/feduba_aggregation_contracts_20261115/aggregation.py",
+        "research/feduba_aggregation_contracts_20261115/check_contracts.py",
+        "research/feduba_aggregation_contracts_20261115/RESULT.json"
+      ],
+      "process_report": "research/feduba_aggregation_contracts_20261115/PROTOCOL.txt",
+      "github_group": "01-reproduction"
     }
   ],
   "process_reporting": {
