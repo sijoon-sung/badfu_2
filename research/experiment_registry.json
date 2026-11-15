@@ -811,6 +811,32 @@
       "provenance": "2026-11-15 DISLAB 신규 정상 기준선. 관련 앞선 카드 R01/R02/D08/D15. 기존 FUBA v6/v7의 저장 정수 분자·분모 검산은 이 정상 실행의 지표와 구별한다.",
       "process_report": "research/benign_fuba_baseline_20261115/README.md",
       "github_group": "01-reproduction"
+    },
+    {
+      "id": "R05",
+      "group": "재현·출처",
+      "title": "FedUBA 저장 예측의 언러닝 전후 전환",
+      "status": "양의 요청 진단에서 엄격 전환 1510장·원 성능 기준 미달",
+      "hypothesis": "같은 트리거 이미지에 대해 삭제 전과 정상 삭제 후에는 정답을 내고 양의 요청 삭제 후에는 목표 클래스를 내면서 깨끗한 입력 정답을 유지하는 표본이 존재한다.",
+      "conditions": "기존 DISLAB fixed10 시드42·target2·SSS125·FedEraser20 네 모델의 공식 CIFAR-10 10000장 저장 logits, 관련 카드 R03/R02/D08/D15.",
+      "controls": "동일 공식 시험 ID 및 트리거 입력의 삭제 전, 정상 삭제 후, 음의 요청과 양의 요청 삭제 후 예측. 원 9000 non-target 분모와 사전 여섯 성능 기준을 유지.",
+      "result": "ASR 전20.1444%, 정상16.6667%, 음의요청13.8222%, 양의요청58.7444%. 전체 새 표적 전환3482/역전환8, 삭제 전·정상 삭제 정답과 양의요청 후 clean 정답을 함께 만족한 표적 전환1510. 세 진단 사례 보관 검사 및79입력·316logit배치 SHA/ID/모델결속·정수집계 일치. 새 학습·추론0.",
+      "non_iid_lesson": "평가자 target과 저장 입력을 사용한 한 조건의 전환 관찰이다. 큰 정상 non-IID 탈퇴 혼동 D08/D15와 공격 탐지의 범용성은 미검증이다.",
+      "do_not_repeat": "양의요청 x+delta 진단을 논문 식8의 x-delta로 표기하거나 58.74%를 원80% 기준 통과로 표시하지 않는다.",
+      "revisit_condition": "종료된 학습·평가를 반복하기 전에 원문 대응을 바꾸는 구체적 근거와 고정 비교를 별도로 선언한다.",
+      "folders": [
+        "research/feduba_activation_evidence_20261115"
+      ],
+      "sources": [
+        "research/feduba_activation_evidence_20261115/PROTOCOL.txt",
+        "research/feduba_activation_evidence_20261115/README.md",
+        "research/feduba_activation_evidence_20261115/result/summary.json",
+        "research/feduba_activation_evidence_20261115/result/predictions.csv",
+        "research/feduba_activation_evidence_20261115/result/terminal.json"
+      ],
+      "provenance": "ity207/FedUBA 고정005959ab 기반 선언 구현의 2026-11-03 진단 기록을 2026-11-15 DISLAB CPU에서 교차 집계했다. STG/SSS/BEA, 관련 helper 요청 부호 해석과 완전 재현 미달을 명시한다.",
+      "process_report": "research/feduba_activation_evidence_20261115/README.md",
+      "github_group": "01-reproduction"
     }
   ],
   "process_reporting": {

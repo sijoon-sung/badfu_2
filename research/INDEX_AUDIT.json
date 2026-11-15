@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "d60edbadf659d743ddeec0a758ba26a1e0975d7bcb0085c6f1e476bcb3a5060e",
-  "cards": 27,
-  "unique_source_documents": 221,
-  "top_level_folders": 88,
-  "folders_linked_to_cards": 49,
+  "registry_sha256": "6f43577ad541b00bd6190693fde80d6e2218434d2e1b3f60b8913b334b8257c4",
+  "cards": 28,
+  "unique_source_documents": 226,
+  "top_level_folders": 89,
+  "folders_linked_to_cards": 50,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -228,7 +228,12 @@
     "research/benign_fuba_baseline_20261115/evidence/profile.json": "5d70f83ff29d4e70c75f10b86961a7b3d5739615d1207625f37cb67f45c7b3f3",
     "research/benign_fuba_baseline_20261115/evidence/events.jsonl": "6fc9c9509df8d77e875d5d7f639056f2e438b9f286f8a39a601ad3cbb54782ef",
     "research/benign_fuba_baseline_20261115/evidence/result.json": "b39bcd13ff7ff3f3bf82d35cf4e5e81c67d8144a8e7fe0dc5ce8334754af0050",
-    "research/benign_fuba_baseline_20261115/evidence/verified.json": "573502eaeca76a17bcfd0f716dbc0aa1191c643cebc377498ab4eeabfecf968d"
+    "research/benign_fuba_baseline_20261115/evidence/verified.json": "573502eaeca76a17bcfd0f716dbc0aa1191c643cebc377498ab4eeabfecf968d",
+    "research/feduba_activation_evidence_20261115/PROTOCOL.txt": "0511ba889a96b0b10a0719ea95501ad145336a4b23f22c9ac6c8816ab2b343fc",
+    "research/feduba_activation_evidence_20261115/README.md": "dbf092df907ca32378c0cb65fe7b99fc049150805af9ba65698946e6b86c7086",
+    "research/feduba_activation_evidence_20261115/result/summary.json": "3ce9e21808590c1e4a723dfb01483968c82a3fc0c39d6df90d0655556cfc4fc0",
+    "research/feduba_activation_evidence_20261115/result/predictions.csv": "c05e6defa760b6a3dbe373c05e8c0c7796bda75e6217d90f862975b47dd441c1",
+    "research/feduba_activation_evidence_20261115/result/terminal.json": "a4dd51dcbef2a616583e1fc25b585816ba6cc85ec74be254acba557cdfee5a73"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,
@@ -484,6 +489,17 @@
         "research/fed_mfs_experiment_20261023/EXPERIMENT_RESULTS.json"
       ],
       "review": "폴더 색인만·내용 판정 미재검토"
+    },
+    {
+      "path": "research/feduba_activation_evidence_20261115",
+      "related_cards": [
+        "R05"
+      ],
+      "top_level_documents": [
+        "research/feduba_activation_evidence_20261115/PROTOCOL.txt",
+        "research/feduba_activation_evidence_20261115/README.md"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
     },
     {
       "path": "research/FU_gpu20261020",
