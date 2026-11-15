@@ -1,0 +1,52 @@
+{
+  "state": "passed",
+  "rows": [
+    {
+      "mode": "Adam",
+      "role": null,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "weighted_SGD",
+      "role": null,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "recovery_SGD",
+      "role": null,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "Adam",
+      "role": 0,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "weighted_SGD",
+      "role": 0,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "Adam",
+      "role": 4,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    },
+    {
+      "mode": "weighted_SGD",
+      "role": 4,
+      "steps": 4,
+      "model_optimizer_RNG_exact": true
+    }
+  ],
+  "source_drop_last_true_line": 99,
+  "independent_oracle": "torch.utils.data.BatchSampler(drop_last=True)",
+  "real_data_training": 0,
+  "real_model_inference": 0,
+  "CUDA_initialized": false
+}

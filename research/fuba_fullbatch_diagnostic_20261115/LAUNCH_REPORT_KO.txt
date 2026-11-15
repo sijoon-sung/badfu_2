@@ -1,0 +1,5 @@
+R02/R03/D08/D15. 단일23R full-batch 진단이실제GPU학습중이다.
+고정프로토콜은PROTOCOL.txt,선택입력은INPUT_BINDING/PREPARED를따른다. CPU7조건(Adam/재가중SGD/consistencySGD와역할0/4의동적표본)이독립BatchSampler(drop_last=True)의모델/optimizer/RNG와정확일치했다. 실제학습이나공격성능계약은아니다.
+새일회성task Codex-FUBA-fullbatch-diagnostic-20261115,controller21528/trainer47312를확인했다. client0 benign_anchor18/50epoch,756batch,매epoch2688장/잔여12장제외,GPU40%/3500MiB여유를관측했다. 유휴15회와기존guard후에학습했다. 최종23R/성능/독립검증/전달은아직미완료다.
+작업등록후최초검사가빈Triggers를@($null).Count로1개로세어Start-ScheduledTask전에중단됐다. 실제XML에는trigger없음/restart0,LastTaskResult267011(한번도실행하지않음),STARTED/launcher폴더/PID부재를확인했다. null을제외하는검사로같은등록작업을처음시작했으며작업재생성/학습재시작/과학조건변경은없다. LAUNCH_PREFLIGHT_CORRECTION.json에보존했다.
+원redraw385파일실패와실제Retrain100실패를그대로보존한다. 이진단은전체재현또는non-IID탐지성공이아니다. 실행중task를중복시작하지않고status_remote.ps1로실제PID/상태를확인한다.
