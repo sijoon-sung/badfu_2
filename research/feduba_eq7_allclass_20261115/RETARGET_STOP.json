@@ -1,0 +1,26 @@
+﻿{
+    "state":  "stopped_after_user_target_correction",
+    "stopped_pids":  [
+                         52496,
+                         50248
+                     ],
+    "remaining_owned_processes":  0,
+    "last_committed_attack_rounds":  4,
+    "last_progress":  {
+                          "stage":  "training",
+                          "pid":  50248,
+                          "branch":  "attack",
+                          "round":  5,
+                          "client":  2,
+                          "epoch":  5,
+                          "examples":  2500,
+                          "batches":  20,
+                          "cumulative_role_batches":  100,
+                          "loss":  0.5858630259513855,
+                          "time":  1794730917.9001591
+                      },
+    "completed_benign_rounds":  20,
+    "old_runs_modified":  false,
+    "current_partial_files_preserved":  true,
+    "time_utc":  "2026-11-15T08:22:00.6382320Z"
+}

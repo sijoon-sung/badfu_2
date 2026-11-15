@@ -1,0 +1,6 @@
+2026-11-15 최신 사용자: BadFU처럼 공모자와 공격자가 협력하는 공격을 구현하라고 정정했다.
+현재 목표는 stcebra/FUBA, Algorithms1/2, Adv-attacker/Adv-defender. 과거 2026-10-31 FedUBA 대상 지시보다 최신 지시를 우선한다.
+필요한 원문/공개코드/의존성은 에이전트가 찾는다. KNOT/FUKD 경로를 사용자에게 다시 요구하지 않는다.
+잘못된 FedUBA Eq7 비교의 새 controller52496/trainer50248만 신원을 확인하여 종료했다. 정상20R 및 공격4커밋round/5R부분을 보존했다. RETARGET_STOP.json이 실제 증거다. 미실행 curve/export도 보류한다.
+이 정정은 기존 모든 연구 실패/모델/봉인/default를 유지하며, 기존 중지된 FUBA seed queue를 재시작하는 것이 아니다.
+

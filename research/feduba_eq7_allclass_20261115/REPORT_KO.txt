@@ -1,4 +1,4 @@
-FedUBA Eq.7 전체 클래스 선택 교정 — 실행 중, 전체 재현 미완료
+FedUBA Eq.7 전체 클래스 선택 교정 — 사용자 대상 정정으로 중단, 전체 재현 미완료
 
 고정코드/프로토콜은 PR3 commit8763a56에 학습 전에 게시했다. DISLAB 전용 D:/FEDUBA_EQ7_ALLCLASS_20261115에서 새 비교를 실행한다. 원본 모델과 완료 작업은 수정하거나 재실행하지 않았다.
 
@@ -11,3 +11,5 @@ prepare 완료: 명시 clean case diagnostic 선택 및 봉인 guard, 원5000 qu
 관련 R03/R02/N02/R05/D08/D15. D08/D15 큰 정상 non-IID 반례는 해결하지 않은 공격 구현 비교다. 공개 FU의 local feature replacement와 논문 영향 제거 서술 사이의 해석 간극도 남는다.
 
 후속 실제 상태: 정상FU20/200roles/1000epochs/20000batches 완료. CPU 독립 보정·집계 모두 exact, epoch ID순열과 optimizer/RNG 존재 통과, 선택 표본 노출0회. 정상 after SHA17a0c81fbe10aa8984ea90251c6f912ce29cb718c19ebb8e4a81807ee1ce4273. 전체 SGD gradient 재생은 아니다. 이어 새 공격 FU가 자원 guard를 통과해 시작됐다. 최종 CA/ASR는 아직 측정하지 않았다.
+
+2026-11-15 대상 정정: 사용자는 공격자와 공모자가 협력하는 stcebra/FUBA라고 명시했다. 잘못된 FedUBA controller52496/trainer50248만 확인 후 종료했다. 정상20R/정확 CPU집계 통과, 공격4커밋round 및 5R/client2/epoch5 부분은 보존했다. 잔존 own PID0. 최종 CA/ASR·공격 끝점·curve/export는 미실행이며 후속 자동 실행은 보류한다. RETARGET_STOP.json 참조.
