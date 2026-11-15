@@ -1,0 +1,3 @@
+가설: 실제 FU에서 최초 삭제 대상이 원래 선택된 round와 최초 잔류 공격자 역할은 사전 고정한 ID 제외·가중치·gamma1 제출식을 그대로 실행한다.
+관련 R02/D08/D15 및 본 PROTOCOL.txt. 새 관측은 계획표가 아닌 저장된 round2와 round7/client0의 실제 tensor·phase·epoch 로그이다. 전체100R 완료나 최종 ASR을 대신하지 않으며 큰 정상 non-IID 탐지 반례도 해결하지 않는다.
+해당 파일이 실제 커밋된 후 CPU로 한 번 읽는다. 첫 삭제 round의 원 코호트/실제7명/동일 incoming/정확 평균을 검사하고, 최초 공격자의3개50epoch·6450batch·optimizer/RNG·실제 incoming+1*(embedding-incoming)을 검사한다. 불일치 시 원본을 보존하고 즉시 진단한다. 새 모델 학습·실자료 추론은0회다. 최종 전체100R 감사는 별도로 남아 있다.

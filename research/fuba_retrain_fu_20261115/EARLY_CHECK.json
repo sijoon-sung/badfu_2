@@ -1,0 +1,27 @@
+{
+  "state": "passed",
+  "first_erased_round": 2,
+  "actual_retained_clients": [
+    3,
+    7,
+    9,
+    11,
+    15,
+    17,
+    18
+  ],
+  "actual_weight": 0.14285714285714285,
+  "first_attacker": {
+    "round": 7,
+    "client": 0,
+    "gamma": 1,
+    "epochs": 150,
+    "batches": 6450
+  },
+  "submission_exact": true,
+  "round_aggregation_exact": true,
+  "finite_phase_optimizer_RNG": true,
+  "CUDA_initialized": false,
+  "real_data_inference": 0,
+  "final100R_verified": false
+}
