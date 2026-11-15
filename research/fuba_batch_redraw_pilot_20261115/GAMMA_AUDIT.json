@@ -1,0 +1,1559 @@
+{
+  "state": "passed",
+  "traces": 18,
+  "points": 198,
+  "validation_N": 300,
+  "evaluator": "original author functions; independent Eq3 state reconstruction; FP32 deterministic noTF32",
+  "all_points_and_selected_gammas_exact": true,
+  "rows": [
+    {
+      "arm": "batch_redraw",
+      "round": 21,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 295,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 295,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 295,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 295,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 295,
+          "target_successes": 14,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 295,
+          "target_successes": 16,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 295,
+          "target_successes": 18,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 295,
+          "target_successes": 18,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 295,
+          "target_successes": 20,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 23,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 5,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 6,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 8,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 8,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 8,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 12,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 13,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 23,
+      "client": 1,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 5,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 6,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 6,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 7,
+          "non_target_N": 265,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 23,
+      "client": 2,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 5,
+          "non_target_N": 267,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 23,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 295,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 24,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 295,
+          "target_successes": 10,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 295,
+          "target_successes": 11,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 295,
+          "target_successes": 12,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 295,
+          "target_successes": 14,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 295,
+          "target_successes": 18,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 295,
+          "target_successes": 20,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 294,
+          "target_successes": 23,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 294,
+          "target_successes": 26,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 25,
+      "client": 2,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 3,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 3,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 298,
+          "target_successes": 5,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 298,
+          "target_successes": 6,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 298,
+          "target_successes": 6,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 298,
+          "target_successes": 6,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 298,
+          "target_successes": 8,
+          "non_target_N": 267,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 25,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 6,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 6,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 7,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 295,
+          "target_successes": 12,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 295,
+          "target_successes": 12,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 295,
+          "target_successes": 13,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 295,
+          "target_successes": 18,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 295,
+          "target_successes": 19,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 26,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 13,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 298,
+          "target_successes": 15,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 298,
+          "target_successes": 16,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 21,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 24,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 26,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 28,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 29,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 32,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 35,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 41,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.5,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 27,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 12,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 14,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 18,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 18,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 19,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 21,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 23,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 24,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 27,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.9,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 27,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 5,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 11,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 14,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 14,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 16,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 19,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 28,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 15,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 19,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 22,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 23,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 26,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 27,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 27,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 30,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 32,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 33,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 36,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.4,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 28,
+      "client": 1,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 3,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 5,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 8,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 8,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 9,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 9,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 14,
+          "non_target_N": 265,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 28,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 295,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 295,
+          "target_successes": 3,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 295,
+          "target_successes": 6,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 295,
+          "target_successes": 8,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 295,
+          "target_successes": 12,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 295,
+          "target_successes": 14,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 295,
+          "target_successes": 15,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 295,
+          "target_successes": 16,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 295,
+          "target_successes": 17,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 295,
+          "target_successes": 20,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 295,
+          "target_successes": 25,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 29,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 33,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 36,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 39,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 41,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 45,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 48,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 49,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 52,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 54,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 56,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 298,
+          "target_successes": 60,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 29,
+      "client": 1,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 11,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 12,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 13,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 18,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 23,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 26,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 29,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 35,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 41,
+          "non_target_N": 265,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.7,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 29,
+      "client": 2,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 298,
+          "target_successes": 5,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 298,
+          "target_successes": 6,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 298,
+          "target_successes": 8,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 298,
+          "target_successes": 8,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 298,
+          "target_successes": 11,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 298,
+          "target_successes": 12,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 298,
+          "target_successes": 12,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 298,
+          "target_successes": 14,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 298,
+          "target_successes": 16,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 298,
+          "target_successes": 18,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 298,
+          "target_successes": 20,
+          "non_target_N": 267,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "batch_redraw",
+      "round": 30,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 17,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 18,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 18,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 20,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 23,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 29,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 34,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 40,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 295,
+          "target_successes": 46,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 294,
+          "target_successes": 57,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 294,
+          "target_successes": 64,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 0.4,
+      "exact": true
+    }
+  ],
+  "training": 0
+}
