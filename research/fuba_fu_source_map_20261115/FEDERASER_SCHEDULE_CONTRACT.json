@@ -1,0 +1,913 @@
+{
+  "state": "passed",
+  "device": "CPU",
+  "real_training": 0,
+  "model_loads": 0,
+  "CUDA_used": false,
+  "source_sha256": "7ce52226d058bcad9688afa28532c6205ba0f3c1cd0b593365a1dcbd36cf5346",
+  "results": [
+    {
+      "global_epoch_argument": 20,
+      "plan": {
+        "initial_global_round": 0,
+        "first_overlay_client_round": 2,
+        "calibration_local_epochs": 5,
+        "calibration": [
+          {
+            "old_client_round": 4,
+            "old_global_round": 4,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 6,
+            "old_global_round": 6,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 8,
+            "old_global_round": 8,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 10,
+            "old_global_round": 10,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 12,
+            "old_global_round": 12,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 14,
+            "old_global_round": 14,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 16,
+            "old_global_round": 16,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 18,
+            "old_global_round": 18,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 20,
+            "old_global_round": 20,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          }
+        ],
+        "output_updates": 10,
+        "calibration_calls": 9,
+        "full_participation_only": true,
+        "FUBA_100_to_20_mapping_validated": false
+      },
+      "AST_calls": [
+        {
+          "old_client_round": 4,
+          "old_global_round": 4,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 6,
+          "old_global_round": 6,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 8,
+          "old_global_round": 8,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 10,
+          "old_global_round": 10,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 12,
+          "old_global_round": 12,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 14,
+          "old_global_round": 14,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 16,
+          "old_global_round": 16,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 18,
+          "old_global_round": 18,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 20,
+          "old_global_round": 20,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "global_epoch_argument": 100,
+      "plan": {
+        "initial_global_round": 0,
+        "first_overlay_client_round": 2,
+        "calibration_local_epochs": 5,
+        "calibration": [
+          {
+            "old_client_round": 4,
+            "old_global_round": 4,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 6,
+            "old_global_round": 6,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 8,
+            "old_global_round": 8,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 10,
+            "old_global_round": 10,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 12,
+            "old_global_round": 12,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 14,
+            "old_global_round": 14,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 16,
+            "old_global_round": 16,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 18,
+            "old_global_round": 18,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 20,
+            "old_global_round": 20,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 22,
+            "old_global_round": 22,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 24,
+            "old_global_round": 24,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 26,
+            "old_global_round": 26,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 28,
+            "old_global_round": 28,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 30,
+            "old_global_round": 30,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 32,
+            "old_global_round": 32,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 34,
+            "old_global_round": 34,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 36,
+            "old_global_round": 36,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 38,
+            "old_global_round": 38,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 40,
+            "old_global_round": 40,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 42,
+            "old_global_round": 42,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 44,
+            "old_global_round": 44,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 46,
+            "old_global_round": 46,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 48,
+            "old_global_round": 48,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 50,
+            "old_global_round": 50,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 52,
+            "old_global_round": 52,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 54,
+            "old_global_round": 54,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 56,
+            "old_global_round": 56,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 58,
+            "old_global_round": 58,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 60,
+            "old_global_round": 60,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 62,
+            "old_global_round": 62,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 64,
+            "old_global_round": 64,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 66,
+            "old_global_round": 66,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 68,
+            "old_global_round": 68,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 70,
+            "old_global_round": 70,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 72,
+            "old_global_round": 72,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 74,
+            "old_global_round": 74,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 76,
+            "old_global_round": 76,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 78,
+            "old_global_round": 78,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 80,
+            "old_global_round": 80,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 82,
+            "old_global_round": 82,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 84,
+            "old_global_round": 84,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 86,
+            "old_global_round": 86,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 88,
+            "old_global_round": 88,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 90,
+            "old_global_round": 90,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 92,
+            "old_global_round": 92,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 94,
+            "old_global_round": 94,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 96,
+            "old_global_round": 96,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 98,
+            "old_global_round": 98,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          },
+          {
+            "old_client_round": 100,
+            "old_global_round": 100,
+            "old_global_reference": "AFTER aggregation, literal original source"
+          }
+        ],
+        "output_updates": 50,
+        "calibration_calls": 49,
+        "full_participation_only": true,
+        "FUBA_100_to_20_mapping_validated": false
+      },
+      "AST_calls": [
+        {
+          "old_client_round": 4,
+          "old_global_round": 4,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 6,
+          "old_global_round": 6,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 8,
+          "old_global_round": 8,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 10,
+          "old_global_round": 10,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 12,
+          "old_global_round": 12,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 14,
+          "old_global_round": 14,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 16,
+          "old_global_round": 16,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 18,
+          "old_global_round": 18,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 20,
+          "old_global_round": 20,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 22,
+          "old_global_round": 22,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 24,
+          "old_global_round": 24,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 26,
+          "old_global_round": 26,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 28,
+          "old_global_round": 28,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 30,
+          "old_global_round": 30,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 32,
+          "old_global_round": 32,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 34,
+          "old_global_round": 34,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 36,
+          "old_global_round": 36,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 38,
+          "old_global_round": 38,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 40,
+          "old_global_round": 40,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 42,
+          "old_global_round": 42,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 44,
+          "old_global_round": 44,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 46,
+          "old_global_round": 46,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 48,
+          "old_global_round": 48,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 50,
+          "old_global_round": 50,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 52,
+          "old_global_round": 52,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 54,
+          "old_global_round": 54,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 56,
+          "old_global_round": 56,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 58,
+          "old_global_round": 58,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 60,
+          "old_global_round": 60,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 62,
+          "old_global_round": 62,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 64,
+          "old_global_round": 64,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 66,
+          "old_global_round": 66,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 68,
+          "old_global_round": 68,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 70,
+          "old_global_round": 70,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 72,
+          "old_global_round": 72,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 74,
+          "old_global_round": 74,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 76,
+          "old_global_round": 76,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 78,
+          "old_global_round": 78,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 80,
+          "old_global_round": 80,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 82,
+          "old_global_round": 82,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 84,
+          "old_global_round": 84,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 86,
+          "old_global_round": 86,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 88,
+          "old_global_round": 88,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 90,
+          "old_global_round": 90,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 92,
+          "old_global_round": 92,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 94,
+          "old_global_round": 94,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 96,
+          "old_global_round": 96,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 98,
+          "old_global_round": 98,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "old_client_round": 100,
+          "old_global_round": 100,
+          "retained_ids": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "full_paper_reproduced": false
+}

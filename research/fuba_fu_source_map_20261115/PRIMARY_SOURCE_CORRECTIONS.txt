@@ -27,3 +27,9 @@ DISLAB에 존재하던 별도 metadata admission/timeline 감사를 prior_record
 
 PGD 원저자 추가 확보 및 CPU 계약
 IBM/federated-unlearning@6f51bbccef3e54f55746ff0094271d26f69ce6da의5파일을Git blob검증했다. v1의삭제client초기값/validation종료, v3의reference초기값/Euclidean<tau, 실제notebook의squared distance>2.2와sqrt(radius_squared)투영을구분한다(PGD_SOURCE_CONTRACT). 최초CPU검사는노트북cp949 decode에서중단됐고원소스/오류를보존한UTF-8수정후실제원AST와투영3경우/10random반경/종료반례2개가모두일치했다. GPU/실모델/FU0이며공개코드가FUBA유일조건을결정해주지는않는다.
+
+FedEraser 전체 호출 순서 계약
+FEDERASER_SCHEDULE_CONTRACT.json은 저자 unlearning AST를 합성 ID 이력과 기록용 콜백으로 직접 실행했다. global_epoch20/interval2/local10/ratio.5는 client2R의 초기합성1회 뒤 client4,6,...,20R의 보정9회이며 실제 local5epoch다. 원100을 넣으면 초기합성1+보정49회다. 원 함수가 보정 크기의 기준으로 해당 round의 AFTER global을 전달하는 것도 확인했다. 입력 이력 불변, 삭제ID 제외, 설정 복원, 새 planner의 모든 호출 일치가 통과했다. 모델/자료/torch/GPU는 쓰지 않았다. 이를 FUBA의100R 이력과20 global 조건의 유일한 연결로 해석하지 않는다.
+
+PGD 전체 ascent 반복 계약
+PGD_STEP_CONTRACT.json은 기존 투영 단독 계약을 넘어 cell34의 실제 epoch/batch AST와 pgd_author_train.py를 비교했다. CPU 합성 Linear에서 SGD.01/momentum.9/clip5, 전20step/첫step종료/반경밖투영의 세 조건 모두 최종 model 및 optimizer state가 정확히 일치했다. 투영 횟수는 각각20/1/0이었다. 실자료 모델 또는 실제FU를 실행한 결과가 아니며 원논문 판본·FUBA 연결의 기존 불확실성을 유지한다. 완료한 계약은 재실행하지 않는다.

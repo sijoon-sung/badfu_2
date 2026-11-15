@@ -1,0 +1,6 @@
+PGD 실제 ascent 반복 계약 — R02/R03/D08/D15
+
+가설: 확보한 IBM notebook 판본의 전체 ascent/clip/momentum/projection/stop 반복을 별도 함수로 옮겨도 동일한 합성 batch에서 원 AST와 최종 model/optimizer가 정확히 일치한다. 기존 PGD_CONTRACT의 투영·거리 연산만으로는 optimizer 상태와 반복 종료 순서가 검증되지 않았으므로 이것이 새 관측이다.
+PGD_SOURCE_CONTRACT.txt의 v1/v3/notebook 차이를 유지한다. 이 코드는 공개 notebook 판본을 명시적으로 구현하며 FUBA가 유일하게 이 판본을 사용했다고 주장하지 않는다. reference 및 삭제client 모델 선택, 무작위10모델 radius, 실제 자료는 호출자가 선언해야 하며 이 계약에서는 사용하지 않는다.
+DISLAB CPU의 작은 합성 Linear 모델에서 원 notebook cell34의 실제 for-epoch AST를 실행한다. 원본과 새 함수는 같은 모델·batch·SGD.01/momentum.9/clip5/E5를 받는다. 큰 종료 임계값으로 전20batch 실행, 작은 임계값으로 첫batch 종료, 작은 반경으로 투영 발생을 검사한다. model과 momentum state가 정확히 같아야 한다. finite 오류 또는 불일치는 중단·보존하며 실제 GPU FU를 자동실행하지 않는다. 기존 finite PGD 수식 계약을 재실행하지 않는다.
+이는 FU 구현 계약이지 ASR 결과나 새 탐지법이 아니다. D08/D15 큰 정상 non-IID 반례는 미해결이다. 현재 Retrain100 실행과 후속 batch-redraw 선행조건은 불변이다.
