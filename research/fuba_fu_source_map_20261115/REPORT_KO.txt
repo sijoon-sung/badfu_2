@@ -1,0 +1,17 @@
+가설: 공개 FUBA의 FU wrapper 기본 실행만으로는 논문 보충자료의 모든 FU 조건을 충족하지 않는다.
+관련 R02/R03/D08/D15. stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d의 해당 경로를 GitHub에서 직접 확보했다. 새 모델 학습/언러닝/추론은 없다.
+원문: main p2898–2899, supplementary p1 II.A (SHA b2b5d855c6016c16999e643a737a2a4a9361e632aa40cd3f65b21a872f713ff2).
+필요한 논문·코드의 탐색은 에이전트가 수행했으며 사용자에게 private 코드를 요구하지 않는다.
+
+대응과 확인된 간극
+- FedEraser: 논문 global20/local10, calibration ratio .5, interval2. 실제 wrapper가 쓰는 unlearn_method/utils.py Arguments는 global_epoch=2/interval1이다. Fed_Unlearn_base.py 내부 다른 Arguments의20을 wrapper의 실제 값으로 오인하지 않는다. unlearning 함수에서 unlearning_step_once 호출은 주석이고 실제 경로는 utils_federaser.global_train_once이다. norm-calibration을 실행했다고 이 함수명만으로 주장할 수 없다.
+- SGA: 보충자료는 loss5를 넘기 직전 상태를 반환한다. 공개 sga_unlearning의 if loss.item()>3은 다른 임계값이며 수동 gradient ascent를 수행한다. 생성한 Adam 인스턴스가 실제 optimizer.step을 호출하는 경로라고 오인하지 않는다. DBA/IBA에서는 입력에 trigger를 넣는다. 이를 깨끗한 클라이언트 자료의 삭제와 암묵적으로 동일시하지 않는다.
+- KD: 보충자료는 한 client 크기의 clean unlabeled와 실제 historical subtraction 후10KD. 공개 distillation_unlearn은 /20 및 배열위치 이력을 사용하고 range(1), add_backdoor_all(inputs)가 활성화돼 있다. 기존 v5-v7 및 MNIST 선언 구현은 이미 이와 다른 실제기여/clean/KD10으로 교정했으며 이번 발견으로 새로 중복 주장하지 않는다.
+- PGD: 보충자료는 원논문의 L2 ball/early stopping 후10R post-training. 공개 pgd.py는 매round 삭제client를 제외한 평균의 마지막 모델을 사용하고 retrain20으로 전달한다. 이 파일에 gradient projection 구현은 없다. 다른 원본 PGD 알고리즘을 근거로 별도 명시 구현해야 하며 이름만 PGD로 바꾸지 않는다.
+- Retrain: main p2899 footnote4는 잔류 공격자의 retraining gamma=1이다. 공개 retrain.py의 정상 local_epochs=1/공격10/G15와 별도 실험문단의 E50/G5를 분리해 기록한다. 실제 클래스별 역할과 고정 gamma를 향후 profile로 연결해야 한다.
+- RobustFU: 보충자료의 서버 무라벨 R는 MNIST1000/CIFAR800/ImageNet4000이다. 공개 파일을 확보했으며 현재 새실행/정확대응 검증을 완료했다고 세지 않는다.
+
+판정
+공개 파일 존재와 논문 방법의 실제 실행/성능 재현은 구분한다. 이번은 정적 source 대응이며 모든 전이함수의 새 수치검증이 아니다. 특정공개 파일의 기본값이 서로 다르다는 사실을 논문결과가 불가능하다는 증명으로 확대하지 않는다.
+저자 공개 post6 결과는 실제 CA/ASR의 별도 유효한 증거다. 그 파일명의 FU가 어떤 이력/설정으로 만들어졌는지는 공개 endpoint만으로 인증하지 못한다.
+현재 실제 GPU 작업은 별도 fuba_gamma_trajectory_20261115의 고정비교이며 이 자료조사는 그 훈련 코드나 조건을 바꾸지 않는다. D08/D15 큰 정상 non-IID 탐지는 미해결이고 새로운 탐지법은 제안하지 않는다.

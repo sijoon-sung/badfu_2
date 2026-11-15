@@ -1,0 +1,51 @@
+{
+  "commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "source_copy_note": "Tool text copies; line endings/trailing newline may differ, executable bodies not edited",
+  "files": [
+    {
+      "path": "unlearn_method/distillation.py",
+      "copied_sha256": "8fa5ec3ae40198660c2054f4459fd2439917dd7c1b9533147098722f9e6d2e9f",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/distillation.py"
+    },
+    {
+      "path": "unlearn_method/federaser.py",
+      "copied_sha256": "1e002c34efb6389910df72cc392e51b3063bc40f0715737403b70dabeead087a",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/federaser.py"
+    },
+    {
+      "path": "unlearn_method/pgd.py",
+      "copied_sha256": "187d75610f0bf1272e595250ac2c58125fc2de3bc9ad01290cf5cce46293d367",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/pgd.py"
+    },
+    {
+      "path": "unlearn_method/retrain.py",
+      "copied_sha256": "c17bed4f41b40abe5ce746adead170ed369e89b5def99122ae37f6e1eda6a5e4",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/retrain.py"
+    },
+    {
+      "path": "unlearn_method/robustFu.py",
+      "copied_sha256": "0237c00cb3ce594860059e653dd3b7d9d8a870849aad56d79cad3d0cacd995d6",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/robustFu.py"
+    },
+    {
+      "path": "unlearn_method/sga.py",
+      "copied_sha256": "316455c397c2bc3926627426860331a30a61b03a48a08cf3b73375f386f63849",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/sga.py"
+    },
+    {
+      "path": "unlearn_method/utils.py",
+      "copied_sha256": "519c1baf621db8875b2d847193f02d95cef964169d0b85b1b21737bea799de80",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/utils.py"
+    },
+    {
+      "path": "unlearn_method/FedEraser/Fed_Unlearn_base.py",
+      "copied_sha256": "9604671c945165e60521c966e9e40d8d3cc7a3638a1deb3d8b99140600ac775a",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/FedEraser/Fed_Unlearn_base.py"
+    },
+    {
+      "path": "unlearn_method/FedEraser/FL_base.py",
+      "copied_sha256": "0ab8b8c7f9bb8602daf24ed78cf4d7a0c40e36d674d363b2ae47a45705f74cee",
+      "url": "https://github.com/stcebra/FUBA/blob/bc233610aca36e1647d0c815597cc7148292139d/unlearn_method/FedEraser/FL_base.py"
+    }
+  ]
+}
