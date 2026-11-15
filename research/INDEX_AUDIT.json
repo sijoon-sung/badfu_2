@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "dd719d4403e09bd54d54331182a0241bf3cc7388f8b375616efc526ca63c62de",
-  "cards": 27,
-  "unique_source_documents": 222,
-  "top_level_folders": 98,
-  "folders_linked_to_cards": 50,
+  "registry_sha256": "40bb9d58e1e9ff63f7e10f215a6dcf2d6b6c719d533180832d672ab5fea0b48f",
+  "cards": 28,
+  "unique_source_documents": 227,
+  "top_level_folders": 99,
+  "folders_linked_to_cards": 51,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -210,6 +210,11 @@
     "research/badfu_timing_defense_20261115/DISLAB_VERIFICATION.json": "8b6f15dd825d5ea19b89c6baba6ed0d7fb8ab15f992b4a820e0c1c46f01aab5b",
     "research/badfu_timing_defense_20261115/DEFENSE_POINTS_KO.txt": "f1f1a5e6bec96f2893b6a19c34613aa7fa32f8afb000f98c019994462c28416d",
     "research/badfu_timing_defense_20261115/PHASE_COMPARISON_REPORT.json": "7778b6c65fa949a904e9e8adc610fcc09435ca9983a4335b6c960745742bb0fc",
+    "research/badfu_recovery_margin_20261115/LITERATURE_KO.txt": "36e2386e171f6c59e447d8b97620bdb8bd11837e3fa7ae57bea44d5570783d58",
+    "research/badfu_recovery_margin_20261115/PROTOCOL_KO.txt": "cc1cb3b1d75c5b6b9c3fb9f4e799782a7e47bfd237dd6207def222a4b4e37141",
+    "research/badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt": "8290f2cd827b91d234951206d7c650f245639b429c0e1ca9b506d72fcdeb4237",
+    "research/badfu_recovery_margin_20261115/VERIFICATION_DISLAB.json": "bf0160e4f4df0926fc8d6f8c1e0f9a173ed1c43f5ce7ae20b8dbfafb13486a50",
+    "research/badfu_recovery_margin_20261115/VERIFICATION_LOCAL.json": "f6f651d1a8dd9da87a5d483aab1df521c50f01528381c54f5721a6e3df4d9754",
     "research/manifold_projection_check_20261025/PROTOCOL.txt": "15607c4f3f651e73ef602b3da4188dfba0be3836e39cd89e77470fbcaa344837",
     "research/manifold_projection_check_20261025/FREEZE.json": "f06b1f3c4de4f809d6cccb0e849a1b24210b54456094064c2eae49baa5e26d6e",
     "research/manifold_projection_check_20261025/REPORT_KO.txt": "48e99c75d4d6e553f087c8c102952ceb3bc34acdb07d5166e282c5d7bffd1351",
@@ -368,6 +373,17 @@
         "research/badfu_algorithm_audit_20261023/EVIDENCE_MANIFEST.json",
         "research/badfu_algorithm_audit_20261023/FINISH_STATUS.json",
         "research/badfu_algorithm_audit_20261023/README.md"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/badfu_recovery_margin_20261115",
+      "related_cards": [
+        "P06"
+      ],
+      "top_level_documents": [
+        "research/badfu_recovery_margin_20261115/PROTOCOL_KO.txt",
+        "research/badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

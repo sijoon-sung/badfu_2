@@ -1,0 +1,50 @@
+{
+  "exit_code": 0,
+  "hashes": {
+    "LITERATURE_KO.txt": "36e2386e171f6c59e447d8b97620bdb8bd11837e3fa7ae57bea44d5570783d58",
+    "PROTOCOL_KO.txt": "cc1cb3b1d75c5b6b9c3fb9f4e799782a7e47bfd237dd6207def222a4b4e37141",
+    "recovery_margin.py": "40a6a82cb528557e16e42f8a1f562b990ab11a1fb66ca6235cfc86c3fa447590",
+    "verify_synthetic.py": "a2b16528e7fd9f672328f6fcd62855b0cab07fb283c16ab1de7f2fd2e30afd13"
+  },
+  "verification": {
+    "state": "passed",
+    "checks": {
+      "timing": {
+        "anchor_only_candidate_weight": 1.0,
+        "anchor_only_later_margin": -0.8,
+        "full_nominal_candidate_weight": 0.603175,
+        "full_bounded_candidate_weight": 0.523809,
+        "full_bounded_final_margin_lower": 0.2000001
+      },
+      "transport": {
+        "cross_time_affinity": true,
+        "noncommuting_step_order": true,
+        "pairwise_margin_and_proxy_bound_checked": true
+      },
+      "clipping": {
+        "realized_extra_norm": 0.2,
+        "zero_budget": "exact"
+      },
+      "ridge_generation": {
+        "ridge_normal_equation_residual_bounded": true,
+        "benign_held_out_fixture_restored": true
+      },
+      "feasibility": {
+        "no_head_on_infeasible_constraints": true,
+        "invalid_inputs_rejected": 4
+      },
+      "coverage_limit": {
+        "identical_protected_scores_can_disagree_on_an_uncovered_feature": true
+      }
+    },
+    "device": "CPU",
+    "dtype": "float64",
+    "real_checkpoints_loaded": 0,
+    "runtime": {
+      "python": "3.12.10",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3"
+    }
+  },
+  "free_ram_kib": 6405424
+}

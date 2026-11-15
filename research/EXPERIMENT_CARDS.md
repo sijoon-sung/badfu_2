@@ -742,6 +742,33 @@
 
 **묶은 폴더:** [badfu_timing_defense_20261115](badfu_timing_defense_20261115)
 
+<a id="p06"></a>
+
+## P06 · 삭제 후 복구 전 구간의 정답 마진 제약
+
+**가설 한 줄: 동일 후보와 예산에서 후속 복구까지 마진을 제한하면 교정 직후 평가보다 큰 정상 탈퇴의 정상 기능을 보존하면서 원래 정답을 회복하는 후보를 남길 수 있다.**
+
+**판정: 수학적 조건부 명제·CPU 합성 구현 검산 통과, 실모델 미검증**
+
+[실험 시작 이유와 실제 실행 과정 읽기](badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt)
+
+- **조건:** 2026-11-15, R01/T01/P01/P02/P05/D01/D02/D06/D07/D08/D15/D18/N01/N02. 삭제 후 고정 백본, 검증된 유지 라벨로 고정한 아핀 복구, 집행하는 합산 추가 갱신 상한. 실제 트리거와 역할은 사용하지 않는다. NumPy/SciPy의 CPU float64 합성 검산.
+- **정상 대조·비교:** 교정 직후만 제약, 복구 전 구간 명목 제약, 동일 경로에 추가 갱신 상한을 포함한 제약. 비가환 연산, 잘못된 입력, 독립 정상 합성 표본, 보호 밖 특징 반례를 검산했다. P05 큰 정상 19.336%·22.790%는 실제 모델 후속의 선행 대조다.
+- **결과:** 사전 코드의 SHA256을 확인하고 로컬 및 DISLAB CPU에서 같은 6항목을 통과했다. 합성 직후 검사 혼합비 100%는 후속 마진 −0.8, 전 구간 명목 60.32%, 상한 포함 52.38%와 후속 하한 +0.2000001을 확인했다. 재현 영수증·선행 7개·프로토콜·코드를 PR #2에 기록했다. 실제 체크포인트·공격 입력·새 학습은 0건이다.
+- **non-IID에 대해 남길 교훈:** D08의 점수 중첩으로 역할을 판정하는 대신 P05의 잔류 정답 손실을 직접 제약한다. 집행 상한이 정상 희소 기여를 자를 수 있고 보호 표본 밖 효용은 보장되지 않는다. 큰 정상 대조와 독립 도메인 커버리지 검증이 필요하다.
+- **반복하지 않을 주장:** 합성 하한을 실제 BadFU ASR, 트리거 가족 독립 탐지, 삭제 인증 또는 가변 백본 복구의 증명으로 쓰지 않는다. P05의 정상 효용 한도를 완화하지 않는다.
+- **재검토 조건:** 같은 삭제 범위·후보·예산에서 P05의 두 큰 정상 탈퇴, 보류·절단률, 유한 삭제 감사부터 통과할 때 실제 보관 공격의 원래 정답 회복·재오류를 평가한다.
+
+**원문·증거:**
+
+- [research/badfu_recovery_margin_20261115/LITERATURE_KO.txt](badfu_recovery_margin_20261115/LITERATURE_KO.txt)
+- [research/badfu_recovery_margin_20261115/PROTOCOL_KO.txt](badfu_recovery_margin_20261115/PROTOCOL_KO.txt)
+- [research/badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt](badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt)
+- [research/badfu_recovery_margin_20261115/VERIFICATION_DISLAB.json](badfu_recovery_margin_20261115/VERIFICATION_DISLAB.json)
+- [research/badfu_recovery_margin_20261115/VERIFICATION_LOCAL.json](badfu_recovery_margin_20261115/VERIFICATION_LOCAL.json)
+
+**묶은 폴더:** [badfu_recovery_margin_20261115](badfu_recovery_margin_20261115)
+
 <a id="n01"></a>
 
 ## N01 · 신뢰 기준 모델을 추가하면 해결된다는 직전 제안
