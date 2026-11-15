@@ -125,7 +125,9 @@ def train():
                 tr=order[300:].cuda();cx,cy=dx[tr],dy[tr];px,py=cx.clone(),cy.clone()
                 ix=torch.randperm(2700,generator=torch.Generator().manual_seed(p['partition_seed']+1000+client))[:810].cuda()
                 px[ix]=core.stamp(px[ix],client);py[ix]=8
-                submitted=core.embed(net,cx,cy,px,py,settings,seed=rs,log=log,capture=capture)
+                embedded=core.embed(net,cx,cy,px,py,settings,seed=rs,log=log,capture=capture)
+                submitted=core.affine(net,embedded,1.)
+                del embedded
                 role['gamma']=1.;role['test_or_validation_used_for_selection']=False
                 del cx,cy,px,py
             else:

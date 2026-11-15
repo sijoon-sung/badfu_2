@@ -57,3 +57,10 @@
 - Preserve the stopped FedUBA Eq.7 experiment: normal20R completed, attack4R committed plus a partial fifth round, no final attack metrics. `research/feduba_eq7_allclass_20261115/RETARGET_STOP.json` records the targeted process stop. Do not restart its controller or the older stopped FUBA seed queue.
 - The public author MNIST/DBA post6 evaluation in `research/fuba_author_models_20261115` is complete. It verifies public endpoint behavior, not a new FU execution or an approved latent pre/post pair. Do not rerun its finite preparation/evaluation.
 - The separate bounded current-runtime local/global gamma comparison is at DISLAB `D:/FUBA_GAMMA_TRAJECTORY_20261115`. Read its fixed protocol and actual state before acting. It starts from the explicitly verified original20R and trains each arm21–30R; do not duplicate it or promote its result to full100R/FU reproduction.
+
+# Current finite jobs — 2026-11-15 continuation
+
+- The original gamma trajectory comparison is complete and failed its behavioral gates; its first-role numerical confound and full669-file delivery remain preserved. Do not rerun it. Read its final report and the passed bounded deterministic contract.
+- A distinct deterministic local/global comparison is active at `D:/FUBA_GAMMA_DETERMINISTIC_20261115`; inspect actual processes/state and finish its full CPU, exact-prefix, independent evaluation and delivery. Never duplicate it. Failed gates prohibit a third automatic gamma-only comparison.
+- Actual retained-client Retrain100 FU is prepared, not yet trained, at `D:/FUBA_RETRAIN_FU_20261115`. Read its protocol and pretrain source correction. It uses the sealed original MNIST diagnostic case, excludes client4, fixes remaining attackers to gamma1 and preserves the failed pre-ASR. Start once after current GPU work and audits finish; complete real post model/log/evaluation delivery. It is separate from the old completed KD10 and disabled seed queue.
+- The recovered original FedEraser calibration passed its CPU arithmetic contract; other FU implementations and whole-paper reproduction remain incomplete.

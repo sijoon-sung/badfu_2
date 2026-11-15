@@ -1,0 +1,1 @@
+독립 평가 실행 전 수치정책 일치 수정: 새 strict trainer와 같은 deterministic=True/TF32=False를 evaluator에 명시했다. 원래 evaluator 기본cuDNN TF32에 의한 별도 수치조건 혼동을 막는다. 학습 FREEZE의4파일/조건은변경하지않았다. 이전완료pilot evaluator는변경/재실행하지않는다. 새 evaluator는아직실행전이다.

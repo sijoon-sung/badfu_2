@@ -18,7 +18,11 @@ def main():
     resources=guard()
     write(ROOT/'INDEPENDENT_STARTED.json',{'pid':os.getpid(),'time':time.time(),'resources':resources},True)
     torch.set_num_threads(1)
+    torch.use_deterministic_algorithms(True)
+    torch.backends.cudnn.deterministic=True
     torch.backends.cudnn.benchmark=False
+    torch.backends.cudnn.allow_tf32=False
+    torch.backends.cuda.matmul.allow_tf32=False
     source_root=Path('D:/FUBA_AUTHOR_MODELS_20261115')
     refs=read(source_root/'SOURCE_FREEZE.json')['files']
     for p in ['upstream/utils/comm_utils.py','upstream/utils/dba_attack_utils.py']:

@@ -8,7 +8,7 @@ case fuba.reference.mnist.dba.s20261023.pre100.post.kd10을diagnostic으로공�
 원문/실행선택
 Main p2898–2899의Retrain from Scratch와footnote4에따라원초기모델에서잔류클라이언트를학습하고Adv-attacker gamma=1을고정한다. 원pre100R와같은MNIST/Net/IID분할/seed20261023/partition20261020/100R/E50/B64/lr.001/고정poison810·train2700·validation300/core를유지한다. 원pre의5Rwarmup도유지한다. 본문은warmup수를명시하지않고공개FLdefault는5,공개FUwrapper는1이므로이선택을명시한다.
 원100R와같은원래20명중8명sample을만들고공모자4를제외한다. 따라서각round실제참여수7또는8에따라균등집계한다. 공개retrain.py의삭제client제거형참여선택과같다. 탈퇴자의빈모델·zero update를추가하지않는다.
-공격자0..3은warmup후Algorithm1의anchor/benign-anchor/재가중embedding을각50epoch계산하고gamma1로embedded를그대로제출한다. gamma검색을생략하므로선택에쓰지않는representative를추가훈련하지않는다. 원core의Adam·Adam·SGD정책을유지한다. 정상클라이언트는3000장/50epoch/Adam. 공모자4는자료로드·학습·집계에들어가지않는다. test자료/실제ASR로epoch·gamma·참여자를선택하지않는다.
+공격자0..3은warmup후Algorithm1의anchor/benign-anchor/재가중embedding을각50epoch계산하고gamma1의원affine식 incoming+1*(embedded-incoming)으로제출한다. gamma검색을생략하므로선택에쓰지않는representative를추가훈련하지않는다. 원core의Adam·Adam·SGD정책을유지한다. 정상클라이언트는3000장/50epoch/Adam. 공모자4는자료로드·학습·집계에들어가지않는다. test자료/실제ASR로epoch·gamma·참여자를선택하지않는다.
 이는선언된Algorithm1/2해석의한시드FUbaseline이다. 공개FUwrapper의40%poison/10epoch/weight1로묵시대체하지않는다. 논문본문실험Adam과수식SGD간기존차이는보존하며저자공인유일실행이라고하지않는다.
 
 운영/중단/검증
