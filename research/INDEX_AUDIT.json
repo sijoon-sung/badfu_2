@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "4712a60e1783530908bc732d2801aa235ba55cec0f9155caf4b1e99eb2dc1eeb",
+  "registry_sha256": "060cebce79b5c720dd9f0013920c08e724ef3ad64d5e22cd9128fc8d2b28cf79",
   "cards": 31,
-  "unique_source_documents": 343,
+  "unique_source_documents": 344,
   "top_level_folders": 101,
   "folders_linked_to_cards": 62,
   "source_sha256": {
@@ -255,6 +255,7 @@
     "research/fuba_fu_source_map_20261115/PGD_CONTRACT.json": "a8e937a089edc147bd7b9de71d7478e0033e0c555f3edc5afdb3dad3bcd87449",
     "research/fuba_fu_source_map_20261115/pgd_decode_failure/FAILURE.json": "9800365e7a2beb9cd59dba25583cfc86be3183bd2bb6433c1b4a32b687fda641",
     "research/fuba_retrain_fu_recovery_20261115/FIRST_RESUMED_ROUND.json": "4d8320f4dbd16374cf705a2672d7691a9a9fa749848ef5260e88f000bc3c7095",
+    "research/fuba_retrain_fu_recovery_20261115/FINALIZATION_PROTOCOL.txt": "954391a39dd3ec90233806a17d89b346e1f84555308711493a32712930aabd1b",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -914,6 +915,7 @@
       ],
       "top_level_documents": [
         "research/fuba_retrain_fu_recovery_20261115/AUDIT_FREEZE.json",
+        "research/fuba_retrain_fu_recovery_20261115/FINALIZATION_PROTOCOL.txt",
         "research/fuba_retrain_fu_recovery_20261115/LAUNCH_RESULT.json",
         "research/fuba_retrain_fu_recovery_20261115/PROTOCOL.txt",
         "research/fuba_retrain_fu_recovery_20261115/RECOVERY_PROTOCOL.txt",
