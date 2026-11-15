@@ -1,0 +1,26 @@
+{
+  "state": "passed",
+  "differences": [],
+  "roles": 2,
+  "phases": 8,
+  "epochs": 400,
+  "batches": 17200,
+  "test_inference": 0,
+  "scope": "same first21R/client0 only; no cause attribution to one backend switch",
+  "prior_trajectory_confounding_preserved": true,
+  "full_paper_reproduced": false,
+  "files": {
+    "repeat1/epochs.jsonl": "b9ee14bd4d84572f84764a6ddddd3d7e1e15a8ea412232414a62de389c697f4b",
+    "repeat1/phase01.pt": "0241515126815eea4e562e3c4b768e270b82c3a020be1187c9589a70e0bab7a7",
+    "repeat1/phase02.pt": "bc3266c7aad49bea79abe4fe5d39c508dddab3424568190965cc90b176009164",
+    "repeat1/phase03.pt": "e5d7c02853b3c219f907b93ea0534d768fe1b7e4231c690be1f70baadbae6aac",
+    "repeat1/phase04.pt": "9220299f06d91861b5a176e624cb56e4a3c0077224c8ccbca0cf219316f792e2",
+    "repeat1/submitted.pt": "add312b813c17d984cb37ddeabe2f8ad11b340f9dcc24ee7c719c659506244ff",
+    "repeat2/epochs.jsonl": "b9ee14bd4d84572f84764a6ddddd3d7e1e15a8ea412232414a62de389c697f4b",
+    "repeat2/phase01.pt": "0241515126815eea4e562e3c4b768e270b82c3a020be1187c9589a70e0bab7a7",
+    "repeat2/phase02.pt": "bc3266c7aad49bea79abe4fe5d39c508dddab3424568190965cc90b176009164",
+    "repeat2/phase03.pt": "e5d7c02853b3c219f907b93ea0534d768fe1b7e4231c690be1f70baadbae6aac",
+    "repeat2/phase04.pt": "9220299f06d91861b5a176e624cb56e4a3c0077224c8ccbca0cf219316f792e2",
+    "repeat2/submitted.pt": "add312b813c17d984cb37ddeabe2f8ad11b340f9dcc24ee7c719c659506244ff"
+  }
+}

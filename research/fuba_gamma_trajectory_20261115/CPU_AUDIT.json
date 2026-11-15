@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "counts": {
+    "phases": 274,
+    "epochs": 13700,
+    "batches": 613500,
+    "gamma_traces": 36,
+    "roles": 160,
+    "defender_roles": 2,
+    "rounds": 20
+  },
+  "exact_submission_and_aggregation": true,
+  "complete_epoch_logs": true,
+  "optimizer_and_RNG_present": true,
+  "gamma_arithmetic": true,
+  "all_gamma_independent_inference": false,
+  "gradient_training_replay": false,
+  "CUDA_initialized": false
+}

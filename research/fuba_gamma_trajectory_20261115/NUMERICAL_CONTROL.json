@@ -1,0 +1,440 @@
+{
+  "state": "differences_preserved",
+  "rows": [
+    {
+      "phase": 1,
+      "exact": false,
+      "differences": [
+        {
+          "path": "/model/conv1.weight",
+          "max_abs": 0.00032070279121398926
+        },
+        {
+          "path": "/model/conv1.bias",
+          "max_abs": 0.00012565404176712036
+        },
+        {
+          "path": "/model/conv2.weight",
+          "max_abs": 0.0017297565937042236
+        },
+        {
+          "path": "/model/conv2.bias",
+          "max_abs": 0.0001503080129623413
+        },
+        {
+          "path": "/model/fc1.weight",
+          "max_abs": 0.05460161715745926
+        },
+        {
+          "path": "/model/fc1.bias",
+          "max_abs": 0.0008883550763130188
+        },
+        {
+          "path": "/model/fc2.weight",
+          "max_abs": 0.047151298087555915
+        },
+        {
+          "path": "/model/fc2.bias",
+          "max_abs": 0.0005967244505882263
+        },
+        {
+          "path": "/model/fc3.weight",
+          "max_abs": 0.007054805755615234
+        },
+        {
+          "path": "/model/fc3.bias",
+          "max_abs": 0.00014244159683585167
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg",
+          "max_abs": 2.053763637377415e-06
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg_sq",
+          "max_abs": 5.124820745550096e-08
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg",
+          "max_abs": 9.957439033314586e-07
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg_sq",
+          "max_abs": 7.194466888904572e-08
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg",
+          "max_abs": 3.725778697116766e-06
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg_sq",
+          "max_abs": 1.1814699973911047e-07
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg",
+          "max_abs": 1.0576022759778425e-06
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg_sq",
+          "max_abs": 2.6026100385934114e-08
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg",
+          "max_abs": 1.7291693438892253e-05
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg_sq",
+          "max_abs": 2.429005689918995e-07
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg",
+          "max_abs": 1.9915108850909746e-06
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg_sq",
+          "max_abs": 5.122274160385132e-09
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg",
+          "max_abs": 7.194208592409268e-06
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg_sq",
+          "max_abs": 1.3277895050123334e-07
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg",
+          "max_abs": 7.538112640759209e-07
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg_sq",
+          "max_abs": 5.258016244624741e-09
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg",
+          "max_abs": 2.3790416889823973e-06
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg_sq",
+          "max_abs": 2.1024607121944427e-07
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg",
+          "max_abs": 3.5122093322570436e-07
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg_sq",
+          "max_abs": 3.296008799225092e-09
+        }
+      ],
+      "left_sha256": "8d3c7335d02333c58befcfd592d251297d7698c2e56228b64c078d57ad340a21",
+      "right_sha256": "e1bcfed953909682f7e8c045c4ece4d32c9955f3046bb27bbf43776042464e77"
+    },
+    {
+      "phase": 2,
+      "exact": false,
+      "differences": [
+        {
+          "path": "/model/conv1.weight",
+          "max_abs": 0.010965265333652496
+        },
+        {
+          "path": "/model/conv1.bias",
+          "max_abs": 0.006286801653914154
+        },
+        {
+          "path": "/model/conv2.weight",
+          "max_abs": 0.018821418285369873
+        },
+        {
+          "path": "/model/conv2.bias",
+          "max_abs": 0.004599802196025848
+        },
+        {
+          "path": "/model/fc1.weight",
+          "max_abs": 0.4530690014362335
+        },
+        {
+          "path": "/model/fc1.bias",
+          "max_abs": 0.010899331420660019
+        },
+        {
+          "path": "/model/fc2.weight",
+          "max_abs": 0.15812906622886658
+        },
+        {
+          "path": "/model/fc2.bias",
+          "max_abs": 0.008672118186950684
+        },
+        {
+          "path": "/model/fc3.weight",
+          "max_abs": 0.11130329966545105
+        },
+        {
+          "path": "/model/fc3.bias",
+          "max_abs": 0.010111195966601372
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg",
+          "max_abs": 6.676017846984905e-06
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg_sq",
+          "max_abs": 6.304424459813163e-06
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg",
+          "max_abs": 1.0494761681911768e-05
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg_sq",
+          "max_abs": 7.472161087207496e-06
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg",
+          "max_abs": 1.0006772754422855e-05
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg_sq",
+          "max_abs": 2.3088274247129448e-05
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg",
+          "max_abs": 2.8905822091473965e-06
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg_sq",
+          "max_abs": 2.6940588213619776e-06
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg",
+          "max_abs": 1.0288087196386186e-05
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg_sq",
+          "max_abs": 1.1744290532078594e-05
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg",
+          "max_abs": 1.4011386966217287e-06
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg_sq",
+          "max_abs": 2.0820650092900905e-07
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg",
+          "max_abs": 5.563032118516276e-06
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg_sq",
+          "max_abs": 1.5112902929104166e-05
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg",
+          "max_abs": 6.677088322248892e-07
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg_sq",
+          "max_abs": 1.3112101271417487e-07
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg",
+          "max_abs": 1.1666279306155047e-05
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg_sq",
+          "max_abs": 3.252049282309599e-05
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg",
+          "max_abs": 1.1113108087101864e-06
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg_sq",
+          "max_abs": 4.022526240987645e-07
+        }
+      ],
+      "left_sha256": "1fd21faa5e1c1607e44339088dc6e1df30259f3598cb782596470dc7c23af854",
+      "right_sha256": "6047f6becc2d9282f1b6e283aab855932a2c4b905dba5497f2bfc3c930e40159"
+    },
+    {
+      "phase": 3,
+      "exact": false,
+      "differences": [
+        {
+          "path": "/model/conv1.weight",
+          "max_abs": 0.001059792935848236
+        },
+        {
+          "path": "/model/conv1.bias",
+          "max_abs": 0.0003996053710579872
+        },
+        {
+          "path": "/model/conv2.weight",
+          "max_abs": 0.0049518197774887085
+        },
+        {
+          "path": "/model/conv2.bias",
+          "max_abs": 0.0004382133483886719
+        },
+        {
+          "path": "/model/fc1.weight",
+          "max_abs": 0.002519935369491577
+        },
+        {
+          "path": "/model/fc1.bias",
+          "max_abs": 5.1777809858322144e-05
+        },
+        {
+          "path": "/model/fc2.weight",
+          "max_abs": 0.0009973347187042236
+        },
+        {
+          "path": "/model/fc2.bias",
+          "max_abs": 0.0001722574234008789
+        },
+        {
+          "path": "/model/fc3.weight",
+          "max_abs": 0.0026655495166778564
+        },
+        {
+          "path": "/model/fc3.bias",
+          "max_abs": 0.00016622617840766907
+        }
+      ],
+      "left_sha256": "b46cdd0067bcb6f3a090fd4c22eebf336e87cb129e0cc8673b9707c6ee86a67a",
+      "right_sha256": "004d35683d082620a7e7f7198f9ea87d95611df89faa07fd4b15acf9e269023c"
+    },
+    {
+      "phase": 4,
+      "exact": false,
+      "differences": [
+        {
+          "path": "/model/conv1.weight",
+          "max_abs": 2.7861911803483963e-05
+        },
+        {
+          "path": "/model/conv1.bias",
+          "max_abs": 1.7870217561721802e-05
+        },
+        {
+          "path": "/model/conv2.weight",
+          "max_abs": 0.00019803643226623535
+        },
+        {
+          "path": "/model/conv2.bias",
+          "max_abs": 3.0681490898132324e-05
+        },
+        {
+          "path": "/model/fc1.weight",
+          "max_abs": 0.002257242798805237
+        },
+        {
+          "path": "/model/fc1.bias",
+          "max_abs": 7.638335227966309e-05
+        },
+        {
+          "path": "/model/fc2.weight",
+          "max_abs": 0.0005655288696289062
+        },
+        {
+          "path": "/model/fc2.bias",
+          "max_abs": 0.00010105280671268702
+        },
+        {
+          "path": "/model/fc3.weight",
+          "max_abs": 0.0010472536087036133
+        },
+        {
+          "path": "/model/fc3.bias",
+          "max_abs": 5.900859832763672e-06
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg",
+          "max_abs": 3.30823240801692e-07
+        },
+        {
+          "path": "/optimizer/state/0/exp_avg_sq",
+          "max_abs": 2.6157067622989416e-09
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg",
+          "max_abs": 2.48146420744888e-06
+        },
+        {
+          "path": "/optimizer/state/1/exp_avg_sq",
+          "max_abs": 3.914465196430683e-09
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg",
+          "max_abs": 2.926658453361597e-07
+        },
+        {
+          "path": "/optimizer/state/2/exp_avg_sq",
+          "max_abs": 6.804839358665049e-09
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg",
+          "max_abs": 1.472126314183697e-07
+        },
+        {
+          "path": "/optimizer/state/3/exp_avg_sq",
+          "max_abs": 1.7485035641584545e-10
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg",
+          "max_abs": 9.706677701615263e-07
+        },
+        {
+          "path": "/optimizer/state/4/exp_avg_sq",
+          "max_abs": 2.76122591458261e-09
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg",
+          "max_abs": 9.171525050533091e-08
+        },
+        {
+          "path": "/optimizer/state/5/exp_avg_sq",
+          "max_abs": 3.12070369545836e-11
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg",
+          "max_abs": 2.5497899969195714e-07
+        },
+        {
+          "path": "/optimizer/state/6/exp_avg_sq",
+          "max_abs": 3.463810571702197e-09
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg",
+          "max_abs": 1.810735739127267e-08
+        },
+        {
+          "path": "/optimizer/state/7/exp_avg_sq",
+          "max_abs": 3.2102320801641326e-11
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg",
+          "max_abs": 9.96715243672952e-08
+        },
+        {
+          "path": "/optimizer/state/8/exp_avg_sq",
+          "max_abs": 5.804395186714828e-09
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg",
+          "max_abs": 1.1995894055871759e-08
+        },
+        {
+          "path": "/optimizer/state/9/exp_avg_sq",
+          "max_abs": 7.284484127012547e-11
+        }
+      ],
+      "left_sha256": "1876aeb669f35efcbc812368f91c4df2acc94c5e5c23abe0d307a11297a129f4",
+      "right_sha256": "560de87b98e26e4052f68d84a21490b4c7b4cf6ae6f248d4098703f11993b5ca"
+    }
+  ],
+  "scope": "first21R/client0 four phases only",
+  "inference": 0,
+  "training": 0
+}

@@ -1,0 +1,4 @@
+결정적 runtime 제한 계약 통과 — R02/R03/D08/D15
+새21R/client0 역할을동일20R입력/분할/seed/원core로두번실행했다. 명시deterministic/CUBLAS/TF32제어에서8phase/400epoch/17200batch가완료됐고모든phase모델·optimizer·loader/global RNG·제출·11점gamma선택결과가정확히같았다. RESULT.json differences=[]이다. full test추론이나FU는없다.
+이는이한역할두번에한정한실행계약이며기존실패궤적의차이가모두한CUDA옵션때문이었다는증명은아니다. 이전pilot첫역할의큰bit차이와3회씩의억제실패는보존한다. 이전학습을재시작하거나기존완료결과를덮어쓰지않았다.
+새로운인과비교를수행한다면이backend를고정하고,최초gamma선택차이전의모든공통입력role가정확히일치하는지검사해야한다. 본계약만으로fresh100R/FU를열지않는다. D08/D15의큰정상nonIID반례해결이나공격성능재현이아니다.

@@ -1,0 +1,19 @@
+가설: 결정적runtime에서동일20R로시작하여실제21–30R학습을비교할때,local대신global합집합으로gamma를검사하면실제집계의사전ASR위반을줄이고마지막3R억제를유지한다.
+관련 R02/R03/D08/D15 및 fuba_gamma_trajectory_20261115/REPORT_KO.txt, fuba_determinism_contract_20261115/REPORT_KO.txt와실제RESULT.
+
+왜새비교인가
+앞선finite20R는성능gate실패와동일첫role의학습bit불일치를둘다남겼다. RNG가같아도모델이달라gamma만의인과비교가되지않았다. 별도의2회/400epoch계약에서입력과core를유지한명시deterministicbackend가모델/optimizer/RNG/gamma완전일치를실제로통과했다. 새관측은단순추가시드/새임계값이아니라,처음gamma가갈리는지점전의모든동일입력role학습이bit동일한조건에서의동일10R비교이다. 이전20R을성공으로바꾸거나재개하지않는다.
+
+고정조건
+case fuba.reference.mnist.dba.s20261023.pre100.post.kd10/diagnostic의동일원20Rafter와SPLIT/PROFILE/Net/core를기존INPUT_BINDING과공식catalogue로검증한다. 새D:/FUBA_GAMMA_DETERMINISTIC_20261115에서양쪽21–30R만실행한다. 구간/모델/seed/partition/participant/50epoch/64batch/학습률/Adam-SGD정책/poison810/validation300/target8/lambda2/m5:n20/11gamma0..1/strict10모두이전프로토콜그대로다. 양쪽공통CUBLAS_WORKSPACE_CONFIG=:4096:8,deterministic_algorithms=True,cudnn.deterministic=True,benchmark=False,cudnn.allow_tf32=False,matmul.allow_tf32=False를고정한다.
+유일한arm차이는각공격자의같은300validation에서local패치대global4패치합집합을점수화하는callback이다. FUBA보충p11의globalpattern지식가정과본문localvalidation을따른선언해석이며공개코드자체는localattack_func라는차이를명시한다. 서버test는학습/선택에들어가지않는다.
+
+추가정확성계약
+globalarm에서해당roundincoming이localarm과tensor일치할때,해당role의모든phase모델/optimizer/loader/globalRNG를저장후대조한다. 입력이같고gamma도같으면제출도정확히같아야한다. 첫gamma차이이전round집계와모든role가정확히같아야한다. 위반시즉시실패보존/중단하며그arm을다시시작하지않는다.
+
+고정판정/종료
+이전과동일하게global마지막28/29/30R모두CA>=97/ASR<=10,전체10R ASR>10위반수local보다적음,gamma차이역할>=1을모두요구한다. 추가bit계약/전체CPU감사/독립10000·9026평가도통과해야만새fresh100R후속의근거가된다. 중간값으로학습조건/구간/시드를바꾸지않는다. 실패하면이gamma-only수정을전체학습근거로채택하지않고세번째동일비교나기준완화로자동재시도하지않는다. 이20R은FU/100R/전체논문재현이아니다.
+구동전실제process,util<=5/free>=2500MiB/RAM>=3GiB/disk>=10GiB,source/input/hash검사. 다른앱종료없음. 모든phase/optimizer/RNG/epoch/gamma/제출/집계readback을보존한다. source/data/storage/nonfinite또는deterministic연산오류는실패보존/중단한다. 기존finitejob/seedqueue는중복실행하지않는다.
+
+범위
+이는공격자의알려진트리거구현검증이다. D08공격.75848가정상.75525/.76188사이에있고D15도실패한큰정상nonIID반례는미해결이다. 새로운서버탐지법이나트리거종류독립주장을제안하지않는다.
