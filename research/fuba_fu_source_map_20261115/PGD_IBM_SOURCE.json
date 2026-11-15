@@ -1,0 +1,37 @@
+{
+  "repository": "IBM/federated-unlearning",
+  "commit": "6f51bbccef3e54f55746ff0094271d26f69ce6da",
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/IBM/federated-unlearning/6f51bbccef3e54f55746ff0094271d26f69ce6da/README.md",
+      "git_blob": "5c24c182cfec0926e384491e70c1aaef15091758",
+      "bytes": 344,
+      "sha256": "a83037af7d9e0ff9411bef630039e69a5255e8e3cb22732bb1c268adfffedc5d"
+    },
+    "federated_unlearning.ipynb": {
+      "url": "https://raw.githubusercontent.com/IBM/federated-unlearning/6f51bbccef3e54f55746ff0094271d26f69ce6da/federated_unlearning.ipynb",
+      "git_blob": "6e9a32cfe388309517b3d17c525f376f42da6bc0",
+      "bytes": 237708,
+      "sha256": "9b1da69b66b0d67caaa27a20521b2c3528ee4b438c4d151db907af8c84afabfc"
+    },
+    "utils/utils.py": {
+      "url": "https://raw.githubusercontent.com/IBM/federated-unlearning/6f51bbccef3e54f55746ff0094271d26f69ce6da/utils/utils.py",
+      "git_blob": "48e8080cdf7657bc9026e20a40cd0246300a5f4c",
+      "bytes": 1217,
+      "sha256": "8f18eb4e38c600b2bb83e0eaf8d7c46c361be51c47d9a1c5dcd585ed14ef19b8"
+    },
+    "utils/local_train.py": {
+      "url": "https://raw.githubusercontent.com/IBM/federated-unlearning/6f51bbccef3e54f55746ff0094271d26f69ce6da/utils/local_train.py",
+      "git_blob": "4e92dfe3e6c1644309a4d7fea6d512f6001b4293",
+      "bytes": 1389,
+      "sha256": "f59ca287f5e81d4807fd851af11ff03e1288c0e62101f539f2da2ceb6759d6eb"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/IBM/federated-unlearning/6f51bbccef3e54f55746ff0094271d26f69ce6da/LICENSE",
+      "git_blob": "e0d8edd7820b3968ce92b7ca28ac5a048f500225",
+      "bytes": 571,
+      "sha256": "72e810f60b31d819f7830e694e744bfbb883818a5a6aa25ae75df5ad5df25e4a"
+    }
+  },
+  "source_only_no_FU_run": true
+}

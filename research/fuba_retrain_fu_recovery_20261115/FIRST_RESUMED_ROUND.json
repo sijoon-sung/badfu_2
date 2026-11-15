@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "original_committed_rounds": 27,
+  "actual_new_round": 28,
+  "round27_SHA256": "1c1a71ed549a0bf9f6a0333641db8a3584c4959f78a1f78b0015e4a1960f3515",
+  "round28_SHA256": "1a11764e56ac7a8a4bef61c53259f5834a909d30ce6e42215581114bb078c02c",
+  "incoming_and_aggregation_exact": true,
+  "new_roles": 8,
+  "new_phases": 14,
+  "new_epochs": 700,
+  "full_epoch_optimizer_RNG_finite": true,
+  "CUDA_initialized": false,
+  "real_data_inference": 0,
+  "actual100R_completed": false
+}

@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "ce0a33980415fd3e9e5fa0a80cdb8e704719b011fcbfe74ce6bb506386a7ed54",
+  "registry_sha256": "4712a60e1783530908bc732d2801aa235ba55cec0f9155caf4b1e99eb2dc1eeb",
   "cards": 31,
-  "unique_source_documents": 324,
-  "top_level_folders": 99,
-  "folders_linked_to_cards": 60,
+  "unique_source_documents": 343,
+  "top_level_folders": 101,
+  "folders_linked_to_cards": 62,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -175,7 +175,7 @@
     "research/fuba_author_models_20261115/PAPER_COMPARISON.json": "18bf1a828c64baadd9eaa7d24c05cc1a7cc0b31192939b296821063e41441004",
     "research/fuba_fu_source_map_20261115/REPORT_KO.txt": "aeedf699c3d510212b7767df5219b8a88194d2709f75037dce4d335ef3a90be0",
     "research/fuba_fu_source_map_20261115/SOURCES.json": "784946849234158548fb39ce54444e51b4499c70409c744b661d916e2c686194",
-    "research/fuba_fu_source_map_20261115/PRIMARY_SOURCE_CORRECTIONS.txt": "edf71decdf6e3e5b3d7cfbb1bfb04fab015e51fb5db979796c72d5bdd86069f6",
+    "research/fuba_fu_source_map_20261115/PRIMARY_SOURCE_CORRECTIONS.txt": "0434a26562038c364a4080f1e1de92d1d10a5299a4a1a9d9feeb3c7844cd7d99",
     "research/fuba_fu_source_map_20261115/KERNEL_CONTRACTS.json": "994b9ba969eb81818c64773ed736e606ee901fd4cfb8cab39e5b724f7ed1b89b",
     "research/fuba_fu_source_map_20261115/KERNEL_DELIVERY.json": "8f058d396766a03759c131056106ae777062c32a361ec00abeb1be5bbc09151c",
     "research/fuba_author_models_20261115/LOCAL_PUBLIC_MODELS.json": "be47892f936b9fbad0605a07ceb0d63663b0c7002d00460e53dd8192641d3d25",
@@ -236,6 +236,25 @@
     "research/fuba_batch_trigger_alignment_20261115/RESULT.json": "dd46c8de066c2341f4d4ed268501f254eeea95ed4a351d4c3465fba0224dd412",
     "research/fuba_retrain_fu_20261115/EARLY_CHECK_PROTOCOL.txt": "182727ffd039cbd397035baebb644e095dc7fb487fbc49506a0666dc2766f964",
     "research/fuba_retrain_fu_20261115/EARLY_CHECK.json": "938b39316ed875efb739d7734b69bb0d7535b1ea1c2845406def09f75393354e",
+    "research/fuba_batch_redraw_pilot_20261115/PROTOCOL.txt": "5e0633804c2594ea101234165a818d3df3c1cf42992e080b71f5714ad96dca7d",
+    "research/fuba_batch_redraw_pilot_20261115/REPORT_KO.txt": "d992cc2c990726cbe8ef53f06f931c4900ad9138404f734a24eb3988ee80f121",
+    "research/fuba_batch_redraw_pilot_20261115/CPU_CONTRACT.json": "83ca2683013f66a4ce1900dab3402807bdf5da3a29e91f566130e64fe670e26f",
+    "research/fuba_batch_redraw_pilot_20261115/PREPARED.json": "f148d39429e2bda7888e2af318ebe15615ffe8f64ffa7c016519366ee505346a",
+    "research/fuba_fu_source_map_20261115/PGD_SOURCE_CONTRACT.txt": "aa7eae53fd79c8002edaa00f0a0c7162a0431e510d50d4667bb75ba29693f004",
+    "research/fuba_fu_source_map_20261115/PGD_IBM_SOURCE.json": "4e6304cc8e0ce466fd130cc7e09d0aaf4d3483a8f8dfd146f5e36f1f492d9bd4",
+    "research/fuba_retrain_fu_recovery_20261115/RECOVERY_PROTOCOL.txt": "b26739c9c4fa101a65890d7bebe04b29bdb349671e416b4cc35f6e45abe80ba5",
+    "research/fuba_retrain_fu_recovery_20261115/REPORT_KO.txt": "8dc150e8e564fda18f9040b2bc3143d7340635b08a19f3bfac650386a92ef316",
+    "research/fuba_retrain_fu_recovery_20261115/RECOVERY_PREPARED.json": "7615af8e2704e6f2f2cc14502aa033f7cb5191e55e8571c3848fdac80ca44b5a",
+    "research/fuba_retrain_fu_recovery_20261115/STARTED.json": "1c8e5f330b83ee710d4263e078ee8942bc8b33ab54cec0ef6df394de7652ecf6",
+    "research/fuba_retrain_fu_recovery_20261115/FAILURE_train.json": "d04d68b9f8b86b612838ea16996959876758a6d6c48bf76f855a4d7dee046412",
+    "research/fuba_retrain_fu_recovery_20261115/LAUNCH_ATTEMPT1.json": "133a4063f42a6e594f7dc7caf6eea74d3fcef79095d904855cc38a44cc830bc4",
+    "research/fuba_retrain_fu_recovery_20261115/ATTEMPT2_STARTED.json": "c3023042b6fa8c182c9d09798bd70b92c8a9ae0222d0b4bf5a6311699c483fe5",
+    "research/fuba_retrain_fu_20261115/SSH_DISCONNECT_20261115.json": "5a2577ec5f42b4c6ded9b0ef0d7d26073d8578f329afbe3fee29636224d74b69",
+    "research/fuba_retrain_fu_20261115/SSH_RECONNECTED_20261115.json": "489c21673645a82957a791c840f4e1414ad8df5ca312c5a963c070987df8cfa9",
+    "research/fuba_batch_redraw_pilot_20261115/PRETRAIN_SOURCE_CORRECTION.txt": "bbd55a4a80734fcd968609b262b93bf47dbf7ae00a1d251340cb9645979ad292",
+    "research/fuba_fu_source_map_20261115/PGD_CONTRACT.json": "a8e937a089edc147bd7b9de71d7478e0033e0c555f3edc5afdb3dad3bcd87449",
+    "research/fuba_fu_source_map_20261115/pgd_decode_failure/FAILURE.json": "9800365e7a2beb9cd59dba25583cfc86be3183bd2bb6433c1b4a32b687fda641",
+    "research/fuba_retrain_fu_recovery_20261115/FIRST_RESUMED_ROUND.json": "4d8320f4dbd16374cf705a2672d7691a9a9fa749848ef5260e88f000bc3c7095",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -674,6 +693,18 @@
       "review": "대표 기록 재검토·카드 연결"
     },
     {
+      "path": "research/fuba_batch_redraw_pilot_20261115",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_batch_redraw_pilot_20261115/AUDIT_FREEZE.json",
+        "research/fuba_batch_redraw_pilot_20261115/PROTOCOL.txt",
+        "research/fuba_batch_redraw_pilot_20261115/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
       "path": "research/fuba_batch_trigger_alignment_20261115",
       "related_cards": [
         "R02"
@@ -873,6 +904,20 @@
         "research/fuba_retrain_fu_20261115/EARLY_CHECK_PROTOCOL.txt",
         "research/fuba_retrain_fu_20261115/PROTOCOL.txt",
         "research/fuba_retrain_fu_20261115/REPORT_KO.txt"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_retrain_fu_recovery_20261115",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_retrain_fu_recovery_20261115/AUDIT_FREEZE.json",
+        "research/fuba_retrain_fu_recovery_20261115/LAUNCH_RESULT.json",
+        "research/fuba_retrain_fu_recovery_20261115/PROTOCOL.txt",
+        "research/fuba_retrain_fu_recovery_20261115/RECOVERY_PROTOCOL.txt",
+        "research/fuba_retrain_fu_recovery_20261115/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

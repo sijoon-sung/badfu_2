@@ -1,0 +1,17 @@
+가설: 공개 FUBA와 같은 매 배치 Bernoulli .3 트리거 표본 구성이 고정810장보다 재가중 앵커와 실제 제출을 바꾸어, 동일 원20R부터21–30R의 global-gamma 억제 위반을 줄인다.
+관련 R02/R03/D08/D15. 기존 reference MNIST 두100R 실패, stage-localization/defender-recovery/radius-alignment, 두 gamma 비교의 원보고서와 정정을 유지한다. 특히 결정적 gamma 비교는 local/global 위반각3회와global28/29R 미달로 실패했으며 그 gamma-only 비교를 다시 실행하지 않는다. 공개 배치 구성의 실제 AST와 mask/이미지/라벨/RNG가 일치한 fuba_batch_trigger_alignment_20261115의 CPU 계약은 구현 근거이지 성능 근거가 아니다.
+
+새 관측과 비교
+대조는 이미 완료·전검증·봉인한 FUBA_GAMMA_DETERMINISTIC_20261115/global21–30R 고정표본 궤적이다. 이를 재학습하지 않는다. 새 treatment 하나만 같은 원20R에서21–30R로 학습한다. 유일한 과학적 변경은 backdoor_anchor/embedding의 매 배치 표본 구성이다. 매번 clean batch에서 독립CPU RNG의 Bernoulli .3을 뽑고 해당 역할의 local patch(공모자4는전체합집합)와target8을 적용한다. 실제 batch별 mask와RNG를 보존한다. 이 방식의 평균30%와 정확810장 고정 방식의 표본수 변동도 treatment에 포함된다.
+논문 main p2899는30%를 명시하되 redraw 주기를 유일하게 정하지 않는다. 따라서 공개 소스로 근거를 가진 선언 구현 선택의 비교이며, 논문 유일 해석이나 기존 실패의 확정 원인으로 부르지 않는다. 정상 학습, benign-anchor, representative, 공모자의 clean recovery 입력은 그대로다.
+
+고정 조건
+case fuba.reference.mnist.dba.s20261023.pre100.post.kd10을diagnostic으로 선택하고 외부manifest/SHA/payload_key=after로 원round20을 검증한다. 원SPLIT/PROFILE/Net,20명중8명,seed20261023,partition20261020,E50/B64/lr.001,2700train/300validation,4공격자+1공모자,lambda2,mixture.25,global4패치gamma검사,0..1/.1/strictASR10,Adam·Adam·SGD·Adam/SGD와 결정적backend를 유지한다. data shuffle generator는 기존phase_seed의GPU RNG 그대로, mask만 별도CPU generator(phase_seed+70000000)로 분리한다. 이 분리는 data order를 불필요하게 바꾸지 않으며 공개 코드의globalCPU RNG 자체를 그대로 실행했다고 하지 않는다. test자료나ASR로mask/seed/epoch/참여자를 고르지 않는다.
+
+실행 순서와 중단
+먼저 CPU 합성 계약으로 변환 없는 학습이 고정 원core와 model/optimizer/RNG까지 정확히 같음을 확인하고, 변환 있는1epoch 학습은 공개 AST batch 구성의 독립 oracle과 대조한다. 실제GPU는 현재 FUBA_RETRAIN_FU_20261115가100R/독립평가/검증/전달까지 완료하고 source/input/actualprocess/util<=5/free>=2500MiB/RAM>=3GiB/disk>=10GiB가 통과한 뒤에만 별도D:/FUBA_BATCH_REDRAW_PILOT_20261115에서1회 실행한다. 진행중FU와기존finitejob/queue는 변경·재시작하지 않는다.
+모든phase/optimizer/loader와mask RNG/실제mask/50epoch/gamma11점/제출/집계를 보존한다. source/data/hash/nonfinite/storage/계약 불일치는 실패를 보존하고 중단한다. 중간성능으로 조건을 바꾸지 않는다. 새10R만으로100R/FU/전체논문 성공을 선언하지 않는다.
+
+판정
+전체10R 모두CA>=97, 마지막28/29/30R 모두ASR<=10, ASR>10 위반수가 기존global의3보다 적음을 모두 요구한다. CPU 전기록/수식 감사와 원저자 평가의10000/9026 정수일치, 저장mask의 독립RNG 재구성이 추가 조건이다. 실패하면 같은비율/seed/임계값을 탐색하거나 같은 비교를 자동반복하지 않는다. 통과해도 별도fresh100R+실제FU/독립seed/논문전체실험은 여전히 남는다.
+이것은 알려진 공격 트리거의 구현 비교다. D08공격.75848가 큰 정상 탈퇴.75525/.76188사이에 있고D15도 실패한 반례를 해결하지 않는다. 새 서버 탐지법이나 트리거 종류 독립성을 주장하지 않는다.

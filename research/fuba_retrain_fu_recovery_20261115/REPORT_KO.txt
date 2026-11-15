@@ -1,0 +1,11 @@
+실제 Retrain100 FU의 동일조건28–100R 운영 복구
+
+관련 R02/R03/D08/D15. 원 run은27R 저장 후 stdout print에서 OSError22로 종료됐다. 원PID51232 부재와 정확한 traceback을 확인했다. SSH 단절 후에도26/27R를 계산한 기록을 보존하며, 원STATE의training문자열은 종료 뒤남은상태다. 원27R CA98.92/ASR3.8444493685는중간기록이다.
+
+원D:/FUBA_RETRAIN_FU_20261115는그대로보존했다. 전체원시manifest/원소스/실패/시작/상태와동일입력·27R를별도폴더로연결했다. CPU에서27R/208역할/262phase/13100epoch의전체해시·연결·실제client4제외·제출·집계·완전epoch·phase finite/strict로드를검증하고713파일을동일바이트복사했다. 이검사는재학습/실자료추론을하지않았다.
+
+최초SSH Start-Process PID21928은학습STARTED/STATE를만들기전에종료됐고stdout/stderr는각0byte였다. 이를launch_attempt1에보존했다. 독립Windows일회성작업의첫trainer6324도원GPU유휴guard에서CUDA/학습STARTED전중단됐다. FAILURE_train/LAUNCH_RESULT/stdout/stderr를남겼다. 기준을우회하지않고15회연속util<=5/free>=2500MiB를관찰한별도attempt2가같은train함수의원guard를다시통과했다.
+
+현재 task Codex-FUBA-retrain-FU-recovery-20261115-attempt2, 실제PID36140이28R/client1/backdoor_anchor/epoch11에진입한것을확인했다. task는trigger와자동retry가없고stdout_attempt2.log/stderr_attempt2.log로출력한다. 원훈련함수의학습연산은동일하며검증된27Rafter/기존manifest에서range28–100만진행한다. 원seed/자료/50epoch/optimizer/gamma1/7또는8집계/최종gate/결정적backend를유지한다. 다음기록이오면원PID/진도와manifest를읽어판정하며task를재시작하지않는다.
+
+아직최종FU/독립평가/양쪽전달은미완료다. 원pre-ASR30.6005실패와D08/D15 반례는그대로이며,운영복구를전체논문재현성공으로세지않는다. 전체100R검증·실제전후pt·예측예시·독립10000/9026·양쪽catalogue guard는이폴더에서완료해야한다. 후속batch-redraw pilot의선행완료확인경로만이폴더로바꿨으며그pilot의GPU학습은아직없다.

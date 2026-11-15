@@ -24,3 +24,6 @@ SGA 원저자 추가 자료와 CPU 계약
 
 기존 2026-11-12 기록의 추가 확인
 DISLAB에 존재하던 별도 metadata admission/timeline 감사를 prior_records에 원문 그대로 보존했다. 5개 완료 진단쌍 모두 admission이 없으며, MNIST 두 시드의 마지막 공동 통과 round47/85 이후 pre100R는 실패였다. 이전 중간 억제나 차감 직후 결과를 성공한100R+FU쌍으로 고르지 않는다. 이 확인에서 모델 로드·추론·재학습은 하지 않았다.
+
+PGD 원저자 추가 확보 및 CPU 계약
+IBM/federated-unlearning@6f51bbccef3e54f55746ff0094271d26f69ce6da의5파일을Git blob검증했다. v1의삭제client초기값/validation종료, v3의reference초기값/Euclidean<tau, 실제notebook의squared distance>2.2와sqrt(radius_squared)투영을구분한다(PGD_SOURCE_CONTRACT). 최초CPU검사는노트북cp949 decode에서중단됐고원소스/오류를보존한UTF-8수정후실제원AST와투영3경우/10random반경/종료반례2개가모두일치했다. GPU/실모델/FU0이며공개코드가FUBA유일조건을결정해주지는않는다.

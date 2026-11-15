@@ -1,0 +1,19 @@
+{
+  "state": "connection_lost_process_status_unconfirmed",
+  "observed_at_UTC": "2026-11-15 10:34:21",
+  "previous_PID": 51232,
+  "last_stdout_round": 25,
+  "last_stdout_metric": {
+    "clean_correct": 9892,
+    "N": 10000,
+    "target_successes": 252,
+    "non_target_N": 9026,
+    "CA_pct": 98.92,
+    "ASR_pct": 2.791934411699535
+  },
+  "session_exit": 1,
+  "error": "client_loop: send disconnect: Connection reset",
+  "concurrent_transfer_error": "ssh_dispatch_run_fatal: Connection to 100.75.90.126 port22: Connection timed out",
+  "trainer_restart_performed": false,
+  "interpretation": "SSH disconnection is not proof that the trainer stopped; inspect actual PID/STATE/MANIFEST before recovery."
+}

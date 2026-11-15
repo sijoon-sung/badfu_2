@@ -1,0 +1,14 @@
+{
+  "state": "original_trainer_alive",
+  "original_PID": 51232,
+  "parent_PID": 47000,
+  "command": "Python312/python.exe -u -B D:/FUBA_RETRAIN_FU_20261115/run.py train",
+  "observed_round": 27,
+  "observed_client": 17,
+  "observed_phase": "benign",
+  "observed_epoch": 6,
+  "source_changed": false,
+  "trainer_restarted": false,
+  "finite_jobs_duplicated": false,
+  "method": "read-only Win32_Process and share-delete STATE reader via reconnected SSH"
+}
