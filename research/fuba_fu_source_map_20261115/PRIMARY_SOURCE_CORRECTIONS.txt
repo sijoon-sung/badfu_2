@@ -18,3 +18,9 @@ FedEraser 저자 원본 확보 및 연산 복원
 
 범위
 여기서 source 확인은 새 FU 실제 실행 또는 새 공격 성능 재현이 아니다. 원문 수식에 대응하는 수치 연산을 별도 모듈로 구현·계약 검사할 수 있지만 학습 실행에는 입력 case/해시와 명시 profile이 필요하다. 새로운 탐지 주장이 없으며 D08/D15의 큰 정상 non-IID 반례는 해결되지 않았다.
+
+SGA 원저자 추가 자료와 CPU 계약
+제1저자 Leijie Wu의 공개 PolyU 박사논문 Chapter5를 확보하여 원 연구를 확인했다. 식5.2의 양의 EWC와 FUBA 공개 ascent 코드의 음의 EWC 차이를 SGA_SOURCE_CONTRACT.txt에 명시했다. 손실·gradient는 공개 AST 원함수와 정확히 같았고, 순수 penalty 방향 및 loss5 초과 이전 상태 반환 계약을 DISLAB CPU에서 통과했다. 전체 SGA FU의 round 단위·입력·상한 선택과 실제 성능은 이 계약으로 확정되지 않는다. 학위논문 원문은 개인 연구 사본으로만 보존하고 PR에는 링크·해시만 기록한다.
+
+기존 2026-11-12 기록의 추가 확인
+DISLAB에 존재하던 별도 metadata admission/timeline 감사를 prior_records에 원문 그대로 보존했다. 5개 완료 진단쌍 모두 admission이 없으며, MNIST 두 시드의 마지막 공동 통과 round47/85 이후 pre100R는 실패였다. 이전 중간 억제나 차감 직후 결과를 성공한100R+FU쌍으로 고르지 않는다. 이 확인에서 모델 로드·추론·재학습은 하지 않았다.

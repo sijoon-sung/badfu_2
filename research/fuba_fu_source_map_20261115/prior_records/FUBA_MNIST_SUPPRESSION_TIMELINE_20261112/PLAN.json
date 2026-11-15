@@ -1,0 +1,29 @@
+{
+  "catalog": "D:/TRAJECTORY_CATALOG_20261023/catalog.json",
+  "references": {
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/DELIVERY_MANIFEST.json": "0af60caac70ecd72d20db44835c1067567f8d54f7e060389d339f3b7a115890c",
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/RESULT.json": "f4eb1057cfec4c7939660e9579962c44ac22d7c2aa4ea4c9e341103c61b9b754",
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/VERIFIED.json": "f531895a6e01256edcfb6bc2a5aaf28cfd575b43987b3156756976bfd831a73a",
+    "D:/FUBA_STAGE_LOCALIZATION_20261031/RESULT.json": "aeaaec5a7fda93abbc140018467f088bee5f02c66f98655909938262b686fca3",
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/DELIVERY_MANIFEST.json": "20a78ed6fa8d03d5d501eb15863dd913b3538e77ac57505425666249ceaab795",
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/RESULT.json": "4ed519b158766170f16e92b8aa8ec17aeb6db796624a1e4b7bf253ee33edee3d",
+    "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10/VERIFIED.json": "6104bbe86176ed4bef0978462511894cfb4307bb8ea9831b94bd675afb289615"
+  },
+  "cases": [
+    {
+      "seed": 20261023,
+      "last_pass": 47,
+      "id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+      "packet": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10",
+      "raw_root": "D:/FUBA_REFERENCE_MNIST_DBA_20261031/run",
+      "stage_result": "D:/FUBA_STAGE_LOCALIZATION_20261031/RESULT.json"
+    },
+    {
+      "seed": 5129832,
+      "last_pass": 85,
+      "id": "fuba.algorithm_sgd.mnist.dba.s5129832.pre100.post.kd10.seed_repro20261031",
+      "packet": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_seed_repro_MNIST_DBA_s5129832_pre100_post_KD10",
+      "raw_root": "D:/FUBA_SEED_REPRO_20261031/seeds/seed_5129832_recovery1/run"
+    }
+  ]
+}

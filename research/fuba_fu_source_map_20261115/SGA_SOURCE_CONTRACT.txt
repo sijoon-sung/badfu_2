@@ -1,0 +1,13 @@
+가설: FUBA의 공개 SGA 손실과 보충자료의 중단 규칙을 각각 명시하면, 정규화 부호와 반환 모델 시점의 혼동을 실제 FU 실행 전에 분리할 수 있다.
+관련 R02/R03/D08/D15. 새 관측은 공개 원함수와의 손실·gradient 수치 일치, 순수 EWC 방향, 임계값 초과 시 현재/직전 상태의 구별이다. 실제 공격 성능이나 새로운 탐지법의 검증이 아니며 D08/D15의 큰 정상 non-IID 반례는 해결하지 않는다.
+
+출처
+1. stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d, unlearn_method/sga.py: CE - lambda/2 * sum(F*(theta-theta_global)^2), manual gradient ascent, lambda100/lr.001. 공개 Fisher는 clean 삭제 참여자의 batch-mean CE gradient 제곱을 배치 수로 평균한다. per-sample empirical Fisher와 동일하지 않다.
+2. FUBA supplementary II.A: 손실5 초과 직전 round의 모델을 반환. 공개 코드의 >3 및 현재 모델 반환과 다르다. round가 minibatch인지 전체 epoch인지, Fisher 상세 및 상한은 이 문단만으로 확정되지 않는다.
+3. SGA 제1저자 Leijie Wu의 2024 PolyU 박사논문 Chapter5, PDF140–145쪽. 제목/저자와 해당 연구를 확인했다. PDF142쪽 식5.2는 CE + EWC라고 적었으나 ascent에 양의 penalty를 넣으면 기준에서 멀어지는 방향이 된다. 공개 FUBA 코드는 음의 penalty이며 저자의 학위논문 식과 부호가 다르다. 학위논문은 저널 PDF와 바이트 동일한 원본이라고 주장하지 않는다.
+URL https://theses.lib.polyu.edu.hk/bitstream/200/13507/3/7961.pdf
+SHA256 577fb520db6108196bef2c5c771a68ab37d86b81160a1cc239acf2ace149f01a
+
+계약 범위
+public_sga_objective는 공개 FUBA의 음의 penalty를 이름으로 명시하여 구현한다. 새 default 또는 저자 공인 유일 해석으로 승격하지 않는다. CPU 합성 계약에서 AST로 분리한 공개 unlearning_loss와 loss/gradient를 대조하고, CE가 상수인 예에서 음의 penalty의 ascent가 기준으로 향함을 검증한다. 반환 시점 helper는 초과 이전 state를 받도록 해, 원본의 threshold와 반환 시점 차이를 숨기지 않는다.
+실제 자료/학습/FU/ASR 계산은 이번 계약에서 0회다. 이 계약만으로 누락된 SGA 전체 실행 설정을 검증했다고 하지 않는다. 소스 해시·원함수 수치가 다르면 중단하고 성능 실험을 시작하지 않는다. 완료한 계약은 다시 실행하지 않는다.
