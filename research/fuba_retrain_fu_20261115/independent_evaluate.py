@@ -3,6 +3,7 @@ import ast
 import os
 os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
 import json
+import numpy as np
 from pathlib import Path
 import torch
 from run import ROOT,read,sha,write,frozen,ops,module
@@ -31,13 +32,22 @@ def main():
     result=read(ROOT/'RESULT.json');assert sha(ROOT/'after.pt')==result['after']['sha256']
     net=module('author_Net',ROOT/'inputs/author_model.py').Net().cuda().eval()
     net.load_state_dict(torch.load(ROOT/'after.pt',map_location='cpu',weights_only=True),strict=True)
-    ca=env['test'](net,loader,'cuda');asr=env['attack_dba'](net,loader,8,'cuda',triggers['add_backdoor_all'])
+    predictions=[]
+    handle=net.register_forward_hook(lambda model,inputs,output:predictions.append(output.detach().argmax(1).cpu()))
+    ca=env['test'](net,loader,'cuda');clean=torch.cat(predictions);predictions.clear()
+    asr=env['attack_dba'](net,loader,8,'cuda',triggers['add_backdoor_all']);triggered=torch.cat(predictions)
+    handle.remove()
     cc,hits=round(ca*100),round(asr*9026/100);m=result['evaluation']
     match=cc==m['clean_correct'] and hits==m['target_successes']
+    assert len(clean)==len(triggered)==len(ds)==10000
+    assert int((clean==ds.targets).sum())==cc and int(((triggered==8)&(ds.targets!=8)).sum())==hits
+    with (ROOT/'predictions.npz').open('xb') as f:
+        np.savez_compressed(f,images=ds.data.numpy(),labels=ds.targets.numpy(),clean=clean.numpy(),triggered=triggered.numpy())
     write('INDEPENDENT_RESULT.json',{'state':'passed' if match else 'mismatch_preserved','CA_correct':cc,'ASR_hits':hits,
         'N':10000,'non_target_N':9026,'CA_pct':ca,'ASR_pct':asr,'exact_integer_match':match,
         'evaluator':'original-author-functions-FP32-contiguous-B512-deterministic-noTF32',
-        'before_model_reevaluated':False,'full_paper_reproduced':False})
+        'before_model_reevaluated':False,'full_paper_reproduced':False,
+        'predictions':{'path':'predictions.npz','sha256':sha(ROOT/'predictions.npz'),'additional_forwards':0}})
     print(json.dumps({'match':match,'CA_correct':cc,'ASR_hits':hits}),flush=True)
 
 
