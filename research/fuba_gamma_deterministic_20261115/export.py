@@ -12,6 +12,7 @@ def main():
     assert read(ROOT/'INDEPENDENT_RESULT.json')['state']=='passed'
     assert read(ROOT/'NUMERICAL_CONTROL.json')['state']=='exact'
     assert read(ROOT/'PREFIX_AUDIT.json')['state']=='passed'
+    assert read(ROOT/'GAMMA_AUDIT.json')['state']=='passed'
     out=ROOT/'delivery'
     out.mkdir(exist_ok=False)
     files={p.relative_to(ROOT).as_posix():{'sha256':sha(p),'bytes':p.stat().st_size}

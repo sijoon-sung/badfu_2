@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "71a0a8af0ed336f645ec46d3a0f26f82a083340bca22684bd2c2d101dcc4ea1b",
+  "registry_sha256": "c478f06235aecebf61177a1c2acd1d522448ff22c0bdfdb87e09372d3410256a",
   "cards": 31,
-  "unique_source_documents": 301,
+  "unique_source_documents": 304,
   "top_level_folders": 98,
   "folders_linked_to_cards": 59,
   "source_sha256": {
@@ -202,7 +202,7 @@
     "research/fuba_retrain_fu_20261115/PRETRAIN_SOURCE_CORRECTION.txt": "b7c7c3334439febda89df01b13fdd96c2f96431837d64ad900f68ebdd8c595a0",
     "research/fuba_retrain_fu_20261115/AUDIT_FREEZE.json": "12d4176e7c0c299dd4e2be291fb1a23bc9b31e35b64f1cfe1ce20d12a7109cf3",
     "research/fuba_retrain_fu_20261115/INDEPENDENT_FREEZE.json": "a6d24cd5ebd068d3bc2db616a29293163df264a23969bb26a864c7276f9d4d4c",
-    "research/fuba_retrain_fu_20261115/EXPORT_FREEZE.json": "1bb1295beedb54ff6834a06b45a185fe8c4685bb456c6b831dbe2ef9303701b7",
+    "research/fuba_retrain_fu_20261115/EXPORT_FREEZE.json": "498fd27970387b3c383c208ad783cfe33a6f7a23123b4165253035fb4c26f6ce",
     "research/fuba_fu_source_map_20261115/FEDERASER_CONTRACT.json": "5a1990cd8cc049e7fbd8e7d0315147b3714821ccec19d741896531063e4d30b2",
     "research/fuba_fu_source_map_20261115/primary_papers/FedEraser21.json": "a3c9819f86ed9716a9345851fd68c63db4ac3ba15ac28f64bbe86036d516b6e0",
     "research/fuba_fu_source_map_20261115/primary_papers/FedEraser-code-retrieval.json": "ca2f95ac0d978ed1e9af01f36438059eba158bc04e44bc52cbbfa8ab4c60293d",
@@ -213,6 +213,9 @@
     "research/fuba_fu_source_map_20261115/prior_records/FUBA_MNIST_SUPPRESSION_TIMELINE_20261112/RESULT.json": "b059175b846de935f4cb22955d8da603511d34229c5f03c3259d62af9f8e03ef",
     "research/fuba_fu_source_map_20261115/prior_records/FUBA_PAIR_ADMISSION_AUDIT_20261112_RECOVERY/PROTOCOL.txt": "b4d09cb60bb9a5d0ea86aba5eadf0fb0cc3264d233b8e42ae4b3cfd4d3453b06",
     "research/fuba_fu_source_map_20261115/prior_records/FUBA_PAIR_ADMISSION_AUDIT_20261112_RECOVERY/RESULT.json": "a624bd36faa5ec98c6fa6e2585ce37464aa29ea5274429562f241e04701c79ea",
+    "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT_PROTOCOL.txt": "170c9aad9fedee71e820e549ae2e1b4a23527161f44b3748b25ecf2eabeee63e",
+    "research/fuba_gamma_deterministic_20261115/GAMMA_FREEZE.json": "9a9432ceab0e932e08fd74228ce0c6d80b22d735f1061c08e8dfadc4cc872ca6",
+    "research/fuba_fu_source_map_20261115/UPSTREAM_STATUS_20261115.json": "11050881525b529446d6a000fee35ee7e0547eb465809f5e735cd0fde07b320f",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -701,7 +704,8 @@
         "R02"
       ],
       "top_level_documents": [
-        "research/fuba_fu_source_map_20261115/REPORT_KO.txt"
+        "research/fuba_fu_source_map_20261115/REPORT_KO.txt",
+        "research/fuba_fu_source_map_20261115/UPSTREAM_STATUS_20261115.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
@@ -712,6 +716,7 @@
       ],
       "top_level_documents": [
         "research/fuba_gamma_deterministic_20261115/AUDIT_FREEZE.json",
+        "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT_PROTOCOL.txt",
         "research/fuba_gamma_deterministic_20261115/PROTOCOL.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
