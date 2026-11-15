@@ -885,8 +885,8 @@
 - [research/feduba_eq7_allclass_20261115/PREPARED.json](feduba_eq7_allclass_20261115/PREPARED.json)
 - [research/feduba_eq7_allclass_20261115/REPORT_KO.txt](feduba_eq7_allclass_20261115/REPORT_KO.txt)
 - [research/feduba_eq7_allclass_20261115/PAPER_TARGETS.json](feduba_eq7_allclass_20261115/PAPER_TARGETS.json)
-- `research/feduba_eq7_allclass_20261115/CURVE_PROTOCOL.txt` (로컬 보관)
-- `research/feduba_eq7_allclass_20261115/CURVE_FREEZE.json` (로컬 보관)
+- [research/feduba_eq7_allclass_20261115/CURVE_PROTOCOL.txt](feduba_eq7_allclass_20261115/CURVE_PROTOCOL.txt)
+- [research/feduba_eq7_allclass_20261115/CURVE_FREEZE.json](feduba_eq7_allclass_20261115/CURVE_FREEZE.json)
 
 **묶은 폴더:** [feduba_eq7_allclass_20261115](feduba_eq7_allclass_20261115)
 
@@ -915,4 +915,30 @@
 - [research/feduba_aggregation_contracts_20261115/RESULT.json](feduba_aggregation_contracts_20261115/RESULT.json)
 
 **묶은 폴더:** [feduba_aggregation_contracts_20261115](feduba_aggregation_contracts_20261115)
+
+<a id="r08"></a>
+
+## R08 · FedUBA PathMNIST·GTSRB 모델 의존성 계약
+
+**가설 한 줄: 고정 역사적 ZIP의 MobileNetV2/VGG11 정의가 paper-linked model_init의 네 생성자·출력 계약을 충족한다.**
+
+**판정: 4개 모델 CPU 호출/상태복원 통과·실제 공격 학습 미실행**
+
+[실험 시작 이유와 실제 실행 과정 읽기](feduba_other_models_20261115/PROTOCOL.txt)
+
+- **조건:** R03/R06/R07/R02/N02/D08/D15. 원archive ac9408f9의 두 모델 member SHA 고정. DISLAB CPU1thread,seed0,PathMNIST28/GTSRB32의 합성입력 각2개.
+- **정상 대조·비교:** 공식 model_init의9/8/43/59 클래스 호출과 실제출력, 동일state strict 복원 후 출력 exact, 무학습/CUDA 미초기화.
+- **결과:** 네 모델 모두 해당출력차원/finite/CPU상태복원 exact. victim 파라미터수 MobileNetV2 2295641,VGG11 9248043. 실자료/optimizer/FL/FU0. 대안배포자 저자정체 인증은 하지 않는다.
+- **non-IID에 대해 남길 교훈:** 의존성 계약이며 D08/D15 큰 정상 non-IID 구별이나 해당 데이터셋의 ASR를 검증하지 않는다.
+- **반복하지 않을 주장:** 합성출력을 pretrained 성능/전체재현/저자고유 helper 인증으로 바꾸지 않는다.
+- **재검토 조건:** 실제 dataset/split/STG/FL/FU에는 별도 고정 프로필과 성능 검증이 필요하다.
+
+**원문·증거:**
+
+- [research/feduba_other_models_20261115/PROTOCOL.txt](feduba_other_models_20261115/PROTOCOL.txt)
+- [research/feduba_other_models_20261115/models.py](feduba_other_models_20261115/models.py)
+- [research/feduba_other_models_20261115/check_contracts.py](feduba_other_models_20261115/check_contracts.py)
+- `research/feduba_other_models_20261115/RESULT.json` (로컬 보관)
+
+**묶은 폴더:** [feduba_other_models_20261115](feduba_other_models_20261115)
 
