@@ -1,0 +1,20 @@
+{
+  "included": "new source, protocol, input metadata, results, predictions, BN copies and logs",
+  "external_immutable_model_inputs": {
+    "before.pt": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_v7_s20261023_pre100_post_KD10/before_classifier.pt",
+      "sha256": "bdd8f962de7743a2679054b1155eeee83871b1aed67d6932096f576df7f8b7a9"
+    },
+    "after.pt": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_v7_s20261023_pre100_post_KD10/after_unlearning.pt",
+      "sha256": "1f577d504b632bb1170909329ea8b3499bffe5b2913988bfef37ce7377ebe96d"
+    },
+    "generator.pt": {
+      "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_v7_s20261023_pre100_post_KD10/fixed_generator.pt",
+      "sha256": "cc349f9faf12e26327fd60a49d968e3c14521be8a8e13791774384d699747ca1"
+    }
+  },
+  "local_original_packet": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\CHECKPOINTS_FOR_REVIEW\\FUBA_v7_s20261023_pre100_post_KD10",
+  "new_classifier_models": false,
+  "new_FU_steps": 0
+}

@@ -1,0 +1,25 @@
+전체 논문 재현의 남은 범위 — 완료 조건을 좁혀 바꾸지 않기 위한 원문 대조
+
+대상은 stcebra/FUBA Adv-attacker/Adv-defender 협력 공격이다. ity207/FedUBA와 구분한다. 관련 R02/R04/D08/D15. 원 main PDF SHA61d7ae7a51137288df4ac711d7e29c6b8d0e4861cf042326e7ee23ca743d1365 및 supplementary SHAb2b5d855c6016c16999e643a737a2a4a9361e632aa40cd3f65b21a872f713ff2의 표/그림 제목과 실험 조건을 직접 확인했다.
+
+주 성능 표만 해도3데이터셋(MNIST,CIFAR-10,ILSVRC2012)×2트리거(DBA,IBA)×6FU(Retrain,FedEraser,SGA,KD,PGD,RobustFU)=36조건이며 논문은10무작위seed의평균/표준편차를 보고한다(mainIV-A5/TableI, supplementaryTableIII). 같은 학습 이력에서 여러FU를 만들 수 있으므로 이를360개의 독립 FL 실행이라고 세지 않는다. 공개6post endpoint도6독립 FL seed가 아니다. 삭제전억제/후활성화와BA,실제삭제기여/참여자/FU절차를각각검증해야한다. 한 장의 성공 예시나중간최고round를전체조건대신고르지않는다.
+
+주 성능 표 외의 실험 범위
+- mainFig2: 실제FL전과정의억제안정성. 종료100R/200R 한점만으로대체하지않는다.
+- mainTableII: MNIST/CIFAR-10에서10방어설정. 실제방어/집계규칙을적용한FL과FedEraser/KD결과가필요하다.
+- mainFig3: 참여자수확대(KD/IBA). 작은기본설정의성공으로대체하지않는다.
+- mainTableIII: Dirichlet alpha .1,.3,.7,1,10,100의non-IID 조건.
+- mainTableIV,Fig4–6 및suppFig3–6: 재가중,adaptive scaling,두단계defender,consistency,step/threshold/lambda/top-k 비교. 실패한구현진단은이통제된ablation을자동충족하지않는다.
+- mainTableV: benign/adversarial 삭제요청과IID/non-IID 조건.
+- mainTableVI: 고성능장비/제약장비의역할별시간·효용. 현재RTX3080관측을원4090/i5/RPi의측정으로표시하지않는다.
+- mainTableVII/suppTableX: sample-level FU. client4전체삭제와다른실험이다.
+- mainTableVIII/suppTableXI: 잠재방어와재학습기준선의성능/비용.
+- suppTableIV: 악성참여자비율;TableV: concept shift;TablesVI–VII: quantity skew;TableVIII: defender참여빈도;TableIX: 같은라운드공모자선택여부와탐지율.
+
+구현 및 출처의 미해결 지점
+본문/Algorithms의SGD와실험문단Adam,Algo1표시while의첫실패반환과본문최대통과gamma,public정상1local-pass와본문50localepochs는기존감사에이미기록됐다. IBA의생성기구조/BN모드/trigger연산도선언해야한다. MNIST공개생성기는Autoencoder이며ImageNet공개loader는paper의256/B16과불일치한다. FU별원문/배포판차이는REPORT_KO/PRIMARY_SOURCE_CORRECTIONS/각SOURCE_CONTRACT에있다. CPU수식계약통과는실제FU성능실행을대체하지않는다.
+
+현재의완료범위와중단범위
+여러고정FUBA실행과실제KD10/Retrain100전후모델·로그는존재하며실패를보존했다. 공개DBA/IBAendpoint와정상MNIST기준선의검증도완료했지만승인된10seed전체36조건은없다. 따라서'논문전체재현완료'조건은충족되지않는다. 공개post의고ASR를새실제FU완료나사전억제로승격하지않는다.
+기존실패에서동일seed/lr/threshold를무근거탐색하거나모든full-training을자동실행하지않는다. 새실행에는기존반례/고정가설/새관측/중단규칙과실제source/profile이필요하다. 저자문의초안은작성했지만외부게시허락없이발송하지않았다. ImageNet자료경로/공식HEAD점검은제한범위에서미확보·timeout이며전체부재/권한거부증명이아니다.
+이범위표는실험결과나보편적불가능성증명이아니다. D08/D15의큰benign non-IID혼동은미해결이며논문공격재현과별도로다뤄야한다.
