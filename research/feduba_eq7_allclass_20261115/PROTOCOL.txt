@@ -1,0 +1,18 @@
+가설: fixed10의 같은 초기 이력·STG·예산·BEA·FedEraser를 유지하면서, 목표 클래스만 허용하던 SSS를 논문 Eq.7의 전체 소유 표본 top-125로 교정하면 기존 minus-request의 활성화 실패가 개선된다.
+관련 카드: R03/R02/N02/D08/D15 및 R05의 저장 예측 증거. 이것은 공격 재현 비교이며 탐지 실험이 아니다. D08 공격0.75848이 큰 정상0.75525/0.76188 사이, D15 공격7%/정상8% 반례는 그대로 미해결이다. 표적·delta·ASR는 평가자에게만 사용하며 서버 탐지법을 만들지 않는다.
+
+새 관측: fixed10의 이미 저장된 동일5000개 forward-only query를 전체 클래스에서 순위화한 새125개, 그 동일 ID의 정상 삭제와 minus-request 실제 FU20 각 한 번, 전체20R/200역할/1000epoch 및 모델·optimizer·RNG, 공식test10000/비target9000 CA/ASR와 별도 프로세스 평가. target-only fixed10의 기존 pre20.1444/benign16.6667/minus13.8222와 비교한다. 원 random-cohort allclass19.3333 실패도 보존한다. 새 pre/trigger/query를 만들지 않으므로 이 비교에서 selector 범위만 바뀐다. 두 FU 실행은 같은 role seed를 사용한다.
+
+근거: Chen et al., DOI10.1109/TDSC.2026.3703139, 고정PDF SHA5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98, Eq.6/7은 전체 local D의 L2(logit(x+delta)-logit(x)) top-n이다. ity207/FedUBA@005959ab8a955f4dcf094930ce6953af8fee827b/Fed_data_change.py는 target-class filter를 추가한다. 기존 fixed10 구현도 이 filter를 썼다. 그 filter를 제거하는 명시적 논문 해석 교정이며 untouched upstream 실행은 아니다.
+
+FU 의미 한계: 공개 Fed_Unlearn_attack.py 190–236은 변형된 데이터로 local SGD 후 historical update calibration을 한다. 현재 core의 공격 branch도 선택 표본을 x-delta로 대체하여 유지하고, 정상 branch는 선택 ID를 삭제한다. 논문 본문의 '영향 제거'와 이 공개 local-replacement 경로 사이에는 해석 간극이 있다. 본 비교는 이를 새 gradient-ascent/exact-deletion 알고리즘으로 바꾸지 않는다. 학습 단계에는 오염을 넣지 않고 원래 clean FL 이력만 읽는다. 성공하더라도 이 명시된 FU 구현 범위를 넘겨 전체 논문 성공이라 하지 않는다.
+
+고정: CIFAR10 train50000/test10000,20 clients, public fixed10, owners5/7, seed42, target2,125=참여25000의0.5%(전체50000의0.25%), STG delta91998234ece2e587cc5435b8d120f113ccfbc1b37d0761e1bf9ad57cf7d42f6b, epsilon 모델좌표32/255, 평가+1.5delta/clip[-1,1]. 표본 순위는 label을 받지 않으며 동률은 globalID 오름차순이다. FP64 저장logit 재계산과 같은 top125인지 검증한다. 모델/데이터/이력/기존 수치 kernel SHA를 고정하고 diagnostic case를 선택한다.
+FU: clean initial0에서 기존20R 이력을 따라 5 local epochs, batch128, SGD .01 momentum.9 wd0, cosine20, 기존 role seed42+500000+r*10000+c*100, 같은 augmentation 및 first-round nonowner original-submission 재사용. 기존 순차 FP32 FedAvg/BNcounter와 per-key FedEraser kernel을 hash로 고정해 읽는다. 완료된 옛 runner/controller/evaluator는 재실행하지 않는다.
+
+실행: 별도 D:/FEDUBA_EQ7_ALLCLASS_20261115. 새 prepare -> benign20 -> independent CPU history audit -> attack20 -> independent CPU history audit -> primary evaluation -> fresh-process independent evaluation -> result/delivery. 새 source/profile을 PR에 먼저 게시한다. 각 stage는 새 output/once 표식을 쓰며 자동 재시작하지 않는다. 기존 파일은 읽기 전용 입력이다.
+이번 memory-efficient 실행은 calibrated role tensors를 중복 저장하지 않고 원 trained role/old-history로 독립 재구성한다. 동시에 한 GPU model만 보유한다. 새 실행의 자원 조건은 available RAM>=4GiB, free commit>=12GiB, GPU idle<=5%, free VRAM>=4000MiB, disk>=60GiB, 다른 연구 trainer 없음이다. 이는 옛 실행 guard의 완화/재시작이 아니라 새 메모리 구조의 사전 조건이다. unrelated serve 프로세스는 건드리지 않는다. guard 실패시 시작하지 않으며 기다림/중단 여부를 실제 상태로 판단한다.
+
+중단: source/hash/ID/owner/예산/FP64 경계/finite/저장/실행 오류면 실패와 현재 prefix를 보존하고 정지한다. 중간 ASR나 CA로 학습을 취소하지 않는다. 최종 원6gate(pre<=20, attack>=80, attack-pre>=50pp, attack-benign>=50pp, all CA>=80, CA drop<=5pp)를 그대로 보고한다. 이 gate는 전체 논문 표/그림의 정확 재현 기준이 아니다. post ASR가 기존 target-only보다 높지 않으면 개선 가설 기각; 높아도6gate 미달이면 제한된 개선/재현 실패다. 결과에 맞춘 seed/epsilon/부호/예산/epochs 변경이나 무한 반복은 하지 않는다. 다음 변경에는 별도 소스/논문 근거가 필요하다.
+
+전체 재현 완료 조건은 별도 SCOPE.json에 둔다. 이 한 CIFAR10/IID/FedEraser/FedAvg 조건의 통과만으로 다른 datasets/FU/aggregation/nonIID/ablation/defenses까지 완료로 표시하지 않는다. 모델·실제 로그·성능 실패는 같은 PR에 추가하고 기존 catalogue/default/모든 원 실패를 보존한다.

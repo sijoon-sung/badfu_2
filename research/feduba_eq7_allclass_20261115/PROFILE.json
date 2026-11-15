@@ -1,0 +1,73 @@
+{
+  "id": "feduba.eq7.allclass.fixed10.s42.20261115",
+  "root": "D:/FEDUBA_EQ7_ALLCLASS_20261115",
+  "kernel_root": "D:/FEDUBA_FIXED10_PAIR_20261103",
+  "foundation_root": "D:/FEDUBA_FIXED10_FOUNDATION_20261103",
+  "query_root": "D:/FEDUBA_FIXED10_SSS_20261103",
+  "catalog": "D:/TRAJECTORY_CATALOG_20261023",
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "pre_sha256": "a4cd527f7e59dc459b6e25ef6049fcad83b3bbfdd80d2800c3368ec27b0a1af5",
+  "data_root": "C:/Users/DISLAB/Documents/antigravity/dazzling-lovelace/FUBA/data",
+  "versions": {
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "numpy": "1.26.4",
+    "Pillow": "12.1.1"
+  },
+  "clients": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    12,
+    13,
+    16,
+    18,
+    19
+  ],
+  "inputs": {
+    "selection_verified": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/SSS_VERIFIED.json",
+      "sha256": "dc239cff75a3a2cce93ac237e05710c75e69188399e309272f38c24015a70d46"
+    },
+    "foundation_binding": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/FOUNDATION_INPUT_BINDING.json",
+      "sha256": "3160386a588c2934015e7a749a3b5478d7e9e310ae7b34430ed8a92a53c27649"
+    },
+    "foundation_verified": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/CLEAN_FL_VERIFIED.json",
+      "sha256": "c18d7af6b0800cc8ff8810d4440f337239d04839ea320b46ff8251baa37485a2"
+    },
+    "selection": {
+      "path": "D:/FEDUBA_FIXED10_PAIR_20261103/SSS_RESULT.json",
+      "sha256": "ee3d7da78ecfc267f65d64b8e271717d8c18b0cb6f298cffebbfd4cc4cfcec28"
+    },
+    "history": {
+      "path": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/clean_fl/MANIFEST.json",
+      "sha256": "dc4c4e338c56506b629aee8140b21e43b8d9579d52447c9857f1fdce68caf4fe"
+    },
+    "split": {
+      "path": "D:/FEDUBA_FIXED10_FOUNDATION_20261103/CLEAN_SPLIT.json",
+      "sha256": "97d697be302c69d23b641d6670d57931878798609a0c4a324794bd7d4ba7cfee"
+    }
+  },
+  "external_sources": {
+    "core.py": "b332f51342eef2043b4e145d03fb9c5d88b7a737bf33ad5446a4c0163955f6d5",
+    "fu_core.py": "7117da2a5bfad92526e36adc4433b73ea122a70c1e06391db7df72386e2c360e",
+    "fu_training.py": "913a775d2524430a98e399965677f2c15467070be842b4518faef35893358320",
+    "runtime_common.py": "043518315db4fda722a523bc49da8572aae4529d88435d6d693c406953641b1d",
+    "model_reference.py": "57d92398d95a1669c02590052c457f59332286c288f9e0aee2baf83beb192fc3",
+    "native_memory.py": "11f49b2f7a41c9dc8b0a07bf05f33e33815bbde7f197181f797eaa8f63b682d3",
+    "native_processes.py": "6ba8df5f74f762a47215bd86a62a7eaa7f656fc4fbda46636078e734cfb223ed"
+  },
+  "only_scientific_change": "Remove target-class eligibility filter from fixed10 SSS; exact125 and all other declared numerics unchanged",
+  "compute_admission": {
+    "RAM_available_GiB": 4,
+    "commit_free_GiB": 12,
+    "VRAM_free_MiB": 4000,
+    "GPU_util_max": 5,
+    "disk_free_GiB": 60
+  },
+  "full_paper_reproduced": false
+}

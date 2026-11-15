@@ -1,0 +1,67 @@
+{
+  "paper": "Federated Unlearning Activated Backdoor Attacks",
+  "DOI": "10.1109/TDSC.2026.3703139",
+  "full_paper_reproduced": false,
+  "completion_requires": "All listed families implemented with declared source/conditions, actual paired outputs and independent checks; failed/missing results cannot be marked reproduced. Numerical stochastic agreement needs a prespecified tolerance and independent seeds, not copied paper values.",
+  "families": [
+    {
+      "id": "algorithm",
+      "scope": "STG Eq5, SSS Eq6/7, BEA Eq8/Alg1, threat model and request semantics",
+      "state": "partial_with_declared_ambiguities"
+    },
+    {
+      "id": "tables_II_III_figs_3_4",
+      "scope": "PathMNIST/CIFAR10/GTSRB x IID/Dirichlet0.5 x FedEraser/KNOT/FUKD x FedAvg/Median/TrimmedMean",
+      "state": "not_reproduced"
+    },
+    {
+      "id": "fig5",
+      "scope": "unlearning request budget sweep, unchanged denominators",
+      "state": "not_run"
+    },
+    {
+      "id": "figs6_7",
+      "scope": "Rand-FedUBA, FCBA, SIBA, FUBA, BadFU comparisons under FedEraser/KNOT",
+      "state": "not_run"
+    },
+    {
+      "id": "tableIV",
+      "scope": "epsilon24/255,32/255,40/255 ablation with explicit raw/model coordinates",
+      "state": "not_run"
+    },
+    {
+      "id": "fig8",
+      "scope": "20-to-70 client scaling",
+      "state": "not_run"
+    },
+    {
+      "id": "fig9",
+      "scope": "FAT/FADngs/FLAME/MASA defenses and parameter curves",
+      "state": "not_run"
+    },
+    {
+      "id": "tableV",
+      "scope": "CIFAR100/TinyImageNet, IID/nonIID, FedEraser/KNOT",
+      "state": "not_run"
+    },
+    {
+      "id": "tableVI",
+      "scope": "STG/SSS/BEA timing, hardware differences reported",
+      "state": "not_run"
+    },
+    {
+      "id": "tableVII_fig10",
+      "scope": "request feature/KL statistics and image examples, not a new detector",
+      "state": "not_run"
+    }
+  ],
+  "known_ambiguities": [
+    "paper CIFAR10 20x3000 consumes all60000 despite heldout evaluation; official split stays50000/10000",
+    "paper random cohort vs public fixed10",
+    "Eq2 negative versus STG/theory positive evaluation sign",
+    "paper impact removal versus public local feature replacement before calibration",
+    "32/255 input coordinate not explicit",
+    "missing helper recovery is not untouched author execution",
+    "number of independent training seeds and exact plotted raw counts not supplied"
+  ]
+}
