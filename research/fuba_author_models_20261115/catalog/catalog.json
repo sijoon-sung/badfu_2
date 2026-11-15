@@ -1,0 +1,50 @@
+{
+  "schema": "experiment-scoped-input-catalog-v1",
+  "audit_sha256": "cf752589bed654e92edda88d0aafb2cc374e5b9e0137bdacd2e1846b29028968",
+  "cases": [
+    {
+      "id": "fuba.author.bc233610.mnist.dba.post6.20261115",
+      "title": "Public author MNIST DBA post endpoints; no paired history",
+      "source_root": "D:/FUBA_AUTHOR_MODELS_20261115",
+      "allowed_purposes": [
+        "diagnostic"
+      ],
+      "post_type": "author_named_post_artifact_no_history_verification",
+      "server_inputs": {
+        "distillation": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_distillation_dba_mnist.pt",
+          "sha256": "024019dbdd545fed71c238ba7d8cdd10acbd0864e2f45152e400a4a0b904ae12",
+          "payload_key": null
+        },
+        "federaser": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_federaser_dba_mnist.pt",
+          "sha256": "eaa2ecf3e19ad1cc687d48e585ac3a3cb62bdb9e01b74d4d91907a59e81b79a7",
+          "payload_key": null
+        },
+        "pgd": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_pgd_dba_mnist.pt",
+          "sha256": "120f20306a70d1b6fc358b437de8577df94e4a39d6b4a41f4fcd83bcfa25684f",
+          "payload_key": null
+        },
+        "retrain": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_retrain_dba_mnist.pt",
+          "sha256": "d6191ce611c364f9fe81c4317b75bc52b00f0651fa3b4f1683c78b57923d2267",
+          "payload_key": null
+        },
+        "robustfu": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_robustfu_dba_mnist.pt",
+          "sha256": "88f141f407421f9376fec05f8670f26355aaedc26a3cf7fa3111319e724c2460",
+          "payload_key": null
+        },
+        "sga": {
+          "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_sga_dba_mnist.pt",
+          "sha256": "be8e8dbf2632eaa77bc324d721a99bf8c042c37ac02e73981b48c817cf100128",
+          "payload_key": null
+        }
+      }
+    }
+  ],
+  "supplemental_audits": [],
+  "global_defaults_changed": false,
+  "scope": "new author artifacts only; cannot replace approved paired/history models"
+}

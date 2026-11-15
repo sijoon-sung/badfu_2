@@ -1,0 +1,1 @@
+Public source functions are unchanged, but tool text copies contain one additional trailing newline; source copies are not asserted byte-identical to Git blobs. Downloaded models are Git-blob verified byte-identical. Input catalogue is a separate view using the existing select_case.py; no old catalogue/default is changed.
