@@ -1,0 +1,24 @@
+{
+  "state": "complete",
+  "method": "Retrain_from_scratch",
+  "rounds": 100,
+  "erased_client": 4,
+  "after": {
+    "path": "after.pt",
+    "sha256": "bf791099a4a10d54b514cf61046e825846b48665616d864da6b5516d6e6fbc4c",
+    "bytes": 181189
+  },
+  "evaluation": {
+    "N": 10000,
+    "non_target_N": 9026,
+    "clean_correct": 9900,
+    "target_successes": 4871,
+    "clean_target_bias": 6,
+    "CA_pct": 99.0,
+    "ASR_pct": 53.96631952138267,
+    "trigger_role": 4
+  },
+  "post_gate_CA97_ASR60": false,
+  "original_pre_suppression_passed": false,
+  "full_paper_reproduced": false
+}

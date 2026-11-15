@@ -1,0 +1,30 @@
+실제 공모자 삭제 Retrain100 FU 검증·전달 완료 / 성능 기준 실패
+
+R02/R03/D08/D15. 대상은 stcebra/FUBA의 협력 Adv-attacker/Adv-defender이며 ity207/FedUBA가 아니다. 기존 pre100R에서 공모자4를 제외하고 원 초기값부터 실제100R를 재학습했다. 최종 모델의 독립 평가가 원 기록과 정확히 같았다.
+
+삭제 전: CA99.11%, ASR30.600487480611566%(2762/9026), 기존 봉인된 원 평가를 재사용했다.
+실제 Retrain100 후: CA99.00%(9900/10000), ASR53.96631952138267%(4871/9026).
+사전 등록한 post CA97/ASR60의 결합 기준은 실패다. 원 pre 억제10%도 실패 상태다. 따라서 실제 FU 실행·모델 전달은 완료했지만 성공한 잠복 공격쌍이나 논문 전체 재현은 아니다. 논문 Table I의 MNIST/DBA Retrain CA99.2/ASR100은10seed 평균이며 이 한 시드 결과와 구분한다.
+
+유효한 관측은 보존한다. 삭제 후 모델에서 트리거를 넣었을 때 전체 non-target9026장 중4871장이8로 분류됐다. 동일 저장 예측을 사후 집계하면 clean에서 맞혔다가 트리거 후8로 바뀐 예시는4809장이다. 이는 새 모델 추론이나 선택 기준이 아니다. 예시 그림은 클래스별 첫 해당 이미지0–5의6개(ID3,2,119,32,4,45)를 보여 준다. 최고 중간ASR84.0461의86R를 최종100R 대신 선택하지 않았다. 전체100R 곡선을 함께 제공한다.
+
+실행 및 운영 복구
+원D:/FUBA_RETRAIN_FU_20261115의27R까지와 stdout OSError22를 그대로 보존했다. 별도 경로에713파일을 동일 바이트로 복사·검증하고27→28 연결 검사 후 같은 조건의28–100R를 이어갔다. 최초 분리 실행 종료와 GPU 유휴guard 실패도 보존했다. 실제 trainer36140은100R 후exit0로 종료했고 원 PID 부재를 확인했다. 일회성 finalizer38104도exit0로 끝났다. 반복 학습·조건 조정·중간 최고 모델 선택은 없었다.
+
+검증
+전체100R/759역할/146공격자역할/1051phase/52550epoch/2382250batch의 CPU 감사가 통과했다. 모든 round에서client4가 제외됐고 실제7/8명 균등집계, 원 초기값 및 round 연결, gamma1 제출식, phase 엄격 로드/finite·optimizer/RNG·전체epoch 로그를 확인했다. 전체 gradient 학습을 재실행한 검사는 아니다.
+최종 독립 평가는 원저자 test/attack_dba 함수를 사용한 FP32 contiguous NCHW/B512/deterministic/noTF32이며10000/9026의 정수 분자가 모두 정확히 일치했다. 같은 forward에서 예측을 저장했으며 예시와 곡선은 저장 자료만 사용했다.
+원격 검토 패킷862파일의 모든 SHA256/크기를 로컬에서도 확인했다. 로컬 torch2.4.1 CPU로23모델payload/41상태의 엄격 로드 및 합성1장 finite forward를 통과했다. 실제 데이터 로컬 추론과CUDA 초기화는 없었다. 양쪽 catalogue guard가 모두 통과했다. 원시2751파일의 해시 manifest와 전체 중간 tensor 이력은 DISLAB에 남으며 로컬 packet이 전체 원시 이력의 복사라고 하지 않는다.
+
+전달
+case=fuba.reference.mnist.dba.s20261023.pre100.post.retrain100.recovered27.20261115; diagnostic만 허용, 기본case 변경 없음.
+DISLAB root=D:/FUBA_RETRAIN_FU_RECOVERY_20261115
+로컬 root=research/fuba_retrain_fu_recovery_20261115
+로컬 실제 before=delivery/payload/inputs/before.pt; after=delivery/payload/after.pt; 전체epoch=delivery/payload/epochs.jsonl
+after SHA256=bf791099a4a10d54b514cf61046e825846b48665616d864da6b5516d6e6fbc4c
+review manifest SHA256=7fc9f2129d3e567b6ea235b5619a2b93f25e3003842f36c71dfe1e474561fc6b
+zip SHA256=74f63d29de23b3dc9c492541ffa224f04b9b5449619d87e56e612be018e23028; bytes13464413
+ACTUAL_RETRAIN_FU_EXAMPLES_v2.png 및 ACTUAL_RETRAIN_FU_TRAJECTORY_v2.png의 시각 검사를 마쳤고 원v1도 보존했다. v2는 캡션 간격/legend 위치만 고쳤으며 모델·예측은 동일하다. 그림·전달확인·최종보고 등 export 이후 증거는 별도 부록으로 추가하며 원manifest의 파일을 수정하지 않는다.
+
+판정과 다음 제한 비교
+논문 전체 재현은 아직 미완료다. 이 한 시드의 실제FU 실패를 숨기거나60% 기준을 낮추지 않는다. 이미 사전 등록된 batch-redraw21–30R treatment는 양쪽 전달 완료 후에만 실행한다. 고정표본 대조를 재학습하지 않고 공개 매배치30% 구성 하나의 차이를 검증한다. 그 비교의 실패가 자동 full100R/새seed/threshold 탐색을 허가하지 않는다. D08 공격.75848이 큰 정상 탈퇴.75525/.76188 사이에 놓인 반례 및 D15 실패는 미해결이며 새 탐지 주장은 없다. 완료한 본 trainer/CPU감사/독립평가/export를 재실행하지 않는다.

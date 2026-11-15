@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "counts": {
+    "phases": 1051,
+    "epochs": 52550,
+    "batches": 2382250,
+    "roles": 759,
+    "rounds": 100,
+    "attacker_roles": 146
+  },
+  "client4_absent_all_rounds": true,
+  "all_submission_formulas_and_aggregation_exact": true,
+  "optimizer_RNG_and_full_epoch_logs": true,
+  "all_phase_strict_CPU_loads": true,
+  "final_synthetic_finite_forward": true,
+  "CUDA_initialized": false,
+  "all_phase_training_replayed": false
+}

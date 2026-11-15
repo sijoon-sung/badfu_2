@@ -1,0 +1,90 @@
+{
+  "files": {
+    "FINAL_REPORT_KO.txt": {
+      "sha256": "b0f59ef27134f57e115c9fbcbbb914b1fb1d4ea3643e685b53358c300bd2157b",
+      "bytes": 4749
+    },
+    "FINAL_RESULT.json": {
+      "sha256": "be9ebc0dfe7f4d63050c962c2bcecc29fbd4b45f92609c59de922d0ab872df62",
+      "bytes": 604
+    },
+    "FINAL_CPU_AUDIT.json": {
+      "sha256": "fcfd160d6e4c4d928426f103fafca481fcbc40241afc246c9e5cc4c9bbf601ad",
+      "bytes": 475
+    },
+    "FINAL_INDEPENDENT_RESULT.json": {
+      "sha256": "6648cfcdfdbae4fca186c596cc8290e33a43caacc0321105dbd1555450da527f",
+      "bytes": 524
+    },
+    "FINAL_ROUND_MANIFEST.json": {
+      "sha256": "42980ee82a7feaa463ce8283421237e4ba7eb1ff69e9c4e342d82a9a00c7613c",
+      "bytes": 61801
+    },
+    "LOCAL_DELIVERY.json": {
+      "sha256": "ba9c3aec4cf8e1d22f961d8073ce91fe5b37be6068546e39453ed7242ebd4146",
+      "bytes": 511
+    },
+    "LOCAL_MODEL_CONTRACT.json": {
+      "sha256": "1faa7410f57ef781f109a27d4702fa8875ac17c569318061c9984394630b4514",
+      "bytes": 249
+    },
+    "LOCAL_SELECTION_CHECK.json": {
+      "sha256": "6c8ec887eb5d911c00bfb06d0f326fb8fd22e9570ed353168a43f45520c0bc9f",
+      "bytes": 1926
+    },
+    "REMOTE_SELECTION_CHECK.json": {
+      "sha256": "ccf6613d0cdbecdd0fb54afab77e5610080dc3ba541ccf7ac1bbac43a9e227c7",
+      "bytes": 1379
+    },
+    "FIGURE_QA.json": {
+      "sha256": "50f77b0b644fbacc2a19281e9653af671f044bf6d8ccb1114946d18dd35033ae",
+      "bytes": 412
+    },
+    "SAVED_PREDICTION_SUMMARY.json": {
+      "sha256": "6d2c99aea3d95f20789ad9fcb73772745e7387448506d895a117106512fe12ec",
+      "bytes": 394
+    },
+    "illustrate_v2.py": {
+      "sha256": "6b04bb4349dfde10db700e5265f9309d8dcd57b088eac8aeb8ca86c3cc5549ea",
+      "bytes": 2964
+    },
+    "plot_fu_trajectory_v2.py": {
+      "sha256": "7e3c5bc5681eb01df531f3b5dac3e0d7bc81e2023f4e2c0dc8f2b99536b6c369",
+      "bytes": 3365
+    },
+    "ACTUAL_RETRAIN_FU_EXAMPLES.png": {
+      "sha256": "3486191630bbc1c0ff3a98e0bd63cc4183e5c221b1a667b21114d7b68088683c",
+      "bytes": 130374
+    },
+    "ACTUAL_RETRAIN_FU_EXAMPLES_v2.png": {
+      "sha256": "b3750ff779273b9ab27b596efa9086a5938b8e149e4b767321aa3b22ae437b8a",
+      "bytes": 141147
+    },
+    "ACTUAL_RETRAIN_FU_TRAJECTORY.png": {
+      "sha256": "76e2126b101f4e8d772625672131cf767666fd8482c3beb583217bfcf086a7f8",
+      "bytes": 179576
+    },
+    "ACTUAL_RETRAIN_FU_TRAJECTORY_v2.png": {
+      "sha256": "ade6be08304bee4e1fab4110b6ed69098e61ff70abfa5069aeffefe93ddbbd92",
+      "bytes": 179730
+    },
+    "ACTUAL_RETRAIN_FU_EXAMPLES.json": {
+      "sha256": "002a5a7f8a575c1735365a1ce00bbf441fa0519056c0745b631af56d21995f81",
+      "bytes": 411
+    },
+    "ACTUAL_RETRAIN_FU_EXAMPLES_v2.json": {
+      "sha256": "157f443e6555dfb46765f1298de515612b5b7322ac2bae9776cbb2a43980d5d9",
+      "bytes": 411
+    },
+    "ACTUAL_RETRAIN_FU_TRAJECTORY.json": {
+      "sha256": "c71682255daeba3e22cda5ec9a03ba9dc806a012eda6294b1083a346fd22f2fd",
+      "bytes": 357
+    },
+    "ACTUAL_RETRAIN_FU_TRAJECTORY_v2.json": {
+      "sha256": "e3019189d7255c6d6b0fc423380215b17433c6a850142d68002f289a4f486b2e",
+      "bytes": 357
+    }
+  },
+  "original_review_manifest_unchanged": true,
+  "scope": "Final report, transfer checks and saved-prediction graphics; no new model inference"
+}
