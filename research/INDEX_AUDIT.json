@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "92a7e34511cfbc5544094fae85bcd5d04245cd14ba856ec230f6eaba2c70c9cd",
+  "registry_sha256": "2642a324cd0324c5cdc3bf426d089a53d71adf2e4c6f58dd14e600d5a98f1616",
   "cards": 29,
-  "unique_source_documents": 232,
+  "unique_source_documents": 233,
   "top_level_folders": 90,
   "folders_linked_to_cards": 51,
   "source_sha256": {
@@ -239,7 +239,8 @@
     "research/feduba_eq7_allclass_20261115/SCOPE.json": "3cdf452d920823e3b40eacc0b92ee759d6db72ec3e71094fc21768322604bbac",
     "research/feduba_eq7_allclass_20261115/SOURCE_FREEZE.json": "e2d45e5d0baaffd19b7dbdcc04c9e00b9bb52b064bdf97bfd26944f0a3c8c808",
     "research/feduba_eq7_allclass_20261115/PREPARED.json": "7bbb2e5b31afc8a3dd325ea71664e6a467a69caf47d3f2e05b5a99d9c3df04ad",
-    "research/feduba_eq7_allclass_20261115/REPORT_KO.txt": "1de2cf19e11a6cfcfe7160433a72a2bb6075756dc55d292b954c273f0f48874d"
+    "research/feduba_eq7_allclass_20261115/REPORT_KO.txt": "1de2cf19e11a6cfcfe7160433a72a2bb6075756dc55d292b954c273f0f48874d",
+    "research/feduba_eq7_allclass_20261115/PAPER_TARGETS.json": "641e5fb2db48853cae26ce46c9e8750ce5eb2f6436962846fcf5d454f7da7e13"
   },
   "no_source_experiment_moved": true,
   "no_model_or_raw_result_modified": true,

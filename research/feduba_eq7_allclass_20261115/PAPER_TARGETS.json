@@ -1,0 +1,266 @@
+{
+  "source_url": "https://www.chenwang.net.cn/publications/FedUBA-TDSC26.pdf",
+  "source_sha256": "5db60221c4e221d83c20331f0f935877a334c941f097ac0e4cfbb2fb29810d98",
+  "method": "Visual transcription of printed numeric table cells. Not digitized curve endpoints; not reproduced measurements.",
+  "TableIV_ASR": [
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 81.29
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 78.52
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 56.23
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 83.53
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 77.83
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 52.74
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 82.75
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 79.51
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "24/255",
+      "ASR_pct": 54.38
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 93.79
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 90.61
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 68.07
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 92.91
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 90.97
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 65.16
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 94.23
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 91.75
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "32/255",
+      "ASR_pct": 68.17
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 97.34
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 96.42
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "FedAvg",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 82.85
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 97.96
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 97.21
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Median",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 82.76
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "PathMNIST",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 98.47
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "CIFAR10",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 98.45
+    },
+    {
+      "table": "IV",
+      "page": 12,
+      "dataset": "GTSRB",
+      "FU": "FedEraser",
+      "aggregation": "Trimmed-mean",
+      "epsilon_fraction": "40/255",
+      "ASR_pct": 83.3
+    }
+  ],
+  "current_CIFAR10_FedEraser_FedAvg_reference": {
+    "TableIV_ASR_pct": 90.61,
+    "TableII_CA_before_mean_pct": 85.82,
+    "TableII_CA_before_plus_minus": 0.74,
+    "TableII_CA_after_mean_pct": 85.16,
+    "TableII_CA_after_plus_minus": 0.45
+  },
+  "plots": "Figures3/4 have curves without tabulated exact per-round counts. No invented raw per-round values.",
+  "limitations": [
+    "TableIV epsilon coordinate unspecified; our model-coordinate budget remains declared.",
+    "Existing operational80% gate is not paper TableIV reproduction.",
+    "Printed plus/minus values do not specify independent seed count here.",
+    "TableIV values and approximate prose/curves are kept distinct; no assumption all represent identical run seeds."
+  ],
+  "changes_existing_training_profile": false,
+  "changes_existing_operational_gates": false
+}
