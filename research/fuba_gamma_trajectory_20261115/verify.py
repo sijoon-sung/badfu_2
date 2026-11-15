@@ -1,6 +1,7 @@
 """Independent arithmetic/log audit of the new bounded trajectories; read-only CPU."""
 import collections
 import json
+import os
 from pathlib import Path
 import torch
 from run import ROOT, read, sha, exact, write, frozen
@@ -9,7 +10,10 @@ from run import ROOT, read, sha, exact, write, frozen
 def main():
     torch.set_num_threads(1)
     frozen()
+    for name,digest in read(ROOT/'AUDIT_FREEZE.json')['files'].items():
+        assert sha(ROOT/name)==digest
     assert read(ROOT / 'STATE.json')['state'] == 'complete'
+    write(ROOT/'CPU_AUDIT_STARTED.json',{'pid':os.getpid()},True)
     result = read(ROOT / 'RESULT.json')
     initial = torch.load(ROOT / 'inputs/round0020.pt', weights_only=True, map_location='cpu')['after']
     totals = collections.Counter()
