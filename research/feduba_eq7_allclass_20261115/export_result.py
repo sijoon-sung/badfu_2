@@ -15,19 +15,21 @@ def main():
     assert read(ROOT / 'CONTROLLER.json')['state'] == 'completed'
     result = read(ROOT / 'RESULT.json')
     assert result['state'] == 'completed_comparison'
+    assert read(ROOT / 'CURVE_RESULT.json')['state'] == 'passed_integrity'
     assert all(read(ROOT / ('AUDIT_' + b + '.json'))['state'] == 'passed' for b in ['benign', 'attack'])
     begin('export')
     out = ROOT / 'delivery'
     out.mkdir(exist_ok=False)
     evidence = ['PROFILE.json', 'PROTOCOL.txt', 'SCOPE.json', 'SOURCE_FREEZE.json', 'PREPARED.json',
                 'TRAINED_benign.json', 'TRAINED_attack.json', 'AUDIT_benign.json', 'AUDIT_attack.json',
-                'EVAL_primary.json', 'EVAL_independent.json', 'RESULT.json', 'CONTROLLER.json']
+                'EVAL_primary.json', 'EVAL_independent.json', 'RESULT.json', 'CONTROLLER.json',
+                'CURVE_PROTOCOL.txt', 'CURVE_FREEZE.json', 'CURVE_RESULT.json', 'FU_CURVES.png', 'PAPER_TARGETS.json']
     for name in evidence:
         shutil.copy2(ROOT / name, out / name)
     for branch in ['benign', 'attack']:
         shutil.copy2(ROOT / 'fu' / branch / 'epochs.jsonl', out / (branch + '_epochs.jsonl'))
     (out / 'source').mkdir()
-    for name in ['run.py', 'verify.py', 'selection.py', 'test_selection.py', 'export_result.py']:
+    for name in ['run.py', 'verify.py', 'selection.py', 'test_selection.py', 'export_result.py', 'curve.py']:
         shutil.copy2(ROOT / name, out / 'source' / name)
     (out / 'source/kernels').mkdir()
     for name in p['external_sources']:
