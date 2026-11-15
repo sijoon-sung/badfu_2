@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "phases": 2,
+  "epochs": 100,
+  "batches": 4300,
+  "strict_CPU_states": 20,
+  "same_start_and_end_global_RNG": true,
+  "same_all_epoch_order_hashes": true,
+  "unchanged_peer_submissions_per_arm": 7,
+  "exact_aggregation": true,
+  "Eq1_weights_CPU_max_tolerance": 1e-07,
+  "SGD_original_phase_exact": true,
+  "SGD_original_aggregate_exact": true,
+  "CUDA_initialized": false
+}

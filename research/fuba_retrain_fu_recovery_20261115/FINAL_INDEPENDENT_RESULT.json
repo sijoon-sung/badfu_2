@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "CA_correct": 9900,
+  "ASR_hits": 4871,
+  "N": 10000,
+  "non_target_N": 9026,
+  "CA_pct": 99.0,
+  "ASR_pct": 53.96631952138267,
+  "exact_integer_match": true,
+  "evaluator": "original-author-functions-FP32-contiguous-B512-deterministic-noTF32",
+  "before_model_reevaluated": false,
+  "full_paper_reproduced": false,
+  "predictions": {
+    "path": "predictions.npz",
+    "sha256": "998844a60b9700da79517eee3eca58dba39f538c7ff759b1b3414cf5f9e7af30",
+    "additional_forwards": 0
+  }
+}

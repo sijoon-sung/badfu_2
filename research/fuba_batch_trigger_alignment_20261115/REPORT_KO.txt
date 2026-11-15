@@ -1,0 +1,7 @@
+배치 트리거 구성의 공개 소스 계약 완료
+
+관련 R02/R03/D08/D15. PROTOCOL의 합성 CPU 검사만 DISLAB에서 1회 실행했다. 5개 역할 각각 두 연속64장 batch의 mask, 트리거 이미지, target label, RNG 상태가 공개 train_method_dba.py의 실제63–66행과 모두 정확히 같았다. clean 원본 불변과 연속 mask의 차이도 확인했다. CUDA 초기화/모델 로드/실자료 학습/ASR/FU 실행은 없었다.
+
+공개 소스의 매 배치 Bernoulli .3과 기존 고정810장 조건의 차이는 확인했다. 논문은 redraw 주기를 유일하게 정하지 않으므로 이 결과를 기존 실패의 원인 또는 성능 개선으로 해석하지 않는다. 현재 실제 Retrain100 FU의 source/profile은 바꾸지 않았다. 후속 실제 비교는 별도 사전등록 전까지 미검증·미실행이다. 완료한 이 CPU 계약도 반복하지 않는다.
+
+원소스 Git blob 79187fbaf97095b98c1b971b214f508f4a544242, SHA256 a4541d0969c413e1d7e3731fcaf8b46be83a18cc97af42ba49f38e56c8b50d85. SOURCE/FREEZE/RESULT는 원바이트와 실제 실행을 연결한다. 큰 정상 non-IID 탈퇴와 공격을 구별하는 새 탐지 증거는 없다.

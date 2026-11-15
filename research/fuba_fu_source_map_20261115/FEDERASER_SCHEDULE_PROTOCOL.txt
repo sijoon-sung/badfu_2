@@ -1,0 +1,6 @@
+FedEraser 실행 순서 계약 — R02/R03/D08/D15
+
+가설: 저자 원본의 global_epoch=20, interval=2, local_epoch=10, ratio=.5는 실제 20회 calibration을 뜻하지 않는다. 새 관측은 원본 unlearning 함수 자체를 합성 ID 이력과 기록용 콜백으로 실행하여 선택한 역사적 client/global round, 실제 calibration 횟수와 local epoch를 확인하는 것이다. 기존 calibration 수식 계약은 재실행하지 않는다.
+원문은 보충자료 p1 II.A, 원본은 이미 확보한 FedEraser-Code.zip SHA256 4babbbf2d9f93b0e29a7accdcc6667670b9e99072f44031a6b8390c0b121839b다. PRIMARY_SOURCE_CORRECTIONS.txt의 평균 후 tensor별 보정과 논문 식의 차이를 유지한다.
+DISLAB CPU에서 원 AST unlearning만 실행한다. 학습/수식 함수는 입력과 호출 순서만 기록하는 콜백이며 실제 torch 모델·자료·GPU·FU는 사용하지 않는다. 새 planner는 원 코드의 after-global 기준을 명시하고 임의로 incoming으로 교정하지 않는다. 총20과100의 완전참여 합성이 원본과 정확히 일치해야 한다. 다른 partial-participation 역사에 그대로 적용하거나 원100R 앞20개만 잘라 쓰지 않는다.
+불일치/소스해시 오류면 보존하고 중단한다. 실제100R 이력과 FUBA의20 global 조건을 어떻게 연결하는지는 별도 미검증이며 이 계약으로 실제 FU 성능을 주장하지 않는다. D08/D15 큰 정상 non-IID 구별을 해결하는 관측이 아니고 탐지법을 제안하지 않는다. 진행 중 Retrain100 및 준비된 batch-redraw의 조건은 바꾸지 않는다.

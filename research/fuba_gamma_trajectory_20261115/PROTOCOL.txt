@@ -1,0 +1,20 @@
+가설: DBA 공격자가 최종 평가와 같은 합집합 트리거로 gamma 제약을 검사하면, 동일한 현재 runtime/초기20R에서 이후10R의 실제 집계모델 사전 ASR 위반을 기존 local-patch 검사보다 줄인다.
+관련 R02/R03/D08/D15. 목표는 협력 stcebra/FUBA Adv-attacker/Adv-defender이며 FedUBA STG/SSS/BEA가 아니다.
+
+기존 결과와 차이
+2026-10-31 global-gamma 진단은 마지막100R의 다른7개 업로드를 고정한 한 번의 교체였고 ASR30.6005→16.0979로 10% 게이트에 실패했다. 그 실패를 보존한다. 그 한 번의 교체는 앞선99R에 이미 누적된 모델이 이후 양쪽 학습 궤적을 바꾸는 효과를 검사하지 않았다.
+이번 새 관측은 최초 실패 구간 이전의 실제20R에서 분기한 양쪽21–30R의 실제50epoch 학습·업로드·전체평가 궤적이다. 기존 저장20R CA98.93/ASR4.3762, 최초23R10.6138,28R18.0146/29R22.9227을 읽고 구간을 고정한다. 현재 runtime에서 두 arm 모두 계산하며 원래 저장평가와의 차이도 숨기지 않는다. 과거100R 실행이나 seed queue를 재시작하지 않는다.
+
+입력/비교
+case fuba.reference.mnist.dba.s20261023.pre100.post.kd10을 diagnostic으로 기존 select_case.py에서 선택·봉인검사한다. 그 case의 검증된 FULL_REMOTE_RAW_MANIFEST/run MANIFEST를 통해 특정20R after payload와 SPLIT/PROFILE/author_model/reference_core를 해시 고정한다. 새 디렉터리 D:/FUBA_GAMMA_TRAJECTORY_20261115에서만 저장한다. diagnostic history 사용이며 승인 잠복쌍 또는 기본입력을 바꾸지 않는다.
+두 arm 모두 같은20R 초기값/참여자순서/role seed/loader seed/seed20261023/partition20261020/4공격자+1공모자/20명중8명/50epochs/64batch/poison30%/원 Net을 사용한다. 기존 Algorithm-SGD 코어를 그대로 복사·해시 확인한다. embedding/defender SGD.001, 다른단계Adam.001,lambda2,m5/n20,11점gamma0..1 strictASR<10 최대선택, 무통과 exact-zero 및 명시미달을 유지한다.
+유일한 arm 차이는 gamma 평가에서 own local patch 대신 4패치 global union을 사용하는 것이다. 각 공격자의 같은300장 로컬 validation만 사용하며 서버 test자료를 gamma 선택에 사용하지 않는다. 공모 공격자가 전체 패턴을 공유한다는 가정이다. 실제 defender reference/학습입력/목표/상수는 바꾸지 않는다. 같은 행동을 위해 원core를 변형하지 않고 score callback만 바꾼다.
+원래CONTROL 저장값은 역사적 비교다. 새local/global arm이 같은 현재runtime에서 독립 role 학습을 하고, 실제 모든phase/optimizer/loader RNG/CPU·CUDA RNG/epoch log를 보존한다. 원본tensor bit재현 실패 이력이 있으므로 현재 A를 과거 동일tensor라고 부르지 않는다.
+
+중단/계속 규칙
+각 arm은 정확10R(21–30R)/80개role를 계산한다. 중간 ASR로 학습조건을 바꾸거나 조기성공을 선언하지 않는다. 종료 후 새로운 global arm의 마지막3R가 모두 CA>=97/ASR<=10이고, 전체10R ASR>10 위반수가 local arm보다 적고, 동일 round/client에서 gamma가 달라진 사례가1개 이상일 때만 전체fresh100R 후속의 근거로 삼는다. 그렇지 않으면 이 가설을 미지지로 보존하고 이 수정만으로 전체 학습을 열지 않는다. post/FU 또는100R 성공을 이10R로 주장하지 않는다.
+학습 전 source/input hashes·실제 프로세스·RAM>=3GiB/GPU util<=5/free>=2500MiB/disk>=10GiB 검사. 다른 앱은 종료하지 않는다. Net/단일 GPU 실행의 새 예산이며 기존 guard 변경이 아니다. source/data/hash/finite/저장/집계 일치 실패는 해당 미커밋 상태를 보존하고 중단한다. 자동재시도/범위확대/seed교체 없음. 실제 round 저장 readback과 정확mean 집계를 확인한다.
+계산 완료 후 같은 테스트10000/9026의 정수분모와 선택정책/전체epoch수/실제제출식을 CPU에서 독립 검사한다. 전체학습경로와 FU는 별도후속으로만 검증한다.
+
+판정 범위
+D08의 공격0.75848/정상0.75525·0.76188 및 D15는 미해결이다. 이는 알려진 trigger를 가진 공격자 구현의 제한 비교이며, 큰 정상 non-IID를 구별하는 서버 탐지법이 아니다. 추가 관측이 있다는 사실을 탐지 성공으로 해석하지 않는다. 공개저자 post6 모델검증, 기존실패쌍, 새10R진단, 이후전체재현은 각각 구분한다.

@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "cases": [
+    {
+      "radius_squared": 1e-05,
+      "distance_threshold": 100.0,
+      "steps": 20,
+      "projection_count": 20,
+      "stop": false,
+      "model_and_optimizer_tensor_exact": true
+    },
+    {
+      "radius_squared": 1e-05,
+      "distance_threshold": 0.0,
+      "steps": 1,
+      "projection_count": 1,
+      "stop": true,
+      "model_and_optimizer_tensor_exact": true
+    },
+    {
+      "radius_squared": 100.0,
+      "distance_threshold": 100.0,
+      "steps": 20,
+      "projection_count": 0,
+      "stop": false,
+      "model_and_optimizer_tensor_exact": true
+    }
+  ],
+  "device": "CPU",
+  "CUDA_initialized": false,
+  "real_data_or_models": false,
+  "full_FU_executed": false,
+  "notebook_SHA256": "9b1da69b66b0d67caaa27a20521b2c3528ee4b438c4d151db907af8c84afabfc"
+}

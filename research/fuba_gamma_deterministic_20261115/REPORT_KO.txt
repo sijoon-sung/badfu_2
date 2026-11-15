@@ -1,0 +1,20 @@
+결정적 gamma 범위 비교 완료 — R02/R03/D08/D15
+
+사전 가설은 실패했다. 같은 원20R 모델에서 local 패치 검사와 global 합집합 검사로 각각21–30R를 실제 학습했다. ASR10% 초과는 양쪽3회로 같았다. global 마지막28/29/30R의 CA는 모두98.96%, ASR은10.5029913583/10.9239973410/3.5674717483%였다. 마지막3R 모두 억제한다는 조건과 위반 횟수 감소 조건을 통과하지 못했다.
+
+제한된 개선은 보존한다. local 마지막3R의 ASR16.7183691558/22.8894305340/8.0212718812%보다 global의 값이 낮았다. 하지만 고정 성공 기준을 바꾸거나 이를 전체100R의 성공 근거로 승격하지 않는다. 이 gamma-only 변경을 근거로 세 번째 같은 비교, 기준 완화, 새 full100R를 자동 실행하지 않는다.
+
+이번 비교의 수치 통제는 통과했다. 최초 차이는26R/client0의 gamma1.0 대0.8이었다. 그 round까지 공통 입력48개 역할/78개 phase의 모델·optimizer·loader/global RNG가 정확히 같았고, gamma가 같을 때 제출도 같았다. 저장 원시를 별도 CPU 프로그램으로 대조해 inline 기록과 일치시켰다. 이전 비결정적 비교의 첫 역할 차이와 실패는 별개로 그대로 보존했다.
+
+전체 검증
+- 실제20R/160역할/274phase/13700epoch/613500batch, 공격자 gamma trace36개, Adv-defender2개 역할.
+- 모든 phase·제출 파일 해시,50epoch 로그, 제출 수식, round 연결, 실제 집계가 CPU 검증을 통과했다.
+- 원저자 test/attack_dba로20개 모델을 각각10000clean/9026non-target에 독립 평가했고 정수 CA/ASR가 모두 정확히 같았다. FP32 contiguous-NCHW, batch512, deterministic/noTF32이다.
+- 원래300장 보류 자료에서36개 trace의396개 gamma 후보를 Eq.3의 별도 state 연산과 원저자 함수로 재구성했다. 모든 CA/ASR 정수와 최대 strict 통과 gamma가 일치했다. 이 범위에서는 all-gamma 독립 검증도 완료했다.
+- 새 실험 전체712파일을 DISLAB와 로컬에 전달하고 모든 SHA256/byte를 검증했다. 원래1–19R와FU는 이 패킷의 범위가 아니다. 학습 단계의 gradient 전체를 다시 학습한 검증도 아니다.
+
+패킷 manifest SHA256 1bc41b7d2feaf7ca877d3eaa760003f40971950d7308a848cdf7420e83dfe2e0
+archive SHA256 f97d970de350cc983dcd1a961830db4dc0b4114329852119538190c6b1037c6d
+실제 모델/phase/log: delivery/payload. 그래프는 저장 정수만 그렸으며 추가 모델 로드·추론0이다.
+
+이20R 비교는100R FL/FU 또는 전체 논문 재현이 아니다. D08/D15의 큰 정상 non-IID 삭제 반례도 해결하지 않았다. 별도 프로토콜의 실제 Retrain100 FU는 기존 pre100R 진단 입력에 대한 다른 FU 방법이며, 실패한 gamma 변경의 full100R 후속으로 취급하지 않는다.

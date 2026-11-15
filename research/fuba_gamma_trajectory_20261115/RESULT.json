@@ -1,0 +1,570 @@
+{
+  "state": "complete",
+  "results": {
+    "local": [
+      {
+        "path": "local\\rounds\\round0021.pt",
+        "sha256": "725e4ff989ae29ab5a346f2378d386692b184e38e5bf84b000f7c43856c3c43d",
+        "bytes": 1822771,
+        "round": 21,
+        "clients": [
+          0,
+          4,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9894,
+          "target_successes": 134,
+          "clean_target_bias": 10,
+          "CA_pct": 98.94,
+          "ASR_pct": 1.4846000443164193,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0022.pt",
+        "sha256": "d0ba3579c7ac1499b1c56df51c6e9a310fc685f215167a0875c48e076bacb7ea",
+        "bytes": 1820595,
+        "round": 22,
+        "clients": [
+          5,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9889,
+          "target_successes": 45,
+          "clean_target_bias": 9,
+          "CA_pct": 98.89,
+          "ASR_pct": 0.4985597163749169,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0023.pt",
+        "sha256": "b4ab6cb84c9ffa1f2fb790d7c1fc17fa58332897ae80bbfcacf88c781c11c96a",
+        "bytes": 1826931,
+        "round": 23,
+        "clients": [
+          0,
+          1,
+          2,
+          3,
+          11,
+          13,
+          18,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9886,
+          "target_successes": 1161,
+          "clean_target_bias": 22,
+          "CA_pct": 98.86,
+          "ASR_pct": 12.862840682472855,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0024.pt",
+        "sha256": "6405cc4098d109bff68152954f04dfb9a6cc08b040e2cd20e0d89c73c0a484c5",
+        "bytes": 1822323,
+        "round": 24,
+        "clients": [
+          3,
+          5,
+          8,
+          9,
+          10,
+          12,
+          14,
+          17
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9893,
+          "target_successes": 260,
+          "clean_target_bias": 10,
+          "CA_pct": 98.93,
+          "ASR_pct": 2.8805672501661865,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0025.pt",
+        "sha256": "7910acafa52b36718e839ff81a7e3fdc2a41854182ef3557843c266d584dbe9a",
+        "bytes": 1823795,
+        "round": 25,
+        "clients": [
+          2,
+          3,
+          8,
+          9,
+          11,
+          13,
+          14,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9896,
+          "target_successes": 465,
+          "clean_target_bias": 11,
+          "CA_pct": 98.96,
+          "ASR_pct": 5.151783735874141,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0026.pt",
+        "sha256": "69e91853f796b960aeacbf0ddc97a0202608f73e3057c9f02a5fb4d9d19d88cb",
+        "bytes": 1822323,
+        "round": 26,
+        "clients": [
+          0,
+          6,
+          7,
+          8,
+          11,
+          12,
+          14,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9898,
+          "target_successes": 285,
+          "clean_target_bias": 11,
+          "CA_pct": 98.98,
+          "ASR_pct": 3.157544870374474,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0027.pt",
+        "sha256": "ee70503910cddf6b48cc740312176ee0e0de7f150df335ee945b27e5d863702f",
+        "bytes": 1823795,
+        "round": 27,
+        "clients": [
+          0,
+          3,
+          6,
+          12,
+          13,
+          14,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9890,
+          "target_successes": 523,
+          "clean_target_bias": 12,
+          "CA_pct": 98.9,
+          "ASR_pct": 5.794371814757367,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0028.pt",
+        "sha256": "f84212d79d05bad3ecee344fb9a710fb4313d533f780bca7d38eef5aa71c81dd",
+        "bytes": 1825395,
+        "round": 28,
+        "clients": [
+          0,
+          1,
+          3,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9892,
+          "target_successes": 1698,
+          "clean_target_bias": 14,
+          "CA_pct": 98.92,
+          "ASR_pct": 18.812319964546866,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0029.pt",
+        "sha256": "7cd9349b7eba1c043ac63940d1fb8a52d7093bf18f3e593596076443a357b899",
+        "bytes": 1825331,
+        "round": 29,
+        "clients": [
+          0,
+          1,
+          2,
+          7,
+          9,
+          13,
+          16,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9891,
+          "target_successes": 2377,
+          "clean_target_bias": 15,
+          "CA_pct": 98.91,
+          "ASR_pct": 26.335032129403945,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "local\\rounds\\round0030.pt",
+        "sha256": "f1928f441befffbc9043840195c200453203e19baced49c3e4751d4c650ef10c",
+        "bytes": 1822323,
+        "round": 30,
+        "clients": [
+          3,
+          9,
+          10,
+          12,
+          14,
+          16,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9895,
+          "target_successes": 696,
+          "clean_target_bias": 12,
+          "CA_pct": 98.95,
+          "ASR_pct": 7.711056946598715,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      }
+    ],
+    "global": [
+      {
+        "path": "global\\rounds\\round0021.pt",
+        "sha256": "d714502ecae0e749cc2814726221d354ac2da143e5038988df2e71b11d29c0ef",
+        "bytes": 1822835,
+        "round": 21,
+        "clients": [
+          0,
+          4,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9894,
+          "target_successes": 142,
+          "clean_target_bias": 10,
+          "CA_pct": 98.94,
+          "ASR_pct": 1.573232882783071,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0022.pt",
+        "sha256": "fee60bd912067ff3e321fbb2e79a3be3faa47b5d8ba41d4b9ace902390d30e53",
+        "bytes": 1820595,
+        "round": 22,
+        "clients": [
+          5,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9892,
+          "target_successes": 34,
+          "clean_target_bias": 8,
+          "CA_pct": 98.92,
+          "ASR_pct": 0.37668956348327054,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0023.pt",
+        "sha256": "0e178ab595f06cc2aa6785c4a5ef8d82793eaeed972774e9a734131ac004b31f",
+        "bytes": 1826995,
+        "round": 23,
+        "clients": [
+          0,
+          1,
+          2,
+          3,
+          11,
+          13,
+          18,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9884,
+          "target_successes": 1171,
+          "clean_target_bias": 22,
+          "CA_pct": 98.84,
+          "ASR_pct": 12.973631730556171,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0024.pt",
+        "sha256": "101cb5e28785ba5aeaca33f4aa9d96fc57dbfc1f72fb2ac03873f3be6196383f",
+        "bytes": 1822323,
+        "round": 24,
+        "clients": [
+          3,
+          5,
+          8,
+          9,
+          10,
+          12,
+          14,
+          17
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9895,
+          "target_successes": 245,
+          "clean_target_bias": 12,
+          "CA_pct": 98.95,
+          "ASR_pct": 2.714380678041214,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0025.pt",
+        "sha256": "c26611cbd7079adfaec49010febed236afee990003200d918449e16ced67beea",
+        "bytes": 1823859,
+        "round": 25,
+        "clients": [
+          2,
+          3,
+          8,
+          9,
+          11,
+          13,
+          14,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9895,
+          "target_successes": 471,
+          "clean_target_bias": 12,
+          "CA_pct": 98.95,
+          "ASR_pct": 5.2182583647241305,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0026.pt",
+        "sha256": "157ba4186af3d2d8e722b77fa64baf0db541e7f21338f363f9448a0b151e8316",
+        "bytes": 1822323,
+        "round": 26,
+        "clients": [
+          0,
+          6,
+          7,
+          8,
+          11,
+          12,
+          14,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9896,
+          "target_successes": 240,
+          "clean_target_bias": 12,
+          "CA_pct": 98.96,
+          "ASR_pct": 2.658985153999557,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0027.pt",
+        "sha256": "3510dce492335002ed76cb264b8616e121ed924efb986ec6fae1612f20438070",
+        "bytes": 1823795,
+        "round": 27,
+        "clients": [
+          0,
+          3,
+          6,
+          12,
+          13,
+          14,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9886,
+          "target_successes": 453,
+          "clean_target_bias": 14,
+          "CA_pct": 98.86,
+          "ASR_pct": 5.018834478174163,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0028.pt",
+        "sha256": "b408ecb0668c203a89f4057d83507f9512497bdfcc8fbabe9e22f2fd20d99289",
+        "bytes": 1825395,
+        "round": 28,
+        "clients": [
+          0,
+          1,
+          3,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9891,
+          "target_successes": 1221,
+          "clean_target_bias": 14,
+          "CA_pct": 98.91,
+          "ASR_pct": 13.527586970972745,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0029.pt",
+        "sha256": "c59039c133e3c9f378cccd332e9bfc26b18db2caba55bf4bea5c75a7655959ff",
+        "bytes": 1825395,
+        "round": 29,
+        "clients": [
+          0,
+          1,
+          2,
+          7,
+          9,
+          13,
+          16,
+          19
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9900,
+          "target_successes": 1150,
+          "clean_target_bias": 15,
+          "CA_pct": 99.0,
+          "ASR_pct": 12.74097052958121,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      },
+      {
+        "path": "global\\rounds\\round0030.pt",
+        "sha256": "08693e1e888e2ce191fe450610051d72d099a8f4a5c62d2c987bd6e83d4b4ed5",
+        "bytes": 1822323,
+        "round": 30,
+        "clients": [
+          3,
+          9,
+          10,
+          12,
+          14,
+          16,
+          17,
+          18
+        ],
+        "evaluation": {
+          "N": 10000,
+          "non_target_N": 9026,
+          "clean_correct": 9898,
+          "target_successes": 292,
+          "clean_target_bias": 10,
+          "CA_pct": 98.98,
+          "ASR_pct": 3.2350986040327943,
+          "trigger_role": 4
+        },
+        "exact_aggregation": true
+      }
+    ]
+  },
+  "violations": {
+    "local": 3,
+    "global": 3
+  },
+  "changed_gamma_roles": [
+    "26/0",
+    "27/0",
+    "28/0",
+    "29/0",
+    "29/1",
+    "30/3"
+  ],
+  "checks": {
+    "last3_global_CA97_ASR10": false,
+    "fewer_ASR_violations": false,
+    "changed_decision": true
+  },
+  "hypothesis_supported": false,
+  "full_paper_reproduced": false,
+  "unlearning_executed": false,
+  "time": 1794733778.576944
+}

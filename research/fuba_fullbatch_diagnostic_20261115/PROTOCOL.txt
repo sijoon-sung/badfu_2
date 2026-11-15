@@ -1,0 +1,18 @@
+가설: 공개 FUBA의drop_last=True를 적용해모든optimizer step의배치를64장으로고정하면, 현재redraw구현의작은잔여배치평균gradient와추가step이제거되어, 첫억제실패23R의실제집계ASR이CA97을유지하면서10%미만으로낮아진다.
+관련 R02/R03/D08/D15. INDEX/카드/원보고서와정정, 실제Retrain100실패 및두gamma비교/redraw실패를읽었다. 기존finite작업을재실행하지않는다.
+
+소스근거와해석
+stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d의train_main.py100행은DataLoader(...batch_size=config.batch_size,shuffle=True,drop_last=True)다. SHA256 cb2ca6279bf4bc352631418375a541e45dbbf66a9985d4b475820a55772225e9,Gitblob a639460b916847c3bcb2e60429ad258a648a109a. main Algorithms1/2는B=64의1/B 합을사용한다. 현재2700장학습은42개64장+12장배치,정상3000장은46개64장+56장배치까지매epoch처리한다. 이번변경은공개코드의마지막불완전배치제외를적용한다. main논문이drop_last를문장으로유일하게정했다고하지않으며성능에관한인과기여는검증전이다.
+
+고정입력과새관측
+case fuba.reference.mnist.dba.s20261023.redraw.round21_30.20261115, purpose=diagnostic을양쪽등록guard로선택한다. 봉인된round23 bundle의incoming을출발값으로사용하고,같은bundle의after/8개제출/등록평가를대조로읽는다. 기존round23을재학습하지않는다. 첫실패23R은기존결과를보고고른진단입력임을명시하며독립test또는성능재현으로세지않는다. 새treatment한round23의8명[0,1,2,3,11,13,18,19]만학습한다. 이round에는공모자4가선택되지않았으므로공모자학습효과에대한새증거가아니다.
+
+변경은full mini-batch만사용하는경계정책하나다. 원seed/partition/데이터/모델/수식/optimizer/50epoch/lr.001/target8/4패치/2700train+300heldout/매배치Bernoulli.3/global-gamma11점0..1/strict10/mixture.25/deterministic backend는그대로다. 각epoch같은randperm을만든뒤마지막12/56장을제외한다. mask는실제로처리한64장에만뽑으므로이후mask-RNG진행차이도이변경의결과다. 변환비율/seed/threshold/참여집합을탐색하지않는다.
+
+실행과검증
+먼저DISLAB CPU합성시험으로torch.utils.data.BatchSampler(drop_last=True)의독립loop와Adam/재가중SGD/consistencySGD,mask/모델/optimizer/RNG를대조한다. 무변경기존학습전체를반복하는시험은아니다. 실제GPU는원소스/입력해시,실제process/state/manifest와기존유휴util<=5/free>=2500MiB/RAM3GiB/disk10GiBguard후한번실행한다. 기존앱/finitequeue는종료·재시작하지않는다.
+모든20phase/1000epoch/42800batch,optimizer/RNG/16800maskbatch,4gamma trace/44후보,8실제제출/집계/모델을보존한다. CPU전감사,원저자10000/9026전체평가및원300장validation의44후보독립평가를수행한다. 평가자는FP32 contiguousNCHW/B512/deterministic/noTF32다. 전체패킷을양쪽봉인·전해시검증한다. 실제학습된gradient의전재학습은검증범위가아니다.
+
+판정과중단
+고정행동기준은새round23 CA>=97, ASR<10,원14.5136272989보다감소이며전검증도필수다. 실패하면fullbatch비교를같은seed로반복하거나기준을완화하지않고,이결과를근거로full100R를자동시작하지않는다. 통과해도단일진단라운드이므로full100/FU/독립seed/논문전체성공이아니다. 무결성/비finite/실행오류는해당실패와출력을보존하고중단한다. 전역10R의이전미달을이1R으로대체하지않는다.
+이것은알려진트리거의구현준수진단이며D08공격.75848대큰정상.75525/.76188및D15실패를구별하는방법이아니다. non-IID탐지·트리거종류독립성주장은없다.

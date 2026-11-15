@@ -1,0 +1,6 @@
+가설: 이번 결정적 local/global 비교에서 저장된 모든 gamma 점수는 같은 보류 자료와 원저자 DBA 평가 함수로 독립적으로 재구성했을 때 정수 단위로 일치한다.
+관련 R02/D08/D15, 현재 PROTOCOL 및 CPU 검증의 all_gamma_independent_inference=False 한계. 새 관측은 저장된 점수의 산술 점검을 넘어 실제 입력·모델을 다시 구성한 전체36개 trace/각11점의 독립 ASR이다. 학습·새 조건 탐색·방법 변경은 없다.
+
+학습과 CPU 감사가 끝난 뒤 한 번만 실행한다. incoming, embedding phase3, representative phase4의 해시를 검증하고 Eq.3을 별도 state 연산으로 재구성한다. 원래 분할과300장 보류 입력, local 또는 global trigger, target8, FP32/deterministic/noTF32를 유지한다. 원저자 test/attack_dba를 AST로 가져와 CA와 타깃 제외 ASR의 정수 수를 비교한다. 이 자료는 원래 공격자의 보류 자료이며 새로운 서버 측 선택/학습에 들어가지 않는다.
+
+모든396점과 최대 strict 통과 gamma가 일치해야 passed이다. 한 장이라도 다르면 원점수와 새 점수를 모두 보존하고 전달 판정을 보류한다. 재학습, 평가 batch 변경, 임계값 완화로 맞추지 않는다. 완료 후 반복 실행하지 않는다. 현재 학습의 조건과 행동 게이트는 불변이며, 이 점수 검증은 공격 성능이나 D08/D15의 큰 정상 non-IID 구별을 증명하지 않는다.

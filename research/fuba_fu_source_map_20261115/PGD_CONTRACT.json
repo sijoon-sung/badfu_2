@@ -1,0 +1,48 @@
+{
+  "state": "passed",
+  "source_commit": "6f51bbccef3e54f55746ff0094271d26f69ce6da",
+  "projection_cases": [
+    {
+      "input": [
+        3.0,
+        4.0
+      ],
+      "squared_radius": 4.0,
+      "exact": true
+    },
+    {
+      "input": [
+        0.6,
+        0.8
+      ],
+      "squared_radius": 4.0,
+      "exact": true
+    },
+    {
+      "input": [
+        3.0,
+        4.0
+      ],
+      "squared_radius": 0.0,
+      "exact": true
+    }
+  ],
+  "random_radius_exact": true,
+  "distinct_stop_rules": [
+    {
+      "euclidean_distance": 1.0,
+      "IBM_squared_greater_2_2": false,
+      "v3_euclidean_less_2_2": true
+    },
+    {
+      "euclidean_distance": 3.0,
+      "IBM_squared_greater_2_2": true,
+      "v3_euclidean_less_2_2": false
+    }
+  ],
+  "CUDA_initialized": false,
+  "real_models": 0,
+  "real_training": 0,
+  "actual_FU": false,
+  "interpretation": "IBM notebook; not unique FUBA PGD setting"
+}

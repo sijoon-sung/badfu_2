@@ -1,0 +1,82 @@
+{
+  "paper_table": "main Table I p2900; supplement Table III p3",
+  "visually_verified": true,
+  "paper_training_seeds": 10,
+  "public_artifact_training_seed": "not recorded in released state",
+  "six_endpoints_are_not_six_independent_FL_seeds": true,
+  "SGA_CA97_gate_is_not_paper_requirement": true,
+  "rows": [
+    {
+      "method": "distillation",
+      "paper_mean_CA_pct": 99.1,
+      "paper_mean_ASR_pct": 82.9,
+      "paper_SD_CA_pp": 0.14,
+      "paper_SD_ASR_pp": 7.7,
+      "public_artifact_CA_pct": 98.85,
+      "public_artifact_ASR_pct": 81.14336361621982,
+      "CA_difference_pp": -0.25,
+      "ASR_difference_pp": -1.7566363837801902,
+      "paper_mean_reproduction_test": false
+    },
+    {
+      "method": "federaser",
+      "paper_mean_CA_pct": 99.0,
+      "paper_mean_ASR_pct": 99.8,
+      "paper_SD_CA_pp": 0.17,
+      "paper_SD_ASR_pp": 0.46,
+      "public_artifact_CA_pct": 98.72,
+      "public_artifact_ASR_pct": 98.05007755373366,
+      "CA_difference_pp": -0.28000000000000114,
+      "ASR_difference_pp": -1.7499224462663392,
+      "paper_mean_reproduction_test": false
+    },
+    {
+      "method": "pgd",
+      "paper_mean_CA_pct": 99.1,
+      "paper_mean_ASR_pct": 100.0,
+      "paper_SD_CA_pp": 0.0001,
+      "paper_SD_ASR_pp": 0.0,
+      "public_artifact_CA_pct": 98.94,
+      "public_artifact_ASR_pct": 99.15798803456681,
+      "CA_difference_pp": -0.1599999999999966,
+      "ASR_difference_pp": -0.842011965433187,
+      "paper_mean_reproduction_test": false
+    },
+    {
+      "method": "retrain",
+      "paper_mean_CA_pct": 99.2,
+      "paper_mean_ASR_pct": 100.0,
+      "paper_SD_CA_pp": 0.1,
+      "paper_SD_ASR_pp": 0.0,
+      "public_artifact_CA_pct": 98.9,
+      "public_artifact_ASR_pct": 99.84489253268336,
+      "CA_difference_pp": -0.29999999999999716,
+      "ASR_difference_pp": -0.1551074673166397,
+      "paper_mean_reproduction_test": false
+    },
+    {
+      "method": "robustfu",
+      "paper_mean_CA_pct": 99.2,
+      "paper_mean_ASR_pct": 92.4,
+      "paper_SD_CA_pp": 0.12,
+      "paper_SD_ASR_pp": 0.44,
+      "public_artifact_CA_pct": 98.92,
+      "public_artifact_ASR_pct": 93.76246399290937,
+      "CA_difference_pp": -0.28000000000000114,
+      "ASR_difference_pp": 1.362463992909369,
+      "paper_mean_reproduction_test": false
+    },
+    {
+      "method": "sga",
+      "paper_mean_CA_pct": 95.1,
+      "paper_mean_ASR_pct": 71.2,
+      "paper_SD_CA_pp": 0.77,
+      "paper_SD_ASR_pp": 3.2,
+      "public_artifact_CA_pct": 93.77,
+      "public_artifact_ASR_pct": 71.16109018391315,
+      "CA_difference_pp": -1.3299999999999983,
+      "ASR_difference_pp": -0.03890981608685706,
+      "paper_mean_reproduction_test": false
+    }
+  ]
+}

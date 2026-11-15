@@ -1,0 +1,43 @@
+{
+  "state": "passed",
+  "rows": [
+    {
+      "arm": "algorithm_sgd",
+      "kind": "local",
+      "clean_correct": 9637,
+      "target_successes": 9026,
+      "clean_target_bias": 208,
+      "exact": true
+    },
+    {
+      "arm": "algorithm_sgd",
+      "kind": "aggregate",
+      "clean_correct": 9900,
+      "target_successes": 4871,
+      "clean_target_bias": 6,
+      "exact": true
+    },
+    {
+      "arm": "experimental_adam",
+      "kind": "local",
+      "clean_correct": 9725,
+      "target_successes": 9026,
+      "clean_target_bias": 151,
+      "exact": true
+    },
+    {
+      "arm": "experimental_adam",
+      "kind": "aggregate",
+      "clean_correct": 9901,
+      "target_successes": 5142,
+      "clean_target_bias": 7,
+      "exact": true
+    }
+  ],
+  "models": 4,
+  "clean_N": 10000,
+  "non_target_N": 9026,
+  "evaluator": "original author test/attack_dba; separate clean-bias pass",
+  "layout": "FP32 contiguous NCHW B512 deterministic noTF32",
+  "new_training": 0
+}

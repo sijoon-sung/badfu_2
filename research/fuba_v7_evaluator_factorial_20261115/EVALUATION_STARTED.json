@@ -1,0 +1,37 @@
+{
+  "pid": 35416,
+  "time": 1794747753.862146,
+  "resources": {
+    "util": 0,
+    "free_MiB": 4278,
+    "used_MiB": 5776,
+    "free_KiB": 8073200,
+    "processes": [
+      {
+        "ProcessId": 21320,
+        "ParentProcessId": 7200,
+        "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\hermes\\tools\\python-3.14.7+20260901-win32-x64\\python.exe\" -m hermes_cli.main gateway run"
+      },
+      {
+        "ProcessId": 36324,
+        "ParentProcessId": 37028,
+        "CommandLine": null
+      },
+      {
+        "ProcessId": 21368,
+        "ParentProcessId": 36324,
+        "CommandLine": null
+      },
+      {
+        "ProcessId": 34136,
+        "ParentProcessId": 27604,
+        "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u -B D:/FUBA_V7_EVALUATOR_FACTORIAL_20261115/execute_once.py "
+      },
+      {
+        "ProcessId": 35416,
+        "ParentProcessId": 34136,
+        "CommandLine": "C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -u -B D:\\FUBA_V7_EVALUATOR_FACTORIAL_20261115\\run.py evaluate"
+      }
+    ]
+  }
+}

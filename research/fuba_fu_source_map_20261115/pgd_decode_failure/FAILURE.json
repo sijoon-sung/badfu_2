@@ -1,0 +1,12 @@
+{
+  "state": "failed_before_numeric_contract",
+  "host": "DISLAB",
+  "error": "UnicodeDecodeError: cp949 codec cannot decode byte 0xe2 in notebook position1067",
+  "source": "test_pgd_author_kernel.py line31 notebook read_text without encoding",
+  "models_or_training_or_inference": 0,
+  "correction": "Explicit UTF-8 decode only; notebook bytes, algorithms and synthetic cases unchanged",
+  "files": {
+    "test_pgd_author_kernel.py": "09f1957d53c412864d997070bb571e051da366257db10bb8a3f8e6939694b89c",
+    "PGD_FREEZE.json": "394e1edeb0c2a19dc814f19e9622888a8e09d7432d5d813abefa5fb8ed2f8309"
+  }
+}

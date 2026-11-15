@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "buffer_sets": 4,
+  "cross_operator_G_buffers_exact": true,
+  "eval_buffers_match_original": true,
+  "train_batches_per_BN": 313,
+  "model_forward_calls": 0,
+  "CUDA_initialized": false,
+  "torch": "2.4.1+cu118"
+}

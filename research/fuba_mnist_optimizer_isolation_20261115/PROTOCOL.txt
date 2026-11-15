@@ -1,0 +1,19 @@
+가설: 실제 MNIST/DBA Retrain100의 마지막 공격자 역할에서 같은 앵커·미니배치·재가중치를 고정하고 embedding optimizer만 SGD에서 Adam으로 바꾸면, 같은 정상7개 제출과 집계한 모델의 ASR이20%p 이상 증가하면서 CA97을 유지한다.
+
+관련 R02/R03/D08/D15. INDEX/카드와 원 보고서, fuba_optimizer_isolation_20261031의 PROTOCOL/REPORT_KO를 읽었다. 이전 CIFAR/IBA 단일 로컬 역할 비교의 ASR+1.0667%p, CA-.54%p 및20pp 기준 실패를 그대로 보존한다. 그 결과로 Adam을 채택하지 않았다. 이번은 다른 MNIST/DBA의 실제 삭제 후 마지막 집계에 미치는 영향을 처음 분리하며, 기존 CIFAR 비교를 반복하거나 실패 결과를 대체하지 않는다.
+
+논문·소스의 충돌
+main p2896는 재가중 embedding을 SGD로 명시하고 Algorithms1/2는 SGD 식을 쓴다. p2899 실험문단은 Adam을 명시한다. 공개 stcebra/FUBA@bc233610aca36e1647d0c815597cc7148292139d의 MNIST 경로도 Adam이며, adjust_updates_based_on_ratio가 gradient를 곱한 뒤 optimizer.step을 호출한다. 이 모호성은 새 발견이 아니다. 현재 Algorithms 준수 기준인 SGD는 유지한다. Adam은 별도 실험문단 해석의 진단이며, 성공하더라도 Algorithm7의 정확한 실행이나 저자 인증 해결로 자동 채택하지 않는다.
+고정 양의 gradient 계수는 Adam의1차/2차 moment에서 거의 상쇄될 수 있으므로 CPU 합성 예제로 이 연산 차이도 기록한다. 이는 공격 탐지 지표가 아니라 optimizer 수식의 점검이다. 이번은 gradient를 Adam 전에 곱하는 공개 호출 순서이며, Adam update 뒤에 곱하는 새 방법은 시험하지 않는다.
+
+입력과 범위
+case fuba.reference.mnist.dba.s20261023.pre100.post.retrain100.recovered27.20261115, purpose diagnostic을 기존 전용catalogue로 선택한다. manifest7fc9f2129d3e567b6ea235b5619a2b93f25e3003842f36c71dfe1e474561fc6b와 외부seal/전체파일guard를 통과한다. 원 round0100.pt의 incoming/8개submitted/after 및 client1의 phase01/02/03, role JSON, 원SPLIT/PROFILE/Net/reference_core를 해시검증한다. 마지막100R의 선택된 공격자 중 최소ID라는 고정 규칙의 client1이며, 이round의 유일한 공격자다. ASR로 역할/round를 고르지 않는다.
+
+새 계산은 embedding 두 개각50epoch뿐이다. A=algorithm_sgd(.001, momentum0), B=experimental_adam(.001, defaults, fresh optimizer). 두 arm은 원 incoming에서 시작하고 GPU에서 같은 원anchor1/2의 Eq1 가중치를 한 번 산출해 공유한다. 실제 원phase2의 Python/NumPy/CPU/CUDA RNG를 각각 복원하고 phase_seed21261126, 같은2700장/고정810변형/localpatch1/target8/B64(원 잔여배치 포함)를 사용한다. 단일fullbatch 실패를 새 변경에 섞지 않는다. 두50epoch의 실제 ID순서 해시가 같아야 한다. 정상7개 제출과 나머지99R, 원anchor 학습은 새로 실행하지 않는다. gamma1 affine를 적용하고 같은8명 평균을 계산한다.
+
+새 관측은 각 로컬 모델뿐 아니라 나머지7개 제출을 고정한 집계 모델의 전체10000/9026 CA/ASR 및 clean non-target target bias다. A와 원phase3/원최종집계의bit 일치 여부를 반드시 확인한다. 불일치하면 원실행 재생이라고 하지 않고 현재 runtime A/B 범위로 한정하며 원모델을 덮어쓰지 않는다. B가 개선돼도 이 진단적 마지막 역할 교체는 새로운100R FU 실행이나 승인된 잠복 전후쌍이 아니다.
+
+판정과중단
+지지는 집계B의ASR-A>=20pp, B의CA>=97 및 A대비하락<=1pp, clean-target-bias 증가<=1pp를 모두 요구한다. phase/배치/해시/독립평가 검증도 필수다. 실패하면 같은 optimizer 비교/seed/학습률/epoch를 탐색하지 않는다. 성공해도 본문 SGD를 자동 대체하거나 fresh100R를 자동 시작하지 않는다. 저장된 원preASR30.6005 및 실제FU최종53.9663 실패를 그대로 남긴다. 전체 논문 재현은 별개다.
+source/hash/data/nonfinite/runtime 오류는 실패를 보존하고 해당 단계에서 중단한다. 기존 유휴util<=5/free>=2500MiB/RAM3GiB/disk10GiB 및 경쟁훈련부재 guard를 적용하고, 다른 앱이나 종료된finite작업을 재시작/종료하지 않는다. CPU계약→한 번의A/B학습→전CPU감사→원저자함수독립평가→실제모델/optimizer/RNG/전체로그양쪽전달 순서다.
+D08 공격.75848 대 큰 정상.75525/.76188와 D15 반례는 미해결이다. 알려진 트리거의 optimizer 진단이며 새로운 서버 탐지법/트리거종류독립성/non-IID구별을 주장하지 않는다.

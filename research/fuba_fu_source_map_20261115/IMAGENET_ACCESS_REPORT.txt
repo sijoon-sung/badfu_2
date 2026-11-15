@@ -1,0 +1,9 @@
+ImageNet 자료 확보 경로의 읽기 전용 확인 — 실제 학습/다운로드 없음
+
+관련 R02/R03/D08/D15. 기존 IMAGENET_SOURCE_AUDIT.txt의 정적 모델/loader 차이를 유지한다. 이번 IMAGENET_ACCESS_PROBE.json은 DISLAB의 명시한10개 경로를 최대2단계/제한된 엔트리만 확인했다. Downloads136개 항목을 포함한 이 범위에서 ImageNet 이름 자료를 찾지 못했다. 다른 위치에 자료가 없다는 증명은 아니다.
+
+공식 ImageNet train/validation/devkit의 세 URL에 HEAD만 요청했으며 세 요청 모두 timeout이었다. body 읽기/이미지 자료 다운로드는0byte다. 403/로그인 실패를 관측한 것이 아니므로 접근 권한 거부로 바꾸어 기록하지 않는다. 공식 안내 페이지는 https://www.image-net.org/challenges/LSVRC/2012/2012-downloads.php 이다. 기존 안내의 데이터셋 대체 없이 ILSVRC2012 자체를 확보해야 한다.
+
+확인 시 여유 공간은 D:548714242048bytes, C:73110753280bytes였다. 전체 학습/중간 모델 보존이 이 공간에 들어간다고 검증한 값이 아니며 처리시간을 측정하지 않았다. 이 경로 점검으로 대용량 다운로드 또는 ImageNet GPU 학습을 시작하지 않았다. tiny/subset 대체, 기존 자료 삭제, 기존 정상/공격 모델 변경은 없다.
+
+이는 자료 접근 상태 점검이며 성능 실험/공격 탐지 증거가 아니다. D08/D15의 큰 benign non-IID 반례는 그대로다. HEAD timeout과 공개 코드의 shape/batch/pretrained 불일치를 원 논문 불가능성으로 확대하지 않는다.

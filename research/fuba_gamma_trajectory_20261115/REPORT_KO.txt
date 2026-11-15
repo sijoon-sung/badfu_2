@@ -1,0 +1,14 @@
+FUBA local/global gamma 궤적 비교 — 실제 20R 완료·성능 가설 실패·수치 혼동 보존
+
+최종 판정(2026-11-15): 두 arm의21–30R를 실제 완주했다. 각각10R/총160역할/274phase/13700epoch/613500batch이며 CPU 제출식·집계·연결·해시·전체epoch/RNG/optimizer 검사를 통과했다. 별도 저자 test/attack_dba 함수의10000clean/9026non-target 평가는20개 모델 모두 정수 수가 정확히 일치했다.
+ASR>10 위반은 local/global 각각3회다. global 마지막3R ASR13.52758697/12.74097053/3.235098604, CA98.91/99.00/98.98이다. local 마지막3R ASR18.81231996/26.33503213/7.711056947이다. gamma가 바뀐6역할은26/0,27/0,28/0,29/0,29/1,30/3이다. 마지막30R 하나의낮은값으로실패한마지막3R/위반수gate를대체하지않는다. 전체fresh100R/FU를이수정만으로시작하지않았다.
+사전등록된첫21R/client0의4phase수치대조는실패했다. RNG기록은같지만model최대차이는.0546016172/.4530690014/.00495181978/.0022572428이다. 같은현재runtime이라는사실만으로gamma의인과비교가성립하지않는다. 작은최종반올림오차라고부른초기설명은정정한다. 고정성능가설실패와수치혼동을둘다보존하며CUDA단일원인을확정하지않는다.
+새실험의원본전체669파일을179536269bytezip으로DISLAB와로컬에보존했다. archive SHA256 be4bc9e49faf08c8b9f60254e3abedb6f7ba8f7c1ba4c9ac876944a8fbf499e3, manifest c01c2f2e2425adde5424b9121a77690955f6c6e1bd4a231dd7f4e1e664e705c5. LOCAL_DELIVERY.json은전파일SHA/size일치를확인한다. 범위는두새21–30R·원20R입력·모든단계/로그이며원1–19R나FU가포함된것은아니다.
+후속의별도결정적runtime계약은fuba_determinism_contract_20261115를따른다. 그계약통과가이비교의혼동을소급해제하지않는다. 전체논문재현/성공잠복쌍/트리거종류독립non-IID탐지모두미완료이며D08/D15는미해결이다.
+
+아래는 보존한 실행 당시 기록이며 현재 재개 지시가 아니다.
+
+관련 R02/D08/D15. PR commit f71ba94에서 두 arm21–30R·전체50epoch·입력20R 및 판정기준을 먼저 고정했다.
+기존 case 봉인과 raw manifest/SPLIT/PROFILE/model/core 및 실제20R 집계가 검증됐다. 최초 prepare는 Windows backslash 경로 키 때문에 학습 전 KeyError가 났다. FAILURE_prepare를 보존하고, 같은 입력과 동결된 trainer를 변경하지 않는 complete_prepare.py로 남은 준비 검사만 완료했다.
+실제 trainer PID14224가 DISLAB에서 실행되며 첫현재runtime local21R CA98.94/ASR1.48460,22R98.89/0.49856,23R98.86/12.86284를 기록했다. 원래역사적21R98.93/1.40705,22R98.90/0.38777,23R98.88/10.61378과 다르므로 과거tensor비트재현이라고 부르지 않는다. 새local/global은 동일현재runtime에서 비교한다.
+아직global arm/최종10R판정/FU는 미완료다. 고정의 마지막3R CA97/ASR10·전체위반수감소·gamma변경 기준을 임의로 바꾸지 않는다. 기존v7/DBA100R/seedqueue/FedUBA는 재시작하지 않았다.

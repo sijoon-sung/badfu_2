@@ -1,0 +1,78 @@
+{
+  "state": "passed",
+  "selection": {
+    "case_id": "fuba.reference.mnist.dba.s20261023.redraw.round21_30.20261115",
+    "purpose": "diagnostic",
+    "post_type": "bounded_FL_trajectory_no_unlearning",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\inputs\\round0020.pt",
+        "sha256": "c2af81e30367ebcc15b746338b20df28a3473a18a0bd05ee87e74818c0244a4a",
+        "payload_key": "after"
+      },
+      "post": {
+        "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\rounds\\round0030.pt",
+        "sha256": "8dd8c3fbf1e49597265f80c383bb8f8ef041b903bdf28a4df26146f39d2f14e8",
+        "payload_key": "after"
+      },
+      "round23_incoming": {
+        "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\rounds\\round0023.pt",
+        "sha256": "aa112deb7751a2e2ab7537bad10744bf6e789155043bc3de34ebdb18d9f38cab",
+        "payload_key": "incoming"
+      }
+    },
+    "source_root": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\REVIEW_MANIFEST.json",
+      "manifest_sha256": "d2aedb327348c24bdf1275357e9035a8baa110652bead52b222f6492c751d61d",
+      "seal_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\delivery\\SEAL.json",
+      "seal_sha256": "33e62567a690e4835cd9bb6dec0fa16649daf51106c2cf27ba62b1d243d66cd7",
+      "loader_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\receive_packet.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  "files": {
+    "inputs/round0023.pt": "aa112deb7751a2e2ab7537bad10744bf6e789155043bc3de34ebdb18d9f38cab",
+    "inputs/PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "inputs/SPLIT.json": "dfd6f7f18b3cf7b1b082ab106437702c1e55c56fd5535fbf580dafb5d97f4de1",
+    "inputs/author_model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "inputs/RESULT.json": "df23d2f61ed0128766a84875216011de7084d11e5e64ff54c6fb47531d11a5b3"
+  },
+  "control_rows": [
+    {
+      "path": "rounds/round0023.pt",
+      "sha256": "aa112deb7751a2e2ab7537bad10744bf6e789155043bc3de34ebdb18d9f38cab",
+      "bytes": 1826803,
+      "round": 23,
+      "clients": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9893,
+        "target_successes": 1310,
+        "clean_target_bias": 22,
+        "CA_pct": 98.93,
+        "ASR_pct": 14.513627298914248,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    }
+  ],
+  "payload_key": "incoming",
+  "training_rounds": [
+    23
+  ],
+  "control_retraining": false,
+  "model_inference": 0,
+  "posthoc_diagnostic_round_selection": true
+}

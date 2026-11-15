@@ -1,0 +1,37 @@
+{
+  "pid": 36140,
+  "time": 1794739867.8988574,
+  "resources": {
+    "gpu_util_pct": 1,
+    "free_MiB": 4233,
+    "used_MiB": 5821,
+    "free_KiB": 5966352,
+    "processes": [
+      {
+        "ProcessId": 21320,
+        "ParentProcessId": 7200,
+        "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\hermes\\tools\\python-3.14.7+20260901-win32-x64\\python.exe\" -m hermes_cli.main gateway run"
+      },
+      {
+        "ProcessId": 36324,
+        "ParentProcessId": 37028,
+        "CommandLine": null
+      },
+      {
+        "ProcessId": 21368,
+        "ParentProcessId": 36324,
+        "CommandLine": null
+      },
+      {
+        "ProcessId": 52416,
+        "ParentProcessId": 18832,
+        "CommandLine": null
+      },
+      {
+        "ProcessId": 36140,
+        "ParentProcessId": 21152,
+        "CommandLine": "\"C:\\Users\\DISLAB\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u -B D:/FUBA_RETRAIN_FU_RECOVERY_20261115/retry_preflight.py "
+      }
+    ]
+  }
+}

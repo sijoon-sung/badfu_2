@@ -1,0 +1,190 @@
+{
+  "state": "passed",
+  "rows": [
+    {
+      "arm": "local",
+      "round": 21,
+      "CA_correct": 9893,
+      "ASR_hits": 142,
+      "CA_pct": 98.92999999999999,
+      "ASR_pct": 1.573232882783071,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 22,
+      "CA_correct": 9885,
+      "ASR_hits": 45,
+      "CA_pct": 98.85000000000001,
+      "ASR_pct": 0.4985597163749169,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 23,
+      "CA_correct": 9884,
+      "ASR_hits": 1125,
+      "CA_pct": 98.83999999999999,
+      "ASR_pct": 12.463992909372923,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 24,
+      "CA_correct": 9893,
+      "ASR_hits": 273,
+      "CA_pct": 98.92999999999999,
+      "ASR_pct": 3.0245956126744957,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 25,
+      "CA_correct": 9898,
+      "ASR_hits": 444,
+      "CA_pct": 98.98,
+      "ASR_pct": 4.91912253489918,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 26,
+      "CA_correct": 9891,
+      "ASR_hits": 221,
+      "CA_pct": 98.91,
+      "ASR_pct": 2.4484821626412585,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 27,
+      "CA_correct": 9884,
+      "ASR_hits": 420,
+      "CA_pct": 98.83999999999999,
+      "ASR_pct": 4.653224019499224,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 28,
+      "CA_correct": 9890,
+      "ASR_hits": 1509,
+      "CA_pct": 98.9,
+      "ASR_pct": 16.718369155772212,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 29,
+      "CA_correct": 9889,
+      "ASR_hits": 2066,
+      "CA_pct": 98.89,
+      "ASR_pct": 22.889430534012853,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "local",
+      "round": 30,
+      "CA_correct": 9893,
+      "ASR_hits": 724,
+      "CA_pct": 98.92999999999999,
+      "ASR_pct": 8.021271881231996,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 21,
+      "CA_correct": 9893,
+      "ASR_hits": 142,
+      "CA_pct": 98.92999999999999,
+      "ASR_pct": 1.573232882783071,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 22,
+      "CA_correct": 9885,
+      "ASR_hits": 45,
+      "CA_pct": 98.85000000000001,
+      "ASR_pct": 0.4985597163749169,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 23,
+      "CA_correct": 9884,
+      "ASR_hits": 1125,
+      "CA_pct": 98.83999999999999,
+      "ASR_pct": 12.463992909372923,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 24,
+      "CA_correct": 9893,
+      "ASR_hits": 273,
+      "CA_pct": 98.92999999999999,
+      "ASR_pct": 3.0245956126744957,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 25,
+      "CA_correct": 9898,
+      "ASR_hits": 444,
+      "CA_pct": 98.98,
+      "ASR_pct": 4.91912253489918,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 26,
+      "CA_correct": 9889,
+      "ASR_hits": 202,
+      "CA_pct": 98.89,
+      "ASR_pct": 2.2379791712829604,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 27,
+      "CA_correct": 9894,
+      "ASR_hits": 350,
+      "CA_pct": 98.94,
+      "ASR_pct": 3.8776866829160204,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 28,
+      "CA_correct": 9896,
+      "ASR_hits": 948,
+      "CA_pct": 98.96000000000001,
+      "ASR_pct": 10.50299135829825,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 29,
+      "CA_correct": 9896,
+      "ASR_hits": 986,
+      "CA_pct": 98.96000000000001,
+      "ASR_pct": 10.923997341014847,
+      "exact_integer_match": true
+    },
+    {
+      "arm": "global",
+      "round": 30,
+      "CA_correct": 9896,
+      "ASR_hits": 322,
+      "CA_pct": 98.96000000000001,
+      "ASR_pct": 3.5674717482827387,
+      "exact_integer_match": true
+    }
+  ],
+  "models": 20,
+  "N_per_model": 10000,
+  "non_target_N": 9026,
+  "evaluator": "author-functions-FP32-contiguous-B512",
+  "time": 1794736514.0493271
+}

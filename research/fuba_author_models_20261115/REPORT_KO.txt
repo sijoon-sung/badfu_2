@@ -1,0 +1,16 @@
+FUBA 저자 공개 MNIST/DBA 삭제후 모델 검증 — 완료, 전체 논문 재현 미완료
+
+R02/D08/D15. 고정공개 commit bc233610의18개MNIST artifact Git blob/CPU strict/finite/변환tensor exact를 통과했다. 공개6개DBA post endpoint 전체10000/9026 평가와 원함수AST 독립 경로의 정수건수가 모두 일치했다.
+
+distillation: CA 98.85% (9885/10000), ASR 81.14336362% (7324/9026), narrow post gate=True
+federaser: CA 98.72% (9872/10000), ASR 98.05007755% (8850/9026), narrow post gate=True
+pgd: CA 98.94% (9894/10000), ASR 99.15798803% (8950/9026), narrow post gate=True
+retrain: CA 98.90% (9890/10000), ASR 99.84489253% (9012/9026), narrow post gate=True
+robustfu: CA 98.92% (9892/10000), ASR 93.76246399% (8463/9026), narrow post gate=True
+sga: CA 93.77% (9377/10000), ASR 71.16109018% (6423/9026), narrow post gate=False
+
+SGA의CA93.77은사전97gate미달이며제외하지않는다. 다른5개post gate통과를전체잠복전후/10seed평균성공으로확대하지않는다. 공개pre/history/optimizer/RNG/실행seed가없어새로운FU나공모자삭제과정의인증은없다. 이전우리가학습한실패및원본은유지했다.
+이결과는같은원Net/ToTensor/목표8/전체DBA합집합경로에서높은ASR를재현할수있음을보인다. 우리의기존학습실패를단순히이평가경로탓으로설명할근거는없다. 실험간학습조건은다르므로개별원인을확정하지않는다.
+D08/D15 큰정상non-IID탐지는미해결이다. IBA공개모델6개와생성기6개는CPU구조까지만검사했고본평가에서는추론하지않았다.
+
+원문TableI/보충TableIII를이미지로도대조한PAPER_COMPARISON.json을추가했다. 저자SGA의보고BA평균자체가95.1%이므로우리운영상97% gate실패를논문SGA성능실패로부르지않는다. 공개한상태의측정값과10seed논문평균은다르며동일재현으로인증하지않는다.

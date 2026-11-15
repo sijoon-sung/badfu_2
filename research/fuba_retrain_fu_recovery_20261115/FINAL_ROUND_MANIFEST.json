@@ -1,0 +1,2664 @@
+{
+  "method": "Retrain_from_scratch",
+  "rounds": [
+    {
+      "path": "rounds/round0001.pt",
+      "sha256": "635b50cdf4d6bb30b1715d4aa7e1773d24d72c20bbd89330bc0096d46757aa7d",
+      "bytes": 1820531,
+      "round": 1,
+      "clients": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        8,
+        12,
+        13
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9519,
+        "target_successes": 12,
+        "clean_target_bias": 18,
+        "CA_pct": 95.19,
+        "ASR_pct": 0.13294925769997784,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0002.pt",
+      "sha256": "c722459763d06a9c1b05a196b37345b1eccca31317ee853827266e3f877e0104",
+      "bytes": 1639759,
+      "round": 2,
+      "clients": [
+        3,
+        7,
+        9,
+        11,
+        15,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9802,
+        "target_successes": 22,
+        "clean_target_bias": 24,
+        "CA_pct": 98.02,
+        "ASR_pct": 0.2437403057832927,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0003.pt",
+      "sha256": "691693155880279755ecbccceaaa0b1aa5f38d049ebbdc8bb680bee8ae93996d",
+      "bytes": 1820467,
+      "round": 3,
+      "clients": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        14,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9817,
+        "target_successes": 11,
+        "clean_target_bias": 15,
+        "CA_pct": 98.17,
+        "ASR_pct": 0.12187015289164635,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0004.pt",
+      "sha256": "353d7898ab32c9b318e467daea06fd400b778d97bee896c2cf88e87dbcc901e8",
+      "bytes": 1820467,
+      "round": 4,
+      "clients": [
+        2,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9840,
+        "target_successes": 14,
+        "clean_target_bias": 14,
+        "CA_pct": 98.4,
+        "ASR_pct": 0.15510746731664082,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0005.pt",
+      "sha256": "d43aba8f83ad48ba586c51db2cd073900565db5dd7bafb8db975aac722f21470",
+      "bytes": 1820467,
+      "round": 5,
+      "clients": [
+        1,
+        6,
+        9,
+        11,
+        14,
+        15,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9852,
+        "target_successes": 7,
+        "clean_target_bias": 13,
+        "CA_pct": 98.52,
+        "ASR_pct": 0.07755373365832041,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0006.pt",
+      "sha256": "9107f0446c230d732c282936b0583db40ff957cf04eff3975f6159b13fe286fb",
+      "bytes": 1639695,
+      "round": 6,
+      "clients": [
+        6,
+        7,
+        10,
+        12,
+        14,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9871,
+        "target_successes": 8,
+        "clean_target_bias": 13,
+        "CA_pct": 98.71,
+        "ASR_pct": 0.08863283846665189,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0007.pt",
+      "sha256": "1ef0a05e83ba79cc851f1a3b05e1c7d6011f5bea00b125fc844396d59d98e099",
+      "bytes": 1640143,
+      "round": 7,
+      "clients": [
+        0,
+        5,
+        7,
+        9,
+        10,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9871,
+        "target_successes": 14,
+        "clean_target_bias": 17,
+        "CA_pct": 98.71,
+        "ASR_pct": 0.15510746731664082,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0008.pt",
+      "sha256": "c9aa86a68edf5ef7450701202f44c0e5c458df565e97c7265ee2bccb3bd49807",
+      "bytes": 1820595,
+      "round": 8,
+      "clients": [
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9878,
+        "target_successes": 8,
+        "clean_target_bias": 15,
+        "CA_pct": 98.78,
+        "ASR_pct": 0.08863283846665189,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0009.pt",
+      "sha256": "de94852622f0571cde49fd53195f5562504a46e8351a8e3f4afdac539e626f7a",
+      "bytes": 1640143,
+      "round": 9,
+      "clients": [
+        2,
+        5,
+        6,
+        10,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9877,
+        "target_successes": 12,
+        "clean_target_bias": 10,
+        "CA_pct": 98.77,
+        "ASR_pct": 0.13294925769997784,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0010.pt",
+      "sha256": "cbeb241c5e282cea555992b99454734e02a812168573e752196a3fda089f085d",
+      "bytes": 1640079,
+      "round": 10,
+      "clients": [
+        1,
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9876,
+        "target_successes": 17,
+        "clean_target_bias": 12,
+        "CA_pct": 98.76,
+        "ASR_pct": 0.18834478174163527,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0011.pt",
+      "sha256": "044806b85f9d1a0c542400913f3d9e63d6ac749e66bc4200ddab2b80862ad6a1",
+      "bytes": 1639759,
+      "round": 11,
+      "clients": [
+        5,
+        6,
+        7,
+        10,
+        13,
+        14,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9877,
+        "target_successes": 9,
+        "clean_target_bias": 11,
+        "CA_pct": 98.77,
+        "ASR_pct": 0.09971194327498338,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0012.pt",
+      "sha256": "ddb666e3da55c90ac142ada88329fa68d592afb839b95bd3aa53d3bda2716ed9",
+      "bytes": 1820915,
+      "round": 12,
+      "clients": [
+        2,
+        6,
+        8,
+        11,
+        13,
+        15,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9879,
+        "target_successes": 12,
+        "clean_target_bias": 13,
+        "CA_pct": 98.79,
+        "ASR_pct": 0.13294925769997784,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0013.pt",
+      "sha256": "8d3f6a5d3b8f34e10a0d2dafeaf795612559a55946ab325c3b9aace53ab35171",
+      "bytes": 1821171,
+      "round": 13,
+      "clients": [
+        1,
+        3,
+        5,
+        6,
+        10,
+        13,
+        14,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9877,
+        "target_successes": 25,
+        "clean_target_bias": 16,
+        "CA_pct": 98.77,
+        "ASR_pct": 0.27697762020828715,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0014.pt",
+      "sha256": "b19929bfdce3a92f77275c54edd7affacf9010d3213823768739628e818b4f4e",
+      "bytes": 1820787,
+      "round": 14,
+      "clients": [
+        3,
+        7,
+        8,
+        10,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9884,
+        "target_successes": 25,
+        "clean_target_bias": 11,
+        "CA_pct": 98.84,
+        "ASR_pct": 0.27697762020828715,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0015.pt",
+      "sha256": "277ead172d58150e0d777badfcb005bcbe908abb1c82925d05393fbd7027dd50",
+      "bytes": 1820915,
+      "round": 15,
+      "clients": [
+        1,
+        8,
+        9,
+        11,
+        12,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9888,
+        "target_successes": 28,
+        "clean_target_bias": 12,
+        "CA_pct": 98.88,
+        "ASR_pct": 0.31021493463328165,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0016.pt",
+      "sha256": "aa45bd2ae411729fd78cb126f5de59ef3dec4fbb6b2adc1a7f1108b9beb4c417",
+      "bytes": 1640143,
+      "round": 16,
+      "clients": [
+        1,
+        7,
+        10,
+        12,
+        14,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9893,
+        "target_successes": 37,
+        "clean_target_bias": 12,
+        "CA_pct": 98.93,
+        "ASR_pct": 0.409926877908265,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0017.pt",
+      "sha256": "a4b704b0b00dd8656a26a792171a2fddbd0a4ecec5704aae9ab022defe7c54b5",
+      "bytes": 1820851,
+      "round": 17,
+      "clients": [
+        2,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9887,
+        "target_successes": 29,
+        "clean_target_bias": 11,
+        "CA_pct": 98.87,
+        "ASR_pct": 0.3212940394416131,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0018.pt",
+      "sha256": "cef943b04afc63f8e4313c04e2c1073fe2258d3fc103ca44e0302d55648a8d96",
+      "bytes": 1820531,
+      "round": 18,
+      "clients": [
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9885,
+        "target_successes": 20,
+        "clean_target_bias": 12,
+        "CA_pct": 98.85,
+        "ASR_pct": 0.22158209616662974,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0019.pt",
+      "sha256": "eaa279c3412bc50e6597d0023c588c5e333e59bf4506950a1bd59b46450dd9d8",
+      "bytes": 1821491,
+      "round": 19,
+      "clients": [
+        0,
+        2,
+        3,
+        7,
+        11,
+        12,
+        15,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9884,
+        "target_successes": 117,
+        "clean_target_bias": 23,
+        "CA_pct": 98.84,
+        "ASR_pct": 1.2962552625747839,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0020.pt",
+      "sha256": "a755a5ec3cbac1b8778af35c17ea3627c99a3cc6847ece4e96f489893219ab63",
+      "bytes": 1821491,
+      "round": 20,
+      "clients": [
+        0,
+        1,
+        2,
+        6,
+        9,
+        12,
+        15,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9880,
+        "target_successes": 195,
+        "clean_target_bias": 18,
+        "CA_pct": 98.8,
+        "ASR_pct": 2.16042543762464,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0021.pt",
+      "sha256": "c9befff6331ecdb28c5daa451baff483c15ede87f0636ec9e304f83c53f04bf0",
+      "bytes": 1640079,
+      "round": 21,
+      "clients": [
+        0,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9886,
+        "target_successes": 73,
+        "clean_target_bias": 11,
+        "CA_pct": 98.86,
+        "ASR_pct": 0.8087746510081986,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0022.pt",
+      "sha256": "7fbb5752fd5ea7ae915c657ad1834e963b325b9523b6f7ce07b02b08f7c207c7",
+      "bytes": 1820531,
+      "round": 22,
+      "clients": [
+        5,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9892,
+        "target_successes": 30,
+        "clean_target_bias": 7,
+        "CA_pct": 98.92,
+        "ASR_pct": 0.33237314424994463,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0023.pt",
+      "sha256": "03b096690a14d3671feaa29eb977f114e67521934bdcbbb5cc3427cd4f3692c4",
+      "bytes": 1821811,
+      "round": 23,
+      "clients": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9885,
+        "target_successes": 774,
+        "clean_target_bias": 19,
+        "CA_pct": 98.85,
+        "ASR_pct": 8.57522712164857,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0024.pt",
+      "sha256": "d1cca692b3dbe74a29a7b89537cd4859510aeecf20f3c8306e994a6bb657c954",
+      "bytes": 1820915,
+      "round": 24,
+      "clients": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        12,
+        14,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9894,
+        "target_successes": 142,
+        "clean_target_bias": 7,
+        "CA_pct": 98.94,
+        "ASR_pct": 1.573232882783071,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0025.pt",
+      "sha256": "d179be8789058ba68a60294514379f17b5a09f8619471bcd622d4fc4c987c91b",
+      "bytes": 1821171,
+      "round": 25,
+      "clients": [
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9892,
+        "target_successes": 252,
+        "clean_target_bias": 9,
+        "CA_pct": 98.92,
+        "ASR_pct": 2.791934411699535,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0026.pt",
+      "sha256": "ecab71bb8c3ff480e347de1afb2d8d5c1f1295a288c2489cc1f8af2f8080981a",
+      "bytes": 1820915,
+      "round": 26,
+      "clients": [
+        0,
+        6,
+        7,
+        8,
+        11,
+        12,
+        14,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9894,
+        "target_successes": 154,
+        "clean_target_bias": 8,
+        "CA_pct": 98.94,
+        "ASR_pct": 1.706182140483049,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0027.pt",
+      "sha256": "1c1a71ed549a0bf9f6a0333641db8a3584c4959f78a1f78b0015e4a1960f3515",
+      "bytes": 1821171,
+      "round": 27,
+      "clients": [
+        0,
+        3,
+        6,
+        12,
+        13,
+        14,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9892,
+        "target_successes": 347,
+        "clean_target_bias": 10,
+        "CA_pct": 98.92,
+        "ASR_pct": 3.844449368491026,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0028.pt",
+      "sha256": "1a11764e56ac7a8a4bef61c53259f5834a909d30ce6e42215581114bb078c02c",
+      "bytes": 1821491,
+      "round": 28,
+      "clients": [
+        0,
+        1,
+        3,
+        8,
+        10,
+        11,
+        15,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9893,
+        "target_successes": 1421,
+        "clean_target_bias": 16,
+        "CA_pct": 98.93,
+        "ASR_pct": 15.743407932639043,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0029.pt",
+      "sha256": "3a4bf366a87667f17c314a640a11066a15d62b30ae4396b79ecfb865828bdfe4",
+      "bytes": 1821491,
+      "round": 29,
+      "clients": [
+        0,
+        1,
+        2,
+        7,
+        9,
+        13,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9902,
+        "target_successes": 1656,
+        "clean_target_bias": 14,
+        "CA_pct": 99.02,
+        "ASR_pct": 18.346997562596943,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0030.pt",
+      "sha256": "479ef32ee529be5e3b7df668630cce4abe6423fc1b9d9ec6b12e1aeba1d9b8e5",
+      "bytes": 1820915,
+      "round": 30,
+      "clients": [
+        3,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9899,
+        "target_successes": 565,
+        "clean_target_bias": 7,
+        "CA_pct": 98.99,
+        "ASR_pct": 6.25969421670729,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0031.pt",
+      "sha256": "4ef7e11156219504f1779285fb82fdc93c881c0e11ea3faf5edd2133133d400f",
+      "bytes": 1820851,
+      "round": 31,
+      "clients": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9901,
+        "target_successes": 247,
+        "clean_target_bias": 6,
+        "CA_pct": 99.01,
+        "ASR_pct": 2.7365388876578773,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0032.pt",
+      "sha256": "43ae8e9d97a6411a824b87b0918960ddaaf0d22833b9732a3c71d46f1f75e1e2",
+      "bytes": 1821235,
+      "round": 32,
+      "clients": [
+        1,
+        3,
+        12,
+        13,
+        14,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 629,
+        "clean_target_bias": 11,
+        "CA_pct": 99.04,
+        "ASR_pct": 6.968756924440505,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0033.pt",
+      "sha256": "83986a9c7176376d5a61a497018aa29d295b2ce7571b4babbe4eb6e6ebd98c4e",
+      "bytes": 1640143,
+      "round": 33,
+      "clients": [
+        2,
+        5,
+        7,
+        8,
+        12,
+        14,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9897,
+        "target_successes": 306,
+        "clean_target_bias": 10,
+        "CA_pct": 98.97,
+        "ASR_pct": 3.390206071349435,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0034.pt",
+      "sha256": "52c4f77565dcff366987a94c72c73011bbf0316a16ebfae1ba860f077fc54489",
+      "bytes": 1820851,
+      "round": 34,
+      "clients": [
+        0,
+        6,
+        7,
+        8,
+        10,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9898,
+        "target_successes": 406,
+        "clean_target_bias": 9,
+        "CA_pct": 98.98,
+        "ASR_pct": 4.498116552182584,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0035.pt",
+      "sha256": "8d0a62cbf4e7c8176b9fd80caa71112f914efa18a05bae316f202cdd138cbc29",
+      "bytes": 1821171,
+      "round": 35,
+      "clients": [
+        1,
+        2,
+        6,
+        8,
+        10,
+        12,
+        13,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 936,
+        "clean_target_bias": 10,
+        "CA_pct": 99.03,
+        "ASR_pct": 10.37004210059827,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0036.pt",
+      "sha256": "048990cafb9435937b1ee9958d807c03be9cb3e01e7c79bda6f81418012381d5",
+      "bytes": 1820851,
+      "round": 36,
+      "clients": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 527,
+        "clean_target_bias": 8,
+        "CA_pct": 99.07,
+        "ASR_pct": 5.838688233990694,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0037.pt",
+      "sha256": "01a2c17791791c1e682f93b86e9aee83623d7cacbd62a38f3dec97dedfe36b04",
+      "bytes": 1821235,
+      "round": 37,
+      "clients": [
+        1,
+        3,
+        8,
+        12,
+        13,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9897,
+        "target_successes": 1215,
+        "clean_target_bias": 14,
+        "CA_pct": 98.97,
+        "ASR_pct": 13.461112342122757,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0038.pt",
+      "sha256": "ca2f0d5aabb4bf73be09e717603b5e289dc58020f57854b55811a6610d73765c",
+      "bytes": 1821107,
+      "round": 38,
+      "clients": [
+        0,
+        2,
+        5,
+        6,
+        9,
+        10,
+        11,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9906,
+        "target_successes": 1442,
+        "clean_target_bias": 10,
+        "CA_pct": 99.06,
+        "ASR_pct": 15.976069133614004,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0039.pt",
+      "sha256": "edc1867b0896918a987f4c2b309053bf3ac23a382cc47638af34fb03376414e5",
+      "bytes": 1821235,
+      "round": 39,
+      "clients": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        12,
+        15,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 1584,
+        "clean_target_bias": 9,
+        "CA_pct": 99.03,
+        "ASR_pct": 17.549302016397075,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0040.pt",
+      "sha256": "c18d21dbad87c0ab913ca9da12b87b9f119b30a87cb8963bfb122c5d4a1e8b3b",
+      "bytes": 1820915,
+      "round": 40,
+      "clients": [
+        1,
+        5,
+        9,
+        11,
+        12,
+        14,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9900,
+        "target_successes": 1005,
+        "clean_target_bias": 9,
+        "CA_pct": 99.0,
+        "ASR_pct": 11.134500332373145,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0041.pt",
+      "sha256": "fe44dcb76261d2166c09ca9ba656366b7fe69192650aded3f1251a5b2529acac",
+      "bytes": 1820851,
+      "round": 41,
+      "clients": [
+        0,
+        5,
+        7,
+        8,
+        10,
+        12,
+        15,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9911,
+        "target_successes": 868,
+        "clean_target_bias": 8,
+        "CA_pct": 99.11,
+        "ASR_pct": 9.61666297363173,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0042.pt",
+      "sha256": "4647056509e99c3fd2e6e2cbd044b2d2fb98d2cf2e43d25ac5b727d9661b46af",
+      "bytes": 1821235,
+      "round": 42,
+      "clients": [
+        0,
+        1,
+        8,
+        12,
+        14,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 1488,
+        "clean_target_bias": 10,
+        "CA_pct": 99.07,
+        "ASR_pct": 16.485707954797252,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0043.pt",
+      "sha256": "20d909e44a8e2dbf1442be440b2da70af2bb91d76f76df92bc70a96d369d3f5b",
+      "bytes": 1640783,
+      "round": 43,
+      "clients": [
+        1,
+        2,
+        3,
+        8,
+        10,
+        12,
+        15
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9896,
+        "target_successes": 4585,
+        "clean_target_bias": 22,
+        "CA_pct": 98.96,
+        "ASR_pct": 50.79769554619987,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0044.pt",
+      "sha256": "19555afba9a839dc215f5ff0a8f855b1018233d7e057b3d2eb6c509d155180ee",
+      "bytes": 1640463,
+      "round": 44,
+      "clients": [
+        0,
+        3,
+        5,
+        8,
+        14,
+        15,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 2759,
+        "clean_target_bias": 10,
+        "CA_pct": 99.03,
+        "ASR_pct": 30.56725016618657,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0045.pt",
+      "sha256": "a605cd3028ab92a03df3e4d8931ca8e33762c955d431fd4a3ec2e83a4d7dee3b",
+      "bytes": 1821171,
+      "round": 45,
+      "clients": [
+        1,
+        3,
+        8,
+        9,
+        10,
+        14,
+        15,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9913,
+        "target_successes": 2360,
+        "clean_target_bias": 8,
+        "CA_pct": 99.13,
+        "ASR_pct": 26.146687347662308,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0046.pt",
+      "sha256": "46e267cbf32b7e96d3f98c792589508cb5fd1fe6f7c2299a57d2b994492f52da",
+      "bytes": 1821171,
+      "round": 46,
+      "clients": [
+        0,
+        3,
+        5,
+        11,
+        13,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 2351,
+        "clean_target_bias": 8,
+        "CA_pct": 99.03,
+        "ASR_pct": 26.046975404387325,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0047.pt",
+      "sha256": "fae7c9c2a9b663f61d80174cbd9dd3dcc6d97af90e964aeabe689da5a379fcf2",
+      "bytes": 1639695,
+      "round": 47,
+      "clients": [
+        6,
+        10,
+        12,
+        13,
+        14,
+        17,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9906,
+        "target_successes": 526,
+        "clean_target_bias": 7,
+        "CA_pct": 99.06,
+        "ASR_pct": 5.827609129182362,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0048.pt",
+      "sha256": "3d19bfdd05fe58fbf954c1d930f545dd7c69c724d1b9e5df0cd7b06497ef048b",
+      "bytes": 1640463,
+      "round": 48,
+      "clients": [
+        1,
+        3,
+        10,
+        11,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 2052,
+        "clean_target_bias": 13,
+        "CA_pct": 99.04,
+        "ASR_pct": 22.73432306669621,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0049.pt",
+      "sha256": "93d5bca27a7f0fe4e235ccdc0c717aa859025122e5568968cbc3a63dc15c19fb",
+      "bytes": 1821555,
+      "round": 49,
+      "clients": [
+        0,
+        1,
+        2,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9902,
+        "target_successes": 4249,
+        "clean_target_bias": 15,
+        "CA_pct": 99.02,
+        "ASR_pct": 47.07511633060049,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0050.pt",
+      "sha256": "995e00a53d9d0bd5ab63846b91021032118b3a96edeb8112eff48df0a323a5a2",
+      "bytes": 1640207,
+      "round": 50,
+      "clients": [
+        3,
+        5,
+        6,
+        7,
+        10,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 2010,
+        "clean_target_bias": 7,
+        "CA_pct": 99.09,
+        "ASR_pct": 22.26900066474629,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0051.pt",
+      "sha256": "83ee04d08648936aac1d4ac175c597faa9f6028487fae3dee9ab0dff64d328ad",
+      "bytes": 1640143,
+      "round": 51,
+      "clients": [
+        3,
+        5,
+        7,
+        9,
+        13,
+        14,
+        15
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9908,
+        "target_successes": 1525,
+        "clean_target_bias": 6,
+        "CA_pct": 99.08,
+        "ASR_pct": 16.895634832705518,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0052.pt",
+      "sha256": "d8122c0734df00390cb41a897fd0fe449d9d28083bde9f26b3d9a22d5ccfd0b9",
+      "bytes": 1820915,
+      "round": 52,
+      "clients": [
+        3,
+        5,
+        6,
+        7,
+        14,
+        15,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 1798,
+        "clean_target_bias": 6,
+        "CA_pct": 99.09,
+        "ASR_pct": 19.920230445380014,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0053.pt",
+      "sha256": "a7e856e0576a3d02dd9869ffd63ffa1cabaecf089d842b002e245441d714e04f",
+      "bytes": 1820915,
+      "round": 53,
+      "clients": [
+        3,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 1285,
+        "clean_target_bias": 8,
+        "CA_pct": 99.03,
+        "ASR_pct": 14.23664967870596,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0054.pt",
+      "sha256": "dae6a3b39bf7c8b6216fb26a3c39317061a86e25e8f17e365f3ab374437812b6",
+      "bytes": 1640079,
+      "round": 54,
+      "clients": [
+        1,
+        7,
+        8,
+        11,
+        12,
+        14,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9911,
+        "target_successes": 1511,
+        "clean_target_bias": 9,
+        "CA_pct": 99.11,
+        "ASR_pct": 16.740527365388875,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0055.pt",
+      "sha256": "4f36dfa7a8be2fe098a98318cf044d9913d1387d7884d68d618ca698e5798cd6",
+      "bytes": 1821427,
+      "round": 55,
+      "clients": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        11,
+        13,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 3832,
+        "clean_target_bias": 11,
+        "CA_pct": 99.04,
+        "ASR_pct": 42.455129625526254,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0056.pt",
+      "sha256": "be4d20febbcb8f728a8a55f30fc77012ad989276dd8522297b142c04aea6968f",
+      "bytes": 1640463,
+      "round": 56,
+      "clients": [
+        0,
+        3,
+        5,
+        9,
+        10,
+        13,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9914,
+        "target_successes": 3050,
+        "clean_target_bias": 7,
+        "CA_pct": 99.14,
+        "ASR_pct": 33.791269665411036,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0057.pt",
+      "sha256": "7c4b01b2fad37e9012370312b963352548f3d386ee883f0371523fe8e9b255d9",
+      "bytes": 1639759,
+      "round": 57,
+      "clients": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 785,
+        "clean_target_bias": 3,
+        "CA_pct": 99.09,
+        "ASR_pct": 8.697097274540218,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0058.pt",
+      "sha256": "af376fab1351295e27d8ac4416e1a3abdb81fe806eb5228aa62a9ece1b1737a7",
+      "bytes": 1640207,
+      "round": 58,
+      "clients": [
+        0,
+        5,
+        8,
+        10,
+        12,
+        15,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9912,
+        "target_successes": 1505,
+        "clean_target_bias": 5,
+        "CA_pct": 99.12,
+        "ASR_pct": 16.674052736538886,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0059.pt",
+      "sha256": "501a55e71a2494842ed34204aa831e081cc0c95a3120c1f9f768977fe61ab971",
+      "bytes": 1640463,
+      "round": 59,
+      "clients": [
+        0,
+        3,
+        5,
+        9,
+        12,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9914,
+        "target_successes": 2930,
+        "clean_target_bias": 8,
+        "CA_pct": 99.14,
+        "ASR_pct": 32.46177708841125,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0060.pt",
+      "sha256": "031830f74c6b09daae6fa42e123dcf3e5c007ff4855d81e5b5e647e9f49f3c6c",
+      "bytes": 1640143,
+      "round": 60,
+      "clients": [
+        0,
+        5,
+        6,
+        7,
+        10,
+        13,
+        15
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9918,
+        "target_successes": 1824,
+        "clean_target_bias": 4,
+        "CA_pct": 99.18,
+        "ASR_pct": 20.20828717039663,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0061.pt",
+      "sha256": "281f33b8ec0b9b6515a81350dbc36a2e7b5f7d39a9bbf4f44ab8d2684c3609aa",
+      "bytes": 1640143,
+      "round": 61,
+      "clients": [
+        2,
+        5,
+        7,
+        8,
+        12,
+        15,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9906,
+        "target_successes": 1332,
+        "clean_target_bias": 5,
+        "CA_pct": 99.06,
+        "ASR_pct": 14.75736760469754,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0062.pt",
+      "sha256": "3f38c14646b5d9a3e03045d8e6bfde3d169da4d8ee626216a56ad27fe89d87e6",
+      "bytes": 1820851,
+      "round": 62,
+      "clients": [
+        1,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9917,
+        "target_successes": 1587,
+        "clean_target_bias": 5,
+        "CA_pct": 99.17,
+        "ASR_pct": 17.58253933082207,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0063.pt",
+      "sha256": "59b4f0c161191af96c877bbb25cf0037761c2d8ef8984ac3944aebd561a0e05b",
+      "bytes": 1640079,
+      "round": 63,
+      "clients": [
+        0,
+        7,
+        11,
+        13,
+        14,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9912,
+        "target_successes": 1725,
+        "clean_target_bias": 7,
+        "CA_pct": 99.12,
+        "ASR_pct": 19.111455794371814,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0064.pt",
+      "sha256": "78e32ff98adb7f8e3e840899b4c9fa4db2ce7f8c8d8b900fa0feef3fd0237131",
+      "bytes": 1821555,
+      "round": 64,
+      "clients": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        11,
+        12,
+        14
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9894,
+        "target_successes": 4524,
+        "clean_target_bias": 10,
+        "CA_pct": 98.94,
+        "ASR_pct": 50.121870152891645,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0065.pt",
+      "sha256": "06d67a9ee8071c78a07a80b95945b2ad2670020e262006a657341263456d5eeb",
+      "bytes": 1640463,
+      "round": 65,
+      "clients": [
+        1,
+        2,
+        5,
+        7,
+        10,
+        13,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9896,
+        "target_successes": 4677,
+        "clean_target_bias": 9,
+        "CA_pct": 98.96,
+        "ASR_pct": 51.816973188566365,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0066.pt",
+      "sha256": "84ddd212d6498fff32f054f52b0c36aef9f05b21a5967600e6d226d28bdb3524",
+      "bytes": 1640079,
+      "round": 66,
+      "clients": [
+        2,
+        5,
+        9,
+        10,
+        14,
+        15,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9906,
+        "target_successes": 2749,
+        "clean_target_bias": 8,
+        "CA_pct": 99.06,
+        "ASR_pct": 30.456459118103258,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0067.pt",
+      "sha256": "1b2c6c33df8c432422e630d2891d19f2d811a99a9cc49785c6d9071997c285af",
+      "bytes": 1639631,
+      "round": 67,
+      "clients": [
+        6,
+        7,
+        8,
+        13,
+        14,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 972,
+        "clean_target_bias": 6,
+        "CA_pct": 99.07,
+        "ASR_pct": 10.768889873698205,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0068.pt",
+      "sha256": "b4148c44cfe42155d0d822c4142a3e2475dc87275a5ce06ecde180569394129e",
+      "bytes": 1820915,
+      "round": 68,
+      "clients": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9914,
+        "target_successes": 2134,
+        "clean_target_bias": 7,
+        "CA_pct": 99.14,
+        "ASR_pct": 23.642809660979392,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0069.pt",
+      "sha256": "cfc1340a0c326b2c42422f0c2ce3987d0ac0326f446aaacf644e48b28793387d",
+      "bytes": 1821171,
+      "round": 69,
+      "clients": [
+        2,
+        3,
+        6,
+        8,
+        10,
+        14,
+        15,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 3952,
+        "clean_target_bias": 11,
+        "CA_pct": 99.03,
+        "ASR_pct": 43.78462220252604,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0070.pt",
+      "sha256": "3bc526185c80970564a89c8df8a8706de833d3089b45f11beaaabbfafae3bc93",
+      "bytes": 1821491,
+      "round": 70,
+      "clients": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        14,
+        15,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9897,
+        "target_successes": 6092,
+        "clean_target_bias": 12,
+        "CA_pct": 98.97,
+        "ASR_pct": 67.49390649235542,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0071.pt",
+      "sha256": "f6a9808c21d4941886f820ba953b92acc9116f3fe55ec536578f6b423edf4e0f",
+      "bytes": 1640719,
+      "round": 71,
+      "clients": [
+        0,
+        1,
+        2,
+        8,
+        9,
+        12,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9890,
+        "target_successes": 6946,
+        "clean_target_bias": 13,
+        "CA_pct": 98.9,
+        "ASR_pct": 76.9554619986705,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0072.pt",
+      "sha256": "859aa49bfd44748a7b5df73e3c7a4620f12e4a870fd822d142b473227b06a09e",
+      "bytes": 1640079,
+      "round": 72,
+      "clients": [
+        3,
+        5,
+        6,
+        8,
+        11,
+        14,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 3114,
+        "clean_target_bias": 7,
+        "CA_pct": 99.04,
+        "ASR_pct": 34.50033237314425,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0073.pt",
+      "sha256": "6ef2dd0aba52b735d41b2c4b8f23a9aad8faca2ea5a9f0ed829bbc3c0e2b82ce",
+      "bytes": 1640527,
+      "round": 73,
+      "clients": [
+        1,
+        2,
+        6,
+        8,
+        10,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 5533,
+        "clean_target_bias": 11,
+        "CA_pct": 99.03,
+        "ASR_pct": 61.300686904498114,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0074.pt",
+      "sha256": "9a5a12e3302855aed7353343f085b6f911c36f9848a22cfcb03493d78ae20760",
+      "bytes": 1639695,
+      "round": 74,
+      "clients": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 1670,
+        "clean_target_bias": 6,
+        "CA_pct": 99.09,
+        "ASR_pct": 18.502105029913583,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0075.pt",
+      "sha256": "68018f0642aee7701e025cd31bf949c5a365866ae5316893145531de03ec9ed9",
+      "bytes": 1640719,
+      "round": 75,
+      "clients": [
+        0,
+        1,
+        3,
+        7,
+        9,
+        16,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9892,
+        "target_successes": 7000,
+        "clean_target_bias": 13,
+        "CA_pct": 98.92,
+        "ASR_pct": 77.55373365832041,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0076.pt",
+      "sha256": "2ca2035d74aae12ff065d136520d86f3c44119a357d0dce8c2ad034a7ed08f6b",
+      "bytes": 1640399,
+      "round": 76,
+      "clients": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        11,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9902,
+        "target_successes": 5965,
+        "clean_target_bias": 10,
+        "CA_pct": 99.02,
+        "ASR_pct": 66.08686018169732,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0077.pt",
+      "sha256": "f38ad9dec593c7434dae0b99303cdd150b07a5f692c43a79dec7e828c664d335",
+      "bytes": 1820851,
+      "round": 77,
+      "clients": [
+        2,
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9911,
+        "target_successes": 4249,
+        "clean_target_bias": 7,
+        "CA_pct": 99.11,
+        "ASR_pct": 47.07511633060049,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0078.pt",
+      "sha256": "29eaf434450db29f1993870daafd1f8f4d932ff259a5a38f3288bd0a83dd7a16",
+      "bytes": 1821171,
+      "round": 78,
+      "clients": [
+        1,
+        3,
+        5,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9897,
+        "target_successes": 4998,
+        "clean_target_bias": 10,
+        "CA_pct": 98.97,
+        "ASR_pct": 55.37336583204077,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0079.pt",
+      "sha256": "704862e0081bf33a48623ab270a307c930e67146670ab3c39b79b366c3a19e7d",
+      "bytes": 1820851,
+      "round": 79,
+      "clients": [
+        0,
+        6,
+        9,
+        10,
+        11,
+        13,
+        17,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9903,
+        "target_successes": 3014,
+        "clean_target_bias": 7,
+        "CA_pct": 99.03,
+        "ASR_pct": 33.3924218923111,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0080.pt",
+      "sha256": "6fa4c61ea49fead79e0c972d801a0f1cded9a8db152a2bef124eb60eaf872a3b",
+      "bytes": 1821491,
+      "round": 80,
+      "clients": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        13,
+        15,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9898,
+        "target_successes": 6384,
+        "clean_target_bias": 11,
+        "CA_pct": 98.98,
+        "ASR_pct": 70.7290050963882,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0081.pt",
+      "sha256": "8e91ee0dc7f6da71719d223cb8b4d2175158903657d4cca00a545461a0414dc0",
+      "bytes": 1821171,
+      "round": 81,
+      "clients": [
+        0,
+        2,
+        5,
+        6,
+        7,
+        11,
+        14,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9911,
+        "target_successes": 5421,
+        "clean_target_bias": 10,
+        "CA_pct": 99.11,
+        "ASR_pct": 60.05982716596499,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0082.pt",
+      "sha256": "d278ca3ecee69dc781c5dce4ea63ee075f5ad948b608dc236b959294655d92f5",
+      "bytes": 1820851,
+      "round": 82,
+      "clients": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 3907,
+        "clean_target_bias": 7,
+        "CA_pct": 99.04,
+        "ASR_pct": 43.28606248615112,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0083.pt",
+      "sha256": "bf011ec4580e7173c807bd7ca4da20fbcfec426bce136f3b99a91a0e1f926cd1",
+      "bytes": 1820851,
+      "round": 83,
+      "clients": [
+        1,
+        6,
+        7,
+        9,
+        12,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9908,
+        "target_successes": 4006,
+        "clean_target_bias": 6,
+        "CA_pct": 99.08,
+        "ASR_pct": 44.38289386217593,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0084.pt",
+      "sha256": "a7c9b9d1928e0f9b546472978b3504e1e0cf8ffd25d1a386be54b80dad99edc7",
+      "bytes": 1640335,
+      "round": 84,
+      "clients": [
+        0,
+        2,
+        7,
+        10,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9901,
+        "target_successes": 5766,
+        "clean_target_bias": 10,
+        "CA_pct": 99.01,
+        "ASR_pct": 63.882118324839354,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0085.pt",
+      "sha256": "f7338e5f2b315530497b548396905aad4d16df705dcbed7893dc8e56392b95a9",
+      "bytes": 1820851,
+      "round": 85,
+      "clients": [
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9913,
+        "target_successes": 4233,
+        "clean_target_bias": 5,
+        "CA_pct": 99.13,
+        "ASR_pct": 46.897850653667184,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0086.pt",
+      "sha256": "3f3ad59744a52a564205e888913daecaff37ea59196fb906ddade56d7845c20a",
+      "bytes": 1640719,
+      "round": 86,
+      "clients": [
+        0,
+        1,
+        3,
+        11,
+        12,
+        17,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9894,
+        "target_successes": 7586,
+        "clean_target_bias": 12,
+        "CA_pct": 98.94,
+        "ASR_pct": 84.04608907600266,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0087.pt",
+      "sha256": "174425dd7c45e155aa4c71d7254eb578b8f31d42fd5f8ed8cb009fea3b21580b",
+      "bytes": 1821171,
+      "round": 87,
+      "clients": [
+        0,
+        2,
+        5,
+        6,
+        12,
+        13,
+        17,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 6172,
+        "clean_target_bias": 8,
+        "CA_pct": 99.07,
+        "ASR_pct": 68.38023487702193,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0088.pt",
+      "sha256": "fe32c58661c53a8dd48c179a584acdb6f0e5beca5806c04713064ec658fa251d",
+      "bytes": 1821171,
+      "round": 88,
+      "clients": [
+        0,
+        2,
+        9,
+        11,
+        12,
+        13,
+        14,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9897,
+        "target_successes": 5504,
+        "clean_target_bias": 10,
+        "CA_pct": 98.97,
+        "ASR_pct": 60.979392865056504,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0089.pt",
+      "sha256": "336cef7d386a7636cf03509c40527c88b113f32b11245b6ef2d0a066983d32ea",
+      "bytes": 1820851,
+      "round": 89,
+      "clients": [
+        2,
+        9,
+        10,
+        11,
+        13,
+        15,
+        16,
+        17
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 4445,
+        "clean_target_bias": 7,
+        "CA_pct": 99.04,
+        "ASR_pct": 49.24662087303346,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0090.pt",
+      "sha256": "a361bba4cc7e59fd3a14eafe3dd82fa035e2e42ca7504a94faa277e68e90895e",
+      "bytes": 1640143,
+      "round": 90,
+      "clients": [
+        3,
+        5,
+        6,
+        10,
+        12,
+        14,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9901,
+        "target_successes": 3722,
+        "clean_target_bias": 8,
+        "CA_pct": 99.01,
+        "ASR_pct": 41.23642809660979,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0091.pt",
+      "sha256": "348bc47739e458fef6100c973791395d230d605401864f334ca7380c02def86e",
+      "bytes": 1640463,
+      "round": 91,
+      "clients": [
+        1,
+        2,
+        5,
+        9,
+        16,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9898,
+        "target_successes": 5764,
+        "clean_target_bias": 10,
+        "CA_pct": 98.98,
+        "ASR_pct": 63.85996011522269,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0092.pt",
+      "sha256": "746d963762761d73c3764b79cba1ff56a98e90b981dcbbb0dc734b33cc70c378",
+      "bytes": 1821555,
+      "round": 92,
+      "clients": [
+        0,
+        1,
+        3,
+        7,
+        11,
+        16,
+        17,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9898,
+        "target_successes": 7077,
+        "clean_target_bias": 12,
+        "CA_pct": 98.98,
+        "ASR_pct": 78.40682472856193,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0093.pt",
+      "sha256": "9d93291025fd453504111a17c280fa3288cd6792a0d7a125925beb50f1ae7870",
+      "bytes": 1821235,
+      "round": 93,
+      "clients": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        12,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 5825,
+        "clean_target_bias": 10,
+        "CA_pct": 99.09,
+        "ASR_pct": 64.5357855085309,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0094.pt",
+      "sha256": "f44193a2b31f82eb0d2207b2b5d1d3445137a7b7ae8440fc9226940cdbecc4ba",
+      "bytes": 1640143,
+      "round": 94,
+      "clients": [
+        0,
+        8,
+        10,
+        13,
+        15,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9904,
+        "target_successes": 5167,
+        "clean_target_bias": 8,
+        "CA_pct": 99.04,
+        "ASR_pct": 57.24573454464879,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0095.pt",
+      "sha256": "07c5654712e31085cb5045db76cd6be88ffd58b962d328119c093bdf9baae50d",
+      "bytes": 1640527,
+      "round": 95,
+      "clients": [
+        1,
+        3,
+        5,
+        7,
+        12,
+        17,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9907,
+        "target_successes": 5953,
+        "clean_target_bias": 5,
+        "CA_pct": 99.07,
+        "ASR_pct": 65.95391092399734,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0096.pt",
+      "sha256": "dea63f62510578c527d3f87d196d33ad11295df220e84144cf60da6713504d42",
+      "bytes": 1820531,
+      "round": 96,
+      "clients": [
+        8,
+        10,
+        11,
+        12,
+        16,
+        17,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9913,
+        "target_successes": 2521,
+        "clean_target_bias": 4,
+        "CA_pct": 99.13,
+        "ASR_pct": 27.93042322180368,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0097.pt",
+      "sha256": "880335bb9343993d629757a42668d9a7ab5c4b4b787447d38f356a411531bd26",
+      "bytes": 1640719,
+      "round": 97,
+      "clients": [
+        1,
+        2,
+        3,
+        5,
+        11,
+        16,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9895,
+        "target_successes": 6926,
+        "clean_target_bias": 12,
+        "CA_pct": 98.95,
+        "ASR_pct": 76.73387990250387,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0098.pt",
+      "sha256": "db39a887e08c070bfcd92f5bd049b9306db546fc8381f94cef74a00b0f9cfef7",
+      "bytes": 1640143,
+      "round": 98,
+      "clients": [
+        1,
+        5,
+        10,
+        12,
+        13,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9909,
+        "target_successes": 4673,
+        "clean_target_bias": 6,
+        "CA_pct": 99.09,
+        "ASR_pct": 51.77265676933304,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0099.pt",
+      "sha256": "f370f364e9fe676bdb8f97d7c5801fa953146b2c1f925d554143ad8ad70d57f0",
+      "bytes": 1640399,
+      "round": 99,
+      "clients": [
+        2,
+        3,
+        6,
+        7,
+        9,
+        13,
+        16
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9906,
+        "target_successes": 6142,
+        "clean_target_bias": 8,
+        "CA_pct": 99.06,
+        "ASR_pct": 68.04786173277199,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    },
+    {
+      "path": "rounds/round0100.pt",
+      "sha256": "16be78397f339b96cce2f442133a02efb4729e774f0fd9a179a49812f7b6e087",
+      "bytes": 1820851,
+      "round": 100,
+      "clients": [
+        1,
+        5,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9900,
+        "target_successes": 4871,
+        "clean_target_bias": 6,
+        "CA_pct": 99.0,
+        "ASR_pct": 53.96631952138267,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    }
+  ]
+}

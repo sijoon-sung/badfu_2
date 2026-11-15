@@ -1,0 +1,83 @@
+{
+  "state": "read_only_probe_complete",
+  "official_download_page": "https://www.image-net.org/challenges/LSVRC/2012/2012-downloads.php",
+  "scopes": [
+    {
+      "path": "D:\\data",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "D:\\datasets",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "D:\\imagenet",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "D:\\ImageNet",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "D:\\tmpfs",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "D:\\ILSVRC2012",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "C:\\Users\\DISLAB\\Downloads",
+      "exists": true,
+      "max_depth": 2,
+      "entries_seen": 136,
+      "entry_cap_reached": false
+    },
+    {
+      "path": "C:\\Users\\DISLAB\\datasets",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "C:\\Users\\DISLAB\\data",
+      "exists": false,
+      "max_depth": 2
+    },
+    {
+      "path": "C:\\Users\\DISLAB\\.cache\\huggingface\\datasets",
+      "exists": false,
+      "max_depth": 2
+    }
+  ],
+  "matches": [],
+  "official_headers": [
+    {
+      "url": "https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_train.tar",
+      "error": "URLError: <urlopen error timed out>",
+      "body_bytes_read": 0
+    },
+    {
+      "url": "https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar",
+      "error": "URLError: <urlopen error timed out>",
+      "body_bytes_read": 0
+    },
+    {
+      "url": "https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz",
+      "error": "URLError: <urlopen error timed out>",
+      "body_bytes_read": 0
+    }
+  ],
+  "image_data_downloaded_bytes": 0,
+  "disk_free_bytes": {
+    "C:/": 73110753280,
+    "D:/": 548714242048
+  },
+  "absence_outside_scopes_not_proven": true,
+  "model_training_or_inference": 0
+}

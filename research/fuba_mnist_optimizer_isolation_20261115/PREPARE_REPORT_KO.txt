@@ -1,0 +1,4 @@
+R02/R03/D08/D15. 논문 본문SGD와 실험문단Adam을 분리하는 MNIST 실제FU 마지막역할 진단을 준비했다.
+기존 CIFAR/IBA 실패는 prior_CIFAR_optimizer에 원문 그대로 연결했다. 이번 새 관측은 같은 정상7개 제출과 합친 집계 효과이며 아직 GPU 결과는 없다.
+DISLAB CPU에서 명시SGD가 원core와 모델/optimizer/loader-RNG까지 일치했고, Adam도 독립 loop와 일치했다. 고정양의gradient계수 예제에서는 Adam의moment 정규화가계수차이를 거의상쇄했다. 이는 실제공격성능 주장이 아니다.
+기존 FU 전용catalogue와 전체862파일 guard,선택입력해시,round100/client1 및정상7명,원집계가통과했다. INPUT_BINDING/PREPARED의 명시case/payload를따르며 기존100R모델은불변이다. CPU/준비만완료, 실제새embedding/평가/전달은미완료다. Adam 자동채택/full100R는 허용하지 않는다.

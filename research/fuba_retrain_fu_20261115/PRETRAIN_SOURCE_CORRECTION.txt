@@ -1,0 +1,1 @@
+학습시작전 수식 표기·FP32연산 일치 정정: gamma1은수학적으로embedded와같지만실제제출도기존core.affine의incoming+1*(embedded-incoming)을호출하도록했다. old run/PROTOCOL/FREEZE는pretrain_v1에보존한다. 최초train은아직없고prepare에서검증한초기값/분할/코호트/이전모델/원core는바뀌지않았다. 완료prepare를재실행하지않는다. 독립제출감사는이실제affine식을검사한다.

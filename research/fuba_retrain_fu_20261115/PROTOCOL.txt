@@ -1,0 +1,18 @@
+가설: 기존MNIST/DBA100R의동일원초기값·분할에서공모자4를제외하고,잔류Adv-attacker가논문각주4의gamma=1로재학습에참여하면100R후CA>=97/ASR>=60인실제FU후모델을얻는다.
+관련 R02/R03/D08/D15 및원 fuba_reference_mnist_dba_20261031/FINAL_REPORT_KO.txt, fuba_stage_localization_20261031/REPORT_KO.txt, fuba_fu_source_map_20261115의원문/소스감사. 기존KD10후32.35098604%와새Retrain후성능을방법별로구분한다. 새관측은실제로공모자가제외된전체100R·개별참여/학습/제출/집계/전후모델이며저자post파일평가가아니다.
+
+입력과목표범위
+case fuba.reference.mnist.dba.s20261023.pre100.post.kd10을diagnostic으로공식catalogue/외부seal에서선택한다. 그case의검증된FULL_REMOTE_RAW_MANIFEST를통해initial.pt/SPLIT/PROFILE/Net/core를해시고정하고before.pt를그대로복사한다. 원본은수정하지않는다.
+삭제전원본CA99.11/ASR30.60048748는억제실패다. 따라서새post가고ASR이더라도승인잠복전후쌍/전체논문재현으로승격하지않는다. 이를새gamma pilot의성공후속100R와혼동하지않는다. 이재학습FU는과거KD/FUBAseedqueue의재시작이아니라사용자가요청한전체FU구현의별도미실행방법이다.
+
+원문/실행선택
+Main p2898–2899의Retrain from Scratch와footnote4에따라원초기모델에서잔류클라이언트를학습하고Adv-attacker gamma=1을고정한다. 원pre100R와같은MNIST/Net/IID분할/seed20261023/partition20261020/100R/E50/B64/lr.001/고정poison810·train2700·validation300/core를유지한다. 원pre의5Rwarmup도유지한다. 본문은warmup수를명시하지않고공개FLdefault는5,공개FUwrapper는1이므로이선택을명시한다.
+원100R와같은원래20명중8명sample을만들고공모자4를제외한다. 따라서각round실제참여수7또는8에따라균등집계한다. 공개retrain.py의삭제client제거형참여선택과같다. 탈퇴자의빈모델·zero update를추가하지않는다.
+공격자0..3은warmup후Algorithm1의anchor/benign-anchor/재가중embedding을각50epoch계산하고gamma1의원affine식 incoming+1*(embedded-incoming)으로제출한다. gamma검색을생략하므로선택에쓰지않는representative를추가훈련하지않는다. 원core의Adam·Adam·SGD정책을유지한다. 정상클라이언트는3000장/50epoch/Adam. 공모자4는자료로드·학습·집계에들어가지않는다. test자료/실제ASR로epoch·gamma·참여자를선택하지않는다.
+이는선언된Algorithm1/2해석의한시드FUbaseline이다. 공개FUwrapper의40%poison/10epoch/weight1로묵시대체하지않는다. 논문본문실험Adam과수식SGD간기존차이는보존하며저자공인유일실행이라고하지않는다.
+
+운영/중단/검증
+새D:/FUBA_RETRAIN_FU_20261115에서만생성한다. 기존GPU인과비교/다른trainer가종료되고현재process/util<=5/free>=2500MiB/RAM>=3GiB/disk>=10GiB와source/inputguards통과후한번만train을실행한다. 다른앱은종료하지않는다. deterministic계약의CUBLAS/torch/cudnn/TF32설정을유지한다.
+정확100R를계산하며중간성능으로조건을바꾸거나선택종료하지않는다. source/data/hash/nonfinite/저장/집계fault는미커밋단계를보존하고중단한다. 성능실패시시드/epoch/상수자동재시도없음.
+모든phase모델/optimizer/RNG/50epoch로그/실제참여자/제출/집계/roundreadback과최종after.pt를남긴다. 실제4번미참여,7/8명가중치,원초기값연결,全epoch·제출식을CPU감사하고최종10000clean/9026non-target를별도평가함수로검사한다. 원before의완료된평가는봉인된정수기록을재사용하며중복실행하지않는다. 전후pt/소스/로그를양쪽보존하고새진단case로연결한다.
+post게이트는후모델의제한성공기준이다. 논문TableI Retrain MNIST/DBA 평균CA99.2/ASR100(10seeds)와의차이를별도보고한다. 기존pre실패때문에이한실행만으로전체성공을선언하지않는다. D08/D15큰정상nonIID반례는여전히미해결이고새탐지법을제안하지않는다.

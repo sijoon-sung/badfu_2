@@ -1,0 +1,90 @@
+{
+  "state": "complete",
+  "rows": {
+    "algorithm_sgd": {
+      "local": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9637,
+        "target_successes": 9026,
+        "clean_target_bias": 208,
+        "CA_pct": 96.37,
+        "ASR_pct": 100.0,
+        "trigger_role": 4
+      },
+      "aggregate": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9900,
+        "target_successes": 4871,
+        "clean_target_bias": 6,
+        "CA_pct": 99.0,
+        "ASR_pct": 53.96631952138267,
+        "trigger_role": 4
+      },
+      "phase": {
+        "path": "algorithm_sgd/phase03.pt",
+        "sha256": "b5da44a8ca6b50373e16614cc05f5ec32ae93928564ea4030135c2758cc49e42",
+        "bytes": 211766
+      },
+      "aggregate_file": {
+        "path": "algorithm_sgd/aggregate.pt",
+        "sha256": "74451cfff166d6e49e19710a1b7da106fe04eadd949b723074b4f5f8d69b59d1",
+        "bytes": 1804215
+      },
+      "original_phase3_exact": true,
+      "original_after_exact": true
+    },
+    "experimental_adam": {
+      "local": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9725,
+        "target_successes": 9026,
+        "clean_target_bias": 151,
+        "CA_pct": 97.25,
+        "ASR_pct": 100.0,
+        "trigger_role": 4
+      },
+      "aggregate": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9901,
+        "target_successes": 5142,
+        "clean_target_bias": 7,
+        "CA_pct": 99.01,
+        "ASR_pct": 56.968756924440505,
+        "trigger_role": 4
+      },
+      "phase": {
+        "path": "experimental_adam/phase03.pt",
+        "sha256": "09b50b384f2ee4c5e58d66e2b54b34a31c63b1e9054eb993f8c0341348225ffb",
+        "bytes": 574812
+      },
+      "aggregate_file": {
+        "path": "experimental_adam/aggregate.pt",
+        "sha256": "5be50c410b2718ae713e9354f81ba6eb98d7e52060a89e3530c19c8a6389a55b",
+        "bytes": 1804215
+      },
+      "original_phase3_exact": false,
+      "original_after_exact": false
+    }
+  },
+  "weights_file": {
+    "path": "weights.pt",
+    "sha256": "5575ac875ee4a2b63e07afa4039693070f8c1422029facd069f8d8000fc6e1a6",
+    "bytes": 181189
+  },
+  "checks": {
+    "ASR_gain_20pp": false,
+    "CA97": true,
+    "CA_drop_at_most_1pp": true,
+    "clean_target_bias_increase_at_most_1pp": true
+  },
+  "hypothesis_supported": false,
+  "same_epoch_order_hashes": true,
+  "full_paper_reproduced": false,
+  "new_full_FU": false,
+  "algorithm_SGD_remains_conformance_target": true,
+  "independent_validation_pending": true
+}

@@ -1,0 +1,32 @@
+{
+  "arm": "fullbatch",
+  "rounds": [
+    {
+      "path": "rounds/round0023.pt",
+      "sha256": "cf480d9886a9f73649ac35ffa53675cbc0635f7bb06469b8ccc2dee232993dc6",
+      "bytes": 1826803,
+      "round": 23,
+      "clients": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9887,
+        "target_successes": 1311,
+        "clean_target_bias": 21,
+        "CA_pct": 98.87,
+        "ASR_pct": 14.524706403722579,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    }
+  ]
+}

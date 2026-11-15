@@ -1,0 +1,5 @@
+실행 운영만 보강 — R02/R03/D08/D15
+
+기존 PROTOCOL/FREEZE/CPU_CONTRACT/PREPARED와 PRETRAIN_SOURCE_CORRECTION의 FU 선행조건을 유지한다. execute_once는 실제 복구FU100R의 양쪽 전달·catalogue guards 이후에만 호출한다. 아직 task를 등록하거나 GPU를 시작하지 않는다.
+SSH 수명과 분리된 trigger 없는 일회성 Windows task에서 execute_once.ps1을 실행한다. 자동 retry는0이다. 15회연속GPU util<=5/free>=2500MiB후 각 원 소스의 guard를 그대로 통과해야 한다. 고정10R treatment→CPU 전검증→10모델독립평가→198gamma점독립검사→export의 한정된 계산 pipeline이다. 완성된 고정표본 대조는 학습하지 않는다.
+운영로그는 D:/FUBA_BATCH_REDRAW_OPS_20261115 및 D:/FUBA_BATCH_REDRAW_LAUNCH_20261115에 두어 내보내는 manifest의 파일이 봉인 중 바뀌지 않게 한다. 전체 epoch/phase/round/gamma/mask 기록은 원 experiment root에 그대로 남는다. 이미 시작된 finite stage를 발견하면 전체 pipeline을 거부하고 오류시 완료 단계는 재실행하지 않는다. remote_complete 뒤에도 로컬 전체 패킷 해시·모델 전송검사·최종 판정/PR가 남는다. 이 운영 보강은 학습/평가 조건 변경이 아니다.

@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "upstream_blob": "f08a854350b32c7c8c55d021e60834468ea2e0a0",
+  "reference_SHA256": "ccb48ebd673ec75e6c3ac291d319c0f37c1323cc0d607f301c82379f35710f2e",
+  "observed": {
+    "fedavg": {
+      "weight": 13.600000381469727,
+      "counter": 200,
+      "exact_reference": true
+    },
+    "median": {
+      "weight": 4.0,
+      "counter": 8,
+      "exact_reference": true
+    },
+    "trim-mean": {
+      "weight": 4.5,
+      "counter": 9,
+      "exact_reference": true
+    }
+  },
+  "input_unchanged": true,
+  "invalid_cases_rejected": 6,
+  "zero_trim_boundary_fix": true,
+  "real_model_or_data_experiments": 0,
+  "CUDA_initialized": false,
+  "time": 1794728954.698012
+}

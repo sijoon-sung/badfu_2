@@ -1,0 +1,36 @@
+{
+  "state": "exact",
+  "rows": [
+    {
+      "phase": 1,
+      "exact": true,
+      "differences": [],
+      "left_sha256": "c7411d1165a3e1eb48d8732af9dcad2cb200f80e50dbbeacf920b6ea12d6ed9a",
+      "right_sha256": "c7411d1165a3e1eb48d8732af9dcad2cb200f80e50dbbeacf920b6ea12d6ed9a"
+    },
+    {
+      "phase": 2,
+      "exact": true,
+      "differences": [],
+      "left_sha256": "482924bccc6769968b4a22c9eec8f99aeeaf0b9f805bc77e69a3f2029b696a90",
+      "right_sha256": "482924bccc6769968b4a22c9eec8f99aeeaf0b9f805bc77e69a3f2029b696a90"
+    },
+    {
+      "phase": 3,
+      "exact": true,
+      "differences": [],
+      "left_sha256": "339e70aff47e52e0e4c38e7809cc13598d9d4006869a306b16f7e5858f91b467",
+      "right_sha256": "339e70aff47e52e0e4c38e7809cc13598d9d4006869a306b16f7e5858f91b467"
+    },
+    {
+      "phase": 4,
+      "exact": true,
+      "differences": [],
+      "left_sha256": "6d81f6005116913cc0d65deceed004935a68eba3785ab58c791ed7ef835db21c",
+      "right_sha256": "6d81f6005116913cc0d65deceed004935a68eba3785ab58c791ed7ef835db21c"
+    }
+  ],
+  "scope": "first21R/client0 four phases only",
+  "inference": 0,
+  "training": 0
+}

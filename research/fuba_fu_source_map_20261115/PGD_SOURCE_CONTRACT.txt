@@ -1,0 +1,19 @@
+PGD 원저자 코드 확보와 판본 구분 — R02/R03/D08/D15
+
+가설: PGD 원문 판본과 원저자 notebook은 같은 종료/거리 조건으로 묵시 대체할 수 없다. 새 관측은 원 notebook AST의 실제 projection/종료문과 독립 연산의 수치 대조다. 실자료 모델 학습·추론·FU는 이 계약에 포함하지 않는다.
+
+확보
+IBM/federated-unlearning@6f51bbccef3e54f55746ff0094271d26f69ce6da의 README는 arXiv2207.05521의 구현임을 명시한다. notebook/utils/local_train/LICENSE 원바이트5개를 Git blob까지 대조해 보존했다. PGD_IBM_SOURCE.json이 URL·커밋·Git blob·SHA256을 결속한다. FUBA 공개pgd.py와 별개의 원저자 구현이며 사용자에게 자료를 요구하지 않았다.
+
+세 조건을 구분한다
+1. 원논문2022 v1, PDF p3–4/Algorithm1: 삭제client의마지막모델에서초기화, validation accuracy가tau미만이면종료. norm ball 반경은Euclidean단위다.
+2. 원논문2023 v3, Section4.2/Algorithm1/AppendixA: retained평균reference에서초기화, 삭제client모델과Euclidean distance<tau이면종료, 반경은10무작위모델과의평균Euclidean distance/3, tau는2..6탐색. B1024/E5/SGD.01/momentum.9/clip5.
+3. 실제IBM notebook cell34: reference에서초기화, Utils.get_distance는squared L2, threshold=10개squared distance평균/3, projection은sqrt(threshold)반경, squared distance>2.2이면종료. 실제trainloader는cell23/25의B128이며E5/SGD.01/momentum.9/clip5이다. 후속10R/각client1epoch를실행한다.
+
+따라서2.2를v3의Euclidean tau로옮기거나부등호/반경제곱을섞지않는다. 기존unlearning_kernels.py의논문v3수식계약은보존하고,새pgd_author_kernel.py는위3번을이름으로구분한다. CPU계약에서두경계의차이,원AST와projection/termination/10개random-radius일치,모델입력의finite와양쪽경계를검사한다. 불일치시중단하고실제FU로승격하지않는다. 완료한CPU계약은반복하지않는다.
+
+출처
+https://github.com/IBM/federated-unlearning/tree/6f51bbccef3e54f55746ff0094271d26f69ce6da
+https://arxiv.org/pdf/2207.05521v1
+https://arxiv.org/html/2207.05521v3
+FUBA supplementary PDF p1은원PGD의radius/early-stop전략과post-training10R을명시하지만어느판본·2.2인지지정하지않는다. source확보만으로그간극이해소됐다고하지않는다. FUBA의부분참여에서삭제client가마지막round에없을때의연결도별도profile에서명시해야한다. 새GPU/FU실행은없고현재Retrain100조건을바꾸지않는다. D08/D15 큰정상nonIID구별이나새탐지주장과무관하다.

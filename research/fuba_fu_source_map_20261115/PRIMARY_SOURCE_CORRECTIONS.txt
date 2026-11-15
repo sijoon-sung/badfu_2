@@ -1,0 +1,35 @@
+2026-11-15 추가 원문 확인 — R02/R03/D08/D15
+
+협력 가정
+FUBA supplementary p11 III.B는 FL 시작 전 역할 조정/정보 교환과 각 악성 참여자의 global trigger 지식을 명시한다. FL 도중 추가 참여자 간 통신은 가정하지 않는다. 따라서 현재 gamma 합집합 평가의 trigger 지식은 이 원문 가정 안에 있다. 공개 train_method_dba.py가 실제로 local attack_func를 쓰는 사실과는 별개다. 실행 중 PROTOCOL/core/freeze를 변경하지 않는다.
+
+RobustFU 원문과 공개 wrapper
+저자 stcebra/Robust-Federated-Unlearning@59ea9a7498e28ad22f4667546e933adef63de925는 README와 논문 PDF를 제공한다. PDF Git blob 6cf684d739a5d93cc7206908a0d5b297987577a5와 내려받은 원문 바이트를 검증했다(RETRIEVAL.json).
+원문 p5/p7 Algorithm1은 이전 학습 모델을 교사로 삼고, 참여자별 예측 충돌 자료를 그 참여자의 다음 학습에 추가하며, inverse conflict score로 집계한다. 원문은 이진 표 자료이고 FUBA는 clean unlabeled 이미지로 수정했다고 명시한다.
+FUBA의 공개 robustFu.py는 모든 client에서 class3 자료를 제거하고, 모든 client에 trigger/40% target relabel을 적용하며, 30R/최대10batch/SGD.1을 사용한다. 삭제할 Adv-defender client4의 참여를 제외하는 조건이 없고, testset 앞20%를 보충자료로 다시 사용한다. zero conflict score는 리스트에서 제외하여 client별 weight 대응도 깨질 수 있다. 따라서 이를 요청된 협력 FUBA의 client-level RobustFU로 그대로 실행하지 않는다. 원본 파일과 저자 post 모델 결과는 보존한다.
+
+PGD 원문
+https://arxiv.org/html/2207.05521v3 Section4.2, Algorithm1, AppendixA를 직접 확인했다. reference는 마지막 round의 다른 참여자 평균, 초기값은 reference, ascent 후 reference 중심 L2 ball에 projection한다. 원문 조기종료 비교는 마지막 삭제 client 모델과의 거리 < tau이다. 임의로 부등호를 뒤집지 않는다.
+AppendixA는 SGD momentum.9/lr.01, batch1024, 5epochs, gradient clip norm5, radius=무작위 초기 모델10개와 reference 사이 평균거리의1/3, tau는2..6 grid로 설명한다. FUBA 보충자료는 radius/early-stop을 원문과 같게 두고10R post-training이라고 한다. 원문에 공개된 단일 tau나 FUBA의 partial-participation 마지막 client 모델 처리 규칙은 아직 확인되지 않았다. 구현은 이 값을 명시 인자로 요구하며 시험 결과를 보고 유리한 값을 묵시 선택하지 않는다.
+
+FedEraser 저자 원본 확보 및 연산 복원
+원논문 p2의 직접 Dropbox 링크에서 FedEraser-Code.zip을 확보했다. archive SHA256 4babbbf2d9f93b0e29a7accdcc6667670b9e99072f44031a6b8390c0b121839b. FUBA 수정본의 비활성 unlearning_step_once는 step_length=norm(new_update)이지만 저자 원본은 norm(old_update)이다. 평균 update의 옛크기가5/새크기가1인 CPU반례에서 복원 결과는5이고 수정본식은1이다. 별도ID보존calibrate_author_layers는원본AST함수와tensor정확일치했다(FEDERASER_CONTRACT.json). 삭제client혼입과비영old/영new방향을거부한다.
+이함수는저자코드처럼client평균후tensor별보정이다. 논문Eq1의client별보정후집계와묵시동일시하지않는다. 전체역사적round선택/20epoch와interval2의결합/실제FU성능은이수식계약으로검증되지않는다. 새GPU FU실행은아직없다.
+
+범위
+여기서 source 확인은 새 FU 실제 실행 또는 새 공격 성능 재현이 아니다. 원문 수식에 대응하는 수치 연산을 별도 모듈로 구현·계약 검사할 수 있지만 학습 실행에는 입력 case/해시와 명시 profile이 필요하다. 새로운 탐지 주장이 없으며 D08/D15의 큰 정상 non-IID 반례는 해결되지 않았다.
+
+SGA 원저자 추가 자료와 CPU 계약
+제1저자 Leijie Wu의 공개 PolyU 박사논문 Chapter5를 확보하여 원 연구를 확인했다. 식5.2의 양의 EWC와 FUBA 공개 ascent 코드의 음의 EWC 차이를 SGA_SOURCE_CONTRACT.txt에 명시했다. 손실·gradient는 공개 AST 원함수와 정확히 같았고, 순수 penalty 방향 및 loss5 초과 이전 상태 반환 계약을 DISLAB CPU에서 통과했다. 전체 SGA FU의 round 단위·입력·상한 선택과 실제 성능은 이 계약으로 확정되지 않는다. 학위논문 원문은 개인 연구 사본으로만 보존하고 PR에는 링크·해시만 기록한다.
+
+기존 2026-11-12 기록의 추가 확인
+DISLAB에 존재하던 별도 metadata admission/timeline 감사를 prior_records에 원문 그대로 보존했다. 5개 완료 진단쌍 모두 admission이 없으며, MNIST 두 시드의 마지막 공동 통과 round47/85 이후 pre100R는 실패였다. 이전 중간 억제나 차감 직후 결과를 성공한100R+FU쌍으로 고르지 않는다. 이 확인에서 모델 로드·추론·재학습은 하지 않았다.
+
+PGD 원저자 추가 확보 및 CPU 계약
+IBM/federated-unlearning@6f51bbccef3e54f55746ff0094271d26f69ce6da의5파일을Git blob검증했다. v1의삭제client초기값/validation종료, v3의reference초기값/Euclidean<tau, 실제notebook의squared distance>2.2와sqrt(radius_squared)투영을구분한다(PGD_SOURCE_CONTRACT). 최초CPU검사는노트북cp949 decode에서중단됐고원소스/오류를보존한UTF-8수정후실제원AST와투영3경우/10random반경/종료반례2개가모두일치했다. GPU/실모델/FU0이며공개코드가FUBA유일조건을결정해주지는않는다.
+
+FedEraser 전체 호출 순서 계약
+FEDERASER_SCHEDULE_CONTRACT.json은 저자 unlearning AST를 합성 ID 이력과 기록용 콜백으로 직접 실행했다. global_epoch20/interval2/local10/ratio.5는 client2R의 초기합성1회 뒤 client4,6,...,20R의 보정9회이며 실제 local5epoch다. 원100을 넣으면 초기합성1+보정49회다. 원 함수가 보정 크기의 기준으로 해당 round의 AFTER global을 전달하는 것도 확인했다. 입력 이력 불변, 삭제ID 제외, 설정 복원, 새 planner의 모든 호출 일치가 통과했다. 모델/자료/torch/GPU는 쓰지 않았다. 이를 FUBA의100R 이력과20 global 조건의 유일한 연결로 해석하지 않는다.
+
+PGD 전체 ascent 반복 계약
+PGD_STEP_CONTRACT.json은 기존 투영 단독 계약을 넘어 cell34의 실제 epoch/batch AST와 pgd_author_train.py를 비교했다. CPU 합성 Linear에서 SGD.01/momentum.9/clip5, 전20step/첫step종료/반경밖투영의 세 조건 모두 최종 model 및 optimizer state가 정확히 일치했다. 투영 횟수는 각각20/1/0이었다. 실자료 모델 또는 실제FU를 실행한 결과가 아니며 원논문 판본·FUBA 연결의 기존 불확실성을 유지한다. 완료한 계약은 재실행하지 않는다.

@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "rounds": 20,
+  "roles": 200,
+  "epochs": 1000,
+  "batches": 20000,
+  "selected_sample_epoch_exposures": 0,
+  "all_epoch_ID_permutations": true,
+  "all_saved_optimizer_and_RNG_present": true,
+  "all_calibration_and_aggregation_exact": true,
+  "full_SGD_gradient_replay": false,
+  "after": {
+    "path": "fu/benign/after.pt",
+    "sha256": "17a0c81fbe10aa8984ea90251c6f912ce29cb718c19ebb8e4a81807ee1ce4273",
+    "bytes": 44770315
+  },
+  "time": 1794730473.5012121
+}

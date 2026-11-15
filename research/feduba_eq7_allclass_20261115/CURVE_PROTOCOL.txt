@@ -1,0 +1,5 @@
+가설: Eq.7 전체 클래스 비교가 공격을 활성화한다면, 마지막 한 점의 우연한 상승만이 아니라 마지막5개 FU 보정 round에서 ASR>=80%, 공격-정상 ASR>=50pp 및 CA>=80%가 유지된다.
+관련 R03/R06/R02/D08/D15. 새 관측은 이 실행의 정상/공격 중간1–19R 전수 CA/ASR이다. 원문 Figure3/4의 epoch별 곡선과 비교하기 위해 사전 지정한다. 주 실행의 마지막20R 평가와 원6gate는 변경하지 않는다. 단일seed의 시간축은 독립seed가 아니다. D08/D15 큰 정상 non-IID 구별은 미해결이며 알려진trigger의 ASR는 서버 탐지 입력이 아니다.
+시점: 현재 새 정상 FU 진행 중이며 마지막 성능을 보기 전에 고정한다. 실제 계산은 주 controller/양CPU감사/전후 독립평가 완료 후에만 시작한다. 모든38개 중간 모델을 평가하고 최고round 선택이나모델 교체를 하지 않는다.20R은 이미 완료한 새 독립평가의 counts를 재사용한다. 원본pre는 원래 clean FL20 모델이며 FU의fresh initializer와 혼동하지 않는다.
+조건: 동일공식test10000/비target9000/target2/clip(x+1.5delta,-1,1)/batch128/FP32NCHW/TF32off/highest/deterministic. 두 별도process가 전체38model을 독립입력구성(torch 대 NumPy)으로 평가하고 rawinputSHA/argmax/count/logit1e-6+rtol1e-5를 검사한다. 새forward는 route당760000장,두route합1520000장이다. 모델훈련·원finitejob재실행0. 새로운curve root에모델별logit와진행/실패를보존한다.
+반증: 마지막5round 조건 중 하나라도 실패하면 지속 활성화 가설은 기각한다. 성능미달을 이유로 표본/seed/부호/배수/평가분모/조건을 바꾸지 않는다. 무결성/finite/runtime/독립불일치는 prefix와trace를보존하고 정지한다. 양분기모든round를 그대로그리며단일시드선에가짜오차막대를붙이지않는다. 일부성공을논문전체/다른조건성공으로부르지않는다.

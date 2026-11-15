@@ -1,0 +1,5 @@
+운영 복구 — R02/R03/D08/D15
+원 실제 Retrain100 FU의 PROTOCOL/가설/시드/분할/50epoch/optimizer/gamma1/원5Rwarmup/고정810/2700/실제7또는8집계/결정적backend를 유지한다. SSH 연결 상실 뒤27R 저장과원PID부재/FAILURE생성을 확인했다. 원오류가stdout print의BrokenPipe 또는OSError22인지먼저확인하며다른학습오류면중단한다.
+원D:/FUBA_RETRAIN_FU_20261115는불변이다. 새D:/FUBA_RETRAIN_FU_RECOVERY_20261115로committed1–27R/모든관련phase/role/epoch/initial/before/분할/설정을동일바이트복사하고전SHA/연결/제출/집계/완전epoch/strictCPU로드를검증한다. 원전체파일manifest/소스/오류/상태도보존한다. 새로운관측은운영장애와엄격한27→28연속성이지새방법/성능시드가아니다. 미커밋자료는원본에남기고재사용하지않는다.
+새훈련은검증된27Rafter와기록을받아28–100R만계산한다. round/client로정해진seed를그대로사용하며완료27R를훈련하지않는다. 출력은숨김Start-Process의stdout.log/stderr.log로리다이렉트하여SSH수명과분리한다. 실제PID/GPU/STATE/최초28R연결을확인한다. 원코드와현재앱을변경·종료하지않는다.
+최종100R/CA97-ASR60진단gate와원pre-ASR30.6005실패는불변이다. 전체CPU감사/원저자함수10000clean·9026non-target독립평가/실제예측/양쪽전후모델·로그전달/양쪽catalogue guard를새경로에서완료한다. source/data/nonfinite/storage/해시오류시보존·중단하며성능실패로자동튜닝하지않는다. D08/D15 큰정상nonIID반례는미해결이며전체논문재현성공이아니다. 별도batch-redraw pilot은이FU의전체전달완료전실행하지않는다.

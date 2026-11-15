@@ -1,0 +1,12 @@
+﻿{
+    "original_error":  "Unexpected automatic trigger/retry",
+    "cause":  "PowerShell @($null).Count counted the absent Triggers property as one; real task XML has empty Triggers and zero RestartCount",
+    "last_result":  267011,
+    "task_never_ran":  true,
+    "model_training":  0,
+    "existing_task_reused":  true,
+    "corrected_guard":  "Filter null trigger entries, inspect XML and require never-run state",
+    "task_recreated":  false,
+    "stage":  "task_registration_guard_before_Start-ScheduledTask",
+    "scientific_source_changed":  false
+}

@@ -1,0 +1,355 @@
+{
+  "state": "passed",
+  "traces": 4,
+  "points": 44,
+  "validation_N": 300,
+  "evaluator": "original author functions; independent Eq3 state reconstruction; FP32 deterministic noTF32",
+  "all_points_and_selected_gammas_exact": true,
+  "rows": [
+    {
+      "arm": "fullbatch",
+      "round": 23,
+      "client": 0,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 297,
+          "target_successes": 5,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 6,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 7,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 8,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 9,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 10,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 11,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 12,
+          "non_target_N": 270,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 13,
+          "non_target_N": 270,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "fullbatch",
+      "round": 23,
+      "client": 1,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 297,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 297,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 297,
+          "target_successes": 2,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 297,
+          "target_successes": 4,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 297,
+          "target_successes": 6,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 297,
+          "target_successes": 7,
+          "non_target_N": 265,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 297,
+          "target_successes": 7,
+          "non_target_N": 265,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "fullbatch",
+      "round": 23,
+      "client": 2,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 4,
+          "non_target_N": 267,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    },
+    {
+      "arm": "fullbatch",
+      "round": 23,
+      "client": 3,
+      "points": [
+        {
+          "gamma": 0.0,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.1,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.2,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.3,
+          "clean_correct": 296,
+          "target_successes": 0,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.4,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.5,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.6,
+          "clean_correct": 296,
+          "target_successes": 1,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.7,
+          "clean_correct": 296,
+          "target_successes": 2,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.8,
+          "clean_correct": 296,
+          "target_successes": 3,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 0.9,
+          "clean_correct": 296,
+          "target_successes": 6,
+          "non_target_N": 266,
+          "exact": true
+        },
+        {
+          "gamma": 1.0,
+          "clean_correct": 296,
+          "target_successes": 9,
+          "non_target_N": 266,
+          "exact": true
+        }
+      ],
+      "selected_gamma": 1.0,
+      "exact": true
+    }
+  ],
+  "training": 0
+}

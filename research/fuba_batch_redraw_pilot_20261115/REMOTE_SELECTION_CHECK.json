@@ -1,0 +1,32 @@
+{
+  "case_id": "fuba.reference.mnist.dba.s20261023.redraw.round21_30.20261115",
+  "purpose": "diagnostic",
+  "post_type": "bounded_FL_trajectory_no_unlearning",
+  "server_inputs": {
+    "pre": {
+      "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\inputs\\round0020.pt",
+      "sha256": "c2af81e30367ebcc15b746338b20df28a3473a18a0bd05ee87e74818c0244a4a",
+      "payload_key": "after"
+    },
+    "post": {
+      "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\rounds\\round0030.pt",
+      "sha256": "8dd8c3fbf1e49597265f80c383bb8f8ef041b903bdf28a4df26146f39d2f14e8",
+      "payload_key": "after"
+    },
+    "round23_incoming": {
+      "path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\rounds\\round0023.pt",
+      "sha256": "aa112deb7751a2e2ab7537bad10744bf6e789155043bc3de34ebdb18d9f38cab",
+      "payload_key": "incoming"
+    }
+  },
+  "source_root": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\REVIEW_MANIFEST.json",
+    "manifest_sha256": "d2aedb327348c24bdf1275357e9035a8baa110652bead52b222f6492c751d61d",
+    "seal_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\delivery\\SEAL.json",
+    "seal_sha256": "33e62567a690e4835cd9bb6dec0fa16649daf51106c2cf27ba62b1d243d66cd7",
+    "loader_path": "D:\\FUBA_BATCH_REDRAW_PILOT_20261115\\receive_packet.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

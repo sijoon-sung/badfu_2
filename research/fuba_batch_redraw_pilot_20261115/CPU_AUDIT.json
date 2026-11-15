@@ -1,0 +1,21 @@
+{
+  "state": "passed",
+  "counts": {
+    "mask_batches": 81700,
+    "mask_examples": 5130000,
+    "poison_examples": 1538027,
+    "phases": 137,
+    "epochs": 6850,
+    "batches": 306750,
+    "gamma_traces": 18,
+    "roles": 80,
+    "defender_roles": 1,
+    "rounds": 10
+  },
+  "all_masks_independently_reconstructed": true,
+  "all_submission_and_aggregation_exact": true,
+  "full_epoch_optimizer_RNG_checked": true,
+  "all_phase_strict_CPU_loads": true,
+  "CUDA_initialized": false,
+  "gradient_training_replay": false
+}

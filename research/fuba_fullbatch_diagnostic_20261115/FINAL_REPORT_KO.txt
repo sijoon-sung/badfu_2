@@ -1,0 +1,23 @@
+마지막 불완전 배치 제외 진단 완료 — 가설 실패
+
+R02/R03/D08/D15. 대상은 협력 공격 stcebra/FUBA다. 공개 train_main.py의 drop_last=True를 적용하는 단일 23라운드 진단을 마쳤다. 기존에 봉인한 redraw23R의 incoming과 같은 참여자8명을 사용했고, 기존 대조를 재학습하지 않았다.
+
+기존 대조: CA98.93%(9893/10000), ASR14.5136272989%(1310/9026).
+새 full-batch: CA98.87%(9887/10000), ASR14.5247064037%(1311/9026).
+CA97 조건만 통과했다. ASR10 미만 및 ASR 감소 조건은 모두 실패했다. 공격 성공 이미지 한 장이 늘었으며 이를 개선이나 수치적으로 같은 결과라고 표시하지 않는다. 작은 배치의 추가 update를 없애는 변경만으로 억제 실패가 해결됐다는 근거는 없다.
+
+실행과 검증
+8역할/20phase/1000epoch/42800batch를 실제 학습했다. 각 epoch의 학습 표본은 악성 역할2688장(12장 제외), 정상 역할2944장(56장 제외)이며 모든 batch가64장이다. 실제 mask16800batch/1075200표본/변형321958장을 독립CPU RNG로 전부 재구성했다. phase 모델·optimizer·RNG·전체epoch로그와 제출·집계 수식이 모두 통과했다.
+원저자 test/attack_dba의 FP32 contiguousNCHW/B512/deterministic/noTF32로 새 모델의10000clean/9026non-target 정수가 정확히 일치했다. 원300장 validation에서4개 gamma trace/44개 후보 점수와 선택도 별도 재구성해 모두 일치했다. 전체 gradient를 다시 학습한 검증은 아니다.
+Controller21528/trainer47312는 정상 종료했고 관련 실행 프로세스가 없다. 일회성 OS 작업은 trigger/retry가 없다. 최초 작업등록 검사에서 빈 Triggers를 한 개로 세어 실제 시작 전에 중단한 운영 오류와 그 정정을 LAUNCH_PREFLIGHT_CORRECTION.json에 보존했다. 학습 재시작이나 과학 조건 변경은 없었다.
+
+전달
+원격 D:/FUBA_FULLBATCH_DIAGNOSTIC_20261115와 로컬 delivery/payload에 전체88파일이 있다. 모든 파일 SHA256/크기를 로컬에서 검증했다. 로컬 torch2.4.1 CPU로 대조/새23R 두bundle의11개 모델상태를 엄격 로드하고 합성1장 finite forward를 확인했다. 로컬 실제 데이터 추론0/CUDA초기화false다.
+manifest SHA256=8f2a7eca6d70bb67419b7687b2a3927002effd368874115bd6eb34823ab59450
+ZIP SHA256=6043ad2545034ea880e453216f2dcc29202bcf7e0bd7f8863d9de3e3cc3c3899; bytes13617058
+새23R bundle SHA256=cf480d9886a9f73649ac35ffa53675cbc0635f7bb06469b8ccc2dee232993dc6; payload_key=after
+기본 catalogue는 변경하지 않았다. 입력은 이미 등록·검증된 redraw 진단 case다. 새 실패 모델을 잠복 전후쌍으로 승인하지 않는다.
+
+범위와 중단
+실패를 보고 선택한 단일 진단 라운드이며 독립 학습 시드, 전체 궤적, FU 실험이 아니다. 이 라운드에는 공모자4가 선택되지 않아 공모자 학습 효과를 새로 검증한 것도 아니다. 같은 비교를 반복하거나 실패 기준을 낮추지 않고, 이 결과를 근거로 full100R를 자동 시작하지 않는다. 기존 전체 redraw10R 실패와 실제 Retrain100 FU의 pre30.6005/post53.9663 실패는 그대로 남는다.
+논문 전체 재현은 미완료다. D08 공격.75848 대 큰 정상 삭제.75525/.76188와 D15 반례도 해결하지 않았다. 다음 진단은 남아 있는 본문 SGD와 실험문단 Adam의 충돌을 기존 CIFAR/IBA 실패와 구분하여 검토하는 것이며, Adam으로 본문 알고리즘을 바꿨다고 주장하거나 자동 채택하지 않는다. 완료한 본 trainer/CPU감사/독립평가/gamma/export를 재실행하지 않는다.

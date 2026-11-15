@@ -1,0 +1,6 @@
+종료 후 검증/전달 실행 — R02/R03/D08/D15
+
+새학습을추가하지않는다. 실제100R/STATEcomplete,trainerPID부재,LAUNCH_ATTEMPT2_RESULT exit0를확인한뒤에만finalize_once.py를한번실행한다. 완료를기다리는자동감시작업이아니다. 현재훈련을변경하거나이finalizer를미리실행하지않는다.
+전체100R CPU감사→15회GPU유휴관찰과원guard→원저자함수독립평가/같은forward에서예측저장→전달zip/manifest→원격catalogue guard순으로진행한다. 각단계의원소스freeze는그대로다. 이미시작한finite감사/평가/전달이있으면전체finalizer를거부한다. 오류시완료단계를재실행하지말고실패단계를보존·진단한다.
+운영stdout/stderr/단계상태는D:/FUBA_RETRAIN_FU_FINALIZATION_OPS_20261115에저장한다. 진행중운영로그가sealed manifest에들어가나중에변경되는문제를피하기위해모델root밖에둔다. 이는서버입력이나평가기준변경이아니다. 원훈련task출력은종료뒤불변임을먼저확인한다.
+실행은SSH수명과분리된trigger없는일회성Windows작업으로만구동하며자동재시도는0이다. 기존finite작업을중복실행하지않는다. 원격완료후에도로컬zip전체해시/추출/모델쌍/catalogue guard/저장예측의이미지QA/최종보고·index/PR가남는다. 양쪽완료전후속batch-redraw GPU는시작하지않는다. 원pre-ASR30.6005실패와D08/D15반례는불변이며,전체논문재현성공이아니다.

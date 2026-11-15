@@ -1,0 +1,16 @@
+{
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.kd10",
+  "full_manifest_sha256": "593361424aa784c628e954a832cc5201688f8d0630695bc10dfd22f5472e21cc",
+  "files": {
+    "SPLIT.json": "dfd6f7f18b3cf7b1b082ab106437702c1e55c56fd5535fbf580dafb5d97f4de1",
+    "PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "author_model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "reference_core.py": "158d7b80b114c7c2a0a11d425066959930a03382bcbb680bc9f3d65e3a37b812",
+    "initial.pt": "f72e0917e801d8a1f961a43b4a5213995698456c781898fcf7b7691c16280a97"
+  },
+  "pre": {
+    "path": "D:/CHECKPOINTS_FOR_REVIEW/FUBA_reference_MNIST_DBA_s20261023_pre100_post_KD10/run/before.pt",
+    "sha256": "418da107bf5f143416818dface2e57685bfec07404765904c811dc8c1acec64c",
+    "payload_key": null
+  }
+}

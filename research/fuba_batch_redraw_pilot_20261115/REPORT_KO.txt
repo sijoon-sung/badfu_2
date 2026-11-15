@@ -1,0 +1,8 @@
+배치 redraw 제한 비교 — 준비 완료, 실제 학습 전
+
+관련 R02/R03/D08/D15. PROTOCOL의 새 가설과 조건을 고정했다. 기존 결정적 global21–30R를 봉인 대조로 사용하며 그 대조를 재학습하지 않는다. 새 treatment의 과학적 변경은 backdoor_anchor/embedding에서 매 배치 Bernoulli .3을 다시 뽑는 것뿐이다. 공개 소스와 같게 표본을 구성하지만, data shuffle을 유지하기 위해 mask CPU RNG를 별도로 분리한 선택을 명시했다.
+
+DISLAB의 합성 CPU 계약은 통과했다. 변환 없는 Adam/재가중SGD/recoverySGD는 기존 core와 model/optimizer/loader RNG가 정확히 같았다. 변환 있는 공격자0/공모자4의 Adam·SGD 각6step도 공개 원문 AST 구성문을 직접 쓴 독립 계산과 model/optimizer/두 RNG/모든 실제mask가 같았다. 실자료 학습과 실제 모델 추론은0회다.
+공식 catalogue/외부seal과 동일 원20R의payload_key=after를 확인하고, 이미 완료한 대조의 결과·CPU·prefix·전체평가·all-gamma·manifest/seal을 고정했다. PREPARED.json은 이 입력 결속 결과다. 실제GPU training은 아직 실행하지 않았다.
+
+새 trainer에는 현재 실제 Retrain100 FU의 양쪽 전달·catalogue guard 완료 영수증을 요구하는 선행조건이 있다. 기존FU/source/profile과 완료실패들을 변경하지 않는다. 실제 성능은 미검증이며, 전체CA97/마지막3R ASR10/위반수3보다적음 및 독립 감사가 모두 통과하기 전에는 full100R 실행 근거로 채택하지 않는다. D08/D15 큰 정상 non-IID 반례나 새 탐지 문제를 해결한 결과가 아니다.

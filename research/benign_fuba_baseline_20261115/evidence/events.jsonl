@@ -1,0 +1,50 @@
+{"stage": "before_fl", "round": 1, "participants": [2, 4, 0, 8, 17, 15, 12, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.5791496634483337, "elapsed_s": 11.438}
+{"stage": "before_fl", "round": 2, "participants": [3, 0, 11, 13, 12, 19, 4, 10], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.25386798195540905, "elapsed_s": 21.625}
+{"stage": "before_fl", "round": 3, "participants": [16, 6, 7, 0, 12, 19, 17, 4], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.2279852908104658, "elapsed_s": 31.735}
+{"stage": "before_fl", "round": 4, "participants": [1, 12, 16, 17, 3, 19, 2, 18], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.2145423935726285, "elapsed_s": 40.063}
+{"stage": "before_fl", "round": 5, "participants": [6, 11, 15, 10, 9, 5, 2, 13], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.18769995402544737, "elapsed_s": 48.016}
+{"stage": "before_fl", "round": 6, "participants": [11, 5, 10, 0, 15, 16, 1, 7], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.2167524043470621, "elapsed_s": 57.953}
+{"stage": "before_fl", "round": 7, "participants": [11, 3, 17, 0, 14, 10, 4, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.11756262043491006, "elapsed_s": 67.516}
+{"stage": "before_fl", "round": 8, "participants": [15, 9, 6, 16, 2, 12, 0, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.07982246787287295, "elapsed_s": 77.578}
+{"stage": "before_fl", "round": 9, "participants": [18, 3, 17, 8, 5, 10, 4, 1], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.10399371711537242, "elapsed_s": 87.406}
+{"stage": "before_fl", "round": 10, "participants": [8, 6, 1, 13, 11, 2, 7, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.10120893060229719, "elapsed_s": 97.547}
+{"stage": "before_fl", "round": 11, "participants": [12, 14, 13, 17, 0, 10, 1, 11], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.048412378411740065, "elapsed_s": 107.188}
+{"stage": "before_fl", "round": 12, "participants": [15, 8, 6, 10, 11, 19, 5, 16], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.06859486130997539, "elapsed_s": 116.422}
+{"stage": "before_fl", "round": 13, "participants": [8, 13, 15, 14, 18, 10, 6, 3], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.06552737555466592, "elapsed_s": 126.641}
+{"stage": "before_fl", "round": 14, "participants": [14, 8, 19, 9, 16, 4, 0, 6], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.0843801295850426, "elapsed_s": 136.031}
+{"stage": "before_fl", "round": 15, "participants": [8, 16, 14, 12, 17, 2, 13, 15], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.04605015285778791, "elapsed_s": 145.953}
+{"stage": "before_fl", "round": 16, "participants": [12, 8, 6, 9, 13, 11, 17, 2], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.05067426577443257, "elapsed_s": 156.266}
+{"stage": "before_fl", "round": 17, "participants": [16, 5, 9, 6, 3, 1, 17, 2], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.044240535353310406, "elapsed_s": 166.344}
+{"stage": "before_fl", "round": 18, "participants": [2, 6, 8, 3, 13, 11, 7, 14], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.039297386654652655, "elapsed_s": 176.297}
+{"stage": "before_fl", "round": 19, "participants": [19, 18, 14, 7, 9, 4, 8, 12], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.022392364568077028, "elapsed_s": 186.641}
+{"stage": "before_fl", "round": 20, "participants": [17, 10, 15, 6, 3, 11, 4, 2], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.019743218610528857, "elapsed_s": 196.063}
+{"stage": "benign_kd", "epoch": 1, "samples": 3000, "mean_kl": 0.0027571156875540815, "elapsed_s": 197.297}
+{"stage": "benign_kd", "epoch": 2, "samples": 3000, "mean_kl": 0.0015748094969118636, "elapsed_s": 197.906}
+{"stage": "benign_kd", "epoch": 3, "samples": 3000, "mean_kl": 0.0008713171533308923, "elapsed_s": 198.485}
+{"stage": "benign_kd", "epoch": 4, "samples": 3000, "mean_kl": 0.0005198551067151129, "elapsed_s": 198.86}
+{"stage": "benign_kd", "epoch": 5, "samples": 3000, "mean_kl": 0.0003529594442807138, "elapsed_s": 199.047}
+{"stage": "benign_kd", "epoch": 6, "samples": 3000, "mean_kl": 0.00027057516070393226, "elapsed_s": 199.5}
+{"stage": "benign_kd", "epoch": 7, "samples": 3000, "mean_kl": 0.0002259467541395376, "elapsed_s": 199.875}
+{"stage": "benign_kd", "epoch": 8, "samples": 3000, "mean_kl": 0.00019840645052803058, "elapsed_s": 200.531}
+{"stage": "benign_kd", "epoch": 9, "samples": 3000, "mean_kl": 0.0001791915000649169, "elapsed_s": 200.906}
+{"stage": "benign_kd", "epoch": 10, "samples": 3000, "mean_kl": 0.00016450865062264105, "elapsed_s": 201.563}
+{"stage": "retained_retrain", "round": 1, "participants": [2, 0, 8, 17, 15, 12, 19], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.5598041244915554, "elapsed_s": 210.875}
+{"stage": "retained_retrain", "round": 2, "participants": [3, 0, 11, 13, 12, 19, 10], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.24624315117086684, "elapsed_s": 219.688}
+{"stage": "retained_retrain", "round": 3, "participants": [16, 6, 7, 0, 12, 19, 17], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.229031217949731, "elapsed_s": 227.781}
+{"stage": "retained_retrain", "round": 4, "participants": [1, 12, 16, 17, 3, 19, 2, 18], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.21145478542894125, "elapsed_s": 237.985}
+{"stage": "retained_retrain", "round": 5, "participants": [6, 11, 15, 10, 9, 5, 2, 13], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.18275402300059795, "elapsed_s": 248.0}
+{"stage": "retained_retrain", "round": 6, "participants": [11, 5, 10, 0, 15, 16, 1, 7], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.2115989550948143, "elapsed_s": 257.875}
+{"stage": "retained_retrain", "round": 7, "participants": [11, 3, 17, 0, 14, 10, 19], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.11166752342666898, "elapsed_s": 265.938}
+{"stage": "retained_retrain", "round": 8, "participants": [15, 9, 6, 16, 2, 12, 0, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.07545904326252639, "elapsed_s": 276.031}
+{"stage": "retained_retrain", "round": 9, "participants": [18, 3, 17, 8, 5, 10, 1], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.1068242894751685, "elapsed_s": 284.969}
+{"stage": "retained_retrain", "round": 10, "participants": [8, 6, 1, 13, 11, 2, 7, 19], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.09712262055836618, "elapsed_s": 294.766}
+{"stage": "retained_retrain", "round": 11, "participants": [12, 14, 13, 17, 0, 10, 1, 11], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.047824753914028406, "elapsed_s": 304.875}
+{"stage": "retained_retrain", "round": 12, "participants": [15, 8, 6, 10, 11, 19, 5, 16], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.07148056197911501, "elapsed_s": 315.172}
+{"stage": "retained_retrain", "round": 13, "participants": [8, 13, 15, 14, 18, 10, 6, 3], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.06487647292669863, "elapsed_s": 325.281}
+{"stage": "retained_retrain", "round": 14, "participants": [14, 8, 19, 9, 16, 0, 6], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.09370379309569087, "elapsed_s": 333.672}
+{"stage": "retained_retrain", "round": 15, "participants": [8, 16, 14, 12, 17, 2, 13, 15], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.047464409028179944, "elapsed_s": 342.266}
+{"stage": "retained_retrain", "round": 16, "participants": [12, 8, 6, 9, 13, 11, 17, 2], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.04548328567761928, "elapsed_s": 352.078}
+{"stage": "retained_retrain", "round": 17, "participants": [16, 5, 9, 6, 3, 1, 17, 2], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.044012057362124324, "elapsed_s": 361.266}
+{"stage": "retained_retrain", "round": 18, "participants": [2, 6, 8, 3, 13, 11, 7, 14], "samples_per_epoch": 24000, "mean_last_batch_loss": 0.04421751736663282, "elapsed_s": 371.516}
+{"stage": "retained_retrain", "round": 19, "participants": [19, 18, 14, 7, 9, 8, 12], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.025600192868816003, "elapsed_s": 380.656}
+{"stage": "retained_retrain", "round": 20, "participants": [17, 10, 15, 6, 3, 11, 2], "samples_per_epoch": 21000, "mean_last_batch_loss": 0.022137211469401206, "elapsed_s": 389.5}

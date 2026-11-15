@@ -1,0 +1,23 @@
+MNIST 실제FU 마지막 역할의 optimizer 분리 진단 완료 — 고정 가설 실패
+
+R02/R03/D08/D15. 같은 원100R/client1 incoming, 동일 앵커1/2와 Eq1 가중치, 같은50epoch 미니배치 순서/RNG, 원 정상7개 제출을 고정했다. SGD와 Adam의 embedding만 각각 새로 학습했다. 새로운100R FU 실행이 아니며 원래 완료된FU와 실패 모델은 불변이다.
+
+조건                  로컬CA     로컬ASR    집계CA     집계ASR          집계clean-target-bias
+Algorithm SGD         96.37      100        99.00      53.9663195214    6/9026
+Experimental Adam     97.25      100        99.01      56.9687569244    7/9026
+로컬ASR은 둘 다9026/9026이다. 집계ASR의 분자는4871 대5142로271장(+3.0024374031%p) 증가했다. CA/clean-bias 조건은 통과했지만 사전20pp 증가 조건을 실패했다. 더 강한 로컬ASR을 만들면 해결된다는 설명도 이 역할에서는 지지되지 않는다. 다만 결과를 전체optimizer/seed/FU에 대한 불가능성으로 일반화하지 않는다.
+
+이번의 수치 통제
+새SGD의 phase3 모델과 집계after가 원래 실제FU의 두 저장 모델과 bit 단위로 정확히 같았다. 이전 CIFAR/IBA 비교의 원phase 불일치와 구분한다. 새 두arm의 시작/종료 Python·NumPy·CPU·CUDA RNG,50개 실제 데이터 순서 해시 및loader RNG가 일치했다. 나머지7개 제출은 두arm 모두 원본과 정확히 같았고 집계 수식도 정확히 재구성됐다.
+전체2phase/100epoch/4300batch,optimizer상태,Eq1가중치,20모델상태 엄격CPU/finite 검사를 통과했다. 원저자 test/attack_dba를 통한 독립 FP32 contiguousNCHW/B512/deterministic/noTF32 평가로 두 로컬/두 집계 모델의10000/9026 정수가 모두 일치했다. clean-target-bias도 별도clean forward로 재확인했다.
+
+해석
+논문 본문p2896와 Algorithms1/2는 SGD, 실험문단p2899는 Adam이며 공개코드도Adam이다. 본문의 알고리즘 준수 기준은SGD로 유지한다. 이Adam은명시적실험문단해석이며원공개코드의모든단계/optimizer상태를무수정실행한것도아니다. 결과가높아도Adam으로본문을자동대체하지않는규칙을유지하며,이번은그20pp가설도실패했다.
+CPU의상수gradient예제는양의고정계수가Adam moment정규화에서거의상쇄됨을보였다. epsilon에의한잔차가있고계수0은0으로남는다. 실제학습의전체효과나탐지주장으로확대하지않는다. 기존CIFAR/IBA의+1.0667pp 실패도별도원문그대로보존했다.
+
+전달
+DISLAB D:/FUBA_MNIST_OPTIMIZER_ISOLATION_20261115 및로컬delivery/payload의57파일을전SHA/byte검증했다. 로컬torch2.4.1 CPU에서원after와새로컬/집계5상태엄격로드/합성1장finite forward를통과했다. 로컬실데이터추론0/CUDA초기화false다. controller46568/trainer49220은완료했고관련활성프로세스는없다. GPU자원guard와1회작업만사용했으며학습실패/재시작은없었다.
+manifest SHA256=8186d563edf7ab03b56a3b438051c40ce68f35c01309abe493bfa53b38b586b5
+ZIP SHA256=b99d60d663b21cb00e7a75e89db762f03405d6f15f407f4b84a10c1fc97a34d0; bytes7275513
+기본case를변경하지않고새진단모델을승인된잠복쌍으로등록하지않는다. 원래실제FU최종53.9663을새진단56.9688로바꾸지않는다. 같은비교/seed/lr/epoch탐색및이결과로full100R자동실행을하지않는다.
+논문전체재현은미완료다. D08/D15의큰정상non-IID반례도미해결이다. 새학습된기울기전체를독립재학습한감사는아니며동일phase의SGD재생은이진단의통제다. 완료한trainer/CPU감사/평가/export를재실행하지않는다.

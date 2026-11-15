@@ -1,0 +1,9 @@
+실제 매 배치 구성 비교 시작 — R02/R03/D08/D15
+
+선행 실제 Retrain100 FU가 양쪽 전달/모든 감사/카탈로그까지 완료됐다. 최종 CA99.00/ASR53.9663의 성능 실패는 그대로 보존한다. 원27R 및 복구된28–100R의 trainer/evaluator/export는 재시작하지 않았다. FU_DELIVERY_COMPLETE SHA256 b46f60fb522d79e25777bb457cbfb6645ef96ea093a788f05392324da11c06c4가 새 실행에 결속돼 있다.
+
+기존 PROTOCOL/CPU_CONTRACT/PREPARED/CONTROL_BINDING 및 EXECUTION_FREEZE를 유지해 한 번의21–30R treatment만 시작했다. task Codex-FUBA-batch-redraw-pilot-20261115, controllerPID48100, trainerPID19556을 관측했다. 실제21R/client0/representative32/50epoch와 GPU학습을 확인했다. 등록 시 trigger와 자동retry는0이며, 현재런의결과는 미완료다.
+
+실제 학습조건은 원20R/분할/seed/50epoch/optimizer/일정/역할/전체gamma11점과동일하며 공격anchor/embedding에서 clean batch의Bernoulli.3 표본을 다시뽑는구성만변경한다. CPU mask RNG는phase_seed+70000000이며 실제mask/optimizer/RNG/epoch 로그를 남긴다. 현재 PID 또는 실제STATE/manifest를읽고중복실행하지않는다. 최초상태조회에서아직없는manifest를인덱싱한조회오류는null처리로고쳤으며학습에는영향이없었다.
+
+CPU 전체mask재구성/연결/제출/집계,10모델독립평가,198gamma점검사,전체패킷전달까지 이어간다. 성능판정은전체CA97,마지막3R ASR10,기존대조의3회보다적은위반을모두요구한다. 실패하면같은비율/seed/임계값탐색을자동실행하지않는다. D08/D15큰정상nonIID혼동은미해결이며전체논문/100R/FU성공을뜻하지않는다.

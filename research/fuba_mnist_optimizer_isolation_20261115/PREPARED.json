@@ -1,0 +1,56 @@
+{
+  "state": "passed",
+  "files": {
+    "inputs/round0100.pt": "16be78397f339b96cce2f442133a02efb4729e774f0fd9a179a49812f7b6e087",
+    "inputs/phase01.pt": "f9d3f9c22b6fda1a88de49f428303e79a685b360c0b991908a6e9135b77510fb",
+    "inputs/phase02.pt": "bf5195078ae1c9571a720be05c270ec1aead58664590e76e99aaf096061e6710",
+    "inputs/phase03.pt": "a2b4510430bc5b36f27f62507dcbc22d9447acebcd4cc9d1ae1ebaf1da467f95",
+    "inputs/round0100_client01.json": "f320e4f6ee1440dcf335e76d31977c7d95742a8fc16fd940fcae450401f3b093",
+    "inputs/author_model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "inputs/PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "inputs/SPLIT.json": "dfd6f7f18b3cf7b1b082ab106437702c1e55c56fd5535fbf580dafb5d97f4de1",
+    "inputs/reference_core.py": "158d7b80b114c7c2a0a11d425066959930a03382bcbb680bc9f3d65e3a37b812",
+    "inputs/INDEPENDENT_RESULT.json": "6648cfcdfdbae4fca186c596cc8290e33a43caacc0321105dbd1555450da527f"
+  },
+  "selection": {
+    "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.retrain100.recovered27.20261115",
+    "purpose": "diagnostic",
+    "post_type": "actual_retained_client_retrain100_gamma1",
+    "server_inputs": {
+      "pre": {
+        "path": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115\\inputs\\before.pt",
+        "sha256": "418da107bf5f143416818dface2e57685bfec07404765904c811dc8c1acec64c",
+        "payload_key": null
+      },
+      "post": {
+        "path": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115\\after.pt",
+        "sha256": "bf791099a4a10d54b514cf61046e825846b48665616d864da6b5516d6e6fbc4c",
+        "payload_key": null
+      }
+    },
+    "source_root": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115",
+    "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+    "checkpoint_guard": {
+      "manifest_path": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115\\delivery\\REVIEW_MANIFEST.json",
+      "manifest_sha256": "7fc9f2129d3e567b6ea235b5619a2b93f25e3003842f36c71dfe1e474561fc6b",
+      "seal_path": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115\\delivery\\SEAL.json",
+      "seal_sha256": "aabe07004cef0a8f4cec1f457145b5eb60663ab828b8fd5c67e33002f97fd899",
+      "loader_path": "D:\\FUBA_RETRAIN_FU_RECOVERY_20261115\\verify_payload.py"
+    },
+    "guard_state": "all_snapshot_files_verified_on_this_host"
+  },
+  "client": 1,
+  "round": 100,
+  "incoming_payload_key": "incoming",
+  "anchor_payload_key": "model",
+  "original_remaining_contributors": [
+    5,
+    10,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "new_full_FL_or_FU": false
+}

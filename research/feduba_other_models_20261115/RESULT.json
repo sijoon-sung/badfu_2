@@ -1,0 +1,75 @@
+{
+  "state": "passed",
+  "models": [
+    {
+      "dataset": "PATHMNIST",
+      "input": [
+        2,
+        3,
+        28,
+        28
+      ],
+      "output": [
+        2,
+        9
+      ],
+      "parameters": 2295641,
+      "strict_CPU_roundtrip_exact": true
+    },
+    {
+      "dataset": "PATHMNIST_outter",
+      "input": [
+        2,
+        3,
+        28,
+        28
+      ],
+      "output": [
+        2,
+        8
+      ],
+      "parameters": 2294360,
+      "strict_CPU_roundtrip_exact": true
+    },
+    {
+      "dataset": "GTSRB",
+      "input": [
+        2,
+        3,
+        32,
+        32
+      ],
+      "output": [
+        2,
+        43
+      ],
+      "parameters": 9248043,
+      "strict_CPU_roundtrip_exact": true
+    },
+    {
+      "dataset": "GTSRB_outter",
+      "input": [
+        2,
+        3,
+        32,
+        32
+      ],
+      "output": [
+        2,
+        59
+      ],
+      "parameters": 9256251,
+      "strict_CPU_roundtrip_exact": true
+    }
+  ],
+  "sources": {
+    "mobilenetv2.py": "7e5ee0d8d9ecd923fb9acb28499d44554d57091f5f81375e1a731d8624d928b0",
+    "vgg.py": "4a3701fa9d21f8e8cd3fb3e4b732092dfe93ba898388eaed6164e969149bbdf9"
+  },
+  "real_dataset_samples": 0,
+  "optimizer_steps": 0,
+  "CUDA_initialized": false,
+  "author_identity_certified": false,
+  "overall_paper_reproduced": false,
+  "time": 1794730077.9311576
+}

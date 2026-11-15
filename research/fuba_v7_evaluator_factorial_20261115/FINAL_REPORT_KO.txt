@@ -1,0 +1,26 @@
+FUBA v7 실제 KD10 전후의 평가 연산/G모드 비교 완료 — 기존 성능 실패 유지
+
+관련 R02/R04/D08/D15. case fuba.v7.s20261023.pre100.post.kd10의 봉인된 전후 모델과 같은 G를 고정했다. 원100R/KD10 훈련이나 완료한 원평가프로그램을 재실행하지 않았다. 새2×2 평가만 수행했고 optimizer step=0이다.
+
+입력연산    G모드     전ASR%(hits/9000)       후ASR%(hits/9000)       전후CA%
+legacy     eval     10.5555555556(950)    16.7444444444(1507)    77.76/77.76
+legacy     train    10.6888888889(962)    16.7777777778(1510)    77.76/77.76
+public     eval     26.4444444444(2380)    36.5333333333(3288)    77.76/77.76
+public     train    26.7111111111(2404)    36.6555555556(3299)    77.76/77.76
+
+legacy는(x+.05G(x)).clamp(0,1), public은(x+clamp(.3G(x),-.05,.05)).clamp(-1,1)이다. 두연산은multiplier와최종clip범위가함께다르므로이두부분의개별인과를분리했다고하지않는다. 생성기모드효과는고정legacy에서후ASR+.033333pp,고정public에서+.122222pp로작았다. 공개MNIST Autoencoder의큰모드효과를CIFAR U-Net에그대로일반화할수없다.
+public/train후36.6555555556 - legacy/eval후16.7444444444 =19.9111111111pp이다. 사전20pp증가기준에미달했으므로주가설은실패다. 반올림해20으로통과시키지않는다. public연산에서전ASR도26.44/26.71로높아졌으며CA77.76은불변이다. 네조건모두기존전ASR<10/후ASR>=60/CA>=80의잠복게이트는실패했다. 평가차이가있다는것과논문재현성공은다르다.
+
+검증
+현재runtime의legacy/eval대조는원950/1507ASR분자와7776/7776clean분자를정확히재현했다. public두조건은공개attack/test AST의별도새모델/G경로,legacy두조건은원v7독립평가의trigger식AST경로와정수일치했다. 전체4조건×2모델,각10000clean/9000non-target이다. FP32/contiguousNCHW/B32/순서고정/deterministic/noTF32다.
+모든분류기/G파라미터,원본파일/라벨은불변이다. evalG buffer는원본과동일하고trainG각BN은313batch증가했다. 각독립경로의최종BN과양입력연산간같은모드의BN도정확히일치했다. 실제최대입력변화는float32잔차를포함해.050000011920928955이하이며모든출력유한성검사를통과했다. 현재평가에서저장된예측만으로정수재검산을수행했다.
+
+전달
+새평가32파일 패킷을DISLAB D:/FUBA_V7_EVALUATOR_FACTORIAL_20261115 및로컬delivery/payload로전달하고전SHA/byte를확인했다. 원classifier2/G1은이미양쪽CHECKPOINTS_FOR_REVIEW/FUBA_v7_s20261023_pre100_post_KD10에있어새ZIP에서중복제외했다. PACKET_SCOPE가해시/절대경로를명시하며로컬원3파일과기존997파일catalogueguard를재검증했다. 원입력모델은새로만들거나덮어쓰지않았다.
+manifest SHA256=48601e24df0fc60bfac8e21977d7b785a9f38f4bff4add1064939c056d089c7e
+ZIP SHA256=f735852e8f3bbf67d04841fad6a3b648d0120ddf20991507e930579323c4aa54; bytes203667
+로컬torch2.4.1 CPU는새4BN상태set의finite/원eval일치/train313/연산간일치만검사했다. 모델forward0/CUDAfalse이다. controller34136/evaluator35416은exit0로종료했으며실행실패/재시작은없다. 다른앱을종료하지않았다.
+
+한계와중단
+이검사는학습때의trigger연산을바꾼재학습이아니다. 모델수준원인이나publictrigger로훈련했을때의성능을결정하지않는다. 대응하는정상CIFAR모델전이대조가없어ASR변화를공격에특이적인증거로세지않는다. D08/D15큰정상non-IID반례는미해결이다.
+기존v7공식결과/봉인/catalogue/default는그대로유지하며이별도결과로덮어쓰지않는다. 본finite비교/평가/export를재실행하거나다른seed/round/G/scale를검색하지않는다. 실패한기준에서새full100R를자동실행하지않는다. 전체논문재현은미완료다.
