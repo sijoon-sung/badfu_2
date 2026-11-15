@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "d58aa359c22abd9bbc203961959da4d3f4cc07829db4f5e552349226bc9d8af7",
+  "registry_sha256": "1183be8f601899e18ff7f63235627b8051d5ba835d9908a659b71778bbf56bfe",
   "cards": 31,
-  "unique_source_documents": 360,
+  "unique_source_documents": 362,
   "top_level_folders": 101,
   "folders_linked_to_cards": 62,
   "source_sha256": {
@@ -272,6 +272,8 @@
     "research/fuba_retrain_fu_recovery_20261115/FU_DELIVERY_METADATA_CORRECTION.json": "2eac559498f39cab4caa330ab318eead1228e1d1436942c999bd648cc46a2b0b",
     "research/fuba_retrain_fu_recovery_20261115/SAVED_PREDICTION_SUMMARY.json": "6d2c99aea3d95f20789ad9fcb73772745e7387448506d895a117106512fe12ec",
     "research/fuba_retrain_fu_recovery_20261115/FIGURE_QA.json": "50f77b0b644fbacc2a19281e9653af671f044bf6d8ccb1114946d18dd35033ae",
+    "research/fuba_batch_redraw_pilot_20261115/LAUNCH_REPORT_KO.txt": "62669182df92609fc60b19ac2c02d5041cebc1bb98539b08fa13f4b3d0120971",
+    "research/fuba_batch_redraw_pilot_20261115/LAUNCH_REQUEST.json": "968638bb492256d447aaa64369c57f0ed9d75e45a14d599a35b5cb0cefd12e82",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -717,6 +719,7 @@
       "top_level_documents": [
         "research/fuba_batch_redraw_pilot_20261115/AUDIT_FREEZE.json",
         "research/fuba_batch_redraw_pilot_20261115/EXECUTION_PROTOCOL.txt",
+        "research/fuba_batch_redraw_pilot_20261115/LAUNCH_REPORT_KO.txt",
         "research/fuba_batch_redraw_pilot_20261115/PROTOCOL.txt",
         "research/fuba_batch_redraw_pilot_20261115/REPORT_KO.txt"
       ],
