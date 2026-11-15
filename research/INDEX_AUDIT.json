@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "2a2a7cba7d6c33b646dc481d5e5a5e415134dafc9c918494f8910d1c79333fbc",
-  "cards": 26,
-  "unique_source_documents": 216,
-  "top_level_folders": 97,
-  "folders_linked_to_cards": 49,
+  "registry_sha256": "b5547ce2467f86e87588342c609c71354f17df5f7ab254ecb0df1dae68479e0f",
+  "cards": 27,
+  "unique_source_documents": 220,
+  "top_level_folders": 98,
+  "folders_linked_to_cards": 50,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -204,6 +204,10 @@
     "research_audit_20261019/purification/head.md": "6742c1e74930b5a1ef554cb5e1543805a971fbb497c18b636204ed6c8a287f57",
     "research/ac_feasibility_20261023/README.md": "263519fd1d6a14f695cbe4ea413c336c0346a1c5955402caeb4b2739100b55c4",
     "research/ac_feasibility_20261023/SOURCE_AUDIT.json": "41761cb95abb572740886a6d305480aee12094cde04ee6654c4480a0f0acbeef",
+    "research/badfu_timing_defense_20261115/PROTOCOL.txt": "d383bfd8783951c40327ff2f781cdc72fb507875472b658d8cef3ea3b6d90e23",
+    "research/badfu_timing_defense_20261115/REPORT_KO.txt": "4a65f89e2ecda46c343be8d30797902144480cbfd90f9ed63d9e258682814e30",
+    "research/badfu_timing_defense_20261115/SUMMARY.json": "01447f3d387c88c824690fc4f637b8d3381078c2590f039e1e57aed0a94c8b32",
+    "research/badfu_timing_defense_20261115/DISLAB_VERIFICATION.json": "8b6f15dd825d5ea19b89c6baba6ed0d7fb8ab15f992b4a820e0c1c46f01aab5b",
     "research/manifold_projection_check_20261025/PROTOCOL.txt": "15607c4f3f651e73ef602b3da4188dfba0be3836e39cd89e77470fbcaa344837",
     "research/manifold_projection_check_20261025/FREEZE.json": "f06b1f3c4de4f809d6cccb0e849a1b24210b54456094064c2eae49baa5e26d6e",
     "research/manifold_projection_check_20261025/REPORT_KO.txt": "48e99c75d4d6e553f087c8c102952ceb3bc34acdb07d5166e282c5d7bffd1351",
@@ -362,6 +366,18 @@
         "research/badfu_algorithm_audit_20261023/EVIDENCE_MANIFEST.json",
         "research/badfu_algorithm_audit_20261023/FINISH_STATUS.json",
         "research/badfu_algorithm_audit_20261023/README.md"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/badfu_timing_defense_20261115",
+      "related_cards": [
+        "P05"
+      ],
+      "top_level_documents": [
+        "research/badfu_timing_defense_20261115/PROTOCOL.txt",
+        "research/badfu_timing_defense_20261115/REPORT_KO.txt",
+        "research/badfu_timing_defense_20261115/SUMMARY.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

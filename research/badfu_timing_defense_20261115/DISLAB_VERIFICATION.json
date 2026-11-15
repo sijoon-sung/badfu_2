@@ -1,0 +1,35 @@
+{
+  "started": {
+    "pid": 11584,
+    "clock": 1794727969.739529,
+    "source": "1c7461b4f7372afa868b939ce37c992286dfb65af6f41bb4c891ac1e06bcdb33"
+  },
+  "terminal": "normal_gate_failed",
+  "attack_evaluation": false,
+  "pid_present": false,
+  "hashes": {
+    "PROTOCOL.txt": "d383bfd8783951c40327ff2f781cdc72fb507875472b658d8cef3ea3b6d90e23",
+    "timing.py": "1c7461b4f7372afa868b939ce37c992286dfb65af6f41bb4c891ac1e06bcdb33",
+    "ops.py": "204c70bfa3e796be5f1ce38f9fb76c4f60ad7fbc813b58db58b6c589d7c75fa2",
+    "INPUTS.json": "a0073c6fc8bec852589cc987f1b3b5eddf4dbe2cfb327cc8eb413912a96725c8",
+    "FREEZE.json": "742ce82c7b77c13b19efce8bf8701ca111b3ff41f635333f1f172e0ce7336988"
+  },
+  "files": [
+    "DATA_RECEIPT.json",
+    "FREEZE.json",
+    "INPUTS.json",
+    "normal193_FIT.json",
+    "normal193_RESULT.json",
+    "normal228_FIT.json",
+    "normal228_RESULT.json",
+    "normal850_FIT.json",
+    "normal850_RESULT.json",
+    "NORMAL_GATES.json",
+    "ops.py",
+    "PROTOCOL.txt",
+    "RESOURCE_RECEIPT.json",
+    "STARTED.json",
+    "TERMINAL.json",
+    "timing.py"
+  ]
+}
