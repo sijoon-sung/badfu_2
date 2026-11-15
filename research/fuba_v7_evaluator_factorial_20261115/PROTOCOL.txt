@@ -1,0 +1,14 @@
+가설: 저장된 FUBA v7 실제 KD10 후 모델에서 public FUBA의 trigger 연산과 생성기 train 모드를 적용한 ASR은, 원래 IBA-adapted 연산/eval 모드보다20%p 이상 높다.
+
+관련 R02/R04/D08/D15. INDEX/카드/원 실패, v7 FINAL_DELIVERY_REPORT_KO/FINAL_PAPER_COMPARISON/FINAL_COMPLETION, 새 공개IBA6쌍 FINAL_REPORT_KO를 읽었다. 공개MNIST KD40.54→89.41/RobustFU49.82→99.77의 실제 G모드 효과와 원함수 정수일치가 새 대조의 근거다. 예전 v7의 소스는 이미 명시한 IBA 해석이며 이 차이를 최초 발견이라고 부르지 않는다. 새 관측은 동일 실제pre/post/G의2×2 평가 요인 분리다. 원 finite trainer/controller/evaluator/export는 재실행하지 않는다.
+
+고정 입력 case fuba.v7.s20261023.pre100.post.kd10, purpose diagnostic. 원 전후파일 SHA bdd8f962de7743a2679054b1155eeee83871b1aed67d6932096f576df7f8b7a9 / 1f577d504b632bb1170909329ea8b3499bffe5b2913988bfef37ce7377ebe96d, G cc349f9faf12e26327fd60a49d968e3c14521be8a8e13791774384d699747ca1. select_case.py의 기존 외부 DELlVERY_MANIFEST/SEAL과997파일guard를 통과하고 명시된 payload_key=null만 읽는다. 같은 원 G를 모든 조건/독립 경로마다 새로 복원한다. 기존 입력/모델/기준/기본 case는 변경하지 않는다.
+
+두 요인: (A) legacy=(x+.05*G(x)).clamp(0,1); public=(x+clamp(.3*G(x),-.05,.05)).clamp(-1,1). public 연산은 bc233610 comm_utils.attack 원함수이며 .3/.05는 보충자료의 선언값이다. 공개 CLI 기본1/.04 또는 저자artifact 생성 설정이 이 값과 같다고 인증하지 않는다. A는 multiplier뿐 아니라 최종clamp범위도 함께 다른 연산정책 요인이다. 둘의 개별 인과를 이2×2로 분리했다고 하지 않는다. (B) generator.eval / fresh generator.train. classifier는 항상eval이다.
+기존 v7 독립 평가와 같은 test10000/non-target9000,ToTensor[0,1], contiguousNCHW, B32/원순서/마지막16, FP32/deterministic/noTF32를 고정한다. 새 평가의 legacy/eval은 현재runtime 대조이며 원래950/1507 ASR분자와7776/7776 clean분자를 먼저 확인한다. 불일치면 현재실행차이를 보존하고 다른세조건의 성능해석을 진행하지 않는다. 현재대조를 새 학습/원 finite evaluator 재실행으로 세지 않는다.
+public두조건은 별도 새 classifier/G에 공개 attack/test AST를 그대로 실행해 정수를 대조한다. legacy두조건은 저장 원 independent_evaluate.py의 b=... 식 AST로 별도 추론해 정수를 대조한다. evalG buffer는 불변,trainG BN은조건마다313batch만 증가하고 독립경로와 같아야 한다. 모든 파라미터 및원파일/라벨불변,finite/입력noise bound를 확인한다. new optimizer step=0.
+
+주 가설은 public/train postASR - legacy/eval postASR>=20pp일 때만 지지한다. 전ASR도전부보고하며전<10/후>=60/양쪽CA>=80의기존잠복게이트를그대로별도표시한다. 이미원CA77.76이므로평가정정만으로전체성능성공을예고하지않는다. 다른seed/이력/round/G/epsilon을찾아대체하지않는다. 주가설이성공해도새full100R 자동실행이나언러닝성공선언을하지않는다.
+이 조건에는 대응하는 정상 CIFAR 모델전이 대조가 없다. 공개MNIST 정상전이가낮았다는결과를v7에옮겨적용하지않는다. D08의큰benign non-IID반례.75848 대.75525/.76188와D15반례는미해결이며새탐지법/트리거독립성/악성원인추론은없다.
+
+source/hash/finite/정수/BN 불일치면원본오류를보존하고중단한다. 자원guard util<=5/free>=2500MiB/RAM3GiB/disk10GiB 및경쟁훈련부재를유지한다. 완료한공개IBA평가와기존v7작업을재실행하지않는다. 새디렉터리에서한번의준비/한번의평가를실행하고저장예측/BN복사본/로그를양쪽전달한다. 원세모델은이미양쪽봉인보관중이므로새결과패킷은그해시/경로를연결하며중복복사범위를명시한다.
