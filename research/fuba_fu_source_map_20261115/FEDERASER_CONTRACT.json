@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "device": "CPU",
+  "CUDA_initialized": false,
+  "official_function_tensor_exact": true,
+  "old_vs_new_norm_counterexample": true,
+  "client_exclusion_and_zero_direction_checked": true,
+  "real_FU_training": false,
+  "details": {
+    "retained_clients": [
+      3,
+      12
+    ],
+    "tensor_norms": {
+      "w": {
+        "old": 5.0,
+        "new": 1.0
+      }
+    },
+    "policy": "official-code: mean clients, then per-tensor old norm/new direction"
+  },
+  "source_sha256": "7ce52226d058bcad9688afa28532c6205ba0f3c1cd0b593365a1dcbd36cf5346",
+  "executed_sha256": {
+    "test_federaser_calibration.py": "6f1951403fe61d772167e805e65f318b7474919662b02d685dbd9fab2f3dfb34",
+    "federaser_calibration.py": "9a47d139facffcefbf094c3b3fa6fb1185a142912ce08768937f3c3207593062",
+    "unlearning_kernels.py": "8d145ce426b079f30652ade876080ea9c9f0128f32c69e08196958e260b0556f"
+  }
+}

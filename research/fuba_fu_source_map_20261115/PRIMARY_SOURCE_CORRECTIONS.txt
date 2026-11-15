@@ -12,5 +12,9 @@ PGD 원문
 https://arxiv.org/html/2207.05521v3 Section4.2, Algorithm1, AppendixA를 직접 확인했다. reference는 마지막 round의 다른 참여자 평균, 초기값은 reference, ascent 후 reference 중심 L2 ball에 projection한다. 원문 조기종료 비교는 마지막 삭제 client 모델과의 거리 < tau이다. 임의로 부등호를 뒤집지 않는다.
 AppendixA는 SGD momentum.9/lr.01, batch1024, 5epochs, gradient clip norm5, radius=무작위 초기 모델10개와 reference 사이 평균거리의1/3, tau는2..6 grid로 설명한다. FUBA 보충자료는 radius/early-stop을 원문과 같게 두고10R post-training이라고 한다. 원문에 공개된 단일 tau나 FUBA의 partial-participation 마지막 client 모델 처리 규칙은 아직 확인되지 않았다. 구현은 이 값을 명시 인자로 요구하며 시험 결과를 보고 유리한 값을 묵시 선택하지 않는다.
 
+FedEraser 저자 원본 확보 및 연산 복원
+원논문 p2의 직접 Dropbox 링크에서 FedEraser-Code.zip을 확보했다. archive SHA256 4babbbf2d9f93b0e29a7accdcc6667670b9e99072f44031a6b8390c0b121839b. FUBA 수정본의 비활성 unlearning_step_once는 step_length=norm(new_update)이지만 저자 원본은 norm(old_update)이다. 평균 update의 옛크기가5/새크기가1인 CPU반례에서 복원 결과는5이고 수정본식은1이다. 별도ID보존calibrate_author_layers는원본AST함수와tensor정확일치했다(FEDERASER_CONTRACT.json). 삭제client혼입과비영old/영new방향을거부한다.
+이함수는저자코드처럼client평균후tensor별보정이다. 논문Eq1의client별보정후집계와묵시동일시하지않는다. 전체역사적round선택/20epoch와interval2의결합/실제FU성능은이수식계약으로검증되지않는다. 새GPU FU실행은아직없다.
+
 범위
 여기서 source 확인은 새 FU 실제 실행 또는 새 공격 성능 재현이 아니다. 원문 수식에 대응하는 수치 연산을 별도 모듈로 구현·계약 검사할 수 있지만 학습 실행에는 입력 case/해시와 명시 profile이 필요하다. 새로운 탐지 주장이 없으며 D08/D15의 큰 정상 non-IID 반례는 해결되지 않았다.
