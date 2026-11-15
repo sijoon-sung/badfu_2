@@ -837,6 +837,32 @@
       "provenance": "ity207/FedUBA 고정005959ab 기반 선언 구현의 2026-11-03 진단 기록을 2026-11-15 DISLAB CPU에서 교차 집계했다. STG/SSS/BEA, 관련 helper 요청 부호 해석과 완전 재현 미달을 명시한다.",
       "process_report": "research/feduba_activation_evidence_20261115/README.md",
       "github_group": "01-reproduction"
+    },
+    {
+      "id": "R06",
+      "group": "재현·출처",
+      "title": "FedUBA Eq.7 전체 클래스 선택의 고정 코호트 비교",
+      "status": "전체 클래스125 검증·정상/공격 FU20 실행 중",
+      "hypothesis": "fixed10의 target-only 제한을 논문 Eq.7 전체 클래스 top125로 교정하면 기존 minus-request 실패보다 활성화가 개선된다.",
+      "conditions": "R03/R02/N02/R05/D08/D15. 같은 seed42 cleanFL20, fixed10, owners5/7, delta, 예산125, minus BEA, FedEraser와 role RNG를 고정한다.",
+      "controls": "새 동일ID 정상 삭제20R와 공격FU20R; 과거 target-only fixed10 minus 및 random-cohort allclass 실패를 함께 보존한다.",
+      "result": "DISLAB selector 계약3개 및 새 top125 FP64 경계 검증 통과. 이전 target-only 선택과 교집합0, owner59/66. 실제 FU/최종 성능은 아직 미완료다.",
+      "non_iid_lesson": "알려진 trigger/target을 쓰는 공격 구현 비교이며 D08/D15 큰 정상 non-IID 혼동과 범용 탐지는 미해결이다.",
+      "do_not_repeat": "한 조건의 운영 gate나 코드 검사 통과를 전체 논문 재현으로 표시하지 않는다. 완료 원본 작업 재실행·결과 맞춤 seed/epsilon/부호 retuning을 하지 않는다.",
+      "revisit_condition": "기록된 소스·논문 불일치에 근거한 새 고정 비교만 수행한다. 무결성 실패는 prefix 보존/정지, 성능 실패는 그대로 보고한다.",
+      "folders": [
+        "research/feduba_eq7_allclass_20261115"
+      ],
+      "sources": [
+        "research/feduba_eq7_allclass_20261115/PROTOCOL.txt",
+        "research/feduba_eq7_allclass_20261115/PROFILE.json",
+        "research/feduba_eq7_allclass_20261115/SCOPE.json",
+        "research/feduba_eq7_allclass_20261115/SOURCE_FREEZE.json",
+        "research/feduba_eq7_allclass_20261115/PREPARED.json",
+        "research/feduba_eq7_allclass_20261115/REPORT_KO.txt"
+      ],
+      "process_report": "research/feduba_eq7_allclass_20261115/REPORT_KO.txt",
+      "github_group": "01-reproduction"
     }
   ],
   "process_reporting": {

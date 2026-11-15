@@ -1,0 +1,25 @@
+{
+  "state": "passed",
+  "case_id": "feduba.public_fixed10.cifar10.cleanfl20.s42.20261103",
+  "class_counts": [
+    18,
+    5,
+    0,
+    10,
+    9,
+    5,
+    4,
+    10,
+    57,
+    7
+  ],
+  "owner_counts": {
+    "5": 59,
+    "7": 66
+  },
+  "selection_sha256": "8573cd49d4465612c8e6f07ffed3a69a0367c95ee9c3ead06dd60198fac8af9d",
+  "FP64_same_top125": true,
+  "new_forward_calls": 0,
+  "new_training": 0,
+  "overlap_with_old_target125": 0
+}

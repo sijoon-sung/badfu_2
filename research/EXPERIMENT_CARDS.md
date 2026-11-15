@@ -859,3 +859,31 @@
 
 **묶은 폴더:** [feduba_activation_evidence_20261115](feduba_activation_evidence_20261115)
 
+<a id="r06"></a>
+
+## R06 · FedUBA Eq.7 전체 클래스 선택의 고정 코호트 비교
+
+**가설 한 줄: fixed10의 target-only 제한을 논문 Eq.7 전체 클래스 top125로 교정하면 기존 minus-request 실패보다 활성화가 개선된다.**
+
+**판정: 전체 클래스125 검증·정상/공격 FU20 실행 중**
+
+`실험 시작 이유와 실제 실행 과정 읽기` (로컬 보관)
+
+- **조건:** R03/R02/N02/R05/D08/D15. 같은 seed42 cleanFL20, fixed10, owners5/7, delta, 예산125, minus BEA, FedEraser와 role RNG를 고정한다.
+- **정상 대조·비교:** 새 동일ID 정상 삭제20R와 공격FU20R; 과거 target-only fixed10 minus 및 random-cohort allclass 실패를 함께 보존한다.
+- **결과:** DISLAB selector 계약3개 및 새 top125 FP64 경계 검증 통과. 이전 target-only 선택과 교집합0, owner59/66. 실제 FU/최종 성능은 아직 미완료다.
+- **non-IID에 대해 남길 교훈:** 알려진 trigger/target을 쓰는 공격 구현 비교이며 D08/D15 큰 정상 non-IID 혼동과 범용 탐지는 미해결이다.
+- **반복하지 않을 주장:** 한 조건의 운영 gate나 코드 검사 통과를 전체 논문 재현으로 표시하지 않는다. 완료 원본 작업 재실행·결과 맞춤 seed/epsilon/부호 retuning을 하지 않는다.
+- **재검토 조건:** 기록된 소스·논문 불일치에 근거한 새 고정 비교만 수행한다. 무결성 실패는 prefix 보존/정지, 성능 실패는 그대로 보고한다.
+
+**원문·증거:**
+
+- [research/feduba_eq7_allclass_20261115/PROTOCOL.txt](feduba_eq7_allclass_20261115/PROTOCOL.txt)
+- [research/feduba_eq7_allclass_20261115/PROFILE.json](feduba_eq7_allclass_20261115/PROFILE.json)
+- [research/feduba_eq7_allclass_20261115/SCOPE.json](feduba_eq7_allclass_20261115/SCOPE.json)
+- [research/feduba_eq7_allclass_20261115/SOURCE_FREEZE.json](feduba_eq7_allclass_20261115/SOURCE_FREEZE.json)
+- `research/feduba_eq7_allclass_20261115/PREPARED.json` (로컬 보관)
+- `research/feduba_eq7_allclass_20261115/REPORT_KO.txt` (로컬 보관)
+
+**묶은 폴더:** [feduba_eq7_allclass_20261115](feduba_eq7_allclass_20261115)
+

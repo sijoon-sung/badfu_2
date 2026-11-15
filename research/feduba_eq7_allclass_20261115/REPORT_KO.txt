@@ -1,0 +1,11 @@
+FedUBA Eq.7 전체 클래스 선택 교정 — 실행 중, 전체 재현 미완료
+
+고정코드/프로토콜은 PR3 commit8763a56에 학습 전에 게시했다. DISLAB 전용 D:/FEDUBA_EQ7_ALLCLASS_20261115에서 새 비교를 실행한다. 원본 모델과 완료 작업은 수정하거나 재실행하지 않았다.
+
+prepare 완료: 명시 clean case diagnostic 선택 및 봉인 guard, 원5000 query/score/입력 hashes와 새 전체 클래스 top125의 FP64 경계 일치. 새 모델 forward0. 클래스별 선택 수는 [18,5,0,10,9,5,4,10,57,7], owner5/7은59/66이다. 기존 targetclass2-only125와 교집합0. 세 selector 계약 검사 통과. 클래스필터 제거 외 훈련 조건은 고정했다.
+
+정상 삭제20R -> CPU 이력 감사 -> 공격FU20R -> CPU 이력 감사 -> 전체 CA/ASR 및 새 프로세스 독립 평가를 시작했다. 이 문서의 시작 상태만으로 현재 프로세스 생존이나 완료를 추정하지 않고 원격 CONTROLLER.json/STATE.json/실PID/FAILURE_*.json을 함께 확인한다.
+
+최종 결과는 아직 없다. 이전 fixed10 minus ASR13.8222%, plus 진단58.7444%, random-cohort allclass19.3333%의 실패는 그대로 보존한다. 이 단일 조건의 성공 여부와 전체 논문 범위를 분리하며 SCOPE.json의 누락 조건은 완료로 표시하지 않는다.
+
+관련 R03/R02/N02/R05/D08/D15. D08/D15 큰 정상 non-IID 반례는 해결하지 않은 공격 구현 비교다. 공개 FU의 local feature replacement와 논문 영향 제거 서술 사이의 해석 간극도 남는다.
