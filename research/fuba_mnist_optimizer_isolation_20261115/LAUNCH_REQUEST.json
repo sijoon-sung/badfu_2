@@ -1,0 +1,15 @@
+﻿{
+    "time_UTC":  "2026-11-15T12:33:00.8260548Z",
+    "round":  100,
+    "new_full_FU":  false,
+    "execution_freeze_sha256":  "f18dbfdf52338113df9847622cccef6ef2ebb0a53c36264a4dee29193378152c",
+    "client":  1,
+    "triggers":  0,
+    "task":  "Codex-FUBA-MNIST-optimizer-isolation-20261115",
+    "arms":  [
+                 "algorithm_sgd",
+                 "experimental_adam"
+             ],
+    "protocol_commit":  "1624e94",
+    "automatic_retries":  0
+}
