@@ -1,0 +1,15 @@
+가설: 동일 입력·분할·phase/role seed에서 명시 deterministic GPU backend를 쓰면 FUBA 첫21R/client0의 4단계/각50epoch와 gamma11점 결과가 두 실행에서 tensor 단위로 정확히 일치한다.
+관련 R02/R03/D08/D15 및 fuba_gamma_trajectory_20261115/NUMERICAL_CONTROL.json. 새 관측은 성능 개선이 아니라 현재 runtime에서 학습/optimizer/RNG/선택의 반복 일치 여부다.
+
+발견과 정정
+기존 두 궤적은 첫21R/client0부터 anchor1/2,embedding,representative가 bit 불일치했다. RNG 기록은 같았지만 model 최대 차이는 각각 .0546016172/.4530690014/.00495181978/.0022572428이다. 이를 단순히 미세한 최종 오차라고 부르지 않는다. 10R 두 arm의 ASR>10 위반은 각각3회여서 등록 성능가설 자체도 실패했다. 기존 결과/학습/소스는 그대로 보존하며 그 차이를 gamma만의 인과효과로 해석하지 않는다.
+
+고정 범위
+원래 case fuba.reference.mnist.dba.s20261023.pre100.post.kd10을 diagnostic으로 공식 catalogue guard에서 다시 선택하고, 이미 전달된 새 pilot inputs의20R after/SPLIT/PROFILE/Net 및 원본 reference_core 해시를 재확인한다.
+새 디렉터리 D:/FUBA_DETERMINISM_CONTRACT_20261115에서 정확히 두 번의21R/client0 역할만 실행한다. 동일한20R, seed20471023, partition20261020, train2700/valid300/고정poison810/own patch/target8,4단계50epochs/B64, 기존 Adam·Adam·SGD·Adam core를 바꾸지 않는다. local/global gamma 또는 Adam/SGD 성능 비교가 아니다.
+명시 backend: CUBLAS_WORKSPACE_CONFIG=:4096:8, torch.use_deterministic_algorithms(True), cudnn.deterministic=True, cudnn.benchmark=False, cudnn.allow_tf32=False, matmul.allow_tf32=False. 이전 환경에서 불일치 원인 하나를 분리한다고 주장하지 않는다. 이전 완료 학습을 재시작하지 않는다.
+두 새 실행의 실제4phase 모델/optimizer/loader/global RNG와50epoch 로그를 모두 저장한다. 실제11점 로컬300장 평가/선택 결과도 저장한다. 각 단계의 모든 tensor와 RNG, gamma 결정이 정확히 같아야 계약 통과다. 합성 데이터가 아니라 실제 역할을 쓰지만 전체test ASR/CA나 새로운 FU를 계산하지 않으며 공격 성능 성공으로 세지 않는다.
+실행 전 이전trainer/독립평가 종료, 현재 실제프로세스, util<=5/free>=2500MiB/RAM>=3GiB/disk>=10GiB 확인. 다른 앱 종료 없음. 입력/소스/finite/저장/정확 반복 비교 실패 또는 deterministic unsupported 연산이면 실패를 보존하고 종료한다. seed/epoch/backend를 다시 바꿔 자동 재시도하지 않는다.
+
+판정 범위
+통과하더라도 두 번의 한 역할에 한정하며 전체100R/전체환경 재현성 보장이 아니다. 이전 궤적 비교의 혼동을 소급 제거하지 않는다. 향후 새로운 실험의 runtime 근거일 뿐 이 계약만으로100R를 시작하지 않는다. D08/D15의 큰 정상non-IID 삭제 반례는 여전히 미해결이고 이 작업은 공격 탐지법이 아니다.
