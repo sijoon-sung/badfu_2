@@ -1,0 +1,50 @@
+{
+  "normal193": {
+    "late": {
+      "delta_clean_pp": -1.25,
+      "worst_class_pp": -10.625,
+      "worst_client_pp": -0.625,
+      "added_auc_distance": -0.001431313390129585,
+      "passed": false
+    },
+    "split": {
+      "delta_clean_pp": -1.875,
+      "worst_class_pp": -10.0,
+      "worst_client_pp": -1.25,
+      "added_auc_distance": 0.002353457360183442,
+      "passed": false
+    }
+  },
+  "normal228": {
+    "late": {
+      "delta_clean_pp": -2.4375,
+      "worst_class_pp": -10.625,
+      "worst_client_pp": -3.125,
+      "added_auc_distance": -0.013224272563826966,
+      "passed": false
+    },
+    "split": {
+      "delta_clean_pp": -1.625,
+      "worst_class_pp": -5.625,
+      "worst_client_pp": -1.25,
+      "added_auc_distance": -0.013602013211082009,
+      "passed": false
+    }
+  },
+  "normal850": {
+    "late": {
+      "delta_clean_pp": -2.0625,
+      "worst_class_pp": -5.0,
+      "worst_client_pp": -1.875,
+      "added_auc_distance": null,
+      "passed": false
+    },
+    "split": {
+      "delta_clean_pp": -2.0,
+      "worst_class_pp": -5.0,
+      "worst_client_pp": -2.5,
+      "added_auc_distance": null,
+      "passed": true
+    }
+  }
+}

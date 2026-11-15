@@ -1,0 +1,324 @@
+{
+  "card": "P05",
+  "type": "descriptive_reanalysis_of_frozen_counts",
+  "stage_order": [
+    "anchor",
+    "after_12_shared_recovery_steps"
+  ],
+  "counts_per_class": 160,
+  "overall_n": 1600,
+  "source_checksums_are_sha256": true,
+  "individual_transitions_available": false,
+  "new_model_runs": 0,
+  "rows": {
+    "normal193": {
+      "source_sha256": "354507e284387ef735b4dde7ed1e719afa35be14b4daaa134b97a4511a69b736",
+      "comparisons": {
+        "late": {
+          "whole_delta_correct": [
+            -35,
+            -20
+          ],
+          "class_delta_correct": [
+            [
+              -6,
+              0,
+              -6,
+              -27,
+              1,
+              -10,
+              5,
+              2,
+              3,
+              3
+            ],
+            [
+              -5,
+              2,
+              -1,
+              -17,
+              0,
+              1,
+              -1,
+              -1,
+              2,
+              0
+            ]
+          ],
+          "selected_class_counts": {
+            "3": {
+              "no_repair": [
+                129,
+                127
+              ],
+              "repair": [
+                102,
+                110
+              ]
+            }
+          }
+        },
+        "split": {
+          "whole_delta_correct": [
+            -43,
+            -30
+          ],
+          "class_delta_correct": [
+            [
+              -8,
+              -2,
+              -4,
+              -29,
+              0,
+              -10,
+              5,
+              2,
+              -1,
+              4
+            ],
+            [
+              -3,
+              2,
+              -7,
+              -16,
+              -1,
+              -7,
+              1,
+              -1,
+              1,
+              1
+            ]
+          ],
+          "selected_class_counts": {
+            "3": {
+              "no_repair": [
+                129,
+                127
+              ],
+              "repair": [
+                100,
+                111
+              ]
+            }
+          }
+        }
+      }
+    },
+    "normal228": {
+      "source_sha256": "9ca3bd022a20128d29c33759584ef1f94923375b628a06c72db6264cf82d56dd",
+      "comparisons": {
+        "late": {
+          "whole_delta_correct": [
+            -38,
+            -39
+          ],
+          "class_delta_correct": [
+            [
+              -4,
+              -3,
+              1,
+              -18,
+              -6,
+              -13,
+              5,
+              7,
+              -5,
+              -2
+            ],
+            [
+              -4,
+              -2,
+              -10,
+              -17,
+              -1,
+              8,
+              -3,
+              -1,
+              -4,
+              -5
+            ]
+          ],
+          "selected_class_counts": {
+            "3": {
+              "no_repair": [
+                136,
+                136
+              ],
+              "repair": [
+                118,
+                119
+              ]
+            }
+          }
+        },
+        "split": {
+          "whole_delta_correct": [
+            -33,
+            -26
+          ],
+          "class_delta_correct": [
+            [
+              -5,
+              -2,
+              -3,
+              -12,
+              -6,
+              -10,
+              7,
+              5,
+              -3,
+              -4
+            ],
+            [
+              -5,
+              -2,
+              -9,
+              -8,
+              -3,
+              3,
+              4,
+              1,
+              -3,
+              -4
+            ]
+          ],
+          "selected_class_counts": {
+            "2": {
+              "no_repair": [
+                143,
+                142
+              ],
+              "repair": [
+                140,
+                133
+              ]
+            },
+            "3": {
+              "no_repair": [
+                136,
+                136
+              ],
+              "repair": [
+                124,
+                128
+              ]
+            }
+          }
+        }
+      }
+    },
+    "normal850": {
+      "source_sha256": "d04d2689791d2ae7d4ec5ff4abdf3f5dfb8fe41c487bf17d78419079e6b52c68",
+      "comparisons": {
+        "late": {
+          "whole_delta_correct": [
+            -42,
+            -33
+          ],
+          "class_delta_correct": [
+            [
+              -16,
+              -2,
+              -1,
+              -12,
+              -4,
+              -11,
+              3,
+              8,
+              -7,
+              0
+            ],
+            [
+              -8,
+              -1,
+              -3,
+              -7,
+              -1,
+              -2,
+              -3,
+              2,
+              -7,
+              -3
+            ]
+          ],
+          "selected_class_counts": {
+            "0": {
+              "no_repair": [
+                149,
+                149
+              ],
+              "repair": [
+                133,
+                141
+              ]
+            },
+            "3": {
+              "no_repair": [
+                136,
+                135
+              ],
+              "repair": [
+                124,
+                128
+              ]
+            }
+          }
+        },
+        "split": {
+          "whole_delta_correct": [
+            -38,
+            -32
+          ],
+          "class_delta_correct": [
+            [
+              -18,
+              -2,
+              2,
+              -13,
+              -6,
+              -8,
+              5,
+              12,
+              -8,
+              -2
+            ],
+            [
+              -8,
+              -1,
+              -5,
+              -8,
+              0,
+              -1,
+              -2,
+              7,
+              -8,
+              -6
+            ]
+          ],
+          "selected_class_counts": {
+            "0": {
+              "no_repair": [
+                149,
+                149
+              ],
+              "repair": [
+                131,
+                141
+              ]
+            },
+            "3": {
+              "no_repair": [
+                136,
+                135
+              ],
+              "repair": [
+                123,
+                127
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

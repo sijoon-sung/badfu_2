@@ -704,6 +704,57 @@
       "github_group": "04-purification"
     },
     {
+      "id": "P05",
+      "group": "정화·별도 단계",
+      "title": "BadFU 삭제 후 교정 시점과 큰 정상 탈퇴",
+      "status": "DISLAB CPU4 실행 완료·정상 효용 게이트 미달",
+      "hypothesis": "같은 교정 예산을 세 번 분산하면 말미 한 번보다 후속 복구에서 원래 정답을 잘 유지하면서 큰 정상 탈퇴의 효용을 지킨다.",
+      "conditions": "2026-11-15, R01/T01/P01/P02/D01/D02/D06/D07/D08/D15/D18. 승인된 s20261023 정상 삭제 끝점 세 건. 마지막 잔차 블록과 FC의 실제 유지 SGD 48배치 및 교정 48배치의 시간 배치. DISLAB CPU4, FP32 contiguous NCHW/batch32, torch2.7.1+cu118. 유지 자료는 검증 가능한 정상 참여자 1/2/3 원본 부분집합이다.",
+      "controls": "정상 19.336%·22.790% 전체 탈퇴와 정상 850장 삭제를 먼저 검사했다. 무교정, 초반, 말미, 분산의 공통 후속 12회를 비교했다. 각 요청의 공개 1600장 및 참여자별 160장, 큰 삭제 멤버 400장씩을 이용했다.",
+      "result": "12분기 실제 유지 576배치·교정 432배치를 완료했다. 19.336%의 최대 클래스 하락은 말미 10.625%p·분산 10.000%p, 22.790%는 10.625%p·5.625%p였다. 양쪽 모두 5%p 한도 실패. 정상 850장은 분산만 전체 2%p·클래스 5%p 경계에서 통과했다. 사전 게이트에 따라 공격 평가와 지연 SVD는 미실행. DISLAB 종료·실행 해시·7개 영수증 전송 확인, 정수와 판정 독립 검산 완료. 저장 카운트 후속 검산에서 말미 교정 직후 두 큰 정상 탈퇴의 클래스3 격차 27·18장, 22.790% 분산 교정에서 후속 클래스2 격차 3→9장을 확인했다. 방어 개입 후보 6개는 미검증이며 새 모델 실행 없음.",
+      "non_iid_lesson": "정상 정확도를 전체 평균으로만 보면 두 비교에서 손실을 과소평가할 수 있다. 분산 교정은 22.790%에서 손실을 줄였지만 다른 큰 삭제에서 일관된 이득이 없었다. D08의 공격·정상 탐지 중첩은 그대로다.",
+      "do_not_repeat": "정상 효용 실패를 공격 억제 실패나 재출현 부재로 해석하지 않는다. 같은 유한 실험을 재실행하거나 이 결과를 보고 사전 게이트를 완화하지 않는다. 삭제 멤버 AUC 한 개로 망각을 인증하지 않는다.",
+      "revisit_condition": "별도 교정법의 큰 정상 탈퇴 효용과 제한된 삭제 감사를 먼저 확인하고, 이후 같은 유지자료와 예산에서 공격의 원래 정답 회복·재오류를 검증해야 한다.",
+      "folders": [
+        "research/badfu_timing_defense_20261115"
+      ],
+      "sources": [
+        "research/badfu_timing_defense_20261115/PROTOCOL.txt",
+        "research/badfu_timing_defense_20261115/REPORT_KO.txt",
+        "research/badfu_timing_defense_20261115/SUMMARY.json",
+        "research/badfu_timing_defense_20261115/DISLAB_VERIFICATION.json",
+        "research/badfu_timing_defense_20261115/DEFENSE_POINTS_KO.txt",
+        "research/badfu_timing_defense_20261115/PHASE_COMPARISON_REPORT.json"
+      ],
+      "process_report": "research/badfu_timing_defense_20261115/REPORT_KO.txt",
+      "github_group": "04-purification"
+    },
+    {
+      "id": "P06",
+      "group": "정화·별도 단계",
+      "title": "삭제 후 복구 전 구간의 정답 마진 제약",
+      "status": "수학적 조건부 명제·CPU 합성 구현 검산 통과, 실모델 미검증",
+      "hypothesis": "동일 후보와 예산에서 후속 복구까지 마진을 제한하면 교정 직후 평가보다 큰 정상 탈퇴의 정상 기능을 보존하면서 원래 정답을 회복하는 후보를 남길 수 있다.",
+      "conditions": "2026-11-15, R01/T01/P01/P02/P05/D01/D02/D06/D07/D08/D15/D18/N01/N02. 삭제 후 고정 백본, 검증된 유지 라벨로 고정한 아핀 복구, 집행하는 합산 추가 갱신 상한. 실제 트리거와 역할은 사용하지 않는다. NumPy/SciPy의 CPU float64 합성 검산.",
+      "controls": "교정 직후만 제약, 복구 전 구간 명목 제약, 동일 경로에 추가 갱신 상한을 포함한 제약. 비가환 연산, 잘못된 입력, 독립 정상 합성 표본, 보호 밖 특징 반례를 검산했다. P05 큰 정상 19.336%·22.790%는 실제 모델 후속의 선행 대조다.",
+      "result": "사전 코드의 SHA256을 확인하고 로컬 및 DISLAB CPU에서 같은 6항목을 통과했다. 합성 직후 검사 혼합비 100%는 후속 마진 −0.8, 전 구간 명목 60.32%, 상한 포함 52.38%와 후속 하한 +0.2000001을 확인했다. 재현 영수증·선행 7개·프로토콜·코드를 PR #2에 기록했다. 실제 체크포인트·공격 입력·새 학습은 0건이다.",
+      "non_iid_lesson": "D08의 점수 중첩으로 역할을 판정하는 대신 P05의 잔류 정답 손실을 직접 제약한다. 집행 상한이 정상 희소 기여를 자를 수 있고 보호 표본 밖 효용은 보장되지 않는다. 큰 정상 대조와 독립 도메인 커버리지 검증이 필요하다.",
+      "do_not_repeat": "합성 하한을 실제 BadFU ASR, 트리거 가족 독립 탐지, 삭제 인증 또는 가변 백본 복구의 증명으로 쓰지 않는다. P05의 정상 효용 한도를 완화하지 않는다.",
+      "revisit_condition": "같은 삭제 범위·후보·예산에서 P05의 두 큰 정상 탈퇴, 보류·절단률, 유한 삭제 감사부터 통과할 때 실제 보관 공격의 원래 정답 회복·재오류를 평가한다.",
+      "folders": [
+        "research/badfu_recovery_margin_20261115"
+      ],
+      "sources": [
+        "research/badfu_recovery_margin_20261115/LITERATURE_KO.txt",
+        "research/badfu_recovery_margin_20261115/PROTOCOL_KO.txt",
+        "research/badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt",
+        "research/badfu_recovery_margin_20261115/VERIFICATION_DISLAB.json",
+        "research/badfu_recovery_margin_20261115/VERIFICATION_LOCAL.json"
+      ],
+      "process_report": "research/badfu_recovery_margin_20261115/RESULT_REPORT_KO.txt",
+      "github_group": "04-purification"
+    },
+    {
       "id": "N01",
       "group": "미검증 제안·보류",
       "title": "신뢰 기준 모델을 추가하면 해결된다는 직전 제안",
