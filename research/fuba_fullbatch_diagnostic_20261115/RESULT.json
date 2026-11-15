@@ -1,0 +1,71 @@
+{
+  "state": "complete",
+  "results": [
+    {
+      "path": "rounds/round0023.pt",
+      "sha256": "cf480d9886a9f73649ac35ffa53675cbc0635f7bb06469b8ccc2dee232993dc6",
+      "bytes": 1826803,
+      "round": 23,
+      "clients": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9887,
+        "target_successes": 1311,
+        "clean_target_bias": 21,
+        "CA_pct": 98.87,
+        "ASR_pct": 14.524706403722579,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    }
+  ],
+  "fixed_control": [
+    {
+      "path": "rounds/round0023.pt",
+      "sha256": "aa112deb7751a2e2ab7537bad10744bf6e789155043bc3de34ebdb18d9f38cab",
+      "bytes": 1826803,
+      "round": 23,
+      "clients": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        13,
+        18,
+        19
+      ],
+      "evaluation": {
+        "N": 10000,
+        "non_target_N": 9026,
+        "clean_correct": 9893,
+        "target_successes": 1310,
+        "clean_target_bias": 22,
+        "CA_pct": 98.93,
+        "ASR_pct": 14.513627298914248,
+        "trigger_role": 4
+      },
+      "exact_aggregation": true
+    }
+  ],
+  "checks": {
+    "CA97": true,
+    "ASR_strict10": false,
+    "ASR_reduced": false
+  },
+  "behavioral_hypothesis_supported": false,
+  "independent_validation_pending": true,
+  "posthoc_diagnostic_round_selection": true,
+  "full_paper_reproduced": false,
+  "unlearning_executed": false
+}

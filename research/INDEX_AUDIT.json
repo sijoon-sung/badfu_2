@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "4dbf1fed4e1e0ec985916f249aeb4b91f0e183a14289fd7e9243700f0994afdf",
+  "registry_sha256": "547f831c6c95572f13013fb4aed6b6e49fac9a1f6f186dbc726be594946baa72",
   "cards": 31,
-  "unique_source_documents": 378,
+  "unique_source_documents": 386,
   "top_level_folders": 102,
   "folders_linked_to_cards": 63,
   "source_sha256": {
@@ -290,6 +290,14 @@
     "research/fuba_fullbatch_diagnostic_20261115/LAUNCH_REQUEST.json": "9f5e91779aed72d46384f40d0f939629b06319cae9a5d99a6e3d514b23b5c42b",
     "research/fuba_fullbatch_diagnostic_20261115/LAUNCH_PREFLIGHT_CORRECTION.json": "fd38f4998996344f63f2f8642f4399746abfaa12c7ce2229155bbebc795c1647",
     "research/fuba_fullbatch_diagnostic_20261115/LAUNCH_REPORT_KO.txt": "7ac2c8026aecb916348f1b2a00cb767bc031407403b80abc2f0d78196f304a27",
+    "research/fuba_fullbatch_diagnostic_20261115/FINAL_REPORT_KO.txt": "1a8216e13adbc178ee8a63ef4629cc904719adaaac7ab1ba0693bdc3828a9210",
+    "research/fuba_fullbatch_diagnostic_20261115/RESULT.json": "f94d7a7aa9d7b873942c1a64df555f2c0b1ad0b935ae4e1b7b82193d6c630bb8",
+    "research/fuba_fullbatch_diagnostic_20261115/CPU_AUDIT.json": "be6e868238d88409307d73761345a4720d9f6dcc7dc20ded9936bbc715cf0c5a",
+    "research/fuba_fullbatch_diagnostic_20261115/INDEPENDENT_RESULT.json": "334a42f3337d1fd502f79d9c0d6a5f30bef1ac0d3b7cc5a007f0cda21de66373",
+    "research/fuba_fullbatch_diagnostic_20261115/GAMMA_AUDIT.json": "0b4a68e1fcf710ce56427339079d3605663c63c57e47147d82bc651c7eaaee3f",
+    "research/fuba_fullbatch_diagnostic_20261115/LOCAL_DELIVERY.json": "f135a10a8662becc82075b7f55d9cfe01e3a8dd9a8c59853d08549ae9fb2608c",
+    "research/fuba_fullbatch_diagnostic_20261115/LOCAL_MODEL_CONTRACT.json": "d0217d0f3e34c8a878959627be7ae2de76aae7d6a11aa0f0993efe01d40d2513",
+    "research/fuba_fullbatch_diagnostic_20261115/DELIVERY_COMPLETE.json": "9d4462d4dbdda6ec3662e361e2d50abbf890d67c37b5627f4c1620c3f5066a4d",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -825,8 +833,14 @@
       ],
       "top_level_documents": [
         "research/fuba_fullbatch_diagnostic_20261115/AUDIT_FREEZE.json",
+        "research/fuba_fullbatch_diagnostic_20261115/CPU_AUDIT.json",
+        "research/fuba_fullbatch_diagnostic_20261115/DELIVERY_COMPLETE.json",
+        "research/fuba_fullbatch_diagnostic_20261115/FINAL_REPORT_KO.txt",
+        "research/fuba_fullbatch_diagnostic_20261115/GAMMA_AUDIT.json",
+        "research/fuba_fullbatch_diagnostic_20261115/INDEPENDENT_RESULT.json",
         "research/fuba_fullbatch_diagnostic_20261115/LAUNCH_REPORT_KO.txt",
-        "research/fuba_fullbatch_diagnostic_20261115/PROTOCOL.txt"
+        "research/fuba_fullbatch_diagnostic_20261115/PROTOCOL.txt",
+        "research/fuba_fullbatch_diagnostic_20261115/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

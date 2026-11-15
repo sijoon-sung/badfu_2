@@ -1,0 +1,19 @@
+{
+  "state": "passed",
+  "rows": [
+    {
+      "arm": "fullbatch",
+      "round": 23,
+      "CA_correct": 9887,
+      "ASR_hits": 1311,
+      "CA_pct": 98.87,
+      "ASR_pct": 14.524706403722579,
+      "exact_integer_match": true
+    }
+  ],
+  "models": 1,
+  "N_per_model": 10000,
+  "non_target_N": 9026,
+  "evaluator": "author-functions-FP32-contiguous-B512",
+  "time": 1794745406.6879153
+}
