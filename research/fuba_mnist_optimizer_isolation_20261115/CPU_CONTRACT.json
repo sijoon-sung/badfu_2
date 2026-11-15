@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "SGD_model_optimizer_loader_matches_original": true,
+  "Adam_model_optimizer_loader_matches_independent_loop": true,
+  "synthetic_steps_per_training": 6,
+  "constant_gradient_demo": {
+    "weights": [
+      0.0,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "Adam_deltas": [
+      0.0,
+      -0.049960624579494135,
+      -0.04996062822639035,
+      -0.04996062868225242
+    ],
+    "SGD_deltas": [
+      0.0,
+      -0.00549,
+      -0.027449999999999992,
+      -0.054899999999999984
+    ],
+    "scope": "Positive constant per-coordinate scaling; epsilon prevents exact cancellation. Zero weight stays zero. Not a learned-model performance claim."
+  },
+  "real_training": 0,
+  "CUDA_initialized": false
+}

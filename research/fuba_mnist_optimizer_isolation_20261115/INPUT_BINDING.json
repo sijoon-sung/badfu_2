@@ -1,0 +1,18 @@
+{
+  "case_id": "fuba.reference.mnist.dba.s20261023.pre100.post.retrain100.recovered27.20261115",
+  "source_root": "D:/FUBA_RETRAIN_FU_RECOVERY_20261115",
+  "manifest_sha256": "7fc9f2129d3e567b6ea235b5619a2b93f25e3003842f36c71dfe1e474561fc6b",
+  "selector_sha256": "bac9f7ed02fd5adce93dc904ad369939f180e8258292c5333dcf97a0f1c649bf",
+  "files": {
+    "rounds/round0100.pt": "16be78397f339b96cce2f442133a02efb4729e774f0fd9a179a49812f7b6e087",
+    "phases/round0100_client01/phase01.pt": "f9d3f9c22b6fda1a88de49f428303e79a685b360c0b991908a6e9135b77510fb",
+    "phases/round0100_client01/phase02.pt": "bf5195078ae1c9571a720be05c270ec1aead58664590e76e99aaf096061e6710",
+    "phases/round0100_client01/phase03.pt": "a2b4510430bc5b36f27f62507dcbc22d9447acebcd4cc9d1ae1ebaf1da467f95",
+    "roles/round0100_client01.json": "f320e4f6ee1440dcf335e76d31977c7d95742a8fc16fd940fcae450401f3b093",
+    "inputs/author_model.py": "6c32ca2ac89b8ee7b673a9e91e7d8d3fe8b63f6250248eb1cd50c5ebd03d1026",
+    "inputs/PROFILE.json": "522fc085df7a51f27c607be956f38ddd0118757513f08c0fd0051f901cf5bc10",
+    "inputs/SPLIT.json": "dfd6f7f18b3cf7b1b082ab106437702c1e55c56fd5535fbf580dafb5d97f4de1",
+    "reference_core.py": "158d7b80b114c7c2a0a11d425066959930a03382bcbb680bc9f3d65e3a37b812",
+    "INDEPENDENT_RESULT.json": "6648cfcdfdbae4fca186c596cc8290e33a43caacc0321105dbd1555450da527f"
+  }
+}
