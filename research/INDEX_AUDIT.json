@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "4bc840c36cf466462c8e8821f96f7faf0d2cce454eacd543990956807bb9b454",
+  "registry_sha256": "303f25bcf25367c4da03e002f51a0217a8d3a1383963187fc542281dad068c8f",
   "cards": 31,
-  "unique_source_documents": 263,
+  "unique_source_documents": 268,
   "top_level_folders": 95,
   "folders_linked_to_cards": 56,
   "source_sha256": {
@@ -175,6 +175,11 @@
     "research/fuba_author_models_20261115/PAPER_COMPARISON.json": "18bf1a828c64baadd9eaa7d24c05cc1a7cc0b31192939b296821063e41441004",
     "research/fuba_fu_source_map_20261115/REPORT_KO.txt": "aeedf699c3d510212b7767df5219b8a88194d2709f75037dce4d335ef3a90be0",
     "research/fuba_fu_source_map_20261115/SOURCES.json": "784946849234158548fb39ce54444e51b4499c70409c744b661d916e2c686194",
+    "research/fuba_fu_source_map_20261115/PRIMARY_SOURCE_CORRECTIONS.txt": "c2d8b020d4e40d4b87411442217a76aadbd17e6d107119ee6ad98a496a814c3c",
+    "research/fuba_fu_source_map_20261115/KERNEL_CONTRACTS.json": "994b9ba969eb81818c64773ed736e606ee901fd4cfb8cab39e5b724f7ed1b89b",
+    "research/fuba_fu_source_map_20261115/KERNEL_DELIVERY.json": "2a373fbae17535743ddc4626cec090bc5f402f51cc0dd032153124c1ae6b2e43",
+    "research/fuba_author_models_20261115/LOCAL_PUBLIC_MODELS.json": "be47892f936b9fbad0605a07ceb0d63663b0c7002d00460e53dd8192641d3d25",
+    "research/fuba_gamma_trajectory_20261115/NUMERICAL_CONTROL_PROTOCOL.txt": "a6d45f53f7ebd2390d8ff303038f320311fe078e6bef77c934aa31de24e69441",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -662,6 +667,8 @@
       ],
       "top_level_documents": [
         "research/fuba_gamma_trajectory_20261115/AUDIT_FREEZE.json",
+        "research/fuba_gamma_trajectory_20261115/AUDIT_FREEZE_BEFORE_ONCE_GUARD.json",
+        "research/fuba_gamma_trajectory_20261115/NUMERICAL_CONTROL_PROTOCOL.txt",
         "research/fuba_gamma_trajectory_20261115/PROTOCOL.txt",
         "research/fuba_gamma_trajectory_20261115/REPORT_KO.txt"
       ],

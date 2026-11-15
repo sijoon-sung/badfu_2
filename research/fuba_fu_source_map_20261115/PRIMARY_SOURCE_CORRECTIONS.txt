@@ -1,0 +1,16 @@
+2026-11-15 추가 원문 확인 — R02/R03/D08/D15
+
+협력 가정
+FUBA supplementary p11 III.B는 FL 시작 전 역할 조정/정보 교환과 각 악성 참여자의 global trigger 지식을 명시한다. FL 도중 추가 참여자 간 통신은 가정하지 않는다. 따라서 현재 gamma 합집합 평가의 trigger 지식은 이 원문 가정 안에 있다. 공개 train_method_dba.py가 실제로 local attack_func를 쓰는 사실과는 별개다. 실행 중 PROTOCOL/core/freeze를 변경하지 않는다.
+
+RobustFU 원문과 공개 wrapper
+저자 stcebra/Robust-Federated-Unlearning@59ea9a7498e28ad22f4667546e933adef63de925는 README와 논문 PDF를 제공한다. PDF Git blob 6cf684d739a5d93cc7206908a0d5b297987577a5와 내려받은 원문 바이트를 검증했다(RETRIEVAL.json).
+원문 p5/p7 Algorithm1은 이전 학습 모델을 교사로 삼고, 참여자별 예측 충돌 자료를 그 참여자의 다음 학습에 추가하며, inverse conflict score로 집계한다. 원문은 이진 표 자료이고 FUBA는 clean unlabeled 이미지로 수정했다고 명시한다.
+FUBA의 공개 robustFu.py는 모든 client에서 class3 자료를 제거하고, 모든 client에 trigger/40% target relabel을 적용하며, 30R/최대10batch/SGD.1을 사용한다. 삭제할 Adv-defender client4의 참여를 제외하는 조건이 없고, testset 앞20%를 보충자료로 다시 사용한다. zero conflict score는 리스트에서 제외하여 client별 weight 대응도 깨질 수 있다. 따라서 이를 요청된 협력 FUBA의 client-level RobustFU로 그대로 실행하지 않는다. 원본 파일과 저자 post 모델 결과는 보존한다.
+
+PGD 원문
+https://arxiv.org/html/2207.05521v3 Section4.2, Algorithm1, AppendixA를 직접 확인했다. reference는 마지막 round의 다른 참여자 평균, 초기값은 reference, ascent 후 reference 중심 L2 ball에 projection한다. 원문 조기종료 비교는 마지막 삭제 client 모델과의 거리 < tau이다. 임의로 부등호를 뒤집지 않는다.
+AppendixA는 SGD momentum.9/lr.01, batch1024, 5epochs, gradient clip norm5, radius=무작위 초기 모델10개와 reference 사이 평균거리의1/3, tau는2..6 grid로 설명한다. FUBA 보충자료는 radius/early-stop을 원문과 같게 두고10R post-training이라고 한다. 원문에 공개된 단일 tau나 FUBA의 partial-participation 마지막 client 모델 처리 규칙은 아직 확인되지 않았다. 구현은 이 값을 명시 인자로 요구하며 시험 결과를 보고 유리한 값을 묵시 선택하지 않는다.
+
+범위
+여기서 source 확인은 새 FU 실제 실행 또는 새 공격 성능 재현이 아니다. 원문 수식에 대응하는 수치 연산을 별도 모듈로 구현·계약 검사할 수 있지만 학습 실행에는 입력 case/해시와 명시 profile이 필요하다. 새로운 탐지 주장이 없으며 D08/D15의 큰 정상 non-IID 반례는 해결되지 않았다.
