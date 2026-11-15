@@ -9,3 +9,5 @@ prepare 완료: 명시 clean case diagnostic 선택 및 봉인 guard, 원5000 qu
 최종 결과는 아직 없다. 이전 fixed10 minus ASR13.8222%, plus 진단58.7444%, random-cohort allclass19.3333%의 실패는 그대로 보존한다. 이 단일 조건의 성공 여부와 전체 논문 범위를 분리하며 SCOPE.json의 누락 조건은 완료로 표시하지 않는다.
 
 관련 R03/R02/N02/R05/D08/D15. D08/D15 큰 정상 non-IID 반례는 해결하지 않은 공격 구현 비교다. 공개 FU의 local feature replacement와 논문 영향 제거 서술 사이의 해석 간극도 남는다.
+
+후속 실제 상태: 정상FU20/200roles/1000epochs/20000batches 완료. CPU 독립 보정·집계 모두 exact, epoch ID순열과 optimizer/RNG 존재 통과, 선택 표본 노출0회. 정상 after SHA17a0c81fbe10aa8984ea90251c6f912ce29cb718c19ebb8e4a81807ee1ce4273. 전체 SGD gradient 재생은 아니다. 이어 새 공격 FU가 자원 guard를 통과해 시작됐다. 최종 CA/ASR는 아직 측정하지 않았다.

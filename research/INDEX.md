@@ -66,7 +66,7 @@ flowchart TD
 | [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | v6 실제100R·KD10·전체 CPU 검증 완료·독립평가 자원 대기 |
 | [R04 · 정상 MNIST FedAvg와 참여자 삭제 기준선](EXPERIMENT_CARDS.md#r04) | DISLAB 정상 IID 한 시드·효용 기준 통과 |
 | [R05 · FedUBA 저장 예측의 언러닝 전후 전환](EXPERIMENT_CARDS.md#r05) | 양의 요청 진단에서 엄격 전환 1510장·원 성능 기준 미달 |
-| [R06 · FedUBA Eq.7 전체 클래스 선택의 고정 코호트 비교](EXPERIMENT_CARDS.md#r06) | 전체 클래스125 검증·정상/공격 FU20 실행 중 |
+| [R06 · FedUBA Eq.7 전체 클래스 선택의 고정 코호트 비교](EXPERIMENT_CARDS.md#r06) | 정상20R·CPU집계 exact 통과 / 공격FU20 실행 중 |
 | [R07 · FedUBA 세 집계 규칙의 공개 함수 계약](EXPERIMENT_CARDS.md#r07) | CPU 합성 집계 계약 통과·실제 공격 성능 미검증 |
 | [R08 · FedUBA PathMNIST·GTSRB 모델 의존성 계약](EXPERIMENT_CARDS.md#r08) | 4개 모델 CPU 호출/상태복원 통과·실제 공격 학습 미실행 |
 

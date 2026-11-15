@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "d619d02df44feab11a42bd40165e6b58004e46f40ff8d67910259a908d056f42",
+  "registry_sha256": "a9e45fed22a3c6725fe1ddd52944c116e8830629f2c748a3a26f135e88dd482d",
   "cards": 31,
-  "unique_source_documents": 243,
+  "unique_source_documents": 247,
   "top_level_folders": 92,
   "folders_linked_to_cards": 53,
   "source_sha256": {
@@ -239,10 +239,14 @@
     "research/feduba_eq7_allclass_20261115/SCOPE.json": "3cdf452d920823e3b40eacc0b92ee759d6db72ec3e71094fc21768322604bbac",
     "research/feduba_eq7_allclass_20261115/SOURCE_FREEZE.json": "e2d45e5d0baaffd19b7dbdcc04c9e00b9bb52b064bdf97bfd26944f0a3c8c808",
     "research/feduba_eq7_allclass_20261115/PREPARED.json": "7bbb2e5b31afc8a3dd325ea71664e6a467a69caf47d3f2e05b5a99d9c3df04ad",
-    "research/feduba_eq7_allclass_20261115/REPORT_KO.txt": "1de2cf19e11a6cfcfe7160433a72a2bb6075756dc55d292b954c273f0f48874d",
+    "research/feduba_eq7_allclass_20261115/REPORT_KO.txt": "95b4e22351169575b5b2b1a510f507a16483a494df67f0317676a2392f2f9394",
     "research/feduba_eq7_allclass_20261115/PAPER_TARGETS.json": "641e5fb2db48853cae26ce46c9e8750ce5eb2f6436962846fcf5d454f7da7e13",
     "research/feduba_eq7_allclass_20261115/CURVE_PROTOCOL.txt": "89c6c61edfe9a9a9254f90e6173d61174322553a9a3ee02fd824375636dfc5cf",
     "research/feduba_eq7_allclass_20261115/CURVE_FREEZE.json": "77e6047ec1fe1b77f1258c7b44b023a6a553f1ff182d6fa64504e14144d0098c",
+    "research/feduba_eq7_allclass_20261115/AUDIT_benign.json": "b5ff30ffd20a6d53399bd61073e44d9f11126546dfdad25f89cb88fdfb865368",
+    "research/feduba_eq7_allclass_20261115/TRAINED_benign.json": "6a5706d21ee129238e07c71132e8d0b0c88b5ff20d065e9cf0e7da153c1913be",
+    "research/feduba_eq7_allclass_20261115/ADMISSION_benign.json": "f0a8950e876cc6f4d55240aead77a58a66c8cb7511e5fcc9bad291546a924147",
+    "research/feduba_eq7_allclass_20261115/ADMISSION_attack.json": "908ea82a8c9f340d338210a5c21a93bd8f7ce561c302e5770dc91f329f1240e4",
     "research/feduba_aggregation_contracts_20261115/PROTOCOL.txt": "956343f843948c9bf75cfe436a782e64d9d1ed2ffae7235b7c7f0eece58e53e3",
     "research/feduba_aggregation_contracts_20261115/aggregation.py": "887523c1ae64d9e3a92ab499f0ef38e727ec9c4342ff905dcfb7dfdf41b53223",
     "research/feduba_aggregation_contracts_20261115/check_contracts.py": "d6c012f885aed9297c1ab70c4efd63731bb1699fbf07a5213593792058f1f8bc",
@@ -535,6 +539,7 @@
         "R06"
       ],
       "top_level_documents": [
+        "research/feduba_eq7_allclass_20261115/AUDIT_benign.json",
         "research/feduba_eq7_allclass_20261115/CURVE_PROTOCOL.txt",
         "research/feduba_eq7_allclass_20261115/PROTOCOL.txt",
         "research/feduba_eq7_allclass_20261115/REPORT_KO.txt"
