@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "a8ac8a1ee10298a1cdb7c001fd18ebed092e2e8ad1de09a8cb9be1ca52bb87bf",
+  "registry_sha256": "09084369241e34251e4efe834cb7d21e03a0192f1fb021ddf7dd86d34da48321",
   "cards": 31,
-  "unique_source_documents": 349,
+  "unique_source_documents": 351,
   "top_level_folders": 101,
   "folders_linked_to_cards": 62,
   "source_sha256": {
@@ -261,6 +261,8 @@
     "research/fuba_fu_source_map_20261115/PGD_STEP_PROTOCOL.txt": "118425ed1b9fc092489a280b532c9c7a7ceab470a51e6da481e35ff446705fae",
     "research/fuba_fu_source_map_20261115/PGD_STEP_CONTRACT.json": "17881f834b868dfa3bec705a9a39b9515a85a4a44f7d6005d66061434dde46c9",
     "research/fuba_batch_redraw_pilot_20261115/EXECUTION_PROTOCOL.txt": "b1de8d5ddbb855dd2448762eb43ae28452209de69001dc8328bd17609484f5d7",
+    "research/fuba_fu_source_map_20261115/IMAGENET_SOURCE_AUDIT.txt": "6c4480b233510bfd95a85992d2a172f88a516c37db2eb318416fa266b490fc93",
+    "research/fuba_fu_source_map_20261115/IMAGENET_SOURCE.json": "b53a3f6398b8fa54ed3a3171bd28822830864dd6b27c94d129b351534135e23b",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -775,6 +777,7 @@
       ],
       "top_level_documents": [
         "research/fuba_fu_source_map_20261115/FEDERASER_SCHEDULE_PROTOCOL.txt",
+        "research/fuba_fu_source_map_20261115/IMAGENET_SOURCE_AUDIT.txt",
         "research/fuba_fu_source_map_20261115/PGD_STEP_PROTOCOL.txt",
         "research/fuba_fu_source_map_20261115/REPORT_KO.txt",
         "research/fuba_fu_source_map_20261115/UPSTREAM_STATUS_20261115.json"
