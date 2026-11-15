@@ -1,0 +1,99 @@
+{
+  "commit": "bc233610aca36e1647d0c815597cc7148292139d",
+  "public_states": [
+    "backdoor_distillation_iba_mnist.pt",
+    "backdoor_federaser_iba_mnist.pt",
+    "backdoor_pgd_iba_mnist.pt",
+    "backdoor_retrain_iba_mnist.pt",
+    "backdoor_robustfu_iba_mnist.pt",
+    "backdoor_sga_iba_mnist.pt",
+    "global_distillation_iba_mnist.pt",
+    "global_federaser_iba_mnist.pt",
+    "global_pgd_iba_mnist.pt",
+    "global_retrain_iba_mnist.pt",
+    "global_robustfu_iba_mnist.pt",
+    "global_sga_iba_mnist.pt"
+  ],
+  "files": {
+    "backdoor_distillation_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_distillation_iba_mnist.pt",
+      "sha256": "30626d733f79c82704b9b84dd707884c09cca1176de2ca386fbe5f45938addee"
+    },
+    "backdoor_federaser_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_federaser_iba_mnist.pt",
+      "sha256": "f6cc3794f977f9ffba98f4f7fcf80fd75856c37bd84ec14d9ce027f8fd496372"
+    },
+    "backdoor_pgd_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_pgd_iba_mnist.pt",
+      "sha256": "b3ae2a4731b5469799a4827eafd82f582f920025f8970fdc57b416fb5fca1a9e"
+    },
+    "backdoor_retrain_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_retrain_iba_mnist.pt",
+      "sha256": "68446cab270410111df23f9e9876b2fc8ba4684346cb9fcc6b686865886ba4da"
+    },
+    "backdoor_robustfu_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_robustfu_iba_mnist.pt",
+      "sha256": "df94dc762298c6cf2a08f1369b7ce9d7015fe00ab48c8f27124f81e4b226c217"
+    },
+    "backdoor_sga_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\backdoor_sga_iba_mnist.pt",
+      "sha256": "4f8577082d1e8e9d6a9da6357568b1c57a04df21748606e7809e4834f1e0ea08"
+    },
+    "global_distillation_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_distillation_iba_mnist.pt",
+      "sha256": "0cb735fe1339077e40348caa08685ebb5fad3db0ee9ba26af2e867f0cd161324"
+    },
+    "global_federaser_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_federaser_iba_mnist.pt",
+      "sha256": "f401c353e2cbdb0e5f19bb3a6577edb0aa48216e2262ecb58f3ccd21278b8e6a"
+    },
+    "global_pgd_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_pgd_iba_mnist.pt",
+      "sha256": "6c60682be12fc2e019e35432fba186a2d2ae39797de6dd42ae978dce9c2035ad"
+    },
+    "global_retrain_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_retrain_iba_mnist.pt",
+      "sha256": "d281e8a39dc701f75a94ff3c7bc3bba5a3b14ca5dc4f9d8dd10b6a680d897617"
+    },
+    "global_robustfu_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_robustfu_iba_mnist.pt",
+      "sha256": "b9108833ef308bcf60125b7c2f1a83245e31b2077220f3a4c9e9000aee36264c"
+    },
+    "global_sga_iba_mnist.pt": {
+      "path": "D:\\FUBA_AUTHOR_MODELS_20261115\\states\\global_sga_iba_mnist.pt",
+      "sha256": "8fb6298057f4c62512465e1e3565374728a0bc9779e9171ef2aa548353198124"
+    },
+    "benign_before.pt": {
+      "path": "D:/BENIGN_FUBA_BASELINE_20261115/baseline/before.pt",
+      "sha256": "2336b7d40f1dea14655c88e67351dabd6cdccd43fdf6790669b0684d47073c48"
+    },
+    "author_model.py": {
+      "path": "D:/FUBA_AUTHOR_MODELS_20261115/upstream/model/model.py",
+      "sha256": "f075bbe55664d2ba61fc4ac56cc5f9cdf36c40cba0ae8742c2c8a643fa7f80c8"
+    },
+    "comm_utils.py": {
+      "path": "D:/FUBA_AUTHOR_MODELS_20261115/upstream/utils/comm_utils.py",
+      "sha256": "86ab2793fec9d2296cedd20271e1f6601d040a0f7f9c7899e98a032d59c90340"
+    },
+    "author_prepared.json": {
+      "path": "D:/FUBA_AUTHOR_MODELS_20261115/PREPARED.json",
+      "sha256": "cf752589bed654e92edda88d0aafb2cc374e5b9e0137bdacd2e1846b29028968"
+    },
+    "benchmark.py": {
+      "path": "D:/BENIGN_FUBA_BASELINE_20261115/benchmark.py",
+      "sha256": "52ac2b3fedc178feeccb5fe4b84a97b782d3ec7cde247ed7ac7351f98fa3fdfd"
+    },
+    "benign_profile.json": {
+      "path": "D:/BENIGN_FUBA_BASELINE_20261115/baseline/profile.json",
+      "sha256": "5d70f83ff29d4e70c75f10b86961a7b3d5739615d1207625f37cb67f45c7b3f3"
+    },
+    "benign_result.json": {
+      "path": "D:/BENIGN_FUBA_BASELINE_20261115/baseline/result.json",
+      "sha256": "b39bcd13ff7ff3f3bf82d35cf4e5e81c67d8144a8e7fe0dc5ce8334754af0050"
+    },
+    "benign_verified.json": {
+      "path": "D:/BENIGN_FUBA_BASELINE_20261115/baseline/verified.json",
+      "sha256": "573502eaeca76a17bcfd0f716dbc0aa1191c643cebc377498ab4eeabfecf968d"
+    }
+  }
+}
