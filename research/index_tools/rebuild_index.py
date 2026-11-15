@@ -10,7 +10,9 @@ TRACKED = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decod
 
 def load(p): return json.loads(p.read_text(encoding='utf-8-sig'))
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
-def ref(rel, label=None):
+def ref(rel, label=None, *, allow_missing=False):
+    if not (ROOT/rel).exists() and allow_missing:
+        return f'`{rel}` (이 체크아웃에 없는 로컬 보관 경로)'
     assert (ROOT/rel).exists(), rel
     if rel not in TRACKED and not any(p.startswith(rel.rstrip('/') + '/') for p in TRACKED):
         return f'`{label or rel}` (로컬 보관)'
@@ -48,7 +50,7 @@ def main():
     for e in entries:
         assert '\n' not in e['hypothesis'] and e['hypothesis'].strip()
         for k in ['conditions','controls','result','non_iid_lesson','do_not_repeat','revisit_condition']: assert e[k]
-        for rel in e['sources']+e['folders']: assert (ROOT/rel).exists(), (e['id'],rel)
+        for rel in e['sources']: assert (ROOT/rel).exists(), (e['id'],rel)
         if e.get('process_report'): assert (ROOT/e['process_report']).exists(), (e['id'],e['process_report'])
     sources={s:digest(ROOT/s) for e in entries for s in e['sources']}
     inventory=collect_inventory(entries)
@@ -101,7 +103,7 @@ def main():
 
 ```mermaid
 flowchart TD
-    A["연구 인덱스 먼저 읽기"] --> R["재현·모델 출처 R01–R02"]
+    A["연구 인덱스 먼저 읽기"] --> R["재현·모델 출처"]
     A --> D["1단계 탐지: 정상 non-IID와 구별"]
     D --> H["이력·영향력 D01–D02"]
     D --> M["반응·내부 통계 D03–D06·D16"]
@@ -137,7 +139,9 @@ flowchart TD
         for k,label in fields: cards+=f"- **{label}:** {e[k]}\n"
         if e.get('provenance'): cards+=f"- **출처 구분:** {e['provenance']}\n"
         cards+='\n**원문·증거:**\n\n'+'\n'.join('- '+ref(s) for s in e['sources'])+'\n\n'
-        if e['folders']:cards+='**묶은 폴더:** '+' · '.join(ref(f,f.split('/')[-1]) for f in e['folders'])+'\n\n'
+        if e['folders']:
+            folder_refs = [ref(f, f.split('/')[-1], allow_missing=True) for f in e['folders']]
+            cards += '**묶은 폴더:** ' + ' · '.join(folder_refs) + '\n\n'
     folder_text='# 전체 연구 폴더 색인\n\n[연구 인덱스](INDEX.md) · [실험 카드](EXPERIMENT_CARDS.md)\n\n'
     folder_text+='원본을 이동하지 않은 탐색용 목록이다. 직접 하위 폴더 단위의 재고이며, 행 하나가 독립 실험 또는 완료 실행 하나라는 뜻은 아니다. 연결 카드가 있어도 폴더 안의 모든 세부 파일을 이번에 재검토한 것은 아니다. 링크된 원문과 정정이 현재 해석의 근거다. Git에 포함되지 않은 경로는 로컬 보관으로 표시한다.\n\n'
     for base in list(dict.fromkeys(v['path'].rsplit('/',1)[0] for v in inventory)):

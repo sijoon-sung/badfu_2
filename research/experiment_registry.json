@@ -785,6 +785,32 @@
       "provenance": "2026-10-25 사용자 FUBA 적용 요청에 따른 유한 저장모델 진단. R02의 잠복 재현 실패 정정과 D18의 투영 추가가치 미입증을 유지.",
       "process_report": "experiments/02-detection/D19-fuba-projection/README.md",
       "github_group": "02-detection"
+    },
+    {
+      "id": "R04",
+      "group": "재현·출처",
+      "title": "정상 MNIST FedAvg와 참여자 삭제 기준선",
+      "status": "DISLAB 정상 IID 한 시드·효용 기준 통과",
+      "hypothesis": "MNIST IID에서 정상 참여자의 역사적 FedAvg 기여 차감과 KD 복구를 적용하면, 유지 참여자로 처음부터 재학습한 경우와 정상 시험 정확도 차이가 2%p 이내다.",
+      "conditions": "DISLAB CPU, 새 초기화 시드 20261023, MNIST IID 20명 중 8명, FL 20라운드·2로컬 에폭·배치64, 참여자 4 전체 삭제 및 KD 10에폭.",
+      "controls": "동일 초기화와 참여 순서의 정상 FL 및 유지 참여자 재학습. 재학습에서 참여자 4를 제외하고 잔류 가중치를 다시 정규화했다.",
+      "result": "정상 시험 10000장 정답 수는 FL 9868, 차감+KD 9859, 유지 참여자 재학습 9871이다. KD−재학습 −0.12%p로 2%p 효용 기준 통과. 별도 CPU 프로세스에서 3모델 strict 로드·해시·전수 정확도·혼동 행렬 재평가 일치.",
+      "non_iid_lesson": "정상 IID 한 시드의 효용 결과다. 큰 정상 non-IID 탈퇴의 탐지 혼동 D08·D15는 이 조건에서 시험하지 않았다.",
+      "do_not_repeat": "2%p 효용 통과를 삭제 보장, 100라운드 실측, 백도어 성능 재현이나 공격 탐지 검증으로 확대하지 않는다.",
+      "revisit_condition": "새 상대 비교에는 다른 시드 또는 큰 정상 non-IID 요청과 동일 절차의 유지 데이터 재학습을 고정한 별도 프로필을 사용한다.",
+      "folders": [
+        "research/benign_fuba_baseline_20261115"
+      ],
+      "sources": [
+        "research/benign_fuba_baseline_20261115/README.md",
+        "research/benign_fuba_baseline_20261115/evidence/profile.json",
+        "research/benign_fuba_baseline_20261115/evidence/events.jsonl",
+        "research/benign_fuba_baseline_20261115/evidence/result.json",
+        "research/benign_fuba_baseline_20261115/evidence/verified.json"
+      ],
+      "provenance": "2026-11-15 DISLAB 신규 정상 기준선. 관련 앞선 카드 R01/R02/D08/D15. 기존 FUBA v6/v7의 저장 정수 분자·분모 검산은 이 정상 실행의 지표와 구별한다.",
+      "process_report": "research/benign_fuba_baseline_20261115/README.md",
+      "github_group": "01-reproduction"
     }
   ],
   "process_reporting": {

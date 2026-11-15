@@ -419,7 +419,7 @@
 - [research/boundary_validation_20261022/REPORT_KO.txt](boundary_validation_20261022/REPORT_KO.txt)
 - [research/boundary_validation_20261022/FINAL_RESULTS.json](boundary_validation_20261022/FINAL_RESULTS.json)
 
-**묶은 폴더:** [boundary_validation_20261022](boundary_validation_20261022) · `boundary_mask_validation_20261022` (로컬 보관)
+**묶은 폴더:** [boundary_validation_20261022](boundary_validation_20261022) · `research/boundary_mask_validation_20261022` (이 체크아웃에 없는 로컬 보관 경로)
 
 <a id="d10"></a>
 
@@ -802,4 +802,32 @@
 - [research/fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json](fuba_projection_check_20261025/verified_v2/CLEAN_EVALUATION.json)
 
 **묶은 폴더:** [fuba_projection_check_20261025](fuba_projection_check_20261025)
+
+<a id="r04"></a>
+
+## R04 · 정상 MNIST FedAvg와 참여자 삭제 기준선
+
+**가설 한 줄: MNIST IID에서 정상 참여자의 역사적 FedAvg 기여 차감과 KD 복구를 적용하면, 유지 참여자로 처음부터 재학습한 경우와 정상 시험 정확도 차이가 2%p 이내다.**
+
+**판정: DISLAB 정상 IID 한 시드·효용 기준 통과**
+
+[실험 시작 이유와 실제 실행 과정 읽기](benign_fuba_baseline_20261115/README.md)
+
+- **조건:** DISLAB CPU, 새 초기화 시드 20261023, MNIST IID 20명 중 8명, FL 20라운드·2로컬 에폭·배치64, 참여자 4 전체 삭제 및 KD 10에폭.
+- **정상 대조·비교:** 동일 초기화와 참여 순서의 정상 FL 및 유지 참여자 재학습. 재학습에서 참여자 4를 제외하고 잔류 가중치를 다시 정규화했다.
+- **결과:** 정상 시험 10000장 정답 수는 FL 9868, 차감+KD 9859, 유지 참여자 재학습 9871이다. KD−재학습 −0.12%p로 2%p 효용 기준 통과. 별도 CPU 프로세스에서 3모델 strict 로드·해시·전수 정확도·혼동 행렬 재평가 일치.
+- **non-IID에 대해 남길 교훈:** 정상 IID 한 시드의 효용 결과다. 큰 정상 non-IID 탈퇴의 탐지 혼동 D08·D15는 이 조건에서 시험하지 않았다.
+- **반복하지 않을 주장:** 2%p 효용 통과를 삭제 보장, 100라운드 실측, 백도어 성능 재현이나 공격 탐지 검증으로 확대하지 않는다.
+- **재검토 조건:** 새 상대 비교에는 다른 시드 또는 큰 정상 non-IID 요청과 동일 절차의 유지 데이터 재학습을 고정한 별도 프로필을 사용한다.
+- **출처 구분:** 2026-11-15 DISLAB 신규 정상 기준선. 관련 앞선 카드 R01/R02/D08/D15. 기존 FUBA v6/v7의 저장 정수 분자·분모 검산은 이 정상 실행의 지표와 구별한다.
+
+**원문·증거:**
+
+- [research/benign_fuba_baseline_20261115/README.md](benign_fuba_baseline_20261115/README.md)
+- [research/benign_fuba_baseline_20261115/evidence/profile.json](benign_fuba_baseline_20261115/evidence/profile.json)
+- [research/benign_fuba_baseline_20261115/evidence/events.jsonl](benign_fuba_baseline_20261115/evidence/events.jsonl)
+- [research/benign_fuba_baseline_20261115/evidence/result.json](benign_fuba_baseline_20261115/evidence/result.json)
+- [research/benign_fuba_baseline_20261115/evidence/verified.json](benign_fuba_baseline_20261115/evidence/verified.json)
+
+**묶은 폴더:** [benign_fuba_baseline_20261115](benign_fuba_baseline_20261115)
 
