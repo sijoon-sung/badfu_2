@@ -2,11 +2,11 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "60f658cb8675759cbc3ec4b8250c24e3139dcdeddca4a3c24e87fecd694d4b7e",
+  "registry_sha256": "2711c9d644cf9a02bdb224109ad398f288aa12aa5ad0b70e59104fdcd9331f16",
   "cards": 31,
-  "unique_source_documents": 401,
-  "top_level_folders": 103,
-  "folders_linked_to_cards": 64,
+  "unique_source_documents": 412,
+  "top_level_folders": 104,
+  "folders_linked_to_cards": 65,
   "source_sha256": {
     "research/00_trajectories/README.md": "0591bb5355a84418fa1b2ea6ee36d041bf1f7e3b51ac79d3cbf5e71b898d45c1",
     "research/00_trajectories/catalog.json": "98fbba4508d0d1e46e574c6784aefe26cd88fbd2fce6dee57b980e7bd88f6c74",
@@ -313,6 +313,17 @@
     "research/fuba_mnist_optimizer_isolation_20261115/LOCAL_MODEL_CONTRACT.json": "240e84b21f10e7bd370cae5b7d2c647c2c68cadb7aad800ff72722daca38eeac",
     "research/fuba_mnist_optimizer_isolation_20261115/DELIVERY_COMPLETE.json": "3307f4977a0c51e2cc3cb4aec75848a2992f2bd5b0805e19a0ef446ee5f237b1",
     "research/fuba_mnist_optimizer_isolation_20261115/LAUNCH_REQUEST.json": "a2dacd30d8b02315101735f0ec04bc549e62889678be59b4a41c8e458be84eff",
+    "research/fuba_public_iba_evaluation_20261115/PROTOCOL.txt": "e61fba0ff21f88008ce600b6f6bea3fd9f37d65fba5808d22e0916c774feeca5",
+    "research/fuba_public_iba_evaluation_20261115/INPUT_BINDING.json": "e59a44d965c40576ace75ce3970d8cd1a9f6e8a4efe4e6d0e866a44cb0735166",
+    "research/fuba_public_iba_evaluation_20261115/PREPARED.json": "ac9ba185abf9a5b23a85b8cd672c63bdec480f58442659921d5e183d4441d8fd",
+    "research/fuba_public_iba_evaluation_20261115/RESULT.json": "2549b318d877b01a72be234d5263763686ac489881ca858280bce72c5d9eacfa",
+    "research/fuba_public_iba_evaluation_20261115/FINAL_REPORT_KO.txt": "a192363975354b22c388cc22a81c79c0094da734591accb29eda421ec66500ce",
+    "research/fuba_public_iba_evaluation_20261115/LOCAL_DELIVERY.json": "ceef99725ac537c86e33444236ac8097c3c13b490c85319684e1122bd963dcf2",
+    "research/fuba_public_iba_evaluation_20261115/LOCAL_MODEL_CONTRACT.json": "cd534cf6addbd51bff05a662f4c114823806d89a3d1a2dcbe20b248a649f7788",
+    "research/fuba_public_iba_evaluation_20261115/DELIVERY_COMPLETE.json": "e943ff88bcf79cb4f3f9e1b3f29228048670bdc0a636b4d0c58743e05b35ceb7",
+    "research/fuba_public_iba_evaluation_20261115/FIGURE_QA.json": "b8916a928b0067fbe2ce5f8cfad9469a92b41114f9b2a87cf48d189f24e208ae",
+    "research/fuba_fu_source_map_20261115/IMAGENET_ACCESS_REPORT.txt": "3e2460bd0ec3ec5692aee825b26e3e99625448ca3b0d1615fbd3f8032dfac3ad",
+    "research/fuba_fu_source_map_20261115/IMAGENET_ACCESS_PROBE.json": "fae3f50d9b307dee0d4cb1f8211e08229ee453c859c14f643d35d641a8caf2f7",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -834,6 +845,7 @@
       ],
       "top_level_documents": [
         "research/fuba_fu_source_map_20261115/FEDERASER_SCHEDULE_PROTOCOL.txt",
+        "research/fuba_fu_source_map_20261115/IMAGENET_ACCESS_REPORT.txt",
         "research/fuba_fu_source_map_20261115/IMAGENET_SOURCE_AUDIT.txt",
         "research/fuba_fu_source_map_20261115/PGD_STEP_PROTOCOL.txt",
         "research/fuba_fu_source_map_20261115/REPORT_KO.txt",
@@ -995,6 +1007,20 @@
         "research/fuba_projection_check_20261025/PROTOCOL.txt",
         "research/fuba_projection_check_20261025/REPORT_KO.txt",
         "research/fuba_projection_check_20261025/SUMMARY.json"
+      ],
+      "review": "대표 기록 재검토·카드 연결"
+    },
+    {
+      "path": "research/fuba_public_iba_evaluation_20261115",
+      "related_cards": [
+        "R02"
+      ],
+      "top_level_documents": [
+        "research/fuba_public_iba_evaluation_20261115/DELIVERY_COMPLETE.json",
+        "research/fuba_public_iba_evaluation_20261115/EXECUTION_RESULT.json",
+        "research/fuba_public_iba_evaluation_20261115/FINAL_REPORT_KO.txt",
+        "research/fuba_public_iba_evaluation_20261115/PROTOCOL.txt",
+        "research/fuba_public_iba_evaluation_20261115/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

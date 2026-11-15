@@ -1,0 +1,22 @@
+{
+  "case_id": "benign.fuba.mnist.iid.s20261023.round20.20261115",
+  "purpose": "diagnostic",
+  "post_type": "benign_endpoint",
+  "server_inputs": {
+    "benign_before.pt": {
+      "path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\.benign-fuba-pr-worktree\\research\\fuba_public_iba_evaluation_20261115\\delivery\\payload\\inputs\\benign_before.pt",
+      "sha256": "2336b7d40f1dea14655c88e67351dabd6cdccd43fdf6790669b0684d47073c48",
+      "payload_key": null
+    }
+  },
+  "source_root": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\.benign-fuba-pr-worktree\\research\\fuba_public_iba_evaluation_20261115\\delivery\\payload\\inputs",
+  "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+  "checkpoint_guard": {
+    "manifest_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\.benign-fuba-pr-worktree\\research\\fuba_public_iba_evaluation_20261115\\delivery\\payload\\inputs\\REVIEW_MANIFEST.json",
+    "manifest_sha256": "29d5528ebb551a27efb373084d7a462daafd2a4ce8a412acb90325709665f474",
+    "seal_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\.benign-fuba-pr-worktree\\research\\fuba_public_iba_evaluation_20261115\\delivery\\payload\\inputs\\SEAL.json",
+    "seal_sha256": "41dee61b5c83fbc5d1af9be01261ec2ac1b53ef42deb4a15bc88b41d625a8886",
+    "loader_path": "C:\\Users\\sijoo\\Documents\\ChatGPT\\badFU\\.benign-fuba-pr-worktree\\research\\fuba_public_iba_evaluation_20261115\\delivery\\payload\\inputs\\check_inputs.py"
+  },
+  "guard_state": "all_snapshot_files_verified_on_this_host"
+}

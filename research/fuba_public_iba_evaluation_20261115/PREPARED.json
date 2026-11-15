@@ -1,0 +1,173 @@
+{
+  "state": "passed",
+  "selected": [
+    {
+      "case_id": "fuba.author.bc233610.mnist.iba.post6.20261115",
+      "purpose": "diagnostic",
+      "post_type": "public_post_only",
+      "server_inputs": {
+        "backdoor_distillation_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_distillation_iba_mnist.pt",
+          "sha256": "30626d733f79c82704b9b84dd707884c09cca1176de2ca386fbe5f45938addee",
+          "payload_key": null
+        },
+        "backdoor_federaser_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_federaser_iba_mnist.pt",
+          "sha256": "f6cc3794f977f9ffba98f4f7fcf80fd75856c37bd84ec14d9ce027f8fd496372",
+          "payload_key": null
+        },
+        "backdoor_pgd_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_pgd_iba_mnist.pt",
+          "sha256": "b3ae2a4731b5469799a4827eafd82f582f920025f8970fdc57b416fb5fca1a9e",
+          "payload_key": null
+        },
+        "backdoor_retrain_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_retrain_iba_mnist.pt",
+          "sha256": "68446cab270410111df23f9e9876b2fc8ba4684346cb9fcc6b686865886ba4da",
+          "payload_key": null
+        },
+        "backdoor_robustfu_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_robustfu_iba_mnist.pt",
+          "sha256": "df94dc762298c6cf2a08f1369b7ce9d7015fe00ab48c8f27124f81e4b226c217",
+          "payload_key": null
+        },
+        "backdoor_sga_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\backdoor_sga_iba_mnist.pt",
+          "sha256": "4f8577082d1e8e9d6a9da6357568b1c57a04df21748606e7809e4834f1e0ea08",
+          "payload_key": null
+        },
+        "global_distillation_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_distillation_iba_mnist.pt",
+          "sha256": "0cb735fe1339077e40348caa08685ebb5fad3db0ee9ba26af2e867f0cd161324",
+          "payload_key": null
+        },
+        "global_federaser_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_federaser_iba_mnist.pt",
+          "sha256": "f401c353e2cbdb0e5f19bb3a6577edb0aa48216e2262ecb58f3ccd21278b8e6a",
+          "payload_key": null
+        },
+        "global_pgd_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_pgd_iba_mnist.pt",
+          "sha256": "6c60682be12fc2e019e35432fba186a2d2ae39797de6dd42ae978dce9c2035ad",
+          "payload_key": null
+        },
+        "global_retrain_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_retrain_iba_mnist.pt",
+          "sha256": "d281e8a39dc701f75a94ff3c7bc3bba5a3b14ca5dc4f9d8dd10b6a680d897617",
+          "payload_key": null
+        },
+        "global_robustfu_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_robustfu_iba_mnist.pt",
+          "sha256": "b9108833ef308bcf60125b7c2f1a83245e31b2077220f3a4c9e9000aee36264c",
+          "payload_key": null
+        },
+        "global_sga_iba_mnist.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\global_sga_iba_mnist.pt",
+          "sha256": "8fb6298057f4c62512465e1e3565374728a0bc9779e9171ef2aa548353198124",
+          "payload_key": null
+        }
+      },
+      "source_root": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs",
+      "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\REVIEW_MANIFEST.json",
+        "manifest_sha256": "29d5528ebb551a27efb373084d7a462daafd2a4ce8a412acb90325709665f474",
+        "seal_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\SEAL.json",
+        "seal_sha256": "41dee61b5c83fbc5d1af9be01261ec2ac1b53ef42deb4a15bc88b41d625a8886",
+        "loader_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\check_inputs.py"
+      },
+      "guard_state": "all_snapshot_files_verified_on_this_host"
+    },
+    {
+      "case_id": "benign.fuba.mnist.iid.s20261023.round20.20261115",
+      "purpose": "diagnostic",
+      "post_type": "benign_endpoint",
+      "server_inputs": {
+        "benign_before.pt": {
+          "path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\benign_before.pt",
+          "sha256": "2336b7d40f1dea14655c88e67351dabd6cdccd43fdf6790669b0684d47073c48",
+          "payload_key": null
+        }
+      },
+      "source_root": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs",
+      "consumption_requirement": "Verify checkpoint SHA256 before torch.load and extract the declared payload_key. Do not pass evaluator-only metadata to server methods.",
+      "checkpoint_guard": {
+        "manifest_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\REVIEW_MANIFEST.json",
+        "manifest_sha256": "29d5528ebb551a27efb373084d7a462daafd2a4ce8a412acb90325709665f474",
+        "seal_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\SEAL.json",
+        "seal_sha256": "41dee61b5c83fbc5d1af9be01261ec2ac1b53ef42deb4a15bc88b41d625a8886",
+        "loader_path": "D:\\FUBA_PUBLIC_IBA_EVALUATION_20261115\\inputs\\check_inputs.py"
+      },
+      "guard_state": "all_snapshot_files_verified_on_this_host"
+    }
+  ],
+  "models": [
+    {
+      "name": "backdoor_distillation_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "backdoor_federaser_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "backdoor_pgd_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "backdoor_retrain_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "backdoor_robustfu_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "backdoor_sga_iba_mnist.pt",
+      "class": "MNISTAutoencoder",
+      "parameters": 288963
+    },
+    {
+      "name": "global_distillation_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "global_federaser_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "global_pgd_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "global_retrain_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "global_robustfu_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "global_sga_iba_mnist.pt",
+      "class": "Net",
+      "parameters": 44426
+    },
+    {
+      "name": "benign_before.pt",
+      "class": "Net",
+      "parameters": 44426
+    }
+  ],
+  "model_inference": 0,
+  "CUDA_initialized": false
+}

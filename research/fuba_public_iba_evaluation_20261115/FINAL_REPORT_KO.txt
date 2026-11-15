@@ -1,0 +1,27 @@
+공개 FUBA MNIST/IBA 전수 평가 완료 — 생성기 모드 영향 확인, 주 가설 실패
+
+R02/R04/D08/D15. stcebra/FUBA@bc233610의 이미 봉인된 공개 IBA6분류기/6생성기와 R04 정상20R 모델을 사용했다. 새 FL 학습/FU optimizer step은0이다. 공개 pre/history/seed는 없으며 전체 논문 재현은 미완료다.
+
+방법            공개post BA    postASR(eval/train)       정상ASR(eval/train)
+distillation   98.91         40.538444/89.408376       0.166187/0.166187
+federaser      98.84         89.929094/99.157988       0.177266/0.199424
+pgd            98.84         89.884777/100.000000       0.177266/0.188345
+retrain        98.92         87.602482/100.000000       0.177266/0.254819
+robustfu       98.93         49.822734/99.767339       0.166187/0.221582
+sga            94.49         74.296477/74.263240       0.576113/0.598272
+
+고정 eval 모드에서 KD40.5384/RobustFU49.8227은 ASR60 기준 미달이므로 여섯 모두 post60 이상/normal10 미만이라는 주 가설은 실패했다. 다른4조건의 양의 결과도 보존한다. train 모드에서는 여섯 모두 이 좁은 조건을 통과했으나 이를 주 조건으로 사후 교체하지 않는다. 정상 대조 ASR은 두 모드 모두0.60 미만이며 정상 CA98.68이다. 이는20R/2epoch IID 한 대조의 낮은 전이로서100R 대응 인과 대조 또는 큰 정상 non-IID 삭제 구별이 아니다.
+
+원함수와 상태 감사
+전체12조건×post/normal의10000clean/9026non-target 정수가 별도로 새 모델/생성기에 실행한 공개 test/attack AST와 모두 정확일치했다. 실제 생성 입력은 post와 정상에 동일하게 적용했다. 조건마다 원G에서 시작했으며 evalG는 모든buffer/parameter불변, trainG는 각BN의 num_batches_tracked가157 증가했다. 각 독립경로의 최종BN buffer도 정확일치했다. 모든 분류기/G 파라미터, 입력 파일 SHA, 원 labels는 불변이다. train 모드 BN 변화는 복사본에만 있고 별도 generator_buffers_after.pt에 보관했다.
+noise=clamp(.3G(x),-.05,.05), input=clamp(x+noise,-1,1), ToTensor[0,1], FP32 contiguousNCHW/B64/deterministic/noTF32다. 실제max입력변화<=.050001 및 유한값을 확인했다. 공개 attack은 classifier.eval()만 호출하며 G모드는 그대로이므로 G모드/배치/순서를 기록하지 않은 ASR끼리 묵시 비교하면 안 된다.
+공개 MNIST 생성기는 MNISTAutoencoder288963params이며 supplementary의 모든 데이터셋 U-Net 문구와 동일 구조가 아니다. 이번은 공개artifact검증이고 새로운 U-Net 학습이나 논문 유일구현으로 세지 않는다. SGA의BA94.49에임의97기준을논문기준으로부과하지않는다.
+
+전달
+원격 D:/FUBA_PUBLIC_IBA_EVALUATION_20261115와 로컬delivery/payload에57파일 전SHA/크기검사를 완료했다. 예측npz의12조건×2모델 정수도 새forward없이 검산했다. 로컬torch2.4.1 CPU의13모델 엄격로드/합성1장finite,12BN상태set finite를 통과했다. 로컬실데이터추론0/CUDAfalse다.
+manifest SHA256=96f2c49b720966da12d29411e62dbfb4138bccb8af04aaec45d37a159c59f6f7
+ZIP SHA256=c4594f92ed3704e1f1ead4835a5e8cdaf944dfb658237b3d4f48073fb90e91ee; bytes7840648
+controller50796/evaluator22424 exit0. 기존 유휴guard/trigger0/retry0 작업을 사용했다. 원 준비/평가/export는 재실행하지 않는다. 입력별 diagnostic case 두 개는 별도catalogue에서 guard를 통과했고 기존 기본값과 사례를 바꾸지 않았다.
+
+범위
+학습된 공격자·공모자 협력의 실제 잠복 전후쌍을 이 공개post만으로 인증하지 않는다. D08 공격.75848 대 정상.75525/.76188 및 D15 반례는 그대로다. 여기서 낮은 정상전이를 trigger-family-independent detector로 승격하지 않는다. 새로운 평가모드 결과로 기존v7 또는 MNIST 실제FU 성능기록을 덮어쓰지 않는다. 후속 비교는 별도 고정 프로토콜이 필요하다.
