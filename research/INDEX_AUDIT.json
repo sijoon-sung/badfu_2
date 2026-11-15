@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "1938709e6d414cda247e88f718958a63d786b6a8aec43a9779c6dc3609b06ce8",
+  "registry_sha256": "f1e8959c0b83d2352d41f890d378143ed3a01151502f05c92aef15e56785b0e1",
   "cards": 31,
-  "unique_source_documents": 256,
+  "unique_source_documents": 260,
   "top_level_folders": 94,
   "folders_linked_to_cards": 55,
   "source_sha256": {
@@ -168,6 +168,10 @@
     "research/fuba_gamma_trajectory_20261115/PROTOCOL.txt": "df3c01d9cd8520634e2a41a4defce0fa3ccdff7f7c9465ae773adbd03d782c3b",
     "research/fuba_gamma_trajectory_20261115/INPUT_BINDING.json": "c32db3047087161a61fdf97ba040c0e18e8cb00fe9d5bf6e587e51d14be9ad2e",
     "research/fuba_gamma_trajectory_20261115/FREEZE.json": "ce82e2f87ba399d06e3ad19be4bad174549846ff251b757aae099215ae1f8189",
+    "research/fuba_gamma_trajectory_20261115/REPORT_KO.txt": "697089ec7c205a7c7d7c25f10602c7f35f09a5ee56f837192053df2ba8b533df",
+    "research/fuba_gamma_trajectory_20261115/PREPARED.json": "bc2710722411f445fc79d36abdb5b82a639daf4be04fd9e6f359b37397ccc9d3",
+    "research/fuba_gamma_trajectory_20261115/FAILURE_prepare.json": "beac02c9f2cc18cc2e9a73ba9d87f165e600d47deb3717ba285488b36d8d6ddb",
+    "research/fuba_gamma_trajectory_20261115/STARTED.json": "d51c002a4d14ef33ecade515afb8b5a6377d2695f46d8af5c3d5b945edee123d",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -644,7 +648,9 @@
         "R02"
       ],
       "top_level_documents": [
-        "research/fuba_gamma_trajectory_20261115/PROTOCOL.txt"
+        "research/fuba_gamma_trajectory_20261115/AUDIT_FREEZE.json",
+        "research/fuba_gamma_trajectory_20261115/PROTOCOL.txt",
+        "research/fuba_gamma_trajectory_20261115/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },

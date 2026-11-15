@@ -34,7 +34,7 @@
       "id": "R02",
       "group": "재현·출처",
       "title": "FUBA 재현 실패와 평가 혼동",
-      "status": "협력 FUBA 목표 복귀 / 기존 실패·중지queue 보존",
+      "status": "협력 FUBA: 저자post6 확인 / 새10R궤적 비교 실행 중",
       "hypothesis": "생성기 상태와 평가 경로를 바로잡으면 FUBA의 삭제 전 억제·삭제 후 활성화가 재현된다.",
       "conditions": "stcebra/FUBA 수정 후보와 과거 보존 모델; ity207/FedUBA와 다른 연구.",
       "controls": "같은 생성기를 정상 모델에도 적용한 교차 진단; 정상 삭제 대조의 완료 여부 별도 확인.",
@@ -225,7 +225,11 @@
         "research/fuba_author_models_20261115/PREPARED.json",
         "research/fuba_gamma_trajectory_20261115/PROTOCOL.txt",
         "research/fuba_gamma_trajectory_20261115/INPUT_BINDING.json",
-        "research/fuba_gamma_trajectory_20261115/FREEZE.json"
+        "research/fuba_gamma_trajectory_20261115/FREEZE.json",
+        "research/fuba_gamma_trajectory_20261115/REPORT_KO.txt",
+        "research/fuba_gamma_trajectory_20261115/PREPARED.json",
+        "research/fuba_gamma_trajectory_20261115/FAILURE_prepare.json",
+        "research/fuba_gamma_trajectory_20261115/STARTED.json"
       ],
       "process_report": "experiments/01-reproduction/R02-fuba-reproduction/README.md",
       "github_group": "01-reproduction"

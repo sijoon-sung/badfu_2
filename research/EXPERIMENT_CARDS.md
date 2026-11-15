@@ -37,7 +37,7 @@
 
 **가설 한 줄: 생성기 상태와 평가 경로를 바로잡으면 FUBA의 삭제 전 억제·삭제 후 활성화가 재현된다.**
 
-**판정: 협력 FUBA 목표 복귀 / 기존 실패·중지queue 보존**
+**판정: 협력 FUBA: 저자post6 확인 / 새10R궤적 비교 실행 중**
 
 [실험 시작 이유와 실제 실행 과정 읽기](../experiments/01-reproduction/R02-fuba-reproduction/README.md)
 
@@ -208,6 +208,10 @@
 - [research/fuba_gamma_trajectory_20261115/PROTOCOL.txt](fuba_gamma_trajectory_20261115/PROTOCOL.txt)
 - [research/fuba_gamma_trajectory_20261115/INPUT_BINDING.json](fuba_gamma_trajectory_20261115/INPUT_BINDING.json)
 - [research/fuba_gamma_trajectory_20261115/FREEZE.json](fuba_gamma_trajectory_20261115/FREEZE.json)
+- [research/fuba_gamma_trajectory_20261115/REPORT_KO.txt](fuba_gamma_trajectory_20261115/REPORT_KO.txt)
+- [research/fuba_gamma_trajectory_20261115/PREPARED.json](fuba_gamma_trajectory_20261115/PREPARED.json)
+- [research/fuba_gamma_trajectory_20261115/FAILURE_prepare.json](fuba_gamma_trajectory_20261115/FAILURE_prepare.json)
+- [research/fuba_gamma_trajectory_20261115/STARTED.json](fuba_gamma_trajectory_20261115/STARTED.json)
 
 **묶은 폴더:** [asr_root_cause_20261022](asr_root_cause_20261022) · [fuba_corrected_20261022](fuba_corrected_20261022) · [continuation_20261023](continuation_20261023) · [multiseed_actual_fu_20261022](multiseed_actual_fu_20261022) · [FU_gpu20261020](FU_gpu20261020) · [MOVE_TO_DISLAB_20261021](MOVE_TO_DISLAB_20261021) · [stage1_fresh_20261020](stage1_fresh_20261020) · [fuba_checkpoint_recovery_20261023](fuba_checkpoint_recovery_20261023) · [FUBA_v2_s20261023_round0063](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_round0063) · [FUBA_v2_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v2_s20261023_pre_round100) · [fuba_suppression_audit_20261024](fuba_suppression_audit_20261024) · [fuba_paper_rebuild_20261024](fuba_paper_rebuild_20261024) · [FUBA_v3_s20261023_pre_round0015_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v3_s20261023_pre_round0015_stopped_verified) · [fuba_paper_flow_20261024](fuba_paper_flow_20261024) · [FUBA_v4_s20261023_pre_round0023_stopped_verified](../CHECKPOINTS_FOR_REVIEW/FUBA_v4_s20261023_pre_round0023_stopped_verified) · [fuba_paper_completion_20261024](fuba_paper_completion_20261024) · [FUBA_v5_s20261023_pre_round100](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre_round100) · [fuba_post_unlearning_20261025](fuba_post_unlearning_20261025) · [FUBA_v5_s20261023_pre100_post_KD10](../CHECKPOINTS_FOR_REVIEW/FUBA_v5_s20261023_pre100_post_KD10) · [fuba_execution_audit_20261025](fuba_execution_audit_20261025) · [fuba_algorithm_execution_20261025](fuba_algorithm_execution_20261025) · [fuba_author_models_20261115](fuba_author_models_20261115) · [fuba_gamma_trajectory_20261115](fuba_gamma_trajectory_20261115)
 

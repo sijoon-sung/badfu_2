@@ -1,0 +1,6 @@
+FUBA local/global gamma 궤적 비교 — 실제 학습 중, 전체 재현 미완료
+
+관련 R02/D08/D15. PR commit f71ba94에서 두 arm21–30R·전체50epoch·입력20R 및 판정기준을 먼저 고정했다.
+기존 case 봉인과 raw manifest/SPLIT/PROFILE/model/core 및 실제20R 집계가 검증됐다. 최초 prepare는 Windows backslash 경로 키 때문에 학습 전 KeyError가 났다. FAILURE_prepare를 보존하고, 같은 입력과 동결된 trainer를 변경하지 않는 complete_prepare.py로 남은 준비 검사만 완료했다.
+실제 trainer PID14224가 DISLAB에서 실행되며 첫현재runtime local21R CA98.94/ASR1.48460,22R98.89/0.49856,23R98.86/12.86284를 기록했다. 원래역사적21R98.93/1.40705,22R98.90/0.38777,23R98.88/10.61378과 다르므로 과거tensor비트재현이라고 부르지 않는다. 새local/global은 동일현재runtime에서 비교한다.
+아직global arm/최종10R판정/FU는 미완료다. 고정의 마지막3R CA97/ASR10·전체위반수감소·gamma변경 기준을 임의로 바꾸지 않는다. 기존v7/DBA100R/seedqueue/FedUBA는 재시작하지 않았다.

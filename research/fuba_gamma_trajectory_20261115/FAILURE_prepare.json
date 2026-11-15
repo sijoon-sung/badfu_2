@@ -1,0 +1,4 @@
+{
+  "error": "'inputs/reference_core.py'",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\FUBA_GAMMA_TRAJECTORY_20261115\\run.py\", line 274, in <module>\n    prepare()\n  File \"D:\\FUBA_GAMMA_TRAJECTORY_20261115\\run.py\", line 113, in prepare\n    assert sha(ROOT / 'reference_core.py') == files['inputs/reference_core.py']\n                                              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'inputs/reference_core.py'\n"
+}
