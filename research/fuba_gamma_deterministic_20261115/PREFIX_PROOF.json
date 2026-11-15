@@ -1,0 +1,346 @@
+{
+  "first_changed_gamma": {
+    "round": 26,
+    "client": 0,
+    "local_gamma": 1.0,
+    "global_gamma": 0.8
+  },
+  "common_input_roles": [
+    {
+      "round": 21,
+      "client": 0,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 4,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 12,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 13,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 14,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 16,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 17,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 21,
+      "client": 18,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 5,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 9,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 11,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 12,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 14,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 15,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 16,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 22,
+      "client": 19,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 0,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 1,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 2,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 3,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 11,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 13,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 18,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 23,
+      "client": 19,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 3,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 5,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 8,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 9,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 10,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 12,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 14,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 24,
+      "client": 17,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 2,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 3,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 8,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 9,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 11,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 13,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 14,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 25,
+      "client": 19,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 0,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": false,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 6,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 7,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 8,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 11,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 12,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 14,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    },
+    {
+      "round": 26,
+      "client": 18,
+      "all_phase_model_optimizer_RNG_exact": true,
+      "same_gamma": true,
+      "submission_exact_when_same_gamma": true
+    }
+  ]
+}

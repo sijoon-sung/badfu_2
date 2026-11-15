@@ -63,7 +63,7 @@ flowchart TD
 | 실험 카드 | 현재 판정 |
 |---|---|
 | [R01 · 승인된 BadFU 모델과 삭제 방식](EXPERIMENT_CARDS.md#r01) | 검증 범위 한정 |
-| [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | 협력 FUBA: 저자post6 확인 / gamma20R실패·수치혼동 / 결정적계약 통과 |
+| [R02 · FUBA 재현 실패와 평가 혼동](EXPERIMENT_CARDS.md#r02) | 협력 FUBA: 결정적 gamma 비교 실패·全검증/전달 / 실제 Retrain100 FU 진행 |
 | [R04 · 정상 MNIST FedAvg와 참여자 삭제 기준선](EXPERIMENT_CARDS.md#r04) | DISLAB 정상 IID 한 시드·효용 기준 통과 |
 | [R05 · FedUBA 저장 예측의 언러닝 전후 전환](EXPERIMENT_CARDS.md#r05) | 양의 요청 진단에서 엄격 전환 1510장·원 성능 기준 미달 |
 | [R06 · FedUBA Eq.7 전체 클래스 선택의 고정 코호트 비교](EXPERIMENT_CARDS.md#r06) | 사용자 협력 FUBA 대상 정정으로 중단 / 정상20R·공격4R 보존 |

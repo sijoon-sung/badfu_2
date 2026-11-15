@@ -12,7 +12,7 @@ def digest(path):
 
 
 def verify(manifest_root,expected_manifest_sha256):
-    root=Path(manifest_root).resolve();manifest=root/'MANIFEST.json'
+    root=Path(manifest_root).resolve();manifest=root/'REVIEW_MANIFEST.json'
     assert digest(manifest)==expected_manifest_sha256,'Manifest differs from external catalogue'
     info=json.loads(manifest.read_text(encoding='utf-8'))
     if (root/'after.pt').is_file():payload=root

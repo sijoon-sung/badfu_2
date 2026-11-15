@@ -1,0 +1,1 @@
+실행 전 검토에서 학습 이력 MANIFEST.json과 검토 패킷 manifest의 zip 이름 충돌을 발견했다. 검토용 이름을 REVIEW_MANIFEST.json으로 분리하고 hash guard/등록기도 같은 이름을 사용하도록 고쳤다. 아직 train/evaluate/export는 실행되지 않았으며 원 학습코드·조건·준비된 입력은 불변이다. 과거 코드는 PR commit 59f53e3에 보존된다.

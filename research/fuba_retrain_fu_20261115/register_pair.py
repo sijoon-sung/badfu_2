@@ -25,9 +25,9 @@ def main():
     args=parser.parse_args()
     root=Path(__file__).resolve().parent;remote=Path('D:/FUBA_RETRAIN_FU_20261115')
     if args.local_payload:
-        payload=args.local_payload.resolve();manifest=payload/'MANIFEST.json';seal=root/'delivery/SEAL.json'
+        payload=args.local_payload.resolve();manifest=payload/'REVIEW_MANIFEST.json';seal=root/'delivery/SEAL.json'
     else:
-        assert root==remote.resolve();payload=root;manifest=root/'delivery/MANIFEST.json';seal=root/'delivery/SEAL.json'
+        assert root==remote.resolve();payload=root;manifest=root/'delivery/REVIEW_MANIFEST.json';seal=root/'delivery/SEAL.json'
     bound=json.loads(seal.read_text());proof=verify(manifest.parent,bound['manifest_sha256'])
     result=json.loads((payload/'RESULT.json').read_text());cpu=json.loads((payload/'CPU_AUDIT.json').read_text());ind=json.loads((payload/'INDEPENDENT_RESULT.json').read_text())
     assert result['state']=='complete' and cpu['state']==ind['state']=='passed'
@@ -44,7 +44,7 @@ def main():
                    for k,name in [('pre','inputs/before.pt'),('post','after.pt')]},
                 'checkpoint_guard':{'manifest_path':str(man),'manifest_sha256':bound['manifest_sha256'],
                    'seal_path':str(seal_path),'seal_sha256':digest(seal),'loader_path':str(base/'verify_payload.py')}}
-    registered=location(remote,remote/'delivery/MANIFEST.json',remote/'delivery/SEAL.json')
+    registered=location(remote,remote/'delivery/REVIEW_MANIFEST.json',remote/'delivery/SEAL.json')
     case={'id':CASE,'title':'Actual MNIST DBA retained-client Retrain100 FU; failed original pre suppression',
           'source_root':str(remote),'allowed_purposes':['diagnostic'],'post_type':'actual_retained_client_retrain100_gamma1',**registered}
     if args.local_payload:case['local_copy']=location(payload,manifest,seal)

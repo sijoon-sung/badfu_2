@@ -25,13 +25,14 @@ def main():
     manifest={'schema':'fuba-retrain-pair-review-v1','remote_root':str(ROOT),'files':chosen,
               'scope':'Actual original before, original initial, new retained-client FU100 after; all epoch and role logs; first/final round and final-round phases. All intermediate tensors remain in full remote manifest.',
               'full_paper_reproduced':False,'pre_suppression_failed':True,'FU':'Retained-client Retrain100, gamma1'}
-    write('delivery/MANIFEST.json',manifest)
+    assert 'REVIEW_MANIFEST.json' not in chosen
+    write('delivery/REVIEW_MANIFEST.json',manifest)
     archive=out/'FUBA_RETRAIN_FU_20261115.zip'
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=1) as z:
         for name,item in chosen.items():
             assert sha(ROOT/name)==item['sha256'];z.write(ROOT/name,name)
-        z.write(out/'MANIFEST.json','MANIFEST.json')
-    seal={'manifest_sha256':sha(out/'MANIFEST.json'),'archive_sha256':sha(archive),'archive_bytes':archive.stat().st_size,
+        z.write(out/'REVIEW_MANIFEST.json','REVIEW_MANIFEST.json')
+    seal={'manifest_sha256':sha(out/'REVIEW_MANIFEST.json'),'archive_sha256':sha(archive),'archive_bytes':archive.stat().st_size,
           'files':len(chosen),'full_remote_files':len(full),'full_paper_reproduced':False}
     write('delivery/SEAL.json',seal);print(json.dumps(seal),flush=True)
 

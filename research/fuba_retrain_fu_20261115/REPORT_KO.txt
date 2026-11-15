@@ -1,0 +1,9 @@
+실제 Retrain100 FU 실행 시작 — R02/R03/D08/D15
+
+진행 중이며 최종 성공 판정은 미완료다. D:/FUBA_RETRAIN_FU_20261115의 새 trainer PID51232가 실행되고, 실제 epoch 로그와 GPU 사용을 확인했다. 이전 gamma 비교의 학습/CPU/독립 전체 평가/396점 평가/봉인이 모두 종료된 뒤 시작했다. 기존 finite job이나 seed queue를 재시작하지 않았다.
+
+원 initial/SPLIT/100R 참여 스케줄을 검증한 뒤 Adv-defender4를 실제 학습·집계에서 제외한다. 해당 참여자가 원래 선택된41개 round는 실제7명, 나머지는8명이 집계된다. 잔류 Adv-attacker0..3은 원5R warmup 이후 gamma1로 참여하며 정상 역할도 모두50epoch를 학습한다. 새100R에서 총759개 역할과146개 공격자 역할을 수행할 계획이다.
+
+입력은 fuba.reference.mnist.dba.s20261023.pre100.post.kd10 / diagnostic이다. 원 삭제전 CA99.11/ASR30.6004874806%는 사전 억제 실패이며 바꾸지 않는다. 새 FU 후 ASR이 높더라도 성공한 잠복 전후쌍이나 전체 논문 재현으로 부르지 않는다. 원 KD10 후32.3509860403%와 새 Retrain FU를 방법별로 구분한다.
+
+완료 조건은 실제100R와 after.pt,全epoch/phase/optimizer/RNG,실제 삭제와 제출·집계 CPU 검증, 원저자 함수의 독립10000/9026 평가, 실제 예측 보존, 양쪽 패킷/카탈로그 hash guard이다. 현재 준비·시작·중간 진도만 확인됐고 이 완료 조건을 달성한 것으로 보고하지 않는다.

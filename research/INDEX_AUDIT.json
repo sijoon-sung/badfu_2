@@ -2,9 +2,9 @@
   "schema": "research-index-audit-v1",
   "as_of": "2026-10-25",
   "review_scope": "기존 대표 보고서와 정정을 재검토한 카드에 2026-10-25 사용자 요청의 별도 고정 모델 진단(D18)을 추가 연결. 카드별 원문과 실행/수학/사후진단 범위를 구분한다. 인덱스 생성 자체는 모델 재계산을 수행하지 않는다.",
-  "registry_sha256": "c478f06235aecebf61177a1c2acd1d522448ff22c0bdfdb87e09372d3410256a",
+  "registry_sha256": "6b597f937188cf07ffca0f2e49f73f485227c2d564cbee8f9817bec08cbe11ca",
   "cards": 31,
-  "unique_source_documents": 304,
+  "unique_source_documents": 319,
   "top_level_folders": 98,
   "folders_linked_to_cards": 59,
   "source_sha256": {
@@ -201,8 +201,8 @@
     "research/fuba_retrain_fu_20261115/PREPARED.json": "53127ada743f1840a22fe372e2ae939955acb42680d39a9187f6f3ebaa7ac1c5",
     "research/fuba_retrain_fu_20261115/PRETRAIN_SOURCE_CORRECTION.txt": "b7c7c3334439febda89df01b13fdd96c2f96431837d64ad900f68ebdd8c595a0",
     "research/fuba_retrain_fu_20261115/AUDIT_FREEZE.json": "12d4176e7c0c299dd4e2be291fb1a23bc9b31e35b64f1cfe1ce20d12a7109cf3",
-    "research/fuba_retrain_fu_20261115/INDEPENDENT_FREEZE.json": "a6d24cd5ebd068d3bc2db616a29293163df264a23969bb26a864c7276f9d4d4c",
-    "research/fuba_retrain_fu_20261115/EXPORT_FREEZE.json": "498fd27970387b3c383c208ad783cfe33a6f7a23123b4165253035fb4c26f6ce",
+    "research/fuba_retrain_fu_20261115/INDEPENDENT_FREEZE.json": "2170a81e5ae06846f2ce7dd63c318e569741e045359957c81e8f621b6a708907",
+    "research/fuba_retrain_fu_20261115/EXPORT_FREEZE.json": "408e222196708f21747605df6077e40f85abdf2f3efec043058082dd04297602",
     "research/fuba_fu_source_map_20261115/FEDERASER_CONTRACT.json": "5a1990cd8cc049e7fbd8e7d0315147b3714821ccec19d741896531063e4d30b2",
     "research/fuba_fu_source_map_20261115/primary_papers/FedEraser21.json": "a3c9819f86ed9716a9345851fd68c63db4ac3ba15ac28f64bbe86036d516b6e0",
     "research/fuba_fu_source_map_20261115/primary_papers/FedEraser-code-retrieval.json": "ca2f95ac0d978ed1e9af01f36438059eba158bc04e44bc52cbbfa8ab4c60293d",
@@ -216,6 +216,21 @@
     "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT_PROTOCOL.txt": "170c9aad9fedee71e820e549ae2e1b4a23527161f44b3748b25ecf2eabeee63e",
     "research/fuba_gamma_deterministic_20261115/GAMMA_FREEZE.json": "9a9432ceab0e932e08fd74228ce0c6d80b22d735f1061c08e8dfadc4cc872ca6",
     "research/fuba_fu_source_map_20261115/UPSTREAM_STATUS_20261115.json": "11050881525b529446d6a000fee35ee7e0547eb465809f5e735cd0fde07b320f",
+    "research/fuba_gamma_deterministic_20261115/REPORT_KO.txt": "7f0af6caf0bce0a1c742fdb2f0ac0dc618ea5e8c316013ee9d52e4f835663c96",
+    "research/fuba_gamma_deterministic_20261115/RESULT.json": "214cd49ba84ce2a68dd73e386d5ce3339628e019fcba485b0b8be303b6abdb19",
+    "research/fuba_gamma_deterministic_20261115/CPU_AUDIT.json": "e37cf340d438cadbc1bf1d1b98228e573feae6f52022bf86249bfc29439f993b",
+    "research/fuba_gamma_deterministic_20261115/NUMERICAL_CONTROL.json": "5000af7086e24f664f4a16779d4f659d8cbed38b73710de094ba5e5186d65c7a",
+    "research/fuba_gamma_deterministic_20261115/PREFIX_PROOF.json": "711d647391cfe5eabbf24f67573d587b067a25559008b92850a418f6a006cdb4",
+    "research/fuba_gamma_deterministic_20261115/PREFIX_AUDIT.json": "8f0084f92421037719d9d26ed16260f31f88a0ee740b43a3ab79e00a628d86fe",
+    "research/fuba_gamma_deterministic_20261115/INDEPENDENT_RESULT.json": "247390d93aa80d6a81a6b98c53cb21b7207f30642bb9de54d8d273d361358b18",
+    "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT.json": "20b571d749696247291c25698d1b77815645c9221cd64d770087abf81f4b5657",
+    "research/fuba_gamma_deterministic_20261115/LOCAL_DELIVERY.json": "a71832d2c04bf3485fdb9103fe755780eaa84483b0cf8159eb3b24499cf331ec",
+    "research/fuba_gamma_deterministic_20261115/PLOT_RECEIPT.json": "7b56192e8eda63d2895fc5afcb850a2ad5ac742e19430b5671320a932ecb4e8b",
+    "research/fuba_retrain_fu_20261115/REPORT_KO.txt": "9c4979b8c99e362ae7f4fa07b719b315aec6213d474685c5aa756a7f1eb3f73e",
+    "research/fuba_retrain_fu_20261115/STARTED.json": "6b7106e9a55b17cc79767b2bfbe57a193971ec92ed7fdd88f57ad2354be39e3d",
+    "research/fuba_retrain_fu_20261115/RUNTIME.json": "3a0ac1ef96061ee58e18e0ad537807a5a976ce37ad5e43826d6cc755bf3589cd",
+    "research/fuba_retrain_fu_20261115/PREDICTION_CAPTURE_NOTE.txt": "ba6ded100d03079aac941aa9cf8025d9a071ceb77d734abbfb8565d249dbf312",
+    "research/fuba_retrain_fu_20261115/PREEXPORT_CORRECTION.txt": "7cf6609888d33654db21a228a75f1d4a9f9d351fb55f5eaa3a973764c45b34a9",
     "research/03_detection/parked/history/README.md": "9522ca99e7c8004fb0633e74a21d17789a65d75ee185921b3f6b428387ce1997",
     "research_audit_20261019/detection/history.md": "83bb09671e921de99e6bb913dba41ca094482037d51c9b09d727e6c4e1cd06db",
     "research_audit_20261019/detection/normal_set.md": "9aa6a32ddefd152b813f2c0d85173bdebbd58a5c16b1435e2e647e56f57ce3c5",
@@ -716,8 +731,15 @@
       ],
       "top_level_documents": [
         "research/fuba_gamma_deterministic_20261115/AUDIT_FREEZE.json",
+        "research/fuba_gamma_deterministic_20261115/CPU_AUDIT.json",
+        "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT.json",
         "research/fuba_gamma_deterministic_20261115/GAMMA_AUDIT_PROTOCOL.txt",
-        "research/fuba_gamma_deterministic_20261115/PROTOCOL.txt"
+        "research/fuba_gamma_deterministic_20261115/INDEPENDENT_RESULT.json",
+        "research/fuba_gamma_deterministic_20261115/PREFIX_AUDIT.json",
+        "research/fuba_gamma_deterministic_20261115/PREFIX_PROOF.json",
+        "research/fuba_gamma_deterministic_20261115/PROTOCOL.txt",
+        "research/fuba_gamma_deterministic_20261115/REPORT_KO.txt",
+        "research/fuba_gamma_deterministic_20261115/RESULT.json"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
@@ -831,7 +853,8 @@
       ],
       "top_level_documents": [
         "research/fuba_retrain_fu_20261115/AUDIT_FREEZE.json",
-        "research/fuba_retrain_fu_20261115/PROTOCOL.txt"
+        "research/fuba_retrain_fu_20261115/PROTOCOL.txt",
+        "research/fuba_retrain_fu_20261115/REPORT_KO.txt"
       ],
       "review": "대표 기록 재검토·카드 연결"
     },
