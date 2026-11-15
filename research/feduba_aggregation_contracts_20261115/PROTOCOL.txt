@@ -1,0 +1,6 @@
+가설: model-state adapter로 구현한 FedAvg/coordinate Median/Trimmed-mean은 ity207/FedUBA@005959ab의 공개 집계 함수와 논문의 기본10참여자·trim0.1 조건에서 정확히 같다.
+관련 R03/R06/R02/N02/D08/D15. 새 관측은 기존 FedAvg-only 경로에 없던 Median/Trimmed-mean의 공개 함수 수치 동등성과 BN 정수 buffer 정책이다. 이는 전체 논문의 추가 집계 조건을 구현하기 위한 CPU 합성 계약이며 공격 성공/새 detector가 아니다. D08/D15 큰 정상 non-IID 반례는 미해결이다.
+출처는 Fed_train.py Gitblob f08a854350b32c7c8c55d021e60834468ea2e0a0. DISLAB의 저장 원문에서 세 함수 AST만 추출하고 pure torch/copy namespace에서 CPU로 실행해 참조로 사용한다. 새 코드는 model list 대신 state list를 받는다. Median은 짝수 참여자에서 lower median이며 BN counter도 median이다. Trimmed-mean은 좌표별 floor(n*p)를 양끝에서 제거하고 float mean 후 원dtype으로 돌린다. FedAvg는 순차 평균/마지막 참여자의 BN counter이다.
+고정 비교:10개 합성 모델,2차원float parameter와long BN counter,명시outlier/tie. 손계산 scalar oracle와 공개 함수 양쪽에 정확 일치하고 입력 불변/invalid ownership-key-schema/nonfinite/trim 범위를 검사한다. GPU·실자료·원 checkpoint·실 FL/FU·기존 검사 runner를 실행하지 않는다. CPU1thread이며 실행 중 R06의 코드/프로필은 바꾸지 않는다.
+공개 trim 함수의 floor(n*p)=0 경우 [0:0] 공집합 평균 문제는 별도 경계 차이로 명시한다. 새 adapter는 그 경우 전체 평균이며,원문 그대로 실행이라고 하지 않는다. 논문 기본10*0.1에서는 해당 차이가 없다.
+중단: pinned blob/수치/BN/입력불변 계약 중 하나라도 실패하면 실제 Median/Trimmed-mean 학습에 사용하지 않는다. 통과도 해당 모델의 CA/ASR 재현은 미검증이며새전체실행은 별도 fixed profile이 필요하다.
